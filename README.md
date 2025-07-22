@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.21)
+# 计算机视觉领域最新论文 (2025.07.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,38 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-21</td><td>DiffPF: Differentiable Particle Filtering with Generative Sampling via Conditional Diffusion Models</td><td>[2507.15716](http://arxiv.org/pdf/2507.15716)</td><td>◆ DiffPF首次将条件扩散模型融入粒子滤波框架，实现了高质量的后验采样，显著提升了状态估计精度。  
+◆ 相比传统可微分粒子滤波依赖预定义或低容量提议分布，DiffPF通过条件扩散模型学习灵活的采样器，直接生成等权粒子。  
+◆ 该方法能够从复杂、高维、多模态的滤波分布中进行精确采样，克服了传统方法在复杂分布下的局限性。  
+◆ 在全局定位和KITTI视觉里程计等任务中，DiffPF分别以82.8%和26%的精度优势超越现有最优可微分滤波器。  
+◆ 实验验证表明，DiffPF在单模态和多模态场景下均表现优异，为动态系统状态估计提供了新范式。</td></tr>
+<tr><td>2025-07-21</td><td>Dense-depth map guided deep Lidar-Visual Odometry with Sparse Point Clouds and Images</td><td>[2507.15496](http://arxiv.org/pdf/2507.15496)</td><td>◆ 提出了一种新颖的LiDAR-视觉里程计框架，通过深度融合稀疏LiDAR点云和图像数据实现高精度位姿估计。  
+◆ 创新性地利用深度补全技术生成稠密深度图，为运动估计提供更丰富的几何约束信息。  
+◆ 设计了带注意力机制的多尺度特征提取网络，能够自适应生成深度感知的特征表示。  
+◆ 采用稠密深度信息优化光流估计，有效减少了遮挡区域的误差累积问题。  
+◆ 开发了分层位姿优化模块，通过渐进式运动估计提升动态环境和尺度模糊场景下的鲁棒性。  
+实验证明该方法在KITTI数据集上达到了与当前最优视觉/LiDAR里程计相当或更优的精度和鲁棒性。</td></tr>
+<tr><td>2025-07-21</td><td>All-UWB SLAM Using UWB Radar and UWB AOA</td><td>[2507.15474](http://arxiv.org/pdf/2507.15474)</td><td>◆ 提出了一种结合UWB雷达和UWB到达角（AOA）测量的新型SLAM方法，用于视觉受限且特征稀缺的环境。  
+◆ 通过动态部署UWB锚点-标签单元，在环境特征不足的区域补充AOA测量数据，提升了SLAM的精度和可扩展性。  
+◆ 解决了现有UWB雷达SLAM方法依赖环境特征数量的局限性，扩展了其在无特征环境中的应用能力。  
+◆ 详细分析了UWB AOA测量单元的常见约束问题，并提出了相应的解决方案。  
+◆ 实验证明，该方法在视觉受限且特征稀缺的环境中仍能有效实现SLAM，为恶劣条件下的自主系统提供了新思路。</td></tr>
+<tr><td>2025-07-21</td><td>BenchDepth: Are We on the Right Way to Evaluate Depth Foundation Models?</td><td>[2507.15321](http://arxiv.org/pdf/2507.15321)</td><td>◆提出BenchDepth新基准，通过五个下游代理任务（深度补全、立体匹配、单目3D场景重建、SLAM和视觉语言空间理解）评估深度基础模型（DFMs），突破传统评估局限。  
+◆摒弃依赖对齐指标的固有方法，解决传统评估中因对齐偏差、深度表示偏好导致的不公平比较问题。  
+◆首次从实际应用效用角度评估DFMs，强调模型在真实场景中的实用价值而非单纯指标分数。  
+◆系统地对8种前沿DFMs进行横向对比，揭示关键发现，为模型优化提供实证依据。  
+◆推动深度估计领域评估标准革新，引发社区对评估最佳实践的讨论，促进未来研究发展。</td></tr>
+<tr><td>2025-07-20</td><td>LoopNet: A Multitasking Few-Shot Learning Approach for Loop Closure in Large Scale SLAM</td><td>[2507.15109](http://arxiv.org/pdf/2507.15109)</td><td>◆ 提出LoopNet，一种基于多任务学习的少样本学习方法，专门针对大规模SLAM中的闭环检测问题，兼顾精度与实时性需求。  
+◆ 采用改进的ResNet多任务架构，支持动态视觉数据集的在线重训练，并针对嵌入式设备进行优化，适应实际部署场景。  
+◆ 创新性结合少样本学习策略进行在线训练，解决传统方法在新环境中数据不足的问题，提升模型适应性。  
+◆ 首次在闭环检测中同时输出场景索引和预测质量评估，增强系统可靠性，避免误匹配。  
+◆ 利用DISK描述符替代传统手工特征或纯深度学习方法，在光照、视角变化等复杂条件下表现更优。  
+◆ 开源了新型闭环检测数据集LoopDB，填补领域内标准化评估数据的空白，推动后续研究。</td></tr>
+<tr><td>2025-07-19</td><td>Advances in Feed-Forward 3D Reconstruction and View Synthesis: A Survey</td><td>[2507.14501](http://arxiv.org/pdf/2507.14501)</td><td>◆ 系统梳理了基于前馈式深度学习的3D重建与视图合成技术，首次提出按表示架构（如点云、3D高斯泼溅、神经辐射场等）的分类体系。  
+◆ 重点分析了无姿态重建、动态3D重建、3D感知图像/视频合成等关键任务，拓展了在数字人、SLAM等领域的应用场景。  
+◆ 对比传统迭代优化方法，突显前馈方法在实时性与泛化能力上的突破性进展，为AR/VR等实时应用提供新范式。  
+◆ 全面汇总了主流数据集与评估协议，填补了该领域标准化评测工具的综述空白。  
+◆ 指出动态场景建模、计算效率与表示能力平衡等开放挑战，为未来研究指明方向。</td></tr>
 <tr><td>2025-07-17</td><td>DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model</td><td>[2507.13145](http://arxiv.org/pdf/2507.13145)</td><td>◆ 提出DINO-VO系统，首次将视觉基础模型DINOv2的鲁棒语义特征应用于单目视觉里程计（VO），解决了传统学习型VO在泛化性和鲁棒性上的不足。  
 ◆ 设计了一种针对DINOv2粗粒度特征的显著关键点检测器，克服了基础模型特征在VO任务中粒度不足的集成难题。  
 ◆ 结合DINOv2的语义特征与细粒度几何特征，生成更具局部化能力的混合特征表示，提升了位姿估计精度。  
@@ -377,6 +409,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-21</td><td>Hi^2-GSLoc: Dual-Hierarchical Gaussian-Specific Visual Relocalization for Remote Sensing</td><td>[2507.15683](http://arxiv.org/pdf/2507.15683)</td><td>◆ 提出Hi^2-GSLoc框架，首次将3D高斯溅射（3DGS）引入遥感视觉重定位任务，利用其紧凑的几何与外观表征能力解决传统方法精度与效率的矛盾。  
+◆ 设计双层次稀疏到稠密、粗到精的定位范式：稀疏阶段通过渲染感知采样和地标引导检测器获取鲁棒初始位姿，稠密阶段通过多级栅格化匹配迭代优化位姿。  
+◆ 开发分区高斯训练、GPU并行匹配和动态内存管理策略，突破大尺度遥感场景的计算瓶颈，实现高效处理高海拔变化和跨域数据。  
+◆ 创新性提出高斯基元一致性渲染感知采样方法，结合可靠性验证机制，显著提升特征匹配的稳定性和位姿估计的准确性。  
+◆ 在仿真数据、公开数据集和真实飞行实验中验证了方法的优越性，兼具高定位精度（竞争性指标）、召回率和计算效率，为实际遥感应用提供可靠解决方案。</td></tr>
+<tr><td>2025-07-21</td><td>Few-Shot Object Detection via Spatial-Channel State Space Model</td><td>[2507.15308](http://arxiv.org/pdf/2507.15308)</td><td>◆ 提出空间-通道状态空间建模（SCSM）模块，通过联合建模空间和通道关系，解决小样本目标检测中特征提取不准确的问题。  
+◆ 设计空间特征建模（SFM）模块，平衡空间关系和通道关系的学习，提升特征表示的有效性。  
+◆ 创新性地将Mamba模型引入通道序列建模，提出通道状态建模（CSM）模块，利用通道间相关性动态调整通道权重。  
+◆ 通过SCSM模块，模型能够自动强化有效通道特征并修正无效通道特征，从而提升小样本条件下的检测性能。  
+◆ 在VOC和COCO数据集上的实验表明，该方法显著优于现有技术，实现了最先进的性能。</td></tr>
+<tr><td>2025-07-20</td><td>An Evaluation of DUSt3R/MASt3R/VGGT 3D Reconstruction on Photogrammetric Aerial Blocks</td><td>[2507.14798](http://arxiv.org/pdf/2507.14798)</td><td>◆ 首次对DUSt3R/MASt3R/VGGT三种基于Transformer的3D重建模型在航摄影像块上进行系统性评估，填补了该领域的研究空白。  
+◆ 证明这些模型在极稀疏影像（少于10张、分辨率低至518像素）下仍能生成完整稠密点云，相比传统COLMAP方法完整性提升高达50%。  
+◆ 发现VGGT模型具有显著计算效率和可扩展性优势，同时提供更可靠的相机位姿估计能力。  
+◆ 揭示了这些模型在高分辨率影像和大规模数据集上的局限性，表现为位姿估计可靠性随影像数量增加而下降。  
+◆ 提出Transformer模型虽无法完全替代传统SfM/MVS流程，但在低分辨率、稀疏影像等挑战性场景中可作为有效补充方案。  
+◆ 为航测领域提供了基于深度学习的3D重建新思路，特别适用于影像重叠率极低或纹理缺失区域的快速重建需求。</td></tr>
 <tr><td>2025-07-17</td><td>Uncertainty Quantification Framework for Aerial and UAV Photogrammetry through Error Propagation</td><td>[2507.13486](http://arxiv.org/pdf/2507.13486)</td><td>这篇论文的核心贡献和创新点如下：
 
 ◆ 提出了一个完整的误差传播框架，用于量化航空和无人机摄影测量中从SfM到MVS两阶段的全流程不确定性，填补了MVS阶段不确定性评估的研究空白。
@@ -407,7 +455,7 @@
 ◆ 提出多尺度自适应上采样（MSAU）模块，通过非均匀上采样解调特征并恢复高频信息，同时利用多尺度密集与稀疏采样区域的交互增强分割精度。  
 ◆ 模块设计轻量且通用，可无缝集成到CNN和Transformer等多种架构中，扩展性强。  
 ◆ 通过特征可视化验证了该方法能有效缓解混叠并保留细节，进一步在图像分类、对抗鲁棒性、实例分割和全景分割等任务中验证了其广泛适用性。</td></tr>
-<tr><td>2025-07-14</td><td>Supporting SENĆOTEN Language Documentation Efforts with Automatic Speech Recognition</td><td>[2507.10827](http://arxiv.org/pdf/2507.10827)</td><td>这篇论文的核心贡献是通过自动语音识别（ASR）技术支持濒危语言SENĆOTEN的文档化工作，具体创新点如下：
+<tr><td>2025-07-20</td><td>Supporting SENCOTEN Language Documentation Efforts with Automatic Speech Recognition</td><td>[2507.10827](http://arxiv.org/pdf/2507.10827)</td><td>这篇论文的核心贡献是通过自动语音识别（ASR）技术支持濒危语言SENĆOTEN的文档化工作，具体创新点如下：
 
 ◆ 提出了一种ASR驱动的文档化流程，结合文本转语音（TTS）系统增强有限的语言数据，解决了数据不足的问题。  
 ◆ 利用跨语言迁移学习技术，借助语音基础模型（SFMs）提升ASR在低资源语言上的性能。  
@@ -564,6 +612,35 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-20</td><td>LoopNet: A Multitasking Few-Shot Learning Approach for Loop Closure in Large Scale SLAM</td><td>[2507.15109](http://arxiv.org/pdf/2507.15109)</td><td>◆ 提出LoopNet，一种基于多任务学习的少样本学习方法，专门针对大规模SLAM中的闭环检测问题，兼顾精度与实时性需求。  
+◆ 采用改进的ResNet架构，支持动态视觉数据集的在线重训练，并针对嵌入式设备进行优化，适应实际部署场景。  
+◆ 创新性结合少样本学习策略，使模型能够快速适应新环境，同时输出查询索引和预测质量评估，增强系统可靠性。  
+◆ 利用DISK描述符替代传统手工特征或常规深度学习方法，显著提升光照、视角等变化条件下的闭环检测性能。  
+◆ 开源了新型闭环检测基准数据集LoopDB，填补现有数据在动态场景和嵌入式硬件评估方面的不足。  
+◆ 整体方案在精度和计算效率上均优于现有方法，代码与数据集均已公开，推动SLAM领域研究可复现性。</td></tr>
+<tr><td>2025-07-20</td><td>Visual Place Recognition for Large-Scale UAV Applications</td><td>[2507.15089](http://arxiv.org/pdf/2507.15089)</td><td>◆ 提出了LASED大规模无人机视觉定位数据集，包含约100万张图片，覆盖爱沙尼亚17万个独特地点，具有广泛的地理和时间多样性，显著提升了模型在航空场景中的训练效果。  
+◆ 数据集采用结构化设计，确保地点分离清晰，解决了现有数据集规模小、多样性不足导致的模型泛化能力差的问题。  
+◆ 提出使用可转向卷积神经网络（steerable CNNs）处理无人机图像中的旋转模糊问题，利用其旋转等变性生成方向不变的特征表示。  
+◆ 实验证明，基于LASED训练的模型召回率显著高于小规模数据集训练的模型，凸显了地理覆盖和时间多样性的重要性。  
+◆ 可转向CNN在旋转模糊问题上表现优异，平均召回率比最佳非可转向网络提高12%，有效提升了航空视觉定位的鲁棒性。  
+◆ 结合大规模结构化数据集和旋转等变网络，该方法显著增强了航空视觉定位模型的泛化能力和鲁棒性。</td></tr>
+<tr><td>2025-07-20</td><td>U-MARVEL: Unveiling Key Factors for Universal Multimodal Retrieval via Embedding Learning with MLLMs</td><td>[2507.14902](http://arxiv.org/pdf/2507.14902)</td><td>◆ 首次系统分析了基于MLLMs的通用多模态检索（UMR）中影响嵌入学习性能的关键因素，揭示了常被忽视的训练细节对模型性能的重要影响。  
+◆ 提出了一种通用的MLLM嵌入学习框架U-MARVEL，通过渐进式过渡、困难负样本挖掘和重排序蒸馏等策略优化嵌入生成和训练过程。  
+◆ 在监督学习场景下，U-MARVEL在M-BEIR基准测试中大幅超越现有最优方法，展示了显著的性能优势。  
+◆ 框架在零样本场景下表现优异，在组合图像检索、文本-视频检索等任务中展现出强大的泛化能力。  
+◆ 研究为多模态检索领域提供了可复现的代码实现和系统化的训练方案，推动了该领域的可解释性和可扩展性发展。</td></tr>
+<tr><td>2025-07-19</td><td>OptiCorNet: Optimizing Sequence-Based Context Correlation for Visual Place Recognition</td><td>[2507.14477](http://arxiv.org/pdf/2507.14477)</td><td>◆ OptiCorNet提出首个端到端可训练的序列建模框架，将空间特征提取与时序差分统一到单一模块中，突破了传统单帧嵌入方法的局限。  
+◆ 创新设计可微分时序差分算子（DSD），通过固定权重差分核捕捉方向性序列差异，结合LSTM精修模块，有效建模短时空间上下文和长程时序关联。  
+◆ 引入残差投影机制增强描述符判别力，生成的紧凑序列描述符对视角变化和外观差异具有显著鲁棒性。  
+◆ 采用四元组损失函数同步优化批次内正样本对齐与多负样本分离，显著提升跨场景类间可分性。  
+◆ 首次实现时序聚合的端到端联合学习，相比后处理方法直接优化序列级嵌入，在季节和视角变化场景下取得突破性性能提升。  
+◆ 轻量级1D卷积编码器设计确保计算效率，在多个公开基准测试中全面超越现有最优方法。</td></tr>
+<tr><td>2025-07-16</td><td>Developing an AI-Guided Assistant Device for the Deaf and Hearing Impaired</td><td>[2507.14215](http://arxiv.org/pdf/2507.14215)</td><td>◆ 开发了JerryNet，一种定制CNN架构，可实时精确定位9个方向的声源，方向识别准确率达91.1%，优于基线模型。  
+◆ 基于CLAP模型进行微调，实现纯音频分类，在自定义数据集和AudioSet上分别达到98.5%和95%的准确率。  
+◆ 提出多模态融合模型，结合音频、视觉和文本数据精确定位图像中的声源，采用Yolov9目标检测和音频-视觉定位模块，cIoU达0.892，AUC为0.658。  
+◆ 设计了硬件系统，包括四麦克风矩形阵列和眼镜式摄像头，通过腕带显示方向等关键信息，提升聋哑人群的实时交互体验。  
+◆ 填补了当前研究中针对弱势群体的技术空白，为新一代无障碍设备开发奠定基础。  
+◆ 在自定义数据集上全面验证系统性能，各项指标均超越同类模型，展现出实际应用潜力。</td></tr>
 <tr><td>2025-07-17</td><td>FAR-Net: Multi-Stage Fusion Network with Enhanced Semantic Alignment and Adaptive Reconciliation for Composed Image Retrieval</td><td>[2507.12823](http://arxiv.org/pdf/2507.12823)</td><td>◆ 提出FAR-Net多阶段融合框架，结合早期和晚期融合优势，解决现有方法在视觉-文本模态融合中的局限性。  
 ◆ 设计增强语义对齐模块（ESAM），通过跨注意力机制实现细粒度语义关联，弥补晚期融合对局部对齐的不足。  
 ◆ 引入自适应协调模块（ARM），利用不确定性嵌入的早期融合增强模型鲁棒性，平衡文本显式描述与视觉上下文。  
@@ -1183,6 +1260,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-19</td><td>DiSCO-3D : Discovering and segmenting Sub-Concepts from Open-vocabulary queries in NeRF</td><td>[2507.14596](http://arxiv.org/pdf/2507.14596)</td><td>◆ DiSCO-3D首次提出3D开放词汇子概念发现任务，结合场景内容和用户查询需求，实现更灵活的3D语义分割。  
+◆ 该方法基于神经场表示，将无监督分割与弱开放词汇指导相结合，突破了传统方法仅适应单一任务或场景的限制。  
+◆ 通过开放词汇查询，DiSCO-3D能够动态发现并分割子概念，适应多样化的用户需求。  
+◆ 在开放词汇和无监督分割的边缘案例中，DiSCO-3D表现出最先进的性能，验证了其泛化能力。  
+◆ 该方法为机器人、自动驾驶等应用提供了更高层次的场景理解能力，具有广泛的应用潜力。</td></tr>
+<tr><td>2025-07-19</td><td>Advances in Feed-Forward 3D Reconstruction and View Synthesis: A Survey</td><td>[2507.14501](http://arxiv.org/pdf/2507.14501)</td><td>◆ 系统梳理了基于前馈式深度学习的3D重建与视图合成技术，提出按表示架构（如点云、3D高斯泼溅、神经辐射场等）的分类体系。  
+◆ 重点分析了无姿态重建、动态3D重建、3D感知图像/视频合成等关键任务，拓展了在数字人、SLAM等领域的应用场景。  
+◆ 对比传统迭代优化方法，突显前馈方法在计算效率与泛化能力上的突破，推动AR/VR等实时应用落地。  
+◆ 首次整合该领域常用数据集与评估协议，为不同下游任务提供标准化评测基准。  
+◆ 指出动态场景建模、跨模态生成等开放挑战，为未来研究指明方向。</td></tr>
 <tr><td>2025-07-18</td><td>TimeNeRF: Building Generalizable Neural Radiance Fields across Time from Few-Shot Input Views</td><td>[2507.13929](http://arxiv.org/pdf/2507.13929)</td><td>◆ TimeNeRF提出了一种通用神经渲染方法，能够在少量输入视图下渲染任意视角和任意时间点的新视图，解决了多视图采集成本高和场景重复优化效率低的问题。  
 ◆ 该方法首次探索了NeRF在时序3D场景建模中的潜力，填补了当前技术在该领域的空白，尤其适用于元宇宙中昼夜自然过渡的沉浸式体验需求。  
 ◆ 结合多视图立体视觉、神经辐射场和跨数据集解耦策略，构建了隐式内容辐射场，实现了场景表示和时间维度建模的统一框架。  
@@ -1471,4 +1558,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.21
+> 更新于: 2025.07.22
