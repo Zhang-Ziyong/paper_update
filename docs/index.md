@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.23)
+# 计算机视觉领域最新论文 (2025.07.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-23</td><td>Physics-based Human Pose Estimation from a Single Moving RGB Camera</td><td>[2507.17406](http://arxiv.org/pdf/2507.17406)</td><td>◆ 提出了首个非合成的真实数据集MoviCam，包含动态移动的单目RGB相机轨迹、场景几何和3D人体运动数据，并标注了人-场景接触信息，填补了现有数据集的空白。  
+◆ 开发了PhysDynPose方法，首次将场景几何和物理约束整合到基于物理的人体姿态跟踪中，显著提升了移动相机和非平面场景下的跟踪精度。  
+◆ 结合了先进运动学估计器和鲁棒SLAM技术，实现了世界坐标系下人体姿态与相机轨迹的同步恢复，解决了动态相机带来的参考系漂移问题。  
+◆ 设计了场景感知的物理优化器，通过物理约束修正运动学估计结果，使姿态估计更符合真实物理规律。  
+◆ 通过新基准测试发现，现有方法在移动相机和非平面场景下性能显著下降，而本方法在此挑战性场景中仍能稳定输出人体与相机位姿。  
+◆ 为复杂真实场景（如不平地面、动态视角）的物理可信人体运动分析提供了新解决方案。</td></tr>
+<tr><td>2025-07-23</td><td>CasP: Improving Semi-Dense Feature Matching Pipeline Leveraging Cascaded Correspondence Priors for Guidance</td><td>[2507.17312](http://arxiv.org/pdf/2507.17312)</td><td>◆ 提出CasP新流程，通过级联对应先验引导半稠密特征匹配，改进传统全局搜索方式，提升精度和效率。  
+◆ 将匹配过程分解为两个渐进阶段，中间引入基于区域的选择性交叉注意力机制，增强特征区分度。  
+◆ 在第二阶段将搜索范围限制在第一阶段识别的一对多先验区域，实现一对一匹配的精确定位。  
+◆ 结合高层特征降低低层特征提取计算成本，分辨率越高加速效果越显著（1152分辨率下比ELoFTR快2.2倍）。  
+◆ 实验证明其在几何估计（尤其是跨域泛化）方面具有优越性，适用于SLAM、无人机等高实时性高鲁棒性场景。</td></tr>
 <tr><td>2025-07-21</td><td>DiffPF: Differentiable Particle Filtering with Generative Sampling via Conditional Diffusion Models</td><td>[2507.15716](http://arxiv.org/pdf/2507.15716)</td><td>◆ DiffPF首次将条件扩散模型融入粒子滤波框架，实现了高质量的后验采样，显著提升了状态估计精度。  
 ◆ 相比传统可微分粒子滤波依赖预定义或低容量提议分布，DiffPF通过条件扩散模型学习灵活的采样器，直接生成等权粒子。  
 ◆ 该方法能够从复杂、高维、多模态的滤波分布中进行精确采样，克服了传统方法在复杂分布下的局限性。  
@@ -454,7 +465,7 @@
 ◆采用DUSt3R架构替代传统运动恢复结构（SfM）流程，显著提高了相机位姿估计的准确性。  
 ◆发布了一个包含合成和真实公共交通工具车辆的新数据集，支持方法的全面评估。  
 实验结果表明，该方法在多个基准测试中达到最先进性能，尤其在输入条件受限时仍能实现高质量重建。</td></tr>
-<tr><td>2025-07-16</td><td>Spatial Frequency Modulation for Semantic Segmentation</td><td>[2507.11893](http://arxiv.org/pdf/2507.11893)</td><td>◆ 提出空间频率调制（SFM）方法，通过在下采样前将高频特征调制到低频，上采样时再解调回来，有效解决语义分割中高频信息因下采样导致的混叠失真问题。  
+<tr><td>2025-07-23</td><td>Spatial Frequency Modulation for Semantic Segmentation</td><td>[2507.11893](http://arxiv.org/pdf/2507.11893)</td><td>◆ 提出空间频率调制（SFM）方法，通过在下采样前将高频特征调制到低频，上采样时再解调回来，有效解决语义分割中高频信息因下采样导致的混叠失真问题。  
 ◆ 设计自适应重采样（ARS）模块，通过密集采样高频区域来缩放信号，利用频率缩放特性降低高频成分的频率，实现高效调制。  
 ◆ 提出多尺度自适应上采样（MSAU）模块，通过非均匀上采样解调特征并恢复高频信息，同时利用多尺度密集与稀疏采样区域的交互增强分割精度。  
 ◆ 模块设计轻量且通用，可无缝集成到CNN和Transformer等多种架构中，扩展性强。  
@@ -614,6 +625,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-23</td><td>VLM-Guided Visual Place Recognition for Planet-Scale Geo-Localization</td><td>[2507.17455](http://arxiv.org/pdf/2507.17455)</td><td>◆ 提出了一种新型混合地理定位框架，结合了视觉语言模型（VLM）和检索式视觉地点识别（VPR）方法的优势。  
+◆ 利用VLM生成地理先验信息，有效缩小检索搜索空间，解决了传统检索方法在可扩展性和感知混淆上的不足。  
+◆ 设计了重排序机制，结合特征相似度和初始坐标邻近性，筛选地理合理性最高的匹配结果。  
+◆ 在多个地理定位基准测试中表现优异，尤其在街道级（提升4.51%）和城市级（提升13.52%）定位精度上显著超越现有方法。  
+◆ 通过VLM与VPR的结合，实现了可扩展、鲁棒且高精度的行星级地理定位系统，解决了单一方法存在的幻觉和可解释性问题。</td></tr>
+<tr><td>2025-07-23</td><td>Content-based 3D Image Retrieval and a ColBERT-inspired Re-ranking for Tumor Flagging and Staging</td><td>[2507.17412](http://arxiv.org/pdf/2507.17412)</td><td>◆ 提出了一种不依赖预分割数据和器官特异性数据集的CBIR框架，适用于临床中大型非结构化图像归档系统（如PACS）。  
+◆ 创新性地引入C-MIR方法，将ColBERT的上下文感知延迟交互机制适配于3D医学影像重排序，实现高效上下文感知检索。  
+◆ 在四种肿瘤部位上进行了全面评估，结合三种特征提取器和三种数据库配置，验证了方法的普适性。  
+◆ 研究发现C-MIR能自动定位感兴趣区域，无需数据预分割，显著降低了传统方法依赖昂贵数据增强的计算成本。  
+◆ 实验证明C-MIR在肿瘤标记（尤其结肠和肺癌）中性能显著提升（p&lt;0.05），并在肿瘤分期任务中展现出潜在应用价值。  
+◆ 该研究为先进检索技术在医疗实践中的落地提供了新思路，有望优化临床诊断流程。</td></tr>
 <tr><td>2025-07-20</td><td>LoopNet: A Multitasking Few-Shot Learning Approach for Loop Closure in Large Scale SLAM</td><td>[2507.15109](http://arxiv.org/pdf/2507.15109)</td><td>◆ 提出LoopNet，一种基于多任务学习的少样本学习方法，专门针对大规模SLAM中的闭环检测问题，兼顾精度与实时性需求。  
 ◆ 采用改进的ResNet架构，支持动态视觉数据集的在线重训练，并针对嵌入式设备进行优化，适应实际部署场景。  
 ◆ 创新性结合少样本学习策略，使模型能够快速适应新环境，同时输出查询索引和预测质量评估，增强系统可靠性。  
@@ -1001,6 +1023,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-23</td><td>CartoonAlive: Towards Expressive Live2D Modeling from Single Portraits</td><td>[2507.17327](http://arxiv.org/pdf/2507.17327)</td><td>◆ 提出CartoonAlive方法，首次实现从单张肖像照片快速生成高质量Live2D卡通模型，耗时不足30秒。  
+◆ 创新地将3D人脸建模中的形状基概念引入2D领域，构建适用于Live2D的面部混合形状系统。  
+◆ 通过面部关键点检测自动推断混合形状权重，无需人工干预即可实现高精度表情驱动。  
+◆ 采用分层分割技术模拟3D运动效果，在保持2D卡通风格的同时实现类似3D的实时动态操控。  
+◆ 相比传统3D建模方案大幅降低制作成本，相比2D视频方案显著提升交互灵活性。  
+◆ 为数字内容创作提供高效可扩展的解决方案，拓展了虚拟角色动画的应用场景。</td></tr>
+<tr><td>2025-07-21</td><td>Toward a Real-Time Framework for Accurate Monocular 3D Human Pose Estimation with Geometric Priors</td><td>[2507.16850](http://arxiv.org/pdf/2507.16850)</td><td>◆ 提出了一种实时单目3D人体姿态估计框架，结合2D关键点检测与几何感知的2D到3D提升技术，显著提升了在无约束环境下的性能。  
+◆ 显式利用相机内参和个性化解剖学先验知识，通过自校准和生物力学约束的反向运动学增强模型精度。  
+◆ 创新性地从动作捕捉和合成数据集中生成大规模合理的2D-3D训练对，解决了标注数据不足的问题。  
+◆ 框架无需专用硬件即可实现快速、个性化的高精度3D姿态估计，具有强部署适应性。  
+◆ 融合数据驱动学习与模型先验知识，在提升准确性的同时增强了模型的可解释性和边缘设备部署能力。</td></tr>
 <tr><td>2025-07-17</td><td>DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model</td><td>[2507.13145](http://arxiv.org/pdf/2507.13145)</td><td>◆ 提出DINO-VO系统，首次将视觉基础模型DINOv2的鲁棒语义特征应用于单目视觉里程计（VO），解决了传统学习型VO在泛化性和鲁棒性上的不足。  
 ◆ 针对DINOv2特征粒度粗糙的问题，设计了专用显著关键点检测器，有效提升稀疏特征匹配的精度。  
 ◆ 结合DINOv2的语义特征与细粒度几何特征，生成兼具鲁棒性和局部化能力的混合特征表示。  
@@ -1261,6 +1294,14 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-23</td><td>Exploring Active Learning for Label-Efficient Training of Semantic Neural Radiance Field</td><td>[2507.17351](http://arxiv.org/pdf/2507.17351)</td><td>这篇论文的核心贡献和创新点如下：
+
+◆ 提出将主动学习应用于语义神经辐射场（NeRF）的训练，以降低像素级标注的高成本。  
+◆ 研究了语义NeRF主动学习中的关键设计选择，包括选择粒度和选择策略。  
+◆ 创新性地提出了一种考虑3D几何约束的样本选择策略，提升了主动学习的效果。  
+◆ 通过实验证明，该方法能显著减少语义NeRF训练的标注成本，相比随机采样可降低2倍以上。  
+◆ 为语义场景理解的隐式神经表示提供了一种更高效的训练范式。  
+◆ 首次系统探索了主动学习在3D语义神经表示领域的应用潜力。</td></tr>
 <tr><td>2025-07-22</td><td>Sparse-View 3D Reconstruction: Recent Advances and Open Challenges</td><td>[2507.16406](http://arxiv.org/pdf/2507.16406)</td><td>◆ 该论文首次将稀疏视角3D重建领域的几何方法、神经隐式模型（如NeRF）和生成式方法（如扩散模型）纳入统一框架进行系统综述。  
 ◆ 深入分析了稀疏场景下几何正则化、显式形状建模和生成推理如何解决浮游伪影和位姿模糊等关键问题。  
 ◆ 对比了3D高斯泼溅等显式点云方法与神经隐式方法在精度、效率和泛化性方面的权衡关系。  
@@ -1563,4 +1604,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.23
+> 更新于: 2025.07.24
