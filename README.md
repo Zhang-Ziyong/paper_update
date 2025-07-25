@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.24)
+# 计算机视觉领域最新论文 (2025.07.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>G2S-ICP SLAM: Geometry-aware Gaussian Splatting ICP SLAM</td><td>[2507.18344](http://arxiv.org/pdf/2507.18344)</td><td>◆ 提出了一种基于几何感知的高斯泼溅SLAM系统（G2S-ICP SLAM），通过将场景元素表示为局部切平面约束的高斯分布，实现高保真3D重建和实时相机位姿跟踪。  
+◆ 创新性地将局部表面建模为与几何对齐的2D高斯圆盘，相比传统各向同性3D椭球表示，能更一致地处理多视角深度信息。  
+◆ 将表面对齐的高斯圆盘嵌入广义ICP框架，通过引入各向异性协方差先验，在不改变配准公式的前提下提升几何一致性。  
+◆ 提出几何感知损失函数，联合优化光度、深度和法向一致性，进一步提升重建和跟踪精度。  
+◆ 系统在Replica和TUM-RGBD数据集上验证，在定位精度、重建完整性和渲染质量上均优于现有SLAM方法，同时保持实时性。</td></tr>
 <tr><td>2025-07-23</td><td>Physics-based Human Pose Estimation from a Single Moving RGB Camera</td><td>[2507.17406](http://arxiv.org/pdf/2507.17406)</td><td>◆ 提出了首个非合成的真实数据集MoviCam，包含动态移动的单目RGB相机轨迹、场景几何和3D人体运动数据，并标注了人-场景接触信息，填补了现有数据集的空白。  
 ◆ 开发了PhysDynPose方法，首次将场景几何和物理约束整合到基于物理的人体姿态跟踪中，显著提升了移动相机和非平面场景下的跟踪精度。  
 ◆ 结合了先进运动学估计器和鲁棒SLAM技术，实现了世界坐标系下人体姿态与相机轨迹的同步恢复，解决了动态相机带来的参考系漂移问题。  
@@ -629,6 +634,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>DSFormer: A Dual-Scale Cross-Learning Transformer for Visual Place Recognition</td><td>[2507.18444](http://arxiv.org/pdf/2507.18444)</td><td>◆ 提出DSFormer双尺度交叉学习Transformer模块，通过双向信息传递整合CNN最后两层的双尺度特征，同时捕捉语义丰富性和空间细节。  
+◆ 设计自注意力机制处理单尺度内的长程依赖关系，并引入共享交叉注意力实现跨尺度学习，增强特征表示能力。  
+◆ 创新性地提出多视角块聚类策略，重构SF-XL训练数据集的分区方式，优化数据组织以提升对视角变化的鲁棒性。  
+◆ 结合上述技术，生成适应环境变化的鲁棒全局嵌入表征，相比先前分区方法减少约30%训练数据需求。  
+◆ 仅使用512维全局描述符即实现全局检索，在多数基准数据集上超越DELG、Patch-NetVLAD等先进方法，达到SOTA性能。  
+◆ 显著提升计算效率，为视觉地点识别任务提供高效解决方案。</td></tr>
 <tr><td>2025-07-23</td><td>VLM-Guided Visual Place Recognition for Planet-Scale Geo-Localization</td><td>[2507.17455](http://arxiv.org/pdf/2507.17455)</td><td>◆ 提出了一种新型混合地理定位框架，结合了视觉语言模型（VLM）和检索式视觉地点识别（VPR）方法的优势。  
 ◆ 利用VLM生成地理先验信息，有效缩小检索搜索空间，解决了传统检索方法在可扩展性和感知混淆上的不足。  
 ◆ 设计了重排序机制，结合特征相似度和初始坐标邻近性，筛选地理合理性最高的匹配结果。  
@@ -1029,6 +1040,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出了一种新型3D跨模态关键点描述符，专门用于解决MRI与实时超声(iUS)之间的配准难题，克服了两种模态在外观、分辨率和视野上的显著差异。  
+◆采用患者特异性的合成匹配方法，从术前MRI生成合成iUS体积，通过监督对比学习训练共享描述符空间，增强了跨模态匹配能力。  
+◆设计了基于概率的关键点检测策略，能够识别解剖学显著且模态一致的位置，提高了关键点的可靠性和一致性。  
+◆在训练阶段引入课程式三元组损失和动态难负样本挖掘，使描述符对iUS伪影（如斑点噪声和有限覆盖）具有鲁棒性，同时保持旋转不变性。  
+◆在推理阶段，通过稀疏匹配实现刚性配准，无需人工初始化，且在ReMIND数据集上验证了其优越性，平均匹配精度达69.8%，配准误差低至2.39 mm。  
+◆相比现有方法，该框架具有可解释性，对iUS视野变化表现出强鲁棒性，代码已开源，便于进一步研究和应用。</td></tr>
 <tr><td>2025-07-23</td><td>CartoonAlive: Towards Expressive Live2D Modeling from Single Portraits</td><td>[2507.17327](http://arxiv.org/pdf/2507.17327)</td><td>◆ 提出CartoonAlive方法，首次实现从单张肖像照片快速生成高质量Live2D卡通模型，耗时不足30秒。  
 ◆ 创新地将3D人脸建模中的形状基概念引入2D领域，构建适用于Live2D的面部混合形状系统。  
 ◆ 通过面部关键点检测自动推断混合形状权重，无需人工干预即可实现高精度表情驱动。  
@@ -1159,6 +1176,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出了一种新型3D跨模态关键点描述符，用于解决MRI与实时超声(iUS)之间的配准难题，克服了模态间外观、分辨率和视野差异大的问题。  
+◆采用患者特异性的&quot;合成匹配&quot;方法，从术前MRI生成合成iUS体积，实现了有监督对比学习的共享描述符空间训练。  
+◆开发了概率关键点检测策略，能够识别解剖学显著且模态一致的特征位置，提高了匹配的准确性。  
+◆在训练阶段使用基于课程的三元组损失函数和动态难负样本挖掘技术，使描述符具有抗iUS伪影(如斑点噪声)和旋转不变性的特点。  
+◆整个框架具有可解释性，无需人工初始化，对iUS视野变化表现出强鲁棒性，在ReMIND数据集上达到69.8%的平均匹配精度和2.39mm的配准误差。  
+◆相比现有方法，该方案首次实现了从关键点匹配到刚性配准的完整流程，在临床实际应用中更具实用价值。</td></tr>
 <tr><td>2025-07-22</td><td>A Single-step Accurate Fingerprint Registration Method Based on Local Feature Matching</td><td>[2507.16201](http://arxiv.org/pdf/2507.16201)</td><td>◆ 提出了一种端到端的单步指纹配准算法，直接通过预测两幅指纹图像之间的半密集匹配点对应关系来实现对齐，避免了传统两步法的复杂性。  
 ◆ 解决了低质量指纹图像因特征点数量不足导致的初始配准失败问题，提高了配准的鲁棒性和成功率。  
 ◆ 创新性地结合全局-局部注意力机制，实现了两幅指纹图像之间的端到端像素级对齐，提升了配准精度。  
@@ -1304,6 +1327,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>High-fidelity 3D Gaussian Inpainting: preserving multi-view consistency and photorealistic details</td><td>[2507.18023](http://arxiv.org/pdf/2507.18023)</td><td>◆ 提出首个基于3D高斯泼溅(3DGS)的高保真三维修复框架，通过稀疏修复视图重建完整三维场景  
+◆ 设计自动掩膜优化流程，结合高斯场景过滤与反向投影技术，精准定位遮挡区域并实现逼真边界修复  
+◆ 创新性开发区域级不确定性引导优化策略，通过多视角重要性评估缓解视角不一致问题  
+◆ 实现细粒度优化机制，显著提升修复结果中高频细节的保真度与真实感  
+◆ 在多样化数据集上的实验表明，本方法在视觉质量和多视角一致性方面均超越现有最优技术  
+该工作解决了三维场景修复中视角不一致和细节失真的核心难题，为三维内容创作提供了新工具。</td></tr>
 <tr><td>2025-07-23</td><td>Exploring Active Learning for Label-Efficient Training of Semantic Neural Radiance Field</td><td>[2507.17351](http://arxiv.org/pdf/2507.17351)</td><td>这篇论文的核心贡献和创新点如下：
 
 ◆ 提出将主动学习应用于语义神经辐射场（NeRF）的训练，以降低像素级标注的高成本。  
@@ -1616,4 +1645,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.24
+> 更新于: 2025.07.25
