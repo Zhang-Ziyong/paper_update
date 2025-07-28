@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.27)
+# 计算机视觉领域最新论文 (2025.07.28)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,34 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM，一种基于DINO特征的设计策略，用于增强SLAM系统中神经隐式（NeRF）和显式（3DGS）表示的场景建模能力。  
+◆ 设计场景结构编码器（SSE），将DINO特征升级为增强版EDINO，以捕捉场景的层次化元素及其结构关系。  
+◆ 提出两种基于EDINO特征的基础范式，分别集成到NeRF和3DGS的SLAM系统中，提升场景表示的全面性。  
+◆ 在Replica、ScanNet和TUM数据集上验证了方法的优越性，性能超越现有最先进技术。  
+◆ 通过融合DINO特征，解决了传统SLAM系统在复杂场景中细节捕捉和结构关系建模的不足。</td></tr>
+<tr><td>2025-07-25</td><td>The Eloquence team submission for task 1 of MLC-SLM challenge</td><td>[2507.19308](http://arxiv.org/pdf/2507.19308)</td><td>这篇论文针对MLC-SLM挑战赛任务1，提出了多语言会话语音识别的创新方法，核心贡献如下：
+
+◆ 评估了官方基线模型的性能，通过训练线性投影器和qformer两种投影器，结合不同基础模型，系统分析了基线的优势与局限。
+
+◆ 利用SLAM-ASR框架训练了自定义的多语言线性投影器，优化了模型在多语言场景下的适应性。
+
+◆ 探索了对比学习在提升语音识别鲁棒性中的作用，通过对比学习机制增强了模型对多样化语音输入的识别能力。
+
+◆ 研究了扩展会话上下文对识别效果的影响，验证了长上下文信息在改善会话语音识别性能方面的有效性。
+
+◆ 综合三种方法，为构建更强大的多语言会话语音识别系统提供了实践指导和理论支持。</td></tr>
+<tr><td>2025-07-25</td><td>SmartPNT-MSF: A Multi-Sensor Fusion Dataset for Positioning and Navigation Research</td><td>[2507.19079](http://arxiv.org/pdf/2507.19079)</td><td>◆ 提出SmartPNT-MSF多源融合数据集，整合GNSS、IMU、光学相机和激光雷达等多传感器数据，弥补现有数据集在传感器多样性上的不足。  
+◆ 详细记录数据集构建过程，包括传感器配置、坐标系定义及相机与激光雷达标定流程，确保数据的一致性和可复现性。  
+◆ 设计标准化数据采集与处理框架，支持大规模分析并具备可扩展性，为多传感器融合研究提供结构化基础。  
+◆ 通过VINS-Mono、LIO-SAM等先进SLAM算法验证数据集的实用性，证明其适用于高精度导航与定位算法开发。  
+◆ 覆盖城市、校园、隧道及郊区等多种真实场景，增强复杂环境下的导航技术研究能力，填补环境多样性空白。  
+◆ 公开高质量数据集，促进导航领域算法测试与比较，推动多传感器融合技术的创新与发展。</td></tr>
+<tr><td>2025-07-25</td><td>A Fast and Light-weight Non-Iterative Visual Odometry with RGB-D Cameras</td><td>[2507.18886](http://arxiv.org/pdf/2507.18886)</td><td>◆ 提出了一种解耦的非迭代视觉里程计方法，将6自由度位姿估计分为旋转和平移两步计算，避免了传统迭代优化带来的计算负担。  
+◆ 利用场景中的重叠平面特征直接计算旋转矩阵，简化了旋转估计过程，提高了计算效率。  
+◆ 采用核互相关器(KCC)计算平移量，省去了传统方法中特征提取与匹配的耗时步骤。  
+◆ 整个流程无需迭代优化，在低端i5 CPU上实现了71Hz的高实时性能，显著提升了计算效率。  
+◆ 不依赖特征点的特性使算法在低纹理或退化环境中表现优于现有先进方法，鲁棒性更强。  
+◆ 通过分离旋转与平移估计并利用平面特征，在保持轻量级的同时实现了快速位姿估计。</td></tr>
 <tr><td>2025-07-24</td><td>G2S-ICP SLAM: Geometry-aware Gaussian Splatting ICP SLAM</td><td>[2507.18344](http://arxiv.org/pdf/2507.18344)</td><td>◆ 提出了一种基于几何感知的高斯泼溅SLAM系统（G2S-ICP SLAM），通过将场景元素表示为局部切平面约束的高斯分布，实现高保真3D重建和实时相机位姿跟踪。  
 ◆ 创新性地将局部表面建模为与几何对齐的2D高斯圆盘，相比传统各向同性3D椭球表示，能更一致地处理多视角深度信息。  
 ◆ 将表面对齐的高斯圆盘嵌入广义ICP框架，通过引入各向异性协方差先验，在不改变配准公式的前提下提升几何一致性。  
@@ -1034,6 +1062,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>Cross Spatial Temporal Fusion Attention for Remote Sensing Object Detection via Image Feature Matching</td><td>[2507.19118](http://arxiv.org/pdf/2507.19118)</td><td>◆提出跨时空融合注意力机制(CSTF)，通过独立检测参考图像和查询图像中的尺度不变关键点来增强特征表示，解决多模态遥感图像间几何和辐射差异大的问题。  
+◆创新性地构建对应关系图，同时利用多个图像区域的信息，有效捕捉跨模态相似性，克服传统全连接层特征提取的局限性。  
+◆将相似性匹配重新定义为分类任务，结合SoftMax和全卷积网络(FCN)层，在保持局部特征敏感性的同时整合全局上下文信息。  
+◆在HRSC2016和DOTA基准数据集上实现目标检测任务的最优性能，平均mAP分别达到90.99%和90.86%，显著超越现有模型。  
+◆保持12.5 FPS的推理速度，证明该方法在提升精度的同时具备实际应用的高效性。  
+◆验证了改进的跨模态特征匹配能直接提升遥感目标检测等下游任务性能，为多模态遥感分析提供新思路。</td></tr>
 <tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出了一种新型3D跨模态关键点描述符，专门用于解决MRI与实时超声(iUS)之间的配准难题，克服了两种模态在外观、分辨率和视野上的显著差异。  
 ◆采用患者特异性的合成匹配方法，从术前MRI生成合成iUS体积，通过监督对比学习训练共享描述符空间，增强了跨模态匹配能力。  
 ◆设计了基于概率的关键点检测策略，能够识别解剖学显著且模态一致的位置，提高了关键点的可靠性和一致性。  
@@ -1168,6 +1202,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>Cross Spatial Temporal Fusion Attention for Remote Sensing Object Detection via Image Feature Matching</td><td>[2507.19118](http://arxiv.org/pdf/2507.19118)</td><td>◆提出跨时空融合注意力机制(CSTF)，通过独立检测参考图和查询图中的尺度不变关键点来增强特征表示，解决多模态遥感图像间几何和辐射差异大的问题。  
+◆创新性地构建对应图，同时利用多图像区域信息，提升跨模态特征匹配能力。  
+◆将相似性匹配重新定义为分类任务，结合SoftMax和全卷积网络(FCN)层，兼顾局部特征敏感性和全局上下文信息。  
+◆在HRSC2016和DOTA基准数据集上实现目标检测任务的最优性能，平均mAP分别达到90.99%和90.86%。  
+◆保持12.5 FPS的推理速度，验证了算法的高效性和实用性。  
+◆首次证明改进的跨模态特征匹配能直接提升遥感下游任务（如目标检测）的性能。</td></tr>
 <tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出了一种新型3D跨模态关键点描述符，用于解决MRI与实时超声(iUS)之间的配准难题，克服了模态间外观、分辨率和视野差异大的问题。  
 ◆采用患者特异性的&quot;合成匹配&quot;方法，从术前MRI生成合成iUS体积，实现了有监督对比学习的共享描述符空间训练。  
 ◆开发了概率关键点检测策略，能够识别解剖学显著且模态一致的特征位置，提高了匹配的准确性。  
@@ -1317,6 +1357,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM框架，通过DINO特征增强神经隐式（NeRF）和显式（3DGS）SLAM系统的场景表示能力。  
+◆ 设计场景结构编码器（SSE），将原始DINO特征升级为增强版EDINO，有效捕捉场景层次结构和元素间关系。  
+◆ 开发两种基于EDINO的SLAM范式，分别针对NeRF和3DGS实现端到端优化，提升系统鲁棒性。  
+◆ 在Replica、ScanNet和TUM数据集上验证性能，超越现有最优方法，证明通用场景适应能力。  
+◆ 首次将DINO语义先验与几何重建结合，为动态/弱纹理场景提供更全面的表示方案。</td></tr>
+<tr><td>2025-07-25</td><td>Fast Learning of Non-Cooperative Spacecraft 3D Models through Primitive Initialization</td><td>[2507.19459](http://arxiv.org/pdf/2507.19459)</td><td>◆ 提出基于CNN的3D高斯泼溅（3DGS）初始化方法，仅需单目图像即可生成粗糙3D模型和目标姿态，解决了传统方法依赖多视角精确姿态的问题。  
+◆ 开发支持噪声或隐式姿态估计的训练流程，突破NeRF/3DGS在太空场景中必须依赖精确姿态的限制。  
+◆ 通过分析不同初始化变体，显著降低高精度3D模型的训练成本，所需训练迭代次数和输入图像数量减少至少一个数量级。  
+◆ CNN模块集成多种姿态估计技术变体，为不同应用场景提供灵活性，并在噪声姿态条件下验证了有效性。  
+◆ 实验证明即使使用不完美的姿态监督，该框架仍能学习高保真3D表示，为太空应用中的新视角合成技术铺平道路。</td></tr>
+<tr><td>2025-07-25</td><td>NerT-CA: Efficient Dynamic Reconstruction from Sparse-view X-ray Coronary Angiography</td><td>[2507.19328](http://arxiv.org/pdf/2507.19328)</td><td>◆ NerT-CA提出了一种混合神经张量表示方法，结合神经场与张量场优势，显著提升稀疏视角X射线冠状动脉造影（CA）的动态4D重建效率。  
+◆ 通过将CA场景分解为低秩静态成分（张量场）与动态稀疏成分（神经场），解决了传统方法依赖MLP导致训练耗时过长的问题。  
+◆ 该方法在仅需3个造影视角下即可实现高质量重建，突破了稀疏视图重建的临床实用性瓶颈。  
+◆ 创新性地利用低秩先验加速静态背景建模，同时保留神经场对血管动态细节的捕捉能力，兼顾速度与精度。  
+◆ 在4D仿真数据集上定量与定性验证显示，其训练速度与重建精度均超越现有NeRF-based方法，为临床实时应用提供可能。</td></tr>
+<tr><td>2025-07-24</td><td>SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time</td><td>[2507.18713](http://arxiv.org/pdf/2507.18713)</td><td>◆ 提出SaLF（稀疏局部场）新型体素表示方法，将场景表示为稀疏3D体素集合，每个体素包含局部隐式场，兼具栅格化和光线追踪能力。  
+◆ 突破现有技术限制，首次实现同时支持非针孔相机和旋转激光雷达的高效渲染（相机50+ FPS，LiDAR 600+ FPS）。  
+◆ 采用自适应剪枝与致密化策略，无需预处理即可动态优化大场景表示，显著提升可扩展性。  
+◆ 解耦场景表示与渲染流程，支持多种传感器统一框架，克服了NeRF和3D高斯泼溅的互操作性缺陷。  
+◆ 实现快速训练（&lt;30分钟）与实时渲染，在保持自动驾驶传感器仿真真实性的同时，效率远超传统NeRF方法。  
+◆ 为多传感器自动驾驶测试提供首个兼顾高保真度与高效率的仿真方案，推动规模化虚拟测试发展。</td></tr>
 <tr><td>2025-07-24</td><td>High-fidelity 3D Gaussian Inpainting: preserving multi-view consistency and photorealistic details</td><td>[2507.18023](http://arxiv.org/pdf/2507.18023)</td><td>◆ 提出首个基于3D高斯泼溅(3DGS)的高保真三维修复框架，通过稀疏修复视图重建完整三维场景  
 ◆ 设计自动掩膜优化流程，结合高斯场景过滤与反向投影技术，精准定位遮挡区域并实现逼真边界修复  
 ◆ 创新性开发区域级不确定性引导优化策略，通过多视角重要性评估缓解视角不一致问题  
@@ -1633,4 +1694,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.27
+> 更新于: 2025.07.28
