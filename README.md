@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.28)
+# 计算机视觉领域最新论文 (2025.07.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-28</td><td>$S^3$LAM: Surfel Splatting SLAM for Geometrically Accurate Tracking and Mapping</td><td>[2507.20854](http://arxiv.org/pdf/2507.20854)</td><td>◆ 提出S³LAM系统，采用2D面元（surfel）作为基本表示单元，替代传统3D高斯椭球体，实现更高效的场景几何建模。  
+◆ 创新性地利用2D高斯面元进行场景表面重建，显著提升几何精度，同时优化跟踪与建图性能。  
+◆ 设计自适应表面渲染策略，解决SLAM在有限视角下的实时优化问题，兼顾计算效率与建图准确性。  
+◆ 直接从2D面元渲染公式推导相机位姿雅可比矩阵，凸显几何精确表示对跟踪收敛性的关键作用。  
+◆ 在合成与真实数据集上验证了S³LAM的优越性，性能达到当前最优水平。</td></tr>
+<tr><td>2025-07-28</td><td>Large-Scale LiDAR-Inertial Dataset for Degradation-Robust High-Precision Mapping</td><td>[2507.20516](http://arxiv.org/pdf/2507.20516)</td><td>◆ 提出首个大规模、高精度的LiDAR-惯性里程计（LIO）数据集，填补现有研究在复杂真实场景中验证不足的空白。  
+◆ 数据集覆盖四种多样化真实环境（6万至75万平方米），通过定制背包式平台采集，集成多线激光雷达、工业级IMU和RTK-GNSS模块。  
+◆ 提供长轨迹、复杂场景和高精度真值，结合SLAM优化与RTK-GNSS锚定技术生成，并通过倾斜摄影与RTK-GNSS融合验证轨迹精度。  
+◆ 首次在数据集中融合多传感器冗余数据（如LiDAR-IMU-RTK），支持退化场景（如隧道、植被）下的鲁棒性评估。  
+◆ 为高精度地图构建任务提供标准化基准，重点验证LIO系统在实际场景中的泛化能力与退化适应性。</td></tr>
+<tr><td>2025-07-26</td><td>DOA: A Degeneracy Optimization Agent with Adaptive Pose Compensation Capability based on Deep Reinforcement Learning</td><td>[2507.19742](http://arxiv.org/pdf/2507.19742)</td><td>◆ 提出基于近端策略优化（PPO）的自适应退化优化智能体（DOA），通过深度强化学习解决SLAM在长直走廊等退化环境中的定位问题。  
+◆ 设计系统性方法解决传统监督学习的三大挑战：退化数据集获取瓶颈、训练样本质量下降问题以及标注协议设计的模糊性。  
+◆ 开发专用奖励函数，引导智能体学习退化环境感知能力，并基于退化因子动态调整不同传感器对位姿优化的贡献权重。  
+◆ 提出线性插值公式控制观测分布向运动模型分布的偏移步长，实现位姿补偿的自适应调整。  
+◆ 引入迁移学习模块提升智能体跨环境泛化能力，解决退化环境中训练效率低下的问题。  
+◆ 通过消融实验验证模型设计合理性，并证明DOA在多种环境中优于现有方法的退化检测与优化性能。</td></tr>
 <tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM，一种基于DINO特征的设计策略，用于增强SLAM系统中神经隐式（NeRF）和显式（3DGS）表示的场景建模能力。  
 ◆ 设计场景结构编码器（SSE），将DINO特征升级为增强版EDINO，以捕捉场景的层次化元素及其结构关系。  
 ◆ 提出两种基于EDINO特征的基础范式，分别集成到NeRF和3DGS的SLAM系统中，提升场景表示的全面性。  
@@ -453,6 +469,14 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-27</td><td>RESCUE: Crowd Evacuation Simulation via Controlling SDM-United Characters</td><td>[2507.20117](http://arxiv.org/pdf/2507.20117)</td><td>这篇论文的核心贡献是提出了一种实时3D人群疏散模拟框架RESCUE，通过模拟人类感知-决策-运动（SDM）流程来提升疏散仿真的真实性和动态适应性。  
+
+◆ 提出基于SDM流程的仿真框架，首次将3D自适应社会力模型（SFM）决策机制与个性化步态控制运动模块结合，实现更符合人类行为逻辑的疏散模拟。  
+◆ 引入动态群体感知机制，支持多智能体并行运动，能适应不同地形和场景需求，突破了传统模型对复杂环境适应性的限制。  
+◆ 开发个性化步态控制模块，通过考虑个体体型差异和地形影响，首次实现疏散过程中个体运动特征的差异化模拟。  
+◆ 创新提出部件级受力可视化技术，为疏散分析提供直观的力学交互数据支持，辅助安全策略优化。  
+◆ 实验证明该框架支持动态路径规划和实时行为调整，在崎岖地形中仍能生成视觉可信、符合现实的疏散动画。  
+◆ 开源代码并验证了方法在真实性和实用性上的优势，为公共安全领域提供了新的仿真分析工具。</td></tr>
 <tr><td>2025-07-22</td><td>Sparse-View 3D Reconstruction: Recent Advances and Open Challenges</td><td>[2507.16406](http://arxiv.org/pdf/2507.16406)</td><td>◆ 该论文首次将稀疏视角3D重建领域的几何方法、神经隐式模型（如NeRF）和生成式方法（如扩散模型）纳入统一框架进行系统分析。  
 ◆ 重点对比了不同方法在几何正则化、显式形状建模和生成推理方面的创新，揭示了它们在解决稀疏视角下浮游伪影和位姿模糊问题上的独特优势。  
 ◆ 提出当前方法在标准基准测试中面临的核心权衡：重建精度、计算效率和泛化能力之间的相互制约关系。  
@@ -662,6 +686,28 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-28</td><td>Exploring text-to-image generation for historical document image retrieval</td><td>[2507.20934](http://arxiv.org/pdf/2507.20934)</td><td>◆ 提出T2I-QBE新方法，首次将文本生成图像（T2I）技术应用于文档图像检索（DIR）领域，填补了基于属性检索（ABDIR）与基于示例检索（QBE）之间的技术鸿沟。  
+◆ 利用生成式AI（Leonardo.Ai）将文本提示（包含文档类型描述和ABDIR风格属性列表）转化为查询图像，无需用户提供真实查询样本，解决了QBE依赖现有样本的局限性。  
+◆ 针对历史文档的视觉多样性和独特性设计检索方案，通过CNN提取生成图像与数据集中文档的特征进行相似度匹配，验证了生成图像作为查询的有效性。  
+◆ 在HisIR19历史文档数据集上的实验证明，该方法能够成功检索相关文档，为无样本场景下的文档检索提供了可行解决方案。  
+◆ 首次探索了T2I生成技术与传统QBE范式的结合，为DIR领域开辟了基于生成模型的新研究方向。</td></tr>
+<tr><td>2025-07-28</td><td>PixelNav: Towards Model-based Vision-Only Navigation with Topological Graphs</td><td>[2507.20892](http://arxiv.org/pdf/2507.20892)</td><td>◆ 提出了一种结合深度学习与经典模型规划算法的混合视觉导航方法，突破了纯端到端数据驱动模型的局限性。  
+◆ 采用分层系统架构，整合了模型预测控制、可通行性估计、视觉地点识别和位姿估计等多项前沿技术。  
+◆ 创新性地使用拓扑图作为环境表征，显著提升了系统的可扩展性和环境适应能力。  
+◆ 相比端到端方案，该系统具有更高的可解释性，解决了黑箱模型在机器人应用中的关键瓶颈。  
+◆ 通过大量真实场景实验验证了方法的有效性，为视觉导航提供了新的技术路径。  
+◆ 在减少训练数据依赖的同时，保持了数据驱动方法的灵活性和适应性优势。</td></tr>
+<tr><td>2025-07-28</td><td>ZSE-Cap: A Zero-Shot Ensemble for Image Retrieval and Prompt-Guided Captioning</td><td>[2507.20564](http://arxiv.org/pdf/2507.20564)</td><td>◆ 提出ZSE-Cap系统，在EVENTA竞赛中无需微调即获得第四名，展示了零样本学习的强大能力。  
+◆ 创新性地集成CLIP、SigLIP和DINOv2三种模型的相似度分数，提升图像检索性能。  
+◆ 通过精心设计的提示词引导Gemma 3模型，实现文章高层事件与图像视觉内容的关联生成描述。  
+◆ 结合基础模型的集成和提示技术，在私有测试集上取得0.42002的高分，验证了方法的有效性。  
+◆ 提供开源代码，促进零样本图像检索与描述生成领域的进一步研究。</td></tr>
+<tr><td>2025-07-28</td><td>Uni-Mapper: Unified Mapping Framework for Multi-modal LiDARs in Complex and Dynamic Environments</td><td>[2507.20538](http://arxiv.org/pdf/2507.20538)</td><td>◆ Uni-Mapper提出首个动态感知的多模态LiDAR地图统一框架，解决复杂动态环境中多传感器地图融合的难题。  
+◆ 采用基于体素自由空间哈希的粗到细动态物体剔除方法，通过时序占用不一致性检测并移除动态对象，提升场景一致性。  
+◆ 创新设计动态感知的闭环检测模块，结合保留的静态局部特征生成全局描述符，增强动态环境下的地点识别鲁棒性。  
+◆ 提出集中式锚节点策略优化位姿图，有效解决地图合并时的会话内漂移误差和跨地图闭环问题。  
+◆ 框架支持异构LiDAR（如机械式与固态雷达）的跨模态匹配，在公开数据集上显著优于现有方法。  
+◆ 实现端到端的多地图对齐流程，包含动态处理、闭环检测与多阶段位姿图优化，适用于多机器人协作场景。</td></tr>
 <tr><td>2025-07-24</td><td>DSFormer: A Dual-Scale Cross-Learning Transformer for Visual Place Recognition</td><td>[2507.18444](http://arxiv.org/pdf/2507.18444)</td><td>◆ 提出DSFormer双尺度交叉学习Transformer模块，通过双向信息传递整合CNN最后两层的双尺度特征，同时捕捉语义丰富性和空间细节。  
 ◆ 设计自注意力机制处理单尺度内的长程依赖关系，并引入共享交叉注意力实现跨尺度学习，增强特征表示能力。  
 ◆ 创新性地提出多视角块聚类策略，重构SF-XL训练数据集的分区方式，优化数据组织以提升对视角变化的鲁棒性。  
@@ -1114,7 +1160,7 @@
 ◆通过特征金字塔和一致性匹配机制，实现了高效且轻量化的关键点检测与匹配流程。  
 ◆在实验中对比了传统手工方法和现代学习方法，验证了该方法的有效性和实用性。  
 ◆为几何计算机视觉任务提供了一种更简洁、更高效的解决方案，尤其适合资源受限的应用场景。</td></tr>
-<tr><td>2025-07-11</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
+<tr><td>2025-07-27</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
 ◆ 设计跨模态嵌入学习机制，有效桥接草图与真实图像之间的模态差异，实现草图到关键点的精准映射。  
 ◆ 引入网格化定位器（grid-based locator）增强空间感知能力，结合原型网络优化关键点定位精度。  
 ◆ 创新性采用原型域适应技术（prototypical domain adaptation），自适应消除用户手绘风格的个体差异，提升模型泛化性。  
@@ -1367,6 +1413,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-27</td><td>NeuroVoxel-LM: Language-Aligned 3D Perception via Dynamic Voxelization and Meta-Embedding</td><td>[2507.20110](http://arxiv.org/pdf/2507.20110)</td><td>◆ NeuroVoxel-LM提出了一种结合神经辐射场（NeRF）的动态体素化与轻量级元嵌入的新框架，解决了现有3D语言模型处理稀疏大规模点云时效率低和表示精度不足的问题。  
+◆ 创新性地设计了动态分辨率多尺度体素化（DR-MSV）技术，根据几何和结构复杂度自适应调整体素粒度，在降低计算成本的同时保持重建保真度。  
+◆ 提出了基于注意力加权和残差融合的轻量级元嵌入机制（TAP-LME），通过令牌级自适应池化增强语义表示能力，优于传统最大池化方法。  
+◆ DR-MSV显著提升了点云特征提取的效率和精度，尤其适用于大范围复杂场景的快速处理。  
+◆ TAP-LME机制能够从NeRF权重中捕获细粒度语义信息，为语言驱动的3D感知任务提供了更丰富的特征表示。  
+◆ 实验结果表明，该框架在3D场景理解任务中实现了性能突破，为语言对齐的3D感知研究开辟了新方向。</td></tr>
 <tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM框架，通过DINO特征增强神经隐式（NeRF）和显式（3DGS）SLAM系统的场景表示能力。  
 ◆ 设计场景结构编码器（SSE），将原始DINO特征升级为增强版EDINO，有效捕捉场景层次结构和元素间关系。  
 ◆ 开发两种基于EDINO的SLAM范式，分别针对NeRF和3DGS实现端到端优化，提升系统鲁棒性。  
@@ -1706,4 +1758,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.28
+> 更新于: 2025.07.29
