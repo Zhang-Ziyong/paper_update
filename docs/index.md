@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.30)
+# 计算机视觉领域最新论文 (2025.07.31)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态与跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR），指出后者在跨模态鲁棒性和适应性上的显著优势。  
+◆ 重点介绍了模态感知技术进展，包括针对深度图像的几何与深度专用描述子、3D点云的稀疏与稠密学习方法、LiDAR扫描的注意力增强神经网络，以及医学图像匹配的MIND描述子等创新方案。  
+◆ 深入探讨跨模态应用场景，如医学图像配准和视觉-语言任务，揭示了特征匹配技术处理多样化数据交互的最新发展趋势。  
+◆ 强调检测器无关的深度学习方法（如基于CNN和Transformer的模型）对跨模态匹配性能的提升，为未来研究提供了重要方向。</td></tr>
+<tr><td>2025-07-30</td><td>UAVScenes: A Multi-Modal Dataset for UAVs</td><td>[2507.22412](http://arxiv.org/pdf/2507.22412)</td><td>◆ 提出了首个支持多模态（相机图像和LiDAR点云）帧级标注的大规模无人机数据集UAVScenes，填补了现有数据集仅支持定位或地图级语义分割的空白。  
+◆ 基于MARS-LVIG数据集进行升级，新增了人工标注的逐帧图像和点云语义标签，以及高精度6自由度位姿数据，显著提升了数据实用性。  
+◆ 首次支持无人机场景下的多任务联合评测，包括分割、深度估计、6-DoF定位、地点识别和新视角合成（NVS）等高级感知任务。  
+◆ 通过严格的传感器标定和同步，确保多模态数据的时间-空间对齐，为跨模态融合研究提供可靠基准。  
+◆ 开源数据集并设计标准化评测协议，推动无人机多模态感知领域的算法发展和公平比较。</td></tr>
 <tr><td>2025-07-29</td><td>Impact of Underwater Image Enhancement on Feature Matching</td><td>[2507.21715](http://arxiv.org/pdf/2507.21715)</td><td>◆ 提出了局部匹配稳定性和最远可匹配帧数两项量化指标，专门用于评估水下图像增强效果。  
 ◆ 针对水下环境特有的光吸收、散射、生物附着等退化问题，设计了面向增强技术的帧匹配性能评估框架。  
 ◆ 通过度量分析揭示了现有方法的优势与局限，首次指出其在真实场景适用性评估方面的不足。  
@@ -34,7 +44,7 @@
 ◆ 通过TUM RGB-D数据集的广泛实验验证，证明了该方法在挑战性动态场景中的优越性能。  
 ◆ 结合当前帧质量与场景变化评估，提供了一种更全面的动态环境SLAM稳定性判断方法。  
 ◆ 提出的姿态优化策略为动态环境下的SLAM系统提供了有效的误差校正机制。</td></tr>
-<tr><td>2025-07-29</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 提出了一种针对地下隧道环境的去中心化多机器人LiDAR SLAM系统，分析了现有技术的局限性。  
+<tr><td>2025-07-30</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 提出了一种针对地下隧道环境的去中心化多机器人LiDAR SLAM系统，分析了现有技术的局限性。  
 ◆ 发现当前闭环检测存在大量误报问题，这是导致系统失败的主要原因。  
 ◆ 开发了一种新的启发式方法，有效减少了闭环检测中的误报情况。  
 ◆ 在地下隧道这一极具挑战性的环境中验证了所提方法的有效性。  
@@ -699,6 +709,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态与跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述符）与深度学习方法（如SuperPoint和LoFTR）的优劣，指出后者在跨模态鲁棒性和适应性上的显著提升。  
+◆ 重点介绍了模态感知技术进展，包括针对深度图像的几何与深度专用描述符、3D点云的稀疏与稠密学习方法、LiDAR扫描的注意力增强神经网络，以及医学图像匹配的MIND描述符等创新方案。  
+◆ 深入探讨跨模态应用场景，如医学图像配准和视觉-语言任务，揭示了特征匹配技术在处理多样化数据交互中的关键作用与发展趋势。  
+◆ 系统总结了当前挑战与未来方向，为跨模态特征匹配的研究提供了清晰的路线图，推动该领域向更复杂、更实用的场景拓展。</td></tr>
 <tr><td>2025-07-29</td><td>Adversarial Reconstruction Feedback for Robust Fine-grained Generalization</td><td>[2507.21742](http://arxiv.org/pdf/2507.21742)</td><td>◆ 提出AdvRF框架，通过对抗性重建反馈机制学习与类别无关的差异表征，解决现有细粒度图像检索方法对预定义类别的语义依赖问题。  
 ◆ 将细粒度图像检索重新定义为视觉差异重建任务，结合检索模型的类别感知差异定位与重建模型的类别无关特征学习，实现双向优化。  
 ◆ 通过重建模型揭示检索模型忽略的残差异，迫使检索模型提升定位精度，同时检索模型的优化信号指导重建模型改进重建能力。  
@@ -1270,6 +1285,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态与跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR）的优劣，指出后者在跨模态鲁棒性和适应性上的显著提升。  
+◆ 重点介绍了模态感知的创新技术，例如针对深度图像的几何与深度专用描述子、针对3D点云的稀疏与稠密学习方法，以及LiDAR扫描中基于注意力增强的神经网络。  
+◆ 强调了跨模态应用的突破，如医学图像配准中的MIND描述子和视觉-语言任务中的交互匹配技术，展示了特征匹配在多样化数据交互中的扩展潜力。  
+◆ 系统总结了当前挑战与未来方向，为跨模态特征匹配的研究提供了清晰的路线图，推动该领域向更复杂场景发展。</td></tr>
 <tr><td>2025-07-25</td><td>Cross Spatial Temporal Fusion Attention for Remote Sensing Object Detection via Image Feature Matching</td><td>[2507.19118](http://arxiv.org/pdf/2507.19118)</td><td>◆提出跨时空融合注意力机制(CSTF)，通过独立检测参考图和查询图中的尺度不变关键点来增强特征表示，解决多模态遥感图像间几何和辐射差异大的问题。  
 ◆创新性地构建对应图，同时利用多图像区域信息，提升跨模态特征匹配能力。  
 ◆将相似性匹配重新定义为分类任务，结合SoftMax和全卷积网络(FCN)层，兼顾局部特征敏感性和全局上下文信息。  
@@ -1774,4 +1794,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.30
+> 更新于: 2025.07.31
