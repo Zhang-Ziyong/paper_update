@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.03)
+# 计算机视觉领域最新论文 (2025.08.04)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-01</td><td>CoProU-VO: Combining Projected Uncertainty for End-to-End Unsupervised Monocular Visual Odometry</td><td>[2508.00568](http://arxiv.org/pdf/2508.00568)</td><td>◆ 提出CoProU-VO方法，首次将跨帧不确定性传播与融合引入无监督单目视觉里程计，通过概率化建模结合当前帧与参考帧的不确定性。  
+◆ 设计端到端框架，基于视觉Transformer主干网络，同步学习深度、不确定性估计和相机位姿，无需动态物体显式标注。  
+◆ 创新性地利用投影机制将参考帧不确定性传递至目标帧，有效识别动态场景中的不可靠区域，突破传统单帧不确定性建模的局限。  
+◆ 在KITTI和nuScenes数据集上显著超越现有无监督单目两帧方法，尤其在动态物体密集的高速公路场景表现突出。  
+◆ 通过详实的消融实验验证跨帧不确定性传播的有效性，为动态环境下的鲁棒位姿估计提供新思路。</td></tr>
+<tr><td>2025-07-31</td><td>The Monado SLAM Dataset for Egocentric Visual-Inertial Tracking</td><td>[2508.00088](http://arxiv.org/pdf/2508.00088)</td><td>◆ 提出了Monado SLAM数据集，专门针对头戴式设备的视觉-惯性跟踪挑战，填补了现有数据集的不足。  
+◆ 数据集包含真实场景下的高动态运动、动态遮挡、长时间跟踪等复杂情况，更贴近实际应用需求。  
+◆ 覆盖了低纹理区域、恶劣光照条件和传感器饱和等现有数据集较少涉及的难点场景。  
+◆ 数据来自多款虚拟现实头显设备，具有多样性和代表性，适用于头戴式传感器研究。  
+◆ 采用CC BY 4.0许可协议公开数据集，促进视觉-惯性里程计（VIO）和SLAM技术的研发进步。  
+◆ 通过真实场景数据暴露现有VIO/SLAM系统的不足，推动算法在复杂环境中的鲁棒性提升。</td></tr>
 <tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 提出了首个面向户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM主要针对室内环境且依赖主动深度传感器的空白。  
 ◆ 仅使用RGB立体图像对，无需LiDAR或主动传感器，降低了硬件成本并提升了系统适用性。  
 ◆ 利用预训练深度立体网络的深度估计指导3D高斯优化，通过多损失策略同时提升几何一致性和视觉质量。  
@@ -59,7 +70,7 @@
 ◆ 通过TUM RGB-D数据集的广泛实验验证，证明了该方法在挑战性动态场景中的优越性能。  
 ◆ 结合当前帧质量与场景变化评估，提供了一种更全面的动态环境SLAM稳定性判断方法。  
 ◆ 提出的姿态优化策略为动态环境下的SLAM系统提供了有效的误差校正机制。</td></tr>
-<tr><td>2025-07-30</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 提出了一种针对地下隧道环境的去中心化多机器人LiDAR SLAM系统，分析了现有技术的局限性。  
+<tr><td>2025-08-01</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 提出了一种针对地下隧道环境的去中心化多机器人LiDAR SLAM系统，分析了现有技术的局限性。  
 ◆ 发现当前闭环检测存在大量误报问题，这是导致系统失败的主要原因。  
 ◆ 开发了一种新的启发式方法，有效减少了闭环检测中的误报情况。  
 ◆ 在地下隧道这一极具挑战性的环境中验证了所提方法的有效性。  
@@ -1848,4 +1859,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.03
+> 更新于: 2025.08.04
