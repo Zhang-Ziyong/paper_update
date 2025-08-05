@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.04)
+# 计算机视觉领域最新论文 (2025.08.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>A Moment Matching-Based Method for Sparse and Noisy Point Cloud Registration</td><td>[2508.02187](http://arxiv.org/pdf/2508.02187)</td><td>◆ 提出基于矩匹配的点云配准框架，将点云视为同分布独立样本，通过匹配广义高斯径向基矩估计刚体变换，避免传统方法对显式点对点对应关系的依赖。  
+◆ 在理论层面证明了该方法的数学一致性，为算法有效性提供理论支撑。  
+◆ 针对稀疏和强噪声场景设计解决方案，显著提升了ICP、NDT等传统方法在此类恶劣条件下的配准鲁棒性。  
+◆ 实验验证表明，该方法在合成与真实数据集上均实现更高精度，尤其在4D雷达SLAM系统中达到与激光雷达系统相当的定位性能。  
+◆ 首次将矩匹配技术系统性地应用于点云配准领域，为稀疏噪声环境下的机器人感知任务开辟新思路。</td></tr>
+<tr><td>2025-08-04</td><td>AID4AD: Aerial Image Data for Automated Driving Perception</td><td>[2508.02140](http://arxiv.org/pdf/2508.02140)</td><td>◆ 提出AID4AD数据集，首次将高分辨率航拍图像与nuScenes自动驾驶数据集的空间坐标系精确对齐，填补了航拍数据在自动驾驶感知任务中的空白。  
+◆ 开发了一套基于SLAM点云地图的对齐流程，通过定位和投影失真校正技术确保空间保真度，并人工筛选高质量对齐样本作为基准真值。  
+◆ 验证了航拍图像在自动驾驶两大核心任务中的价值：在线地图构建中作为补充输入提升15-23%精度，运动预测中替代高精地图实现2%性能提升。  
+◆ 揭示了航拍图像作为可扩展环境上下文源的潜力，尤其适用于高精地图缺失、过时或维护成本高的场景。  
+◆ 开源数据集、评估代码与预训练模型，为后续研究提供标准化基准（https://github.com/DriverlessMobility/AID4AD）。</td></tr>
 <tr><td>2025-08-01</td><td>CoProU-VO: Combining Projected Uncertainty for End-to-End Unsupervised Monocular Visual Odometry</td><td>[2508.00568](http://arxiv.org/pdf/2508.00568)</td><td>◆ 提出CoProU-VO方法，首次将跨帧不确定性传播与融合引入无监督单目视觉里程计，通过概率化建模结合当前帧与参考帧的不确定性。  
 ◆ 设计端到端框架，基于视觉Transformer主干网络，同步学习深度、不确定性估计和相机位姿，无需动态物体显式标注。  
 ◆ 创新性地利用投影机制将参考帧不确定性传递至目标帧，有效识别动态场景中的不可靠区域，突破传统单帧不确定性建模的局限。  
@@ -520,6 +530,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-03</td><td>CVD-SfM: A Cross-View Deep Front-end Structure-from-Motion System for Sparse Localization in Multi-Altitude Scenes</td><td>[2508.01936](http://arxiv.org/pdf/2508.01936)</td><td>◆ 提出了一种新颖的多高度相机位姿估计系统CVD-SfM，专门针对稀疏图像输入下不同高度场景的鲁棒精准定位问题。  
+◆ 创新性地将跨视角Transformer、深度特征与运动恢复结构(SfM)技术融合到统一框架中，有效应对复杂环境条件和视角变化。  
+◆ 为解决该领域数据稀缺问题，专门收集并发布了两个新的多高度相机位姿估计数据集，为后续研究提供基准平台。  
+◆ 通过大量对比实验验证，该系统在多高度稀疏位姿估计任务中展现出优于现有方案的精度和鲁棒性。  
+◆ 所提框架特别适合无人机导航、搜救行动、自动化检测等实际机器人应用场景，具有重要实用价值。</td></tr>
+<tr><td>2025-08-01</td><td>Counting topological interface modes using simplicial characteristic classes</td><td>[2508.01063](http://arxiv.org/pdf/2508.01063)</td><td>◆ 提出了一种基于谱流-单极子对应关系的计算方法，用于预测厄米系统中拓扑界面模（TIMs）的数量。  
+◆ 通过计算围绕外尔点的相空间球上局部极化向量复线丛的陈数，确定TIMs数量，创新性地将拓扑不变量与物理现象直接关联。  
+◆ 采用离散向量丛的单纯第一陈类构造方法计算陈数，该方法具有规范不变性、无需导数运算、结构保持性强且抗噪声干扰的特点。  
+◆ 算法在赤道流体波和拓扑朗缪尔回旋波的案例中成功复现了预期的TIMs数量，验证了其有效性。  
+◆ 探索了该算法在实验测量中的应用潜力，通过合成示例展示了如何利用体波极化数据预测TIMs数量，为实验研究提供了新工具。</td></tr>
+<tr><td>2025-08-01</td><td>3D Reconstruction via Incremental Structure From Motion</td><td>[2508.01019](http://arxiv.org/pdf/2508.01019)</td><td>这篇论文的核心贡献和创新点如下：
+
+◆ 提出了一种增量式运动恢复结构（SfM）的详细实现方法，相比全局SfM技术更具灵活性。  
+◆ 通过逐步加入新视图的方式，能够在稀疏或部分重叠的数据集中恢复场景结构和相机运动。  
+◆ 重点研究了几何估计的一致性，并通过光束法平差（bundle adjustment）实现迭代优化，提升了重建精度。  
+◆ 在真实数据集上验证了方法的有效性，通过重投影误差和相机轨迹一致性评估了重建质量。  
+◆ 证明了增量式SfM在视觉结构化环境中是一种可靠的稀疏3D重建方法，适用于实际应用场景。</td></tr>
 <tr><td>2025-07-27</td><td>RESCUE: Crowd Evacuation Simulation via Controlling SDM-United Characters</td><td>[2507.20117](http://arxiv.org/pdf/2507.20117)</td><td>这篇论文的核心贡献是提出了一种实时3D人群疏散模拟框架RESCUE，通过模拟人类感知-决策-运动（SDM）流程来提升疏散仿真的真实性和动态适应性。  
 
 ◆ 提出基于SDM流程的仿真框架，首次将3D自适应社会力模型（SFM）决策机制与个性化步态控制运动模块结合，实现更符合人类行为逻辑的疏散模拟。  
@@ -735,6 +762,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>Protego: User-Centric Pose-Invariant Privacy Protection Against Face Recognition-Induced Digital Footprint Exposure</td><td>[2508.02034](http://arxiv.org/pdf/2508.02034)</td><td>◆提出Protego，一种用户中心化的隐私保护方法，通过3D面部签名生成姿态不变的2D表示，动态变形为自然3D面具，适配用户任意姿态表情的图像，在分享前进行保护。  
+◆创新性地增强FR模型敏感性，使受保护图像无法相互匹配，突破现有方法仅防御外部查询的局限。  
+◆实验证明在多种黑盒FR模型下显著降低检索准确率，性能至少优于现有方法2倍。  
+◆首次实现视频场景下的视觉连贯性保护，满足动态内容对一致性和自然外观的高要求。  
+◆为对抗FR技术滥用（如大规模监控与非自愿身份追踪）提供实用化解决方案，填补用户主动防护的技术空白。  
+◆通过3D到2D的封装与动态适配机制，兼顾强隐私保护与视觉自然度，解决传统方法易被检测或影响用户体验的痛点。</td></tr>
 <tr><td>2025-07-31</td><td>DRACo-SLAM2: Distributed Robust Acoustic Communication-efficient SLAM for Imaging Sonar EquippedUnderwater Robot Teams with Object Graph Matching</td><td>[2507.23629](http://arxiv.org/pdf/2507.23629)</td><td>◆ 提出DRACo-SLAM2框架，改进原有系统，专为配备多波束成像声纳的水下机器人团队设计，实现分布式SLAM。  
 ◆ 创新性地将声纳地图表示为对象图，通过对象图匹配实现高效跨机器人闭环检测，无需依赖先验几何信息。  
 ◆ 针对水下扫描匹配特点，提出增量式群组一致测量集最大化（GCM）方法，改进原有PCM算法，有效处理相邻跨机器人闭环共享相似配准误差的场景。  
@@ -1334,6 +1367,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>SGAD: Semantic and Geometric-aware Descriptor for Local Feature Matching</td><td>[2508.02278](http://arxiv.org/pdf/2508.02278)</td><td>◆ 提出SGAD网络，通过生成高区分度的区域描述符，直接实现区域匹配，避免传统低效的像素级比较和复杂图优化，显著提升匹配精度和效率。  
+◆ 设计新颖的监督策略，将区域匹配任务分解为分类和排序子任务，进一步提升匹配性能。  
+◆ 引入层次包容冗余过滤器（HCRF），通过分析包容图消除重叠区域，优化匹配结果。  
+◆ 在效率上实现重大突破，相比MESA方法运行时减少60倍（0.82秒 vs 60.23秒），同时保持更高精度。  
+◆ 在多个基准测试中验证有效性：SGAD+LoFTR在室外姿态估计中比DKM更快（0.82秒 vs 1.51秒）且更准确（65.98 vs 61.11）；SGAD+ROMA在室内姿态估计中AUC@5°提升7.39%，达到新SOTA。</td></tr>
 <tr><td>2025-07-31</td><td>VMatcher: State-Space Semi-Dense Local Feature Matching</td><td>[2507.23371](http://arxiv.org/pdf/2507.23371)</td><td>◆ 提出VMatcher，一种结合Mamba和Transformer的混合网络，用于图像对的半稠密特征匹配。  
 ◆ 首次将选择性状态空间模型（SSM）引入特征匹配任务，利用Mamba的线性计算复杂度显著降低传统Transformer的二次方计算开销。  
 ◆ 设计多层级混合架构，同时保留Transformer注意力机制的优势和Mamba高效长序列处理能力，兼顾性能与效率。  
@@ -1499,6 +1537,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>ASDR: Exploiting Adaptive Sampling and Data Reuse for CIM-based Instant Neural Rendering</td><td>[2508.02304](http://arxiv.org/pdf/2508.02304)</td><td>◆ 提出ASDR算法-架构协同设计方法，首次将存内计算(CIM)技术应用于即时神经渲染领域，解决传统方案延迟高、能效差的问题。  
+◆ 算法层面创新性地引入动态采样策略，通过实时感知像素渲染难度自适应调整采样点，显著减少内存访问和计算开销。  
+◆ 提出颜色与密度体渲染解耦近似方法，通过分离MLP计算流程降低神经网络计算负荷，实现计算效率提升。  
+◆ 架构层面设计新型ReRAM存算架构，创新性地开发数据映射与重用微架构，优化内存访问模式以匹配渲染特性。  
+◆ 实验验证取得突破性性能：相比先进NeRF加速器和Xavier NX GPU分别实现9.55倍和69.75倍加速，仅损失0.1 PSNR画质。  
+◆ 整体方案首次在CIM硬件上实现高质量实时神经渲染，为低功耗即时图形生成提供新范式。</td></tr>
+<tr><td>2025-08-01</td><td>Cooperative Perception: A Resource-Efficient Framework for Multi-Drone 3D Scene Reconstruction Using Federated Diffusion and NeRF</td><td>[2508.00967](http://arxiv.org/pdf/2508.00967)</td><td>◆提出了一种基于联邦学习和扩散模型的多无人机协同感知框架，解决了计算资源受限和低带宽通信下的实时3D场景重建难题。  
+◆创新性地将扩散模型与NeRF结合，通过联邦学习实现多智能体联合场景合成，同时保护数据隐私并保持系统可扩展性。  
+◆采用轻量级YOLOv12进行语义提取，配合局部NeRF更新策略，显著降低了计算和通信开销。  
+◆设计了语义感知压缩协议，优化了无人机间的数据传输效率，提升了协同场景理解能力。  
+◆重新设计了生成式扩散模型架构，使其更适合多视角联合场景重建任务，突破了传统方法的局限性。  
+◆通过仿真和真实无人机测试验证了方案的可行性，为自主系统多智能体AI提供了突破性进展。</td></tr>
 <tr><td>2025-07-31</td><td>NeRF Is a Valuable Assistant for 3D Gaussian Splatting</td><td>[2507.23374](http://arxiv.org/pdf/2507.23374)</td><td>◆ 提出NeRF-GS框架，首次联合优化神经辐射场（NeRF）与3D高斯泼溅（3DGS），实现两种技术的优势互补。  
 ◆ 利用NeRF的连续空间表征能力，有效解决3DGS对高斯初始化敏感、空间感知弱、高斯间关联性不足等固有缺陷。  
 ◆ 通过渐进式对齐3DGS与NeRF的空间特征，使两者能基于共享的3D空间信息在同一场景中协同优化。  
@@ -1859,4 +1909,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.04
+> 更新于: 2025.08.05
