@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.05)
+# 计算机视觉领域最新论文 (2025.08.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-05</td><td>Inland-LOAM: Voxel-Based Structural Semantic Mapping for Inland Waterways</td><td>[2508.03672](http://arxiv.org/pdf/2508.03672)</td><td>◆ 提出Inland-LOAM框架，针对内河航道环境优化LiDAR SLAM，解决传统方法在垂直漂移和语义缺失方面的不足。  
+◆ 改进特征提取方法并引入水面平面约束，有效抑制SLAM系统的垂直漂移问题，提升定位精度。  
+◆ 创新性地通过体素化几何分析将3D点云转化为结构化2D语义地图，实时计算桥梁净空等关键导航参数。  
+◆ 开发自动化模块提取岸线轮廓，并输出轻量化、兼容国际电子航道图（IENC）的标准格式。  
+◆ 在真实航道数据集上验证，定位精度超越现有先进方法，生成的语义地图与岸线数据符合实际场景需求。  
+◆ 公开代码与数据集，为内河自主航行提供可靠的环境感知与地理信息支持。</td></tr>
 <tr><td>2025-08-04</td><td>A Moment Matching-Based Method for Sparse and Noisy Point Cloud Registration</td><td>[2508.02187](http://arxiv.org/pdf/2508.02187)</td><td>◆ 提出基于矩匹配的点云配准框架，将点云视为同分布独立样本，通过匹配广义高斯径向基矩估计刚体变换，避免传统方法对显式点对点对应关系的依赖。  
 ◆ 在理论层面证明了该方法的数学一致性，为算法有效性提供理论支撑。  
 ◆ 针对稀疏和强噪声场景设计解决方案，显著提升了ICP、NDT等传统方法在此类恶劣条件下的配准鲁棒性。  
@@ -766,6 +772,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-05</td><td>Prototype-Enhanced Confidence Modeling for Cross-Modal Medical Image-Report Retrieval</td><td>[2508.03494](http://arxiv.org/pdf/2508.03494)</td><td>◆ 提出Prototype-Enhanced Confidence Modeling (PECM)框架，通过多级原型建模解决医学跨模态检索中语义模糊性问题。  
+◆ 首次在医学图像-报告检索中引入双流置信度估计机制，结合原型相似度分布自适应调整高不确定性数据的影响权重。  
+◆ 设计多模态原型学习模块，分别捕捉图像和文本的层次化语义特征，显著提升跨模态对齐的鲁棒性。  
+◆ 开发自适应加权策略，动态平衡不同置信度样本在检索排序中的贡献，改善临床复杂场景下的结果可靠性。  
+◆ 在完全监督和零样本检索任务上实现最高10.17%的性能提升，在多个放射学数据集上刷新当前最优水平。  
+◆ 首次系统验证原型增强方法对医学数据固有歧义性的处理能力，为临床跨模态检索提供新范式。</td></tr>
 <tr><td>2025-08-04</td><td>Protego: User-Centric Pose-Invariant Privacy Protection Against Face Recognition-Induced Digital Footprint Exposure</td><td>[2508.02034](http://arxiv.org/pdf/2508.02034)</td><td>◆提出Protego，一种用户中心化的隐私保护方法，通过3D面部签名生成姿态不变的2D表示，动态变形为自然3D面具，适配用户任意姿态表情的图像，在分享前进行保护。  
 ◆创新性地增强FR模型敏感性，使受保护图像无法相互匹配，突破现有方法仅防御外部查询的局限。  
 ◆实验证明在多种黑盒FR模型下显著降低检索准确率，性能至少优于现有方法2倍。  
@@ -1547,6 +1559,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing</td><td>[2508.02831](http://arxiv.org/pdf/2508.02831)</td><td>◆ 提出GENIE混合模型，结合NeRF的高质量渲染与高斯泼溅(GS)的可编辑性，实现既逼真又可交互的3D场景表示。  
+◆ 采用可训练特征嵌入替代传统球谐函数，通过每个高斯点附近的k近邻条件化NeRF网络，增强局部编辑能力。  
+◆ 设计RT-GPS（光线追踪高斯邻近搜索）算法，基于改进的光线追踪管线快速定位最近高斯点，提升查询效率。  
+◆ 引入多分辨率哈希网格初始化与更新高斯特征，支持动态场景的实时特征调整。  
+◆ 实现实时局部感知编辑：高斯基元的位置或属性修改能即时影响渲染结果，保留NeRF的连续性优势。  
+◆ 弥合隐式神经渲染与显式几何编辑的鸿沟，兼容物理模拟，为交互式创作提供新范式。</td></tr>
 <tr><td>2025-08-04</td><td>ASDR: Exploiting Adaptive Sampling and Data Reuse for CIM-based Instant Neural Rendering</td><td>[2508.02304](http://arxiv.org/pdf/2508.02304)</td><td>◆ 提出ASDR算法-架构协同设计方法，首次将存内计算(CIM)技术应用于即时神经渲染领域，解决传统方案延迟高、能效差的问题。  
 ◆ 算法层面创新性地引入动态采样策略，通过实时感知像素渲染难度自适应调整采样点，显著减少内存访问和计算开销。  
 ◆ 提出颜色与密度体渲染解耦近似方法，通过分离MLP计算流程降低神经网络计算负荷，实现计算效率提升。  
@@ -1921,4 +1939,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.05
+> 更新于: 2025.08.06
