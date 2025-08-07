@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.06)
+# 计算机视觉领域最新论文 (2025.08.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -536,6 +536,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Bursting at the seams: the star-forming main sequence and its scatter at z=3-9 using NIRCam photometry from JADES</td><td>[2508.04410](http://arxiv.org/pdf/2508.04410)</td><td>◆ 首次利用JADES巡天的NIRCam测光数据系统研究了红移z=3-9范围内恒星形成主序(SFMS)及其弥散，样本恒星质量完备性下限达log(M⋆/M⊙)≈8.1。  
+◆ 发现10Myr时间尺度下的SFMS演化符合sSFR∝(1+z)^2.30的关系，与暗物质晕质量吸积率的理论预测高度吻合。  
+◆ 揭示了SFMS归一化随恒星形成率(SFR)平均时间尺度变化的复杂规律，反映了爆发性恒星形成与上升型恒星形成历史的综合效应。  
+◆ 首次定量分析SFMS弥散随SFR平均时间尺度的演变：从10Myr的0.4-0.5dex降至100Myr的0.2dex，表明短期波动主导弥散，但长期变化也存在。  
+◆ 发现低质量星系中爆发性恒星形成历史更显著，并指出需要引入初始质量函数偏重、恒星形成效率提升或爆发性增强等机制来解释z&gt;10观测到的UV亮星系过量现象。  
+◆ 强调在拟合SFMS时（特别是对爆发性恒星形成历史的星系），准确确定恒星质量完备性限的重要性。</td></tr>
+<tr><td>2025-08-06</td><td>PIS3R: Very Large Parallax Image Stitching via Deep 3D Reconstruction</td><td>[2508.04236](http://arxiv.org/pdf/2508.04236)</td><td>◆ 提出PIS3R方法，首次通过深度3D重建解决大视差图像拼接难题，突破传统方法在显著视差下的性能瓶颈。  
+◆ 采用视觉几何驱动的Transformer网络，从大视差图像中联合估计相机内外参数并完成稠密3D场景重建，实现几何精确的初始对齐。  
+◆ 创新性地将重建的3D点云重投影到参考视图，实现像素级精准配准，保留所有像素在3D摄影测量中的几何完整性。  
+◆ 设计点云条件扩散模型，针对初始拼接可能存在的空洞或噪声进行精细化修复，生成无缝高质量结果。  
+◆ 实验证明该方法在大视差场景下显著优于现有方法，且输出结果可直接支持SfM等下游3D视觉任务，具有实用价值。</td></tr>
 <tr><td>2025-08-03</td><td>CVD-SfM: A Cross-View Deep Front-end Structure-from-Motion System for Sparse Localization in Multi-Altitude Scenes</td><td>[2508.01936](http://arxiv.org/pdf/2508.01936)</td><td>◆ 提出了一种新颖的多高度相机位姿估计系统CVD-SfM，专门针对稀疏图像输入下不同高度场景的鲁棒精准定位问题。  
 ◆ 创新性地将跨视角Transformer、深度特征与运动恢复结构(SfM)技术融合到统一框架中，有效应对复杂环境条件和视角变化。  
 ◆ 为解决该领域数据稀缺问题，专门收集并发布了两个新的多高度相机位姿估计数据集，为后续研究提供基准平台。  
@@ -1549,6 +1560,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关文献，首次全面分析RF技术在XR领域的应用潜力与研究现状，填补了该领域的调研空白。  
+◆ 提出三维分析框架：从XR应用愿景（i）、现有技术实现（ii）和研究缺口（iii）三个维度解构RF与XR的交叉研究，为后续研究提供结构化视角。  
+◆ 筛选66篇核心论文进行深度分析，揭示RF在XR中的具体技术路径（如3DGS/NeRF的交互性优化），比传统综述更具技术颗粒度。  
+◆ 将XR特异性研究问题（如实时渲染、用户交互）嵌入广义RF研究版图，明确XR社区的独特技术挑战与机遇。  
+◆ 构建跨学科文献资源库，覆盖计算机视觉、图形学、人机交互等6大领域，助力研究者快速定位XR相关RF技术进展。  
+◆ 通过量化分析指出RF在XR领域的研究稀疏性，推动学界关注这一潜力巨大的交叉方向。</td></tr>
+<tr><td>2025-08-06</td><td>MuGS: Multi-Baseline Generalizable Gaussian Splatting Reconstruction</td><td>[2508.04297](http://arxiv.org/pdf/2508.04297)</td><td>◆ 提出MuGS方法，首次将多基线设置（包括稀疏视角下的小/大基线）统一整合到基于高斯泼溅的泛化性新视角合成框架中。  
+◆ 创新性地融合多视角立体视觉（MVS）与单目深度估计（MDE）特征，增强跨场景的泛化重建能力。  
+◆ 设计投影-采样机制的深度融合模块，通过精细概率体积构建指导特征图回归，提升几何精度。  
+◆ 引入参考视图损失函数，显著优化几何一致性并加速训练收敛效率。  
+◆ 采用3D高斯表征实现训练/推理加速，同时保持优于神经辐射场的渲染质量。  
+◆ 在DTU简单物体到RealEstate10K复杂场景的跨数据集测试中达到SOTA，并在LLFF等数据集展现零样本迁移潜力。</td></tr>
 <tr><td>2025-08-04</td><td>GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing</td><td>[2508.02831](http://arxiv.org/pdf/2508.02831)</td><td>◆ 提出GENIE混合模型，结合NeRF的高质量渲染与高斯泼溅(GS)的可编辑性，实现既逼真又可交互的3D场景表示。  
 ◆ 采用可训练特征嵌入替代传统球谐函数，通过每个高斯点附近的k近邻条件化NeRF网络，增强局部编辑能力。  
 ◆ 设计RT-GPS（光线追踪高斯邻近搜索）算法，基于改进的光线追踪管线快速定位最近高斯点，提升查询效率。  
@@ -1927,4 +1950,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.06
+> 更新于: 2025.08.07
