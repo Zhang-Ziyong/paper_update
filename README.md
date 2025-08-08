@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.07)
+# 计算机视觉领域最新论文 (2025.08.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Speech LLMs in Low-Resource Scenarios: Data Volume Requirements and the Impact of Pretraining on High-Resource Languages</td><td>[2508.05149](http://arxiv.org/pdf/2508.05149)</td><td>◆ 首次系统研究了语音大模型(Speech LLMs)在低资源自动语音识别(ASR)场景下的数据量需求，填补了该领域研究空白。  
+◆ 提出基于SLAM-ASR框架的轻量级可训练投影器方案，有效连接语音编码器与大语言模型，适配低资源条件。  
+◆ 量化分析了达到Whisper模型性能所需的最低训练数据量，实证揭示了数据稀缺带来的核心挑战。  
+◆ 创新性发现：利用高资源语言预训练的单一/多语言投影器能显著缓解数据不足问题，特别在小规模训练集时效果突出。  
+◆ 通过EuroLLM和Salamandra等多语言大模型与whisper-large-v3-turbo的组合实验，为低资源多语言语音处理提供了新优化思路。  
+◆ 在多个公开基准测试上的实验结果，为未来低资源语音大模型研究提供了重要设计参考和方法论指导。</td></tr>
+<tr><td>2025-08-06</td><td>Pseudo Depth Meets Gaussian: A Feed-forward RGB SLAM Baseline</td><td>[2508.04597](http://arxiv.org/pdf/2508.04597)</td><td>◆ 提出了一种基于3D高斯映射的RGB SLAM方法，通过结合深度估计器和3D高斯技术，解决了传统方法在长序列处理中的性能瓶颈问题。  
+◆ 引入前馈循环预测模块，直接从光流推断相机位姿，替代了耗时的测试时优化，将跟踪速度提升90%以上。  
+◆ 设计了局部图渲染技术，增强了前馈位姿预测的鲁棒性，提高了系统在复杂场景中的稳定性。  
+◆ 在Replica和TUM-RGBD数据集上的实验表明，该方法性能与当前最优的SplaTAM相当，同时大幅降低了计算开销。  
+◆ 通过实际部署验证了方法的实用性，展示了其在实时3D重建中的高效性和准确性。</td></tr>
 <tr><td>2025-08-05</td><td>Inland-LOAM: Voxel-Based Structural Semantic Mapping for Inland Waterways</td><td>[2508.03672](http://arxiv.org/pdf/2508.03672)</td><td>◆ 提出Inland-LOAM框架，针对内河航道环境优化LiDAR SLAM，解决传统方法在垂直漂移和语义缺失方面的不足。  
 ◆ 改进特征提取方法并引入水面平面约束，有效抑制SLAM系统的垂直漂移问题，提升定位精度。  
 ◆ 创新性地通过体素化几何分析将3D点云转化为结构化2D语义地图，实时计算桥梁净空等关键导航参数。  
@@ -538,6 +549,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>EndoMatcher: Generalizable Endoscopic Image Matcher via Multi-Domain Pre-training for Robot-Assisted Surgery</td><td>[2508.05205](http://arxiv.org/pdf/2508.05205)</td><td>◆提出EndoMatcher，一种基于多领域预训练的内窥镜图像通用匹配器，通过大规模跨域数据解决内窥镜图像匹配泛化性难题。  
+◆首创双分支视觉Transformer架构，结合多尺度特征提取与双重交互模块，显著提升弱纹理、大视角变化等复杂内窥镜场景的匹配鲁棒性。  
+◆构建首个多领域内窥镜匹配数据集Endo-Mix6，包含6个领域约120万真实/合成图像对，通过运动恢复结构和模拟变换生成标注，解决数据稀缺与领域多样性不足问题。  
+◆设计渐进式多目标训练策略，有效应对跨域数据规模差异、分布偏移和误差不平衡问题，实现不同领域的均衡学习与表征优化。  
+◆在零样本设置下实现跨器官和成像条件的泛化能力，在三个基准数据集上以140%-201%的匹配内点提升率和9.4%的方向预测准确率超越现有最优方法。</td></tr>
+<tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的精细化过程，克服原始3DGS密度策略的缺陷。  
+◆ 首次系统研究了传统SfM与深度图像匹配(DIM)两种点云初始化方法对3DGS重建质量的影响，为初始化选择提供依据。  
+◆ 在Mip-NeRF 360数据集上的实验表明，该方法显著提升了3DGS的重建质量，在不同场景中均表现出优越性能。  
+◆ 改进了自适应密度控制(ADC)流程，通过更智能的密集化和修剪机制优化点基元管理，实现更高质量的新视角合成。  
+◆ 提出的体积感知策略为3D高斯分布的形状和空间分布优化提供了新思路，增强了场景表示的几何准确性。</td></tr>
 <tr><td>2025-08-06</td><td>Bursting at the seams: the star-forming main sequence and its scatter at z=3-9 using NIRCam photometry from JADES</td><td>[2508.04410](http://arxiv.org/pdf/2508.04410)</td><td>◆ 首次利用JADES巡天的NIRCam测光数据系统研究了红移z=3-9范围内恒星形成主序(SFMS)及其弥散，样本恒星质量完备性下限达log(M⋆/M⊙)≈8.1。  
 ◆ 发现10Myr时间尺度下的SFMS演化符合sSFR∝(1+z)^2.30的关系，与暗物质晕质量吸积率的理论预测高度吻合。  
 ◆ 揭示了SFMS归一化随恒星形成率(SFR)平均时间尺度变化的复杂规律，反映了爆发性恒星形成与上升型恒星形成历史的综合效应。  
@@ -1250,6 +1271,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Head Anchor Enhanced Detection and Association for Crowded Pedestrian Tracking</td><td>[2508.05514](http://arxiv.org/pdf/2508.05514)</td><td>◆ 提出融合目标检测器回归分支和分类分支特征的双重特征增强策略，将空间位置信息直接嵌入特征表示，提升外观建模的鲁棒性。  
+◆ 创新性引入头部关键点检测模块，利用头部不易被遮挡的特性，有效缓解密集场景中全身特征丢失导致的跟踪失效问题。  
+◆ 设计迭代式卡尔曼滤波运动模型，突破传统线性匀速假设，结合3D场景先验知识实现复杂遮挡下的轨迹补全。  
+◆ 首次将检测任务的多维度特征（分类/回归/关键点）与改进运动模型联合优化，形成外观-运动协同增强的跟踪框架。  
+◆ 针对严重遮挡场景，通过头部定位与全身检测的异构特征互补，显著提升密集人群的轨迹连续性和ID保持能力。  
+◆ 所提方法在保持实时性的前提下，对重叠率超过70%的极端遮挡情况展现出优于传统Re-ID方案的跟踪稳定性。</td></tr>
 <tr><td>2025-07-31</td><td>Mitigating Resolution-Drift in Federated Learning: Case of Keypoint Detection</td><td>[2507.23461](http://arxiv.org/pdf/2507.23461)</td><td>◆ 首次在联邦学习中提出并系统研究了&quot;分辨率漂移&quot;问题，揭示了分辨率差异作为非独立同分布数据的新维度对关键点检测任务的重要影响。  
 ◆ 提出分辨率自适应联邦学习（RAF）方法，通过基于热图的多分辨率知识蒸馏机制，在高分辨率教师模型和低分辨率学生模型间传递知识，有效增强模型对分辨率变化的鲁棒性。  
 ◆ 创新性地采用高低分辨率双向蒸馏策略，既避免了低分辨率客户端过拟合，又保留了高分辨率空间细节特征，突破了传统联邦学习在非分类任务中的性能瓶颈。  
@@ -1398,6 +1425,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的精细化过程，克服了原始3DGS密度策略的缺陷。  
+◆ 创新性地研究了传统SfM与深度图像匹配(DIM)两种点云初始化方法对重建质量的影响，为初始化选择提供了新见解。  
+◆ 通过自适应密度控制(ADC)自动化实现了高斯基元的动态增删，显著提升了点基元管理效率。  
+◆ 在Mip-NeRF 360数据集上的实验表明，该方法在重建质量上全面超越原始3DGS，且在不同场景中均表现优异。  
+◆ 将体积信息与密度控制相结合，为3D高斯泼溅技术的几何优化开辟了新思路。</td></tr>
 <tr><td>2025-08-04</td><td>SGAD: Semantic and Geometric-aware Descriptor for Local Feature Matching</td><td>[2508.02278](http://arxiv.org/pdf/2508.02278)</td><td>◆ 提出SGAD网络，通过生成高区分度的区域描述符，直接实现区域匹配，避免传统低效的像素级比较和复杂图优化，显著提升匹配精度和效率。  
 ◆ 设计新颖的监督策略，将区域匹配任务分解为分类和排序子任务，进一步提升匹配性能。  
 ◆ 引入层次包容冗余过滤器（HCRF），通过分析包容图消除重叠区域，优化匹配结果。  
@@ -1570,7 +1602,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-06</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关文献，首次全面分析RF技术在XR领域的应用潜力与研究现状，填补了该领域的调研空白。  
+<tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的精细化过程，改进原始3DGS的密度控制策略。  
+◆ 系统研究了传统运动恢复结构(SfM)与深度图像匹配(DIM)两种点云初始化方法对重建质量的影响，为初始化选择提供依据。  
+◆ 在Mip-NeRF 360数据集上的实验表明，该方法在重建质量上优于原始3DGS，在不同场景中均表现出色。  
+◆ 解决了原始3DGS自适应密度控制(ADC)在点基元管理上的关键缺陷，提升了新视角合成的效果。  
+◆ 通过更精细的密度控制策略，实现了对高斯分布更合理的分裂与剪枝操作，优化了场景表示。</td></tr>
+<tr><td>2025-08-07</td><td>A Study of the Framework and Real-World Applications of Language Embedding for 3D Scene Understanding</td><td>[2508.05064](http://arxiv.org/pdf/2508.05064)</td><td>◆ 首次系统综述了语言嵌入与3D高斯泼溅（Gaussian Splatting）结合的跨领域研究，填补了该新兴交叉领域的空白。  
+◆ 提出语言引导的3D场景理解新范式，通过大语言模型（LLMs）实现文本条件生成、编辑和语义理解，扩展了高斯泼溅的应用场景。  
+◆ 详细分析了语言与3D高斯表征融合的理论基础和技术路径，包括嵌入策略、语义对齐方法及实时渲染优化方案。  
+◆ 总结了实际应用中的关键挑战，如计算效率瓶颈、泛化性不足及语义标注数据稀缺，为后续研究指明方向。  
+◆ 梳理了机器人、交互内容创作等领域的落地案例，验证了语言增强型3D建模的实用价值。</td></tr>
+<tr><td>2025-08-07</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关文献，首次全面分析RF技术在XR领域的应用潜力与研究现状，填补了该领域的调研空白。  
 ◆ 提出三维分析框架：从XR应用愿景（i）、现有技术实现（ii）和研究缺口（iii）三个维度解构RF与XR的交叉研究，为后续研究提供结构化视角。  
 ◆ 筛选66篇核心论文进行深度分析，揭示RF在XR中的具体技术路径（如3DGS/NeRF的交互性优化），比传统综述更具技术颗粒度。  
 ◆ 将XR特异性研究问题（如实时渲染、用户交互）嵌入广义RF研究版图，明确XR社区的独特技术挑战与机遇。  
@@ -1962,4 +2004,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.07
+> 更新于: 2025.08.08
