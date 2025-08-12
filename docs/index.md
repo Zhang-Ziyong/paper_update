@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.11)
+# 计算机视觉领域最新论文 (2025.08.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-09</td><td>EGS-SLAM: RGB-D Gaussian Splatting SLAM with Events</td><td>[2508.07003](http://arxiv.org/pdf/2508.07003)</td><td>EGS-SLAM的核心贡献在于通过融合事件相机数据与RGB-D输入，显著提升了动态模糊场景下的SLAM性能。具体创新点包括：
+
+◆ 提出首个结合事件数据与RGB-D输入的GS-SLAM框架，有效解决传统方法在严重运动模糊下的性能退化问题。
+
+◆ 创新性地建模相机曝光期间的连续运动轨迹，实现事件感知与模糊感知的联合跟踪与三维高斯泼溅建图。
+
+◆ 设计可学习的相机响应函数，动态对齐事件流与RGB图像的亮度范围差异。
+
+◆ 引入无事件损失函数，有效抑制重建过程中的振铃伪影。
+
+◆ 构建包含合成与真实场景的新数据集，验证方法在极端运动模糊条件下的优越性。
+
+实验表明，该系统在轨迹精度和三维重建质量上均超越现有GS-SLAM方法，为高动态场景提供了鲁棒的解决方案。</td></tr>
 <tr><td>2025-08-07</td><td>Speech LLMs in Low-Resource Scenarios: Data Volume Requirements and the Impact of Pretraining on High-Resource Languages</td><td>[2508.05149](http://arxiv.org/pdf/2508.05149)</td><td>◆ 首次系统研究了语音大模型(Speech LLMs)在低资源自动语音识别(ASR)场景下的数据量需求，填补了该领域研究空白。  
 ◆ 提出基于SLAM-ASR框架的轻量级可训练投影器方案，有效连接语音编码器与大语言模型，适配低资源条件。  
 ◆ 量化分析了达到Whisper模型性能所需的最低训练数据量，实证揭示了数据稀缺带来的核心挑战。  
@@ -547,6 +560,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-10</td><td>GS4Buildings: Prior-Guided Gaussian Splatting for 3D Building Reconstruction</td><td>[2508.07355](http://arxiv.org/pdf/2508.07355)</td><td>◆ 提出GS4Buildings方法，利用语义3D建筑模型作为先验，增强高斯泼溅（GS）在大规模复杂城市场景中的重建能力，解决传统方法因遮挡导致的不完整问题。  
+◆ 直接基于低细节层次（LoD2）语义建筑模型初始化高斯分布，替代传统运动恢复结构（SfM）流程，简化重建流程并提升鲁棒性。  
+◆ 通过建筑几何生成先验深度和法线图，并将其融入优化过程，显著提升表面一致性和结构准确性。  
+◆ 引入可选建筑聚焦模式，仅重建建筑区域，减少71.8%的高斯基元数量，实现更高效紧凑的表示。  
+◆ 在城市场景数据集上验证，重建完整度提升20.5%，几何精度提高32.8%，为智慧城市和数字孪生等应用提供新思路。</td></tr>
+<tr><td>2025-08-09</td><td>Evaluating Fisheye-Compatible 3D Gaussian Splatting Methods on Real Images Beyond 180 Degree Field of View</td><td>[2508.06968](http://arxiv.org/pdf/2508.06968)</td><td>◆首次在真实超180度鱼眼图像上评估两种鱼眼兼容的3D高斯泼溅方法（Fisheye-GS和3DGUT），填补了极端畸变场景下的技术空白。  
+◆通过室内外200度鱼眼相机实测，系统分析不同视场角（200/160/120度）下两种方法的性能平衡：Fisheye-GS在160度表现最佳，而3DGUT在全200度下仍保持稳定高质量。  
+◆提出基于UniK3D预测的深度初始化策略，仅需2-3张鱼眼图即可生成稠密点云，克服传统SfM在强畸变场景失效的问题。  
+◆验证UniK3D在未训练真实鱼眼数据的情况下，对雾霾、眩光、天空等复杂场景仍能实现与SfM相当的3D重建质量。  
+◆研究成果证实了鱼眼3DGS方法在稀疏高畸变图像中进行广角3D重建的实用价值，为实际应用提供重要参考。</td></tr>
 <tr><td>2025-08-07</td><td>EndoMatcher: Generalizable Endoscopic Image Matcher via Multi-Domain Pre-training for Robot-Assisted Surgery</td><td>[2508.05205](http://arxiv.org/pdf/2508.05205)</td><td>◆提出EndoMatcher，一种基于多领域预训练的内窥镜图像通用匹配器，通过大规模跨域数据解决内窥镜图像匹配泛化性难题。  
 ◆首创双分支视觉Transformer架构，结合多尺度特征提取与双重交互模块，显著提升弱纹理、大视角变化等复杂内窥镜场景的匹配鲁棒性。  
 ◆构建首个多领域内窥镜匹配数据集Endo-Mix6，包含6个领域约120万真实/合成图像对，通过运动恢复结构和模拟变换生成标注，解决数据稀缺与领域多样性不足问题。  
@@ -1297,6 +1320,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-09</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强策略，显著提升了基于2D关键点提升的3D人体姿态估计模型的泛化能力，无需额外数据或传感器。  
+◆ 创新性地在标准2D关键点坐标(x,y)基础上，稀疏地增加了关键点检测置信度c和对应深度估计d两个信号，利用预训练模型计算这些信号，继承了它们的强泛化能力。  
+◆ 方法具有模块化特性，可以轻松集成到现有的各种提升架构中，无需修改模型结构。  
+◆ 在四个数据集上的大量实验表明，AugLift将未见数据集的跨数据集性能平均提升10.1%，同时将分布内性能提升4.0%。  
+◆ 分析表明，这些稀疏的关键点对齐线索提供了鲁棒的帧级上下文信息，为提升任何基于提升的姿态估计模型的泛化性能提供了实用方案。  
+◆ 所有代码将公开，便于研究社区使用和复现。</td></tr>
 <tr><td>2025-08-07</td><td>Head Anchor Enhanced Detection and Association for Crowded Pedestrian Tracking</td><td>[2508.05514](http://arxiv.org/pdf/2508.05514)</td><td>◆ 提出融合目标检测器回归分支和分类分支特征的双重特征增强策略，将空间位置信息直接嵌入特征表示，提升外观建模的鲁棒性。  
 ◆ 创新性引入头部关键点检测模块，利用头部不易被遮挡的特性，有效缓解密集场景中全身特征丢失导致的跟踪失效问题。  
 ◆ 设计迭代式卡尔曼滤波运动模型，突破传统线性匀速假设，结合3D场景先验知识实现复杂遮挡下的轨迹补全。  
@@ -1449,12 +1478,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-11</td><td>Semi-supervised Multiscale Matching for SAR-Optical Image</td><td>[2508.07812](http://arxiv.org/pdf/2508.07812)</td><td>◆提出半监督多尺度匹配框架S2M2-SAR，利用少量标注数据和大量无标注SAR-光学图像对进行训练，解决标注成本高的问题。  
+◆通过结合深层和浅层匹配结果生成伪标签相似性热图，为无标注数据提供监督信号，提升模型泛化能力。  
+◆设计跨模态特征增强模块，采用无监督的跨模态互独立性损失，分离模态共享和模态特定特征，增强特征解耦能力。  
+◆无需人工标注即可优化跨模态特征表示，降低对标注数据的依赖，提升模型实用性。  
+◆实验表明，S2M2-SAR性能优于现有半监督方法，并与全监督SOTA方法相当，验证了其高效性和应用潜力。</td></tr>
 <tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的精细化过程，克服了原始3DGS密度策略的缺陷。  
 ◆ 创新性地研究了传统SfM与深度图像匹配(DIM)两种点云初始化方法对重建质量的影响，为初始化选择提供了新见解。  
 ◆ 通过自适应密度控制(ADC)自动化实现了高斯基元的动态增删，显著提升了点基元管理效率。  
 ◆ 在Mip-NeRF 360数据集上的实验表明，该方法在重建质量上全面超越原始3DGS，且在不同场景中均表现优异。  
 ◆ 将体积信息与密度控制相结合，为3D高斯泼溅技术的几何优化开辟了新思路。</td></tr>
-<tr><td>2025-08-04</td><td>SGAD: Semantic and Geometric-aware Descriptor for Local Feature Matching</td><td>[2508.02278](http://arxiv.org/pdf/2508.02278)</td><td>◆ 提出SGAD网络，通过生成高区分度的区域描述符，直接实现区域匹配，避免传统低效的像素级比较和复杂图优化，显著提升匹配精度和效率。  
+<tr><td>2025-08-09</td><td>SGAD: Semantic and Geometric-aware Descriptor for Local Feature Matching</td><td>[2508.02278](http://arxiv.org/pdf/2508.02278)</td><td>◆ 提出SGAD网络，通过生成高区分度的区域描述符，直接实现区域匹配，避免传统低效的像素级比较和复杂图优化，显著提升匹配精度和效率。  
 ◆ 设计新颖的监督策略，将区域匹配任务分解为分类和排序子任务，进一步提升匹配性能。  
 ◆ 引入层次包容冗余过滤器（HCRF），通过分析包容图消除重叠区域，优化匹配结果。  
 ◆ 在效率上实现重大突破，相比MESA方法运行时减少60倍（0.82秒 vs 60.23秒），同时保持更高精度。  
@@ -1624,6 +1658,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-11</td><td>SAGOnline: Segment Any Gaussians Online</td><td>[2508.08219](http://arxiv.org/pdf/2508.08219)</td><td>SAGOnline论文的核心贡献和创新点如下：
+
+◆ 提出首个轻量级零样本框架SAGOnline，实现高斯场景的实时3D分割，解决了现有方法计算成本高、空间推理能力有限的问题。
+
+◆ 采用解耦策略整合视频基础模型（如SAM2），通过合成视图间的2D掩码传播实现跨视角一致性分割。
+
+◆ 开发GPU加速的3D掩码生成算法，通过高斯级实例标注为3D图元分配唯一ID，支持无损多目标跟踪与跨视角分割。
+
+◆ 在NVOS（92.7% mIoU）和Spin-NeRF（95.2% mIoU）基准测试中达到SOTA性能，推理速度比现有方法快15-1500倍（27毫秒/帧）。
+
+◆ 创新性将2D视频基础模型适配到3D领域，首次实现复杂场景中稳健的多目标分割与跟踪。
+
+◆ 通过显式标注高斯图元，同时支持分割与跟踪功能，为AR/VR和机器人应用提供实时3D场景理解新方案。</td></tr>
+<tr><td>2025-08-10</td><td>3D Gaussian Representations with Motion Trajectory Field for Dynamic Scene Reconstruction</td><td>[2508.07182](http://arxiv.org/pdf/2508.07182)</td><td>◆ 提出结合3D高斯泼溅与运动轨迹场的新方法，首次实现动态场景中复杂运动的精确建模与物理合理轨迹生成。  
+◆ 通过动态物体与静态背景解耦技术，显著提升运动轨迹场的优化效率与场景表示紧凑性。  
+◆ 创新采用时间不变运动系数和共享运动轨迹基，在捕捉复杂运动模式的同时大幅降低优化复杂度。  
+◆ 实现单目视频中动态场景的高质量新视角合成与运动轨迹重建双突破，性能达到当前最优水平。  
+◆ 所提方法为机器人等应用场景提供了首个能同时处理动态渲染与运动推理的统一框架。  
+◆ 通过大量实验验证了方案在运动细节还原和物理合理性方面超越现有动态NeRF与3DGS方法的优势。</td></tr>
+<tr><td>2025-08-08</td><td>CoDe-NeRF: Neural Rendering via Dynamic Coefficient Decomposition</td><td>[2508.06632](http://arxiv.org/pdf/2508.06632)</td><td>◆ 提出动态系数分解框架CoDe-NeRF，将复杂外观解耦为静态神经基底（编码材质属性）和动态系数（由视角/光照条件生成），突破传统NeRF对镜面反射建模的局限。  
+◆ 设计系数网络（Coefficient Network）动态生成与视角/光照相关的系数，配合静态基底实现高效的光-物理解耦，避免逆向渲染的不稳定性。  
+◆ 引入动态辐射积分器（Dynamic Radiance Integrator）自适应融合静态基底与动态系数，显著提升高光与镜面反射的锐利度和真实感。  
+◆ 实验证明该方法在复杂反射场景中优于现有技术，能生成更清晰的镜面效果，且无需依赖物理逆向渲染的强假设。  
+◆ 为神经场景表示中的复杂外观建模提供了灵活可扩展的新范式，通过解耦式设计增强了对动态光照条件的适应性。</td></tr>
 <tr><td>2025-08-08</td><td>UW-3DGS: Underwater 3D Reconstruction with Physics-Aware Gaussian Splatting</td><td>[2508.06169](http://arxiv.org/pdf/2508.06169)</td><td>这篇论文的核心贡献是通过改进3D高斯泼溅技术（3DGS）实现了高精度的水下三维重建，解决了传统方法因水下光线吸收、散射和浑浊度导致的几何与色彩失真问题。主要创新点包括：
 
 ◆ 提出可插拔的学习型水下成像模块，采用基于体素的回归方法模拟空间变化的衰减和背散射效应，提升颜色保真度。
@@ -2045,4 +2103,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.11
+> 更新于: 2025.08.12
