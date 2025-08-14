@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.13)
+# 计算机视觉领域最新论文 (2025.08.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -829,7 +829,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-12</td><td>SMA: Who Said That? Auditing Membership Leakage in Semi-Black-box RAG Controlling</td><td>[2508.09105](http://arxiv.org/pdf/2508.09105)</td><td>◆ 提出首个面向半黑盒检索控制环境的来源感知成员审计框架(SMA)，实现生成内容细粒度来源追踪（预训练/外部检索/用户输入），解决传统成员推理方法在RAG系统中失效的问题。  
+<tr><td>2025-08-12</td><td>FineState-Bench: A Comprehensive Benchmark for Fine-Grained State Control in GUI Agents</td><td>[2508.09241](http://arxiv.org/pdf/2508.09241)</td><td>◆ 提出了首个细粒度GUI代理控制评估标准FineState-Bench，填补了现有基准仅关注粗粒度任务完成的空白  
+◆ 构建了跨平台（桌面/网页/移动端）的2257项任务测试集，包含四个组件模块和四阶段评估指标  
+◆ 创新开发了即插即用的视觉诊断助手VDA，首次实现感知与定位能力的量化解耦分析  
+◆ 通过实验揭示当前最先进模型在细粒度交互中仅达32.8%准确率，验证了基准的有效性  
+◆ 首次证实视觉定位能力是当前GUI代理的主要瓶颈（理想视觉可使Gemini模型成功率提升14.9%）  
+◆ 完整开源评估框架与数据集，为GUI代理研究提供标准化测试环境与诊断工具</td></tr>
+<tr><td>2025-08-13</td><td>SMA: Who Said That? Auditing Membership Leakage in Semi-Black-box RAG Controlling</td><td>[2508.09105](http://arxiv.org/pdf/2508.09105)</td><td>◆ 提出首个面向半黑盒检索控制环境的来源感知成员审计框架(SMA)，实现生成内容细粒度来源追踪（预训练/外部检索/用户输入），解决传统成员推理方法在RAG系统中失效的问题。  
 ◆ 设计基于零阶优化的归因估计机制，通过大规模扰动采样和岭回归建模，在半黑盒约束下鲁棒近似输入令牌对输出的真实影响。  
 ◆ 首创跨模态归因技术，利用多模态大模型将图像输入投影为文本描述，实现文本模态的令牌级归因，首次支持MRAG系统中图像检索痕迹的成员推理。  
 ◆ 将成员推理的研究焦点从&quot;数据是否被记忆&quot;转向&quot;内容来源何处&quot;，为复杂生成系统的数据溯源审计提供新范式。  
@@ -1337,6 +1343,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>Stable Diffusion Models are Secretly Good at Visual In-Context Learning</td><td>[2508.09949](http://arxiv.org/pdf/2508.09949)</td><td>◆ 揭示了现成Stable Diffusion模型具备视觉上下文学习潜力，无需专门训练即可适应多种视觉任务。  
+◆ 提出原位注意力重计算机制，通过改造自注意力层显式融合查询与示例提示的上下文关系。  
+◆ 首次实现单一预训练扩散模型在六大视觉任务（如前景分割、目标检测等）的零样本迁移，突破现有方法需定制化训练的局限。  
+◆ 在Pascal-5i数据集上，前景分割任务mIoU指标分别超越Visual Prompting和IMProv方法8.9%和3.2%。  
+◆ 通过集成多提示样本提升任务推理能力，证明模型能有效利用上下文示例提升性能。  
+◆ 为视觉上下文学习提供轻量化新范式，仅需修改注意力机制且保持模型权重冻结，显著提升通用性。</td></tr>
 <tr><td>2025-08-09</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强策略，显著提升了基于2D关键点提升的3D人体姿态估计模型的泛化能力，无需额外数据或传感器。  
 ◆ 创新性地在标准2D关键点坐标(x,y)基础上，稀疏地增加了关键点检测置信度c和对应深度估计d两个信号，利用预训练模型计算这些信号，继承了它们的强泛化能力。  
 ◆ 方法具有模块化特性，可以轻松集成到现有的各种提升架构中，无需修改模型结构。  
@@ -1495,6 +1507,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>Episodic Memory Representation for Long-form Video Understanding</td><td>[2508.09486](http://arxiv.org/pdf/2508.09486)</td><td>◆ 提出Video-EM框架，解决现有Video-LLMs因上下文窗口限制难以处理长视频的问题，无需额外训练即可实现高效视频理解。  
+◆ 突破传统关键帧检索方法的静态图像匹配局限，通过模拟人类情景记忆机制，将关键帧建模为时序化情景事件，保留时空动态关系。  
+◆ 创新性地结合思维链（CoT）技术，利用大语言模型迭代筛选信息量最大化的最小情景记忆子集，避免冗余帧干扰。  
+◆ 首次在关键帧表示中同时捕捉空间关联与时间动态性，精准还原视频叙事逻辑，提升场景转换和上下文连续性的理解能力。  
+◆ 在四大主流评测基准（Video-MME等）上验证有效性，性能显著优于基线4-9%，且使用更少帧数，兼顾效率与准确性。</td></tr>
 <tr><td>2025-08-11</td><td>VISOR: Visual Input-based Steering for Output Redirection in Vision-Language Models</td><td>[2508.08521](http://arxiv.org/pdf/2508.08521)</td><td>◆提出VISOR方法，仅通过优化视觉输入即可实现精准的行为控制，无需修改模型内部参数或文本指令。  
 ◆首创&quot;通用引导图像&quot;概念，通过视觉刺激诱导目标激活模式，在保持隐蔽性的同时实现双向行为调控。  
 ◆在LLaVA-1.5-7B模型上验证了三大关键对齐任务（拒绝、谄媚、生存本能），单张150KB图像即可达到与激活向量相当的调控效果。  
@@ -1681,6 +1698,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation</td><td>[2508.09977](http://arxiv.org/pdf/2508.09977)</td><td>◆ 该论文首次系统综述了3D高斯泼溅（3DGS）技术在分割、编辑和生成等应用领域的最新进展，填补了该领域的调研空白。  
+◆ 通过引入2D基础模型与NeRF方法的对比分析，揭示了3DGS在语义理解和几何控制方面的独特优势，突出了其显式紧凑表示的潜力。  
+◆ 创新性地将3DGS应用划分为分割、编辑、生成等功能任务，并总结了各类任务的代表性方法、监督策略和学习范式，提炼出通用设计原则。  
+◆ 提供了公开数据集和评估协议的详细总结，并对现有方法在公共基准上的表现进行了横向对比分析，为后续研究提供参考框架。  
+◆ 建立了持续更新的开源资源库（GitHub），整合了相关论文、代码和工具，推动3DGS应用生态的协同发展。  
+◆ 通过跨领域趋势分析，指出3DGS在实时渲染与语义操作结合方向的发展前景，为未来研究指明潜在突破点。</td></tr>
+<tr><td>2025-08-13</td><td>Surg-InvNeRF: Invertible NeRF for 3D tracking and reconstruction in surgical vision</td><td>[2508.09681](http://arxiv.org/pdf/2508.09681)</td><td>◆ 提出了一种基于可逆神经辐射场（InvNeRF）的新型测试时优化（TTO）框架，用于手术场景中的长期3D点跟踪，解决了现有方法在一致性运动或3D跟踪上的局限性。  
+◆ 通过渲染监督像素对应关系，利用双向可变形-规范映射策略，有效处理定义的工作空间并优化光线密度，提升了跟踪精度。  
+◆ 设计了多尺度HexPlanes结构，显著加速推理过程，同时提出高效像素采样和收敛准则算法，优化计算效率。  
+◆ 在2D点跟踪任务中，平均精度比现有TTO方法提升近50%，并与非TTO方法竞争；在3D点跟踪中首次实现TTO框架，性能超越前馈方法。  
+◆ 结合可变形NeRF重建优势，支持2D和3D跟踪一体化，并在STIR和SCARE数据集上验证了其有效性与运动学数据整合能力。</td></tr>
 <tr><td>2025-08-12</td><td>MonoPartNeRF:Human Reconstruction from Monocular Video via Part-Based Neural Radiance Fields</td><td>[2508.08798](http://arxiv.org/pdf/2508.08798)</td><td>◆ 提出MonoPartNeRF框架，首次将基于分区的神经辐射场（NeRF）应用于单目视频人体重建，解决了复杂姿态下边界过渡不自然和遮挡区域重建不准的难题。  
 ◆ 设计双向变形模型，结合刚性与非刚性变换，建立观察空间与规范空间的可逆连续映射，通过参数化表面-时间空间（u, v, t）更精准捕捉非刚性运动。  
 ◆ 引入一致性损失函数，有效抑制变形导致的伪影和断裂问题，提升重建的几何连贯性。  
@@ -2131,4 +2159,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.13
+> 更新于: 2025.08.14
