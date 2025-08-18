@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.17)
+# 计算机视觉领域最新论文 (2025.08.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -835,6 +835,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-15</td><td>Enhancing Supervised Composed Image Retrieval via Reasoning-Augmented Representation Engineering</td><td>[2508.11272](http://arxiv.org/pdf/2508.11272)</td><td>◆ 提出了一种名为PMTFR的框架，结合金字塔匹配模型与无训练精炼机制，显著提升了监督式组合图像检索（CIR）的性能。  
+◆ 设计了简单高效的金字塔修补模块（Pyramid Patcher），通过多粒度视觉信息理解增强模型对参考图像和修改指令的联合解析能力。  
+◆ 首次将表示工程（Representation Engineering）引入CIR任务，利用思维链（CoT）数据提取表征并注入多模态大模型，无需额外训练排序模型即可优化检索结果。  
+◆ 创新性地在监督式CIR中实现无训练精炼范式，摆脱传统方法对显式文本推理或复杂提示设计的依赖，仅通过表征注入即可提升分数。  
+◆ 在主流CIR基准测试中超越现有最优方法，验证了框架的有效性，同时保持模型轻量化与可扩展性。</td></tr>
+<tr><td>2025-08-12</td><td>Relative Pose Regression with Pose Auto-Encoders: Enhancing Accuracy and Data Efficiency for Retail Applications</td><td>[2508.10933](http://arxiv.org/pdf/2508.10933)</td><td>◆ 将相机位姿自编码器（PAE）从绝对位姿回归（APR）扩展到相对位姿回归（RPR），提出了一种新的基于PAE的RPR方法。  
+◆ 设计了一种无需额外存储图像或位姿数据的重定位方案，通过PAE-based RPR对APR预测结果进行优化，显著提升了定位精度。  
+◆ 在同等架构下，验证了PAE-based RPR相比传统图像基RPR模型的有效性，证明了其性能优势。  
+◆ 在室内场景基准测试中，展示了该方法对APR定位精度的显著提升，尤其在数据有限的情况下表现突出。  
+◆ 仅需30%的训练数据即可达到竞争性性能，大幅降低了零售场景部署中的数据收集负担，提升了数据效率。  
+◆ 开源了代码与预训练模型，为后续研究与应用提供了便利。</td></tr>
 <tr><td>2025-08-12</td><td>FineState-Bench: A Comprehensive Benchmark for Fine-Grained State Control in GUI Agents</td><td>[2508.09241](http://arxiv.org/pdf/2508.09241)</td><td>◆ 提出了首个细粒度GUI代理控制评估标准FineState-Bench，填补了现有基准仅关注粗粒度任务完成的空白  
 ◆ 构建了跨平台（桌面/网页/移动端）的2257项任务测试集，包含四个组件模块和四阶段评估指标  
 ◆ 创新开发了即插即用的视觉诊断助手VDA，首次实现感知与定位能力的量化解耦分析  
@@ -1349,6 +1360,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>Topological Structure Description for Artcode Detection Using the Shape of Orientation Histogram</td><td>[2508.10942](http://arxiv.org/pdf/2508.10942)</td><td>◆ 提出了一种新型特征描述符——方向直方图形状（shape of orientation histogram），用于描述Artcode的通用拓扑结构。  
+◆ 将Artcode识别问题重新定义为Artcode提案检测任务，将拓扑相似但几何和语义不同的对象归为同一类别。  
+◆ 构建了专门的数据集并进行全面实验，验证了所提特征向量在表示拓扑结构方面的可行性。  
+◆ 开发了基于该特征向量的Artcode检测系统，实验结果表明其检测效果显著。  
+◆ 首次尝试开发基于特征的拓扑对象检测系统，为Artcode等拓扑对象的识别提供了新思路。  
+◆ 该研究为虚实交互开辟了新机会，并展示了拓扑对象检测的潜在应用前景。</td></tr>
 <tr><td>2025-08-13</td><td>Stable Diffusion Models are Secretly Good at Visual In-Context Learning</td><td>[2508.09949](http://arxiv.org/pdf/2508.09949)</td><td>◆ 揭示了现成Stable Diffusion模型具备视觉上下文学习潜力，无需专门训练即可适应多种视觉任务。  
 ◆ 提出原位注意力重计算机制，通过改造自注意力层显式融合查询与示例提示的上下文关系。  
 ◆ 首次实现单一预训练扩散模型在六大视觉任务（如前景分割、目标检测等）的零样本迁移，突破现有方法需定制化训练的局限。  
@@ -2177,4 +2194,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.17
+> 更新于: 2025.08.18
