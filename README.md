@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.18)
+# 计算机视觉领域最新论文 (2025.08.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -574,6 +574,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-17</td><td>HuBERT-VIC: Improving Noise-Robust Automatic Speech Recognition of Speech Foundation Model via Variance-Invariance-Covariance Regularization</td><td>[2508.12292](http://arxiv.org/pdf/2508.12292)</td><td>◆ 提出HuBERT-VIC模型，通过方差-不变性-协方差正则化（VICReg）提升语音基础模型在噪声环境下的鲁棒性。  
+◆ 首次将VICReg目标应用于语音领域，调整噪声语音表征的统计特性，增强模型对多样化声学特征的捕捉能力。  
+◆ 通过联合优化方差、不变性和协方差约束，有效提升模型在不同噪声类型中的泛化性能。  
+◆ 在HuBERT模型上验证有效性，相比基线模型，LibriSpeech测试集上相对性能提升23.3%（clean）和13.2%（other）。  
+◆ 为解决语音基础模型因依赖干净数据训练导致的噪声场景性能下降问题提供了新思路。</td></tr>
+<tr><td>2025-08-17</td><td>What do Speech Foundation Models Learn? Analysis and Applications</td><td>[2508.12255](http://arxiv.org/pdf/2508.12255)</td><td>◆ 提出轻量级分析框架，结合统计工具和无训练任务，系统研究语音基础模型（SFMs）各层编码的声学和语言学知识。  
+◆ 首次对多种SFMs和统计工具进行横向对比研究，揭示模型内部知识表示与下游任务性能的关联性。  
+◆ 针对口语理解（SLU）领域数据匮乏问题，创新性地贡献了口语命名实体识别（NER）和定位（NEL）任务，扩充SLU评测基准。  
+◆ 验证端到端SFM模型在SLU任务上的优越性，其性能超越传统级联式（语音识别+文本模型）方法。  
+◆ 全面评估不同SFMs及适配策略对SLU任务的影响，为模型选择提供实证依据。  
+◆ 通过工具链和数据集的双重创新，推动社区对SFMs的机理理解与实用化开发。</td></tr>
 <tr><td>2025-08-10</td><td>GS4Buildings: Prior-Guided Gaussian Splatting for 3D Building Reconstruction</td><td>[2508.07355](http://arxiv.org/pdf/2508.07355)</td><td>◆ 提出GS4Buildings方法，利用语义3D建筑模型作为先验，增强高斯泼溅（GS）在大规模复杂城市场景中的重建能力，解决传统方法因遮挡导致的不完整问题。  
 ◆ 直接基于低细节层次（LoD2）语义建筑模型初始化高斯分布，替代传统运动恢复结构（SfM）流程，简化重建流程并提升鲁棒性。  
 ◆ 通过建筑几何生成先验深度和法线图，并将其融入优化过程，显著提升表面一致性和结构准确性。  
@@ -839,6 +850,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-17</td><td>CLAIR: CLIP-Aided Weakly Supervised Zero-Shot Cross-Domain Image Retrieval</td><td>[2508.12290](http://arxiv.org/pdf/2508.12290)</td><td>◆ 提出CLAIR方法，利用CLIP生成的噪声伪标签进行弱监督零样本跨域图像检索（WSZS-CDIR），替代传统无监督方法。  
+◆ 通过CLIP文本与图像特征的相似度计算置信分数，有效优化噪声伪标签的质量。  
+◆ 设计类感知潜在空间编码机制，结合实例间和簇间对比损失，提升特征区分度。  
+◆ 提出跨域对比损失减少域差异，并创新性地通过闭式解学习跨域映射函数，仅用CLIP文本嵌入实现特征对齐。  
+◆ 引入可学习提示词增强零样本泛化能力，支持新类别检索。  
+◆ 在TUBerlin、Sketchy等数据集上验证了CLAIR的优越性，性能超越现有最优方法。</td></tr>
 <tr><td>2025-08-15</td><td>Enhancing Supervised Composed Image Retrieval via Reasoning-Augmented Representation Engineering</td><td>[2508.11272](http://arxiv.org/pdf/2508.11272)</td><td>◆ 提出了一种名为PMTFR的框架，结合金字塔匹配模型与无训练精炼机制，显著提升了监督式组合图像检索（CIR）的性能。  
 ◆ 设计了简单高效的金字塔修补模块（Pyramid Patcher），通过多粒度视觉信息理解增强模型对参考图像和修改指令的联合解析能力。  
 ◆ 首次将表示工程（Representation Engineering）引入CIR任务，利用思维链（CoT）数据提取表征并注入多模态大模型，无需额外训练排序模型即可优化检索结果。  
@@ -1366,6 +1383,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-17</td><td>Splat Feature Solver</td><td>[2508.12216](http://arxiv.org/pdf/2508.12216)</td><td>◆ 提出了一种统一且与核函数及特征无关的特征提升问题稀疏线性逆问题公式化方法，可通过闭式解高效求解。  
+◆ 在凸损失函数下提供了全局最优误差的可证明上界，确保高质量的特征提升结果。  
+◆ 引入两种互补的正则化策略（Tikhonov Guidance和Post-Lifting Aggregation）以解决多视角观测中的不一致性和噪声问题，提升语义保真度。  
+◆ Tikhonov Guidance通过软对角优势确保数值稳定性，Post-Lifting Aggregation通过特征聚类过滤噪声输入。  
+◆ 在开放词汇3D分割基准测试中达到最先进性能，显著优于基于训练、分组和启发式的前沿基线方法，且特征提升仅需数分钟完成。</td></tr>
 <tr><td>2025-08-13</td><td>Topological Structure Description for Artcode Detection Using the Shape of Orientation Histogram</td><td>[2508.10942](http://arxiv.org/pdf/2508.10942)</td><td>◆ 提出了一种新型特征描述符——方向直方图形状（shape of orientation histogram），用于描述Artcode的通用拓扑结构。  
 ◆ 将Artcode识别问题重新定义为Artcode提案检测任务，将拓扑相似但几何和语义不同的对象归为同一类别。  
 ◆ 构建了专门的数据集并进行全面实验，验证了所提特征向量在表示拓扑结构方面的可行性。  
@@ -1378,7 +1400,7 @@
 ◆ 在Pascal-5i数据集上，前景分割任务mIoU指标分别超越Visual Prompting和IMProv方法8.9%和3.2%。  
 ◆ 通过集成多提示样本提升任务推理能力，证明模型能有效利用上下文示例提升性能。  
 ◆ 为视觉上下文学习提供轻量化新范式，仅需修改注意力机制且保持模型权重冻结，显著提升通用性。</td></tr>
-<tr><td>2025-08-09</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强策略，显著提升了基于2D关键点提升的3D人体姿态估计模型的泛化能力，无需额外数据或传感器。  
+<tr><td>2025-08-16</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强策略，显著提升了基于2D关键点提升的3D人体姿态估计模型的泛化能力，无需额外数据或传感器。  
 ◆ 创新性地在标准2D关键点坐标(x,y)基础上，稀疏地增加了关键点检测置信度c和对应深度估计d两个信号，利用预训练模型计算这些信号，继承了它们的强泛化能力。  
 ◆ 方法具有模块化特性，可以轻松集成到现有的各种提升架构中，无需修改模型结构。  
 ◆ 在四个数据集上的大量实验表明，AugLift将未见数据集的跨数据集性能平均提升10.1%，同时将分布内性能提升4.0%。  
@@ -1743,6 +1765,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-16</td><td>RealTalk: Realistic Emotion-Aware Lifelike Talking-Head Synthesis</td><td>[2508.12163](http://arxiv.org/pdf/2508.12163)</td><td>◆ 提出RealTalk框架，首次实现高情感准确度、强情感可控性和稳定身份保持的拟真说话头部合成。  
+◆ 创新采用变分自编码器（VAE）从音频生成3D面部标志点，结合ResNet标志点变形模型（LDM）融合情感标签嵌入，精准控制表情。  
+◆ 设计新型三平面注意力神经辐射场（NeRF），通过标志点和面部混合形状系数联合建模，显著提升合成图像的逼真度。  
+◆ 引入情感标签嵌入机制，突破传统方法对情感表达控制的局限性，支持细粒度情感调节。  
+◆ 通过大量实验验证，在情感准确性、可控性和身份保持等核心指标上全面超越现有技术，推动社交智能AI发展。</td></tr>
 <tr><td>2025-08-13</td><td>A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation</td><td>[2508.09977](http://arxiv.org/pdf/2508.09977)</td><td>◆ 该论文首次系统综述了3D高斯泼溅（3DGS）技术在分割、编辑和生成等应用领域的最新进展，填补了该领域的调研空白。  
 ◆ 通过引入2D基础模型与NeRF方法的对比分析，揭示了3DGS在语义理解和几何控制方面的独特优势，突出了其显式紧凑表示的潜力。  
 ◆ 创新性地将3DGS应用划分为分割、编辑、生成等功能任务，并总结了各类任务的代表性方法、监督策略和学习范式，提炼出通用设计原则。  
@@ -2206,4 +2233,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.18
+> 更新于: 2025.08.19
