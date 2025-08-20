@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.19)
+# 计算机视觉领域最新论文 (2025.08.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>Online 3D Gaussian Splatting Modeling with Novel View Selection</td><td>[2508.14014](http://arxiv.org/pdf/2508.14014)</td><td>该论文针对仅使用RGB图像进行在线3D高斯泼溅建模的挑战，提出了一种创新解决方案。其核心贡献在于通过自适应视图选择显著提升了在线重建模型的完整性。
+
+◆ 提出了自适应新颖视图选择机制，在线分析重建质量并动态选择最优的非关键帧进行补充训练。
+◆ 突破了传统方法仅依赖关键帧的局限，通过融合关键帧和精选的非关键帧，从多样化视角细化不完整区域。
+◆ 设计了一个集成在线多视图立体视觉的框架，确保整个3D高斯泼溅建模过程中三维信息的一致性。
+◆ 实现了在在线处理的严格限制下（无法使用大量帧或过多训练迭代），仍能构建高质量通用模型的目标。
+实验结果表明，该方法在复杂户外场景中优于现有最先进技术，实现了卓越的性能表现。</td></tr>
+<tr><td>2025-08-19</td><td>ROVER: Robust Loop Closure Verification with Trajectory Prior in Repetitive Environments</td><td>[2508.13488](http://arxiv.org/pdf/2508.13488)</td><td>该论文提出了一种用于重复环境下回环闭合验证的鲁棒方法ROVER，其核心创新在于利用历史轨迹先验约束来识别错误回环。  
+◆ 首次将机器人时空运动轨迹作为先验知识引入回环验证框架，突破传统仅依赖外观特征的局限性。  
+◆ 提出通过位姿图优化生成候选回环的轨迹假设，并设计评分机制评估其与原始轨迹先验的一致性。  
+◆ 在高度重复环境中能有效拒绝虚假回环，解决了外观相似性导致的误检测难题。  
+实验表明该方法在公开数据集和真实场景中均显著提升验证准确性，且可无缝集成至现有SLAM系统增强鲁棒性。</td></tr>
 <tr><td>2025-08-14</td><td>Super LiDAR Reflectance for Robotic Perception</td><td>[2508.10398](http://arxiv.org/pdf/2508.10398)</td><td>◆ 提出了一种创新框架，能够从稀疏扫描数据生成高密度的LiDAR反射率图像，解决了低成本LiDAR因数据稀疏性导致的应用受限问题。  
 ◆ 针对非重复扫描LiDAR（NRS-LiDAR）的特性，设计了专用的反射率图像稠密化网络，显著提升了稀疏数据的利用率。  
 ◆ 攻克了反射率校准和从静态场景到动态场景迁移的关键技术难题，实现了真实场景下的稠密反射率图像重建。  
@@ -574,6 +586,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>Smooth Flow Matching</td><td>[2508.13831](http://arxiv.org/pdf/2508.13831)</td><td>本文提出Smooth Flow Matching（SFM）框架，用于解决函数型数据的生成建模问题。其核心贡献与创新点包括：
+◆ 专为函数型数据设计，突破传统方法对高斯性或低秩假设的限制，构建半参数Copula流生成无限维非高斯函数数据。
+◆ 计算效率高且能处理不规则采样观测，直接保证生成函数的平滑性，克服了现有深度生成模型在函数数据场景中的适用性局限。
+◆ 通过模拟实验验证了SFM在合成数据质量和计算效率方面的优势，并在MIMIC-IV电子健康记录数据上成功生成了高质量临床轨迹替代数据。
+◆ 为隐私敏感场景下的统计分析提供了实用灵活的解决方案，显著提升了电子健康记录等函数型数据在临床应用中的效用价值。</td></tr>
 <tr><td>2025-08-17</td><td>HuBERT-VIC: Improving Noise-Robust Automatic Speech Recognition of Speech Foundation Model via Variance-Invariance-Covariance Regularization</td><td>[2508.12292](http://arxiv.org/pdf/2508.12292)</td><td>◆ 提出HuBERT-VIC模型，通过方差-不变性-协方差正则化（VICReg）提升语音基础模型在噪声环境下的鲁棒性。  
 ◆ 首次将VICReg目标应用于语音领域，调整噪声语音表征的统计特性，增强模型对多样化声学特征的捕捉能力。  
 ◆ 通过联合优化方差、不变性和协方差约束，有效提升模型在不同噪声类型中的泛化性能。  
@@ -850,6 +867,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>UniECS: Unified Multimodal E-Commerce Search Framework with Gated Cross-modal Fusion</td><td>[2508.13843](http://arxiv.org/pdf/2508.13843)</td><td>◆ 提出了UniECS统一多模态电商搜索框架，能灵活处理图像、文本及其任意组合的检索场景，突破了传统方法局限于固定模态配对的限制。  
+◆ 设计了新型门控多模态编码器，采用自适应融合机制，有效整合不同模态表征并处理模态缺失问题。  
+◆ 开发了综合训练策略，结合跨模态对齐损失、局部对齐损失、模态内对比损失和自适应损失加权，优化模型学习效果。  
+◆ 构建了M-BEER基准数据集，包含5万商品对，为多模态电商检索提供全面评估标准。  
+◆ 在多个基准测试中显著优于现有模型（如文本搜图任务R@10提升28%），参数量仅0.2B，效率远超更大规模模型。  
+◆ 成功部署于快手电商搜索平台，点击率提升2.74%、收入增长8.33%，验证了实际应用价值。</td></tr>
+<tr><td>2025-08-19</td><td>ROVER: Robust Loop Closure Verification with Trajectory Prior in Repetitive Environments</td><td>[2508.13488](http://arxiv.org/pdf/2508.13488)</td><td>该论文提出了一种在重复环境中进行鲁棒回环闭合验证的方法ROVER，其核心创新在于利用历史轨迹作为先验约束来提升验证可靠性。  
+◆ 首次将机器人的时空运动轨迹作为先验知识引入回环验证过程，突破了传统方法仅依赖外观特征的局限性。  
+◆ 提出通过位姿图优化生成候选回环对应的轨迹，并设计评分机制评估该轨迹与无回环先验轨迹的一致性。  
+◆ 在存在高度相似结构的重复环境中能有效拒绝错误回环，显著降低SLAM系统的误检风险。  
+实验证明，该方法在公开数据集和真实场景中均表现出优越性能，并可无缝集成至现有先进SLAM系统中。</td></tr>
 <tr><td>2025-08-17</td><td>CLAIR: CLIP-Aided Weakly Supervised Zero-Shot Cross-Domain Image Retrieval</td><td>[2508.12290](http://arxiv.org/pdf/2508.12290)</td><td>◆ 提出CLAIR方法，利用CLIP生成的噪声伪标签进行弱监督零样本跨域图像检索（WSZS-CDIR），替代传统无监督方法。  
 ◆ 通过CLIP文本与图像特征的相似度计算置信分数，有效优化噪声伪标签的质量。  
 ◆ 设计类感知潜在空间编码机制，结合实例间和簇间对比损失，提升特征区分度。  
@@ -1765,6 +1793,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>Is-NeRF: In-scattering Neural Radiance Field for Blurred Images</td><td>[2508.13808](http://arxiv.org/pdf/2508.13808)</td><td>Is-NeRF的核心贡献是提出了一种新颖的散射感知神经辐射场，用于从运动模糊图像中恢复清晰的三维场景。其创新点主要体现在以下四个方面：
+
+◆ 提出了一个创新的内散射表示模型，统一了现实世界中六种常见的光线传播现象，从根本上改变了传统NeRF的直线体渲染方式。
+◆ 建立了一个全新的、可适应复杂光路的散射感知体渲染管线，有效解决了传统方法因几何模糊导致的训练歧义问题。
+◆ 引入了一种自适应学习策略，该策略能自主确定散射方向和采样间隔，从而捕捉到更精细的物体几何细节。
+◆ 实现了对NeRF参数、散射参数和相机运动的联合优化，首次实现了仅从模糊图像中就能恢复出高保真场景表示和精确几何细节。</td></tr>
+<tr><td>2025-08-17</td><td>PreSem-Surf: RGB-D Surface Reconstruction with Progressive Semantic Modeling and SG-MLP Pre-Rendering Mechanism</td><td>[2508.13228](http://arxiv.org/pdf/2508.13228)</td><td>PreSem-Surf是一种基于神经辐射场（NeRF）的优化方法，旨在从RGB-D序列快速重建高质量场景表面。其核心贡献在于融合了颜色、深度和语义信息以全面提升重建性能。
+
+◆ 提出了一种新颖的SG-MLP采样结构，结合PR-MLP（预条件多层感知机）进行体素预渲染，使模型能更早捕获场景信息并更好地区分噪声与局部细节。
+◆ 采用了渐进式语义建模策略，通过逐步提取更精细的语义信息来增强场景理解，同时有效减少了模型训练所需时间。
+实验结果表明，该方法在C-L1、F-score和IoU多项指标上达到最优，并在其他指标上保持竞争力，证明了其高效性和实用价值。</td></tr>
 <tr><td>2025-08-16</td><td>RealTalk: Realistic Emotion-Aware Lifelike Talking-Head Synthesis</td><td>[2508.12163](http://arxiv.org/pdf/2508.12163)</td><td>◆ 提出RealTalk框架，首次实现高情感准确度、强情感可控性和稳定身份保持的拟真说话头部合成。  
 ◆ 创新采用变分自编码器（VAE）从音频生成3D面部标志点，结合ResNet标志点变形模型（LDM）融合情感标签嵌入，精准控制表情。  
 ◆ 设计新型三平面注意力神经辐射场（NeRF），通过标志点和面部混合形状系数联合建模，显著提升合成图像的逼真度。  
@@ -2233,4 +2272,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.19
+> 更新于: 2025.08.20
