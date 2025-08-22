@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.21)
+# 计算机视觉领域最新论文 (2025.08.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -593,6 +593,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-21</td><td>Enhancing Novel View Synthesis from extremely sparse views with SfM-free 3D Gaussian Splatting Framework</td><td>[2508.15457](http://arxiv.org/pdf/2508.15457)</td><td>该论文针对3D高斯泼溅（3DGS）在极端稀疏视角（如仅2个训练视图）下因运动恢复结构（SfM）初始化失败导致的渲染质量下降问题，提出了一种无需SfM的新型框架。其核心创新点包括：
+◆ 提出密集立体模块替代SfM，通过渐进式相机姿态估计和全局稠密点云重建实现初始化。
+◆ 设计连贯视图插值模块，通过插值相机姿态并生成视角一致的内容作为额外监督信号，缓解稀疏输入的信息稀缺问题。
+◆ 引入多尺度拉普拉斯一致性正则化和自适应空间感知多尺度几何正则化，显著提升几何结构和渲染内容的质量。
+实验表明，该方法在极端稀疏条件下PSNR指标提升2.75dB，合成图像畸变小且高频细节丰富，显著优于现有技术。</td></tr>
 <tr><td>2025-08-20</td><td>GeMS: Efficient Gaussian Splatting for Extreme Motion Blur</td><td>[2508.14682](http://arxiv.org/pdf/2508.14682)</td><td>GeMS是首个直接从极端运动模糊图像中进行3D高斯溅射（3DGS）重建的框架，无需依赖任何清晰图像。其核心创新点包括：
 ◆ 提出VGGSfM，一种基于深度学习的运动恢复结构（SfM）方法，直接从模糊输入中估计相机位姿并生成点云。
 ◆ 引入3DGS-MCMC方法，将高斯分布视为概率分布样本进行初始化，取代了依赖启发式 densification 和 pruning 的传统策略。
@@ -880,6 +885,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-21</td><td>DesignCLIP: Multimodal Learning with CLIP for Design Patent Understanding</td><td>[2508.15297](http://arxiv.org/pdf/2508.15297)</td><td>该论文提出了DesignCLIP，一个基于CLIP的多模态框架，用于提升设计专利的理解与分析。其核心贡献与创新点包括：
+◆ 构建了首个针对美国设计专利的大规模数据集，为多模态研究提供了基础。
+◆ 提出类感知分类与对比学习策略，有效适应专利数据的抽象和结构性特点。
+◆ 利用生成式详细标注和专利图像的多视角学习，增强了图像与文本的语义对齐。
+◆ 验证了框架在专利分类和检索任务上的优越性，显著超越现有基线及SOTA模型。
+◆ 探索了多模态专利检索的应用潜力，为设计创新提供更多样化的灵感来源。</td></tr>
 <tr><td>2025-08-19</td><td>UniECS: Unified Multimodal E-Commerce Search Framework with Gated Cross-modal Fusion</td><td>[2508.13843](http://arxiv.org/pdf/2508.13843)</td><td>◆ 提出了UniECS统一多模态电商搜索框架，能灵活处理图像、文本及其任意组合的检索场景，突破了传统方法局限于固定模态配对的限制。  
 ◆ 设计了新型门控多模态编码器，采用自适应融合机制，有效整合不同模态表征并处理模态缺失问题。  
 ◆ 开发了综合训练策略，结合跨模态对齐损失、局部对齐损失、模态内对比损失和自适应损失加权，优化模型学习效果。  
@@ -1424,6 +1435,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-21</td><td>Mag-Match: Magnetic Vector Field Features for Map Matching and Registration</td><td>[2508.15300](http://arxiv.org/pdf/2508.15300)</td><td>Mag-Match提出了一种利用三维磁场矢量特征进行地图匹配与注册的新方法。  
+◆ 创新性地利用磁力计数据提取高阶导数特征，这些特征对视觉或激光传感器失效的烟雾、粉尘等恶劣环境具有鲁棒性。  
+◆ 所提出的磁场特征描述子具有全局旋转不变性，无需依赖重力方向对齐，显著提升了不同地图或不同机器人数据之间的配准灵活性。  
+◆ 采用物理信息高斯过程进行概率推理，能够从离散点云数据中高效、递归地推断整个地图的磁场及其高阶导数，实现了对磁场场的连续建模。  
+◆ 在仿真和真实实验中验证了方法有效性，实现了地图-地图、机器人-地图和机器人-机器人之间的精确变换，性能优于基于SIFT的传统方法。</td></tr>
 <tr><td>2025-08-17</td><td>Splat Feature Solver</td><td>[2508.12216](http://arxiv.org/pdf/2508.12216)</td><td>◆ 提出了一种统一且与核函数及特征无关的特征提升问题稀疏线性逆问题公式化方法，可通过闭式解高效求解。  
 ◆ 在凸损失函数下提供了全局最优误差的可证明上界，确保高质量的特征提升结果。  
 ◆ 引入两种互补的正则化策略（Tikhonov Guidance和Post-Lifting Aggregation）以解决多视角观测中的不一致性和噪声问题，提升语义保真度。  
@@ -2290,4 +2306,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.21
+> 更新于: 2025.08.22
