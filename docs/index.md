@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.25)
+# 计算机视觉领域最新论文 (2025.08.26)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-24</td><td>SEER-VAR: Semantic Egocentric Environment Reasoner for Vehicle Augmented Reality</td><td>[2508.17255](http://arxiv.org/pdf/2508.17255)</td><td>SEER-VAR提出了一种面向车辆增强现实（AR）的语义自中心环境推理框架，其核心贡献与创新点如下：
+
+◆ 采用深度引导的视觉-语言 grounding 技术，动态分离车内与车外场景，突破了传统静态或单视角设定的限制。  
+◆ 设计了上下文感知的SLAM分支（CASB），通过双路SLAM系统分别稳健地跟踪不同场景下的自中心运动。  
+◆ 引入基于GPT的大语言模型模块，生成上下文感知的AR叠加内容，如仪表盘提示和危险预警。  
+◆ 构建并开源EgoSLAM-Drive真实世界数据集，提供多场景同步的自中心视图、6DoF真值位姿与AR标注，支持系统评估。  
+实验表明，该系统在多种环境下实现了精确的空间对齐与感知一致的AR渲染，并通过用户研究验证了其在场景理解、信息相关性和驾驶体验方面的显著提升。</td></tr>
+<tr><td>2025-08-24</td><td>VROOM - Visual Reconstruction over Onboard Multiview</td><td>[2508.17172](http://arxiv.org/pdf/2508.17172)</td><td>VROOM提出了一种仅依靠F1赛车的车载摄像头视频来重建赛道3D模型的系统。其核心创新在于解决了极端高速运动和视频帧剧烈切换带来的挑战。
+◆ 首创了基于F1赛车车载单目视频进行大规模赛道4D重建的可行方案。
+◆ 设计了一套结合DROID-SLAM、AnyCam和Monst3r等多种方法的处理流程，并针对动态场景进行优化。
+◆ 采用了包括掩码、时间分块和分辨率缩放等预处理技术，以应对动态模糊和计算资源限制。
+实验证明，该系统能在摩纳哥站等复杂环境中部分恢复赛道和车辆轨迹，验证了该方法的可行性，为实景 scalable 4D重建提供了新思路。</td></tr>
+<tr><td>2025-08-23</td><td>DualReg: Dual-Space Filtering and Reinforcement for Rigid Registration</td><td>[2508.17034](http://arxiv.org/pdf/2508.17034)</td><td>本文提出了一种新颖的双空间刚性配准方法DualReg，有效结合了基于特征匹配和局部几何匹配的优势。  
+◆ 创新性地引入双空间范式，分别处理大变换差异的初始对齐和精细局部配准，克服了单一方法的局限性。  
+◆ 设计了高效过滤机制，采用轻量级单点RANSAC算法和细化模块快速剔除不可靠的特征对应点，提升计算效率。  
+◆ 提出将过滤后的对应点作为锚点，提取几何代理并构建优化目标函数，配合定制求解器实现高精度变换估计。  
+实验表明，该方法在KITTI数据集上达到与MAC相当精度的同时，CPU计算速度提升高达32倍，显著优于现有方法。</td></tr>
+<tr><td>2025-08-23</td><td>A Workflow for Map Creation in Autonomous Vehicle Simulations</td><td>[2508.16856](http://arxiv.org/pdf/2508.16856)</td><td>本文针对自动驾驶仿真中高精度地图创建困难且成本高昂的问题，提出了一种创新的地图制作工作流。  
+◆ 设计了一个定制化流程，显著简化了仿真就绪地图的创建，降低了资源消耗。  
+◆ 以CARLA等主流仿真器为背景，但避免了对其特定依赖，提升了方法的通用性和灵活性。  
+◆ 通过生成加拿大安大略理工大学停车场的3D地图实例，验证了工作流的可行性与有效性。  
+未来工作将集成SLAM技术并优化经纬度处理，以进一步提升精度和兼容性。</td></tr>
+<tr><td>2025-08-22</td><td>COSMO-Bench: A Benchmark for Collaborative SLAM Optimization</td><td>[2508.16731](http://arxiv.org/pdf/2508.16731)</td><td>该论文的核心贡献是设计并发布了首个专门用于评估多机器人协同SLAM（C-SLAM）优化算法的基准测试套件COSMO-Bench，以解决该领域缺乏标准评估工具的问题。
+◆ 首次构建了一个专注于多机器人协同SLAM后端优化算法的标准化评测基准。
+◆ 提供了24个高质量数据集，这些数据源自真实世界的LiDAR数据和最先进的C-SLAM前端处理结果，确保了数据的真实性和挑战性。
+◆ 填补了多机器人SLAM研究缺乏统一、公认评估标准的空白，为不同算法的公平比较提供了平台。
+◆ 所有数据集均已开源，旨在促进该研究领域的协作、复现与发展。</td></tr>
 <tr><td>2025-08-22</td><td>GPL-SLAM: A Laser SLAM Framework with Gaussian Process Based Extended Landmarks</td><td>[2508.16459](http://arxiv.org/pdf/2508.16459)</td><td>本文提出了一种基于高斯过程地标的新型激光SLAM框架GPL-SLAM。其核心创新点包括：
 ◆ 采用高斯过程对环境中物体的轮廓进行建模，替代传统的栅格地图或点云配准方法。
 ◆ 提出在线递归更新方案，能够高效更新地标轮廓并显著减少内存使用。
@@ -603,7 +630,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-22</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了一种名为HOSt3R的、无需关键点检测的手-物三维重建方法。其核心贡献在于摆脱了现有方法对关键点检测技术的依赖，从而提升了在复杂场景下的鲁棒性和泛化能力。
+<tr><td>2025-08-25</td><td>SAIL-Recon: Large SfM by Augmenting Scene Regression with Localization</td><td>[2508.17972](http://arxiv.org/pdf/2508.17972)</td><td>SAIL-Recon提出了一种用于大规模运动恢复结构（SfM）的前馈Transformer方法，有效解决了现有场景回归方法难以处理大量输入图像的问题。
+
+◆ 核心创新在于将视觉定位能力融入场景回归网络，通过结合两种范式的优势来提升处理大规模场景的能力。
+◆ 方法首先从锚图像子集计算出一个神经场景表示，然后基于此表示对回归网络进行微调，以重建所有输入图像。
+◆ 该方法不仅能够高效扩展到大规模场景，还在相机姿态估计和新视图合成任务上取得了最先进的性能。
+◆ 在多个权威数据集（如TUM-RGBD、CO3Dv2和Tanks &amp; Temples）上的综合实验验证了其有效性和优越性。</td></tr>
+<tr><td>2025-08-25</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了一种名为HOSt3R的、无需关键点检测的手-物三维重建方法。其核心贡献在于摆脱了现有方法对关键点检测技术的依赖，从而提升了在复杂场景下的鲁棒性和泛化能力。
 ◆ 提出了一种无需关键点检测器（keypoint-free）的鲁棒方法，直接从单目运动视频中估计手和物体的三维变换。
 ◆ 解决了现有基于SfM和手部关键点优化的方法在物体几何多样、纹理弱以及手物严重遮挡情况下的失效问题。
 ◆ 将所提的变换估计方法与一个多视图重建流程集成，实现了精确的手-物三维形状恢复。
@@ -905,6 +938,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-25</td><td>GSVisLoc: Generalizable Visual Localization for Gaussian Splatting Scene Representations</td><td>[2508.18242](http://arxiv.org/pdf/2508.18242)</td><td>GSVisLoc提出了一种专为3D高斯泼溅（3DGS）场景表示设计的通用视觉定位方法。  
+◆ 首次实现了无需任何修改或重训练，直接利用原始3DGS模型进行视觉定位。  
+◆ 通过下采样和编码3D高斯来提取场景特征，并与查询图像特征进行鲁棒匹配。  
+◆ 采用由粗到精的三阶段流程：粗匹配、精细匹配和姿态优化，确保高精度位姿估计。  
+◆ 在室内外标准基准测试中表现出竞争力，显著优于现有基于3DGS的基线方法。  
+◆ 展现出强大的泛化能力，无需额外训练即可直接应用于全新场景。</td></tr>
+<tr><td>2025-08-25</td><td>SAIL-Recon: Large SfM by Augmenting Scene Regression with Localization</td><td>[2508.17972](http://arxiv.org/pdf/2508.17972)</td><td>SAIL-Recon提出了一种用于大规模运动恢复结构（SfM）的前馈Transformer模型，旨在解决现有场景回归方法难以处理大量输入图像的问题。
+
+◆ 核心创新是将视觉定位能力融入场景回归网络，通过引入锚点图像子集来构建神经场景表示。
+◆ 该方法首先从锚点图像计算出一个紧凑的神经场景表示，作为全局场景先验。
+◆ 回归网络随后以该神经表示为条件进行微调，从而能够高效地重建所有输入图像的相机位姿和3D结构。
+◆ 该方法在保持场景回归方法应对极端视角变化优势的同时，成功将其扩展至大规模场景。
+实验表明，该方法在TUM-RGBD、CO3Dv2和Tanks &amp; Temples等多个基准测试中，在相机位姿估计和新视角合成任务上均达到了最先进的性能。</td></tr>
+<tr><td>2025-08-24</td><td>Data Leakage in Visual Datasets</td><td>[2508.17416](http://arxiv.org/pdf/2508.17416)</td><td>该论文的核心贡献是系统性地分析了视觉数据集中的数据泄漏问题及其对模型评估可靠性的影响。  
+◆首次对视觉数据泄漏进行了多维度分类，依据模态、覆盖范围和程度划分泄漏类型。  
+◆采用图像检索技术实证检验了多个主流数据集，发现所有被分析数据集均存在不同形式的泄漏。  
+◆证明了各类泄漏（从严重到轻微）均会损害下游任务中模型评估的公正性。  
+◆揭示了互联网数据源与公开基准并存导致的泄漏必然性，呼吁学界关注数据构建规范。  
+研究结果对视觉领域基准构建和模型评估实践具有重要警示意义。</td></tr>
+<tr><td>2025-08-22</td><td>Sparse and Dense Retrievers Learn Better Together: Joint Sparse-Dense Optimization for Text-Image Retrieval</td><td>[2508.16707](http://arxiv.org/pdf/2508.16707)</td><td>本文提出了一种联合稀疏-密集检索优化框架，用于提升多模态文本-图像检索性能。  
+◆ 通过自知识蒸馏实现稀疏与密集表示的双向协同学习，突破以往单向蒸馏或独立训练的限制。  
+◆ 提出融合相似度分数（稀疏与密集得分的加权和）作为共享教师信号，同步优化两种表示。  
+◆ 仅微调密集编码器最后一层和稀疏投影头，无需全模型重训练，高效兼容现有视觉-语言预训练模型。  
+实验表明，该框架使稀疏检索器性能显著优于现有稀疏基线，甚至达到或超越密集模型效果，同时保持稀疏模型的高效与可解释性优势。</td></tr>
 <tr><td>2025-08-21</td><td>DesignCLIP: Multimodal Learning with CLIP for Design Patent Understanding</td><td>[2508.15297](http://arxiv.org/pdf/2508.15297)</td><td>该论文提出了DesignCLIP，一个基于CLIP的多模态框架，用于提升设计专利的理解与分析。其核心贡献与创新点包括：
 ◆ 构建了首个针对美国设计专利的大规模数据集，为多模态研究提供了基础。
 ◆ 提出类感知分类与对比学习策略，有效适应专利数据的抽象和结构性特点。
@@ -1453,7 +1510,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-22</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了名为HOSt3R的无需关键点检测的手-物体三维重建方法。其核心贡献在于摆脱了传统方法对关键点检测的依赖，显著提升了在复杂场景下的鲁棒性和泛化能力。
+<tr><td>2025-08-25</td><td>DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning</td><td>[2508.17746](http://arxiv.org/pdf/2508.17746)</td><td>该论文提出了一种名为DroneKey的新型框架，用于从图像序列中精确估计无人机的三维位姿。其核心贡献在于解决了无人机关键点检测中因螺旋桨视觉相似性高和姿态多样性大而导致的难题。  
+◆ 提出了一种结合二维关键点检测器和三维位姿估计器的专用框架，针对无人机特性进行优化。  
+◆ 在关键点检测阶段，创新性地从每个Transformer编码器层提取两种关键表示（中间表示和紧凑表示），并通过门控求和进行最优融合。  
+◆ 引入了姿态自适应的马氏距离损失函数，有效提升了极端姿态下关键点预测的稳定性和准确性。  
+◆ 构建并公开了新的无人机二维关键点及三维位姿数据集，为后续研究提供基础。  
+实验结果表明，该方法在关键点检测中达到了99.68%的AP（OKS指标），三维位姿估计误差极低（角度MAE为10.62度，位置RMSE为0.221米），同时实现了44 FPS的实时处理速度。</td></tr>
+<tr><td>2025-08-25</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了名为HOSt3R的无需关键点检测的手-物体三维重建方法。其核心贡献在于摆脱了传统方法对关键点检测的依赖，显著提升了在复杂场景下的鲁棒性和泛化能力。
 ◆ 提出了一种无需关键点检测器的、直接从单目运动视频估计手-物体三维变换的鲁棒方法。
 ◆ 摆脱了对预扫描物体模板或已知相机内参的依赖，实现了更通用和无约束的应用。
 ◆ 将所提出的变换估计方法与多视图重建流程相结合，实现了精确的手-物体三维形状恢复。
@@ -1842,6 +1905,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-25</td><td>Generating Human-AI Collaborative Design Sequence for 3D Assets via Differentiable Operation Graph</td><td>[2508.17645](http://arxiv.org/pdf/2508.17645)</td><td>该论文的核心贡献是提出了一种通过可微分操作图生成人机协作3D资产设计序列的方法，以弥合AI生成内容与人类参数化设计工作流之间的鸿沟。  
+◆ 将传统建模操作（如拉伸、布尔运算）重新构建为可微分单元，支持通过梯度下降联合优化连续和离散参数。  
+◆ 构建了带有门控机制的分层操作图，并通过端到端优化倒角距离实现与目标几何的高保真对齐。  
+◆ 提出多阶段序列长度约束与领域规则惩罚机制，实现了无需真实序列标注的无监督紧凑序列学习。  
+◆ 生成的序列具备高几何准确性、平滑网格结构、合理步骤组成和灵活编辑能力，完全兼容主流设计软件流程。  
+该方法显著提升了AI生成内容在设计实践中的可用性和协作效率。</td></tr>
+<tr><td>2025-08-23</td><td>Align 3D Representation and Text Embedding for 3D Content Personalization</td><td>[2508.16932](http://arxiv.org/pdf/2508.16932)</td><td>该论文提出了一种名为Invert3D的新型框架，旨在解决3D内容高效个性化这一关键挑战。其核心贡献与创新点如下：
+
+◆ 提出了一个将3D表示与文本嵌入空间对齐的创新框架，弥合了2D视觉-语言模型与3D内容之间的鸿沟。
+◆ 设计了一种以相机为条件的3D到文本逆向映射机制，能够将3D内容投影到与文本嵌入对齐的3D嵌入空间中。
+◆ 实现了通过自然语言提示直接对3D内容进行操作和个性化定制，无需依赖基于知识蒸馏的繁琐重训练过程。
+◆ 显著提升了3D内容个性化的效率，避免了现有方法计算成本高昂的再训练需求。
+◆ 通过大量实验验证了该方法的有效性，为3D生成领域提供了更便捷的个性化解决方案。</td></tr>
 <tr><td>2025-08-20</td><td>GOGS: High-Fidelity Geometry and Relighting for Glossy Objects via Gaussian Surfels</td><td>[2508.14563](http://arxiv.org/pdf/2508.14563)</td><td>GOGS提出了一种基于二维高斯面元的新型两阶段框架，旨在解决高光物体逆向渲染中的几何噪声和重光照不真实问题。其核心创新点包括：
 ◆ 采用基于物理渲染的分裂和近似法，并结合基础模型的几何先验，实现了鲁棒的表面重建，有效减少了多视图不一致导致的结构瑕疵。
 ◆ 利用蒙特卡洛重要性采样完整渲染方程进行材质分解，通过可微分的二维高斯光线追踪模拟间接光照，提升了光照计算的准确性。
@@ -2324,4 +2400,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.25
+> 更新于: 2025.08.26
