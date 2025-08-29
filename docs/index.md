@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.08.28)
+# 计算机视觉领域最新论文 (2025.08.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Adam SLAM - the last mile of camera calibration with 3DGS</td><td>[2508.20526](http://arxiv.org/pdf/2508.20526)</td><td>该论文提出了一种利用3D高斯散射（3DGS）优化相机标定的新方法。  
+◆ 创新性地通过3DGS模型的反向传播，利用新视角颜色损失对相机参数进行端到端精细优化。  
+◆ 解决了相机标定中1像素误差对重建质量产生显著影响的关键问题，直接提升了新视角合成质量。  
+◆ 在3DGS基准数据集上平均带来0.4 dB PSNR的性能提升，显著优于传统标定方法。  
+◆ 虽然优化过程耗时较长，但为参考场景（如Mip-NeRF 360）的标定提供了以质量为优先的解决方案。  
+该方法尤其适用于对标定精度要求极高的高质量新视图合成任务。</td></tr>
 <tr><td>2025-08-24</td><td>SEER-VAR: Semantic Egocentric Environment Reasoner for Vehicle Augmented Reality</td><td>[2508.17255](http://arxiv.org/pdf/2508.17255)</td><td>SEER-VAR提出了一种面向车辆增强现实（AR）的语义自中心环境推理框架，其核心贡献与创新点如下：
 
 ◆ 采用深度引导的视觉-语言 grounding 技术，动态分离车内与车外场景，突破了传统静态或单视角设定的限制。  
@@ -938,6 +944,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-27</td><td>Disentangling Latent Embeddings with Sparse Linear Concept Subspaces (SLiCS)</td><td>[2508.20322](http://arxiv.org/pdf/2508.20322)</td><td>该论文提出了一种名为SLiCS的方法，用于解耦视觉-语言共嵌入空间中的语义信息。其核心贡献是通过稀疏线性概念子空间实现嵌入向量的结构化分解。  
+◆ 提出一种监督式字典学习框架，将嵌入向量分解为多个概念特定的成分，每个成分由字典中一组稀疏非负的原子向量线性组合而成。  
+◆ 设计了一种新颖的交替优化算法，保证收敛性，并能学习具有分组结构的字典，其组活动与多标签信息匹配。  
+◆ 利用文本共嵌入特性，实现无监督字典学习：通过概念标签的文本嵌入进行零样本分类，自动生成实例级多标签。  
+◆ 能够为每个概念子空间找到语义明确的文本描述，增强可解释性。  
+该方法在概念过滤图像检索和条件生成任务中表现出更高精度，适用于CLIP、TiTok和DINOv2等多种嵌入空间。</td></tr>
+<tr><td>2025-08-27</td><td>Low-exposure, high-quality multimodal speckle X-ray imaging via an intrinsic gradient-flow approach</td><td>[2508.20209](http://arxiv.org/pdf/2508.20209)</td><td>该论文提出了一种基于梯度流方法的新型多模态散斑X射线成像技术。其核心创新在于开发了梯度流MIST算法，显著提升了成像性能和数据效率。  
+◆ 首次将梯度流方法引入散斑成像领域，通过求解福克-普朗克方程同步获取衰减、相移和暗场三种互补成像模式  
+◆ 大幅减少成像所需数据量，降低实验中对曝光量和采样数量的要求  
+◆ 在保持X射线福克-普朗克方程完整通用性的前提下，突破传统算法的局限性  
+◆ 显著提升暗场图像质量，能有效显示低于空间分辨率的亚像素结构信息  
+◆ 通过澳大利亚同步辐射实验验证了该方法在相位衬度和暗场成像中的应用潜力，特别适用于需要简化实验流程的场景。</td></tr>
+<tr><td>2025-08-27</td><td>Grounding Multimodal Large Language Models with Quantitative Skin Attributes: A Retrieval Study</td><td>[2508.20188](http://arxiv.org/pdf/2508.20188)</td><td>该论文探索了如何利用定量皮肤属性提升多模态大语言模型在皮肤疾病诊断中的可解释性。  
+◆ 创新性地将多模态大语言模型（MLLMs）与定量皮肤属性（如病灶面积）相结合，以增强诊断推理的可解释性。  
+◆ 提出通过微调MLLMs，使其能够从皮肤图像中预测这些定量属性值，从而实现模型嵌入空间与临床属性的对齐。  
+◆ 采用基于内容的图像检索方法，在SLICE-3D数据集上验证了嵌入空间与属性之间的关联性。  
+◆ 为模型诊断结果提供了可量化的视觉依据，使模型输出更具可信度和交互性。  
+这一研究为构建更透明、可解释的医疗人工智能系统提供了新的思路和方法基础。</td></tr>
 <tr><td>2025-08-27</td><td>Addressing Deepfake Issue in Selfie banking through camera based authentication</td><td>[2508.19714](http://arxiv.org/pdf/2508.19714)</td><td>该论文的核心贡献是提出了一种利用相机成像特征来防御自拍银行中深度伪造攻击的新型认证方法。
 
 ◆ 创新性地将原本用于图像溯源（如图片相机定位）的取证识别系统，应用于深度伪造检测领域，实现了技术应用的跨界迁移。
@@ -1529,6 +1553,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Estimating 2D Keypoints of Surgical Tools Using Vision-Language Models with Low-Rank Adaptation</td><td>[2508.20830](http://arxiv.org/pdf/2508.20830)</td><td>本文提出了一种利用视觉语言模型（VLM）进行手术工具二维关键点检测的新方法。  
+◆ 创新性地采用预训练视觉语言模型（VLM），并通过低秩自适应（LoRA）技术进行微调，有效缓解了在小型医疗数据集上容易过拟合的问题。  
+◆ 设计了一套精心构建的提示模板，构建指令微调数据集，实现了视觉特征与语义关键点描述之间的对齐。  
+◆ 仅需两个训练周期即可显著超越传统CNN或Transformer基线模型，显示出在低资源场景下的高效性能。  
+◆ 该方法为后续三维手术器械及手部姿态估计奠定了基础，拓展了VLM在医疗视觉任务中的应用潜力。</td></tr>
 <tr><td>2025-08-25</td><td>DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning</td><td>[2508.17746](http://arxiv.org/pdf/2508.17746)</td><td>该论文提出了一种名为DroneKey的新型框架，用于从图像序列中精确估计无人机的三维位姿。其核心贡献在于解决了无人机关键点检测中因螺旋桨视觉相似性高和姿态多样性大而导致的难题。  
 ◆ 提出了一种结合二维关键点检测器和三维位姿估计器的专用框架，针对无人机特性进行优化。  
 ◆ 在关键点检测阶段，创新性地从每个Transformer编码器层提取两种关键表示（中间表示和紧凑表示），并通过门控求和进行最优融合。  
@@ -1721,6 +1750,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-27</td><td>POEv2: a flexible and robust framework for generic line segment detection and wireframe line segment detection</td><td>[2508.19742](http://arxiv.org/pdf/2508.19742)</td><td>该论文提出了一个名为POEv2的通用且鲁棒的线检测框架，其核心贡献是统一了通用线段检测和结构化线段检测两大任务。  
+◆ 提出了一个灵活的框架，能够同时胜任通用线检测和结构化线检测，解决了以往两类检测器因设计目标不同而无法互相替代的问题。  
+◆ 作为Pixel Orientation Estimation (POE)方法的改进版，新框架能从边缘强度图中检测线段，并可兼容任何边缘检测器。  
+◆ 通过结合高效的边缘检测器，该方法在三个公开数据集上实现了最先进的性能，证明了其有效性和优越性。  
+◆ 该框架兼具鲁棒性和灵活性，为不同应用场景下的线检测需求提供了一个统一的解决方案。</td></tr>
 <tr><td>2025-08-14</td><td>Revisiting Cross-View Localization from Image Matching</td><td>[2508.10716](http://arxiv.org/pdf/2508.10716)</td><td>◆ 提出基于跨视角图像匹配的新框架，将定位问题转化为匹配问题，突破传统直接位姿回归或BEV特征对齐的局限。  
 ◆ 引入Surface Model精确建模地面视角可见区域，实现更准确的鸟瞰图投影，解决几何不一致问题。  
 ◆ 设计SimRefiner模块通过局部-全局残差校正优化相似度矩阵，无需RANSAC后处理即可获得精细匹配。  
@@ -1924,6 +1958,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Adam SLAM - the last mile of camera calibration with 3DGS</td><td>[2508.20526](http://arxiv.org/pdf/2508.20526)</td><td>该论文提出了一种利用3D高斯泼溅（3DGS）模型优化相机标定的新方法。  
+◆ 创新性地通过新视图颜色损失的反向传播来精细调整相机参数，突破了传统标定方法的精度限制。  
+◆ 将标定问题转化为可微分优化问题，实现了端到端的标定优化流程。  
+◆ 在3DGS基准数据集上平均提升0.4 dB PSNR，显著提升了新视图合成质量。  
+◆ 为高精度参考场景（如Mip-NeRF 360）的标定提供了以渲染质量为核心的新范式。  
+该方法虽需较长调优时间，但对标定精度要求极高的场景具有重要应用价值。</td></tr>
 <tr><td>2025-08-26</td><td>Can we make NeRF-based visual localization privacy-preserving?</td><td>[2508.18971](http://arxiv.org/pdf/2508.18971)</td><td>该论文针对基于NeRF的视觉定位方法存在的隐私泄露风险提出了解决方案。  
 ◆ 首先设计了一种新的评估协议，用于系统检验NeRF表示中的隐私安全性，发现即使移除颜色预测头，其几何表示仍会泄露敏感细节。  
 ◆ 创新性地提出ppNeRF（隐私保护神经分割场），将NeRF的传统光度监督替换为分割标签监督，避免直接学习原始图像纹理。  
@@ -1935,7 +1975,7 @@
 ◆ 通过缓存非方向性共享组件，显著减少跨视角的冗余计算，实现了高达22倍的渲染加速。  
 ◆ 在45个视角下以512p分辨率达到200+ FPS的实时交互性能，并在Looking Glass显示器上验证了沉浸式三维交互应用。  
 ◆ 在提升渲染效率的同时保持了图像质量，解决了光场显示多视角渲染与辐射场计算密集型体积渲染之间的集成难题。</td></tr>
-<tr><td>2025-08-25</td><td>Generating Human-AI Collaborative Design Sequence for 3D Assets via Differentiable Operation Graph</td><td>[2508.17645](http://arxiv.org/pdf/2508.17645)</td><td>该论文的核心贡献是提出了一种通过可微分操作图生成人机协作3D资产设计序列的方法，以弥合AI生成内容与人类参数化设计工作流之间的鸿沟。  
+<tr><td>2025-08-28</td><td>Generating Human-AI Collaborative Design Sequence for 3D Assets via Differentiable Operation Graph</td><td>[2508.17645](http://arxiv.org/pdf/2508.17645)</td><td>该论文的核心贡献是提出了一种通过可微分操作图生成人机协作3D资产设计序列的方法，以弥合AI生成内容与人类参数化设计工作流之间的鸿沟。  
 ◆ 将传统建模操作（如拉伸、布尔运算）重新构建为可微分单元，支持通过梯度下降联合优化连续和离散参数。  
 ◆ 构建了带有门控机制的分层操作图，并通过端到端优化倒角距离实现与目标几何的高保真对齐。  
 ◆ 提出多阶段序列长度约束与领域规则惩罚机制，实现了无需真实序列标注的无监督紧凑序列学习。  
@@ -2430,4 +2470,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.28
+> 更新于: 2025.08.29
