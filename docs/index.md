@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.04)
+# 计算机视觉领域最新论文 (2025.09.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Stitching the Story: Creating Panoramic Incident Summaries from Body-Worn Footage</td><td>[2509.04370](http://arxiv.org/pdf/2509.04370)</td><td>该论文的核心贡献是开发了一个自动化计算机视觉流程，将执法或急救人员佩戴的体戴相机视频转化为简洁的全景事件摘要图像。  
+◆ 提出利用单目SLAM技术从视频中估计相机运动轨迹并重建场景空间布局，为创建空间连贯的摘要奠定基础。  
+◆ 通过沿轨迹对相机位姿进行聚类来识别关键视角，确保摘要能覆盖场景的重要部分。  
+◆ 采用多帧图像拼接技术，将选定代表帧融合成高质量全景图，保持空间一致性和视觉完整性。  
+◆ 最终生成的全景摘要图像支持快速环境理解和决策，解决了冗长视频回顾耗时低效的痛点。  
+该技术提升了体戴相机数据在时间敏感场景中的实用价值，适用于事后分析和应急响应。</td></tr>
+<tr><td>2025-09-04</td><td>Odometry Calibration and Pose Estimation of a 4WIS4WID Mobile Wall Climbing Robot</td><td>[2509.04016](http://arxiv.org/pdf/2509.04016)</td><td>本文针对四轮独立转向独立驱动（4WIS4WID）爬壁机器人在复杂建筑立面上的定位难题，提出了一种基于多传感器融合的位姿估计器。  
+◆ 创新性地将轮式里程计、视觉里程计和IMU数据通过扩展卡尔曼滤波（EKF）和无迹卡尔曼滤波（UKF）进行融合，构建了鲁棒的位姿估计系统。  
+◆ 针对里程计的系统误差，结合使用了非线性优化、Levenberg-Marquardt等确定性方法以及遗传算法、粒子群等随机优化方法进行运动学校准，有效减少了系统误差和漂移。  
+◆ 解决了在无法使用GPS、激光雷达等传统传感器的特殊工作环境（如钢筋混凝土立面）中的精确定位问题。  
+该方案通过实物机器人实验详细验证了其校准方法和位估计算法的有效性与性能，为爬壁机器人在实际测量和维护任务中的高精度位姿感知提供了可靠的技术基础。</td></tr>
 <tr><td>2025-09-03</td><td>IL-SLAM: Intelligent Line-assisted SLAM Based on Feature Awareness for Dynamic Environments</td><td>[2509.02972](http://arxiv.org/pdf/2509.02972)</td><td>本文提出了一种基于特征感知的智能线辅助动态SLAM系统IL-SLAM，其核心贡献在于解决了动态环境下特征管理的效率与质量问题。  
 ◆ 创新性地引入特征感知机制，动态评估现有点特征的充足性，仅在必要时激活线特征补充，避免盲目引入额外特征。  
 ◆ 通过选择性引入线特征，显著降低了计算开销，并有效减少了低质量特征和噪声的累积。  
@@ -1004,6 +1015,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Global-to-Local or Local-to-Global? Enhancing Image Retrieval with Efficient Local Search and Effective Global Re-ranking</td><td>[2509.04351](http://arxiv.org/pdf/2509.04351)</td><td>该论文提出了与主流相反的“局部到全局”图像检索新范式，取代了传统的“全局到局部”方法。  
+◆ 利用新兴的高效局部特征搜索技术，首先进行大规模精细的局部匹配，以找到全局特征容易遗漏的局部相似图像。  
+◆ 创新性地引入了一种基于局部检索相似性的全局特征即时重排序方法，在重排序阶段才动态生成全局特征。  
+◆ 采用多维缩放技术，将局部特征检索获得的相似性关系嵌入到全局特征表示中，使全局特征能够尊重局部匹配的结果。  
+这种结合使得重排序过程既保持了高计算效率，又显著提升了检索精度。  
+实验表明，该方法在Revisited Oxford和Paris数据集上取得了新的最先进性能。</td></tr>
+<tr><td>2025-09-04</td><td>DUDE: Diffusion-Based Unsupervised Cross-Domain Image Retrieval</td><td>[2509.04193](http://arxiv.org/pdf/2509.04193)</td><td>该论文提出了一种基于扩散模型的无监督跨域图像检索方法DUDE，其核心贡献在于通过特征解耦解决跨域检索中对象特征与域风格纠缠的难题。  
+◆ 利用文本到图像生成模型实现对象特征与域特定风格的解耦，增强语义表示的纯净性。  
+◆ 提出渐进式跨域互近邻对齐机制，通过域内到域间的逐步对齐提升特征匹配可靠性。  
+◆ 在三个基准数据集（涵盖13个域）上取得最先进性能，验证了方法的泛化能力。  
+该方法无需标注即可实现跨域精准检索，为无监督域适应领域提供了新思路。</td></tr>
 <tr><td>2025-09-02</td><td>Scale, Don&#x27;t Fine-tune: Guiding Multimodal LLMs for Efficient Visual Place Recognition at Test-Time</td><td>[2509.02129](http://arxiv.org/pdf/2509.02129)</td><td>该论文提出了一种用于视觉地点识别（VPR）的零样本新框架，核心贡献在于无需微调即可实现高效且强大的跨域识别。其创新点包括：
 ◆ 提出测试时缩放（TTS）框架，利用多模态大模型（MLLM）的视觉-语言对齐能力，通过基于引导的方法直接进行相似性评分，避免了传统微调的高计算开销。
 ◆ 采用结构化提示生成长度可控的JSON输出，消除了传统方法中复杂的多阶段处理流程，简化了流程。
@@ -1868,6 +1890,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Dual-Scale Volume Priors with Wasserstein-Based Consistency for Semi-Supervised Medical Image Segmentation</td><td>[2509.04273](http://arxiv.org/pdf/2509.04273)</td><td>本文提出了一种用于半监督医学图像分割的新框架，其核心贡献在于将变分模型中的先验知识与深度学习网络有效结合。  
+◆ 创新性地引入了双尺度体积先验，即在图像尺度和数据集尺度上分别利用强显式先验和弱隐式先验来约束分割网络。  
+◆ 设计了一个回归网络来估计未标注图像的目标区域体积，并通过图像尺度的Wasserstein距离损失，强制分割结果与回归预测的类别比例一致。  
+◆ 提出了一个数据集尺度的Wasserstein距离损失函数，使得未标注数据集预测的体积分布与已标注数据集的分布相似，从而利用数据集层面的统计信息。  
+◆ 将Threshold Dynamics空间正则化方法融入分割网络主干，增强了特征提取的几何约束能力。  
+实验在多个公开数据集上验证了该方法的优越性，显著提升了半监督分割性能。</td></tr>
 <tr><td>2025-08-27</td><td>POEv2: a flexible and robust framework for generic line segment detection and wireframe line segment detection</td><td>[2508.19742](http://arxiv.org/pdf/2508.19742)</td><td>该论文提出了一个名为POEv2的通用且鲁棒的线检测框架，其核心贡献是统一了通用线段检测和结构化线段检测两大任务。  
 ◆ 提出了一个灵活的框架，能够同时胜任通用线检测和结构化线检测，解决了以往两类检测器因设计目标不同而无法互相替代的问题。  
 ◆ 作为Pixel Orientation Estimation (POE)方法的改进版，新框架能从边缘强度图中检测线段，并可兼容任何边缘检测器。  
@@ -2598,4 +2626,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.04
+> 更新于: 2025.09.05
