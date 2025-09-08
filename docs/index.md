@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.07)
+# 计算机视觉领域最新论文 (2025.09.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1015,7 +1015,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-04</td><td>Global-to-Local or Local-to-Global? Enhancing Image Retrieval with Efficient Local Search and Effective Global Re-ranking</td><td>[2509.04351](http://arxiv.org/pdf/2509.04351)</td><td>该论文提出了与主流相反的“局部到全局”图像检索新范式，取代了传统的“全局到局部”方法。  
+<tr><td>2025-09-05</td><td>Towards an Accurate and Effective Robot Vision (The Problem of Topological Localization for Mobile Robots)</td><td>[2509.04948](http://arxiv.org/pdf/2509.04948)</td><td>该论文针对移动机器人在办公室环境中的拓扑定位问题，提出了一种仅依靠单目彩色相机图像、不依赖时序连续性的视觉定位方法。  
+◆ 系统性地定量比较了多种先进视觉描述符（如颜色直方图、SIFT、ASIFT、RGB-SIFT及词袋模型）的性能。  
+◆ 深入分析了不同特征描述符、距离度量方法和分类器的组合效果，并通过标准评估指标和可视化方法扩展了已有实验。  
+◆ 在ImageCLEF评测任务中验证了所提配置的有效性，成功实现了对新图像序列的最可能位置识别。  
+论文为外观描述符、相似性度量与分类器的合理配置提供了实证依据，为构建更鲁棒的实时定位系统奠定了基础。</td></tr>
+<tr><td>2025-09-05</td><td>FloodVision: Urban Flood Depth Estimation Using Foundation Vision-Language Models and Domain Knowledge Graph</td><td>[2509.04772](http://arxiv.org/pdf/2509.04772)</td><td>本文提出了FloodVision，一种结合基础视觉语言模型与领域知识图的零样本洪水深度估计框架。其核心贡献在于显著提升了城市洪水深度估计的准确性和泛化能力。
+◆ 创新性地将强大的基础视觉语言模型GPT-4o的语义推理能力，与结构化的领域知识图谱相结合，实现了零样本深度估计。
+◆ 构建了一个包含车辆、行人等常见城市物体真实尺寸的知识图谱，为模型推理提供了可靠的物理现实依据，有效缓解了幻觉问题。
+◆ 提出了一套动态处理流程，包括参考物体识别、淹没比例估算和统计离群值过滤，以计算出精确的深度值。
+◆ 在真实数据集上的评估表明，其平均绝对误差低至8.17厘米，较GPT-4o基线提升了20.5%，并超越了以往的CNN方法，且具备近实时处理能力。</td></tr>
+<tr><td>2025-09-05</td><td>Global-to-Local or Local-to-Global? Enhancing Image Retrieval with Efficient Local Search and Effective Global Re-ranking</td><td>[2509.04351](http://arxiv.org/pdf/2509.04351)</td><td>该论文提出了与主流相反的“局部到全局”图像检索新范式，取代了传统的“全局到局部”方法。  
 ◆ 利用新兴的高效局部特征搜索技术，首先进行大规模精细的局部匹配，以找到全局特征容易遗漏的局部相似图像。  
 ◆ 创新性地引入了一种基于局部检索相似性的全局特征即时重排序方法，在重排序阶段才动态生成全局特征。  
 ◆ 采用多维缩放技术，将局部特征检索获得的相似性关系嵌入到全局特征表示中，使全局特征能够尊重局部匹配的结果。  
@@ -2626,4 +2636,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.07
+> 更新于: 2025.09.08
