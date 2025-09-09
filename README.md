@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.08)
+# 计算机视觉领域最新论文 (2025.09.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Co-Located VR with Hybrid SLAM-based HMD Tracking and Motion Capture Synchronization</td><td>[2509.06582](http://arxiv.org/pdf/2509.06582)</td><td>该论文提出了一种多用户协同定位VR框架，通过融合外部动捕系统和头显内置SLAM跟踪技术，实现了高精度、低延迟的共享虚拟空间同步。  
+◆ 结合基于SLAM的头显内向外追踪与运动捕捉系统，兼顾高帧率、低延迟性能和长期稳定性。  
+◆ 突破传统依赖持续外部追踪（易延迟抖动）或一次性校准（无法校正漂移）的局限，实现动态按需重对齐。  
+◆ 支持跨设备实时姿态共享，确保多用户间空间一致性及交互沉浸感。  
+◆ 在保持高空间精度的同时，显著提升了系统的舒适性、可扩展性和鲁棒性。</td></tr>
+<tr><td>2025-09-08</td><td>Real-time Photorealistic Mapping for Situational Awareness in Robot Teleoperation</td><td>[2509.06433](http://arxiv.org/pdf/2509.06433)</td><td>该论文核心贡献是提出了一种实时逼真地图构建系统，显著提升了未知环境中机器人遥操作的效率与准确性。  
+◆ 创新性地将高斯溅射SLAM技术与在线地图遥操作系统进行模块化集成  
+◆ 采用基于GPU的高效计算架构实现实时高精度三维地图重建  
+◆ 突破传统系统因计算资源限制导致的视觉地图质量与实时性瓶颈  
+◆ 通过真实环境无人机实验验证系统能大幅提升操作者决策速度和环境交互精度  
+该系统首次实现实时逼真地图生成与遥操作任务的无缝融合，为陌生环境下的远程操控提供了突破性解决方案。</td></tr>
+<tr><td>2025-09-06</td><td>LiDAR-BIND-T: Improving SLAM with Temporally Consistent Cross-Modal LiDAR Reconstruction</td><td>[2509.05728](http://arxiv.org/pdf/2509.05728)</td><td>本文提出了LiDAR-BIND-T，通过增强时间一致性改进了多模态融合SLAM系统。其核心贡献与创新点包括：
+◆ 引入时间嵌入相似性损失，显式对齐连续时刻的潜在特征以保持时序连贯。
+◆ 提出运动对齐变换损失，确保预测点云与真实LiDAR点云之间的位移一致性。
+◆ 设计专用时序融合模块，通过滑窗方式融合多帧信息以提升稳定性。
+◆ 优化模型架构以更好地保留空间结构，提升跨模态（雷达/声纳到LiDAR）重建质量。
+实验证明该方法显著提升了SLAM的轨迹精度和地图质量，并提出基于FVMD和相关峰值距离的实用时序评估指标。</td></tr>
 <tr><td>2025-09-04</td><td>Stitching the Story: Creating Panoramic Incident Summaries from Body-Worn Footage</td><td>[2509.04370](http://arxiv.org/pdf/2509.04370)</td><td>该论文的核心贡献是开发了一个自动化计算机视觉流程，将执法或急救人员佩戴的体戴相机视频转化为简洁的全景事件摘要图像。  
 ◆ 提出利用单目SLAM技术从视频中估计相机运动轨迹并重建场景空间布局，为创建空间连贯的摘要奠定基础。  
 ◆ 通过沿轨迹对相机位姿进行聚类来识别关键视角，确保摘要能覆盖场景的重要部分。  
@@ -704,6 +721,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>VIM-GS: Visual-Inertial Monocular Gaussian Splatting via Object-level Guidance in Large Scenes</td><td>[2509.06685](http://arxiv.org/pdf/2509.06685)</td><td>VIM-GS是一种用于大场景新颖视图合成的视觉-惯性单目高斯泼溅框架。其核心贡献是解决了单目图像因缺乏准确深度信息而导致渲染质量差的问题。具体创新点包括：
+◆ 提出了一种新颖的深度生成框架，巧妙地融合了来自视觉-惯性SLAM的稀疏但精确的深度，与来自大基础模型的稠密但粗糙的深度。
+◆ 设计了一种基于对象分割的深度传播算法，通过渲染结构化物体的像素深度，有效弥合了稀疏输入与稠密输出之间的鸿沟。
+◆ 开发了一个动态深度优化模块，专门处理动态物体上不完整的SLAM深度，并进一步优化粗糙的大模型深度估计。
+最终，该方法生成了高质量且准确的密集深度图，从而支持了高斯泼溅在大场景中的高清渲染，在公开和定制数据集上均展现了卓越的渲染质量。</td></tr>
 <tr><td>2025-09-02</td><td>Doctoral Thesis: Geometric Deep Learning For Camera Pose Prediction, Registration, Depth Estimation, and 3D Reconstruction</td><td>[2509.01873](http://arxiv.org/pdf/2509.01873)</td><td>该论文的核心贡献是开发了结合几何先验与深度学习的几何深度学习方法，以解决三维视觉中的关键任务。  
 ◆ 针对相机位姿估计、点云配准、深度预测及三维重建等任务，提出了定制化的几何深度学习模型。  
 ◆ 通过引入深度信息、表面法线和等变性约束等几何先验，增强了模型的表示准确性与鲁棒性。  
@@ -1019,6 +1041,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Back To The Drawing Board: Rethinking Scene-Level Sketch-Based Image Retrieval</td><td>[2509.06566](http://arxiv.org/pdf/2509.06566)</td><td>本文针对场景级草图检索任务，提出了一种强调草图固有模糊性和噪声的鲁棒性训练方案。其核心创新点包括：
+◆ 重新审视了场景级草图检索问题，强调真实手绘草图的模糊性和噪声特性，而非仅关注模型结构改进。
+◆ 设计了一种显式的训练目标，专门针对草图的高变异性进行优化，提升了模型的鲁棒性。
+◆ 通过结合适当的预训练策略、编码器架构和损失函数，在不增加模型复杂度的前提下实现了最先进的性能。
+◆ 在FS-COCO和SketchyCOCO等挑战性数据集上验证了方法的有效性，并强调了训练设计在跨模态检索中的关键作用。
+◆ 指出了改进场景级草图检索评估场景的必要性，为该领域的未来发展提供了重要见解。</td></tr>
 <tr><td>2025-09-05</td><td>Towards an Accurate and Effective Robot Vision (The Problem of Topological Localization for Mobile Robots)</td><td>[2509.04948](http://arxiv.org/pdf/2509.04948)</td><td>该论文针对移动机器人在办公室环境中的拓扑定位问题，提出了一种仅依靠单目彩色相机图像、不依赖时序连续性的视觉定位方法。  
 ◆ 系统性地定量比较了多种先进视觉描述符（如颜色直方图、SIFT、ASIFT、RGB-SIFT及词袋模型）的性能。  
 ◆ 深入分析了不同特征描述符、距离度量方法和分类器的组合效果，并通过标准评估指标和可视化方法扩展了已有实验。  
@@ -1908,6 +1936,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Back To The Drawing Board: Rethinking Scene-Level Sketch-Based Image Retrieval</td><td>[2509.06566](http://arxiv.org/pdf/2509.06566)</td><td>本文针对场景级草图检索任务，提出了一种强调草图固有模糊性和噪声的鲁棒性训练方法。  
+◆ 指出以往研究忽略真实草图的歧义与噪声问题，转而关注训练目标的鲁棒性设计。  
+◆ 提出结合预训练策略、编码器架构和损失函数的优化方案，无需增加模型复杂度即可提升性能。  
+◆ 在FS-COCO和SketchyCOCO数据集上实现最先进效果，验证了训练设计对跨模态检索的关键作用。  
+◆ 强调需改进场景级草图检索的评估场景，推动任务向更实用化发展。</td></tr>
 <tr><td>2025-09-04</td><td>Dual-Scale Volume Priors with Wasserstein-Based Consistency for Semi-Supervised Medical Image Segmentation</td><td>[2509.04273](http://arxiv.org/pdf/2509.04273)</td><td>本文提出了一种用于半监督医学图像分割的新框架，其核心贡献在于将变分模型中的先验知识与深度学习网络有效结合。  
 ◆ 创新性地引入了双尺度体积先验，即在图像尺度和数据集尺度上分别利用强显式先验和弱隐式先验来约束分割网络。  
 ◆ 设计了一个回归网络来估计未标注图像的目标区域体积，并通过图像尺度的Wasserstein距离损失，强制分割结果与回归预测的类别比例一致。  
@@ -2648,4 +2681,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.08
+> 更新于: 2025.09.09
