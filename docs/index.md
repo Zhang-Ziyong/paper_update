@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.09)
+# 计算机视觉领域最新论文 (2025.09.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-09</td><td>Sensing with Mobile Devices through Radio SLAM: Models, Methods, Opportunities, and Challenges</td><td>[2509.07775](http://arxiv.org/pdf/2509.07775)</td><td>本文探讨了无线电SLAM作为6G通感一体化（ISAC）的关键方法，利用无线信号实现同步定位与建图。  
+◆ 提出将无线电SLAM作为6G通感一体化的核心实现路径，通过单一无线信号同时支持通信与环境感知。  
+◆ 系统分析了不同频段下无线电SLAM的性能权衡，包括覆盖范围、分辨率和硬件需求，为实际部署提供理论依据。  
+◆ 强调了与传感、定位及协同网络融合的机遇，推动多技术协同发展。  
+◆ 为自动驾驶系统和工业机器人等6G应用领域的标准化解决方案奠定基础，促进技术落地。  
+论文通过模型和方法创新，为未来6G网络中的高精度环境感知与定位提供了重要参考。</td></tr>
+<tr><td>2025-09-09</td><td>Robust Radar SLAM for Vehicle Parking Applications</td><td>[2509.07683](http://arxiv.org/pdf/2509.07683)</td><td>该论文针对自动泊车场景中的高精度定位需求，提出了一种基于雷达的鲁棒SLAM方法，以解决传统传感器标定成本高和对恶劣天气敏感的问题。其核心创新点包括：
+
+◆ 提出一种多普勒增强的雷达SLAM方法，通过融合多普勒速度和特征位置实现更鲁棒的数据关联与滤波器收敛  
+◆ 支持多雷达传感器融合，提升系统的感知能力和环境适应性  
+◆ 设计基于信息论的特征筛选策略，优化地图特征管理并提高计算效率  
+实验表明，该方法在定位精度和鲁棒性上优于现有技术，能够满足自动泊车对厘米级精度的严格要求。</td></tr>
+<tr><td>2025-09-09</td><td>Aerial-ground Cross-modal Localization: Dataset, Ground-truth, and Benchmark</td><td>[2509.07362](http://arxiv.org/pdf/2509.07362)</td><td>该论文的核心贡献是构建了一个解决空地跨模态定位挑战的综合基准。其创新点包括：
+◆ 创建了一个新的大规模空地跨模态数据集，集成了来自移动测量系统的地面图像和三个城市（武汉、香港、旧金山）的机载激光扫描（ALS）点云。
+◆ 解决了平台多样性不足的问题，为研究提供了丰富且真实的数据基础。
+◆ 提出了一种适用于大规模城市场景的可靠地面真值生成方法，解决了该领域长期缺乏精确基准的难题。
+◆ 首次在空地跨平台设置下对现有的图像到点云（I2P）定位算法进行了系统性的基准测试与验证。
+通过提供数据集、地面真值和基准测试，该工作极大地推动和促进了基于ALS先验地图的、可扩展且精确的视觉定位技术的发展。</td></tr>
 <tr><td>2025-09-08</td><td>Co-Located VR with Hybrid SLAM-based HMD Tracking and Motion Capture Synchronization</td><td>[2509.06582](http://arxiv.org/pdf/2509.06582)</td><td>该论文提出了一种多用户协同定位VR框架，通过融合外部动捕系统和头显内置SLAM跟踪技术，实现了高精度、低延迟的共享虚拟空间同步。  
 ◆ 结合基于SLAM的头显内向外追踪与运动捕捉系统，兼顾高帧率、低延迟性能和长期稳定性。  
 ◆ 突破传统依赖持续外部追踪（易延迟抖动）或一次性校准（无法校正漂移）的局限，实现动态按需重对齐。  
@@ -719,7 +737,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-08</td><td>VIM-GS: Visual-Inertial Monocular Gaussian Splatting via Object-level Guidance in Large Scenes</td><td>[2509.06685](http://arxiv.org/pdf/2509.06685)</td><td>VIM-GS是一种用于大场景新颖视图合成的视觉-惯性单目高斯泼溅框架。其核心贡献是解决了单目图像因缺乏准确深度信息而导致渲染质量差的问题。具体创新点包括：
+<tr><td>2025-09-09</td><td>VIM-GS: Visual-Inertial Monocular Gaussian Splatting via Object-level Guidance in Large Scenes</td><td>[2509.06685](http://arxiv.org/pdf/2509.06685)</td><td>VIM-GS是一种用于大场景新颖视图合成的视觉-惯性单目高斯泼溅框架。其核心贡献是解决了单目图像因缺乏准确深度信息而导致渲染质量差的问题。具体创新点包括：
 ◆ 提出了一种新颖的深度生成框架，巧妙地融合了来自视觉-惯性SLAM的稀疏但精确的深度，与来自大基础模型的稠密但粗糙的深度。
 ◆ 设计了一种基于对象分割的深度传播算法，通过渲染结构化物体的像素深度，有效弥合了稀疏输入与稠密输出之间的鸿沟。
 ◆ 开发了一个动态深度优化模块，专门处理动态物体上不完整的SLAM深度，并进一步优化粗糙的大模型深度估计。
@@ -1037,6 +1055,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-09</td><td>Aerial-ground Cross-modal Localization: Dataset, Ground-truth, and Benchmark</td><td>[2509.07362](http://arxiv.org/pdf/2509.07362)</td><td>该论文的核心贡献是构建了一个解决空地跨模态定位挑战的综合基准。其创新点包括：
+◆ 创建了一个新的大规模空地跨模态数据集，集成了来自移动测量系统的地面图像和三个城市（武汉、香港、旧金山）的机载激光扫描点云。
+◆ 解决了该领域平台多样化数据缺乏的问题，为算法开发提供了丰富的数据基础。
+◆ 提出了一种适用于大规模城市场景的可靠地面真值生成方法，解决了以往该环节的缺失问题。
+◆ 首次在空地跨平台设置下对现有的图像到点云配准算法进行了全面基准测试，评估了其性能。
+◆ 为提升在纹理缺失、大视角变化等挑战下的视觉定位精度提供了新的途径，推动了相关领域的发展。</td></tr>
 <tr><td>2025-09-08</td><td>Back To The Drawing Board: Rethinking Scene-Level Sketch-Based Image Retrieval</td><td>[2509.06566](http://arxiv.org/pdf/2509.06566)</td><td>本文针对场景级草图检索任务，提出了一种强调草图固有模糊性和噪声的鲁棒性训练方案。其核心创新点包括：
 ◆ 重新审视了场景级草图检索问题，强调真实手绘草图的模糊性和噪声特性，而非仅关注模型结构改进。
 ◆ 设计了一种显式的训练目标，专门针对草图的高变异性进行优化，提升了模型的鲁棒性。
@@ -1939,7 +1963,7 @@
 ◆ 提出了一个数据集尺度的Wasserstein距离损失函数，使得未标注数据集预测的体积分布与已标注数据集的分布相似，从而利用数据集层面的统计信息。  
 ◆ 将Threshold Dynamics空间正则化方法融入分割网络主干，增强了特征提取的几何约束能力。  
 实验在多个公开数据集上验证了该方法的优越性，显著提升了半监督分割性能。</td></tr>
-<tr><td>2025-08-27</td><td>POEv2: a flexible and robust framework for generic line segment detection and wireframe line segment detection</td><td>[2508.19742](http://arxiv.org/pdf/2508.19742)</td><td>该论文提出了一个名为POEv2的通用且鲁棒的线检测框架，其核心贡献是统一了通用线段检测和结构化线段检测两大任务。  
+<tr><td>2025-09-09</td><td>POEv2: a flexible and robust framework for generic line segment detection and wireframe line segment detection</td><td>[2508.19742](http://arxiv.org/pdf/2508.19742)</td><td>该论文提出了一个名为POEv2的通用且鲁棒的线检测框架，其核心贡献是统一了通用线段检测和结构化线段检测两大任务。  
 ◆ 提出了一个灵活的框架，能够同时胜任通用线检测和结构化线检测，解决了以往两类检测器因设计目标不同而无法互相替代的问题。  
 ◆ 作为Pixel Orientation Estimation (POE)方法的改进版，新框架能从边缘强度图中检测线段，并可兼容任何边缘检测器。  
 ◆ 通过结合高效的边缘检测器，该方法在三个公开数据集上实现了最先进的性能，证明了其有效性和优越性。  
@@ -2147,6 +2171,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-09</td><td>SplatFill: 3D Scene Inpainting via Depth-Guided Gaussian Splatting</td><td>[2509.07809](http://arxiv.org/pdf/2509.07809)</td><td>该论文提出了一种名为SplatFill的新方法，用于基于3D高斯泼溅（3DGS）的3D场景修复。其核心贡献在于显著提升了缺失区域修复的视觉保真度和几何一致性，同时大幅提高了训练效率。  
+◆ 引入深度引导与物体感知的联合监督机制，确保修复的高斯点云在三维空间中位置准确且与周围几何对齐。  
+◆ 提出一致性感知细化方案，能智能识别并修正不一致区域，避免对场景其他部分造成干扰。  
+◆ 在SPIn-NeRF数据集上的实验表明，该方法在视觉质量上超越了现有基于NeRF和3DGS的修复方法。  
+◆ 训练效率提升24.5%，同时实现了更清晰的细节、更少的伪影和更好的多视角一致性。</td></tr>
+<tr><td>2025-09-09</td><td>DiGS: Accurate and Complete Surface Reconstruction from 3D Gaussians via Direct SDF Learning</td><td>[2509.07493](http://arxiv.org/pdf/2509.07493)</td><td>本文提出DiGS框架，将3D高斯表示与符号距离场（SDF）学习相结合，显著提升了从3D高斯模型中重建精确完整表面的能力。  
+◆ 首次将可学习SDF嵌入3D高斯溅射（3DGS）流程，为每个高斯基元赋予几何意义，增强了解释性和几何一致性。  
+◆ 提出几何引导的网格增长策略，在多尺度层次下自适应沿几何一致区域分布高斯基元，实现更密集和连贯的表面覆盖。  
+◆ 通过显式对齐高斯基元与底层几何，有效改善了跨视角一致性和重建完整性。  
+实验证明，DiGS在DTU、Mip-NeRF 360等多个基准上均实现了更高的重建精度和完整性，同时保持了高渲染质量。</td></tr>
 <tr><td>2025-09-03</td><td>GS-TG: 3D Gaussian Splatting Accelerator with Tile Grouping for Reducing Redundant Sorting while Preserving Rasterization Efficiency</td><td>[2509.00911](http://arxiv.org/pdf/2509.00911)</td><td>该论文提出了GS-TG，一种用于加速3D高斯泼溅渲染的硬件加速器，其核心贡献在于通过优化排序与光栅化过程来提升渲染速度。  
 ◆ 提出基于瓦片分组（Tile Grouping）的排序策略，将多个小瓦片组合成大组以共享排序操作，显著减少了冗余计算。  
 ◆ 引入位掩码（Bitmask）机制，为每个高斯图元标记其所属的有效小瓦片，使得光栅化阶段仍可按原始小瓦片高效执行，避免了不必要的像素计算。  
@@ -2669,4 +2703,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.09
+> 更新于: 2025.09.10
