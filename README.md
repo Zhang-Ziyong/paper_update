@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.11)
+# 计算机视觉领域最新论文 (2025.09.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking</td><td>[2509.09509](http://arxiv.org/pdf/2509.09509)</td><td>SMapper的核心贡献是提出了一种专为SLAM研究设计的开源多模态数据采集平台，以解决现有数据集在传感器多样性、环境覆盖和实验可复现性方面的不足。其创新点包括：
+◆ 采用开源硬件设计，集成了同步的LiDAR、多相机和惯性测量单元，提供了丰富的多模态感知数据。
+◆ 提供了一套可靠的标定与时间同步流程，确保了跨模态数据在时空上的精确对齐。
+◆ 具备可扩展和可复用的结构，支持手持和机器人搭载两种使用场景，增强了平台的适应性。
+◆ 公开发布了名为SMapper-light的数据集，包含室内外典型场景的高精度真值轨迹与稠密三维重建结果。
+◆ 基于所采集数据对主流LiDAR与视觉SLAM算法进行了系统性能评测，为算法比较与复现提供了坚实基础。
+通过硬件开放、数据同步和评测一体化，SMapper显著提升了SLAM研究的可靠性、可比性和可复现性。</td></tr>
+<tr><td>2025-09-11</td><td>S-BEVLoc: BEV-based Self-supervised Framework for Large-scale LiDAR Global Localization</td><td>[2509.09110](http://arxiv.org/pdf/2509.09110)</td><td>S-BEVLoc提出了一种基于鸟瞰图（BEV）的自监督激光雷达全局定位框架，其核心贡献在于无需地面真值姿态即可实现大规模定位。  
+◆ 首次构建了基于BEV的自监督学习范式，通过利用关键点之间的已知地理距离构建训练三元组，完全摆脱了对GPS或SLAM真值数据的依赖。  
+◆ 提出SoftCos损失函数，有效增强从生成的三元组中学习特征表示的能力，提升了模型在困难样本上的鲁棒性。  
+◆ 结合CNN局部特征提取与NetVLAD全局描述符聚合，实现了高效且判别性强的场景表示。  
+在KITTI和NCLT大规模数据集上的实验表明，该方法在位置识别、回环检测和全局定位任务上达到领先性能，同时展现出远超监督方法的可扩展性。</td></tr>
 <tr><td>2025-09-10</td><td>Good Deep Features to Track: Self-Supervised Feature Extraction and Tracking in Visual Odometry</td><td>[2509.08333](http://arxiv.org/pdf/2509.08333)</td><td>该论文针对视觉里程计中因光照变化、动态场景等导致特征提取与跟踪性能下降的问题，提出了一种自监督的深度特征提取与跟踪方法。  
 ◆ 通过自监督学习结合任务特定反馈，增强深度特征的稳定性和信息量。  
 ◆ 提升了在挑战性环境（如大尺度户外场景和长期运行）中的泛化能力与可靠性。  
@@ -1083,6 +1095,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>Listening for &quot;You&quot;: Enhancing Speech Image Retrieval via Target Speaker Extraction</td><td>[2509.09306](http://arxiv.org/pdf/2509.09306)</td><td>该论文提出了一种新颖的目标说话人语音-图像检索任务及框架，用于解决多说话人场景下语音图像检索的难题。  
+◆ 首次引入目标说话人提取技术，从混合语音中分离并识别目标说话人的指令。  
+◆ 结合自监督音频编码器和视觉模型，通过目标说话人感知的对比学习进行跨模态对齐。  
+◆ 设计了端到端的联合训练框架，将说话人提取与检索任务统一优化，提升系统整体性能。  
+在二说话人和三说话人混合语音数据集上的实验表明，该方法显著优于现有基线模型，检索准确率提升明显。  
+该技术为辅助机器人和多模态交互系统的实际应用提供了有效解决方案。</td></tr>
 <tr><td>2025-09-09</td><td>Aerial-ground Cross-modal Localization: Dataset, Ground-truth, and Benchmark</td><td>[2509.07362](http://arxiv.org/pdf/2509.07362)</td><td>该论文的核心贡献是构建了一个解决空地跨模态定位挑战的综合基准。其创新点包括：
 ◆ 创建了一个新的大规模空地跨模态数据集，集成了来自移动测量系统的地面图像和三个城市（武汉、香港、旧金山）的机载激光扫描点云。
 ◆ 解决了该领域平台多样化数据缺乏的问题，为算法开发提供了丰富的数据基础。
@@ -1990,6 +2008,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>ObjectReact: Learning Object-Relative Control for Visual Navigation</td><td>[2509.09594](http://arxiv.org/pdf/2509.09594)</td><td>该论文提出了一种基于物体相对控制的视觉导航新范式ObjectReact，以解决传统图像相对控制方法的局限性。  
+◆ 创新性地采用“物体相对”控制替代主流的“图像相对”控制，利用物体作为地图固有属性，摆脱对智能体位姿和具体形态的严格依赖。  
+◆ 设计了基于“相对3D场景图”的拓扑-度量混合地图表示，能够生成更高效的对象级全局路径规划代价。  
+◆ 开发了直接以高层“WayObject Costmap”为输入条件的本地控制器，无需显式RGB输入，实现了控制预测与图像匹配问题的解耦。  
+◆ 该方法在跨形态部署（如传感器高度变化）和挑战性任务（如反向轨迹导航）中表现出显著优势，且仅使用仿真训练的策略能很好地泛化到真实室内环境。</td></tr>
 <tr><td>2025-09-10</td><td>Handling Multiple Hypotheses in Coarse-to-Fine Dense Image Matching</td><td>[2509.08805](http://arxiv.org/pdf/2509.08805)</td><td>本文提出了一种在稠密图像匹配中处理多重假设的新方法BEAMER，其核心贡献在于显著提升了在挑战性场景下的匹配鲁棒性。  
 ◆ 摒弃了传统方法在每个尺度上仅为每个源位置预测单一对应点的做法，创新性地提出在每个尺度上预测并保留多个对应假设。  
 ◆ 采用束搜索（beam search）策略，在由粗到细的匹配过程中逐尺度地传播和保留这些多重假设。  
@@ -2750,4 +2773,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.11
+> 更新于: 2025.09.12
