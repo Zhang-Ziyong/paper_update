@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.15)
+# 计算机视觉领域最新论文 (2025.09.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>See What I Mean? Mobile Eye-Perspective Rendering for Optical See-through Head-mounted Displays</td><td>[2509.11653](http://arxiv.org/pdf/2509.11653)</td><td>本文针对光学透视头显中世界相机与用户视角不匹配问题，提出了三种眼视角渲染技术以提升增强现实视觉引导的准确性。  
+◆ 实现了基于平面投影的Plane-Proxy EPR方法，在固定平面上近似眼视角。  
+◆ 开发了基于SLAM场景重建的Mesh-Proxy EPR方法，通过几何网格提高投影精度。  
+◆ 创新性地提出Gaze-Proxy EPR方法，利用眼动追踪技术将投影与用户注视深度动态对齐。  
+通过真实任务用户研究证明，精确的眼视角渲染对任务性能至关重要，且所提注视代理方法可作为轻量级替代方案。  
+研究最终开源了完整的眼视角渲染框架，为后续研究提供基础支持。</td></tr>
+<tr><td>2025-09-15</td><td>Gaussian-Plus-SDF SLAM: High-fidelity 3D Reconstruction at 150+ fps</td><td>[2509.11574](http://arxiv.org/pdf/2509.11574)</td><td>该论文提出了GPS-SLAM，一种能实现超过150 fps实时高保真三维重建的新系统，其核心贡献在于通过一种混合表示方法解决了现有高斯SLAM方法计算效率低下的瓶颈问题。
+
+◆ 创新性地结合了彩色符号距离场（SDF）和3D高斯两种表示，SDF负责高效构建平滑的几何与外观，而高斯则专门用于补足细节。
+◆ 该混合表示避免了对整个场景都用高斯建模，从而将所需的高斯数量减少了50%。
+◆ 通过让SDF承担大部分基础表示工作，高斯优化只需进行针对性的外观细化，使得优化迭代次数大幅减少75%。
+◆ 最终构建的GPS-SLAM系统在保持与最先进方法相当重建质量的同时，实现了超过一个数量级的加速，在真实数据集上运行速度超过150帧/秒。</td></tr>
+<tr><td>2025-09-13</td><td>FastTrack: GPU-Accelerated Tracking for Visual SLAM</td><td>[2509.10757](http://arxiv.org/pdf/2509.10757)</td><td>该论文的核心贡献是提出了一种利用GPU加速来显著提升视觉-惯性SLAM系统跟踪模块性能的新方法FastTrack。  
+◆ 创新性地利用GPU并行计算能力来加速跟踪过程中最耗时的组件，包括立体特征匹配和局部地图跟踪。  
+◆ 将加速设计具体实现在主流的ORB-SLAM3框架的跟踪流程中，并使用CUDA进行开发。  
+◆ 在公开数据集EuRoC和TUM-VI上的实验表明，该系统在立体-惯性模式下运行，跟踪性能整体提升最高达2.8倍。  
+◆ 验证了方案在两种硬件平台（桌面GPU和嵌入式Jetson Xavier NX）上的有效性与通用性，确保了实时性并降低了跟踪丢失的风险。</td></tr>
 <tr><td>2025-09-12</td><td>Robust Localization in Modern Cellular Networks using Global Map Features</td><td>[2509.10433](http://arxiv.org/pdf/2509.10433)</td><td>该论文提出了一种增强型多路径同时定位与建图（MP-SLAM）方法，用于现代蜂窝网络中的鲁棒定位。  
 ◆引入全局地图特征（GMF）存储库，整合历史遍历中收集的高质量地图特征（如虚拟锚点），提升系统对先验知识的利用能力。  
 ◆通过概率假设密度（PHD）滤波器动态集成全局地图特征，实现特征强度函数的时序传播与融合。  
@@ -779,6 +796,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Segmentation-Driven Initialization for Sparse-view 3D Gaussian Splatting</td><td>[2509.11853](http://arxiv.org/pdf/2509.11853)</td><td>本文针对稀疏视图合成中几何与外观恢复困难的问题，提出了一种基于分割驱动初始化的3D高斯溅射方法（SDI-GS）。  
+◆ 提出利用区域分割技术识别结构显著区域，替代传统依赖运动恢复结构（SfM）或多视图立体（MVS）的方法。  
+◆ 通过选择性下采样稠密点云，大幅减少3D高斯数量，降低内存占用和计算成本。  
+◆ 在保持场景保真度的同时，实现高达50%的高斯数量削减，并提升训练速度。  
+实验表明，该方法在多项基准测试中达到相当或更优的渲染质量（PSNR、SSIM），仅LPIPS略有下降，有效推动了3DGS在受限视角场景中的实用化。</td></tr>
+<tr><td>2025-09-15</td><td>WAFER: A new method to retrieve sun-induced fluorescence based on spectral wavelet decompositions</td><td>[2509.11829](http://arxiv.org/pdf/2509.11829)</td><td>该论文提出了一种名为WAFER的新型日光诱导叶绿素荧光（SIF）反演方法。  
+◆ 利用小波分解技术处理反射辐射和参考辐射光谱，通过比较小波系数来独立获取相对反射率，避免了荧光与反射率的耦合。  
+◆ 可直接从剩余偏移量中推导出荧光信号，无需对荧光光谱形状进行先验假设，减少了模型偏差。  
+◆ 方法适用于任意波长窗口和全光谱范围，能充分利用所有可用光谱数据，并可分离不同频率的吸收线特征。  
+◆ 无需依赖大量训练数据集，且对反射率形状的假设要求极低，增强了方法的通用性和灵活性。  
+◆ 通过合成数据和实地测量验证，与现有方法（iFLD和SFM）结果一致，但额外提供了探索真实荧光光谱形状和自由选择反演窗口的优势。</td></tr>
+<tr><td>2025-09-14</td><td>3DAeroRelief: The first 3D Benchmark UAV Dataset for Post-Disaster Assessment</td><td>[2509.11097](http://arxiv.org/pdf/2509.11097)</td><td>该论文的核心贡献是推出了首个专门用于灾后评估的三维无人机基准数据集3DAeroRelief，填补了该领域的数据空白。  
+◆首创面向灾后场景的三维语义分割基准数据集，专注于真实灾害环境中的精细结构损伤识别  
+◆采用低成本无人机采集数据，实现了在危险区域高效、灵活且安全的大规模三维数据获取  
+◆通过运动重建和多视角立体技术生成密集三维点云，并结合人工二维标注投影至三维空间，提供高质量语义注释  
+◆数据集包含真实飓风受灾区域的大规模室外场景，突破了现有数据集局限于城市或室内环境的不足  
+论文还基于该数据集评估了多种先进三维分割模型，证明了其在推动灾后响应三维视觉系统发展方面的实用价值。</td></tr>
 <tr><td>2025-09-09</td><td>Australian Supermarket Object Set (ASOS): A Benchmark Dataset of Physical Objects and 3D Models for Robotics and Computer Vision</td><td>[2509.09720](http://arxiv.org/pdf/2509.09720)</td><td>该论文的核心贡献是推出了澳大利亚超市物体数据集（ASOS），这是一个专为机器人和计算机视觉应用设计的实物与3D模型基准数据集。
 
 ◆ 提供了包含50种常见超市商品的高质量3D纹理网格数据集，所有物品均可从澳大利亚大型连锁超市轻松购得，成本低廉且易于获取。
@@ -1104,6 +1138,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Bridging Vision Language Models and Symbolic Grounding for Video Question Answering</td><td>[2509.11862](http://arxiv.org/pdf/2509.11862)</td><td>该论文的核心贡献是提出了一个名为SG-VLM的模块化框架，旨在通过符号化场景图增强视频问答中的时空与因果推理能力。
+
+◆ 引入符号化场景图（SGs）作为视频问答的中间 grounding 信号，提供结构化对象-关系表示以补充视觉语言模型的整体推理。
+◆ 提出SG-VLM框架，将冻结的视觉语言模型（VLMs）与场景图 grounding 机制通过提示和视觉定位进行集成。
+◆ 在多个基准测试（NExT-QA、iVQA、ActivityNet-QA）和不同VLMs（QwenVL、InternVL）上验证了方法的有效性。
+◆ 显著提升了模型在因果推理和时间推理任务上的性能，尤其在需要细粒度时空关系的视频问答中表现突出。
+◆ 研究结果揭示了符号 grounding 方法的潜力和当前局限性，为未来融合视觉语言模型与符号推理的混合方法提供了重要参考。</td></tr>
+<tr><td>2025-09-14</td><td>UnLoc: Leveraging Depth Uncertainties for Floorplan Localization</td><td>[2509.11301](http://arxiv.org/pdf/2509.11301)</td><td>UnLoc提出了一种基于数据驱动的序列化相机平面图定位方法，其核心贡献在于通过深度不确定性建模显著提升了定位精度与泛化能力。  
+◆ 引入概率化深度预测模型，将单目深度估计结果表示为显式概率分布，从而有效量化预测不确定性。  
+◆ 摆脱对每场景定制深度网络的依赖，直接利用预训练单目深度模型，大幅提升方法在未知环境中的泛化性能。  
+◆ 在长序列与短序列定位任务中均实现突破，在LaMAR HGE数据集上长序列定位召回率提升2.7倍，短序列提升16.7倍。  
+◆ 通过融合易于获取且长期稳定的平面图数据，克服视觉外观变化带来的挑战，增强系统鲁棒性。  
+该方法在合成与真实大规模数据集上验证了其优越性，为视觉定位提供了一种高效且通用的解决方案。</td></tr>
 <tr><td>2025-09-11</td><td>Listening for &quot;You&quot;: Enhancing Speech Image Retrieval via Target Speaker Extraction</td><td>[2509.09306](http://arxiv.org/pdf/2509.09306)</td><td>该论文提出了一种新颖的目标说话人语音-图像检索任务及框架，用于解决多说话人场景下语音图像检索的难题。  
 ◆ 首次引入目标说话人提取技术，从混合语音中分离并识别目标说话人的指令。  
 ◆ 结合自监督音频编码器和视觉模型，通过目标说话人感知的对比学习进行跨模态对齐。  
@@ -1810,6 +1857,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Bridging the Gap Between Sparsity and Redundancy: A Dual-Decoding Framework with Global Context for Map Inference</td><td>[2509.11731](http://arxiv.org/pdf/2509.11731)</td><td>该论文针对轨迹数据地图推断中稀疏区域道路断裂和密集区域冗余段的问题，提出了DGMap双解码框架。其核心创新点包括：
+◆ 提出多尺度网格编码方法，整合全局语义上下文与局部几何特征，提升关键点检测精度。
+◆ 设计掩码增强关键点提取机制，有效减少稀疏轨迹区的道路断裂问题。
+◆ 引入全局上下文感知关系预测模块，通过建模长轨迹模式抑制密集区域的错误连接。
+实验表明，DGMap在三个真实数据集上APLS指标优于现有方法5%，尤其在滴滴平台数据上表现突出。</td></tr>
 <tr><td>2025-09-11</td><td>A Path Signature Framework for Detecting Creative Fatigue in Digital Advertising</td><td>[2509.09758](http://arxiv.org/pdf/2509.09758)</td><td>本文提出了一种基于路径签名分析的数字广告创意疲劳检测新框架。  
 ◆首次将随机分析中的路径签名方法应用于广告疲劳检测领域，开辟了营销分析中几何方法的新途径。  
 ◆将广告性能时间序列视为二维空间中的路径，利用其签名作为丰富的特征描述符以捕捉动态变化。  
@@ -2019,6 +2071,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-14</td><td>A Geometrically Consistent Matching Framework for Side-Scan Sonar Mapping</td><td>[2509.11255](http://arxiv.org/pdf/2509.11255)</td><td>该论文针对侧扫声纳图像因视角依赖、阴影和几何畸变导致的匹配难题，提出了一种结合物理解耦与几何一致性的创新匹配框架。  
+◆ 提出自监督多分支网络，基于朗伯反射模型将原始声纳图像分解为海底反射率、地形高程和声学路径损耗，增强物理可解释性。  
+◆ 利用反射率图谱作为稳定匹配域，结合无训练匹配流程（SuperPoint与MINIMA LightGlue），提升跨视角对应关系准确性。  
+◆ 引入几何感知异常点剔除机制，联合地形高程与物理衍生的阴影图谱，有效抑制声学遮挡和地形不一致区域的误匹配。  
+实验表明，该方法在匹配误差、几何一致性和视角鲁棒性上均优于传统及基于CNN与Transformer的先进方法，为复杂海底环境提供了高精度、数据高效且物理可解释的匹配解决方案。</td></tr>
 <tr><td>2025-09-11</td><td>Fine-Grained Cross-View Localization via Local Feature Matching and Monocular Depth Priors</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细粒度跨视角定位方法，通过局部特征匹配与单目深度先验实现地面图像的三自由度位姿估计。  
 ◆ 直接建立地面与航空图像间的局部特征对应关系，避免传统方法中因视角转换造成的信息损失。  
 ◆ 利用单目深度先验仅将匹配关键点提升至鸟瞰图空间，支持度量深度与相对深度两种模式。  
@@ -2254,6 +2311,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-14</td><td>ROSGS: Relightable Outdoor Scenes With Gaussian Splatting</td><td>[2509.11275](http://arxiv.org/pdf/2509.11275)</td><td>ROSGS提出了一种基于高斯溅射的两阶段流程，用于户外可重光照场景的高效重建与渲染。其核心贡献在于解决了现有方法在计算效率和光照建模精度上的不足。  
+◆ 采用紧凑的二维高斯溅射（2DGS）表示结合单目法向先验，高效且精确地重建场景几何结构。  
+◆ 提出混合光照模型，分别用球面高斯函数刻画方向性的高频阳光成分，并通过球谐系数学习辐射传输函数以建模低频天光。  
+◆ 在保持高渲染效率的同时，实现了对无约束户外照明条件的高精度分解与重光照。  
+实验表明，该方法在定量指标和视觉对比上均达到最先进的户外重光照性能，兼顾了渲染速度与真实感。</td></tr>
+<tr><td>2025-09-14</td><td>SPHERE: Semantic-PHysical Engaged REpresentation for 3D Semantic Scene Completion</td><td>[2509.11171](http://arxiv.org/pdf/2509.11171)</td><td>SPHERE提出了一种用于相机3D语义场景补全（SSC）的新表征方法，旨在同时提升语义准确性和几何细节的真实性。其核心贡献是创新性地融合了体素与高斯表征，以联合利用语义和物理信息。
+◆ 提出语义-物理融合表征(SPHERE)，将显式体素与隐式高斯表征相结合，克服了现有方法在物理规律捕获或语义精度上的不足。
+◆ 设计了语义引导的高斯初始化(SGI)模块，利用双分支表征定位焦点体素作为锚点，指导高效的高斯初始化，提升了处理效率。
+◆ 开发了物理感知的谐波增强(PHE)模块，通过引入语义球谐函数来建模物理上下文细节，并通过焦点分布对齐促进语义-几何一致性，从而生成具有逼真细节的结果。
+该方法在主流数据集上得到验证，有效平衡了场景补全的语义准确性与几何真实性。</td></tr>
+<tr><td>2025-09-14</td><td>Multispectral-NeRF:a multispectral modeling approach based on neural radiance fields</td><td>[2509.11169](http://arxiv.org/pdf/2509.11169)</td><td>该论文提出了Multispectral-NeRF，一种基于神经辐射场（NeRF）的多光谱三维重建新方法。其核心贡献在于解决了现有NeRF模型无法处理多波段光谱数据的问题，通过扩展神经网络架构实现了对6波段光谱数据的高精度建模。  
+◆ 扩展了神经网络隐藏层的维度，使其能够直接处理6波段光谱输入数据，突破了传统三波段（RGB）的限制。  
+◆ 重新设计了残差函数，优化了重建图像与参考图像之间的光谱差异计算，提升了多光谱特征的还原精度。  
+◆ 调整了数据压缩模块，以适应多光谱图像更高比特深度的存储和计算需求，确保数据处理的效率和稳定性。  
+实验结果表明，该方法在保持原始场景几何特征的同时，成功实现了多波段光谱特征的高保真重建，显著提升了多光谱三维重建的准确性和实用性。</td></tr>
 <tr><td>2025-09-09</td><td>SplatFill: 3D Scene Inpainting via Depth-Guided Gaussian Splatting</td><td>[2509.07809](http://arxiv.org/pdf/2509.07809)</td><td>该论文提出了一种名为SplatFill的新方法，用于基于3D高斯泼溅（3DGS）的3D场景修复。其核心贡献在于显著提升了缺失区域修复的视觉保真度和几何一致性，同时大幅提高了训练效率。  
 ◆ 引入深度引导与物体感知的联合监督机制，确保修复的高斯点云在三维空间中位置准确且与周围几何对齐。  
 ◆ 提出一致性感知细化方案，能智能识别并修正不一致区域，避免对场景其他部分造成干扰。  
@@ -2786,4 +2858,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.15
+> 更新于: 2025.09.16
