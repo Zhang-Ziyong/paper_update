@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.16)
+# 计算机视觉领域最新论文 (2025.09.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
+◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
+◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
+<tr><td>2025-09-16</td><td>Match Chat: Real Time Generative AI and Generative Computing for Tennis</td><td>[2509.12592](http://arxiv.org/pdf/2509.12592)</td><td>◆ We present Match Chat, a real-time, agent-driven assistant designed to enhance the tennis fan experience by delivering instant, accurate responses to match-related queries.
+◆ Match Chat integrates Generative Artificial Intelligence (GenAI) with Generative Computing (GenComp) techniques to synthesize key insights during live tennis singles matches.
+◆ The system debuted at the 2025 Wimbledon Championships and the 2025 US Open, where it provided about 1 million users with seamless access to streaming and static data through natural language queries.</td></tr>
 <tr><td>2025-09-15</td><td>See What I Mean? Mobile Eye-Perspective Rendering for Optical See-through Head-mounted Displays</td><td>[2509.11653](http://arxiv.org/pdf/2509.11653)</td><td>本文针对光学透视头显中世界相机与用户视角不匹配问题，提出了三种眼视角渲染技术以提升增强现实视觉引导的准确性。  
 ◆ 实现了基于平面投影的Plane-Proxy EPR方法，在固定平面上近似眼视角。  
 ◆ 开发了基于SLAM场景重建的Mesh-Proxy EPR方法，通过几何网格提高投影精度。  
@@ -798,6 +804,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
+◆ However, traditional TDOM generation methods generally rely on a complex offline photogrammetric pipeline, resulting in delays that hinder real-time applications.
+◆ Moreover, the quality of TDOM may degrade due to various challenges, such as inaccurate camera poses or Digital Surface Model (DSM) and scene occlusions.</td></tr>
+<tr><td>2025-09-15</td><td>Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles</td><td>[2509.12458](http://arxiv.org/pdf/2509.12458)</td><td>◆ Small Unmanned Aerial Vehicles (UAVs) exhibit immense potential for navigating indoor and hard-to-reach areas, yet their significant constraints in payload and autonomy have largely prevented their use for complex tasks like high-quality 3-Dimensional (3D) reconstruction.
+◆ To overcome this challenge, we introduce a novel system architecture that enables fully autonomous, high-fidelity 3D scanning of static objects using UAVs weighing under 100 grams.
+◆ Our core innovation lies in a dual-reconstruction pipeline that creates a real-time feedback loop between data capture and flight control.</td></tr>
 <tr><td>2025-09-15</td><td>Segmentation-Driven Initialization for Sparse-view 3D Gaussian Splatting</td><td>[2509.11853](http://arxiv.org/pdf/2509.11853)</td><td>本文针对稀疏视图合成中几何与外观恢复困难的问题，提出了一种基于分割驱动初始化的3D高斯溅射方法（SDI-GS）。  
 ◆ 提出利用区域分割技术识别结构显著区域，替代传统依赖运动恢复结构（SfM）或多视图立体（MVS）的方法。  
 ◆ 通过选择性下采样稠密点云，大幅减少3D高斯数量，降低内存占用和计算成本。  
@@ -1142,6 +1154,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>DiffHash: Text-Guided Targeted Attack via Diffusion Models against Deep Hashing Image Retrieval</td><td>[2509.12824](http://arxiv.org/pdf/2509.12824)</td><td>◆ Deep hashing models have been widely adopted to tackle the challenges of large-scale image retrieval.
+◆ However, these approaches face serious security risks due to their vulnerability to adversarial examples.
+◆ Despite the increasing exploration of targeted attacks on deep hashing models, existing approaches still suffer from a lack of multimodal guidance, reliance on labeling information and dependence on pixel-level operations for attacks.</td></tr>
 <tr><td>2025-09-15</td><td>Bridging Vision Language Models and Symbolic Grounding for Video Question Answering</td><td>[2509.11862](http://arxiv.org/pdf/2509.11862)</td><td>该论文的核心贡献是提出了一个名为SG-VLM的模块化框架，旨在通过符号化场景图增强视频问答中的时空与因果推理能力。
 
 ◆ 引入符号化场景图（SGs）作为视频问答的中间 grounding 信号，提供结构化对象-关系表示以补充视觉语言模型的整体推理。
@@ -2321,6 +2336,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>Exploring Metric Fusion for Evaluation of NeRFs</td><td>[2509.12836](http://arxiv.org/pdf/2509.12836)</td><td>◆ Neural Radiance Fields (NeRFs) have demonstrated significant potential in synthesizing novel viewpoints.
+◆ Evaluating the NeRF-generated outputs, however, remains a challenge due to the unique artifacts they exhibit, and no individual metric performs well across all datasets.
+◆ We hypothesize that combining two successful metrics, Deep Image Structure and Texture Similarity (DISTS) and Video Multi-Method Assessment Fusion (VMAF), based on different perceptual methods, can overcome the limitations of individual metrics and achieve improved correlation with subjective quality scores.</td></tr>
+<tr><td>2025-09-15</td><td>Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles</td><td>[2509.12458](http://arxiv.org/pdf/2509.12458)</td><td>◆ Small Unmanned Aerial Vehicles (UAVs) exhibit immense potential for navigating indoor and hard-to-reach areas, yet their significant constraints in payload and autonomy have largely prevented their use for complex tasks like high-quality 3-Dimensional (3D) reconstruction.
+◆ To overcome this challenge, we introduce a novel system architecture that enables fully autonomous, high-fidelity 3D scanning of static objects using UAVs weighing under 100 grams.
+◆ Our core innovation lies in a dual-reconstruction pipeline that creates a real-time feedback loop between data capture and flight control.</td></tr>
 <tr><td>2025-09-14</td><td>ROSGS: Relightable Outdoor Scenes With Gaussian Splatting</td><td>[2509.11275](http://arxiv.org/pdf/2509.11275)</td><td>ROSGS提出了一种基于高斯溅射的两阶段流程，用于户外可重光照场景的高效重建与渲染。其核心贡献在于解决了现有方法在计算效率和光照建模精度上的不足。  
 ◆ 采用紧凑的二维高斯溅射（2DGS）表示结合单目法向先验，高效且精确地重建场景几何结构。  
 ◆ 提出混合光照模型，分别用球面高斯函数刻画方向性的高频阳光成分，并通过球谐系数学习辐射传输函数以建模低频天光。  
@@ -2870,4 +2891,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.16
+> 更新于: 2025.09.17
