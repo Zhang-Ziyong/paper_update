@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.17)
+# 计算机视觉领域最新论文 (2025.09.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
+◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
+◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
+<tr><td>2025-09-17</td><td>BIM Informed Visual SLAM for Construction Monitoring</td><td>[2509.13972](http://arxiv.org/pdf/2509.13972)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a key tool for monitoring construction sites, where aligning the evolving as-built state with the as-planned design enables early error detection and reduces costly rework.
+◆ LiDAR-based SLAM achieves high geometric precision, but its sensors are typically large and power-demanding, limiting their use on portable platforms.
+◆ Visual SLAM offers a practical alternative with lightweight cameras already embedded in most mobile devices.</td></tr>
+<tr><td>2025-09-17</td><td>UM-Depth : Uncertainty Masked Self-Supervised Monocular Depth Estimation with Visual Odometry</td><td>[2509.13713](http://arxiv.org/pdf/2509.13713)</td><td>◆ Monocular depth estimation has been increasingly adopted in robotics and autonomous driving for its ability to infer scene geometry from a single camera.
+◆ In self-supervised monocular depth estimation frameworks, the network jointly generates and exploits depth and pose estimates during training, thereby eliminating the need for depth labels.
+◆ However, these methods remain challenged by uncertainty in the input data, such as low-texture or dynamic regions, which can cause reduced depth accuracy.</td></tr>
+<tr><td>2025-09-17</td><td>Barometer-Aided Attitude Estimation</td><td>[2509.13649](http://arxiv.org/pdf/2509.13649)</td><td>◆ Accurate and robust attitude estimation is a central challenge for autonomous vehicles operating in GNSS-denied or highly dynamic environments.
+◆ In such cases, Inertial Measurement Units (IMUs) alone are insufficient for reliable tilt estimation due to the ambiguity between gravitational and inertial accelerations.
+◆ While auxiliary velocity sensors, such as GNSS, Pitot tubes, Doppler radar, or visual odometry, are often used, they can be unavailable, intermittent, or costly.</td></tr>
+<tr><td>2025-09-16</td><td>Semantic 3D Reconstructions with SLAM for Central Airway Obstruction</td><td>[2509.13541](http://arxiv.org/pdf/2509.13541)</td><td>◆ Central airway obstruction (CAO) is a life-threatening condition with increasing incidence, caused by tumors in and outside of the airway.
+◆ Traditional treatment methods such as bronchoscopy and electrocautery can be used to remove the tumor completely; however, these methods carry a high risk of complications.
+◆ Recent advances allow robotic interventions with lesser risk.</td></tr>
+<tr><td>2025-09-16</td><td>MemGS: Memory-Efficient Gaussian Splatting for Real-Time SLAM</td><td>[2509.13536](http://arxiv.org/pdf/2509.13536)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have made a significant impact on rendering and reconstruction techniques.
+◆ Current research predominantly focuses on improving rendering performance and reconstruction quality using high-performance desktop GPUs, largely overlooking applications for embedded platforms like micro air vehicles (MAVs).
+◆ These devices, with their limited computational resources and memory, often face a trade-off between system performance and reconstruction quality.</td></tr>
 <tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
 ◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
 ◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
@@ -804,6 +822,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
+◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
+◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
 <tr><td>2025-09-16</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
 ◆ However, traditional TDOM generation methods generally rely on a complex offline photogrammetric pipeline, resulting in delays that hinder real-time applications.
 ◆ Moreover, the quality of TDOM may degrade due to various challenges, such as inaccurate camera poses or Digital Surface Model (DSM) and scene occlusions.</td></tr>
@@ -1154,7 +1175,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-16</td><td>DiffHash: Text-Guided Targeted Attack via Diffusion Models against Deep Hashing Image Retrieval</td><td>[2509.12824](http://arxiv.org/pdf/2509.12824)</td><td>◆ Deep hashing models have been widely adopted to tackle the challenges of large-scale image retrieval.
+<tr><td>2025-09-17</td><td>CSMoE: An Efficient Remote Sensing Foundation Model with Soft Mixture-of-Experts</td><td>[2509.14104](http://arxiv.org/pdf/2509.14104)</td><td>◆ Self-supervised learning through masked autoencoders has attracted great attention for remote sensing (RS) foundation model (FM) development, enabling improved representation learning across diverse sensors and downstream tasks.
+◆ However, existing RS FMs often either suffer from substantial computational complexity during both training and inference or exhibit limited representational capacity.
+◆ These issues restrict their practical applicability in RS.</td></tr>
+<tr><td>2025-09-16</td><td>Semantic-Enhanced Cross-Modal Place Recognition for Robust Robot Localization</td><td>[2509.13474](http://arxiv.org/pdf/2509.13474)</td><td>◆ Ensuring accurate localization of robots in environments without GPS capability is a challenging task.
+◆ Visual Place Recognition (VPR) techniques can potentially achieve this goal, but existing RGB-based methods are sensitive to changes in illumination, weather, and other seasonal changes.
+◆ Existing cross-modal localization methods leverage the geometric properties of RGB images and 3D LiDAR maps to reduce the sensitivity issues highlighted above.</td></tr>
+<tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
+◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
+◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
+<tr><td>2025-09-17</td><td>DiffHash: Text-Guided Targeted Attack via Diffusion Models against Deep Hashing Image Retrieval</td><td>[2509.12824](http://arxiv.org/pdf/2509.12824)</td><td>◆ Deep hashing models have been widely adopted to tackle the challenges of large-scale image retrieval.
 ◆ However, these approaches face serious security risks due to their vulnerability to adversarial examples.
 ◆ Despite the increasing exploration of targeted attacks on deep hashing models, existing approaches still suffer from a lack of multimodal guidance, reliance on labeling information and dependence on pixel-level operations for attacks.</td></tr>
 <tr><td>2025-09-15</td><td>Bridging Vision Language Models and Symbolic Grounding for Video Question Answering</td><td>[2509.11862](http://arxiv.org/pdf/2509.11862)</td><td>该论文的核心贡献是提出了一个名为SG-VLM的模块化框架，旨在通过符号化场景图增强视频问答中的时空与因果推理能力。
@@ -2336,6 +2366,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>SuNeRF-CME: Physics-Informed Neural Radiance Fields for Tomographic Reconstruction of Coronal Mass Ejections</td><td>[2509.13571](http://arxiv.org/pdf/2509.13571)</td><td>◆ Coronagraphic observations enable direct monitoring of coronal mass ejections (CMEs) through scattered light from free electrons, but determining the 3D plasma distribution from 2D imaging data is challenging due to the optically-thin plasma and the complex image formation processes.
+◆ We introduce SuNeRF-CME, a framework for 3D tomographic reconstructions of the heliosphere using multi-viewpoint coronagraphic observations.
+◆ The method leverages Neural Radiance Fields (NeRFs) to estimate the electron density in the heliosphere through a ray-tracing approach, while accounting for the underlying Thomson scattering of image formation.</td></tr>
 <tr><td>2025-09-16</td><td>Exploring Metric Fusion for Evaluation of NeRFs</td><td>[2509.12836](http://arxiv.org/pdf/2509.12836)</td><td>◆ Neural Radiance Fields (NeRFs) have demonstrated significant potential in synthesizing novel viewpoints.
 ◆ Evaluating the NeRF-generated outputs, however, remains a challenge due to the unique artifacts they exhibit, and no individual metric performs well across all datasets.
 ◆ We hypothesize that combining two successful metrics, Deep Image Structure and Texture Similarity (DISTS) and Video Multi-Method Assessment Fusion (VMAF), based on different perceptual methods, can overcome the limitations of individual metrics and achieve improved correlation with subjective quality scores.</td></tr>
@@ -2891,4 +2924,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.17
+> 更新于: 2025.09.18
