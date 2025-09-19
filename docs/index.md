@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.18)
+# 计算机视觉领域最新论文 (2025.09.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>Human Interaction for Collaborative Semantic SLAM using Extended Reality</td><td>[2509.14949](http://arxiv.org/pdf/2509.14949)</td><td>◆ Semantic SLAM (Simultaneous Localization and Mapping) systems enrich robot maps with structural and semantic information, enabling robots to operate more effectively in complex environments.
+◆ However, these systems struggle in real-world scenarios with occlusions, incomplete data, or ambiguous geometries, as they cannot fully leverage the higher-level spatial and semantic knowledge humans naturally apply.
+◆ We introduce HICS-SLAM, a Human-in-the-Loop semantic SLAM framework that uses a shared extended reality environment for real-time collaboration.</td></tr>
+<tr><td>2025-09-18</td><td>BEV-ODOM2: Enhanced BEV-based Monocular Visual Odometry with PV-BEV Fusion and Dense Flow Supervision for Ground Robots</td><td>[2509.14636](http://arxiv.org/pdf/2509.14636)</td><td>◆ Bird&#x27;s-Eye-View (BEV) representation offers a metric-scaled planar workspace, facilitating the simplification of 6-DoF ego-motion to a more robust 3-DoF model for monocular visual odometry (MVO) in intelligent transportation systems.
+◆ However, existing BEV methods suffer from sparse supervision signals and information loss during perspective-to-BEV projection.
+◆ We present BEV-ODOM2, an enhanced framework addressing both limitations without additional annotations.</td></tr>
+<tr><td>2025-09-18</td><td>Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods</td><td>[2509.14516](http://arxiv.org/pdf/2509.14516)</td><td>◆ Event-based localization research and datasets are a rapidly growing area of interest, with a tenfold increase in the cumulative total number of published papers on this topic over the past 10 years.
+◆ Whilst the rapid expansion in the field is exciting, it brings with it an associated challenge: a growth in the variety of required code and package dependencies as well as data formats, making comparisons difficult and cumbersome for researchers to implement reliably.
+◆ To address this challenge, we present Event-LAB: a new and unified framework for running several event-based localization methodologies across multiple datasets.</td></tr>
 <tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
 ◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
 ◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
@@ -40,7 +49,7 @@
 <tr><td>2025-09-16</td><td>MemGS: Memory-Efficient Gaussian Splatting for Real-Time SLAM</td><td>[2509.13536](http://arxiv.org/pdf/2509.13536)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have made a significant impact on rendering and reconstruction techniques.
 ◆ Current research predominantly focuses on improving rendering performance and reconstruction quality using high-performance desktop GPUs, largely overlooking applications for embedded platforms like micro air vehicles (MAVs).
 ◆ These devices, with their limited computational resources and memory, often face a trade-off between system performance and reconstruction quality.</td></tr>
-<tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
+<tr><td>2025-09-18</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
 ◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
 ◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
 <tr><td>2025-09-16</td><td>Match Chat: Real Time Generative AI and Generative Computing for Tennis</td><td>[2509.12592](http://arxiv.org/pdf/2509.12592)</td><td>◆ We present Match Chat, a real-time, agent-driven assistant designed to enhance the tennis fan experience by delivering instant, accurate responses to match-related queries.
@@ -823,7 +832,7 @@
 <tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
 ◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
 ◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
-<tr><td>2025-09-16</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
+<tr><td>2025-09-18</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
 ◆ However, traditional TDOM generation methods generally rely on a complex offline photogrammetric pipeline, resulting in delays that hinder real-time applications.
 ◆ Moreover, the quality of TDOM may degrade due to various challenges, such as inaccurate camera poses or Digital Surface Model (DSM) and scene occlusions.</td></tr>
 <tr><td>2025-09-15</td><td>Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles</td><td>[2509.12458](http://arxiv.org/pdf/2509.12458)</td><td>◆ Small Unmanned Aerial Vehicles (UAVs) exhibit immense potential for navigating indoor and hard-to-reach areas, yet their significant constraints in payload and autonomy have largely prevented their use for complex tasks like high-quality 3-Dimensional (3D) reconstruction.
@@ -1171,6 +1180,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>PRISM: Product Retrieval In Shopping Carts using Hybrid Matching</td><td>[2509.14985](http://arxiv.org/pdf/2509.14985)</td><td>◆ Compared to traditional image retrieval tasks, product retrieval in retail settings is even more challenging.
+◆ Products of the same type from different brands may have highly similar visual appearances, and the query image may be taken from an angle that differs significantly from view angles of the stored catalog images.
+◆ Foundational models, such as CLIP and SigLIP, often struggle to distinguish these subtle but important local differences.</td></tr>
+<tr><td>2025-09-18</td><td>Chain-of-Thought Re-ranking for Image Retrieval Tasks</td><td>[2509.14746](http://arxiv.org/pdf/2509.14746)</td><td>◆ Image retrieval remains a fundamental yet challenging problem in computer vision.
+◆ While recent advances in Multimodal Large Language Models (MLLMs) have demonstrated strong reasoning capabilities, existing methods typically employ them only for evaluation, without involving them directly in the ranking process.
+◆ As a result, their rich multimodal reasoning abilities remain underutilized, leading to suboptimal performance.</td></tr>
+<tr><td>2025-09-18</td><td>DiffVL: Diffusion-Based Visual Localization on 2D Maps via BEV-Conditioned GPS Denoising</td><td>[2509.14565](http://arxiv.org/pdf/2509.14565)</td><td>◆ Accurate visual localization is crucial for autonomous driving, yet existing methods face a fundamental dilemma: While high-definition (HD) maps provide high-precision localization references, their costly construction and maintenance hinder scalability, which drives research toward standard-definition (SD) maps like OpenStreetMap.
+◆ Current SD-map-based approaches primarily focus on Bird&#x27;s-Eye View (BEV) matching between images and maps, overlooking a ubiquitous signal-noisy GPS.
+◆ Although GPS is readily available, it suffers from multipath errors in urban environments.</td></tr>
+<tr><td>2025-09-18</td><td>Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods</td><td>[2509.14516](http://arxiv.org/pdf/2509.14516)</td><td>◆ Event-based localization research and datasets are a rapidly growing area of interest, with a tenfold increase in the cumulative total number of published papers on this topic over the past 10 years.
+◆ Whilst the rapid expansion in the field is exciting, it brings with it an associated challenge: a growth in the variety of required code and package dependencies as well as data formats, making comparisons difficult and cumbersome for researchers to implement reliably.
+◆ To address this challenge, we present Event-LAB: a new and unified framework for running several event-based localization methodologies across multiple datasets.</td></tr>
+<tr><td>2025-09-17</td><td>Hashing-Baseline: Rethinking Hashing in the Age of Pretrained Models</td><td>[2509.14427](http://arxiv.org/pdf/2509.14427)</td><td>◆ Information retrieval with compact binary embeddings, also referred to as hashing, is crucial for scalable fast search applications, yet state-of-the-art hashing methods require expensive, scenario-specific training.
+◆ In this work, we introduce Hashing-Baseline, a strong training-free hashing method leveraging powerful pretrained encoders that produce rich pretrained embeddings.
+◆ We revisit classical, training-free hashing techniques: principal component analysis, random orthogonal projection, and threshold binarization, to produce a strong baseline for hashing.</td></tr>
 <tr><td>2025-09-17</td><td>CSMoE: An Efficient Remote Sensing Foundation Model with Soft Mixture-of-Experts</td><td>[2509.14104](http://arxiv.org/pdf/2509.14104)</td><td>◆ Self-supervised learning through masked autoencoders has attracted great attention for remote sensing (RS) foundation model (FM) development, enabling improved representation learning across diverse sensors and downstream tasks.
 ◆ However, existing RS FMs often either suffer from substantial computational complexity during both training and inference or exhibit limited representational capacity.
 ◆ These issues restrict their practical applicability in RS.</td></tr>
@@ -2116,6 +2140,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>RoboEye: Enhancing 2D Robotic Object Identification with Selective 3D Geometric Keypoint Matching</td><td>[2509.14966](http://arxiv.org/pdf/2509.14966)</td><td>◆ The rapidly growing number of product categories in large-scale e-commerce makes accurate object identification for automated packing in warehouses substantially more difficult.
+◆ As the catalog grows, intra-class variability and a long tail of rare or visually similar items increase, and when combined with diverse packaging, cluttered containers, frequent occlusion, and large viewpoint changes-these factors amplify discrepancies between query and reference images, causing sharp performance drops for methods that rely solely on 2D appearance features.
+◆ Thus, we propose RoboEye, a two-stage identification framework that dynamically augments 2D semantic features with domain-adapted 3D reasoning and lightweight adapters to bridge training deployment gaps.</td></tr>
 <tr><td>2025-09-14</td><td>A Geometrically Consistent Matching Framework for Side-Scan Sonar Mapping</td><td>[2509.11255](http://arxiv.org/pdf/2509.11255)</td><td>该论文针对侧扫声纳图像因视角依赖、阴影和几何畸变导致的匹配难题，提出了一种结合物理解耦与几何一致性的创新匹配框架。  
 ◆ 提出自监督多分支网络，基于朗伯反射模型将原始声纳图像分解为海底反射率、地形高程和声学路径损耗，增强物理可解释性。  
 ◆ 利用反射率图谱作为稳定匹配域，结合无训练匹配流程（SuperPoint与MINIMA LightGlue），提升跨视角对应关系准确性。  
@@ -2356,6 +2383,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes</td><td>[2509.15123](http://arxiv.org/pdf/2509.15123)</td><td>◆ Although COLMAP has long remained the predominant method for camera parameter optimization in static scenes, it is constrained by its lengthy runtime and reliance on ground truth (GT) motion masks for application to dynamic scenes.
+◆ Many efforts attempted to improve it by incorporating more priors as supervision such as GT focal length, motion masks, 3D point clouds, camera poses, and metric depth, which, however, are typically unavailable in casually captured RGB videos.
+◆ In this paper, we propose a novel method for more accurate and efficient camera parameter optimization in dynamic scenes solely supervised by a single RGB video.</td></tr>
+<tr><td>2025-09-18</td><td>NeRF-based Visualization of 3D Cues Supporting Data-Driven Spacecraft Pose Estimation</td><td>[2509.14890](http://arxiv.org/pdf/2509.14890)</td><td>◆ On-orbit operations require the estimation of the relative 6D pose, i.e., position and orientation, between a chaser spacecraft and its target.
+◆ While data-driven spacecraft pose estimation methods have been developed, their adoption in real missions is hampered by the lack of understanding of their decision process.
+◆ This paper presents a method to visualize the 3D visual cues on which a given pose estimator relies.</td></tr>
 <tr><td>2025-09-16</td><td>SuNeRF-CME: Physics-Informed Neural Radiance Fields for Tomographic Reconstruction of Coronal Mass Ejections</td><td>[2509.13571](http://arxiv.org/pdf/2509.13571)</td><td>◆ Coronagraphic observations enable direct monitoring of coronal mass ejections (CMEs) through scattered light from free electrons, but determining the 3D plasma distribution from 2D imaging data is challenging due to the optically-thin plasma and the complex image formation processes.
 ◆ We introduce SuNeRF-CME, a framework for 3D tomographic reconstructions of the heliosphere using multi-viewpoint coronagraphic observations.
 ◆ The method leverages Neural Radiance Fields (NeRFs) to estimate the electron density in the heliosphere through a ray-tracing approach, while accounting for the underlying Thomson scattering of image formation.</td></tr>
@@ -2912,4 +2945,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.18
+> 更新于: 2025.09.19
