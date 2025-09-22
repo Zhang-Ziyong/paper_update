@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.21)
+# 计算机视觉领域最新论文 (2025.09.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>SLaM-DiMM: Shared Latent Modeling for Diffusion Based Missing Modality Synthesis in MRI</td><td>[2509.16019](http://arxiv.org/pdf/2509.16019)</td><td>◆ Brain MRI scans are often found in four modalities, consisting of T1-weighted with and without contrast enhancement (T1ce and T1w), T2-weighted imaging (T2w), and Flair.
+◆ Leveraging complementary information from these different modalities enables models to learn richer, more discriminative features for understanding brain anatomy, which could be used in downstream tasks such as anomaly detection.
+◆ However, in clinical practice, not all MRI modalities are always available due to various reasons.</td></tr>
+<tr><td>2025-09-19</td><td>Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion</td><td>[2509.15673](http://arxiv.org/pdf/2509.15673)</td><td>◆ Wide field-of-view (FoV) LiDAR sensors provide dense geometry across large environments, but most existing LiDAR-inertial-visual odometry (LIVO) systems rely on a single camera, leading to limited spatial coverage and degraded robustness.
+◆ We present Omni-LIVO, the first tightly coupled multi-camera LIVO system that bridges the FoV mismatch between wide-angle LiDAR and conventional cameras.
+◆ Omni-LIVO introduces a Cross-View direct tracking strategy that maintains photometric consistency across non-overlapping views, and extends the Error-State Iterated Kalman Filter (ESIKF) with multi-view updates and adaptive covariance weighting.</td></tr>
 <tr><td>2025-09-18</td><td>Human Interaction for Collaborative Semantic SLAM using Extended Reality</td><td>[2509.14949](http://arxiv.org/pdf/2509.14949)</td><td>◆ Semantic SLAM (Simultaneous Localization and Mapping) systems enrich robot maps with structural and semantic information, enabling robots to operate more effectively in complex environments.
 ◆ However, these systems struggle in real-world scenarios with occlusions, incomplete data, or ambiguous geometries, as they cannot fully leverage the higher-level spatial and semantic knowledge humans naturally apply.
 ◆ We introduce HICS-SLAM, a Human-in-the-Loop semantic SLAM framework that uses a shared extended reality environment for real-time collaboration.</td></tr>
@@ -829,7 +835,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
+<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
+◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
+<tr><td>2025-09-18</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
 ◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
 ◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
 <tr><td>2025-09-18</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
@@ -1180,6 +1189,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>Efficient Multimodal Dataset Distillation via Generative Models</td><td>[2509.15472](http://arxiv.org/pdf/2509.15472)</td><td>◆ Dataset distillation aims to synthesize a small dataset from a large dataset, enabling the model trained on it to perform well on the original dataset.
+◆ With the blooming of large language models and multimodal large language models, the importance of multimodal datasets, particularly image-text datasets, has grown significantly.
+◆ However, existing multimodal dataset distillation methods are constrained by the Matching Training Trajectories algorithm, which significantly increases the computing resource requirement, and takes days to process the distillation.</td></tr>
+<tr><td>2025-09-18</td><td>SERVAL: Surprisingly Effective Zero-Shot Visual Document Retrieval Powered by Large Vision and Language Models</td><td>[2509.15432](http://arxiv.org/pdf/2509.15432)</td><td>◆ Visual Document Retrieval (VDR) typically operates as text-to-image retrieval using specialized bi-encoders trained to directly embed document images.
+◆ We revisit a zero-shot generate-and-encode pipeline: a vision-language model first produces a detailed textual description of each document image, which is then embedded by a standard text encoder.
+◆ On the ViDoRe-v2 benchmark, the method reaches 63.4% nDCG@5, surpassing the strongest specialised multi-vector visual document encoder.</td></tr>
 <tr><td>2025-09-18</td><td>PRISM: Product Retrieval In Shopping Carts using Hybrid Matching</td><td>[2509.14985](http://arxiv.org/pdf/2509.14985)</td><td>◆ Compared to traditional image retrieval tasks, product retrieval in retail settings is even more challenging.
 ◆ Products of the same type from different brands may have highly similar visual appearances, and the query image may be taken from an angle that differs significantly from view angles of the stored catalog images.
 ◆ Foundational models, such as CLIP and SigLIP, often struggle to distinguish these subtle but important local differences.</td></tr>
@@ -1201,7 +1216,7 @@
 <tr><td>2025-09-16</td><td>Semantic-Enhanced Cross-Modal Place Recognition for Robust Robot Localization</td><td>[2509.13474](http://arxiv.org/pdf/2509.13474)</td><td>◆ Ensuring accurate localization of robots in environments without GPS capability is a challenging task.
 ◆ Visual Place Recognition (VPR) techniques can potentially achieve this goal, but existing RGB-based methods are sensitive to changes in illumination, weather, and other seasonal changes.
 ◆ Existing cross-modal localization methods leverage the geometric properties of RGB images and 3D LiDAR maps to reduce the sensitivity issues highlighted above.</td></tr>
-<tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
+<tr><td>2025-09-18</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
 ◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
 ◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
 <tr><td>2025-09-17</td><td>DiffHash: Text-Guided Targeted Attack via Diffusion Models against Deep Hashing Image Retrieval</td><td>[2509.12824](http://arxiv.org/pdf/2509.12824)</td><td>◆ Deep hashing models have been widely adopted to tackle the challenges of large-scale image retrieval.
@@ -2140,6 +2155,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>DistillMatch: Leveraging Knowledge Distillation from Vision Foundation Model for Multimodal Image Matching</td><td>[2509.16017](http://arxiv.org/pdf/2509.16017)</td><td>◆ Multimodal image matching seeks pixel-level correspondences between images of different modalities, crucial for cross-modal perception, fusion and analysis.
+◆ However, the significant appearance differences between modalities make this task challenging.
+◆ Due to the scarcity of high-quality annotated datasets, existing deep learning methods that extract modality-common features for matching perform poorly and lack adaptability to diverse scenarios.</td></tr>
 <tr><td>2025-09-18</td><td>RoboEye: Enhancing 2D Robotic Object Identification with Selective 3D Geometric Keypoint Matching</td><td>[2509.14966](http://arxiv.org/pdf/2509.14966)</td><td>◆ The rapidly growing number of product categories in large-scale e-commerce makes accurate object identification for automated packing in warehouses substantially more difficult.
 ◆ As the catalog grows, intra-class variability and a long tail of rare or visually similar items increase, and when combined with diverse packaging, cluttered containers, frequent occlusion, and large viewpoint changes-these factors amplify discrepancies between query and reference images, causing sharp performance drops for methods that rely solely on 2D appearance features.
 ◆ Thus, we propose RoboEye, a two-stage identification framework that dynamically augments 2D semantic features with domain-adapted 3D reasoning and lightweight adapters to bridge training deployment gaps.</td></tr>
@@ -2383,7 +2401,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-18</td><td>RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes</td><td>[2509.15123](http://arxiv.org/pdf/2509.15123)</td><td>◆ Although COLMAP has long remained the predominant method for camera parameter optimization in static scenes, it is constrained by its lengthy runtime and reliance on ground truth (GT) motion masks for application to dynamic scenes.
+<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
+◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
+<tr><td>2025-09-17</td><td>ProFusion: 3D Reconstruction of Protein Complex Structures from Multi-view AFM Images</td><td>[2509.15242](http://arxiv.org/pdf/2509.15242)</td><td>◆ AI-based in silico methods have improved protein structure prediction but often struggle with large protein complexes (PCs) involving multiple interacting proteins due to missing 3D spatial cues.
+◆ Experimental techniques like Cryo-EM are accurate but costly and time-consuming.
+◆ We present ProFusion, a hybrid framework that integrates a deep learning model with Atomic Force Microscopy (AFM), which provides high-resolution height maps from random orientations, naturally yielding multi-view data for 3D reconstruction.</td></tr>
+<tr><td>2025-09-19</td><td>RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes</td><td>[2509.15123](http://arxiv.org/pdf/2509.15123)</td><td>◆ Although COLMAP has long remained the predominant method for camera parameter optimization in static scenes, it is constrained by its lengthy runtime and reliance on ground truth (GT) motion masks for application to dynamic scenes.
 ◆ Many efforts attempted to improve it by incorporating more priors as supervision such as GT focal length, motion masks, 3D point clouds, camera poses, and metric depth, which, however, are typically unavailable in casually captured RGB videos.
 ◆ In this paper, we propose a novel method for more accurate and efficient camera parameter optimization in dynamic scenes solely supervised by a single RGB video.</td></tr>
 <tr><td>2025-09-18</td><td>NeRF-based Visualization of 3D Cues Supporting Data-Driven Spacecraft Pose Estimation</td><td>[2509.14890](http://arxiv.org/pdf/2509.14890)</td><td>◆ On-orbit operations require the estimation of the relative 6D pose, i.e., position and orientation, between a chaser spacecraft and its target.
@@ -2945,4 +2969,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.21
+> 更新于: 2025.09.22
