@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.22)
+# 计算机视觉领域最新论文 (2025.09.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>ProDyG: Progressive Dynamic Scene Reconstruction via Gaussian Splatting from Monocular Videos</td><td>[2509.17864](http://arxiv.org/pdf/2509.17864)</td><td>◆ Achieving truly practical dynamic 3D reconstruction requires online operation, global pose and map consistency, detailed appearance modeling, and the flexibility to handle both RGB and RGB-D inputs.
+◆ However, existing SLAM methods typically merely remove the dynamic parts or require RGB-D input, while offline methods are not scalable to long video sequences, and current transformer-based feedforward methods lack global consistency and appearance details.
+◆ To this end, we achieve online dynamic scene reconstruction by disentangling the static and dynamic parts within a SLAM system.</td></tr>
+<tr><td>2025-09-21</td><td>SLAM-Former: Putting SLAM into One Transformer</td><td>[2509.16909](http://arxiv.org/pdf/2509.16909)</td><td>◆ We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.
+◆ Similar to traditional SLAM systems, SLAM-Former comprises both a frontend and a backend that operate in tandem.
+◆ The frontend processes sequential monocular images in real-time for incremental mapping and tracking, while the backend performs global refinement to ensure a geometrically consistent result.</td></tr>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
 <tr><td>2025-09-19</td><td>SLaM-DiMM: Shared Latent Modeling for Diffusion Based Missing Modality Synthesis in MRI</td><td>[2509.16019](http://arxiv.org/pdf/2509.16019)</td><td>◆ Brain MRI scans are often found in four modalities, consisting of T1-weighted with and without contrast enhancement (T1ce and T1w), T2-weighted imaging (T2w), and Flair.
 ◆ Leveraging complementary information from these different modalities enables models to learn richer, more discriminative features for understanding brain anatomy, which could be used in downstream tasks such as anomaly detection.
 ◆ However, in clinical practice, not all MRI modalities are always available due to various reasons.</td></tr>
@@ -837,7 +846,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+<tr><td>2025-09-21</td><td>Reference-aware SFM layers for intrusive intelligibility prediction</td><td>[2509.17270](http://arxiv.org/pdf/2509.17270)</td><td>◆ Intrusive speech-intelligibility predictors that exploit explicit reference signals are now widespread, yet they have not consistently surpassed non-intrusive systems.
+◆ We argue that a primary cause is the limited exploitation of speech foundation models (SFMs).
+◆ This work revisits intrusive prediction by combining reference conditioning with multi-layer SFM representations.</td></tr>
+<tr><td>2025-09-19</td><td>Investigating Polyglot Speech Foundation Models for Learning Collective Emotion from Crowds</td><td>[2509.16329](http://arxiv.org/pdf/2509.16329)</td><td>◆ This paper investigates the polyglot (multilingual) speech foundation models (SFMs) for Crowd Emotion Recognition (CER).
+◆ We hypothesize that polyglot SFMs, pre-trained on diverse languages, accents, and speech patterns, are particularly adept at navigating the noisy and complex acoustic environments characteristic of crowd settings, thereby offering a significant advantage for CER.
+◆ To substantiate this, we perform a comprehensive analysis, comparing polyglot, monolingual, and speaker recognition SFMs through extensive experiments on a benchmark CER dataset across varying audio durations (1 sec, 500 ms, and 250 ms).</td></tr>
+<tr><td>2025-09-22</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
 ◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
 ◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-18</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
@@ -1193,6 +1208,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-21</td><td>Learning Attribute-Aware Hash Codes for Fine-Grained Image Retrieval via Query Optimization</td><td>[2509.17049](http://arxiv.org/pdf/2509.17049)</td><td>◆ Fine-grained hashing has become a powerful solution for rapid and efficient image retrieval, particularly in scenarios requiring high discrimination between visually similar categories.
+◆ To enable each hash bit to correspond to specific visual attributes, we propoe a novel method that harnesses learnable queries for attribute-aware hash codes learning.
+◆ This method deploys a tailored set of queries to capture and represent nuanced attribute-level information within the hashing process, thereby enhancing both the interpretability and relevance of each hash bit.</td></tr>
 <tr><td>2025-09-18</td><td>Efficient Multimodal Dataset Distillation via Generative Models</td><td>[2509.15472](http://arxiv.org/pdf/2509.15472)</td><td>◆ Dataset distillation aims to synthesize a small dataset from a large dataset, enabling the model trained on it to perform well on the original dataset.
 ◆ With the blooming of large language models and multimodal large language models, the importance of multimodal datasets, particularly image-text datasets, has grown significantly.
 ◆ However, existing multimodal dataset distillation methods are constrained by the Matching Training Trajectories algorithm, which significantly increases the computing resource requirement, and takes days to process the distillation.</td></tr>
@@ -2163,6 +2181,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>Emergent 3D Correspondence from Neural Shape Representation</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
+◆ Our work has three key contributions.
+◆ First, we design the hierarchical neural semantic representation (HNSR), which consists of a global semantic feature to capture high-level structure and multi-resolution local geometric features to preserve fine details, by carefully harnessing 3D priors from pre-trained 3D generative models.</td></tr>
+<tr><td>2025-09-20</td><td>PM25Vision: A Large-Scale Benchmark Dataset for Visual Estimation of Air Quality</td><td>[2509.16519](http://arxiv.org/pdf/2509.16519)</td><td>◆ We introduce PM25Vision (PM25V), the largest and most comprehensive dataset to date for estimating air quality - specifically PM2.5 concentrations - from street-level images.
+◆ The dataset contains over 11,114 images matched with timestamped and geolocated PM2.5 readings across 3,261 AQI monitoring stations and 11 years, significantly exceeding the scale of previous benchmarks.
+◆ The spatial accuracy of this dataset has reached 5 kilometers, far exceeding the city-level accuracy of many datasets.</td></tr>
 <tr><td>2025-09-19</td><td>DistillMatch: Leveraging Knowledge Distillation from Vision Foundation Model for Multimodal Image Matching</td><td>[2509.16017](http://arxiv.org/pdf/2509.16017)</td><td>◆ Multimodal image matching seeks pixel-level correspondences between images of different modalities, crucial for cross-modal perception, fusion and analysis.
 ◆ However, the significant appearance differences between modalities make this task challenging.
 ◆ Due to the scarcity of high-quality annotated datasets, existing deep learning methods that extract modality-common features for matching perform poorly and lack adaptability to diverse scenarios.</td></tr>
@@ -2411,7 +2435,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+<tr><td>2025-09-22</td><td>From Restoration to Reconstruction: Rethinking 3D Gaussian Splatting for Underwater Scenes</td><td>[2509.17789](http://arxiv.org/pdf/2509.17789)</td><td>◆ Underwater image degradation poses significant challenges for 3D reconstruction, where simplified physical models often fail in complex scenes.
+◆ We propose \textbf{R-Splatting}, a unified framework that bridges underwater image restoration (UIR) with 3D Gaussian Splatting (3DGS) to improve both rendering quality and geometric fidelity.
+◆ Our method integrates multiple enhanced views produced by diverse UIR models into a single reconstruction pipeline.</td></tr>
+<tr><td>2025-09-21</td><td>DT-NeRF: A Diffusion and Transformer-Based Optimization Approach for Neural Radiance Fields in 3D Reconstruction</td><td>[2509.17232](http://arxiv.org/pdf/2509.17232)</td><td>◆ This paper proposes a Diffusion Model-Optimized Neural Radiance Field (DT-NeRF) method, aimed at enhancing detail recovery and multi-view consistency in 3D scene reconstruction.
+◆ By combining diffusion models with Transformers, DT-NeRF effectively restores details under sparse viewpoints and maintains high accuracy in complex geometric scenes.
+◆ Experimental results demonstrate that DT-NeRF significantly outperforms traditional NeRF and other state-of-the-art methods on the Matterport3D and ShapeNet datasets, particularly in metrics such as PSNR, SSIM, Chamfer Distance, and Fidelity.</td></tr>
+<tr><td>2025-09-21</td><td>HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis</td><td>[2509.17083](http://arxiv.org/pdf/2509.17083)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS) has emerged as a powerful alternative to NeRF-based approaches, enabling real-time, high-quality novel view synthesis through explicit, optimizable 3D Gaussians.
+◆ However, 3DGS suffers from significant memory overhead due to its reliance on per-Gaussian parameters to model view-dependent effects and anisotropic shapes.
+◆ While recent works propose compressing 3DGS with neural fields, these methods struggle to capture high-frequency spatial variations in Gaussian properties, leading to degraded reconstruction of fine details.</td></tr>
+<tr><td>2025-09-21</td><td>PGSTalker: Real-Time Audio-Driven Talking Head Generation via 3D Gaussian Splatting with Pixel-Aware Density Control</td><td>[2509.16922](http://arxiv.org/pdf/2509.16922)</td><td>◆ Audio-driven talking head generation is crucial for applications in virtual reality, digital avatars, and film production.
+◆ While NeRF-based methods enable high-fidelity reconstruction, they suffer from low rendering efficiency and suboptimal audio-visual synchronization.
+◆ This work presents PGSTalker, a real-time audio-driven talking head synthesis framework based on 3D Gaussian Splatting (3DGS).</td></tr>
+<tr><td>2025-09-22</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
 ◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
 ◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-17</td><td>ProFusion: 3D Reconstruction of Protein Complex Structures from Multi-view AFM Images</td><td>[2509.15242](http://arxiv.org/pdf/2509.15242)</td><td>◆ AI-based in silico methods have improved protein structure prediction but often struggle with large protein complexes (PCs) involving multiple interacting proteins due to missing 3D spatial cues.
@@ -2981,4 +3017,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.22
+> 更新于: 2025.09.23
