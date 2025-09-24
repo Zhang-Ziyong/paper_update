@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.23)
+# 计算机视觉领域最新论文 (2025.09.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>Towards Robust LiDAR Localization: Deep Learning-based Uncertainty Estimation</td><td>[2509.18954](http://arxiv.org/pdf/2509.18954)</td><td>◆ LiDAR-based localization and SLAM often rely on iterative matching algorithms, particularly the Iterative Closest Point (ICP) algorithm, to align sensor data with pre-existing maps or previous scans.
+◆ However, ICP is prone to errors in featureless environments and dynamic scenes, leading to inaccurate pose estimation.
+◆ Accurately predicting the uncertainty associated with ICP is crucial for robust state estimation but remains challenging, as existing approaches often rely on handcrafted models or simplified assumptions.</td></tr>
+<tr><td>2025-09-22</td><td>Semantic-Aware Particle Filter for Reliable Vineyard Robot Localisation</td><td>[2509.18342](http://arxiv.org/pdf/2509.18342)</td><td>◆ Accurate localisation is critical for mobile robots in structured outdoor environments, yet LiDAR-based methods often fail in vineyards due to repetitive row geometry and perceptual aliasing.
+◆ We propose a semantic particle filter that incorporates stable object-level detections, specifically vine trunks and support poles into the likelihood estimation process.
+◆ Detected landmarks are projected into a birds eye view and fused with LiDAR scans to generate semantic observations.</td></tr>
 <tr><td>2025-09-22</td><td>ProDyG: Progressive Dynamic Scene Reconstruction via Gaussian Splatting from Monocular Videos</td><td>[2509.17864](http://arxiv.org/pdf/2509.17864)</td><td>◆ Achieving truly practical dynamic 3D reconstruction requires online operation, global pose and map consistency, detailed appearance modeling, and the flexibility to handle both RGB and RGB-D inputs.
 ◆ However, existing SLAM methods typically merely remove the dynamic parts or require RGB-D input, while offline methods are not scalable to long video sequences, and current transformer-based feedforward methods lack global consistency and appearance details.
 ◆ To this end, we achieve online dynamic scene reconstruction by disentangling the static and dynamic parts within a SLAM system.</td></tr>
@@ -844,6 +850,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>DeblurSplat: SfM-free 3D Gaussian Splatting with Event Camera for Robust Deblurring</td><td>[2509.18898](http://arxiv.org/pdf/2509.18898)</td><td>◆ In this paper, we propose the first Structure-from-Motion (SfM)-free deblurring 3D Gaussian Splatting method via event camera, dubbed DeblurSplat.
+◆ We address the motion-deblurring problem in two ways.
+◆ First, we leverage the pretrained capability of the dense stereo module (DUSt3R) to directly obtain accurate initial point clouds from blurred images.</td></tr>
 <tr><td>2025-09-21</td><td>Reference-aware SFM layers for intrusive intelligibility prediction</td><td>[2509.17270](http://arxiv.org/pdf/2509.17270)</td><td>◆ Intrusive speech-intelligibility predictors that exploit explicit reference signals are now widespread, yet they have not consistently surpassed non-intrusive systems.
 ◆ We argue that a primary cause is the limited exploitation of speech foundation models (SFMs).
 ◆ This work revisits intrusive prediction by combining reference conditioning with multi-layer SFM representations.</td></tr>
@@ -1204,6 +1213,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions</td><td>[2509.19203](http://arxiv.org/pdf/2509.19203)</td><td>◆ Contrastively-trained Vision-Language Models (VLMs), such as CLIP, have become the standard approach for learning discriminative vision-language representations.
+◆ However, these models often exhibit shallow language understanding, manifesting bag-of-words behaviour.
+◆ These limitations are reinforced by their dual-encoder design, which induces a modality gap.</td></tr>
+<tr><td>2025-09-22</td><td>OrthoLoC: UAV 6-DoF Localization and Calibration Using Orthographic Geodata</td><td>[2509.18350](http://arxiv.org/pdf/2509.18350)</td><td>◆ Accurate visual localization from aerial views is a fundamental problem with applications in mapping, large-area inspection, and search-and-rescue operations.
+◆ In many scenarios, these systems require high-precision localization while operating with limited resources (e.g., no internet connection or GNSS/GPS support), making large image databases or heavy 3D models impractical.
+◆ Surprisingly, little attention has been given to leveraging orthographic geodata as an alternative paradigm, which is lightweight and increasingly available through free releases by governmental authorities (e.g., the European Union).</td></tr>
 <tr><td>2025-09-21</td><td>Learning Attribute-Aware Hash Codes for Fine-Grained Image Retrieval via Query Optimization</td><td>[2509.17049](http://arxiv.org/pdf/2509.17049)</td><td>◆ Fine-grained hashing has become a powerful solution for rapid and efficient image retrieval, particularly in scenarios requiring high discrimination between visually similar categories.
 ◆ To enable each hash bit to correspond to specific visual attributes, we propoe a novel method that harnesses learnable queries for attribute-aware hash codes learning.
 ◆ This method deploys a tailored set of queries to capture and represent nuanced attribute-level information within the hashing process, thereby enhancing both the interpretability and relevance of each hash bit.</td></tr>
@@ -2173,7 +2188,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-22</td><td>Emergent 3D Correspondence from Neural Shape Representation</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
+<tr><td>2025-09-23</td><td>Hierarchical Neural Semantic Representation for 3D Semantic Correspondence</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
 ◆ Our work has three key contributions.
 ◆ First, we design the hierarchical neural semantic representation (HNSR), which consists of a global semantic feature to capture high-level structure and multi-resolution local geometric features to preserve fine details, by carefully harnessing 3D priors from pre-trained 3D generative models.</td></tr>
 <tr><td>2025-09-20</td><td>PM25Vision: A Large-Scale Benchmark Dataset for Visual Estimation of Air Quality</td><td>[2509.16519](http://arxiv.org/pdf/2509.16519)</td><td>◆ We introduce PM25Vision (PM25V), the largest and most comprehensive dataset to date for estimating air quality - specifically PM2.5 concentrations - from street-level images.
@@ -2201,7 +2216,7 @@
 ◆ 设计了基于“相对3D场景图”的拓扑-度量混合地图表示，能够生成更高效的对象级全局路径规划代价。  
 ◆ 开发了直接以高层“WayObject Costmap”为输入条件的本地控制器，无需显式RGB输入，实现了控制预测与图像匹配问题的解耦。  
 ◆ 该方法在跨形态部署（如传感器高度变化）和挑战性任务（如反向轨迹导航）中表现出显著优势，且仅使用仿真训练的策略能很好地泛化到真实室内环境。</td></tr>
-<tr><td>2025-09-10</td><td>Handling Multiple Hypotheses in Coarse-to-Fine Dense Image Matching</td><td>[2509.08805](http://arxiv.org/pdf/2509.08805)</td><td>本文提出了一种在稠密图像匹配中处理多重假设的新方法BEAMER，其核心贡献在于显著提升了在挑战性场景下的匹配鲁棒性。  
+<tr><td>2025-09-23</td><td>Handling Multiple Hypotheses in Coarse-to-Fine Dense Image Matching</td><td>[2509.08805](http://arxiv.org/pdf/2509.08805)</td><td>本文提出了一种在稠密图像匹配中处理多重假设的新方法BEAMER，其核心贡献在于显著提升了在挑战性场景下的匹配鲁棒性。  
 ◆ 摒弃了传统方法在每个尺度上仅为每个源位置预测单一对应点的做法，创新性地提出在每个尺度上预测并保留多个对应假设。  
 ◆ 采用束搜索（beam search）策略，在由粗到细的匹配过程中逐尺度地传播和保留这些多重假设。  
 ◆ 设计了一种新颖的架构，将多重假设集成到交叉注意力（cross-attention）层中，使网络能够学习如何有效地在不同尺度间筛选和传播最优假设。  
@@ -2425,13 +2440,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>WaveletGaussian: Wavelet-domain Diffusion for Sparse-view 3D Gaussian Object Reconstruction</td><td>[2509.19073](http://arxiv.org/pdf/2509.19073)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a powerful representation for image-based object reconstruction, yet its performance drops sharply in sparse-view settings.
+◆ Prior works address this limitation by employing diffusion models to repair corrupted renders, subsequently using them as pseudo ground truths for later optimization.
+◆ While effective, such approaches incur heavy computation from the diffusion fine-tuning and repair steps.</td></tr>
+<tr><td>2025-09-23</td><td>Seeing Through Reflections: Advancing 3D Scene Reconstruction in Mirror-Containing Environments with Gaussian Splatting</td><td>[2509.18956](http://arxiv.org/pdf/2509.18956)</td><td>◆ Mirror-containing environments pose unique challenges for 3D reconstruction and novel view synthesis (NVS), as reflective surfaces introduce view-dependent distortions and inconsistencies.
+◆ While cutting-edge methods such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) excel in typical scenes, their performance deteriorates in the presence of mirrors.
+◆ Existing solutions mainly focus on handling mirror surfaces through symmetry mapping but often overlook the rich information carried by mirror reflections.</td></tr>
 <tr><td>2025-09-22</td><td>From Restoration to Reconstruction: Rethinking 3D Gaussian Splatting for Underwater Scenes</td><td>[2509.17789](http://arxiv.org/pdf/2509.17789)</td><td>◆ Underwater image degradation poses significant challenges for 3D reconstruction, where simplified physical models often fail in complex scenes.
 ◆ We propose \textbf{R-Splatting}, a unified framework that bridges underwater image restoration (UIR) with 3D Gaussian Splatting (3DGS) to improve both rendering quality and geometric fidelity.
 ◆ Our method integrates multiple enhanced views produced by diverse UIR models into a single reconstruction pipeline.</td></tr>
 <tr><td>2025-09-21</td><td>DT-NeRF: A Diffusion and Transformer-Based Optimization Approach for Neural Radiance Fields in 3D Reconstruction</td><td>[2509.17232](http://arxiv.org/pdf/2509.17232)</td><td>◆ This paper proposes a Diffusion Model-Optimized Neural Radiance Field (DT-NeRF) method, aimed at enhancing detail recovery and multi-view consistency in 3D scene reconstruction.
 ◆ By combining diffusion models with Transformers, DT-NeRF effectively restores details under sparse viewpoints and maintains high accuracy in complex geometric scenes.
 ◆ Experimental results demonstrate that DT-NeRF significantly outperforms traditional NeRF and other state-of-the-art methods on the Matterport3D and ShapeNet datasets, particularly in metrics such as PSNR, SSIM, Chamfer Distance, and Fidelity.</td></tr>
-<tr><td>2025-09-21</td><td>HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis</td><td>[2509.17083](http://arxiv.org/pdf/2509.17083)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS) has emerged as a powerful alternative to NeRF-based approaches, enabling real-time, high-quality novel view synthesis through explicit, optimizable 3D Gaussians.
+<tr><td>2025-09-23</td><td>HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis</td><td>[2509.17083](http://arxiv.org/pdf/2509.17083)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS) has emerged as a powerful alternative to NeRF-based approaches, enabling real-time, high-quality novel view synthesis through explicit, optimizable 3D Gaussians.
 ◆ However, 3DGS suffers from significant memory overhead due to its reliance on per-Gaussian parameters to model view-dependent effects and anisotropic shapes.
 ◆ While recent works propose compressing 3DGS with neural fields, these methods struggle to capture high-frequency spatial variations in Gaussian properties, leading to degraded reconstruction of fine details.</td></tr>
 <tr><td>2025-09-21</td><td>PGSTalker: Real-Time Audio-Driven Talking Head Generation via 3D Gaussian Splatting with Pixel-Aware Density Control</td><td>[2509.16922](http://arxiv.org/pdf/2509.16922)</td><td>◆ Audio-driven talking head generation is crucial for applications in virtual reality, digital avatars, and film production.
@@ -3005,4 +3026,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.23
+> 更新于: 2025.09.24
