@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.24)
+# 计算机视觉领域最新论文 (2025.09.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
+◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
+◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
+<tr><td>2025-09-23</td><td>Bioinspired SLAM Approach for Unmanned Surface Vehicle</td><td>[2509.19522](http://arxiv.org/pdf/2509.19522)</td><td>◆ This paper presents OpenRatSLAM2, a new version of OpenRatSLAM - a bioinspired SLAM framework based on computational models of the rodent hippocampus.
+◆ OpenRatSLAM2 delivers low-computation-cost visual-inertial based SLAM, suitable for GPS-denied environments.
+◆ Our contributions include a ROS2-based architecture, experimental results on new waterway datasets, and insights into system parameter tuning.</td></tr>
+<tr><td>2025-09-23</td><td>CU-Multi: A Dataset for Multi-Robot Collaborative Perception</td><td>[2509.19463](http://arxiv.org/pdf/2509.19463)</td><td>◆ A central challenge for multi-robot systems is fusing independently gathered perception data into a unified representation.
+◆ Despite progress in Collaborative SLAM (C-SLAM), benchmarking remains hindered by the scarcity of dedicated multi-robot datasets.
+◆ Many evaluations instead partition single-robot trajectories, a practice that may only partially reflect true multi-robot operations and, more critically, lacks standardization, leading to results that are difficult to interpret or compare across studies.</td></tr>
 <tr><td>2025-09-23</td><td>Towards Robust LiDAR Localization: Deep Learning-based Uncertainty Estimation</td><td>[2509.18954](http://arxiv.org/pdf/2509.18954)</td><td>◆ LiDAR-based localization and SLAM often rely on iterative matching algorithms, particularly the Iterative Closest Point (ICP) algorithm, to align sensor data with pre-existing maps or previous scans.
 ◆ However, ICP is prone to errors in featureless environments and dynamic scenes, leading to inaccurate pose estimation.
 ◆ Accurately predicting the uncertainty associated with ICP is crucial for robust state estimation but remains challenging, as existing approaches often rely on handcrafted models or simplified assumptions.</td></tr>
@@ -850,6 +859,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>Aerial-Ground Image Feature Matching via 3D Gaussian Splatting-based Intermediate View Rendering</td><td>[2509.19898](http://arxiv.org/pdf/2509.19898)</td><td>◆ The integration of aerial and ground images has been a promising solution in 3D modeling of complex scenes, which is seriously restricted by finding reliable correspondences.
+◆ The primary contribution of this study is a feature matching algorithm for aerial and ground images, whose core idea is to generate intermediate views to alleviate perspective distortions caused by the extensive viewpoint changes.
+◆ First, by using aerial images only, sparse models are reconstructed through an incremental SfM (Structure from Motion) engine due to their large scene coverage.</td></tr>
 <tr><td>2025-09-23</td><td>DeblurSplat: SfM-free 3D Gaussian Splatting with Event Camera for Robust Deblurring</td><td>[2509.18898](http://arxiv.org/pdf/2509.18898)</td><td>◆ In this paper, we propose the first Structure-from-Motion (SfM)-free deblurring 3D Gaussian Splatting method via event camera, dubbed DeblurSplat.
 ◆ We address the motion-deblurring problem in two ways.
 ◆ First, we leverage the pretrained capability of the dense stereo module (DUSt3R) to directly obtain accurate initial point clouds from blurred images.</td></tr>
@@ -1213,6 +1225,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>A Versatile Foundation Model for AI-enabled Mammogram Interpretation</td><td>[2509.20271](http://arxiv.org/pdf/2509.20271)</td><td>◆ Breast cancer is the most commonly diagnosed cancer and the leading cause of cancer-related mortality in women globally.
+◆ Mammography is essential for the early detection and diagnosis of breast lesions.
+◆ Despite recent progress in foundation models (FMs) for mammogram analysis, their clinical translation remains constrained by several fundamental limitations, including insufficient diversity in training data, limited model generalizability, and a lack of comprehensive evaluation across clinically relevant tasks.</td></tr>
 <tr><td>2025-09-23</td><td>Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions</td><td>[2509.19203](http://arxiv.org/pdf/2509.19203)</td><td>◆ Contrastively-trained Vision-Language Models (VLMs), such as CLIP, have become the standard approach for learning discriminative vision-language representations.
 ◆ However, these models often exhibit shallow language understanding, manifesting bag-of-words behaviour.
 ◆ These limitations are reinforced by their dual-encoder design, which induces a modality gap.</td></tr>
@@ -3026,4 +3041,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.24
+> 更新于: 2025.09.25
