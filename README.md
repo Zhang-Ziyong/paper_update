@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.25)
+# 计算机视觉领域最新论文 (2025.09.26)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
+◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
+◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
+<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
+◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
+<tr><td>2025-09-25</td><td>SLAM-Free Visual Navigation with Hierarchical Vision-Language Perception and Coarse-to-Fine Semantic Topological Planning</td><td>[2509.20739](http://arxiv.org/pdf/2509.20739)</td><td>◆ Conventional SLAM pipelines for legged robot navigation are fragile under rapid motion, calibration demands, and sensor drift, while offering limited semantic reasoning for task-driven exploration.
+◆ To deal with these issues, we propose a vision-only, SLAM-free navigation framework that replaces dense geometry with semantic reasoning and lightweight topological representations.
+◆ A hierarchical vision-language perception module fuses scene-level context with object-level cues for robust semantic inference.</td></tr>
 <tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
 ◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
 ◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
@@ -1229,6 +1238,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>SGAligner++: Cross-Modal Language-Aided 3D Scene Graph Alignment</td><td>[2509.20401](http://arxiv.org/pdf/2509.20401)</td><td>◆ Aligning 3D scene graphs is a crucial initial step for several applications in robot navigation and embodied perception.
+◆ Current methods in 3D scene graph alignment often rely on single-modality point cloud data and struggle with incomplete or noisy input.
+◆ We introduce SGAligner++, a cross-modal, language-aided framework for 3D scene graph alignment.</td></tr>
 <tr><td>2025-09-24</td><td>A Versatile Foundation Model for AI-enabled Mammogram Interpretation</td><td>[2509.20271](http://arxiv.org/pdf/2509.20271)</td><td>◆ Breast cancer is the most commonly diagnosed cancer and the leading cause of cancer-related mortality in women globally.
 ◆ Mammography is essential for the early detection and diagnosis of breast lesions.
 ◆ Despite recent progress in foundation models (FMs) for mammogram analysis, their clinical translation remains constrained by several fundamental limitations, including insufficient diversity in training data, limited model generalizability, and a lack of comprehensive evaluation across clinically relevant tasks.</td></tr>
@@ -3053,4 +3065,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.25
+> 更新于: 2025.09.26
