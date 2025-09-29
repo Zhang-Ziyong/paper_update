@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.28)
+# 计算机视觉领域最新论文 (2025.09.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>IMU-Preintegrated Radar Factors for Asynchronous Radar-LiDAR-Inertial SLAM</td><td>[2509.22288](http://arxiv.org/pdf/2509.22288)</td><td>◆ Fixed-lag Radar-LiDAR-Inertial smoothers conventionally create one factor graph node per measurement to compensate for the lack of time synchronization between radar and LiDAR.
+◆ For a radar-LiDAR sensor pair with equal rates, this strategy results in a state creation rate of twice the individual sensor frequencies.
+◆ This doubling of the number of states per second yields high optimization costs, inhibiting real-time performance on resource-constrained hardware.</td></tr>
+<tr><td>2025-09-25</td><td>Real-Time Indoor Object SLAM with LLM-Enhanced Priors</td><td>[2509.21602](http://arxiv.org/pdf/2509.21602)</td><td>◆ Object-level Simultaneous Localization and Mapping (SLAM), which incorporates semantic information for high-level scene understanding, faces challenges of under-constrained optimization due to sparse observations.
+◆ Prior work has introduced additional constraints using commonsense knowledge, but obtaining such priors has traditionally been labor-intensive and lacks generalizability across diverse object categories.
+◆ We address this limitation by leveraging large language models (LLMs) to provide commonsense knowledge of object geometric attributes, specifically size and orientation, as prior factors in a graph-based SLAM framework.</td></tr>
 <tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
 ◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
 ◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
@@ -880,7 +886,7 @@
 <tr><td>2025-09-19</td><td>Investigating Polyglot Speech Foundation Models for Learning Collective Emotion from Crowds</td><td>[2509.16329](http://arxiv.org/pdf/2509.16329)</td><td>◆ This paper investigates the polyglot (multilingual) speech foundation models (SFMs) for Crowd Emotion Recognition (CER).
 ◆ We hypothesize that polyglot SFMs, pre-trained on diverse languages, accents, and speech patterns, are particularly adept at navigating the noisy and complex acoustic environments characteristic of crowd settings, thereby offering a significant advantage for CER.
 ◆ To substantiate this, we perform a comprehensive analysis, comparing polyglot, monolingual, and speaker recognition SFMs through extensive experiments on a benchmark CER dataset across varying audio durations (1 sec, 500 ms, and 250 ms).</td></tr>
-<tr><td>2025-09-22</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+<tr><td>2025-09-26</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
 ◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
 ◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-18</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
@@ -1234,6 +1240,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation</td><td>[2509.22307](http://arxiv.org/pdf/2509.22307)</td><td>◆ Lightweight 3D medical image segmentation remains constrained by a fundamental &quot;efficiency / robustness conflict&quot;, particularly when processing complex anatomical structures and heterogeneous modalities.
+◆ In this paper, we study how to redesign the framework based on the characteristics of high-dimensional 3D images, and explore data synergy to overcome the fragile representation of lightweight methods.
+◆ Our approach, VeloxSeg, begins with a deployable and extensible dual-stream CNN-Transformer architecture composed of Paired Window Attention (PWA) and Johnson-Lindenstrauss lemma-guided convolution (JLC).</td></tr>
 <tr><td>2025-09-23</td><td>SGAligner++: Cross-Modal Language-Aided 3D Scene Graph Alignment</td><td>[2509.20401](http://arxiv.org/pdf/2509.20401)</td><td>◆ Aligning 3D scene graphs is a crucial initial step for several applications in robot navigation and embodied perception.
 ◆ Current methods in 3D scene graph alignment often rely on single-modality point cloud data and struggle with incomplete or noisy input.
 ◆ We introduce SGAligner++, a cross-modal, language-aided framework for 3D scene graph alignment.</td></tr>
@@ -1249,7 +1258,7 @@
 <tr><td>2025-09-21</td><td>Learning Attribute-Aware Hash Codes for Fine-Grained Image Retrieval via Query Optimization</td><td>[2509.17049](http://arxiv.org/pdf/2509.17049)</td><td>◆ Fine-grained hashing has become a powerful solution for rapid and efficient image retrieval, particularly in scenarios requiring high discrimination between visually similar categories.
 ◆ To enable each hash bit to correspond to specific visual attributes, we propoe a novel method that harnesses learnable queries for attribute-aware hash codes learning.
 ◆ This method deploys a tailored set of queries to capture and represent nuanced attribute-level information within the hashing process, thereby enhancing both the interpretability and relevance of each hash bit.</td></tr>
-<tr><td>2025-09-18</td><td>Efficient Multimodal Dataset Distillation via Generative Models</td><td>[2509.15472](http://arxiv.org/pdf/2509.15472)</td><td>◆ Dataset distillation aims to synthesize a small dataset from a large dataset, enabling the model trained on it to perform well on the original dataset.
+<tr><td>2025-09-25</td><td>Efficient Multimodal Dataset Distillation via Generative Models</td><td>[2509.15472](http://arxiv.org/pdf/2509.15472)</td><td>◆ Dataset distillation aims to synthesize a small dataset from a large dataset, enabling the model trained on it to perform well on the original dataset.
 ◆ With the blooming of large language models and multimodal large language models, the importance of multimodal datasets, particularly image-text datasets, has grown significantly.
 ◆ However, existing multimodal dataset distillation methods are constrained by the Matching Training Trajectories algorithm, which significantly increases the computing resource requirement, and takes days to process the distillation.</td></tr>
 <tr><td>2025-09-18</td><td>SERVAL: Surprisingly Effective Zero-Shot Visual Document Retrieval Powered by Large Vision and Language Models</td><td>[2509.15432](http://arxiv.org/pdf/2509.15432)</td><td>◆ Visual Document Retrieval (VDR) typically operates as text-to-image retrieval using specialized bi-encoders trained to directly embed document images.
@@ -2001,6 +2010,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>PANICL: Mitigating Over-Reliance on Single Prompt in Visual In-Context Learning</td><td>[2509.21926](http://arxiv.org/pdf/2509.21926)</td><td>◆ Visual In-Context Learning (VICL) uses input-output image pairs, referred to as in-context pairs (or examples), as prompts alongside query images to guide models in performing diverse vision tasks.
+◆ However, VICL often suffers from over-reliance on a single in-context pair, which can lead to biased and unstable predictions.
+◆ We introduce PAtch-based $k$-Nearest neighbor visual In-Context Learning (PANICL), a general training-free framework that mitigates this issue by leveraging multiple in-context pairs.</td></tr>
 <tr><td>2025-09-15</td><td>Bridging the Gap Between Sparsity and Redundancy: A Dual-Decoding Framework with Global Context for Map Inference</td><td>[2509.11731](http://arxiv.org/pdf/2509.11731)</td><td>该论文针对轨迹数据地图推断中稀疏区域道路断裂和密集区域冗余段的问题，提出了DGMap双解码框架。其核心创新点包括：
 ◆ 提出多尺度网格编码方法，整合全局语义上下文与局部几何特征，提升关键点检测精度。
 ◆ 设计掩码增强关键点提取机制，有效减少稀疏轨迹区的道路断裂问题。
@@ -2485,7 +2497,7 @@
 <tr><td>2025-09-21</td><td>PGSTalker: Real-Time Audio-Driven Talking Head Generation via 3D Gaussian Splatting with Pixel-Aware Density Control</td><td>[2509.16922](http://arxiv.org/pdf/2509.16922)</td><td>◆ Audio-driven talking head generation is crucial for applications in virtual reality, digital avatars, and film production.
 ◆ While NeRF-based methods enable high-fidelity reconstruction, they suffer from low rendering efficiency and suboptimal audio-visual synchronization.
 ◆ This work presents PGSTalker, a real-time audio-driven talking head synthesis framework based on 3D Gaussian Splatting (3DGS).</td></tr>
-<tr><td>2025-09-22</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+<tr><td>2025-09-26</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
 ◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
 ◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-17</td><td>ProFusion: 3D Reconstruction of Protein Complex Structures from Multi-view AFM Images</td><td>[2509.15242](http://arxiv.org/pdf/2509.15242)</td><td>◆ AI-based in silico methods have improved protein structure prediction but often struggle with large protein complexes (PCs) involving multiple interacting proteins due to missing 3D spatial cues.
@@ -3053,4 +3065,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.28
+> 更新于: 2025.09.29
