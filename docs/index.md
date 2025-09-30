@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.29)
+# 计算机视觉领域最新论文 (2025.09.30)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>PROFusion: Robust and Accurate Dense Reconstruction via Camera Pose Regression and Optimization</td><td>[2509.24236](http://arxiv.org/pdf/2509.24236)</td><td>◆ Real-time dense scene reconstruction during unstable camera motions is crucial for robotics, yet current RGB-D SLAM systems fail when cameras experience large viewpoint changes, fast motions, or sudden shaking.
+◆ Classical optimization-based methods deliver high accuracy but fail with poor initialization during large motions, while learning-based approaches provide robustness but lack sufficient accuracy for dense reconstruction.
+◆ We address this challenge through a combination of learning-based initialization with optimization-based refinement.</td></tr>
+<tr><td>2025-09-28</td><td>GRS-SLAM3R: Real-Time Dense SLAM with Gated Recurrent State</td><td>[2509.23737](http://arxiv.org/pdf/2509.23737)</td><td>◆ DUSt3R-based end-to-end scene reconstruction has recently shown promising results in dense visual SLAM.
+◆ However, most existing methods only use image pairs to estimate pointmaps, overlooking spatial memory and global consistency.To this end, we introduce GRS-SLAM3R, an end-to-end SLAM framework for dense scene reconstruction and pose estimation from RGB images without any prior knowledge of the scene or camera parameters.
+◆ Unlike existing DUSt3R-based frameworks, which operate on all image pairs and predict per-pair point maps in local coordinate frames, our method supports sequentialized input and incrementally estimates metric-scale point clouds in the global coordinate.</td></tr>
+<tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
+◆ NeRF introduced view-consistent photorealism via volumetric rendering; 3DGS has rapidly emerged as an explicit, efficient alternative that supports high-quality rendering, faster optimization, and integration into hybrid pipelines for enhanced photorealism and task-driven scene understanding.
+◆ This survey examines how 3DGS is being adopted across SLAM, telepresence and teleoperation, robotic manipulation, and 3D content generation.</td></tr>
+<tr><td>2025-09-27</td><td>EKF-Based Fusion of Wi-Fi/LiDAR/IMU for Indoor Localization and Navigation</td><td>[2509.23118](http://arxiv.org/pdf/2509.23118)</td><td>◆ Conventional Wi-Fi received signal strength indicator (RSSI) fingerprinting cannot meet the growing demand for accurate indoor localization and navigation due to its lower accuracy, while solutions based on light detection and ranging (LiDAR) can provide better localization performance but is limited by their higher deployment cost and complexity.
+◆ To address these issues, we propose a novel indoor localization and navigation framework integrating Wi-Fi RSSI fingerprinting, LiDAR-based simultaneous localization and mapping (SLAM), and inertial measurement unit (IMU) navigation based on an extended Kalman filter (EKF).
+◆ Specifically, coarse localization by deep neural network (DNN)-based Wi-Fi RSSI fingerprinting is refined by IMU-based dynamic positioning using a Gmapping-based SLAM to generate an occupancy grid map and output high-frequency attitude estimates, which is followed by EKF prediction-update integrating sensor information while effectively suppressing Wi-Fi-induced noise and IMU drift errors.</td></tr>
+<tr><td>2025-09-26</td><td>Good Weights: Proactive, Adaptive Dead Reckoning Fusion for Continuous and Robust Visual SLAM</td><td>[2509.22910](http://arxiv.org/pdf/2509.22910)</td><td>◆ Given that Visual SLAM relies on appearance cues for localization and scene understanding, texture-less or visually degraded environments (e.g., plain walls or low lighting) lead to poor pose estimation and track loss.
+◆ However, robots are typically equipped with sensors that provide some form of dead reckoning odometry with reasonable short-time performance but unreliable long-time performance.
+◆ The Good Weights (GW) algorithm described here provides a framework to adaptively integrate dead reckoning (DR) with passive visual SLAM for continuous and accurate frame-level pose estimation.</td></tr>
 <tr><td>2025-09-26</td><td>IMU-Preintegrated Radar Factors for Asynchronous Radar-LiDAR-Inertial SLAM</td><td>[2509.22288](http://arxiv.org/pdf/2509.22288)</td><td>◆ Fixed-lag Radar-LiDAR-Inertial smoothers conventionally create one factor graph node per measurement to compensate for the lack of time synchronization between radar and LiDAR.
 ◆ For a radar-LiDAR sensor pair with equal rates, this strategy results in a state creation rate of twice the individual sensor frequencies.
 ◆ This doubling of the number of states per second yields high optimization costs, inhibiting real-time performance on resource-constrained hardware.</td></tr>
@@ -31,7 +46,7 @@
 <tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
 ◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
 ◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
-<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+<tr><td>2025-09-29</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
 ◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
 ◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-25</td><td>SLAM-Free Visual Navigation with Hierarchical Vision-Language Perception and Coarse-to-Fine Semantic Topological Planning</td><td>[2509.20739](http://arxiv.org/pdf/2509.20739)</td><td>◆ Conventional SLAM pipelines for legged robot navigation are fragile under rapid motion, calibration demands, and sensor drift, while offering limited semantic reasoning for task-driven exploration.
@@ -874,6 +889,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-28</td><td>BOSfM: A View Planning Framework for Optimal 3D Reconstruction of Agricultural Scenes</td><td>[2509.24126](http://arxiv.org/pdf/2509.24126)</td><td>◆ Active vision (AV) has been in the spotlight of robotics research due to its emergence in numerous applications including agricultural tasks such as precision crop monitoring and autonomous harvesting to list a few.
+◆ A major AV problem that gained popularity is the 3D reconstruction of targeted environments using 2D images from diverse viewpoints.
+◆ While collecting and processing a large number of arbitrarily captured 2D images can be arduous in many practical scenarios, a more efficient solution involves optimizing the placement of available cameras in 3D space to capture fewer, yet more informative, images that provide sufficient visual information for effective reconstruction of the environment of interest.</td></tr>
+<tr><td>2025-09-28</td><td>RPG360: Robust 360 Depth Estimation with Perspective Foundation Models and Graph Optimization</td><td>[2509.23991](http://arxiv.org/pdf/2509.23991)</td><td>◆ The increasing use of 360 images across various domains has emphasized the need for robust depth estimation techniques tailored for omnidirectional images.
+◆ However, obtaining large-scale labeled datasets for 360 depth estimation remains a significant challenge.
+◆ In this paper, we propose RPG360, a training-free robust 360 monocular depth estimation method that leverages perspective foundation models and graph optimization.</td></tr>
+<tr><td>2025-09-28</td><td>CrashSplat: 2D to 3D Vehicle Damage Segmentation in Gaussian Splatting</td><td>[2509.23947](http://arxiv.org/pdf/2509.23947)</td><td>◆ Automatic car damage detection has been a topic of significant interest for the auto insurance industry as it promises faster, accurate, and cost-effective damage assessments.
+◆ However, few works have gone beyond 2D image analysis to leverage 3D reconstruction methods, which have the potential to provide a more comprehensive and geometrically accurate representation of the damage.
+◆ Moreover, recent methods employing 3D representations for novel view synthesis, particularly 3D Gaussian Splatting (3D-GS), have demonstrated the ability to generate accurate and coherent 3D reconstructions from a limited number of views.</td></tr>
 <tr><td>2025-09-24</td><td>Aerial-Ground Image Feature Matching via 3D Gaussian Splatting-based Intermediate View Rendering</td><td>[2509.19898](http://arxiv.org/pdf/2509.19898)</td><td>◆ The integration of aerial and ground images has been a promising solution in 3D modeling of complex scenes, which is seriously restricted by finding reliable correspondences.
 ◆ The primary contribution of this study is a feature matching algorithm for aerial and ground images, whose core idea is to generate intermediate views to alleviate perspective distortions caused by the extensive viewpoint changes.
 ◆ First, by using aerial images only, sparse models are reconstructed through an incremental SfM (Structure from Motion) engine due to their large scene coverage.</td></tr>
@@ -1240,6 +1264,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>Performance-Efficiency Trade-off for Fashion Image Retrieval</td><td>[2509.24477](http://arxiv.org/pdf/2509.24477)</td><td>◆ The fashion industry has been identified as a major contributor to waste and emissions, leading to an increased interest in promoting the second-hand market.
+◆ Machine learning methods play an important role in facilitating the creation and expansion of second-hand marketplaces by enabling the large-scale valuation of used garments.
+◆ We contribute to this line of work by addressing the scalability of second-hand image retrieval from databases.</td></tr>
+<tr><td>2025-09-28</td><td>Prepare for Warp Speed: Sub-millisecond Visual Place Recognition Using Event Cameras</td><td>[2509.24094](http://arxiv.org/pdf/2509.24094)</td><td>◆ Visual Place Recognition (VPR) enables systems to identify previously visited locations within a map, a fundamental task for autonomous navigation.
+◆ Prior works have developed VPR solutions using event cameras, which asynchronously measure per-pixel brightness changes with microsecond temporal resolution.
+◆ However, these approaches rely on dense representations of the inherently sparse camera output and require tens to hundreds of milliseconds of event data to predict a place.</td></tr>
 <tr><td>2025-09-26</td><td>Johnson-Lindenstrauss Lemma Guided Network for Efficient 3D Medical Segmentation</td><td>[2509.22307](http://arxiv.org/pdf/2509.22307)</td><td>◆ Lightweight 3D medical image segmentation remains constrained by a fundamental &quot;efficiency / robustness conflict&quot;, particularly when processing complex anatomical structures and heterogeneous modalities.
 ◆ In this paper, we study how to redesign the framework based on the characteristics of high-dimensional 3D images, and explore data synergy to overcome the fragile representation of lightweight methods.
 ◆ Our approach, VeloxSeg, begins with a deployable and extensible dual-stream CNN-Transformer architecture composed of Paired Window Attention (PWA) and Johnson-Lindenstrauss lemma-guided convolution (JLC).</td></tr>
@@ -2244,7 +2274,7 @@
 ◆ 利用反射率图谱作为稳定匹配域，结合无训练匹配流程（SuperPoint与MINIMA LightGlue），提升跨视角对应关系准确性。  
 ◆ 引入几何感知异常点剔除机制，联合地形高程与物理衍生的阴影图谱，有效抑制声学遮挡和地形不一致区域的误匹配。  
 实验表明，该方法在匹配误差、几何一致性和视角鲁棒性上均优于传统及基于CNN与Transformer的先进方法，为复杂海底环境提供了高精度、数据高效且物理可解释的匹配解决方案。</td></tr>
-<tr><td>2025-09-11</td><td>Fine-Grained Cross-View Localization via Local Feature Matching and Monocular Depth Priors</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细粒度跨视角定位方法，通过局部特征匹配与单目深度先验实现地面图像的三自由度位姿估计。  
+<tr><td>2025-09-29</td><td>Loc$^2$: Interpretable Cross-View Localization via Depth-Lifted Local Feature Matching</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细粒度跨视角定位方法，通过局部特征匹配与单目深度先验实现地面图像的三自由度位姿估计。  
 ◆ 直接建立地面与航空图像间的局部特征对应关系，避免传统方法中因视角转换造成的信息损失。  
 ◆ 利用单目深度先验仅将匹配关键点提升至鸟瞰图空间，支持度量深度与相对深度两种模式。  
 ◆ 提出尺度感知的普氏对齐算法，能够从对应关系中估计相机位姿，并在使用相对深度时恢复尺度。  
@@ -2479,6 +2509,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
+◆ Traditional Fourier-space methods are efficient but lose fidelity due to repeated transforms, while recent real-space approaches based on neural radiance fields (NeRFs) improve accuracy but incur cubic memory and computation overhead.
+◆ Therefore, we introduce GEM, a novel cryo-EM reconstruction framework built on 3D Gaussian Splatting (3DGS) that operates directly in real-space while maintaining high efficiency.</td></tr>
+<tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
+◆ NeRF introduced view-consistent photorealism via volumetric rendering; 3DGS has rapidly emerged as an explicit, efficient alternative that supports high-quality rendering, faster optimization, and integration into hybrid pipelines for enhanced photorealism and task-driven scene understanding.
+◆ This survey examines how 3DGS is being adopted across SLAM, telepresence and teleoperation, robotic manipulation, and 3D content generation.</td></tr>
+<tr><td>2025-09-27</td><td>FM-SIREN &amp; FM-FINER: Nyquist-Informed Frequency Multiplier for Implicit Neural Representation with Periodic Activation</td><td>[2509.23438](http://arxiv.org/pdf/2509.23438)</td><td>◆ Existing periodic activation-based implicit neural representation (INR) networks, such as SIREN and FINER, suffer from hidden feature redundancy, where neurons within a layer capture overlapping frequency components due to the use of a fixed frequency multiplier.
+◆ This redundancy limits the expressive capacity of multilayer perceptrons (MLPs).
+◆ Drawing inspiration from classical signal processing methods such as the Discrete Sine Transform (DST), we propose FM-SIREN and FM-FINER, which assign Nyquist-informed, neuron-specific frequency multipliers to periodic activations.</td></tr>
+<tr><td>2025-09-27</td><td>OracleGS: Grounding Generative Priors for Sparse-View Gaussian Splatting</td><td>[2509.23258](http://arxiv.org/pdf/2509.23258)</td><td>◆ Sparse-view novel view synthesis is fundamentally ill-posed due to severe geometric ambiguity.
+◆ Current methods are caught in a trade-off: regressive models are geometrically faithful but incomplete, whereas generative models can complete scenes but often introduce structural inconsistencies.
+◆ We propose OracleGS, a novel framework that reconciles generative completeness with regressive fidelity for sparse view Gaussian Splatting.</td></tr>
 <tr><td>2025-09-23</td><td>WaveletGaussian: Wavelet-domain Diffusion for Sparse-view 3D Gaussian Object Reconstruction</td><td>[2509.19073](http://arxiv.org/pdf/2509.19073)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a powerful representation for image-based object reconstruction, yet its performance drops sharply in sparse-view settings.
 ◆ Prior works address this limitation by employing diffusion models to repair corrupted renders, subsequently using them as pseudo ground truths for later optimization.
 ◆ While effective, such approaches incur heavy computation from the diffusion fine-tuning and repair steps.</td></tr>
@@ -3065,4 +3107,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.29
+> 更新于: 2025.09.30
