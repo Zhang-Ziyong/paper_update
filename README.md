@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.09.30)
+# 计算机视觉领域最新论文 (2025.10.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>Benchmarking Egocentric Visual-Inertial SLAM at City Scale</td><td>[2509.26639](http://arxiv.org/pdf/2509.26639)</td><td>◆ Precise 6-DoF simultaneous localization and mapping (SLAM) from onboard sensors is critical for wearable devices capturing egocentric data, which exhibits specific challenges, such as a wider diversity of motions and viewpoints, prevalent dynamic visual content, or long sessions affected by time-varying sensor calibration.
+◆ While recent progress on SLAM has been swift, academic research is still driven by benchmarks that do not reflect these challenges or do not offer sufficiently accurate ground truth poses.
+◆ In this paper, we introduce a new dataset and benchmark for visual-inertial SLAM with egocentric, multi-modal data.</td></tr>
+<tr><td>2025-09-30</td><td>Graphite: A GPU-Accelerated Mixed-Precision Graph Optimization Framework</td><td>[2509.26581](http://arxiv.org/pdf/2509.26581)</td><td>◆ We present Graphite, a GPU-accelerated nonlinear graph optimization framework.
+◆ It provides a CUDA C++ interface to enable the sharing of code between a realtime application, such as a SLAM system, and its optimization tasks.
+◆ The framework supports techniques to reduce memory usage, including in-place optimization, support for multiple floating point types and mixed-precision modes, and dynamically computed Jacobians.</td></tr>
+<tr><td>2025-09-30</td><td>Radio-based Multi-Robot Odometry and Relative Localization</td><td>[2509.26558](http://arxiv.org/pdf/2509.26558)</td><td>◆ Radio-based methods such as Ultra-Wideband (UWB) and RAdio Detection And Ranging (radar), which have traditionally seen limited adoption in robotics, are experiencing a boost in popularity thanks to their robustness to harsh environmental conditions and cluttered environments.
+◆ This work proposes a multi-robot UGV-UAV localization system that leverages the two technologies with inexpensive and readily-available sensors, such as Inertial Measurement Units (IMUs) and wheel encoders, to estimate the relative position of an aerial robot with respect to a ground robot.
+◆ The first stage of the system pipeline includes a nonlinear optimization framework to trilaterate the location of the aerial platform based on UWB range data, and a radar pre-processing module with loosely coupled ego-motion estimation which has been adapted for a multi-robot scenario.</td></tr>
+<tr><td>2025-09-30</td><td>DEPTHOR++: Robust Depth Enhancement from a Real-World Lightweight dToF and RGB Guidance</td><td>[2509.26498](http://arxiv.org/pdf/2509.26498)</td><td>◆ Depth enhancement, which converts raw dToF signals into dense depth maps using RGB guidance, is crucial for improving depth perception in high-precision tasks such as 3D reconstruction and SLAM.
+◆ However, existing methods often assume ideal dToF inputs and perfect dToF-RGB alignment, overlooking calibration errors and anomalies, thus limiting real-world applicability.
+◆ This work systematically analyzes the noise characteristics of real-world lightweight dToF sensors and proposes a practical and novel depth completion framework, DEPTHOR++, which enhances robustness to noisy dToF inputs from three key aspects.</td></tr>
+<tr><td>2025-09-30</td><td>Side Scan Sonar-based SLAM for Autonomous Algae Farm Monitoring</td><td>[2509.26121](http://arxiv.org/pdf/2509.26121)</td><td>◆ The transition of seaweed farming to an alternative food source on an industrial scale relies on automating its processes through smart farming, equivalent to land agriculture.
+◆ Key to this process are autonomous underwater vehicles (AUVs) via their capacity to automate crop and structural inspections.
+◆ However, the current bottleneck for their deployment is ensuring safe navigation within farms, which requires an accurate, online estimate of the AUV pose and map of the infrastructure.</td></tr>
+<tr><td>2025-09-30</td><td>User-Centric Communication Service Provision for Edge-Assisted Mobile Augmented Reality</td><td>[2509.25905](http://arxiv.org/pdf/2509.25905)</td><td>◆ Future 6G networks are envisioned to facilitate edge-assisted mobile augmented reality (MAR) via strengthening the collaboration between MAR devices and edge servers.
+◆ In order to provide immersive user experiences, MAR devices must timely upload camera frames to an edge server for simultaneous localization and mapping (SLAM)-based device pose tracking.
+◆ In this paper, to cope with user-specific and non-stationary uplink data traffic, we develop a digital twin (DT)-based approach for user-centric communication service provision for MAR.</td></tr>
 <tr><td>2025-09-29</td><td>PROFusion: Robust and Accurate Dense Reconstruction via Camera Pose Regression and Optimization</td><td>[2509.24236](http://arxiv.org/pdf/2509.24236)</td><td>◆ Real-time dense scene reconstruction during unstable camera motions is crucial for robotics, yet current RGB-D SLAM systems fail when cameras experience large viewpoint changes, fast motions, or sudden shaking.
 ◆ Classical optimization-based methods deliver high accuracy but fail with poor initialization during large motions, while learning-based approaches provide robustness but lack sufficient accuracy for dense reconstruction.
 ◆ We address this challenge through a combination of learning-based initialization with optimization-based refinement.</td></tr>
@@ -891,6 +909,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
+◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-09-28</td><td>BOSfM: A View Planning Framework for Optimal 3D Reconstruction of Agricultural Scenes</td><td>[2509.24126](http://arxiv.org/pdf/2509.24126)</td><td>◆ Active vision (AV) has been in the spotlight of robotics research due to its emergence in numerous applications including agricultural tasks such as precision crop monitoring and autonomous harvesting to list a few.
 ◆ A major AV problem that gained popularity is the 3D reconstruction of targeted environments using 2D images from diverse viewpoints.
 ◆ While collecting and processing a large number of arbitrarily captured 2D images can be arduous in many practical scenarios, a more efficient solution involves optimizing the placement of available cameras in 3D space to capture fewer, yet more informative, images that provide sufficient visual information for effective reconstruction of the environment of interest.</td></tr>
@@ -1268,6 +1289,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>Video Object Segmentation-Aware Audio Generation</td><td>[2509.26604](http://arxiv.org/pdf/2509.26604)</td><td>◆ Existing multimodal audio generation models often lack precise user control, which limits their applicability in professional Foley workflows.
+◆ In particular, these models focus on the entire video and do not provide precise methods for prioritizing a specific object within a scene, generating unnecessary background sounds, or focusing on the wrong objects.
+◆ To address this gap, we introduce the novel task of video object segmentation-aware audio generation, which explicitly conditions sound synthesis on object-level segmentation maps.</td></tr>
+<tr><td>2025-09-30</td><td>SQUARE: Semantic Query-Augmented Fusion and Efficient Batch Reranking for Training-free Zero-Shot Composed Image Retrieval</td><td>[2509.26330](http://arxiv.org/pdf/2509.26330)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images that preserve the visual content of a reference image while incorporating user-specified textual modifications.
+◆ Training-free zero-shot CIR (ZS-CIR) approaches, which require no task-specific training or labeled data, are highly desirable, yet accurately capturing user intent remains challenging.
+◆ In this paper, we present SQUARE, a novel two-stage training-free framework that leverages Multimodal Large Language Models (MLLMs) to enhance ZS-CIR.</td></tr>
+<tr><td>2025-09-30</td><td>SETR: A Two-Stage Semantic-Enhanced Framework for Zero-Shot Composed Image Retrieval</td><td>[2509.26012](http://arxiv.org/pdf/2509.26012)</td><td>◆ Zero-shot Composed Image Retrieval (ZS-CIR) aims to retrieve a target image given a reference image and a relative text, without relying on costly triplet annotations.
+◆ Existing CLIP-based methods face two core challenges: (1) union-based feature fusion indiscriminately aggregates all visual cues, carrying over irrelevant background details that dilute the intended modification, and (2) global cosine similarity from CLIP embeddings lacks the ability to resolve fine-grained semantic relations.
+◆ To address these issues, we propose SETR (Semantic-enhanced Two-Stage Retrieval).</td></tr>
+<tr><td>2025-09-30</td><td>SAGE: Spatial-visual Adaptive Graph Exploration for Visual Place Recognition</td><td>[2509.25723](http://arxiv.org/pdf/2509.25723)</td><td>◆ Visual Place Recognition (VPR) requires robust retrieval of geotagged images despite large appearance, viewpoint, and environmental variation.
+◆ Prior methods focus on descriptor fine-tuning or fixed sampling strategies yet neglect the dynamic interplay between spatial context and visual similarity during training.
+◆ We present SAGE (Spatial-visual Adaptive Graph Exploration), a unified training pipeline that enhances granular spatial-visual discrimination by jointly improving local feature aggregation, organize samples during training, and hard sample mining.</td></tr>
+<tr><td>2025-09-29</td><td>Robust Visual Localization in Compute-Constrained Environments by Salient Edge Rendering and Weighted Hamming Similarity</td><td>[2509.25520](http://arxiv.org/pdf/2509.25520)</td><td>◆ We consider the problem of vision-based 6-DoF object pose estimation in the context of the notional Mars Sample Return campaign, in which a robotic arm would need to localize multiple objects of interest for low-clearance pickup and insertion, under severely constrained hardware.
+◆ We propose a novel localization algorithm leveraging a custom renderer together with a new template matching metric tailored to the edge domain to achieve robust pose estimation using only low-fidelity, textureless 3D models as inputs.
+◆ Extensive evaluations on synthetic datasets as well as from physical testbeds on Earth and in situ Mars imagery shows that our method consistently beats the state of the art in compute and memory-constrained localization, both in terms of robustness and accuracy, in turn enabling new possibilities for cheap and reliable localization on general-purpose hardware.</td></tr>
 <tr><td>2025-09-29</td><td>Performance-Efficiency Trade-off for Fashion Image Retrieval</td><td>[2509.24477](http://arxiv.org/pdf/2509.24477)</td><td>◆ The fashion industry has been identified as a major contributor to waste and emissions, leading to an increased interest in promoting the second-hand market.
 ◆ Machine learning methods play an important role in facilitating the creation and expansion of second-hand marketplaces by enabling the large-scale valuation of used garments.
 ◆ We contribute to this line of work by addressing the scalability of second-hand image retrieval from databases.</td></tr>
@@ -2519,13 +2555,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
+◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-09-29</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
 ◆ Traditional Fourier-space methods are efficient but lose fidelity due to repeated transforms, while recent real-space approaches based on neural radiance fields (NeRFs) improve accuracy but incur cubic memory and computation overhead.
 ◆ Therefore, we introduce GEM, a novel cryo-EM reconstruction framework built on 3D Gaussian Splatting (3DGS) that operates directly in real-space while maintaining high efficiency.</td></tr>
 <tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
 ◆ NeRF introduced view-consistent photorealism via volumetric rendering; 3DGS has rapidly emerged as an explicit, efficient alternative that supports high-quality rendering, faster optimization, and integration into hybrid pipelines for enhanced photorealism and task-driven scene understanding.
 ◆ This survey examines how 3DGS is being adopted across SLAM, telepresence and teleoperation, robotic manipulation, and 3D content generation.</td></tr>
-<tr><td>2025-09-27</td><td>FM-SIREN &amp; FM-FINER: Nyquist-Informed Frequency Multiplier for Implicit Neural Representation with Periodic Activation</td><td>[2509.23438](http://arxiv.org/pdf/2509.23438)</td><td>◆ Existing periodic activation-based implicit neural representation (INR) networks, such as SIREN and FINER, suffer from hidden feature redundancy, where neurons within a layer capture overlapping frequency components due to the use of a fixed frequency multiplier.
+<tr><td>2025-09-30</td><td>FM-SIREN &amp; FM-FINER: Nyquist-Informed Frequency Multiplier for Implicit Neural Representation with Periodic Activation</td><td>[2509.23438](http://arxiv.org/pdf/2509.23438)</td><td>◆ Existing periodic activation-based implicit neural representation (INR) networks, such as SIREN and FINER, suffer from hidden feature redundancy, where neurons within a layer capture overlapping frequency components due to the use of a fixed frequency multiplier.
 ◆ This redundancy limits the expressive capacity of multilayer perceptrons (MLPs).
 ◆ Drawing inspiration from classical signal processing methods such as the Discrete Sine Transform (DST), we propose FM-SIREN and FM-FINER, which assign Nyquist-informed, neuron-specific frequency multipliers to periodic activations.</td></tr>
 <tr><td>2025-09-27</td><td>OracleGS: Grounding Generative Priors for Sparse-View Gaussian Splatting</td><td>[2509.23258](http://arxiv.org/pdf/2509.23258)</td><td>◆ Sparse-view novel view synthesis is fundamentally ill-posed due to severe geometric ambiguity.
@@ -3119,4 +3158,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.30
+> 更新于: 2025.10.01
