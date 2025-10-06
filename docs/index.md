@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.05)
+# 计算机视觉领域最新论文 (2025.10.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments</td><td>[2510.02616](http://arxiv.org/pdf/2510.02616)</td><td>◆ Simultaneous Localization and Mapping (SLAM) plays an important role in many robotics fields, including social robots.
+◆ Many of the available visual SLAM methods are based on the assumption of a static world and struggle in dynamic environments.
+◆ In the current study, we introduce a real-time semantic RGBD SLAM approach designed specifically for dynamic environments.</td></tr>
 <tr><td>2025-10-02</td><td>EC3R-SLAM: Efficient and Consistent Monocular Dense SLAM with Feed-Forward 3D Reconstruction</td><td>[2510.02080](http://arxiv.org/pdf/2510.02080)</td><td>◆ The application of monocular dense Simultaneous Localization and Mapping (SLAM) is often hindered by high latency, large GPU memory consumption, and reliance on camera calibration.
 ◆ To relax this constraint, we propose EC3R-SLAM, a novel calibration-free monocular dense SLAM framework that jointly achieves high localization and mapping accuracy, low latency, and low GPU memory consumption.
 ◆ This enables the framework to achieve efficiency through the coupling of a tracking module, which maintains a sparse map of feature points, and a mapping module based on a feed-forward 3D reconstruction model that simultaneously estimates camera intrinsics.</td></tr>
@@ -1300,6 +1303,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-03</td><td>Novel UWB Synthetic Aperture Radar Imaging for Mobile Robot Mapping</td><td>[2510.02874](http://arxiv.org/pdf/2510.02874)</td><td>◆ Traditional exteroceptive sensors in mobile robots, such as LiDARs and cameras often struggle to perceive the environment in poor visibility conditions.
+◆ Recently, radar technologies, such as ultra-wideband (UWB) have emerged as potential alternatives due to their ability to see through adverse environmental conditions (e.g.
+◆ dust, smoke and rain).</td></tr>
+<tr><td>2025-10-03</td><td>Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation -- Technical Report for IROS 2025 RoboSense Challenge Track 4</td><td>[2510.02728](http://arxiv.org/pdf/2510.02728)</td><td>◆ Cross-modal drone navigation remains a challenging task in robotics, requiring efficient retrieval of relevant images from large-scale databases based on natural language descriptions.
+◆ The RoboSense 2025 Track 4 challenge addresses this challenge, focusing on robust, natural language-guided cross-view image retrieval across multiple platforms (drones, satellites, and ground cameras).
+◆ Current baseline methods, while effective for initial retrieval, often struggle to achieve fine-grained semantic matching between text queries and visual content, especially in complex aerial scenes.</td></tr>
 <tr><td>2025-10-01</td><td>EvoWorld: Evolving Panoramic World Generation with Explicit 3D Memory</td><td>[2510.01183](http://arxiv.org/pdf/2510.01183)</td><td>◆ Humans possess a remarkable ability to mentally explore and replay 3D environments they have previously experienced.
 ◆ Inspired by this mental process, we present EvoWorld: a world model that bridges panoramic video generation with evolving 3D memory to enable spatially consistent long-horizon exploration.
 ◆ Given a single panoramic image as input, EvoWorld first generates future video frames by leveraging a video generator with fine-grained view control, then evolves the scene&#x27;s 3D reconstruction using a feedforward plug-and-play transformer, and finally synthesizes futures by conditioning on geometric reprojections from this evolving explicit 3D memory.</td></tr>
@@ -2572,6 +2581,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-03</td><td>ROGR: Relightable 3D Objects using Generative Relighting</td><td>[2510.03163](http://arxiv.org/pdf/2510.03163)</td><td>◆ We introduce ROGR, a novel approach that reconstructs a relightable 3D model of an object captured from multiple views, driven by a generative relighting model that simulates the effects of placing the object under novel environment illuminations.
+◆ Our method samples the appearance of the object under multiple lighting environments, creating a dataset that is used to train a lighting-conditioned Neural Radiance Field (NeRF) that outputs the object&#x27;s appearance under any input environmental lighting.
+◆ The lighting-conditioned NeRF uses a novel dual-branch architecture to encode the general lighting effects and specularities separately.</td></tr>
 <tr><td>2025-10-02</td><td>StealthAttack: Robust 3D Gaussian Splatting Poisoning via Density-Guided Illusions</td><td>[2510.02314](http://arxiv.org/pdf/2510.02314)</td><td>◆ 3D scene representation methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have significantly advanced novel view synthesis.
 ◆ As these methods become prevalent, addressing their vulnerabilities becomes critical.
 ◆ We analyze 3DGS robustness against image-level poisoning attacks and propose a novel density-guided poisoning method.</td></tr>
@@ -3179,4 +3191,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.05
+> 更新于: 2025.10.06
