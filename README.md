@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.06)
+# 计算机视觉领域最新论文 (2025.10.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-06</td><td>OKVIS2-X: Open Keyframe-based Visual-Inertial SLAM Configurable with Dense Depth or LiDAR, and GNSS</td><td>[2510.04612](http://arxiv.org/pdf/2510.04612)</td><td>◆ To empower mobile robots with usable maps as well as highest state estimation accuracy and robustness, we present OKVIS2-X: a state-of-the-art multi-sensor Simultaneous Localization and Mapping (SLAM) system building dense volumetric occupancy maps, while scalable to large environments and operating in realtime.
+◆ Our unified SLAM framework seamlessly integrates different sensor modalities: visual, inertial, measured or learned depth, LiDAR and Global Navigation Satellite System (GNSS) measurements.
+◆ Unlike most state-of-the-art SLAM systems, we advocate using dense volumetric map representations when leveraging depth or range-sensing capabilities.</td></tr>
+<tr><td>2025-10-02</td><td>Visual Odometry with Transformers</td><td>[2510.03348](http://arxiv.org/pdf/2510.03348)</td><td>◆ Modern monocular visual odometry methods typically combine pre-trained deep learning components with optimization modules, resulting in complex pipelines that rely heavily on camera calibration and hyperparameter tuning, and often struggle in unseen real-world scenarios.
+◆ Recent large-scale 3D models trained on massive amounts of multi-modal data have partially alleviated these challenges, providing generalizable dense reconstruction and camera pose estimation.
+◆ Still, they remain limited in handling long videos and providing accurate per-frame estimates, which are required for visual odometry.</td></tr>
 <tr><td>2025-10-02</td><td>RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments</td><td>[2510.02616](http://arxiv.org/pdf/2510.02616)</td><td>◆ Simultaneous Localization and Mapping (SLAM) plays an important role in many robotics fields, including social robots.
 ◆ Many of the available visual SLAM methods are based on the assumption of a static world and struggle in dynamic environments.
 ◆ In the current study, we introduce a real-time semantic RGBD SLAM approach designed specifically for dynamic environments.</td></tr>
@@ -1307,6 +1313,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-05</td><td>Flexible and Efficient Spatio-Temporal Transformer for Sequential Visual Place Recognition</td><td>[2510.04282](http://arxiv.org/pdf/2510.04282)</td><td>◆ Sequential Visual Place Recognition (Seq-VPR) leverages transformers to capture spatio-temporal features effectively; however, existing approaches prioritize performance at the expense of flexibility and efficiency.
+◆ In practice, a transformer-based Seq-VPR model should be flexible to the number of frames per sequence (seq-length), deliver fast inference, and have low memory usage to meet real-time constraints.
+◆ To our knowledge, no existing transformer-based Seq-VPR method achieves both flexibility and efficiency.</td></tr>
+<tr><td>2025-10-04</td><td>The Overlooked Value of Test-time Reference Sets in Visual Place Recognition</td><td>[2510.03751](http://arxiv.org/pdf/2510.03751)</td><td>◆ Given a query image, Visual Place Recognition (VPR) is the task of retrieving an image of the same place from a reference database with robustness to viewpoint and appearance changes.
+◆ Recent works show that some VPR benchmarks are solved by methods using Vision-Foundation-Model backbones and trained on large-scale and diverse VPR-specific datasets.
+◆ Several benchmarks remain challenging, particularly when the test environments differ significantly from the usual VPR training datasets.</td></tr>
 <tr><td>2025-10-03</td><td>Novel UWB Synthetic Aperture Radar Imaging for Mobile Robot Mapping</td><td>[2510.02874](http://arxiv.org/pdf/2510.02874)</td><td>◆ Traditional exteroceptive sensors in mobile robots, such as LiDARs and cameras often struggle to perceive the environment in poor visibility conditions.
 ◆ Recently, radar technologies, such as ultra-wideband (UWB) have emerged as potential alternatives due to their ability to see through adverse environmental conditions (e.g.
 ◆ dust, smoke and rain).</td></tr>
@@ -2337,6 +2349,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-06</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
+◆ Unlike keypoint matching, which focuses on localized features, segment matching captures structured regions, offering greater robustness to occlusions, lighting variations, and viewpoint changes.
+◆ In this paper, we leverage the spatial understanding of 3D foundation models to tackle wide-baseline segment matching, a challenging setting involving extreme viewpoint shifts.</td></tr>
 <tr><td>2025-09-23</td><td>Hierarchical Neural Semantic Representation for 3D Semantic Correspondence</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
 ◆ Our work has three key contributions.
 ◆ First, we design the hierarchical neural semantic representation (HNSR), which consists of a global semantic feature to capture high-level structure and multi-resolution local geometric features to preserve fine details, by carefully harnessing 3D priors from pre-trained 3D generative models.</td></tr>
@@ -2612,7 +2627,7 @@
 <tr><td>2025-09-30</td><td>FM-SIREN &amp; FM-FINER: Nyquist-Informed Frequency Multiplier for Implicit Neural Representation with Periodic Activation</td><td>[2509.23438](http://arxiv.org/pdf/2509.23438)</td><td>◆ Existing periodic activation-based implicit neural representation (INR) networks, such as SIREN and FINER, suffer from hidden feature redundancy, where neurons within a layer capture overlapping frequency components due to the use of a fixed frequency multiplier.
 ◆ This redundancy limits the expressive capacity of multilayer perceptrons (MLPs).
 ◆ Drawing inspiration from classical signal processing methods such as the Discrete Sine Transform (DST), we propose FM-SIREN and FM-FINER, which assign Nyquist-informed, neuron-specific frequency multipliers to periodic activations.</td></tr>
-<tr><td>2025-09-27</td><td>OracleGS: Grounding Generative Priors for Sparse-View Gaussian Splatting</td><td>[2509.23258](http://arxiv.org/pdf/2509.23258)</td><td>◆ Sparse-view novel view synthesis is fundamentally ill-posed due to severe geometric ambiguity.
+<tr><td>2025-10-04</td><td>OracleGS: Grounding Generative Priors for Sparse-View Gaussian Splatting</td><td>[2509.23258](http://arxiv.org/pdf/2509.23258)</td><td>◆ Sparse-view novel view synthesis is fundamentally ill-posed due to severe geometric ambiguity.
 ◆ Current methods are caught in a trade-off: regressive models are geometrically faithful but incomplete, whereas generative models can complete scenes but often introduce structural inconsistencies.
 ◆ We propose OracleGS, a novel framework that reconciles generative completeness with regressive fidelity for sparse view Gaussian Splatting.</td></tr>
 <tr><td>2025-09-23</td><td>WaveletGaussian: Wavelet-domain Diffusion for Sparse-view 3D Gaussian Object Reconstruction</td><td>[2509.19073](http://arxiv.org/pdf/2509.19073)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a powerful representation for image-based object reconstruction, yet its performance drops sharply in sparse-view settings.
@@ -3203,4 +3218,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.06
+> 更新于: 2025.10.07
