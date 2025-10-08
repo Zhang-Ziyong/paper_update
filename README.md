@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.07)
+# 计算机视觉领域最新论文 (2025.10.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
+◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
+◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
+<tr><td>2025-10-07</td><td>Dropping the D: RGB-D SLAM Without the Depth Sensor</td><td>[2510.06216](http://arxiv.org/pdf/2510.06216)</td><td>◆ We present DropD-SLAM, a real-time monocular SLAM system that achieves RGB-D-level accuracy without relying on depth sensors.
+◆ The system replaces active depth input with three pretrained vision modules: a monocular metric depth estimator, a learned keypoint detector, and an instance segmentation network.
+◆ Dynamic objects are suppressed using dilated instance masks, while static keypoints are assigned predicted depth values and backprojected into 3D to form metrically scaled features.</td></tr>
+<tr><td>2025-10-07</td><td>Coordinate-Consistent Localization via Continuous-Time Calibration and Fusion of UWB and SLAM Observations</td><td>[2510.05992](http://arxiv.org/pdf/2510.05992)</td><td>◆ Onboard simultaneous localization and mapping (SLAM) methods are commonly used to provide accurate localization information for autonomous robots.
+◆ However, the coordinate origin of SLAM estimate often resets for each run.
+◆ On the other hand, UWB-based localization with fixed anchors can ensure a consistent coordinate reference across sessions; however, it requires an accurate assignment of the anchor nodes&#x27; coordinates.</td></tr>
 <tr><td>2025-10-06</td><td>OKVIS2-X: Open Keyframe-based Visual-Inertial SLAM Configurable with Dense Depth or LiDAR, and GNSS</td><td>[2510.04612](http://arxiv.org/pdf/2510.04612)</td><td>◆ To empower mobile robots with usable maps as well as highest state estimation accuracy and robustness, we present OKVIS2-X: a state-of-the-art multi-sensor Simultaneous Localization and Mapping (SLAM) system building dense volumetric occupancy maps, while scalable to large environments and operating in realtime.
 ◆ Our unified SLAM framework seamlessly integrates different sensor modalities: visual, inertial, measured or learned depth, LiDAR and Global Navigation Satellite System (GNSS) measurements.
 ◆ Unlike most state-of-the-art SLAM systems, we advocate using dense volumetric map representations when leveraging depth or range-sensing capabilities.</td></tr>
@@ -930,6 +939,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-06</td><td>The Prevalence of Bursty Star Formation in Low-Mass Galaxies at z=1-7 from Hα-to-UV Diagnostics</td><td>[2510.05388](http://arxiv.org/pdf/2510.05388)</td><td>◆ We present an analysis of bursty star-formation histories (SFHs) of 346 star-forming galaxies at $1\lesssim z&lt;7$, selected from JWST/NIRSpec G395M and PRISM spectroscopy provided by the CEERS and RUBIES surveys.
+◆ We analyze the correlation of star-formation rate vs.
+◆ stellar mass (the star-forming main sequence, SFMS) for our sample and find no significant difference between the intrinsic scatter in the H$\alpha$-based SFMS and the UV-continuum-based SFMS.</td></tr>
 <tr><td>2025-10-02</td><td>Non-Rigid Structure-from-Motion via Differential Geometry with Recoverable Conformal Scale</td><td>[2510.01665](http://arxiv.org/pdf/2510.01665)</td><td>◆ Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention.
 ◆ We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset.
 ◆ Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework.</td></tr>
@@ -1313,6 +1325,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval</td><td>[2510.05586](http://arxiv.org/pdf/2510.05586)</td><td>◆ Existing Visual Language Models (VLMs) suffer structural limitations where a few low contribution tokens may excessively capture global semantics, dominating the information aggregation process and suppressing the discriminative features in text-driven image retrieval tasks.
+◆ To address this, we introduce \textbf{CalibCLIP}, a training-free method designed to calibrate the suppressive effect of dominant tokens.
+◆ Specifically, in the visual space, we propose the Contrastive Visual Enhancer (CVE), which decouples visual features into target and low information regions.</td></tr>
+<tr><td>2025-10-06</td><td>Personalizing Retrieval using Joint Embeddings or &quot;the Return of Fluffy&quot;</td><td>[2510.05411](http://arxiv.org/pdf/2510.05411)</td><td>◆ The goal of this paper is to be able to retrieve images using a compound query that combines object instance information from an image, with a natural text description of what that object is doing or where it is.
+◆ For example, to retrieve an image of &quot;Fluffy the unicorn (specified by an image) on someone&#x27;s head&quot;.
+◆ To achieve this we design a mapping network that can &quot;translate&quot; from a local image embedding (of the object instance) to a text token, such that the combination of the token and a natural language query is suitable for CLIP style text encoding, and image retrieval.</td></tr>
 <tr><td>2025-10-05</td><td>Flexible and Efficient Spatio-Temporal Transformer for Sequential Visual Place Recognition</td><td>[2510.04282](http://arxiv.org/pdf/2510.04282)</td><td>◆ Sequential Visual Place Recognition (Seq-VPR) leverages transformers to capture spatio-temporal features effectively; however, existing approaches prioritize performance at the expense of flexibility and efficiency.
 ◆ In practice, a transformer-based Seq-VPR model should be flexible to the number of frames per sequence (seq-length), deliver fast inference, and have low memory usage to meet real-time constraints.
 ◆ To our knowledge, no existing transformer-based Seq-VPR method achieves both flexibility and efficiency.</td></tr>
@@ -3218,4 +3236,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.07
+> 更新于: 2025.10.08
