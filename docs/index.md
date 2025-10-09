@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.08)
+# 计算机视觉领域最新论文 (2025.10.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
+◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
 ◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
 ◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
@@ -937,13 +940,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>The Star-forming Main Sequence and Bursty Star-formation Histories at $z&gt;1.4$ in JADES and AURORA</td><td>[2510.06681](http://arxiv.org/pdf/2510.06681)</td><td>◆ We analyze JWST spectroscopic and HST+JWST photometric observations of 659 star-forming galaxies at $1.4 &lt; z &lt; 9$ from DR3 of the JADES survey and the AURORA Cycle 1 program.
+◆ We measure the star-forming main sequence (SFMS) for galaxies above $10^{8.5}\rm\ M_\odot$ where the sample is largely representative, estimating star-formation rates (SFRs) using the H$\alpha$ line flux and rest-frame far UV (1600\AA) continuum measurements, each independently corrected for dust attenuation.
+◆ We find that the intrinsic, measurement-error-subtracted scatter in the SFMS ($\sigma_{\rm int}$) increases with decreasing stellar mass for the H$\alpha$-based SFMS, and we find no mass dependence of $\sigma_{\rm int}$ in the UV-based SFMS.</td></tr>
 <tr><td>2025-10-06</td><td>The Prevalence of Bursty Star Formation in Low-Mass Galaxies at z=1-7 from Hα-to-UV Diagnostics</td><td>[2510.05388](http://arxiv.org/pdf/2510.05388)</td><td>◆ We present an analysis of bursty star-formation histories (SFHs) of 346 star-forming galaxies at $1\lesssim z&lt;7$, selected from JWST/NIRSpec G395M and PRISM spectroscopy provided by the CEERS and RUBIES surveys.
 ◆ We analyze the correlation of star-formation rate vs.
 ◆ stellar mass (the star-forming main sequence, SFMS) for our sample and find no significant difference between the intrinsic scatter in the H$\alpha$-based SFMS and the UV-continuum-based SFMS.</td></tr>
 <tr><td>2025-10-02</td><td>Non-Rigid Structure-from-Motion via Differential Geometry with Recoverable Conformal Scale</td><td>[2510.01665](http://arxiv.org/pdf/2510.01665)</td><td>◆ Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention.
 ◆ We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset.
 ◆ Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework.</td></tr>
-<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+<tr><td>2025-10-08</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
 ◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
 ◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-09-28</td><td>BOSfM: A View Planning Framework for Optimal 3D Reconstruction of Agricultural Scenes</td><td>[2509.24126](http://arxiv.org/pdf/2509.24126)</td><td>◆ Active vision (AV) has been in the spotlight of robotics research due to its emergence in numerous applications including agricultural tasks such as precision crop monitoring and autonomous harvesting to list a few.
@@ -1321,6 +1327,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>Multi-hop Deep Joint Source-Channel Coding with Deep Hash Distillation for Semantically Aligned Image Retrieval</td><td>[2510.06868](http://arxiv.org/pdf/2510.06868)</td><td>◆ We consider image transmission via deep joint source-channel coding (DeepJSCC) over multi-hop additive white Gaussian noise (AWGN) channels by training a DeepJSCC encoder-decoder pair with a pre-trained deep hash distillation (DHD) module to semantically cluster images, facilitating security-oriented applications through enhanced semantic consistency and improving the perceptual reconstruction quality.
+◆ We train the DeepJSCC module to both reduce mean square error (MSE) and minimize cosine distance between DHD hashes of source and reconstructed images.
+◆ Significantly improved perceptual quality as a result of semantic alignment is illustrated for different multi-hop settings, for which classical DeepJSCC may suffer from noise accumulation, measured by the learned perceptual image patch similarity (LPIPS) metric.</td></tr>
 <tr><td>2025-10-07</td><td>CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval</td><td>[2510.05586](http://arxiv.org/pdf/2510.05586)</td><td>◆ Existing Visual Language Models (VLMs) suffer structural limitations where a few low contribution tokens may excessively capture global semantics, dominating the information aggregation process and suppressing the discriminative features in text-driven image retrieval tasks.
 ◆ To address this, we introduce \textbf{CalibCLIP}, a training-free method designed to calibrate the suppressive effect of dominant tokens.
 ◆ Specifically, in the visual space, we propose the Contrastive Visual Enhancer (CVE), which decouples visual features into target and low information regions.</td></tr>
@@ -2359,6 +2368,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>Lattice-allocated Real-time Line Segment Feature Detection and Tracking Using Only an Event-based Camera</td><td>[2510.06829](http://arxiv.org/pdf/2510.06829)</td><td>◆ Line segment extraction is effective for capturing geometric features of human-made environments.
+◆ Event-based cameras, which asynchronously respond to contrast changes along edges, enable efficient extraction by reducing redundant data.
+◆ However, recent methods often rely on additional frame cameras or struggle with high event rates.</td></tr>
+<tr><td>2025-10-08</td><td>StyleKeeper: Prevent Content Leakage using Negative Visual Query Guidance</td><td>[2510.06827](http://arxiv.org/pdf/2510.06827)</td><td>◆ In the domain of text-to-image generation, diffusion models have emerged as powerful tools.
+◆ Recently, studies on visual prompting, where images are used as prompts, have enabled more precise control over style and content.
+◆ However, existing methods often suffer from content leakage, where undesired elements of the visual style prompt are transferred along with the intended style.</td></tr>
+<tr><td>2025-10-08</td><td>Efficient Discriminative Joint Encoders for Large Scale Vision-Language Reranking</td><td>[2510.06820](http://arxiv.org/pdf/2510.06820)</td><td>◆ Multimodal retrieval still leans on embedding-based models like CLIP for fast vector search over pre-computed image embeddings.
+◆ Yet, unlike text retrieval, where joint-encoder rerankers are standard, comparable vision--language rerankers are largely absent.
+◆ We find that seminal joint encoders such as BLIP are severely bottlenecked by an expensive visual feature-extraction stage, preventing practical deployment at scale.</td></tr>
 <tr><td>2025-10-06</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
 ◆ Unlike keypoint matching, which focuses on localized features, segment matching captures structured regions, offering greater robustness to occlusions, lighting variations, and viewpoint changes.
 ◆ In this paper, we leverage the spatial understanding of 3D foundation models to tackle wide-baseline segment matching, a challenging setting involving extreme viewpoint shifts.</td></tr>
@@ -2623,7 +2641,7 @@
 <tr><td>2025-10-01</td><td>Multi-level Dynamic Style Transfer for NeRFs</td><td>[2510.00592](http://arxiv.org/pdf/2510.00592)</td><td>◆ As the application of neural radiance fields (NeRFs) in various 3D vision tasks continues to expand, numerous NeRF-based style transfer techniques have been developed.
 ◆ However, existing methods typically integrate style statistics into the original NeRF pipeline, often leading to suboptimal results in both content preservation and artistic stylization.
 ◆ In this paper, we present multi-level dynamic style transfer for NeRFs (MDS-NeRF), a novel approach that reengineers the NeRF pipeline specifically for stylization and incorporates an innovative dynamic style injection module.</td></tr>
-<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+<tr><td>2025-10-08</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
 ◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
 ◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-10-02</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
@@ -3224,4 +3242,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.08
+> 更新于: 2025.10.09
