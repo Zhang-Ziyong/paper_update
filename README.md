@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.09)
+# 计算机视觉领域最新论文 (2025.10.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+<tr><td>2025-10-09</td><td>ARTDECO: Towards Efficient and High-Fidelity On-the-Fly 3D Reconstruction with Structured Scene Representation</td><td>[2510.08551](http://arxiv.org/pdf/2510.08551)</td><td>◆ On-the-fly 3D reconstruction from monocular image sequences is a long-standing challenge in computer vision, critical for applications such as real-to-sim, AR/VR, and robotics.
+◆ Existing methods face a major tradeoff: per-scene optimization yields high fidelity but is computationally expensive, whereas feed-forward foundation models enable real-time inference but struggle with accuracy and robustness.
+◆ In this work, we propose ARTDECO, a unified framework that combines the efficiency of feed-forward models with the reliability of SLAM-based pipelines.</td></tr>
+<tr><td>2025-10-09</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
 ◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
 ◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
@@ -1331,6 +1334,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-09</td><td>DarkHash: A Data-Free Backdoor Attack Against Deep Hashing</td><td>[2510.08094](http://arxiv.org/pdf/2510.08094)</td><td>◆ Benefiting from its superior feature learning capabilities and efficiency, deep hashing has achieved remarkable success in large-scale image retrieval.
+◆ Recent studies have demonstrated the vulnerability of deep hashing models to backdoor attacks.
+◆ Although these studies have shown promising attack results, they rely on access to the training dataset to implant the backdoor.</td></tr>
+<tr><td>2025-10-09</td><td>CIR-CoT: Towards Interpretable Composed Image Retrieval via End-to-End Chain-of-Thought Reasoning</td><td>[2510.08003](http://arxiv.org/pdf/2510.08003)</td><td>◆ Composed Image Retrieval (CIR), which aims to find a target image from a reference image and a modification text, presents the core challenge of performing unified reasoning across visual and semantic modalities.
+◆ While current approaches based on Vision-Language Models (VLMs, e.g., CLIP) and more recent Multimodal Large Language Models (MLLMs, e.g., Qwen-VL) have shown progress, they predominantly function as ``black boxes.&quot; This inherent opacity not only prevents users from understanding the retrieval rationale but also restricts the models&#x27; ability to follow complex, fine-grained instructions.
+◆ To overcome these limitations, we introduce CIR-CoT, the first end-to-end retrieval-oriented MLLM designed to integrate explicit Chain-of-Thought (CoT) reasoning.</td></tr>
+<tr><td>2025-10-09</td><td>Mutual Learning for Hashing: Unlocking Strong Hash Functions from Weak Supervision</td><td>[2510.07703](http://arxiv.org/pdf/2510.07703)</td><td>◆ Deep hashing has been widely adopted for large-scale image retrieval, with numerous strategies proposed to optimize hash function learning.
+◆ Pairwise-based methods are effective in learning hash functions that preserve local similarity relationships, whereas center-based methods typically achieve superior performance by more effectively capturing global data distributions.
+◆ However, the strength of center-based methods in modeling global structures often comes at the expense of underutilizing important local similarity information.</td></tr>
 <tr><td>2025-10-08</td><td>Multi-hop Deep Joint Source-Channel Coding with Deep Hash Distillation for Semantically Aligned Image Retrieval</td><td>[2510.06868](http://arxiv.org/pdf/2510.06868)</td><td>◆ We consider image transmission via deep joint source-channel coding (DeepJSCC) over multi-hop additive white Gaussian noise (AWGN) channels by training a DeepJSCC encoder-decoder pair with a pre-trained deep hash distillation (DHD) module to semantically cluster images, facilitating security-oriented applications through enhanced semantic consistency and improving the perceptual reconstruction quality.
 ◆ We train the DeepJSCC module to both reduce mean square error (MSE) and minimize cosine distance between DHD hashes of source and reconstructed images.
 ◆ Significantly improved perceptual quality as a result of semantic alignment is illustrated for different multi-hop settings, for which classical DeepJSCC may suffer from noise accumulation, measured by the learned perceptual image patch similarity (LPIPS) metric.</td></tr>
@@ -2642,6 +2654,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-09</td><td>An Energy-Efficient Edge Coprocessor for Neural Rendering with Explicit Data Reuse Strategies</td><td>[2510.07667](http://arxiv.org/pdf/2510.07667)</td><td>◆ Neural radiance fields (NeRF) have transformed 3D reconstruction and rendering, facilitating photorealistic image synthesis from sparse viewpoints.
+◆ This work introduces an explicit data reuse neural rendering (EDR-NR) architecture, which reduces frequent external memory accesses (EMAs) and cache misses by exploiting the spatial locality from three phases, including rays, ray packets (RPs), and samples.
+◆ The EDR-NR architecture features a four-stage scheduler that clusters rays on the basis of Z-order, prioritize lagging rays when ray divergence happens, reorders RPs based on spatial proximity, and issues samples out-of-orderly (OoO) according to the availability of on-chip feature data.</td></tr>
 <tr><td>2025-10-03</td><td>ROGR: Relightable 3D Objects using Generative Relighting</td><td>[2510.03163](http://arxiv.org/pdf/2510.03163)</td><td>◆ We introduce ROGR, a novel approach that reconstructs a relightable 3D model of an object captured from multiple views, driven by a generative relighting model that simulates the effects of placing the object under novel environment illuminations.
 ◆ Our method samples the appearance of the object under multiple lighting environments, creating a dataset that is used to train a lighting-conditioned Neural Radiance Field (NeRF) that outputs the object&#x27;s appearance under any input environmental lighting.
 ◆ The lighting-conditioned NeRF uses a novel dual-branch architecture to encode the general lighting effects and specularities separately.</td></tr>
@@ -3254,4 +3269,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.09
+> 更新于: 2025.10.10
