@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.13)
+# 计算机视觉领域最新论文 (2025.10.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -945,6 +945,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-10</td><td>Two-Stage Gaussian Splatting Optimization for Outdoor Scene Reconstruction</td><td>[2510.09489](http://arxiv.org/pdf/2510.09489)</td><td>◆ Outdoor scene reconstruction remains challenging due to the stark contrast between well-textured, nearby regions and distant backgrounds dominated by low detail, uneven illumination, and sky effects.
+◆ We introduce a two-stage Gaussian Splatting framework that explicitly separates and optimizes these regions, yielding higher-fidelity novel view synthesis.
+◆ In stage one, background primitives are initialized within a spherical shell and optimized using a loss that combines a background-only photometric term with two geometric regularizers: one constraining Gaussians to remain inside the shell, and another aligning them with local tangential planes.</td></tr>
 <tr><td>2025-10-08</td><td>The Star-forming Main Sequence and Bursty Star-formation Histories at $z&gt;1.4$ in JADES and AURORA</td><td>[2510.06681](http://arxiv.org/pdf/2510.06681)</td><td>◆ We analyze JWST spectroscopic and HST+JWST photometric observations of 659 star-forming galaxies at $1.4 &lt; z &lt; 9$ from DR3 of the JADES survey and the AURORA Cycle 1 program.
 ◆ We measure the star-forming main sequence (SFMS) for galaxies above $10^{8.5}\rm\ M_\odot$ where the sample is largely representative, estimating star-formation rates (SFRs) using the H$\alpha$ line flux and rest-frame far UV (1600\AA) continuum measurements, each independently corrected for dust attenuation.
 ◆ We find that the intrinsic, measurement-error-subtracted scatter in the SFMS ($\sigma_{\rm int}$) increases with decreasing stellar mass for the H$\alpha$-based SFMS, and we find no mass dependence of $\sigma_{\rm int}$ in the UV-based SFMS.</td></tr>
@@ -1334,6 +1337,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-10</td><td>Hierarchical Scheduling for Multi-Vector Image Retrieval</td><td>[2510.08976](http://arxiv.org/pdf/2510.08976)</td><td>◆ To effectively leverage user-specific data, retrieval augmented generation (RAG) is employed in multimodal large language model (MLLM) applications.
+◆ However, conventional retrieval approaches often suffer from limited retrieval accuracy.
+◆ Recent advances in multi-vector retrieval (MVR) improve accuracy by decomposing queries and matching against segmented images.</td></tr>
 <tr><td>2025-10-09</td><td>DarkHash: A Data-Free Backdoor Attack Against Deep Hashing</td><td>[2510.08094](http://arxiv.org/pdf/2510.08094)</td><td>◆ Benefiting from its superior feature learning capabilities and efficiency, deep hashing has achieved remarkable success in large-scale image retrieval.
 ◆ Recent studies have demonstrated the vulnerability of deep hashing models to backdoor attacks.
 ◆ Although these studies have shown promising attack results, they rely on access to the training dataset to implant the backdoor.</td></tr>
@@ -2654,6 +2660,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-13</td><td>Perspective-aware 3D Gaussian Inpainting with Multi-view Consistency</td><td>[2510.10993](http://arxiv.org/pdf/2510.10993)</td><td>◆ 3D Gaussian inpainting, a critical technique for numerous applications in virtual reality and multimedia, has made significant progress with pretrained diffusion models.
+◆ However, ensuring multi-view consistency, an essential requirement for high-quality inpainting, remains a key challenge.
+◆ In this work, we present PAInpainter, a novel approach designed to advance 3D Gaussian inpainting by leveraging perspective-aware content propagation and consistency verification across multi-view inpainted images.</td></tr>
+<tr><td>2025-10-11</td><td>Opacity-Gradient Driven Density Control for Compact and Efficient Few-Shot 3D Gaussian Splatting</td><td>[2510.10257](http://arxiv.org/pdf/2510.10257)</td><td>◆ 3D Gaussian Splatting (3DGS) struggles in few-shot scenarios, where its standard adaptive density control (ADC) can lead to overfitting and bloated reconstructions.
+◆ While state-of-the-art methods like FSGS improve quality, they often do so by significantly increasing the primitive count.
+◆ This paper presents a framework that revises the core 3DGS optimization to prioritize efficiency.</td></tr>
+<tr><td>2025-10-11</td><td>Gesplat: Robust Pose-Free 3D Reconstruction via Geometry-Guided Gaussian Splatting</td><td>[2510.10097](http://arxiv.org/pdf/2510.10097)</td><td>◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have advanced 3D reconstruction and novel view synthesis, but remain heavily dependent on accurate camera poses and dense viewpoint coverage.
+◆ These requirements limit their applicability in sparse-view settings, where pose estimation becomes unreliable and supervision is insufficient.
+◆ To overcome these challenges, we introduce Gesplat, a 3DGS-based framework that enables robust novel view synthesis and geometrically consistent reconstruction from unposed sparse images.</td></tr>
+<tr><td>2025-10-10</td><td>Geometry-Aware Scene Configurations for Novel View Synthesis</td><td>[2510.09880](http://arxiv.org/pdf/2510.09880)</td><td>◆ We propose scene-adaptive strategies to efficiently allocate representation capacity for generating immersive experiences of indoor environments from incomplete observations.
+◆ Indoor scenes with multiple rooms often exhibit irregular layouts with varying complexity, containing clutter, occlusion, and flat walls.
+◆ We maximize the utilization of limited resources with guidance from geometric priors, which are often readily available after pre-processing stages.</td></tr>
+<tr><td>2025-10-10</td><td>Vision Language Models: A Survey of 26K Papers</td><td>[2510.09586](http://arxiv.org/pdf/2510.09586)</td><td>◆ We present a transparent, reproducible measurement of research trends across 26,104 accepted papers from CVPR, ICLR, and NeurIPS spanning 2023-2025.
+◆ Titles and abstracts are normalized, phrase-protected, and matched against a hand-crafted lexicon to assign up to 35 topical labels and mine fine-grained cues about tasks, architectures, training regimes, objectives, datasets, and co-mentioned modalities.
+◆ The analysis quantifies three macro shifts: (1) a sharp rise of multimodal vision-language-LLM work, which increasingly reframes classic perception as instruction following and multi-step reasoning; (2) steady expansion of generative methods, with diffusion research consolidating around controllability, distillation, and speed; and (3) resilient 3D and video activity, with composition moving from NeRFs to Gaussian splatting and a growing emphasis on human- and agent-centric understanding.</td></tr>
+<tr><td>2025-10-10</td><td>HERO: Hardware-Efficient RL-based Optimization Framework for NeRF Quantization</td><td>[2510.09010](http://arxiv.org/pdf/2510.09010)</td><td>◆ Neural Radiance Field (NeRF) has emerged as a promising 3D reconstruction method, delivering high-quality results for AR/VR applications.
+◆ While quantization methods and hardware accelerators have been proposed to enhance NeRF&#x27;s computational efficiency, existing approaches face crucial limitations.
+◆ Current quantization methods operate without considering hardware architecture, resulting in sub-optimal solutions within the vast design space encompassing accuracy, latency, and model size.</td></tr>
 <tr><td>2025-10-09</td><td>An Energy-Efficient Edge Coprocessor for Neural Rendering with Explicit Data Reuse Strategies</td><td>[2510.07667](http://arxiv.org/pdf/2510.07667)</td><td>◆ Neural radiance fields (NeRF) have transformed 3D reconstruction and rendering, facilitating photorealistic image synthesis from sparse viewpoints.
 ◆ This work introduces an explicit data reuse neural rendering (EDR-NR) architecture, which reduces frequent external memory accesses (EMAs) and cache misses by exploiting the spatial locality from three phases, including rays, ray packets (RPs), and samples.
 ◆ The EDR-NR architecture features a four-stage scheduler that clusters rays on the basis of Z-order, prioritize lagging rays when ray divergence happens, reorders RPs based on spatial proximity, and issues samples out-of-orderly (OoO) according to the availability of on-chip feature data.</td></tr>
@@ -3269,4 +3293,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.13
+> 更新于: 2025.10.14
