@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.14)
+# 计算机视觉领域最新论文 (2025.10.15)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding</td><td>[2510.12749](http://arxiv.org/pdf/2510.12749)</td><td>◆ The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects&#x27; interference, sensor data sparsity, and view-limitation problems.
+◆ This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective.
+◆ Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages.</td></tr>
+<tr><td>2025-10-14</td><td>PolygMap: A Perceptive Locomotion Framework for Humanoid Robot Stair Climbing</td><td>[2510.12346](http://arxiv.org/pdf/2510.12346)</td><td>◆ Recently, biped robot walking technology has been significantly developed, mainly in the context of a bland walking scheme.
+◆ To emulate human walking, robots need to step on the positions they see in unknown spaces accurately.
+◆ In this paper, we present PolyMap, a perception-based locomotion planning framework for humanoid robots to climb stairs.</td></tr>
 <tr><td>2025-10-09</td><td>ARTDECO: Towards Efficient and High-Fidelity On-the-Fly 3D Reconstruction with Structured Scene Representation</td><td>[2510.08551](http://arxiv.org/pdf/2510.08551)</td><td>◆ On-the-fly 3D reconstruction from monocular image sequences is a long-standing challenge in computer vision, critical for applications such as real-to-sim, AR/VR, and robotics.
 ◆ Existing methods face a major tradeoff: per-scene optimization yields high fidelity but is computationally expensive, whereas feed-forward foundation models enable real-time inference but struggle with accuracy and robustness.
 ◆ In this work, we propose ARTDECO, a unified framework that combines the efficiency of feed-forward models with the reliability of SLAM-based pipelines.</td></tr>
@@ -945,6 +951,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>Scene Coordinate Reconstruction Priors</td><td>[2510.12387](http://arxiv.org/pdf/2510.12387)</td><td>◆ Scene coordinate regression (SCR) models have proven to be powerful implicit scene representations for 3D vision, enabling visual relocalization and structure-from-motion.
+◆ SCR models are trained specifically for one scene.
+◆ If training images imply insufficient multi-view constraints SCR models degenerate.</td></tr>
 <tr><td>2025-10-10</td><td>Two-Stage Gaussian Splatting Optimization for Outdoor Scene Reconstruction</td><td>[2510.09489](http://arxiv.org/pdf/2510.09489)</td><td>◆ Outdoor scene reconstruction remains challenging due to the stark contrast between well-textured, nearby regions and distant backgrounds dominated by low detail, uneven illumination, and sky effects.
 ◆ We introduce a two-stage Gaussian Splatting framework that explicitly separates and optimizes these regions, yielding higher-fidelity novel view synthesis.
 ◆ In stage one, background primitives are initialized within a spherical shell and optimized using a loss that combines a background-only photometric term with two geometric regularizers: one constraining Gaussians to remain inside the shell, and another aligning them with local tangential planes.</td></tr>
@@ -1337,6 +1346,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-13</td><td>Embedding the Teacher: Distilling vLLM Preferences for Scalable Image Retrieval</td><td>[2510.12014](http://arxiv.org/pdf/2510.12014)</td><td>◆ Text--image retrieval is necessary for applications such as product recommendation.
+◆ Embedding-based approaches like CLIP enable efficient large-scale retrieval via vector similarity search, but they are primarily trained on literal caption-like text--image pairs and often fail to capture abstract or persona-driven attributes common in product recommendation applications (e.g., ``a gift for a mother who loves gardening&#x27;&#x27;).
+◆ In contrast, state-of-the-art vision--language models (vLLMs) can align text with images in a flexible manner, but their limited context window prevents them from directly handling retrieval over large catalogs.</td></tr>
 <tr><td>2025-10-10</td><td>Hierarchical Scheduling for Multi-Vector Image Retrieval</td><td>[2510.08976](http://arxiv.org/pdf/2510.08976)</td><td>◆ To effectively leverage user-specific data, retrieval augmented generation (RAG) is employed in multimodal large language model (MLLM) applications.
 ◆ However, conventional retrieval approaches often suffer from limited retrieval accuracy.
 ◆ Recent advances in multi-vector retrieval (MVR) improve accuracy by decomposing queries and matching against segmented images.</td></tr>
@@ -3293,4 +3305,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.14
+> 更新于: 2025.10.15
