@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.15)
+# 计算机视觉领域最新论文 (2025.10.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
+◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
+◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
+<tr><td>2025-10-15</td><td>Through the Lens of Doubt: Robust and Efficient Uncertainty Estimation for Visual Place Recognition</td><td>[2510.13464](http://arxiv.org/pdf/2510.13464)</td><td>◆ Visual Place Recognition (VPR) enables robots and autonomous vehicles to identify previously visited locations by matching current observations against a database of known places.
+◆ However, VPR systems face significant challenges when deployed across varying visual environments, lighting conditions, seasonal changes, and viewpoints changes.
+◆ Failure-critical VPR applications, such as loop closure detection in simultaneous localization and mapping (SLAM) pipelines, require robust estimation of place matching uncertainty.</td></tr>
+<tr><td>2025-10-15</td><td>DAMM-LOAM: Degeneracy Aware Multi-Metric LiDAR Odometry and Mapping</td><td>[2510.13287](http://arxiv.org/pdf/2510.13287)</td><td>◆ LiDAR Simultaneous Localization and Mapping (SLAM) systems are essential for enabling precise navigation and environmental reconstruction across various applications.
+◆ Although current point-to-plane ICP algorithms perform effec- tively in structured, feature-rich environments, they struggle in scenarios with sparse features, repetitive geometric structures, and high-frequency motion.
+◆ This leads to degeneracy in 6- DOF pose estimation.</td></tr>
 <tr><td>2025-10-14</td><td>SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding</td><td>[2510.12749](http://arxiv.org/pdf/2510.12749)</td><td>◆ The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects&#x27; interference, sensor data sparsity, and view-limitation problems.
 ◆ This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective.
 ◆ Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages.</td></tr>
@@ -951,6 +960,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Learning Neural Parametric 3D Breast Shape Models for Metrical Surface Reconstruction From Monocular RGB Videos</td><td>[2510.13540](http://arxiv.org/pdf/2510.13540)</td><td>◆ We present a neural parametric 3D breast shape model and, based on this model, introduce a low-cost and accessible 3D surface reconstruction pipeline capable of recovering accurate breast geometry from a monocular RGB video.
+◆ In contrast to widely used, commercially available yet prohibitively expensive 3D breast scanning solutions and existing low-cost alternatives, our method requires neither specialized hardware nor proprietary software and can be used with any device that is able to record RGB videos.
+◆ The key building blocks of our pipeline are a state-of-the-art, off-the-shelf Structure-from-motion pipeline, paired with a parametric breast model for robust and metrically correct surface reconstruction.</td></tr>
+<tr><td>2025-10-15</td><td>InstantSfM: Fully Sparse and Parallel Structure-from-Motion</td><td>[2510.13310](http://arxiv.org/pdf/2510.13310)</td><td>◆ Structure-from-Motion (SfM), a method that recovers camera poses and scene geometry from uncalibrated images, is a central component in robotic reconstruction and simulation.
+◆ Despite the state-of-the-art performance of traditional SfM methods such as COLMAP and its follow-up work, GLOMAP, naive CPU-specialized implementations of bundle adjustment (BA) or global positioning (GP) introduce significant computational overhead when handling large-scale scenarios, leading to a trade-off between accuracy and speed in SfM.
+◆ Moreover, the blessing of efficient C++-based implementations in COLMAP and GLOMAP comes with the curse of limited flexibility, as they lack support for various external optimization options.</td></tr>
+<tr><td>2025-10-15</td><td>Edit-Your-Interest: Efficient Video Editing via Feature Most-Similar Propagation</td><td>[2510.13084](http://arxiv.org/pdf/2510.13084)</td><td>◆ Text-to-image (T2I) diffusion models have recently demonstrated significant progress in video editing.
+◆ However, existing video editing methods are severely limited by their high computational overhead and memory consumption.
+◆ Furthermore, these approaches often sacrifice visual fidelity, leading to undesirable temporal inconsistencies and artifacts such as blurring and pronounced mosaic-like patterns.</td></tr>
 <tr><td>2025-10-14</td><td>Scene Coordinate Reconstruction Priors</td><td>[2510.12387](http://arxiv.org/pdf/2510.12387)</td><td>◆ Scene coordinate regression (SCR) models have proven to be powerful implicit scene representations for 3D vision, enabling visual relocalization and structure-from-motion.
 ◆ SCR models are trained specifically for one scene.
 ◆ If training images imply insufficient multi-view constraints SCR models degenerate.</td></tr>
@@ -1346,6 +1364,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Through the Lens of Doubt: Robust and Efficient Uncertainty Estimation for Visual Place Recognition</td><td>[2510.13464](http://arxiv.org/pdf/2510.13464)</td><td>◆ Visual Place Recognition (VPR) enables robots and autonomous vehicles to identify previously visited locations by matching current observations against a database of known places.
+◆ However, VPR systems face significant challenges when deployed across varying visual environments, lighting conditions, seasonal changes, and viewpoints changes.
+◆ Failure-critical VPR applications, such as loop closure detection in simultaneous localization and mapping (SLAM) pipelines, require robust estimation of place matching uncertainty.</td></tr>
 <tr><td>2025-10-13</td><td>Embedding the Teacher: Distilling vLLM Preferences for Scalable Image Retrieval</td><td>[2510.12014](http://arxiv.org/pdf/2510.12014)</td><td>◆ Text--image retrieval is necessary for applications such as product recommendation.
 ◆ Embedding-based approaches like CLIP enable efficient large-scale retrieval via vector similarity search, but they are primarily trained on literal caption-like text--image pairs and often fail to capture abstract or persona-driven attributes common in product recommendation applications (e.g., ``a gift for a mother who loves gardening&#x27;&#x27;).
 ◆ In contrast, state-of-the-art vision--language models (vLLMs) can align text with images in a flexible manner, but their limited context window prevents them from directly handling retrieval over large catalogs.</td></tr>
@@ -2672,6 +2693,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
+◆ This requires building high-fidelity simulators to test scenarios beyond those that can be safely or exhaustively collected in the real-world.
+◆ Existing neural rendering methods based on NeRF and 3DGS hold promise but suffer from low rendering speeds or can only render pinhole camera models, hindering their suitability to applications that commonly require high-distortion lenses and LiDAR data.</td></tr>
 <tr><td>2025-10-13</td><td>Perspective-aware 3D Gaussian Inpainting with Multi-view Consistency</td><td>[2510.10993](http://arxiv.org/pdf/2510.10993)</td><td>◆ 3D Gaussian inpainting, a critical technique for numerous applications in virtual reality and multimedia, has made significant progress with pretrained diffusion models.
 ◆ However, ensuring multi-view consistency, an essential requirement for high-quality inpainting, remains a key challenge.
 ◆ In this work, we present PAInpainter, a novel approach designed to advance 3D Gaussian inpainting by leveraging perspective-aware content propagation and consistency verification across multi-view inpainted images.</td></tr>
@@ -3305,4 +3329,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.15
+> 更新于: 2025.10.16
