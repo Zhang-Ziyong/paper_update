@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.16)
+# 计算机视觉领域最新论文 (2025.10.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>3D Scene Prompting for Scene-Consistent Camera-Controllable Video Generation</td><td>[2510.14945](http://arxiv.org/pdf/2510.14945)</td><td>◆ We present 3DScenePrompt, a framework that generates the next video chunk from arbitrary-length input while enabling precise camera control and preserving scene consistency.
+◆ Unlike methods conditioned on a single image or a short clip, we employ dual spatio-temporal conditioning that reformulates context-view referencing across the input video.
+◆ Our approach conditions on both temporally adjacent frames for motion continuity and spatially adjacent content for scene consistency.</td></tr>
 <tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
 ◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
 ◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
@@ -1360,6 +1363,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>Acquisition of interpretable domain information during brain MR image harmonization for content-based image retrieval</td><td>[2510.14535](http://arxiv.org/pdf/2510.14535)</td><td>◆ Medical images like MR scans often show domain shifts across imaging sites due to scanner and protocol differences, which degrade machine learning performance in tasks such as disease classification.
+◆ Domain harmonization is thus a critical research focus.
+◆ Recent approaches encode brain images $\boldsymbol{x}$ into a low-dimensional latent space $\boldsymbol{z}$, then disentangle it into $\boldsymbol{z_u}$ (domain-invariant) and $\boldsymbol{z_d}$ (domain-specific), achieving strong results.</td></tr>
 <tr><td>2025-10-15</td><td>Through the Lens of Doubt: Robust and Efficient Uncertainty Estimation for Visual Place Recognition</td><td>[2510.13464](http://arxiv.org/pdf/2510.13464)</td><td>◆ Visual Place Recognition (VPR) enables robots and autonomous vehicles to identify previously visited locations by matching current observations against a database of known places.
 ◆ However, VPR systems face significant challenges when deployed across varying visual environments, lighting conditions, seasonal changes, and viewpoints changes.
 ◆ Failure-critical VPR applications, such as loop closure detection in simultaneous localization and mapping (SLAM) pipelines, require robust estimation of place matching uncertainty.</td></tr>
@@ -2683,7 +2689,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-14</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
+<tr><td>2025-10-16</td><td>GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</td><td>[2510.14270](http://arxiv.org/pdf/2510.14270)</td><td>◆ Scene reconstruction has emerged as a central challenge in computer vision, with approaches such as Neural Radiance Fields (NeRF) and Gaussian Splatting achieving remarkable progress.
+◆ While Gaussian Splatting demonstrates strong performance on large-scale datasets, it often struggles to capture fine details or maintain realism in regions with sparse coverage, largely due to the inherent limitations of sparse 3D training data.
+◆ In this work, we propose GauSSmart, a hybrid method that effectively bridges 2D foundational models and 3D Gaussian Splatting reconstruction.</td></tr>
+<tr><td>2025-10-16</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
 ◆ This requires building high-fidelity simulators to test scenarios beyond those that can be safely or exhaustively collected in the real-world.
 ◆ Existing neural rendering methods based on NeRF and 3DGS hold promise but suffer from low rendering speeds or can only render pinhole camera models, hindering their suitability to applications that commonly require high-distortion lenses and LiDAR data.</td></tr>
 <tr><td>2025-10-13</td><td>Perspective-aware 3D Gaussian Inpainting with Multi-view Consistency</td><td>[2510.10993](http://arxiv.org/pdf/2510.10993)</td><td>◆ 3D Gaussian inpainting, a critical technique for numerous applications in virtual reality and multimedia, has made significant progress with pretrained diffusion models.
@@ -3317,4 +3326,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.16
+> 更新于: 2025.10.17
