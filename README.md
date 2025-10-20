@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.19)
+# 计算机视觉领域最新论文 (2025.10.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-17</td><td>Dynamic Recalibration in LiDAR SLAM: Integrating AI and Geometric Methods with Real-Time Feedback Using INAF Fusion</td><td>[2510.15803](http://arxiv.org/pdf/2510.15803)</td><td>◆ This paper presents a novel fusion technique for LiDAR Simultaneous Localization and Mapping (SLAM), aimed at improving localization and 3D mapping using LiDAR sensor.
+◆ Our approach centers on the Inferred Attention Fusion (INAF) module, which integrates AI with geometric odometry.
+◆ Utilizing the KITTI dataset&#x27;s LiDAR data, INAF dynamically adjusts attention weights based on environmental feedback, enhancing the system&#x27;s adaptability and measurement accuracy.</td></tr>
+<tr><td>2025-10-17</td><td>LVI-Q: Robust LiDAR-Visual-Inertial-Kinematic Odometry for Quadruped Robots Using Tightly-Coupled and Efficient Alternating Optimization</td><td>[2510.15220](http://arxiv.org/pdf/2510.15220)</td><td>◆ Autonomous navigation for legged robots in complex and dynamic environments relies on robust simultaneous localization and mapping (SLAM) systems to accurately map surroundings and localize the robot, ensuring safe and efficient operation.
+◆ While prior sensor fusion-based SLAM approaches have integrated various sensor modalities to improve their robustness, these algorithms are still susceptible to estimation drift in challenging environments due to their reliance on unsuitable fusion strategies.
+◆ Therefore, we propose a robust LiDAR-visual-inertial-kinematic odometry system that integrates information from multiple sensors, such as a camera, LiDAR, inertial measurement unit (IMU), and joint encoders, for visual and LiDAR-based odometry estimation.</td></tr>
 <tr><td>2025-10-16</td><td>3D Scene Prompting for Scene-Consistent Camera-Controllable Video Generation</td><td>[2510.14945](http://arxiv.org/pdf/2510.14945)</td><td>◆ We present 3DScenePrompt, a framework that generates the next video chunk from arbitrary-length input while enabling precise camera control and preserving scene consistency.
 ◆ Unlike methods conditioned on a single image or a short clip, we employ dual spatio-temporal conditioning that reformulates context-view referencing across the input video.
 ◆ Our approach conditions on both temporally adjacent frames for motion continuity and spatially adjacent content for scene consistency.</td></tr>
@@ -963,6 +969,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-17</td><td>MRASfM: Multi-Camera Reconstruction and Aggregation through Structure-from-Motion in Driving Scenes</td><td>[2510.15467](http://arxiv.org/pdf/2510.15467)</td><td>◆ Structure from Motion (SfM) estimates camera poses and reconstructs point clouds, forming a foundation for various tasks.
+◆ However, applying SfM to driving scenes captured by multi-camera systems presents significant difficulties, including unreliable pose estimation, excessive outliers in road surface reconstruction, and low reconstruction efficiency.
+◆ To address these limitations, we propose a Multi-camera Reconstruction and Aggregation Structure-from-Motion (MRASfM) framework specifically designed for driving scenes.</td></tr>
+<tr><td>2025-10-17</td><td>CuSfM: CUDA-Accelerated Structure-from-Motion</td><td>[2510.15271](http://arxiv.org/pdf/2510.15271)</td><td>◆ Efficient and accurate camera pose estimation forms the foundational requirement for dense reconstruction in autonomous navigation, robotic perception, and virtual simulation systems.
+◆ This paper addresses the challenge via cuSfM, a CUDA-accelerated offline Structure-from-Motion system that leverages GPU parallelization to efficiently employ computationally intensive yet highly accurate feature extractors, generating comprehensive and non-redundant data associations for precise camera pose estimation and globally consistent mapping.
+◆ The system supports pose optimization, mapping, prior-map localization, and extrinsic refinement.</td></tr>
 <tr><td>2025-10-15</td><td>Learning Neural Parametric 3D Breast Shape Models for Metrical Surface Reconstruction From Monocular RGB Videos</td><td>[2510.13540](http://arxiv.org/pdf/2510.13540)</td><td>◆ We present a neural parametric 3D breast shape model and, based on this model, introduce a low-cost and accessible 3D surface reconstruction pipeline capable of recovering accurate breast geometry from a monocular RGB video.
 ◆ In contrast to widely used, commercially available yet prohibitively expensive 3D breast scanning solutions and existing low-cost alternatives, our method requires neither specialized hardware nor proprietary software and can be used with any device that is able to record RGB videos.
 ◆ The key building blocks of our pipeline are a state-of-the-art, off-the-shelf Structure-from-motion pipeline, paired with a parametric breast model for robust and metrically correct surface reconstruction.</td></tr>
@@ -3338,4 +3350,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.19
+> 更新于: 2025.10.20
