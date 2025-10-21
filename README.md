@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.20)
+# 计算机视觉领域最新论文 (2025.10.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
+<tr><td>2025-10-18</td><td>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</td><td>[2510.16438](http://arxiv.org/pdf/2510.16438)</td><td>◆ Lines and points are complementary local features, whose combination has proven effective for applications such as SLAM and Structure-from-Motion.
+◆ The backbone of these pipelines are the local feature matchers, establishing correspondences across images.
+◆ Traditionally, point and line matching have been treated as independent tasks.</td></tr>
+<tr><td>2025-10-17</td><td>VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments</td><td>[2510.16205](http://arxiv.org/pdf/2510.16205)</td><td>◆ Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic filtering that only handles known object classes, or use fixed robust kernels that cannot adapt to unknown moving objects, leading to degraded accuracy when they appear in the scene.
+◆ We present VAR-SLAM (Visual Adaptive and Robust SLAM), an ORB-SLAM3-based system that combines a lightweight semantic keypoint filter to deal with known moving objects, with Barron&#x27;s adaptive robust loss to handle unknown ones.
+◆ The shape parameter of the robust kernel is estimated online from residuals, allowing the system to automatically adjust between Gaussian and heavy-tailed behavior.</td></tr>
 <tr><td>2025-10-17</td><td>Dynamic Recalibration in LiDAR SLAM: Integrating AI and Geometric Methods with Real-Time Feedback Using INAF Fusion</td><td>[2510.15803](http://arxiv.org/pdf/2510.15803)</td><td>◆ This paper presents a novel fusion technique for LiDAR Simultaneous Localization and Mapping (SLAM), aimed at improving localization and 3D mapping using LiDAR sensor.
 ◆ Our approach centers on the Inferred Attention Fusion (INAF) module, which integrates AI with geometric odometry.
 ◆ Utilizing the KITTI dataset&#x27;s LiDAR data, INAF dynamically adjusts attention weights based on environmental feedback, enhancing the system&#x27;s adaptability and measurement accuracy.</td></tr>
@@ -969,6 +978,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>Initialize to Generalize: A Stronger Initialization Pipeline for Sparse-View 3DGS</td><td>[2510.17479](http://arxiv.org/pdf/2510.17479)</td><td>◆ Sparse-view 3D Gaussian Splatting (3DGS) often overfits to the training views, leading to artifacts like blurring in novel view rendering.
+◆ Prior work addresses it either by enhancing the initialization (\emph{i.e.}, the point cloud from Structure-from-Motion (SfM)) or by adding training-time constraints (regularization) to the 3DGS optimization.
+◆ Yet our controlled ablations reveal that initialization is the decisive factor: it determines the attainable performance band in sparse-view 3DGS, while training-time constraints yield only modest within-band improvements at extra cost.</td></tr>
+<tr><td>2025-10-20</td><td>Leveraging AV1 motion vectors for Fast and Dense Feature Matching</td><td>[2510.17434](http://arxiv.org/pdf/2510.17434)</td><td>◆ We repurpose AV1 motion vectors to produce dense sub-pixel correspondences and short tracks filtered by cosine consistency.
+◆ On short videos, this compressed-domain front end runs comparably to sequential SIFT while using far less CPU, and yields denser matches with competitive pairwise geometry.
+◆ As a small SfM demo on a 117-frame clip, MV matches register all images and reconstruct 0.46-0.62M points at 0.51-0.53,px reprojection error; BA time grows with match density.</td></tr>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
+<tr><td>2025-10-18</td><td>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</td><td>[2510.16438](http://arxiv.org/pdf/2510.16438)</td><td>◆ Lines and points are complementary local features, whose combination has proven effective for applications such as SLAM and Structure-from-Motion.
+◆ The backbone of these pipelines are the local feature matchers, establishing correspondences across images.
+◆ Traditionally, point and line matching have been treated as independent tasks.</td></tr>
 <tr><td>2025-10-17</td><td>MRASfM: Multi-Camera Reconstruction and Aggregation through Structure-from-Motion in Driving Scenes</td><td>[2510.15467](http://arxiv.org/pdf/2510.15467)</td><td>◆ Structure from Motion (SfM) estimates camera poses and reconstructs point clouds, forming a foundation for various tasks.
 ◆ However, applying SfM to driving scenes captured by multi-camera systems presents significant difficulties, including unreliable pose estimation, excessive outliers in road surface reconstruction, and low reconstruction efficiency.
 ◆ To address these limitations, we propose a Multi-camera Reconstruction and Aggregation Structure-from-Motion (MRASfM) framework specifically designed for driving scenes.</td></tr>
@@ -1379,6 +1400,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>Joint Multi-Condition Representation Modelling via Matrix Factorisation for Visual Place Recognition</td><td>[2510.17739](http://arxiv.org/pdf/2510.17739)</td><td>◆ We address multi-reference visual place recognition (VPR), where reference sets captured under varying conditions are used to improve localisation performance.
+◆ While deep learning with large-scale training improves robustness, increasing data diversity and model complexity incur extensive computational cost during training and deployment.
+◆ Descriptor-level fusion via voting or aggregation avoids training, but often targets multi-sensor setups or relies on heuristics with limited gains under appearance and viewpoint change.</td></tr>
 <tr><td>2025-10-16</td><td>Acquisition of interpretable domain information during brain MR image harmonization for content-based image retrieval</td><td>[2510.14535](http://arxiv.org/pdf/2510.14535)</td><td>◆ Medical images like MR scans often show domain shifts across imaging sites due to scanner and protocol differences, which degrade machine learning performance in tasks such as disease classification.
 ◆ Domain harmonization is thus a critical research focus.
 ◆ Recent approaches encode brain images $\boldsymbol{x}$ into a low-dimensional latent space $\boldsymbol{z}$, then disentangle it into $\boldsymbol{z_u}$ (domain-invariant) and $\boldsymbol{z_d}$ (domain-specific), achieving strong results.</td></tr>
@@ -2223,6 +2247,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
 <tr><td>2025-09-30</td><td>Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</td><td>[2510.00083](http://arxiv.org/pdf/2510.00083)</td><td>◆ Deep neural networks have been widely adopted in many vision and robotics applications with visual inputs.
 ◆ It is essential to verify its robustness against semantic transformation perturbations, such as brightness and contrast.
 ◆ However, current certified training and robustness certification methods face the challenge of over-parameterization, which hinders the tightness and scalability due to the over-complicated neural networks.</td></tr>
@@ -3350,4 +3377,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.20
+> 更新于: 2025.10.21
