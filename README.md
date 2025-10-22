@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.21)
+# 计算机视觉领域最新论文 (2025.10.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+<tr><td>2025-10-21</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
 ◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
 ◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
 <tr><td>2025-10-18</td><td>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</td><td>[2510.16438](http://arxiv.org/pdf/2510.16438)</td><td>◆ Lines and points are complementary local features, whose combination has proven effective for applications such as SLAM and Structure-from-Motion.
@@ -981,10 +981,10 @@
 <tr><td>2025-10-20</td><td>Initialize to Generalize: A Stronger Initialization Pipeline for Sparse-View 3DGS</td><td>[2510.17479](http://arxiv.org/pdf/2510.17479)</td><td>◆ Sparse-view 3D Gaussian Splatting (3DGS) often overfits to the training views, leading to artifacts like blurring in novel view rendering.
 ◆ Prior work addresses it either by enhancing the initialization (\emph{i.e.}, the point cloud from Structure-from-Motion (SfM)) or by adding training-time constraints (regularization) to the 3DGS optimization.
 ◆ Yet our controlled ablations reveal that initialization is the decisive factor: it determines the attainable performance band in sparse-view 3DGS, while training-time constraints yield only modest within-band improvements at extra cost.</td></tr>
-<tr><td>2025-10-20</td><td>Leveraging AV1 motion vectors for Fast and Dense Feature Matching</td><td>[2510.17434](http://arxiv.org/pdf/2510.17434)</td><td>◆ We repurpose AV1 motion vectors to produce dense sub-pixel correspondences and short tracks filtered by cosine consistency.
+<tr><td>2025-10-21</td><td>Leveraging AV1 motion vectors for Fast and Dense Feature Matching</td><td>[2510.17434](http://arxiv.org/pdf/2510.17434)</td><td>◆ We repurpose AV1 motion vectors to produce dense sub-pixel correspondences and short tracks filtered by cosine consistency.
 ◆ On short videos, this compressed-domain front end runs comparably to sequential SIFT while using far less CPU, and yields denser matches with competitive pairwise geometry.
 ◆ As a small SfM demo on a 117-frame clip, MV matches register all images and reconstruct 0.46-0.62M points at 0.51-0.53,px reprojection error; BA time grows with match density.</td></tr>
-<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+<tr><td>2025-10-21</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
 ◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
 ◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
 <tr><td>2025-10-18</td><td>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</td><td>[2510.16438](http://arxiv.org/pdf/2510.16438)</td><td>◆ Lines and points are complementary local features, whose combination has proven effective for applications such as SLAM and Structure-from-Motion.
@@ -1400,6 +1400,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-21</td><td>Beyond Single Images: Retrieval Self-Augmented Unsupervised Camouflaged Object Detection</td><td>[2510.18437](http://arxiv.org/pdf/2510.18437)</td><td>◆ At the core of Camouflaged Object Detection (COD) lies segmenting objects from their highly similar surroundings.
+◆ Previous efforts navigate this challenge primarily through image-level modeling or annotation-based optimization.
+◆ Despite advancing considerably, this commonplace practice hardly taps valuable dataset-level contextual information or relies on laborious annotations.</td></tr>
+<tr><td>2025-10-21</td><td>ImageGem: In-the-wild Generative Image Interaction Dataset for Generative Model Personalization</td><td>[2510.18433](http://arxiv.org/pdf/2510.18433)</td><td>◆ We introduce ImageGem, a dataset for studying generative models that understand fine-grained individual preferences.
+◆ We posit that a key challenge hindering the development of such a generative model is the lack of in-the-wild and fine-grained user preference annotations.
+◆ Our dataset features real-world interaction data from 57K users, who collectively have built 242K customized LoRAs, written 3M text prompts, and created 5M generated images.</td></tr>
+<tr><td>2025-10-21</td><td>DualHash: A Stochastic Primal-Dual Algorithm with Theoretical Guarantee for Deep Hashing</td><td>[2510.18218](http://arxiv.org/pdf/2510.18218)</td><td>◆ Deep hashing converts high-dimensional feature vectors into compact binary codes, enabling efficient large-scale retrieval.
+◆ A fundamental challenge in deep hashing stems from the discrete nature of quantization in generating the codes.
+◆ W-type regularizations, such as $</td></tr>
 <tr><td>2025-10-20</td><td>Joint Multi-Condition Representation Modelling via Matrix Factorisation for Visual Place Recognition</td><td>[2510.17739](http://arxiv.org/pdf/2510.17739)</td><td>◆ We address multi-reference visual place recognition (VPR), where reference sets captured under varying conditions are used to improve localisation performance.
 ◆ While deep learning with large-scale training improves robustness, increasing data diversity and model complexity incur extensive computational cost during training and deployment.
 ◆ Descriptor-level fusion via voting or aggregation avoids training, but often targets multi-sensor setups or relies on heuristics with limited gains under appearance and viewpoint change.</td></tr>
@@ -2247,7 +2256,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+<tr><td>2025-10-21</td><td>GBlobs: Local LiDAR Geometry for Improved Sensor Placement Generalization</td><td>[2510.18539](http://arxiv.org/pdf/2510.18539)</td><td>◆ This technical report outlines the top-ranking solution for RoboSense 2025: Track 3, achieving state-of-the-art performance on 3D object detection under various sensor placements.
+◆ Our submission utilizes GBlobs, a local point cloud feature descriptor specifically designed to enhance model generalization across diverse LiDAR configurations.
+◆ Current LiDAR-based 3D detectors often suffer from a \enquote{geometric shortcut} when trained on conventional global features (\ie, absolute Cartesian coordinates).</td></tr>
+<tr><td>2025-10-21</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
 ◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
 ◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
 <tr><td>2025-09-30</td><td>Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</td><td>[2510.00083](http://arxiv.org/pdf/2510.00083)</td><td>◆ Deep neural networks have been widely adopted in many vision and robotics applications with visual inputs.
@@ -3377,4 +3389,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.21
+> 更新于: 2025.10.22
