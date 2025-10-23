@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.22)
+# 计算机视觉领域最新论文 (2025.10.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-21</td><td>Underwater Dense Mapping with the First Compact 3D Sonar</td><td>[2510.18991](http://arxiv.org/pdf/2510.18991)</td><td>◆ In the past decade, the adoption of compact 3D range sensors, such as LiDARs, has driven the developments of robust state-estimation pipelines, making them a standard sensor for aerial, ground, and space autonomy.
+◆ Unfortunately, poor propagation of electromagnetic waves underwater, has limited the visibility-independent sensing options of underwater state-estimation to acoustic range sensors, which provide 2D information including, at-best, spatially ambiguous information.
+◆ This paper, to the best of our knowledge, is the first study examining the performance, capacity, and opportunities arising from the recent introduction of the first compact 3D sonar.</td></tr>
 <tr><td>2025-10-21</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
 ◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
 ◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
@@ -978,6 +981,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-21</td><td>The slope and scatter of the star forming main sequence at z~5 : reconciling observations with simulations</td><td>[2510.19044](http://arxiv.org/pdf/2510.19044)</td><td>◆ Galaxies exhibit a tight correlation between their star-formation rate and stellar mass over a wide redshift range known as the star-forming main sequence (SFMS).
+◆ With JWST, we can now investigate the SFMS at high redshifts down to masses of $\sim10^6$ M$_{\odot}$, using sensitive star-formation rate tracers such as H$\alpha$ emission -- which allow us to probe the variability in star formation histories.
+◆ We present inferences of the SFMS based on 316 H$\alpha$-selected galaxies at $z\sim4$-$5$ with $\log(\rm M_\star/M_\odot) = 6.4$ -$10.6$.</td></tr>
 <tr><td>2025-10-20</td><td>Initialize to Generalize: A Stronger Initialization Pipeline for Sparse-View 3DGS</td><td>[2510.17479](http://arxiv.org/pdf/2510.17479)</td><td>◆ Sparse-view 3D Gaussian Splatting (3DGS) often overfits to the training views, leading to artifacts like blurring in novel view rendering.
 ◆ Prior work addresses it either by enhancing the initialization (\emph{i.e.}, the point cloud from Structure-from-Motion (SfM)) or by adding training-time constraints (regularization) to the 3DGS optimization.
 ◆ Yet our controlled ablations reveal that initialization is the decisive factor: it determines the attainable performance band in sparse-view 3DGS, while training-time constraints yield only modest within-band improvements at extra cost.</td></tr>
@@ -1400,6 +1406,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-18</td><td>Small Language Models Offer Significant Potential for Science Community</td><td>[2510.18890](http://arxiv.org/pdf/2510.18890)</td><td>◆ Recent advancements in natural language processing, particularly with large language models (LLMs), are transforming how scientists engage with the literature.
+◆ While the adoption of LLMs is increasing, concerns remain regarding potential information biases and computational costs.
+◆ Rather than LLMs, I developed a framework to evaluate the feasibility of precise, rapid, and cost-effective information retrieval from extensive geoscience literature using freely available small language models (MiniLMs).</td></tr>
 <tr><td>2025-10-21</td><td>Beyond Single Images: Retrieval Self-Augmented Unsupervised Camouflaged Object Detection</td><td>[2510.18437](http://arxiv.org/pdf/2510.18437)</td><td>◆ At the core of Camouflaged Object Detection (COD) lies segmenting objects from their highly similar surroundings.
 ◆ Previous efforts navigate this challenge primarily through image-level modeling or annotation-based optimization.
 ◆ Despite advancing considerably, this commonplace practice hardly taps valuable dataset-level contextual information or relies on laborious annotations.</td></tr>
@@ -2750,6 +2759,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-22</td><td>AegisRF: Adversarial Perturbations Guided with Sensitivity for Protecting Intellectual Property of Neural Radiance Fields</td><td>[2510.19371](http://arxiv.org/pdf/2510.19371)</td><td>◆ As Neural Radiance Fields (NeRFs) have emerged as a powerful tool for 3D scene representation and novel view synthesis, protecting their intellectual property (IP) from unauthorized use is becoming increasingly crucial.
+◆ In this work, we aim to protect the IP of NeRFs by injecting adversarial perturbations that disrupt their unauthorized applications.
+◆ However, perturbing the 3D geometry of NeRFs can easily deform the underlying scene structure and thus substantially degrade the rendering quality, which has led existing attempts to avoid geometric perturbations or restrict them to explicit spaces like meshes.</td></tr>
+<tr><td>2025-10-22</td><td>Advances in 4D Representation: Geometry, Motion, and Interaction</td><td>[2510.19255](http://arxiv.org/pdf/2510.19255)</td><td>◆ We present a survey on 4D generation and reconstruction, a fast-evolving subfield of computer graphics whose developments have been propelled by recent advances in neural fields, geometric and motion deep learning, as well 3D generative artificial intelligence (GenAI).
+◆ While our survey is not the first of its kind, we build our coverage of the domain from a unique and distinctive perspective of 4D representations\/}, to model 3D geometry evolving over time while exhibiting motion and interaction.
+◆ Specifically, instead of offering an exhaustive enumeration of many works, we take a more selective approach by focusing on representative works to highlight both the desirable properties and ensuing challenges of each representation under different computation, application, and data scenarios.</td></tr>
 <tr><td>2025-10-16</td><td>GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</td><td>[2510.14270](http://arxiv.org/pdf/2510.14270)</td><td>◆ Scene reconstruction has emerged as a central challenge in computer vision, with approaches such as Neural Radiance Fields (NeRF) and Gaussian Splatting achieving remarkable progress.
 ◆ While Gaussian Splatting demonstrates strong performance on large-scale datasets, it often struggles to capture fine details or maintain realism in regions with sparse coverage, largely due to the inherent limitations of sparse 3D training data.
 ◆ In this work, we propose GauSSmart, a hybrid method that effectively bridges 2D foundational models and 3D Gaussian Splatting reconstruction.</td></tr>
@@ -3389,4 +3404,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.22
+> 更新于: 2025.10.23
