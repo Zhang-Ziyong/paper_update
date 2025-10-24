@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.23)
+# 计算机视觉领域最新论文 (2025.10.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-23</td><td>Deep Learning-Powered Visual SLAM Aimed at Assisting Visually Impaired Navigation</td><td>[2510.20549](http://arxiv.org/pdf/2510.20549)</td><td>◆ Despite advancements in SLAM technologies, robust operation under challenging conditions such as low-texture, motion-blur, or challenging lighting remains an open challenge.
+◆ Such conditions are common in applications such as assistive navigation for the visually impaired.
+◆ These challenges undermine localization accuracy and tracking stability, reducing navigation reliability and safety.</td></tr>
 <tr><td>2025-10-21</td><td>Underwater Dense Mapping with the First Compact 3D Sonar</td><td>[2510.18991](http://arxiv.org/pdf/2510.18991)</td><td>◆ In the past decade, the adoption of compact 3D range sensors, such as LiDARs, has driven the developments of robust state-estimation pipelines, making them a standard sensor for aerial, ground, and space autonomy.
 ◆ Unfortunately, poor propagation of electromagnetic waves underwater, has limited the visibility-independent sensing options of underwater state-estimation to acoustic range sensors, which provide 2D information including, at-best, spatially ambiguous information.
 ◆ This paper, to the best of our knowledge, is the first study examining the performance, capacity, and opportunities arising from the recent introduction of the first compact 3D sonar.</td></tr>
@@ -979,6 +982,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-23</td><td>RubbleSim: A Photorealistic Structural Collapse Simulator for Confined Space Mapping</td><td>[2510.20529](http://arxiv.org/pdf/2510.20529)</td><td>◆ Despite well-reported instances of robots being used in disaster response, there is scant published data on the internal composition of the void spaces within structural collapse incidents.
+◆ Data collected during these incidents is mired in legal constraints, as ownership is often tied to the responding agencies, with little hope of public release for research.
+◆ While engineered rubble piles are used for training, these sites are also reluctant to release information about their proprietary training grounds.</td></tr>
 <tr><td>2025-10-21</td><td>The slope and scatter of the star forming main sequence at z~5 : reconciling observations with simulations</td><td>[2510.19044](http://arxiv.org/pdf/2510.19044)</td><td>◆ Galaxies exhibit a tight correlation between their star-formation rate and stellar mass over a wide redshift range known as the star-forming main sequence (SFMS).
 ◆ With JWST, we can now investigate the SFMS at high redshifts down to masses of $\sim10^6$ M$_{\odot}$, using sensitive star-formation rate tracers such as H$\alpha$ emission -- which allow us to probe the variability in star formation histories.
 ◆ We present inferences of the SFMS based on 316 H$\alpha$-selected galaxies at $z\sim4$-$5$ with $\log(\rm M_\star/M_\odot) = 6.4$ -$10.6$.</td></tr>
@@ -1402,6 +1408,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-23</td><td>BIOCAP: Exploiting Synthetic Captions Beyond Labels in Biological Foundation Models</td><td>[2510.20095](http://arxiv.org/pdf/2510.20095)</td><td>◆ This work investigates descriptive captions as an additional source of supervision for biological multimodal foundation models.
+◆ Images and captions can be viewed as complementary samples from the latent morphospace of a species, each capturing certain biological traits.
+◆ Incorporating captions during training encourages alignment with this shared latent structure, emphasizing potentially diagnostic characters while suppressing spurious correlations.</td></tr>
 <tr><td>2025-10-18</td><td>Small Language Models Offer Significant Potential for Science Community</td><td>[2510.18890](http://arxiv.org/pdf/2510.18890)</td><td>◆ Recent advancements in natural language processing, particularly with large language models (LLMs), are transforming how scientists engage with the literature.
 ◆ While the adoption of LLMs is increasing, concerns remain regarding potential information biases and computational costs.
 ◆ Rather than LLMs, I developed a framework to evaluate the feasibility of precise, rapid, and cost-effective information retrieval from extensive geoscience literature using freely available small language models (MiniLMs).</td></tr>
@@ -2749,6 +2758,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-23</td><td>From Far and Near: Perceptual Evaluation of Crowd Representations Across Levels of Detail</td><td>[2510.20558](http://arxiv.org/pdf/2510.20558)</td><td>◆ In this paper, we investigate how users perceive the visual quality of crowd character representations at different levels of detail (LoD) and viewing distances.
+◆ Each representation: geometric meshes, image-based impostors, Neural Radiance Fields (NeRFs), and 3D Gaussians, exhibits distinct trade-offs between visual fidelity and computational performance.
+◆ Our qualitative and quantitative results provide insights to guide the design of perceptually optimized LoD strategies for crowd rendering.</td></tr>
+<tr><td>2025-10-22</td><td>Extreme Views: 3DGS Filter for Novel View Synthesis from Out-of-Distribution Camera Poses</td><td>[2510.20027](http://arxiv.org/pdf/2510.20027)</td><td>◆ When viewing a 3D Gaussian Splatting (3DGS) model from camera positions significantly outside the training data distribution, substantial visual noise commonly occurs.
+◆ These artifacts result from the lack of training data in these extrapolated regions, leading to uncertain density, color, and geometry predictions from the model.
+◆ To address this issue, we propose a novel real-time render-aware filtering method.</td></tr>
 <tr><td>2025-10-22</td><td>AegisRF: Adversarial Perturbations Guided with Sensitivity for Protecting Intellectual Property of Neural Radiance Fields</td><td>[2510.19371](http://arxiv.org/pdf/2510.19371)</td><td>◆ As Neural Radiance Fields (NeRFs) have emerged as a powerful tool for 3D scene representation and novel view synthesis, protecting their intellectual property (IP) from unauthorized use is becoming increasingly crucial.
 ◆ In this work, we aim to protect the IP of NeRFs by injecting adversarial perturbations that disrupt their unauthorized applications.
 ◆ However, perturbing the 3D geometry of NeRFs can easily deform the underlying scene structure and thus substantially degrade the rendering quality, which has led existing attempts to avoid geometric perturbations or restrict them to explicit spaces like meshes.</td></tr>
@@ -3392,4 +3407,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.23
+> 更新于: 2025.10.24
