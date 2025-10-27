@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.26)
+# 计算机视觉领域最新论文 (2025.10.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1412,7 +1412,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-23</td><td>BIOCAP: Exploiting Synthetic Captions Beyond Labels in Biological Foundation Models</td><td>[2510.20095](http://arxiv.org/pdf/2510.20095)</td><td>◆ This work investigates descriptive captions as an additional source of supervision for biological multimodal foundation models.
+<tr><td>2025-10-24</td><td>BioCAP: Exploiting Synthetic Captions Beyond Labels in Biological Foundation Models</td><td>[2510.20095](http://arxiv.org/pdf/2510.20095)</td><td>◆ This work investigates descriptive captions as an additional source of supervision for biological multimodal foundation models.
 ◆ Images and captions can be viewed as complementary samples from the latent morphospace of a species, each capturing certain biological traits.
 ◆ Incorporating captions during training encourages alignment with this shared latent structure, emphasizing potentially diagnostic characters while suppressing spurious correlations.</td></tr>
 <tr><td>2025-10-18</td><td>Small Language Models Offer Significant Potential for Science Community</td><td>[2510.18890](http://arxiv.org/pdf/2510.18890)</td><td>◆ Recent advancements in natural language processing, particularly with large language models (LLMs), are transforming how scientists engage with the literature.
@@ -2511,7 +2511,7 @@
 <tr><td>2025-10-08</td><td>Efficient Discriminative Joint Encoders for Large Scale Vision-Language Reranking</td><td>[2510.06820](http://arxiv.org/pdf/2510.06820)</td><td>◆ Multimodal retrieval still leans on embedding-based models like CLIP for fast vector search over pre-computed image embeddings.
 ◆ Yet, unlike text retrieval, where joint-encoder rerankers are standard, comparable vision--language rerankers are largely absent.
 ◆ We find that seminal joint encoders such as BLIP are severely bottlenecked by an expensive visual feature-extraction stage, preventing practical deployment at scale.</td></tr>
-<tr><td>2025-10-06</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
+<tr><td>2025-10-24</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
 ◆ Unlike keypoint matching, which focuses on localized features, segment matching captures structured regions, offering greater robustness to occlusions, lighting variations, and viewpoint changes.
 ◆ In this paper, we leverage the spatial understanding of 3D foundation models to tackle wide-baseline segment matching, a challenging setting involving extreme viewpoint shifts.</td></tr>
 <tr><td>2025-09-23</td><td>Hierarchical Neural Semantic Representation for 3D Semantic Correspondence</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
@@ -3419,4 +3419,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.26
+> 更新于: 2025.10.27
