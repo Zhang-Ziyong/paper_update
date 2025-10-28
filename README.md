@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.27)
+# 计算机视觉领域最新论文 (2025.10.28)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
+◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
+◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
+<tr><td>2025-10-26</td><td>Policies over Poses: Reinforcement Learning based Distributed Pose-Graph Optimization for Multi-Robot SLAM</td><td>[2510.22740](http://arxiv.org/pdf/2510.22740)</td><td>◆ We consider the distributed pose-graph optimization (PGO) problem, which is fundamental in accurate trajectory estimation in multi-robot simultaneous localization and mapping (SLAM).
+◆ Conventional iterative approaches linearize a highly non-convex optimization objective, requiring repeated solving of normal equations, which often converge to local minima and thus produce suboptimal estimates.
+◆ We propose a scalable, outlier-robust distributed planar PGO framework using Multi-Agent Reinforcement Learning (MARL).</td></tr>
+<tr><td>2025-10-26</td><td>LVD-GS: Gaussian Splatting SLAM for Dynamic Scenes via Hierarchical Explicit-Implicit Representation Collaboration Rendering</td><td>[2510.22669](http://arxiv.org/pdf/2510.22669)</td><td>◆ 3D Gaussian Splatting SLAM has emerged as a widely used technique for high-fidelity mapping in spatial intelligence.
+◆ However, existing methods often rely on a single representation scheme, which limits their performance in large-scale dynamic outdoor scenes and leads to cumulative pose errors and scale ambiguity.
+◆ To address these challenges, we propose \textbf{LVD-GS}, a novel LiDAR-Visual 3D Gaussian Splatting SLAM system.</td></tr>
+<tr><td>2025-10-26</td><td>RoGER-SLAM: A Robust Gaussian Splatting SLAM System for Noisy and Low-light Environment Resilience</td><td>[2510.22600](http://arxiv.org/pdf/2510.22600)</td><td>◆ The reliability of Simultaneous Localization and Mapping (SLAM) is severely constrained in environments where visual inputs suffer from noise and low illumination.
+◆ Although recent 3D Gaussian Splatting (3DGS) based SLAM frameworks achieve high-fidelity mapping under clean conditions, they remain vulnerable to compounded degradations that degrade mapping and tracking performance.
+◆ A key observation underlying our work is that the original 3DGS rendering pipeline inherently behaves as an implicit low-pass filter, attenuating high-frequency noise but also risking over-smoothing.</td></tr>
+<tr><td>2025-10-26</td><td>UltraVoice: Scaling Fine-Grained Style-Controlled Speech Conversations for Spoken Dialogue Models</td><td>[2510.22588](http://arxiv.org/pdf/2510.22588)</td><td>◆ Spoken dialogue models currently lack the ability for fine-grained speech style control, a critical capability for human-like interaction that is often overlooked in favor of purely functional capabilities like reasoning and question answering.
+◆ To address this limitation, we introduce UltraVoice, the first large-scale speech dialogue dataset engineered for multiple fine-grained speech style control.
+◆ Encompassing over 830 hours of speech dialogues, UltraVoice provides instructions across six key speech stylistic dimensions: emotion, speed, volume, accent, language, and composite styles.</td></tr>
+<tr><td>2025-10-26</td><td>Bag-of-Word-Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</td><td>[2510.22529](http://arxiv.org/pdf/2510.22529)</td><td>◆ Loop closure is critical in Simultaneous Localization and Mapping (SLAM) systems to reduce accumulative drift and ensure global mapping consistency.
+◆ However, conventional methods struggle in perceptually aliased environments, such as narrow pipes, due to vector quantization, feature sparsity, and repetitive textures, while existing solutions often incur high computational costs.
+◆ This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency.</td></tr>
+<tr><td>2025-10-24</td><td>Underwater Visual-Inertial-Acoustic-Depth SLAM with DVL Preintegration for Degraded Environments</td><td>[2510.21215](http://arxiv.org/pdf/2510.21215)</td><td>◆ Visual degradation caused by limited visibility, insufficient lighting, and feature scarcity in underwater environments presents significant challenges to visual-inertial simultaneous localization and mapping (SLAM) systems.
+◆ To address these challenges, this paper proposes a graph-based visual-inertial-acoustic-depth SLAM system that integrates a stereo camera, an inertial measurement unit (IMU), the Doppler velocity log (DVL), and a pressure sensor.
+◆ The key innovation lies in the tight integration of four distinct sensor modalities to ensure reliable operation, even under degraded visual conditions.</td></tr>
 <tr><td>2025-10-23</td><td>Deep Learning-Powered Visual SLAM Aimed at Assisting Visually Impaired Navigation</td><td>[2510.20549](http://arxiv.org/pdf/2510.20549)</td><td>◆ Despite advancements in SLAM technologies, robust operation under challenging conditions such as low-texture, motion-blur, or challenging lighting remains an open challenge.
 ◆ Such conditions are common in applications such as assistive navigation for the visually impaired.
 ◆ These challenges undermine localization accuracy and tracking stability, reducing navigation reliability and safety.</td></tr>
@@ -984,6 +1005,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>Adapting Speech Foundation Models with Large Language Models for Unified Speech Recognition</td><td>[2510.22961](http://arxiv.org/pdf/2510.22961)</td><td>◆ Unified speech recognition aims to perform auditory, visual, and audiovisual speech recognition within a single model framework.
+◆ While speech foundation models (SFMs) have demonstrated remarkable performance in auditory tasks, their adaptation to multimodal scenarios remains underexplored.
+◆ This paper presents UASR-LLM, a novel framework that adapts frozen SFMs to unified VSR, ASR, and AVSR tasks by leveraging large language models (LLMs) as text decoders.</td></tr>
 <tr><td>2025-10-23</td><td>RubbleSim: A Photorealistic Structural Collapse Simulator for Confined Space Mapping</td><td>[2510.20529](http://arxiv.org/pdf/2510.20529)</td><td>◆ Despite well-reported instances of robots being used in disaster response, there is scant published data on the internal composition of the void spaces within structural collapse incidents.
 ◆ Data collected during these incidents is mired in legal constraints, as ownership is often tied to the responding agencies, with little hope of public release for research.
 ◆ While engineered rubble piles are used for training, these sites are also reluctant to release information about their proprietary training grounds.</td></tr>
@@ -1412,6 +1436,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>Accurate and Scalable Multimodal Pathology Retrieval via Attentive Vision-Language Alignment</td><td>[2510.23224](http://arxiv.org/pdf/2510.23224)</td><td>◆ The rapid digitization of histopathology slides has opened up new possibilities for computational tools in clinical and research workflows.
+◆ Among these, content-based slide retrieval stands out, enabling pathologists to identify morphologically and semantically similar cases, thereby supporting precise diagnoses, enhancing consistency across observers, and assisting example-based education.
+◆ However, effective retrieval of whole slide images (WSIs) remains challenging due to their gigapixel scale and the difficulty of capturing subtle semantic differences amid abundant irrelevant content.</td></tr>
+<tr><td>2025-10-26</td><td>Seeing the Unseen: Towards Zero-Shot Inspection for Wind Turbine Blades using Knowledge-Augmented Vision Language Models</td><td>[2510.22868](http://arxiv.org/pdf/2510.22868)</td><td>◆ Wind turbine blades operate in harsh environments, making timely damage detection essential for preventing failures and optimizing maintenance.
+◆ Drone-based inspection and deep learning are promising, but typically depend on large, labeled datasets, which limit their ability to detect rare or evolving damage types.
+◆ To address this, we propose a zero-shot-oriented inspection framework that integrates Retrieval-Augmented Generation (RAG) with Vision-Language Models (VLM).</td></tr>
+<tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
+◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
+◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
+<tr><td>2025-10-26</td><td>Cross-view Localization and Synthesis - Datasets, Challenges and Opportunities</td><td>[2510.22736](http://arxiv.org/pdf/2510.22736)</td><td>◆ Cross-view localization and synthesis are two fundamental tasks in cross-view visual understanding, which deals with cross-view datasets: overhead (satellite or aerial) and ground-level imagery.
+◆ These tasks have gained increasing attention due to their broad applications in autonomous navigation, urban planning, and augmented reality.
+◆ Cross-view localization aims to estimate the geographic position of ground-level images based on information provided by overhead imagery while cross-view synthesis seeks to generate ground-level images based on information from the overhead imagery.</td></tr>
+<tr><td>2025-10-26</td><td>STATUS Bench: A Rigorous Benchmark for Evaluating Object State Understanding in Vision-Language Models</td><td>[2510.22571](http://arxiv.org/pdf/2510.22571)</td><td>◆ Object state recognition aims to identify the specific condition of objects, such as their positional states (e.g., open or closed) and functional states (e.g., on or off).
+◆ While recent Vision-Language Models (VLMs) are capable of performing a variety of multimodal tasks, it remains unclear how precisely they can identify object states.
+◆ To alleviate this issue, we introduce the STAte and Transition UnderStanding Benchmark (STATUS Bench), the first benchmark for rigorously evaluating the ability of VLMs to understand subtle variations in object states in diverse situations.</td></tr>
+<tr><td>2025-10-26</td><td>Bag-of-Word-Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</td><td>[2510.22529](http://arxiv.org/pdf/2510.22529)</td><td>◆ Loop closure is critical in Simultaneous Localization and Mapping (SLAM) systems to reduce accumulative drift and ensure global mapping consistency.
+◆ However, conventional methods struggle in perceptually aliased environments, such as narrow pipes, due to vector quantization, feature sparsity, and repetitive textures, while existing solutions often incur high computational costs.
+◆ This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency.</td></tr>
 <tr><td>2025-10-24</td><td>BioCAP: Exploiting Synthetic Captions Beyond Labels in Biological Foundation Models</td><td>[2510.20095](http://arxiv.org/pdf/2510.20095)</td><td>◆ This work investigates descriptive captions as an additional source of supervision for biological multimodal foundation models.
 ◆ Images and captions can be viewed as complementary samples from the latent morphospace of a species, each capturing certain biological traits.
 ◆ Incorporating captions during training encourages alignment with this shared latent structure, emphasizing potentially diagnostic characters while suppressing spurious correlations.</td></tr>
@@ -2274,6 +2316,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-26</td><td>Cross-Species Transfer Learning in Agricultural AI: Evaluating ZebraPose Adaptation for Dairy Cattle Pose Estimation</td><td>[2510.22618](http://arxiv.org/pdf/2510.22618)</td><td>◆ Pose estimation serves as a cornerstone of computer vision for understanding animal posture, behavior, and welfare.
+◆ Yet, agricultural applications remain constrained by the scarcity of large, annotated datasets for livestock, especially dairy cattle.
+◆ This study evaluates the potential and limitations of cross-species transfer learning by adapting ZebraPose - a vision transformer-based model trained on synthetic zebra imagery - for 27-keypoint detection in dairy cows under real barn conditions.</td></tr>
+<tr><td>2025-10-25</td><td>SemiETPicker: Fast and Label-Efficient Particle Picking for CryoET Tomography Using Semi-Supervised Learning</td><td>[2510.22454](http://arxiv.org/pdf/2510.22454)</td><td>◆ Cryogenic Electron Tomography (CryoET) combined with sub-volume averaging (SVA) is the only imaging modality capable of resolving protein structures inside cells at molecular resolution.
+◆ Particle picking, the task of localizing and classifying target proteins in 3D CryoET volumes, remains the main bottleneck.
+◆ Due to the reliance on time-consuming manual labels, the vast reserve of unlabeled tomograms remains underutilized.</td></tr>
 <tr><td>2025-10-21</td><td>GBlobs: Local LiDAR Geometry for Improved Sensor Placement Generalization</td><td>[2510.18539](http://arxiv.org/pdf/2510.18539)</td><td>◆ This technical report outlines the top-ranking solution for RoboSense 2025: Track 3, achieving state-of-the-art performance on 3D object detection under various sensor placements.
 ◆ Our submission utilizes GBlobs, a local point cloud feature descriptor specifically designed to enhance model generalization across diverse LiDAR configurations.
 ◆ Current LiDAR-based 3D detectors often suffer from a \enquote{geometric shortcut} when trained on conventional global features (\ie, absolute Cartesian coordinates).</td></tr>
@@ -2502,6 +2550,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>The MDW Hα Sky Survey: Data Release 1</td><td>[2510.22900](http://arxiv.org/pdf/2510.22900)</td><td>◆ The Mittelman-di Cicco-Walker (MDW) H$\alpha$ Sky Survey is an autonomously-operated all-sky narrow-band (3nm) H$\alpha$ imaging survey.
+◆ The survey was founded by amateur astronomers and the northern sky (Decl.
+◆ $\geq$ 0$^\circ$) is presented here in its second stage of refinement for academic use.</td></tr>
+<tr><td>2025-10-26</td><td>FairJudge: MLLM Judging for Social Attributes and Prompt Image Alignment</td><td>[2510.22827](http://arxiv.org/pdf/2510.22827)</td><td>◆ Text-to-image (T2I) systems lack simple, reproducible ways to evaluate how well images match prompts and how models treat social attributes.
+◆ Common proxies -- face classifiers and contrastive similarity -- reward surface cues, lack calibrated abstention, and miss attributes only weakly visible (for example, religion, culture, disability).
+◆ We present FairJudge, a lightweight protocol that treats instruction-following multimodal LLMs as fair judges.</td></tr>
 <tr><td>2025-10-08</td><td>Lattice-allocated Real-time Line Segment Feature Detection and Tracking Using Only an Event-based Camera</td><td>[2510.06829](http://arxiv.org/pdf/2510.06829)</td><td>◆ Line segment extraction is effective for capturing geometric features of human-made environments.
 ◆ Event-based cameras, which asynchronously respond to contrast changes along edges, enable efficient extraction by reducing redundant data.
 ◆ However, recent methods often rely on additional frame cameras or struggle with high event rates.</td></tr>
@@ -2768,6 +2822,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-25</td><td>I2-NeRF: Learning Neural Radiance Fields Under Physically-Grounded Media Interactions</td><td>[2510.22161](http://arxiv.org/pdf/2510.22161)</td><td>◆ Participating in efforts to endow generative AI with the 3D physical world perception, we propose I2-NeRF, a novel neural radiance field framework that enhances isometric and isotropic metric perception under media degradation.
+◆ While existing NeRF models predominantly rely on object-centric sampling, I2-NeRF introduces a reverse-stratified upsampling strategy to achieve near-uniform sampling across 3D space, thereby preserving isometry.
+◆ We further present a general radiative formulation for media degradation that unifies emission, absorption, and scattering into a particle model governed by the Beer-Lambert attenuation law.</td></tr>
 <tr><td>2025-10-23</td><td>From Far and Near: Perceptual Evaluation of Crowd Representations Across Levels of Detail</td><td>[2510.20558](http://arxiv.org/pdf/2510.20558)</td><td>◆ In this paper, we investigate how users perceive the visual quality of crowd character representations at different levels of detail (LoD) and viewing distances.
 ◆ Each representation: geometric meshes, image-based impostors, Neural Radiance Fields (NeRFs), and 3D Gaussians, exhibits distinct trade-offs between visual fidelity and computational performance.
 ◆ Our qualitative and quantitative results provide insights to guide the design of perceptually optimized LoD strategies for crowd rendering.</td></tr>
@@ -2792,7 +2849,7 @@
 <tr><td>2025-10-11</td><td>Opacity-Gradient Driven Density Control for Compact and Efficient Few-Shot 3D Gaussian Splatting</td><td>[2510.10257](http://arxiv.org/pdf/2510.10257)</td><td>◆ 3D Gaussian Splatting (3DGS) struggles in few-shot scenarios, where its standard adaptive density control (ADC) can lead to overfitting and bloated reconstructions.
 ◆ While state-of-the-art methods like FSGS improve quality, they often do so by significantly increasing the primitive count.
 ◆ This paper presents a framework that revises the core 3DGS optimization to prioritize efficiency.</td></tr>
-<tr><td>2025-10-11</td><td>Gesplat: Robust Pose-Free 3D Reconstruction via Geometry-Guided Gaussian Splatting</td><td>[2510.10097](http://arxiv.org/pdf/2510.10097)</td><td>◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have advanced 3D reconstruction and novel view synthesis, but remain heavily dependent on accurate camera poses and dense viewpoint coverage.
+<tr><td>2025-10-27</td><td>Gesplat: Robust Pose-Free 3D Reconstruction via Geometry-Guided Gaussian Splatting</td><td>[2510.10097](http://arxiv.org/pdf/2510.10097)</td><td>◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have advanced 3D reconstruction and novel view synthesis, but remain heavily dependent on accurate camera poses and dense viewpoint coverage.
 ◆ These requirements limit their applicability in sparse-view settings, where pose estimation becomes unreliable and supervision is insufficient.
 ◆ To overcome these challenges, we introduce Gesplat, a 3DGS-based framework that enables robust novel view synthesis and geometrically consistent reconstruction from unposed sparse images.</td></tr>
 <tr><td>2025-10-10</td><td>Geometry-Aware Scene Configurations for Novel View Synthesis</td><td>[2510.09880](http://arxiv.org/pdf/2510.09880)</td><td>◆ We propose scene-adaptive strategies to efficiently allocate representation capacity for generating immersive experiences of indoor environments from incomplete observations.
@@ -3419,4 +3476,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.27
+> 更新于: 2025.10.28
