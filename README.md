@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.28)
+# 计算机视觉领域最新论文 (2025.10.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-28</td><td>Spatiotemporal Calibration of Doppler Velocity Logs for Underwater Robots</td><td>[2510.24571](http://arxiv.org/pdf/2510.24571)</td><td>◆ The calibration of extrinsic parameters and clock offsets between sensors for high-accuracy performance in underwater SLAM systems remains insufficiently explored.
+◆ Existing methods for Doppler Velocity Log (DVL) calibration are either constrained to specific sensor configurations or rely on oversimplified assumptions, and none jointly estimate translational extrinsics and time offsets.
+◆ We propose a Unified Iterative Calibration (UIC) framework for general DVL sensor setups, formulated as a Maximum A Posteriori (MAP) estimation with a Gaussian Process (GP) motion prior for high-fidelity motion interpolation.</td></tr>
+<tr><td>2025-10-28</td><td>GeVI-SLAM: Gravity-Enhanced Stereo Visua Inertial SLAM for Underwater Robots</td><td>[2510.24533](http://arxiv.org/pdf/2510.24533)</td><td>◆ Accurate visual inertial simultaneous localization and mapping (VI SLAM) for underwater robots remains a significant challenge due to frequent visual degeneracy and insufficient inertial measurement unit (IMU) motion excitation.
+◆ In this paper, we present GeVI-SLAM, a gravity-enhanced stereo VI SLAM system designed to address these issues.
+◆ By leveraging the stereo camera&#x27;s direct depth estimation ability, we eliminate the need to estimate scale during IMU initialization, enabling stable operation even under low acceleration dynamics.</td></tr>
+<tr><td>2025-10-28</td><td>A Survey on Collaborative SLAM with 3D Gaussian Splatting</td><td>[2510.23988](http://arxiv.org/pdf/2510.23988)</td><td>◆ This survey comprehensively reviews the evolving field of multi-robot collaborative Simultaneous Localization and Mapping (SLAM) using 3D Gaussian Splatting (3DGS).
+◆ As an explicit scene representation, 3DGS has enabled unprecedented real-time, high-fidelity rendering, ideal for robotics.
+◆ However, its use in multi-robot systems introduces significant challenges in maintaining global consistency, managing communication, and fusing data from heterogeneous sources.</td></tr>
 <tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
 ◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
 ◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
@@ -1445,7 +1454,7 @@
 <tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
 ◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
 ◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
-<tr><td>2025-10-26</td><td>Cross-view Localization and Synthesis - Datasets, Challenges and Opportunities</td><td>[2510.22736](http://arxiv.org/pdf/2510.22736)</td><td>◆ Cross-view localization and synthesis are two fundamental tasks in cross-view visual understanding, which deals with cross-view datasets: overhead (satellite or aerial) and ground-level imagery.
+<tr><td>2025-10-26</td><td>Cross-view Localization and Synthesis -- Datasets, Challenges and Opportunities</td><td>[2510.22736](http://arxiv.org/pdf/2510.22736)</td><td>◆ Cross-view localization and synthesis are two fundamental tasks in cross-view visual understanding, which deals with cross-view datasets: overhead (satellite or aerial) and ground-level imagery.
 ◆ These tasks have gained increasing attention due to their broad applications in autonomous navigation, urban planning, and augmented reality.
 ◆ Cross-view localization aims to estimate the geographic position of ground-level images based on information provided by overhead imagery while cross-view synthesis seeks to generate ground-level images based on information from the overhead imagery.</td></tr>
 <tr><td>2025-10-26</td><td>STATUS Bench: A Rigorous Benchmark for Evaluating Object State Understanding in Vision-Language Models</td><td>[2510.22571](http://arxiv.org/pdf/2510.22571)</td><td>◆ Object state recognition aims to identify the specific condition of objects, such as their positional states (e.g., open or closed) and functional states (e.g., on or off).
@@ -3476,4 +3485,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.28
+> 更新于: 2025.10.29
