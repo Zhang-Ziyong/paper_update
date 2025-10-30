@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.10.29)
+# 计算机视觉领域最新论文 (2025.10.30)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>EA3D: Online Open-World 3D Object Extraction from Streaming Videos</td><td>[2510.25146](http://arxiv.org/pdf/2510.25146)</td><td>◆ Current 3D scene understanding methods are limited by offline-collected multi-view data or pre-constructed 3D geometry.
+◆ In this paper, we present ExtractAnything3D (EA3D), a unified online framework for open-world 3D object extraction that enables simultaneous geometric reconstruction and holistic scene understanding.
+◆ Given a streaming video, EA3D dynamically interprets each frame using vision-language and 2D vision foundation encoders to extract object-level knowledge.</td></tr>
 <tr><td>2025-10-28</td><td>Spatiotemporal Calibration of Doppler Velocity Logs for Underwater Robots</td><td>[2510.24571](http://arxiv.org/pdf/2510.24571)</td><td>◆ The calibration of extrinsic parameters and clock offsets between sensors for high-accuracy performance in underwater SLAM systems remains insufficiently explored.
 ◆ Existing methods for Doppler Velocity Log (DVL) calibration are either constrained to specific sensor configurations or rely on oversimplified assumptions, and none jointly estimate translational extrinsics and time offsets.
 ◆ We propose a Unified Iterative Calibration (UIC) framework for general DVL sensor setups, formulated as a Maximum A Posteriori (MAP) estimation with a Gaussian Process (GP) motion prior for high-fidelity motion interpolation.</td></tr>
@@ -1014,6 +1017,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>Lost in Phonation: Voice Quality Variation as an Evaluation Dimension for Speech Foundation Models</td><td>[2510.25577](http://arxiv.org/pdf/2510.25577)</td><td>◆ Recent advances in speech foundation models (SFMs) have enabled the direct processing of spoken language from raw audio, bypassing intermediate textual representations.
+◆ This capability allows SFMs to be exposed to, and potentially respond to, rich paralinguistic variations embedded in the input speech signal.
+◆ One under-explored dimension of paralinguistic variation is voice quality, encompassing phonation types such as creaky and breathy voice.</td></tr>
+<tr><td>2025-10-27</td><td>SFMS-ALR: Script-First Multilingual Speech Synthesis with Adaptive Locale Resolution</td><td>[2510.25178](http://arxiv.org/pdf/2510.25178)</td><td>◆ Intra-sentence multilingual speech synthesis (code-switching TTS) remains a major challenge due to abrupt language shifts, varied scripts, and mismatched prosody between languages.
+◆ Conventional TTS systems are typically monolingual and fail to produce natural, intelligible speech in mixed-language contexts.
+◆ We introduce Script-First Multilingual Synthesis with Adaptive Locale Resolution (SFMS-ALR), an engine-agnostic framework for fluent, real-time code-switched speech generation.</td></tr>
 <tr><td>2025-10-27</td><td>Adapting Speech Foundation Models with Large Language Models for Unified Speech Recognition</td><td>[2510.22961](http://arxiv.org/pdf/2510.22961)</td><td>◆ Unified speech recognition aims to perform auditory, visual, and audiovisual speech recognition within a single model framework.
 ◆ While speech foundation models (SFMs) have demonstrated remarkable performance in auditory tasks, their adaptation to multimodal scenarios remains underexplored.
 ◆ This paper presents UASR-LLM, a novel framework that adapts frozen SFMs to unified VSR, ASR, and AVSR tasks by leveraging large language models (LLMs) as text decoders.</td></tr>
@@ -1445,6 +1454,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>Instance-Level Composed Image Retrieval</td><td>[2510.25387](http://arxiv.org/pdf/2510.25387)</td><td>◆ The progress of composed image retrieval (CIR), a popular research direction in image retrieval, where a combined visual and textual query is used, is held back by the absence of high-quality training and evaluation data.
+◆ We introduce a new evaluation dataset, i-CIR, which, unlike existing datasets, focuses on an instance-level class definition.
+◆ The goal is to retrieve images that contain the same particular object as the visual query, presented under a variety of modifications defined by textual queries.</td></tr>
+<tr><td>2025-10-28</td><td>DualCap: Enhancing Lightweight Image Captioning via Dual Retrieval with Similar Scenes Visual Prompts</td><td>[2510.24813](http://arxiv.org/pdf/2510.24813)</td><td>◆ Recent lightweight retrieval-augmented image caption models often utilize retrieved data solely as text prompts, thereby creating a semantic gap by leaving the original visual features unenhanced, particularly for object details or complex scenes.
+◆ To address this limitation, we propose $DualCap$, a novel approach that enriches the visual representation by generating a visual prompt from retrieved similar images.
+◆ Our model employs a dual retrieval mechanism, using standard image-to-text retrieval for text prompts and a novel image-to-image retrieval to source visually analogous scenes.</td></tr>
 <tr><td>2025-10-27</td><td>Accurate and Scalable Multimodal Pathology Retrieval via Attentive Vision-Language Alignment</td><td>[2510.23224](http://arxiv.org/pdf/2510.23224)</td><td>◆ The rapid digitization of histopathology slides has opened up new possibilities for computational tools in clinical and research workflows.
 ◆ Among these, content-based slide retrieval stands out, enabling pathologists to identify morphologically and semantically similar cases, thereby supporting precise diagnoses, enhancing consistency across observers, and assisting example-based education.
 ◆ However, effective retrieval of whole slide images (WSIs) remains challenging due to their gigapixel scale and the difficulty of capturing subtle semantic differences amid abundant irrelevant content.</td></tr>
@@ -2831,6 +2846,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>4-Doodle: Text to 3D Sketches that Move!</td><td>[2510.25319](http://arxiv.org/pdf/2510.25319)</td><td>◆ We present a novel task: text-to-3D sketch animation, which aims to bring freeform sketches to life in dynamic 3D space.
+◆ Unlike prior works focused on photorealistic content generation, we target sparse, stylized, and view-consistent 3D vector sketches, a lightweight and interpretable medium well-suited for visual communication and prototyping.
+◆ However, this task is very challenging: (i) no paired dataset exists for text and 3D (or 4D) sketches; (ii) sketches require structural abstraction that is difficult to model with conventional 3D representations like NeRFs or point clouds; and (iii) animating such sketches demands temporal coherence and multi-view consistency, which current pipelines do not address.</td></tr>
 <tr><td>2025-10-25</td><td>I2-NeRF: Learning Neural Radiance Fields Under Physically-Grounded Media Interactions</td><td>[2510.22161](http://arxiv.org/pdf/2510.22161)</td><td>◆ Participating in efforts to endow generative AI with the 3D physical world perception, we propose I2-NeRF, a novel neural radiance field framework that enhances isometric and isotropic metric perception under media degradation.
 ◆ While existing NeRF models predominantly rely on object-centric sampling, I2-NeRF introduces a reverse-stratified upsampling strategy to achieve near-uniform sampling across 3D space, thereby preserving isometry.
 ◆ We further present a general radiative formulation for media degradation that unifies emission, absorption, and scattering into a particle model governed by the Beer-Lambert attenuation law.</td></tr>
@@ -3485,4 +3503,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.29
+> 更新于: 2025.10.30
