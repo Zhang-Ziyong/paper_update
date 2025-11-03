@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.02)
+# 计算机视觉领域最新论文 (2025.11.03)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond</td><td>[2510.27133](http://arxiv.org/pdf/2510.27133)</td><td>◆ 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM).
+◆ While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management.
+◆ However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible.</td></tr>
 <tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
 ◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
 ◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
@@ -1460,6 +1463,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>Approximate Diverse $k$-nearest Neighbor Search in Vector Database</td><td>[2510.27243](http://arxiv.org/pdf/2510.27243)</td><td>◆ Approximate $k$-nearest neighbor search (A$k$-NNS) is a core operation in vector databases, underpinning applications such as retrieval-augmented generation (RAG) and image retrieval.
+◆ In these scenarios, users often prefer diverse result sets to minimize redundancy and enhance information value.
+◆ However, existing greedy-based diverse methods frequently yield sub-optimal results, failing to adequately approximate the optimal similarity score under certain diversification level.</td></tr>
+<tr><td>2025-10-30</td><td>Evaluating Perspectival Biases in Cross-Modal Retrieval</td><td>[2510.26861](http://arxiv.org/pdf/2510.26861)</td><td>◆ Multimodal retrieval systems are expected to operate in a semantic space, agnostic to the language or cultural origin of the query.
+◆ In practice, however, retrieval outcomes systematically reflect perspectival biases: deviations shaped by linguistic prevalence and cultural associations.
+◆ We study two such biases.</td></tr>
 <tr><td>2025-10-30</td><td>Scaling Image Geo-Localization to Continent Level</td><td>[2510.26795](http://arxiv.org/pdf/2510.26795)</td><td>◆ Determining the precise geographic location of an image at a global scale remains an unsolved challenge.
 ◆ Standard image retrieval techniques are inefficient due to the sheer volume of images (&gt;100M) and fail when coverage is insufficient.
 ◆ Scalable solutions, however, involve a trade-off: global classification typically yields coarse results (10+ kilometers), while cross-view retrieval between ground and aerial imagery suffers from a domain gap and has been primarily studied on smaller regions.</td></tr>
@@ -2855,6 +2864,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>SAGS: Self-Adaptive Alias-Free Gaussian Splatting for Dynamic Surgical Endoscopic Reconstruction</td><td>[2510.27318](http://arxiv.org/pdf/2510.27318)</td><td>◆ Surgical reconstruction of dynamic tissues from endoscopic videos is a crucial technology in robot-assisted surgery.
+◆ The development of Neural Radiance Fields (NeRFs) has greatly advanced deformable tissue reconstruction, achieving high-quality results from video and image sequences.
+◆ However, reconstructing deformable endoscopic scenes remains challenging due to aliasing and artifacts caused by tissue movement, which can significantly degrade visualization quality.</td></tr>
 <tr><td>2025-10-29</td><td>4-Doodle: Text to 3D Sketches that Move!</td><td>[2510.25319](http://arxiv.org/pdf/2510.25319)</td><td>◆ We present a novel task: text-to-3D sketch animation, which aims to bring freeform sketches to life in dynamic 3D space.
 ◆ Unlike prior works focused on photorealistic content generation, we target sparse, stylized, and view-consistent 3D vector sketches, a lightweight and interpretable medium well-suited for visual communication and prototyping.
 ◆ However, this task is very challenging: (i) no paired dataset exists for text and 3D (or 4D) sketches; (ii) sketches require structural abstraction that is difficult to model with conventional 3D representations like NeRFs or point clouds; and (iii) animating such sketches demands temporal coherence and multi-view consistency, which current pipelines do not address.</td></tr>
@@ -3512,4 +3524,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.02
+> 更新于: 2025.11.03
