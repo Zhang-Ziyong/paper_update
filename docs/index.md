@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.03)
+# 计算机视觉领域最新论文 (2025.11.04)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1462,7 +1462,7 @@
 <tr><td>2025-10-31</td><td>Approximate Diverse $k$-nearest Neighbor Search in Vector Database</td><td>[2510.27243](http://arxiv.org/pdf/2510.27243)</td><td>◆ Approximate $k$-nearest neighbor search (A$k$-NNS) is a core operation in vector databases, underpinning applications such as retrieval-augmented generation (RAG) and image retrieval.
 ◆ In these scenarios, users often prefer diverse result sets to minimize redundancy and enhance information value.
 ◆ However, existing greedy-based diverse methods frequently yield sub-optimal results, failing to adequately approximate the optimal similarity score under certain diversification level.</td></tr>
-<tr><td>2025-10-30</td><td>Evaluating Perspectival Biases in Cross-Modal Retrieval</td><td>[2510.26861](http://arxiv.org/pdf/2510.26861)</td><td>◆ Multimodal retrieval systems are expected to operate in a semantic space, agnostic to the language or cultural origin of the query.
+<tr><td>2025-11-03</td><td>Evaluating Perspectival Biases in Cross-Modal Retrieval</td><td>[2510.26861](http://arxiv.org/pdf/2510.26861)</td><td>◆ Multimodal retrieval systems are expected to operate in a semantic space, agnostic to the language or cultural origin of the query.
 ◆ In practice, however, retrieval outcomes systematically reflect perspectival biases: deviations shaped by linguistic prevalence and cultural associations.
 ◆ We study two such biases.</td></tr>
 <tr><td>2025-10-30</td><td>Scaling Image Geo-Localization to Continent Level</td><td>[2510.26795](http://arxiv.org/pdf/2510.26795)</td><td>◆ Determining the precise geographic location of an image at a global scale remains an unsolved challenge.
@@ -1483,7 +1483,7 @@
 <tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
 ◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
 ◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
-<tr><td>2025-10-26</td><td>Cross-view Localization and Synthesis -- Datasets, Challenges and Opportunities</td><td>[2510.22736](http://arxiv.org/pdf/2510.22736)</td><td>◆ Cross-view localization and synthesis are two fundamental tasks in cross-view visual understanding, which deals with cross-view datasets: overhead (satellite or aerial) and ground-level imagery.
+<tr><td>2025-10-30</td><td>Cross-view Localization and Synthesis -- Datasets, Challenges and Opportunities</td><td>[2510.22736](http://arxiv.org/pdf/2510.22736)</td><td>◆ Cross-view localization and synthesis are two fundamental tasks in cross-view visual understanding, which deals with cross-view datasets: overhead (satellite or aerial) and ground-level imagery.
 ◆ These tasks have gained increasing attention due to their broad applications in autonomous navigation, urban planning, and augmented reality.
 ◆ Cross-view localization aims to estimate the geographic position of ground-level images based on information provided by overhead imagery while cross-view synthesis seeks to generate ground-level images based on information from the overhead imagery.</td></tr>
 <tr><td>2025-10-26</td><td>STATUS Bench: A Rigorous Benchmark for Evaluating Object State Understanding in Vision-Language Models</td><td>[2510.22571](http://arxiv.org/pdf/2510.22571)</td><td>◆ Object state recognition aims to identify the specific condition of objects, such as their positional states (e.g., open or closed) and functional states (e.g., on or off).
@@ -2875,7 +2875,7 @@
 <tr><td>2025-10-22</td><td>Advances in 4D Representation: Geometry, Motion, and Interaction</td><td>[2510.19255](http://arxiv.org/pdf/2510.19255)</td><td>◆ We present a survey on 4D generation and reconstruction, a fast-evolving subfield of computer graphics whose developments have been propelled by recent advances in neural fields, geometric and motion deep learning, as well 3D generative artificial intelligence (GenAI).
 ◆ While our survey is not the first of its kind, we build our coverage of the domain from a unique and distinctive perspective of 4D representations\/}, to model 3D geometry evolving over time while exhibiting motion and interaction.
 ◆ Specifically, instead of offering an exhaustive enumeration of many works, we take a more selective approach by focusing on representative works to highlight both the desirable properties and ensuing challenges of each representation under different computation, application, and data scenarios.</td></tr>
-<tr><td>2025-10-16</td><td>GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</td><td>[2510.14270](http://arxiv.org/pdf/2510.14270)</td><td>◆ Scene reconstruction has emerged as a central challenge in computer vision, with approaches such as Neural Radiance Fields (NeRF) and Gaussian Splatting achieving remarkable progress.
+<tr><td>2025-11-03</td><td>GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</td><td>[2510.14270](http://arxiv.org/pdf/2510.14270)</td><td>◆ Scene reconstruction has emerged as a central challenge in computer vision, with approaches such as Neural Radiance Fields (NeRF) and Gaussian Splatting achieving remarkable progress.
 ◆ While Gaussian Splatting demonstrates strong performance on large-scale datasets, it often struggles to capture fine details or maintain realism in regions with sparse coverage, largely due to the inherent limitations of sparse 3D training data.
 ◆ In this work, we propose GauSSmart, a hybrid method that effectively bridges 2D foundational models and 3D Gaussian Splatting reconstruction.</td></tr>
 <tr><td>2025-10-16</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
@@ -3512,4 +3512,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.03
+> 更新于: 2025.11.04
