@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.04)
+# 计算机视觉领域最新论文 (2025.11.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Self-Supervised Moving Object Segmentation of Sparse and Noisy Radar Point Clouds</td><td>[2511.02395](http://arxiv.org/pdf/2511.02395)</td><td>◆ Moving object segmentation is a crucial task for safe and reliable autonomous mobile systems like self-driving cars, improving the reliability and robustness of subsequent tasks like SLAM or path planning.
+◆ While the segmentation of camera or LiDAR data is widely researched and achieves great results, it often introduces an increased latency by requiring the accumulation of temporal sequences to gain the necessary temporal context.
+◆ Radar sensors overcome this problem with their ability to provide a direct measurement of a point&#x27;s Doppler velocity, which can be exploited for single-scan moving object segmentation.</td></tr>
+<tr><td>2025-11-03</td><td>TurboMap: GPU-Accelerated Local Mapping for Visual SLAM</td><td>[2511.02036](http://arxiv.org/pdf/2511.02036)</td><td>◆ This paper presents TurboMap, a GPU-accelerated and CPU-optimized local mapping module for visual SLAM systems.
+◆ We identify key performance bottlenecks in the local mapping process for visual SLAM and address them through targeted GPU and CPU optimizations.
+◆ Specifically, we offload map point triangulation and fusion to the GPU, accelerate redundant keyframe culling on the CPU, and integrate a GPU-accelerated solver to speed up local bundle adjustment.</td></tr>
+<tr><td>2025-11-03</td><td>CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odometry for Extreme Degradation Coal Mine Tunnels</td><td>[2511.01379](http://arxiv.org/pdf/2511.01379)</td><td>◆ Simultaneous Localization and Mapping (SLAM) in large-scale, complex, and GPS-denied underground coal mine environments presents significant challenges.
+◆ Sensors must contend with abnormal operating conditions: GPS unavailability impedes scene reconstruction and absolute geographic referencing, uneven or slippery terrain degrades wheel odometer accuracy, and long, feature-poor tunnels reduce LiDAR effectiveness.
+◆ To address these issues, we propose CoalMine-LiDAR-IMU-UWB-Wheel-Odometry (CM-LIUW-Odometry), a multimodal SLAM framework based on the Iterated Error-State Kalman Filter (IESKF).</td></tr>
+<tr><td>2025-11-03</td><td>Tackling the Kidnapped Robot Problem via Sparse Feasible Hypothesis Sampling and Reliable Batched Multi-Stage Inference</td><td>[2511.01219](http://arxiv.org/pdf/2511.01219)</td><td>◆ This paper addresses the Kidnapped Robot Problem (KRP), a core localization challenge of relocalizing a robot in a known map without prior pose estimate when localization loss or at SLAM initialization.
+◆ For this purpose, a passive 2-D global relocalization framework is proposed.
+◆ It estimates the global pose efficiently and reliably from a single LiDAR scan and an occupancy grid map while the robot remains stationary, thereby enhancing the long-term autonomy of mobile robots.</td></tr>
+<tr><td>2025-11-03</td><td>LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and Metric-Scale Dense Mapping</td><td>[2511.01186](http://arxiv.org/pdf/2511.01186)</td><td>◆ Reconstructing large-scale colored point clouds is an important task in robotics, supporting perception, navigation, and scene understanding.
+◆ Despite advances in LiDAR inertial visual odometry (LIVO), its performance remains highly sensitive to extrinsic calibration.
+◆ Meanwhile, 3D vision foundation models, such as VGGT, suffer from limited scalability in large environments and inherently lack metric scale.</td></tr>
+<tr><td>2025-11-01</td><td>Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles</td><td>[2511.00635](http://arxiv.org/pdf/2511.00635)</td><td>◆ As various 3D light detection and ranging (LiDAR) sensors have been introduced to the market, research on multi-session simultaneous localization and mapping (MSS) using heterogeneous LiDAR sensors has been actively conducted.
+◆ Existing MSS methods mostly rely on loop closure detection for inter-session alignment; however, the performance of loop closure detection can be potentially degraded owing to the differences in the density and field of view (FoV) of the sensors used in different sessions.
+◆ In this study, we challenge the existing paradigm that relies heavily on loop detection modules and propose a novel MSS framework, called Multi-Mapcher, that employs large-scale map-to-map registration to perform inter-session initial alignment, which is commonly assumed to be infeasible, by leveraging outlier-robust 3D point cloud registration.</td></tr>
 <tr><td>2025-10-31</td><td>WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond</td><td>[2510.27133](http://arxiv.org/pdf/2510.27133)</td><td>◆ 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM).
 ◆ While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management.
 ◆ However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible.</td></tr>
@@ -1024,6 +1042,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Cycle-Sync: Robust Global Camera Pose Estimation through Enhanced Cycle-Consistent Synchronization</td><td>[2511.02329](http://arxiv.org/pdf/2511.02329)</td><td>◆ We introduce Cycle-Sync, a robust and global framework for estimating camera poses (both rotations and locations).
+◆ Our core innovation is a location solver that adapts message-passing least squares (MPLS) -- originally developed for group synchronization -- to camera location estimation.
+◆ We modify MPLS to emphasize cycle-consistent information, redefine cycle consistencies using estimated distances from previous iterations, and incorporate a Welsch-type robust loss.</td></tr>
+<tr><td>2025-11-03</td><td>Speech-DRAME: A Framework for Human-Aligned Benchmarks in Speech Role-Play</td><td>[2511.01261](http://arxiv.org/pdf/2511.01261)</td><td>◆ Role-play has become a key testbed for generative models, expanding from text-only dialogue to multimodal interaction.
+◆ Extending role-play to speech captures prosody, emotion, and delivery, but also poses new evaluation challenges.
+◆ Current pipelines often use audio large language models (ALLMs) as zero-shot judges, which miss paralinguistic cues, collapse multiple aspects into coarse scores, and rely on synthetic speech references that fail to reflect real-world roles.</td></tr>
+<tr><td>2025-11-01</td><td>Oitijjo-3D: Generative AI Framework for Rapid 3D Heritage Reconstruction from Street View Imagery</td><td>[2511.00362](http://arxiv.org/pdf/2511.00362)</td><td>◆ Cultural heritage restoration in Bangladesh faces a dual challenge of limited resources and scarce technical expertise.
+◆ Traditional 3D digitization methods, such as photogrammetry or LiDAR scanning, require expensive hardware, expert operators, and extensive on-site access, which are often infeasible in developing contexts.
+◆ As a result, many of Bangladesh&#x27;s architectural treasures, from the Paharpur Buddhist Monastery to Ahsan Manzil, remain vulnerable to decay and inaccessible in digital form.</td></tr>
 <tr><td>2025-10-29</td><td>Lost in Phonation: Voice Quality Variation as an Evaluation Dimension for Speech Foundation Models</td><td>[2510.25577](http://arxiv.org/pdf/2510.25577)</td><td>◆ Recent advances in speech foundation models (SFMs) have enabled the direct processing of spoken language from raw audio, bypassing intermediate textual representations.
 ◆ This capability allows SFMs to be exposed to, and potentially respond to, rich paralinguistic variations embedded in the input speech signal.
 ◆ One under-explored dimension of paralinguistic variation is voice quality, encompassing phonation types such as creaky and breathy voice.</td></tr>
@@ -1459,6 +1486,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
+◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
+◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
+<tr><td>2025-11-04</td><td>LUMA-RAG: Lifelong Multimodal Agents with Provably Stable Streaming Alignment</td><td>[2511.02371](http://arxiv.org/pdf/2511.02371)</td><td>◆ Retrieval-Augmented Generation (RAG) has emerged as the dominant paradigm for grounding large language model outputs in verifiable evidence.
+◆ However, as modern AI agents transition from static knowledge bases to continuous multimodal streams encompassing text, images, video, and audio, two critical challenges arise: maintaining index freshness without prohibitive re-indexing costs, and preserving cross-modal semantic consistency across heterogeneous embedding spaces.
+◆ We present LUMA-RAG, a lifelong multimodal agent architecture featuring three key innovations: (i) a streaming, multi-tier memory system that dynamically spills embeddings from a hot HNSW tier to a compressed IVFPQ tier under strict memory budgets; (ii) a streaming CLAP-&gt;CLIP alignment bridge that maintains cross-modal consistency through incremental orthogonal Procrustes updates; and (iii) stability-aware retrieval telemetry providing Safe@k guarantees by jointly bounding alignment drift and quantization error.</td></tr>
+<tr><td>2025-11-03</td><td>SEPS: Semantic-enhanced Patch Slimming Framework for fine-grained cross-modal alignment</td><td>[2511.01390](http://arxiv.org/pdf/2511.01390)</td><td>◆ Fine-grained cross-modal alignment aims to establish precise local correspondences between vision and language, forming a cornerstone for visual question answering and related multimodal applications.
+◆ Current approaches face challenges in addressing patch redundancy and ambiguity, which arise from the inherent information density disparities across modalities.
+◆ Recently, Multimodal Large Language Models (MLLMs) have emerged as promising solutions to bridge this gap through their robust semantic generation capabilities.</td></tr>
+<tr><td>2025-11-02</td><td>Dynamic Multi-level Weighted Alignment Network for Zero-shot Sketch-based Image Retrieval</td><td>[2511.00925](http://arxiv.org/pdf/2511.00925)</td><td>◆ The problem of zero-shot sketch-based image retrieval (ZS-SBIR) has achieved increasing attention due to its wide applications, e.g.
+◆ e-commerce.
+◆ Despite progress made in this field, previous works suffer from using imbalanced samples of modalities and inconsistent low-quality information during training, resulting in sub-optimal performance.</td></tr>
+<tr><td>2025-11-01</td><td>Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles</td><td>[2511.00635](http://arxiv.org/pdf/2511.00635)</td><td>◆ As various 3D light detection and ranging (LiDAR) sensors have been introduced to the market, research on multi-session simultaneous localization and mapping (MSS) using heterogeneous LiDAR sensors has been actively conducted.
+◆ Existing MSS methods mostly rely on loop closure detection for inter-session alignment; however, the performance of loop closure detection can be potentially degraded owing to the differences in the density and field of view (FoV) of the sensors used in different sessions.
+◆ In this study, we challenge the existing paradigm that relies heavily on loop detection modules and propose a novel MSS framework, called Multi-Mapcher, that employs large-scale map-to-map registration to perform inter-session initial alignment, which is commonly assumed to be infeasible, by leveraging outlier-robust 3D point cloud registration.</td></tr>
 <tr><td>2025-10-31</td><td>Approximate Diverse $k$-nearest Neighbor Search in Vector Database</td><td>[2510.27243](http://arxiv.org/pdf/2510.27243)</td><td>◆ Approximate $k$-nearest neighbor search (A$k$-NNS) is a core operation in vector databases, underpinning applications such as retrieval-augmented generation (RAG) and image retrieval.
 ◆ In these scenarios, users often prefer diverse result sets to minimize redundancy and enhance information value.
 ◆ However, existing greedy-based diverse methods frequently yield sub-optimal results, failing to adequately approximate the optimal similarity score under certain diversification level.</td></tr>
@@ -2584,6 +2626,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
+◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
+◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
 <tr><td>2025-10-27</td><td>The MDW Hα Sky Survey: Data Release 1</td><td>[2510.22900](http://arxiv.org/pdf/2510.22900)</td><td>◆ The Mittelman-di Cicco-Walker (MDW) H$\alpha$ Sky Survey is an autonomously-operated all-sky narrow-band (3nm) H$\alpha$ imaging survey.
 ◆ The survey was founded by amateur astronomers and the northern sky (Decl.
 ◆ $\geq$ 0$^\circ$) is presented here in its second stage of refinement for academic use.</td></tr>
@@ -2854,6 +2899,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>LiteVoxel: Low-memory Intelligent Thresholding for Efficient Voxel Rasterization</td><td>[2511.02510](http://arxiv.org/pdf/2511.02510)</td><td>◆ Sparse-voxel rasterization is a fast, differentiable alternative for optimization-based scene reconstruction, but it tends to underfit low-frequency content, depends on brittle pruning heuristics, and can overgrow in ways that inflate VRAM.
+◆ We introduce LiteVoxel, a self-tuning training pipeline that makes SV rasterization both steadier and lighter.
+◆ Our loss is made low-frequency aware via an inverse-Sobel reweighting with a mid-training gamma-ramp, shifting gradient budget to flat regions only after geometry stabilize.</td></tr>
+<tr><td>2025-11-04</td><td>Object-Centric 3D Gaussian Splatting for Strawberry Plant Reconstruction and Phenotyping</td><td>[2511.02207](http://arxiv.org/pdf/2511.02207)</td><td>◆ Strawberries are among the most economically significant fruits in the United States, generating over $2 billion in annual farm-gate sales and accounting for approximately 13% of the total fruit production value.
+◆ Plant phenotyping plays a vital role in selecting superior cultivars by characterizing plant traits such as morphology, canopy structure, and growth dynamics.
+◆ However, traditional plant phenotyping methods are time-consuming, labor-intensive, and often destructive.</td></tr>
 <tr><td>2025-10-31</td><td>SAGS: Self-Adaptive Alias-Free Gaussian Splatting for Dynamic Surgical Endoscopic Reconstruction</td><td>[2510.27318](http://arxiv.org/pdf/2510.27318)</td><td>◆ Surgical reconstruction of dynamic tissues from endoscopic videos is a crucial technology in robot-assisted surgery.
 ◆ The development of Neural Radiance Fields (NeRFs) has greatly advanced deformable tissue reconstruction, achieving high-quality results from video and image sequences.
 ◆ However, reconstructing deformable endoscopic scenes remains challenging due to aliasing and artifacts caused by tissue movement, which can significantly degrade visualization quality.</td></tr>
@@ -3512,4 +3563,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.04
+> 更新于: 2025.11.05
