@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.05)
+# 计算机视觉领域最新论文 (2025.11.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2634,6 +2634,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-05</td><td>Robust Alignment of the Human Embryo in 3D Ultrasound using PCA and an Ensemble of Heuristic, Atlas-based and Learning-based Classifiers Evaluated on the Rotterdam Periconceptional Cohort</td><td>[2511.03416](http://arxiv.org/pdf/2511.03416)</td><td>◆ Standardized alignment of the embryo in three-dimensional (3D) ultrasound images aids prenatal growth monitoring by facilitating standard plane detection, improving visualization of landmarks and accentuating differences between different scans.
+◆ In this work, we propose an automated method for standardizing this alignment.
+◆ Given a segmentation mask of the embryo, Principal Component Analysis (PCA) is applied to the mask extracting the embryo&#x27;s principal axes, from which four candidate orientations are derived.</td></tr>
 <tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
 ◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
 ◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
@@ -3575,4 +3578,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.05
+> 更新于: 2025.11.06
