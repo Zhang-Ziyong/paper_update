@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.06)
+# 计算机视觉领域最新论文 (2025.11.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Almost-Global Convergence</td><td>[2511.04531](http://arxiv.org/pdf/2511.04531)</td><td>◆ Landmark Inertial Simultaneous Localisation and Mapping (LI-SLAM) is the problem of estimating the locations of landmarks in the environment and the robot&#x27;s pose relative to those landmarks using landmark position measurements and measurements from Inertial Measurement Unit (IMU).
+◆ This paper proposes a nonlinear observer for LI-SLAM posed in continuous time and analyses the observer in a base space that encodes all the observable states of LI-SLAM.
+◆ The local exponential stability and almost-global asymptotic stability of the error dynamics in base space is established in the proof section and validated using simulations.</td></tr>
+<tr><td>2025-11-06</td><td>PUL-SLAM: Path-Uncertainty Co-Optimization with Lightweight Stagnation Detection for Efficient Robotic Exploration</td><td>[2511.04180](http://arxiv.org/pdf/2511.04180)</td><td>◆ Existing Active SLAM methodologies face issues such as slow exploration speed and suboptimal paths.
+◆ To address these limitations, we propose a hybrid framework combining a Path-Uncertainty Co-Optimization Deep Reinforcement Learning framework and a Lightweight Stagnation Detection mechanism.
+◆ The Path-Uncertainty Co-Optimization framework jointly optimizes travel distance and map uncertainty through a dual-objective reward function, balancing exploration and exploitation.</td></tr>
+<tr><td>2025-11-04</td><td>Analytical modelling of a stop-less modular bus service with an application to charging strategies comparison</td><td>[2511.03754](http://arxiv.org/pdf/2511.03754)</td><td>◆ Buses are a vital component of metropolitan public transport, yet conventional bus services often struggle with inefficiencies including extended dwelling time, which increases in-vehicle travel time for non-alighting passengers.
+◆ A stop-less autonomous modular (SLAM) bus service has emerged as a solution, enabling dynamic capacity to reduce dwelling time.
+◆ Meanwhile, the electrification of buses is advancing as a strategy to mitigate greenhouse gas emissions and reduces operators&#x27; costs, but introduces new operational constraints due to charging requirements.</td></tr>
 <tr><td>2025-11-04</td><td>Self-Supervised Moving Object Segmentation of Sparse and Noisy Radar Point Clouds</td><td>[2511.02395](http://arxiv.org/pdf/2511.02395)</td><td>◆ Moving object segmentation is a crucial task for safe and reliable autonomous mobile systems like self-driving cars, improving the reliability and robustness of subsequent tasks like SLAM or path planning.
 ◆ While the segmentation of camera or LiDAR data is widely researched and achieves great results, it often introduces an increased latency by requiring the accumulation of temporal sequences to gain the necessary temporal context.
 ◆ Radar sensors overcome this problem with their ability to provide a direct measurement of a point&#x27;s Doppler velocity, which can be exploited for single-scan moving object segmentation.</td></tr>
@@ -1490,6 +1499,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Multi-Task Learning for Visually Grounded Reasoning in Gastrointestinal VQA</td><td>[2511.04384](http://arxiv.org/pdf/2511.04384)</td><td>◆ We present a multi-task framework for the MediaEval Medico 2025 challenge, leveraging a LoRA-tuned Florence-2 model for simultaneous visual question answering (VQA), explanation generation, and visual grounding.
+◆ The proposed system integrates three curated datasets: (1) Kvasir-VQA-x1 for question-answer learning, (2) a synthetically enriched explanation dataset offering structured medical reasoning, and (3) text-to-region pairs linking visual features with segmentation masks.
+◆ This multi-task setup enables the model to jointly learn visual grounding, reasoning, and interpretation, producing responses that are both accurate and interpretable.</td></tr>
+<tr><td>2025-11-06</td><td>An Efficient Algorithm for Learning-Based Visual Localization</td><td>[2511.04232](http://arxiv.org/pdf/2511.04232)</td><td>◆ This paper addresses the visual localization problem in Global Positioning System (GPS)-denied environments, where computational resources are often limited.
+◆ To achieve efficient and robust performance under these constraints, we propose a novel algorithm.
+◆ The algorithm stems from the optimal control principle (OCP).</td></tr>
 <tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
 ◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
 ◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
@@ -2400,6 +2415,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Automated Tennis Player and Ball Tracking with Court Keypoints Detection (Hawk Eye System)</td><td>[2511.04126](http://arxiv.org/pdf/2511.04126)</td><td>◆ This study presents a complete pipeline for automated tennis match analysis.
+◆ Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference.
+◆ Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court keypoint detection, our system provides detailed analytics including player movement patterns, ball speed, shot accuracy, and player reaction times.</td></tr>
 <tr><td>2025-10-26</td><td>Cross-Species Transfer Learning in Agricultural AI: Evaluating ZebraPose Adaptation for Dairy Cattle Pose Estimation</td><td>[2510.22618](http://arxiv.org/pdf/2510.22618)</td><td>◆ Pose estimation serves as a cornerstone of computer vision for understanding animal posture, behavior, and welfare.
 ◆ Yet, agricultural applications remain constrained by the scarcity of large, annotated datasets for livestock, especially dairy cattle.
 ◆ This study evaluates the potential and limitations of cross-species transfer learning by adapting ZebraPose - a vision transformer-based model trained on synthetic zebra imagery - for 27-keypoint detection in dairy cows under real barn conditions.</td></tr>
@@ -2912,6 +2930,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>FastGS: Training 3D Gaussian Splatting in 100 Seconds</td><td>[2511.04283](http://arxiv.org/pdf/2511.04283)</td><td>◆ The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead.
+◆ In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality.
+◆ We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism.</td></tr>
 <tr><td>2025-11-04</td><td>LiteVoxel: Low-memory Intelligent Thresholding for Efficient Voxel Rasterization</td><td>[2511.02510](http://arxiv.org/pdf/2511.02510)</td><td>◆ Sparse-voxel rasterization is a fast, differentiable alternative for optimization-based scene reconstruction, but it tends to underfit low-frequency content, depends on brittle pruning heuristics, and can overgrow in ways that inflate VRAM.
 ◆ We introduce LiteVoxel, a self-tuning training pipeline that makes SV rasterization both steadier and lighter.
 ◆ Our loss is made low-frequency aware via an inverse-Sobel reweighting with a mid-training gamma-ramp, shifting gradient budget to flat regions only after geometry stabilize.</td></tr>
@@ -3578,4 +3599,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.06
+> 更新于: 2025.11.07
