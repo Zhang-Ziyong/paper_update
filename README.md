@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.09)
+# 计算机视觉领域最新论文 (2025.11.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
+◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
+◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
 <tr><td>2025-11-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Almost-Global Convergence</td><td>[2511.04531](http://arxiv.org/pdf/2511.04531)</td><td>◆ Landmark Inertial Simultaneous Localisation and Mapping (LI-SLAM) is the problem of estimating the locations of landmarks in the environment and the robot&#x27;s pose relative to those landmarks using landmark position measurements and measurements from Inertial Measurement Unit (IMU).
 ◆ This paper proposes a nonlinear observer for LI-SLAM posed in continuous time and analyses the observer in a base space that encodes all the observable states of LI-SLAM.
 ◆ The local exponential stability and almost-global asymptotic stability of the error dynamics in base space is established in the proof section and validated using simulations.</td></tr>
@@ -1053,6 +1056,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Sub-Gyr variability around the SFMS and its contribution to the scatter</td><td>[2511.04745](http://arxiv.org/pdf/2511.04745)</td><td>◆ We aim to measure the evolution of individual galaxies around the Star Formation Main Sequence (SFMS) during the last Gyr as a function of their stellar mass to quantify how much of its scatter is due to short-term variability.We derived star formation histories using full spectral fitting for a sample of 8,960 galaxies from the MaNGA survey to track the position of the galaxies in the SFMS during the last Gyr.The variability correlates with both the stellar mass of the galaxies and their current position in both the SFMS and the mass-metallicity relation (MZR), with the position in the latter strongly affecting variability in SFR.
+◆ While most of the fluctuations are compatible with stochasticity, there is a very weak but statistically significant preference for $\sim135-150$ Myr time-scales.
+◆ These results support a strong self-regulation of SFR within galaxies, establishing characteristic intensities and time-scales for bursts of star formation and quenching episodes.</td></tr>
 <tr><td>2025-11-04</td><td>Cycle-Sync: Robust Global Camera Pose Estimation through Enhanced Cycle-Consistent Synchronization</td><td>[2511.02329](http://arxiv.org/pdf/2511.02329)</td><td>◆ We introduce Cycle-Sync, a robust and global framework for estimating camera poses (both rotations and locations).
 ◆ Our core innovation is a location solver that adapts message-passing least squares (MPLS) -- originally developed for group synchronization -- to camera location estimation.
 ◆ We modify MPLS to emphasize cycle-consistent information, redefine cycle consistencies using estimated distances from previous iterations, and incorporate a Welsch-type robust loss.</td></tr>
@@ -1499,6 +1505,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
+◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
+◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
+<tr><td>2025-11-07</td><td>DAFM: Dynamic Adaptive Fusion for Multi-Model Collaboration in Composed Image Retrieval</td><td>[2511.05020](http://arxiv.org/pdf/2511.05020)</td><td>◆ Composed Image Retrieval (CIR) is a cross-modal task that aims to retrieve target images from large-scale databases using a reference image and a modification text.
+◆ Most existing methods rely on a single model to perform feature fusion and similarity matching.
+◆ However, this paradigm faces two major challenges.</td></tr>
 <tr><td>2025-11-06</td><td>Multi-Task Learning for Visually Grounded Reasoning in Gastrointestinal VQA</td><td>[2511.04384](http://arxiv.org/pdf/2511.04384)</td><td>◆ We present a multi-task framework for the MediaEval Medico 2025 challenge, leveraging a LoRA-tuned Florence-2 model for simultaneous visual question answering (VQA), explanation generation, and visual grounding.
 ◆ The proposed system integrates three curated datasets: (1) Kvasir-VQA-x1 for question-answer learning, (2) a synthetically enriched explanation dataset offering structured medical reasoning, and (3) text-to-region pairs linking visual features with segmentation masks.
 ◆ This multi-task setup enables the model to jointly learn visual grounding, reasoning, and interpretation, producing responses that are both accurate and interpretable.</td></tr>
@@ -2930,6 +2942,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos</td><td>[2511.05229](http://arxiv.org/pdf/2511.05229)</td><td>◆ Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics.
+◆ While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses.
+◆ We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach.</td></tr>
+<tr><td>2025-11-07</td><td>Efficient representation of 3D spatial data for defense-related applications</td><td>[2511.05109](http://arxiv.org/pdf/2511.05109)</td><td>◆ Geospatial sensor data is essential for modern defense and security, offering indispensable 3D information for situational awareness.
+◆ This data, gathered from sources like lidar sensors and optical cameras, allows for the creation of detailed models of operational environments.
+◆ In this paper, we provide a comparative analysis of traditional representation methods, such as point clouds, voxel grids, and triangle meshes, alongside modern neural and implicit techniques like Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (3DGS).</td></tr>
+<tr><td>2025-11-06</td><td>3D Gaussian Point Encoders</td><td>[2511.04797](http://arxiv.org/pdf/2511.04797)</td><td>◆ In this work, we introduce the 3D Gaussian Point Encoder, an explicit per-point embedding built on mixtures of learned 3D Gaussians.
+◆ This explicit geometric representation for 3D recognition tasks is a departure from widely used implicit representations such as PointNet.
+◆ However, it is difficult to learn 3D Gaussian encoders in end-to-end fashion with standard optimizers.</td></tr>
 <tr><td>2025-11-06</td><td>FastGS: Training 3D Gaussian Splatting in 100 Seconds</td><td>[2511.04283](http://arxiv.org/pdf/2511.04283)</td><td>◆ The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead.
 ◆ In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality.
 ◆ We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism.</td></tr>
@@ -3599,4 +3620,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.09
+> 更新于: 2025.11.10
