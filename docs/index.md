@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.10)
+# 计算机视觉领域最新论文 (2025.11.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Integration of Visual SLAM into Consumer-Grade Automotive Localization</td><td>[2511.06919](http://arxiv.org/pdf/2511.06919)</td><td>◆ Accurate ego-motion estimation in consumer-grade vehicles currently relies on proprioceptive sensors, i.e.
+◆ wheel odometry and IMUs, whose performance is limited by systematic errors and calibration.
+◆ While visual-inertial SLAM has become a standard in robotics, its integration into automotive ego-motion estimation remains largely unexplored.</td></tr>
+<tr><td>2025-11-10</td><td>Semi-distributed Cross-modal Air-Ground Relative Localization</td><td>[2511.06749](http://arxiv.org/pdf/2511.06749)</td><td>◆ Efficient, accurate, and flexible relative localization is crucial in air-ground collaborative tasks.
+◆ However, current approaches for robot relative localization are primarily realized in the form of distributed multi-robot SLAM systems with the same sensor configuration, which are tightly coupled with the state estimation of all robots, limiting both flexibility and accuracy.
+◆ To this end, we fully leverage the high capacity of Unmanned Ground Vehicle (UGV) to integrate multiple sensors, enabling a semi-distributed cross-modal air-ground relative localization framework.</td></tr>
+<tr><td>2025-11-08</td><td>ViTaMIn-B: A Reliable and Efficient Visuo-Tactile Bimanual Manipulation Interface</td><td>[2511.05858](http://arxiv.org/pdf/2511.05858)</td><td>◆ Handheld devices have opened up unprecedented opportunities to collect large-scale, high-quality demonstrations efficiently.
+◆ However, existing systems often lack robust tactile sensing or reliable pose tracking to handle complex interaction scenarios, especially for bimanual and contact-rich tasks.
+◆ In this work, we propose ViTaMIn-B, a more capable and efficient handheld data collection system for such tasks.</td></tr>
+<tr><td>2025-11-08</td><td>3D Mapping Using a Lightweight and Low-Power Monocular Camera Embedded inside a Gripper of Limbed Climbing Robots</td><td>[2511.05816](http://arxiv.org/pdf/2511.05816)</td><td>◆ Limbed climbing robots are designed to explore challenging vertical walls, such as the skylights of the Moon and Mars.
+◆ In such robots, the primary role of a hand-eye camera is to accurately estimate 3D positions of graspable points (i.e., convex terrain surfaces) thanks to its close-up views.
+◆ While conventional climbing robots often employ RGB-D cameras as hand-eye cameras to facilitate straightforward 3D terrain mapping and graspable point detection, RGB-D cameras are large and consume considerable power.</td></tr>
 <tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
 ◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
 ◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
@@ -1054,6 +1066,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Ambiguity-aware Truncated Flow Matching for Ambiguous Medical Image Segmentation</td><td>[2511.06857](http://arxiv.org/pdf/2511.06857)</td><td>◆ A simultaneous enhancement of accuracy and diversity of predictions remains a challenge in ambiguous medical image segmentation (AMIS) due to the inherent trade-offs.
+◆ While truncated diffusion probabilistic models (TDPMs) hold strong potential with a paradigm optimization, existing TDPMs suffer from entangled accuracy and diversity of predictions with insufficient fidelity and plausibility.
+◆ To address the aforementioned challenges, we propose Ambiguity-aware Truncated Flow Matching (ATFM), which introduces a novel inference paradigm and dedicated model components.</td></tr>
+<tr><td>2025-11-10</td><td>SDSS-ALMA Legacy Value Archival Gas Exploration (SALVAGE) - I: global star formation is governed by central (not global) molecular gas</td><td>[2511.06775](http://arxiv.org/pdf/2511.06775)</td><td>◆ Star-forming galaxies form tight relations between their stellar mass, star-formation rate, and molecular gas reservoir on global and resolved scales.
+◆ On the path to quiescence, the exchange between gas and stars must inevitably be broken.
+◆ Understanding the mechanisms governing star formation and quenching therefore requires observations of both the stellar and molecular gas components.</td></tr>
 <tr><td>2025-11-06</td><td>Sub-Gyr variability around the SFMS and its contribution to the scatter</td><td>[2511.04745](http://arxiv.org/pdf/2511.04745)</td><td>◆ We aim to measure the evolution of individual galaxies around the Star Formation Main Sequence (SFMS) during the last Gyr as a function of their stellar mass to quantify how much of its scatter is due to short-term variability.We derived star formation histories using full spectral fitting for a sample of 8,960 galaxies from the MaNGA survey to track the position of the galaxies in the SFMS during the last Gyr.The variability correlates with both the stellar mass of the galaxies and their current position in both the SFMS and the mass-metallicity relation (MZR), with the position in the latter strongly affecting variability in SFR.
 ◆ While most of the fluctuations are compatible with stochasticity, there is a very weak but statistically significant preference for $\sim135-150$ Myr time-scales.
 ◆ These results support a strong self-regulation of SFR within galaxies, establishing characteristic intensities and time-scales for bursts of star formation and quenching episodes.</td></tr>
@@ -1501,6 +1519,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>TwinOR: Photorealistic Digital Twins of Dynamic Operating Rooms for Embodied AI Research</td><td>[2511.07412](http://arxiv.org/pdf/2511.07412)</td><td>◆ Developing embodied AI for intelligent surgical systems requires safe, controllable environments for continual learning and evaluation.
+◆ However, safety regulations and operational constraints in operating rooms (ORs) limit embodied agents from freely perceiving and interacting in realistic settings.
+◆ Digital twins provide high-fidelity, risk-free environments for exploration and training.</td></tr>
+<tr><td>2025-11-10</td><td>LeCoT: revisiting network architecture for two-view correspondence pruning</td><td>[2511.07078](http://arxiv.org/pdf/2511.07078)</td><td>◆ Two-view correspondence pruning aims to accurately remove incorrect correspondences (outliers) from initial ones and is widely applied to various computer vision tasks.
+◆ Current popular strategies adopt multilayer perceptron (MLP) as the backbone, supplemented by additional modules to enhance the network ability to handle context information, which is a known limitation of MLPs.
+◆ In contrast, we introduce a novel perspective for capturing correspondence context information without extra design modules.</td></tr>
+<tr><td>2025-11-10</td><td>Semi-distributed Cross-modal Air-Ground Relative Localization</td><td>[2511.06749](http://arxiv.org/pdf/2511.06749)</td><td>◆ Efficient, accurate, and flexible relative localization is crucial in air-ground collaborative tasks.
+◆ However, current approaches for robot relative localization are primarily realized in the form of distributed multi-robot SLAM systems with the same sensor configuration, which are tightly coupled with the state estimation of all robots, limiting both flexibility and accuracy.
+◆ To this end, we fully leverage the high capacity of Unmanned Ground Vehicle (UGV) to integrate multiple sensors, enabling a semi-distributed cross-modal air-ground relative localization framework.</td></tr>
+<tr><td>2025-11-09</td><td>DiffusionUavLoc: Visually Prompted Diffusion for Cross-View UAV Localization</td><td>[2511.06422](http://arxiv.org/pdf/2511.06422)</td><td>◆ With the rapid growth of the low-altitude economy, unmanned aerial vehicles (UAVs) have become key platforms for measurement and tracking in intelligent patrol systems.
+◆ However, in GNSS-denied environments, localization schemes that rely solely on satellite signals are prone to failure.
+◆ Cross-view image retrieval-based localization is a promising alternative, yet substantial geometric and appearance domain gaps exist between oblique UAV views and nadir satellite orthophotos.</td></tr>
+<tr><td>2025-11-08</td><td>Towards Implicit Aggregation: Robust Image Representation for Place Recognition in the Transformer Era</td><td>[2511.06024](http://arxiv.org/pdf/2511.06024)</td><td>◆ Visual place recognition (VPR) is typically regarded as a specific image retrieval task, whose core lies in representing images as global descriptors.
+◆ Over the past decade, dominant VPR methods (e.g., NetVLAD) have followed a paradigm that first extracts the patch features/tokens of the input image using a backbone, and then aggregates these patch features into a global descriptor via an aggregator.
+◆ This backbone-plus-aggregator paradigm has achieved overwhelming dominance in the CNN era and remains widely used in transformer-based models.</td></tr>
 <tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
 ◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
 ◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
@@ -2421,6 +2454,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-08</td><td>Hybrid second-order gradient histogram based global low-rank sparse regression for robust face recognition</td><td>[2511.05893](http://arxiv.org/pdf/2511.05893)</td><td>◆ Low-rank sparse regression models have been widely applied in the field of face recognition.
+◆ To further address the challenges caused by complex occlusions and illumination variations, this paper proposes a Hybrid Second-Order Gradient Histogram based Global Low-Rank Sparse Regression (H2H-GLRSR) model.
+◆ Specifically, a novel feature descriptor called the Hybrid Second-Order Gradient Histogram (H2H) is first designed to more effectively characterize the local structural features of facial images.</td></tr>
 <tr><td>2025-11-06</td><td>Automated Tennis Player and Ball Tracking with Court Keypoints Detection (Hawk Eye System)</td><td>[2511.04126](http://arxiv.org/pdf/2511.04126)</td><td>◆ This study presents a complete pipeline for automated tennis match analysis.
 ◆ Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference.
 ◆ Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court keypoint detection, our system provides detailed analytics including player movement patterns, ball speed, shot accuracy, and player reaction times.</td></tr>
@@ -2656,6 +2692,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-08</td><td>U(PM)$^2$:Unsupervised polygon matching with pre-trained models for challenging stereo images</td><td>[2511.05949](http://arxiv.org/pdf/2511.05949)</td><td>◆ Stereo image matching is a fundamental task in computer vision, photogrammetry and remote sensing, but there is an almost unexplored field, i.e., polygon matching, which faces the following challenges: disparity discontinuity, scale variation, training requirement, and generalization.
+◆ To address the above-mentioned issues, this paper proposes a novel U(PM)$^2$: low-cost unsupervised polygon matching with pre-trained models by uniting automatically learned and handcrafted features, of which pipeline is as follows: firstly, the detector leverages the pre-trained segment anything model to obtain masks; then, the vectorizer converts the masks to polygons and graphic structure; secondly, the global matcher addresses challenges from global viewpoint changes and scale variation based on bidirectional-pyramid strategy with pre-trained LoFTR; finally, the local matcher further overcomes local disparity discontinuity and topology inconsistency of polygon matching by local-joint geometry and multi-feature matching strategy with Hungarian algorithm.
+◆ We benchmark our U(PM)$^2$ on the ScanNet and SceneFlow datasets using our proposed new metric, which achieved state-of-the-art accuracy at a competitive speed and satisfactory generalization performance at low cost without any training requirement.</td></tr>
 <tr><td>2025-11-05</td><td>Robust Alignment of the Human Embryo in 3D Ultrasound using PCA and an Ensemble of Heuristic, Atlas-based and Learning-based Classifiers Evaluated on the Rotterdam Periconceptional Cohort</td><td>[2511.03416](http://arxiv.org/pdf/2511.03416)</td><td>◆ Standardized alignment of the embryo in three-dimensional (3D) ultrasound images aids prenatal growth monitoring by facilitating standard plane detection, improving visualization of landmarks and accentuating differences between different scans.
 ◆ In this work, we propose an automated method for standardizing this alignment.
 ◆ Given a segmentation mask of the embryo, Principal Component Analysis (PCA) is applied to the mask extracting the embryo&#x27;s principal axes, from which four candidate orientations are derived.</td></tr>
@@ -2932,6 +2971,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Sparse4DGS: 4D Gaussian Splatting for Sparse-Frame Dynamic Scene Reconstruction</td><td>[2511.07122](http://arxiv.org/pdf/2511.07122)</td><td>◆ Dynamic Gaussian Splatting approaches have achieved remarkable performance for 4D scene reconstruction.
+◆ However, these approaches rely on dense-frame video sequences for photorealistic reconstruction.
+◆ In real-world scenarios, due to equipment constraints, sometimes only sparse frames are accessible.</td></tr>
+<tr><td>2025-11-09</td><td>Inpaint360GS: Efficient Object-Aware 3D Inpainting via Gaussian Splatting for 360° Scenes</td><td>[2511.06457](http://arxiv.org/pdf/2511.06457)</td><td>◆ Despite recent advances in single-object front-facing inpainting using NeRF and 3D Gaussian Splatting (3DGS), inpainting in complex 360{\deg} scenes remains largely underexplored.
+◆ This is primarily due to three key challenges: (i) identifying target objects in the 3D field of 360{\deg} environments, (ii) dealing with severe occlusions in multi-object scenes, which makes it hard to define regions to inpaint, and (iii) maintaining consistent and high-quality appearance across views effectively.
+◆ To tackle these challenges, we propose Inpaint360GS, a flexible 360{\deg} editing framework based on 3DGS that supports multi-object removal and high-fidelity inpainting in 3D space.</td></tr>
+<tr><td>2025-11-09</td><td>VDNeRF: Vision-only Dynamic Neural Radiance Field for Urban Scenes</td><td>[2511.06408](http://arxiv.org/pdf/2511.06408)</td><td>◆ Neural Radiance Fields (NeRFs) implicitly model continuous three-dimensional scenes using a set of images with known camera poses, enabling the rendering of photorealistic novel views.
+◆ However, existing NeRF-based methods encounter challenges in applications such as autonomous driving and robotic perception, primarily due to the difficulty of capturing accurate camera poses and limitations in handling large-scale dynamic environments.
+◆ To address these issues, we propose Vision-only Dynamic NeRF (VDNeRF), a method that accurately recovers camera trajectories and learns spatiotemporal representations for dynamic urban scenes without requiring additional camera pose information or expensive sensor data.</td></tr>
 <tr><td>2025-11-07</td><td>4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos</td><td>[2511.05229](http://arxiv.org/pdf/2511.05229)</td><td>◆ Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics.
 ◆ While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses.
 ◆ We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach.</td></tr>
@@ -3608,4 +3656,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.10
+> 更新于: 2025.11.11
