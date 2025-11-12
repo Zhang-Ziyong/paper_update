@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.11)
+# 计算机视觉领域最新论文 (2025.11.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -247,7 +247,7 @@
 <tr><td>2025-09-22</td><td>ProDyG: Progressive Dynamic Scene Reconstruction via Gaussian Splatting from Monocular Videos</td><td>[2509.17864](http://arxiv.org/pdf/2509.17864)</td><td>◆ Achieving truly practical dynamic 3D reconstruction requires online operation, global pose and map consistency, detailed appearance modeling, and the flexibility to handle both RGB and RGB-D inputs.
 ◆ However, existing SLAM methods typically merely remove the dynamic parts or require RGB-D input, while offline methods are not scalable to long video sequences, and current transformer-based feedforward methods lack global consistency and appearance details.
 ◆ To this end, we achieve online dynamic scene reconstruction by disentangling the static and dynamic parts within a SLAM system.</td></tr>
-<tr><td>2025-09-21</td><td>SLAM-Former: Putting SLAM into One Transformer</td><td>[2509.16909](http://arxiv.org/pdf/2509.16909)</td><td>◆ We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.
+<tr><td>2025-09-23</td><td>SLAM-Former: Putting SLAM into One Transformer</td><td>[2509.16909](http://arxiv.org/pdf/2509.16909)</td><td>◆ We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.
 ◆ Similar to traditional SLAM systems, SLAM-Former comprises both a frontend and a backend that operate in tandem.
 ◆ The frontend processes sequential monocular images in real-time for incremental mapping and tracking, while the backend performs global refinement to ensure a geometrically consistent result.</td></tr>
 <tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
@@ -1056,6 +1056,12 @@
 <tr><td>**2025-05-04**</td><td>**SafeNav: Safe Path Navigation using Landmark Based Localization in a GPS-denied Environment**</td><td>[2505.01956](http://arxiv.org/abs/2505.01956)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-03**</td><td>**GauS-SLAM: Dense RGB-D SLAM with Gaussian Surfels**</td><td>[2505.01934](http://arxiv.org/abs/2505.01934)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-02**</td><td>**Tightly Coupled Range Inertial Odometry and Mapping with Exact Point Cloud Downsampling**</td><td>[2505.01017](http://arxiv.org/abs/2505.01017)</td><td>摘要生成中...</td></tr>
+<tr><td>2025-08-11</td><td>MBA-SLAM: Motion Blur Aware Gaussian Splatting SLAM</td><td>[2411.08279](http://arxiv.org/pdf/2411.08279)</td><td>◆ Emerging 3D scene representations, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have demonstrated their effectiveness in Simultaneous Localization and Mapping (SLAM) for photo-realistic rendering, particularly when using high-quality video sequences as input.
+◆ However, existing methods struggle with motion-blurred frames, which are common in real-world scenarios like low-light or long-exposure conditions.
+◆ This often results in a significant reduction in both camera localization accuracy and map reconstruction quality.</td></tr>
+<tr><td>2025-11-07</td><td>MLP-SLAM: Multilayer Perceptron-Based Simultaneous Localization and Mapping</td><td>[2410.10669](http://arxiv.org/pdf/2410.10669)</td><td>◆ The Visual Simultaneous Localization and Mapping (V-SLAM) system has seen significant development in recent years, demonstrating high precision in environments with limited dynamic objects.
+◆ However, their performance significantly deteriorates when deployed in settings with a higher presence of movable objects, such as environments with pedestrians, cars, and buses, which are common in outdoor scenes.
+◆ To address this issue, we propose a Multilayer Perceptron (MLP)-based real-time stereo SLAM system that leverages complete geometry information to avoid information loss.</td></tr>
 </tbody>
 </table>
 </div>
@@ -2428,7 +2434,9 @@
 <tr><td>**2025-05-28**</td><td>**4DTAM: Non-Rigid Tracking and Mapping via Dynamic Surface Gaussians**</td><td>[2505.22859](http://arxiv.org/abs/2505.22859)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-28**</td><td>**UAVPairs: A Challenging Benchmark for Match Pair Retrieval of Large-scale UAV Images**</td><td>[2505.22098](http://arxiv.org/abs/2505.22098)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-28**</td><td>**Fast Feature Matching of UAV Images via Matrix Band Reduction-based GPU Data Schedule**</td><td>[2505.22089](http://arxiv.org/abs/2505.22089)</td><td>摘要生成中...</td></tr>
-<tr><td>**2025-05-27**</td><td>**Visual Loop Closure Detection Through Deep Graph Consensus**</td><td>[2505.21754](http://arxiv.org/abs/2505.21754)</td><td>摘要生成中...</td></tr>
+<tr><td>2025-05-29</td><td>Visual Loop Closure Detection Through Deep Graph Consensus</td><td>[2505.21754](http://arxiv.org/pdf/2505.21754)</td><td>◆ Visual loop closure detection traditionally relies on place recognition methods to retrieve candidate loops that are validated using computationally expensive RANSAC-based geometric verification.
+◆ As false positive loop closures significantly degrade downstream pose graph estimates, verifying a large number of candidates in online simultaneous localization and mapping scenarios is constrained by limited time and compute resources.
+◆ While most deep loop closure detection approaches only operate on pairs of keyframes, we relax this constraint by considering neighborhoods of multiple keyframes when detecting loops.</td></tr>
 <tr><td>**2025-05-27**</td><td>**QuARI: Query Adaptive Retrieval Improvement**</td><td>[2505.21647](http://arxiv.org/abs/2505.21647)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-27**</td><td>**ConText-CIR: Learning from Concepts in Text for Composed Image Retrieval**</td><td>[2505.20764](http://arxiv.org/abs/2505.20764)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-26**</td><td>**Visualized Text-to-Image Retrieval**</td><td>[2505.20291](http://arxiv.org/abs/2505.20291)<br><a href=''>[代码]</a></td><td>摘要生成中...</td></tr>
@@ -2688,6 +2696,9 @@
 ◆整个配准流程性能媲美主流有监督方法，且无需标注数据的特性使其可直接迁移到其他领域和模态。</td></tr>
 <tr><td>**2025-05-04**</td><td>**Focus What Matters: Matchability-Based Reweighting for Local Feature Matching**</td><td>[2505.02161](http://arxiv.org/abs/2505.02161)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-04**</td><td>**Enhancing Lidar Point Cloud Sampling via Colorization and Super-Resolution of Lidar Imagery**</td><td>[2505.02049](http://arxiv.org/abs/2505.02049)</td><td>摘要生成中...</td></tr>
+<tr><td>2025-10-01</td><td>SuperEvent: Cross-Modal Learning of Event-based Keypoint Detection for SLAM</td><td>[2504.00139](http://arxiv.org/pdf/2504.00139)</td><td>◆ Event-based keypoint detection and matching holds significant potential, enabling the integration of event sensors into highly optimized Visual SLAM systems developed for frame cameras over decades of research.
+◆ Unfortunately, existing approaches struggle with the motion-dependent appearance of keypoints and the complex noise prevalent in event streams, resulting in severely limited feature matching capabilities and poor performance on downstream tasks.
+◆ To mitigate this problem, we propose SuperEvent, a data-driven approach to predict stable keypoints with expressive descriptors.</td></tr>
 </tbody>
 </table>
 </div>
@@ -3660,6 +3671,9 @@
 <tr><td>**2025-05-03**</td><td>**Unified Steganography via Implicit Neural Representation**</td><td>[2505.01749](http://arxiv.org/abs/2505.01749)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-01**</td><td>**Cues3D: Unleashing the Power of Sole NeRF for Consistent and Unique Instances in Open-Vocabulary 3D Panoptic Segmentation**</td><td>[2505.00378](http://arxiv.org/abs/2505.00378)</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-01**</td><td>**GSFeatLoc: Visual Localization Using Feature Correspondence on 3D Gaussian Splatting**</td><td>[2504.20379](http://arxiv.org/abs/2504.20379)</td><td>摘要生成中...</td></tr>
+<tr><td>2025-05-30</td><td>Weight Space Representation Learning on Diverse NeRF Architectures</td><td>[2502.09623](http://arxiv.org/pdf/2502.09623)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a groundbreaking paradigm for representing 3D objects and scenes by encoding shape and appearance information into the weights of a neural network.
+◆ Recent studies have demonstrated that these weights can be used as input for frameworks designed to address deep learning tasks; however, such frameworks require NeRFs to adhere to a specific, predefined architecture.
+◆ In this paper, we introduce the first framework capable of processing NeRFs with diverse architectures and performing inference on architectures unseen at training time.</td></tr>
 </tbody>
 </table>
 </div>
@@ -3668,4 +3682,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.11
+> 更新于: 2025.11.12
