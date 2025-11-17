@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.16)
+# 计算机视觉领域最新论文 (2025.11.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
+◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
+◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
 <tr><td>2025-11-12</td><td>Generation-Agnostic Zero-Energy Devices for Sustainable Connectivity, Sensing, and Localization</td><td>[2511.09372](http://arxiv.org/pdf/2511.09372)</td><td>◆ The massive scale of Internet of Things (IoT) connectivity expected in 6G networks raises unprecedented challenges in energy use, battery waste, and lifecycle sustainability.
 ◆ Current cellular IoT solutions remain bound to the lifetime of underlying network generations and rely on billions of disposable batteries, creating unsustainable economic and environmental costs.
 ◆ This article proposes generation-agnostic zero-energy devices (XG-ZEDs), a new class of backscatter based IoT devices that are battery-less, spectrum-agnostic, and future-proof across successive network generations.</td></tr>
@@ -1084,6 +1087,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>Free3D: 3D Human Motion Emerges from Single-View 2D Supervision</td><td>[2511.11368](http://arxiv.org/pdf/2511.11368)</td><td>◆ Recent 3D human motion generation models demonstrate remarkable reconstruction accuracy yet struggle to generalize beyond training distributions.
+◆ This limitation arises partly from the use of precise 3D supervision, which encourages models to fit fixed coordinate patterns instead of learning the essential 3D structure and motion semantic cues required for robust generalization.To overcome this limitation, we propose Free3D, a framework that synthesizes realistic 3D motions without any 3D motion annotations.
+◆ Free3D introduces a Motion-Lifting Residual Quantized VAE (ML-RQ) that maps 2D motion sequences into 3D-consistent latent spaces, and a suite of 3D-free regularization objectives enforcing view consistency, orientation coherence, and physical plausibility.</td></tr>
+<tr><td>2025-11-14</td><td>YCB-Ev SD: Synthetic event-vision dataset for 6DoF object pose estimation</td><td>[2511.11344](http://arxiv.org/pdf/2511.11344)</td><td>◆ We introduce YCB-Ev SD, a synthetic dataset of event-camera data at standard definition (SD) resolution for 6DoF object pose estimation.
+◆ While synthetic data has become fundamental in frame-based computer vision, event-based vision lacks comparable comprehensive resources.
+◆ Addressing this gap, we present 50,000 event sequences of 34 ms duration each, synthesized from Physically Based Rendering (PBR) scenes of YCB-Video objects following the Benchmark for 6D Object Pose (BOP) methodology.</td></tr>
+<tr><td>2025-11-14</td><td>The Spatial Evolution of Star Clusters in NGC 628 with JWST</td><td>[2511.11115](http://arxiv.org/pdf/2511.11115)</td><td>◆ We examine the spatial distribution of star clusters in NGC 628 using the statistical tool INDICATE to quantify clustering tendencies.
+◆ Our sample, based on HST and JWST observations, is the most complete to date, spanning ages from 1 Myr to &gt;100 Myr.
+◆ We find cluster spatial behaviour varies with galactic position, age, and mass.</td></tr>
+<tr><td>2025-11-14</td><td>Discovery of an X-ray bridge between the comma-shaped gas and the main cluster in MCXC J0157.4-0550</td><td>[2511.10968](http://arxiv.org/pdf/2511.10968)</td><td>◆ We report the discovery of a faint X-ray bridge connecting between the comma-shaped gas and the main cluster in MCXC J0157.4-0550, using {\it XMM-Newton} image.
+◆ The filamentary structure is found in a model-independent manner in both topological features and Gaussian Gradient Magnitude filtering.
+◆ The X-ray surface brightness profile perpendicular to the filament is detected at a $5.5σ$ level.</td></tr>
+<tr><td>2025-11-14</td><td>DEFT-LLM: Disentangled Expert Feature Tuning for Micro-Expression Recognition</td><td>[2511.10948](http://arxiv.org/pdf/2511.10948)</td><td>◆ Micro expression recognition (MER) is crucial for inferring genuine emotion.
+◆ Applying a multimodal large language model (MLLM) to this task enables spatio-temporal analysis of facial motion and provides interpretable descriptions.
+◆ However, there are still two core challenges: (1) The entanglement of static appearance and dynamic motion cues prevents the model from focusing on subtle motion; (2) Textual labels in existing MER datasets do not fully correspond to underlying facial muscle movements, creating a semantic gap between text supervision and physical motion.</td></tr>
+<tr><td>2025-11-14</td><td>A High-Precision Dynamical Model of Callisto: Incorporating Rotation Effects within Multi-Layer Internal Structure Models</td><td>[2511.10929](http://arxiv.org/pdf/2511.10929)</td><td>◆ China is planing to launch the Tianwen-4 mission around the year 2030, with its aim being the exploration of Jupiter and its moon, Callisto.
+◆ Within the realm of deep space exploration, the accuracy of ephemerides is of great importance.
+◆ Current ephemerides employ a simplified rotation model for Callisto, which this study addresses by proposing a novel dynamical model.</td></tr>
+<tr><td>2025-11-14</td><td>Collaborative Multi-Robot Non-Prehensile Manipulation via Flow-Matching Co-Generation</td><td>[2511.10874](http://arxiv.org/pdf/2511.10874)</td><td>◆ Coordinating a team of robots to reposition multiple objects in cluttered environments requires reasoning jointly about where robots should establish contact, how to manipulate objects once contact is made, and how to navigate safely and efficiently at scale.
+◆ Prior approaches typically fall into two extremes -- either learning the entire task or relying on privileged information and hand-designed planners -- both of which struggle to handle diverse objects in long-horizon tasks.
+◆ To address these challenges, we present a unified framework for collaborative multi-robot, multi-object non-prehensile manipulation that integrates flow-matching co-generation with anonymous multi-robot motion planning.</td></tr>
+<tr><td>2025-11-13</td><td>A validated lumped-element model for bioinspired acoustic flow sensing toward the performance limit</td><td>[2511.10830](http://arxiv.org/pdf/2511.10830)</td><td>◆ Flow sensing is fundamental to both biological survival and technological innovation.
+◆ Inspired by biological mechanoreceptors, artificial flow sensors detect subtle fluid motion using slender, viscous-driven structures.
+◆ Among these, acoustic flow sensors that mimic nature&#x27;s velocity-sensitive ears have the potential to transform vector sound detection.</td></tr>
+<tr><td>2025-11-13</td><td>From Attention to Frequency: Integration of Vision Transformer and FFT-ReLU for Enhanced Image Deblurring</td><td>[2511.10806](http://arxiv.org/pdf/2511.10806)</td><td>◆ Image deblurring is vital in computer vision, aiming to recover sharp images from blurry ones caused by motion or camera shake.
+◆ While deep learning approaches such as CNNs and Vision Transformers (ViTs) have advanced this field, they often struggle with complex or high-resolution blur and computational demands.
+◆ We propose a new dual-domain architecture that unifies Vision Transformers with a frequency-domain FFT-ReLU module, explicitly bridging spatial attention modeling and frequency sparsity.</td></tr>
+<tr><td>2025-11-13</td><td>Towards Attribution of Generators and Emotional Manipulation in Cross-Lingual Synthetic Speech using Geometric Learning</td><td>[2511.10790](http://arxiv.org/pdf/2511.10790)</td><td>◆ In this work, we address the problem of finegrained traceback of emotional and manipulation characteristics from synthetically manipulated speech.
+◆ We hypothesize that combining semantic-prosodic cues captured by Speech Foundation Models (SFMs) with fine-grained spectral dynamics from auditory representations can enable more precise tracing of both emotion and manipulation source.
+◆ To validate this hypothesis, we introduce MiCuNet, a novel multitask framework for fine-grained tracing of emotional and manipulation attributes in synthetically generated speech.</td></tr>
 <tr><td>2025-11-13</td><td>From Fold to Function: Dynamic Modeling and Simulation-Driven Design of Origami Mechanisms</td><td>[2511.10580](http://arxiv.org/pdf/2511.10580)</td><td>◆ Origami-inspired mechanisms can transform flat sheets into functional three-dimensional dynamic structures that are lightweight, compact, and capable of complex motion.
 ◆ These properties make origami increasingly valuable in robotic and deployable systems.
 ◆ However, accurately simulating their folding behavior and interactions with the environment remains challenging.</td></tr>
@@ -1567,6 +1600,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>DocLens : A Tool-Augmented Multi-Agent Framework for Long Visual Document Understanding</td><td>[2511.11552](http://arxiv.org/pdf/2511.11552)</td><td>◆ Comprehending long visual documents, where information is distributed across extensive pages of text and visual elements, is a critical but challenging task for modern Vision-Language Models (VLMs).
+◆ Existing approaches falter on a fundamental challenge: evidence localization.
+◆ They struggle to retrieve relevant pages and overlook fine-grained details within visual elements, leading to limited performance and model hallucination.</td></tr>
+<tr><td>2025-11-14</td><td>STEM EBIC as a Quantitative Probe of Semiconductor Devices</td><td>[2511.11528](http://arxiv.org/pdf/2511.11528)</td><td>◆ Electron beam-induced current (EBIC) imaging in the scanning transmission electron microscope (STEM), STEM-EBIC, provides direct access to carrier transport at the nanoscale.
+◆ While well established in bulk SEM geometries, its application to thin TEM lamellae remains largely unexplored.
+◆ Here, we present a systematic STEM-EBIC study of silicon photodiode lamellae prepared by gallium and xenon focused ion beam (FIB) milling.</td></tr>
+<tr><td>2025-11-14</td><td>Bridging Hidden States in Vision-Language Models</td><td>[2511.11526](http://arxiv.org/pdf/2511.11526)</td><td>◆ Vision-Language Models (VLMs) are a new family of models that align image content with natural language.
+◆ Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings.
+◆ Many methods also tie fusion to an autoregressive decoder.</td></tr>
+<tr><td>2025-11-14</td><td>Comprehension of Multilingual Expressions Referring to Target Objects in Visual Inputs</td><td>[2511.11427](http://arxiv.org/pdf/2511.11427)</td><td>◆ Referring Expression Comprehension (REC) requires models to localize objects in images based on natural language descriptions.
+◆ Research on the area remains predominantly English-centric, despite increasing global deployment demands.
+◆ This work addresses multilingual REC through two main contributions.</td></tr>
+<tr><td>2025-11-14</td><td>Shrinking the Teacher: An Adaptive Teaching Paradigm for Asymmetric EEG-Vision Alignment</td><td>[2511.11422](http://arxiv.org/pdf/2511.11422)</td><td>◆ Decoding visual features from EEG signals is a central challenge in neuroscience, with cross-modal alignment as the dominant approach.
+◆ We argue that the relationship between visual and brain modalities is fundamentally asymmetric, characterized by two critical gaps: a Fidelity Gap (stemming from EEG&#x27;s inherent noise and signal degradation, vs.
+◆ vision&#x27;s high-fidelity features) and a Semantic Gap (arising from EEG&#x27;s shallow conceptual representation, vs.</td></tr>
+<tr><td>2025-11-14</td><td>Bidimensional measurements of photon statistics within a multimodal temporal framework</td><td>[2511.11403](http://arxiv.org/pdf/2511.11403)</td><td>◆ Ultrafast imaging of photon statistics in two dimensions is a powerful tool for probing non-equilibrium and transient optical phenomena, yet it remains experimentally challenging due to the simultaneous need for high temporal resolution and statistical fidelity.
+◆ In this work, we demonstrate spatially resolved single-shot measurements of photon number distributions using difference-frequency generation (DFG) in a nonlinear BBO crystal.
+◆ We show that our platform can discriminate between coherent and thermal photon statistics across two spatial dimensions with picosecond resolution.</td></tr>
+<tr><td>2025-11-14</td><td>GRANITE: High-Resolution Imaging and Electrical Qualification of Large-Area TPC Electrodes</td><td>[2511.11401](http://arxiv.org/pdf/2511.11401)</td><td>◆ Next-generation dual-phase time projection chambers (TPCs) for rare event searches will require large-scale, high-precision electrodes.
+◆ To meet the stringent requirements for high-voltage performance of such an experiment, we have developed a scanning setup for comprehensive electrode quality assurance.
+◆ The system is built around the GRANITE (Granular Robotic Assay for Novel Integrated TPC Electrodes) facility: a gantry robot on top of a $2.5\,\text{m}\times1.8\,\text{m}$ granite table, equipped with a suite of non-contact metrology devices.</td></tr>
+<tr><td>2025-11-14</td><td>StochEP: Stochastic Equilibrium Propagation for Spiking Convergent Recurrent Neural Networks</td><td>[2511.11320](http://arxiv.org/pdf/2511.11320)</td><td>◆ Spiking Neural Networks (SNNs) promise energy-efficient, sparse, biologically inspired computation.
+◆ Training them with Backpropagation Through Time (BPTT) and surrogate gradients achieves strong performance but remains biologically implausible.
+◆ Equilibrium Propagation (EP) provides a more local and biologically grounded alternative.</td></tr>
+<tr><td>2025-11-14</td><td>DocSLM: A Small Vision-Language Model for Long Multimodal Document Understanding</td><td>[2511.11313](http://arxiv.org/pdf/2511.11313)</td><td>◆ Large Vision-Language Models (LVLMs) have demonstrated strong multimodal reasoning capabilities on long and complex documents.
+◆ However, their high memory footprint makes them impractical for deployment on resource-constrained edge devices.
+◆ We present DocSLM, an efficient Small Vision-Language Model designed for long-document understanding under constrained memory resources.</td></tr>
+<tr><td>2025-11-14</td><td>MOON Embedding: Multimodal Representation Learning for E-commerce Search Advertising</td><td>[2511.11305](http://arxiv.org/pdf/2511.11305)</td><td>◆ We introduce MOON, our comprehensive set of sustainable iterative practices for multimodal representation learning for e-commerce applications.
+◆ MOON has already been fully deployed across all stages of Taobao search advertising system, including retrieval, relevance, ranking, and so on.
+◆ The performance gains are particularly significant on click-through rate (CTR) prediction task, which achieves an overall +20.00% online CTR improvement.</td></tr>
 <tr><td>2025-11-13</td><td>Mined Prompting and Metadata-Guided Generation for Wound Care Visual Question Answering</td><td>[2511.10591](http://arxiv.org/pdf/2511.10591)</td><td>◆ The rapid expansion of asynchronous remote care has intensified provider workload, creating demand for AI systems that can assist clinicians in managing patient queries more efficiently.
 ◆ The MEDIQA-WV 2025 shared task addresses this challenge by focusing on generating free-text responses to wound care queries paired with images.
 ◆ In this work, we present two complementary approaches developed for the English track.</td></tr>
@@ -2534,6 +2597,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>Interpretable descriptors enable prediction of hydrogen-based superconductors at moderate pressures</td><td>[2511.11284](http://arxiv.org/pdf/2511.11284)</td><td>◆ Room temperature superconductivity remains elusive, and hydrogen-base compounds despite remarkable transition temperatures(Tc) typically require extreme pressures that hinder application.
+◆ To accelerate discovery under moderate pressures, an interpretable framework based on symbolic regression is developed to predict Tc in hydrogen-based superconductors.
+◆ A key descriptor is an integrated density of states (IDOS) within 1 eV of the Fermi level (EF), which exhibits greater robustness than conventional single-point DOS features.</td></tr>
 <tr><td>2025-11-12</td><td>A thermoinformational framework for the description of neuropsychological systems</td><td>[2511.09506](http://arxiv.org/pdf/2511.09506)</td><td>◆ This work presents a statistical thermodynamics-inspired framework that summarizes multichannel EEG and behavior using macroscopic state variables (entropy, internal energy, temperature, Helmholtz free energy) to quantify stability and reconfiguration in neuropsychological systems.
 ◆ Applied to mother-infant EEG dyads performing the A-not-B task, these variables dissociate neural reconfiguration from behavioral success across a large set of model and feature configurations.
 ◆ Informational heat increases during environmental switches and decision errors, consistent with increased information exchange with the task context.</td></tr>
@@ -2802,6 +2868,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>Bridging Hidden States in Vision-Language Models</td><td>[2511.11526](http://arxiv.org/pdf/2511.11526)</td><td>◆ Vision-Language Models (VLMs) are a new family of models that align image content with natural language.
+◆ Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings.
+◆ Many methods also tie fusion to an autoregressive decoder.</td></tr>
+<tr><td>2025-11-14</td><td>CVChess: A Deep Learning Framework for Converting Chessboard Images to Forsyth-Edwards Notation</td><td>[2511.11522](http://arxiv.org/pdf/2511.11522)</td><td>◆ Chess has experienced a large increase in viewership since the pandemic, driven largely by the accessibility of online learning platforms.
+◆ However, no equivalent assistance exists for physical chess games, creating a divide between analog and digital chess experiences.
+◆ This paper presents CVChess, a deep learning framework for converting chessboard images to Forsyth-Edwards Notation (FEN), which is later input into online chess engines to provide you with the best next move.</td></tr>
+<tr><td>2025-11-14</td><td>Hi-DREAM: Brain Inspired Hierarchical Diffusion for fMRI Reconstruction via ROI Encoder and visuAl Mapping</td><td>[2511.11437](http://arxiv.org/pdf/2511.11437)</td><td>◆ Mapping human brain activity to natural images offers a new window into vision and cognition, yet current diffusion-based decoders face a core difficulty: most condition directly on fMRI features without analyzing how visual information is organized across the cortex.
+◆ This overlooks the brain&#x27;s hierarchical processing and blurs the roles of early, middle, and late visual areas.
+◆ We propose Hi-DREAM, a brain-inspired conditional diffusion framework that makes the cortical organization explicit.</td></tr>
+<tr><td>2025-11-14</td><td>The Persistence of Cultural Memory: Investigating Multimodal Iconicity in Diffusion Models</td><td>[2511.11435](http://arxiv.org/pdf/2511.11435)</td><td>◆ Our work addresses the ambiguity between generalization and memorization in text-to-image diffusion models, focusing on a specific case we term multimodal iconicity.
+◆ This refers to instances where images and texts evoke culturally shared associations, such as when a title recalls a familiar artwork or film scene.
+◆ While prior research on memorization and unlearning emphasizes forgetting, we examine what is remembered and how, focusing on the balance between recognizing cultural references and reproducing them.</td></tr>
+<tr><td>2025-11-14</td><td>Shrinking the Teacher: An Adaptive Teaching Paradigm for Asymmetric EEG-Vision Alignment</td><td>[2511.11422](http://arxiv.org/pdf/2511.11422)</td><td>◆ Decoding visual features from EEG signals is a central challenge in neuroscience, with cross-modal alignment as the dominant approach.
+◆ We argue that the relationship between visual and brain modalities is fundamentally asymmetric, characterized by two critical gaps: a Fidelity Gap (stemming from EEG&#x27;s inherent noise and signal degradation, vs.
+◆ vision&#x27;s high-fidelity features) and a Semantic Gap (arising from EEG&#x27;s shallow conceptual representation, vs.</td></tr>
+<tr><td>2025-11-14</td><td>Robust inverse material design with physical guarantees using the Voigt-Reuss Net</td><td>[2511.11388](http://arxiv.org/pdf/2511.11388)</td><td>◆ We propose a spectrally normalized surrogate for forward and inverse mechanical homogenization with hard physical guarantees.
+◆ Leveraging the Voigt-Reuss bounds, we factor their difference via a Cholesky-like operator and learn a dimensionless, symmetric positive semi-definite representation with eigenvalues in $[0,1]$; the inverse map returns symmetric positive-definite predictions that lie between the bounds in the Löwner sense.
+◆ In 3D linear elasticity on an open dataset of stochastic biphasic microstructures, a fully connected Voigt-Reuss net trained on $&gt;\!7.5\times 10^{5}$ FFT-based labels with 236 isotropy-invariant descriptors and three contrast parameters recovers the isotropic projection with near-perfect fidelity (isotropy-related entries: $R^2 \ge 0.998$), while anisotropy-revealing couplings are unidentifiable from $SO(3)$-invariant inputs.</td></tr>
+<tr><td>2025-11-14</td><td>Arcee: Differentiable Recurrent State Chain for Generative Vision Modeling with Mamba SSMs</td><td>[2511.11243](http://arxiv.org/pdf/2511.11243)</td><td>◆ State-space models (SSMs), Mamba in particular, are increasingly adopted for long-context sequence modeling, providing linear-time aggregation via an input-dependent, causal selective-scan operation.
+◆ Along this line, recent &quot;Mamba-for-vision&quot; variants largely explore multiple scan orders to relax strict causality for non-sequential signals (e.g., images).
+◆ Rather than preserving cross-block memory, the conventional formulation of the selective-scan operation in Mamba reinitializes each block&#x27;s state-space dynamics from zero, discarding the terminal state-space representation (SSR) from the previous block.</td></tr>
+<tr><td>2025-11-14</td><td>Parameter-Efficient MoE LoRA for Few-Shot Multi-Style Editing</td><td>[2511.11236](http://arxiv.org/pdf/2511.11236)</td><td>◆ In recent years, image editing has garnered growing attention.
+◆ However, general image editing models often fail to produce satisfactory results when confronted with new styles.
+◆ The challenge lies in how to effectively fine-tune general image editing models to new styles using only a limited amount of paired data.</td></tr>
+<tr><td>2025-11-14</td><td>Evaluating Latent Generative Paradigms for High-Fidelity 3D Shape Completion from a Single Depth Image</td><td>[2511.11074](http://arxiv.org/pdf/2511.11074)</td><td>◆ While generative models have seen significant adoption across a wide range of data modalities, including 3D data, a consensus on which model is best suited for which task has yet to be reached.
+◆ Further, conditional information such as text and images to steer the generation process are frequently employed, whereas others, like partial 3D data, have not been thoroughly evaluated.
+◆ In this work, we compare two of the most promising generative models--Denoising Diffusion Probabilistic Models and Autoregressive Causal Transformers--which we adapt for the tasks of generative shape modeling and completion.</td></tr>
+<tr><td>2025-11-14</td><td>Hyperbolic Hierarchical Alignment Reasoning Network for Text-3D Retrieval</td><td>[2511.11045](http://arxiv.org/pdf/2511.11045)</td><td>◆ With the daily influx of 3D data on the internet, text-3D retrieval has gained increasing attention.
+◆ However, current methods face two major challenges: Hierarchy Representation Collapse (HRC) and Redundancy-Induced Saliency Dilution (RISD).
+◆ HRC compresses abstract-to-specific and whole-to-part hierarchies in Euclidean embeddings, while RISD averages noisy fragments, obscuring critical semantic cues and diminishing the model&#x27;s ability to distinguish hard negatives.</td></tr>
 <tr><td>2025-11-13</td><td>One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models</td><td>[2511.10629](http://arxiv.org/pdf/2511.10629)</td><td>◆ Diffusion models struggle to scale beyond their training resolutions, as direct high-resolution sampling is slow and costly, while post-hoc image super-resolution (ISR) introduces artifacts and additional latency by operating after decoding.
 ◆ We present the Latent Upscaler Adapter (LUA), a lightweight module that performs super-resolution directly on the generator&#x27;s latent code before the final VAE decoding step.
 ◆ LUA integrates as a drop-in component, requiring no modifications to the base model or additional diffusion stages, and enables high-resolution synthesis through a single feed-forward pass in latent space.</td></tr>
@@ -3805,4 +3901,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.16
+> 更新于: 2025.11.17
