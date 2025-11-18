@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.17)
+# 计算机视觉领域最新论文 (2025.11.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>GaRLILEO: Gravity-aligned Radar-Leg-Inertial Enhanced Odometry</td><td>[2511.13216](http://arxiv.org/pdf/2511.13216)</td><td>◆ Deployment of legged robots for navigating challenging terrains (e.g., stairs, slopes, and unstructured environments) has gained increasing preference over wheel-based platforms.
+◆ In such scenarios, accurate odometry estimation is a preliminary requirement for stable locomotion, localization, and mapping.
+◆ Traditional proprioceptive approaches, which rely on leg kinematics sensor modalities and inertial sensing, suffer from irrepressible vertical drift caused by frequent contact impacts, foot slippage, and vibrations, particularly affected by inaccurate roll and pitch estimation.</td></tr>
+<tr><td>2025-11-16</td><td>DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry</td><td>[2511.12653](http://arxiv.org/pdf/2511.12653)</td><td>◆ Deep learning-based Visual SLAM (vSLAM) systems exhibit exceptional geometric reasoning capabilities, yet their prohibitive computational overhead severely restricts deployment on resource-constrained autonomous platforms.
+◆ This paper presents a hierarchical quantization optimization framework, DPVO-QAT++ (DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry).
+◆ Through the synergistic integration of learnable scale parameterization, a heterogeneous precision design for the Visual Odometry (VO) front-end and back-end (front-end floating-point fake quantization with FP16/FP32; back-end full precision), and GPU-native kernel fusion for fake quantization (custom CUDA kernels), our framework significantly reduces memory footprint and increases processing speed while preserving the trajectory accuracy of the original model.</td></tr>
+<tr><td>2025-11-14</td><td>Autonomous Underwater Cognitive System for Adaptive Navigation: A SLAM-Integrated Cognitive Architecture</td><td>[2511.11845](http://arxiv.org/pdf/2511.11845)</td><td>◆ Deep-sea exploration poses significant challenges, including disorientation, communication loss, and navigational failures in dynamic underwater environments.
+◆ This paper presents an Autonomous Underwater Cognitive System (AUCS) that integrates Simultaneous Localization and Mapping (SLAM) with a Soar-based cognitive architecture to enable adaptive navigation in complex oceanic conditions.
+◆ The system fuses multi-sensor data from SONAR, LiDAR, IMU, and DVL with cognitive reasoning modules for perception, attention, planning, and learning.</td></tr>
 <tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
 ◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
 ◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
@@ -1087,6 +1096,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Ultrafast electron diffractive imaging of the dissociation of pre-excited molecules</td><td>[2511.13479](http://arxiv.org/pdf/2511.13479)</td><td>◆ Gas phase ultrafast electron diffraction (GUED) has become a powerful technique to directly observe the structural dynamics of photoexcited molecules.
+◆ GUED reveals information about the nuclear motions that is complementary to the information on the electronic states provided by spectroscopic measurements.
+◆ GUED experiments so far have utilized a single laser pulse to excite the molecules and an electron pulse to probe the dynamics.</td></tr>
+<tr><td>2025-11-17</td><td>An Automated Framework for Analyzing Structural Evolution in On-the-fly Non-adiabatic Molecular Dynamics Using Autoencoder and Multiple Molecular Descriptors</td><td>[2511.13364](http://arxiv.org/pdf/2511.13364)</td><td>◆ A major challenge in nonadiabatic molecular dynamics is to automatically and objectively identify the key reaction coordinates that drive molecules toward distinct excited-state decay channels.
+◆ Traditional manual analyses are inefficient and rely heavily on expert intuition, creating a bottleneck for interpreting complex photochemical processes.
+◆ To overcome this, we introduce a fully automated machine-learning framework that directly extracts these coordinates from on-the-fly trajectory surface hopping data.</td></tr>
+<tr><td>2025-11-17</td><td>Antisymmetric Mueller Generator as the Universal Origin of Geometric Phase in Classical Polarization and Quantum Two-Level Systems</td><td>[2511.13266](http://arxiv.org/pdf/2511.13266)</td><td>◆ We show that the antisymmetric part of the Mueller matrix of any ideal retarder uniquely determines the geometric phase observed in classical polarization optics.
+◆ This antisymmetric block encodes the angular-velocity pseudovector that governs the tangential component of the Stokesvector motion on the Poincaré sphere and thus fully determines the associated geometric phase, while the symmetric block is geometrically neutral in the sense that it does not contribute to the phase.
+◆ We further demonstrate that the same antisymmetric generator arises in the adjoint action of any SU(2) unitary operator and fully determines the geometric phase of a qubit, independently of adiabaticity or cyclicity.</td></tr>
+<tr><td>2025-11-17</td><td>The Spontaneous Genesis of Solar Prominence Structures Driven by Supergranulation in Three-Dimensional Simulations</td><td>[2511.13252](http://arxiv.org/pdf/2511.13252)</td><td>◆ Solar prominences usually have a horizontally elongated body with many feet extending to the solar surface, resembling a multi-arch bridge with many bridge piers.
+◆ The basic mechanism by which solar prominences acquire these common structures during their evolution, however, remains an unresolved question.
+◆ For the first time, our three-dimensional magneto-frictional simulation, driven by supergranular motions, self-consistently replicates the commonly observed multi-arch bridge morphology and its characteristic structures of solar quiescent prominences in a magnetic flux rope.</td></tr>
+<tr><td>2025-11-17</td><td>Infrared photometry and CaT spectroscopy of the most metal-poor in-situ globular cluster VVV-CL001</td><td>[2511.13161](http://arxiv.org/pdf/2511.13161)</td><td>◆ Globular clusters in the Galactic bulge are difficult to study due to high extinction and severe crowding.
+◆ VVV-CL001 is an old, metal-poor, and fast cluster in the inner bulge, whose extreme properties make it a key probe of the early chemical and dynamical evolution of the Milky Way.
+◆ We derive its fundamental parameters by combining spectroscopy, astrometry, and near-infrared photometry.</td></tr>
+<tr><td>2025-11-16</td><td>Kagome metals</td><td>[2511.12731](http://arxiv.org/pdf/2511.12731)</td><td>◆ Three important driving forces for creating qualitatively new phases in quantum materials are the topology of the materials&#x27; electronic band structures, frustration in the electrons&#x27; motion or magnetic interactions, and strong correlations between their charge, spin, and orbital degrees of freedom.
+◆ In very few material systems do all of these aspects come together to contribute on an equal footing to stabilize new electronic states with unprecedented properties; however the search for such systems can be guided by models of configurational motifs or key sublattices that can host such physics.
+◆ One of the most fascinating structural motifs for realizing this rich interplay of frustration, electronic topology, and electron correlation effects is the kagome lattice.</td></tr>
+<tr><td>2025-11-16</td><td>Examining Turbulence in Galactic Molecular Clouds - II: Continuity of Turbulence Cascading in a Portion of the Local Arm</td><td>[2511.12418](http://arxiv.org/pdf/2511.12418)</td><td>◆ We use $^{12}$CO (J=1-0) MWISP data to study turbulence in a segment of the Local Arm.
+◆ Velocity slices at different kinematic distances show similar spatial power spectra (SPSs) and structure functions (SFs), demonstrating that the entire region forms a single turbulent field with a cascade extending from $\sim 400$ pc to sub-parsec scales.
+◆ The SPS slopes of both the intensity and velocity fields exhibit a systematic scale dependence that approaches the values expected from turbulence models.</td></tr>
+<tr><td>2025-11-16</td><td>Towards Rotation-only Imaging Geometry: Rotation Estimation</td><td>[2511.12415](http://arxiv.org/pdf/2511.12415)</td><td>◆ Structure from Motion (SfM) is a critical task in computer vision, aiming to recover the 3D scene structure and camera motion from a sequence of 2D images.
+◆ The recent pose-only imaging geometry decouples 3D coordinates from camera poses and demonstrates significantly better SfM performance through pose adjustment.
+◆ Continuing the pose-only perspective, this paper explores the critical relationship between the scene structures, rotation and translation.</td></tr>
 <tr><td>2025-11-14</td><td>Free3D: 3D Human Motion Emerges from Single-View 2D Supervision</td><td>[2511.11368](http://arxiv.org/pdf/2511.11368)</td><td>◆ Recent 3D human motion generation models demonstrate remarkable reconstruction accuracy yet struggle to generalize beyond training distributions.
 ◆ This limitation arises partly from the use of precise 3D supervision, which encourages models to fit fixed coordinate patterns instead of learning the essential 3D structure and motion semantic cues required for robust generalization.To overcome this limitation, we propose Free3D, a framework that synthesizes realistic 3D motions without any 3D motion annotations.
 ◆ Free3D introduces a Motion-Lifting Residual Quantized VAE (ML-RQ) that maps 2D motion sequences into 3D-consistent latent spaces, and a suite of 3D-free regularization objectives enforcing view consistency, orientation coherence, and physical plausibility.</td></tr>
@@ -1600,6 +1633,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Adaptive Multi-Scale Integration Unlocks Robust Cell Annotation in Histopathology Images</td><td>[2511.13586](http://arxiv.org/pdf/2511.13586)</td><td>◆ Identifying cell types and subtypes from routine histopathology images is essential for improving the computational understanding of human disease.
+◆ Existing tile-based models can capture detailed nuclear morphology but often fail to incorporate the broader tissue context that influences a cell&#x27;s function and identity.
+◆ In addition, available human annotations are typically coarse-grained and unevenly distributed across studies, making fine-grained subtype-level supervision difficult to obtain.</td></tr>
+<tr><td>2025-11-17</td><td>Hierarchical Prompt Learning for Image- and Text-Based Person Re-Identification</td><td>[2511.13575](http://arxiv.org/pdf/2511.13575)</td><td>◆ Person re-identification (ReID) aims to retrieve target pedestrian images given either visual queries (image-to-image, I2I) or textual descriptions (text-to-image, T2I).
+◆ Although both tasks share a common retrieval objective, they pose distinct challenges: I2I emphasizes discriminative identity learning, while T2I requires accurate cross-modal semantic alignment.
+◆ Existing methods often treat these tasks separately, which may lead to representation entanglement and suboptimal performance.</td></tr>
+<tr><td>2025-11-17</td><td>Language-Guided Invariance Probing of Vision-Language Models</td><td>[2511.13494](http://arxiv.org/pdf/2511.13494)</td><td>◆ Recent vision-language models (VLMs) such as CLIP, OpenCLIP, EVA02-CLIP and SigLIP achieve strong zero-shot performance, but it is unclear how reliably they respond to controlled linguistic perturbations.
+◆ We introduce Language-Guided Invariance Probing (LGIP), a benchmark that measures (i) invariance to meaning-preserving paraphrases and (ii) sensitivity to meaning-changing semantic flips in image-text matching.
+◆ Using 40k MS COCO images with five human captions each, we automatically generate paraphrases and rule-based flips that alter object category, color or count, and summarize model behavior with an invariance error, a semantic sensitivity gap and a positive-rate statistic.</td></tr>
+<tr><td>2025-11-17</td><td>Attention Grounded Enhancement for Visual Document Retrieval</td><td>[2511.13415](http://arxiv.org/pdf/2511.13415)</td><td>◆ Visual document retrieval requires understanding heterogeneous and multi-modal content to satisfy information needs.
+◆ Recent advances use screenshot-based document encoding with fine-grained late interaction, significantly improving retrieval performance.
+◆ However, retrievers are still trained with coarse global relevance labels, without revealing which regions support the match.</td></tr>
+<tr><td>2025-11-17</td><td>Stray Light Correction for the Helioseismic and Magnetic Imager</td><td>[2511.13348](http://arxiv.org/pdf/2511.13348)</td><td>◆ We report a point spread function (PSF) and deconvolution procedure to remove stray light from the Helioseismic and Magnetic Imager (HMI) data.
+◆ Pre-launch calibration observations, post-launch Venus transit and lunar transit data were used to develop the PSF and evaluate how well it reproduced the observed scattering.
+◆ The PSF reported differs from previous stray light removal efforts since we do not use Gaussians as the central mathematical component.</td></tr>
+<tr><td>2025-11-17</td><td>Uncovering and Mitigating Transient Blindness in Multimodal Model Editing</td><td>[2511.13243](http://arxiv.org/pdf/2511.13243)</td><td>◆ Multimodal Model Editing (MMED) aims to correct erroneous knowledge in multimodal models.
+◆ Existing evaluation methods, adapted from textual model editing, overstate success by relying on low-similarity or random inputs, obscure overfitting.
+◆ We propose a comprehensive locality evaluation framework, covering three key dimensions: random-image locality, no-image locality, and consistent-image locality, operationalized through seven distinct data types, enabling a detailed and structured analysis of multimodal edits.</td></tr>
+<tr><td>2025-11-17</td><td>GaRLILEO: Gravity-aligned Radar-Leg-Inertial Enhanced Odometry</td><td>[2511.13216](http://arxiv.org/pdf/2511.13216)</td><td>◆ Deployment of legged robots for navigating challenging terrains (e.g., stairs, slopes, and unstructured environments) has gained increasing preference over wheel-based platforms.
+◆ In such scenarios, accurate odometry estimation is a preliminary requirement for stable locomotion, localization, and mapping.
+◆ Traditional proprioceptive approaches, which rely on leg kinematics sensor modalities and inertial sensing, suffer from irrepressible vertical drift caused by frequent contact impacts, foot slippage, and vibrations, particularly affected by inaccurate roll and pitch estimation.</td></tr>
+<tr><td>2025-11-17</td><td>Large Language Models Meet Extreme Multi-label Classification: Scaling and Multi-modal Framework</td><td>[2511.13189](http://arxiv.org/pdf/2511.13189)</td><td>◆ Foundation models have revolutionized artificial intelligence across numerous domains, yet their transformative potential remains largely untapped in Extreme Multi-label Classification (XMC).
+◆ Queries in XMC are associated with relevant labels from extremely large label spaces, where it is critical to strike a balance between efficiency and performance.
+◆ Therefore, many recent approaches efficiently pose XMC as a maximum inner product search between embeddings learned from small encoder-only transformer architectures.</td></tr>
+<tr><td>2025-11-17</td><td>THIR: Topological Histopathological Image Retrieval</td><td>[2511.13170](http://arxiv.org/pdf/2511.13170)</td><td>◆ According to the World Health Organization, breast cancer claimed the lives of approximately 685,000 women in 2020.
+◆ Early diagnosis and accurate clinical decision making are critical in reducing this global burden.
+◆ In this study, we propose THIR, a novel Content-Based Medical Image Retrieval (CBMIR) framework that leverages topological data analysis specifically, Betti numbers derived from persistent homology to characterize and retrieve histopathological images based on their intrinsic structural patterns.</td></tr>
+<tr><td>2025-11-17</td><td>SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration</td><td>[2511.13168](http://arxiv.org/pdf/2511.13168)</td><td>◆ Achieving pixel-level registration between SAR and optical images remains a challenging task due to their fundamentally different imaging mechanisms and visual characteristics.
+◆ Although deep learning has achieved great success in many cross-modal tasks, its performance on SAR-Optical registration tasks is still unsatisfactory.
+◆ Gradient-based information has traditionally played a crucial role in handcrafted descriptors by highlighting structural differences.</td></tr>
 <tr><td>2025-11-14</td><td>DocLens : A Tool-Augmented Multi-Agent Framework for Long Visual Document Understanding</td><td>[2511.11552](http://arxiv.org/pdf/2511.11552)</td><td>◆ Comprehending long visual documents, where information is distributed across extensive pages of text and visual elements, is a critical but challenging task for modern Vision-Language Models (VLMs).
 ◆ Existing approaches falter on a fundamental challenge: evidence localization.
 ◆ They struggle to retrieve relevant pages and overlook fine-grained details within visual elements, leading to limited performance and model hallucination.</td></tr>
@@ -2597,6 +2660,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>End-to-End Multi-Person Pose Estimation with Pose-Aware Video Transformer</td><td>[2511.13208](http://arxiv.org/pdf/2511.13208)</td><td>◆ Existing multi-person video pose estimation methods typically adopt a two-stage pipeline: detecting individuals in each frame, followed by temporal modeling for single-person pose estimation.
+◆ This design relies on heuristic operations such as detection, RoI cropping, and non-maximum suppression (NMS), limiting both accuracy and efficiency.
+◆ In this paper, we present a fully end-to-end framework for multi-person 2D pose estimation in videos, effectively eliminating heuristic operations.</td></tr>
+<tr><td>2025-11-17</td><td>THIR: Topological Histopathological Image Retrieval</td><td>[2511.13170](http://arxiv.org/pdf/2511.13170)</td><td>◆ According to the World Health Organization, breast cancer claimed the lives of approximately 685,000 women in 2020.
+◆ Early diagnosis and accurate clinical decision making are critical in reducing this global burden.
+◆ In this study, we propose THIR, a novel Content-Based Medical Image Retrieval (CBMIR) framework that leverages topological data analysis specifically, Betti numbers derived from persistent homology to characterize and retrieve histopathological images based on their intrinsic structural patterns.</td></tr>
+<tr><td>2025-11-17</td><td>SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration</td><td>[2511.13168](http://arxiv.org/pdf/2511.13168)</td><td>◆ Achieving pixel-level registration between SAR and optical images remains a challenging task due to their fundamentally different imaging mechanisms and visual characteristics.
+◆ Although deep learning has achieved great success in many cross-modal tasks, its performance on SAR-Optical registration tasks is still unsatisfactory.
+◆ Gradient-based information has traditionally played a crucial role in handcrafted descriptors by highlighting structural differences.</td></tr>
+<tr><td>2025-11-15</td><td>Multimodal RGB-HSI Feature Fusion with Patient-Aware Incremental Heuristic Meta-Learning for Oral Lesion Classification</td><td>[2511.12268](http://arxiv.org/pdf/2511.12268)</td><td>◆ Early detection of oral cancer and potentially malignant disorders is challenging in low-resource settings due to limited annotated data.
+◆ We present a unified four-class oral lesion classifier that integrates deep RGB embeddings, hyperspectral reconstruction, handcrafted spectral-textural descriptors, and demographic metadata.
+◆ A pathologist-verified subset of oral cavity images was curated and processed using a fine-tuned ConvNeXt-v2 encoder, followed by RGB-to-HSI reconstruction into 31-band hyperspectral cubes.</td></tr>
+<tr><td>2025-11-15</td><td>AURA: Development and Validation of an Augmented Unplanned Removal Alert System using Synthetic ICU Videos</td><td>[2511.12241](http://arxiv.org/pdf/2511.12241)</td><td>◆ Unplanned extubation (UE) remains a critical patient safety concern in intensive care units (ICUs), often leading to severe complications or death.
+◆ Real-time UE detection has been limited, largely due to the ethical and privacy challenges of obtaining annotated ICU video data.
+◆ We propose Augmented Unplanned Removal Alert (AURA), a vision-based risk detection system developed and validated entirely on a fully synthetic video dataset.</td></tr>
 <tr><td>2025-11-14</td><td>Interpretable descriptors enable prediction of hydrogen-based superconductors at moderate pressures</td><td>[2511.11284](http://arxiv.org/pdf/2511.11284)</td><td>◆ Room temperature superconductivity remains elusive, and hydrogen-base compounds despite remarkable transition temperatures(Tc) typically require extreme pressures that hinder application.
 ◆ To accelerate discovery under moderate pressures, an interpretable framework based on symbolic regression is developed to predict Tc in hydrogen-based superconductors.
 ◆ A key descriptor is an integrated density of states (IDOS) within 1 eV of the Fermi level (EF), which exhibits greater robustness than conventional single-point DOS features.</td></tr>
@@ -2868,6 +2946,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Language-Guided Invariance Probing of Vision-Language Models</td><td>[2511.13494](http://arxiv.org/pdf/2511.13494)</td><td>◆ Recent vision-language models (VLMs) such as CLIP, OpenCLIP, EVA02-CLIP and SigLIP achieve strong zero-shot performance, but it is unclear how reliably they respond to controlled linguistic perturbations.
+◆ We introduce Language-Guided Invariance Probing (LGIP), a benchmark that measures (i) invariance to meaning-preserving paraphrases and (ii) sensitivity to meaning-changing semantic flips in image-text matching.
+◆ Using 40k MS COCO images with five human captions each, we automatically generate paraphrases and rule-based flips that alter object category, color or count, and summarize model behavior with an invariance error, a semantic sensitivity gap and a positive-rate statistic.</td></tr>
+<tr><td>2025-11-17</td><td>PDRs4All XX. Haute Couture: Spectral stitching of JWST MIRI-IFU cubes with matrix completion</td><td>[2511.13377](http://arxiv.org/pdf/2511.13377)</td><td>◆ MIRI is the imager and spectrograph covering wavelengths from $4.9$ to $27.9$ $μ$m onboard the James Webb Space Telescope (JWST).
+◆ The Medium-Resolution Spectrometer (MRS) consists of four integral field units (IFU), each of which has three sub-channels.
+◆ The twelve resulting spectral data cubes have different fields of view, spatial, and spectral resolutions.</td></tr>
+<tr><td>2025-11-17</td><td>Semi-Supervised Multi-Task Learning for Interpretable Quality As- sessment of Fundus Images</td><td>[2511.13353](http://arxiv.org/pdf/2511.13353)</td><td>◆ Retinal image quality assessment (RIQA) supports computer-aided diagnosis of eye diseases.
+◆ However, most tools classify only overall image quality, without indicating acquisition defects to guide recapture.
+◆ This gap is mainly due to the high cost of detailed annotations.</td></tr>
+<tr><td>2025-11-17</td><td>Referring Camouflaged Object Detection With Multi-Context Overlapped Windows Cross-Attention</td><td>[2511.13249](http://arxiv.org/pdf/2511.13249)</td><td>◆ Referring camouflaged object detection (Ref-COD) aims to identify hidden objects by incorporating reference information such as images and text descriptions.
+◆ Previous research has transformed reference images with salient objects into one-dimensional prompts, yielding significant results.
+◆ We explore ways to enhance performance through multi-context fusion of rich salient image features and camouflaged object features.</td></tr>
+<tr><td>2025-11-17</td><td>GenTract: Generative Global Tractography</td><td>[2511.13183](http://arxiv.org/pdf/2511.13183)</td><td>◆ Tractography is the process of inferring the trajectories of white-matter pathways in the brain from diffusion magnetic resonance imaging (dMRI).
+◆ Local tractography methods, which construct streamlines by following local fiber orientation estimates stepwise through an image, are prone to error accumulation and high false positive rates, particularly on noisy or low-resolution data.
+◆ In contrast, global methods, which attempt to optimize a collection of streamlines to maximize compatibility with underlying fiber orientation estimates, are computationally expensive.</td></tr>
+<tr><td>2025-11-17</td><td>THIR: Topological Histopathological Image Retrieval</td><td>[2511.13170](http://arxiv.org/pdf/2511.13170)</td><td>◆ According to the World Health Organization, breast cancer claimed the lives of approximately 685,000 women in 2020.
+◆ Early diagnosis and accurate clinical decision making are critical in reducing this global burden.
+◆ In this study, we propose THIR, a novel Content-Based Medical Image Retrieval (CBMIR) framework that leverages topological data analysis specifically, Betti numbers derived from persistent homology to characterize and retrieve histopathological images based on their intrinsic structural patterns.</td></tr>
+<tr><td>2025-11-17</td><td>SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration</td><td>[2511.13168](http://arxiv.org/pdf/2511.13168)</td><td>◆ Achieving pixel-level registration between SAR and optical images remains a challenging task due to their fundamentally different imaging mechanisms and visual characteristics.
+◆ Although deep learning has achieved great success in many cross-modal tasks, its performance on SAR-Optical registration tasks is still unsatisfactory.
+◆ Gradient-based information has traditionally played a crucial role in handcrafted descriptors by highlighting structural differences.</td></tr>
+<tr><td>2025-11-17</td><td>CapeNext: Rethinking and refining dynamic support information for category-agnostic pose estimation</td><td>[2511.13102](http://arxiv.org/pdf/2511.13102)</td><td>◆ Recent research in Category-Agnostic Pose Estimation (CAPE) has adopted fixed textual keypoint description as semantic prior for two-stage pose matching frameworks.
+◆ While this paradigm enhances robustness and flexibility by disentangling the dependency of support images, our critical analysis reveals two inherent limitations of static joint embedding: (1) polysemy-induced cross-category ambiguity during the matching process(e.g., the concept &quot;leg&quot; exhibiting divergent visual manifestations across humans and furniture), and (2) insufficient discriminability for fine-grained intra-category variations (e.g., posture and fur discrepancies between a sleeping white cat and a standing black cat).
+◆ To overcome these challenges, we propose a new framework that innovatively integrates hierarchical cross-modal interaction with dual-stream feature refinement, enhancing the joint embedding with both class-level and instance-specific cues from textual description and specific images.</td></tr>
+<tr><td>2025-11-17</td><td>SplatSearch: Instance Image Goal Navigation for Mobile Robots using 3D Gaussian Splatting and Diffusion Models</td><td>[2511.12972](http://arxiv.org/pdf/2511.12972)</td><td>◆ The Instance Image Goal Navigation (IIN) problem requires mobile robots deployed in unknown environments to search for specific objects or people of interest using only a single reference goal image of the target.
+◆ This problem can be especially challenging when: 1) the reference image is captured from an arbitrary viewpoint, and 2) the robot must operate with sparse-view scene reconstructions.
+◆ In this paper, we address the IIN problem, by introducing SplatSearch, a novel architecture that leverages sparse-view 3D Gaussian Splatting (3DGS) reconstructions.</td></tr>
+<tr><td>2025-11-17</td><td>Functional Mean Flow in Hilbert Space</td><td>[2511.12898](http://arxiv.org/pdf/2511.12898)</td><td>◆ We present Functional Mean Flow (FMF) as a one-step generative model defined in infinite-dimensional Hilbert space.
+◆ FMF extends the one-step Mean Flow framework to functional domains by providing a theoretical formulation for Functional Flow Matching and a practical implementation for efficient training and sampling.
+◆ We also introduce an $x_1$-prediction variant that improves stability over the original $u$-prediction form.</td></tr>
 <tr><td>2025-11-14</td><td>Bridging Hidden States in Vision-Language Models</td><td>[2511.11526](http://arxiv.org/pdf/2511.11526)</td><td>◆ Vision-Language Models (VLMs) are a new family of models that align image content with natural language.
 ◆ Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings.
 ◆ Many methods also tie fusion to an autoregressive decoder.</td></tr>
@@ -3207,6 +3315,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>PFAvatar: Pose-Fusion 3D Personalized Avatar Reconstruction from Real-World Outfit-of-the-Day Photos</td><td>[2511.12935](http://arxiv.org/pdf/2511.12935)</td><td>◆ We propose PFAvatar (Pose-Fusion Avatar), a new method that reconstructs high-quality 3D avatars from ``Outfit of the Day&#x27;&#x27; (OOTD) photos, which exhibit diverse poses, occlusions, and complex backgrounds.
+◆ Our method consists of two stages: (1) fine-tuning a pose-aware diffusion model from few-shot OOTD examples and (2) distilling a 3D avatar represented by a neural radiance field (NeRF).
+◆ In the first stage, unlike previous methods that segment images into assets (e.g., garments, accessories) for 3D assembly, which is prone to inconsistency, we avoid decomposition and directly model the full-body appearance.</td></tr>
+<tr><td>2025-11-16</td><td>OPFormer: Object Pose Estimation leveraging foundation model with geometric encoding</td><td>[2511.12614](http://arxiv.org/pdf/2511.12614)</td><td>◆ We introduce a unified, end-to-end framework that seamlessly integrates object detection and pose estimation with a versatile onboarding process.
+◆ Our pipeline begins with an onboarding stage that generates object representations from either traditional 3D CAD models or, in their absence, by rapidly reconstructing a high-fidelity neural representation (NeRF) from multi-view images.
+◆ Given a test image, our system first employs the CNOS detector to localize target objects.</td></tr>
+<tr><td>2025-11-15</td><td>LiDAR-GS++:Improving LiDAR Gaussian Reconstruction via Diffusion Priors</td><td>[2511.12304](http://arxiv.org/pdf/2511.12304)</td><td>◆ Recent GS-based rendering has made significant progress for LiDAR, surpassing Neural Radiance Fields (NeRF) in both quality and speed.
+◆ However, these methods exhibit artifacts in extrapolated novel view synthesis due to the incomplete reconstruction from single traversal scans.
+◆ To address this limitation, we present LiDAR-GS++, a LiDAR Gaussian Splatting reconstruction method enhanced by diffusion priors for real-time and high-fidelity re-simulation on public urban roads.</td></tr>
 <tr><td>2025-11-11</td><td>RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy Camera Poses</td><td>[2511.08545](http://arxiv.org/pdf/2511.08545)</td><td>◆ Accurate 3D reconstruction from multi-view images is essential for downstream robotic tasks such as navigation, manipulation, and environment understanding.
 ◆ However, obtaining precise camera poses in real-world settings remains challenging, even when calibration parameters are known.
 ◆ This limits the practicality of existing NeRF-based methods that rely heavily on accurate extrinsic estimates.</td></tr>
@@ -3901,4 +4018,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.17
+> 更新于: 2025.11.18
