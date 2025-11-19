@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.18)
+# 计算机视觉领域最新论文 (2025.11.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>SLAM-AGS: Slide-Label Aware Multi-Task Pretraining Using Adaptive Gradient Surgery in Computational Cytology</td><td>[2511.14639](http://arxiv.org/pdf/2511.14639)</td><td>◆ Computational cytology faces two major challenges: i) instance-level labels are unreliable and prohibitively costly to obtain, ii) witness rates are extremely low.
+◆ We propose SLAM-AGS, a Slide-Label-Aware Multitask pretraining framework that jointly optimizes (i) a weakly supervised similarity objective on slide-negative patches and (ii) a self-supervised contrastive objective on slide-positive patches, yielding stronger performance on downstream tasks.
+◆ To stabilize learning, we apply Adaptive Gradient Surgery to tackle conflicting task gradients and prevent model collapse.</td></tr>
+<tr><td>2025-11-18</td><td>Simultaneous Localization and 3D-Semi Dense Mapping for Micro Drones Using Monocular Camera and Inertial Sensors</td><td>[2511.14335](http://arxiv.org/pdf/2511.14335)</td><td>◆ Monocular simultaneous localization and mapping (SLAM) algorithms estimate drone poses and build a 3D map using a single camera.
+◆ Current algorithms include sparse methods that lack detailed geometry, while learning-driven approaches produce dense maps but are computationally intensive.
+◆ Monocular SLAM also faces scale ambiguities, which affect its accuracy.</td></tr>
+<tr><td>2025-11-18</td><td>MA-SLAM: Active SLAM in Large-Scale Unknown Environment using Map Aware Deep Reinforcement Learning</td><td>[2511.14330](http://arxiv.org/pdf/2511.14330)</td><td>◆ Active Simultaneous Localization and Mapping (Active SLAM) involves the strategic planning and precise control of a robotic system&#x27;s movement in order to construct a highly accurate and comprehensive representation of its surrounding environment, which has garnered significant attention within the research community.
+◆ While the current methods demonstrate efficacy in small and controlled settings, they face challenges when applied to large-scale and diverse environments, marked by extended periods of exploration and suboptimal paths of discovery.
+◆ In this paper, we propose MA-SLAM, a Map-Aware Active SLAM system based on Deep Reinforcement Learning (DRL), designed to address the challenge of efficient exploration in large-scale environments.</td></tr>
+<tr><td>2025-11-18</td><td>iGaussian: Real-Time Camera Pose Estimation via Feed-Forward 3D Gaussian Splatting Inversion</td><td>[2511.14149](http://arxiv.org/pdf/2511.14149)</td><td>◆ Recent trends in SLAM and visual navigation have embraced 3D Gaussians as the preferred scene representation, highlighting the importance of estimating camera poses from a single image using a pre-built Gaussian model.
+◆ However, existing approaches typically rely on an iterative \textit{render-compare-refine} loop, where candidate views are first rendered using NeRF or Gaussian Splatting, then compared against the target image, and finally, discrepancies are used to update the pose.
+◆ This multi-round process incurs significant computational overhead, hindering real-time performance in robotics.</td></tr>
 <tr><td>2025-11-17</td><td>GaRLILEO: Gravity-aligned Radar-Leg-Inertial Enhanced Odometry</td><td>[2511.13216](http://arxiv.org/pdf/2511.13216)</td><td>◆ Deployment of legged robots for navigating challenging terrains (e.g., stairs, slopes, and unstructured environments) has gained increasing preference over wheel-based platforms.
 ◆ In such scenarios, accurate odometry estimation is a preliminary requirement for stable locomotion, localization, and mapping.
 ◆ Traditional proprioceptive approaches, which rely on leg kinematics sensor modalities and inertial sensing, suffer from irrepressible vertical drift caused by frequent contact impacts, foot slippage, and vibrations, particularly affected by inaccurate roll and pitch estimation.</td></tr>
@@ -1098,6 +1110,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>Blur-Robust Detection via Feature Restoration: An End-to-End Framework for Prior-Guided Infrared UAV Target Detection</td><td>[2511.14371](http://arxiv.org/pdf/2511.14371)</td><td>◆ Infrared unmanned aerial vehicle (UAV) target images often suffer from motion blur degradation caused by rapid sensor movement, significantly reducing contrast between target and background.
+◆ Generally, detection performance heavily depends on the discriminative feature representation between target and background.
+◆ Existing methods typically treat deblurring as a preprocessing step focused on visual quality, while neglecting the enhancement of task-relevant features crucial for detection.</td></tr>
+<tr><td>2025-11-18</td><td>Hubble Space Telescope proper motions of Large Magellanic Cloud star clusters -- II. Kinematic structure of young and intermediate-age clusters</td><td>[2511.14351](http://arxiv.org/pdf/2511.14351)</td><td>◆ In this paper, we explore the kinematic properties of a sample of 19 young (&lt;1 Gyr) and intermediate-age (1-2.5 Gyr) massive star clusters within the Large Magellanic Cloud (LMC).
+◆ We analyse the proper motions of the clusters, which have been measured based on multi-epoch Hubble Space Telescope (HST) observations.
+◆ Additionally, we infer from the HST data homogeneous and robust estimates for the distances, ages and metallicities of the clusters.</td></tr>
+<tr><td>2025-11-18</td><td>Vortex stability in pseudo-Hermitian theories</td><td>[2511.14300](http://arxiv.org/pdf/2511.14300)</td><td>◆ Pseudo-Hermitian (including $\mathcal{PT}$-symmetric) field theories support phenomenology that cannot be replicated in standard Hermitian theories.
+◆ We describe a concrete example in which the vortex solutions that are realised in a prototypical pseudo-Hermitian field theory exhibit a novel metastability, despite the model parameters residing within the naively stable regime of exact antilinear symmetry of the vacuum theory.
+◆ This instability is identified analytically and confirmed through numerical simulations, and it arises from the small breaking of the underlying antilinear symmetry of the pseudo-Hermitian theory due to the presence of the topological defect.</td></tr>
+<tr><td>2025-11-18</td><td>Model-Based Clustering of Football Event Sequences: A Marked Spatio-Temporal Point Process Mixture Approach</td><td>[2511.14297](http://arxiv.org/pdf/2511.14297)</td><td>◆ We propose a novel mixture model for football event data that clusters entire possessions to reveal their temporal, sequential, and spatial structure.
+◆ Each mixture component models possessions as marked spatio-temporal point processes: event types follow a finite Markov chain with an absorbing state for ball loss, event times follow a conditional Gamma process to account for dispersion, and spatial locations evolve via truncated Brownian motion.
+◆ To aid interpretation, we derive summary indicators from model parameters capturing possession speed, number of events, and spatial dynamics.</td></tr>
+<tr><td>2025-11-18</td><td>Newborn jet in the symbiotic system R Aquarii</td><td>[2511.14243](http://arxiv.org/pdf/2511.14243)</td><td>◆ R Aquarii (R Aqr) is a well-known symbiotic binary that has attracted renewed interest during its recent periastron passage, an event that occurs only once every about 40 years.
+◆ This passage marks the first to be observed with modern, state-of-the-art instruments.
+◆ We investigate the inner, sub-arcsecond active region of R Aqr during this recent periastron passage, with the goal of gaining insight into the jet-launching mechanisms at work in this system.</td></tr>
+<tr><td>2025-11-18</td><td>FreeMusco: Motion-Free Learning of Latent Control for Morphology-Adaptive Locomotion in Musculoskeletal Characters</td><td>[2511.14205](http://arxiv.org/pdf/2511.14205)</td><td>◆ We propose FreeMusco, a motion-free framework that jointly learns latent representations and control policies for musculoskeletal characters.
+◆ By leveraging the musculoskeletal model as a strong prior, our method enables energy-aware and morphology-adaptive locomotion to emerge without motion data.
+◆ The framework generalizes across human, non-human, and synthetic morphologies, where distinct energy-efficient strategies naturally appear--for example, quadrupedal gaits in Chimanoid versus bipedal gaits in Humanoid.</td></tr>
+<tr><td>2025-11-18</td><td>AsyncVLA: Asynchronous Flow Matching for Vision-Language-Action Models</td><td>[2511.14148](http://arxiv.org/pdf/2511.14148)</td><td>◆ Vision-language-action (VLA) models have recently emerged as a powerful paradigm for building generalist robots.
+◆ However, traditional VLA models that generate actions through flow matching (FM) typically rely on rigid and uniform time schedules, i.e., synchronous FM (SFM).
+◆ Without action context awareness and asynchronous self-correction, SFM becomes unstable in long-horizon tasks, where a single action error can cascade into failure.</td></tr>
+<tr><td>2025-11-17</td><td>B2F: End-to-End Body-to-Face Motion Generation with Style Reference</td><td>[2511.13988](http://arxiv.org/pdf/2511.13988)</td><td>◆ Human motion naturally integrates body movements and facial expressions, forming a unified perception.
+◆ If a virtual character&#x27;s facial expression does not align well with its body movements, it may weaken the perception of the character as a cohesive whole.
+◆ Motivated by this, we propose B2F, a model that generates facial motions aligned with body movements.</td></tr>
+<tr><td>2025-11-17</td><td>Enabling Real-Time Volumetric Imaging in Interventional Radiology Suits via a Deep Learning Framework Robust to C-arm Tilt</td><td>[2511.13980](http://arxiv.org/pdf/2511.13980)</td><td>◆ Contemporary interventional imaging lacks the real-time 3D guidance needed for the precise localization of mobile thoracic targets.
+◆ While Cone-Beam CT (CBCT) provides 3D data, it is often too slow for dynamic motion tracking.
+◆ Deep learning frameworks that reconstruct 3D volumes from sparse 2D projections offer a promising solution, but their performance under the geometrically complex, non-zero tilt acquisitions common in interventional radiology is unknown.</td></tr>
 <tr><td>2025-11-17</td><td>Ultrafast electron diffractive imaging of the dissociation of pre-excited molecules</td><td>[2511.13479](http://arxiv.org/pdf/2511.13479)</td><td>◆ Gas phase ultrafast electron diffraction (GUED) has become a powerful technique to directly observe the structural dynamics of photoexcited molecules.
 ◆ GUED reveals information about the nuclear motions that is complementary to the information on the electronic states provided by spectroscopic measurements.
 ◆ GUED experiments so far have utilized a single laser pulse to excite the molecules and an electron pulse to probe the dynamics.</td></tr>
@@ -1637,6 +1676,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>FreeSwim: Revisiting Sliding-Window Attention Mechanisms for Training-Free Ultra-High-Resolution Video Generation</td><td>[2511.14712](http://arxiv.org/pdf/2511.14712)</td><td>◆ The quadratic time and memory complexity of the attention mechanism in modern Transformer based video generators makes end-to-end training for ultra high resolution videos prohibitively expensive.
+◆ Motivated by this limitation, we introduce a training-free approach that leverages video Diffusion Transformers pretrained at their native scale to synthesize higher resolution videos without any additional training or adaptation.
+◆ At the core of our method lies an inward sliding window attention mechanism, which originates from a key observation: maintaining each query token&#x27;s training scale receptive field is crucial for preserving visual fidelity and detail.</td></tr>
+<tr><td>2025-11-18</td><td>Overcoming global sensitivity limitations: using active subspaces to explore discrepancies between global and local parameter sensitivities</td><td>[2511.14687](http://arxiv.org/pdf/2511.14687)</td><td>◆ Global sensitivity metrics are essential tools for assessing parameter importance in complex models, particularly when precise information about parameter values is unavailable.
+◆ In many cases, such metrics are used to provide parameter rankings that allow for necessary dimension reduction in moderate-to-high dimensional systems.
+◆ However, globally-derived sensitivity results may obscure localized variability in parameter sensitivities, resulting in misleading conclusions about parameter importance and ensuing consequences for subsequent tasks such as model calibration and surrogate model construction.</td></tr>
+<tr><td>2025-11-18</td><td>A Specialized Large Language Model for Clinical Reasoning and Diagnosis in Rare Diseases</td><td>[2511.14638](http://arxiv.org/pdf/2511.14638)</td><td>◆ Rare diseases affect hundreds of millions worldwide, yet diagnosis often spans years.
+◆ Convectional pipelines decouple noisy evidence extraction from downstream inferential diagnosis, and general/medical large language models (LLMs) face scarce real world electronic health records (EHRs), stale domain knowledge, and hallucinations.
+◆ We assemble a large, domain specialized clinical corpus and a clinician validated reasoning set, and develop RareSeek R1 via staged instruction tuning, chain of thought learning, and graph grounded retrieval.</td></tr>
+<tr><td>2025-11-18</td><td>Mind the Gaps: Measuring Visual Artifacts in Dimensionality Reduction</td><td>[2511.14544](http://arxiv.org/pdf/2511.14544)</td><td>◆ Dimensionality Reduction (DR) techniques are commonly used for the visual exploration and analysis of high-dimensional data due to their ability to project datasets of high-dimensional points onto the 2D plane.
+◆ However, projecting datasets in lower dimensions often entails some distortion, which is not necessarily easy to recognize but can lead users to misleading conclusions.
+◆ Several Projection Quality Metrics (PQMs) have been developed as tools to quantify the goodness-of-fit of a DR projection; however, they mostly focus on measuring how well the projection captures the global or local structure of the data, without taking into account the visual distortion of the resulting plots, thus often ignoring the presence of outliers or artifacts that can mislead a visual analysis of the projection.</td></tr>
+<tr><td>2025-11-18</td><td>D-PerceptCT: Deep Perceptual Enhancement for Low-Dose CT Images</td><td>[2511.14518](http://arxiv.org/pdf/2511.14518)</td><td>◆ Low Dose Computed Tomography (LDCT) is widely used as an imaging solution to aid diagnosis and other clinical tasks.
+◆ However, this comes at the price of a deterioration in image quality due to the low dose of radiation used to reduce the risk of secondary cancer development.
+◆ While some efficient methods have been proposed to enhance LDCT quality, many overestimate noise and perform excessive smoothing, leading to a loss of critical details.</td></tr>
+<tr><td>2025-11-18</td><td>Aerial Assistance System for Automated Firefighting during Turntable Ladder Operations</td><td>[2511.14504](http://arxiv.org/pdf/2511.14504)</td><td>◆ Fires in industrial facilities pose special challenges to firefighters, e.g., due to the sheer size and scale of the buildings.
+◆ The resulting visual obstructions impair firefighting accuracy, further compounded by inaccurate assessments of the fire&#x27;s location.
+◆ Such imprecision simultaneously increases the overall damage and prolongs the fire-brigades operation unnecessarily.</td></tr>
+<tr><td>2025-11-18</td><td>DIR-TIR: Dialog-Iterative Refinement for Text-to-Image Retrieval</td><td>[2511.14449](http://arxiv.org/pdf/2511.14449)</td><td>◆ This paper addresses the task of interactive, conversational text-to-image retrieval.
+◆ Our DIR-TIR framework progressively refines the target image search through two specialized modules: the Dialog Refiner Module and the Image Refiner Module.
+◆ The Dialog Refiner actively queries users to extract essential information and generate increasingly precise descriptions of the target image.</td></tr>
+<tr><td>2025-11-18</td><td>Agentic Video Intelligence: A Flexible Framework for Advanced Video Exploration and Understanding</td><td>[2511.14446](http://arxiv.org/pdf/2511.14446)</td><td>◆ Video understanding requires not only visual recognition but also complex reasoning.
+◆ While Vision-Language Models (VLMs) demonstrate impressive capabilities, they typically process videos largely in a single-pass manner with limited support for evidence revisit and iterative refinement.
+◆ While recently emerging agent-based methods enable long-horizon reasoning, they either depend heavily on expensive proprietary models or require extensive agentic RL training.</td></tr>
+<tr><td>2025-11-18</td><td>Cheating Stereo Matching in Full-scale: Physical Adversarial Attack against Binocular Depth Estimation in Autonomous Driving</td><td>[2511.14386](http://arxiv.org/pdf/2511.14386)</td><td>◆ Though deep neural models adopted to realize the perception of autonomous driving have proven vulnerable to adversarial examples, known attacks often leverage 2D patches and target mostly monocular perception.
+◆ Therefore, the effectiveness of Physical Adversarial Examples (PAEs) on stereo-based binocular depth estimation remains largely unexplored.
+◆ To this end, we propose the first texture-enabled physical adversarial attack against stereo matching models in the context of autonomous driving.</td></tr>
+<tr><td>2025-11-18</td><td>O3SLM: Open Weight, Open Data, and Open Vocabulary Sketch-Language Model</td><td>[2511.14368](http://arxiv.org/pdf/2511.14368)</td><td>◆ While Large Vision Language Models (LVLMs) are increasingly deployed in real-world applications, their ability to interpret abstract visual inputs remains limited.
+◆ Specifically, they struggle to comprehend hand-drawn sketches, a modality that offers an intuitive means of expressing concepts that are difficult to describe textually.
+◆ We identify the primary bottleneck as the absence of a large-scale dataset that jointly models sketches, photorealistic images, and corresponding natural language instructions.</td></tr>
 <tr><td>2025-11-17</td><td>Adaptive Multi-Scale Integration Unlocks Robust Cell Annotation in Histopathology Images</td><td>[2511.13586](http://arxiv.org/pdf/2511.13586)</td><td>◆ Identifying cell types and subtypes from routine histopathology images is essential for improving the computational understanding of human disease.
 ◆ Existing tile-based models can capture detailed nuclear morphology but often fail to incorporate the broader tissue context that influences a cell&#x27;s function and identity.
 ◆ In addition, available human annotations are typically coarse-grained and unevenly distributed across studies, making fine-grained subtype-level supervision difficult to obtain.</td></tr>
@@ -2666,6 +2735,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>Simultaneous Localization and 3D-Semi Dense Mapping for Micro Drones Using Monocular Camera and Inertial Sensors</td><td>[2511.14335](http://arxiv.org/pdf/2511.14335)</td><td>◆ Monocular simultaneous localization and mapping (SLAM) algorithms estimate drone poses and build a 3D map using a single camera.
+◆ Current algorithms include sparse methods that lack detailed geometry, while learning-driven approaches produce dense maps but are computationally intensive.
+◆ Monocular SLAM also faces scale ambiguities, which affect its accuracy.</td></tr>
+<tr><td>2025-11-18</td><td>Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution</td><td>[2511.14210](http://arxiv.org/pdf/2511.14210)</td><td>◆ We introduce Orion, a visual agent framework that can take in any modality and generate any modality.
+◆ Using an agentic framework with multiple tool-calling capabilities, Orion is designed for visual AI tasks and achieves state-of-the-art results.
+◆ Unlike traditional vision-language models that produce descriptive outputs, Orion orchestrates a suite of specialized computer vision tools, including object detection, keypoint localization, panoptic segmentation, Optical Character Recognition, and geometric analysis, to execute complex multi-step visual workflows.</td></tr>
+<tr><td>2025-11-18</td><td>$A^2$GC: $A$symmetric $A$ggregation with Geometric Constraints for Locally Aggregated Descriptors</td><td>[2511.14109](http://arxiv.org/pdf/2511.14109)</td><td>◆ Visual Place Recognition (VPR) aims to match query images against a database using visual cues.
+◆ State-of-the-art methods aggregate features from deep backbones to form global descriptors.
+◆ Optimal transport-based aggregation methods reformulate feature-to-cluster assignment as a transport problem, but the standard Sinkhorn algorithm symmetrically treats source and target marginals, limiting effectiveness when image features and cluster centers exhibit substantially different distributions.</td></tr>
+<tr><td>2025-11-17</td><td>Classification of Aortic Shape with Topographical Pair Correlation Functions</td><td>[2511.13960](http://arxiv.org/pdf/2511.13960)</td><td>◆ Quantitative descriptors convert high-dimensional medical images into low-dimensional features capable of differentiating organ shapes that correlate with injury or disease progression for diagnostic purposes.
+◆ An important example is aortic dissections, which can be imaged using high-resolution CT scans and for which the shape of the true and false lumens of the aorta has long been used to predict disease state and the potential for positive surgical outcomes (namely thoracic endovascular repair or TEVAR).
+◆ Here we present a method for calculating the topographical pair correlation function (TPCF), a descriptor of the spatial correlation of point estimates for Gaussian curvature, mean curvature, shape index, and bending ratio constrained to the surface of a meshed image.</td></tr>
 <tr><td>2025-11-17</td><td>End-to-End Multi-Person Pose Estimation with Pose-Aware Video Transformer</td><td>[2511.13208](http://arxiv.org/pdf/2511.13208)</td><td>◆ Existing multi-person video pose estimation methods typically adopt a two-stage pipeline: detecting individuals in each frame, followed by temporal modeling for single-person pose estimation.
 ◆ This design relies on heuristic operations such as detection, RoI cropping, and non-maximum suppression (NMS), limiting both accuracy and efficiency.
 ◆ In this paper, we present a fully end-to-end framework for multi-person 2D pose estimation in videos, effectively eliminating heuristic operations.</td></tr>
@@ -2954,6 +3035,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>FlowRoI A Fast Optical Flow Driven Region of Interest Extraction Framework for High-Throughput Image Compression in Immune Cell Migration Analysis</td><td>[2511.14419](http://arxiv.org/pdf/2511.14419)</td><td>◆ Autonomous migration is essential for the function of immune cells such as neutrophils and plays a pivotal role in diverse diseases.
+◆ Recently, we introduced ComplexEye, a multi-lens array microscope comprising 16 independent aberration-corrected glass lenses arranged at the pitch of a 96-well plate, capable of capturing high-resolution movies of migrating cells.
+◆ This architecture enables high-throughput live-cell video microscopy for migration analysis, supporting routine quantification of autonomous motility with strong potential for clinical translation.</td></tr>
+<tr><td>2025-11-18</td><td>Cranio-ID: Graph-Based Craniofacial Identification via Automatic Landmark Annotation in 2D Multi-View X-rays</td><td>[2511.14411](http://arxiv.org/pdf/2511.14411)</td><td>◆ In forensic craniofacial identification and in many biomedical applications, craniometric landmarks are important.
+◆ Traditional methods for locating landmarks are time-consuming and require specialized knowledge and expertise.
+◆ Current methods utilize superimposition and deep learning-based methods that employ automatic annotation of landmarks.</td></tr>
+<tr><td>2025-11-18</td><td>Dental3R: Geometry-Aware Pairing for Intraoral 3D Reconstruction from Sparse-View Photographs</td><td>[2511.14315](http://arxiv.org/pdf/2511.14315)</td><td>◆ Intraoral 3D reconstruction is fundamental to digital orthodontics, yet conventional methods like intraoral scanning are inaccessible for remote tele-orthodontics, which typically relies on sparse smartphone imagery.
+◆ While 3D Gaussian Splatting (3DGS) shows promise for novel view synthesis, its application to the standard clinical triad of unposed anterior and bilateral buccal photographs is challenging.
+◆ The large view baselines, inconsistent illumination, and specular surfaces common in intraoral settings can destabilize simultaneous pose and geometry estimation.</td></tr>
+<tr><td>2025-11-18</td><td>NeuralBoneReg: A Novel Self-Supervised Method for Robust and Accurate Multi-Modal Bone Surface Registration</td><td>[2511.14286](http://arxiv.org/pdf/2511.14286)</td><td>◆ In computer- and robot-assisted orthopedic surgery (CAOS), patient-specific surgical plans derived from preoperative imaging define target locations and implant trajectories.
+◆ During surgery, these plans must be accurately transferred, relying on precise cross-registration between preoperative and intraoperative data.
+◆ However, substantial modality heterogeneity across imaging modalities makes this registration challenging and error-prone.</td></tr>
+<tr><td>2025-11-18</td><td>EBind: a practical approach to space binding</td><td>[2511.14229](http://arxiv.org/pdf/2511.14229)</td><td>◆ We simplify space binding by focusing on two core components, a single encoder per modality and high-quality data; enabling training state-of-the-art models on a single GPU in a few hours as opposed to multiple days.
+◆ We present EBind, an Easy, data-centric, and parameter-efficient method to Bind the embedding spaces of multiple contrastive models.
+◆ We demonstrate that a simple 1.8B-parameter image-text-video-audio-3D model can outperform models 4 to 17x the size.</td></tr>
+<tr><td>2025-11-18</td><td>InstantViR: Real-Time Video Inverse Problem Solver with Distilled Diffusion Prior</td><td>[2511.14208](http://arxiv.org/pdf/2511.14208)</td><td>◆ Video inverse problems are fundamental to streaming, telepresence, and AR/VR, where high perceptual quality must coexist with tight latency constraints.
+◆ Diffusion-based priors currently deliver state-of-the-art reconstructions, but existing approaches either adapt image diffusion models with ad hoc temporal regularizers - leading to temporal artifacts - or rely on native video diffusion models whose iterative posterior sampling is far too slow for real-time use.
+◆ We introduce InstantViR, an amortized inference framework for ultra-fast video reconstruction powered by a pre-trained video diffusion prior.</td></tr>
+<tr><td>2025-11-18</td><td>iGaussian: Real-Time Camera Pose Estimation via Feed-Forward 3D Gaussian Splatting Inversion</td><td>[2511.14149](http://arxiv.org/pdf/2511.14149)</td><td>◆ Recent trends in SLAM and visual navigation have embraced 3D Gaussians as the preferred scene representation, highlighting the importance of estimating camera poses from a single image using a pre-built Gaussian model.
+◆ However, existing approaches typically rely on an iterative \textit{render-compare-refine} loop, where candidate views are first rendered using NeRF or Gaussian Splatting, then compared against the target image, and finally, discrepancies are used to update the pose.
+◆ This multi-round process incurs significant computational overhead, hindering real-time performance in robotics.</td></tr>
+<tr><td>2025-11-18</td><td>$A^2$GC: $A$symmetric $A$ggregation with Geometric Constraints for Locally Aggregated Descriptors</td><td>[2511.14109](http://arxiv.org/pdf/2511.14109)</td><td>◆ Visual Place Recognition (VPR) aims to match query images against a database using visual cues.
+◆ State-of-the-art methods aggregate features from deep backbones to form global descriptors.
+◆ Optimal transport-based aggregation methods reformulate feature-to-cluster assignment as a transport problem, but the standard Sinkhorn algorithm symmetrically treats source and target marginals, limiting effectiveness when image features and cluster centers exhibit substantially different distributions.</td></tr>
+<tr><td>2025-11-18</td><td>SMGeo: Cross-View Object Geo-Localization with Grid-Level Mixture-of-Experts</td><td>[2511.14093](http://arxiv.org/pdf/2511.14093)</td><td>◆ Cross-view object Geo-localization aims to precisely pinpoint the same object across large-scale satellite imagery based on drone images.
+◆ Due to significant differences in viewpoint and scale, coupled with complex background interference, traditional multi-stage &quot;retrieval-matching&quot; pipelines are prone to cumulative errors.
+◆ To address this, we present SMGeo, a promptable end-to-end transformer-based model for object Geo-localization.</td></tr>
+<tr><td>2025-11-18</td><td>The CHASM-SWPC Dataset for Coronal Hole Detection &amp; Analysis</td><td>[2511.14044](http://arxiv.org/pdf/2511.14044)</td><td>◆ Coronal holes (CHs) are low-activity, low-density solar coronal regions with open magnetic field lines (Cranmer 2009).
+◆ In the extreme ultraviolet (EUV) spectrum, CHs appear as dark patches.
+◆ Using daily hand-drawn maps from the Space Weather Prediction Center (SWPC), we developed a semi-automated pipeline to digitize the SWPC maps into binary segmentation masks.</td></tr>
 <tr><td>2025-11-17</td><td>Language-Guided Invariance Probing of Vision-Language Models</td><td>[2511.13494](http://arxiv.org/pdf/2511.13494)</td><td>◆ Recent vision-language models (VLMs) such as CLIP, OpenCLIP, EVA02-CLIP and SigLIP achieve strong zero-shot performance, but it is unclear how reliably they respond to controlled linguistic perturbations.
 ◆ We introduce Language-Guided Invariance Probing (LGIP), a benchmark that measures (i) invariance to meaning-preserving paraphrases and (ii) sensitivity to meaning-changing semantic flips in image-text matching.
 ◆ Using 40k MS COCO images with five human captions each, we automatically generate paraphrases and rule-based flips that alter object category, color or count, and summarize model behavior with an invariance error, a semantic sensitivity gap and a positive-rate statistic.</td></tr>
@@ -3325,7 +3436,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-11-17</td><td>PFAvatar: Pose-Fusion 3D Personalized Avatar Reconstruction from Real-World Outfit-of-the-Day Photos</td><td>[2511.12935](http://arxiv.org/pdf/2511.12935)</td><td>◆ We propose PFAvatar (Pose-Fusion Avatar), a new method that reconstructs high-quality 3D avatars from ``Outfit of the Day&#x27;&#x27; (OOTD) photos, which exhibit diverse poses, occlusions, and complex backgrounds.
+<tr><td>2025-11-18</td><td>iGaussian: Real-Time Camera Pose Estimation via Feed-Forward 3D Gaussian Splatting Inversion</td><td>[2511.14149](http://arxiv.org/pdf/2511.14149)</td><td>◆ Recent trends in SLAM and visual navigation have embraced 3D Gaussians as the preferred scene representation, highlighting the importance of estimating camera poses from a single image using a pre-built Gaussian model.
+◆ However, existing approaches typically rely on an iterative \textit{render-compare-refine} loop, where candidate views are first rendered using NeRF or Gaussian Splatting, then compared against the target image, and finally, discrepancies are used to update the pose.
+◆ This multi-round process incurs significant computational overhead, hindering real-time performance in robotics.</td></tr>
+<tr><td>2025-11-18</td><td>PFAvatar: Pose-Fusion 3D Personalized Avatar Reconstruction from Real-World Outfit-of-the-Day Photos</td><td>[2511.12935](http://arxiv.org/pdf/2511.12935)</td><td>◆ We propose PFAvatar (Pose-Fusion Avatar), a new method that reconstructs high-quality 3D avatars from ``Outfit of the Day&#x27;&#x27; (OOTD) photos, which exhibit diverse poses, occlusions, and complex backgrounds.
 ◆ Our method consists of two stages: (1) fine-tuning a pose-aware diffusion model from few-shot OOTD examples and (2) distilling a 3D avatar represented by a neural radiance field (NeRF).
 ◆ In the first stage, unlike previous methods that segment images into assets (e.g., garments, accessories) for 3D assembly, which is prone to inconsistency, we avoid decomposition and directly model the full-body appearance.</td></tr>
 <tr><td>2025-11-16</td><td>OPFormer: Object Pose Estimation leveraging foundation model with geometric encoding</td><td>[2511.12614](http://arxiv.org/pdf/2511.12614)</td><td>◆ We introduce a unified, end-to-end framework that seamlessly integrates object detection and pose estimation with a versatile onboarding process.
@@ -4030,4 +4144,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.18
+> 更新于: 2025.11.19
