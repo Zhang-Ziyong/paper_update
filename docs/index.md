@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.19)
+# 计算机视觉领域最新论文 (2025.11.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>Learning from Mistakes: Loss-Aware Memory Enhanced Continual Learning for LiDAR Place Recognition</td><td>[2511.15597](http://arxiv.org/pdf/2511.15597)</td><td>◆ LiDAR place recognition plays a crucial role in SLAM, robot navigation, and autonomous driving.
+◆ However, existing LiDAR place recognition methods often struggle to adapt to new environments without forgetting previously learned knowledge, a challenge widely known as catastrophic forgetting.
+◆ To address this issue, we propose KDF+, a novel continual learning framework for LiDAR place recognition that extends the KDF paradigm with a loss-aware sampling strategy and a rehearsal enhancement mechanism.</td></tr>
+<tr><td>2025-11-18</td><td>A visual study of ICP variants for Lidar Odometry</td><td>[2511.14919](http://arxiv.org/pdf/2511.14919)</td><td>◆ Odometry with lidar sensors is a state-of-the-art method to estimate the ego pose of a moving vehicle.
+◆ Many implementations of lidar odometry use variants of the Iterative Closest Point (ICP) algorithm.
+◆ Real-world effects such as dynamic objects, non-overlapping areas, and sensor noise diminish the accuracy of ICP.</td></tr>
 <tr><td>2025-11-18</td><td>SLAM-AGS: Slide-Label Aware Multi-Task Pretraining Using Adaptive Gradient Surgery in Computational Cytology</td><td>[2511.14639](http://arxiv.org/pdf/2511.14639)</td><td>◆ Computational cytology faces two major challenges: i) instance-level labels are unreliable and prohibitively costly to obtain, ii) witness rates are extremely low.
 ◆ We propose SLAM-AGS, a Slide-Label-Aware Multitask pretraining framework that jointly optimizes (i) a weakly supervised similarity objective on slide-negative patches and (ii) a self-supervised contrastive objective on slide-positive patches, yielding stronger performance on downstream tasks.
 ◆ To stabilize learning, we apply Adaptive Gradient Surgery to tackle conflicting task gradients and prevent model collapse.</td></tr>
@@ -1108,6 +1114,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>MambaIO: Global-Coordinate Inertial Odometry for Pedestrians via Multi-Scale Frequency-Decoupled Modeling</td><td>[2511.15645](http://arxiv.org/pdf/2511.15645)</td><td>◆ Inertial Odometry (IO) enables real-time localization using only acceleration and angular velocity measurements from an Inertial Measurement Unit (IMU), making it a promising solution for localization in consumer-grade applications.
+◆ Traditionally, IMU measurements in IO have been processed under two coordinate system paradigms: the body coordinate frame and the global coordinate frame, with the latter being widely adopted.
+◆ However, recent studies in drone scenarios have demonstrated that the body frame can significantly improve localization accuracy, prompting a re-evaluation of the suitability of the global frame for pedestrian IO.</td></tr>
+<tr><td>2025-11-19</td><td>Covariant Measures of Non-Markovianity in Curved Spacetime</td><td>[2511.15365](http://arxiv.org/pdf/2511.15365)</td><td>◆ Standard measures of quantum non-Markovianity are usually defined in terms of dynamical maps on a preferred time foliation and therefore do not extend straightforwardly to curved spacetimes, where no global time coordinate exists and causal structure is primary.
+◆ We develop a covariant framework for open quantum dynamics along arbitrary timelike worldlines by building multi-time quantum processes (process tensors) from overlapping causal diamonds.
+◆ For an Unruh--DeWitt detector weakly coupled to a scalar field in a Hadamard state, we define a foliation-independent measure of non-Markovianity as the operational distance between the physical process tensor and the convex set of Markovian (CP-divisible) processes.</td></tr>
+<tr><td>2025-11-19</td><td>Generating Natural-Language Surgical Feedback: From Structured Representation to Domain-Grounded Evaluation</td><td>[2511.15159](http://arxiv.org/pdf/2511.15159)</td><td>◆ High-quality intraoperative feedback from a surgical trainer is pivotal for improving trainee performance and long-term skill acquisition.
+◆ Automating natural, trainer-style feedback promises timely, accessible, and consistent guidance at scale but requires models that understand clinically relevant representations.
+◆ We present a structure-aware pipeline that learns a surgical action ontology from real trainer-to-trainee transcripts (33 surgeries) and uses it to condition feedback generation.</td></tr>
+<tr><td>2025-11-19</td><td>SceneEdited: A City-Scale Benchmark for 3D HD Map Updating via Image-Guided Change Detection</td><td>[2511.15153](http://arxiv.org/pdf/2511.15153)</td><td>◆ Accurate, up-to-date High-Definition (HD) maps are critical for urban planning, infrastructure monitoring, and autonomous navigation.
+◆ However, these maps quickly become outdated as environments evolve, creating a need for robust methods that not only detect changes but also incorporate them into updated 3D representations.
+◆ While change detection techniques have advanced significantly, there remains a clear gap between detecting changes and actually updating 3D maps, particularly when relying on 2D image-based change detection.</td></tr>
+<tr><td>2025-11-18</td><td>Gaussian See, Gaussian Do: Semantic 3D Motion Transfer from Multiview Video</td><td>[2511.14848](http://arxiv.org/pdf/2511.14848)</td><td>◆ We present Gaussian See, Gaussian Do, a novel approach for semantic 3D motion transfer from multiview video.
+◆ Our method enables rig-free, cross-category motion transfer between objects with semantically meaningful correspondence.
+◆ Building on implicit motion transfer techniques, we extract motion embeddings from source videos via condition inversion, apply them to rendered frames of static target shapes, and use the resulting videos to supervise dynamic 3D Gaussian Splatting reconstruction.</td></tr>
 <tr><td>2025-11-18</td><td>Blur-Robust Detection via Feature Restoration: An End-to-End Framework for Prior-Guided Infrared UAV Target Detection</td><td>[2511.14371](http://arxiv.org/pdf/2511.14371)</td><td>◆ Infrared unmanned aerial vehicle (UAV) target images often suffer from motion blur degradation caused by rapid sensor movement, significantly reducing contrast between target and background.
 ◆ Generally, detection performance heavily depends on the discriminative feature representation between target and background.
 ◆ Existing methods typically treat deblurring as a preprocessing step focused on visual quality, while neglecting the enhancement of task-relevant features crucial for detection.</td></tr>
@@ -1672,6 +1693,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization</td><td>[2511.15705](http://arxiv.org/pdf/2511.15705)</td><td>◆ Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models.
+◆ In this work, we revisit the geolocalization task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning.
+◆ Since existing geolocalization benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate GeoBench, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models.</td></tr>
+<tr><td>2025-11-19</td><td>First Frame Is the Place to Go for Video Content Customization</td><td>[2511.15700](http://arxiv.org/pdf/2511.15700)</td><td>◆ What role does the first frame play in video generation models?
+◆ Traditionally, it&#x27;s viewed as the spatial-temporal starting point of a video, merely a seed for subsequent animation.
+◆ In this work, we reveal a fundamentally different perspective: video models implicitly treat the first frame as a conceptual memory buffer that stores visual entities for later reuse during generation.</td></tr>
+<tr><td>2025-11-19</td><td>Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning</td><td>[2511.15633](http://arxiv.org/pdf/2511.15633)</td><td>◆ Class-Incremental Learning (CIL) enables models to learn new classes continually while preserving past knowledge.
+◆ Recently, vision-language models like CLIP offer transferable features via multi-modal pre-training, making them well-suited for CIL.
+◆ However, real-world visual and linguistic concepts are inherently hierarchical: a textual concept like &quot;dog&quot; subsumes fine-grained categories such as &quot;Labrador&quot; and &quot;Golden Retriever,&quot; and each category entails its images.</td></tr>
+<tr><td>2025-11-19</td><td>Multi-Text Guided Few-Shot Semantic Segmentation</td><td>[2511.15515](http://arxiv.org/pdf/2511.15515)</td><td>◆ Recent CLIP-based few-shot semantic segmentation methods introduce class-level textual priors to assist segmentation by typically using a single prompt (e.g., a photo of class).
+◆ However, these approaches often result in incomplete activation of target regions, as a single textual description cannot fully capture the semantic diversity of complex categories.
+◆ Moreover, they lack explicit cross-modal interaction and are vulnerable to noisy support features, further degrading visual prior quality.</td></tr>
+<tr><td>2025-11-19</td><td>SIGMMA: Hierarchical Graph-Based Multi-Scale Multi-modal Contrastive Alignment of Histopathology Image and Spatial Transcriptome</td><td>[2511.15464](http://arxiv.org/pdf/2511.15464)</td><td>◆ Recent advances in computational pathology have leveraged vision-language models to learn joint representations of Hematoxylin and Eosin (HE) images with spatial transcriptomic (ST) profiles.
+◆ However, existing approaches typically align HE tiles with their corresponding ST profiles at a single scale, overlooking fine-grained cellular structures and their spatial organization.
+◆ To address this, we propose Sigmma, a multi-modal contrastive alignment framework for learning hierarchical representations of HE images and spatial transcriptome profiles across multiple scales.</td></tr>
+<tr><td>2025-11-19</td><td>HV-Attack: Hierarchical Visual Attack for Multimodal Retrieval Augmented Generation</td><td>[2511.15435](http://arxiv.org/pdf/2511.15435)</td><td>◆ Advanced multimodal Retrieval-Augmented Generation (MRAG) techniques have been widely applied to enhance the capabilities of Large Multimodal Models (LMMs), but they also bring along novel safety issues.
+◆ Existing adversarial research has revealed the vulnerability of MRAG systems to knowledge poisoning attacks, which fool the retriever into recalling injected poisoned contents.
+◆ However, our work considers a different setting: visual attack of MRAG by solely adding imperceptible perturbations at the image inputs of users, without manipulating any other components.</td></tr>
+<tr><td>2025-11-19</td><td>The Empowerment of Science of Science by Large Language Models: New Tools and Methods</td><td>[2511.15370](http://arxiv.org/pdf/2511.15370)</td><td>◆ Large language models (LLMs) have exhibited exceptional capabilities in natural language understanding and generation, image recognition, and multimodal tasks, charting a course towards AGI and emerging as a central issue in the global technological race.
+◆ This manuscript conducts a comprehensive review of the core technologies that support LLMs from a user standpoint, including prompt engineering, knowledge-enhanced retrieval augmented generation, fine tuning, pretraining, and tool learning.
+◆ Additionally, it traces the historical development of Science of Science (SciSci) and presents a forward looking perspective on the potential applications of LLMs within the scientometric domain.</td></tr>
+<tr><td>2025-11-19</td><td>C2F-Space: Coarse-to-Fine Space Grounding for Spatial Instructions using Vision-Language Models</td><td>[2511.15333](http://arxiv.org/pdf/2511.15333)</td><td>◆ Space grounding refers to localizing a set of spatial references described in natural language instructions.
+◆ Traditional methods often fail to account for complex reasoning -- such as distance, geometry, and inter-object relationships -- while vision-language models (VLMs), despite strong reasoning abilities, struggle to produce a fine-grained region of outputs.
+◆ To overcome these limitations, we propose C2F-Space, a novel coarse-to-fine space-grounding framework that (i) estimates an approximated yet spatially consistent region using a VLM, then (ii) refines the region to align with the local environment through superpixelization.</td></tr>
+<tr><td>2025-11-19</td><td>Towards Unbiased Cross-Modal Representation Learning for Food Image-to-Recipe Retrieval</td><td>[2511.15201](http://arxiv.org/pdf/2511.15201)</td><td>◆ This paper addresses the challenges of learning representations for recipes and food images in the cross-modal retrieval problem.
+◆ As the relationship between a recipe and its cooked dish is cause-and-effect, treating a recipe as a text source describing the visual appearance of a dish for learning representation, as the existing approaches, will create bias misleading image-and-recipe similarity judgment.
+◆ Specifically, a food image may not equally capture every detail in a recipe, due to factors such as the cooking process, dish presentation, and image-capturing conditions.</td></tr>
+<tr><td>2025-11-19</td><td>Unbiased Semantic Decoding with Vision Foundation Models for Few-shot Segmentation</td><td>[2511.15118](http://arxiv.org/pdf/2511.15118)</td><td>◆ Few-shot segmentation has garnered significant attention.
+◆ Many recent approaches attempt to introduce the Segment Anything Model (SAM) to handle this task.
+◆ With the strong generalization ability and rich object-specific extraction ability of the SAM model, such a solution shows great potential in few-shot segmentation.</td></tr>
 <tr><td>2025-11-18</td><td>FreeSwim: Revisiting Sliding-Window Attention Mechanisms for Training-Free Ultra-High-Resolution Video Generation</td><td>[2511.14712](http://arxiv.org/pdf/2511.14712)</td><td>◆ The quadratic time and memory complexity of the attention mechanism in modern Transformer based video generators makes end-to-end training for ultra high resolution videos prohibitively expensive.
 ◆ Motivated by this limitation, we introduce a training-free approach that leverages video Diffusion Transformers pretrained at their native scale to synthesize higher resolution videos without any additional training or adaptation.
 ◆ At the core of our method lies an inward sliding window attention mechanism, which originates from a key observation: maintaining each query token&#x27;s training scale receptive field is crucial for preserving visual fidelity and detail.</td></tr>
@@ -3027,6 +3078,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>RoMa v2: Harder Better Faster Denser Feature Matching</td><td>[2511.15706](http://arxiv.org/pdf/2511.15706)</td><td>◆ Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold-standard due to its high accuracy and robustness.
+◆ However, existing dense matchers still fail or perform poorly for many hard real-world scenarios, and high-precision models are often slow, limiting their applicability.
+◆ In this paper, we attack these weaknesses on a wide front through a series of systematic improvements that together yield a significantly better model.</td></tr>
+<tr><td>2025-11-19</td><td>What Your Features Reveal: Data-Efficient Black-Box Feature Inversion Attack for Split DNNs</td><td>[2511.15316](http://arxiv.org/pdf/2511.15316)</td><td>◆ Split DNNs enable edge devices by offloading intensive computation to a cloud server, but this paradigm exposes privacy vulnerabilities, as the intermediate features can be exploited to reconstruct the private inputs via Feature Inversion Attack (FIA).
+◆ Existing FIA methods often produce limited reconstruction quality, making it difficult to assess the true extent of privacy leakage.
+◆ To reveal the privacy risk of the leaked features, we introduce FIA-Flow, a black-box FIA framework that achieves high-fidelity image reconstruction from intermediate features.</td></tr>
+<tr><td>2025-11-19</td><td>Magnetic signal scan imaging system based on giant magnetoimpedance (GMI) differential sensor</td><td>[2511.15209](http://arxiv.org/pdf/2511.15209)</td><td>◆ This paper presents the design and implementation of a magnetic signal scanning and imaging system based on the giant magnetoimpedance (GMI) effect.
+◆ The system employs a pair of performance-matched GMI sensing elements configured as a differential probe structure.
+◆ Through co-optimized low-noise electronic and probe design, the system effectively suppresses both intrinsic sensor common-mode drift and external environmental magnetic noise, enabling high signal-to-noise ratio detection of nono-tesla to micro-tesla-level magnetic signals without magnetic shielding.</td></tr>
+<tr><td>2025-11-19</td><td>BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching</td><td>[2511.15066](http://arxiv.org/pdf/2511.15066)</td><td>◆ Bokeh rendering simulates the shallow depth-of-field effect in photography, enhancing visual aesthetics and guiding viewer attention to regions of interest.
+◆ Although recent approaches perform well, rendering controllable bokeh without additional depth inputs remains a significant challenge.
+◆ Existing classical and neural controllable methods rely on accurate depth maps, while generative approaches often struggle with limited controllability and efficiency.</td></tr>
+<tr><td>2025-11-19</td><td>Computer Vision Modeling of the Development of Geometric and Numerical Concepts in Humans</td><td>[2511.15029](http://arxiv.org/pdf/2511.15029)</td><td>◆ Mathematical thinking is a fundamental aspect of human cognition.
+◆ Cognitive scientists have investigated the mechanisms that underlie our ability to thinking geometrically and numerically, to take two prominent examples, and developmental scientists have documented the trajectories of these abilities over the lifespan.
+◆ Prior research has shown that computer vision (CV) models trained on the unrelated task of image classification nevertheless learn latent representations of geometric and numerical concepts similar to those of adults.</td></tr>
+<tr><td>2025-11-18</td><td>LFreeDA: Label-Free Drift Adaptation for Windows Malware Detection</td><td>[2511.14963](http://arxiv.org/pdf/2511.14963)</td><td>◆ Machine learning (ML)-based malware detectors degrade over time as concept drift introduces new and evolving families unseen during training.
+◆ Retraining is limited by the cost and time of manual labeling or sandbox analysis.
+◆ Existing approaches mitigate this via drift detection and selective labeling, but fully label-free adaptation remains largely unexplored.</td></tr>
 <tr><td>2025-11-18</td><td>FlowRoI A Fast Optical Flow Driven Region of Interest Extraction Framework for High-Throughput Image Compression in Immune Cell Migration Analysis</td><td>[2511.14419](http://arxiv.org/pdf/2511.14419)</td><td>◆ Autonomous migration is essential for the function of immune cells such as neutrophils and plays a pivotal role in diverse diseases.
 ◆ Recently, we introduced ComplexEye, a multi-lens array microscope comprising 16 independent aberration-corrected glass lenses arranged at the pitch of a 96-well plate, capable of capturing high-resolution movies of migrating cells.
 ◆ This architecture enables high-throughput live-cell video microscopy for migration analysis, supporting routine quantification of autonomous motility with strong potential for clinical translation.</td></tr>
@@ -4132,4 +4201,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.19
+> 更新于: 2025.11.20
