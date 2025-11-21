@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.20)
+# 计算机视觉领域最新论文 (2025.11.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
+◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
+◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
+<tr><td>2025-11-20</td><td>Building temporally coherent 3D maps with VGGT for memory-efficient Semantic SLAM</td><td>[2511.16282](http://arxiv.org/pdf/2511.16282)</td><td>◆ We present a fast, spatio-temporal scene understanding framework based on Vision Gated Generative Transformers (VGGT).
+◆ The proposed pipeline is designed to enable efficient, close to real-time performance, supporting applications including assistive navigation.
+◆ To achieve continuous updates of the 3D scene representation, we process the image flow with a sliding window, aligning submaps, thereby overcoming VGGT&#x27;s high memory demands.</td></tr>
+<tr><td>2025-11-20</td><td>LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM</td><td>[2511.16144](http://arxiv.org/pdf/2511.16144)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled Simultaneous Localization and Mapping (SLAM) systems to build photorealistic maps.
+◆ However, these maps lack the open-vocabulary semantic understanding required for advanced robotic interaction.
+◆ Integrating language features into SLAM remains a significant challenge, as storing high-dimensional features demands excessive memory and rendering overhead, while existing methods with static models lack adaptability for novel environments.</td></tr>
+<tr><td>2025-11-20</td><td>Rad-GS: Radar-Vision Integration for 3D Gaussian Splatting SLAM in Outdoor Environments</td><td>[2511.16091](http://arxiv.org/pdf/2511.16091)</td><td>◆ We present Rad-GS, a 4D radar-camera SLAM system designed for kilometer-scale outdoor environments, utilizing 3D Gaussian as a differentiable spatial representation.
+◆ Rad-GS combines the advantages of raw radar point cloud with Doppler information and geometrically enhanced point cloud to guide dynamic object masking in synchronized images, thereby alleviating rendering artifacts and improving localization accuracy.
+◆ Additionally, unsynchronized image frames are leveraged to globally refine the 3D Gaussian representation, enhancing texture consistency and novel view synthesis fidelity.</td></tr>
+<tr><td>2025-11-20</td><td>Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud</td><td>[2511.16048](http://arxiv.org/pdf/2511.16048)</td><td>◆ While mainstream robotics pursues metric precision and flawless performance, this paper explores the creative potential of a deliberately &quot;lo-fi&quot; approach.
+◆ We present the &quot;Semantic Glitch,&quot; a soft flying robotic art installation whose physical form, a 3D pixel style cloud, is a &quot;physical glitch&quot; derived from digital archaeology.
+◆ We detail a novel autonomous pipeline that rejects conventional sensors like LiDAR and SLAM, relying solely on the qualitative, semantic understanding of a Multimodal Large Language Model to navigate.</td></tr>
 <tr><td>2025-11-19</td><td>Learning from Mistakes: Loss-Aware Memory Enhanced Continual Learning for LiDAR Place Recognition</td><td>[2511.15597](http://arxiv.org/pdf/2511.15597)</td><td>◆ LiDAR place recognition plays a crucial role in SLAM, robot navigation, and autonomous driving.
 ◆ However, existing LiDAR place recognition methods often struggle to adapt to new environments without forgetting previously learned knowledge, a challenge widely known as catastrophic forgetting.
 ◆ To address this issue, we propose KDF+, a novel continual learning framework for LiDAR place recognition that extends the KDF paradigm with a loss-aware sampling strategy and a rehearsal enhancement mechanism.</td></tr>
@@ -1114,6 +1129,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-20</td><td>TriDiff-4D: Fast 4D Generation through Diffusion-based Triplane Re-posing</td><td>[2511.16662](http://arxiv.org/pdf/2511.16662)</td><td>◆ With the increasing demand for 3D animation, generating high-fidelity, controllable 4D avatars from textual descriptions remains a significant challenge.
+◆ Despite notable efforts in 4D generative modeling, existing methods exhibit fundamental limitations that impede their broader applicability, including temporal and geometric inconsistencies, perceptual artifacts, motion irregularities, high computational costs, and limited control over dynamics.
+◆ To address these challenges, we propose TriDiff-4D, a novel 4D generative pipeline that employs diffusion-based triplane re-posing to produce high-quality, temporally coherent 4D avatars.</td></tr>
+<tr><td>2025-11-20</td><td>Flow and Depth Assisted Video Prediction with Latent Transformer</td><td>[2511.16484](http://arxiv.org/pdf/2511.16484)</td><td>◆ Video prediction is a fundamental task for various downstream applications, including robotics and world modeling.
+◆ Although general video prediction models have achieved remarkable performance in standard scenarios, occlusion is still an inherent challenge in video prediction.
+◆ We hypothesize that providing explicit information about motion (via point-flow) and geometric structure (via depth-maps) will enable video prediction models to perform better in situations with occlusion and the background motion.</td></tr>
+<tr><td>2025-11-20</td><td>Two Epochs of VLBI Observations of 8 KISSR Seyfert &amp; LINER Galaxies: Suggestions of Fast and Filamentary Outflows</td><td>[2511.16159](http://arxiv.org/pdf/2511.16159)</td><td>◆ We present here the results from a second epoch of phase-referenced VLBA observations of 8 Seyfert and LINER galaxies from the KISSR sample.
+◆ These sources were chosen based on the presence of double peaks or asymmetries in their emission lines as observed in SDSS spectra.
+◆ Parsec-scale radio emission is detected in 7 of the 8 sources in the second epoch.</td></tr>
 <tr><td>2025-11-19</td><td>MambaIO: Global-Coordinate Inertial Odometry for Pedestrians via Multi-Scale Frequency-Decoupled Modeling</td><td>[2511.15645](http://arxiv.org/pdf/2511.15645)</td><td>◆ Inertial Odometry (IO) enables real-time localization using only acceleration and angular velocity measurements from an Inertial Measurement Unit (IMU), making it a promising solution for localization in consumer-grade applications.
 ◆ Traditionally, IMU measurements in IO have been processed under two coordinate system paradigms: the body coordinate frame and the global coordinate frame, with the latter being widely adopted.
 ◆ However, recent studies in drone scenarios have demonstrated that the body frame can significantly improve localization accuracy, prompting a re-evaluation of the suitability of the global frame for pedestrian IO.</td></tr>
@@ -1693,6 +1717,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-20</td><td>Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation</td><td>[2511.16671](http://arxiv.org/pdf/2511.16671)</td><td>◆ Recent advances in visual generation have increasingly explored the integration of reasoning capabilities.
+◆ They incorporate textual reasoning, i.e., think, either before (as pre-planning) or after (as post-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself.
+◆ In this preliminary study, we introduce Thinking-while-Generating (TwiG), the first interleaved framework that enables co-evolving textual reasoning throughout the visual generation process.</td></tr>
+<tr><td>2025-11-20</td><td>Comparison of Text-Based and Image-Based Retrieval in Multimodal Retrieval Augmented Generation Large Language Model Systems</td><td>[2511.16654](http://arxiv.org/pdf/2511.16654)</td><td>◆ Recent advancements in Retrieval-Augmented Generation (RAG) have enabled Large Language Models (LLMs) to access multimodal knowledge bases containing both text and visual information such as charts, diagrams, and tables in financial documents.
+◆ However, existing multimodal RAG systems rely on LLM-based summarization to convert images into text during preprocessing, storing only text representations in vector databases, which causes loss of contextual information and visual details critical for downstream retrieval and question answering.
+◆ To address this limitation, we present a comprehensive comparative analysis of two retrieval approaches for multimodal RAG systems, including text-based chunk retrieval (where images are summarized into text before embedding) and direct multimodal embedding retrieval (where images are stored natively in the vector space).</td></tr>
+<tr><td>2025-11-20</td><td>SurvAgent: Hierarchical CoT-Enhanced Case Banking and Dichotomy-Based Multi-Agent System for Multimodal Survival Prediction</td><td>[2511.16635](http://arxiv.org/pdf/2511.16635)</td><td>◆ Survival analysis is critical for cancer prognosis and treatment planning, yet existing methods lack the transparency essential for clinical adoption.
+◆ While recent pathology agents have demonstrated explainability in diagnostic tasks, they face three limitations for survival prediction: inability to integrate multimodal data, ineffective region-of-interest exploration, and failure to leverage experiential learning from historical cases.
+◆ We introduce SurvAgent, the first hierarchical chain-of-thought (CoT)-enhanced multi-agent system for multimodal survival prediction.</td></tr>
+<tr><td>2025-11-20</td><td>POMA-3D: The Point Map Way to 3D Scene Understanding</td><td>[2511.16567](http://arxiv.org/pdf/2511.16567)</td><td>◆ In this paper, we introduce POMA-3D, the first self-supervised 3D representation model learned from point maps.
+◆ Point maps encode explicit 3D coordinates on a structured 2D grid, preserving global 3D geometry while remaining compatible with the input format of 2D foundation models.
+◆ To transfer rich 2D priors into POMA-3D, a view-to-scene alignment strategy is designed.</td></tr>
+<tr><td>2025-11-20</td><td>NutriScreener: Retrieval-Augmented Multi-Pose Graph Attention Network for Malnourishment Screening</td><td>[2511.16566](http://arxiv.org/pdf/2511.16566)</td><td>◆ Child malnutrition remains a global crisis, yet existing screening methods are laborious and poorly scalable, hindering early intervention.
+◆ In this work, we present NutriScreener, a retrieval-augmented, multi-pose graph attention network that combines CLIP-based visual embeddings, class-boosted knowledge retrieval, and context awareness to enable robust malnutrition detection and anthropometric prediction from children&#x27;s images, simultaneously addressing generalizability and class imbalance.
+◆ In a clinical study, doctors rated it 4.3/5 for accuracy and 4.6/5 for efficiency, confirming its deployment readiness in low-resource settings.</td></tr>
+<tr><td>2025-11-20</td><td>Contrastive vision-language learning with paraphrasing and negation</td><td>[2511.16527](http://arxiv.org/pdf/2511.16527)</td><td>◆ Contrastive vision-language models continue to be the dominant approach for image and text retrieval.
+◆ Contrastive Language-Image Pre-training (CLIP) trains two neural networks in contrastive manner to align their image and text embeddings in a shared latent space.
+◆ Recent results evaluating CLIP on negated or paraphrased text have shown mixed performance because negation changes meaning radically with minimal lexical changes, while paraphrasing can create very different textual expressions with the same intended meaning.</td></tr>
+<tr><td>2025-11-20</td><td>BoxingVI: A Multi-Modal Benchmark for Boxing Action Recognition and Localization</td><td>[2511.16524](http://arxiv.org/pdf/2511.16524)</td><td>◆ Accurate analysis of combat sports using computer vision has gained traction in recent years, yet the development of robust datasets remains a major bottleneck due to the dynamic, unstructured nature of actions and variations in recording environments.
+◆ In this work, we present a comprehensive, well-annotated video dataset tailored for punch detection and classification in boxing.
+◆ The dataset comprises 6,915 high-quality punch clips categorized into six distinct punch types, extracted from 20 publicly available YouTube sparring sessions and involving 18 different athletes.</td></tr>
+<tr><td>2025-11-20</td><td>YOWO: You Only Walk Once to Jointly Map An Indoor Scene and Register Ceiling-mounted Cameras</td><td>[2511.16521](http://arxiv.org/pdf/2511.16521)</td><td>◆ Using ceiling-mounted cameras (CMCs) for indoor visual capturing opens up a wide range of applications.
+◆ However, registering CMCs to the target scene layout presents a challenging task.
+◆ While manual registration with specialized tools is inefficient and costly, automatic registration with visual localization may yield poor results when visual ambiguity exists.</td></tr>
+<tr><td>2025-11-20</td><td>TOFA: Training-Free One-Shot Federated Adaptation for Vision-Language Models</td><td>[2511.16423](http://arxiv.org/pdf/2511.16423)</td><td>◆ Efficient and lightweight adaptation of pre-trained Vision-Language Models (VLMs) to downstream tasks through collaborative interactions between local clients and a central server is a rapidly emerging research topic in federated learning.
+◆ Existing adaptation algorithms are typically trained iteratively, which incur significant communication costs and increase the susceptibility to potential attacks.
+◆ Motivated by the one-shot federated training techniques that reduce client-server exchanges to a single round, developing a lightweight one-shot federated VLM adaptation method to alleviate these issues is particularly attractive.</td></tr>
+<tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
+◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
+◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
 <tr><td>2025-11-19</td><td>GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization</td><td>[2511.15705](http://arxiv.org/pdf/2511.15705)</td><td>◆ Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models.
 ◆ In this work, we revisit the geolocalization task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning.
 ◆ Since existing geolocalization benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate GeoBench, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models.</td></tr>
@@ -2780,10 +2834,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-20</td><td>PySERA: Open-Source Standardized Python Library for Automated, Scalable, and Reproducible Handcrafted and Deep Radiomics</td><td>[2511.15963](http://arxiv.org/pdf/2511.15963)</td><td>◆ Radiomics enables the extraction of quantitative biomarkers from medical images for precision modeling, but reproducibility and scalability remain limited due to heterogeneous software implementations and incomplete adherence to standards.
+◆ Existing tools also lack unified support for deep learning based radiomics.
+◆ To address these limitations, we introduce PySERA, an open source, Python native, standardized radiomics framework designed for automation, reproducibility, and seamless AI integration.</td></tr>
 <tr><td>2025-11-18</td><td>Simultaneous Localization and 3D-Semi Dense Mapping for Micro Drones Using Monocular Camera and Inertial Sensors</td><td>[2511.14335](http://arxiv.org/pdf/2511.14335)</td><td>◆ Monocular simultaneous localization and mapping (SLAM) algorithms estimate drone poses and build a 3D map using a single camera.
 ◆ Current algorithms include sparse methods that lack detailed geometry, while learning-driven approaches produce dense maps but are computationally intensive.
 ◆ Monocular SLAM also faces scale ambiguities, which affect its accuracy.</td></tr>
-<tr><td>2025-11-18</td><td>Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution</td><td>[2511.14210](http://arxiv.org/pdf/2511.14210)</td><td>◆ We introduce Orion, a visual agent framework that can take in any modality and generate any modality.
+<tr><td>2025-11-19</td><td>Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution</td><td>[2511.14210](http://arxiv.org/pdf/2511.14210)</td><td>◆ We introduce Orion, a visual agent framework that can take in any modality and generate any modality.
 ◆ Using an agentic framework with multiple tool-calling capabilities, Orion is designed for visual AI tasks and achieves state-of-the-art results.
 ◆ Unlike traditional vision-language models that produce descriptive outputs, Orion orchestrates a suite of specialized computer vision tools, including object detection, keypoint localization, panoptic segmentation, Optical Character Recognition, and geometric analysis, to execute complex multi-step visual workflows.</td></tr>
 <tr><td>2025-11-18</td><td>$A^2$GC: $A$symmetric $A$ggregation with Geometric Constraints for Locally Aggregated Descriptors</td><td>[2511.14109](http://arxiv.org/pdf/2511.14109)</td><td>◆ Visual Place Recognition (VPR) aims to match query images against a database using visual cues.
@@ -3078,7 +3135,34 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-11-19</td><td>RoMa v2: Harder Better Faster Denser Feature Matching</td><td>[2511.15706](http://arxiv.org/pdf/2511.15706)</td><td>◆ Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold-standard due to its high accuracy and robustness.
+<tr><td>2025-11-20</td><td>Dataset Distillation for Pre-Trained Self-Supervised Vision Models</td><td>[2511.16674](http://arxiv.org/pdf/2511.16674)</td><td>◆ The task of dataset distillation aims to find a small set of synthetic images such that training a model on them reproduces the performance of the same model trained on a much larger dataset of real samples.
+◆ Existing distillation methods focus on synthesizing datasets that enable training randomly initialized models.
+◆ In contrast, state-of-the-art vision approaches are increasingly building on large, pre-trained self-supervised models rather than training from scratch.</td></tr>
+<tr><td>2025-11-20</td><td>NutriScreener: Retrieval-Augmented Multi-Pose Graph Attention Network for Malnourishment Screening</td><td>[2511.16566](http://arxiv.org/pdf/2511.16566)</td><td>◆ Child malnutrition remains a global crisis, yet existing screening methods are laborious and poorly scalable, hindering early intervention.
+◆ In this work, we present NutriScreener, a retrieval-augmented, multi-pose graph attention network that combines CLIP-based visual embeddings, class-boosted knowledge retrieval, and context awareness to enable robust malnutrition detection and anthropometric prediction from children&#x27;s images, simultaneously addressing generalizability and class imbalance.
+◆ In a clinical study, doctors rated it 4.3/5 for accuracy and 4.6/5 for efficiency, confirming its deployment readiness in low-resource settings.</td></tr>
+<tr><td>2025-11-20</td><td>Saving Foundation Flow-Matching Priors for Inverse Problems</td><td>[2511.16520](http://arxiv.org/pdf/2511.16520)</td><td>◆ Foundation flow-matching (FM) models promise a universal prior for solving inverse problems (IPs), yet today they trail behind domain-specific or even untrained priors.
+◆ How can we unlock their potential?
+◆ We introduce FMPlug, a plug-in framework that redefines how foundation FMs are used in IPs.</td></tr>
+<tr><td>2025-11-20</td><td>Beyond Visual Cues: Leveraging General Semantics as Support for Few-Shot Segmentation</td><td>[2511.16435](http://arxiv.org/pdf/2511.16435)</td><td>◆ Few-shot segmentation (FSS) aims to segment novel classes under the guidance of limited support samples by a meta-learning paradigm.
+◆ Existing methods mainly mine references from support images as meta guidance.
+◆ However, due to intra-class variations among visual representations, the meta information extracted from support images cannot produce accurate guidance to segment untrained classes.</td></tr>
+<tr><td>2025-11-20</td><td>DetailSemNet: Elevating Signature Verification through Detail-Semantic Integration</td><td>[2511.16364](http://arxiv.org/pdf/2511.16364)</td><td>◆ Offline signature verification (OSV) is a frequently utilized technology in forensics.
+◆ This paper proposes a new model, DetailSemNet, for OSV.
+◆ Unlike previous methods that rely on holistic features for pair comparisons, our approach underscores the significance of fine-grained differences for robust OSV.</td></tr>
+<tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
+◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
+◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
+<tr><td>2025-11-20</td><td>A pilot VLBI study of the SQUAB quasar sample featuring multiple Gaia detections</td><td>[2511.16206](http://arxiv.org/pdf/2511.16206)</td><td>◆ Our previous work identified a class of SDSS quasars exhibiting multiple Gaia detections, classifying them as candidates for various astrophysical systems such as quasar-star pairs, dual quasars, and gravitationally lensed quasars.
+◆ In this paper, we present a pilot VLBI study targeting a radio-bright subsample and report the first high-resolution imaging results.
+◆ By leveraging the milliarcsecond-scale resolution of VLBI and its precise astrometric coordination incorporating with Gaia, we aim to refine the classification of these multiple matched sources, search for potential dual AGNs, and assess the efficacy of the combined Gaia-VLBI approach in resolving ambiguous quasar systems.</td></tr>
+<tr><td>2025-11-20</td><td>PySERA: Open-Source Standardized Python Library for Automated, Scalable, and Reproducible Handcrafted and Deep Radiomics</td><td>[2511.15963](http://arxiv.org/pdf/2511.15963)</td><td>◆ Radiomics enables the extraction of quantitative biomarkers from medical images for precision modeling, but reproducibility and scalability remain limited due to heterogeneous software implementations and incomplete adherence to standards.
+◆ Existing tools also lack unified support for deep learning based radiomics.
+◆ To address these limitations, we introduce PySERA, an open source, Python native, standardized radiomics framework designed for automation, reproducibility, and seamless AI integration.</td></tr>
+<tr><td>2025-11-19</td><td>The MeerKAT Fornax Survey VI. The collapse of the galaxy HI Mass Function in Fornax</td><td>[2511.15795](http://arxiv.org/pdf/2511.15795)</td><td>◆ We present the deepest HI mass Function (HIMF) ever measured, outside the Local Group.
+◆ The observations are part of the MeerKAT Fornax Survey and cover a 4 x 4 deg^2 field, corresponding to ~ Rvir.
+◆ The 3$σ$ detection limit is log(MHI/Msun) = 5.7 for a 50 km/s-wide point source.</td></tr>
+<tr><td>2025-11-20</td><td>RoMa v2: Harder Better Faster Denser Feature Matching</td><td>[2511.15706](http://arxiv.org/pdf/2511.15706)</td><td>◆ Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold-standard due to its high accuracy and robustness.
 ◆ However, existing dense matchers still fail or perform poorly for many hard real-world scenarios, and high-precision models are often slow, limiting their applicability.
 ◆ In this paper, we attack these weaknesses on a wide front through a series of systematic improvements that together yield a significantly better model.</td></tr>
 <tr><td>2025-11-19</td><td>What Your Features Reveal: Data-Efficient Black-Box Feature Inversion Attack for Split DNNs</td><td>[2511.15316](http://arxiv.org/pdf/2511.15316)</td><td>◆ Split DNNs enable edge devices by offloading intensive computation to a cloud server, but this paradigm exposes privacy vulnerabilities, as the intermediate features can be exploited to reconstruct the private inputs via Feature Inversion Attack (FIA).
@@ -3495,6 +3579,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-20</td><td>EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering</td><td>[2511.16542](http://arxiv.org/pdf/2511.16542)</td><td>◆ Recently, 3D Gaussian Splatting has been introduced as a compelling alternative to NeRF for Earth observation, offering com- petitive reconstruction quality with significantly reduced training times.
+◆ In this work, we extend the Earth Observation Gaussian Splatting (EOGS) framework to propose EOGS++, a novel method tailored for satellite imagery that directly operates on raw high-resolution panchromatic data without requiring external preprocessing.
+◆ Furthermore, leveraging optical flow techniques we embed bundle adjustment directly within the training process, avoiding reliance on external optimization tools while improving camera pose estimation.</td></tr>
 <tr><td>2025-11-18</td><td>iGaussian: Real-Time Camera Pose Estimation via Feed-Forward 3D Gaussian Splatting Inversion</td><td>[2511.14149](http://arxiv.org/pdf/2511.14149)</td><td>◆ Recent trends in SLAM and visual navigation have embraced 3D Gaussians as the preferred scene representation, highlighting the importance of estimating camera poses from a single image using a pre-built Gaussian model.
 ◆ However, existing approaches typically rely on an iterative \textit{render-compare-refine} loop, where candidate views are first rendered using NeRF or Gaussian Splatting, then compared against the target image, and finally, discrepancies are used to update the pose.
 ◆ This multi-round process incurs significant computational overhead, hindering real-time performance in robotics.</td></tr>
@@ -4201,4 +4288,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.20
+> 更新于: 2025.11.21
