@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.23)
+# 计算机视觉领域最新论文 (2025.11.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>IndustryNav: Exploring Spatial Reasoning of Embodied Agents in Dynamic Industrial Navigation</td><td>[2511.17384](http://arxiv.org/pdf/2511.17384)</td><td>◆ While Visual Large Language Models (VLLMs) show great promise as embodied agents, they continue to face substantial challenges in spatial reasoning.
+◆ Existing embodied benchmarks largely focus on passive, static household environments and evaluate only isolated capabilities, failing to capture holistic performance in dynamic, real-world complexity.
+◆ To fill this gap, we present IndustryNav, the first dynamic industrial navigation benchmark for active spatial reasoning.</td></tr>
+<tr><td>2025-11-21</td><td>MonoSpheres: Large-Scale Monocular SLAM-Based UAV Exploration through Perception-Coupled Mapping and Planning</td><td>[2511.17299](http://arxiv.org/pdf/2511.17299)</td><td>◆ Autonomous exploration of unknown environments is a key capability for mobile robots, but it is largely unsolved for robots equipped with only a single monocular camera and no dense range sensors.
+◆ In this paper, we present a novel approach to monocular vision-based exploration that can safely cover large-scale unstructured indoor and outdoor 3D environments by explicitly accounting for the properties of a sparse monocular SLAM frontend in both mapping and planning.
+◆ The mapping module solves the problems of sparse depth data, free-space gaps, and large depth uncertainty by oversampling free space in texture-sparse areas and keeping track of obstacle position uncertainty.</td></tr>
+<tr><td>2025-11-21</td><td>SING3R-SLAM: Submap-based Indoor Monocular Gaussian SLAM with 3D Reconstruction Priors</td><td>[2511.17207](http://arxiv.org/pdf/2511.17207)</td><td>◆ Recent advances in dense 3D reconstruction enable the accurate capture of local geometry; however, integrating them into SLAM is challenging due to drift and redundant point maps, which limit efficiency and downstream tasks, such as novel view synthesis.
+◆ To address these issues, we propose SING3R-SLAM, a globally consistent and compact Gaussian-based dense RGB SLAM framework.
+◆ The key idea is to combine locally consistent 3D reconstructions with a unified global Gaussian representation that jointly refines scene geometry and camera poses, enabling efficient and versatile 3D mapping for multiple downstream applications.</td></tr>
 <tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
 ◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
 ◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
@@ -1131,6 +1140,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>TRAO Survey of the Nearby Filamentary Molecular Clouds, the Universal Nursery of Stars (TRAO-FUNS). IV. Filaments and Dense Cores in the W40 and Serpens South Regions of Aquila</td><td>[2511.16978](http://arxiv.org/pdf/2511.16978)</td><td>◆ We present the results of molecular line observations toward the W40 and Serpens South regions of the Aquila molecular cloud complex, conducted as part of the TRAO-FUNS project to investigate the role of filamentary structures in the formation of dense cores and stars in molecular clouds.
+◆ We performed a Gaussian decomposition of the C$^{18}$O spectra to disentangle multiple velocity components along the line-of-sight and a `Friends-of-Friends&#x27; algorithm on these decomposed components to identify 24 velocity-coherent filaments in the observed region.
+◆ The `FellWalker&#x27; algorithm is applied on the N$_{2}$H$^{+}$ integrated intensity map to identify the dense cores embedded within the filaments.</td></tr>
+<tr><td>2025-11-21</td><td>One Walk is All You Need: Data-Efficient 3D RF Scene Reconstruction with Human Movements</td><td>[2511.16966](http://arxiv.org/pdf/2511.16966)</td><td>◆ Reconstructing 3D Radiance Field (RF) scenes through opaque obstacles is a long-standing goal, yet it is fundamentally constrained by a laborious data acquisition process requiring thousands of static measurements, which treats human motion as noise to be filtered.
+◆ This work introduces a new paradigm with a core objective: to perform fast, data-efficient, and high-fidelity RF reconstruction of occluded 3D static scenes, using only a single, brief human walk.
+◆ We argue that this unstructured motion is not noise, but is in fact an information-rich signal available for reconstruction.</td></tr>
 <tr><td>2025-11-20</td><td>TriDiff-4D: Fast 4D Generation through Diffusion-based Triplane Re-posing</td><td>[2511.16662](http://arxiv.org/pdf/2511.16662)</td><td>◆ With the increasing demand for 3D animation, generating high-fidelity, controllable 4D avatars from textual descriptions remains a significant challenge.
 ◆ Despite notable efforts in 4D generative modeling, existing methods exhibit fundamental limitations that impede their broader applicability, including temporal and geometric inconsistencies, perceptual artifacts, motion irregularities, high computational costs, and limited control over dynamics.
 ◆ To address these challenges, we propose TriDiff-4D, a novel 4D generative pipeline that employs diffusion-based triplane re-posing to produce high-quality, temporally coherent 4D avatars.</td></tr>
@@ -1721,6 +1736,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>REMSA: An LLM Agent for Foundation Model Selection in Remote Sensing</td><td>[2511.17442](http://arxiv.org/pdf/2511.17442)</td><td>◆ Foundation Models (FMs) are increasingly used in remote sensing (RS) for tasks such as environmental monitoring, disaster assessment, and land-use mapping.
+◆ These models include unimodal vision encoders trained on a single data modality and multimodal architectures trained on combinations of SAR, multispectral, hyperspectral, and image-text data.
+◆ They support diverse RS tasks including semantic segmentation, image classification, change detection, and visual question answering.</td></tr>
+<tr><td>2025-11-21</td><td>IndustryNav: Exploring Spatial Reasoning of Embodied Agents in Dynamic Industrial Navigation</td><td>[2511.17384](http://arxiv.org/pdf/2511.17384)</td><td>◆ While Visual Large Language Models (VLLMs) show great promise as embodied agents, they continue to face substantial challenges in spatial reasoning.
+◆ Existing embodied benchmarks largely focus on passive, static household environments and evaluate only isolated capabilities, failing to capture holistic performance in dynamic, real-world complexity.
+◆ To fill this gap, we present IndustryNav, the first dynamic industrial navigation benchmark for active spatial reasoning.</td></tr>
+<tr><td>2025-11-21</td><td>SVRecon: Sparse Voxel Rasterization for Surface Reconstruction</td><td>[2511.17364](http://arxiv.org/pdf/2511.17364)</td><td>◆ We extend the recently proposed sparse voxel rasterization paradigm to the task of high-fidelity surface reconstruction by integrating Signed Distance Function (SDF), named SVRecon.
+◆ Unlike 3D Gaussians, sparse voxels are spatially disentangled from their neighbors and have sharp boundaries, which makes them prone to local minima during optimization.
+◆ Although SDF values provide a naturally smooth and continuous geometric field, preserving this smoothness across independently parameterized sparse voxels is nontrivial.</td></tr>
+<tr><td>2025-11-21</td><td>NoPe-NeRF++: Local-to-Global Optimization of NeRF with No Pose Prior</td><td>[2511.17322](http://arxiv.org/pdf/2511.17322)</td><td>◆ In this paper, we introduce NoPe-NeRF++, a novel local-to-global optimization algorithm for training Neural Radiance Fields (NeRF) without requiring pose priors.
+◆ Existing methods, particularly NoPe-NeRF, which focus solely on the local relationships within images, often struggle to recover accurate camera poses in complex scenarios.
+◆ To overcome the challenges, our approach begins with a relative pose initialization with explicit feature matching, followed by a local joint optimization to enhance the pose estimation for training a more robust NeRF representation.</td></tr>
+<tr><td>2025-11-21</td><td>MolSight: Optical Chemical Structure Recognition with SMILES Pretraining, Multi-Granularity Learning and Reinforcement Learning</td><td>[2511.17300](http://arxiv.org/pdf/2511.17300)</td><td>◆ Optical Chemical Structure Recognition (OCSR) plays a pivotal role in modern chemical informatics, enabling the automated conversion of chemical structure images from scientific literature, patents, and educational materials into machine-readable molecular representations.
+◆ This capability is essential for large-scale chemical data mining, drug discovery pipelines, and Large Language Model (LLM) applications in related domains.
+◆ However, existing OCSR systems face significant challenges in accurately recognizing stereochemical information due to the subtle visual cues that distinguish stereoisomers, such as wedge and dash bonds, ring conformations, and spatial arrangements.</td></tr>
+<tr><td>2025-11-21</td><td>Where Culture Fades: Revealing the Cultural Gap in Text-to-Image Generation</td><td>[2511.17282](http://arxiv.org/pdf/2511.17282)</td><td>◆ Multilingual text-to-image (T2I) models have advanced rapidly in terms of visual realism and semantic alignment, and are now widely utilized.
+◆ Yet outputs vary across cultural contexts: because language carries cultural connotations, images synthesized from multilingual prompts should preserve cross-lingual cultural consistency.
+◆ We conduct a comprehensive analysis showing that current T2I models often produce culturally neutral or English-biased results under multilingual prompts.</td></tr>
+<tr><td>2025-11-21</td><td>A Little More Like This: Text-to-Image Retrieval with Vision-Language Models Using Relevance Feedback</td><td>[2511.17255](http://arxiv.org/pdf/2511.17255)</td><td>◆ Large vision-language models (VLMs) enable intuitive visual search using natural language queries.
+◆ However, improving their performance often requires fine-tuning and scaling to larger model variants.
+◆ In this work, we propose a mechanism inspired by traditional text-based search to improve retrieval performance at inference time: relevance feedback.</td></tr>
+<tr><td>2025-11-21</td><td>Mixed Reality Scenic Live Streaming for Cultural Heritage: Visual Interactions in a Historic Landscape</td><td>[2511.17246](http://arxiv.org/pdf/2511.17246)</td><td>◆ Scenic Live Streams (SLS), capturing real-world scenic sites from fixed cameras without streamers, have gained increasing popularity recently.
+◆ They afford unique real-time lenses into remote sites for viewers&#x27; synchronous and collective engagement.
+◆ Foregrounding its lack of dynamism and interactivity, we aim to maximize the potential of SLS by making it interactive.</td></tr>
+<tr><td>2025-11-21</td><td>SING3R-SLAM: Submap-based Indoor Monocular Gaussian SLAM with 3D Reconstruction Priors</td><td>[2511.17207](http://arxiv.org/pdf/2511.17207)</td><td>◆ Recent advances in dense 3D reconstruction enable the accurate capture of local geometry; however, integrating them into SLAM is challenging due to drift and redundant point maps, which limit efficiency and downstream tasks, such as novel view synthesis.
+◆ To address these issues, we propose SING3R-SLAM, a globally consistent and compact Gaussian-based dense RGB SLAM framework.
+◆ The key idea is to combine locally consistent 3D reconstructions with a unified global Gaussian representation that jointly refines scene geometry and camera poses, enabling efficient and versatile 3D mapping for multiple downstream applications.</td></tr>
+<tr><td>2025-11-21</td><td>Navigating in the Dark: A Multimodal Framework and Dataset for Nighttime Traffic Sign Recognition</td><td>[2511.17183](http://arxiv.org/pdf/2511.17183)</td><td>◆ Traffic signboards are vital for road safety and intelligent transportation systems, enabling navigation and autonomous driving.
+◆ Yet, recognizing traffic signs at night remains challenging due to visual noise and scarcity of public nighttime datasets.
+◆ Despite advances in vision architectures, existing methods struggle with robustness under low illumination and fail to leverage complementary mutlimodal cues effectively.</td></tr>
 <tr><td>2025-11-20</td><td>Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation</td><td>[2511.16671](http://arxiv.org/pdf/2511.16671)</td><td>◆ Recent advances in visual generation have increasingly explored the integration of reasoning capabilities.
 ◆ They incorporate textual reasoning, i.e., think, either before (as pre-planning) or after (as post-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself.
 ◆ In this preliminary study, we introduce Thinking-while-Generating (TwiG), the first interleaved framework that enables co-evolving textual reasoning throughout the visual generation process.</td></tr>
@@ -2840,6 +2885,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>Teager-Kaiser Energy Methods For EEG Feature Extraction In Biomedical Applications</td><td>[2511.17164](http://arxiv.org/pdf/2511.17164)</td><td>◆ Electroencephalography (EEG) signals are inherently non-linear, non-stationary, and vulnerable to noise sources, making the extraction of discriminative features a long-standing challenge.
+◆ In this work, we investigate the non-linear Teager-Kaiser Energy Operator (TKEO) for modeling the underlying energy dynamics of EEG in three representative tasks: motor imagery, emotion recognition, and epilepsy detection.
+◆ To accommodate the narrowband nature of the operator, we employ Gabor filterbanks to isolate canonical frequency bands, followed by the Energy Separation Algorithm to decompose the TKEO output into amplitude envelope and instantaneous frequency components.</td></tr>
+<tr><td>2025-11-21</td><td>Exploring the added value of pretherapeutic MR descriptors in predicting breast cancer pathologic complete response to neoadjuvant chemotherapy</td><td>[2511.17158](http://arxiv.org/pdf/2511.17158)</td><td>◆ Objectives: To evaluate the association between pretreatment MRI descriptors and breast cancer (BC) pathological complete response (pCR) to neoadjuvant chemotherapy (NAC).
+◆ Materials \&amp; Methods: Patients with BC treated by NAC with a breast MRI between 2016 and 2020 were included in this retrospective observational single-center study.
+◆ MR studies were described using the standardized BI-RADS and breast edema score on T2-weighted MRI.</td></tr>
 <tr><td>2025-11-20</td><td>PySERA: Open-Source Standardized Python Library for Automated, Scalable, and Reproducible Handcrafted and Deep Radiomics</td><td>[2511.15963](http://arxiv.org/pdf/2511.15963)</td><td>◆ Radiomics enables the extraction of quantitative biomarkers from medical images for precision modeling, but reproducibility and scalability remain limited due to heterogeneous software implementations and incomplete adherence to standards.
 ◆ Existing tools also lack unified support for deep learning based radiomics.
 ◆ To address these limitations, we introduce PySERA, an open source, Python native, standardized radiomics framework designed for automation, reproducibility, and seamless AI integration.</td></tr>
@@ -3143,6 +3194,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>SMILE: A Composite Lexical-Semantic Metric for Question-Answering Evaluation</td><td>[2511.17432](http://arxiv.org/pdf/2511.17432)</td><td>◆ Traditional evaluation metrics for textual and visual question answering, like ROUGE, METEOR, and Exact Match (EM), focus heavily on n-gram based lexical similarity, often missing the deeper semantic understanding needed for accurate assessment.
+◆ While measures like BERTScore and MoverScore leverage contextual embeddings to address this limitation, they lack flexibility in balancing sentence-level and keyword-level semantics and ignore lexical similarity, which remains important.
+◆ Large Language Model (LLM) based evaluators, though powerful, come with drawbacks like high costs, bias, inconsistency, and hallucinations.</td></tr>
+<tr><td>2025-11-21</td><td>SPEAR-1: Scaling Beyond Robot Demonstrations via 3D Understanding</td><td>[2511.17411](http://arxiv.org/pdf/2511.17411)</td><td>◆ Robotic Foundation Models (RFMs) hold great promise as generalist, end-to-end systems for robot control.
+◆ Yet their ability to generalize across new environments, tasks, and embodiments remains limited.
+◆ We argue that a major bottleneck lies in their foundations: most RFMs are built by fine-tuning internet-pretrained Vision-Language Models (VLMs).</td></tr>
+<tr><td>2025-11-21</td><td>ATAC: Augmentation-Based Test-Time Adversarial Correction for CLIP</td><td>[2511.17362](http://arxiv.org/pdf/2511.17362)</td><td>◆ Despite its remarkable success in zero-shot image-text matching, CLIP remains highly vulnerable to adversarial perturbations on images.
+◆ As adversarial fine-tuning is prohibitively costly, recent works explore various test-time defense strategies; however, these approaches still exhibit limited robustness.
+◆ In this work, we revisit this problem and propose a simple yet effective strategy: Augmentation-based Test-time Adversarial Correction (ATAC).</td></tr>
+<tr><td>2025-11-21</td><td>NoPe-NeRF++: Local-to-Global Optimization of NeRF with No Pose Prior</td><td>[2511.17322](http://arxiv.org/pdf/2511.17322)</td><td>◆ In this paper, we introduce NoPe-NeRF++, a novel local-to-global optimization algorithm for training Neural Radiance Fields (NeRF) without requiring pose priors.
+◆ Existing methods, particularly NoPe-NeRF, which focus solely on the local relationships within images, often struggle to recover accurate camera poses in complex scenarios.
+◆ To overcome the challenges, our approach begins with a relative pose initialization with explicit feature matching, followed by a local joint optimization to enhance the pose estimation for training a more robust NeRF representation.</td></tr>
+<tr><td>2025-11-21</td><td>Angular clustering and bias of photometric quasars in the Kilo-Degree Survey Data Release 4</td><td>[2511.17311](http://arxiv.org/pdf/2511.17311)</td><td>◆ We investigate the angular clustering and effective bias of photometrically selected quasars in the Kilo-Degree Survey Data Release 4 (KiDS DR4).
+◆ We update the previous photometric redshifts (photo-$z$s) of the KiDS quasars using Hybrid-z, a deep learning framework combining four-band KiDS images and nine-band KiDS+VIKING magnitudes.
+◆ Hybrid-z is trained on the latest Dark Energy Spectroscopic Instrument (DESI) DR1 and Sloan Digital Sky Survey (SDSS) DR17 quasars matching with KiDS, and achieves average bias $\langle δz \rangle &lt; 0.01$ and scatter $\sim 0.04(1 + z)$ on a test sample.</td></tr>
+<tr><td>2025-11-21</td><td>MuM: Multi-View Masked Image Modeling for 3D Vision</td><td>[2511.17309](http://arxiv.org/pdf/2511.17309)</td><td>◆ Self-supervised learning on images seeks to extract meaningful visual representations from unlabeled data.
+◆ When scaled to large datasets, this paradigm has achieved state-of-the-art performance and the resulting trained models such as DINOv3 have seen widespread adoption.
+◆ However, most prior efforts are optimized for semantic understanding rather than geometric reasoning.</td></tr>
+<tr><td>2025-11-21</td><td>UI-Styler: Ultrasound Image Style Transfer with Class-Aware Prompts for Cross-Device Diagnosis Using a Frozen Black-Box Inference Network</td><td>[2511.17155](http://arxiv.org/pdf/2511.17155)</td><td>◆ The appearance of ultrasound images varies across acquisition devices, causing domain shifts that degrade the performance of fixed black-box downstream inference models when reused.
+◆ To mitigate this issue, it is practical to develop unpaired image translation (UIT) methods that effectively align the statistical distributions between source and target domains, particularly under the constraint of a reused inference-blackbox setting.
+◆ However, existing UIT approaches often overlook class-specific semantic alignment during domain adaptation, resulting in misaligned content-class mappings that can impair diagnostic accuracy.</td></tr>
+<tr><td>2025-11-21</td><td>Towards Generative Design Using Optimal Transport for Shape Exploration and Solution Field Interpolation</td><td>[2511.17111](http://arxiv.org/pdf/2511.17111)</td><td>◆ Generative Design (GD) combines artificial intelligence (AI), physics-based modeling, and multi-objective optimization to autonomously explore and refine engineering designs.
+◆ Despite its promise in aerospace, automotive, and other high-performance applications, current GD methods face critical challenges: AI approaches require large datasets and often struggle to generalize; topology optimization is computationally intensive and difficult to extend to multiphysics problems; and model order reduction for evolving geometries remains underdeveloped.
+◆ To address these challenges, we introduce a unified, structure-preserving framework for GD based on optimal transport (OT), enabling simultaneous interpolation of complex geometries and their associated physical solution fields across evolving design spaces, even with non-matching meshes and substantial shape changes.</td></tr>
+<tr><td>2025-11-21</td><td>Neighbor GRPO: Contrastive ODE Policy Optimization Aligns Flow Models</td><td>[2511.16955](http://arxiv.org/pdf/2511.16955)</td><td>◆ Group Relative Policy Optimization (GRPO) has shown promise in aligning image and video generative models with human preferences.
+◆ However, applying it to modern flow matching models is challenging because of its deterministic sampling paradigm.
+◆ Current methods address this issue by converting Ordinary Differential Equations (ODEs) to Stochastic Differential Equations (SDEs), which introduce stochasticity.</td></tr>
+<tr><td>2025-11-20</td><td>Stable diffusion models reveal a persisting human and AI gap in visual creativity</td><td>[2511.16814](http://arxiv.org/pdf/2511.16814)</td><td>◆ While recent research suggests Large Language Models match human creative performance in divergent thinking tasks, visual creativity remains underexplored.
+◆ This study compared image generation in human participants (Visual Artists and Non Artists) and using an image generation AI model (two prompting conditions with varying human input: high for Human Inspired, low for Self Guided).
+◆ Human raters (N=255) and GPT4o evaluated the creativity of the resulting images.</td></tr>
 <tr><td>2025-11-20</td><td>Dataset Distillation for Pre-Trained Self-Supervised Vision Models</td><td>[2511.16674](http://arxiv.org/pdf/2511.16674)</td><td>◆ The task of dataset distillation aims to find a small set of synthetic images such that training a model on them reproduces the performance of the same model trained on a much larger dataset of real samples.
 ◆ Existing distillation methods focus on synthesizing datasets that enable training randomly initialized models.
 ◆ In contrast, state-of-the-art vision approaches are increasingly building on large, pre-trained self-supervised models rather than training from scratch.</td></tr>
@@ -3589,6 +3670,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>NoPe-NeRF++: Local-to-Global Optimization of NeRF with No Pose Prior</td><td>[2511.17322](http://arxiv.org/pdf/2511.17322)</td><td>◆ In this paper, we introduce NoPe-NeRF++, a novel local-to-global optimization algorithm for training Neural Radiance Fields (NeRF) without requiring pose priors.
+◆ Existing methods, particularly NoPe-NeRF, which focus solely on the local relationships within images, often struggle to recover accurate camera poses in complex scenarios.
+◆ To overcome the challenges, our approach begins with a relative pose initialization with explicit feature matching, followed by a local joint optimization to enhance the pose estimation for training a more robust NeRF representation.</td></tr>
 <tr><td>2025-11-20</td><td>EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering</td><td>[2511.16542](http://arxiv.org/pdf/2511.16542)</td><td>◆ Recently, 3D Gaussian Splatting has been introduced as a compelling alternative to NeRF for Earth observation, offering com- petitive reconstruction quality with significantly reduced training times.
 ◆ In this work, we extend the Earth Observation Gaussian Splatting (EOGS) framework to propose EOGS++, a novel method tailored for satellite imagery that directly operates on raw high-resolution panchromatic data without requiring external preprocessing.
 ◆ Furthermore, leveraging optical flow techniques we embed bundle adjustment directly within the training process, avoiding reliance on external optimization tools while improving camera pose estimation.</td></tr>
@@ -4300,4 +4384,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.23
+> 更新于: 2025.11.24
