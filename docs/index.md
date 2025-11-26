@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.25)
+# 计算机视觉领域最新论文 (2025.11.26)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>The origin of B-type runaway stars based on kinematics</td><td>[2511.20566](http://arxiv.org/pdf/2511.20566)</td><td>◆ Runaway stars depart their birthplaces with high peculiar velocities.
+◆ Two mechanisms are commonly invoked to explain their origin, the binary supernova scenario (BSS) and the dynamical ejection scenario (DES).
+◆ Investigating the kinematic properties of runaway stars is key to understanding their origins.We intend to investigate the origins of 39 B-type runaway stars from LAMOST using orbital traceback analysis.</td></tr>
+<tr><td>2025-11-25</td><td>Metric, inertially aligned monocular state estimation via kinetodynamic priors</td><td>[2511.20496](http://arxiv.org/pdf/2511.20496)</td><td>◆ Accurate state estimation for flexible robotic systems poses significant challenges, particular for platforms with dynamically deforming structures that invalidate rigid-body assumptions.
+◆ This paper tackles this problem and allows to extend existing rigid-body pose estimation methods to non-rigid systems.
+◆ Our approach hinges on two core assumptions: first, the elastic properties are captured by an injective deformation-force model, efficiently learned via a Multi-Layer Perceptron; second, we solve the platform&#x27;s inherently smooth motion using continuous-time B-spline kinematic models.</td></tr>
+<tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
+◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
+◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
+<tr><td>2025-11-25</td><td>Stellar Parameters of BOSS M dwarfs in SDSS-V DR19</td><td>[2511.20005](http://arxiv.org/pdf/2511.20005)</td><td>◆ We utilized the Stellar LAbel Machine (SLAM), a data-driven model based on Support Vector Regression, to derive stellar parameters ([Fe/H], $T_{\rm eff}$, and $\log{g}$) for SDSS-V M dwarfs using low-resolution optical spectra (R$\sim$2000) obtained with the BOSS spectrographs.
+◆ These parameters are calibrated using LAMOST F, G or K dwarf companions ([Fe/H]), and APOGEE Net ($T_{\rm eff}$ and $\log{g}$), respectively.
+◆ Comparisons of SLAM predicted [Fe/H] values between two components of M+M dwarfs wide binaries show no bias but with a scatter of 0.11 dex.</td></tr>
 <tr><td>2025-11-24</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
 ◆ While existing monocular SLAM systems generate detailed 3D geometry through dense scene representations, they are computationally expensive due to the need for iterative optimization.
 ◆ To address this challenge, MASt3R-SLAM utilizes learned 3D reconstruction priors, enabling more efficient and accurate estimation of both 3D structures and camera poses.</td></tr>
@@ -1162,6 +1174,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Diverse Video Generation with Determinantal Point Process-Guided Policy Optimization</td><td>[2511.20647](http://arxiv.org/pdf/2511.20647)</td><td>◆ While recent text-to-video (T2V) diffusion models have achieved impressive quality and prompt alignment, they often produce low-diversity outputs when sampling multiple videos from a single text prompt.
+◆ We tackle this challenge by formulating it as a set-level policy optimization problem, with the goal of training a policy that can cover the diverse range of plausible outcomes for a given prompt.
+◆ To address this, we introduce DPP-GRPO, a novel framework for diverse video generation that combines Determinantal Point Processes (DPPs) and Group Relative Policy Optimization (GRPO) theories to enforce explicit reward on diverse generations.</td></tr>
+<tr><td>2025-11-25</td><td>Dance Style Classification using Laban-Inspired and Frequency-Domain Motion Features</td><td>[2511.20469](http://arxiv.org/pdf/2511.20469)</td><td>◆ Dance is an essential component of human culture and serves as a tool for conveying emotions and telling stories.
+◆ Identifying and distinguishing dance genres based on motion data is a complex problem in human activity recognition, as many styles share similar poses, gestures, and temporal motion patterns.
+◆ This work presents a lightweight framework for classifying dance styles that determines motion characteristics based on pose estimates extracted from videos.</td></tr>
+<tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
+◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
+◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
+<tr><td>2025-11-25</td><td>Stochastic Dynamics of Skyrmions on a Racetrack: Impact of Equilibrium and Nonequilibrium Noise</td><td>[2511.20287](http://arxiv.org/pdf/2511.20287)</td><td>◆ Current-driven motion of domain walls and skyrmions is central to the operation of non-volatile magnetic memory devices.
+◆ Racetrack memory requires current densities high enough to generate velocities above 50 m/s, but such conditions also enhance spin-current noise.
+◆ We develop a theoretical framework based on the stochastic Thiele equation to analyze the effects of equilibrium (thermal) and nonequilibrium (spin-current) fluctuations on skyrmion dynamics.</td></tr>
+<tr><td>2025-11-25</td><td>Numerical Simulation of the Cleaning Process of Microchannel by an External Flow</td><td>[2511.20228](http://arxiv.org/pdf/2511.20228)</td><td>◆ This paper describes the problem of drift of solid non-interacting particles in a microchannel, which can stick to its walls under the action of the van der Waals forces and break away from the wall due to thermal noise and viscous stresses arising from the flow.
+◆ The pressure drop is given between the channel inlet and outlet.
+◆ At the initial moment of time, the channel walls are contaminated with adhered particles, i.e.</td></tr>
+<tr><td>2025-11-25</td><td>STAvatar: Soft Binding and Temporal Density Control for Monocular 3D Head Avatars Reconstruction</td><td>[2511.19854](http://arxiv.org/pdf/2511.19854)</td><td>◆ Reconstructing high-fidelity and animatable 3D head avatars from monocular videos remains a challenging yet essential task.
+◆ Existing methods based on 3D Gaussian Splatting typically bind Gaussians to mesh triangles and model deformations solely via Linear Blend Skinning, which results in rigid motion and limited expressiveness.
+◆ Moreover, they lack specialized strategies to handle frequently occluded regions (e.g., mouth interiors, eyelids).</td></tr>
+<tr><td>2025-11-24</td><td>Infrared absorption spectroscopy of a single polyatomic molecular ion</td><td>[2511.19687](http://arxiv.org/pdf/2511.19687)</td><td>◆ Absorption spectroscopy is a fundamental tool for probing molecular structure.
+◆ However, performing absorption spectroscopy on individual molecules is challenging due to the low signal-to-noise ratio.
+◆ Here, we report on a nondestructive absorption spectroscopy on a mid-infrared vibrational transition in a single molecular ion that is co-trapped with an atomic ion.</td></tr>
+<tr><td>2025-11-24</td><td>KIC 5623923: A Faint Eclipsing Binary Consisting of $δ$ Scuti pulsations</td><td>[2511.19685](http://arxiv.org/pdf/2511.19685)</td><td>◆ In this paper, we present a detailed analysis of the light variation of KIC 5623923 using high-precision time-series data from the $Kepler$ mission.
+◆ The analysis reveals this target is an eclipsing binary system with $δ$ Scuti type pulsations from the primary component, rather than from the secondary as previously reported.
+◆ The frequency analysis of three short-cadence data reveals 41 significant frequencies, including the orbital frequency ($f_{orb}$ = 0.827198 d$^{-1}$) due to orbital motion from binary system and the pulsational frequencies.</td></tr>
 <tr><td>2025-11-24</td><td>Dynamic Multi-Species Bird Soundscape Generation with Acoustic Patterning and 3D Spatialization</td><td>[2511.19275](http://arxiv.org/pdf/2511.19275)</td><td>◆ Generation of dynamic, scalable multi-species bird soundscapes remains a significant challenge in computer music and algorithmic sound design.
 ◆ Birdsongs involve rapid frequency-modulated chirps, complex amplitude envelopes, distinctive acoustic patterns, overlapping calls, and dynamic inter-bird interactions, all of which require precise temporal and spatial control in 3D environments.
 ◆ Existing approaches, whether Digital Signal Processing (DSP)-based or data-driven, typically focus only on single species modeling, static call structures, or synthesis directly from recordings, and often suffer from noise, limited flexibility, or large data needs.</td></tr>
@@ -1786,6 +1822,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Adaptive Hopfield Network: Rethinking Similarities in Associative Memory</td><td>[2511.20609](http://arxiv.org/pdf/2511.20609)</td><td>◆ Associative memory models are content-addressable memory systems fundamental to biological intelligence and are notable for their high interpretability.
+◆ However, existing models evaluate the quality of retrieval based on proximity, which cannot guarantee that the retrieved pattern has the strongest association with the query, failing correctness.
+◆ We reframe this problem by proposing that a query is a generative variant of a stored memory pattern, and define a variant distribution to model this subtle context-dependent generative process.</td></tr>
+<tr><td>2025-11-25</td><td>New York Smells: A Large Multimodal Dataset for Olfaction</td><td>[2511.20544](http://arxiv.org/pdf/2511.20544)</td><td>◆ While olfaction is central to how animals perceive the world, this rich chemical sensory modality remains largely inaccessible to machines.
+◆ One key bottleneck is the lack of diverse, multimodal olfactory training data collected in natural settings.
+◆ We present New York Smells, a large dataset of paired image and olfactory signals captured ``in the wild.&#x27;&#x27; Our dataset contains 7,000 smell-image pairs from 3,500 distinct objects across indoor and outdoor environments, with approximately 70$\times$ more objects than existing olfactory datasets.</td></tr>
+<tr><td>2025-11-25</td><td>Wide Area Surface Dosimetry with Conformal Scintillator Array for External Beam Radiotherapy</td><td>[2511.20472](http://arxiv.org/pdf/2511.20472)</td><td>◆ Background: In vivo dosimetry is essential for treatment verification in modern radiotherapy, but existing techniques are limited by spatiotemporal resolution and performance on non-uniform anatomy.
+◆ Scintillation imaging dosimetry shows potential to address several of these limitations.
+◆ Here, translation to conventional photon external beam radiotherapy was examined using a novel wide-area imaging and sensing technique.</td></tr>
+<tr><td>2025-11-25</td><td>Power-Efficient Autonomous Mobile Robots</td><td>[2511.20467](http://arxiv.org/pdf/2511.20467)</td><td>◆ This paper presents pNav, a novel power-management system that significantly enhances the power/energy-efficiency of Autonomous Mobile Robots (AMRs) by jointly optimizing their physical/mechanical and cyber subsystems.
+◆ By profiling AMRs&#x27; power consumption, we identify three challenges in achieving CPS (cyber-physical system) power-efficiency that involve both cyber (C) and physical (P) subsystems: (1) variabilities of system power consumption breakdown, (2) environment-aware navigation locality, and (3) coordination of C and P subsystems.
+◆ pNav takes a multi-faceted approach to achieve power-efficiency of AMRs.</td></tr>
+<tr><td>2025-11-25</td><td>STARFlow-V: End-to-End Video Generative Modeling with Normalizing Flow</td><td>[2511.20462](http://arxiv.org/pdf/2511.20462)</td><td>◆ Normalizing flows (NFs) are end-to-end likelihood-based generative models for continuous data, and have recently regained attention with encouraging progress on image generation.
+◆ Yet in the video generation domain, where spatiotemporal complexity and computational cost are substantially higher, state-of-the-art systems almost exclusively rely on diffusion-based models.
+◆ In this work, we revisit this design space by presenting STARFlow-V, a normalizing flow-based video generator with substantial benefits such as end-to-end learning, robust causal prediction, and native likelihood estimation.</td></tr>
+<tr><td>2025-11-25</td><td>Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA via Adaptive Zoom Search</td><td>[2511.20460](http://arxiv.org/pdf/2511.20460)</td><td>◆ With advances in satellite constellations, sensor technologies, and imaging pipelines, ultra-high-resolution (Ultra-HR) remote sensing imagery is becoming increasingly widespread.
+◆ However, current remote sensing foundation models are ill-suited to such inputs: full-image encoding exhausts token and memory budgets, while resize-based preprocessing loses fine-grained and answer-critical details.
+◆ In this context, guiding the model look where it matters before prediction becomes crucial.</td></tr>
+<tr><td>2025-11-25</td><td>Interactive Visualization of Proof-of-Work Consensus Protocol on Raspberry Pi</td><td>[2511.20391](http://arxiv.org/pdf/2511.20391)</td><td>◆ We describe a prototype of a fully capable Ethereum Proof-of-Work (PoW) blockchain network running on multiple Raspberry Pi (RPi) computers.
+◆ The prototype is easy to set up and is intended to function as a completely standalone system, using a local WiFi router for connectivity.
+◆ It features LCD screens for visualization of the local state of blockchain ledgers on each RPi, making it ideal for educational purposes and to demonstrate fundamental blockchain concepts to a wide audience.</td></tr>
+<tr><td>2025-11-25</td><td>TaCo: Capturing Spatio-Temporal Semantic Consistency in Remote Sensing Change Detection</td><td>[2511.20306](http://arxiv.org/pdf/2511.20306)</td><td>◆ Remote sensing change detection (RSCD) aims to identify surface changes across bi-temporal satellite images.
+◆ Most previous methods rely solely on mask supervision, which effectively guides spatial localization but provides limited constraints on the temporal semantic transitions.
+◆ Consequently, they often produce spatially coherent predictions while still suffering from unresolved semantic inconsistencies.</td></tr>
+<tr><td>2025-11-25</td><td>Back to the Feature: Explaining Video Classifiers with Video Counterfactual Explanations</td><td>[2511.20295](http://arxiv.org/pdf/2511.20295)</td><td>◆ Counterfactual explanations (CFEs) are minimal and semantically meaningful modifications of the input of a model that alter the model predictions.
+◆ They highlight the decisive features the model relies on, providing contrastive interpretations for classifiers.
+◆ State-of-the-art visual counterfactual explanation methods are designed to explain image classifiers.</td></tr>
+<tr><td>2025-11-25</td><td>Bootstrapping Physics-Grounded Video Generation through VLM-Guided Iterative Self-Refinement</td><td>[2511.20280](http://arxiv.org/pdf/2511.20280)</td><td>◆ Recent progress in video generation has led to impressive visual quality, yet current models still struggle to produce results that align with real-world physical principles.
+◆ To this end, we propose an iterative self-refinement framework that leverages large language models and vision-language models to provide physics-aware guidance for video generation.
+◆ Specifically, we introduce a multimodal chain-of-thought (MM-CoT) process that refines prompts based on feedback from physical inconsistencies, progressively enhancing generation quality.</td></tr>
 <tr><td>2025-11-24</td><td>Wigner and Gabor phase-space analysis of propagators for evolution equations</td><td>[2511.19400](http://arxiv.org/pdf/2511.19400)</td><td>◆ We study the Wigner kernel and the Gabor matrix associated with the propagators of a broad class   of linear evolution equations, including the complex heat, wave,   and Hermite equations.
 ◆ Within the framework of time-frequency analysis, we derive   explicit expressions for the Wigner kernels of Fourier multipliers and establish quantitative   decay estimates for the corresponding Gabor matrices.
 ◆ These results are obtained under symbol   regularity conditions formulated in the Gelfand-Shilov scale and ensure exponential off-diagonal   decay or quasi-diagonality of the matrix representation.</td></tr>
@@ -2963,6 +3029,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Dance Style Classification using Laban-Inspired and Frequency-Domain Motion Features</td><td>[2511.20469](http://arxiv.org/pdf/2511.20469)</td><td>◆ Dance is an essential component of human culture and serves as a tool for conveying emotions and telling stories.
+◆ Identifying and distinguishing dance genres based on motion data is a complex problem in human activity recognition, as many styles share similar poses, gestures, and temporal motion patterns.
+◆ This work presents a lightweight framework for classifying dance styles that determines motion characteristics based on pose estimates extracted from videos.</td></tr>
+<tr><td>2025-11-25</td><td>Uplifting Table Tennis: A Robust, Real-World Application for 3D Trajectory and Spin Estimation</td><td>[2511.20250](http://arxiv.org/pdf/2511.20250)</td><td>◆ Obtaining the precise 3D motion of a table tennis ball from standard monocular videos is a challenging problem, as existing methods trained on synthetic data struggle to generalize to the noisy, imperfect ball and table detections of the real world.
+◆ This is primarily due to the inherent lack of 3D ground truth trajectories and spin annotations for real-world video.
+◆ To overcome this, we propose a novel two-stage pipeline that divides the problem into a front-end perception task and a back-end 2D-to-3D uplifting task.</td></tr>
 <tr><td>2025-11-21</td><td>Teager-Kaiser Energy Methods For EEG Feature Extraction In Biomedical Applications</td><td>[2511.17164](http://arxiv.org/pdf/2511.17164)</td><td>◆ Electroencephalography (EEG) signals are inherently non-linear, non-stationary, and vulnerable to noise sources, making the extraction of discriminative features a long-standing challenge.
 ◆ In this work, we investigate the non-linear Teager-Kaiser Energy Operator (TKEO) for modeling the underlying energy dynamics of EEG in three representative tasks: motor imagery, emotion recognition, and epilepsy detection.
 ◆ To accommodate the narrowband nature of the operator, we employ Gabor filterbanks to isolate canonical frequency bands, followed by the Energy Separation Algorithm to decompose the TKEO output into amplitude envelope and instantaneous frequency components.</td></tr>
@@ -3270,6 +3342,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight</td><td>[2511.20648](http://arxiv.org/pdf/2511.20648)</td><td>◆ To act in the world, a model must name what it sees and know where it is in 3D.
+◆ Today&#x27;s vision-language models (VLMs) excel at open-ended 2D description and grounding, yet multi-object 3D detection remains largely missing from the VLM toolbox.
+◆ We present LocateAnything3D, a VLM-native recipe that casts 3D detection as a next-token prediction problem.</td></tr>
+<tr><td>2025-11-25</td><td>Unleashing the Power of Vision-Language Models for Long-Tailed Multi-Label Visual Recognition</td><td>[2511.20641](http://arxiv.org/pdf/2511.20641)</td><td>◆ Long-tailed multi-label visual recognition poses a significant challenge, as images typically contain multiple labels with highly imbalanced class distributions, leading to biased models that favor head classes while underperforming on tail classes.
+◆ Recent efforts have leveraged pre-trained vision-language models, such as CLIP, alongside long-tailed learning techniques to exploit rich visual-textual priors for improved performance.
+◆ However, existing methods often derive semantic inter-class relationships directly from imbalanced datasets, resulting in unreliable correlations for tail classes due to data scarcity.</td></tr>
+<tr><td>2025-11-25</td><td>Flash-DMD: Towards High-Fidelity Few-Step Image Generation with Efficient Distillation and Joint Reinforcement Learning</td><td>[2511.20549](http://arxiv.org/pdf/2511.20549)</td><td>◆ Diffusion Models have emerged as a leading class of generative models, yet their iterative sampling process remains computationally expensive.
+◆ Timestep distillation is a promising technique to accelerate generation, but it often requires extensive training and leads to image quality degradation.
+◆ Furthermore, fine-tuning these distilled models for specific objectives, such as aesthetic appeal or user preference, using Reinforcement Learning (RL) is notoriously unstable and easily falls into reward hacking.</td></tr>
+<tr><td>2025-11-25</td><td>STARFlow-V: End-to-End Video Generative Modeling with Normalizing Flow</td><td>[2511.20462](http://arxiv.org/pdf/2511.20462)</td><td>◆ Normalizing flows (NFs) are end-to-end likelihood-based generative models for continuous data, and have recently regained attention with encouraging progress on image generation.
+◆ Yet in the video generation domain, where spatiotemporal complexity and computational cost are substantially higher, state-of-the-art systems almost exclusively rely on diffusion-based models.
+◆ In this work, we revisit this design space by presenting STARFlow-V, a normalizing flow-based video generator with substantial benefits such as end-to-end learning, robust causal prediction, and native likelihood estimation.</td></tr>
+<tr><td>2025-11-25</td><td>Planar Josephson junctions for sensors and electronics:Different geometry, new functionality</td><td>[2511.20424](http://arxiv.org/pdf/2511.20424)</td><td>◆ Josephson junctions are key elements in superconducting electronics.
+◆ The most common type is the overlap (sandwich-type) junction, formed by vertically stacking two superconducting layers.
+◆ In contrast, planar junctions are fabricated without overlap, at the edge of two superconducting films within a single plane.</td></tr>
+<tr><td>2025-11-25</td><td>Restora-Flow: Mask-Guided Image Restoration with Flow Matching</td><td>[2511.20152](http://arxiv.org/pdf/2511.20152)</td><td>◆ Flow matching has emerged as a promising generative approach that addresses the lengthy sampling times associated with state-of-the-art diffusion models and enables a more flexible trajectory design, while maintaining high-quality image generation.
+◆ This capability makes it suitable as a generative prior for image restoration tasks.
+◆ Although current methods leveraging flow models have shown promising results in restoration, some still suffer from long processing times or produce over-smoothed results.</td></tr>
+<tr><td>2025-11-25</td><td>LungEvaty: A Scalable, Open-Source Transformer-based Deep Learning Model for Lung Cancer Risk Prediction in LDCT Screening</td><td>[2511.20116](http://arxiv.org/pdf/2511.20116)</td><td>◆ Lung cancer risk estimation is gaining increasing importance as more countries introduce population-wide screening programs using low-dose CT (LDCT).
+◆ As imaging volumes grow, scalable methods that can process entire lung volumes efficiently are essential to tap into the full potential of these large screening datasets.
+◆ Existing approaches either over-rely on pixel-level annotations, limiting scalability, or analyze the lung in fragments, weakening performance.</td></tr>
+<tr><td>2025-11-25</td><td>Unusual Thermally Induced Blueshift and Emission Amplification of Mn2+ ions Enable Filter-Free Luminescent Thermal Imaging</td><td>[2511.19993](http://arxiv.org/pdf/2511.19993)</td><td>◆ The shift from point-based thermal sensing to filter-free thermal imaging requires luminescent thermometers that exhibit pronounced and thermally driven spectral changes within spectral regions matching the sensitivity profiles of the R, G, and B channels of a digital camera.
+◆ In this work, we introduce such a system, enabled by the synergistic interplay between (i) thermal redistribution among the vibronic components of the 4T1 excited state of Mn2+ ions and (ii) thermally assisted population of this state via optical trap sites.
+◆ These combined processes result in a simultaneous thermal enhancement and blueshift of the Mn2+ emission band associated with the 4T1 -&gt; 6A1 electronic transition.</td></tr>
+<tr><td>2025-11-25</td><td>SONIC: Spectral Optimization of Noise for Inpainting with Consistency</td><td>[2511.19985](http://arxiv.org/pdf/2511.19985)</td><td>◆ We propose a novel training-free method for inpainting with off-the-shelf text-to-image models.
+◆ While guidance-based methods in theory allow generic models to be used for inverse problems such as inpainting, in practice, their effectiveness is limited, leading to the necessity of specialized inpainting-specific models.
+◆ In this work, we argue that the missing ingredient for training-free inpainting is the optimization (guidance) of the initial seed noise.</td></tr>
+<tr><td>2025-11-25</td><td>Learning Degenerate Manifolds of Frustrated Magnets with Boltzmann Machines</td><td>[2511.19879](http://arxiv.org/pdf/2511.19879)</td><td>◆ We show that Restricted Boltzmann Machines (RBMs) provide a flexible generative framework for modeling spin configurations in disordered yet strongly correlated phases of frustrated magnets.
+◆ As a benchmark, we first demonstrate that an RBM can learn the zero-temperature ground-state manifold of the one-dimensional ANNNI model at its multiphase point, accurately reproducing its characteristic oscillatory and exponentially decaying correlations.
+◆ We then apply RBMs to kagome spin ice and show that they successfully learn the local ice rules and short-range correlations of the extensively degenerate ice-I manifold.</td></tr>
 <tr><td>2025-11-24</td><td>Breaking the Likelihood-Quality Trade-off in Diffusion Models by Merging Pretrained Experts</td><td>[2511.19434](http://arxiv.org/pdf/2511.19434)</td><td>◆ Diffusion models for image generation often exhibit a trade-off between perceptual sample quality and data likelihood: training objectives emphasizing high-noise denoising steps yield realistic images but poor likelihoods, whereas likelihood-oriented training overweights low-noise steps and harms visual fidelity.
 ◆ We introduce a simple plug-and-play sampling method that combines two pretrained diffusion experts by switching between them along the denoising trajectory.
 ◆ Specifically, we apply an image-quality expert at high noise levels to shape global structure, then switch to a likelihood expert at low noise levels to refine pixel statistics.</td></tr>
@@ -3774,6 +3876,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-24</td><td>Proxy-Free Gaussian Splats Deformation with Splat-Based Surface Estimation</td><td>[2511.19542](http://arxiv.org/pdf/2511.19542)</td><td>◆ We introduce SpLap, a proxy-free deformation method for Gaussian splats (GS) based on a Laplacian operator computed from our novel surface-aware splat graph.
+◆ Existing approaches to GS deformation typically rely on deformation proxies such as cages or meshes, but they suffer from dependency on proxy quality and additional computational overhead.
+◆ An alternative is to directly apply Laplacian-based deformation techniques by treating splats as point clouds.</td></tr>
+<tr><td>2025-11-24</td><td>MapRF: Weakly Supervised Online HD Map Construction via NeRF-Guided Self-Training</td><td>[2511.19527](http://arxiv.org/pdf/2511.19527)</td><td>◆ Autonomous driving systems benefit from high-definition (HD) maps that provide critical information about road infrastructure.
+◆ The online construction of HD maps offers a scalable approach to generate local maps from on-board sensors.
+◆ However, existing methods typically rely on costly 3D map annotations for training, which limits their generalization and scalability across diverse driving environments.</td></tr>
 <tr><td>2025-11-24</td><td>TPG-INR: Target Prior-Guided Implicit 3D CT Reconstruction for Enhanced Sparse-view Imaging</td><td>[2511.18806](http://arxiv.org/pdf/2511.18806)</td><td>◆ X-ray imaging, based on penetration, enables detailed visualization of internal structures.
 ◆ Building on this capability, existing implicit 3D reconstruction methods have adapted the NeRF model and its variants for internal CT reconstruction.
 ◆ However, these approaches often neglect the significance of objects&#x27; anatomical priors for implicit learning, limiting both reconstruction precision and learning efficiency, particularly in ultra-sparse view scenarios.</td></tr>
@@ -4495,4 +4603,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.25
+> 更新于: 2025.11.26
