@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.26)
+# 计算机视觉领域最新论文 (2025.11.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Dual-Agent Reinforcement Learning for Adaptive and Cost-Aware Visual-Inertial Odometry</td><td>[2511.21083](http://arxiv.org/pdf/2511.21083)</td><td>◆ Visual-Inertial Odometry (VIO) is a critical component for robust ego-motion estimation, enabling foundational capabilities such as autonomous navigation in robotics and real-time 6-DoF tracking for augmented reality.
+◆ Existing methods face a well-known trade-off: filter-based approaches are efficient but prone to drift, while optimization-based methods, though accurate, rely on computationally prohibitive Visual-Inertial Bundle Adjustment (VIBA) that is difficult to run on resource-constrained platforms.
+◆ Rather than removing VIBA altogether, we aim to reduce how often and how heavily it must be invoked.</td></tr>
+<tr><td>2025-11-25</td><td>Estimating Fog Parameters from a Sequence of Stereo Images</td><td>[2511.20865](http://arxiv.org/pdf/2511.20865)</td><td>◆ We propose a method which, given a sequence of stereo foggy images, estimates the parameters of a fog model and updates them dynamically.
+◆ In contrast with previous approaches, which estimate the parameters sequentially and thus are prone to error propagation, our algorithm estimates all the parameters simultaneously by solving a novel optimisation problem.
+◆ By assuming that fog is only locally homogeneous, our method effectively handles real-world fog, which is often globally inhomogeneous.</td></tr>
 <tr><td>2025-11-25</td><td>The origin of B-type runaway stars based on kinematics</td><td>[2511.20566](http://arxiv.org/pdf/2511.20566)</td><td>◆ Runaway stars depart their birthplaces with high peculiar velocities.
 ◆ Two mechanisms are commonly invoked to explain their origin, the binary supernova scenario (BSS) and the dynamical ejection scenario (DES).
 ◆ Investigating the kinematic properties of runaway stars is key to understanding their origins.We intend to investigate the origins of 39 B-type runaway stars from LAMOST using orbital traceback analysis.</td></tr>
@@ -34,7 +40,7 @@
 <tr><td>2025-11-25</td><td>Stellar Parameters of BOSS M dwarfs in SDSS-V DR19</td><td>[2511.20005](http://arxiv.org/pdf/2511.20005)</td><td>◆ We utilized the Stellar LAbel Machine (SLAM), a data-driven model based on Support Vector Regression, to derive stellar parameters ([Fe/H], $T_{\rm eff}$, and $\log{g}$) for SDSS-V M dwarfs using low-resolution optical spectra (R$\sim$2000) obtained with the BOSS spectrographs.
 ◆ These parameters are calibrated using LAMOST F, G or K dwarf companions ([Fe/H]), and APOGEE Net ($T_{\rm eff}$ and $\log{g}$), respectively.
 ◆ Comparisons of SLAM predicted [Fe/H] values between two components of M+M dwarfs wide binaries show no bias but with a scatter of 0.11 dex.</td></tr>
-<tr><td>2025-11-24</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
+<tr><td>2025-11-26</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
 ◆ While existing monocular SLAM systems generate detailed 3D geometry through dense scene representations, they are computationally expensive due to the need for iterative optimization.
 ◆ To address this challenge, MASt3R-SLAM utilizes learned 3D reconstruction priors, enabling more efficient and accurate estimation of both 3D structures and camera poses.</td></tr>
 <tr><td>2025-11-24</td><td>AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion</td><td>[2511.18857](http://arxiv.org/pdf/2511.18857)</td><td>◆ Accurate proprioceptive odometry is fundamental for legged robot navigation in GPS-denied and visually degraded environments where conventional visual odometry systems fail.
@@ -1176,6 +1182,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos</td><td>[2511.21690](http://arxiv.org/pdf/2511.21690)</td><td>◆ Learning new robot tasks on new platforms and in new scenes from only a handful of demonstrations remains challenging.
+◆ While videos of other embodiments - humans and different robots - are abundant, differences in embodiment, camera, and environment hinder their direct use.
+◆ We address the small-data problem by introducing a unifying, symbolic representation - a compact 3D &quot;trace-space&quot; of scene-level trajectories - that enables learning from cross-embodiment, cross-environment, and cross-task videos.</td></tr>
+<tr><td>2025-11-26</td><td>UAVLight: A Benchmark for Illumination-Robust 3D Reconstruction in Unmanned Aerial Vehicle (UAV) Scenes</td><td>[2511.21565](http://arxiv.org/pdf/2511.21565)</td><td>◆ Illumination inconsistency is a fundamental challenge in multi-view 3D reconstruction.
+◆ Variations in sunlight direction, cloud cover, and shadows break the constant-lighting assumption underlying both classical multi-view stereo (MVS) and structure from motion (SfM) pipelines and recent neural rendering methods, leading to geometry drift, color inconsistency, and shadow imprinting.
+◆ This issue is especially critical in UAV-based reconstruction, where long flight durations and outdoor environments make lighting changes unavoidable.</td></tr>
+<tr><td>2025-11-26</td><td>From Observation to Action: Latent Action-based Primitive Segmentation for VLA Pre-training in Industrial Settings</td><td>[2511.21428](http://arxiv.org/pdf/2511.21428)</td><td>◆ We present a novel unsupervised framework to unlock vast unlabeled human demonstration data from continuous industrial video streams for Vision-Language-Action (VLA) model pre-training.
+◆ Our method first trains a lightweight motion tokenizer to encode motion dynamics, then employs an unsupervised action segmenter leveraging a novel &quot;Latent Action Energy&quot; metric to discover and segment semantically coherent action primitives.
+◆ The pipeline outputs both segmented video clips and their corresponding latent action sequences, providing structured data directly suitable for VLA pre-training.</td></tr>
+<tr><td>2025-11-26</td><td>DeepRFTv2: Kernel-level Learning for Image Deblurring</td><td>[2511.21132](http://arxiv.org/pdf/2511.21132)</td><td>◆ It is well-known that if a network aims to learn how to deblur, it should understand the blur process.
+◆ Blurring is naturally caused by the convolution of the sharp image with the blur kernel.
+◆ Thus, allowing the network to learn the blur process in the kernel-level can significantly improve the image deblurring performance.</td></tr>
+<tr><td>2025-11-25</td><td>Hund-projected Kanamori model: an effective description of Hund&#x27;s metals near the Mott insulating regime</td><td>[2511.20788](http://arxiv.org/pdf/2511.20788)</td><td>◆ Hund&#x27;s coupling plays a decisive role in shaping electron correlations of multi-orbital systems, giving rise to a class of materials--Hund&#x27;s metals--that combine local-moment physics with metallic transport.
+◆ Here we derive an effective low-energy description of such a system near the Mott insulating regime, starting from the multi-orbital Hubbard-Kanamori Hamiltonian and projecting onto the high-spin manifold favored by Hund&#x27;s first rule.
+◆ The resulting Hund-projected Kanamori model captures the interplay between carrier motion and magnetic correlations in the presence of strong Hund&#x27;s coupling.</td></tr>
+<tr><td>2025-11-25</td><td>From Observations to Simulations: A Neural-Network Approach to Intracluster Medium Kinematics</td><td>[2511.20755](http://arxiv.org/pdf/2511.20755)</td><td>◆ We present a systematic comparison between {\it XMM-Newton} velocity maps of the Virgo, Centaurus, Ophiuchus and A3266 clusters and synthetic velocity maps generated from the Illustris TNG-300 simulations.
+◆ Our goal is to constrain the physical conditions and dynamical states of the intracluster medium (ICM) through a data-driven approach.
+◆ We employ a Siamese Convolutional Neural Network (CNN) designed to identify the most analogous simulated cluster to each observed system based on the morphology of their line-of-sight velocity maps.</td></tr>
 <tr><td>2025-11-25</td><td>Diverse Video Generation with Determinantal Point Process-Guided Policy Optimization</td><td>[2511.20647](http://arxiv.org/pdf/2511.20647)</td><td>◆ While recent text-to-video (T2V) diffusion models have achieved impressive quality and prompt alignment, they often produce low-diversity outputs when sampling multiple videos from a single text prompt.
 ◆ We tackle this challenge by formulating it as a set-level policy optimization problem, with the goal of training a policy that can cover the diverse range of plausible outcomes for a given prompt.
 ◆ To address this, we introduce DPP-GRPO, a novel framework for diverse video generation that combines Determinantal Point Processes (DPPs) and Group Relative Policy Optimization (GRPO) theories to enforce explicit reward on diverse generations.</td></tr>
@@ -1826,6 +1850,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Attention-Guided Patch-Wise Sparse Adversarial Attacks on Vision-Language-Action Models</td><td>[2511.21663](http://arxiv.org/pdf/2511.21663)</td><td>◆ In recent years, Vision-Language-Action (VLA) models in embodied intelligence have developed rapidly.
+◆ However, existing adversarial attack methods require costly end-to-end training and often generate noticeable perturbation patches.
+◆ To address these limitations, we propose ADVLA, a framework that directly applies adversarial perturbations on features projected from the visual encoder into the textual feature space.</td></tr>
+<tr><td>2025-11-26</td><td>Fast 3D Ultrasound Localization Microscopy via Projection-based Processing Framework</td><td>[2511.21647](http://arxiv.org/pdf/2511.21647)</td><td>◆ Three-dimensional ultrasound localization microscopy (ULM) enables comprehensive visualization of the vasculature, thereby improving diagnostic reliability.
+◆ Nevertheless, its clinical translation remains challenging, as the exponential growth in voxel count for full 3D reconstruction imposes heavy computational demands and extensive post-processing time.
+◆ In this row-column array (RCA)-based 3D in vivo pig kidney ULM study, we reformulate each step of the full 3D ULM pipeline, including beamforming, clutter filtering, motion estimation, microbubble separation and localization into a series of computational-efficient 2D operations, substantially reducing the number of voxels to be processed while maintaining comparable accuracy.</td></tr>
+<tr><td>2025-11-26</td><td>Qwen3-VL Technical Report</td><td>[2511.21631](http://arxiv.org/pdf/2511.21631)</td><td>◆ We introduce Qwen3-VL, the most capable vision-language model in the Qwen series to date, achieving superior performance across a broad range of multimodal benchmarks.
+◆ It natively supports interleaved contexts of up to 256K tokens, seamlessly integrating text, images, and video.
+◆ The model family includes both dense (2B/4B/8B/32B) and mixture-of-experts (30B-A3B/235B-A22B) variants to accommodate diverse latency-quality trade-offs.</td></tr>
+<tr><td>2025-11-26</td><td>Harmony: Harmonizing Audio and Video Generation through Cross-Task Synergy</td><td>[2511.21579](http://arxiv.org/pdf/2511.21579)</td><td>◆ The synthesis of synchronized audio-visual content is a key challenge in generative AI, with open-source models facing challenges in robust audio-video alignment.
+◆ Our analysis reveals that this issue is rooted in three fundamental challenges of the joint diffusion process: (1) Correspondence Drift, where concurrently evolving noisy latents impede stable learning of alignment; (2) inefficient global attention mechanisms that fail to capture fine-grained temporal cues; and (3) the intra-modal bias of conventional Classifier-Free Guidance (CFG), which enhances conditionality but not cross-modal synchronization.
+◆ To overcome these challenges, we introduce Harmony, a novel framework that mechanistically enforces audio-visual synchronization.</td></tr>
+<tr><td>2025-11-26</td><td>FITRep: Attention-Guided Item Representation via MLLMs</td><td>[2511.21389](http://arxiv.org/pdf/2511.21389)</td><td>◆ Online platforms usually suffer from user experience degradation due to near-duplicate items with similar visuals and text.
+◆ While Multimodal Large Language Models (MLLMs) enable multimodal embedding, existing methods treat representations as black boxes, ignoring structural relationships (e.g., primary vs.
+◆ auxiliary elements), leading to local structural collapse problem.</td></tr>
+<tr><td>2025-11-26</td><td>Thinking With Bounding Boxes: Enhancing Spatio-Temporal Video Grounding via Reinforcement Fine-Tuning</td><td>[2511.21375](http://arxiv.org/pdf/2511.21375)</td><td>◆ Spatio-temporal video grounding (STVG) requires localizing a target object in untrimmed videos both temporally and spatially from natural language descriptions.
+◆ Despite their strong language understanding, multimodal large language models (MLLMs) underperform on STVG due to misaligned training objectives and weak fine-grained region-word alignment in standard visual encoders.
+◆ To address this, we propose STVG-o1, the first framework that enables off-the-shelf MLLMs to achieve state-of-the-art STVG performance without any architectural modifications.</td></tr>
+<tr><td>2025-11-26</td><td>HTTM: Head-wise Temporal Token Merging for Faster VGGT</td><td>[2511.21317](http://arxiv.org/pdf/2511.21317)</td><td>◆ The Visual Geometry Grounded Transformer (VGGT) marks a significant leap forward in 3D scene reconstruction, as it is the first model that directly infers all key 3D attributes (camera poses, depths, and dense geometry) jointly in one pass.
+◆ However, this joint inference mechanism requires global attention layers that perform all-to-all attention computation on tokens from all views.
+◆ For reconstruction of large scenes with long-sequence inputs, this causes a significant latency bottleneck.</td></tr>
+<tr><td>2025-11-26</td><td>Low-dose Chemically Specific Bioimaging via Deep-UV Lensless Holographic Microscopy on a Standard Camera</td><td>[2511.21311](http://arxiv.org/pdf/2511.21311)</td><td>◆ Deep-ultraviolet (DUV) microscopy can provide label-free biochemical contrast by exploiting the intrinsic absorption of nucleic acids, proteins and lipids, offering chemically specific morphological information that complements structural optical thickness contrast from phase-sensitive imaging.
+◆ However, existing DUV microscopes typically rely on specialized optics and DUV-sensitive cameras, which restrict field of view, increase system complexity and cost, and often require high illumination doses that risk photodamage.
+◆ Here, we report a low-dose deep-UV lensless holographic microscopy platform that uses standard board-level CMOS sensors designed for visible light, eliminating all imaging optics and dedicated DUV detectors.</td></tr>
+<tr><td>2025-11-26</td><td>Adaptive Lighting Control in Visible Light Systems: An Integrated Sensing, Communication, and Illumination Framework</td><td>[2511.21271](http://arxiv.org/pdf/2511.21271)</td><td>◆ Indoor visible light communication (VLC) is a promising sixth-generation (6G) technology, as its directional and sensitive optical signals are naturally suited for integrated sensing and communication (ISAC).
+◆ However, current research mainly focuses on maximizing data rates and sensing accuracy, creating a conflict between high performance, high energy consumption, and user visual comfort.
+◆ This paper proposes an adaptive integrated sensing, communication, and illumination (ISCI) framework that resolves this conflict by treating energy savings as a primary objective.</td></tr>
+<tr><td>2025-11-26</td><td>Towards an Effective Action-Region Tracking Framework for Fine-grained Video Action Recognition</td><td>[2511.21202](http://arxiv.org/pdf/2511.21202)</td><td>◆ Fine-grained action recognition (FGAR) aims to identify subtle and distinctive differences among fine-grained action categories.
+◆ However, current recognition methods often capture coarse-grained motion patterns but struggle to identify subtle details in local regions evolving over time.
+◆ In this work, we introduce the Action-Region Tracking (ART) framework, a novel solution leveraging a query-response mechanism to discover and track the dynamics of distinctive local details, enabling effective distinction of similar actions.</td></tr>
 <tr><td>2025-11-25</td><td>Adaptive Hopfield Network: Rethinking Similarities in Associative Memory</td><td>[2511.20609](http://arxiv.org/pdf/2511.20609)</td><td>◆ Associative memory models are content-addressable memory systems fundamental to biological intelligence and are notable for their high interpretability.
 ◆ However, existing models evaluate the quality of retrieval based on proximity, which cannot guarantee that the retrieved pattern has the strongest association with the query, failing correctness.
 ◆ We reframe this problem by proposing that a query is a generative variant of a stored memory pattern, and define a variant distribution to model this subtle context-dependent generative process.</td></tr>
@@ -3035,6 +3089,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Uncertainty Quantification for Visual Object Pose Estimation</td><td>[2511.21666](http://arxiv.org/pdf/2511.21666)</td><td>◆ Quantifying the uncertainty of an object&#x27;s pose estimate is essential for robust control and planning.
+◆ Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions.
+◆ We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting.</td></tr>
+<tr><td>2025-11-26</td><td>Semantic-Enhanced Feature Matching with Learnable Geometric Verification for Cross-Modal Neuron Registration</td><td>[2511.21452](http://arxiv.org/pdf/2511.21452)</td><td>◆ Accurately registering in-vivo two-photon and ex-vivo fluorescence micro-optical sectioning tomography images of individual neurons is critical for structure-function analysis in neuroscience.
+◆ This task is profoundly challenging due to a significant cross-modality appearance gap, the scarcity of annotated data and severe tissue deformations.
+◆ We propose a novel deep learning framework to address these issues.</td></tr>
+<tr><td>2025-11-26</td><td>BUSTR: Breast Ultrasound Text Reporting with a Descriptor-Aware Vision-Language Model</td><td>[2511.20956](http://arxiv.org/pdf/2511.20956)</td><td>◆ Automated radiology report generation (RRG) for breast ultrasound (BUS) is limited by the lack of paired image-report datasets and the risk of hallucinations from large language models.
+◆ We propose BUSTR, a multitask vision-language framework that generates BUS reports without requiring paired image-report supervision.
+◆ BUSTR constructs reports from structured descriptors (e.g., BI-RADS, pathology, histology) and radiomics features, learns descriptor-aware visual representations with a multi-head Swin encoder trained using a multitask loss over dataset-specific descriptor sets, and aligns visual and textual tokens via a dual-level objective that combines token-level cross-entropy with a cosine-similarity alignment loss between input and output representations.</td></tr>
 <tr><td>2025-11-25</td><td>Dance Style Classification using Laban-Inspired and Frequency-Domain Motion Features</td><td>[2511.20469](http://arxiv.org/pdf/2511.20469)</td><td>◆ Dance is an essential component of human culture and serves as a tool for conveying emotions and telling stories.
 ◆ Identifying and distinguishing dance genres based on motion data is a complex problem in human activity recognition, as many styles share similar poses, gestures, and temporal motion patterns.
 ◆ This work presents a lightweight framework for classifying dance styles that determines motion characteristics based on pose estimates extracted from videos.</td></tr>
@@ -3350,6 +3413,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Fast 3D Ultrasound Localization Microscopy via Projection-based Processing Framework</td><td>[2511.21647](http://arxiv.org/pdf/2511.21647)</td><td>◆ Three-dimensional ultrasound localization microscopy (ULM) enables comprehensive visualization of the vasculature, thereby improving diagnostic reliability.
+◆ Nevertheless, its clinical translation remains challenging, as the exponential growth in voxel count for full 3D reconstruction imposes heavy computational demands and extensive post-processing time.
+◆ In this row-column array (RCA)-based 3D in vivo pig kidney ULM study, we reformulate each step of the full 3D ULM pipeline, including beamforming, clutter filtering, motion estimation, microbubble separation and localization into a series of computational-efficient 2D operations, substantially reducing the number of voxels to be processed while maintaining comparable accuracy.</td></tr>
+<tr><td>2025-11-26</td><td>MoGAN: Improving Motion Quality in Video Diffusion via Few-Step Motion Adversarial Post-Training</td><td>[2511.21592](http://arxiv.org/pdf/2511.21592)</td><td>◆ Video diffusion models achieve strong frame-level fidelity but still struggle with motion coherence, dynamics and realism, often producing jitter, ghosting, or implausible dynamics.
+◆ A key limitation is that the standard denoising MSE objective provides no direct supervision on temporal consistency, allowing models to achieve low loss while still generating poor motion.
+◆ We propose MoGAN, a motion-centric post-training framework that improves motion realism without reward models or human preference data.</td></tr>
+<tr><td>2025-11-26</td><td>Semantic-Enhanced Feature Matching with Learnable Geometric Verification for Cross-Modal Neuron Registration</td><td>[2511.21452](http://arxiv.org/pdf/2511.21452)</td><td>◆ Accurately registering in-vivo two-photon and ex-vivo fluorescence micro-optical sectioning tomography images of individual neurons is critical for structure-function analysis in neuroscience.
+◆ This task is profoundly challenging due to a significant cross-modality appearance gap, the scarcity of annotated data and severe tissue deformations.
+◆ We propose a novel deep learning framework to address these issues.</td></tr>
+<tr><td>2025-11-26</td><td>TSGM: Regular and Irregular Time-series Generation using Score-based Generative Models</td><td>[2511.21335](http://arxiv.org/pdf/2511.21335)</td><td>◆ Score-based generative models (SGMs) have demonstrated unparalleled sampling quality and diversity in numerous fields, such as image generation, voice synthesis, and tabular data synthesis, etc.
+◆ Inspired by those outstanding results, we apply SGMs to synthesize time-series by learning its conditional score function.
+◆ To this end, we present a conditional score network for time-series synthesis, deriving a denoising score matching loss tailored for our purposes.</td></tr>
+<tr><td>2025-11-26</td><td>Unlocking Zero-shot Potential of Semi-dense Image Matching via Gaussian Splatting</td><td>[2511.21265](http://arxiv.org/pdf/2511.21265)</td><td>◆ Learning-based image matching critically depends on large-scale, diverse, and geometrically accurate training data.
+◆ 3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis and thus is attractive for data generation.
+◆ However, its geometric inaccuracies and biased depth rendering currently prevent robust correspondence labeling.</td></tr>
+<tr><td>2025-11-26</td><td>From Diffusion to One-Step Generation: A Comparative Study of Flow-Based Models with Application to Image Inpainting</td><td>[2511.21215](http://arxiv.org/pdf/2511.21215)</td><td>◆ We present a comprehensive comparative study of three generative modeling paradigms: Denoising Diffusion Probabilistic Models (DDPM), Conditional Flow Matching (CFM), and MeanFlow.
+◆ While DDPM and CFM require iterative sampling, MeanFlow enables direct one-step generation by modeling the average velocity over time intervals.
+◆ We implement all three methods using a unified TinyUNet architecture (&lt;1.5M parameters) on CIFAR-10, demonstrating that CFM achieves an FID of 24.15 with 50 steps, significantly outperforming DDPM (FID 402.98).</td></tr>
+<tr><td>2025-11-26</td><td>Transformer Driven Visual Servoing and Dual Arm Impedance Control for Fabric Texture Matching</td><td>[2511.21203](http://arxiv.org/pdf/2511.21203)</td><td>◆ In this paper, we propose a method to align and place a fabric piece on top of another using a dual-arm manipulator and a grayscale camera, so that their surface textures are accurately matched.
+◆ We propose a novel control scheme that combines Transformer-driven visual servoing with dualarm impedance control.
+◆ This approach enables the system to simultaneously control the pose of the fabric piece and place it onto the underlying one while applying tension to keep the fabric piece flat.</td></tr>
+<tr><td>2025-11-26</td><td>Beyond Patch Aggregation: 3-Pass Pyramid Indexing for Vision-Enhanced Document Retrieval</td><td>[2511.21121](http://arxiv.org/pdf/2511.21121)</td><td>◆ Document centric RAG pipelines usually begin with OCR, followed by brittle heuristics for chunking, table parsing, and layout reconstruction.
+◆ These text first workflows are costly to maintain, sensitive to small layout shifts, and often lose the spatial cues that contain the answer.
+◆ Vision first retrieval has emerged as a strong alternative.</td></tr>
+<tr><td>2025-11-26</td><td>CLRecogEye : Curriculum Learning towards exploiting convolution features for Dynamic Iris Recognition</td><td>[2511.21097](http://arxiv.org/pdf/2511.21097)</td><td>◆ Iris authentication algorithms have achieved impressive recognition performance, making them highly promising for real-world applications such as border control, citizen identification, and both criminal investigations and commercial systems.
+◆ However, their robustness is still challenged by variations in rotation, scale, specular reflections, and defocus blur.
+◆ In addition, most existing approaches rely on straightforward point-to-point comparisons, typically using cosine or L2 distance, without effectively leveraging the spatio-spatial-temporal structure of iris patterns.</td></tr>
+<tr><td>2025-11-26</td><td>Deep Parameter Interpolation for Scalar Conditioning</td><td>[2511.21028](http://arxiv.org/pdf/2511.21028)</td><td>◆ We propose deep parameter interpolation (DPI), a general-purpose method for transforming an existing deep neural network architecture into one that accepts an additional scalar input.
+◆ Recent deep generative models, including diffusion models and flow matching, employ a single neural network to learn a time- or noise level-dependent vector field.
+◆ Designing a network architecture to accurately represent this vector field is challenging because the network must integrate information from two different sources: a high-dimensional vector (usually an image) and a scalar.</td></tr>
 <tr><td>2025-11-25</td><td>LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight</td><td>[2511.20648](http://arxiv.org/pdf/2511.20648)</td><td>◆ To act in the world, a model must name what it sees and know where it is in 3D.
 ◆ Today&#x27;s vision-language models (VLMs) excel at open-ended 2D description and grounding, yet multi-object 3D detection remains largely missing from the VLM toolbox.
 ◆ We present LocateAnything3D, a VLM-native recipe that casts 3D detection as a next-token prediction problem.</td></tr>
@@ -3886,6 +3979,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>$Δ$-NeRF: Incremental Refinement of Neural Radiance Fields through Residual Control and Knowledge Transfer</td><td>[2511.20804](http://arxiv.org/pdf/2511.20804)</td><td>◆ Neural Radiance Fields (NeRFs) have demonstrated remarkable capabilities in 3D reconstruction and novel view synthesis.
+◆ However, most existing NeRF frameworks require complete retraining when new views are introduced incrementally, limiting their applicability in domains where data arrives sequentially.
+◆ This limitation is particularly problematic in satellite-based terrain analysis, where regions are repeatedly observed over time.</td></tr>
 <tr><td>2025-11-24</td><td>Proxy-Free Gaussian Splats Deformation with Splat-Based Surface Estimation</td><td>[2511.19542](http://arxiv.org/pdf/2511.19542)</td><td>◆ We introduce SpLap, a proxy-free deformation method for Gaussian splats (GS) based on a Laplacian operator computed from our novel surface-aware splat graph.
 ◆ Existing approaches to GS deformation typically rely on deformation proxies such as cages or meshes, but they suffer from dependency on proxy quality and additional computational overhead.
 ◆ An alternative is to directly apply Laplacian-based deformation techniques by treating splats as point clouds.</td></tr>
@@ -4615,4 +4711,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.26
+> 更新于: 2025.11.27
