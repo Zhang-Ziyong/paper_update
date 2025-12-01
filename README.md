@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.11.30)
+# 计算机视觉领域最新论文 (2025.12.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Robust 3DGS-based SLAM via Adaptive Kernel Smoothing</td><td>[2511.23221](http://arxiv.org/pdf/2511.23221)</td><td>◆ In this paper, we challenge the conventional notion in 3DGS-SLAM that rendering quality is the primary determinant of tracking accuracy.
+◆ We argue that, compared to solely pursuing a perfect scene representation, it is more critical to enhance the robustness of the rasterization process against parameter errors to ensure stable camera pose tracking.
+◆ To address this challenge, we propose a novel approach that leverages a smooth kernel strategy to enhance the robustness of 3DGS-based SLAM.</td></tr>
+<tr><td>2025-11-28</td><td>Design loads for wave impacts -- introducing the Probabilistic Adaptive Screening (PAS) method for predicting extreme non-linear loads on maritime structures</td><td>[2511.23156](http://arxiv.org/pdf/2511.23156)</td><td>◆ To ensure the safety of marine and coastal structures, extreme (design) values should be known at the design stage.
+◆ But for such complex systems, estimating the magnitude of events which are both non-linear and rare is extremely challenging, and involves considerable computational cost to capture the high-fidelity physics.
+◆ To address this challenge, we offer a new multi-fidelity screening method, Probabilistic Adaptive Screening (PAS), which accurately predicts extreme values of strongly non-linear wave-induced loads while minimising the required high-fidelity simulation duration.</td></tr>
+<tr><td>2025-11-28</td><td>DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Memory Management</td><td>[2511.23030](http://arxiv.org/pdf/2511.23030)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated impressive results for novel view synthesis with real-time rendering capabilities.
+◆ However, integrating 3DGS with SLAM systems faces a fundamental scalability limitation: methods are constrained by GPU memory capacity, restricting reconstruction to small-scale environments.
+◆ We present DiskChunGS, a scalable 3DGS SLAM system that overcomes this bottleneck through an out-of-core approach that partitions scenes into spatial chunks and maintains only active regions in GPU memory while storing inactive areas on disk.</td></tr>
+<tr><td>2025-11-28</td><td>Taming the Light: Illumination-Invariant Semantic 3DGS-SLAM</td><td>[2511.22968](http://arxiv.org/pdf/2511.22968)</td><td>◆ Extreme exposure degrades both the 3D map reconstruction and semantic segmentation accuracy, which is particularly detrimental to tightly-coupled systems.
+◆ To achieve illumination invariance, we propose a novel semantic SLAM framework with two designs.
+◆ First, the Intrinsic Appearance Normalization (IAN) module proactively disentangles the scene&#x27;s intrinsic properties, such as albedo, from transient lighting.</td></tr>
+<tr><td>2025-11-28</td><td>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</td><td>[2511.22860](http://arxiv.org/pdf/2511.22860)</td><td>◆ Underwater visual localization remains challenging due to wavelength-dependent attenuation, poor texture, and non-Gaussian sensor noise.
+◆ We introduce MARVO, a physics-aware, learning-integrated odometry framework that fuses underwater image formation modeling, differentiable matching, and reinforcement-learning optimization.
+◆ At the front-end, we extend transformer-based feature matcher with a Physics Aware Radiance Adapter that compensates for color channel attenuation and contrast loss, yielding geometrically consistent feature correspondences under turbidity.</td></tr>
 <tr><td>2025-11-26</td><td>Dual-Agent Reinforcement Learning for Adaptive and Cost-Aware Visual-Inertial Odometry</td><td>[2511.21083](http://arxiv.org/pdf/2511.21083)</td><td>◆ Visual-Inertial Odometry (VIO) is a critical component for robust ego-motion estimation, enabling foundational capabilities such as autonomous navigation in robotics and real-time 6-DoF tracking for augmented reality.
 ◆ Existing methods face a well-known trade-off: filter-based approaches are efficient but prone to drift, while optimization-based methods, though accurate, rely on computationally prohibitive Visual-Inertial Bundle Adjustment (VIBA) that is difficult to run on resource-constrained platforms.
 ◆ Rather than removing VIBA altogether, we aim to reduce how often and how heavily it must be invoked.</td></tr>
@@ -1182,6 +1197,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>DisMo: Disentangled Motion Representations for Open-World Motion Transfer</td><td>[2511.23428](http://arxiv.org/pdf/2511.23428)</td><td>◆ Recent advances in text-to-video (T2V) and image-to-video (I2V) models, have enabled the creation of visually compelling and dynamic videos from simple textual descriptions or initial frames.
+◆ However, these models often fail to provide an explicit representation of motion separate from content, limiting their applicability for content creators.
+◆ To address this gap, we propose DisMo, a novel paradigm for learning abstract motion representations directly from raw video data via an image-space reconstruction objective.</td></tr>
+<tr><td>2025-11-28</td><td>From CAD to POMDP: Probabilistic Planning for Robotic Disassembly of End-of-Life Products</td><td>[2511.23407](http://arxiv.org/pdf/2511.23407)</td><td>◆ To support the circular economy, robotic systems must not only assemble new products but also disassemble end-of-life (EOL) ones for reuse, recycling, or safe disposal.
+◆ Existing approaches to disassembly sequence planning often assume deterministic and fully observable product models, yet real EOL products frequently deviate from their initial designs due to wear, corrosion, or undocumented repairs.
+◆ We argue that disassembly should therefore be formulated as a Partially Observable Markov Decision Process (POMDP), which naturally captures uncertainty about the product&#x27;s internal state.</td></tr>
+<tr><td>2025-11-28</td><td>Simulating AGN feedback in galaxy clusters with pre-existing turbulence</td><td>[2511.23267](http://arxiv.org/pdf/2511.23267)</td><td>◆ Feedback from active galactic nuclei (AGN) is believed to play a significant role in suppressing cooling flows in cool-core (CC) clusters.
+◆ Turbulence in the intracluster medium (ICM), which may be induced by AGN activity or pre-existing motions, has been proposed as a potential heating mechanism based on analysis of Chandra X-ray surface brightness fluctuations.
+◆ However, subsequent simulation results have found the subdominant role of turbulence in heating the ICM.</td></tr>
+<tr><td>2025-11-28</td><td>Nonequilibrium dynamics of magnetic hopfions driven by spin-orbit torque</td><td>[2511.23045](http://arxiv.org/pdf/2511.23045)</td><td>◆ Hopfions--three-dimensional topological solitons with knotted spin texture--have recently garnered attention in topological magnetism due to their unique topology characterized by the Hopf number $H$, a topological invariant derived from knot theory.
+◆ In contrast to two-dimensional skyrmions, which are typically limited to small topological invariants, i.e., skyrmion numbers, hopfions can, in principle, be stabilized with arbitrary Hopf numbers.
+◆ However, the nonequilibrium dynamics, especially interconversion between different Hopf numbers, remain poorly understood.</td></tr>
+<tr><td>2025-11-28</td><td>GLOW: Global Illumination-Aware Inverse Rendering of Indoor Scenes Captured with Dynamic Co-Located Light &amp; Camera</td><td>[2511.22857](http://arxiv.org/pdf/2511.22857)</td><td>◆ Inverse rendering of indoor scenes remains challenging due to the ambiguity between reflectance and lighting, exacerbated by inter-reflections among multiple objects.
+◆ While natural illumination-based methods struggle to resolve this ambiguity, co-located light-camera setups offer better disentanglement as lighting can be easily calibrated via Structure-from-Motion.
+◆ However, such setups introduce additional complexities like strong inter-reflections, dynamic shadows, near-field lighting, and moving specular highlights, which existing approaches fail to handle.</td></tr>
+<tr><td>2025-11-28</td><td>Captain Safari: A World Engine</td><td>[2511.22815](http://arxiv.org/pdf/2511.22815)</td><td>◆ World engines aim to synthesize long, 3D-consistent videos that support interactive exploration of a scene under user-controlled camera motion.
+◆ However, existing systems struggle under aggressive 6-DoF trajectories and complex outdoor layouts: they lose long-range geometric coherence, deviate from the target path, or collapse into overly conservative motion.
+◆ To this end, we introduce Captain Safari, a pose-conditioned world engine that generates videos by retrieving from a persistent world memory.</td></tr>
+<tr><td>2025-11-27</td><td>An Efficient and Accurate Surrogate Modeling of Flapping Dynamics in Inverted Elastic Foils using Hypergraph Neural Networks</td><td>[2511.22012](http://arxiv.org/pdf/2511.22012)</td><td>◆ Cantilevered elastic foils can undergo self-induced, large-amplitude flapping when subject to fluid flow, a widely observed phenomenon of fluid-structure interaction, from fluttering leaves or the movement of fish fins.
+◆ When harnessed in steady currents, these oscillations enable the extraction of kinetic energy from the flow.
+◆ However, accurately predicting these dynamics requires high-fidelity simulations that are prohibitively expensive to perform across the broad configuration space needed for design optimization.</td></tr>
+<tr><td>2025-11-26</td><td>UniArt: Unified 3D Representation for Generating 3D Articulated Objects with Open-Set Articulation</td><td>[2511.21887](http://arxiv.org/pdf/2511.21887)</td><td>◆ Articulated 3D objects play a vital role in realistic simulation and embodied robotics, yet manually constructing such assets remains costly and difficult to scale.
+◆ In this paper, we present UniArt, a diffusion-based framework that directly synthesizes fully articulated 3D objects from a single image in an end-to-end manner.
+◆ Unlike prior multi-stage techniques, UniArt establishes a unified latent representation that jointly encodes geometry, texture, part segmentation, and kinematic parameters.</td></tr>
 <tr><td>2025-11-26</td><td>TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos</td><td>[2511.21690](http://arxiv.org/pdf/2511.21690)</td><td>◆ Learning new robot tasks on new platforms and in new scenes from only a handful of demonstrations remains challenging.
 ◆ While videos of other embodiments - humans and different robots - are abundant, differences in embodiment, camera, and environment hinder their direct use.
 ◆ We address the small-data problem by introducing a unifying, symbolic representation - a compact 3D &quot;trace-space&quot; of scene-level trajectories - that enables learning from cross-embodiment, cross-environment, and cross-task videos.</td></tr>
@@ -1850,6 +1889,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>DEAL-300K: Diffusion-based Editing Area Localization with a 300K-Scale Dataset and Frequency-Prompted Baseline</td><td>[2511.23377](http://arxiv.org/pdf/2511.23377)</td><td>◆ Diffusion-based image editing has made semantic level image manipulation easy for general users, but it also enables realistic local forgeries that are hard to localize.
+◆ Existing benchmarks mainly focus on the binary detection of generated images or the localization of manually edited regions and do not reflect the properties of diffusion-based edits, which often blend smoothly into the original content.
+◆ We present Diffusion-Based Image Editing Area Localization Dataset (DEAL-300K), a large scale dataset for diffusion-based image manipulation localization (DIML) with more than 300,000 annotated images.</td></tr>
+<tr><td>2025-11-28</td><td>FACT-GS: Frequency-Aligned Complexity-Aware Texture Reparameterization for 2D Gaussian Splatting</td><td>[2511.23292](http://arxiv.org/pdf/2511.23292)</td><td>◆ Realistic scene appearance modeling has advanced rapidly with Gaussian Splatting, which enables real-time, high-quality rendering.
+◆ Recent advances introduced per-primitive textures that incorporate spatial color variations within each Gaussian, improving their expressiveness.
+◆ However, texture-based Gaussians parameterize appearance with a uniform per-Gaussian sampling grid, allocating equal sampling density regardless of local visual complexity.</td></tr>
+<tr><td>2025-11-28</td><td>Robust 3DGS-based SLAM via Adaptive Kernel Smoothing</td><td>[2511.23221](http://arxiv.org/pdf/2511.23221)</td><td>◆ In this paper, we challenge the conventional notion in 3DGS-SLAM that rendering quality is the primary determinant of tracking accuracy.
+◆ We argue that, compared to solely pursuing a perfect scene representation, it is more critical to enhance the robustness of the rasterization process against parameter errors to ensure stable camera pose tracking.
+◆ To address this challenge, we propose a novel approach that leverages a smooth kernel strategy to enhance the robustness of 3DGS-based SLAM.</td></tr>
+<tr><td>2025-11-28</td><td>PowerCLIP: Powerset Alignment for Contrastive Pre-Training</td><td>[2511.23170](http://arxiv.org/pdf/2511.23170)</td><td>◆ Contrastive vision-language pre-training frameworks such as CLIP have demonstrated impressive zero-shot performance across a range of vision-language tasks.
+◆ Recent studies have shown that aligning individual text tokens with specific image patches or regions enhances fine-grained compositional understanding.
+◆ However, it remains challenging to capture compositional semantics that span multiple image regions.</td></tr>
+<tr><td>2025-11-28</td><td>DualCamCtrl: Dual-Branch Diffusion Model for Geometry-Aware Camera-Controlled Video Generation</td><td>[2511.23127](http://arxiv.org/pdf/2511.23127)</td><td>◆ This paper presents DualCamCtrl, a novel end-to-end diffusion model for camera-controlled video generation.
+◆ Recent works have advanced this field by representing camera poses as ray-based conditions, yet they often lack sufficient scene understanding and geometric awareness.
+◆ DualCamCtrl specifically targets this limitation by introducing a dual-branch framework that mutually generates camera-consistent RGB and depth sequences.</td></tr>
+<tr><td>2025-11-28</td><td>Geodiffussr: Generative Terrain Texturing with Elevation Fidelity</td><td>[2511.23029](http://arxiv.org/pdf/2511.23029)</td><td>◆ Large-scale terrain generation remains a labor-intensive task in computer graphics.
+◆ We introduce Geodiffussr, a flow-matching pipeline that synthesizes text-guided texture maps while strictly adhering to a supplied Digital Elevation Map (DEM).
+◆ The core mechanism is multi-scale content aggregation (MCA): DEM features from a pretrained encoder are injected into UNet blocks at multiple resolutions to enforce global-to-local elevation consistency.</td></tr>
+<tr><td>2025-11-28</td><td>Contrastive Heliophysical Image Pretraining for Solar Dynamics Observatory Records</td><td>[2511.22958](http://arxiv.org/pdf/2511.22958)</td><td>◆ Deep learning has revolutionized solar image analysis, yet most approaches train task-specific encoders from scratch or rely on natural-image pretraining that ignores the unique characteristics of Solar Dynamics Observatory (SDO) data.
+◆ We introduce SolarCHIP, a family of contrastively pretrained visual backbones tailored to multi-instrument SDO observations.
+◆ SolarCHIP addresses three key challenges in solar imaging: multimodal sensing across AIA and HMI instruments, weak inter-class separability due to slow temporal evolution, and strong intra-class variability with sparse activity signals.</td></tr>
+<tr><td>2025-11-28</td><td>See, Rank, and Filter: Important Word-Aware Clip Filtering via Scene Understanding for Moment Retrieval and Highlight Detection</td><td>[2511.22906](http://arxiv.org/pdf/2511.22906)</td><td>◆ Video moment retrieval (MR) and highlight detection (HD) with natural language queries aim to localize relevant moments and key highlights in a video clips.
+◆ However, existing methods overlook the importance of individual words, treating the entire text query and video clips as a black-box, which hinders contextual understanding.
+◆ In this paper, we propose a novel approach that enables fine-grained clip filtering by identifying and prioritizing important words in the query.</td></tr>
+<tr><td>2025-11-28</td><td>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</td><td>[2511.22860](http://arxiv.org/pdf/2511.22860)</td><td>◆ Underwater visual localization remains challenging due to wavelength-dependent attenuation, poor texture, and non-Gaussian sensor noise.
+◆ We introduce MARVO, a physics-aware, learning-integrated odometry framework that fuses underwater image formation modeling, differentiable matching, and reinforcement-learning optimization.
+◆ At the front-end, we extend transformer-based feature matcher with a Physics Aware Radiance Adapter that compensates for color channel attenuation and contrast loss, yielding geometrically consistent feature correspondences under turbidity.</td></tr>
+<tr><td>2025-11-28</td><td>Breaking the Visual Shortcuts in Multimodal Knowledge-Based Visual Question Answering</td><td>[2511.22843](http://arxiv.org/pdf/2511.22843)</td><td>◆ Existing Multimodal Knowledge-Based Visual Question Answering (MKB-VQA) benchmarks suffer from &quot;visual shortcuts&quot;, as the query image typically matches the primary subject entity of the target document.
+◆ We demonstrate that models can exploit these shortcuts, achieving comparable results using visual cues alone.
+◆ To address this, we introduce Relational Entity Text-Image kNowledge Augmented (RETINA) benchmark, automatically constructed using an LLM-driven pipeline, consisting of 120k training and 2k human-curated test set.</td></tr>
 <tr><td>2025-11-26</td><td>Attention-Guided Patch-Wise Sparse Adversarial Attacks on Vision-Language-Action Models</td><td>[2511.21663](http://arxiv.org/pdf/2511.21663)</td><td>◆ In recent years, Vision-Language-Action (VLA) models in embodied intelligence have developed rapidly.
 ◆ However, existing adversarial attack methods require costly end-to-end training and often generate noticeable perturbation patches.
 ◆ To address these limitations, we propose ADVLA, a framework that directly applies adversarial perturbations on features projected from the visual encoder into the textual feature space.</td></tr>
@@ -3089,6 +3158,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Quantum spectroscopy of topological dynamics via a supersymmetric Hamiltonian</td><td>[2511.23169](http://arxiv.org/pdf/2511.23169)</td><td>◆ Topological data analysis (TDA) characterizes complex dynamics through global invariants, but classical computation becomes prohibitive for high-dimensional data.
+◆ We reinterpret time-domain dynamics as the eigenvalue spectrum of a supersymmetric (SUSY) Hamiltonian and thereby estimate topological descriptors through quantum spectroscopy.
+◆ While zero modes correspond to Betti numbers, we show that low-lying excited states quantify the stability of topological features.</td></tr>
+<tr><td>2025-11-27</td><td>All Centers Are at most a Few Tokens Apart: Knowledge Distillation with Domain Invariant Prompt Tuning</td><td>[2511.22739](http://arxiv.org/pdf/2511.22739)</td><td>◆ Domain generalization is critical in computational pathology (CPath) due to inherent domain shifts caused by variations in staining protocols, scanner devices, and imaging settings across clinical centers.
+◆ Vision-language models (VLMs), such as PLIP-a pathology-tuned CLIP-trained on image-text pairs across diverse domains, serve as strong knowledge distillation sources.
+◆ However, their zero-shot performance with predefined prompts remains limited due to sensitivity to prompt variations.</td></tr>
+<tr><td>2025-11-27</td><td>UMind-VL: A Generalist Ultrasound Vision-Language Model for Unified Grounded Perception and Comprehensive Interpretation</td><td>[2511.22256](http://arxiv.org/pdf/2511.22256)</td><td>◆ Despite significant strides in medical foundation models, the ultrasound domain lacks a comprehensive solution capable of bridging low-level Ultrasound Grounded Perception (e.g., segmentation, localization) and high-level Ultrasound Comprehensive Interpretation (e.g., diagnosis, reasoning).
+◆ To bridge this gap, we propose UMind-VL, a unified foundation model designed to synergize pixel-level structural understanding with complex clinical reasoning.
+◆ We first introduce UMind-DS, a large-scale multimodal dataset comprising 1.2 million ultrasound image-text pairs across 16 anatomical regions, enriching standard data with pixel-level annotations and clinician-validated rationales.</td></tr>
+<tr><td>2025-11-27</td><td>3D Affordance Keypoint Detection for Robotic Manipulation</td><td>[2511.22195](http://arxiv.org/pdf/2511.22195)</td><td>◆ This paper presents a novel approach for affordance-informed robotic manipulation by introducing 3D keypoints to enhance the understanding of object parts&#x27; functionality.
+◆ The proposed approach provides direct information about what the potential use of objects is, as well as guidance on where and how a manipulator should engage, whereas conventional methods treat affordance detection as a semantic segmentation task, focusing solely on answering the what question.
+◆ To address this gap, we propose a Fusion-based Affordance Keypoint Network (FAKP-Net) by introducing 3D keypoint quadruplet that harnesses the synergistic potential of RGB and Depth image to provide information on execution position, direction, and extent.</td></tr>
+<tr><td>2025-11-24</td><td>fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding</td><td>[2511.21760](http://arxiv.org/pdf/2511.21760)</td><td>◆ Recent advances in multimodal large language models (LLMs) have enabled unified reasoning across images, audio, and video, but extending such capability to brain imaging remains largely unexplored.
+◆ Bridging this gap is essential to link neural activity with semantic cognition and to develop cross-modal brain representations.
+◆ To this end, we present fMRI-LM, a foundational model that bridges functional MRI (fMRI) and language through a three-stage framework.</td></tr>
 <tr><td>2025-11-26</td><td>Uncertainty Quantification for Visual Object Pose Estimation</td><td>[2511.21666](http://arxiv.org/pdf/2511.21666)</td><td>◆ Quantifying the uncertainty of an object&#x27;s pose estimate is essential for robust control and planning.
 ◆ Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions.
 ◆ We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting.</td></tr>
@@ -3413,6 +3497,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Deep Learning for Restoring MPI System Matrices Using Simulated Training Data</td><td>[2511.23251](http://arxiv.org/pdf/2511.23251)</td><td>◆ Magnetic particle imaging reconstructs tracer distributions using a system matrix obtained through time-consuming, noise-prone calibration measurements.
+◆ Methods for addressing imperfections in measured system matrices increasingly rely on deep neural networks, yet curated training data remain scarce.
+◆ This study evaluates whether physics-based simulated system matrices can be used to train deep learning models for different system matrix restoration tasks, i.e., denoising, accelerated calibration, upsampling, and inpainting, that generalize to measured data.</td></tr>
+<tr><td>2025-11-28</td><td>Vision Bridge Transformer at Scale</td><td>[2511.23199](http://arxiv.org/pdf/2511.23199)</td><td>◆ We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models designed for conditional generation.
+◆ Unlike traditional diffusion models that transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficient data-to-data translation paradigm.
+◆ By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks.</td></tr>
+<tr><td>2025-11-28</td><td>REVEAL: Reasoning-enhanced Forensic Evidence Analysis for Explainable AI-generated Image Detection</td><td>[2511.23158](http://arxiv.org/pdf/2511.23158)</td><td>◆ With the rapid advancement of generative models, visually realistic AI-generated images have become increasingly difficult to distinguish from authentic ones, posing severe threats to social trust and information integrity.
+◆ Consequently, there is an urgent need for efficient and truly explainable image forensic methods.
+◆ Recent detection paradigms have shifted towards explainable forensics.</td></tr>
+<tr><td>2025-11-28</td><td>On Computational Aspects of Ordered Matching Problems</td><td>[2511.23093](http://arxiv.org/pdf/2511.23093)</td><td>◆ Ordered matchings, defined as graphs with linearly ordered vertices, where each vertex is connected to exactly one edge, play a crucial role in the area of ordered graphs and their homomorphisms.
+◆ Therefore, we consider related problems from the complexity point of view and determine their corresponding computational and parameterized complexities.
+◆ We show that the subgraph of ordered matchings problem is NP-complete and we prove that the problem of finding ordered homomorphisms between ordered matchings is NP-complete as well, implying NP-completeness of more generic problems.</td></tr>
+<tr><td>2025-11-28</td><td>Geodiffussr: Generative Terrain Texturing with Elevation Fidelity</td><td>[2511.23029](http://arxiv.org/pdf/2511.23029)</td><td>◆ Large-scale terrain generation remains a labor-intensive task in computer graphics.
+◆ We introduce Geodiffussr, a flow-matching pipeline that synthesizes text-guided texture maps while strictly adhering to a supplied Digital Elevation Map (DEM).
+◆ The core mechanism is multi-scale content aggregation (MCA): DEM features from a pretrained encoder are injected into UNet blocks at multiple resolutions to enforce global-to-local elevation consistency.</td></tr>
+<tr><td>2025-11-28</td><td>A Trainable Centrality Framework for Modern Data</td><td>[2511.22959](http://arxiv.org/pdf/2511.22959)</td><td>◆ Measuring how central or typical a data point is underpins robust estimation, ranking, and outlier detection, but classical depth notions become expensive and unstable in high dimensions and are hard to extend beyond Euclidean data.
+◆ We introduce Fused Unified centrality Score Estimation (FUSE), a neural centrality framework that operates on top of arbitrary representations.
+◆ FUSE combines a global head, trained from pairwise distance-based comparisons to learn an anchor-free centrality score, with a local head, trained by denoising score matching to approximate a smoothed log-density potential.</td></tr>
+<tr><td>2025-11-28</td><td>One-to-All Animation: Alignment-Free Character Animation and Image Pose Transfe</td><td>[2511.22940](http://arxiv.org/pdf/2511.22940)</td><td>◆ Recent advances in diffusion models have greatly improved pose-driven character animation.
+◆ However, existing methods are limited to spatially aligned reference-pose pairs with matched skeletal structures.
+◆ Handling reference-pose misalignment remains unsolved.</td></tr>
+<tr><td>2025-11-28</td><td>ViGG: Robust RGB-D Point Cloud Registration using Visual-Geometric Mutual Guidance</td><td>[2511.22908](http://arxiv.org/pdf/2511.22908)</td><td>◆ Point cloud registration is a fundamental task in 3D vision.
+◆ Most existing methods only use geometric information for registration.
+◆ Recently proposed RGB-D registration methods primarily focus on feature fusion or improving feature learning, which limits their ability to exploit image information and hinders their practical applicability.</td></tr>
+<tr><td>2025-11-28</td><td>Robust Indexing for Challenging Serial X-ray Diffraction Patterns</td><td>[2511.22875](http://arxiv.org/pdf/2511.22875)</td><td>◆ Serial crystallography experiments routinely produce thousands of diffraction patterns from crystals in random orientations.
+◆ To turn this stream of images into a usable dataset, each pattern must be indexed before integration and merging can proceed.
+◆ In practice, diffraction patterns may contain only a small number of reliable peaks, be contaminated by background or spuriously detected reflections, or arise from crystals with highly skewed unit cells.</td></tr>
+<tr><td>2025-11-28</td><td>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</td><td>[2511.22860](http://arxiv.org/pdf/2511.22860)</td><td>◆ Underwater visual localization remains challenging due to wavelength-dependent attenuation, poor texture, and non-Gaussian sensor noise.
+◆ We introduce MARVO, a physics-aware, learning-integrated odometry framework that fuses underwater image formation modeling, differentiable matching, and reinforcement-learning optimization.
+◆ At the front-end, we extend transformer-based feature matcher with a Physics Aware Radiance Adapter that compensates for color channel attenuation and contrast loss, yielding geometrically consistent feature correspondences under turbidity.</td></tr>
 <tr><td>2025-11-26</td><td>Fast 3D Ultrasound Localization Microscopy via Projection-based Processing Framework</td><td>[2511.21647](http://arxiv.org/pdf/2511.21647)</td><td>◆ Three-dimensional ultrasound localization microscopy (ULM) enables comprehensive visualization of the vasculature, thereby improving diagnostic reliability.
 ◆ Nevertheless, its clinical translation remains challenging, as the exponential growth in voxel count for full 3D reconstruction imposes heavy computational demands and extensive post-processing time.
 ◆ In this row-column array (RCA)-based 3D in vivo pig kidney ULM study, we reformulate each step of the full 3D ULM pipeline, including beamforming, clutter filtering, motion estimation, microbubble separation and localization into a series of computational-efficient 2D operations, substantially reducing the number of voxels to be processed while maintaining comparable accuracy.</td></tr>
@@ -3979,6 +4093,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Image Valuation in NeRF-based 3D reconstruction</td><td>[2511.23052](http://arxiv.org/pdf/2511.23052)</td><td>◆ Data valuation and monetization are becoming increasingly important across domains such as eXtended Reality (XR) and digital media.
+◆ In the context of 3D scene reconstruction from a set of images -- whether casually or professionally captured -- not all inputs contribute equally to the final output.
+◆ Neural Radiance Fields (NeRFs) enable photorealistic 3D reconstruction of scenes by optimizing a volumetric radiance field given a set of images.</td></tr>
+<tr><td>2025-11-28</td><td>MrGS: Multi-modal Radiance Fields with 3D Gaussian Splatting for RGB-Thermal Novel View Synthesis</td><td>[2511.22997](http://arxiv.org/pdf/2511.22997)</td><td>◆ Recent advances in Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (3DGS) have achieved considerable performance in RGB scene reconstruction.
+◆ However, multi-modal rendering that incorporates thermal infrared imagery remains largely underexplored.
+◆ Existing approaches tend to neglect distinctive thermal characteristics, such as heat conduction and the Lambertian property.</td></tr>
+<tr><td>2025-11-28</td><td>DenoiseGS: Gaussian Reconstruction Model for Burst Denoising</td><td>[2511.22939](http://arxiv.org/pdf/2511.22939)</td><td>◆ Burst denoising methods are crucial for enhancing images captured on handheld devices, but they often struggle with large motion or suffer from prohibitive computational costs.
+◆ In this paper, we propose DenoiseGS, the first framework to leverage the efficiency of 3D Gaussian Splatting for burst denoising.
+◆ Our approach addresses two key challenges when applying feedforward Gaussian reconsturction model to noisy inputs: the degradation of Gaussian point clouds and the loss of fine details.</td></tr>
+<tr><td>2025-11-27</td><td>3D-Consistent Multi-View Editing by Diffusion Guidance</td><td>[2511.22228](http://arxiv.org/pdf/2511.22228)</td><td>◆ Recent advancements in diffusion models have greatly improved text-based image editing, yet methods that edit images independently often produce geometrically and photometrically inconsistent results across different views of the same scene.
+◆ Such inconsistencies are particularly problematic for editing of 3D representations such as NeRFs or Gaussian Splat models.
+◆ We propose a training-free diffusion framework that enforces multi-view consistency during the image editing process.</td></tr>
 <tr><td>2025-11-25</td><td>$Δ$-NeRF: Incremental Refinement of Neural Radiance Fields through Residual Control and Knowledge Transfer</td><td>[2511.20804](http://arxiv.org/pdf/2511.20804)</td><td>◆ Neural Radiance Fields (NeRFs) have demonstrated remarkable capabilities in 3D reconstruction and novel view synthesis.
 ◆ However, most existing NeRF frameworks require complete retraining when new views are introduced incrementally, limiting their applicability in domains where data arrives sequentially.
 ◆ This limitation is particularly problematic in satellite-based terrain analysis, where regions are repeatedly observed over time.</td></tr>
@@ -4711,4 +4837,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.30
+> 更新于: 2025.12.01
