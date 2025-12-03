@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.02)
+# 计算机视觉领域最新论文 (2025.12.03)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
+◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
+◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
 <tr><td>2025-12-01</td><td>KM-ViPE: Online Tightly Coupled Vision-Language-Geometry Fusion for Open-Vocabulary Semantic SLAM</td><td>[2512.01889](http://arxiv.org/pdf/2512.01889)</td><td>◆ We present KM-ViPE (Knowledge Mapping Video Pose Engine), a real-time open-vocabulary SLAM framework for uncalibrated monocular cameras in dynamic environments.
 ◆ Unlike systems requiring depth sensors and offline calibration, KM-ViPE operates directly on raw RGB streams, making it ideal for ego-centric applications and harvesting internet-scale video data for training.
 ◆ KM-ViPE tightly couples DINO visual features with geometric constraints through a high-level features based adaptive robust kernel that handles both moving objects and movable static objects (e.g., moving furniture in ego-centric views).</td></tr>
@@ -1216,13 +1219,31 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</td><td>[2512.03000](http://arxiv.org/pdf/2512.03000)</td><td>◆ Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities.
+◆ However, existing datasets are often derived from limited simulators or utilize traditional Structurefrom-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.
+◆ To bridge these gaps, we introduce DynamicVerse, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video.</td></tr>
+<tr><td>2025-12-02</td><td>Asymptotics for additive functionals of particle systems via Stein&#x27;s method</td><td>[2512.02922](http://arxiv.org/pdf/2512.02922)</td><td>◆ We consider additive functionals of systems of random measures whose initial configuration is given by a Poisson point process, and whose individual components evolve according to arbitrary Markovian or non-Markovian measure valued dynamics, with no structural assumptions beyond basic moment bounds.
+◆ In this setting and under adequate conditions, we establish a general third moment theorem for the normalized functionals.
+◆ Building on this result, we obtain the first quantitative bounds in the Wasserstein distance for a variety of moving-measure models initialized by Poisson-driven clouds of points, turning qualitative central limit theorems into explicit rates of convergence.</td></tr>
+<tr><td>2025-12-02</td><td>Symmetry transformation group arising from the Laplace-Runge-Lenz vector</td><td>[2512.02903](http://arxiv.org/pdf/2512.02903)</td><td>◆ The Kepler problem in classical mechanics exhibits a rich structure of conserved quantities, highlighted by the Laplace--Runge--Lenz (LRL) vector.
+◆ Through Noether&#x27;s theorem in reverse, the LRL vector gives rise to a corresponding infinitesimal dynamical symmetry on the kinematical variables, which is well known in the literature.
+◆ However, the physically relevant part of the LRL vector is its direction angle in the plane of motion (since its magnitude is just a function of energy and angular momentum).</td></tr>
+<tr><td>2025-12-02</td><td>ClusterStyle: Modeling Intra-Style Diversity with Prototypical Clustering for Stylized Motion Generation</td><td>[2512.02453](http://arxiv.org/pdf/2512.02453)</td><td>◆ Existing stylized motion generation models have shown their remarkable ability to understand specific style information from the style motion, and insert it into the content motion.
+◆ However, capturing intra-style diversity, where a single style should correspond to diverse motion variations, remains a significant challenge.
+◆ In this paper, we propose a clustering-based framework, ClusterStyle, to address this limitation.</td></tr>
+<tr><td>2025-12-02</td><td>On-the-fly Feedback SfM: Online Explore-and-Exploit UAV Photogrammetry with Incremental Mesh Quality-Aware Indicator and Predictive Path Planning</td><td>[2512.02375](http://arxiv.org/pdf/2512.02375)</td><td>◆ Compared with conventional offline UAV photogrammetry, real-time UAV photogrammetry is essential for time-critical geospatial applications such as disaster response and active digital-twin maintenance.
+◆ However, most existing methods focus on processing captured images or sequential frames in real time, without explicitly evaluating the quality of the on-the-go 3D reconstruction or providing guided feedback to enhance image acquisition in the target area.
+◆ This work presents On-the-fly Feedback SfM, an explore-and-exploit framework for real-time UAV photogrammetry, enabling iterative exploration of unseen regions and exploitation of already observed and reconstructed areas in near real time.</td></tr>
+<tr><td>2025-12-01</td><td>Sampling on Metric Graphs</td><td>[2512.02175](http://arxiv.org/pdf/2512.02175)</td><td>◆ Metric graphs are structures obtained by associating edges in a standard graph with segments of the real line and gluing these segments at the vertices of the graph.
+◆ The resulting structure has a natural metric that allows for the study of differential operators and stochastic processes on the graph.
+◆ Brownian motions in these domains have been extensively studied theoretically using their generators.</td></tr>
 <tr><td>2025-12-01</td><td>The Astrometric Resoeccentric Degeneracy: Eccentric Single Planets Mimic 2:1 Resonant Planet Pairs in Astrometry</td><td>[2512.02007](http://arxiv.org/pdf/2512.02007)</td><td>◆ Detections of long-period giant exoplanets will expand dramatically with Gaia Data Release 4 (DR4), but interpreting these signals will require care.
 ◆ We derive the astrometric resoeccentric degeneracy: an astrometric analogue of the well-known radial velocity degeneracy in which a single eccentric planet can mimic two circular planets near a 2:1 period ratio.
 ◆ To first order in eccentricity, the sky-projected motion of a single eccentric orbit decomposes into a fundamental mode and first harmonic with an amplitude proportional to that eccentricity.</td></tr>
 <tr><td>2025-12-01</td><td>Active chromospheric fibril singularity: Coordinated observations from Solar Orbiter, SST, and IRIS</td><td>[2512.01886](http://arxiv.org/pdf/2512.01886)</td><td>◆ The fine structures of the solar chromosphere, driven by photospheric motions, play a crucial role in the dynamics of solar magnetic fields.
 ◆ Many have been already identified such as fibrils, filament feet, and arch filament systems.
 ◆ Still, high resolution observations show a wealth of structures that remain elusive.</td></tr>
-<tr><td>2025-12-01</td><td>SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge</td><td>[2512.01629](http://arxiv.org/pdf/2512.01629)</td><td>◆ Articulated 3D objects are critical for embodied AI, robotics, and interactive scene understanding, yet creating simulation-ready assets remains labor-intensive and requires expert modeling of part hierarchies and motion structures.
+<tr><td>2025-12-02</td><td>SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge</td><td>[2512.01629](http://arxiv.org/pdf/2512.01629)</td><td>◆ Articulated 3D objects are critical for embodied AI, robotics, and interactive scene understanding, yet creating simulation-ready assets remains labor-intensive and requires expert modeling of part hierarchies and motion structures.
 ◆ We introduce SPARK, a framework for reconstructing physically consistent, kinematic part-level articulated objects from a single RGB image.
 ◆ Given an input image, we first leverage VLMs to extract coarse URDF parameters and generate part-level reference images.</td></tr>
 <tr><td>2025-12-01</td><td>X-CME: From In Situ Flux-Rope Reconstruction to CME Propagation Forecasting</td><td>[2512.01561](http://arxiv.org/pdf/2512.01561)</td><td>◆ Accurate forecasts of Coronal Mass Ejection (CME) arrival times and impact geometry remain a major challenge for space-weather operations.
@@ -1936,6 +1957,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>MagicQuillV2: Precise and Interactive Image Editing with Layered Visual Cues</td><td>[2512.03046](http://arxiv.org/pdf/2512.03046)</td><td>◆ We propose MagicQuill V2, a novel system that introduces a \textbf{layered composition} paradigm to generative image editing, bridging the gap between the semantic power of diffusion models and the granular control of traditional graphics software.
+◆ While diffusion transformers excel at holistic generation, their use of singular, monolithic prompts fails to disentangle distinct user intentions for content, position, and appearance.
+◆ To overcome this, our method deconstructs creative intent into a stack of controllable visual cues: a content layer for what to create, a spatial layer for where to place it, a structural layer for how it is shaped, and a color layer for its palette.</td></tr>
+<tr><td>2025-12-02</td><td>Video4Spatial: Towards Visuospatial Intelligence with Context-Guided Video Generation</td><td>[2512.03040](http://arxiv.org/pdf/2512.03040)</td><td>◆ We investigate whether video generative models can exhibit visuospatial intelligence, a capability central to human cognition, using only visual data.
+◆ To this end, we present Video4Spatial, a framework showing that video diffusion models conditioned solely on video-based scene context can perform complex spatial tasks.
+◆ We validate on two tasks: scene navigation - following camera-pose instructions while remaining consistent with 3D geometry of the scene, and object grounding - which requires semantic localization, instruction following, and planning.</td></tr>
+<tr><td>2025-12-02</td><td>MRD: Multi-resolution Retrieval-Detection Fusion for High-Resolution Image Understanding</td><td>[2512.02906](http://arxiv.org/pdf/2512.02906)</td><td>◆ Understanding high-resolution images remains a significant challenge for multimodal large language models (MLLMs).
+◆ Recent study address this issue by dividing the image into smaller crops and computing the semantic similarity between each crop and a query using a pretrained retrieval-augmented generation (RAG) model.
+◆ The most relevant crops are then selected to localize the target object and suppress irrelevant information.</td></tr>
+<tr><td>2025-12-02</td><td>Polar Perspectives: Evaluating 2-D LiDAR Projections for Robust Place Recognition with Visual Foundation Models</td><td>[2512.02897](http://arxiv.org/pdf/2512.02897)</td><td>◆ This work presents a systematic investigation into how alternative LiDAR-to-image projections affect metric place recognition when coupled with a state-of-the-art vision foundation model.
+◆ We introduce a modular retrieval pipeline that controls for backbone, aggregation, and evaluation protocol, thereby isolating the influence of the 2-D projection itself.
+◆ Using consistent geometric and structural channels across multiple datasets and deployment scenarios, we identify the projection characteristics that most strongly determine discriminative power, robustness to environmental variation, and suitability for real-time autonomy.</td></tr>
+<tr><td>2025-12-02</td><td>BOOM: Beyond Only One Modality KIT&#x27;s Multimodal Multilingual Lecture Companion</td><td>[2512.02817](http://arxiv.org/pdf/2512.02817)</td><td>◆ The globalization of education and rapid growth of online learning have made localizing educational content a critical challenge.
+◆ Lecture materials are inherently multimodal, combining spoken audio with visual slides, which requires systems capable of processing multiple input modalities.
+◆ To provide an accessible and complete learning experience, translations must preserve all modalities: text for reading, slides for visual understanding, and speech for auditory learning.</td></tr>
+<tr><td>2025-12-02</td><td>HUD: Hierarchical Uncertainty-Aware Disambiguation Network for Composed Video Retrieval</td><td>[2512.02792](http://arxiv.org/pdf/2512.02792)</td><td>◆ Composed Video Retrieval (CVR) is a challenging video retrieval task that utilizes multi-modal queries, consisting of a reference video and modification text, to retrieve the desired target video.
+◆ The core of this task lies in understanding the multi-modal composed query and achieving accurate composed feature learning.
+◆ Within multi-modal queries, the video modality typically carries richer semantic content compared to the textual modality.</td></tr>
+<tr><td>2025-12-02</td><td>Beyond Paired Data: Self-Supervised UAV Geo-Localization from Reference Imagery Alone</td><td>[2512.02737](http://arxiv.org/pdf/2512.02737)</td><td>◆ Image-based localization in GNSS-denied environments is critical for UAV autonomy.
+◆ Existing state-of-the-art approaches rely on matching UAV images to geo-referenced satellite images; however, they typically require large-scale, paired UAV-satellite datasets for training.
+◆ Such data are costly to acquire and often unavailable, limiting their applicability.</td></tr>
+<tr><td>2025-12-02</td><td>DF-Mamba: Deformable State Space Modeling for 3D Hand Pose Estimation in Interactions</td><td>[2512.02727](http://arxiv.org/pdf/2512.02727)</td><td>◆ Modeling daily hand interactions often struggles with severe occlusions, such as when two hands overlap, which highlights the need for robust feature learning in 3D hand pose estimation (HPE).
+◆ To handle such occluded hand images, it is vital to effectively learn the relationship between local image features (e.g., for occluded joints) and global context (e.g., cues from inter-joints, inter-hands, or the scene).
+◆ However, most current 3D HPE methods still rely on ResNet for feature extraction, and such CNN&#x27;s inductive bias may not be optimal for 3D HPE due to its limited capability to model the global context.</td></tr>
+<tr><td>2025-12-02</td><td>Training Data Attribution for Image Generation using Ontology-Aligned Knowledge Graphs</td><td>[2512.02713](http://arxiv.org/pdf/2512.02713)</td><td>◆ As generative models become powerful, concerns around transparency, accountability, and copyright violations have intensified.
+◆ Understanding how specific training data contributes to a model&#x27;s output is critical.
+◆ We introduce a framework for interpreting generative outputs through the automatic construction of ontologyaligned knowledge graphs (KGs).</td></tr>
+<tr><td>2025-12-02</td><td>GeoBridge: A Semantic-Anchored Multi-View Foundation Model Bridging Images and Text for Geo-Localization</td><td>[2512.02697](http://arxiv.org/pdf/2512.02697)</td><td>◆ Cross-view geo-localization infers a location by retrieving geo-tagged reference images that visually correspond to a query image.
+◆ However, the traditional satellite-centric paradigm limits robustness when high-resolution or up-to-date satellite imagery is unavailable.
+◆ It further underexploits complementary cues across views (e.g., drone, satellite, and street) and modalities (e.g., language and image).</td></tr>
 <tr><td>2025-12-01</td><td>Chain-of-Ground: Improving GUI Grounding via Iterative Reasoning and Reference Feedback</td><td>[2512.01979](http://arxiv.org/pdf/2512.01979)</td><td>◆ GUI grounding aims to align natural language instructions with precise regions in complex user interfaces.
 ◆ Advanced multimodal large language models show strong ability in visual GUI grounding but still struggle with small or visually similar targets and ambiguity in real world layouts.
 ◆ These limitations arise from limited grounding capacity and from underuse of existing reasoning potential.</td></tr>
@@ -3233,6 +3284,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>Exploring Definitions of Quality and Diversity in Sonic Measurement Spaces</td><td>[2512.02783](http://arxiv.org/pdf/2512.02783)</td><td>◆ Digital sound synthesis presents the opportunity to explore vast parameter spaces containing millions of configurations.
+◆ Quality diversity (QD) evolutionary algorithms offer a promising approach to harness this potential, yet their success hinges on appropriate sonic feature representations.
+◆ Existing QD methods predominantly employ handcrafted descriptors or supervised classifiers, potentially introducing unintended exploration biases and constraining discovery to familiar sonic regions.</td></tr>
 <tr><td>2025-12-01</td><td>Depth Matching Method Based on ShapeDTW for Oil-Based Mud Imager</td><td>[2512.01611](http://arxiv.org/pdf/2512.01611)</td><td>◆ In well logging operations using the oil-based mud (OBM) microresistivity imager, which employs an interleaved design with upper and lower pad sets, depth misalignment issues persist between the pad images even after velocity correction.
 ◆ This paper presents a depth matching method for borehole images based on the Shape Dynamic Time Warping (ShapeDTW) algorithm.
 ◆ The method extracts local shape features to construct a morphologically sensitive distance matrix, better preserving structural similarity between sequences during alignment.</td></tr>
@@ -3588,6 +3642,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>The Convex Matching Distance in Multiparameter Persistence</td><td>[2512.02944](http://arxiv.org/pdf/2512.02944)</td><td>◆ We introduce the convex matching distance, a novel metric for comparing functions with values in the real plane.
+◆ This metric measures the maximal bottleneck distance between the persistence diagrams associated with the convex combinations of the two function components.
+◆ Similarly to the traditional matching distance, the convex matching distance aggregates the information provided by two real-valued components.</td></tr>
+<tr><td>2025-12-02</td><td>Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation</td><td>[2512.02920](http://arxiv.org/pdf/2512.02920)</td><td>◆ We consider analyzing traffic accident patterns using both road network data and satellite images aligned to road graph nodes.
+◆ Previous work for predicting accident occurrences relies primarily on road network structural features while overlooking physical and environmental information from the road surface and its surroundings.
+◆ In this work, we construct a large multimodal dataset across six U.S.</td></tr>
+<tr><td>2025-12-02</td><td>Terahertz Emission from Spintronic Stack Nanodecorated with Drop-Cast Core-Shell Plasmonic Nanoparticles</td><td>[2512.02889](http://arxiv.org/pdf/2512.02889)</td><td>◆ Spintronic emitters promise to revolutionise terahertz (THz) sources by converting ultrafast optical pulses into broadband THz radiation without phase-matching constraints.
+◆ Because the conversion relies on spin-current injection across a nanometre-thin magnetic layer, its efficiency is ordinarily limited by weak optical coupling.
+◆ Here, we present a demonstration of a drop-casting based approach to introduce ultrafast plasmonic-mediated coupling: a sparse-layer of silica-gold core-shell nanoparticles is deposited directly onto a W/Fe/Pt spintronic trilayer.</td></tr>
+<tr><td>2025-12-02</td><td>A Comparative Study on How Data Normalization Affects Zero-Shot Generalization in Time Series Foundation Models</td><td>[2512.02833](http://arxiv.org/pdf/2512.02833)</td><td>◆ We investigate input normalization methods for Time-Series Foundation Models (TSFMs).
+◆ While normalization is well-studied in dataset-specific time-series models, it remains overlooked in TSFMs where generalization is critical.
+◆ Time-series data, unlike text or images, exhibits significant scale variation across domains and channels, coupled with non-stationarity, can undermine TSFM performance regardless of architectural complexity.</td></tr>
+<tr><td>2025-12-02</td><td>From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity</td><td>[2512.02826](http://arxiv.org/pdf/2512.02826)</td><td>◆ Flow-based diffusion models have emerged as a leading paradigm for training generative models across images and videos.
+◆ However, their memorization-generalization behavior remains poorly understood.
+◆ In this work, we revisit the flow matching (FM) objective and study its marginal velocity field, which admits a closed-form expression, allowing exact computation of the oracle FM target.</td></tr>
+<tr><td>2025-12-02</td><td>Direct observational evidence that higher-luminosity type 1 active galactic nuclei are most commonly triggered by galaxy mergers</td><td>[2512.02805](http://arxiv.org/pdf/2512.02805)</td><td>◆ We examine the connection between galaxy mergers and the triggering of active galactic nuclei (AGNs) using a sample of 614 type 1 AGNs at $z&lt;0.07$, along with a control sample of inactive galaxies matched to the AGNs for comparison.
+◆ We used tidal features, detected in deep images from the DESI Legacy Imaging Survey, as direct evidence of recent mergers.
+◆ We find that the fraction of type 1 AGN hosts with tidal features ($f_T$) is higher for AGNs with higher luminosities and (to a lesser extent) more massive black holes.</td></tr>
+<tr><td>2025-12-02</td><td>Diffusion-Prior Split Gibbs Sampling for Synthetic Aperture Radar Imaging under Incomplete Measurements</td><td>[2512.02768](http://arxiv.org/pdf/2512.02768)</td><td>◆ Synthetic aperture radar (SAR) imaging plays a critical role in all-weather, day-and-night remote sensing, yet reconstruction is often challenged by noise, undersampling, and complex scattering scenarios.
+◆ Conventional methods, including matched filtering and sparsity-based compressed sensing, are limited in capturing intricate scene structures and frequently suffer from artifacts, elevated sidelobes, and loss of fine details.
+◆ Recent diffusion models have demonstrated superior capability in representing high-order priors; however, existing diffusion-based SAR methods still yield degraded reconstructions due to oversimplified likelihood approximations in guided sampling.</td></tr>
+<tr><td>2025-12-02</td><td>Beyond Paired Data: Self-Supervised UAV Geo-Localization from Reference Imagery Alone</td><td>[2512.02737](http://arxiv.org/pdf/2512.02737)</td><td>◆ Image-based localization in GNSS-denied environments is critical for UAV autonomy.
+◆ Existing state-of-the-art approaches rely on matching UAV images to geo-referenced satellite images; however, they typically require large-scale, paired UAV-satellite datasets for training.
+◆ Such data are costly to acquire and often unavailable, limiting their applicability.</td></tr>
+<tr><td>2025-12-02</td><td>GeoBridge: A Semantic-Anchored Multi-View Foundation Model Bridging Images and Text for Geo-Localization</td><td>[2512.02697](http://arxiv.org/pdf/2512.02697)</td><td>◆ Cross-view geo-localization infers a location by retrieving geo-tagged reference images that visually correspond to a query image.
+◆ However, the traditional satellite-centric paradigm limits robustness when high-resolution or up-to-date satellite imagery is unavailable.
+◆ It further underexploits complementary cues across views (e.g., drone, satellite, and street) and modalities (e.g., language and image).</td></tr>
+<tr><td>2025-12-02</td><td>WSCF-MVCC: Weakly-supervised Calibration-free Multi-view Crowd Counting</td><td>[2512.02359](http://arxiv.org/pdf/2512.02359)</td><td>◆ Multi-view crowd counting can effectively mitigate occlusion issues that commonly arise in single-image crowd counting.
+◆ Existing deep-learning multi-view crowd counting methods project different camera view images onto a common space to obtain ground-plane density maps, requiring abundant and costly crowd annotations and camera calibrations.
+◆ Hence, calibration-free methods are proposed that do not require camera calibrations and scene-level crowd annotations.</td></tr>
 <tr><td>2025-12-01</td><td>SARL: Spatially-Aware Self-Supervised Representation Learning for Visuo-Tactile Perception</td><td>[2512.01908](http://arxiv.org/pdf/2512.01908)</td><td>◆ Contact-rich robotic manipulation requires representations that encode local geometry.
 ◆ Vision provides global context but lacks direct measurements of properties such as texture and hardness, whereas touch supplies these cues.
 ◆ Modern visuo-tactile sensors capture both modalities in a single fused image, yielding intrinsically aligned inputs that are well suited to manipulation tasks requiring visual and tactile information.</td></tr>
@@ -4212,6 +4296,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>PolarGuide-GSDR: 3D Gaussian Splatting Driven by Polarization Priors and Deferred Reflection for Real-World Reflective Scenes</td><td>[2512.02664](http://arxiv.org/pdf/2512.02664)</td><td>◆ Polarization-aware Neural Radiance Fields (NeRF) enable novel view synthesis of specular-reflection scenes but face challenges in slow training, inefficient rendering, and strong dependencies on material/viewpoint assumptions.
+◆ However, 3D Gaussian Splatting (3DGS) enables real-time rendering yet struggles with accurate reflection reconstruction from reflection-geometry entanglement, adding a deferred reflection module introduces environment map dependence.
+◆ We address these limitations by proposing PolarGuide-GSDR, a polarization-forward-guided paradigm establishing a bidirectional coupling mechanism between polarization and 3DGS: first 3DGS&#x27;s geometric priors are leveraged to resolve polarization ambiguity, and then the refined polarization information cues are used to guide 3DGS&#x27;s normal and spherical harmonic representation.</td></tr>
+<tr><td>2025-12-01</td><td>SplatSuRe: Selective Super-Resolution for Multi-view Consistent 3D Gaussian Splatting</td><td>[2512.02172](http://arxiv.org/pdf/2512.02172)</td><td>◆ 3D Gaussian Splatting (3DGS) enables high-quality novel view synthesis, motivating interest in generating higher-resolution renders than those available during training.
+◆ A natural strategy is to apply super-resolution (SR) to low-resolution (LR) input views, but independently enhancing each image introduces multi-view inconsistencies, leading to blurry renders.
+◆ Prior methods attempt to mitigate these inconsistencies through learned neural components, temporally consistent video priors, or joint optimization on LR and SR views, but all uniformly apply SR across every image.</td></tr>
 <tr><td>2025-12-01</td><td>EGG-Fusion: Efficient 3D Reconstruction with Geometry-aware Gaussian Surfel on the Fly</td><td>[2512.01296](http://arxiv.org/pdf/2512.01296)</td><td>◆ Real-time 3D reconstruction is a fundamental task in computer graphics.
 ◆ Recently, differentiable-rendering-based SLAM system has demonstrated significant potential, enabling photorealistic scene rendering through learnable scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
 ◆ Current differentiable rendering methods face dual challenges in real-time computation and sensor noise sensitivity, leading to degraded geometric fidelity in scene reconstruction and limited practicality.</td></tr>
@@ -4963,4 +5053,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.02
+> 更新于: 2025.12.03
