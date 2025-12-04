@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.03)
+# 计算机视觉领域最新论文 (2025.12.04)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>What Is The Best 3D Scene Representation for Robotics? From Geometric to Foundation Models</td><td>[2512.03422](http://arxiv.org/pdf/2512.03422)</td><td>◆ In this paper, we provide a comprehensive overview of existing scene representation methods for robotics, covering traditional representations such as point clouds, voxels, signed distance functions (SDF), and scene graphs, as well as more recent neural representations like Neural Radiance Fields (NeRF), 3D Gaussian Splatting (3DGS), and the emerging Foundation Models.
+◆ While current SLAM and localization systems predominantly rely on sparse representations like point clouds and voxels, dense scene representations are expected to play a critical role in downstream tasks such as navigation and obstacle avoidance.
+◆ Moreover, neural representations such as NeRF, 3DGS, and foundation models are well-suited for integrating high-level semantic features and language-based priors, enabling more comprehensive 3D scene understanding and embodied intelligence.</td></tr>
 <tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
 ◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
 ◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
@@ -1221,7 +1224,31 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-02</td><td>DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</td><td>[2512.03000](http://arxiv.org/pdf/2512.03000)</td><td>◆ Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities.
+<tr><td>2025-12-03</td><td>Emergent Outlier View Rejection in Visual Geometry Grounded Transformers</td><td>[2512.04012](http://arxiv.org/pdf/2512.04012)</td><td>◆ Reliable 3D reconstruction from in-the-wild image collections is often hindered by &quot;noisy&quot; images-irrelevant inputs with little or no view overlap with others.
+◆ While traditional Structure-from-Motion pipelines handle such cases through geometric verification and outlier rejection, feed-forward 3D reconstruction models lack these explicit mechanisms, leading to degraded performance under in-the-wild conditions.
+◆ In this paper, we discover that the existing feed-forward reconstruction model, e.g., VGGT, despite lacking explicit outlier-rejection mechanisms or noise-aware training, can inherently distinguish distractor images.</td></tr>
+<tr><td>2025-12-03</td><td>DirectDrag: High-Fidelity, Mask-Free, Prompt-Free Drag-based Image Editing via Readout-Guided Feature Alignment</td><td>[2512.03981](http://arxiv.org/pdf/2512.03981)</td><td>◆ Drag-based image editing using generative models provides intuitive control over image structures.
+◆ However, existing methods rely heavily on manually provided masks and textual prompts to preserve semantic fidelity and motion precision.
+◆ Removing these constraints creates a fundamental trade-off: visual artifacts without masks and poor spatial control without prompts.</td></tr>
+<tr><td>2025-12-03</td><td>Vortex Dynamics from Burst-and-Coast Motion of Anguilliform and Carangiform Swimmers</td><td>[2512.03969](http://arxiv.org/pdf/2512.03969)</td><td>◆ Fish perform various propulsive maneuvers while swimming by generating traveling waves along their bodies and producing thrust through tail strokes.
+◆ Anguilliform swimmers spread motion along the body, while carangiform swimmers&#x27; motion is more prominent near their tails.
+◆ Many species also switch between continuous undulation and intermittent swimming, such as burst-and-coast maneuver, which can save energy but can also change the wake structure and hydrodynamic forces.</td></tr>
+<tr><td>2025-12-03</td><td>Geometrical structure of the Wigner flow information quantifiers and hyperbolic stability in the phase-space framework</td><td>[2512.03717](http://arxiv.org/pdf/2512.03717)</td><td>◆ Quantifiers of stationarity, classicality, purity and vorticity are derived from phase-space differential geometrical structures within the Weyl-Wigner framework, after which they are related to the hyperbolic stability of classical and quantum-modified Hamiltonian (non-linear) equations of motion.
+◆ By examining the equilibrium regime produced by such an autonomous system of ordinary differential equations, a correspondence between Wigner flow properties and hyperbolic stability boundaries in the phase-space is identified.
+◆ Explicit analytical expressions for equilibrium-stability parameters are obtained for quantum Gaussian ensembles, wherein information quantifiers driven by Wigner currents are identified.</td></tr>
+<tr><td>2025-12-03</td><td>Terahertz light driven coherent excitation of a zone-folded Raman-active phonon mode in the Spin-Ladder System $α&#x27;$-NaV$_2$O$_5$</td><td>[2512.03691](http://arxiv.org/pdf/2512.03691)</td><td>◆ We investigate the out-of-equilibrium lattice dynamics in the spin-ladder system $α&#x27;$-NaV$_2$O$_5$ using intense terahertz (THz) pump and near-infrared (NIR) probe spectroscopy.
+◆ When quasi-single-cycle THz pulses interact with $α&#x27;$-NaV$_2$O$_5$ in its low-temperature, dimerized charge-ordered phase, they induce coherent oscillations in the time domain at the zone-folded Raman-active phonon frequency of 1.85 THz.
+◆ By combining pump-probe measurements with lattice dynamics modeling based on equation-of-motion approach, we propose that these oscillations arise from a nonlinear coupling between Raman-active and infrared (IR)-active phonon modes, with the latter being resonantly excited by the THz pulses.</td></tr>
+<tr><td>2025-12-03</td><td>LAMP: Language-Assisted Motion Planning for Controllable Video Generation</td><td>[2512.03619](http://arxiv.org/pdf/2512.03619)</td><td>◆ Video generation has achieved remarkable progress in visual fidelity and controllability, enabling conditioning on text, layout, or motion.
+◆ Among these, motion control - specifying object dynamics and camera trajectories - is essential for composing complex, cinematic scenes, yet existing interfaces remain limited.
+◆ We introduce LAMP that leverages large language models (LLMs) as motion planners to translate natural language descriptions into explicit 3D trajectories for dynamic objects and (relatively defined) cameras.</td></tr>
+<tr><td>2025-12-02</td><td>Comparing Unsupervised and Supervised Semantic Speech Tokens: A Case Study of Child ASR</td><td>[2512.03301](http://arxiv.org/pdf/2512.03301)</td><td>◆ Discrete speech tokens have gained attention for their storage efficiency and integration with Large Language Models (LLMs).
+◆ They are commonly categorized into acoustic and semantic tokens, with the latter being more advantageous for Automatic Speech Recognition (ASR).
+◆ Traditionally, unsupervised K-means clustering has been used to extract semantic speech tokens from Speech Foundation Models (SFMs).</td></tr>
+<tr><td>2025-12-02</td><td>The Origins of the Bulk flow</td><td>[2512.03168](http://arxiv.org/pdf/2512.03168)</td><td>◆ We analyze the origin of the large scale bulk flow using the CosmicFlows 4 (CF4) peculiar velocity catalog.
+◆ We decompose the observed motions into internal components, generated by mass fluctuations within 200Mpc/h, and external ones arising from structures beyond this volume.
+◆ A weighted average technique is developed to test the model&#x27;s self consistency while minimizing the impact of non Gaussian distance errors.</td></tr>
+<tr><td>2025-12-03</td><td>DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</td><td>[2512.03000](http://arxiv.org/pdf/2512.03000)</td><td>◆ Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities.
 ◆ However, existing datasets are often derived from limited simulators or utilize traditional Structurefrom-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.
 ◆ To bridge these gaps, we introduce DynamicVerse, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video.</td></tr>
 <tr><td>2025-12-02</td><td>Asymptotics for additive functionals of particle systems via Stein&#x27;s method</td><td>[2512.02922](http://arxiv.org/pdf/2512.02922)</td><td>◆ We consider additive functionals of systems of random measures whose initial configuration is given by a Poisson point process, and whose individual components evolve according to arbitrary Markovian or non-Markovian measure valued dynamics, with no structural assumptions beyond basic moment bounds.
@@ -1961,6 +1988,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>RELIC: Interactive Video World Model with Long-Horizon Memory</td><td>[2512.04040](http://arxiv.org/pdf/2512.04040)</td><td>◆ A truly interactive world model requires three key ingredients: real-time long-horizon streaming, consistent spatial memory, and precise user control.
+◆ However, most existing approaches address only one of these aspects in isolation, as achieving all three simultaneously is highly challenging-for example, long-term memory mechanisms often degrade real-time performance.
+◆ In this work, we present RELIC, a unified framework that tackles these three challenges altogether.</td></tr>
+<tr><td>2025-12-03</td><td>DirectDrag: High-Fidelity, Mask-Free, Prompt-Free Drag-based Image Editing via Readout-Guided Feature Alignment</td><td>[2512.03981](http://arxiv.org/pdf/2512.03981)</td><td>◆ Drag-based image editing using generative models provides intuitive control over image structures.
+◆ However, existing methods rely heavily on manually provided masks and textual prompts to preserve semantic fidelity and motion precision.
+◆ Removing these constraints creates a fundamental trade-off: visual artifacts without masks and poor spatial control without prompts.</td></tr>
+<tr><td>2025-12-03</td><td>Revealing Nanoscale Molecular Organization in Liquid Crystals via Cryogenic Atom Probe Tomograph</td><td>[2512.03734](http://arxiv.org/pdf/2512.03734)</td><td>◆ While liquid crystals (LCs) have been extensively studied, obtaining a comprehensive nanoscale picture of their molecular organization remains challenging, as conventional techniques face an intrinsic trade-off between spatial and chemical resolution.
+◆ Here, cryogenic atom probe tomography (cryo-APT) is introduced as a new analytical approach for LC materials, using 4&#x27;-Pentyl-4-cyanobiphenyl (5CB) and 4&#x27;-Octyl-4-cyanobiphenyl (8CB) as representative model compounds.
+◆ This was enabled by a tailored cryogenic focused ion beam (cryo-FIB) protocol optimized for small organic molecules.</td></tr>
+<tr><td>2025-12-03</td><td>DINO-RotateMatch: A Rotation-Aware Deep Framework for Robust Image Matching in Large-Scale 3D Reconstruction</td><td>[2512.03715](http://arxiv.org/pdf/2512.03715)</td><td>◆ This paper presents DINO-RotateMatch, a deep-learning framework designed to address the chal lenges of image matching in large-scale 3D reconstruction from unstructured Internet images.
+◆ The   method integrates a dataset-adaptive image pairing strategy with rotation-aware keypoint extraction and   matching.
+◆ DINO is employed to retrieve semantically relevant image pairs in large collections, while   rotation-based augmentation captures orientation-dependent local features using ALIKED and Light Glue.</td></tr>
+<tr><td>2025-12-03</td><td>A Novel Approach to Tomato Harvesting Using a Hybrid Gripper with Semantic Segmentation and Keypoint Detection</td><td>[2512.03684](http://arxiv.org/pdf/2512.03684)</td><td>◆ This paper presents an autonomous tomato-harvesting system built around a hybrid robotic gripper that combines six soft auxetic fingers with a rigid exoskeleton and a latex basket to achieve gentle, cage-like grasping.
+◆ The gripper is driven by a servo-actuated Scotch--yoke mechanism, and includes separator leaves that form a conical frustum for fruit isolation, with an integrated micro-servo cutter for pedicel cutting.
+◆ For perception, an RGB--D camera and a Detectron2-based pipeline perform semantic segmentation of ripe/unripe tomatoes and keypoint localization of the pedicel and fruit center under occlusion and variable illumination.</td></tr>
+<tr><td>2025-12-03</td><td>Multi-Scale Visual Prompting for Lightweight Small-Image Classification</td><td>[2512.03663](http://arxiv.org/pdf/2512.03663)</td><td>◆ Visual prompting has recently emerged as an efficient strategy to adapt vision models using lightweight, learnable parameters injected into the input space.
+◆ However, prior work mainly targets large Vision Transformers and high-resolution datasets such as ImageNet.
+◆ In contrast, small-image benchmarks like MNIST, Fashion-MNIST, and CIFAR-10 remain widely used in education, prototyping, and research, yet have received little attention in the context of prompting.</td></tr>
+<tr><td>2025-12-03</td><td>M3DR: Towards Universal Multilingual Multimodal Document Retrieval</td><td>[2512.03514](http://arxiv.org/pdf/2512.03514)</td><td>◆ Multimodal document retrieval systems have shown strong progress in aligning visual and textual content for semantic search.
+◆ However, most existing approaches remain heavily English-centric, limiting their effectiveness in multilingual contexts.
+◆ In this work, we present M3DR (Multilingual Multimodal Document Retrieval), a framework designed to bridge this gap across languages, enabling applicability across diverse linguistic and cultural contexts.</td></tr>
+<tr><td>2025-12-03</td><td>Think Before You Drive: World Model-Inspired Multimodal Grounding for Autonomous Vehicles</td><td>[2512.03454](http://arxiv.org/pdf/2512.03454)</td><td>◆ Interpreting natural-language commands to localize target objects is critical for autonomous driving (AD).
+◆ Existing visual grounding (VG) methods for autonomous vehicles (AVs) typically struggle with ambiguous, context-dependent instructions, as they lack reasoning over 3D spatial relations and anticipated scene evolution.
+◆ Grounded in the principles of world models, we propose ThinkDeeper, a framework that reasons about future spatial states before making grounding decisions.</td></tr>
+<tr><td>2025-12-03</td><td>Multi-Aspect Knowledge-Enhanced Medical Vision-Language Pretraining with Multi-Agent Data Generation</td><td>[2512.03445](http://arxiv.org/pdf/2512.03445)</td><td>◆ Vision-language pretraining (VLP) has emerged as a powerful paradigm in medical image analysis, enabling representation learning from large-scale image-text pairs without relying on expensive manual annotations.
+◆ However, existing methods often struggle with the noise inherent in web-collected data and the complexity of unstructured long medical texts.
+◆ To address these challenges, we propose a novel VLP framework integrating a Multi-Agent data GENeration (MAGEN) system and Ontology-based Multi-Aspect Knowledge-Enhanced (O-MAKE) pretraining.</td></tr>
+<tr><td>2025-12-03</td><td>Multimodal Reinforcement Learning with Agentic Verifier for AI Agents</td><td>[2512.03438](http://arxiv.org/pdf/2512.03438)</td><td>◆ Agentic reasoning models trained with multimodal reinforcement learning (MMRL) have become increasingly capable, yet they are almost universally optimized using sparse, outcome-based rewards computed based on the final answers.
+◆ Richer rewards computed from the reasoning tokens can improve learning significantly by providing more fine-grained guidance.
+◆ However, it is challenging to compute more informative rewards in MMRL beyond those based on outcomes since different samples may require different scoring functions and teacher models may provide noisy reward signals too.</td></tr>
 <tr><td>2025-12-02</td><td>MagicQuillV2: Precise and Interactive Image Editing with Layered Visual Cues</td><td>[2512.03046](http://arxiv.org/pdf/2512.03046)</td><td>◆ We propose MagicQuill V2, a novel system that introduces a \textbf{layered composition} paradigm to generative image editing, bridging the gap between the semantic power of diffusion models and the granular control of traditional graphics software.
 ◆ While diffusion transformers excel at holistic generation, their use of singular, monolithic prompts fails to disentangle distinct user intentions for content, position, and appearance.
 ◆ To overcome this, our method deconstructs creative intent into a stack of controllable visual cues: a content layer for what to create, a spatial layer for where to place it, a structural layer for how it is shaped, and a color layer for its palette.</td></tr>
@@ -3290,6 +3347,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>Leveraging topological data analysis to estimate bone strength from micro-CT as a surrogate for advanced imaging</td><td>[2512.03880](http://arxiv.org/pdf/2512.03880)</td><td>◆ Accurate bone strength prediction is essential for assessing fracture risk, particularly in aging populations and individuals with osteoporosis.
+◆ Bone imaging has evolved from X-rays and DXA to clinical computed tomography (CT), and now to advanced modalities such as high-resolution peripheral quantitative CT and synchrotron radiation CT, which offer unprecedented resolution of bone microarchitecture.
+◆ However, analytical methods have not kept pace with these imaging advances.</td></tr>
+<tr><td>2025-12-03</td><td>DINO-RotateMatch: A Rotation-Aware Deep Framework for Robust Image Matching in Large-Scale 3D Reconstruction</td><td>[2512.03715](http://arxiv.org/pdf/2512.03715)</td><td>◆ This paper presents DINO-RotateMatch, a deep-learning framework designed to address the chal lenges of image matching in large-scale 3D reconstruction from unstructured Internet images.
+◆ The   method integrates a dataset-adaptive image pairing strategy with rotation-aware keypoint extraction and   matching.
+◆ DINO is employed to retrieve semantically relevant image pairs in large collections, while   rotation-based augmentation captures orientation-dependent local features using ALIKED and Light Glue.</td></tr>
+<tr><td>2025-12-03</td><td>A Novel Approach to Tomato Harvesting Using a Hybrid Gripper with Semantic Segmentation and Keypoint Detection</td><td>[2512.03684](http://arxiv.org/pdf/2512.03684)</td><td>◆ This paper presents an autonomous tomato-harvesting system built around a hybrid robotic gripper that combines six soft auxetic fingers with a rigid exoskeleton and a latex basket to achieve gentle, cage-like grasping.
+◆ The gripper is driven by a servo-actuated Scotch--yoke mechanism, and includes separator leaves that form a conical frustum for fruit isolation, with an integrated micro-servo cutter for pedicel cutting.
+◆ For perception, an RGB--D camera and a Detectron2-based pipeline perform semantic segmentation of ripe/unripe tomatoes and keypoint localization of the pedicel and fruit center under occlusion and variable illumination.</td></tr>
+<tr><td>2025-12-03</td><td>Linking Aneurysmal Geometry and Hemodynamics Using Computational Fluid Dynamics</td><td>[2512.03660](http://arxiv.org/pdf/2512.03660)</td><td>◆ The development and progression of abdominal aortic aneurysms (AAA) are related to complex flow patterns and wall-shear-driven mechanobiological stimuli, yet the quantitative relationship between aneurysmal geometry and hemodynamics remains poorly defined.
+◆ In this study, we conducted a comprehensive hemodynamic analysis of 74 patient-specific abdominal aortas, representing one of the largest Computational Fluid Dynamics (CFD) cohorts reported to date.
+◆ A multiscale framework coupling 0D-1D systemic circulation models with 3D stabilized finite-element simulations is used to generate physiologically consistent boundary conditions and high-fidelity flow fields.</td></tr>
+<tr><td>2025-12-03</td><td>Memory-Guided Point Cloud Completion for Dental Reconstruction</td><td>[2512.03598](http://arxiv.org/pdf/2512.03598)</td><td>◆ Partial dental point clouds often suffer from large missing regions caused by occlusion and limited scanning views, which bias encoder-only global features and force decoders to hallucinate structures.
+◆ We propose a retrieval-augmented framework for tooth completion that integrates a prototype memory into standard encoder--decoder pipelines.
+◆ After encoding a partial input into a global descriptor, the model retrieves the nearest manifold prototype from a learnable memory and fuses it with the query feature through confidence-gated weighting before decoding.</td></tr>
 <tr><td>2025-12-02</td><td>Exploring Definitions of Quality and Diversity in Sonic Measurement Spaces</td><td>[2512.02783](http://arxiv.org/pdf/2512.02783)</td><td>◆ Digital sound synthesis presents the opportunity to explore vast parameter spaces containing millions of configurations.
 ◆ Quality diversity (QD) evolutionary algorithms offer a promising approach to harness this potential, yet their success hinges on appropriate sonic feature representations.
 ◆ Existing QD methods predominantly employ handcrafted descriptors or supervised classifiers, potentially introducing unintended exploration biases and constraining discovery to familiar sonic regions.</td></tr>
@@ -3650,6 +3722,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>DINO-RotateMatch: A Rotation-Aware Deep Framework for Robust Image Matching in Large-Scale 3D Reconstruction</td><td>[2512.03715](http://arxiv.org/pdf/2512.03715)</td><td>◆ This paper presents DINO-RotateMatch, a deep-learning framework designed to address the chal lenges of image matching in large-scale 3D reconstruction from unstructured Internet images.
+◆ The   method integrates a dataset-adaptive image pairing strategy with rotation-aware keypoint extraction and   matching.
+◆ DINO is employed to retrieve semantically relevant image pairs in large collections, while   rotation-based augmentation captures orientation-dependent local features using ALIKED and Light Glue.</td></tr>
+<tr><td>2025-12-03</td><td>Hierarchical Attention for Sparse Volumetric Anomaly Detection in Subclinical Keratoconus</td><td>[2512.03346](http://arxiv.org/pdf/2512.03346)</td><td>◆ The detection of weak, spatially distributed anomalies in volumetric medical imaging remains a major challenge.
+◆ The subtle, non-adjacent nature of early disease signals is often lost due to suboptimal architectural inductive biases: 2D/3D CNNs impose strong locality, while ViTs diffuse unconstrained global attention.
+◆ This conflict leaves the optimal inductive structure for robust, sparse volumetric pattern recognition unresolved.</td></tr>
 <tr><td>2025-12-02</td><td>The Convex Matching Distance in Multiparameter Persistence</td><td>[2512.02944](http://arxiv.org/pdf/2512.02944)</td><td>◆ We introduce the convex matching distance, a novel metric for comparing functions with values in the real plane.
 ◆ This metric measures the maximal bottleneck distance between the persistence diagrams associated with the convex combinations of the two function components.
 ◆ Similarly to the traditional matching distance, the convex matching distance aggregates the information provided by two real-valued components.</td></tr>
@@ -4306,6 +4384,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>Radiance Meshes for Volumetric Reconstruction</td><td>[2512.04076](http://arxiv.org/pdf/2512.04076)</td><td>◆ We introduce radiance meshes, a technique for representing radiance fields with constant density tetrahedral cells produced with a Delaunay tetrahedralization.
+◆ Unlike a Voronoi diagram, a Delaunay tetrahedralization yields simple triangles that are natively supported by existing hardware.
+◆ As such, our model is able to perform exact and fast volume rendering using both rasterization and ray-tracing.</td></tr>
+<tr><td>2025-12-03</td><td>What Is The Best 3D Scene Representation for Robotics? From Geometric to Foundation Models</td><td>[2512.03422](http://arxiv.org/pdf/2512.03422)</td><td>◆ In this paper, we provide a comprehensive overview of existing scene representation methods for robotics, covering traditional representations such as point clouds, voxels, signed distance functions (SDF), and scene graphs, as well as more recent neural representations like Neural Radiance Fields (NeRF), 3D Gaussian Splatting (3DGS), and the emerging Foundation Models.
+◆ While current SLAM and localization systems predominantly rely on sparse representations like point clouds and voxels, dense scene representations are expected to play a critical role in downstream tasks such as navigation and obstacle avoidance.
+◆ Moreover, neural representations such as NeRF, 3DGS, and foundation models are well-suited for integrating high-level semantic features and language-based priors, enabling more comprehensive 3D scene understanding and embodied intelligence.</td></tr>
+<tr><td>2025-12-02</td><td>Flux4D: Flow-based Unsupervised 4D Reconstruction</td><td>[2512.03210](http://arxiv.org/pdf/2512.03210)</td><td>◆ Reconstructing large-scale dynamic scenes from visual observations is a fundamental challenge in computer vision, with critical implications for robotics and autonomous systems.
+◆ While recent differentiable rendering methods such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have achieved impressive photorealistic reconstruction, they suffer from scalability limitations and require annotations to decouple actor motion.
+◆ Existing self-supervised methods attempt to eliminate explicit annotations by leveraging motion cues and geometric priors, yet they remain constrained by per-scene optimization and sensitivity to hyperparameter tuning.</td></tr>
 <tr><td>2025-12-02</td><td>PolarGuide-GSDR: 3D Gaussian Splatting Driven by Polarization Priors and Deferred Reflection for Real-World Reflective Scenes</td><td>[2512.02664](http://arxiv.org/pdf/2512.02664)</td><td>◆ Polarization-aware Neural Radiance Fields (NeRF) enable novel view synthesis of specular-reflection scenes but face challenges in slow training, inefficient rendering, and strong dependencies on material/viewpoint assumptions.
 ◆ However, 3D Gaussian Splatting (3DGS) enables real-time rendering yet struggles with accurate reflection reconstruction from reflection-geometry entanglement, adding a deferred reflection module introduces environment map dependence.
 ◆ We address these limitations by proposing PolarGuide-GSDR, a polarization-forward-guided paradigm establishing a bidirectional coupling mechanism between polarization and 3DGS: first 3DGS&#x27;s geometric priors are leveraged to resolve polarization ambiguity, and then the refined polarization information cues are used to guide 3DGS&#x27;s normal and spherical harmonic representation.</td></tr>
@@ -5065,4 +5152,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.03
+> 更新于: 2025.12.04
