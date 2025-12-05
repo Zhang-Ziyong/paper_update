@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.04)
+# 计算机视觉领域最新论文 (2025.12.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
+◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
+◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
 <tr><td>2025-12-03</td><td>What Is The Best 3D Scene Representation for Robotics? From Geometric to Foundation Models</td><td>[2512.03422](http://arxiv.org/pdf/2512.03422)</td><td>◆ In this paper, we provide a comprehensive overview of existing scene representation methods for robotics, covering traditional representations such as point clouds, voxels, signed distance functions (SDF), and scene graphs, as well as more recent neural representations like Neural Radiance Fields (NeRF), 3D Gaussian Splatting (3DGS), and the emerging Foundation Models.
 ◆ While current SLAM and localization systems predominantly rely on sparse representations like point clouds and voxels, dense scene representations are expected to play a critical role in downstream tasks such as navigation and obstacle avoidance.
 ◆ Moreover, neural representations such as NeRF, 3DGS, and foundation models are well-suited for integrating high-level semantic features and language-based priors, enabling more comprehensive 3D scene understanding and embodied intelligence.</td></tr>
@@ -1222,6 +1225,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Deep infant brain segmentation from multi-contrast MRI</td><td>[2512.05114](http://arxiv.org/pdf/2512.05114)</td><td>◆ Segmentation of magnetic resonance images (MRI) facilitates analysis of human brain development by delineating anatomical structures.
+◆ However, in infants and young children, accurate segmentation is challenging due to development and imaging constraints.
+◆ Pediatric brain MRI is notoriously difficult to acquire, with inconsistent availability of imaging modalities, substantial non-head anatomy in the field of view, and frequent motion artifacts.</td></tr>
+<tr><td>2025-12-04</td><td>QKAN-LSTM: Quantum-inspired Kolmogorov-Arnold Long Short-term Memory</td><td>[2512.05049](http://arxiv.org/pdf/2512.05049)</td><td>◆ Long short-term memory (LSTM) models are a particular type of recurrent neural networks (RNNs) that are central to sequential modeling tasks in domains such as urban telecommunication forecasting, where temporal correlations and nonlinear dependencies dominate.
+◆ However, conventional LSTMs suffer from high parameter redundancy and limited nonlinear expressivity.
+◆ In this work, we propose the Quantum-inspired Kolmogorov-Arnold Long Short-Term Memory (QKAN-LSTM), which integrates Data Re-Uploading Activation (DARUAN) modules into the gating structure of LSTMs.</td></tr>
+<tr><td>2025-12-04</td><td>Geometric Data Science</td><td>[2512.05040](http://arxiv.org/pdf/2512.05040)</td><td>◆ This book introduces the new research area of Geometric Data Science, where data can represent any real objects through geometric measurements.
+◆ The first part of the book focuses on finite point sets.
+◆ The most important result is a complete and continuous classification of all finite clouds of unordered points under rigid motion in any Euclidean space.</td></tr>
+<tr><td>2025-12-04</td><td>Internal superfluid response and torque evolution in the giant glitch of PSR J1718-3718</td><td>[2512.04972](http://arxiv.org/pdf/2512.04972)</td><td>◆ We investigate the post-glitch rotational evolution of pulsars by analyzing the 2007 giant glitch of PSR J1718$-$3718 using a vortex creep model that incorporates both inward and outward nonlinear vortex motion, along with a time-varying external torque.
+◆ A comprehensive fitting framework is developed, constrained by prior knowledge of moment of inertia participation from previous glitch studies.
+◆ We apply a Markov Chain Monte Carlo approach to quantify uncertainties and parameter correlations.</td></tr>
+<tr><td>2025-12-04</td><td>Canonical Rough Path over Tempered Fractional Brownian Motion: Existence, Construction, and Applications</td><td>[2512.04646](http://arxiv.org/pdf/2512.04646)</td><td>◆ We construct a canonical geometric rough path over $d$-dimensional tempered fractional Brownian motion (tfBm) for any Hurst parameter $H &gt; 1/4$ and tempering parameter $λ&gt; 0$.
+◆ The main challenge stems from the non-homogeneous nature of the tfBm covariance, which exhibits a power-law structure at small scales and exponential decay at large scales.
+◆ Our primary contribution is a detailed analysis of this covariance, proving it has finite 2D $ρ$-variation for $ρ= 1/(2H)$.</td></tr>
+<tr><td>2025-12-04</td><td>Refaçade: Editing Object with Given Reference Texture</td><td>[2512.04534](http://arxiv.org/pdf/2512.04534)</td><td>◆ Recent advances in diffusion models have brought remarkable progress in image and video editing, yet some tasks remain underexplored.
+◆ In this paper, we introduce a new task, Object Retexture, which transfers local textures from a reference object to a target object in images or videos.
+◆ To perform this task, a straightforward solution is to use ControlNet conditioned on the source structure and the reference texture.</td></tr>
+<tr><td>2025-12-04</td><td>Development of a 15-Degree-of-Freedom Bionic Hand with Cable-Driven Transmission and Distributed Actuation</td><td>[2512.04399](http://arxiv.org/pdf/2512.04399)</td><td>◆ In robotic hand research, minimizing the number of actuators while maintaining human-hand-consistent dimensions and degrees of freedom constitutes a fundamental challenge.
+◆ Drawing bio-inspiration from human hand kinematic configurations and muscle distribution strategies, this work proposes a novel 15-DoF dexterous robotic hand, with detailed analysis of its mechanical architecture, electrical system, and control system.
+◆ The bionic hand employs a new tendon-driven mechanism, significantly reducing the number of motors required by traditional tendon-driven systems while enhancing motion performance and simplifying the mechanical structure.</td></tr>
+<tr><td>2025-12-03</td><td>Gamma-from-Mono: Road-Relative, Metric, Self-Supervised Monocular Geometry for Vehicular Applications</td><td>[2512.04303](http://arxiv.org/pdf/2512.04303)</td><td>◆ Accurate perception of the vehicle&#x27;s 3D surroundings, including fine-scale road geometry, such as bumps, slopes, and surface irregularities, is essential for safe and comfortable vehicle control.
+◆ However, conventional monocular depth estimation often oversmooths these features, losing critical information for motion planning and stability.
+◆ To address this, we introduce Gamma-from-Mono (GfM), a lightweight monocular geometry estimation method that resolves the projective ambiguity in single-camera reconstruction by decoupling global and local structure.</td></tr>
 <tr><td>2025-12-03</td><td>Emergent Outlier View Rejection in Visual Geometry Grounded Transformers</td><td>[2512.04012](http://arxiv.org/pdf/2512.04012)</td><td>◆ Reliable 3D reconstruction from in-the-wild image collections is often hindered by &quot;noisy&quot; images-irrelevant inputs with little or no view overlap with others.
 ◆ While traditional Structure-from-Motion pipelines handle such cases through geometric verification and outlier rejection, feed-forward 3D reconstruction models lack these explicit mechanisms, leading to degraded performance under in-the-wild conditions.
 ◆ In this paper, we discover that the existing feed-forward reconstruction model, e.g., VGGT, despite lacking explicit outlier-rejection mechanisms or noise-aware training, can inherently distinguish distractor images.</td></tr>
@@ -1984,6 +2011,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning</td><td>[2512.05111](http://arxiv.org/pdf/2512.05111)</td><td>◆ Reward models are critical for aligning vision-language systems with human preferences, yet current approaches suffer from hallucination, weak visual grounding, and an inability to use tools for verification, limiting their reliability on complex multimodal reasoning tasks.
+◆ We present ARM-Thinker, an A}gentic multimodal Reward Model that autonomously invokes external tools (e.g., image cropping, doc page retrieval) to ground judgments in verifiable evidence, replacing static, non-interactive reward scoring.
+◆ This enables the model to verify fine-grained visual details, cross-reference multi-page evidence, and validate reasoning claims, which are capabilities absent in existing reward models.</td></tr>
+<tr><td>2025-12-04</td><td>Visual Reasoning Tracer: Object-Level Grounded Reasoning Benchmark</td><td>[2512.05091](http://arxiv.org/pdf/2512.05091)</td><td>◆ Recent advances in Multimodal Large Language Models (MLLMs) have significantly improved performance on tasks such as visual grounding and visual question answering.
+◆ However, the reasoning processes of these models remain largely opaque; they typically output only final predictions without revealing the intermediate steps or fine-grained evidence (e.g., pixels, locations) that lead to the result.
+◆ This contrasts with human intelligence, which naturally operates through a chain of visual reasoning.</td></tr>
+<tr><td>2025-12-04</td><td>Semantic-Guided Two-Stage GAN for Face Inpainting with Hybrid Perceptual Encoding</td><td>[2512.05039](http://arxiv.org/pdf/2512.05039)</td><td>◆ Facial Image inpainting aim is to restore the missing or corrupted regions in face images while preserving identity, structural consistency and photorealistic image quality, a task specifically created for photo restoration.
+◆ Though there are recent lot of advances in deep generative models, existing methods face problems with large irregular masks, often producing blurry textures on the edges of the masked region, semantic inconsistencies, or unconvincing facial structures due to direct pixel level synthesis approach and limited exploitation of facial priors.
+◆ In this paper we propose a novel architecture, which address these above challenges through semantic-guided hierarchical synthesis.</td></tr>
+<tr><td>2025-12-04</td><td>Revealing stimulus-dependent dynamics through statistical complexity</td><td>[2512.05007](http://arxiv.org/pdf/2512.05007)</td><td>◆ Advances in large-scale neural recordings have expanded our ability to describe the activity of distributed brain circuits.
+◆ However, understanding how neural population dynamics differ across regions and behavioral contexts remains challenging.
+◆ Here, we surveyed neuronal population dynamics across multiple mouse brain areas (visual cortex, hippocampus, thalamus, and midbrain) using spike data from local ensembles.</td></tr>
+<tr><td>2025-12-04</td><td>Influence of Object Affordance on Action Language Understanding: Evidence from Dynamic Causal Modeling Analysis</td><td>[2512.04989](http://arxiv.org/pdf/2512.04989)</td><td>◆ This study investigates the causal neural dynamics by which affordance representations influence action language comprehension.
+◆ In this study, 18 participants observed stimuli displayed in two conditions during the experiment: text-only (e.g., `Hit with a hammer&#x27;) and video+text (visual clips with matching phrases).
+◆ EEG data were recorded from 32 channels and analyzed for event-related potentials and source localization using LORETA, which identified four left-hemisphere regions of interest: the Lateral Occipital Cortex (LOC), Posterior Superior Temporal Gyrus (pSTG), Ventral Premotor Cortex (PMv), and Inferior Parietal Lobule (IPL).</td></tr>
+<tr><td>2025-12-04</td><td>LiteVGGT: Boosting Vanilla VGGT via Geometry-aware Cached Token Merging</td><td>[2512.04939](http://arxiv.org/pdf/2512.04939)</td><td>◆ 3D vision foundation models like Visual Geometry Grounded Transformer (VGGT) have advanced greatly in geometric perception.
+◆ However, it is time-consuming and memory-intensive for long sequences, limiting application to large-scale scenes beyond hundreds of images.
+◆ To address this, we propose LiteVGGT, achieving up to 10x speedup and substantial memory reduction, enabling efficient processing of 1000-image scenes.</td></tr>
+<tr><td>2025-12-04</td><td>Terahertz Fourier Ptychographic Imaging</td><td>[2512.04783](http://arxiv.org/pdf/2512.04783)</td><td>◆ High-resolution imaging in the terahertz (THz) spectral range remains fundamentally constrained by the limited numerical apertures of currently existing state-of-the-art imagers, which restricts its applicability across many fields, such as imaging in complex media or nondestructive testing.
+◆ To address this challenge, we introduce a proof-of-concept implementation of THz Fourier Ptychographic imaging to enhance spatial resolution without requiring extensive hardware modifications.
+◆ Our method employs a motorized kinematic mirror to generate a sequence of controlled, multi-angle plane-wave illuminations, with each resulting oblique-illumination intensity image encoding a limited portion of the spatial-frequency content of the target imaging sample.</td></tr>
+<tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
+◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
+◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
+<tr><td>2025-12-04</td><td>MemLoRA: Distilling Expert Adapters for On-Device Memory Systems</td><td>[2512.04763](http://arxiv.org/pdf/2512.04763)</td><td>◆ Memory-augmented Large Language Models (LLMs) have demonstrated remarkable consistency during prolonged dialogues by storing relevant memories and incorporating them as context.
+◆ Such memory-based personalization is also key in on-device settings that allow users to keep their conversations and data private.
+◆ However, memory-augmented systems typically rely on LLMs that are too costly for local on-device deployment.</td></tr>
+<tr><td>2025-12-04</td><td>Spectral micro-CT for quantitative analysis of calcification in fibrocartilage</td><td>[2512.04662](http://arxiv.org/pdf/2512.04662)</td><td>◆ This work introduces a quantitative method for assessing calcification in fibrocartilage using spectral micro-computed tomography ($μ$CT).
+◆ Tissue samples of hip acetabular labrum from patients with osteoarthritis and femoroacetabular impingement were imaged with a laboratory-based spectral $μ$CT system equipped with a small-pixel photon-counting detector.
+◆ The detector operated with two energy thresholds, allowing the simultaneous acquisition of two CT datasets at different X-ray energies.</td></tr>
 <tr><td>2025-12-03</td><td>RELIC: Interactive Video World Model with Long-Horizon Memory</td><td>[2512.04040](http://arxiv.org/pdf/2512.04040)</td><td>◆ A truly interactive world model requires three key ingredients: real-time long-horizon streaming, consistent spatial memory, and precise user control.
 ◆ However, most existing approaches address only one of these aspects in isolation, as achieving all three simultaneously is highly challenging-for example, long-term memory mechanisms often degrade real-time performance.
 ◆ In this work, we present RELIC, a unified framework that tackles these three challenges altogether.</td></tr>
@@ -3341,6 +3398,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-03</td><td>Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer</td><td>[2512.04282](http://arxiv.org/pdf/2512.04282)</td><td>◆ Real-time video motion transfer applications such as immersive gaming and vision-based anomaly detection require accurate yet diverse future predictions to support realistic synthesis and robust downstream decision making under uncertainty.
+◆ To improve the diversity of such sequential forecasts we propose a novel inference-time refinement technique that combines Gated Recurrent Unit-Normalizing Flows (GRU-NF) with stochastic sampling methods.
+◆ While GRU-NF can capture multimodal distributions through its integration of normalizing flows within a temporal forecasting framework, its deterministic transformation structure can limit expressivity.</td></tr>
 <tr><td>2025-12-03</td><td>Leveraging topological data analysis to estimate bone strength from micro-CT as a surrogate for advanced imaging</td><td>[2512.03880](http://arxiv.org/pdf/2512.03880)</td><td>◆ Accurate bone strength prediction is essential for assessing fracture risk, particularly in aging populations and individuals with osteoporosis.
 ◆ Bone imaging has evolved from X-rays and DXA to clinical computed tomography (CT), and now to advanced modalities such as high-resolution peripheral quantitative CT and synchrotron radiation CT, which offer unprecedented resolution of bone microarchitecture.
 ◆ However, analytical methods have not kept pace with these imaging advances.</td></tr>
@@ -3714,6 +3774,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Value Gradient Guidance for Flow Matching Alignment</td><td>[2512.05116](http://arxiv.org/pdf/2512.05116)</td><td>◆ While methods exist for aligning flow matching models--a popular and effective class of generative models--with human preferences, existing approaches fail to achieve both adaptation efficiency and probabilistically sound prior preservation.
+◆ In this work, we leverage the theory of optimal control and propose VGG-Flow, a gradient-matching-based method for finetuning pretrained flow matching models.
+◆ The key idea behind this algorithm is that the optimal difference between the finetuned velocity field and the pretrained one should be matched with the gradient field of a value function.</td></tr>
+<tr><td>2025-12-04</td><td>Deep infant brain segmentation from multi-contrast MRI</td><td>[2512.05114](http://arxiv.org/pdf/2512.05114)</td><td>◆ Segmentation of magnetic resonance images (MRI) facilitates analysis of human brain development by delineating anatomical structures.
+◆ However, in infants and young children, accurate segmentation is challenging due to development and imaging constraints.
+◆ Pediatric brain MRI is notoriously difficult to acquire, with inconsistent availability of imaging modalities, substantial non-head anatomy in the field of view, and frequent motion artifacts.</td></tr>
+<tr><td>2025-12-04</td><td>Deep Forcing: Training-Free Long Video Generation with Deep Sink and Participative Compression</td><td>[2512.05081](http://arxiv.org/pdf/2512.05081)</td><td>◆ Recent advances in autoregressive video diffusion have enabled real-time frame streaming, yet existing solutions still suffer from temporal repetition, drift, and motion deceleration.
+◆ We find that naively applying StreamingLLM-style attention sinks to video diffusion leads to fidelity degradation and motion stagnation.
+◆ To overcome this, we introduce Deep Forcing, which consists of two training-free mechanisms that address this without any fine-tuning.</td></tr>
+<tr><td>2025-12-04</td><td>Improving Posterior Inference of Galaxy Properties with Image-Based Conditional Flow Matching</td><td>[2512.05078](http://arxiv.org/pdf/2512.05078)</td><td>◆ Estimating physical properties of galaxies from wide-field surveys remains a central challenge in astrophysics.
+◆ While spectroscopy provides precise measurements, it is observationally expensive, and photometry discards morphological information that correlates with mass, star formation history, metallicity, and dust.
+◆ We present a conditional flow matching (CFM) framework that leverages pixel-level imaging alongside photometry to improve posterior inference of galaxy properties.</td></tr>
+<tr><td>2025-12-04</td><td>Generative Neural Video Compression via Video Diffusion Prior</td><td>[2512.05016](http://arxiv.org/pdf/2512.05016)</td><td>◆ We present GNVC-VD, the first DiT-based generative neural video compression framework built upon an advanced video generation foundation model, where spatio-temporal latent compression and sequence-level generative refinement are unified within a single codec.
+◆ Existing perceptual codecs primarily rely on pre-trained image generative priors to restore high-frequency details, but their frame-wise nature lacks temporal modeling and inevitably leads to perceptual flickering.
+◆ To address this, GNVC-VD introduces a unified flow-matching latent refinement module that leverages a video diffusion transformer to jointly enhance intra- and inter-frame latents through sequence-level denoising, ensuring consistent spatio-temporal details.</td></tr>
+<tr><td>2025-12-04</td><td>Environment-Aware Channel Inference via Cross-Modal Flow: From Multimodal Sensing to Wireless Channels</td><td>[2512.04966](http://arxiv.org/pdf/2512.04966)</td><td>◆ Accurate channel state information (CSI) underpins reliable and efficient wireless communication.
+◆ However, acquiring CSI via pilot estimation incurs substantial overhead, especially in massive multiple-input multiple-output (MIMO) systems operating in high-Doppler environments.
+◆ By leveraging the growing availability of environmental sensing data, this treatise investigates pilot-free channel inference that estimates complete CSI directly from multimodal observations, including camera images, LiDAR point clouds, and GPS coordinates.</td></tr>
+<tr><td>2025-12-04</td><td>LatentFM: A Latent Flow Matching Approach for Generative Medical Image Segmentation</td><td>[2512.04821](http://arxiv.org/pdf/2512.04821)</td><td>◆ Generative models have achieved remarkable progress with the emergence of flow matching (FM).
+◆ It has demonstrated strong generative capabilities and attracted significant attention as a simulation-free flow-based framework capable of learning exact data densities.
+◆ Motivated by these advances, we propose LatentFM, a flow-based model operating in the latent space for medical image segmentation.</td></tr>
+<tr><td>2025-12-04</td><td>Unveiling gravitational waves from core-collapse supernovae with MUSE</td><td>[2512.04804](http://arxiv.org/pdf/2512.04804)</td><td>◆ The core collapse of a massive star at the end of its life can give rise to one of the most powerful phenomena in the Universe.
+◆ Because of violent mass motions that take place during the explosion, core-collapse supernovae have been considered a potential source of detectable gravitational waveforms for decades.
+◆ However, their intrinsic stochasticity makes ineffective the use of modelled techniques such as matched filtering, forcing us to develop model independent technique to unveil their nature.</td></tr>
+<tr><td>2025-12-04</td><td>Live Avatar: Streaming Real-time Audio-Driven Avatar Generation with Infinite Length</td><td>[2512.04677](http://arxiv.org/pdf/2512.04677)</td><td>◆ Existing diffusion-based video generation methods are fundamentally constrained by sequential computation and long-horizon inconsistency, limiting their practical adoption in real-time, streaming audio-driven avatar synthesis.
+◆ We present Live Avatar, an algorithm-system co-designed framework that enables efficient, high-fidelity, and infinite-length avatar generation using a 14-billion-parameter diffusion model.
+◆ Our approach introduces Timestep-forcing Pipeline Parallelism (TPP), a distributed inference paradigm that pipelines denoising steps across multiple GPUs, effectively breaking the autoregressive bottleneck and ensuring stable, low-latency real-time streaming.</td></tr>
+<tr><td>2025-12-04</td><td>Spectral micro-CT for quantitative analysis of calcification in fibrocartilage</td><td>[2512.04662](http://arxiv.org/pdf/2512.04662)</td><td>◆ This work introduces a quantitative method for assessing calcification in fibrocartilage using spectral micro-computed tomography ($μ$CT).
+◆ Tissue samples of hip acetabular labrum from patients with osteoarthritis and femoroacetabular impingement were imaged with a laboratory-based spectral $μ$CT system equipped with a small-pixel photon-counting detector.
+◆ The detector operated with two energy thresholds, allowing the simultaneous acquisition of two CT datasets at different X-ray energies.</td></tr>
 <tr><td>2025-12-03</td><td>DINO-RotateMatch: A Rotation-Aware Deep Framework for Robust Image Matching in Large-Scale 3D Reconstruction</td><td>[2512.03715](http://arxiv.org/pdf/2512.03715)</td><td>◆ This paper presents DINO-RotateMatch, a deep-learning framework designed to address the chal lenges of image matching in large-scale 3D reconstruction from unstructured Internet images.
 ◆ The   method integrates a dataset-adaptive image pairing strategy with rotation-aware keypoint extraction and   matching.
 ◆ DINO is employed to retrieve semantically relevant image pairs in large collections, while   rotation-based augmentation captures orientation-dependent local features using ALIKED and Light Glue.</td></tr>
@@ -4374,6 +4464,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Gaussian Entropy Fields: Driving Adaptive Sparsity in 3D Gaussian Optimization</td><td>[2512.04542](http://arxiv.org/pdf/2512.04542)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading technique for novel view synthesis, demonstrating exceptional rendering efficiency.
+◆ \replaced[]{Well-reconstructed surfaces can be characterized by low configurational entropy, where dominant primitives clearly define surface geometry while redundant components are suppressed.}{The key insight is that well-reconstructed surfaces naturally exhibit low configurational entropy, where dominant primitives clearly define surface geometry while suppressing redundant components.} Three complementary technical contributions are introduced: (1) entropy-driven surface modeling via entropy minimization for low configurational entropy in primitive distributions; (2) adaptive spatial regularization using the Surface Neighborhood Redundancy Index (SNRI) and image entropy-guided weighting; (3) multi-scale geometric preservation through competitive cross-scale entropy alignment.
+◆ Extensive experiments demonstrate that GEF achieves competitive geometric precision on DTU and T\&amp;T benchmarks, while delivering superior rendering quality compared to existing methods on Mip-NeRF 360.</td></tr>
 <tr><td>2025-12-03</td><td>Radiance Meshes for Volumetric Reconstruction</td><td>[2512.04076](http://arxiv.org/pdf/2512.04076)</td><td>◆ We introduce radiance meshes, a technique for representing radiance fields with constant density tetrahedral cells produced with a Delaunay tetrahedralization.
 ◆ Unlike a Voronoi diagram, a Delaunay tetrahedralization yields simple triangles that are natively supported by existing hardware.
 ◆ As such, our model is able to perform exact and fast volume rendering using both rasterization and ray-tracing.</td></tr>
@@ -5140,4 +5233,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.04
+> 更新于: 2025.12.05
