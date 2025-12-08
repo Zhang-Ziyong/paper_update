@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.07)
+# 计算机视觉领域最新论文 (2025.12.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -3782,6 +3782,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-05</td><td>LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D Detection</td><td>[2512.05663](http://arxiv.org/pdf/2512.05663)</td><td>◆ Real-time monocular 3D object detection remains challenging due to severe depth ambiguity, viewpoint shifts, and the high computational cost of 3D reasoning.
+◆ Existing approaches either rely on LiDAR or geometric priors to compensate for missing depth, or sacrifice efficiency to achieve competitive accuracy.
+◆ We introduce LeAD-M3D, a monocular 3D detector that achieves state-of-the-art accuracy and real-time inference without extra modalities.</td></tr>
+<tr><td>2025-12-05</td><td>DistillFSS: Synthesizing Few-Shot Knowledge into a Lightweight Segmentation Model</td><td>[2512.05613](http://arxiv.org/pdf/2512.05613)</td><td>◆ Cross-Domain Few-Shot Semantic Segmentation (CD-FSS) seeks to segment unknown classes in unseen domains using only a few annotated examples.
+◆ This setting is inherently challenging: source and target domains exhibit substantial distribution shifts, label spaces are disjoint, and support images are scarce--making standard episodic methods unreliable and computationally demanding at test time.
+◆ To address these constraints, we propose DistillFSS, a framework that embeds support-set knowledge directly into a model&#x27;s parameters through a teacher--student distillation process.</td></tr>
+<tr><td>2025-12-05</td><td>An Integrated System for WEEE Sorting Employing X-ray Imaging, AI-based Object Detection and Segmentation, and Delta Robot Manipulation</td><td>[2512.05599](http://arxiv.org/pdf/2512.05599)</td><td>◆ Battery recycling is becoming increasingly critical due to the rapid growth in battery usage and the limited availability of natural resources.
+◆ Moreover, as battery energy densities continue to rise, improper handling during recycling poses significant safety hazards, including potential fires at recycling facilities.
+◆ Numerous systems have been proposed for battery detection and removal from WEEE recycling lines, including X-ray and RGB-based visual inspection methods, typically driven by AI-powered object detection models (e.g., Mask R-CNN, YOLO, ResNets).</td></tr>
+<tr><td>2025-12-05</td><td>MedDIFT: Multi-Scale Diffusion-Based Correspondence in 3D Medical Imaging</td><td>[2512.05571](http://arxiv.org/pdf/2512.05571)</td><td>◆ Accurate spatial correspondence between medical images is essential for longitudinal analysis, lesion tracking, and image-guided interventions.
+◆ Medical image registration methods rely on local intensity-based similarity measures, which fail to capture global semantic structure and often yield mismatches in low-contrast or anatomically variable regions.
+◆ Recent advances in diffusion models suggest that their intermediate representations encode rich geometric and semantic information.</td></tr>
+<tr><td>2025-12-05</td><td>Genetic Algorithms For Parameter Optimization for Disparity Map Generation of Radiata Pine Branch Images</td><td>[2512.05410](http://arxiv.org/pdf/2512.05410)</td><td>◆ Traditional stereo matching algorithms like Semi-Global Block Matching (SGBM) with Weighted Least Squares (WLS) filtering offer speed advantages over neural networks for UAV applications, generating disparity maps in approximately 0.5 seconds per frame.
+◆ However, these algorithms require meticulous parameter tuning.
+◆ We propose a Genetic Algorithm (GA) based parameter optimization framework that systematically searches for optimal parameter configurations for SGBM and WLS, enabling UAVs to measure distances to tree branches with enhanced precision while maintaining processing efficiency.</td></tr>
+<tr><td>2025-12-05</td><td>On-Orbit Calibration of Danuri/PolCam. I. Geometric Calibration</td><td>[2512.05330](http://arxiv.org/pdf/2512.05330)</td><td>◆ The wide-angle Polarimetric Camera (PolCam) onboard South Korea&#x27;s first lunar orbiter, Danuri, is a pioneering instrument designed to conduct the first global polarimetric and high-phase-angle survey of the Moon.
+◆ Precise geometric calibration is critical for this mission, particularly due to PolCam&#x27;s highly oblique viewing geometry, which introduces significant topographic distortion.
+◆ We present a comprehensive on-orbit geometric calibration that relies on 160,256 tie points derived from matching features between PolCam images and the well-orthorectified global map of the Kaguya Multiband Imager (MI).</td></tr>
+<tr><td>2025-12-04</td><td>Your Latent Mask is Wrong: Pixel-Equivalent Latent Compositing for Diffusion Models</td><td>[2512.05198](http://arxiv.org/pdf/2512.05198)</td><td>◆ Latent inpainting in diffusion models still relies almost universally on linearly interpolating VAE latents under a downsampled mask.
+◆ We propose a key principle for compositing image latents: Pixel-Equivalent Latent Compositing (PELC).
+◆ An equivalent latent compositor should be the same as compositing in pixel space.</td></tr>
 <tr><td>2025-12-04</td><td>Value Gradient Guidance for Flow Matching Alignment</td><td>[2512.05116](http://arxiv.org/pdf/2512.05116)</td><td>◆ While methods exist for aligning flow matching models--a popular and effective class of generative models--with human preferences, existing approaches fail to achieve both adaptation efficiency and probabilistically sound prior preservation.
 ◆ In this work, we leverage the theory of optimal control and propose VGG-Flow, a gradient-matching-based method for finetuning pretrained flow matching models.
 ◆ The key idea behind this algorithm is that the optimal difference between the finetuned velocity field and the pretrained one should be matched with the gradient field of a value function.</td></tr>
@@ -5245,4 +5266,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.07
+> 更新于: 2025.12.08
