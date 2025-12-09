@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.08)
+# 计算机视觉领域最新论文 (2025.12.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>OptMap: Geometric Map Distillation via Submodular Maximization</td><td>[2512.07775](http://arxiv.org/pdf/2512.07775)</td><td>◆ Autonomous robots rely on geometric maps to inform a diverse set of perception and decision-making algorithms.
+◆ As autonomy requires reasoning and planning on multiple scales of the environment, each algorithm may require a different map for optimal performance.
+◆ Light Detection And Ranging (LiDAR) sensors generate an abundance of geometric data to satisfy these diverse requirements, but selecting informative, size-constrained maps is computationally challenging as it requires solving an NP-hard combinatorial optimization.</td></tr>
+<tr><td>2025-12-08</td><td>Spatiotemporal Calibration and Ground Truth Estimation for High-Precision SLAM Benchmarking in Extended Reality</td><td>[2512.07221](http://arxiv.org/pdf/2512.07221)</td><td>◆ Simultaneous localization and mapping (SLAM) plays a fundamental role in extended reality (XR) applications.
+◆ As the standards for immersion in XR continue to increase, the demands for SLAM benchmarking have become more stringent.
+◆ Trajectory accuracy is the key metric, and marker-based optical motion capture (MoCap) systems are widely used to generate ground truth (GT) because of their drift-free and relatively accurate measurements.</td></tr>
+<tr><td>2025-12-07</td><td>Dynamic Visual SLAM using a General 3D Prior</td><td>[2512.06868](http://arxiv.org/pdf/2512.06868)</td><td>◆ Reliable incremental estimation of camera poses and 3D reconstruction is key to enable various applications including robotics, interactive visualization, and augmented reality.
+◆ However, this task is particularly challenging in dynamic natural environments, where scene dynamics can severely deteriorate camera pose estimation accuracy.
+◆ In this work, we propose a novel monocular visual SLAM system that can robustly estimate camera poses in dynamic scenes.</td></tr>
+<tr><td>2025-12-04</td><td>ARCAS: An Augmented Reality Collision Avoidance System with SLAM-Based Tracking for Enhancing VRU Safety</td><td>[2512.05299](http://arxiv.org/pdf/2512.05299)</td><td>◆ Vulnerable road users (VRUs) face high collision risks in mixed traffic, yet most existing safety systems prioritize driver or vehicle assistance over direct VRU support.
+◆ This paper presents ARCAS, a real-time augmented reality collision avoidance system that provides personalized spatial alerts to VRUs via wearable AR headsets.
+◆ By fusing roadside 360-degree 3D LiDAR with SLAM-based headset tracking and an automatic 3D calibration procedure, ARCAS accurately overlays world-locked 3D bounding boxes and directional arrows onto approaching hazards in the user&#x27;s passthrough view.</td></tr>
 <tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
 ◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
 ◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
@@ -1227,6 +1239,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-05</td><td>The Dynamic Prior: Understanding 3D Structures for Casual Dynamic Videos</td><td>[2512.05398](http://arxiv.org/pdf/2512.05398)</td><td>◆ Estimating accurate camera poses, 3D scene geometry, and object motion from in-the-wild videos is a long-standing challenge for classical structure from motion pipelines due to the presence of dynamic objects.
+◆ Recent learning-based methods attempt to overcome this challenge by training motion estimators to filter dynamic objects and focus on the static background.
+◆ However, their performance is largely limited by the availability of large-scale motion segmentation datasets, resulting in inaccurate segmentation and, therefore, inferior structural 3D understanding.</td></tr>
+<tr><td>2025-12-05</td><td>PoolNet: Deep Learning for 2D to 3D Video Process Validation</td><td>[2512.05362](http://arxiv.org/pdf/2512.05362)</td><td>◆ Lifting Structure-from-Motion (SfM) information from sequential and non-sequential image data is a time-consuming and computationally expensive task.
+◆ In addition to this, the majority of publicly available data is unfit for processing due to inadequate camera pose variation, obscuring scene elements, and noisy data.
+◆ To solve this problem, we introduce PoolNet, a versatile deep learning framework for frame-level and scene-level validation of in-the-wild data.</td></tr>
 <tr><td>2025-12-04</td><td>Deep infant brain segmentation from multi-contrast MRI</td><td>[2512.05114](http://arxiv.org/pdf/2512.05114)</td><td>◆ Segmentation of magnetic resonance images (MRI) facilitates analysis of human brain development by delineating anatomical structures.
 ◆ However, in infants and young children, accurate segmentation is challenging due to development and imaging constraints.
 ◆ Pediatric brain MRI is notoriously difficult to acquire, with inconsistent availability of imaging modalities, substantial non-head anatomy in the field of view, and frequent motion artifacts.</td></tr>
@@ -2015,6 +2033,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>Generalized Referring Expression Segmentation on Aerial Photos</td><td>[2512.07338](http://arxiv.org/pdf/2512.07338)</td><td>◆ Referring expression segmentation is a fundamental task in computer vision that integrates natural language understanding with precise visual localization of target regions.
+◆ Considering aerial imagery (e.g., modern aerial photos collected through drones, historical photos from aerial archives, high-resolution satellite imagery, etc.) presents unique challenges because spatial resolution varies widely across datasets, the use of color is not consistent, targets often shrink to only a few pixels, and scenes contain very high object densities and objects with partial occlusions.
+◆ This work presents Aerial-D, a new large-scale referring expression segmentation dataset for aerial imagery, comprising 37,288 images with 1,522,523 referring expressions that cover 259,709 annotated targets, spanning across individual object instances, groups of instances, and semantic regions covering 21 distinct classes that range from vehicles and infrastructure to land coverage types.</td></tr>
+<tr><td>2025-12-07</td><td>Spatial Retrieval Augmented Autonomous Driving</td><td>[2512.06865](http://arxiv.org/pdf/2512.06865)</td><td>◆ Existing autonomous driving systems rely on onboard sensors (cameras, LiDAR, IMU, etc) for environmental perception.
+◆ However, this paradigm is limited by the drive-time perception horizon and often fails under limited view scope, occlusion or extreme conditions such as darkness and rain.
+◆ In contrast, human drivers are able to recall road structure even under poor visibility.</td></tr>
+<tr><td>2025-12-06</td><td>Language-driven Fine-grained Retrieval</td><td>[2512.06255](http://arxiv.org/pdf/2512.06255)</td><td>◆ Existing fine-grained image retrieval (FGIR) methods learn discriminative embeddings by adopting semantically sparse one-hot labels derived from category names as supervision.
+◆ While effective on seen classes, such supervision overlooks the rich semantics encoded in category names, hindering the modeling of comparability among cross-category details and, in turn, limiting generalization to unseen categories.
+◆ To tackle this, we introduce LaFG, a Language-driven framework for Fine-Grained Retrieval that converts class names into attribute-level supervision using large language models (LLMs) and vision-language models (VLMs).</td></tr>
+<tr><td>2025-12-05</td><td>GuideNav: User-Informed Development of a Vision-Only Robotic Navigation Assistant For Blind Travelers</td><td>[2512.06147](http://arxiv.org/pdf/2512.06147)</td><td>◆ While commendable progress has been made in user-centric research on mobile assistive systems for blind and low-vision (BLV) individuals, references that directly inform robot navigation design remain rare.
+◆ To bridge this gap, we conducted a comprehensive human study involving interviews with 26 guide dog handlers, four white cane users, nine guide dog trainers, and one O\&amp;M trainer, along with 15+ hours of observing guide dog-assisted walking.
+◆ After de-identification, we open-sourced the dataset to promote human-centered development and informed decision-making for assistive systems for BLV people.</td></tr>
 <tr><td>2025-12-04</td><td>ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning</td><td>[2512.05111](http://arxiv.org/pdf/2512.05111)</td><td>◆ Reward models are critical for aligning vision-language systems with human preferences, yet current approaches suffer from hallucination, weak visual grounding, and an inability to use tools for verification, limiting their reliability on complex multimodal reasoning tasks.
 ◆ We present ARM-Thinker, an A}gentic multimodal Reward Model that autonomously invokes external tools (e.g., image cropping, doc page retrieval) to ground judgments in verifiable evidence, replacing static, non-interactive reward scoring.
 ◆ This enables the model to verify fine-grained visual details, cross-reference multi-page evidence, and validate reasoning claims, which are capabilities absent in existing reward models.</td></tr>
@@ -2165,6 +2195,9 @@
 <tr><td>2025-11-28</td><td>Breaking the Visual Shortcuts in Multimodal Knowledge-Based Visual Question Answering</td><td>[2511.22843](http://arxiv.org/pdf/2511.22843)</td><td>◆ Existing Multimodal Knowledge-Based Visual Question Answering (MKB-VQA) benchmarks suffer from &quot;visual shortcuts&quot;, as the query image typically matches the primary subject entity of the target document.
 ◆ We demonstrate that models can exploit these shortcuts, achieving comparable results using visual cues alone.
 ◆ To address this, we introduce Relational Entity Text-Image kNowledge Augmented (RETINA) benchmark, automatically constructed using an LLM-driven pipeline, consisting of 120k training and 2k human-curated test set.</td></tr>
+<tr><td>2025-11-27</td><td>UNION: A Lightweight Target Representation for Efficient Zero-Shot Image-Guided Retrieval with Optional Textual Queries</td><td>[2511.22253](http://arxiv.org/pdf/2511.22253)</td><td>◆ Image-Guided Retrieval with Optional Text (IGROT) is a general retrieval setting where a query consists of an anchor image, with or without accompanying text, aiming to retrieve semantically relevant target images.
+◆ This formulation unifies two major tasks: Composed Image Retrieval (CIR) and Sketch-Based Image Retrieval (SBIR).
+◆ In this work, we address IGROT under low-data supervision by introducing UNION, a lightweight and generalisable target representation that fuses the image embedding with a null-text prompt.</td></tr>
 <tr><td>2025-11-26</td><td>Attention-Guided Patch-Wise Sparse Adversarial Attacks on Vision-Language-Action Models</td><td>[2511.21663](http://arxiv.org/pdf/2511.21663)</td><td>◆ In recent years, Vision-Language-Action (VLA) models in embodied intelligence have developed rapidly.
 ◆ However, existing adversarial attack methods require costly end-to-end training and often generate noticeable perturbation patches.
 ◆ To address these limitations, we propose ADVLA, a framework that directly applies adversarial perturbations on features projected from the visual encoder into the textual feature space.</td></tr>
@@ -3404,6 +3437,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
+◆ We present a three-stage preprocessing pipeline that addresses this limitation through: (1) cage segmentation using a Gabor-enhanced ResNet-UNet architecture with tunable orientation filters, (2) cage inpainting using CRFill for content-aware reconstruction of occluded regions, and (3) evaluation of pose estimation and tracking on the uncaged frames.
+◆ Our Gabor-enhanced segmentation model leverages orientation-aware features with 72 directional kernels to accurately identify and segment cage structures that severely impair the performance of existing methods.</td></tr>
 <tr><td>2025-12-03</td><td>Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer</td><td>[2512.04282](http://arxiv.org/pdf/2512.04282)</td><td>◆ Real-time video motion transfer applications such as immersive gaming and vision-based anomaly detection require accurate yet diverse future predictions to support realistic synthesis and robust downstream decision making under uncertainty.
 ◆ To improve the diversity of such sequential forecasts we propose a novel inference-time refinement technique that combines Gated Recurrent Unit-Normalizing Flows (GRU-NF) with stochastic sampling methods.
 ◆ While GRU-NF can capture multimodal distributions through its integration of normalizing flows within a temporal forecasting framework, its deterministic transformation structure can limit expressivity.</td></tr>
@@ -4019,6 +4055,9 @@
 <tr><td>2025-11-24</td><td>NI-Tex: Non-isometric Image-based Garment Texture Generation</td><td>[2511.18765](http://arxiv.org/pdf/2511.18765)</td><td>◆ Existing industrial 3D garment meshes already cover most real-world clothing geometries, yet their texture diversity remains limited.
 ◆ To acquire more realistic textures, generative methods are often used to extract Physically-based Rendering (PBR) textures and materials from large collections of wild images and project them back onto garment meshes.
 ◆ However, most image-conditioned texture generation approaches require strict topological consistency between the input image and the input 3D mesh, or rely on accurate mesh deformation to match to the image poses, which significantly constrains the texture generation quality and flexibility.</td></tr>
+<tr><td>2025-11-21</td><td>SPIDER: Spatial Image CorresponDence Estimator for Robust Calibration</td><td>[2511.17750](http://arxiv.org/pdf/2511.17750)</td><td>◆ Reliable image correspondences form the foundation of vision-based spatial perception, enabling recovery of 3D structure and camera poses.
+◆ However, unconstrained feature matching across domains such as aerial, indoor, and outdoor scenes remains challenging due to large variations in appearance, scale and viewpoint.
+◆ Feature matching has been conventionally formulated as a 2D-to-2D problem; however, recent 3D foundation models provides spatial feature matching properties based on two-view geometry.</td></tr>
 <tr><td>2025-11-21</td><td>SMILE: A Composite Lexical-Semantic Metric for Question-Answering Evaluation</td><td>[2511.17432](http://arxiv.org/pdf/2511.17432)</td><td>◆ Traditional evaluation metrics for textual and visual question answering, like ROUGE, METEOR, and Exact Match (EM), focus heavily on n-gram based lexical similarity, often missing the deeper semantic understanding needed for accurate assessment.
 ◆ While measures like BERTScore and MoverScore leverage contextual embeddings to address this limitation, they lack flexibility in balancing sentence-level and keyword-level semantics and ignore lexical similarity, which remains important.
 ◆ Large Language Model (LLM) based evaluators, though powerful, come with drawbacks like high costs, bias, inconsistency, and hallucinations.</td></tr>
@@ -4495,6 +4534,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
+◆ This requires inferring nearly $90^\circ$ viewpoint gaps from image sources with severely foreshortened facades and flawed textures, causing state-of-the-art reconstruction engines such as NeRF and 3DGS to fail.
+◆ To address this problem, we propose two design choices tailored for city structures and satellite inputs.</td></tr>
+<tr><td>2025-12-08</td><td>Radiance-Field Reinforced Pretraining: Scaling Localization Models with Unlabeled Wireless Signals</td><td>[2512.07309](http://arxiv.org/pdf/2512.07309)</td><td>◆ Radio frequency (RF)-based indoor localization offers significant promise for applications such as indoor navigation, augmented reality, and pervasive computing.
+◆ While deep learning has greatly enhanced localization accuracy and robustness, existing localization models still face major challenges in cross-scene generalization due to their reliance on scene-specific labeled data.
+◆ To address this, we introduce Radiance-Field Reinforced Pretraining (RFRP).</td></tr>
+<tr><td>2025-12-06</td><td>AGORA: Adversarial Generation Of Real-time Animatable 3D Gaussian Head Avatars</td><td>[2512.06438](http://arxiv.org/pdf/2512.06438)</td><td>◆ The generation of high-fidelity, animatable 3D human avatars remains a core challenge in computer graphics and vision, with applications in VR, telepresence, and entertainment.
+◆ Existing approaches based on implicit representations like NeRFs suffer from slow rendering and dynamic inconsistencies, while 3D Gaussian Splatting (3DGS) methods are typically limited to static head generation, lacking dynamic control.
+◆ We bridge this gap by introducing AGORA, a novel framework that extends 3DGS within a generative adversarial network to produce animatable avatars.</td></tr>
 <tr><td>2025-12-04</td><td>Gaussian Entropy Fields: Driving Adaptive Sparsity in 3D Gaussian Optimization</td><td>[2512.04542](http://arxiv.org/pdf/2512.04542)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading technique for novel view synthesis, demonstrating exceptional rendering efficiency.
 ◆ \replaced[]{Well-reconstructed surfaces can be characterized by low configurational entropy, where dominant primitives clearly define surface geometry while redundant components are suppressed.}{The key insight is that well-reconstructed surfaces naturally exhibit low configurational entropy, where dominant primitives clearly define surface geometry while suppressing redundant components.} Three complementary technical contributions are introduced: (1) entropy-driven surface modeling via entropy minimization for low configurational entropy in primitive distributions; (2) adaptive spatial regularization using the Surface Neighborhood Redundancy Index (SNRI) and image entropy-guided weighting; (3) multi-scale geometric preservation through competitive cross-scale entropy alignment.
 ◆ Extensive experiments demonstrate that GEF achieves competitive geometric precision on DTU and T\&amp;T benchmarks, while delivering superior rendering quality compared to existing methods on Mip-NeRF 360.</td></tr>
@@ -5266,4 +5314,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.08
+> 更新于: 2025.12.09
