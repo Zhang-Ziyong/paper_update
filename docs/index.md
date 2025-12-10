@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.09)
+# 计算机视觉领域最新论文 (2025.12.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-09</td><td>A Sensor-Aware Phenomenological Framework for Lidar Degradation Simulation and SLAM Robustness Evaluation</td><td>[2512.08653](http://arxiv.org/pdf/2512.08653)</td><td>◆ Lidar-based SLAM systems are highly sensitive to adverse conditions such as occlusion, noise, and field-of-view (FoV) degradation, yet existing robustness evaluation methods either lack physical grounding or do not capture sensor-specific behavior.
+◆ This paper presents a sensor-aware, phenomenological framework for simulating interpretable lidar degradations directly on real point clouds, enabling controlled and reproducible SLAM stress testing.
+◆ Unlike image-derived corruption benchmarks (e.g., SemanticKITTI-C) or simulation-only approaches (e.g., lidarsim), the proposed system preserves per-point geometry, intensity, and temporal structure while applying structured dropout, FoV reduction, Gaussian noise, occlusion masking, sparsification, and motion distortion.</td></tr>
+<tr><td>2025-12-09</td><td>OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics</td><td>[2512.08625](http://arxiv.org/pdf/2512.08625)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a foundational component in robotics, AR/VR, and autonomous systems.
+◆ With the rising focus on spatial AI in recent years, combining SLAM with semantic understanding has become increasingly important for enabling intelligent perception and interaction.
+◆ Recent efforts have explored this integration, but they often rely on depth sensors or closed-set semantic models, limiting their scalability and adaptability in open-world environments.</td></tr>
+<tr><td>2025-12-08</td><td>Sparse Variable Projection in Robotic Perception: Exploiting Separable Structure for Efficient Nonlinear Optimization</td><td>[2512.07969](http://arxiv.org/pdf/2512.07969)</td><td>◆ Robotic perception often requires solving large nonlinear least-squares (NLS) problems.
+◆ While sparsity has been well-exploited to scale solvers, a complementary and underexploited structure is \emph{separability} -- where some variables (e.g., visual landmarks) appear linearly in the residuals and, for any estimate of the remaining variables (e.g., poses), have a closed-form solution.
+◆ Variable projection (VarPro) methods are a family of techniques that exploit this structure by analytically eliminating the linear variables and presenting a reduced problem in the remaining variables that has favorable properties.</td></tr>
 <tr><td>2025-12-08</td><td>OptMap: Geometric Map Distillation via Submodular Maximization</td><td>[2512.07775](http://arxiv.org/pdf/2512.07775)</td><td>◆ Autonomous robots rely on geometric maps to inform a diverse set of perception and decision-making algorithms.
 ◆ As autonomy requires reasoning and planning on multiple scales of the environment, each algorithm may require a different map for optimal performance.
 ◆ Light Detection And Ranging (LiDAR) sensors generate an abundance of geometric data to satisfy these diverse requirements, but selecting informative, size-constrained maps is computationally challenging as it requires solving an NP-hard combinatorial optimization.</td></tr>
@@ -1237,6 +1246,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-09</td><td>Selfi: Self Improving Reconstruction Engine via 3D Geometric Feature Alignment</td><td>[2512.08930](http://arxiv.org/pdf/2512.08930)</td><td>◆ Novel View Synthesis (NVS) has traditionally relied on models with explicit 3D inductive biases combined with known camera parameters from Structure-from-Motion (SfM) beforehand.
+◆ Recent vision foundation models like VGGT take an orthogonal approach -- 3D knowledge is gained implicitly through training data and loss objectives, enabling feed-forward prediction of both camera parameters and 3D representations directly from a set of uncalibrated images.
+◆ While flexible, VGGT features lack explicit multi-view geometric consistency, and we find that improving such 3D feature consistency benefits both NVS and pose estimation tasks.</td></tr>
+<tr><td>2025-12-08</td><td>Sparse Variable Projection in Robotic Perception: Exploiting Separable Structure for Efficient Nonlinear Optimization</td><td>[2512.07969](http://arxiv.org/pdf/2512.07969)</td><td>◆ Robotic perception often requires solving large nonlinear least-squares (NLS) problems.
+◆ While sparsity has been well-exploited to scale solvers, a complementary and underexploited structure is \emph{separability} -- where some variables (e.g., visual landmarks) appear linearly in the residuals and, for any estimate of the remaining variables (e.g., poses), have a closed-form solution.
+◆ Variable projection (VarPro) methods are a family of techniques that exploit this structure by analytically eliminating the linear variables and presenting a reduced problem in the remaining variables that has favorable properties.</td></tr>
 <tr><td>2025-12-05</td><td>The Dynamic Prior: Understanding 3D Structures for Casual Dynamic Videos</td><td>[2512.05398](http://arxiv.org/pdf/2512.05398)</td><td>◆ Estimating accurate camera poses, 3D scene geometry, and object motion from in-the-wild videos is a long-standing challenge for classical structure from motion pipelines due to the presence of dynamic objects.
 ◆ Recent learning-based methods attempt to overcome this challenge by training motion estimators to filter dynamic objects and focus on the static background.
 ◆ However, their performance is largely limited by the availability of large-scale motion segmentation datasets, resulting in inaccurate segmentation and, therefore, inferior structural 3D understanding.</td></tr>
@@ -4524,7 +4539,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-08</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
+<tr><td>2025-12-09</td><td>HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting</td><td>[2512.08334](http://arxiv.org/pdf/2512.08334)</td><td>◆ Rendering complex reflection of real-world scenes using 3D Gaussian splatting has been a quite promising solution for photorealistic novel view synthesis, but still faces bottlenecks especially in rendering speed and memory storage.
+◆ This paper proposes a new Hybrid Splatting(HybridSplat) mechanism for Gaussian primitives.
+◆ Our key idea is a new reflection-baked Gaussian tracing, which bakes the view-dependent reflection within each Gaussian primitive while rendering the reflection using tile-based Gaussian splatting.</td></tr>
+<tr><td>2025-12-09</td><td>Blur2Sharp: Human Novel Pose and View Synthesis with Generative Prior Refinement</td><td>[2512.08215](http://arxiv.org/pdf/2512.08215)</td><td>◆ The creation of lifelike human avatars capable of realistic pose variation and viewpoint flexibility remains a fundamental challenge in computer vision and graphics.
+◆ Current approaches typically yield either geometrically inconsistent multi-view images or sacrifice photorealism, resulting in blurry outputs under diverse viewing angles and complex motions.
+◆ To address these issues, we propose Blur2Sharp, a novel framework integrating 3D-aware neural rendering and diffusion models to generate sharp, geometrically consistent novel-view images from only a single reference view.</td></tr>
+<tr><td>2025-12-09</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
 ◆ This requires inferring nearly $90^\circ$ viewpoint gaps from image sources with severely foreshortened facades and flawed textures, causing state-of-the-art reconstruction engines such as NeRF and 3DGS to fail.
 ◆ To address this problem, we propose two design choices tailored for city structures and satellite inputs.</td></tr>
 <tr><td>2025-12-08</td><td>Radiance-Field Reinforced Pretraining: Scaling Localization Models with Unlabeled Wireless Signals</td><td>[2512.07309](http://arxiv.org/pdf/2512.07309)</td><td>◆ Radio frequency (RF)-based indoor localization offers significant promise for applications such as indoor navigation, augmented reality, and pervasive computing.
@@ -5302,4 +5323,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.09
+> 更新于: 2025.12.10
