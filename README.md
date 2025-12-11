@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.10)
+# 计算机视觉领域最新论文 (2025.12.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>Super4DR: 4D Radar-centric Self-supervised Odometry and Gaussian-based Map Optimization</td><td>[2512.09608](http://arxiv.org/pdf/2512.09608)</td><td>◆ Conventional SLAM systems using visual or LiDAR data often struggle in poor lighting and severe weather.
+◆ Although 4D radar is suited for such environments, its sparse and noisy point clouds hinder accurate odometry estimation, while the radar maps suffer from obscure and incomplete structures.
+◆ Thus, we propose Super4DR, a 4D radar-centric framework for learning-based odometry estimation and gaussian-based map optimization.</td></tr>
+<tr><td>2025-12-10</td><td>D$^2$GSLAM: 4D Dynamic Gaussian Splatting SLAM</td><td>[2512.09411](http://arxiv.org/pdf/2512.09411)</td><td>◆ Recent advances in Dense Simultaneous Localization and Mapping (SLAM) have demonstrated remarkable performance in static environments.
+◆ However, dense SLAM in dynamic environments remains challenging.
+◆ Most methods directly remove dynamic objects and focus solely on static scene reconstruction, which ignores the motion information contained in these dynamic objects.</td></tr>
 <tr><td>2025-12-09</td><td>A Sensor-Aware Phenomenological Framework for Lidar Degradation Simulation and SLAM Robustness Evaluation</td><td>[2512.08653](http://arxiv.org/pdf/2512.08653)</td><td>◆ Lidar-based SLAM systems are highly sensitive to adverse conditions such as occlusion, noise, and field-of-view (FoV) degradation, yet existing robustness evaluation methods either lack physical grounding or do not capture sensor-specific behavior.
 ◆ This paper presents a sensor-aware, phenomenological framework for simulating interpretable lidar degradations directly on real point clouds, enabling controlled and reproducible SLAM stress testing.
 ◆ Unlike image-derived corruption benchmarks (e.g., SemanticKITTI-C) or simulation-only approaches (e.g., lidarsim), the proposed system preserves per-point geometry, intensity, and temporal structure while applying structured dropout, FoV reduction, Gaussian noise, occlusion masking, sparsification, and motion distortion.</td></tr>
@@ -2048,6 +2054,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
+◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
+◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
+<tr><td>2025-12-09</td><td>Adaptive Thresholding for Visual Place Recognition using Negative Gaussian Mixture Statistics</td><td>[2512.09071](http://arxiv.org/pdf/2512.09071)</td><td>◆ Visual place recognition (VPR) is an important component technology for camera-based mapping and navigation applications.
+◆ This is a challenging problem because images of the same place may appear quite different for reasons including seasonal changes, weather illumination, structural changes to the environment, as well as transient pedestrian or vehicle traffic.
+◆ Papers focusing on generating image descriptors for VPR report their results using metrics such as recall@K and ROC curves.</td></tr>
 <tr><td>2025-12-08</td><td>Generalized Referring Expression Segmentation on Aerial Photos</td><td>[2512.07338](http://arxiv.org/pdf/2512.07338)</td><td>◆ Referring expression segmentation is a fundamental task in computer vision that integrates natural language understanding with precise visual localization of target regions.
 ◆ Considering aerial imagery (e.g., modern aerial photos collected through drones, historical photos from aerial archives, high-resolution satellite imagery, etc.) presents unique challenges because spatial resolution varies widely across datasets, the use of color is not consistent, targets often shrink to only a few pixels, and scenes contain very high object densities and objects with partial occlusions.
 ◆ This work presents Aerial-D, a new large-scale referring expression segmentation dataset for aerial imagery, comprising 37,288 images with 1,522,523 referring expressions that cover 259,709 annotated targets, spanning across individual object instances, groups of instances, and semantic regions covering 21 distinct classes that range from vehicles and infrastructure to land coverage types.</td></tr>
@@ -4549,6 +4561,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>Log NeRF: Comparing Spaces for Learning Radiance Fields</td><td>[2512.09375](http://arxiv.org/pdf/2512.09375)</td><td>◆ Neural Radiance Fields (NeRF) have achieved remarkable results in novel view synthesis, typically using sRGB images for supervision.
+◆ However, little attention has been paid to the color space in which the network is learning the radiance field representation.
+◆ Inspired by the BiIlluminant Dichromatic Reflection (BIDR) model, which suggests that a logarithmic transformation simplifies the separation of illumination and reflectance, we hypothesize that log RGB space enables NeRF to learn a more compact and effective representation of scene appearance.</td></tr>
+<tr><td>2025-12-10</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
+◆ Recently, Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) methods have been employed to reconstruct the avatars.
+◆ However, they often produce unsatisfactory photo-realistic results because of insufficient geometrical details related to body motion, such as clothing wrinkles.</td></tr>
 <tr><td>2025-12-09</td><td>HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting</td><td>[2512.08334](http://arxiv.org/pdf/2512.08334)</td><td>◆ Rendering complex reflection of real-world scenes using 3D Gaussian splatting has been a quite promising solution for photorealistic novel view synthesis, but still faces bottlenecks especially in rendering speed and memory storage.
 ◆ This paper proposes a new Hybrid Splatting(HybridSplat) mechanism for Gaussian primitives.
 ◆ Our key idea is a new reflection-baked Gaussian tracing, which bakes the view-dependent reflection within each Gaussian primitive while rendering the reflection using tile-based Gaussian splatting.</td></tr>
@@ -5335,4 +5353,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.10
+> 更新于: 2025.12.11
