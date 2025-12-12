@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.11)
+# 计算机视觉领域最新论文 (2025.12.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Contact SLAM: An Active Tactile Exploration Policy Based on Physical Reasoning Utilized in Robotic Fine Blind Manipulation Tasks</td><td>[2512.10481](http://arxiv.org/pdf/2512.10481)</td><td>◆ Contact-rich manipulation is difficult for robots to execute and requires accurate perception of the environment.
+◆ In some scenarios, vision is occluded.
+◆ The robot can then no longer obtain real-time scene state information through visual feedback.</td></tr>
+<tr><td>2025-12-11</td><td>CLASH: Collaborative Large-Small Hierarchical Framework for Continuous Vision-and-Language Navigation</td><td>[2512.10360](http://arxiv.org/pdf/2512.10360)</td><td>◆ Vision-and-Language Navigation (VLN) requires robots to follow natural language instructions and navigate complex environments without prior maps.
+◆ While recent vision-language large models demonstrate strong reasoning abilities, they often underperform task-specific panoramic small models in VLN tasks.
+◆ To address this, we propose CLASH (Collaborative Large-Small Hierarchy), a VLN-CE framework that integrates a reactive small-model planner (RSMP) with a reflective large-model reasoner (RLMR).</td></tr>
+<tr><td>2025-12-10</td><td>Inertial Magnetic SLAM Systems Using Low-Cost Sensors</td><td>[2512.10128](http://arxiv.org/pdf/2512.10128)</td><td>◆ Spatially inhomogeneous magnetic fields offer a valuable, non-visual information source for positioning.
+◆ Among systems leveraging this, magnetic field-based simultaneous localization and mapping (SLAM) systems are particularly attractive because they can provide positioning information and build a magnetic field map on the fly.
+◆ Moreover, they have bounded error within mapped regions.</td></tr>
 <tr><td>2025-12-10</td><td>Super4DR: 4D Radar-centric Self-supervised Odometry and Gaussian-based Map Optimization</td><td>[2512.09608](http://arxiv.org/pdf/2512.09608)</td><td>◆ Conventional SLAM systems using visual or LiDAR data often struggle in poor lighting and severe weather.
 ◆ Although 4D radar is suited for such environments, its sparse and noisy point clouds hinder accurate odometry estimation, while the radar maps suffer from obscure and incomplete structures.
 ◆ Thus, we propose Super4DR, a 4D radar-centric framework for learning-based odometry estimation and gaussian-based map optimization.</td></tr>
@@ -1254,6 +1263,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>3D Blood Pulsation Maps</td><td>[2512.10517](http://arxiv.org/pdf/2512.10517)</td><td>◆ We present Pulse3DFace, the first dataset of its kind for estimating 3D blood pulsation maps.
+◆ These maps can be used to develop models of dynamic facial blood pulsation, enabling the creation of synthetic video data to improve and validate remote pulse estimation methods via photoplethysmography imaging.
+◆ Additionally, the dataset facilitates research into novel multi-view-based approaches for mitigating illumination effects in blood pulsation analysis.</td></tr>
 <tr><td>2025-12-09</td><td>Selfi: Self Improving Reconstruction Engine via 3D Geometric Feature Alignment</td><td>[2512.08930](http://arxiv.org/pdf/2512.08930)</td><td>◆ Novel View Synthesis (NVS) has traditionally relied on models with explicit 3D inductive biases combined with known camera parameters from Structure-from-Motion (SfM) beforehand.
 ◆ Recent vision foundation models like VGGT take an orthogonal approach -- 3D knowledge is gained implicitly through training data and loss objectives, enabling feed-forward prediction of both camera parameters and 3D representations directly from a set of uncalibrated images.
 ◆ While flexible, VGGT features lack explicit multi-view geometric consistency, and we find that improving such 3D feature consistency benefits both NVS and pose estimation tasks.</td></tr>
@@ -2054,6 +2066,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Beyond Pixels: A Training-Free, Text-to-Text Framework for Remote Sensing Image Retrieval</td><td>[2512.10596](http://arxiv.org/pdf/2512.10596)</td><td>◆ Semantic retrieval of remote sensing (RS) images is a critical task fundamentally challenged by the \textquote{semantic gap}, the discrepancy between a model&#x27;s low-level visual features and high-level human concepts.
+◆ While large Vision-Language Models (VLMs) offer a promising path to bridge this gap, existing methods often rely on costly, domain-specific training, and there is a lack of benchmarks to evaluate the practical utility of VLM-generated text in a zero-shot retrieval context.
+◆ To address this research gap, we introduce the Remote Sensing Rich Text (RSRT) dataset, a new benchmark featuring multiple structured captions per image.</td></tr>
 <tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
 ◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
 ◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
@@ -3845,6 +3860,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Self-Supervised Contrastive Embedding Adaptation for Endoscopic Image Matching</td><td>[2512.10379](http://arxiv.org/pdf/2512.10379)</td><td>◆ Accurate spatial understanding is essential for image-guided surgery, augmented reality integration and context awareness.
+◆ In minimally invasive procedures, where visual input is the sole intraoperative modality, establishing precise pixel-level correspondences between endoscopic frames is critical for 3D reconstruction, camera tracking, and scene interpretation.
+◆ However, the surgical domain presents distinct challenges: weak perspective cues, non-Lambertian tissue reflections, and complex, deformable anatomy degrade the performance of conventional computer vision techniques.</td></tr>
+<tr><td>2025-12-11</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
+◆ Unlike existing image editing datasets that focus on static appearance changes or contain only sparse, low-quality motion edits, MotionEdit provides high-fidelity image pairs depicting realistic motion transformations extracted and verified from continuous videos.
+◆ This new task is not only scientifically challenging but also practically significant, powering downstream applications such as frame-controlled video synthesis and animation.</td></tr>
 <tr><td>2025-12-05</td><td>LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D Detection</td><td>[2512.05663](http://arxiv.org/pdf/2512.05663)</td><td>◆ Real-time monocular 3D object detection remains challenging due to severe depth ambiguity, viewpoint shifts, and the high computational cost of 3D reasoning.
 ◆ Existing approaches either rely on LiDAR or geometric priors to compensate for missing depth, or sacrifice efficiency to achieve competitive accuracy.
 ◆ We introduce LeAD-M3D, a monocular 3D detector that achieves state-of-the-art accuracy and real-time inference without extra modalities.</td></tr>
@@ -4561,10 +4582,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Physically Aware 360$^\circ$ View Generation from a Single Image using Disentangled Scene Embeddings</td><td>[2512.10293](http://arxiv.org/pdf/2512.10293)</td><td>◆ We introduce Disentangled360, an innovative 3D-aware technology that integrates the advantages of direction disentangled volume rendering with single-image 360° unique view synthesis for applications in medical imaging and natural scene reconstruction.
+◆ In contrast to current techniques that either oversimplify anisotropic light behavior or lack generalizability across various contexts, our framework distinctly differentiates between isotropic and anisotropic contributions inside a Gaussian Splatting backbone.
+◆ We implement a dual-branch conditioning framework, one optimized for CT intensity driven scattering in volumetric data and the other for real-world RGB scenes through normalized camera embeddings.</td></tr>
 <tr><td>2025-12-10</td><td>Log NeRF: Comparing Spaces for Learning Radiance Fields</td><td>[2512.09375](http://arxiv.org/pdf/2512.09375)</td><td>◆ Neural Radiance Fields (NeRF) have achieved remarkable results in novel view synthesis, typically using sRGB images for supervision.
 ◆ However, little attention has been paid to the color space in which the network is learning the radiance field representation.
 ◆ Inspired by the BiIlluminant Dichromatic Reflection (BIDR) model, which suggests that a logarithmic transformation simplifies the separation of illumination and reflectance, we hypothesize that log RGB space enables NeRF to learn a more compact and effective representation of scene appearance.</td></tr>
-<tr><td>2025-12-10</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
+<tr><td>2025-12-11</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
 ◆ Recently, Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) methods have been employed to reconstruct the avatars.
 ◆ However, they often produce unsatisfactory photo-realistic results because of insufficient geometrical details related to body motion, such as clothing wrinkles.</td></tr>
 <tr><td>2025-12-09</td><td>HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting</td><td>[2512.08334](http://arxiv.org/pdf/2512.08334)</td><td>◆ Rendering complex reflection of real-world scenes using 3D Gaussian splatting has been a quite promising solution for photorealistic novel view synthesis, but still faces bottlenecks especially in rendering speed and memory storage.
@@ -4579,7 +4603,7 @@
 <tr><td>2025-12-08</td><td>Radiance-Field Reinforced Pretraining: Scaling Localization Models with Unlabeled Wireless Signals</td><td>[2512.07309](http://arxiv.org/pdf/2512.07309)</td><td>◆ Radio frequency (RF)-based indoor localization offers significant promise for applications such as indoor navigation, augmented reality, and pervasive computing.
 ◆ While deep learning has greatly enhanced localization accuracy and robustness, existing localization models still face major challenges in cross-scene generalization due to their reliance on scene-specific labeled data.
 ◆ To address this, we introduce Radiance-Field Reinforced Pretraining (RFRP).</td></tr>
-<tr><td>2025-12-06</td><td>AGORA: Adversarial Generation Of Real-time Animatable 3D Gaussian Head Avatars</td><td>[2512.06438](http://arxiv.org/pdf/2512.06438)</td><td>◆ The generation of high-fidelity, animatable 3D human avatars remains a core challenge in computer graphics and vision, with applications in VR, telepresence, and entertainment.
+<tr><td>2025-12-10</td><td>AGORA: Adversarial Generation Of Real-time Animatable 3D Gaussian Head Avatars</td><td>[2512.06438](http://arxiv.org/pdf/2512.06438)</td><td>◆ The generation of high-fidelity, animatable 3D human avatars remains a core challenge in computer graphics and vision, with applications in VR, telepresence, and entertainment.
 ◆ Existing approaches based on implicit representations like NeRFs suffer from slow rendering and dynamic inconsistencies, while 3D Gaussian Splatting (3DGS) methods are typically limited to static head generation, lacking dynamic control.
 ◆ We bridge this gap by introducing AGORA, a novel framework that extends 3DGS within a generative adversarial network to produce animatable avatars.</td></tr>
 <tr><td>2025-12-04</td><td>Gaussian Entropy Fields: Driving Adaptive Sparsity in 3D Gaussian Optimization</td><td>[2512.04542](http://arxiv.org/pdf/2512.04542)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading technique for novel view synthesis, demonstrating exceptional rendering efficiency.
@@ -5353,4 +5377,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.11
+> 更新于: 2025.12.12
