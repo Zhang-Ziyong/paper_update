@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.15)
+# 计算机视觉领域最新论文 (2025.12.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2066,6 +2066,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-15</td><td>Towards Test-time Efficient Visual Place Recognition via Asymmetric Query Processing</td><td>[2512.13055](http://arxiv.org/pdf/2512.13055)</td><td>◆ Visual Place Recognition (VPR) has advanced significantly with high-capacity foundation models like DINOv2, achieving remarkable performance.
+◆ Nonetheless, their substantial computational cost makes deployment on resource-constrained devices impractical.
+◆ In this paper, we introduce an efficient asymmetric VPR framework that incorporates a high-capacity gallery model for offline feature extraction with a lightweight query network for online processing.</td></tr>
+<tr><td>2025-12-14</td><td>Patch-wise Retrieval: A Bag of Practical Techniques for Instance-level Matching</td><td>[2512.12610](http://arxiv.org/pdf/2512.12610)</td><td>◆ Instance-level image retrieval aims to find images containing the same object as a given query, despite variations in size, position, or appearance.
+◆ To address this challenging task, we propose Patchify, a simple yet effective patch-wise retrieval framework that offers high performance, scalability, and interpretability without requiring fine-tuning.
+◆ Patchify divides each database image into a small number of structured patches and performs retrieval by comparing these local features with a global query descriptor, enabling accurate and spatially grounded matching.</td></tr>
 <tr><td>2025-12-11</td><td>Beyond Pixels: A Training-Free, Text-to-Text Framework for Remote Sensing Image Retrieval</td><td>[2512.10596](http://arxiv.org/pdf/2512.10596)</td><td>◆ Semantic retrieval of remote sensing (RS) images is a critical task fundamentally challenged by the \textquote{semantic gap}, the discrepancy between a model&#x27;s low-level visual features and high-level human concepts.
 ◆ While large Vision-Language Models (VLMs) offer a promising path to bridge this gap, existing methods often rely on costly, domain-specific training, and there is a lack of benchmarks to evaluate the practical utility of VLM-generated text in a zero-shot retrieval context.
 ◆ To address this research gap, we introduce the Remote Sensing Rich Text (RSRT) dataset, a new benchmark featuring multiple structured captions per image.</td></tr>
@@ -2162,7 +2168,7 @@
 <tr><td>2025-12-02</td><td>BOOM: Beyond Only One Modality KIT&#x27;s Multimodal Multilingual Lecture Companion</td><td>[2512.02817](http://arxiv.org/pdf/2512.02817)</td><td>◆ The globalization of education and rapid growth of online learning have made localizing educational content a critical challenge.
 ◆ Lecture materials are inherently multimodal, combining spoken audio with visual slides, which requires systems capable of processing multiple input modalities.
 ◆ To provide an accessible and complete learning experience, translations must preserve all modalities: text for reading, slides for visual understanding, and speech for auditory learning.</td></tr>
-<tr><td>2025-12-02</td><td>HUD: Hierarchical Uncertainty-Aware Disambiguation Network for Composed Video Retrieval</td><td>[2512.02792](http://arxiv.org/pdf/2512.02792)</td><td>◆ Composed Video Retrieval (CVR) is a challenging video retrieval task that utilizes multi-modal queries, consisting of a reference video and modification text, to retrieve the desired target video.
+<tr><td>2025-12-14</td><td>HUD: Hierarchical Uncertainty-Aware Disambiguation Network for Composed Video Retrieval</td><td>[2512.02792](http://arxiv.org/pdf/2512.02792)</td><td>◆ Composed Video Retrieval (CVR) is a challenging video retrieval task that utilizes multi-modal queries, consisting of a reference video and modification text, to retrieve the desired target video.
 ◆ The core of this task lies in understanding the multi-modal composed query and achieving accurate composed feature learning.
 ◆ Within multi-modal queries, the video modality typically carries richer semantic content compared to the textual modality.</td></tr>
 <tr><td>2025-12-02</td><td>Beyond Paired Data: Self-Supervised UAV Geo-Localization from Reference Imagery Alone</td><td>[2512.02737](http://arxiv.org/pdf/2512.02737)</td><td>◆ Image-based localization in GNSS-denied environments is critical for UAV autonomy.
@@ -3479,6 +3485,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-15</td><td>JoVA: Unified Multimodal Learning for Joint Video-Audio Generation</td><td>[2512.13677](http://arxiv.org/pdf/2512.13677)</td><td>◆ In this paper, we present JoVA, a unified framework for joint video-audio generation.
+◆ Despite recent encouraging advances, existing methods face two critical limitations.
+◆ First, most existing approaches can only generate ambient sounds and lack the capability to produce human speech synchronized with lip movements.</td></tr>
 <tr><td>2025-12-08</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
 ◆ We present a three-stage preprocessing pipeline that addresses this limitation through: (1) cage segmentation using a Gabor-enhanced ResNet-UNet architecture with tunable orientation filters, (2) cage inpainting using CRFill for content-aware reconstruction of occluded regions, and (3) evaluation of pose estimation and tracking on the uncaged frames.
 ◆ Our Gabor-enhanced segmentation model leverages orientation-aware features with 72 directional kernels to accurately identify and segment cage structures that severely impair the performance of existing methods.</td></tr>
@@ -3863,7 +3872,7 @@
 <tr><td>2025-12-11</td><td>Self-Supervised Contrastive Embedding Adaptation for Endoscopic Image Matching</td><td>[2512.10379](http://arxiv.org/pdf/2512.10379)</td><td>◆ Accurate spatial understanding is essential for image-guided surgery, augmented reality integration and context awareness.
 ◆ In minimally invasive procedures, where visual input is the sole intraoperative modality, establishing precise pixel-level correspondences between endoscopic frames is critical for 3D reconstruction, camera tracking, and scene interpretation.
 ◆ However, the surgical domain presents distinct challenges: weak perspective cues, non-Lambertian tissue reflections, and complex, deformable anatomy degrade the performance of conventional computer vision techniques.</td></tr>
-<tr><td>2025-12-11</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
+<tr><td>2025-12-14</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
 ◆ Unlike existing image editing datasets that focus on static appearance changes or contain only sparse, low-quality motion edits, MotionEdit provides high-fidelity image pairs depicting realistic motion transformations extracted and verified from continuous videos.
 ◆ This new task is not only scientifically challenging but also practically significant, powering downstream applications such as frame-controlled video synthesis and animation.</td></tr>
 <tr><td>2025-12-05</td><td>LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D Detection</td><td>[2512.05663](http://arxiv.org/pdf/2512.05663)</td><td>◆ Real-time monocular 3D object detection remains challenging due to severe depth ambiguity, viewpoint shifts, and the high computational cost of 3D reasoning.
@@ -4582,6 +4591,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-14</td><td>Quantum Implicit Neural Representations for 3D Scene Reconstruction and Novel View Synthesis</td><td>[2512.12683](http://arxiv.org/pdf/2512.12683)</td><td>◆ Implicit neural representations (INRs) have become a powerful paradigm for continuous signal modeling and 3D scene reconstruction, yet classical networks suffer from a well-known spectral bias that limits their ability to capture high-frequency details.
+◆ Quantum Implicit Representation Networks (QIREN) mitigate this limitation by employing parameterized quantum circuits with inherent Fourier structures, enabling compact and expressive frequency modeling beyond classical MLPs.
+◆ In this paper, we present Quantum Neural Radiance Fields (Q-NeRF), the first hybrid quantum-classical framework for neural radiance field rendering.</td></tr>
 <tr><td>2025-12-11</td><td>Physically Aware 360$^\circ$ View Generation from a Single Image using Disentangled Scene Embeddings</td><td>[2512.10293](http://arxiv.org/pdf/2512.10293)</td><td>◆ We introduce Disentangled360, an innovative 3D-aware technology that integrates the advantages of direction disentangled volume rendering with single-image 360° unique view synthesis for applications in medical imaging and natural scene reconstruction.
 ◆ In contrast to current techniques that either oversimplify anisotropic light behavior or lack generalizability across various contexts, our framework distinctly differentiates between isotropic and anisotropic contributions inside a Gaussian Splatting backbone.
 ◆ We implement a dual-branch conditioning framework, one optimized for CT intensity driven scattering in volumetric data and the other for real-world RGB scenes through normalized camera embeddings.</td></tr>
@@ -4591,7 +4603,7 @@
 <tr><td>2025-12-11</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
 ◆ Recently, Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) methods have been employed to reconstruct the avatars.
 ◆ However, they often produce unsatisfactory photo-realistic results because of insufficient geometrical details related to body motion, such as clothing wrinkles.</td></tr>
-<tr><td>2025-12-09</td><td>HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting</td><td>[2512.08334](http://arxiv.org/pdf/2512.08334)</td><td>◆ Rendering complex reflection of real-world scenes using 3D Gaussian splatting has been a quite promising solution for photorealistic novel view synthesis, but still faces bottlenecks especially in rendering speed and memory storage.
+<tr><td>2025-12-15</td><td>HybridSplat: Fast Reflection-baked Gaussian Tracing using Hybrid Splatting</td><td>[2512.08334](http://arxiv.org/pdf/2512.08334)</td><td>◆ Rendering complex reflection of real-world scenes using 3D Gaussian splatting has been a quite promising solution for photorealistic novel view synthesis, but still faces bottlenecks especially in rendering speed and memory storage.
 ◆ This paper proposes a new Hybrid Splatting(HybridSplat) mechanism for Gaussian primitives.
 ◆ Our key idea is a new reflection-baked Gaussian tracing, which bakes the view-dependent reflection within each Gaussian primitive while rendering the reflection using tile-based Gaussian splatting.</td></tr>
 <tr><td>2025-12-09</td><td>Blur2Sharp: Human Novel Pose and View Synthesis with Generative Prior Refinement</td><td>[2512.08215](http://arxiv.org/pdf/2512.08215)</td><td>◆ The creation of lifelike human avatars capable of realistic pose variation and viewpoint flexibility remains a fundamental challenge in computer vision and graphics.
@@ -5377,4 +5389,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.15
+> 更新于: 2025.12.16
