@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.17)
+# 计算机视觉领域最新论文 (2025.12.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
+◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
+◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
+<tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
+◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
+◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
+<tr><td>2025-12-17</td><td>A Parameter-Free Stochastic LineseArch Method (SLAM) for Minimizing Expectation Residuals</td><td>[2512.14979](http://arxiv.org/pdf/2512.14979)</td><td>◆ Most existing rate and complexity guarantees for stochastic gradient methods in $L$-smooth settings mandates that such sequences be non-adaptive, non-increasing, and upper bounded by $\tfrac{a}{L}$ for $a &gt; 0$.
+◆ This requires knowledge of $L$ and may preclude larger steps.
+◆ Motivated by these shortcomings, we present an Armijo-enabled stochastic linesearch framework with standard stochastic zeroth- and first-order oracles.</td></tr>
 <tr><td>2025-12-16</td><td>Odyssey: An Automotive Lidar-Inertial Odometry Dataset for GNSS-denied situations</td><td>[2512.14428](http://arxiv.org/pdf/2512.14428)</td><td>◆ The development and evaluation of Lidar-Inertial Odometry (LIO) and Simultaneous Localization and Mapping (SLAM) systems requires a precise ground truth.
 ◆ The Global Navigation Satellite System (GNSS) is often used as a foundation for this, but its signals can be unreliable in obstructed environments due to multi-path effects or loss-of-signal.
 ◆ While existing datasets compensate for the sporadic loss of GNSS signals by incorporating Inertial Measurement Unit (IMU) measurements, the commonly used Micro-Electro-Mechanical Systems (MEMS) or Fiber Optic Gyroscope (FOG)-based systems do not permit the prolonged study of GNSS-denied environments.</td></tr>
@@ -1290,6 +1299,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>Robust Multi-view Camera Calibration from Dense Matches</td><td>[2512.15608](http://arxiv.org/pdf/2512.15608)</td><td>◆ Estimating camera intrinsics and extrinsics is a fundamental problem in computer vision, and while advances in structure-from-motion (SfM) have improved accuracy and robustness, open challenges remain.
+◆ In this paper, we introduce a robust method for pose estimation and calibration.
+◆ We consider a set of rigid cameras, each observing the scene from a different perspective, which is a typical camera setup in animal behavior studies and forensic analysis of surveillance footage.</td></tr>
 <tr><td>2025-12-11</td><td>3D Blood Pulsation Maps</td><td>[2512.10517](http://arxiv.org/pdf/2512.10517)</td><td>◆ We present Pulse3DFace, the first dataset of its kind for estimating 3D blood pulsation maps.
 ◆ These maps can be used to develop models of dynamic facial blood pulsation, enabling the creation of synthetic video data to improve and validate remote pulse estimation methods via photoplethysmography imaging.
 ◆ Additionally, the dataset facilitates research into novel multi-view-based approaches for mitigating illumination effects in blood pulsation analysis.</td></tr>
@@ -3518,6 +3530,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
+◆ We propose BLANKET (Baby-face Landmark-preserving ANonymization with Keypoint dEtection consisTency), a novel approach designed to anonymize infant faces in video recordings while preserving essential facial attributes.
+◆ Our method comprises two stages.</td></tr>
+<tr><td>2025-12-17</td><td>Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</td><td>[2512.15508](http://arxiv.org/pdf/2512.15508)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement, which relies on a dense, rigid grid and limits both quality and efficiency.
+◆ We introduce a new feed-forward architecture that detects 3D Gaussian primitives at a sub-pixel level, replacing the pixel grid with an adaptive, &quot;Off The Grid&quot; distribution.
+◆ Inspired by keypoint detection, our multi-resolution decoder learns to distribute primitives across image patches.</td></tr>
 <tr><td>2025-12-15</td><td>JoVA: Unified Multimodal Learning for Joint Video-Audio Generation</td><td>[2512.13677](http://arxiv.org/pdf/2512.13677)</td><td>◆ In this paper, we present JoVA, a unified framework for joint video-audio generation.
 ◆ Despite recent encouraging advances, existing methods face two critical limitations.
 ◆ First, most existing approaches can only generate ambient sounds and lack the capability to produce human speech synchronized with lip movements.</td></tr>
@@ -4624,6 +4642,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
+◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
+◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
 <tr><td>2025-12-16</td><td>Broadening View Synthesis of Dynamic Scenes from Constrained Monocular Videos</td><td>[2512.14406](http://arxiv.org/pdf/2512.14406)</td><td>◆ In dynamic Neural Radiance Fields (NeRF) systems, state-of-the-art novel view synthesis methods often fail under significant viewpoint deviations, producing unstable and unrealistic renderings.
 ◆ To address this, we introduce Expanded Dynamic NeRF (ExpanDyNeRF), a monocular NeRF framework that leverages Gaussian splatting priors and a pseudo-ground-truth generation strategy to enable realistic synthesis under large-angle rotations.
 ◆ ExpanDyNeRF optimizes density and color features to improve scene reconstruction from challenging perspectives.</td></tr>
@@ -5431,4 +5452,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.17
+> 更新于: 2025.12.18
