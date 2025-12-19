@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.18)
+# 计算机视觉领域最新论文 (2025.12.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning</td><td>[2512.16461](http://arxiv.org/pdf/2512.16461)</td><td>◆ Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction.
+◆ While Vision-Language Models (VLMs) provide open-world semantic priors, they lack grounding in 3D geometry and temporal dynamics.
+◆ Conversely, geometric perception captures structure and motion but remains semantically sparse.</td></tr>
 <tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
 ◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
 ◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
@@ -1299,6 +1302,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>An evacuation simulator for pedestrian dynamics based on the Social Force Model</td><td>[2512.16887](http://arxiv.org/pdf/2512.16887)</td><td>◆ The evacuation of pedestrians from enclosed spaces represents a key problem in safety engineering and infrastructure design.
+◆ Analyzing the collective dynamics that emerge during evacuation processes requires simulation tools capable of capturing individual interactions and spatial constraints realistically.
+◆ In this work, we present \textit{SiCoBioNa}, an open-source evacuation simulator based on the Social Force Model (SFM).</td></tr>
+<tr><td>2025-12-18</td><td>Hearing to Translate: The Effectiveness of Speech Modality Integration into LLMs</td><td>[2512.16378](http://arxiv.org/pdf/2512.16378)</td><td>◆ As Large Language Models (LLMs) expand beyond text, integrating speech as a native modality has given rise to SpeechLLMs, which aim to translate spoken language directly, thereby bypassing traditional transcription-based pipelines.
+◆ Whether this integration improves speech-to-text translation quality over established cascaded architectures, however, remains an open question.
+◆ We present Hearing to Translate, the first comprehensive test suite rigorously benchmarking 5 state-of-the-art SpeechLLMs against 16 strong direct and cascade systems that couple leading speech foundation models (SFM), with multilingual LLMs.</td></tr>
 <tr><td>2025-12-17</td><td>Robust Multi-view Camera Calibration from Dense Matches</td><td>[2512.15608](http://arxiv.org/pdf/2512.15608)</td><td>◆ Estimating camera intrinsics and extrinsics is a fundamental problem in computer vision, and while advances in structure-from-motion (SfM) have improved accuracy and robustness, open challenges remain.
 ◆ In this paper, we introduce a robust method for pose estimation and calibration.
 ◆ We consider a set of rigid cameras, each observing the scene from a different perspective, which is a typical camera setup in animal behavior studies and forensic analysis of surveillance footage.</td></tr>
@@ -2105,6 +2114,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>MACL: Multi-Label Adaptive Contrastive Learning Loss for Remote Sensing Image Retrieval</td><td>[2512.16294](http://arxiv.org/pdf/2512.16294)</td><td>◆ Semantic overlap among land-cover categories, highly imbalanced label distributions, and complex inter-class co-occurrence patterns constitute significant challenges for multi-label remote-sensing image retrieval.
+◆ In this article, Multi-Label Adaptive Contrastive Learning (MACL) is introduced as an extension of contrastive learning to address them.
+◆ It integrates label-aware sampling, frequency-sensitive weighting, and dynamic-temperature scaling to achieve balanced representation learning across both common and rare categories.</td></tr>
 <tr><td>2025-12-16</td><td>CLNet: Cross-View Correspondence Makes a Stronger Geo-Localizationer</td><td>[2512.14560](http://arxiv.org/pdf/2512.14560)</td><td>◆ Image retrieval-based cross-view geo-localization (IRCVGL) aims to match images captured from significantly different viewpoints, such as satellite and street-level images.
 ◆ Existing methods predominantly rely on learning robust global representations or implicit feature alignment, which often fail to model explicit spatial correspondences crucial for accurate localization.
 ◆ In this work, we propose a novel correspondence-aware feature refinement framework, termed CLNet, that explicitly bridges the semantic and geometric gaps between different views.</td></tr>
@@ -3920,6 +3932,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>The Perceptual Observatory Characterizing Robustness and Grounding in MLLMs</td><td>[2512.15949](http://arxiv.org/pdf/2512.15949)</td><td>◆ Recent advances in multimodal large language models (MLLMs) have yielded increasingly powerful models, yet their perceptual capacities remain poorly characterized.
+◆ In practice, most model families scale language component while reusing nearly identical vision encoders (e.g., Qwen2.5-VL 3B/7B/72B), which raises pivotal concerns about whether progress reflects genuine visual grounding or reliance on internet-scale textual world knowledge.
+◆ Existing evaluation methods emphasize end-task accuracy, overlooking robustness, attribution fidelity, and reasoning under controlled perturbations.</td></tr>
 <tr><td>2025-12-11</td><td>Self-Supervised Contrastive Embedding Adaptation for Endoscopic Image Matching</td><td>[2512.10379](http://arxiv.org/pdf/2512.10379)</td><td>◆ Accurate spatial understanding is essential for image-guided surgery, augmented reality integration and context awareness.
 ◆ In minimally invasive procedures, where visual input is the sole intraoperative modality, establishing precise pixel-level correspondences between endoscopic frames is critical for 3D reconstruction, camera tracking, and scene interpretation.
 ◆ However, the surgical domain presents distinct challenges: weak perspective cues, non-Lambertian tissue reflections, and complex, deformable anatomy degrade the performance of conventional computer vision techniques.</td></tr>
@@ -4642,6 +4657,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>SDFoam: Signed-Distance Foam for explicit surface reconstruction</td><td>[2512.16706](http://arxiv.org/pdf/2512.16706)</td><td>◆ Neural radiance fields (NeRF) have driven impressive progress in view synthesis by using ray-traced volumetric rendering.
+◆ Splatting-based methods such as 3D Gaussian Splatting (3DGS) provide faster rendering by rasterizing 3D primitives.
+◆ RadiantFoam (RF) brought ray tracing back, achieving throughput comparable to Gaussian Splatting by organizing radiance with an explicit Voronoi Diagram (VD).</td></tr>
+<tr><td>2025-12-18</td><td>Using Gaussian Splats to Create High-Fidelity Facial Geometry and Texture</td><td>[2512.16397](http://arxiv.org/pdf/2512.16397)</td><td>◆ We leverage increasingly popular three-dimensional neural representations in order to construct a unified and consistent explanation of a collection of uncalibrated images of the human face.
+◆ Our approach utilizes Gaussian Splatting, since it is more explicit and thus more amenable to constraints than NeRFs.
+◆ We leverage segmentation annotations to align the semantic regions of the face, facilitating the reconstruction of a neutral pose from only 11 images (as opposed to requiring a long video).</td></tr>
 <tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
 ◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
 ◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
@@ -5452,4 +5473,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.18
+> 更新于: 2025.12.19
