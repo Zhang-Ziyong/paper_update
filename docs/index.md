@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.21)
+# 计算机视觉领域最新论文 (2025.12.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2110,6 +2110,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-19</td><td>Robust Scene Coordinate Regression via Geometrically-Consistent Global Descriptors</td><td>[2512.17226](http://arxiv.org/pdf/2512.17226)</td><td>◆ Recent learning-based visual localization methods use global descriptors to disambiguate visually similar places, but existing approaches often derive these descriptors from geometric cues alone (e.g., covisibility graphs), limiting their discriminative power and reducing robustness in the presence of noisy geometric constraints.
+◆ We propose an aggregator module that learns global descriptors consistent with both geometrical structure and visual similarity, ensuring that images are close in descriptor space only when they are visually similar and spatially connected.
+◆ This corrects erroneous associations caused by unreliable overlap scores.</td></tr>
+<tr><td>2025-12-18</td><td>The Effect of Negation on CLIP in Medical Imaging: Limitations of Contrastive Language-Image Pretraining</td><td>[2512.17121](http://arxiv.org/pdf/2512.17121)</td><td>◆ Large vision-language models like CLIP are increasingly used in medical imaging tasks due to their ability to align images and text without the need for extensive labeled data.
+◆ This makes them particularly useful for applications like image retrieval, report generation, and classification in clinical settings.
+◆ A potential issue to this approach is that CLIP-based models often under perform when interpreting negated phrases, which is especially problematic in the context of medical diagnosing.</td></tr>
 <tr><td>2025-12-18</td><td>MACL: Multi-Label Adaptive Contrastive Learning Loss for Remote Sensing Image Retrieval</td><td>[2512.16294](http://arxiv.org/pdf/2512.16294)</td><td>◆ Semantic overlap among land-cover categories, highly imbalanced label distributions, and complex inter-class co-occurrence patterns constitute significant challenges for multi-label remote-sensing image retrieval.
 ◆ In this article, Multi-Label Adaptive Contrastive Learning (MACL) is introduced as an extension of contrastive learning to address them.
 ◆ It integrates label-aware sampling, frequency-sensitive weighting, and dynamic-temperature scaling to achieve balanced representation learning across both common and rare categories.</td></tr>
@@ -5461,4 +5467,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.21
+> 更新于: 2025.12.22
