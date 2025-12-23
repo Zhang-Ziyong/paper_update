@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.22)
+# 计算机视觉领域最新论文 (2025.12.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
+◆ The vertical directions of camera views can be easily obtained using inertial measurement units (IMUs) which have been widely used in autonomous vehicles, mobile phones, and unmanned aerial vehicles (UAVs).
+◆ Given the known vertical directions, our lgorithms only need to solve for two rotation angles and two translation vectors.</td></tr>
 <tr><td>2025-12-18</td><td>SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning</td><td>[2512.16461](http://arxiv.org/pdf/2512.16461)</td><td>◆ Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction.
 ◆ While Vision-Language Models (VLMs) provide open-world semantic priors, they lack grounding in 3D geometry and temporal dynamics.
 ◆ Conversely, geometric perception captures structure and motion but remains semantically sparse.</td></tr>
@@ -1312,7 +1315,7 @@
 <tr><td>2025-12-11</td><td>3D Blood Pulsation Maps</td><td>[2512.10517](http://arxiv.org/pdf/2512.10517)</td><td>◆ We present Pulse3DFace, the first dataset of its kind for estimating 3D blood pulsation maps.
 ◆ These maps can be used to develop models of dynamic facial blood pulsation, enabling the creation of synthetic video data to improve and validate remote pulse estimation methods via photoplethysmography imaging.
 ◆ Additionally, the dataset facilitates research into novel multi-view-based approaches for mitigating illumination effects in blood pulsation analysis.</td></tr>
-<tr><td>2025-12-09</td><td>Selfi: Self Improving Reconstruction Engine via 3D Geometric Feature Alignment</td><td>[2512.08930](http://arxiv.org/pdf/2512.08930)</td><td>◆ Novel View Synthesis (NVS) has traditionally relied on models with explicit 3D inductive biases combined with known camera parameters from Structure-from-Motion (SfM) beforehand.
+<tr><td>2025-12-21</td><td>Selfi: Self Improving Reconstruction Engine via 3D Geometric Feature Alignment</td><td>[2512.08930](http://arxiv.org/pdf/2512.08930)</td><td>◆ Novel View Synthesis (NVS) has traditionally relied on models with explicit 3D inductive biases combined with known camera parameters from Structure-from-Motion (SfM) beforehand.
 ◆ Recent vision foundation models like VGGT take an orthogonal approach -- 3D knowledge is gained implicitly through training data and loss objectives, enabling feed-forward prediction of both camera parameters and 3D representations directly from a set of uncalibrated images.
 ◆ While flexible, VGGT features lack explicit multi-view geometric consistency, and we find that improving such 3D feature consistency benefits both NVS and pose estimation tasks.</td></tr>
 <tr><td>2025-12-08</td><td>Sparse Variable Projection in Robotic Perception: Exploiting Separable Structure for Efficient Nonlinear Optimization</td><td>[2512.07969](http://arxiv.org/pdf/2512.07969)</td><td>◆ Robotic perception often requires solving large nonlinear least-squares (NLS) problems.
@@ -2110,6 +2113,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-22</td><td>Beyond CLIP: Knowledge-Enhanced Multimodal Transformers for Cross-Modal Alignment in Diabetic Retinopathy Diagnosis</td><td>[2512.19663](http://arxiv.org/pdf/2512.19663)</td><td>◆ Diabetic retinopathy (DR) is a leading cause of preventable blindness worldwide, demanding accurate automated diagnostic systems.
+◆ While general-domain vision-language models like Contrastive Language-Image Pre-Training (CLIP) perform well on natural image tasks, they struggle in medical domain applications, particularly in cross-modal retrieval for ophthalmological images.
+◆ We propose a novel knowledge-enhanced joint embedding framework that integrates retinal fundus images, clinical text, and structured patient data through a multimodal transformer architecture to address the critical gap in medical image-text alignment.</td></tr>
+<tr><td>2025-12-22</td><td>Finer-Personalization Rank: Fine-Grained Retrieval Examines Identity Preservation for Personalized Generation</td><td>[2512.19026](http://arxiv.org/pdf/2512.19026)</td><td>◆ The rise of personalized generative models raises a central question: how should we evaluate identity preservation?
+◆ Given a reference image (e.g., one&#x27;s pet), we expect the generated image to retain precise details attached to the subject&#x27;s identity.
+◆ However, current generative evaluation metrics emphasize the overall semantic similarity between the reference and the output, and overlook these fine-grained discriminative details.</td></tr>
+<tr><td>2025-12-21</td><td>Text2Graph VPR: A Text-to-Graph Expert System for Explainable Place Recognition in Changing Environments</td><td>[2512.18613](http://arxiv.org/pdf/2512.18613)</td><td>◆ Visual Place Recognition (VPR) in long-term deployment requires reasoning beyond pixel similarity: systems must make transparent, interpretable decisions that remain robust under lighting, weather and seasonal change.
+◆ We present Text2Graph VPR, an explainable semantic localization system that converts image sequences into textual scene descriptions, parses those descriptions into structured scene graphs, and reasons over the resulting graphs to identify places.
+◆ Scene graphs capture objects, attributes and pairwise relations; we aggregate per-frame graphs into a compact place representation and perform retrieval with a dual-similarity mechanism that fuses learned Graph Attention Network (GAT) embeddings and a Shortest-Path (SP) kernel for structural matching.</td></tr>
+<tr><td>2025-12-20</td><td>Through the PRISm: Importance-Aware Scene Graphs for Image Retrieval</td><td>[2512.18407](http://arxiv.org/pdf/2512.18407)</td><td>◆ Accurately retrieving images that are semantically similar remains a fundamental challenge in computer vision, as traditional methods often fail to capture the relational and contextual nuances of a scene.
+◆ We introduce PRISm (Pruning-based Image Retrieval via Importance Prediction on Semantic Graphs), a multimodal framework that advances image-to-image retrieval through two novel components.
+◆ First, the Importance Prediction Module identifies and retains the most critical objects and relational triplets within an image while pruning irrelevant elements.</td></tr>
 <tr><td>2025-12-19</td><td>Robust Scene Coordinate Regression via Geometrically-Consistent Global Descriptors</td><td>[2512.17226](http://arxiv.org/pdf/2512.17226)</td><td>◆ Recent learning-based visual localization methods use global descriptors to disambiguate visually similar places, but existing approaches often derive these descriptors from geometric cues alone (e.g., covisibility graphs), limiting their discriminative power and reducing robustness in the presence of noisy geometric constraints.
 ◆ We propose an aggregator module that learns global descriptors consistent with both geometrical structure and visual similarity, ensuring that images are close in descriptor space only when they are visually similar and spatially connected.
 ◆ This corrects erroneous associations caused by unreliable overlap scores.</td></tr>
@@ -3930,6 +3945,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-20</td><td>Analog Quantum Image Representation with Qubit-Frugal Encoding</td><td>[2512.18451](http://arxiv.org/pdf/2512.18451)</td><td>◆ In this work, we introduce a fundamentally new paradigm for quantum image representation tailored for neutral-atom quantum devices.
+◆ The proposed method constructs a qubit-efficient image representation by first applying a cartographic generalization algorithm to a classical edge-extracted input image, yielding a highly optimized sparse-dot based geometric description.
+◆ While ensuring the structural integrity of the image, this sparse representation is then embedded into the atomic configuration of Aquila (QuEra Computing Inc.), modeled through the Bloqade simulation software stack.</td></tr>
 <tr><td>2025-12-17</td><td>The Perceptual Observatory Characterizing Robustness and Grounding in MLLMs</td><td>[2512.15949](http://arxiv.org/pdf/2512.15949)</td><td>◆ Recent advances in multimodal large language models (MLLMs) have yielded increasingly powerful models, yet their perceptual capacities remain poorly characterized.
 ◆ In practice, most model families scale language component while reusing nearly identical vision encoders (e.g., Qwen2.5-VL 3B/7B/72B), which raises pivotal concerns about whether progress reflects genuine visual grounding or reliance on internet-scale textual world knowledge.
 ◆ Existing evaluation methods emphasize end-task accuracy, overlooking robustness, attribution fidelity, and reasoning under controlled perturbations.</td></tr>
@@ -4653,6 +4671,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-20</td><td>Joint Learning of Depth, Pose, and Local Radiance Field for Large Scale Monocular 3D Reconstruction</td><td>[2512.18237](http://arxiv.org/pdf/2512.18237)</td><td>◆ Photorealistic 3-D reconstruction from monocular video collapses in large-scale scenes when depth, pose, and radiance are solved in isolation: scale-ambiguous depth yields ghost geometry, long-horizon pose drift corrupts alignment, and a single global NeRF cannot model hundreds of metres of content.
+◆ We introduce a joint learning framework that couples all three factors and demonstrably overcomes each failure case.
+◆ Our system begins with a Vision-Transformer (ViT) depth network trained with metric-scale supervision, giving globally consistent depths despite wide field-of-view variations.</td></tr>
 <tr><td>2025-12-18</td><td>SDFoam: Signed-Distance Foam for explicit surface reconstruction</td><td>[2512.16706](http://arxiv.org/pdf/2512.16706)</td><td>◆ Neural radiance fields (NeRF) have driven impressive progress in view synthesis by using ray-traced volumetric rendering.
 ◆ Splatting-based methods such as 3D Gaussian Splatting (3DGS) provide faster rendering by rasterizing 3D primitives.
 ◆ RadiantFoam (RF) brought ray tracing back, achieving throughput comparable to Gaussian Splatting by organizing radiance with an explicit Voronoi Diagram (VD).</td></tr>
@@ -5467,4 +5488,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.22
+> 更新于: 2025.12.23
