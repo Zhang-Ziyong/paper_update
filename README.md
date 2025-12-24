@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.23)
+# 计算机视觉领域最新论文 (2025.12.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
+◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
 ◆ The vertical directions of camera views can be easily obtained using inertial measurement units (IMUs) which have been widely used in autonomous vehicles, mobile phones, and unmanned aerial vehicles (UAVs).
 ◆ Given the known vertical directions, our lgorithms only need to solve for two rotation angles and two translation vectors.</td></tr>
@@ -1305,6 +1308,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Enhanced Information Security via Wave-Field Selectivity and Structured Wavefront Manipulation</td><td>[2512.19702](http://arxiv.org/pdf/2512.19702)</td><td>◆ In this paper, we propose a novel secure wireless transmission architecture that enables the co-existence of spatial field modulation (SFM) and digital bandpass modulation (DBM), utilizing multi-mode vortex waves and programmable meta-surfaces (PMS).
+◆ Distinct from conventional joint modulation schemes, our approach establishes two logically independent transmission channels--SFM and DBM--thereby eliminating the need for joint signal design or time synchronization.
+◆ Specifically, the orthogonality of vortex wave modes is exploited to construct a high-capacity multi-mode DBM channel, in which each mode carries modulated symbols independently.</td></tr>
 <tr><td>2025-12-18</td><td>An evacuation simulator for pedestrian dynamics based on the Social Force Model</td><td>[2512.16887](http://arxiv.org/pdf/2512.16887)</td><td>◆ The evacuation of pedestrians from enclosed spaces represents a key problem in safety engineering and infrastructure design.
 ◆ Analyzing the collective dynamics that emerge during evacuation processes requires simulation tools capable of capturing individual interactions and spatial constraints realistically.
 ◆ In this work, we present \textit{SiCoBioNa}, an open-source evacuation simulator based on the Social Force Model (SFM).</td></tr>
@@ -2117,6 +2123,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>Towards Natural Language-Based Document Image Retrieval: New Dataset and Benchmark</td><td>[2512.20174](http://arxiv.org/pdf/2512.20174)</td><td>◆ Document image retrieval (DIR) aims to retrieve document images from a gallery according to a given query.
+◆ Existing DIR methods are primarily based on image queries that retrieve documents within the same coarse semantic category, e.g., newspapers or receipts.
+◆ However, these methods struggle to effectively retrieve document images in real-world scenarios where textual queries with fine-grained semantics are usually provided.</td></tr>
 <tr><td>2025-12-22</td><td>Beyond CLIP: Knowledge-Enhanced Multimodal Transformers for Cross-Modal Alignment in Diabetic Retinopathy Diagnosis</td><td>[2512.19663](http://arxiv.org/pdf/2512.19663)</td><td>◆ Diabetic retinopathy (DR) is a leading cause of preventable blindness worldwide, demanding accurate automated diagnostic systems.
 ◆ While general-domain vision-language models like Contrastive Language-Image Pre-Training (CLIP) perform well on natural image tasks, they struggle in medical domain applications, particularly in cross-modal retrieval for ophthalmological images.
 ◆ We propose a novel knowledge-enhanced joint embedding framework that integrates retinal fundus images, clinical text, and structured patient data through a multimodal transformer architecture to address the critical gap in medical image-text alignment.</td></tr>
@@ -4681,6 +4690,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>Dreamcrafter: Immersive Editing of 3D Radiance Fields Through Flexible, Generative Inputs and Outputs</td><td>[2512.20129](http://arxiv.org/pdf/2512.20129)</td><td>◆ Authoring 3D scenes is a central task for spatial computing applications.
+◆ Competing visions for lowering existing barriers are (1) focus on immersive, direct manipulation of 3D content or (2) leverage AI techniques that capture real scenes (3D Radiance Fields such as, NeRFs, 3D Gaussian Splatting) and modify them at a higher level of abstraction, at the cost of high latency.
+◆ We unify the complementary strengths of these approaches and investigate how to integrate generative AI advances into real-time, immersive 3D Radiance Field editing.</td></tr>
 <tr><td>2025-12-20</td><td>Joint Learning of Depth, Pose, and Local Radiance Field for Large Scale Monocular 3D Reconstruction</td><td>[2512.18237](http://arxiv.org/pdf/2512.18237)</td><td>◆ Photorealistic 3-D reconstruction from monocular video collapses in large-scale scenes when depth, pose, and radiance are solved in isolation: scale-ambiguous depth yields ghost geometry, long-horizon pose drift corrupts alignment, and a single global NeRF cannot model hundreds of metres of content.
 ◆ We introduce a joint learning framework that couples all three factors and demonstrably overcomes each failure case.
 ◆ Our system begins with a Vision-Transformer (ViT) depth network trained with metric-scale supervision, giving globally consistent depths despite wide field-of-view variations.</td></tr>
@@ -5500,4 +5512,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.23
+> 更新于: 2025.12.24
