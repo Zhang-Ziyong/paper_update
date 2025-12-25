@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.24)
+# 计算机视觉领域最新论文 (2025.12.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1314,7 +1314,7 @@
 <tr><td>2025-12-18</td><td>An evacuation simulator for pedestrian dynamics based on the Social Force Model</td><td>[2512.16887](http://arxiv.org/pdf/2512.16887)</td><td>◆ The evacuation of pedestrians from enclosed spaces represents a key problem in safety engineering and infrastructure design.
 ◆ Analyzing the collective dynamics that emerge during evacuation processes requires simulation tools capable of capturing individual interactions and spatial constraints realistically.
 ◆ In this work, we present \textit{SiCoBioNa}, an open-source evacuation simulator based on the Social Force Model (SFM).</td></tr>
-<tr><td>2025-12-18</td><td>Hearing to Translate: The Effectiveness of Speech Modality Integration into LLMs</td><td>[2512.16378](http://arxiv.org/pdf/2512.16378)</td><td>◆ As Large Language Models (LLMs) expand beyond text, integrating speech as a native modality has given rise to SpeechLLMs, which aim to translate spoken language directly, thereby bypassing traditional transcription-based pipelines.
+<tr><td>2025-12-24</td><td>Hearing to Translate: The Effectiveness of Speech Modality Integration into LLMs</td><td>[2512.16378](http://arxiv.org/pdf/2512.16378)</td><td>◆ As Large Language Models (LLMs) expand beyond text, integrating speech as a native modality has given rise to SpeechLLMs, which aim to translate spoken language directly, thereby bypassing traditional transcription-based pipelines.
 ◆ Whether this integration improves speech-to-text translation quality over established cascaded architectures, however, remains an open question.
 ◆ We present Hearing to Translate, the first comprehensive test suite rigorously benchmarking 5 state-of-the-art SpeechLLMs against 16 strong direct and cascade systems that couple leading speech foundation models (SFM), with multilingual LLMs.</td></tr>
 <tr><td>2025-12-17</td><td>Robust Multi-view Camera Calibration from Dense Matches</td><td>[2512.15608](http://arxiv.org/pdf/2512.15608)</td><td>◆ Estimating camera intrinsics and extrinsics is a fundamental problem in computer vision, and while advances in structure-from-motion (SfM) have improved accuracy and robustness, open challenges remain.
@@ -2123,6 +2123,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-24</td><td>Leveraging Lightweight Entity Extraction for Scalable Event-Based Image Retrieval</td><td>[2512.21221](http://arxiv.org/pdf/2512.21221)</td><td>◆ Retrieving images from natural language descriptions is a core task at the intersection of computer vision and natural language processing, with wide-ranging applications in search engines, media archiving, and digital content management.
+◆ However, real-world image-text retrieval remains challenging due to vague or context-dependent queries, linguistic variability, and the need for scalable solutions.
+◆ In this work, we propose a lightweight two-stage retrieval pipeline that leverages event-centric entity extraction to incorporate temporal and contextual signals from real-world captions.</td></tr>
+<tr><td>2025-12-24</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
+◆ Using multiple views offers clear advantages, yet this setting remains relatively underexplored and existing methods often struggle to generalize across diverse environments.
+◆ In this work we introduce UniPR-3D, the first VPR architecture that effectively integrates information from multiple views.</td></tr>
+<tr><td>2025-12-23</td><td>Soft Filtering: Guiding Zero-shot Composed Image Retrieval with Prescriptive and Proscriptive Constraints</td><td>[2512.20781](http://arxiv.org/pdf/2512.20781)</td><td>◆ Composed Image Retrieval (CIR) aims to find a target image that aligns with user intent, expressed through a reference image and a modification text.
+◆ While Zero-shot CIR (ZS-CIR) methods sidestep the need for labeled training data by leveraging pretrained vision-language models, they often rely on a single fused query that merges all descriptive cues of what the user wants, tending to dilute key information and failing to account for what they wish to avoid.
+◆ Moreover, current CIR benchmarks assume a single correct target per query, overlooking the ambiguity in modification texts.</td></tr>
 <tr><td>2025-12-23</td><td>Towards Natural Language-Based Document Image Retrieval: New Dataset and Benchmark</td><td>[2512.20174](http://arxiv.org/pdf/2512.20174)</td><td>◆ Document image retrieval (DIR) aims to retrieve document images from a gallery according to a given query.
 ◆ Existing DIR methods are primarily based on image queries that retrieve documents within the same coarse semantic category, e.g., newspapers or receipts.
 ◆ However, these methods struggle to effectively retrieve document images in real-world scenarios where textual queries with fine-grained semantics are usually provided.</td></tr>
@@ -3962,6 +3971,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-24</td><td>VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs</td><td>[2512.21194](http://arxiv.org/pdf/2512.21194)</td><td>◆ Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
+◆ Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
+◆ To address this, we introduce VisRes Bench, a benchmark designed to study visual reasoning in naturalistic settings without contextual language supervision.</td></tr>
 <tr><td>2025-12-20</td><td>Analog Quantum Image Representation with Qubit-Frugal Encoding</td><td>[2512.18451](http://arxiv.org/pdf/2512.18451)</td><td>◆ In this work, we introduce a fundamentally new paradigm for quantum image representation tailored for neutral-atom quantum devices.
 ◆ The proposed method constructs a qubit-efficient image representation by first applying a cartographic generalization algorithm to a classical edge-extracted input image, yielding a highly optimized sparse-dot based geometric description.
 ◆ While ensuring the structural integrity of the image, this sparse representation is then embedded into the atomic configuration of Aquila (QuEra Computing Inc.), modeled through the Bloqade simulation software stack.</td></tr>
@@ -5512,4 +5524,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.24
+> 更新于: 2025.12.25
