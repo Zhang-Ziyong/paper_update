@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.28)
+# 计算机视觉领域最新论文 (2025.12.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+<tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
+◆ To avoid complex SLAM pipelines or heavy temporal models, we propose a lightweight, engineering-oriented framework that leverages SAM 3D Body (3DB) as a frozen perception backbone and uses the Momentum HumanRig (MHR) representation as a robot-friendly intermediate.
+◆ Our method (i) locks the identity and skeleton-scale parameters of per tracked subject to enforce temporally consistent bone lengths, (ii) smooths per-frame predictions via efficient sliding-window optimization in the low-dimensional MHR latent space, and (iii) recovers physically plausible global root trajectories with a differentiable soft foot-ground contact model and contact-aware global optimization.</td></tr>
+<tr><td>2025-12-25</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
 ◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
 ◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
@@ -2123,6 +2126,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-26</td><td>Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer</td><td>[2512.21883](http://arxiv.org/pdf/2512.21883)</td><td>◆ Visual localization has traditionally been formulated as a pair-wise pose regression problem.
+◆ Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates.
+◆ However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments.</td></tr>
 <tr><td>2025-12-24</td><td>Leveraging Lightweight Entity Extraction for Scalable Event-Based Image Retrieval</td><td>[2512.21221](http://arxiv.org/pdf/2512.21221)</td><td>◆ Retrieving images from natural language descriptions is a core task at the intersection of computer vision and natural language processing, with wide-ranging applications in search engines, media archiving, and digital content management.
 ◆ However, real-world image-text retrieval remains challenging due to vague or context-dependent queries, linguistic variability, and the need for scalable solutions.
 ◆ In this work, we propose a lightweight two-stage retrieval pipeline that leverages event-centric entity extraction to incorporate temporal and contextual signals from real-world captions.</td></tr>
@@ -4702,7 +4708,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-23</td><td>Dreamcrafter: Immersive Editing of 3D Radiance Fields Through Flexible, Generative Inputs and Outputs</td><td>[2512.20129](http://arxiv.org/pdf/2512.20129)</td><td>◆ Authoring 3D scenes is a central task for spatial computing applications.
+<tr><td>2025-12-25</td><td>ShinyNeRF: Digitizing Anisotropic Appearance in Neural Radiance Fields</td><td>[2512.21692](http://arxiv.org/pdf/2512.21692)</td><td>◆ Recent advances in digitization technologies have transformed the preservation and dissemination of cultural heritage.
+◆ In this vein, Neural Radiance Fields (NeRF) have emerged as a leading technology for 3D digitization, delivering representations with exceptional realism.
+◆ However, existing methods struggle to accurately model anisotropic specular surfaces, typically observed, for example, on brushed metals.</td></tr>
+<tr><td>2025-12-25</td><td>Dreamcrafter: Immersive Editing of 3D Radiance Fields Through Flexible, Generative Inputs and Outputs</td><td>[2512.20129](http://arxiv.org/pdf/2512.20129)</td><td>◆ Authoring 3D scenes is a central task for spatial computing applications.
 ◆ Competing visions for lowering existing barriers are (1) focus on immersive, direct manipulation of 3D content or (2) leverage AI techniques that capture real scenes (3D Radiance Fields such as, NeRFs, 3D Gaussian Splatting) and modify them at a higher level of abstraction, at the cost of high latency.
 ◆ We unify the complementary strengths of these approaches and investigate how to integrate generative AI advances into real-time, immersive 3D Radiance Field editing.</td></tr>
 <tr><td>2025-12-20</td><td>Joint Learning of Depth, Pose, and Local Radiance Field for Large Scale Monocular 3D Reconstruction</td><td>[2512.18237](http://arxiv.org/pdf/2512.18237)</td><td>◆ Photorealistic 3-D reconstruction from monocular video collapses in large-scale scenes when depth, pose, and radiance are solved in isolation: scale-ambiguous depth yields ghost geometry, long-horizon pose drift corrupts alignment, and a single global NeRF cannot model hundreds of metres of content.
@@ -5524,4 +5533,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.28
+> 更新于: 2025.12.29
