@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.29)
+# 计算机视觉领域最新论文 (2025.12.30)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
+◆ We present Mesquite, an open-source, low-cost inertial motion-capture system that combines a body-worn network of 15 IMU sensor nodes with a hip-worn Android smartphone for position tracking.
+◆ A low-power wireless link streams quaternion orientations to a central USB dongle and a browser-based application for real-time visualization and recording.</td></tr>
+<tr><td>2025-12-26</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
+◆ In cooperative MP-SLAM, information collected by multiple mobile terminals (MTs) is fused to enhance accuracy and robustness.
+◆ Existing methods, however, typically assume perfectly synchronized base stations (BSs) and orthogonal transmission sequences, rendering inter-BS interference at the MTs negligible.</td></tr>
 <tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
 ◆ To avoid complex SLAM pipelines or heavy temporal models, we propose a lightweight, engineering-oriented framework that leverages SAM 3D Body (3DB) as a frozen perception backbone and uses the Momentum HumanRig (MHR) representation as a robot-friendly intermediate.
 ◆ Our method (i) locks the identity and skeleton-scale parameters of per tracked subject to enforce temporally consistent bone lengths, (ii) smooths per-frame predictions via efficient sliding-window optimization in the low-dimensional MHR latent space, and (iii) recovers physically plausible global root trajectories with a differentiable soft foot-ground contact model and contact-aware global optimization.</td></tr>
@@ -2122,13 +2128,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-29</td><td>MindWatcher: Toward Smarter Multimodal Tool-Integrated Reasoning</td><td>[2512.23412](http://arxiv.org/pdf/2512.23412)</td><td>◆ Traditional workflow-based agents exhibit limited intelligence when addressing real-world problems requiring tool invocation.
+◆ Tool-integrated reasoning (TIR) agents capable of autonomous reasoning and tool invocation are rapidly emerging as a powerful approach for complex decision-making tasks involving multi-step interactions with external environments.
+◆ In this work, we introduce MindWatcher, a TIR agent integrating interleaved thinking and multimodal chain-of-thought (CoT) reasoning.</td></tr>
+<tr><td>2025-12-29</td><td>Anomaly Detection by Effectively Leveraging Synthetic Images</td><td>[2512.23227](http://arxiv.org/pdf/2512.23227)</td><td>◆ Anomaly detection plays a vital role in industrial manufacturing.
+◆ Due to the scarcity of real defect images, unsupervised approaches that rely solely on normal images have been extensively studied.
+◆ Recently, diffusion-based generative models brought attention to training data synthesis as an alternative solution.</td></tr>
 <tr><td>2025-12-26</td><td>Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer</td><td>[2512.21883](http://arxiv.org/pdf/2512.21883)</td><td>◆ Visual localization has traditionally been formulated as a pair-wise pose regression problem.
 ◆ Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates.
 ◆ However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments.</td></tr>
 <tr><td>2025-12-24</td><td>Leveraging Lightweight Entity Extraction for Scalable Event-Based Image Retrieval</td><td>[2512.21221](http://arxiv.org/pdf/2512.21221)</td><td>◆ Retrieving images from natural language descriptions is a core task at the intersection of computer vision and natural language processing, with wide-ranging applications in search engines, media archiving, and digital content management.
 ◆ However, real-world image-text retrieval remains challenging due to vague or context-dependent queries, linguistic variability, and the need for scalable solutions.
 ◆ In this work, we propose a lightweight two-stage retrieval pipeline that leverages event-centric entity extraction to incorporate temporal and contextual signals from real-world captions.</td></tr>
-<tr><td>2025-12-24</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
+<tr><td>2025-12-28</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
 ◆ Using multiple views offers clear advantages, yet this setting remains relatively underexplored and existing methods often struggle to generalize across diverse environments.
 ◆ In this work we introduce UniPR-3D, the first VPR architecture that effectively integrates information from multiple views.</td></tr>
 <tr><td>2025-12-23</td><td>Soft Filtering: Guiding Zero-shot Composed Image Retrieval with Prescriptive and Proscriptive Constraints</td><td>[2512.20781](http://arxiv.org/pdf/2512.20781)</td><td>◆ Composed Image Retrieval (CIR) aims to find a target image that aligns with user intent, expressed through a reference image and a modification text.
@@ -4221,7 +4233,7 @@
 <tr><td>2025-11-24</td><td>NI-Tex: Non-isometric Image-based Garment Texture Generation</td><td>[2511.18765](http://arxiv.org/pdf/2511.18765)</td><td>◆ Existing industrial 3D garment meshes already cover most real-world clothing geometries, yet their texture diversity remains limited.
 ◆ To acquire more realistic textures, generative methods are often used to extract Physically-based Rendering (PBR) textures and materials from large collections of wild images and project them back onto garment meshes.
 ◆ However, most image-conditioned texture generation approaches require strict topological consistency between the input image and the input 3D mesh, or rely on accurate mesh deformation to match to the image poses, which significantly constrains the texture generation quality and flexibility.</td></tr>
-<tr><td>2025-11-21</td><td>SPIDER: Spatial Image CorresponDence Estimator for Robust Calibration</td><td>[2511.17750](http://arxiv.org/pdf/2511.17750)</td><td>◆ Reliable image correspondences form the foundation of vision-based spatial perception, enabling recovery of 3D structure and camera poses.
+<tr><td>2025-12-26</td><td>SPIDER: Spatial Image CorresponDence Estimator for Robust Calibration</td><td>[2511.17750](http://arxiv.org/pdf/2511.17750)</td><td>◆ Reliable image correspondences form the foundation of vision-based spatial perception, enabling recovery of 3D structure and camera poses.
 ◆ However, unconstrained feature matching across domains such as aerial, indoor, and outdoor scenes remains challenging due to large variations in appearance, scale and viewpoint.
 ◆ Feature matching has been conventionally formulated as a 2D-to-2D problem; however, recent 3D foundation models provides spatial feature matching properties based on two-view geometry.</td></tr>
 <tr><td>2025-11-21</td><td>SMILE: A Composite Lexical-Semantic Metric for Question-Answering Evaluation</td><td>[2511.17432](http://arxiv.org/pdf/2511.17432)</td><td>◆ Traditional evaluation metrics for textual and visual question answering, like ROUGE, METEOR, and Exact Match (EM), focus heavily on n-gram based lexical similarity, often missing the deeper semantic understanding needed for accurate assessment.
@@ -5521,4 +5533,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.29
+> 更新于: 2025.12.30
