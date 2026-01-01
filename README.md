@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.12.31)
+# 计算机视觉领域最新论文 (2026.01.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,10 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
+◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
 ◆ We present Mesquite, an open-source, low-cost inertial motion-capture system that combines a body-worn network of 15 IMU sensor nodes with a hip-worn Android smartphone for position tracking.
 ◆ A low-power wireless link streams quaternion orientations to a central USB dongle and a browser-based application for real-time visualization and recording.</td></tr>
-<tr><td>2025-12-26</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
+<tr><td>2025-12-30</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
 ◆ In cooperative MP-SLAM, information collected by multiple mobile terminals (MTs) is fused to enhance accuracy and robustness.
 ◆ Existing methods, however, typically assume perfectly synchronized base stations (BSs) and orthogonal transmission sequences, rendering inter-BS interference at the MTs negligible.</td></tr>
 <tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
@@ -1317,6 +1320,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>3D Semantic Segmentation for Post-Disaster Assessment</td><td>[2512.24593](http://arxiv.org/pdf/2512.24593)</td><td>◆ The increasing frequency of natural disasters poses severe threats to human lives and leads to substantial economic losses.
+◆ While 3D semantic segmentation is crucial for post-disaster assessment, existing deep learning models lack datasets specifically designed for post-disaster environments.
+◆ To address this gap, we constructed a specialized 3D dataset using unmanned aerial vehicles (UAVs)-captured aerial footage of Hurricane Ian (2022) over affected areas, employing Structure-from-Motion (SfM) and Multi-View Stereo (MVS) techniques to reconstruct 3D point clouds.</td></tr>
 <tr><td>2025-12-11</td><td>Enhanced Information Security via Wave-Field Selectivity and Structured Wavefront Manipulation</td><td>[2512.19702](http://arxiv.org/pdf/2512.19702)</td><td>◆ In this paper, we propose a novel secure wireless transmission architecture that enables the co-existence of spatial field modulation (SFM) and digital bandpass modulation (DBM), utilizing multi-mode vortex waves and programmable meta-surfaces (PMS).
 ◆ Distinct from conventional joint modulation schemes, our approach establishes two logically independent transmission channels--SFM and DBM--thereby eliminating the need for joint signal design or time synchronization.
 ◆ Specifically, the orthogonality of vortex wave modes is exploited to construct a high-capacity multi-mode DBM channel, in which each mode carries modulated symbols independently.</td></tr>
@@ -2132,6 +2138,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>OCP-LS: An Efficient Algorithm for Visual Localization</td><td>[2512.24552](http://arxiv.org/pdf/2512.24552)</td><td>◆ This paper proposes a novel second-order optimization algorithm.
+◆ It aims to address large-scale optimization problems in deep learning because it incorporates the OCP method and appropriately approximating the diagonal elements of the Hessian matrix.
+◆ Extensive experiments on multiple standard visual localization benchmarks demonstrate the significant superiority of the proposed method.</td></tr>
+<tr><td>2025-12-30</td><td>Geometric Multi-Session Map Merging with Learned Local Descriptors</td><td>[2512.24384](http://arxiv.org/pdf/2512.24384)</td><td>◆ Multi-session map merging is crucial for extended autonomous operations in large-scale environments.
+◆ In this paper, we present GMLD, a learning-based local descriptor framework for large-scale multi-session point cloud map merging that systematically aligns maps collected across different sessions with overlapping regions.
+◆ The proposed framework employs a keypoint-aware encoder and a plane-based geometric transformer to extract discriminative features for loop closure detection and relative pose estimation.</td></tr>
+<tr><td>2025-12-29</td><td>Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation</td><td>[2512.23864](http://arxiv.org/pdf/2512.23864)</td><td>◆ Vision-Language-Action (VLA) models have shown remarkable generalization by mapping web-scale knowledge to robotic control, yet they remain blind to physical contact.
+◆ Consequently, they struggle with contact-rich manipulation tasks that require reasoning about force, texture, and slip.
+◆ While some approaches incorporate low-dimensional tactile signals, they fail to capture the high-resolution dynamics essential for such interactions.</td></tr>
 <tr><td>2025-12-29</td><td>MindWatcher: Toward Smarter Multimodal Tool-Integrated Reasoning</td><td>[2512.23412](http://arxiv.org/pdf/2512.23412)</td><td>◆ Traditional workflow-based agents exhibit limited intelligence when addressing real-world problems requiring tool invocation.
 ◆ Tool-integrated reasoning (TIR) agents capable of autonomous reasoning and tool invocation are rapidly emerging as a powerful approach for complex decision-making tasks involving multi-step interactions with external environments.
 ◆ In this work, we introduce MindWatcher, a TIR agent integrating interleaved thinking and multimodal chain-of-thought (CoT) reasoning.</td></tr>
@@ -3599,6 +3614,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>GenZ: Foundational models as latent variable generators within traditional statistical models</td><td>[2512.24834](http://arxiv.org/pdf/2512.24834)</td><td>◆ We present GenZ, a hybrid model that bridges foundational models and statistical modeling through interpretable semantic features.
+◆ While large language models possess broad domain knowledge, they often fail to capture dataset-specific patterns critical for prediction tasks.
+◆ Our approach addresses this by discovering semantic feature descriptions through an iterative process that contrasts groups of items identified via statistical modeling errors, rather than relying solely on the foundational model&#x27;s domain understanding.</td></tr>
 <tr><td>2025-12-17</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
 ◆ We propose BLANKET (Baby-face Landmark-preserving ANonymization with Keypoint dEtection consisTency), a novel approach designed to anonymize infant faces in video recordings while preserving essential facial attributes.
 ◆ Our method comprises two stages.</td></tr>
@@ -3989,6 +4007,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>Quantum Visual Word Sense Disambiguation: Unraveling Ambiguities Through Quantum Inference Model</td><td>[2512.24687](http://arxiv.org/pdf/2512.24687)</td><td>◆ Visual word sense disambiguation focuses on polysemous words, where candidate images can be easily confused.
+◆ Traditional methods use classical probability to calculate the likelihood of an image matching each gloss of the target word, summing these to form a posterior probability.
+◆ However, due to the challenge of semantic uncertainty, glosses from different sources inevitably carry semantic biases, which can lead to biased disambiguation results.</td></tr>
 <tr><td>2025-12-24</td><td>VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs</td><td>[2512.21194](http://arxiv.org/pdf/2512.21194)</td><td>◆ Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
 ◆ Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
 ◆ To address this, we introduce VisRes Bench, a benchmark designed to study visual reasoning in naturalistic settings without contextual language supervision.</td></tr>
@@ -4720,6 +4741,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>UniC-Lift: Unified 3D Instance Segmentation via Contrastive Learning</td><td>[2512.24763](http://arxiv.org/pdf/2512.24763)</td><td>◆ 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) have advanced novel-view synthesis.
+◆ Recent methods extend multi-view 2D segmentation to 3D, enabling instance/semantic segmentation for better scene understanding.
+◆ A key challenge is the inconsistency of 2D instance labels across views, leading to poor 3D predictions.</td></tr>
 <tr><td>2025-12-25</td><td>ShinyNeRF: Digitizing Anisotropic Appearance in Neural Radiance Fields</td><td>[2512.21692](http://arxiv.org/pdf/2512.21692)</td><td>◆ Recent advances in digitization technologies have transformed the preservation and dissemination of cultural heritage.
 ◆ In this vein, Neural Radiance Fields (NeRF) have emerged as a leading technology for 3D digitization, delivering representations with exceptional realism.
 ◆ However, existing methods struggle to accurately model anisotropic specular surfaces, typically observed, for example, on brushed metals.</td></tr>
@@ -5545,4 +5569,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.31
+> 更新于: 2026.01.01
