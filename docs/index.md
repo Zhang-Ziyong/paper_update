@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.04)
+# 计算机视觉领域最新论文 (2026.01.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+<tr><td>2025-12-28</td><td>RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization</td><td>[2601.00705](http://arxiv.org/pdf/2601.00705)</td><td>◆ We introduce RGS-SLAM, a robust Gaussian-splatting SLAM framework that replaces the residual-driven densification stage of GS-SLAM with a training-free correspondence-to-Gaussian initialization.
+◆ Instead of progressively adding Gaussians as residuals reveal missing geometry, RGS-SLAM performs a one-shot triangulation of dense multi-view correspondences derived from DINOv3 descriptors refined through a confidence-aware inlier classifier, generating a well-distributed and structure-aware Gaussian seed prior to optimization.
+◆ This initialization stabilizes early mapping and accelerates convergence by roughly 20\%, yielding higher rendering fidelity in texture-rich and cluttered scenes while remaining fully compatible with existing GS-SLAM pipelines.</td></tr>
+<tr><td>2026-01-02</td><td>Variable Elimination in Hybrid Factor Graphs for Discrete-Continuous Inference &amp; Estimation</td><td>[2601.00545](http://arxiv.org/pdf/2601.00545)</td><td>◆ Many hybrid problems in robotics involve both continuous and discrete components, and modeling them together for estimation tasks has been a long standing and difficult problem.
+◆ Hybrid Factor Graphs give us a mathematical framework to model these types of problems, however existing approaches for solving them are based on approximations.
+◆ In this work, we propose an efficient Hybrid Factor Graph framework alongwith a variable elimination algorithm to produce a hybrid Bayes network, which can then be used for exact Maximum A Posteriori estimation and marginalization over both sets of variables.</td></tr>
+<tr><td>2026-01-01</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
 ◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
 ◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
@@ -2134,6 +2140,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-01</td><td>Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach</td><td>[2601.00388](http://arxiv.org/pdf/2601.00388)</td><td>◆ Recent advances in vision-language models have opened up new possibilities for reasoning-driven image geolocalization.
+◆ However, existing approaches often rely on synthetic reasoning annotations or external image retrieval, which can limit interpretability and generalizability.
+◆ In this paper, we present Geo-R, a retrieval-free framework that uncovers structured reasoning paths from existing ground-truth coordinates and optimizes geolocation accuracy via reinforcement learning.</td></tr>
 <tr><td>2025-12-31</td><td>OCP-LS: An Efficient Algorithm for Visual Localization</td><td>[2512.24552](http://arxiv.org/pdf/2512.24552)</td><td>◆ This paper proposes a novel second-order optimization algorithm.
 ◆ It aims to address large-scale optimization problems in deep learning because it incorporates the OCP method and appropriately approximating the diagonal elements of the Hessian matrix.
 ◆ Extensive experiments on multiple standard visual localization benchmarks demonstrate the significant superiority of the proposed method.</td></tr>
@@ -4731,6 +4740,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-01</td><td>CropNeRF: A Neural Radiance Field-Based Framework for Crop Counting</td><td>[2601.00207](http://arxiv.org/pdf/2601.00207)</td><td>◆ Rigorous crop counting is crucial for effective agricultural management and informed intervention strategies.
+◆ However, in outdoor field environments, partial occlusions combined with inherent ambiguity in distinguishing clustered crops from individual viewpoints poses an immense challenge for image-based segmentation methods.
+◆ To address these problems, we introduce a novel crop counting framework designed for exact enumeration via 3D instance segmentation.</td></tr>
+<tr><td>2025-12-20</td><td>Neural Brain Fields: A NeRF-Inspired Approach for Generating Nonexistent EEG Electrodes</td><td>[2601.00012](http://arxiv.org/pdf/2601.00012)</td><td>◆ Electroencephalography (EEG) data present unique modeling challenges because recordings vary in length, exhibit very low signal to noise ratios, differ significantly across participants, drift over time within sessions, and are rarely available in large and clean datasets.
+◆ Consequently, developing deep learning methods that can effectively process EEG signals remains an open and important research problem.
+◆ To tackle this problem, this work presents a new method inspired by Neural Radiance Fields (NeRF).</td></tr>
 <tr><td>2025-12-31</td><td>UniC-Lift: Unified 3D Instance Segmentation via Contrastive Learning</td><td>[2512.24763](http://arxiv.org/pdf/2512.24763)</td><td>◆ 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) have advanced novel-view synthesis.
 ◆ Recent methods extend multi-view 2D segmentation to 3D, enabling instance/semantic segmentation for better scene understanding.
 ◆ A key challenge is the inconsistency of 2D instance labels across views, leading to poor 3D predictions.</td></tr>
@@ -5557,4 +5572,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.04
+> 更新于: 2026.01.05
