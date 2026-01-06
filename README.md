@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.05)
+# 计算机视觉领域最新论文 (2026.01.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
+◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
+◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
+<tr><td>2026-01-05</td><td>Differential Barometric Altimetry for Submeter Vertical Localization and Floor Recognition Indoors</td><td>[2601.02184](http://arxiv.org/pdf/2601.02184)</td><td>◆ Accurate altitude estimation and reliable floor recognition are critical for mobile robot localization and navigation within complex multi-storey environments.
+◆ In this paper, we present a robust, low-cost vertical estimation framework leveraging differential barometric sensing integrated within a fully ROS-compliant software package.
+◆ Our system simultaneously publishes real-time altitude data from both a stationary base station and a mobile sensor, enabling precise and drift-free vertical localization.</td></tr>
+<tr><td>2026-01-03</td><td>VISO: Robust Underwater Visual-Inertial-Sonar SLAM with Photometric Rendering for Dense 3D Reconstruction</td><td>[2601.01144](http://arxiv.org/pdf/2601.01144)</td><td>◆ Visual challenges in underwater environments significantly hinder the accuracy of vision-based localisation and the high-fidelity dense reconstruction.
+◆ In this paper, we propose VISO, a robust underwater SLAM system that fuses a stereo camera, an inertial measurement unit (IMU), and a 3D sonar to achieve accurate 6-DoF localisation and enable efficient dense 3D reconstruction with high photometric fidelity.
+◆ We introduce a coarse-to-fine online calibration approach for extrinsic parameters estimation between the 3D sonar and the camera.</td></tr>
 <tr><td>2025-12-28</td><td>RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization</td><td>[2601.00705](http://arxiv.org/pdf/2601.00705)</td><td>◆ We introduce RGS-SLAM, a robust Gaussian-splatting SLAM framework that replaces the residual-driven densification stage of GS-SLAM with a training-free correspondence-to-Gaussian initialization.
 ◆ Instead of progressively adding Gaussians as residuals reveal missing geometry, RGS-SLAM performs a one-shot triangulation of dense multi-view correspondences derived from DINOv3 descriptors refined through a confidence-aware inlier classifier, generating a well-distributed and structure-aware Gaussian seed prior to optimization.
 ◆ This initialization stabilizes early mapping and accelerates convergence by roughly 20\%, yielding higher rendering fidelity in texture-rich and cluttered scenes while remaining fully compatible with existing GS-SLAM pipelines.</td></tr>
@@ -2144,7 +2153,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-01</td><td>Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach</td><td>[2601.00388](http://arxiv.org/pdf/2601.00388)</td><td>◆ Recent advances in vision-language models have opened up new possibilities for reasoning-driven image geolocalization.
+<tr><td>2026-01-05</td><td>Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach</td><td>[2601.00388](http://arxiv.org/pdf/2601.00388)</td><td>◆ Recent advances in vision-language models have opened up new possibilities for reasoning-driven image geolocalization.
 ◆ However, existing approaches often rely on synthetic reasoning annotations or external image retrieval, which can limit interpretability and generalizability.
 ◆ In this paper, we present Geo-R, a retrieval-free framework that uncovers structured reasoning paths from existing ground-truth coordinates and optimizes geolocation accuracy via reinforcement learning.</td></tr>
 <tr><td>2025-12-31</td><td>OCP-LS: An Efficient Algorithm for Visual Localization</td><td>[2512.24552](http://arxiv.org/pdf/2512.24552)</td><td>◆ This paper proposes a novel second-order optimization algorithm.
@@ -3623,6 +3632,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-02</td><td>UnrealPose: Leveraging Game Engine Kinematics for Large-Scale Synthetic Human Pose Data</td><td>[2601.00991](http://arxiv.org/pdf/2601.00991)</td><td>◆ Diverse, accurately labeled 3D human pose data is expensive and studio-bound, while in-the-wild datasets lack known ground truth.
+◆ We introduce UnrealPose-Gen, an Unreal Engine 5 pipeline built on Movie Render Queue for high-quality offline rendering.
+◆ Our generated frames include: (i) 3D joints in world and camera coordinates, (ii) 2D projections and COCO-style keypoints with occlusion and joint-visibility flags, (iii) person bounding boxes, and (iv) camera intrinsics and extrinsics.</td></tr>
 <tr><td>2025-12-31</td><td>GenZ: Foundational models as latent variable generators within traditional statistical models</td><td>[2512.24834](http://arxiv.org/pdf/2512.24834)</td><td>◆ We present GenZ, a hybrid model that bridges foundational models and statistical modeling through interpretable semantic features.
 ◆ While large language models possess broad domain knowledge, they often fail to capture dataset-specific patterns critical for prediction tasks.
 ◆ Our approach addresses this by discovering semantic feature descriptions through an iterative process that contrasts groups of items identified via statistical modeling errors, rather than relying solely on the foundational model&#x27;s domain understanding.</td></tr>
@@ -4016,6 +4028,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>Exact Clique Number Manipulation via Edge Interdiction</td><td>[2601.01869](http://arxiv.org/pdf/2601.01869)</td><td>◆ The Edge Interdiction Clique Problem (EICP) aims to remove at most $k$ edges from a graph so as to minimize the size of the largest clique in the remaining graph.
+◆ This problem captures a fundamental question in graph manipulation: which edges are structurally critical for preserving large cliques?
+◆ Such a problem is also motivated by practical applications including protein function maintenance and image matching.</td></tr>
 <tr><td>2025-12-31</td><td>Quantum Visual Word Sense Disambiguation: Unraveling Ambiguities Through Quantum Inference Model</td><td>[2512.24687](http://arxiv.org/pdf/2512.24687)</td><td>◆ Visual word sense disambiguation focuses on polysemous words, where candidate images can be easily confused.
 ◆ Traditional methods use classical probability to calculate the likelihood of an image matching each gloss of the target word, summing these to form a posterior probability.
 ◆ However, due to the challenge of semantic uncertainty, glosses from different sources inevitably carry semantic biases, which can lead to biased disambiguation results.</td></tr>
@@ -4750,6 +4765,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-04</td><td>EdgeNeRF: Edge-Guided Regularization for Neural Radiance Fields from Sparse Views</td><td>[2601.01431](http://arxiv.org/pdf/2601.01431)</td><td>◆ Neural Radiance Fields (NeRF) achieve remarkable performance in dense multi-view scenarios, but their reconstruction quality degrades significantly under sparse inputs due to geometric artifacts.
+◆ Existing methods utilize global depth regularization to mitigate artifacts, leading to the loss of geometric boundary details.
+◆ To address this problem, we propose EdgeNeRF, an edge-guided sparse-view 3D reconstruction algorithm.</td></tr>
 <tr><td>2026-01-01</td><td>CropNeRF: A Neural Radiance Field-Based Framework for Crop Counting</td><td>[2601.00207](http://arxiv.org/pdf/2601.00207)</td><td>◆ Rigorous crop counting is crucial for effective agricultural management and informed intervention strategies.
 ◆ However, in outdoor field environments, partial occlusions combined with inherent ambiguity in distinguishing clustered crops from individual viewpoints poses an immense challenge for image-based segmentation methods.
 ◆ To address these problems, we introduce a novel crop counting framework designed for exact enumeration via 3D instance segmentation.</td></tr>
@@ -5584,4 +5602,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.05
+> 更新于: 2026.01.06
