@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.06)
+# 计算机视觉领域最新论文 (2026.01.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
+◆ We propose a method to improve loop closure performance in DPV-SLAM.
+◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
 <tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
 ◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
 ◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
@@ -2153,6 +2156,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>HOLO: Homography-Guided Pose Estimator Network for Fine-Grained Visual Localization on SD Maps</td><td>[2601.02730](http://arxiv.org/pdf/2601.02730)</td><td>◆ Visual localization on standard-definition (SD) maps has emerged as a promising low-cost and scalable solution for autonomous driving.
+◆ However, existing regression-based approaches often overlook inherent geometric priors, resulting in suboptimal training efficiency and limited localization accuracy.
+◆ In this paper, we propose a novel homography-guided pose estimator network for fine-grained visual localization between multi-view images and standard-definition (SD) maps.</td></tr>
+<tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
+◆ We propose a method to improve loop closure performance in DPV-SLAM.
+◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
+<tr><td>2026-01-05</td><td>Comparative Analysis of Binarization Methods For Medical Image Hashing On Odir Dataset</td><td>[2601.02564](http://arxiv.org/pdf/2601.02564)</td><td>◆ In this study, we evaluated four binarization methods.
+◆ Locality-Sensitive Hashing (LSH), Iterative Quantization (ITQ), Kernel-based Supervised Hashing (KSH), and Supervised Discrete Hashing (SDH) on the ODIR dataset using deep feature embeddings.
+◆ Experimental results show that SDH achieved the best performance, with an mAP@100 of 0.9184 using only 32-bit codes, outperforming LSH, ITQ, and KSH.</td></tr>
 <tr><td>2026-01-05</td><td>Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach</td><td>[2601.00388](http://arxiv.org/pdf/2601.00388)</td><td>◆ Recent advances in vision-language models have opened up new possibilities for reasoning-driven image geolocalization.
 ◆ However, existing approaches often rely on synthetic reasoning annotations or external image retrieval, which can limit interpretability and generalizability.
 ◆ In this paper, we present Geo-R, a retrieval-free framework that uncovers structured reasoning paths from existing ground-truth coordinates and optimizes geolocation accuracy via reinforcement learning.</td></tr>
@@ -5602,4 +5614,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.06
+> 更新于: 2026.01.07
