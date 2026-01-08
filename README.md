@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.07)
+# 计算机视觉领域最新论文 (2026.01.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2156,7 +2156,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-06</td><td>HOLO: Homography-Guided Pose Estimator Network for Fine-Grained Visual Localization on SD Maps</td><td>[2601.02730](http://arxiv.org/pdf/2601.02730)</td><td>◆ Visual localization on standard-definition (SD) maps has emerged as a promising low-cost and scalable solution for autonomous driving.
+<tr><td>2026-01-07</td><td>ImLoc: Revisiting Visual Localization with Image-based Representation</td><td>[2601.04185](http://arxiv.org/pdf/2601.04185)</td><td>◆ Existing visual localization methods are typically either 2D image-based, which are easy to build and maintain but limited in effective geometric reasoning, or 3D structure-based, which achieve high accuracy but require a centralized reconstruction and are difficult to update.
+◆ In this work, we revisit visual localization with a 2D image-based representation and propose to augment each image with estimated depth maps to capture the geometric structure.
+◆ Supported by the effective use of dense matchers, this representation is not only easy to build and maintain, but achieves highest accuracy in challenging conditions.</td></tr>
+<tr><td>2026-01-07</td><td>CSMCIR: CoT-Enhanced Symmetric Alignment with Memory Bank for Composed Image Retrieval</td><td>[2601.03728](http://arxiv.org/pdf/2601.03728)</td><td>◆ Composed Image Retrieval (CIR) enables users to search for target images using both a reference image and manipulation text, offering substantial advantages over single-modality retrieval systems.
+◆ However, existing CIR methods suffer from representation space fragmentation: queries and targets comprise heterogeneous modalities and are processed by distinct encoders, forcing models to bridge misaligned representation spaces only through post-hoc alignment, which fundamentally limits retrieval performance.
+◆ This architectural asymmetry manifests as three distinct, well-separated clusters in the feature space, directly demonstrating how heterogeneous modalities create fundamentally misaligned representation spaces from initialization.</td></tr>
+<tr><td>2026-01-07</td><td>BREATH-VL: Vision-Language-Guided 6-DoF Bronchoscopy Localization via Semantic-Geometric Fusion</td><td>[2601.03713](http://arxiv.org/pdf/2601.03713)</td><td>◆ Vision-language models (VLMs) have recently shown remarkable performance in navigation and localization tasks by leveraging large-scale pretraining for semantic understanding.
+◆ However, applying VLMs to 6-DoF endoscopic camera localization presents several challenges: 1) the lack of large-scale, high-quality, densely annotated, and localization-oriented vision-language datasets in real-world medical settings; 2) limited capability for fine-grained pose regression; and 3) high computational latency when extracting temporal features from past frames.
+◆ To address these issues, we first construct BREATH dataset, the largest in-vivo endoscopic localization dataset to date, collected in the complex human airway.</td></tr>
+<tr><td>2026-01-07</td><td>HOLO: Homography-Guided Pose Estimator Network for Fine-Grained Visual Localization on SD Maps</td><td>[2601.02730](http://arxiv.org/pdf/2601.02730)</td><td>◆ Visual localization on standard-definition (SD) maps has emerged as a promising low-cost and scalable solution for autonomous driving.
 ◆ However, existing regression-based approaches often overlook inherent geometric priors, resulting in suboptimal training efficiency and limited localization accuracy.
 ◆ In this paper, we propose a novel homography-guided pose estimator network for fine-grained visual localization between multi-view images and standard-definition (SD) maps.</td></tr>
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
@@ -4777,6 +4786,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
+◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
+◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
 <tr><td>2026-01-04</td><td>EdgeNeRF: Edge-Guided Regularization for Neural Radiance Fields from Sparse Views</td><td>[2601.01431](http://arxiv.org/pdf/2601.01431)</td><td>◆ Neural Radiance Fields (NeRF) achieve remarkable performance in dense multi-view scenarios, but their reconstruction quality degrades significantly under sparse inputs due to geometric artifacts.
 ◆ Existing methods utilize global depth regularization to mitigate artifacts, leading to the loss of geometric boundary details.
 ◆ To address this problem, we propose EdgeNeRF, an edge-guided sparse-view 3D reconstruction algorithm.</td></tr>
@@ -5614,4 +5626,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.07
+> 更新于: 2026.01.08
