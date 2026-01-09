@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.08)
+# 计算机视觉领域最新论文 (2026.01.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>Discrete Fourier Transform-based Point Cloud Compression for Efficient SLAM in Featureless Terrain</td><td>[2601.04551](http://arxiv.org/pdf/2601.04551)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is an essential technology for the efficiency and reliability of unmanned robotic exploration missions.
+◆ While the onboard computational capability and communication bandwidth are critically limited, the point cloud data handled by SLAM is large in size, attracting attention to data compression methods.
+◆ To address such a problem, in this paper, we propose a new method for compressing point cloud maps by exploiting the Discrete Fourier Transform (DFT).</td></tr>
+<tr><td>2026-01-08</td><td>Fast Continuum Robot Shape and External Load State Estimation on SE(3)</td><td>[2601.04493](http://arxiv.org/pdf/2601.04493)</td><td>◆ Previous on-manifold approaches to continuum robot state estimation have typically adopted simplified Cosserat rod models, which cannot directly account for actuation inputs or external loads.
+◆ We introduce a general framework that incorporates uncertainty models for actuation (e.g., tendon tensions), applied forces and moments, process noise, boundary conditions, and arbitrary backbone measurements.
+◆ By adding temporal priors across time steps, our method additionally performs joint estimation in both the spatial (arclength) and temporal domains, enabling full \textit{spacetime} state estimation.</td></tr>
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
@@ -2171,7 +2177,7 @@
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
-<tr><td>2026-01-05</td><td>Comparative Analysis of Binarization Methods For Medical Image Hashing On Odir Dataset</td><td>[2601.02564](http://arxiv.org/pdf/2601.02564)</td><td>◆ In this study, we evaluated four binarization methods.
+<tr><td>2026-01-07</td><td>Comparative Analysis of Binarization Methods For Medical Image Hashing On Odir Dataset</td><td>[2601.02564](http://arxiv.org/pdf/2601.02564)</td><td>◆ In this study, we evaluated four binarization methods.
 ◆ Locality-Sensitive Hashing (LSH), Iterative Quantization (ITQ), Kernel-based Supervised Hashing (KSH), and Supervised Discrete Hashing (SDH) on the ODIR dataset using deep feature embeddings.
 ◆ Experimental results show that SDH achieved the best performance, with an mAP@100 of 0.9184 using only 32-bit codes, outperforming LSH, ITQ, and KSH.</td></tr>
 <tr><td>2026-01-05</td><td>Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach</td><td>[2601.00388](http://arxiv.org/pdf/2601.00388)</td><td>◆ Recent advances in vision-language models have opened up new possibilities for reasoning-driven image geolocalization.
@@ -4786,6 +4792,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>QNeRF: Neural Radiance Fields on a Simulated Gate-Based Quantum Computer</td><td>[2601.05250](http://arxiv.org/pdf/2601.05250)</td><td>◆ Recently, Quantum Visual Fields (QVFs) have shown promising improvements in model compactness and convergence speed for learning the provided 2D or 3D signals.
+◆ Meanwhile, novel-view synthesis has seen major advances with Neural Radiance Fields (NeRFs), where models learn a compact representation from 2D images to render 3D scenes, albeit at the cost of larger models and intensive training.
+◆ In this work, we extend the approach of QVFs by introducing QNeRF, the first hybrid quantum-classical model designed for novel-view synthesis from 2D images.</td></tr>
+<tr><td>2026-01-08</td><td>DivAS: Interactive 3D Segmentation of NeRFs via Depth-Weighted Voxel Aggregation</td><td>[2601.04860](http://arxiv.org/pdf/2601.04860)</td><td>◆ Existing methods for segmenting Neural Radiance Fields (NeRFs) are often optimization-based, requiring slow per-scene training that sacrifices the zero-shot capabilities of 2D foundation models.
+◆ We introduce DivAS (Depth-interactive Voxel Aggregation Segmentation), an optimization-free, fully interactive framework that addresses these limitations.
+◆ Our method operates via a fast GUI-based workflow where 2D SAM masks, generated from user point prompts, are refined using NeRF-derived depth priors to improve geometric accuracy and foreground-background separation.</td></tr>
+<tr><td>2026-01-07</td><td>In-SRAM Radiant Foam Rendering on a Graph Processor</td><td>[2601.04382](http://arxiv.org/pdf/2601.04382)</td><td>◆ Many emerging many-core accelerators replace a single large device memory with hundreds to thousands of lightweight cores, each owning only a small local SRAM and exchanging data via explicit on-chip communication.
+◆ This organization offers high aggregate bandwidth, but it breaks a key assumption behind many volumetric rendering techniques: that rays can randomly access a large, unified scene representation.
+◆ Rendering efficiently on such hardware therefore requires distributing both data and computation, keeping ray traversal mostly local, and structuring communication into predictable routes.</td></tr>
 <tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
 ◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
 ◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
@@ -5626,4 +5641,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.08
+> 更新于: 2026.01.09
