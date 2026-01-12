@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.11)
+# 计算机视觉领域最新论文 (2026.01.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
+◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
+◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
+<tr><td>2026-01-09</td><td>FeatureSLAM: Feature-enriched 3D gaussian splatting SLAM in real time</td><td>[2601.05738](http://arxiv.org/pdf/2601.05738)</td><td>◆ We present a real-time tracking SLAM system that unifies efficient camera tracking with photorealistic feature-enriched mapping using 3D Gaussian Splatting (3DGS).
+◆ Our main contribution is integrating dense feature rasterization into the novel-view synthesis, aligned with a visual foundation model.
+◆ This yields strong semantics, going beyond basic RGB-D input, aiding both tracking and mapping accuracy.</td></tr>
 <tr><td>2026-01-08</td><td>Discrete Fourier Transform-based Point Cloud Compression for Efficient SLAM in Featureless Terrain</td><td>[2601.04551](http://arxiv.org/pdf/2601.04551)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is an essential technology for the efficiency and reliability of unmanned robotic exploration missions.
 ◆ While the onboard computational capability and communication bandwidth are critically limited, the point cloud data handled by SLAM is large in size, attracting attention to data compression methods.
 ◆ To address such a problem, in this paper, we propose a new method for compressing point cloud maps by exploiting the Discrete Fourier Transform (DFT).</td></tr>
@@ -31,7 +37,7 @@
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
-<tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
+<tr><td>2026-01-09</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
 ◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
 ◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
 <tr><td>2026-01-05</td><td>Differential Barometric Altimetry for Submeter Vertical Localization and Floor Recognition Indoors</td><td>[2601.02184](http://arxiv.org/pdf/2601.02184)</td><td>◆ Accurate altitude estimation and reliable floor recognition are critical for mobile robot localization and navigation within complex multi-storey environments.
@@ -1344,6 +1350,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
+◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
+◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
 <tr><td>2025-12-31</td><td>3D Semantic Segmentation for Post-Disaster Assessment</td><td>[2512.24593](http://arxiv.org/pdf/2512.24593)</td><td>◆ The increasing frequency of natural disasters poses severe threats to human lives and leads to substantial economic losses.
 ◆ While 3D semantic segmentation is crucial for post-disaster assessment, existing deep learning models lack datasets specifically designed for post-disaster environments.
 ◆ To address this gap, we constructed a specialized 3D dataset using unmanned aerial vehicles (UAVs)-captured aerial footage of Hurricane Ian (2022) over affected areas, employing Structure-from-Motion (SfM) and Multi-View Stereo (MVS) techniques to reconstruct 3D point clouds.</td></tr>
@@ -2162,6 +2171,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>Multi-task Cross-modal Learning for Chest X-ray Image Retrieval</td><td>[2601.05399](http://arxiv.org/pdf/2601.05399)</td><td>◆ CLIP and BiomedCLIP are examples of vision-language foundation models and offer strong cross-modal embeddings; however, they are not optimized for fine-grained medical retrieval tasks, such as retrieving clinically relevant radiology reports using chest X-ray (CXR) image queries.
+◆ To address this shortcoming, we propose a multi-task learning framework to fine-tune BiomedCLIP and evaluate improvements to CXR image-text retrieval.
+◆ Using BiomedCLIP as the backbone, we incorporate a lightweight MLP projector head trained with a multi-task composite loss function that includes: (1) a binary cross-entropy loss to distinguish normal from abnormal CXR studies, (2) a supervised contrastive loss to reinforce intra-class consistency, and (3) a CLIP loss to maintain cross-modal alignment.</td></tr>
 <tr><td>2026-01-07</td><td>ImLoc: Revisiting Visual Localization with Image-based Representation</td><td>[2601.04185](http://arxiv.org/pdf/2601.04185)</td><td>◆ Existing visual localization methods are typically either 2D image-based, which are easy to build and maintain but limited in effective geometric reasoning, or 3D structure-based, which achieve high accuracy but require a centralized reconstruction and are difficult to update.
 ◆ In this work, we revisit visual localization with a 2D image-based representation and propose to augment each image with estimated depth maps to capture the geometric structure.
 ◆ Supported by the effective use of dense matchers, this representation is not only easy to build and maintain, but achieves highest accuracy in challenging conditions.</td></tr>
@@ -4055,6 +4067,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>Stationaere Kurven auf endlichdimensionalen Mannigfaltigkeiten</td><td>[2601.05695](http://arxiv.org/pdf/2601.05695)</td><td>◆ In this work we discuss the notion of stationary curves of the length functional, the so-called (weak) geodesics, on a Riemannian manifold.
+◆ The motivation behind this work is to give a detailed description of many key concepts from differential geometry that one needs in order to understand the important notion of a (weak) geodesic.
+◆ For this, we mainly focus on finite-dimensional smooth manifolds, so that we can develop an intuitive and geometric understanding of the concepts that we want to discuss.</td></tr>
 <tr><td>2026-01-05</td><td>Exact Clique Number Manipulation via Edge Interdiction</td><td>[2601.01869](http://arxiv.org/pdf/2601.01869)</td><td>◆ The Edge Interdiction Clique Problem (EICP) aims to remove at most $k$ edges from a graph so as to minimize the size of the largest clique in the remaining graph.
 ◆ This problem captures a fundamental question in graph manipulation: which edges are structurally critical for preserving large cliques?
 ◆ Such a problem is also motivated by practical applications including protein function maintenance and image matching.</td></tr>
@@ -5641,4 +5656,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.11
+> 更新于: 2026.01.12
