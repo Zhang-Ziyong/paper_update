@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.13)
+# 计算机视觉领域最新论文 (2026.01.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-13</td><td>Efficient Incremental SLAM via Information-Guided and Selective Optimization</td><td>[2601.08110](http://arxiv.org/pdf/2601.08110)</td><td>◆ We present an efficient incremental SLAM back-end that achieves the accuracy of full batch optimization while substantially reducing computational cost.
+◆ The proposed approach combines two complementary ideas: information-guided gating (IGG) and selective partial optimization (SPO).
+◆ IGG employs an information-theoretic criterion based on the log-determinant of the information matrix to quantify the contribution of new measurements, triggering global optimization only when a significant information gain is observed.</td></tr>
 <tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
 ◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
 ◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
@@ -49,7 +52,7 @@
 <tr><td>2025-12-28</td><td>RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization</td><td>[2601.00705](http://arxiv.org/pdf/2601.00705)</td><td>◆ We introduce RGS-SLAM, a robust Gaussian-splatting SLAM framework that replaces the residual-driven densification stage of GS-SLAM with a training-free correspondence-to-Gaussian initialization.
 ◆ Instead of progressively adding Gaussians as residuals reveal missing geometry, RGS-SLAM performs a one-shot triangulation of dense multi-view correspondences derived from DINOv3 descriptors refined through a confidence-aware inlier classifier, generating a well-distributed and structure-aware Gaussian seed prior to optimization.
 ◆ This initialization stabilizes early mapping and accelerates convergence by roughly 20\%, yielding higher rendering fidelity in texture-rich and cluttered scenes while remaining fully compatible with existing GS-SLAM pipelines.</td></tr>
-<tr><td>2026-01-02</td><td>Variable Elimination in Hybrid Factor Graphs for Discrete-Continuous Inference &amp; Estimation</td><td>[2601.00545](http://arxiv.org/pdf/2601.00545)</td><td>◆ Many hybrid problems in robotics involve both continuous and discrete components, and modeling them together for estimation tasks has been a long standing and difficult problem.
+<tr><td>2026-01-13</td><td>Variable Elimination in Hybrid Factor Graphs for Discrete-Continuous Inference &amp; Estimation</td><td>[2601.00545](http://arxiv.org/pdf/2601.00545)</td><td>◆ Many hybrid problems in robotics involve both continuous and discrete components, and modeling them together for estimation tasks has been a long standing and difficult problem.
 ◆ Hybrid Factor Graphs give us a mathematical framework to model these types of problems, however existing approaches for solving them are based on approximations.
 ◆ In this work, we propose an efficient Hybrid Factor Graph framework alongwith a variable elimination algorithm to produce a hybrid Bayes network, which can then be used for exact Maximum A Posteriori estimation and marginalization over both sets of variables.</td></tr>
 <tr><td>2026-01-01</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
@@ -2176,7 +2179,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-09</td><td>Ground What You See: Hallucination-Resistant MLLMs via Caption Feedback, Diversity-Aware Sampling, and Conflict Regularization</td><td>[2601.06224](http://arxiv.org/pdf/2601.06224)</td><td>◆ While Multimodal Large Language Models (MLLMs) have achieved remarkable success across diverse tasks, their practical deployment is severely hindered by hallucination issues, which become particularly acute during Reinforcement Learning (RL) optimization.
+<tr><td>2026-01-13</td><td>Keyframe-based Dense Mapping with the Graph of View-Dependent Local Maps</td><td>[2601.08520](http://arxiv.org/pdf/2601.08520)</td><td>◆ In this article, we propose a new keyframe-based mapping system.
+◆ The proposed method updates local Normal Distribution Transform maps (NDT) using data from an RGB-D sensor.
+◆ The cells of the NDT are stored in 2D view-dependent structures to better utilize the properties and uncertainty model of RGB-D cameras.</td></tr>
+<tr><td>2026-01-13</td><td>Enhancing Image Quality Assessment Ability of LMMs via Retrieval-Augmented Generation</td><td>[2601.08311](http://arxiv.org/pdf/2601.08311)</td><td>◆ Large Multimodal Models (LMMs) have recently shown remarkable promise in low-level visual perception tasks, particularly in Image Quality Assessment (IQA), demonstrating strong zero-shot capability.
+◆ However, achieving state-of-the-art performance often requires computationally expensive fine-tuning methods, which aim to align the distribution of quality-related token in output with image quality levels.
+◆ Inspired by recent training-free works for LMM, we introduce IQARAG, a novel, training-free framework that enhances LMMs&#x27; IQA ability.</td></tr>
+<tr><td>2026-01-13</td><td>Ground What You See: Hallucination-Resistant MLLMs via Caption Feedback, Diversity-Aware Sampling, and Conflict Regularization</td><td>[2601.06224](http://arxiv.org/pdf/2601.06224)</td><td>◆ While Multimodal Large Language Models (MLLMs) have achieved remarkable success across diverse tasks, their practical deployment is severely hindered by hallucination issues, which become particularly acute during Reinforcement Learning (RL) optimization.
 ◆ This paper systematically analyzes the root causes of hallucinations in MLLMs under RL training, identifying three critical factors: (1) an over-reliance on chained visual reasoning, where inaccurate initial descriptions or redundant information anchor subsequent inferences to incorrect premises; (2) insufficient exploration diversity during policy optimization, leading the model to generate overly confident but erroneous outputs; and (3) destructive conflicts between training samples, where Neural Tangent Kernel (NTK) similarity causes false associations and unstable parameter updates.
 ◆ To address these challenges, we propose a comprehensive framework comprising three core modules.</td></tr>
 <tr><td>2026-01-08</td><td>Multi-task Cross-modal Learning for Chest X-ray Image Retrieval</td><td>[2601.05399](http://arxiv.org/pdf/2601.05399)</td><td>◆ CLIP and BiomedCLIP are examples of vision-language foundation models and offer strong cross-modal embeddings; however, they are not optimized for fine-grained medical retrieval tasks, such as retrieving clinically relevant radiology reports using chest X-ray (CXR) image queries.
@@ -4071,6 +4080,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-13</td><td>Near-perfect photo-ID of the Hula painted frog with zero-shot deep local-feature matching</td><td>[2601.08798](http://arxiv.org/pdf/2601.08798)</td><td>◆ Accurate individual identification is essential for monitoring rare amphibians, yet invasive marking is often unsuitable for critically endangered species.
+◆ We evaluate state-of-the-art computer-vision methods for photographic re-identification of the Hula painted frog (Latonia nigriventer) using 1,233 ventral images from 191 individuals collected during 2013-2020 capture-recapture surveys.
+◆ We compare deep local-feature matching in a zero-shot setting with deep global-feature embedding models.</td></tr>
+<tr><td>2026-01-13</td><td>Second-order Gaussian directional derivative representations for image high-resolution corner detection</td><td>[2601.08182](http://arxiv.org/pdf/2601.08182)</td><td>◆ Corner detection is widely used in various computer vision tasks, such as image matching and 3D reconstruction.
+◆ Our research indicates that there are theoretical flaws in Zhang et al.&#x27;s use of a simple corner model to obtain a series of corner characteristics, as the grayscale information of two adjacent corners can affect each other.
+◆ In order to address the above issues, a second-order Gaussian directional derivative (SOGDD) filter is used in this work to smooth two typical high-resolution angle models (i.e.</td></tr>
 <tr><td>2026-01-09</td><td>Stationaere Kurven auf endlichdimensionalen Mannigfaltigkeiten</td><td>[2601.05695](http://arxiv.org/pdf/2601.05695)</td><td>◆ In this work we discuss the notion of stationary curves of the length functional, the so-called (weak) geodesics, on a Riemannian manifold.
 ◆ The motivation behind this work is to give a detailed description of many key concepts from differential geometry that one needs in order to understand the important notion of a (weak) geodesic.
 ◆ For this, we mainly focus on finite-dimensional smooth manifolds, so that we can develop an intuitive and geometric understanding of the concepts that we want to discuss.</td></tr>
@@ -4809,6 +4824,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-10</td><td>HOSC: A Periodic Activation with Saturation Control for High-Fidelity Implicit Neural Representations</td><td>[2601.07870](http://arxiv.org/pdf/2601.07870)</td><td>◆ Periodic activations such as sine preserve high-frequency information in implicit neural representations (INRs) through their oscillatory structure, but often suffer from gradient instability and limited control over multi-scale behavior.
+◆ We introduce the Hyperbolic Oscillator with Saturation Control (HOSC) activation, $\text{HOSC}(x) = \tanh\bigl(β\sin(ω_0 x)\bigr)$, which exposes an explicit parameter $β$ that controls the Lipschitz bound of the activation by $βω_0$.
+◆ This provides a direct mechanism to tune gradient magnitudes while retaining a periodic carrier.</td></tr>
 <tr><td>2026-01-08</td><td>QNeRF: Neural Radiance Fields on a Simulated Gate-Based Quantum Computer</td><td>[2601.05250](http://arxiv.org/pdf/2601.05250)</td><td>◆ Recently, Quantum Visual Fields (QVFs) have shown promising improvements in model compactness and convergence speed for learning the provided 2D or 3D signals.
 ◆ Meanwhile, novel-view synthesis has seen major advances with Neural Radiance Fields (NeRFs), where models learn a compact representation from 2D images to render 3D scenes, albeit at the cost of larger models and intensive training.
 ◆ In this work, we extend the approach of QVFs by introducing QNeRF, the first hybrid quantum-classical model designed for novel-view synthesis from 2D images.</td></tr>
@@ -5656,4 +5674,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.13
+> 更新于: 2026.01.14
