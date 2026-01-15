@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.14)
+# 计算机视觉领域最新论文 (2026.01.15)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
+◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
+◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
+<tr><td>2026-01-14</td><td>Multimodal Signal Processing For Thermo-Visible-Lidar Fusion In Real-time 3D Semantic Mapping</td><td>[2601.09578](http://arxiv.org/pdf/2601.09578)</td><td>◆ In complex environments, autonomous robot navigation and environmental perception pose higher requirements for SLAM technology.
+◆ This paper presents a novel method for semantically enhancing 3D point cloud maps with thermal information.
+◆ By first performing pixel-level fusion of visible and infrared images, the system projects real-time LiDAR point clouds onto this fused image stream.</td></tr>
+<tr><td>2026-01-14</td><td>SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing</td><td>[2601.09385](http://arxiv.org/pdf/2601.09385)</td><td>◆ The recent surge in open-source Multimodal Large Language Models (MLLM) frameworks, such as LLaVA, provides a convenient kickoff for artificial intelligence developers and researchers.
+◆ However, most of the MLLM frameworks take vision as the main input modality, and provide limited in-depth support for the modality of speech, audio, and music.
+◆ This situation hinders the development of audio-language models, and forces researchers to spend a lot of effort on code writing and hyperparameter tuning.</td></tr>
 <tr><td>2026-01-13</td><td>Efficient Incremental SLAM via Information-Guided and Selective Optimization</td><td>[2601.08110](http://arxiv.org/pdf/2601.08110)</td><td>◆ We present an efficient incremental SLAM back-end that achieves the accuracy of full batch optimization while substantially reducing computational cost.
 ◆ The proposed approach combines two complementary ideas: information-guided gating (IGG) and selective partial optimization (SPO).
 ◆ IGG employs an information-theoretic criterion based on the log-determinant of the information matrix to quantify the contribution of new measurements, triggering global optimization only when a significant information gain is observed.</td></tr>
@@ -2179,6 +2188,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>Hybrid guided variational autoencoder for visual place recognition</td><td>[2601.09248](http://arxiv.org/pdf/2601.09248)</td><td>◆ Autonomous agents such as cars, robots and drones need to precisely localize themselves in diverse environments, including in GPS-denied indoor environments.
+◆ One approach for precise localization is visual place recognition (VPR), which estimates the place of an image based on previously seen places.
+◆ State-of-the-art VPR models require high amounts of memory, making them unwieldy for mobile deployment, while more compact models lack robustness and generalization capabilities.</td></tr>
 <tr><td>2026-01-13</td><td>Keyframe-based Dense Mapping with the Graph of View-Dependent Local Maps</td><td>[2601.08520](http://arxiv.org/pdf/2601.08520)</td><td>◆ In this article, we propose a new keyframe-based mapping system.
 ◆ The proposed method updates local Normal Distribution Transform maps (NDT) using data from an RGB-D sensor.
 ◆ The cells of the NDT are stored in 2D view-dependent structures to better utilize the properties and uncertainty model of RGB-D cameras.</td></tr>
@@ -4080,6 +4092,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>CLIDD: Cross-Layer Independent Deformable Description for Efficient and Discriminative Local Feature Representation</td><td>[2601.09230](http://arxiv.org/pdf/2601.09230)</td><td>◆ Robust local feature representations are essential for spatial intelligence tasks such as robot navigation and augmented reality.
+◆ Establishing reliable correspondences requires descriptors that provide both high discriminative power and computational efficiency.
+◆ To address this, we introduce Cross-Layer Independent Deformable Description (CLIDD), a method that achieves superior distinctiveness by sampling directly from independent feature hierarchies.</td></tr>
 <tr><td>2026-01-13</td><td>Near-perfect photo-ID of the Hula painted frog with zero-shot deep local-feature matching</td><td>[2601.08798](http://arxiv.org/pdf/2601.08798)</td><td>◆ Accurate individual identification is essential for monitoring rare amphibians, yet invasive marking is often unsuitable for critically endangered species.
 ◆ We evaluate state-of-the-art computer-vision methods for photographic re-identification of the Hula painted frog (Latonia nigriventer) using 1,233 ventral images from 191 individuals collected during 2013-2020 capture-recapture surveys.
 ◆ We compare deep local-feature matching in a zero-shot setting with deep global-feature embedding models.</td></tr>
@@ -5674,4 +5689,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.14
+> 更新于: 2026.01.15
