@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.15)
+# 计算机视觉领域最新论文 (2026.01.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2188,6 +2188,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-15</td><td>Multilingual-To-Multimodal (M2M): Unlocking New Languages with Monolingual Text</td><td>[2601.10096](http://arxiv.org/pdf/2601.10096)</td><td>◆ Multimodal models excel in English, supported by abundant image-text and audio-text data, but performance drops sharply for other languages due to limited multilingual multimodal resources.
+◆ Existing solutions rely heavily on machine translation, while advances in multilingual text modeling remain underutilized.
+◆ We introduce METAL, a lightweight alignment method that learns only a few linear layers using English text alone to map multilingual text embeddings into a multimodal space.</td></tr>
+<tr><td>2026-01-14</td><td>UniHash: Unifying Pointwise and Pairwise Hashing Paradigms for Seen and Unseen Category Retrieval</td><td>[2601.09828](http://arxiv.org/pdf/2601.09828)</td><td>◆ Effective retrieval across both seen and unseen categories is crucial for modern image retrieval systems.
+◆ Retrieval on seen categories ensures precise recognition of known classes, while retrieval on unseen categories promotes generalization to novel classes with limited supervision.
+◆ However, most existing deep hashing methods are confined to a single training paradigm, either pointwise or pairwise, where the former excels on seen categories and the latter generalizes better to unseen ones.</td></tr>
 <tr><td>2026-01-14</td><td>Hybrid guided variational autoencoder for visual place recognition</td><td>[2601.09248](http://arxiv.org/pdf/2601.09248)</td><td>◆ Autonomous agents such as cars, robots and drones need to precisely localize themselves in diverse environments, including in GPS-denied indoor environments.
 ◆ One approach for precise localization is visual place recognition (VPR), which estimates the place of an image based on previously seen places.
 ◆ State-of-the-art VPR models require high amounts of memory, making them unwieldy for mobile deployment, while more compact models lack robustness and generalization capabilities.</td></tr>
@@ -4851,7 +4857,7 @@
 <tr><td>2026-01-11</td><td>Radiant Foam Rendering on a Graph Processor</td><td>[2601.04382](http://arxiv.org/pdf/2601.04382)</td><td>◆ Many emerging many-core accelerators replace a single large device memory with hundreds to thousands of lightweight cores, each owning only a small local SRAM and exchanging data via explicit on-chip communication.
 ◆ This organization offers high aggregate bandwidth, but it breaks a key assumption behind many volumetric rendering techniques: that rays can randomly access a large, unified scene representation.
 ◆ Rendering efficiently on such hardware therefore requires distributing both data and computation, keeping ray traversal mostly local, and structuring communication into predictable routes.</td></tr>
-<tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
+<tr><td>2026-01-15</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
 ◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
 ◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
 <tr><td>2026-01-04</td><td>EdgeNeRF: Edge-Guided Regularization for Neural Radiance Fields from Sparse Views</td><td>[2601.01431](http://arxiv.org/pdf/2601.01431)</td><td>◆ Neural Radiance Fields (NeRF) achieve remarkable performance in dense multi-view scenarios, but their reconstruction quality degrades significantly under sparse inputs due to geometric artifacts.
@@ -5689,4 +5695,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.15
+> 更新于: 2026.01.16
