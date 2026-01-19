@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.18)
+# 计算机视觉领域最新论文 (2026.01.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
+◆ Such conditions are rarely met in real-world scenarios.
+◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
+<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
+◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
 <tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
 ◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
 ◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
@@ -2188,6 +2194,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-16</td><td>Heterogeneous Uncertainty-Guided Composed Image Retrieval with Fine-Grained Probabilistic Learning</td><td>[2601.11393](http://arxiv.org/pdf/2601.11393)</td><td>◆ Composed Image Retrieval (CIR) enables image search by combining a reference image with modification text.
+◆ Intrinsic noise in CIR triplets incurs intrinsic uncertainty and threatens the model&#x27;s robustness.
+◆ Probabilistic learning approaches have shown promise in addressing such issues; however, they fall short for CIR due to their instance-level holistic modeling and homogeneous treatment of queries and targets.</td></tr>
+<tr><td>2026-01-16</td><td>Simple Models, Rich Representations: Visual Decoding from Primate Intracortical Neural Signals</td><td>[2601.11108](http://arxiv.org/pdf/2601.11108)</td><td>◆ Understanding how neural activity gives rise to perception is a central challenge in neuroscience.
+◆ We address the problem of decoding visual information from high-density intracortical recordings in primates, using the THINGS Ventral Stream Spiking Dataset.
+◆ We systematically evaluate the effects of model architecture, training objectives, and data scaling on decoding performance.</td></tr>
 <tr><td>2026-01-15</td><td>Multilingual-To-Multimodal (M2M): Unlocking New Languages with Monolingual Text</td><td>[2601.10096](http://arxiv.org/pdf/2601.10096)</td><td>◆ Multimodal models excel in English, supported by abundant image-text and audio-text data, but performance drops sharply for other languages due to limited multilingual multimodal resources.
 ◆ Existing solutions rely heavily on machine translation, while advances in multilingual text modeling remain underutilized.
 ◆ We introduce METAL, a lightweight alignment method that learns only a few linear layers using English text alone to map multilingual text embeddings into a multimodal space.</td></tr>
@@ -5695,4 +5707,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.18
+> 更新于: 2026.01.19
