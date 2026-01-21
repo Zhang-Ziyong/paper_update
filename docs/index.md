@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.20)
+# 计算机视觉领域最新论文 (2026.01.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-19</td><td>Autonomous Navigation at the Nano-Scale: Algorithms, Architectures, and Constraints</td><td>[2601.13252](http://arxiv.org/pdf/2601.13252)</td><td>◆ Autonomous navigation for nano-scale unmanned aerial vehicles (nano-UAVs) is governed by extreme Size, Weight, and Power (SWaP) constraints (with the weight &lt; 50 g and sub-100 mW onboard processor), distinguishing it fundamentally from standard robotic paradigms.
+◆ This review synthesizes the state-of-the-art in sensing, computing, and control architectures designed specifically for these sub- 100mW computational envelopes.
+◆ We critically analyse the transition from classical geometry-based methods to emerging &quot;Edge AI&quot; paradigms, including quantized deep neural networks deployed on ultra-low-power System-on-Chips (SoCs) and neuromorphic event-based control.</td></tr>
+<tr><td>2026-01-18</td><td>R-VoxelMap: Accurate Voxel Mapping with Recursive Plane Fitting for Online LiDAR Odometry</td><td>[2601.12377](http://arxiv.org/pdf/2601.12377)</td><td>◆ This paper proposes R-VoxelMap, a novel voxel mapping method that constructs accurate voxel maps using a geometry-driven recursive plane fitting strategy to enhance the localization accuracy of online LiDAR odometry.
+◆ VoxelMap and its variants typically fit and check planes using all points in a voxel, which may lead to plane parameter deviation caused by outliers, over segmentation of large planes, and incorrect merging across different physical planes.
+◆ To address these issues, R-VoxelMap utilizes a geometry-driven recursive construction strategy based on an outlier detect-and-reuse pipeline.</td></tr>
+<tr><td>2026-01-10</td><td>PointSLAM++: Robust Dense Neural Gaussian Point Cloud-based SLAM</td><td>[2601.11617](http://arxiv.org/pdf/2601.11617)</td><td>◆ Real-time 3D reconstruction is crucial for robotics and augmented reality, yet current simultaneous localization and mapping(SLAM) approaches often struggle to maintain structural consistency and robust pose estimation in the presence of depth noise.
+◆ This work introduces PointSLAM++, a novel RGB-D SLAM system that leverages a hierarchically constrained neural Gaussian representation to preserve structural relationships while generating Gaussian primitives for scene mapping.
+◆ It also employs progressive pose optimization to mitigate depth sensor noise, significantly enhancing localization accuracy.</td></tr>
 <tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
 ◆ Such conditions are rarely met in real-world scenarios.
 ◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
@@ -1366,6 +1375,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
+◆ Additionally, online buyers rarely see undercarriage photos.
+◆ We present an end-to-end pipeline that utilizes a three-camera rig to capture videos of the undercarriage as the vehicle drives over it, and produces an interactive 3D model of the undercarriage.</td></tr>
+<tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
+◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
+◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
+<tr><td>2026-01-18</td><td>OpenNavMap: Structure-Free Topometric Mapping via Large-Scale Collaborative Localization</td><td>[2601.12291](http://arxiv.org/pdf/2601.12291)</td><td>◆ Scalable and maintainable map representations are fundamental to enabling large-scale visual navigation and facilitating the deployment of robots in real-world environments.
+◆ While collaborative localization across multi-session mapping enhances efficiency, traditional structure-based methods struggle with high maintenance costs and fail in feature-less environments or under significant viewpoint changes typical of crowd-sourced data.
+◆ To address this, we propose OPENNAVMAP, a lightweight, structure-free topometric system leveraging 3D geometric foundation models for on-demand reconstruction.</td></tr>
+<tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
+◆ However, in this context, image retrieval typically focuses more on the image pairs of geometric matchability than on those of semantic similarity, a nuance that most existing deep learning-based methods guided by batched binaries (overlapping vs.
+◆ non-overlapping pairs) fail to capture.</td></tr>
 <tr><td>2026-01-12</td><td>CompNO: A Novel Foundation Model approach for solving Partial Differential Equations</td><td>[2601.07384](http://arxiv.org/pdf/2601.07384)</td><td>◆ Partial differential equations (PDEs) govern a wide range of physical phenomena, but their numerical solution remains computationally demanding, especially when repeated simulations are required across many parameter settings.
 ◆ Recent Scientific Foundation Models (SFMs) aim to alleviate this cost by learning universal surrogates from large collections of simulated systems, yet they typically rely on monolithic architectures with limited interpretability and high pretraining expense.
 ◆ In this work we introduce Compositional Neural Operators (CompNO), a compositional neural operator framework for parametric PDEs.</td></tr>
@@ -2194,6 +2215,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-20</td><td>XR: Cross-Modal Agents for Composed Image Retrieval</td><td>[2601.14245](http://arxiv.org/pdf/2601.14245)</td><td>◆ Retrieval is being redefined by agentic AI, demanding multimodal reasoning beyond conventional similarity-based paradigms.
+◆ Composed Image Retrieval (CIR) exemplifies this shift as each query combines a reference image with textual modifications, requiring compositional understanding across modalities.
+◆ While embedding-based CIR methods have achieved progress, they remain narrow in perspective, capturing limited cross-modal cues and lacking semantic reasoning.</td></tr>
+<tr><td>2026-01-20</td><td>Fine-Grained Zero-Shot Composed Image Retrieval with Complementary Visual-Semantic Integration</td><td>[2601.14060](http://arxiv.org/pdf/2601.14060)</td><td>◆ Zero-shot composed image retrieval (ZS-CIR) is a rapidly growing area with significant practical applications, allowing users to retrieve a target image by providing a reference image and a relative caption describing the desired modifications.
+◆ Existing ZS-CIR methods often struggle to capture fine-grained changes and integrate visual and semantic information effectively.
+◆ They primarily rely on either transforming the multimodal query into a single text using image-to-text models or employing large language models for target image description generation, approaches that often fail to capture complementary visual information and complete semantic context.</td></tr>
+<tr><td>2026-01-20</td><td>Glance-or-Gaze: Incentivizing LMMs to Adaptively Focus Search via Reinforcement Learning</td><td>[2601.13942](http://arxiv.org/pdf/2601.13942)</td><td>◆ Large Multimodal Models (LMMs) have achieved remarkable success in visual understanding, yet they struggle with knowledge-intensive queries involving long-tail entities or evolving information due to static parametric knowledge.
+◆ Recent search-augmented approaches attempt to address this limitation, but existing methods rely on indiscriminate whole-image retrieval that introduces substantial visual redundancy and noise, and lack deep iterative reflection, limiting their effectiveness on complex visual queries.
+◆ To overcome these challenges, we propose Glance-or-Gaze (GoG), a fully autonomous framework that shifts from passive perception to active visual planning.</td></tr>
+<tr><td>2026-01-19</td><td>DC-VLAQ: Query-Residual Aggregation for Robust Visual Place Recognition</td><td>[2601.12729](http://arxiv.org/pdf/2601.12729)</td><td>◆ One of the central challenges in visual place recognition (VPR) is learning a robust global representation that remains discriminative under large viewpoint changes, illumination variations, and severe domain shifts.
+◆ While visual foundation models (VFMs) provide strong local features, most existing methods rely on a single model, overlooking the complementary cues offered by different VFMs.
+◆ However, exploiting such complementary information inevitably alters token distributions, which challenges the stability of existing query-based global aggregation schemes.</td></tr>
+<tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
+◆ However, in this context, image retrieval typically focuses more on the image pairs of geometric matchability than on those of semantic similarity, a nuance that most existing deep learning-based methods guided by batched binaries (overlapping vs.
+◆ non-overlapping pairs) fail to capture.</td></tr>
 <tr><td>2026-01-16</td><td>Heterogeneous Uncertainty-Guided Composed Image Retrieval with Fine-Grained Probabilistic Learning</td><td>[2601.11393](http://arxiv.org/pdf/2601.11393)</td><td>◆ Composed Image Retrieval (CIR) enables image search by combining a reference image with modification text.
 ◆ Intrinsic noise in CIR triplets incurs intrinsic uncertainty and threatens the model&#x27;s robustness.
 ◆ Probabilistic learning approaches have shown promise in addressing such issues; however, they fall short for CIR due to their instance-level holistic modeling and homogeneous treatment of queries and targets.</td></tr>
@@ -2203,7 +2239,7 @@
 <tr><td>2026-01-15</td><td>Multilingual-To-Multimodal (M2M): Unlocking New Languages with Monolingual Text</td><td>[2601.10096](http://arxiv.org/pdf/2601.10096)</td><td>◆ Multimodal models excel in English, supported by abundant image-text and audio-text data, but performance drops sharply for other languages due to limited multilingual multimodal resources.
 ◆ Existing solutions rely heavily on machine translation, while advances in multilingual text modeling remain underutilized.
 ◆ We introduce METAL, a lightweight alignment method that learns only a few linear layers using English text alone to map multilingual text embeddings into a multimodal space.</td></tr>
-<tr><td>2026-01-14</td><td>UniHash: Unifying Pointwise and Pairwise Hashing Paradigms for Seen and Unseen Category Retrieval</td><td>[2601.09828](http://arxiv.org/pdf/2601.09828)</td><td>◆ Effective retrieval across both seen and unseen categories is crucial for modern image retrieval systems.
+<tr><td>2026-01-20</td><td>UniHash: Unifying Pointwise and Pairwise Hashing Paradigms for Seen and Unseen Category Retrieval</td><td>[2601.09828](http://arxiv.org/pdf/2601.09828)</td><td>◆ Effective retrieval across both seen and unseen categories is crucial for modern image retrieval systems.
 ◆ Retrieval on seen categories ensures precise recognition of known classes, while retrieval on unseen categories promotes generalization to novel classes with limited supervision.
 ◆ However, most existing deep hashing methods are confined to a single training paradigm, either pointwise or pairwise, where the former excels on seen categories and the latter generalizes better to unseen ones.</td></tr>
 <tr><td>2026-01-14</td><td>Hybrid guided variational autoencoder for visual place recognition</td><td>[2601.09248](http://arxiv.org/pdf/2601.09248)</td><td>◆ Autonomous agents such as cars, robots and drones need to precisely localize themselves in diverse environments, including in GPS-denied indoor environments.
@@ -4110,6 +4146,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-19</td><td>A Streamlined Attention-Based Network for Descriptor Extraction</td><td>[2601.13126](http://arxiv.org/pdf/2601.13126)</td><td>◆ We introduce SANDesc, a Streamlined Attention-Based Network for Descriptor extraction that aims to improve on existing architectures for keypoint description.
+◆ Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
+◆ We employ a revised U-Net-like architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.</td></tr>
+<tr><td>2026-01-18</td><td>XRefine: Attention-Guided Keypoint Match Refinement</td><td>[2601.12530](http://arxiv.org/pdf/2601.12530)</td><td>◆ Sparse keypoint matching is crucial for 3D vision tasks, yet current keypoint detectors often produce spatially inaccurate matches.
+◆ Existing refinement methods mitigate this issue through alignment of matched keypoint locations, but they are typically detector-specific, requiring retraining for each keypoint detector.
+◆ We introduce XRefine, a novel, detector-agnostic approach for sub-pixel keypoint refinement that operates solely on image patches centered at matched keypoints.</td></tr>
+<tr><td>2026-01-17</td><td>Detecting 3D Line Segments for 6DoF Pose Estimation with Limited Data</td><td>[2601.12090](http://arxiv.org/pdf/2601.12090)</td><td>◆ The task of 6DoF object pose estimation is one of the fundamental problems of 3D vision with many practical applications such as industrial automation.
+◆ Traditional deep learning approaches for this task often require extensive training data or CAD models, limiting their application in real-world industrial settings where data is scarce and object instances vary.
+◆ We propose a novel method for 6DoF pose estimation focused specifically on bins used in industrial settings.</td></tr>
+<tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
+◆ However, in this context, image retrieval typically focuses more on the image pairs of geometric matchability than on those of semantic similarity, a nuance that most existing deep learning-based methods guided by batched binaries (overlapping vs.
+◆ non-overlapping pairs) fail to capture.</td></tr>
 <tr><td>2026-01-14</td><td>CLIDD: Cross-Layer Independent Deformable Description for Efficient and Discriminative Local Feature Representation</td><td>[2601.09230](http://arxiv.org/pdf/2601.09230)</td><td>◆ Robust local feature representations are essential for spatial intelligence tasks such as robot navigation and augmented reality.
 ◆ Establishing reliable correspondences requires descriptors that provide both high discriminative power and computational efficiency.
 ◆ To address this, we introduce Cross-Layer Independent Deformable Description (CLIDD), a method that achieves superior distinctiveness by sampling directly from independent feature hierarchies.</td></tr>
@@ -4857,6 +4905,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
+◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
+◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
 <tr><td>2026-01-10</td><td>HOSC: A Periodic Activation with Saturation Control for High-Fidelity Implicit Neural Representations</td><td>[2601.07870](http://arxiv.org/pdf/2601.07870)</td><td>◆ Periodic activations such as sine preserve high-frequency information in implicit neural representations (INRs) through their oscillatory structure, but often suffer from gradient instability and limited control over multi-scale behavior.
 ◆ We introduce the Hyperbolic Oscillator with Saturation Control (HOSC) activation, $\text{HOSC}(x) = \tanh\bigl(β\sin(ω_0 x)\bigr)$, which exposes an explicit parameter $β$ that controls the Lipschitz bound of the activation by $βω_0$.
 ◆ This provides a direct mechanism to tune gradient magnitudes while retaining a periodic carrier.</td></tr>
@@ -5707,4 +5758,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.20
+> 更新于: 2026.01.21
