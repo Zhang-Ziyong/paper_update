@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.21)
+# 计算机视觉领域最新论文 (2026.01.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -34,7 +34,7 @@
 <tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
 ◆ Such conditions are rarely met in real-world scenarios.
 ◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
-<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+<tr><td>2026-01-20</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
 ◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
 ◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
 <tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
@@ -1375,6 +1375,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>Minimizing Submodular Functions over Hierarchical Families</td><td>[2601.14805](http://arxiv.org/pdf/2601.14805)</td><td>◆ This paper considers submodular function minimization (SFM) restricted to a family of subsets.
+◆ We show that SFM over complements of families with certain hierarchical structures can be solved in polynomial-time.
+◆ This yields a polynomial-time algorithm for SFM over complements of various families, such as intersecting families, crossing families, and the unions of lattices.</td></tr>
 <tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
 ◆ Additionally, online buyers rarely see undercarriage photos.
 ◆ We present an end-to-end pipeline that utilizes a three-camera rig to capture videos of the undercarriage as the vehicle drives over it, and produces an interactive 3D model of the undercarriage.</td></tr>
@@ -2215,6 +2218,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>Unified Multimodal and Multilingual Retrieval via Multi-Task Learning with NLU Integration</td><td>[2601.14714](http://arxiv.org/pdf/2601.14714)</td><td>◆ Multimodal retrieval systems typically employ Vision Language Models (VLMs) that encode images and text independently into vectors within a shared embedding space.
+◆ Despite incorporating text encoders, VLMs consistently underperform specialized text models on text-only retrieval tasks.
+◆ Moreover, introducing additional text encoders increases storage, inference overhead, and exacerbates retrieval inefficiencies, especially in multilingual settings.</td></tr>
+<tr><td>2026-01-21</td><td>LookBench: A Live and Holistic Open Benchmark for Fashion Image Retrieval</td><td>[2601.14706](http://arxiv.org/pdf/2601.14706)</td><td>◆ In this paper, we present LookBench (We use the term &quot;look&quot; to reflect retrieval that mirrors how people shop -- finding the exact item, a close substitute, or a visually consistent alternative.), a live, holistic and challenging benchmark for fashion image retrieval in real e-commerce settings.
+◆ LookBench includes both recent product images sourced from live websites and AI-generated fashion images, reflecting contemporary trends and use cases.
+◆ Each test sample is time-stamped and we intend to update the benchmark periodically, enabling contamination-aware evaluation aligned with declared training cutoffs.</td></tr>
 <tr><td>2026-01-20</td><td>XR: Cross-Modal Agents for Composed Image Retrieval</td><td>[2601.14245](http://arxiv.org/pdf/2601.14245)</td><td>◆ Retrieval is being redefined by agentic AI, demanding multimodal reasoning beyond conventional similarity-based paradigms.
 ◆ Composed Image Retrieval (CIR) exemplifies this shift as each query combines a reference image with textual modifications, requiring compositional understanding across modalities.
 ◆ While embedding-based CIR methods have achieved progress, they remain narrow in perspective, capturing limited cross-modal cues and lacking semantic reasoning.</td></tr>
@@ -2236,7 +2245,7 @@
 <tr><td>2026-01-16</td><td>Simple Models, Rich Representations: Visual Decoding from Primate Intracortical Neural Signals</td><td>[2601.11108](http://arxiv.org/pdf/2601.11108)</td><td>◆ Understanding how neural activity gives rise to perception is a central challenge in neuroscience.
 ◆ We address the problem of decoding visual information from high-density intracortical recordings in primates, using the THINGS Ventral Stream Spiking Dataset.
 ◆ We systematically evaluate the effects of model architecture, training objectives, and data scaling on decoding performance.</td></tr>
-<tr><td>2026-01-15</td><td>Multilingual-To-Multimodal (M2M): Unlocking New Languages with Monolingual Text</td><td>[2601.10096](http://arxiv.org/pdf/2601.10096)</td><td>◆ Multimodal models excel in English, supported by abundant image-text and audio-text data, but performance drops sharply for other languages due to limited multilingual multimodal resources.
+<tr><td>2026-01-20</td><td>Multilingual-To-Multimodal (M2M): Unlocking New Languages with Monolingual Text</td><td>[2601.10096](http://arxiv.org/pdf/2601.10096)</td><td>◆ Multimodal models excel in English, supported by abundant image-text and audio-text data, but performance drops sharply for other languages due to limited multilingual multimodal resources.
 ◆ Existing solutions rely heavily on machine translation, while advances in multilingual text modeling remain underutilized.
 ◆ We introduce METAL, a lightweight alignment method that learns only a few linear layers using English text alone to map multilingual text embeddings into a multimodal space.</td></tr>
 <tr><td>2026-01-20</td><td>UniHash: Unifying Pointwise and Pairwise Hashing Paradigms for Seen and Unseen Category Retrieval</td><td>[2601.09828](http://arxiv.org/pdf/2601.09828)</td><td>◆ Effective retrieval across both seen and unseen categories is crucial for modern image retrieval systems.
@@ -3752,6 +3761,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>ZENITH: Automated Gradient Norm Informed Stochastic Optimization</td><td>[2601.15212](http://arxiv.org/pdf/2601.15212)</td><td>◆ Training deep computer vision models requires manual oversight or hyperparameter tuning of the learning rate (LR) schedule.
+◆ While existing adaptive optimizers schedule the LR automatically, they suffer from computational and memory overhead, incompatibility with regularization, and suboptimal LR choices.
+◆ In this work, we introduce the ZENITH (Zero-overhead Evolution using Norm-Informed Training History) optimizer, which adapts the LR using the temporal evolution of the gradient norm.</td></tr>
 <tr><td>2026-01-02</td><td>UnrealPose: Leveraging Game Engine Kinematics for Large-Scale Synthetic Human Pose Data</td><td>[2601.00991](http://arxiv.org/pdf/2601.00991)</td><td>◆ Diverse, accurately labeled 3D human pose data is expensive and studio-bound, while in-the-wild datasets lack known ground truth.
 ◆ We introduce UnrealPose-Gen, an Unreal Engine 5 pipeline built on Movie Render Queue for high-quality offline rendering.
 ◆ Our generated frames include: (i) 3D joints in world and camera coordinates, (ii) 2D projections and COCO-style keypoints with occlusion and joint-visibility flags, (iii) person bounding boxes, and (iv) camera intrinsics and extrinsics.</td></tr>
@@ -4905,6 +4917,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>GAT-NeRF: Geometry-Aware-Transformer Enhanced Neural Radiance Fields for High-Fidelity 4D Facial Avatars</td><td>[2601.14875](http://arxiv.org/pdf/2601.14875)</td><td>◆ High-fidelity 4D dynamic facial avatar reconstruction from monocular video is a critical yet challenging task, driven by increasing demands for immersive virtual human applications.
+◆ While Neural Radiance Fields (NeRF) have advanced scene representation, their capacity to capture high-frequency facial details, such as dynamic wrinkles and subtle textures from information-constrained monocular streams, requires significant enhancement.
+◆ To tackle this challenge, we propose a novel hybrid neural radiance field framework, called Geometry-Aware-Transformer Enhanced NeRF (GAT-NeRF) for high-fidelity and controllable 4D facial avatar reconstruction, which integrates the Transformer mechanism into the NeRF pipeline.</td></tr>
+<tr><td>2026-01-21</td><td>POTR: Post-Training 3DGS Compression</td><td>[2601.14821](http://arxiv.org/pdf/2601.14821)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a promising contender to Neural Radiance Fields (NeRF) in 3D scene reconstruction and real-time novel view synthesis.
+◆ 3DGS outperforms NeRF in training and inference speed but has substantially higher storage requirements.
+◆ To remedy this downside, we propose POTR, a post-training 3DGS codec built on two novel techniques.</td></tr>
 <tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
 ◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
 ◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
@@ -5758,4 +5776,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.21
+> 更新于: 2026.01.22
