@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.22)
+# 计算机视觉领域最新论文 (2026.01.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
+◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
+◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
+<tr><td>2026-01-22</td><td>Parallelizable Riemannian Alternating Direction Method of Multipliers for Non-convex Pose Graph Optimization</td><td>[2601.15684](http://arxiv.org/pdf/2601.15684)</td><td>◆ Pose graph optimization (PGO) is fundamental to robot perception and navigation systems, serving as the mathematical backbone for solving simultaneous localization and mapping (SLAM).
+◆ Existing solvers suffer from polynomial growth in computational complexity with graph size, hindering real-time deployment in large-scale scenarios.
+◆ In this paper, by duplicating variables and introducing equality constraints, we reformulate the problem and propose a Parallelizable Riemannian Alternating Direction Method of Multipliers (PRADMM) to solve it efficiently.</td></tr>
 <tr><td>2026-01-19</td><td>Autonomous Navigation at the Nano-Scale: Algorithms, Architectures, and Constraints</td><td>[2601.13252](http://arxiv.org/pdf/2601.13252)</td><td>◆ Autonomous navigation for nano-scale unmanned aerial vehicles (nano-UAVs) is governed by extreme Size, Weight, and Power (SWaP) constraints (with the weight &lt; 50 g and sub-100 mW onboard processor), distinguishing it fundamentally from standard robotic paradigms.
 ◆ This review synthesizes the state-of-the-art in sensing, computing, and control architectures designed specifically for these sub- 100mW computational envelopes.
 ◆ We critically analyse the transition from classical geometry-based methods to emerging &quot;Edge AI&quot; paradigms, including quantized deep neural networks deployed on ultra-low-power System-on-Chips (SoCs) and neuromorphic event-based control.</td></tr>
@@ -2218,6 +2224,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Rethinking Composed Image Retrieval Evaluation: A Fine-Grained Benchmark from Image Editing</td><td>[2601.16125](http://arxiv.org/pdf/2601.16125)</td><td>◆ Composed Image Retrieval (CIR) is a pivotal and complex task in multimodal understanding.
+◆ Current CIR benchmarks typically feature limited query categories and fail to capture the diverse requirements of real-world scenarios.
+◆ To bridge this evaluation gap, we leverage image editing to achieve precise control over modification types and content, enabling a pipeline for synthesizing queries across a broad spectrum of categories.</td></tr>
 <tr><td>2026-01-21</td><td>Unified Multimodal and Multilingual Retrieval via Multi-Task Learning with NLU Integration</td><td>[2601.14714](http://arxiv.org/pdf/2601.14714)</td><td>◆ Multimodal retrieval systems typically employ Vision Language Models (VLMs) that encode images and text independently into vectors within a shared embedding space.
 ◆ Despite incorporating text encoders, VLMs consistently underperform specialized text models on text-only retrieval tasks.
 ◆ Moreover, introducing additional text encoders increases storage, inference overhead, and exacerbates retrieval inefficiencies, especially in multilingual settings.</td></tr>
@@ -2239,7 +2248,7 @@
 <tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
 ◆ However, in this context, image retrieval typically focuses more on the image pairs of geometric matchability than on those of semantic similarity, a nuance that most existing deep learning-based methods guided by batched binaries (overlapping vs.
 ◆ non-overlapping pairs) fail to capture.</td></tr>
-<tr><td>2026-01-16</td><td>Heterogeneous Uncertainty-Guided Composed Image Retrieval with Fine-Grained Probabilistic Learning</td><td>[2601.11393](http://arxiv.org/pdf/2601.11393)</td><td>◆ Composed Image Retrieval (CIR) enables image search by combining a reference image with modification text.
+<tr><td>2026-01-22</td><td>Heterogeneous Uncertainty-Guided Composed Image Retrieval with Fine-Grained Probabilistic Learning</td><td>[2601.11393](http://arxiv.org/pdf/2601.11393)</td><td>◆ Composed Image Retrieval (CIR) enables image search by combining a reference image with modification text.
 ◆ Intrinsic noise in CIR triplets incurs intrinsic uncertainty and threatens the model&#x27;s robustness.
 ◆ Probabilistic learning approaches have shown promise in addressing such issues; however, they fall short for CIR due to their instance-level holistic modeling and homogeneous treatment of queries and targets.</td></tr>
 <tr><td>2026-01-16</td><td>Simple Models, Rich Representations: Visual Decoding from Primate Intracortical Neural Signals</td><td>[2601.11108](http://arxiv.org/pdf/2601.11108)</td><td>◆ Understanding how neural activity gives rise to perception is a central challenge in neuroscience.
@@ -4917,6 +4926,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>Seeing through Light and Darkness: Sensor-Physics Grounded Deblurring HDR NeRF from Single-Exposure Images and Events</td><td>[2601.15475](http://arxiv.org/pdf/2601.15475)</td><td>◆ Novel view synthesis from low dynamic range (LDR) blurry images, which are common in the wild, struggles to recover high dynamic range (HDR) and sharp 3D representations in extreme lighting conditions.
+◆ Although existing methods employ event data to address this issue, they ignore the sensor-physics mismatches between the camera output and physical world radiance, resulting in suboptimal HDR and deblurring results.
+◆ To cope with this problem, we propose a unified sensor-physics grounded NeRF framework for sharp HDR novel view synthesis from single-exposure blurry LDR images and corresponding events.</td></tr>
 <tr><td>2026-01-21</td><td>GAT-NeRF: Geometry-Aware-Transformer Enhanced Neural Radiance Fields for High-Fidelity 4D Facial Avatars</td><td>[2601.14875](http://arxiv.org/pdf/2601.14875)</td><td>◆ High-fidelity 4D dynamic facial avatar reconstruction from monocular video is a critical yet challenging task, driven by increasing demands for immersive virtual human applications.
 ◆ While Neural Radiance Fields (NeRF) have advanced scene representation, their capacity to capture high-frequency facial details, such as dynamic wrinkles and subtle textures from information-constrained monocular streams, requires significant enhancement.
 ◆ To tackle this challenge, we propose a novel hybrid neural radiance field framework, called Geometry-Aware-Transformer Enhanced NeRF (GAT-NeRF) for high-fidelity and controllable 4D facial avatar reconstruction, which integrates the Transformer mechanism into the NeRF pipeline.</td></tr>
@@ -5776,4 +5788,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.22
+> 更新于: 2026.01.23
