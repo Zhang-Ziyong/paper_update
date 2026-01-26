@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.25)
+# 计算机视觉领域最新论文 (2026.01.26)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2228,6 +2228,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-23</td><td>X-Aligner: Composed Visual Retrieval without the Bells and Whistles</td><td>[2601.16582](http://arxiv.org/pdf/2601.16582)</td><td>◆ Composed Video Retrieval (CoVR) facilitates video retrieval by combining visual and textual queries.
+◆ However, existing CoVR frameworks typically fuse multimodal inputs in a single stage, achieving only marginal gains over initial baseline.
+◆ To address this, we propose a novel CoVR framework that leverages the representational power of Vision Language Models (VLMs).</td></tr>
 <tr><td>2026-01-22</td><td>Rethinking Composed Image Retrieval Evaluation: A Fine-Grained Benchmark from Image Editing</td><td>[2601.16125](http://arxiv.org/pdf/2601.16125)</td><td>◆ Composed Image Retrieval (CIR) is a pivotal and complex task in multimodal understanding.
 ◆ Current CIR benchmarks typically feature limited query categories and fail to capture the diverse requirements of real-world scenarios.
 ◆ To bridge this evaluation gap, we leverage image editing to achieve precise control over modification types and content, enabling a pipeline for synthesizing queries across a broad spectrum of categories.</td></tr>
@@ -3776,6 +3779,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Coarse-to-Fine Non-rigid Multi-modal Image Registration for Historical Panel Paintings based on Crack Structures</td><td>[2601.16348](http://arxiv.org/pdf/2601.16348)</td><td>◆ Art technological investigations of historical panel paintings rely on acquiring multi-modal image data, including visual light photography, infrared reflectography, ultraviolet fluorescence photography, x-radiography, and macro photography.
+◆ For a comprehensive analysis, the multi-modal images require pixel-wise alignment, which is still often performed manually.
+◆ Multi-modal image registration can reduce this laborious manual work, is substantially faster, and enables higher precision.</td></tr>
 <tr><td>2026-01-21</td><td>ZENITH: Automated Gradient Norm Informed Stochastic Optimization</td><td>[2601.15212](http://arxiv.org/pdf/2601.15212)</td><td>◆ Training deep computer vision models requires manual oversight or hyperparameter tuning of the learning rate (LR) schedule.
 ◆ While existing adaptive optimizers schedule the LR automatically, they suffer from computational and memory overhead, incompatibility with regularization, and suboptimal LR choices.
 ◆ In this work, we introduce the ZENITH (Zero-overhead Evolution using Norm-Informed Training History) optimizer, which adapts the LR using the temporal evolution of the gradient norm.</td></tr>
@@ -4936,6 +4942,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-23</td><td>Multi-View Consistent Wound Segmentation With Neural Fields</td><td>[2601.16487](http://arxiv.org/pdf/2601.16487)</td><td>◆ Wound care is often challenged by the economic and logistical burdens that consistently afflict patients and hospitals worldwide.
+◆ In recent decades, healthcare professionals have sought support from computer vision and machine learning algorithms.
+◆ In particular, wound segmentation has gained interest due to its ability to provide professionals with fast, automatic tissue assessment from standard RGB images.</td></tr>
 <tr><td>2026-01-21</td><td>Seeing through Light and Darkness: Sensor-Physics Grounded Deblurring HDR NeRF from Single-Exposure Images and Events</td><td>[2601.15475](http://arxiv.org/pdf/2601.15475)</td><td>◆ Novel view synthesis from low dynamic range (LDR) blurry images, which are common in the wild, struggles to recover high dynamic range (HDR) and sharp 3D representations in extreme lighting conditions.
 ◆ Although existing methods employ event data to address this issue, they ignore the sensor-physics mismatches between the camera output and physical world radiance, resulting in suboptimal HDR and deblurring results.
 ◆ To cope with this problem, we propose a unified sensor-physics grounded NeRF framework for sharp HDR novel view synthesis from single-exposure blurry LDR images and corresponding events.</td></tr>
@@ -5800,4 +5809,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.25
+> 更新于: 2026.01.26
