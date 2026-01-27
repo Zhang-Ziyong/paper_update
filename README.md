@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.26)
+# 计算机视觉领域最新论文 (2026.01.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-26</td><td>Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing</td><td>[2601.18252](http://arxiv.org/pdf/2601.18252)</td><td>◆ Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM).
+◆ Existing methods predict lines and junctions separately and reconcile them post-hoc, causing mismatches and reduced robustness.
+◆ We present Co-PLNet, a point-line collaborative framework that exchanges spatial cues between the two tasks, where early detections are converted into spatial prompts via a Point-Line Prompt Encoder (PLP-Encoder), which encodes geometric attributes into compact and spatially aligned maps.</td></tr>
 <tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
 ◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
 ◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
@@ -1389,7 +1392,7 @@
 <tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
 ◆ Additionally, online buyers rarely see undercarriage photos.
 ◆ We present an end-to-end pipeline that utilizes a three-camera rig to capture videos of the undercarriage as the vehicle drives over it, and produces an interactive 3D model of the undercarriage.</td></tr>
-<tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
+<tr><td>2026-01-25</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
 ◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
 ◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
 <tr><td>2026-01-18</td><td>OpenNavMap: Structure-Free Topometric Mapping via Large-Scale Collaborative Localization</td><td>[2601.12291](http://arxiv.org/pdf/2601.12291)</td><td>◆ Scalable and maintainable map representations are fundamental to enabling large-scale visual navigation and facilitating the deployment of robots in real-world environments.
@@ -4942,6 +4945,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-25</td><td>MV-SAM: Multi-view Promptable Segmentation using Pointmap Guidance</td><td>[2601.17866](http://arxiv.org/pdf/2601.17866)</td><td>◆ Promptable segmentation has emerged as a powerful paradigm in computer vision, enabling users to guide models in parsing complex scenes with prompts such as clicks, boxes, or textual cues.
+◆ Recent advances, exemplified by the Segment Anything Model (SAM), have extended this paradigm to videos and multi-view images.
+◆ However, the lack of 3D awareness often leads to inconsistent results, necessitating costly per-scene optimization to enforce 3D consistency.</td></tr>
+<tr><td>2026-01-24</td><td>NeRF-MIR: Towards High-Quality Restoration of Masked Images with Neural Radiance Fields</td><td>[2601.17350](http://arxiv.org/pdf/2601.17350)</td><td>◆ Neural Radiance Fields (NeRF) have demonstrated remarkable performance in novel view synthesis.
+◆ However, there is much improvement room on restoring 3D scenes based on NeRF from corrupted images, which are common in natural scene captures and can significantly impact the effectiveness of NeRF.
+◆ This paper introduces NeRF-MIR, a novel neural rendering approach specifically proposed for the restoration of masked images, demonstrating the potential of NeRF in this domain.</td></tr>
 <tr><td>2026-01-23</td><td>Multi-View Consistent Wound Segmentation With Neural Fields</td><td>[2601.16487](http://arxiv.org/pdf/2601.16487)</td><td>◆ Wound care is often challenged by the economic and logistical burdens that consistently afflict patients and hospitals worldwide.
 ◆ In recent decades, healthcare professionals have sought support from computer vision and machine learning algorithms.
 ◆ In particular, wound segmentation has gained interest due to its ability to provide professionals with fast, automatic tissue assessment from standard RGB images.</td></tr>
@@ -4954,7 +4963,7 @@
 <tr><td>2026-01-21</td><td>POTR: Post-Training 3DGS Compression</td><td>[2601.14821](http://arxiv.org/pdf/2601.14821)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a promising contender to Neural Radiance Fields (NeRF) in 3D scene reconstruction and real-time novel view synthesis.
 ◆ 3DGS outperforms NeRF in training and inference speed but has substantially higher storage requirements.
 ◆ To remedy this downside, we propose POTR, a post-training 3DGS codec built on two novel techniques.</td></tr>
-<tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
+<tr><td>2026-01-25</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
 ◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
 ◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
 <tr><td>2026-01-10</td><td>HOSC: A Periodic Activation with Saturation Control for High-Fidelity Implicit Neural Representations</td><td>[2601.07870](http://arxiv.org/pdf/2601.07870)</td><td>◆ Periodic activations such as sine preserve high-frequency information in implicit neural representations (INRs) through their oscillatory structure, but often suffer from gradient instability and limited control over multi-scale behavior.
@@ -5809,4 +5818,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.26
+> 更新于: 2026.01.27
