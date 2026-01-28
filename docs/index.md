@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.01.27)
+# 计算机视觉领域最新论文 (2026.01.28)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
+◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
+<tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
+◆ Several sequences are recorded on the volcanic island of Vulcano, from the Aeolian Islands in Sicily, Italy.
+◆ The sequences provide users with data from a variety of environments, textures and terrains, including basaltic or iron-rich rocks, geological formations from old lava channels, as well as dry vegetation and water.</td></tr>
+<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
+◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
 <tr><td>2026-01-26</td><td>Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing</td><td>[2601.18252](http://arxiv.org/pdf/2601.18252)</td><td>◆ Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM).
 ◆ Existing methods predict lines and junctions separately and reconcile them post-hoc, causing mismatches and reduced robustness.
 ◆ We present Co-PLNet, a point-line collaborative framework that exchanges spatial cues between the two tasks, where early detections are converted into spatial prompts via a Point-Line Prompt Encoder (PLP-Encoder), which encodes geometric attributes into compact and spatially aligned maps.</td></tr>
@@ -2227,6 +2236,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
+◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
+<tr><td>2026-01-27</td><td>Pixel-Grounded Retrieval for Knowledgeable Large Multimodal Models</td><td>[2601.19060](http://arxiv.org/pdf/2601.19060)</td><td>◆ Visual Question Answering (VQA) often requires coupling fine-grained perception with factual knowledge beyond the input image.
+◆ Prior multimodal Retrieval-Augmented Generation (MM-RAG) systems improve factual grounding but lack an internal policy for when and how to retrieve.
+◆ We propose PixSearch, the first end-to-end Segmenting Large Multimodal Model (LMM) that unifies region-level perception and retrieval-augmented reasoning.</td></tr>
 <tr><td>2026-01-23</td><td>X-Aligner: Composed Visual Retrieval without the Bells and Whistles</td><td>[2601.16582](http://arxiv.org/pdf/2601.16582)</td><td>◆ Composed Video Retrieval (CoVR) facilitates video retrieval by combining visual and textual queries.
 ◆ However, existing CoVR frameworks typically fuse multimodal inputs in a single stage, achieving only marginal gains over initial baseline.
 ◆ To address this, we propose a novel CoVR framework that leverages the representational power of Vision Language Models (VLMs).</td></tr>
@@ -4935,6 +4950,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>WaterClear-GS: Optical-Aware Gaussian Splatting for Underwater Reconstruction and Restoration</td><td>[2601.19753](http://arxiv.org/pdf/2601.19753)</td><td>◆ Underwater 3D reconstruction and appearance restoration are hindered by the complex optical properties of water, such as wavelength-dependent attenuation and scattering.
+◆ Existing Neural Radiance Fields (NeRF)-based methods struggle with slow rendering speeds and suboptimal color restoration, while 3D Gaussian Splatting (3DGS) inherently lacks the capability to model complex volumetric scattering effects.
+◆ To address these issues, we introduce WaterClear-GS, the first pure 3DGS-based framework that explicitly integrates underwater optical properties of local attenuation and scattering into Gaussian primitives, eliminating the need for an auxiliary medium network.</td></tr>
+<tr><td>2026-01-27</td><td>Bridging Visual and Wireless Sensing: A Unified Radiation Field for 3D Radio Map Construction</td><td>[2601.19216](http://arxiv.org/pdf/2601.19216)</td><td>◆ The emerging applications of next-generation wireless networks (e.g., immersive 3D communication, low-altitude networks, and integrated sensing and communication) necessitate high-fidelity environmental intelligence.
+◆ 3D radio maps have emerged as a critical tool for this purpose, enabling spectrum-aware planning and environment-aware sensing by bridging the gap between physical environments and electromagnetic signal propagation.
+◆ However, constructing accurate 3D radio maps requires fine-grained 3D geometric information and a profound understanding of electromagnetic wave propagation.</td></tr>
+<tr><td>2026-01-26</td><td>Audio-Driven Talking Face Generation with Blink Embedding and Hash Grid Landmarks Encoding</td><td>[2601.18849](http://arxiv.org/pdf/2601.18849)</td><td>◆ Dynamic Neural Radiance Fields (NeRF) have demonstrated considerable success in generating high-fidelity 3D models of talking portraits.
+◆ Despite significant advancements in the rendering speed and generation quality, challenges persist in accurately and efficiently capturing mouth movements in talking portraits.
+◆ To tackle this challenge, we propose an automatic method based on blink embedding and hash grid landmarks encoding in this study, which can substantially enhance the fidelity of talking faces.</td></tr>
 <tr><td>2026-01-25</td><td>MV-SAM: Multi-view Promptable Segmentation using Pointmap Guidance</td><td>[2601.17866](http://arxiv.org/pdf/2601.17866)</td><td>◆ Promptable segmentation has emerged as a powerful paradigm in computer vision, enabling users to guide models in parsing complex scenes with prompts such as clicks, boxes, or textual cues.
 ◆ Recent advances, exemplified by the Segment Anything Model (SAM), have extended this paradigm to videos and multi-view images.
 ◆ However, the lack of 3D awareness often leads to inconsistent results, necessitating costly per-scene optimization to enforce 3D consistency.</td></tr>
@@ -5806,4 +5830,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.27
+> 更新于: 2026.01.28
