@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.01)
+# 计算机视觉领域最新论文 (2026.02.02)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2245,6 +2245,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-30</td><td>HierLoc: Hyperbolic Entity Embeddings for Hierarchical Visual Geolocation</td><td>[2601.23064](http://arxiv.org/pdf/2601.23064)</td><td>◆ Visual geolocalization, the task of predicting where an image was taken, remains challenging due to global scale, visual ambiguity, and the inherently hierarchical structure of geography.
+◆ Existing paradigms rely on either large-scale retrieval, which requires storing a large number of image embeddings, grid-based classifiers that ignore geographic continuity, or generative models that diffuse over space but struggle with fine detail.
+◆ We introduce an entity-centric formulation of geolocation that replaces image-to-image retrieval with a compact hierarchy of geographic entities embedded in Hyperbolic space.</td></tr>
+<tr><td>2026-01-30</td><td>Compact Hypercube Embeddings for Fast Text-based Wildlife Observation Retrieval</td><td>[2601.22783](http://arxiv.org/pdf/2601.22783)</td><td>◆ Large-scale biodiversity monitoring platforms increasingly rely on multimodal wildlife observations.
+◆ While recent foundation models enable rich semantic representations across vision, audio, and language, retrieving relevant observations from massive archives remains challenging due to the computational cost of high-dimensional similarity search.
+◆ In this work, we introduce compact hypercube embeddings for fast text-based wildlife observation retrieval, a framework that enables efficient text-based search over large-scale wildlife image and audio databases using compact binary representations.</td></tr>
 <tr><td>2026-01-29</td><td>Variance &amp; Greediness: A comparative study of metric-learning losses</td><td>[2601.21450](http://arxiv.org/pdf/2601.21450)</td><td>◆ Metric learning is central to retrieval, yet its effects on embedding geometry and optimization dynamics are not well understood.
 ◆ We introduce a diagnostic framework, VARIANCE (intra-/inter-class variance) and GREEDINESS (active ratio and gradient norms), to compare seven representative losses, i.e., Contrastive, Triplet, N-pair, InfoNCE, ArcFace, SCL, and CCL, across five image-retrieval datasets.
 ◆ Our analysis reveals that Triplet and SCL preserve higher within-class variance and clearer inter-class margins, leading to stronger top-1 retrieval in fine-grained settings.</td></tr>
@@ -4968,6 +4974,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-30</td><td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td><td>[2601.23065](http://arxiv.org/pdf/2601.23065)</td><td>◆ Recent reconstruction methods based on radiance field such as NeRF and 3DGS reproduce indoor scenes with high visual fidelity, but break down under scene editing due to baked illumination and the lack of explicit light transport.
+◆ In contrast, physically based inverse rendering relies on mesh representations and path tracing, which enforce correct light transport but place strong requirements on geometric fidelity, becoming a practical bottleneck for real indoor scenes.
+◆ In this work, we propose Emission-Aware Gaussians and Path Tracing (EAG-PT), aiming for physically based light transport with a unified 2D Gaussian representation.</td></tr>
+<tr><td>2026-01-30</td><td>Under-Canopy Terrain Reconstruction in Dense Forests Using RGB Imaging and Neural 3D Reconstruction</td><td>[2601.22861](http://arxiv.org/pdf/2601.22861)</td><td>◆ Mapping the terrain and understory hidden beneath dense forest canopies is of great interest for numerous applications such as search and rescue, trail mapping, forest inventory tasks, and more.
+◆ Existing solutions rely on specialized sensors: either heavy, costly airborne LiDAR, or Airborne Optical Sectioning (AOS), which uses thermal synthetic aperture photography and is tailored for person detection.
+◆ We introduce a novel approach for the reconstruction of canopy-free, photorealistic ground views using only conventional RGB images.</td></tr>
+<tr><td>2026-01-30</td><td>Diachronic Stereo Matching for Multi-Date Satellite Imagery</td><td>[2601.22808](http://arxiv.org/pdf/2601.22808)</td><td>◆ Recent advances in image-based satellite 3D reconstruction have progressed along two complementary directions.
+◆ On one hand, multi-date approaches using NeRF or Gaussian-splatting jointly model appearance and geometry across many acquisitions, achieving accurate reconstructions on opportunistic imagery with numerous observations.
+◆ On the other hand, classical stereoscopic reconstruction pipelines deliver robust and scalable results for simultaneous or quasi-simultaneous image pairs.</td></tr>
 <tr><td>2026-01-29</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
 ◆ However, their reliability for quantitative 3D analysis in dense, self-occluding scenes remains poorly understood.
 ◆ In this study, we identify a fundamental failure mode of implicit density fields under heavy occlusion, which we term Interior Geometric Degradation (IGD).</td></tr>
@@ -5854,4 +5869,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.01
+> 更新于: 2026.02.02
