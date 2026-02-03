@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.02)
+# 计算机视觉领域最新论文 (2026.02.03)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,13 +22,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning</td><td>[2602.02456](http://arxiv.org/pdf/2602.02456)</td><td>◆ Representing and understanding 3D environments in a structured manner is crucial for autonomous agents to navigate and reason about their surroundings.
+◆ While traditional Simultaneous Localization and Mapping (SLAM) methods generate metric reconstructions and can be extended to metric-semantic mapping, they lack a higher level of abstraction and relational reasoning.
+◆ To address this gap, 3D scene graphs have emerged as a powerful representation for capturing hierarchical structures and object relationships.</td></tr>
+<tr><td>2026-02-02</td><td>3D Foundation Model-Based Loop Closing for Decentralized Collaborative SLAM</td><td>[2602.02430](http://arxiv.org/pdf/2602.02430)</td><td>◆ Decentralized Collaborative Simultaneous Localization And Mapping (C-SLAM) techniques often struggle to identify map overlaps due to significant viewpoint variations among robots.
+◆ Motivated by recent advancements in 3D foundation models, which can register images despite large viewpoint differences, we propose a robust loop closing approach that leverages these models to establish inter-robot measurements.
+◆ In contrast to resource-intensive methods requiring full 3D reconstruction within a centralized map, our approach integrates foundation models into existing SLAM pipelines, yielding scalable and robust multi-robot mapping.</td></tr>
+<tr><td>2026-02-02</td><td>Mapping-Guided Task Discovery and Allocation for Robotic Inspection of Underwater Structures</td><td>[2602.02389](http://arxiv.org/pdf/2602.02389)</td><td>◆ Task generation for underwater multi-robot inspections without prior knowledge of existing geometry can be achieved and optimized through examination of simultaneous localization and mapping (SLAM) data.
+◆ By considering hardware parameters and environmental conditions, a set of tasks is generated from SLAM meshes and optimized through expected keypoint scores and distance-based pruning.
+◆ In-water tests are used to demonstrate the effectiveness of the algorithm and determine the appropriate parameters.</td></tr>
+<tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
+◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
+◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
 <tr><td>2026-01-29</td><td>IROS: A Dual-Process Architecture for Real-Time VLM-Based Indoor Navigation</td><td>[2601.21506](http://arxiv.org/pdf/2601.21506)</td><td>◆ Indoor mobile robot navigation requires fast responsiveness and robust semantic understanding, yet existing methods struggle to provide both.
 ◆ Classical geometric approaches such as SLAM offer reliable localization but depend on detailed maps and cannot interpret human-targeted cues (e.g., signs, room numbers) essential for indoor reasoning.
 ◆ Vision-Language-Action (VLA) models introduce semantic grounding but remain strictly reactive, basing decisions only on visible frames and failing to anticipate unseen intersections or reason about distant textual cues.</td></tr>
 <tr><td>2026-01-28</td><td>Multi-Robot Decentralized Collaborative SLAM in Planetary Analogue Environments: Dataset, Challenges, and Lessons Learned</td><td>[2601.21063](http://arxiv.org/pdf/2601.21063)</td><td>◆ Decentralized collaborative simultaneous localization and mapping (C-SLAM) is essential to enable multirobot missions in unknown environments without relying on preexisting localization and communication infrastructure.
 ◆ This technology is anticipated to play a key role in the exploration of the Moon, Mars, and other planets.
 ◆ In this article, we share insights and lessons learned from C-SLAM experiments involving three robots operating on a Mars analogue terrain and communicating over an ad hoc network.</td></tr>
-<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+<tr><td>2026-01-30</td><td>VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
 ◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
 ◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
 <tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
@@ -2249,6 +2261,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>ObjEmbed: Towards Universal Multimodal Object Embeddings</td><td>[2602.01753](http://arxiv.org/pdf/2602.01753)</td><td>◆ Aligning objects with corresponding textual descriptions is a fundamental challenge and a realistic requirement in vision-language understanding.
+◆ While recent multimodal embedding models excel at global image-text alignment, they often struggle with fine-grained alignment between image regions and specific phrases.
+◆ In this work, we present ObjEmbed, a novel MLLM embedding model that decomposes the input image into multiple regional embeddings, each corresponding to an individual object, along with global embeddings.</td></tr>
+<tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
+◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
+◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
+<tr><td>2026-02-02</td><td>ReCALL: Recalibrating Capability Degradation for MLLM-based Composed Image Retrieval</td><td>[2602.01639](http://arxiv.org/pdf/2602.01639)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images based on a hybrid query comprising a reference image and a modification text.
+◆ Early dual-tower Vision-Language Models (VLMs) struggle with cross-modality compositional reasoning required for this task.
+◆ Recently, adapting generative Multimodal Large Language Models (MLLMs) for retrieval offers a promising direction.</td></tr>
+<tr><td>2026-02-01</td><td>Interacted Planes Reveal 3D Line Mapping</td><td>[2602.01296](http://arxiv.org/pdf/2602.01296)</td><td>◆ 3D line mapping from multi-view RGB images provides a compact and structured visual representation of scenes.
+◆ We study the problem from a physical and topological perspective: a 3D line most naturally emerges as the edge of a finite 3D planar patch.
+◆ We present LiP-Map, a line-plane joint optimization framework that explicitly models learnable line and planar primitives.</td></tr>
+<tr><td>2026-01-31</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
+◆ Current aggregation paradigms, however, either rely on data-hungry supervision or simplistic first-order statistics, often neglecting intrinsic structural correlations.
+◆ In this work, we propose a Second-Order Geometric Statistics framework that inherently captures geometric stability without training.</td></tr>
+<tr><td>2026-01-31</td><td>Generating a Paracosm for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.00813](http://arxiv.org/pdf/2602.00813)</td><td>◆ Composed Image Retrieval (CIR) is the task of retrieving a target image from a database using a multimodal query, which consists of a reference image and a modification text.
+◆ The text specifies how to alter the reference image to form a ``mental image&#x27;&#x27;, based on which CIR should find the target image in the database.
+◆ The fundamental challenge of CIR is that this ``mental image&#x27;&#x27; is not physically available and is only implicitly defined by the query.</td></tr>
+<tr><td>2026-01-31</td><td>VVLoc: Prior-free 3-DoF Vehicle Visual Localization</td><td>[2602.00810](http://arxiv.org/pdf/2602.00810)</td><td>◆ Localization is a critical technology in autonomous driving, encompassing both topological localization, which identifies the most similar map keyframe to the current observation, and metric localization, which provides precise spatial coordinates.
+◆ Conventional methods typically address these tasks independently, rely on single-camera setups, and often require additional 3D semantic or pose priors, while lacking mechanisms to quantify the confidence of localization results, making them less feasible for real industrial applications.
+◆ In this paper, we propose VVLoc, a unified pipeline that employs a single neural network to concurrently achieve topological and metric vehicle localization using multi-camera system.</td></tr>
+<tr><td>2026-01-31</td><td>Audio-to-Image Bird Species Retrieval without Audio-Image Pairs via Text Distillation</td><td>[2602.00681](http://arxiv.org/pdf/2602.00681)</td><td>◆ Audio-to-image retrieval offers an interpretable alternative to audio-only classification for bioacoustic species recognition, but learning aligned audio-image representations is challenging due to the scarcity of paired audio-image data.
+◆ We propose a simple and data-efficient approach that enables audio-to-image retrieval without any audio-image supervision.
+◆ Our proposed method uses text as a semantic intermediary: we distill the text embedding space of a pretrained image-text model (BioCLIP-2), which encodes rich visual and taxonomic structure, into a pretrained audio-text model (BioLingual) by fine-tuning its audio encoder with a contrastive objective.</td></tr>
 <tr><td>2026-01-30</td><td>HierLoc: Hyperbolic Entity Embeddings for Hierarchical Visual Geolocation</td><td>[2601.23064](http://arxiv.org/pdf/2601.23064)</td><td>◆ Visual geolocalization, the task of predicting where an image was taken, remains challenging due to global scale, visual ambiguity, and the inherently hierarchical structure of geography.
 ◆ Existing paradigms rely on either large-scale retrieval, which requires storing a large number of image embeddings, grid-based classifiers that ignore geographic continuity, or generative models that diffuse over space but struggle with fine detail.
 ◆ We introduce an entity-centric formulation of geolocation that replaces image-to-image retrieval with a compact hierarchy of geographic entities embedded in Hyperbolic space.</td></tr>
@@ -4987,7 +5023,7 @@
 <tr><td>2026-01-30</td><td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td><td>[2601.23065](http://arxiv.org/pdf/2601.23065)</td><td>◆ Recent reconstruction methods based on radiance field such as NeRF and 3DGS reproduce indoor scenes with high visual fidelity, but break down under scene editing due to baked illumination and the lack of explicit light transport.
 ◆ In contrast, physically based inverse rendering relies on mesh representations and path tracing, which enforce correct light transport but place strong requirements on geometric fidelity, becoming a practical bottleneck for real indoor scenes.
 ◆ In this work, we propose Emission-Aware Gaussians and Path Tracing (EAG-PT), aiming for physically based light transport with a unified 2D Gaussian representation.</td></tr>
-<tr><td>2026-01-30</td><td>Under-Canopy Terrain Reconstruction in Dense Forests Using RGB Imaging and Neural 3D Reconstruction</td><td>[2601.22861](http://arxiv.org/pdf/2601.22861)</td><td>◆ Mapping the terrain and understory hidden beneath dense forest canopies is of great interest for numerous applications such as search and rescue, trail mapping, forest inventory tasks, and more.
+<tr><td>2026-02-02</td><td>Under-Canopy Terrain Reconstruction in Dense Forests Using RGB Imaging and Neural 3D Reconstruction</td><td>[2601.22861](http://arxiv.org/pdf/2601.22861)</td><td>◆ Mapping the terrain and understory hidden beneath dense forest canopies is of great interest for numerous applications such as search and rescue, trail mapping, forest inventory tasks, and more.
 ◆ Existing solutions rely on specialized sensors: either heavy, costly airborne LiDAR, or Airborne Optical Sectioning (AOS), which uses thermal synthetic aperture photography and is tailored for person detection.
 ◆ We introduce a novel approach for the reconstruction of canopy-free, photorealistic ground views using only conventional RGB images.</td></tr>
 <tr><td>2026-01-30</td><td>Diachronic Stereo Matching for Multi-Date Satellite Imagery</td><td>[2601.22808](http://arxiv.org/pdf/2601.22808)</td><td>◆ Recent advances in image-based satellite 3D reconstruction have progressed along two complementary directions.
@@ -5881,4 +5917,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.02
+> 更新于: 2026.02.03
