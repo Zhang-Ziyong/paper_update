@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.03)
+# 计算机视觉领域最新论文 (2026.02.04)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1411,6 +1411,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>Pi-GS: Sparse-View Gaussian Splatting with Dense π^3 Initialization</td><td>[2602.03327](http://arxiv.org/pdf/2602.03327)</td><td>◆ Novel view synthesis has evolved rapidly, advancing from Neural Radiance Fields to 3D Gaussian Splatting (3DGS), which offers real-time rendering and rapid training without compromising visual fidelity.
+◆ However, 3DGS relies heavily on accurate camera poses and high-quality point cloud initialization, which are difficult to obtain in sparse-view scenarios.
+◆ While traditional Structure from Motion (SfM) pipelines often fail in these settings, existing learning-based point estimation alternatives typically require reliable reference views and remain sensitive to pose or depth errors.</td></tr>
+<tr><td>2026-02-03</td><td>Depth Completion in Unseen Field Robotics Environments Using Extremely Sparse Depth Measurements</td><td>[2602.03209](http://arxiv.org/pdf/2602.03209)</td><td>◆ Autonomous field robots operating in unstructured environments require robust perception to ensure safe and reliable operations.
+◆ Recent advances in monocular depth estimation have demonstrated the potential of low-cost cameras as depth sensors; however, their adoption in field robotics remains limited due to the absence of reliable scale cues, ambiguous or low-texture conditions, and the scarcity of large-scale datasets.
+◆ To address these challenges, we propose a depth completion model that trains on synthetic data and uses extremely sparse measurements from depth sensors to predict dense metric depth in unseen field robotics environments.</td></tr>
 <tr><td>2026-01-29</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
 ◆ However, their reliability for quantitative 3D analysis in dense, self-occluding scenes remains poorly understood.
 ◆ In this study, we identify a fundamental failure mode of implicit density fields under heavy occlusion, which we term Interior Geometric Degradation (IGD).</td></tr>
@@ -2257,7 +2263,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-02</td><td>ObjEmbed: Towards Universal Multimodal Object Embeddings</td><td>[2602.01753](http://arxiv.org/pdf/2602.01753)</td><td>◆ Aligning objects with corresponding textual descriptions is a fundamental challenge and a realistic requirement in vision-language understanding.
+<tr><td>2026-02-03</td><td>LaVPR: Benchmarking Language and Vision for Place Recognition</td><td>[2602.03253](http://arxiv.org/pdf/2602.03253)</td><td>◆ Visual Place Recognition (VPR) often fails under extreme environmental changes and perceptual aliasing.
+◆ Furthermore, standard systems cannot perform &quot;blind&quot; localization from verbal descriptions alone, a capability needed for applications such as emergency response.
+◆ To address these challenges, we introduce LaVPR, a large-scale benchmark that extends existing VPR datasets with over 650,000 rich natural-language descriptions.</td></tr>
+<tr><td>2026-02-03</td><td>ObjEmbed: Towards Universal Multimodal Object Embeddings</td><td>[2602.01753](http://arxiv.org/pdf/2602.01753)</td><td>◆ Aligning objects with corresponding textual descriptions is a fundamental challenge and a realistic requirement in vision-language understanding.
 ◆ While recent multimodal embedding models excel at global image-text alignment, they often struggle with fine-grained alignment between image regions and specific phrases.
 ◆ In this work, we present ObjEmbed, a novel MLLM embedding model that decomposes the input image into multiple regional embeddings, each corresponding to an individual object, along with global embeddings.</td></tr>
 <tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
@@ -2272,7 +2281,7 @@
 <tr><td>2026-01-31</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
 ◆ Current aggregation paradigms, however, either rely on data-hungry supervision or simplistic first-order statistics, often neglecting intrinsic structural correlations.
 ◆ In this work, we propose a Second-Order Geometric Statistics framework that inherently captures geometric stability without training.</td></tr>
-<tr><td>2026-01-31</td><td>Generating a Paracosm for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.00813](http://arxiv.org/pdf/2602.00813)</td><td>◆ Composed Image Retrieval (CIR) is the task of retrieving a target image from a database using a multimodal query, which consists of a reference image and a modification text.
+<tr><td>2026-02-03</td><td>Generating a Paracosm for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.00813](http://arxiv.org/pdf/2602.00813)</td><td>◆ Composed Image Retrieval (CIR) is the task of retrieving a target image from a database using a multimodal query, which consists of a reference image and a modification text.
 ◆ The text specifies how to alter the reference image to form a ``mental image&#x27;&#x27;, based on which CIR should find the target image in the database.
 ◆ The fundamental challenge of CIR is that this ``mental image&#x27;&#x27; is not physically available and is only implicitly defined by the query.</td></tr>
 <tr><td>2026-01-31</td><td>VVLoc: Prior-free 3-DoF Vehicle Visual Localization</td><td>[2602.00810](http://arxiv.org/pdf/2602.00810)</td><td>◆ Localization is a critical technology in autonomous driving, encompassing both topological localization, which identifies the most similar map keyframe to the current observation, and metric localization, which provides precise spatial coordinates.
@@ -5010,6 +5019,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>Beyond Cropping and Rotation: Automated Evolution of Powerful Task-Specific Augmentations with Generative Models</td><td>[2602.03123](http://arxiv.org/pdf/2602.03123)</td><td>◆ Data augmentation has long been a cornerstone for reducing overfitting in vision models, with methods like AutoAugment automating the design of task-specific augmentations.
+◆ Recent advances in generative models, such as conditional diffusion and few-shot NeRFs, offer a new paradigm for data augmentation by synthesizing data with significantly greater diversity and realism.
+◆ However, unlike traditional augmentations like cropping or rotation, these methods introduce substantial changes that enhance robustness but also risk degrading performance if the augmentations are poorly matched to the task.</td></tr>
 <tr><td>2026-01-30</td><td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td><td>[2601.23065](http://arxiv.org/pdf/2601.23065)</td><td>◆ Recent reconstruction methods based on radiance field such as NeRF and 3DGS reproduce indoor scenes with high visual fidelity, but break down under scene editing due to baked illumination and the lack of explicit light transport.
 ◆ In contrast, physically based inverse rendering relies on mesh representations and path tracing, which enforce correct light transport but place strong requirements on geometric fidelity, becoming a practical bottleneck for real indoor scenes.
 ◆ In this work, we propose Emission-Aware Gaussians and Path Tracing (EAG-PT), aiming for physically based light transport with a unified 2D Gaussian representation.</td></tr>
@@ -5905,4 +5917,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.03
+> 更新于: 2026.02.04
