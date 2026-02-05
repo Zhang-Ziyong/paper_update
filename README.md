@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.04)
+# 计算机视觉领域最新论文 (2026.02.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>Towards Next-Generation SLAM: A Survey on 3DGS-SLAM Focusing on Performance, Robustness, and Future Directions</td><td>[2602.04251](http://arxiv.org/pdf/2602.04251)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) systems often face limitations including coarse rendering quality, insufficient recovery of scene details, and poor robustness in dynamic environments.
+◆ 3D Gaussian Splatting (3DGS), with its efficient explicit representation and high-quality rendering capabilities, offers a new reconstruction paradigm for SLAM.
+◆ This survey comprehensively reviews key technical approaches for integrating 3DGS with SLAM.</td></tr>
+<tr><td>2026-02-03</td><td>Beyond the Vehicle: Cooperative Localization by Fusing Point Clouds for GPS-Challenged Urban Scenarios</td><td>[2602.03908](http://arxiv.org/pdf/2602.03908)</td><td>◆ Accurate vehicle localization is a critical challenge in urban environments where GPS signals are often unreliable.
+◆ This paper presents a cooperative multi-sensor and multi-modal localization approach to address this issue by fusing data from vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) systems.
+◆ Our approach integrates cooperative data with a point cloud registration-based simultaneous localization and mapping (SLAM) algorithm.</td></tr>
 <tr><td>2026-02-02</td><td>Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning</td><td>[2602.02456](http://arxiv.org/pdf/2602.02456)</td><td>◆ Representing and understanding 3D environments in a structured manner is crucial for autonomous agents to navigate and reason about their surroundings.
 ◆ While traditional Simultaneous Localization and Mapping (SLAM) methods generate metric reconstructions and can be extended to metric-semantic mapping, they lack a higher level of abstraction and relational reasoning.
 ◆ To address this gap, 3D scene graphs have emerged as a powerful representation for capturing hierarchical structures and object relationships.</td></tr>
@@ -1413,6 +1419,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation</td><td>[2602.04672](http://arxiv.org/pdf/2602.04672)</td><td>◆ Reconstructing dynamic hand-object interactions from monocular videos is critical for dexterous manipulation data collection and creating realistic digital twins for robotics and VR.
+◆ However, current methods face two prohibitive barriers: (1) reliance on neural rendering often yields fragmented, non-simulation-ready geometries under heavy occlusion, and (2) dependence on brittle Structure-from-Motion (SfM) initialization leads to frequent failures on in-the-wild footage.
+◆ To overcome these limitations, we introduce AGILE, a robust framework that shifts the paradigm from reconstruction to agentic generation for interaction learning.</td></tr>
+<tr><td>2026-02-04</td><td>SuperPoint-E: local features for 3D reconstruction via tracking adaptation in endoscopy</td><td>[2602.04108](http://arxiv.org/pdf/2602.04108)</td><td>◆ In this work, we focus on boosting the feature extraction to improve the performance of Structure-from-Motion (SfM) in endoscopy videos.
+◆ We present SuperPoint-E, a new local feature extraction method that, using our proposed Tracking Adaptation supervision strategy, significantly improves the quality of feature detection and description in endoscopy.
+◆ Extensive experimentation on real endoscopy recordings studies our approach&#x27;s most suitable configuration and evaluates SuperPoint-E feature quality.</td></tr>
 <tr><td>2026-02-03</td><td>Pi-GS: Sparse-View Gaussian Splatting with Dense π^3 Initialization</td><td>[2602.03327](http://arxiv.org/pdf/2602.03327)</td><td>◆ Novel view synthesis has evolved rapidly, advancing from Neural Radiance Fields to 3D Gaussian Splatting (3DGS), which offers real-time rendering and rapid training without compromising visual fidelity.
 ◆ However, 3DGS relies heavily on accurate camera poses and high-quality point cloud initialization, which are difficult to obtain in sparse-view scenarios.
 ◆ While traditional Structure from Motion (SfM) pipelines often fail in these settings, existing learning-based point estimation alternatives typically require reliable reference views and remain sensitive to pose or depth errors.</td></tr>
@@ -2267,6 +2279,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>SAR-RAG: ATR Visual Question Answering by Semantic Search, Retrieval, and MLLM Generation</td><td>[2602.04712](http://arxiv.org/pdf/2602.04712)</td><td>◆ We present a visual-context image retrieval-augmented generation (ImageRAG) assisted AI agent for automatic target recognition (ATR) of synthetic aperture radar (SAR).
+◆ SAR is a remote sensing method used in defense and security applications to detect and monitor the positions of military vehicles, which may appear indistinguishable in images.
+◆ Researchers have extensively studied SAR ATR to improve the differentiation and identification of vehicle types, characteristics, and measurements.</td></tr>
+<tr><td>2026-02-04</td><td>SDR-CIR: Semantic Debias Retrieval Framework for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.04451](http://arxiv.org/pdf/2602.04451)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve a target image from a query composed of a reference image and modification text.
+◆ Recent training-free zero-shot methods often employ Multimodal Large Language Models (MLLMs) with Chain-of-Thought (CoT) to compose a target image description for retrieval.
+◆ However, due to the fuzzy matching nature of ZS-CIR, the generated description is prone to semantic bias relative to the target image.</td></tr>
+<tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
+◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
+◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
+<tr><td>2026-02-04</td><td>Beyond Static Cropping: Layer-Adaptive Visual Localization and Decoding Enhancement</td><td>[2602.04304](http://arxiv.org/pdf/2602.04304)</td><td>◆ Large Vision-Language Models (LVLMs) have advanced rapidly by aligning visual patches with the text embedding space, but a fixed visual-token budget forces images to be resized to a uniform pretraining resolution, often erasing fine-grained details and causing hallucinations via over-reliance on language priors.
+◆ Recent attention-guided enhancement (e.g., cropping or region-focused attention allocation) alleviates this, yet it commonly hinges on a static &quot;magic layer&quot; empirically chosen on simple recognition benchmarks and thus may not transfer to complex reasoning tasks.
+◆ In contrast to this static assumption, we propose a dynamic perspective on visual grounding.</td></tr>
 <tr><td>2026-02-03</td><td>LaVPR: Benchmarking Language and Vision for Place Recognition</td><td>[2602.03253](http://arxiv.org/pdf/2602.03253)</td><td>◆ Visual Place Recognition (VPR) often fails under extreme environmental changes and perceptual aliasing.
 ◆ Furthermore, standard systems cannot perform &quot;blind&quot; localization from verbal descriptions alone, a capability needed for applications such as emergency response.
 ◆ To address these challenges, we introduce LaVPR, a large-scale benchmark that extends existing VPR datasets with over 650,000 rich natural-language descriptions.</td></tr>
@@ -2282,7 +2306,7 @@
 <tr><td>2026-02-01</td><td>Interacted Planes Reveal 3D Line Mapping</td><td>[2602.01296](http://arxiv.org/pdf/2602.01296)</td><td>◆ 3D line mapping from multi-view RGB images provides a compact and structured visual representation of scenes.
 ◆ We study the problem from a physical and topological perspective: a 3D line most naturally emerges as the edge of a finite 3D planar patch.
 ◆ We present LiP-Map, a line-plane joint optimization framework that explicitly models learnable line and planar primitives.</td></tr>
-<tr><td>2026-01-31</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
+<tr><td>2026-02-04</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
 ◆ Current aggregation paradigms, however, either rely on data-hungry supervision or simplistic first-order statistics, often neglecting intrinsic structural correlations.
 ◆ In this work, we propose a Second-Order Geometric Statistics framework that inherently captures geometric stability without training.</td></tr>
 <tr><td>2026-02-03</td><td>Generating a Paracosm for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.00813](http://arxiv.org/pdf/2602.00813)</td><td>◆ Composed Image Retrieval (CIR) is the task of retrieving a target image from a database using a multimodal query, which consists of a reference image and a modification text.
@@ -4268,13 +4292,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
+◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
+◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
 <tr><td>2026-01-19</td><td>A Streamlined Attention-Based Network for Descriptor Extraction</td><td>[2601.13126](http://arxiv.org/pdf/2601.13126)</td><td>◆ We introduce SANDesc, a Streamlined Attention-Based Network for Descriptor extraction that aims to improve on existing architectures for keypoint description.
 ◆ Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
 ◆ We employ a revised U-Net-like architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.</td></tr>
 <tr><td>2026-01-18</td><td>XRefine: Attention-Guided Keypoint Match Refinement</td><td>[2601.12530](http://arxiv.org/pdf/2601.12530)</td><td>◆ Sparse keypoint matching is crucial for 3D vision tasks, yet current keypoint detectors often produce spatially inaccurate matches.
 ◆ Existing refinement methods mitigate this issue through alignment of matched keypoint locations, but they are typically detector-specific, requiring retraining for each keypoint detector.
 ◆ We introduce XRefine, a novel, detector-agnostic approach for sub-pixel keypoint refinement that operates solely on image patches centered at matched keypoints.</td></tr>
-<tr><td>2026-01-17</td><td>Detecting 3D Line Segments for 6DoF Pose Estimation with Limited Data</td><td>[2601.12090](http://arxiv.org/pdf/2601.12090)</td><td>◆ The task of 6DoF object pose estimation is one of the fundamental problems of 3D vision with many practical applications such as industrial automation.
+<tr><td>2026-02-03</td><td>Detecting 3D Line Segments for 6DoF Pose Estimation with Limited Data</td><td>[2601.12090](http://arxiv.org/pdf/2601.12090)</td><td>◆ The task of 6DoF object pose estimation is one of the fundamental problems of 3D vision with many practical applications such as industrial automation.
 ◆ Traditional deep learning approaches for this task often require extensive training data or CAD models, limiting their application in real-world industrial settings where data is scarce and object instances vary.
 ◆ We propose a novel method for 6DoF pose estimation focused specifically on bins used in industrial settings.</td></tr>
 <tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
@@ -5929,4 +5956,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.04
+> 更新于: 2026.02.05
