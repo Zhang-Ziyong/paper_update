@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.05)
+# 计算机视觉领域最新论文 (2026.02.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>Geometric Observability Index: An Operator-Theoretic Framework for Per-Feature Sensitivity, Weak Observability, and Dynamic Effects in SE(3) Pose Estimation</td><td>[2602.05582](http://arxiv.org/pdf/2602.05582)</td><td>◆ We present a unified operator-theoretic framework for analyzing per-feature sensitivity in camera pose estimation on the Lie group SE(3).
+◆ Classical sensitivity tools - conditioning analyses, Euclidean perturbation arguments, and Fisher information bounds - do not explain how individual image features influence the pose estimate, nor why dynamic or inconsistent observations can disproportionately distort modern SLAM and structure-from-motion systems.
+◆ To address this gap, we extend influence function theory to matrix Lie groups and derive an intrinsic perturbation operator for left-trivialized M-estimators on SE(3).</td></tr>
+<tr><td>2026-02-05</td><td>VGGT-Motion: Motion-Aware Calibration-Free Monocular SLAM for Long-Range Consistency</td><td>[2602.05508](http://arxiv.org/pdf/2602.05508)</td><td>◆ Despite recent progress in calibration-free monocular SLAM via 3D vision foundation models, scale drift remains severe on long sequences.
+◆ Motion-agnostic partitioning breaks contextual coherence and causes zero-motion drift, while conventional geometric alignment is computationally expensive.
+◆ To address these issues, we propose VGGT-Motion, a calibration-free SLAM system for efficient and robust global consistency over kilometer-scale trajectories.</td></tr>
+<tr><td>2026-02-05</td><td>Feature points evaluation on omnidirectional vision with a photorealistic fisheye sequence -- A report on experiments done in 2014</td><td>[2602.05487](http://arxiv.org/pdf/2602.05487)</td><td>◆ What is this report: This is a scientific report, contributing with a detailed bibliography, a dataset which we will call now PFSeq for &#x27;&#x27;Photorealistic Fisheye Sequence&#x27;&#x27; and make available at https://doi.org/10.
+◆ 57745/DYIVVU, and comprehensive experiments.
+◆ This work should be considered as a draft, and has been done during my PhD thesis &#x27;&#x27;Construction of 3D models from fisheye video data-Application to the localisation in urban area&#x27;&#x27; in 2014 [Mor16].</td></tr>
 <tr><td>2026-02-04</td><td>Towards Next-Generation SLAM: A Survey on 3DGS-SLAM Focusing on Performance, Robustness, and Future Directions</td><td>[2602.04251](http://arxiv.org/pdf/2602.04251)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) systems often face limitations including coarse rendering quality, insufficient recovery of scene details, and poor robustness in dynamic environments.
 ◆ 3D Gaussian Splatting (3DGS), with its efficient explicit representation and high-quality rendering capabilities, offers a new reconstruction paradigm for SLAM.
 ◆ This survey comprehensively reviews key technical approaches for integrating 3DGS with SLAM.</td></tr>
@@ -1419,6 +1428,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
+◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
+◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
+<tr><td>2026-02-05</td><td>Geometric Observability Index: An Operator-Theoretic Framework for Per-Feature Sensitivity, Weak Observability, and Dynamic Effects in SE(3) Pose Estimation</td><td>[2602.05582](http://arxiv.org/pdf/2602.05582)</td><td>◆ We present a unified operator-theoretic framework for analyzing per-feature sensitivity in camera pose estimation on the Lie group SE(3).
+◆ Classical sensitivity tools - conditioning analyses, Euclidean perturbation arguments, and Fisher information bounds - do not explain how individual image features influence the pose estimate, nor why dynamic or inconsistent observations can disproportionately distort modern SLAM and structure-from-motion systems.
+◆ To address this gap, we extend influence function theory to matrix Lie groups and derive an intrinsic perturbation operator for left-trivialized M-estimators on SE(3).</td></tr>
 <tr><td>2026-02-04</td><td>AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation</td><td>[2602.04672](http://arxiv.org/pdf/2602.04672)</td><td>◆ Reconstructing dynamic hand-object interactions from monocular videos is critical for dexterous manipulation data collection and creating realistic digital twins for robotics and VR.
 ◆ However, current methods face two prohibitive barriers: (1) reliance on neural rendering often yields fragmented, non-simulation-ready geometries under heavy occlusion, and (2) dependence on brittle Structure-from-Motion (SfM) initialization leads to frequent failures on in-the-wild footage.
 ◆ To overcome these limitations, we introduce AGILE, a robust framework that shifts the paradigm from reconstruction to agentic generation for interaction learning.</td></tr>
@@ -2282,7 +2297,7 @@
 <tr><td>2026-02-04</td><td>SAR-RAG: ATR Visual Question Answering by Semantic Search, Retrieval, and MLLM Generation</td><td>[2602.04712](http://arxiv.org/pdf/2602.04712)</td><td>◆ We present a visual-context image retrieval-augmented generation (ImageRAG) assisted AI agent for automatic target recognition (ATR) of synthetic aperture radar (SAR).
 ◆ SAR is a remote sensing method used in defense and security applications to detect and monitor the positions of military vehicles, which may appear indistinguishable in images.
 ◆ Researchers have extensively studied SAR ATR to improve the differentiation and identification of vehicle types, characteristics, and measurements.</td></tr>
-<tr><td>2026-02-04</td><td>SDR-CIR: Semantic Debias Retrieval Framework for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.04451](http://arxiv.org/pdf/2602.04451)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve a target image from a query composed of a reference image and modification text.
+<tr><td>2026-02-05</td><td>SDR-CIR: Semantic Debias Retrieval Framework for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.04451](http://arxiv.org/pdf/2602.04451)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve a target image from a query composed of a reference image and modification text.
 ◆ Recent training-free zero-shot methods often employ Multimodal Large Language Models (MLLMs) with Chain-of-Thought (CoT) to compose a target image description for retrieval.
 ◆ However, due to the fuzzy matching nature of ZS-CIR, the generated description is prone to semantic bias relative to the target image.</td></tr>
 <tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
@@ -2306,7 +2321,7 @@
 <tr><td>2026-02-01</td><td>Interacted Planes Reveal 3D Line Mapping</td><td>[2602.01296](http://arxiv.org/pdf/2602.01296)</td><td>◆ 3D line mapping from multi-view RGB images provides a compact and structured visual representation of scenes.
 ◆ We study the problem from a physical and topological perspective: a 3D line most naturally emerges as the edge of a finite 3D planar patch.
 ◆ We present LiP-Map, a line-plane joint optimization framework that explicitly models learnable line and planar primitives.</td></tr>
-<tr><td>2026-02-04</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
+<tr><td>2026-02-05</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
 ◆ Current aggregation paradigms, however, either rely on data-hungry supervision or simplistic first-order statistics, often neglecting intrinsic structural correlations.
 ◆ In this work, we propose a Second-Order Geometric Statistics framework that inherently captures geometric stability without training.</td></tr>
 <tr><td>2026-02-03</td><td>Generating a Paracosm for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2602.00813](http://arxiv.org/pdf/2602.00813)</td><td>◆ Composed Image Retrieval (CIR) is the task of retrieving a target image from a database using a multimodal query, which consists of a reference image and a modification text.
@@ -4292,6 +4307,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>SOMA-1M: A Large-Scale SAR-Optical Multi-resolution Alignment Dataset for Multi-Task Remote Sensing</td><td>[2602.05480](http://arxiv.org/pdf/2602.05480)</td><td>◆ Synthetic Aperture Radar (SAR) and optical imagery provide complementary strengths that constitute the critical foundation for transcending single-modality constraints and facilitating cross-modal collaborative processing and intelligent interpretation.
+◆ However, existing benchmark datasets often suffer from limitations such as single spatial resolution, insufficient data scale, and low alignment accuracy, making them inadequate for supporting the training and generalization of multi-scale foundation models.
+◆ To address these challenges, we introduce SOMA-1M (SAR-Optical Multi-resolution Alignment), a pixel-level precisely aligned dataset containing over 1.3 million pairs of georeferenced images with a specification of 512 x 512 pixels.</td></tr>
 <tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
 ◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
 ◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
@@ -5056,6 +5074,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
+◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
+◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
+<tr><td>2026-02-05</td><td>NeVStereo: A NeRF-Driven NVS-Stereo Architecture for High-Fidelity 3D Tasks</td><td>[2602.05423](http://arxiv.org/pdf/2602.05423)</td><td>◆ In modern dense 3D reconstruction, feed-forward systems (e.g., VGGT, pi3) focus on end-to-end matching and geometry prediction but do not explicitly output the novel view synthesis (NVS).
+◆ Neural rendering-based approaches offer high-fidelity NVS and detailed geometry from posed images, yet they typically assume fixed camera poses and can be sensitive to pose errors.
+◆ As a result, it remains non-trivial to obtain a single framework that can offer accurate poses, reliable depth, high-quality rendering, and accurate 3D surfaces from casually captured views.</td></tr>
 <tr><td>2026-02-03</td><td>Beyond Cropping and Rotation: Automated Evolution of Powerful Task-Specific Augmentations with Generative Models</td><td>[2602.03123](http://arxiv.org/pdf/2602.03123)</td><td>◆ Data augmentation has long been a cornerstone for reducing overfitting in vision models, with methods like AutoAugment automating the design of task-specific augmentations.
 ◆ Recent advances in generative models, such as conditional diffusion and few-shot NeRFs, offer a new paradigm for data augmentation by synthesizing data with significantly greater diversity and realism.
 ◆ However, unlike traditional augmentations like cropping or rotation, these methods introduce substantial changes that enhance robustness but also risk degrading performance if the augmentations are poorly matched to the task.</td></tr>
@@ -5956,4 +5980,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.05
+> 更新于: 2026.02.06
