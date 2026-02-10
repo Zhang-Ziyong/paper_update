@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.09)
+# 计算机视觉领域最新论文 (2026.02.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Thegra: Graph-based SLAM for Thermal Imagery</td><td>[2602.08531](http://arxiv.org/pdf/2602.08531)</td><td>该论文提出了一种适用于热成像的、基于图优化的稀疏单目SLAM系统，旨在解决热图像纹理少、对比度低和噪声高导致的特征提取与匹配难题。
+
+◆ 创新性地将在大规模可见光数据上训练的通用学习特征（SuperPoint检测器与LightGlue匹配器）引入热成像SLAM，利用其强大的跨域泛化能力，避免了针对稀缺热数据专门训练的需求。
+◆ 设计了一个针对热图像的预处理流程，以增强输入图像对特征提取网络的适应性，并修改了SLAM核心模块以处理热图像中更稀疏且易含异常值的特征匹配。
+◆ 提出了一种置信度加权的因子图优化方法，将SuperPoint提取的关键点置信度分数融入图优化过程，从而提高了系统在恶劣条件下的状态估计鲁棒性。</td></tr>
+<tr><td>2026-02-07</td><td>Thermal odometry and dense mapping using learned ddometry and Gaussian splatting</td><td>[2602.07493](http://arxiv.org/pdf/2602.07493)</td><td>本文提出了一种名为TOM-GS的新型热成像里程计与稠密建图方法，其核心贡献在于首次将基于学习的方法与高斯泼溅技术相结合，以解决热成像在恶劣环境下的鲁棒感知与稠密重建问题。
+
+◆ 首次为热成像相机量身定制了基于高斯泼溅的SLAM系统，实现了高效的里程计估计与高质量稠密地图重建。
+◆ 创新性地整合了基于学习的里程计与基于高斯泼溅的稠密建图模块，克服了传统几何方法在多样化数据集上易失效且无法生成稠密地图的局限。
+◆ 设计了专门的热图像增强模块与单目深度集成方法，显著提升了热成像数据的处理质量与深度估计的准确性。
+◆ 通过大量实验验证，该方法在运动估计和新视角渲染任务上均优于现有的基于学习方法，证明了所提学习框架对于鲁棒热成像里程计与稠密重建的有效性。</td></tr>
 <tr><td>2026-02-06</td><td>A Consistency-Improved LiDAR-Inertial Bundle Adjustment</td><td>[2602.06380](http://arxiv.org/pdf/2602.06380)</td><td>◆ Simultaneous Localization and Mapping (SLAM) using 3D LiDAR has emerged as a cornerstone for autonomous navigation in robotics.
 ◆ While feature-based SLAM systems have achieved impressive results by leveraging edge and planar structures, they often suffer from the inconsistent estimator associated with feature parameterization and estimated covariance.
 ◆ In this work, we present a consistency-improved LiDAR-inertial bundle adjustment (BA) with tailored parameterization and estimator.</td></tr>
@@ -1429,6 +1440,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-08</td><td>Scalable Adaptation of 3D Geometric Foundation Models via Weak Supervision from Internet Video</td><td>[2602.07891](http://arxiv.org/pdf/2602.07891)</td><td>该论文的核心贡献是提出了SAGE框架，旨在利用互联网视频这一海量但无标注数据，来规模化地适应和增强3D几何基础模型，以解决3D标注数据稀缺的根本瓶颈。
+
+其核心创新点包括：
+◆ 提出了一个可扩展的适应框架SAGE，首次实现了利用原始互联网视频流来适应3D几何基础模型，为通用3D学习建立了一个新的规模化范式。
+◆ 设计了一个分层挖掘流程，将原始视频转化为有效的训练轨迹，并融合了混合监督信号，以应对视频中无真实几何标注和存在观测噪声的挑战。
+◆ 引入了稀疏几何锚定技术，利用从视频中恢复的运动结构点云提供全局结构指导，作为弱监督信号。
+◆ 结合了密集可微一致性约束，通过3D高斯渲染技术施加多视图一致性约束，进一步利用视频中的自监督信号。
+◆ 提出了一种基于锚定数据的正则化策略，以防止模型在适应新视频数据时发生灾难性遗忘，稳定训练过程。
+实验表明，该方法能显著提升模型的零样本泛化能力，在多个未见过的基准数据集上大幅优于现有先进方法。</td></tr>
+<tr><td>2026-01-31</td><td>Gaussian-Constrained LeJEPA Representations for Unsupervised Scene Discovery and Pose Consistency</td><td>[2602.07016](http://arxiv.org/pdf/2602.07016)</td><td>本文的核心贡献在于探索并实证了高斯约束表征在无监督三维场景重建中的实用价值，特别是在多场景发现与相机姿态估计任务中。其创新点可总结如下：
+
+◆ 首次将受LeJEPA启发的各向同性高斯约束应用于无监督图像嵌入学习，以提升场景表征的区分度。
+◆ 设计了三种逐步优化的处理流程，最终通过高斯约束明确规范嵌入空间分布，增强聚类一致性。
+◆ 该方法不追求理论证明，而是聚焦于实证评估，验证约束对实际场景分离与姿态估计鲁棒性的影响。
+◆ 在IMC2025挑战赛的复杂真实图像集上验证有效性，证明其能改善视觉模糊情况下的场景划分与姿态合理性。
+◆ 为自监督学习原则与实际运动恢复结构流程的融合提供了新方向，展示了理论驱动表征约束的实用潜力。</td></tr>
 <tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
 ◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
 ◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
@@ -2293,6 +2320,40 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>OSCAR: Optimization-Steered Agentic Planning for Composed Image Retrieval</td><td>[2602.08603](http://arxiv.org/pdf/2602.08603)</td><td>该论文提出了OSCAR框架，用于组合图像检索任务。其核心贡献与创新点如下：
+
+◆ 首次将组合图像检索中的智能体规划问题，从启发式搜索过程重新定义为一种原则性的轨迹优化问题，为其奠定了数学基础。
+
+◆ 提出了一种新颖的离线-在线范式。离线阶段将检索任务建模为两阶段混合整数规划问题，通过严格的布尔集合运算推导出最大化覆盖训练样本的最优轨迹。
+
+◆ 构建了一个“黄金库”，用于存储离线阶段计算出的最优轨迹，这些轨迹在在线推理时作为上下文示例，以指导视觉语言模型规划器的决策。
+
+◆ 该方法克服了现有统一嵌入检索的模型单一性局限，以及启发式智能体检索的试错协调次优问题，实现了优化驱动的规划。
+
+◆ 实验表明，该框架在多个基准测试上性能超越现有技术，且仅需10%的训练数据就能达到优异效果，证明了其规划逻辑的强大泛化能力，而非对数据集的简单记忆。</td></tr>
+<tr><td>2026-02-09</td><td>A Sketch+Text Composed Image Retrieval Dataset for Thangka</td><td>[2602.08411](http://arxiv.org/pdf/2602.08411)</td><td>该论文的核心贡献是构建并发布了首个面向唐卡图像的草图+文本组合检索数据集CIRThan，以推动需要细粒度语义推理和领域知识的组合图像检索研究。
+
+◆ 创建了首个针对唐卡这一具有复杂结构、密集符号和特定文化语义领域的草图+文本组合检索数据集CIRThan。
+◆ 数据集包含2,287张高质量唐卡图像，每张均配有人工绘制的草图和三层次（整体、局部、细节）的文本描述，支持同时表达结构意图和多级语义的组合查询。
+◆ 该数据集突破了现有基准主要关注通用域图像且仅依赖简短文本修改的局限，为需要细粒度推理和领域知识的检索场景提供了支持。
+◆ 通过基准测试发现，现有主要针对通用域开发的CIR方法难以有效对齐草图抽象和层次化文本语义，尤其在无领域监督下表现不佳。
+◆ CIRThan为文化遗产及其他知识特定视觉领域的草图+文本组合检索、层次语义建模和多模态检索研究提供了有价值的基准。</td></tr>
+<tr><td>2026-02-09</td><td>UrbanGraphEmbeddings: Learning and Evaluating Spatially Grounded Multimodal Embeddings for Urban Science</td><td>[2602.08342](http://arxiv.org/pdf/2602.08342)</td><td>该论文的核心贡献在于为城市科学构建了一个空间接地的多模态学习与评估框架。其创新点主要体现在以下三个方面：
+
+◆ 提出了一个新颖的空间接地数据集UGData，它首次将街景图像与结构化空间图进行显式对齐，并通过空间推理路径和空间上下文描述提供监督，从而捕捉距离、方向、连通性等超越图像内容的空间关系。
+
+◆ 提出了一种名为UGE的两阶段训练策略，该策略结合指令引导的对比学习和基于图的空间编码，逐步且稳定地对齐图像、文本和空间结构，从而学习可迁移的多模态嵌入。
+
+◆ 建立了一个全面的评估基准UGBench，用于系统评估空间接地嵌入在多种城市理解任务（如地理位置排序、图像检索、城市感知和空间接地）上的性能，填补了该领域的空白。
+
+通过在多个先进视觉语言模型上进行训练和评估，该方法在训练城市和未见城市上都显著提升了图像检索和地理位置排序等空间密集型任务的性能，证明了显式空间接地对于城市理解的有效性和泛化能力。</td></tr>
+<tr><td>2026-02-08</td><td>WristMIR: Coarse-to-Fine Region-Aware Retrieval of Pediatric Wrist Radiographs with Radiology Report-Driven Learning</td><td>[2602.07872](http://arxiv.org/pdf/2602.07872)</td><td>该论文提出了一种名为WristMIR的区域感知儿科腕部X光片检索框架，其核心贡献在于显著提升了具有相似骨折模式影像的检索精度与临床实用性。
+
+◆ 提出了一种无需人工图像标注的方法，利用密集的放射学报告和基于骨骼的定位来学习细粒度、具有临床意义的图像表示。
+◆ 创新性地采用基于MedGemma的结构化报告挖掘技术，自动生成全局和区域级别的文本描述，作为监督信号。
+◆ 设计了由全局和局部对比编码器组成的联合训练架构，并结合一个两阶段检索流程：先进行粗粒度全局匹配筛选，再进行针对特定解剖骨骼区域的细粒度重排序。
+◆ 该方法在多个评估维度上大幅超越现有基线模型，例如将图像到文本的Recall@5从0.82%提升至9.35%，并显著提升了基于检索的骨折诊断性能（平均F1分数从0.568增至0.753）。
+◆ 其学习到的嵌入表示在直接的骨折分类任务上也表现出色（AUROC达0.949），并且经放射科医生评估，其检索出的病例具有更高的临床相关性。</td></tr>
 <tr><td>2026-02-04</td><td>SAR-RAG: ATR Visual Question Answering by Semantic Search, Retrieval, and MLLM Generation</td><td>[2602.04712](http://arxiv.org/pdf/2602.04712)</td><td>◆ We present a visual-context image retrieval-augmented generation (ImageRAG) assisted AI agent for automatic target recognition (ATR) of synthetic aperture radar (SAR).
 ◆ SAR is a remote sensing method used in defense and security applications to detect and monitor the positions of military vehicles, which may appear indistinguishable in images.
 ◆ Researchers have extensively studied SAR ATR to improve the differentiation and identification of vehicle types, characteristics, and measurements.</td></tr>
@@ -4308,6 +4369,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Understanding and Optimizing Attention-Based Sparse Matching for Diverse Local Features</td><td>[2602.08430](http://arxiv.org/pdf/2602.08430)</td><td>该论文的核心贡献在于对基于注意力的稀疏图像匹配模型进行了深入分析与优化，并提出了一个通用的匹配模型。其创新点可总结如下：
+
+◆ 首次指出了一个先前被忽视但对LightGlue模型性能有重大影响的关键设计选择，为模型优化提供了新方向。
+
+◆ 系统研究了在基于Transformer的匹配框架中检测器与描述子的作用，发现性能差异的主要根源通常在于检测器而非描述子，这一发现挑战了传统认知。
+
+◆ 提出了一种新颖的微调方法，能够利用来自多种不同检测器的关键点数据来训练现有图像匹配模型。
+
+◆ 最终训练出了一个通用的、与检测器无关的匹配模型。该模型在作为新检测器的零样本匹配器时，其精度能够达到甚至超过为特定特征专门训练的模型，显著提升了部署的灵活性和性能。</td></tr>
+<tr><td>2026-01-31</td><td>Gaussian-Constrained LeJEPA Representations for Unsupervised Scene Discovery and Pose Consistency</td><td>[2602.07016](http://arxiv.org/pdf/2602.07016)</td><td>本文针对多场景无序图像集合的无监督三维重建难题，提出了一种基于高斯约束表示的新方法。其核心贡献与创新点可总结如下：
+
+◆ 首次将LeJEPA架构的思想引入无监督场景发现与相机姿态估计任务，利用其联合嵌入预测特性学习图像表示。
+◆ 创新性地在学习的图像嵌入上施加各向同性高斯约束，旨在提升表示的规整性与判别力。
+◆ 通过三个逐步优化的流程进行实证研究，系统评估了高斯约束对聚类一致性和姿态估计鲁棒性的实际影响，而非侧重理论证明。
+◆ 在IMC2025挑战赛的真实复杂数据上验证了方法的有效性，证明该方法相比启发式基线能更好地分离不同场景并提升姿态合理性，尤其在视觉模糊场景中优势明显。
+◆ 研究表明，将自监督学习原则与经典运动恢复结构流程相结合，采用理论驱动的表示约束是一条富有前景的技术路径。</td></tr>
 <tr><td>2026-02-05</td><td>SOMA-1M: A Large-Scale SAR-Optical Multi-resolution Alignment Dataset for Multi-Task Remote Sensing</td><td>[2602.05480](http://arxiv.org/pdf/2602.05480)</td><td>◆ Synthetic Aperture Radar (SAR) and optical imagery provide complementary strengths that constitute the critical foundation for transcending single-modality constraints and facilitating cross-modal collaborative processing and intelligent interpretation.
 ◆ However, existing benchmark datasets often suffer from limitations such as single spatial resolution, insufficient data scale, and low alignment accuracy, making them inadequate for supporting the training and generalization of multi-scale foundation models.
 ◆ To address these challenges, we introduce SOMA-1M (SAR-Optical Multi-resolution Alignment), a pixel-level precisely aligned dataset containing over 1.3 million pairs of georeferenced images with a specification of 512 x 512 pixels.</td></tr>
@@ -5073,6 +5150,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-08</td><td>Dynamic Black-hole Emission Tomography with Physics-informed Neural Fields</td><td>[2602.08029](http://arxiv.org/pdf/2602.08029)</td><td>该论文的核心贡献是提出了一种名为PI-DEF的新方法，用于从稀疏射电测量数据中动态、三维地重建黑洞周围的发射气体，克服了现有技术的局限性。
+
+◆ 首创性地将物理信息与神经辐射场结合，用于动态黑洞发射层析成像，实现了对黑洞周围4D（时间+3D）发射率场的重建。
+◆ 突破了先前工作（BH-NeRF）必须假设气体遵循开普勒动力学的限制，该方法能更准确地处理黑洞强引力场附近的复杂流体动力学。
+◆ 提出联合重建框架，在拟合4D发射率场的同时，一并重建与之相关的3D速度场，并通过可微分渲染与观测数据匹配。
+◆ 创新地将重建的速度场作为发射率场动态变化的软约束，从而将物理规律融入神经网络的学习过程，增强了重建的物理可信度。
+◆ 在仿真实验中，其重建精度显著优于物理无关方法和基于固定动力学假设的方法，并展示了方法在估算黑洞自旋等物理参数方面的潜力。</td></tr>
+<tr><td>2026-02-08</td><td>Deepfake Synthesis vs. Detection: An Uneven Contest</td><td>[2602.07986](http://arxiv.org/pdf/2602.07986)</td><td>该论文的核心贡献在于通过系统性的实证研究，揭示了当前深度伪造检测技术严重滞后于生成技术发展的严峻现实。
+
+◆ 首次对包括扩散模型、NeRF和先进GANs在内的最新深度伪造生成技术，与基于Transformer、对比学习等前沿检测方法，进行了全面的实证分析与直接对抗性评估。
+◆ 通过精心设计的人眼评估实验，发现不仅自动检测模型，连人类参与者在面对最高质量的深度伪造内容时，其辨别性能也显著下降，这为问题的严重性提供了双重证据。
+◆ 研究结果明确指出了一个关键且令人担忧的趋势：许多号称先进的检测模型在面对现代合成技术生成的深度伪造内容时，表现出了明显的性能不足，凸显了当前防御与攻击技术之间的“不平衡竞赛”格局。
+◆ 该工作以充分的实验证据，强调了持续改进检测模型的紧迫性，并呼吁研究界投入更多努力以弥合检测方法与日新月异的生成技术之间的关键差距。</td></tr>
 <tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
 ◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
 ◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
@@ -5977,4 +6067,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.09
+> 更新于: 2026.02.10
