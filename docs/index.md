@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.10)
+# 计算机视觉领域最新论文 (2026.02.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2347,7 +2347,7 @@
 ◆ 建立了一个全面的评估基准UGBench，用于系统评估空间接地嵌入在多种城市理解任务（如地理位置排序、图像检索、城市感知和空间接地）上的性能，填补了该领域的空白。
 
 通过在多个先进视觉语言模型上进行训练和评估，该方法在训练城市和未见城市上都显著提升了图像检索和地理位置排序等空间密集型任务的性能，证明了显式空间接地对于城市理解的有效性和泛化能力。</td></tr>
-<tr><td>2026-02-08</td><td>WristMIR: Coarse-to-Fine Region-Aware Retrieval of Pediatric Wrist Radiographs with Radiology Report-Driven Learning</td><td>[2602.07872](http://arxiv.org/pdf/2602.07872)</td><td>该论文提出了一种名为WristMIR的区域感知儿科腕部X光片检索框架，其核心贡献在于显著提升了具有相似骨折模式影像的检索精度与临床实用性。
+<tr><td>2026-02-10</td><td>WristMIR: Coarse-to-Fine Region-Aware Retrieval of Pediatric Wrist Radiographs with Radiology Report-Driven Learning</td><td>[2602.07872](http://arxiv.org/pdf/2602.07872)</td><td>该论文提出了一种名为WristMIR的区域感知儿科腕部X光片检索框架，其核心贡献在于显著提升了具有相似骨折模式影像的检索精度与临床实用性。
 
 ◆ 提出了一种无需人工图像标注的方法，利用密集的放射学报告和基于骨骼的定位来学习细粒度、具有临床意义的图像表示。
 ◆ 创新性地采用基于MedGemma的结构化报告挖掘技术，自动生成全局和区域级别的文本描述，作为监督信号。
@@ -6067,4 +6067,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.10
+> 更新于: 2026.02.11
