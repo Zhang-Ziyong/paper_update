@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.12)
+# 计算机视觉领域最新论文 (2026.02.13)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-12</td><td>GSO-SLAM: Bidirectionally Coupled Gaussian Splatting and Direct Visual Odometry</td><td>[2602.11714](http://arxiv.org/pdf/2602.11714)</td><td>GSO-SLAM的核心贡献在于提出了一种新颖的双向耦合单目密集SLAM系统，它通过创新的集成框架，在实时性能下实现了卓越的场景重建与跟踪精度。
+
+◆ 提出了双向耦合的视觉里程计（VO）与高斯泼溅（GS）集成新范式。该方法避免了现有方案中统一场景表示带来的高计算成本，或松散集成带来的冗余问题。
+
+◆ 设计了一个基于期望最大化（EM）框架的联合优化方法。该框架能够同步优化VO产生的半稠密深度估计与GS场景表示，且不引入额外的计算开销。
+
+◆ 创新性地提出了高斯泼溅初始化技术。该方法直接利用VO提供的图像信息、关键帧位姿和像素关联来生成接近最终效果的高斯场景初始状态，从而摒弃了传统依赖启发式方法的初始化流程。
+
+◆ 整个系统在保持实时运行的同时，在公开数据集上验证达到了领先水平。实验表明，该系统在场景的几何/光度重建保真度以及跟踪精度方面均超越了现有方法。</td></tr>
 <tr><td>2026-02-09</td><td>Thegra: Graph-based SLAM for Thermal Imagery</td><td>[2602.08531](http://arxiv.org/pdf/2602.08531)</td><td>该论文提出了一种适用于热成像的、基于图优化的稀疏单目SLAM系统，旨在解决热图像纹理少、对比度低和噪声高导致的特征提取与匹配难题。
 
 ◆ 创新性地将在大规模可见光数据上训练的通用学习特征（SuperPoint检测器与LightGlue匹配器）引入热成像SLAM，利用其强大的跨域泛化能力，避免了针对稀缺热数据专门训练的需求。
@@ -1476,7 +1485,7 @@
 <tr><td>2026-02-03</td><td>Depth Completion in Unseen Field Robotics Environments Using Extremely Sparse Depth Measurements</td><td>[2602.03209](http://arxiv.org/pdf/2602.03209)</td><td>◆ Autonomous field robots operating in unstructured environments require robust perception to ensure safe and reliable operations.
 ◆ Recent advances in monocular depth estimation have demonstrated the potential of low-cost cameras as depth sensors; however, their adoption in field robotics remains limited due to the absence of reliable scale cues, ambiguous or low-texture conditions, and the scarcity of large-scale datasets.
 ◆ To address these challenges, we propose a depth completion model that trains on synthetic data and uses extremely sparse measurements from depth sensors to predict dense metric depth in unseen field robotics environments.</td></tr>
-<tr><td>2026-01-29</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
+<tr><td>2026-02-12</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
 ◆ However, their reliability for quantitative 3D analysis in dense, self-occluding scenes remains poorly understood.
 ◆ In this study, we identify a fundamental failure mode of implicit density fields under heavy occlusion, which we term Interior Geometric Degradation (IGD).</td></tr>
 <tr><td>2026-01-21</td><td>Minimizing Submodular Functions over Hierarchical Families</td><td>[2601.14805](http://arxiv.org/pdf/2601.14805)</td><td>◆ This paper considers submodular function minimization (SFM) restricted to a family of subsets.
@@ -2324,6 +2333,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-12</td><td>DiffPlace: Street View Generation via Place-Controllable Diffusion Model Enhancing Place Recognition</td><td>[2602.11875](http://arxiv.org/pdf/2602.11875)</td><td>该论文的核心贡献是提出了DiffPlace框架，旨在解决现有多视角扩散模型在生成具有地点感知和背景一致性的街景图像方面的不足，以增强视觉地点识别的性能。
+
+◆ 提出了一种新颖的地点可控多视角图像生成框架DiffPlace，通过引入地点ID控制器，实现了对生成街景背景建筑的精确控制。
+◆ 设计了地点ID控制器，它结合线性投影、感知器变换器和对比学习，将地点标识嵌入映射到固定的CLIP空间，从而编码并保持背景的一致性。
+◆ 该模型能够灵活地修改前景物体和天气条件，同时确保背景建筑保持稳定，这解决了以往方法生成场景缺乏地点一致性的关键问题。
+◆ 通过大量实验证明，DiffPlace在生成质量上优于现有方法，并且其生成的图像能有效作为增强数据，提升视觉地点识别模型的训练效果。
+◆ 这项工作展示了生成模型在场景级和地点感知合成方面的潜力，为自动驾驶等领域的地点识别任务提供了有价值的增强数据生成方案。</td></tr>
+<tr><td>2026-02-12</td><td>Arbitrary Ratio Feature Compression via Next Token Prediction</td><td>[2602.11494](http://arxiv.org/pdf/2602.11494)</td><td>该论文提出了一种灵活的特征压缩框架ARFC，其核心贡献在于通过单一模型实现任意压缩比，突破了传统方法需为不同压缩比重新训练专用模型的限制。  
+◆ 提出基于自回归下一令牌预测的任意比率压缩器（ARC），仅通过调整生成令牌数量即可在推理时灵活控制压缩比，无需重新训练。  
+◆ 引入混合解决方案（MoS）模块，利用多个压缩结果优化压缩令牌，降低不确定性并提升鲁棒性。  
+◆ 设计实体关系图约束（ERGC），在训练中保持特征的语义与结构关系，增强压缩后特征的表达能力。  
+实验表明，该方法在跨模态检索、图像分类等任务中优于现有方法，部分情况下甚至超越原始未压缩特征，验证了其在资源受限场景下的有效性与通用性。</td></tr>
 <tr><td>2026-02-11</td><td>DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories</td><td>[2602.10809](http://arxiv.org/pdf/2602.10809)</td><td>该论文的核心贡献是提出了一个面向视觉历史中上下文感知图像检索的新型智能体范式与评测基准，以克服现有检索系统仅关注单张图像语义匹配的局限。
 
 ◆ 提出了DeepImageSearch这一新颖的智能体范式，将图像检索重新定义为对原始视觉历史进行自主探索的任务，要求模型进行多步推理以利用隐式上下文线索。
@@ -5198,7 +5219,7 @@
 <tr><td>2026-01-30</td><td>Diachronic Stereo Matching for Multi-Date Satellite Imagery</td><td>[2601.22808](http://arxiv.org/pdf/2601.22808)</td><td>◆ Recent advances in image-based satellite 3D reconstruction have progressed along two complementary directions.
 ◆ On one hand, multi-date approaches using NeRF or Gaussian-splatting jointly model appearance and geometry across many acquisitions, achieving accurate reconstructions on opportunistic imagery with numerous observations.
 ◆ On the other hand, classical stereoscopic reconstruction pipelines deliver robust and scalable results for simultaneous or quasi-simultaneous image pairs.</td></tr>
-<tr><td>2026-01-29</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
+<tr><td>2026-02-12</td><td>From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding</td><td>[2601.21421](http://arxiv.org/pdf/2601.21421)</td><td>◆ Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS).
 ◆ However, their reliability for quantitative 3D analysis in dense, self-occluding scenes remains poorly understood.
 ◆ In this study, we identify a fundamental failure mode of implicit density fields under heavy occlusion, which we term Interior Geometric Degradation (IGD).</td></tr>
 <tr><td>2026-01-29</td><td>Lightweight High-Fidelity Low-Bitrate Talking Face Compression for 3D Video Conference</td><td>[2601.21269](http://arxiv.org/pdf/2601.21269)</td><td>◆ The demand for immersive and interactive communication has driven advancements in 3D video conferencing, yet achieving high-fidelity 3D talking face representation at low bitrates remains a challenge.
@@ -6086,4 +6107,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.12
+> 更新于: 2026.02.13
