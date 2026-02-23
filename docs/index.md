@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.22)
+# 计算机视觉领域最新论文 (2026.02.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,20 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-20</td><td>Have We Mastered Scale in Deep Monocular Visual SLAM? The ScaleMaster Dataset and Benchmark</td><td>[2602.18174](http://arxiv.org/pdf/2602.18174)</td><td>该论文的核心贡献在于首次系统性地揭示并评估了深度单目视觉SLAM在大规模室内场景中的尺度一致性问题，并为此建立了专门的基准。
+
+◆ 提出了首个专注于评估尺度一致性的数据集ScaleMaster，其场景涵盖多层结构、长轨迹、重复视图和低纹理区域等挑战性条件。
+◆ 系统分析了当前先进的深度单目视觉SLAM系统对尺度不一致性的脆弱性，提供了定量与定性评估。
+◆ 将评估维度从传统的轨迹精度，拓展到直接的地图到地图质量评估，引入了如倒角距离等针对高保真3D真值的度量标准。
+◆ 研究发现，尽管现有系统在传统基准上表现良好，但在真实大规模室内环境中会出现严重的尺度相关故障。
+◆ 通过公开发布数据集和基线结果，为未来开发具有尺度一致性的可靠视觉SLAM系统奠定了基础。</td></tr>
+<tr><td>2026-02-20</td><td>GrandTour: A Legged Robotics Dataset in the Wild for Multi-Modal Perception and State Estimation</td><td>[2602.18164](http://arxiv.org/pdf/2602.18164)</td><td>该论文的核心贡献是发布了名为GrandTour的大型开源多模态足式机器人数据集，旨在解决复杂野外环境下算法开发与评估的数据缺失问题。
+
+◆ 首次提供了大规模、多场景的野外足式机器人真实世界数据集，覆盖高山、森林、废墟、城市等多种复杂地形与光照、天气条件。
+◆ 搭载了先进的多模态传感器套件，提供时间同步的旋转激光雷达、多个特性互补的RGB相机、本体感知传感器和立体深度相机数据。
+◆ 包含了由RTK-GNSS和全站仪提供的高精度地面真实轨迹，为算法评估提供了可靠基准。
+◆ 其数据规模和多样性在当前公开的足式机器人数据集中居首，专门支持SLAM、状态估计和多模态学习等研究方向。
+◆ 数据集以ROS及非ROS（HuggingFace）等多种格式公开，并提供了工具和演示资源，极大促进了足式机器人感知与状态估计领域的发展。</td></tr>
 <tr><td>2026-02-19</td><td>Multi-session Localization and Mapping Exploiting Topological Information</td><td>[2602.17226](http://arxiv.org/pdf/2602.17226)</td><td>该论文针对重复访问环境中的多会话建图与定位问题，提出了一种新颖的框架。其核心贡献在于摒弃了传统贪婪式运行完整SLAM会话并事后匹配地图的策略，转而采用以地图定位为基础的增量式方法。
 
 主要创新点包括：
@@ -2447,6 +2461,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-19</td><td>VQPP: Video Query Performance Prediction Benchmark</td><td>[2602.17814](http://arxiv.org/pdf/2602.17814)</td><td>该论文的核心贡献是首次为基于内容的视频检索领域建立了查询性能预测的基准，旨在推动这一未充分探索方向的发展。
+
+◆ 首创了视频查询性能预测基准VQPP，填补了该任务在视频检索领域长期缺乏系统性研究的空白。
+◆ 构建了包含5.6万文本查询和5.1万视频的大规模资源，并提供了官方划分的训练、验证和测试集，确保了结果的可比性与可复现性。
+◆ 系统性地探索并评估了多种检索前与检索后性能预测方法，为未来研究奠定了代表性基准。
+◆ 研究发现检索前预测器具有竞争力，这为在无需实际执行检索步骤的场景下应用QPP提供了可能。
+◆ 通过将最佳检索前预测器作为奖励模型，并利用直接偏好优化训练大语言模型进行查询改写，实证展示了VQPP基准的实际应用价值。</td></tr>
 <tr><td>2026-02-19</td><td>Visual Model Checking: Graph-Based Inference of Visual Routines for Image Retrieval</td><td>[2602.17386](http://arxiv.org/pdf/2602.17386)</td><td>该论文的核心贡献是提出了一种将形式化验证与深度学习图像检索相结合的新框架，旨在解决复杂自然语言查询的可靠性与可解释性问题。
 
 ◆ 提出了一种新颖的集成框架，将基于图的形式化验证方法与神经代码生成协同结合，用于图像检索。
@@ -5391,6 +5412,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-20</td><td>Unifying Color and Lightness Correction with View-Adaptive Curve Adjustment for Robust 3D Novel View Synthesis</td><td>[2602.18322](http://arxiv.org/pdf/2602.18322)</td><td>该论文针对复杂光照下多视角图像采集的亮度与色彩不一致问题，提出了一种鲁棒的3D新视图合成方法Luminance-GS++，其核心贡献与创新点如下：
+
+◆ 提出一个基于3D高斯泼溅的框架，将全局视图自适应的亮度调整与局部像素级残差细化相结合，实现了精确的色彩校正。
+◆ 设计了无监督优化目标，联合约束亮度校正与多视角几何、光度一致性，无需依赖人工标注的真实数据。
+◆ 在保持3D高斯泼溅显式表示与实时渲染效率的前提下，有效处理了低光照、过曝光及复杂亮度色彩变化等挑战性场景。
+◆ 通过统一校正光照与颜色，缓解了多视角间光度不一致对3D重建的负面影响，从而提升了新视图合成的质量与鲁棒性。
+实验表明，该方法在多种困难光照条件下均达到了先进的性能水平。</td></tr>
 <tr><td>2026-02-18</td><td>HS-3D-NeRF: 3D Surface and Hyperspectral Reconstruction From Stationary Hyperspectral Images Using Multi-Channel NeRFs</td><td>[2602.16950](http://arxiv.org/pdf/2602.16950)</td><td>该论文提出了一种基于静态相机的多通道神经辐射场（NeRF）方法，用于实现农产品的高通量高光谱三维重建。其核心贡献与创新点如下：
 
 ◆ 针对农业表型检测场景，设计了静态相机结合样品旋转的成像系统，克服了传统NeRF需移动相机的限制，提升了高通量成像的可行性与重现性。
@@ -6335,4 +6363,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.22
+> 更新于: 2026.02.23
