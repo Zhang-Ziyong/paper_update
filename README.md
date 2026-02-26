@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.02.25)
+# 计算机视觉领域最新论文 (2026.02.26)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Parallel Continuous-Time Relative Localization with Augmented Clamped Non-Uniform B-Splines</td><td>[2602.22006](http://arxiv.org/pdf/2602.22006)</td><td>本文提出了一种名为CT-RIO的新型连续时间相对惯性里程计框架，旨在解决多机器人系统中异步、有时钟偏移的测量下的高精度、低延迟相对定位问题。其核心贡献与创新点如下：
+
+◆ 首次采用钳位非均匀B样条来表示机器人状态，从根本上消除了传统非钳位B样条固有的查询时间延迟问题。
+
+◆ 提出了对钳位非均匀B样条的闭合形式扩展与收缩操作，该操作能保持样条形状，从而实现了适用于在线估计的灵活节点管理。
+
+◆ 基于上述灵活性，引入了“节点-关键节点”策略，支持高频下的样条扩展，同时保留稀疏的关键节点以用于自适应的相对运动建模。
+
+◆ 构建了一个纯基于相对运动学与机器人间约束的滑动窗口相对定位问题，实现了紧耦合优化。
+
+◆ 为满足大规模集群的计算需求，将紧耦合优化分解为各机器人子问题，并采用增量式异步块坐标下降法进行并行求解，显著提升了计算效率。实验表明，该方法在精度和收敛速度上均显著优于现有技术。</td></tr>
+<tr><td>2026-02-25</td><td>Dream-SLAM: Dreaming the Unseen for Active SLAM in Dynamic Environments</td><td>[2602.21967](http://arxiv.org/pdf/2602.21967)</td><td>Dream-SLAM提出了一种新颖的单目主动SLAM方法，旨在解决动态环境中传统方法存在的三大局限。其核心贡献在于通过“梦境”生成机制，显著提升了动态场景下的定位、建图与探索效率。
+
+◆ 首创“梦境”生成机制，利用已观测信息预测动态环境中未观测区域的跨时空图像与语义结构，以弥补数据缺失。
+◆ 将生成的梦境图像与真实观测融合，有效降低了噪声与数据不完整性的影响，从而提高了相机位姿估计的准确性与三维场景表示的一致性。
+◆ 整合梦境与观测到的场景结构，为运动规划提供长时程的全局信息，实现了更具远见的轨迹规划，促进了高效、彻底的自主探索。
+◆ 整体框架直接应对了动态场景的挑战，在公开与自采数据集上均验证了其在定位精度、建图质量与探索效率上优于现有先进方法。</td></tr>
+<tr><td>2026-02-25</td><td>DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling</td><td>[2602.21644](http://arxiv.org/pdf/2602.21644)</td><td>DAGS-SLAM的核心贡献在于提出了一种面向移动部署、高效且鲁棒的动态场景3D高斯溅射SLAM系统。其创新点可总结如下：
+
+◆ 引入了时空运动概率（MP）状态，为每个3D高斯点维护一个动态属性估计，并随时间更新，替代了传统逐帧分割的繁重计算。
+◆ 设计了一个不确定性感知调度器，根据系统不确定性按需触发语义分割（如YOLO），而非每帧调用，显著降低了计算开销。
+◆ 提出了一种融合策略，将轻量级实例语义先验与几何线索相结合，以更鲁棒地估计和更新MP，提升了在光照挑战下的稳定性。
+◆ 将MP状态同时应用于前后端：在前端指导动态感知的特征点匹配，在后端通过MP引导的优化抑制动态伪影，从而同步提升跟踪鲁棒性与重建质量。
+◆ 整个系统在公开动态RGB-D数据集上实现了优于现有方法的重建与跟踪性能，并在消费级GPU上保持了实时吞吐，为移动设备提供了实用的速度-精度权衡方案。</td></tr>
 <tr><td>2026-02-24</td><td>LST-SLAM: A Stereo Thermal SLAM System for Kilometer-Scale Dynamic Environments</td><td>[2602.20925](http://arxiv.org/pdf/2602.20925)</td><td>该论文提出了LST-SLAM，一个面向公里级动态环境的大规模立体热成像SLAM系统，旨在解决热成像SLAM在特征提取、运动跟踪和全局建图方面的核心难题。其核心贡献与创新点如下：
 
 ◆ 提出了一种自监督的热成像特征学习方法，提升了在复杂光照和天气条件下特征提取的可靠性。
@@ -42,7 +66,7 @@
 ◆ 引入可学习的透明度权重，支持自适应的4D地图构建，优化了对动态元素的几何与外观建模。
 
 实验表明，该方法在轨迹精度和4D场景重建质量上显著优于现有技术，尤其在包含移动物体和低质量输入的动态环境中表现突出。</td></tr>
-<tr><td>2026-02-24</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>本文的核心贡献是提出了一种全新的序列感知关键点检测强化学习框架，显著提升了关键点在多视角下的长期跟踪质量。
+<tr><td>2026-02-25</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>本文的核心贡献是提出了一种全新的序列感知关键点检测强化学习框架，显著提升了关键点在多视角下的长期跟踪质量。
 
 ◆ 将关键点检测重新定义为序列决策问题，突破了传统基于图像对训练的范式。
 ◆ 提出了名为TraqPoint的端到端强化学习框架，直接在图像序列上优化关键点的跟踪质量。
@@ -1574,7 +1598,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-24</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
+<tr><td>2026-02-25</td><td>Global-Aware Edge Prioritization for Pose Graph Initialization</td><td>[2602.21963](http://arxiv.org/pdf/2602.21963)</td><td>该论文针对运动恢复结构（SfM）中位姿图初始化问题，提出了一种全局感知的边缘优先级排序方法，以替代传统依赖图像检索的独立近邻连接方式。其核心贡献与创新点如下：
+
+◆ 提出了“边缘优先级排序”的新概念，根据边对SfM的效用对候选边进行全局排序，突破了现有方法孤立处理图像对的局限。
+
+◆ 设计了一个图神经网络（GNN）模型，利用从SfM过程中衍生的监督信号进行训练，以预测具有全局一致性的边缘可靠性。
+
+◆ 开发了一种基于多重最小生成树的位姿图构建方法，该过程由上述优先级排序引导，从而构建更优的拓扑结构。
+
+◆ 引入了连通性感知的分数调制机制，该机制能增强稀疏薄弱区域的连接，并有效减小图的直径，提升图的整体紧凑性。
+
+该方法能生成更可靠、更紧凑的初始位姿图，在稀疏和高速运动场景下提高了重建精度，并在模糊场景中超越了现有的先进检索方法。</td></tr>
+<tr><td>2026-02-25</td><td>Revisiting the Origin of the Star-Forming Main Sequence Based on a Volume-Limited Sample of ~25,000 Galaxies</td><td>[2602.21500](http://arxiv.org/pdf/2602.21500)</td><td>本研究利用一个包含约2.5万个本地星系的大样本，重新审视了恒星形成主序的起源。其核心贡献在于通过统计分析，揭示了星系尺度上恒星形成活动更直接的物理驱动因素。
+
+◆ 创新地使用了一个大容量限定的本地星系样本，克服了先前研究的选择偏差和局限性，提升了统计可靠性。
+◆ 基于中红外12微米光度、恒星质量和颜色，为整个样本估算了分子气体质量，从而能够系统研究恒星形成率、恒星质量和分子气体质量的面密度之间的全局关系。
+◆ 研究发现，全局的肯尼卡特-施密特关系（恒星形成与气体关系）和分子气体主序关系的散点更小、相关性更强，优于恒星形成率面密度与恒星质量面密度之间的直接关系。
+◆ 通过多元回归和偏相关分析，关键地论证了恒星形成率与恒星质量面密度之间的表观相关性完全由分子气体面密度所中介，前者是后两者的衍生结果。
+◆ 最终结论指出，恒星质量与分子气体的关联，以及分子气体与恒星形成的关联，才是更直接和基本的物理关系，而恒星形成主序只是这两个更紧密关系的自然副产品。</td></tr>
+<tr><td>2026-02-25</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
 
 ◆ 创新性地将关键点检测从传统的图像对训练范式转变为序列决策问题，强调跨多视角的长期可跟踪性。
 ◆ 设计了名为TraqPoint的端到端强化学习框架，首次通过强化学习直接优化关键点的轨迹质量（Traq）。
@@ -2530,6 +2572,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Global-Aware Edge Prioritization for Pose Graph Initialization</td><td>[2602.21963](http://arxiv.org/pdf/2602.21963)</td><td>该论文针对运动恢复结构（SfM）中位姿图初始化问题，提出了全局感知的边缘优先级排序方法，以替代传统基于图像检索的独立近邻选择策略。其核心贡献与创新点如下：
+
+◆ 提出了“边缘优先级”概念，根据边对SfM的整体效用对候选边进行排序，突破了传统方法孤立处理图像对的局限。
+
+◆ 设计了一个图神经网络（GNN），利用从SfM过程本身推导出的监督信号进行训练，以预测具有全局一致性的边缘可靠性。
+
+◆ 开发了一种基于多最小生成树的位姿图构建方法，该过程由上述优先级排序引导，能系统性地构建更优的拓扑结构。
+
+◆ 引入了连通性感知的分数调制机制，该机制能增强稀疏薄弱区域的连接，并有效减小图的直径，从而提升图的整体性和紧凑性。
+
+这些创新共同形成了一个全局信息驱动的初始化框架，能够在稀疏和高速采集等挑战性场景下，构建出更可靠、更紧凑的位姿图，显著提高了三维重建的准确性，并在模糊场景中超越了现有的先进检索方法。</td></tr>
+<tr><td>2026-02-25</td><td>Automatic Map Density Selection for Locally-Performant Visual Place Recognition</td><td>[2602.21473](http://arxiv.org/pdf/2602.21473)</td><td>本文的核心贡献是提出了一种动态视觉位置识别地图构建方法，旨在根据用户定义的局部性能要求，自动选择最合适的地图参考点密度。其创新点如下：
+
+◆ 首次将满足用户指定的局部性能要求（而非全局平均性能）作为地图密度选择的核心目标，解决了VPR从实验室走向长期实际部署的关键挑战。
+◆ 提出了两个具体的用户可定义性能指标：目标局部Recall@1水平和必须达到该水平的操作环境比例（即召回达成率RAR），使性能控制更具操作性。
+◆ 提出了一种基于多参考轨迹匹配模式的预测方法，通过分析不同地图密度下的匹配模式，来预测在未见过的部署数据上达到目标性能所需的地图密度。
+◆ 通过大量实验验证，该方法能稳定地在用户指定的环境比例上达到或超过目标局部召回率，并能避免不必要的过度稠密化，可靠地选择正确的地图密度操作点。
+◆ 深入分析揭示了传统的全局Recall@1指标对更具操作意义的RAR指标预测能力较差，从而凸显了所提局部性能框架的必要性和优越性。</td></tr>
 <tr><td>2026-02-24</td><td>Seeing Through Words: Controlling Visual Retrieval Quality with Language Models</td><td>[2602.21175](http://arxiv.org/pdf/2602.21175)</td><td>该论文针对现实世界中短文本查询导致的图像检索质量不佳问题，提出了一种新颖的质量可控检索范式。
 
 ◆ 核心创新在于提出了“质量可控检索”新范式，通过语言模型将简短、模糊的用户查询自动扩展为包含细节视觉属性（如姿态、场景、美学）的丰富描述。
@@ -4349,7 +4409,14 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-24</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
+<tr><td>2026-02-25</td><td>UNet-Based Keypoint Regression for 3D Cone Localization in Autonomous Racing</td><td>[2602.21904](http://arxiv.org/pdf/2602.21904)</td><td>该论文的核心贡献是提出了一种基于UNet的神经网络，用于在自动驾驶赛车场景中实现高精度且实时的三维锥桶定位。
+
+◆ 创新性地采用UNet架构进行关键点回归，直接预测锥桶在图像中的关键点位置，而非依赖传统计算机视觉算法，从而提升了环境鲁棒性。
+◆ 构建并使用了该领域已知最大的定制标注数据集进行训练，有效解决了神经网络因训练数据有限而泛化能力不足的问题。
+◆ 所提方法不仅能实现精确的三维位置估计，还具备预测锥桶颜色的潜力，丰富了感知信息。
+◆ 在关键点检测精度上相比传统方法取得了显著提升，并且模型计算效率满足实时运行要求。
+◆ 将预测的关键点集成到完整的感知系统中进行了端到端的自动驾驶评估，验证了其在真实竞赛系统中的有效性与高性能。</td></tr>
+<tr><td>2026-02-25</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
 
 ◆ 创新性地将关键点检测从传统的图像对训练范式转变为序列决策问题，强调跨多视角的长期可跟踪性。
 ◆ 设计了名为TraqPoint的端到端强化学习框架，首次通过强化学习直接优化关键点的轨迹质量（Traq）。
@@ -4378,7 +4445,7 @@
 ◆ 该方法结合了差分光度法可实现亚像素级精度的优势，以及几何特征描述子强大表达能力的优势。
 ◆ 通过实验验证了该方法的可行性与准确性，但发现其性能最终并未超越基于重投影误差的优化方法。
 ◆ 进一步分析了性能未达预期的根本原因，提出了关键假设：描述子相似性度量变化过于平缓，且未必与关键点定位精度严格对应。</td></tr>
-<tr><td>2026-02-06</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
+<tr><td>2026-02-25</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
 ◆ However, applying it to textureless objects remains a challenge due to the absence of reliable visual features.
 ◆ Moreover, adverse visual conditions, such as occlusions, often corrupt visual feedback, leading to reduced accuracy and instability in visual servoing.</td></tr>
 <tr><td>2026-02-05</td><td>DroneKey++: A Size Prior-free Method and New Benchmark for Drone 3D Pose Estimation from Sequential Images</td><td>[2602.06211](http://arxiv.org/pdf/2602.06211)</td><td>◆ Accurate 3D pose estimation of drones is essential for security and surveillance systems.
@@ -4786,6 +4853,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-24</td><td>FlowFixer: Towards Detail-Preserving Subject-Driven Generation</td><td>[2602.21402](http://arxiv.org/pdf/2602.21402)</td><td>FlowFixer是一个针对主题驱动生成的精细化框架，旨在修复因主体尺度与视角变化而丢失的细节。其核心贡献与创新点如下：
+
+◆ 提出了一种直接基于视觉参考的图像到图像转换方法，避免了语言提示的模糊性，从而更精准地恢复细节。
+
+◆ 引入了一步去噪方案来生成自监督训练数据，该方案能自动去除高频细节同时保留全局结构，有效模拟了真实生成中的错误。
+
+◆ 设计了一种基于关键点匹配的评估指标，能够超越CLIP或DINO通常测量的语义相似度，更准确地评估细节保真度。
+
+实验表明，FlowFixer在定性与定量评估上均优于现有先进方法，为高保真主题驱动生成设立了新基准。</td></tr>
 <tr><td>2026-02-23</td><td>Generative 6D Pose Estimation via Conditional Flow Matching</td><td>[2602.19719](http://arxiv.org/pdf/2602.19719)</td><td>该论文提出了一种名为Flose的生成式6D位姿估计新方法，其核心贡献与创新点如下：
 
 ◆ 将6D位姿估计问题重新定义为三维空间中的条件流匹配问题，这是一种新颖的生成式建模思路。
@@ -5582,6 +5658,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Lie Flow: Video Dynamic Fields Modeling and Predicting with Lie Algebra as Geometric Physics Principle</td><td>[2602.21645](http://arxiv.org/pdf/2602.21645)</td><td>本文提出LieFlow，一种动态辐射场表示框架，用于建模和预测4D动态场景。其核心贡献在于引入李代数作为几何物理原理，以统一且物理一致的方式表示复杂运动。
+
+◆ 创新地使用SE(3)李群来显式建模场景运动，将平移和旋转统一在一个几何空间中学习，克服了传统方法依赖平移位移难以表示旋转和关节运动的局限。
+◆ 通过SE(3)变换场施加受物理启发的约束，确保了运动的连续性和几何一致性，从而提升了动态表示的物理合理性。
+◆ 在包含刚体轨迹的合成数据集以及具有自然光照和遮挡的复杂真实运动数据集上进行了系统评估。
+◆ 实验表明，该方法在视图合成保真度、时间连贯性和物理真实感方面，持续优于基于NeRF的基线方法，验证了SE(3)运动建模为动态4D场景提供了一种稳健且基于物理的框架。</td></tr>
 <tr><td>2026-02-24</td><td>Event-Aided Sharp Radiance Field Reconstruction for Fast-Flying Drones</td><td>[2602.21101](http://arxiv.org/pdf/2602.21101)</td><td>该论文针对高速飞行无人机因图像运动模糊和位姿估计噪声导致神经辐射场重建质量下降的问题，提出了一种新颖的解决方案。其核心贡献在于构建了一个融合事件相机与RGB图像的统一框架，以实现敏捷飞行下的高保真锐利辐射场重建。
 
 ◆ 提出了一种将异步事件流与运动模糊图像相融合的联合框架，直接用于神经辐射场的优化过程，有效克服了高速运动导致的图像退化问题。
@@ -6570,4 +6652,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.25
+> 更新于: 2026.02.26
