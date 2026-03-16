@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.15)
+# 计算机视觉领域最新论文 (2026.03.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>CMHANet: A Cross-Modal Hybrid Attention Network for Point Cloud Registration</td><td>[2603.12721](http://arxiv.org/pdf/2603.12721)</td><td>◆ Robust point cloud registration is a fundamental task in 3D computer vision and geometric deep learning, essential for applications such as large-scale 3D reconstruction, augmented reality, and scene understanding.
+◆ However, the performance of established learning-based methods often degrades in complex, real world scenarios characterized by incomplete data, sensor noise, and low overlap regions.
+◆ To address these limitations, we propose CMHANet, a novel Cross-Modal Hybrid Attention Network.</td></tr>
 <tr><td>2026-03-12</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多自由移动相机下的动态场景重建与相机姿态估计难题，提出了一套创新解决方案。其核心贡献与创新点如下：
 
 ◆ 提出两阶段优化框架，将任务解耦为鲁棒的相机跟踪与稠密深度优化，克服了以往方法对单相机或固定标定相机阵列的依赖。
@@ -2930,6 +2933,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>A Closed-Form Solution for Debiasing Vision-Language Models with Utility Guarantees Across Modalities and Tasks</td><td>[2603.12998](http://arxiv.org/pdf/2603.12998)</td><td>◆ While Vision-Language Models (VLMs) have achieved remarkable performance across diverse downstream tasks, recent studies have shown that they can inherit social biases from the training data and further propagate them into downstream applications.
+◆ To address this issue, various debiasing approaches have been proposed, yet most of them aim to improve fairness without having a theoretical guarantee that the utility of the model is preserved.
+◆ In this paper, we introduce a debiasing method that yields a \textbf{closed-form} solution in the cross-modal space, achieving Pareto-optimal fairness with \textbf{bounded utility losses}.</td></tr>
+<tr><td>2026-03-13</td><td>Text-Phase Synergy Network with Dual Priors for Unsupervised Cross-Domain Image Retrieval</td><td>[2603.12711](http://arxiv.org/pdf/2603.12711)</td><td>◆ This paper studies unsupervised cross-domain image retrieval (UCDIR), which aims to retrieve images of the same category across different domains without relying on labeled data.
+◆ Existing methods typically utilize pseudo-labels, derived from clustering algorithms, as supervisory signals for intra-domain representation learning and cross-domain feature alignment.
+◆ However, these discrete pseudo-labels often fail to provide accurate and comprehensive semantic guidance.</td></tr>
+<tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
+◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
+◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
 <tr><td>2026-03-12</td><td>FBCIR: Balancing Cross-Modal Focuses in Composed Image Retrieval</td><td>[2603.11520](http://arxiv.org/pdf/2603.11520)</td><td>该论文的核心贡献在于诊断并提升了组合图像检索模型在困难场景下的鲁棒性。其创新点可总结如下：
 
 ◆ 首次将CIR模型在困难负样本上性能下降的原因归因于“焦点失衡”，即模型在处理多模态输入时过度关注某一模态而忽视另一模态。
@@ -5405,6 +5417,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
+◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
+◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
 <tr><td>2026-03-09</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
 
 ◆ 提出了一种即插即用的排序架构，能够显式地对无人机和卫星视图进行联合关系建模，突破了现有方法独立提取特征和依赖简单启发式相似度计算的局限。
@@ -6239,7 +6254,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-12</td><td>Node-RF: Learning Generalized Continuous Space-Time Scene Dynamics with Neural ODE-based NeRFs</td><td>[2603.12078](http://arxiv.org/pdf/2603.12078)</td><td>本文提出Node-RF模型，其核心贡献在于实现了对连续时空场景动态的长期泛化预测。具体创新点如下：
+<tr><td>2026-03-13</td><td>Spectral-Geometric Neural Fields for Pose-Free LiDAR View Synthesis</td><td>[2603.12903](http://arxiv.org/pdf/2603.12903)</td><td>◆ Neural Radiance Fields (NeRF) have shown remarkable success in image novel view synthesis (NVS), inspiring extensions to LiDAR NVS.
+◆ However, most methods heavily rely on accurate camera poses for scene reconstruction.
+◆ The sparsity and textureless nature of LiDAR data also present distinct challenges, leading to geometric holes and discontinuous surfaces.</td></tr>
+<tr><td>2026-03-13</td><td>Catalyst4D: High-Fidelity 3D-to-4D Scene Editing via Dynamic Propagation</td><td>[2603.12766](http://arxiv.org/pdf/2603.12766)</td><td>◆ Recent advances in 3D scene editing using NeRF and 3DGS enable high-quality static scene editing.
+◆ In contrast, dynamic scene editing remains challenging, as methods that directly extend 2D diffusion models to 4D often produce motion artifacts, temporal flickering, and inconsistent style propagation.
+◆ We introduce Catalyst4D, a framework that transfers high-quality 3D edits to dynamic 4D Gaussian scenes while maintaining spatial and temporal coherence.</td></tr>
+<tr><td>2026-03-13</td><td>Node-RF: Learning Generalized Continuous Space-Time Scene Dynamics with Neural ODE-based NeRFs</td><td>[2603.12078](http://arxiv.org/pdf/2603.12078)</td><td>本文提出Node-RF模型，其核心贡献在于实现了对连续时空场景动态的长期泛化预测。具体创新点如下：
 
 ◆ 将神经常微分方程与动态神经辐射场结合，构建了连续时空表征，突破了现有方法仅在观测时间范围内预测的局限。
 ◆ 通过隐式场景状态随时间的演化及ODE求解器，实现了对特征嵌入的微分方程驱动传播，能以恒定内存成本进行长期外推。
@@ -7348,4 +7369,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.15
+> 更新于: 2026.03.16
