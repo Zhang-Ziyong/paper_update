@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.16)
+# 计算机视觉领域最新论文 (2026.03.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,10 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>Thermal Image Refinement with Depth Estimation using Recurrent Networks for Monocular ORB-SLAM3</td><td>[2603.14998](http://arxiv.org/pdf/2603.14998)</td><td>◆ Autonomous navigation in GPS-denied and visually degraded environments remains challenging for unmanned aerial vehicles (UAVs).
+◆ To this end, we investigate the use of a monocular thermal camera as a standalone sensor on a UAV platform for real-time depth estimation and simultaneous localization and mapping (SLAM).
+◆ To extract depth information from thermal images, we propose a novel pipeline employing a lightweight supervised network with recurrent blocks (RBs) integrated to capture temporal dependencies, enabling more robust predictions.</td></tr>
+<tr><td>2026-03-15</td><td>eNavi: Event-based Imitation Policies for Low-Light Indoor Mobile Robot Navigation</td><td>[2603.14397](http://arxiv.org/pdf/2603.14397)</td><td>◆ Event cameras provide high dynamic range and microsecond-level temporal resolution, making them well-suited for indoor robot navigation, where conventional RGB cameras degrade under fast motion or low-light conditions.
+◆ Despite advances in event-based perception spanning detection, SLAM, and pose estimation, there remains limited research on end-to-end control policies that exploit the asynchronous nature of event streams.
+◆ To address this gap, we introduce a real-world indoor person-following dataset collected using a TurtleBot 2 robot, featuring synchronized raw event streams, RGB frames, and expert control actions across multiple indoor maps, trajectories under both normal and low-light conditions.</td></tr>
+<tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
+◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
+◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
+<tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
+◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
+◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
 <tr><td>2026-03-13</td><td>CMHANet: A Cross-Modal Hybrid Attention Network for Point Cloud Registration</td><td>[2603.12721](http://arxiv.org/pdf/2603.12721)</td><td>◆ Robust point cloud registration is a fundamental task in 3D computer vision and geometric deep learning, essential for applications such as large-scale 3D reconstruction, augmented reality, and scene understanding.
 ◆ However, the performance of established learning-based methods often degrades in complex, real world scenarios characterized by incomplete data, sensor noise, and low overlap regions.
 ◆ To address these limitations, we propose CMHANet, a novel Cross-Modal Hybrid Attention Network.</td></tr>
-<tr><td>2026-03-12</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多自由移动相机下的动态场景重建与相机姿态估计难题，提出了一套创新解决方案。其核心贡献与创新点如下：
+<tr><td>2026-03-14</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多自由移动相机下的动态场景重建与相机姿态估计难题，提出了一套创新解决方案。其核心贡献与创新点如下：
 
 ◆ 提出两阶段优化框架，将任务解耦为鲁棒的相机跟踪与稠密深度优化，克服了以往方法对单相机或固定标定相机阵列的依赖。
 
@@ -1840,6 +1852,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
+◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
+◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
+<tr><td>2026-03-13</td><td>Self-Flow-Matching assisted Full Waveform Inversion</td><td>[2603.13425](http://arxiv.org/pdf/2603.13425)</td><td>◆ Full-waveform inversion (FWI) is a high-resolution seismic imaging method that estimates subsurface velocity by matching simulated and recorded waveforms.
+◆ However, FWI is highly nonlinear, prone to cycle skipping, and sensitive to noise, particularly when low frequencies are missing or the initial model is poor, leading to failures under imperfect acquisition.
+◆ Diffusion-regularized FWI introduces generative priors to encourage geologically realistic models, but these priors typically require costly offline pretraining and can deteriorate under distribution shift.</td></tr>
 <tr><td>2026-03-12</td><td>Single-View Rolling-Shutter SfM</td><td>[2603.11888](http://arxiv.org/pdf/2603.11888)</td><td>该论文针对卷帘快门相机在运动恢复结构领域尚未完全解决的问题，提出了基于单视图几何的新方法。其核心贡献与创新点如下：
 
 ◆ 首次系统地表征了卷帘快门相机下单视图的几何特性，涵盖了对场景点与线的观测模型。
@@ -2937,6 +2955,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
+◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
+◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
+<tr><td>2026-03-14</td><td>Sky2Ground: A Benchmark for Site Modeling under Varying Altitude</td><td>[2603.13740](http://arxiv.org/pdf/2603.13740)</td><td>◆ We introduce Sky2Ground, a three-view dataset designed for varying altitude camera localization, correspondence learning, and reconstruction.
+◆ The dataset combines structured synthetic imagery with real, in-the-wild images, providing both controlled multi-view geometry and realistic scene noise.
+◆ Each of the 51 sites contains thousands of satellite, aerial, and ground images spanning wide altitude ranges and nearly orthogonal viewing angles, enabling rigorous evaluation across global-to-local contexts.</td></tr>
 <tr><td>2026-03-13</td><td>A Closed-Form Solution for Debiasing Vision-Language Models with Utility Guarantees Across Modalities and Tasks</td><td>[2603.12998](http://arxiv.org/pdf/2603.12998)</td><td>◆ While Vision-Language Models (VLMs) have achieved remarkable performance across diverse downstream tasks, recent studies have shown that they can inherit social biases from the training data and further propagate them into downstream applications.
 ◆ To address this issue, various debiasing approaches have been proposed, yet most of them aim to improve fairness without having a theoretical guarantee that the utility of the model is preserved.
 ◆ In this paper, we introduce a debiasing method that yields a \textbf{closed-form} solution in the cross-modal space, achieving Pareto-optimal fairness with \textbf{bounded utility losses}.</td></tr>
@@ -4969,6 +4993,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
+◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
+◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
 <tr><td>2026-03-05</td><td>From Decoupled to Coupled: Robustness Verification for Learning-based Keypoint Detection with Joint Specifications</td><td>[2603.05604](http://arxiv.org/pdf/2603.05604)</td><td>该论文首次为基于热图的关键点检测器提出了耦合的鲁棒性验证框架，解决了该领域此前缺乏形式化验证方法的难题。
 
 ◆ 核心创新在于从“解耦”验证转向“耦合”验证，首次能够界定所有关键点的联合偏差，从而捕捉关键点之间的相互依赖关系并满足下游任务需求。
@@ -6264,6 +6291,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>E2EGS: Event-to-Edge Gaussian Splatting for Pose-Free 3D Reconstruction</td><td>[2603.14684](http://arxiv.org/pdf/2603.14684)</td><td>◆ The emergence of neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS) has advanced novel view synthesis (NVS).
+◆ These methods, however, require high-quality RGB inputs and accurate corresponding poses, limiting robustness under real-world conditions such as fast camera motion or adverse lighting.
+◆ Event cameras, which capture brightness changes at each pixel with high temporal resolution and wide dynamic range, enable precise sensing of dynamic scenes and offer a promising solution.</td></tr>
 <tr><td>2026-03-13</td><td>Spectral-Geometric Neural Fields for Pose-Free LiDAR View Synthesis</td><td>[2603.12903](http://arxiv.org/pdf/2603.12903)</td><td>◆ Neural Radiance Fields (NeRF) have shown remarkable success in image novel view synthesis (NVS), inspiring extensions to LiDAR NVS.
 ◆ However, most methods heavily rely on accurate camera poses for scene reconstruction.
 ◆ The sparsity and textureless nature of LiDAR data also present distinct challenges, leading to geometric holes and discontinuous surfaces.</td></tr>
@@ -7381,4 +7411,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.16
+> 更新于: 2026.03.17
