@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.17)
+# 计算机视觉领域最新论文 (2026.03.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
+◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
+◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
+<tr><td>2026-03-17</td><td>Industrial cuVSLAM Benchmark &amp; Integration</td><td>[2603.16240](http://arxiv.org/pdf/2603.16240)</td><td>◆ This work presents a comprehensive benchmark evaluation of visual odometry (VO) and visual SLAM (VSLAM) systems for mobile robot navigation in real-world logistical environments.
+◆ We compare multiple visual odometry approaches across controlled trajectories covering translational, rotational, and mixed motion patterns, as well as a large-scale production facility dataset spanning approximately 1.7 km.
+◆ Performance is evaluated using Absolute Pose Error (APE) against ground truth from a Vicon motion capture system and a LiDAR-based SLAM reference.</td></tr>
 <tr><td>2026-03-16</td><td>Thermal Image Refinement with Depth Estimation using Recurrent Networks for Monocular ORB-SLAM3</td><td>[2603.14998](http://arxiv.org/pdf/2603.14998)</td><td>◆ Autonomous navigation in GPS-denied and visually degraded environments remains challenging for unmanned aerial vehicles (UAVs).
 ◆ To this end, we investigate the use of a monocular thermal camera as a standalone sensor on a UAV platform for real-time depth estimation and simultaneous localization and mapping (SLAM).
 ◆ To extract depth information from thermal images, we propose a novel pipeline employing a lightweight supervised network with recurrent blocks (RBs) integrated to capture temporal dependencies, enabling more robust predictions.</td></tr>
@@ -2955,6 +2961,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>Retrieving Counterfactuals Improves Visual In-Context Learning</td><td>[2603.16737](http://arxiv.org/pdf/2603.16737)</td><td>◆ Vision-language models (VLMs) have achieved impressive performance across a wide range of multimodal reasoning tasks, but they often struggle to disentangle fine-grained visual attributes and reason about underlying causal relationships.
+◆ In-context learning (ICL) offers a promising avenue for VLMs to adapt to new tasks, but its effectiveness critically depends on the selection of demonstration examples.
+◆ Existing retrieval-augmented approaches typically rely on passive similarity-based retrieval, which tends to select correlated but non-causal examples, amplifying spurious associations and limiting model robustness.</td></tr>
+<tr><td>2026-03-17</td><td>HMAR: Hierarchical Modality-Aware Expert and Dynamic Routing Medical Image Retrieval Architecture</td><td>[2603.16679](http://arxiv.org/pdf/2603.16679)</td><td>◆ Medical image retrieval (MIR) is a critical component of computer-aided diagnosis, yet existing systems suffer from three persistent limitations: uniform feature encoding that fails to account for the varying clinical importance of anatomical structures, ambiguous similarity metrics based on coarse classification labels, and an exclusive focus on global image similarity that cannot meet the clinical demand for fine-grained region-specific retrieval.
+◆ We propose HMAR (Hierarchical Modality-Aware Expert and Dynamic Routing), an adaptive retrieval framework built on a Mixture-of-Experts (MoE) architecture.
+◆ HMAR employs a dual-expert mechanism: Expert0 extracts global features for holistic similarity matching, while Expert1 learns position-invariant local representations for precise lesion-region retrieval.</td></tr>
+<tr><td>2026-03-17</td><td>Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty</td><td>[2603.16538](http://arxiv.org/pdf/2603.16538)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a powerful scene representation and is increasingly used for visual localization and pose refinement.
+◆ However, despite its high-quality differentiable rendering, the robustness of 3DGS-based pose refinement remains highly sensitive to both the initial camera pose and the reconstructed geometry.
+◆ In this work, we take a closer look at these limitations and identify two major sources of uncertainty: (i) pose prior uncertainty, which often arises from regression or retrieval models that output a single deterministic estimate, and (ii) geometric uncertainty, caused by imperfections in the 3DGS reconstruction that propagate errors into PnP solvers.</td></tr>
+<tr><td>2026-03-17</td><td>VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents</td><td>[2603.16289](http://arxiv.org/pdf/2603.16289)</td><td>◆ The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world.
+◆ But existing benchmarks suffer from two limitations: insufficient evaluation of visual reasoning ability and the neglect of native visual information of web pages in the reasoning chains.
+◆ To address these challenges, we introduce a new benchmark for visual-native search, VisBrowse-Bench.</td></tr>
 <tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
 ◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
 ◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
@@ -7411,4 +7429,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.17
+> 更新于: 2026.03.18
