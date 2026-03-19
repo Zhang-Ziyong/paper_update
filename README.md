@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.18)
+# 计算机视觉领域最新论文 (2026.03.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>Compressive Structures in the Foreshock of Collisionless Shocks</td><td>[2603.17882](http://arxiv.org/pdf/2603.17882)</td><td>◆ Collisionless shocks are fundamental accelerators of energetic particles; yet, the observations of nonlinear foreshock structures, which are essential in acceleration processes, differ significantly between Interplanetary (IP) shocks and planetary bow shocks.
+◆ We present a direct comparison of two high-Mach-number, quasi-parallel shocks: an IP shock observed by Solar Orbiter and the Earth&#x27;s bow shock measured by the Magnetospheric Multiscale (MMS) mission during the 2024-2025 ``string-of-pearls&#x27;&#x27; campaign.
+◆ We show that Foreshock Compressive Structures (FCSs) initiate upstream of both shocks at similar normalized distances ($\lesssim$50 ion inertial lengths, $d_i$) when the suprathermal ($&gt;10$ keV) ion density exceeds $\sim$1\% of the background.</td></tr>
+<tr><td>2026-03-18</td><td>OnlineHMR: Video-based Online World-Grounded Human Mesh Recovery</td><td>[2603.17355](http://arxiv.org/pdf/2603.17355)</td><td>◆ Human mesh recovery (HMR) models 3D human body from monocular videos, with recent works extending it to world-coordinate human trajectory and motion reconstruction.
+◆ However, most existing methods remain offline, relying on future frames or global optimization, which limits their applicability in interactive feedback and perception-action loop scenarios such as AR/VR and telepresence.
+◆ To address this, we propose OnlineHMR, a fully online framework that jointly satisfies four essential criteria of online processing, including system-level causality, faithfulness, temporal consistency, and efficiency.</td></tr>
+<tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
+◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
+◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
+<tr><td>2026-03-18</td><td>Visual SLAM with DEM Anchoring for Lunar Surface Navigation</td><td>[2603.17229](http://arxiv.org/pdf/2603.17229)</td><td>◆ Future lunar missions will require autonomous rovers capable of traversing tens of kilometers across challenging terrain while maintaining accurate localization and producing globally consistent maps.
+◆ However, the absence of global positioning systems, extreme illumination, and low-texture regolith make long-range navigation on the Moon particularly difficult, as visual-inertial odometry pipelines accumulate drift over extended traverses.
+◆ To address this challenge, we present a stereo visual simultaneous localization and mapping (SLAM) system that integrates learned feature detection and matching with global constraints from digital elevation models (DEMs).</td></tr>
+<tr><td>2026-03-17</td><td>FastLoop: Parallel Loop Closing with GPU-Acceleration in Visual SLAM</td><td>[2603.17201](http://arxiv.org/pdf/2603.17201)</td><td>◆ Visual SLAM systems combine visual tracking with global loop closure to maintain a consistent map and accurate localization.
+◆ Loop closure is a computationally expensive process as we need to search across the whole map for matches.
+◆ This paper presents FastLoop, a GPU-accelerated loop closing module to alleviate this computational complexity.</td></tr>
+<tr><td>2026-03-17</td><td>SLAM Adversarial Lab: An Extensible Framework for Visual SLAM Robustness Evaluation under Adverse Conditions</td><td>[2603.17165](http://arxiv.org/pdf/2603.17165)</td><td>◆ We present SAL (SLAM Adversarial Lab), a modular framework for evaluating visual SLAM systems under adversarial conditions such as fog and rain.
+◆ SAL represents each adversarial condition as a perturbation that transforms an existing dataset into an adversarial dataset.
+◆ When transforming a dataset, SAL supports severity levels using easily-interpretable real-world units such as meters for fog visibility.</td></tr>
 <tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
 ◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
 ◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
@@ -1858,6 +1876,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>Split-Merge Dynamics for Shapley-Fair Coalition Formation</td><td>[2603.17153](http://arxiv.org/pdf/2603.17153)</td><td>◆ Coalition formation is often modeled as a static equilibrium problem, neglecting the dynamic processes governing how agents self-organize.
+◆ This paper proposes a dynamic split-and-merge framework that balances two conflicting economic forces: individual fairness and collective efficiency.
+◆ We introduce a control-theoretic mechanism where topological operations are driven by distinct signals: splits are triggered by fairness violations (specifically, negative Shapley values representing &quot;agent-responsible inefficiency&quot;), while merges are driven by strict surplus improvements (superadditivity).</td></tr>
 <tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
 ◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
 ◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
@@ -2961,6 +2982,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>MCoT-MVS: Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning for Composed Image Retrieval</td><td>[2603.17360](http://arxiv.org/pdf/2603.17360)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images based on a reference image and modified texts.
+◆ However, existing methods often struggle to extract the correct semantic cues from the reference image that best reflect the user&#x27;s intent under textual modification prompts, resulting in interference from irrelevant visual noise.
+◆ In this paper, we propose a novel Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning (MCoT-MVS) for CIR, integrating attention-aware multi-level vision features guided by reasoning cues from a multi-modal large language model (MLLM).</td></tr>
+<tr><td>2026-03-17</td><td>Visual Product Search Benchmark</td><td>[2603.17186](http://arxiv.org/pdf/2603.17186)</td><td>◆ Reliable product identification from images is a critical requirement in industrial and commercial applications, particularly in maintenance, procurement, and operational workflows where incorrect matches can lead to costly downstream failures.
+◆ At the core of such systems lies the visual search component, which must retrieve and rank the exact object instance from large and continuously evolving catalogs under diverse imaging conditions.
+◆ This report presents a structured benchmark of modern visual embedding models for instance-level image retrieval, with a focus on industrial applications.</td></tr>
 <tr><td>2026-03-17</td><td>Retrieving Counterfactuals Improves Visual In-Context Learning</td><td>[2603.16737](http://arxiv.org/pdf/2603.16737)</td><td>◆ Vision-language models (VLMs) have achieved impressive performance across a wide range of multimodal reasoning tasks, but they often struggle to disentangle fine-grained visual attributes and reason about underlying causal relationships.
 ◆ In-context learning (ICL) offers a promising avenue for VLMs to adapt to new tasks, but its effectiveness critically depends on the selection of demonstration examples.
 ◆ Existing retrieval-augmented approaches typically rely on passive similarity-based retrieval, which tends to select correlated but non-causal examples, amplifying spurious associations and limiting model robustness.</td></tr>
@@ -2970,7 +2997,7 @@
 <tr><td>2026-03-17</td><td>Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty</td><td>[2603.16538](http://arxiv.org/pdf/2603.16538)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a powerful scene representation and is increasingly used for visual localization and pose refinement.
 ◆ However, despite its high-quality differentiable rendering, the robustness of 3DGS-based pose refinement remains highly sensitive to both the initial camera pose and the reconstructed geometry.
 ◆ In this work, we take a closer look at these limitations and identify two major sources of uncertainty: (i) pose prior uncertainty, which often arises from regression or retrieval models that output a single deterministic estimate, and (ii) geometric uncertainty, caused by imperfections in the 3DGS reconstruction that propagate errors into PnP solvers.</td></tr>
-<tr><td>2026-03-17</td><td>VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents</td><td>[2603.16289](http://arxiv.org/pdf/2603.16289)</td><td>◆ The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world.
+<tr><td>2026-03-18</td><td>VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents</td><td>[2603.16289](http://arxiv.org/pdf/2603.16289)</td><td>◆ The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world.
 ◆ But existing benchmarks suffer from two limitations: insufficient evaluation of visual reasoning ability and the neglect of native visual information of web pages in the reasoning chains.
 ◆ To address these challenges, we introduce a new benchmark for visual-native search, VisBrowse-Bench.</td></tr>
 <tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
@@ -6309,6 +6336,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>Neural Radiance Maps for Extraterrestrial Navigation and Path Planning</td><td>[2603.17236](http://arxiv.org/pdf/2603.17236)</td><td>◆ Autonomous vehicles such as the Mars rovers currently lead the vanguard of surface exploration on extraterrestrial planets and moons.
+◆ In order to accelerate the pace of exploration and science objectives, it is critical to plan safe and efficient paths for these vehicles.
+◆ However, current rover autonomy is limited by a lack of global maps which can be easily constructed and stored for onboard re-planning.</td></tr>
 <tr><td>2026-03-16</td><td>E2EGS: Event-to-Edge Gaussian Splatting for Pose-Free 3D Reconstruction</td><td>[2603.14684](http://arxiv.org/pdf/2603.14684)</td><td>◆ The emergence of neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS) has advanced novel view synthesis (NVS).
 ◆ These methods, however, require high-quality RGB inputs and accurate corresponding poses, limiting robustness under real-world conditions such as fast camera motion or adverse lighting.
 ◆ Event cameras, which capture brightness changes at each pixel with high temporal resolution and wide dynamic range, enable precise sensing of dynamic scenes and offer a promising solution.</td></tr>
@@ -7429,4 +7459,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.18
+> 更新于: 2026.03.19
