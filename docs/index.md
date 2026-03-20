@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.19)
+# 计算机视觉领域最新论文 (2026.03.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>DROID-SLAM in the Wild</td><td>[2603.19076](http://arxiv.org/pdf/2603.19076)</td><td>◆ We present a robust, real-time RGB SLAM system that handles dynamic environments by leveraging differentiable Uncertainty-aware Bundle Adjustment.
+◆ Traditional SLAM methods typically assume static scenes, leading to tracking failures in the presence of motion.
+◆ Recent dynamic SLAM approaches attempt to address this challenge using predefined dynamic priors or uncertainty-aware mapping, but they remain limited when confronted with unknown dynamic objects or highly cluttered scenes where geometric mapping becomes unreliable.</td></tr>
+<tr><td>2026-03-19</td><td>ROFT-VINS: Robust Feature Tracking-based Visual-Inertial State Estimation for Harsh Environment</td><td>[2603.18746](http://arxiv.org/pdf/2603.18746)</td><td>◆ SLAM (Simultaneous Localization and Mapping) and Odometry are important systems for estimating the position of mobile devices, such as robots and cars, utilizing one or more sensors.
+◆ Particularly in camera-based SLAM or Odometry, effectively tracking visual features is important as it significantly impacts system performance.
+◆ In this paper, we propose a method that leverages deep learning to robustly track visual features in monocular camera images.</td></tr>
+<tr><td>2026-03-19</td><td>Benchmarking Visual Feature Representations for LiDAR-Inertial-Visual Odometry Under Challenging Conditions</td><td>[2603.18589](http://arxiv.org/pdf/2603.18589)</td><td>◆ Accurate localization in autonomous driving is critical for successful missions including environmental mapping and survivor searches.
+◆ In visually challenging environments, including low-light conditions, overexposure, illumination changes, and high parallax, the performance of conventional visual odometry methods significantly degrade undermining robust robotic navigation.
+◆ Researchers have recently proposed LiDAR-inertial-visual odometry (LIVO) frameworks, that integrate LiDAR, IMU, and camera sensors, to address these challenges.</td></tr>
+<tr><td>2026-03-18</td><td>Semantic Segmentation and Depth Estimation for Real-Time Lunar Surface Mapping Using 3D Gaussian Splatting</td><td>[2603.18218](http://arxiv.org/pdf/2603.18218)</td><td>◆ Navigation and mapping on the lunar surface require robust perception under challenging conditions, including poorly textured environments, high-contrast lighting, and limited computational resources.
+◆ This paper presents a real-time mapping framework that integrates dense perception models with a 3D Gaussian Splatting (3DGS) representation.
+◆ We first benchmark several models on synthetic datasets generated with the LuPNT simulator, selecting a stereo dense depth estimation model based on Gated Recurrent Units for its balance of speed and accuracy in depth estimation, and a convolutional neural network for its superior performance in detecting semantic segments.</td></tr>
 <tr><td>2026-03-18</td><td>Compressive Structures in the Foreshock of Collisionless Shocks</td><td>[2603.17882](http://arxiv.org/pdf/2603.17882)</td><td>◆ Collisionless shocks are fundamental accelerators of energetic particles; yet, the observations of nonlinear foreshock structures, which are essential in acceleration processes, differ significantly between Interplanetary (IP) shocks and planetary bow shocks.
 ◆ We present a direct comparison of two high-Mach-number, quasi-parallel shocks: an IP shock observed by Solar Orbiter and the Earth&#x27;s bow shock measured by the Magnetospheric Multiscale (MMS) mission during the 2024-2025 ``string-of-pearls&#x27;&#x27; campaign.
 ◆ We show that Foreshock Compressive Structures (FCSs) initiate upstream of both shocks at similar normalized distances ($\lesssim$50 ion inertial lengths, $d_i$) when the suprathermal ($&gt;10$ keV) ion density exceeds $\sim$1\% of the background.</td></tr>
@@ -1874,6 +1886,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>Teleological Inference in Structural Causal Models via Intentional Interventions</td><td>[2603.18968](http://arxiv.org/pdf/2603.18968)</td><td>◆ Structural causal models (SCMs) were conceived to formulate and answer causal questions.
+◆ This paper shows that SCMs can also be used to formulate and answer teleological questions, concerning the intentions of a state-aware, goal-directed agent intervening in a causal system.
+◆ We review limitations of previous approaches to modeling such agents, and then introduce intentional interventions, a new time-agnostic operator that induces a twin SCM we call a structural final model (SFM).</td></tr>
+<tr><td>2026-03-19</td><td>Pixel-Accurate Epipolar Guided Matching</td><td>[2603.18401](http://arxiv.org/pdf/2603.18401)</td><td>◆ Keypoint matching can be slow and unreliable in challenging conditions such as repetitive textures or wide-baseline views.
+◆ In such cases, known geometric relations (e.g., the fundamental matrix) can be used to restrict potential correspondences to a narrow epipolar envelope, thereby reducing the search space and improving robustness.
+◆ These epipolar-guided matching approaches have proved effective in tasks such as SfM; however, most rely on coarse spatial binning, which introduces approximation errors, requires costly post-processing, and may miss valid correspondences.</td></tr>
 <tr><td>2026-03-17</td><td>Split-Merge Dynamics for Shapley-Fair Coalition Formation</td><td>[2603.17153](http://arxiv.org/pdf/2603.17153)</td><td>◆ Coalition formation is often modeled as a static equilibrium problem, neglecting the dynamic processes governing how agents self-organize.
 ◆ This paper proposes a dynamic split-and-merge framework that balances two conflicting economic forces: individual fairness and collective efficiency.
 ◆ We introduce a control-theoretic mechanism where topological operations are driven by distinct signals: splits are triggered by fairness violations (specifically, negative Shapley values representing &quot;agent-responsible inefficiency&quot;), while merges are driven by strict surplus improvements (superadditivity).</td></tr>
@@ -5489,6 +5507,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>Pixel-Accurate Epipolar Guided Matching</td><td>[2603.18401](http://arxiv.org/pdf/2603.18401)</td><td>◆ Keypoint matching can be slow and unreliable in challenging conditions such as repetitive textures or wide-baseline views.
+◆ In such cases, known geometric relations (e.g., the fundamental matrix) can be used to restrict potential correspondences to a narrow epipolar envelope, thereby reducing the search space and improving robustness.
+◆ These epipolar-guided matching approaches have proved effective in tasks such as SfM; however, most rely on coarse spatial binning, which introduces approximation errors, requires costly post-processing, and may miss valid correspondences.</td></tr>
 <tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
 ◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
 ◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
@@ -6326,6 +6347,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>Fast and Generalizable NeRF Architecture Selection for Satellite Scene Reconstruction</td><td>[2603.18306](http://arxiv.org/pdf/2603.18306)</td><td>◆ Neural Radiance Fields (NeRF) have emerged as a powerful approach for photorealistic 3D reconstruction from multi-view images.
+◆ However, deploying NeRF for satellite imagery remains challenging.
+◆ Each scene requires individual training, and optimizing architectures via Neural Architecture Search (NAS) demands hours to days of GPU time.</td></tr>
 <tr><td>2026-03-18</td><td>Neural Radiance Maps for Extraterrestrial Navigation and Path Planning</td><td>[2603.17236](http://arxiv.org/pdf/2603.17236)</td><td>◆ Autonomous vehicles such as the Mars rovers currently lead the vanguard of surface exploration on extraterrestrial planets and moons.
 ◆ In order to accelerate the pace of exploration and science objectives, it is critical to plan safe and efficient paths for these vehicles.
 ◆ However, current rover autonomy is limited by a lack of global maps which can be easily constructed and stored for onboard re-planning.</td></tr>
@@ -7447,4 +7471,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.19
+> 更新于: 2026.03.20
