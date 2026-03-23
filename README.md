@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.22)
+# 计算机视觉领域最新论文 (2026.03.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
+◆ As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential.
+◆ While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector.</td></tr>
+<tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
+◆ Existing Relative Pose Regression (RPR) methods face a key trade-off: feature-matching pipelines achieve high accuracy but block gradient flow via non-differentiable RANSAC, while ViT-based regressors are end-to-end trainable but prohibitively expensive for real-time deployment.
+◆ We identify the core bottlenecks as the coupling between rotation and translation estimation and insufficient cross-view feature alignment.</td></tr>
 <tr><td>2026-03-19</td><td>DROID-SLAM in the Wild</td><td>[2603.19076](http://arxiv.org/pdf/2603.19076)</td><td>◆ We present a robust, real-time RGB SLAM system that handles dynamic environments by leveraging differentiable Uncertainty-aware Bundle Adjustment.
 ◆ Traditional SLAM methods typically assume static scenes, leading to tracking failures in the presence of motion.
 ◆ Recent dynamic SLAM approaches attempt to address this challenge using predefined dynamic priors or uncertainty-aware mapping, but they remain limited when confronted with unknown dynamic objects or highly cluttered scenes where geometric mapping becomes unreliable.</td></tr>
@@ -3000,6 +3006,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>IsoCLIP: Decomposing CLIP Projectors for Efficient Intra-modal Alignment</td><td>[2603.19862](http://arxiv.org/pdf/2603.19862)</td><td>◆ Vision-Language Models like CLIP are extensively used for inter-modal tasks which involve both visual and text modalities.
+◆ However, when the individual modality encoders are applied to inherently intra-modal tasks like image-to-image retrieval, their performance suffers from the intra-modal misalignment.
+◆ In this paper we study intra-modal misalignment in CLIP with a focus on the role of the projectors that map pre-projection image and text embeddings into the shared embedding space.</td></tr>
+<tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
+◆ Existing Relative Pose Regression (RPR) methods face a key trade-off: feature-matching pipelines achieve high accuracy but block gradient flow via non-differentiable RANSAC, while ViT-based regressors are end-to-end trainable but prohibitively expensive for real-time deployment.
+◆ We identify the core bottlenecks as the coupling between rotation and translation estimation and insufficient cross-view feature alignment.</td></tr>
+<tr><td>2026-03-20</td><td>LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silhouette Alignment</td><td>[2603.19609](http://arxiv.org/pdf/2603.19609)</td><td>◆ We present LoD-Loc v3, a novel method for generalized aerial visual localization in dense urban environments.
+◆ While prior work LoD-Loc v2 achieves localization through semantic building silhouette alignment with low-detail city models, it suffers from two key limitations: poor cross-scene generalization and frequent failure in dense building scenes.
+◆ Our method addresses these challenges through two key innovations.</td></tr>
 <tr><td>2026-03-18</td><td>MCoT-MVS: Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning for Composed Image Retrieval</td><td>[2603.17360](http://arxiv.org/pdf/2603.17360)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images based on a reference image and modified texts.
 ◆ However, existing methods often struggle to extract the correct semantic cues from the reference image that best reflect the user&#x27;s intent under textual modification prompts, resulting in interference from irrelevant visual noise.
 ◆ In this paper, we propose a novel Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning (MCoT-MVS) for CIR, integrating attention-aware multi-level vision features guided by reasoning cues from a multi-modal large language model (MLLM).</td></tr>
@@ -5056,6 +5071,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography</td><td>[2603.19942](http://arxiv.org/pdf/2603.19942)</td><td>◆ Atomic electron tomography (AET) determines the three-dimensional (3D) coordinates and chemical identities of individual atoms from a series of scanning transmission electron microscopy images taken at different tilt angles.
+◆ However, under the low dose conditions required to mitigate beam damage, the reduced signal-to-noise ratio forces a trade off among accuracy, robustness, and throughput, which ultimately limits the broader application of AET.
+◆ Here, we introduce a physics aware, two stage neural networks (PANN) that incorporates physical constraints throughout its workflow to achieve accurate AET under low-dose imaging.</td></tr>
 <tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
 ◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
 ◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
@@ -6357,6 +6375,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>Generalizable NGP-SR: Generalizable Neural Radiance Fields Super-Resolution via Neural Graph Primitives</td><td>[2603.20128](http://arxiv.org/pdf/2603.20128)</td><td>◆ Neural Radiance Fields (NeRF) achieve photorealistic novel view synthesis but become costly when high-resolution (HR) rendering is required, as HR outputs demand dense sampling and higher-capacity models.
+◆ Moreover, naively super-resolving per-view renderings in 2D often breaks multi-view consistency.
+◆ We propose Generalizable NGP-SR, a 3D-aware super-resolution framework that reconstructs an HR radiance field directly from low-resolution (LR) posed images.</td></tr>
+<tr><td>2026-03-20</td><td>3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction</td><td>[2603.19682](http://arxiv.org/pdf/2603.19682)</td><td>◆ Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF.
+◆ Although 3DGS has shown advantages over NeRF in terms of rendering quality or speed, there is still room for improvement in recovering high fidelity surfaces through 3DGS.
+◆ To resolve this issue, we propose a self-constrained prior to constrain the learning of 3D Gaussians, aiming for more accurate depth rendering.</td></tr>
 <tr><td>2026-03-18</td><td>Fast and Generalizable NeRF Architecture Selection for Satellite Scene Reconstruction</td><td>[2603.18306](http://arxiv.org/pdf/2603.18306)</td><td>◆ Neural Radiance Fields (NeRF) have emerged as a powerful approach for photorealistic 3D reconstruction from multi-view images.
 ◆ However, deploying NeRF for satellite imagery remains challenging.
 ◆ Each scene requires individual training, and optimizing architectures via Neural Architecture Search (NAS) demands hours to days of GPU time.</td></tr>
@@ -7483,4 +7507,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.22
+> 更新于: 2026.03.23
