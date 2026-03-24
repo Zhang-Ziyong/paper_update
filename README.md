@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.23)
+# 计算机视觉领域最新论文 (2026.03.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-20</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
+<tr><td>2026-03-23</td><td>Image-Conditioned Adaptive Parameter Tuning for Visual Odometry Frontends</td><td>[2603.21785](http://arxiv.org/pdf/2603.21785)</td><td>◆ Resource-constrained autonomous robots rely on sparse direct and semi-direct visual-(inertial)-odometry (VO) pipelines, as they provide a favorable tradeoff between accuracy, robustness, and computational cost.
+◆ However, the performance of most systems depends critically on hand-tuned hyperparameters governing feature detection, tracking, and outlier rejection.
+◆ These parameters are typically fixed during deployment, even though their optimal values vary with scene characteristics such as texture density, illumination, motion blur, and sensor noise, leading to brittle performance in real-world environments.</td></tr>
+<tr><td>2026-03-22</td><td>SGAD-SLAM: Splatting Gaussians at Adjusted Depth for Better Radiance Fields in RGBD SLAM</td><td>[2603.21055](http://arxiv.org/pdf/2603.21055)</td><td>◆ 3D Gaussian Splatting (3DGS) has made remarkable progress in RGBD SLAM.
+◆ Current methods usually use 3D Gaussians or view-tied 3D Gaussians to represent radiance fields in tracking and mapping.
+◆ However, these Gaussians are either too flexible or too limited in movements, resulting in slow convergence or limited rendering quality.</td></tr>
+<tr><td>2026-03-21</td><td>Implementing Robust M-Estimators with Certifiable Factor Graph Optimization</td><td>[2603.20932](http://arxiv.org/pdf/2603.20932)</td><td>◆ Parameter estimation in robotics and computer vision faces formidable challenges from both outlier contamination and nonconvex optimization landscapes.
+◆ While M-estimation addresses the problem of outliers through robust loss functions, it creates severely nonconvex problems that are difficult to solve globally.
+◆ Adaptive reweighting schemes provide one particularly appealing strategy for implementing M-estimation in practice: these methods solve a sequence of simpler weighted least squares (WLS) subproblems, enabling both the use of standard least squares solvers and the recovery of higher-quality estimates than simple local search.</td></tr>
+<tr><td>2026-03-21</td><td>ToFormer: Towards Large-scale Scenario Depth Completion for Lightweight ToF Camera</td><td>[2603.20669](http://arxiv.org/pdf/2603.20669)</td><td>◆ Time-of-Flight (ToF) cameras possess compact design and high measurement precision to be applied to various robot tasks.
+◆ However, their limited sensing range restricts deployment in large-scale scenarios.
+◆ Depth completion has emerged as a potential solution to expand the sensing range of ToF cameras, but existing research lacks dedicated datasets and struggles to generalize to ToF measurements.</td></tr>
+<tr><td>2026-03-20</td><td>TRGS-SLAM: IMU-Aided Gaussian Splatting SLAM for Blurry, Rolling Shutter, and Noisy Thermal Images</td><td>[2603.20443](http://arxiv.org/pdf/2603.20443)</td><td>◆ Thermal cameras offer several advantages for simultaneous localization and mapping (SLAM) with mobile robots: they provide a passive, low-power solution to operating in darkness, are invariant to rapidly changing or high dynamic range illumination, and can see through fog, dust, and smoke.
+◆ However, uncooled microbolometer thermal cameras, the only practical option in most robotics applications, suffer from significant motion blur, rolling shutter distortions, and fixed pattern noise.
+◆ In this paper, we present TRGS-SLAM, a 3D Gaussian Splatting (3DGS) based thermal inertial SLAM system uniquely capable of handling these degradations.</td></tr>
+<tr><td>2026-03-23</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
 ◆ As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential.
 ◆ While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector.</td></tr>
 <tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
@@ -1894,6 +1909,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>Uncertainty Quantification for Distribution-to-Distribution Flow Matching in Scientific Imaging</td><td>[2603.21717](http://arxiv.org/pdf/2603.21717)</td><td>◆ Distribution-to-distribution generative models support scientific imaging tasks ranging from modeling cellular perturbation responses to translating medical images across conditions.
+◆ Trustworthy generation requires both reliability (generalization across labs, devices, and experimental conditions) and accountability (detecting out-of-distribution cases where predictions may be unreliable).
+◆ Uncertainty quantification (UQ) based approaches serve as promising candidates for these tasks, yet UQ for distribution-to-distribution generative models remains underexplored.</td></tr>
+<tr><td>2026-03-21</td><td>The Role and Relationship of Initialization and Densification in 3D Gaussian Splatting</td><td>[2603.20714](http://arxiv.org/pdf/2603.20714)</td><td>◆ 3D Gaussian Splatting (3DGS) has become the method of choice for photo-realistic 3D reconstruction of scenes, due to being able to efficiently and accurately recover the scene appearance and geometry from images.
+◆ 3DGS represents the scene through a set of 3D Gaussians, parameterized by their position, spatial extent, and view-dependent color.
+◆ Starting from an initial point cloud, 3DGS refines the Gaussians&#x27; parameters as to reconstruct a set of training images as accurately as possible.</td></tr>
+<tr><td>2026-03-21</td><td>GHOST: Ground-projected Hypotheses from Observed Structure-from-Motion Trajectories</td><td>[2603.20583](http://arxiv.org/pdf/2603.20583)</td><td>◆ We present a scalable self-supervised approach for segmenting feasible vehicle trajectories from monocular images for autonomous driving in complex urban environments.
+◆ Leveraging large-scale dashcam videos, we treat recorded ego-vehicle motion as implicit supervision and recover camera trajectories via monocular structure-from-motion, projecting them onto the ground plane to generate spatial masks of traversed regions without manual annotation.
+◆ These automatically generated labels are used to train a deep segmentation network that predicts motion-conditioned path proposals from a single RGB image at run time, without explicit modeling of road or lane markings.</td></tr>
+<tr><td>2026-03-20</td><td>Benchmarking Efficient &amp; Effective Camera Pose Estimation Strategies for Novel View Synthesis</td><td>[2603.20428](http://arxiv.org/pdf/2603.20428)</td><td>◆ Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters.
+◆ The necessary camera poses and calibrations are typically obtained from the images via Structure-from-Motion (SfM).
+◆ Classical SfM approaches rely on local feature matches between the images to estimate both the poses and a sparse 3D model of the scene, using bundle adjustment to refine initial pose, intrinsics, and geometry estimates.</td></tr>
 <tr><td>2026-03-19</td><td>Teleological Inference in Structural Causal Models via Intentional Interventions</td><td>[2603.18968](http://arxiv.org/pdf/2603.18968)</td><td>◆ Structural causal models (SCMs) were conceived to formulate and answer causal questions.
 ◆ This paper shows that SCMs can also be used to formulate and answer teleological questions, concerning the intentions of a state-aware, goal-directed agent intervening in a causal system.
 ◆ We review limitations of previous approaches to modeling such agents, and then introduce intentional interventions, a new time-agnostic operator that induces a twin SCM we call a structural final model (SFM).</td></tr>
@@ -3006,6 +3033,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>ADaFuSE: Adaptive Diffusion-generated Image and Text Fusion for Interactive Text-to-Image Retrieval</td><td>[2603.21886](http://arxiv.org/pdf/2603.21886)</td><td>◆ Recent advances in interactive text-to-image retrieval (I-TIR) use diffusion models to bridge the modality gap between the textual information need and the images to be searched, resulting in increased effectiveness.
+◆ However, existing frameworks fuse multi-modal views of user feedback by simple embedding addition.
+◆ In this work, we show that this static and undifferentiated fusion indiscriminately incorporates generative noise produced by the diffusion model, leading to performance degradation for up to 55.62% samples.</td></tr>
+<tr><td>2026-03-21</td><td>SATTC: Structure-Aware Label-Free Test-Time Calibration for Cross-Subject EEG-to-Image Retrieval</td><td>[2603.20738](http://arxiv.org/pdf/2603.20738)</td><td>◆ Cross-subject EEG-to-image retrieval for visual decoding is challenged by subject shift and hubness in the embedding space, which distort similarity geometry and destabilize top-k rankings, making small-k shortlists unreliable.
+◆ We introduce SATTC (Structure-Aware Test-Time Calibration), a label-free calibration head that operates directly on the similarity matrix of frozen EEG and image encoders.
+◆ SATTC combines a geometric expert, subject-adaptive whitening of EEG embeddings with an adaptive variant of Cross-domain Similarity Local Scaling (CSLS), and a structural expert built from mutual nearest neighbors, bidirectional top-k ranks, and class popularity, fused via a simple Product-of-Experts rule.</td></tr>
+<tr><td>2026-03-21</td><td>A Multihead Continual Learning Framework for Fine-Grained Fashion Image Retrieval with Contrastive Learning and Exponential Moving Average Distillation</td><td>[2603.20648](http://arxiv.org/pdf/2603.20648)</td><td>◆ Most fine-grained fashion image retrieval (FIR) methods assume a static setting, requiring full retraining when new attributes appear, which is costly and impractical for dynamic scenarios.
+◆ Although pretrained models support zero-shot inference, their accuracy drops without supervision, and no prior work explores class-incremental learning (CIL) for fine-grained FIR.
+◆ We propose a multihead continual learning framework for fine-grained fashion image retrieval with contrastive learning and exponential moving average (EMA) distillation (MCL-FIR).</td></tr>
 <tr><td>2026-03-20</td><td>IsoCLIP: Decomposing CLIP Projectors for Efficient Intra-modal Alignment</td><td>[2603.19862](http://arxiv.org/pdf/2603.19862)</td><td>◆ Vision-Language Models like CLIP are extensively used for inter-modal tasks which involve both visual and text modalities.
 ◆ However, when the individual modality encoders are applied to inherently intra-modal tasks like image-to-image retrieval, their performance suffers from the intra-modal misalignment.
 ◆ In this paper we study intra-modal misalignment in CLIP with a focus on the role of the projectors that map pre-projection image and text embeddings into the shared embedding space.</td></tr>
@@ -5533,6 +5569,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching</td><td>[2603.21463](http://arxiv.org/pdf/2603.21463)</td><td>◆ The deep-learning based image matching networks can now handle significantly larger variations in viewpoints and illuminations while providing matched pairs of pixels with sub-pixel precision.
+◆ These networks have been trained with ground-based image datasets and, implicitly, their performance is optimized for the pinhole camera geometry.
+◆ Consequently, you get suboptimal performance when such networks are used to match satellite images since those images are synthesized as a moving satellite camera records one line at a time of the points on the ground.</td></tr>
+<tr><td>2026-03-20</td><td>Benchmarking Efficient &amp; Effective Camera Pose Estimation Strategies for Novel View Synthesis</td><td>[2603.20428](http://arxiv.org/pdf/2603.20428)</td><td>◆ Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters.
+◆ The necessary camera poses and calibrations are typically obtained from the images via Structure-from-Motion (SfM).
+◆ Classical SfM approaches rely on local feature matches between the images to estimate both the poses and a sparse 3D model of the scene, using bundle adjustment to refine initial pose, intrinsics, and geometry estimates.</td></tr>
 <tr><td>2026-03-19</td><td>Pixel-Accurate Epipolar Guided Matching</td><td>[2603.18401](http://arxiv.org/pdf/2603.18401)</td><td>◆ Keypoint matching can be slow and unreliable in challenging conditions such as repetitive textures or wide-baseline views.
 ◆ In such cases, known geometric relations (e.g., the fundamental matrix) can be used to restrict potential correspondences to a narrow epipolar envelope, thereby reducing the search space and improving robustness.
 ◆ These epipolar-guided matching approaches have proved effective in tasks such as SfM; however, most rely on coarse spatial binning, which introduces approximation errors, requires costly post-processing, and may miss valid correspondences.</td></tr>
@@ -6375,6 +6417,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>SatGeo-NeRF: Geometrically Regularized NeRF for Satellite Imagery</td><td>[2603.21931](http://arxiv.org/pdf/2603.21931)</td><td>◆ We present SatGeo-NeRF, a geometrically regularized NeRF for satellite imagery that mitigates overfitting-induced geometric artifacts observed in current state-of-the-art models using three model-agnostic regularizers.
+◆ Gravity-Aligned Planarity Regularization aligns depth-inferred, approximated surface normals with the gravity axis to promote local planarity, coupling adjacent rays via a corresponding surface approximation to facilitate cross-ray gradient flow.
+◆ Granularity Regularization enforces a coarse-to-fine geometry-learning scheme, and Depth-Supervised Regularization stabilizes early training for improved geometric accuracy.</td></tr>
+<tr><td>2026-03-23</td><td>RefracGS: Novel View Synthesis Through Refractive Water Surfaces with 3D Gaussian Ray Tracing</td><td>[2603.21695](http://arxiv.org/pdf/2603.21695)</td><td>◆ Novel view synthesis (NVS) through non-planar refractive surfaces presents fundamental challenges due to severe, spatially varying optical distortions.
+◆ While recent representations like NeRF and 3D Gaussian Splatting (3DGS) excel at NVS, their assumption of straight-line ray propagation fails under these conditions, leading to significant artifacts.
+◆ To overcome this limitation, we introduce RefracGS, a framework that jointly reconstructs the refractive water surface and the scene beneath the interface.</td></tr>
+<tr><td>2026-03-22</td><td>FluidGaussian: Propagating Simulation-Based Uncertainty Toward Functionally-Intelligent 3D Reconstruction</td><td>[2603.21356](http://arxiv.org/pdf/2603.21356)</td><td>◆ Real objects that inhabit the physical world follow physical laws and thus behave plausibly during interaction with other physical objects.
+◆ However, current methods that perform 3D reconstructions of real-world scenes from multi-view 2D images optimize primarily for visual fidelity, i.e., they train with photometric losses and reason about uncertainty in the image or representation space.
+◆ This appearance-centric view overlooks body contacts and couplings, conflates function-critical regions (e.g., aerodynamic or hydrodynamic surfaces) with ornamentation, and reconstructs structures suboptimally, even when physical regularizers are added.</td></tr>
+<tr><td>2026-03-22</td><td>EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization</td><td>[2603.21332](http://arxiv.org/pdf/2603.21332)</td><td>◆ Audio-driven 3D talking head synthesis has advanced rapidly with Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
+◆ By leveraging rich pre-trained priors, few-shot methods enable instant personalization from just a few seconds of video.
+◆ However, under expressive facial motion, existing few-shot approaches often suffer from geometric instability and audio-emotion mismatch, highlighting the need for more effective emotion-aware motion modeling.</td></tr>
+<tr><td>2026-03-21</td><td>GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction</td><td>[2603.20611](http://arxiv.org/pdf/2603.20611)</td><td>◆ Slice-based volumetric imaging is widely applied and it demands representations that compress aggressively while preserving internal structure for analysis.
+◆ We introduce GaussianPile, unifying 3D Gaussian splatting with an imaging system-aware focus model to address this challenge.
+◆ Our proposed method introduces three key innovations: (i) a slice-aware piling strategy that positions anisotropic 3D Gaussians to model through-slice contributions, (ii) a differentiable projection operator that encodes the finite-thickness point spread function of the imaging acquisition system, and (iii) a compact encoding and joint optimization pipeline that simultaneously reconstructs and compresses the Gaussian sets.</td></tr>
+<tr><td>2026-03-20</td><td>Benchmarking Efficient &amp; Effective Camera Pose Estimation Strategies for Novel View Synthesis</td><td>[2603.20428](http://arxiv.org/pdf/2603.20428)</td><td>◆ Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters.
+◆ The necessary camera poses and calibrations are typically obtained from the images via Structure-from-Motion (SfM).
+◆ Classical SfM approaches rely on local feature matches between the images to estimate both the poses and a sparse 3D model of the scene, using bundle adjustment to refine initial pose, intrinsics, and geometry estimates.</td></tr>
 <tr><td>2026-03-20</td><td>Generalizable NGP-SR: Generalizable Neural Radiance Fields Super-Resolution via Neural Graph Primitives</td><td>[2603.20128](http://arxiv.org/pdf/2603.20128)</td><td>◆ Neural Radiance Fields (NeRF) achieve photorealistic novel view synthesis but become costly when high-resolution (HR) rendering is required, as HR outputs demand dense sampling and higher-capacity models.
 ◆ Moreover, naively super-resolving per-view renderings in 2D often breaks multi-view consistency.
 ◆ We propose Generalizable NGP-SR, a 3D-aware super-resolution framework that reconstructs an HR radiance field directly from low-resolution (LR) posed images.</td></tr>
@@ -7507,4 +7567,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.23
+> 更新于: 2026.03.24
