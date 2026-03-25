@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.24)
+# 计算机视觉领域最新论文 (2026.03.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Digital Twin Enabled Simultaneous Learning and Modeling for UAV-assisted Secure Communications with Eavesdropping Attacks</td><td>[2603.22753](http://arxiv.org/pdf/2603.22753)</td><td>◆ This paper focuses on secure communications in UAV-assisted wireless networks, which comprise multiple legitimate UAVs (LE-UAVs) and an intelligent eavesdropping UAV (EA-UAV).
+◆ The intelligent EA-UAV can observe the LE-UAVs&#x27;transmission strategies and adaptively adjust its trajectory to maximize information interception.
+◆ To counter this threat, we propose a mode-switching scheme that enables LE-UAVs to dynamically switch between the data transmission and jamming modes, thereby balancing data collection efficiency and communication security.</td></tr>
+<tr><td>2026-03-24</td><td>Variable-Resolution Virtual Maps for Autonomous Exploration with Unmanned Surface Vehicles (USVs)</td><td>[2603.22667](http://arxiv.org/pdf/2603.22667)</td><td>◆ Autonomous exploration by unmanned surface vehicles (USVs) in near-shore waters requires reliable localisation and consistent mapping over extended areas, but this is challenged by GNSS degradation, environment-induced localisation uncertainty, and limited on-board computation.
+◆ Virtual map-based methods explicitly model localisation and mapping uncertainty by tightly coupling factor-graph SLAM with a map uncertainty criterion.
+◆ However, their storage and computational costs scale poorly with fixed-resolution workspace discretisations, leading to inefficiency in large near-shore environments.</td></tr>
 <tr><td>2026-03-23</td><td>Image-Conditioned Adaptive Parameter Tuning for Visual Odometry Frontends</td><td>[2603.21785](http://arxiv.org/pdf/2603.21785)</td><td>◆ Resource-constrained autonomous robots rely on sparse direct and semi-direct visual-(inertial)-odometry (VO) pipelines, as they provide a favorable tradeoff between accuracy, robustness, and computational cost.
 ◆ However, the performance of most systems depends critically on hand-tuned hyperparameters governing feature detection, tracking, and outlier rejection.
 ◆ These parameters are typically fixed during deployment, even though their optimal values vary with scene characteristics such as texture density, illumination, motion blur, and sensor noise, leading to brittle performance in real-world environments.</td></tr>
@@ -1907,13 +1913,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-23</td><td>Uncertainty Quantification for Distribution-to-Distribution Flow Matching in Scientific Imaging</td><td>[2603.21717](http://arxiv.org/pdf/2603.21717)</td><td>◆ Distribution-to-distribution generative models support scientific imaging tasks ranging from modeling cellular perturbation responses to translating medical images across conditions.
+<tr><td>2026-03-24</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
+◆ In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos.
+◆ To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians&#x27; internal depth priors.</td></tr>
+<tr><td>2026-03-24</td><td>GTLR-GS: Geometry-Texture Aware LiDAR-Regularized 3D Gaussian Splatting for Realistic Scene Reconstruction</td><td>[2603.23192](http://arxiv.org/pdf/2603.23192)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled real-time, photorealistic scene reconstruction.
+◆ However, conventional 3DGS frameworks typically rely on sparse point clouds derived from Structure-from-Motion (SfM), which inherently suffer from scale ambiguity, limited geometric consistency, and strong view dependency due to the lack of geometric priors.
+◆ In this work, a LiDAR-centric 3D Gaussian Splatting framework is proposed that explicitly incorporates metric geometric priors into the entire Gaussian optimization process.</td></tr>
+<tr><td>2026-03-24</td><td>Uncertainty Quantification for Distribution-to-Distribution Flow Matching in Scientific Imaging</td><td>[2603.21717](http://arxiv.org/pdf/2603.21717)</td><td>◆ Distribution-to-distribution generative models support scientific imaging tasks ranging from modeling cellular perturbation responses to translating medical images across conditions.
 ◆ Trustworthy generation requires both reliability (generalization across labs, devices, and experimental conditions) and accountability (detecting out-of-distribution cases where predictions may be unreliable).
 ◆ Uncertainty quantification (UQ) based approaches serve as promising candidates for these tasks, yet UQ for distribution-to-distribution generative models remains underexplored.</td></tr>
 <tr><td>2026-03-21</td><td>The Role and Relationship of Initialization and Densification in 3D Gaussian Splatting</td><td>[2603.20714](http://arxiv.org/pdf/2603.20714)</td><td>◆ 3D Gaussian Splatting (3DGS) has become the method of choice for photo-realistic 3D reconstruction of scenes, due to being able to efficiently and accurately recover the scene appearance and geometry from images.
 ◆ 3DGS represents the scene through a set of 3D Gaussians, parameterized by their position, spatial extent, and view-dependent color.
 ◆ Starting from an initial point cloud, 3DGS refines the Gaussians&#x27; parameters as to reconstruct a set of training images as accurately as possible.</td></tr>
-<tr><td>2026-03-21</td><td>GHOST: Ground-projected Hypotheses from Observed Structure-from-Motion Trajectories</td><td>[2603.20583](http://arxiv.org/pdf/2603.20583)</td><td>◆ We present a scalable self-supervised approach for segmenting feasible vehicle trajectories from monocular images for autonomous driving in complex urban environments.
+<tr><td>2026-03-24</td><td>GHOST: Ground-projected Hypotheses from Observed Structure-from-Motion Trajectories</td><td>[2603.20583](http://arxiv.org/pdf/2603.20583)</td><td>◆ We present a scalable self-supervised approach for segmenting feasible vehicle trajectories from monocular images for autonomous driving in complex urban environments.
 ◆ Leveraging large-scale dashcam videos, we treat recorded ego-vehicle motion as implicit supervision and recover camera trajectories via monocular structure-from-motion, projecting them onto the ground plane to generate spatial masks of traversed regions without manual annotation.
 ◆ These automatically generated labels are used to train a deep segmentation network that predicts motion-conditioned path proposals from a single RGB image at run time, without explicit modeling of road or lane markings.</td></tr>
 <tr><td>2026-03-20</td><td>Benchmarking Efficient &amp; Effective Camera Pose Estimation Strategies for Novel View Synthesis</td><td>[2603.20428](http://arxiv.org/pdf/2603.20428)</td><td>◆ Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters.
@@ -3029,6 +3041,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>ARGENT: Adaptive Hierarchical Image-Text Representations</td><td>[2603.23311](http://arxiv.org/pdf/2603.23311)</td><td>◆ Large-scale Vision-Language Models (VLMs) such as CLIP learn powerful semantic representations but operate in Euclidean space, which fails to capture the inherent hierarchical structure of visual and linguistic concepts.
+◆ Hyperbolic geometry, with its exponential volume growth, offers a principled alternative for embedding such hierarchies with low distortion.
+◆ However, existing hyperbolic VLMs use entailment losses that are unstable: as parent embeddings contract toward the origin, their entailment cones widen toward a half-space, causing catastrophic cone collapse that destroys the intended hierarchy.</td></tr>
+<tr><td>2026-03-24</td><td>Retrieval-Guided Photovoltaic Inventory Estimation from Satellite Imagery for Distribution Grid Planning</td><td>[2603.22856](http://arxiv.org/pdf/2603.22856)</td><td>◆ The rapid expansion of distributed rooftop photovoltaic (PV) systems introduces increasing uncertainty in distribution grid planning, hosting capacity assessment, and voltage regulation.
+◆ Reliable estimation of rooftop PV deployment from satellite imagery is therefore essential for accurate modeling of distributed generation at feeder and service-territory scales.
+◆ However, conventional computer vision approaches rely on fixed learned representations and globally averaged visual correlations.</td></tr>
+<tr><td>2026-03-24</td><td>SOUPLE: Enhancing Audio-Visual Localization and Segmentation with Learnable Prompt Contexts</td><td>[2603.22732](http://arxiv.org/pdf/2603.22732)</td><td>◆ Large-scale pre-trained image-text models exhibit robust multimodal representations, yet applying the Contrastive Language-Image Pre-training (CLIP) model to audio-visual localization remains challenging.
+◆ Replacing the classification token ([CLS]) with an audio-embedded token ([V_A]) struggles to capture semantic cues, and the prompt &quot;a photo of a [V_A]&quot; fails to establish meaningful connections between audio embeddings and context tokens.
+◆ To address these issues, we propose Sound-aware Prompt Learning (SOUPLE), which replaces fixed prompts with learnable context tokens.</td></tr>
+<tr><td>2026-03-24</td><td>HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment</td><td>[2603.22721](http://arxiv.org/pdf/2603.22721)</td><td>◆ Recent progress in artificial intelligence has encouraged numerous attempts to understand and decode human visual system from brain signals.
+◆ These prior works typically align neural activity independently with semantic and perceptual features extracted from images using pre-trained vision models.
+◆ However, they fail to account for two key challenges: (1) the modality gap arising from the natural difference in the information level of representation between brain signals and images, and (2) the fact that semantic and perceptual features are highly entangled within neural activity.</td></tr>
 <tr><td>2026-03-23</td><td>ADaFuSE: Adaptive Diffusion-generated Image and Text Fusion for Interactive Text-to-Image Retrieval</td><td>[2603.21886](http://arxiv.org/pdf/2603.21886)</td><td>◆ Recent advances in interactive text-to-image retrieval (I-TIR) use diffusion models to bridge the modality gap between the textual information need and the images to be searched, resulting in increased effectiveness.
 ◆ However, existing frameworks fuse multi-modal views of user feedback by simple embedding addition.
 ◆ In this work, we show that this static and undifferentiated fusion indiscriminately incorporates generative noise produced by the diffusion model, leading to performance degradation for up to 55.62% samples.</td></tr>
@@ -3044,7 +3068,7 @@
 <tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
 ◆ Existing Relative Pose Regression (RPR) methods face a key trade-off: feature-matching pipelines achieve high accuracy but block gradient flow via non-differentiable RANSAC, while ViT-based regressors are end-to-end trainable but prohibitively expensive for real-time deployment.
 ◆ We identify the core bottlenecks as the coupling between rotation and translation estimation and insufficient cross-view feature alignment.</td></tr>
-<tr><td>2026-03-20</td><td>LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silhouette Alignment</td><td>[2603.19609](http://arxiv.org/pdf/2603.19609)</td><td>◆ We present LoD-Loc v3, a novel method for generalized aerial visual localization in dense urban environments.
+<tr><td>2026-03-24</td><td>LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silhouette Alignment</td><td>[2603.19609](http://arxiv.org/pdf/2603.19609)</td><td>◆ We present LoD-Loc v3, a novel method for generalized aerial visual localization in dense urban environments.
 ◆ While prior work LoD-Loc v2 achieves localization through semantic building silhouette alignment with low-detail city models, it suffers from two key limitations: poor cross-scene generalization and frequent failure in dense building scenes.
 ◆ Our method addresses these challenges through two key innovations.</td></tr>
 <tr><td>2026-03-18</td><td>MCoT-MVS: Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning for Composed Image Retrieval</td><td>[2603.17360](http://arxiv.org/pdf/2603.17360)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images based on a reference image and modified texts.
@@ -5101,6 +5125,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
+◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
+◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
 <tr><td>2026-03-20</td><td>Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography</td><td>[2603.19942](http://arxiv.org/pdf/2603.19942)</td><td>◆ Atomic electron tomography (AET) determines the three-dimensional (3D) coordinates and chemical identities of individual atoms from a series of scanning transmission electron microscopy images taken at different tilt angles.
 ◆ However, under the low dose conditions required to mitigate beam damage, the reduced signal-to-noise ratio forces a trade off among accuracy, robustness, and throughput, which ultimately limits the broader application of AET.
 ◆ Here, we introduce a physics aware, two stage neural networks (PANN) that incorporates physical constraints throughout its workflow to achieve accurate AET under low-dose imaging.</td></tr>
@@ -6407,6 +6434,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>UniQueR: Unified Query-based Feedforward 3D Reconstruction</td><td>[2603.22851](http://arxiv.org/pdf/2603.22851)</td><td>◆ We present UniQueR, a unified query-based feedforward framework for efficient and accurate 3D reconstruction from unposed images.
+◆ Existing feedforward models such as DUSt3R, VGGT, and AnySplat typically predict per-pixel point maps or pixel-aligned Gaussians, which remain fundamentally 2.5D and limited to visible surfaces.
+◆ In contrast, UniQueR formulates reconstruction as a sparse 3D query inference problem.</td></tr>
 <tr><td>2026-03-23</td><td>SatGeo-NeRF: Geometrically Regularized NeRF for Satellite Imagery</td><td>[2603.21931](http://arxiv.org/pdf/2603.21931)</td><td>◆ We present SatGeo-NeRF, a geometrically regularized NeRF for satellite imagery that mitigates overfitting-induced geometric artifacts observed in current state-of-the-art models using three model-agnostic regularizers.
 ◆ Gravity-Aligned Planarity Regularization aligns depth-inferred, approximated surface normals with the gravity axis to promote local planarity, coupling adjacent rays via a corresponding surface approximation to facilitate cross-ray gradient flow.
 ◆ Granularity Regularization enforces a coarse-to-fine geometry-learning scheme, and Depth-Supervised Regularization stabilizes early training for improved geometric accuracy.</td></tr>
@@ -7555,4 +7585,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.24
+> 更新于: 2026.03.25
