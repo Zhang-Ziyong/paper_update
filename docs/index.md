@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.26)
+# 计算机视觉领域最新论文 (2026.03.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -1913,7 +1913,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-24</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
+<tr><td>2026-03-26</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
 ◆ In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos.
 ◆ To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians&#x27; internal depth priors.</td></tr>
 <tr><td>2026-03-24</td><td>GTLR-GS: Geometry-Texture Aware LiDAR-Regularized 3D Gaussian Splatting for Realistic Scene Reconstruction</td><td>[2603.23192](http://arxiv.org/pdf/2603.23192)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled real-time, photorealistic scene reconstruction.
@@ -3041,6 +3041,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming</td><td>[2603.25686](http://arxiv.org/pdf/2603.25686)</td><td>◆ Cross-view geo-localization (CVGL) estimates a camera&#x27;s location by matching a street-view image to geo-referenced overhead imagery, enabling GPS-denied localization and navigation.
+◆ Existing methods almost universally formulate CVGL as an image-retrieval problem in a contrastively trained embedding space.
+◆ This ties performance to large batches and hard negative mining, and it ignores both the geometric structure of maps and the coverage mismatch between street-view and overhead imagery.</td></tr>
+<tr><td>2026-03-26</td><td>On-Demand Instructional Material Providing Agent Based on MLLM for Tutoring Support</td><td>[2603.25195](http://arxiv.org/pdf/2603.25195)</td><td>◆ Effective instruction in tutoring requires promptly providing instructional materials that match the needs of each student (e.g., in response to questions).
+◆ In this study, we introduce an agent that automatically delivers supplementary materials on demand during one-on-one tutoring sessions.
+◆ Our agent uses a multimodal large language model to analyze spoken dialogue between the instructor and the student, automatically generate search queries, and retrieve relevant Web images.</td></tr>
+<tr><td>2026-03-25</td><td>TIGeR: A Unified Framework for Time, Images and Geo-location Retrieval</td><td>[2603.24749](http://arxiv.org/pdf/2603.24749)</td><td>◆ Many real-world applications in digital forensics, urban monitoring, and environmental analysis require jointly reasoning about visual appearance, geolocation, and time.
+◆ Beyond standard geo-localization and time-of-capture prediction, these applications increasingly demand more complex capabilities, such as retrieving an image captured at the same location as a query image but at a specified target time.
+◆ We formalize this problem as Geo-Time Aware Image Retrieval and curate a diverse benchmark of 4.5M paired image-location-time triplets for training and 86k high-quality triplets for evaluation.</td></tr>
 <tr><td>2026-03-24</td><td>Sparse Autoencoders for Interpretable Medical Image Representation Learning</td><td>[2603.23794](http://arxiv.org/pdf/2603.23794)</td><td>◆ Vision foundation models (FMs) achieve state-of-the-art performance in medical imaging.
 ◆ However, they encode information in abstract latent representations that clinicians cannot interrogate or verify.
 ◆ The goal of this study is to investigate Sparse Autoencoders (SAEs) for replacing opaque FM image representations with human-interpretable, sparse features.</td></tr>
@@ -5128,6 +5137,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Towards Comprehensive Real-Time Scene Understanding in Ophthalmic Surgery through Multimodal Image Fusion</td><td>[2603.25555](http://arxiv.org/pdf/2603.25555)</td><td>◆ Purpose: The integration of multimodal imaging into operating rooms paves the way for comprehensive surgical scene understanding.
+◆ In ophthalmic surgery, by now, two complementary imaging modalities are available: operating microscope (OPMI) imaging and real-time intraoperative optical coherence tomography (iOCT).
+◆ This first work toward temporal OPMI and iOCT feature fusion demonstrates the potential of multimodal image processing for multi-head prediction through the example of precise instrument tracking in vitreoretinal surgery.</td></tr>
 <tr><td>2026-03-25</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
 ◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
 ◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
@@ -5603,7 +5615,7 @@
 <tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
 ◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
 ◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
-<tr><td>2026-03-09</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
+<tr><td>2026-03-26</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
 
 ◆ 提出了一种即插即用的排序架构，能够显式地对无人机和卫星视图进行联合关系建模，突破了现有方法独立提取特征和依赖简单启发式相似度计算的局限。
 ◆ 创新性地利用大型视觉-语言模型来学习连接无人机与卫星图像的深层视觉-语义关联，增强了模型对跨视图复杂关系的理解能力。
@@ -6437,6 +6449,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Few TensoRF: Enhance the Few-shot on Tensorial Radiance Fields</td><td>[2603.25008](http://arxiv.org/pdf/2603.25008)</td><td>◆ This paper presents Few TensoRF, a 3D reconstruction framework that combines TensorRF&#x27;s efficient tensor based representation with FreeNeRF&#x27;s frequency driven few shot regularization.
+◆ Using TensorRF to significantly accelerate rendering speed and introducing frequency and occlusion masks, the method improves stability and reconstruction quality under sparse input views.
+◆ Experiments on the Synthesis NeRF benchmark show that Few TensoRF method improves the average PSNR from 21.45 dB (TensorRF) to 23.70 dB, with the fine tuned version reaching 24.52 dB, while maintaining TensorRF&#x27;s fast \(\approx10-15\) minute training time.</td></tr>
 <tr><td>2026-03-24</td><td>UniQueR: Unified Query-based Feedforward 3D Reconstruction</td><td>[2603.22851](http://arxiv.org/pdf/2603.22851)</td><td>◆ We present UniQueR, a unified query-based feedforward framework for efficient and accurate 3D reconstruction from unposed images.
 ◆ Existing feedforward models such as DUSt3R, VGGT, and AnySplat typically predict per-pixel point maps or pixel-aligned Gaussians, which remain fundamentally 2.5D and limited to visible surfaces.
 ◆ In contrast, UniQueR formulates reconstruction as a sparse 3D query inference problem.</td></tr>
@@ -6461,7 +6476,7 @@
 <tr><td>2026-03-20</td><td>Generalizable NGP-SR: Generalizable Neural Radiance Fields Super-Resolution via Neural Graph Primitives</td><td>[2603.20128](http://arxiv.org/pdf/2603.20128)</td><td>◆ Neural Radiance Fields (NeRF) achieve photorealistic novel view synthesis but become costly when high-resolution (HR) rendering is required, as HR outputs demand dense sampling and higher-capacity models.
 ◆ Moreover, naively super-resolving per-view renderings in 2D often breaks multi-view consistency.
 ◆ We propose Generalizable NGP-SR, a 3D-aware super-resolution framework that reconstructs an HR radiance field directly from low-resolution (LR) posed images.</td></tr>
-<tr><td>2026-03-20</td><td>3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction</td><td>[2603.19682](http://arxiv.org/pdf/2603.19682)</td><td>◆ Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF.
+<tr><td>2026-03-26</td><td>3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction</td><td>[2603.19682](http://arxiv.org/pdf/2603.19682)</td><td>◆ Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF.
 ◆ Although 3DGS has shown advantages over NeRF in terms of rendering quality or speed, there is still room for improvement in recovering high fidelity surfaces through 3DGS.
 ◆ To resolve this issue, we propose a self-constrained prior to constrain the learning of 3D Gaussians, aiming for more accurate depth rendering.</td></tr>
 <tr><td>2026-03-18</td><td>Fast and Generalizable NeRF Architecture Selection for Satellite Scene Reconstruction</td><td>[2603.18306](http://arxiv.org/pdf/2603.18306)</td><td>◆ Neural Radiance Fields (NeRF) have emerged as a powerful approach for photorealistic 3D reconstruction from multi-view images.
@@ -7588,4 +7603,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.26
+> 更新于: 2026.03.27
