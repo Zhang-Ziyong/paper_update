@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.29)
+# 计算机视觉领域最新论文 (2026.03.30)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Massive Parallel Deep Reinforcement Learning for Active SLAM</td><td>[2603.25834](http://arxiv.org/pdf/2603.25834)</td><td>◆ Recent advances in parallel computing and GPU acceleration have created new opportunities for computation-intensive learning problems such as Active SLAM -- where actions are selected to reduce uncertainty and improve joint mapping and localization.
+◆ However, existing DRL-based approaches remain constrained by the lack of scalable parallel training.
+◆ In this work, we address this challenge by proposing a scalable end-to-end DRL framework for Active SLAM that enables massively parallel training.</td></tr>
+<tr><td>2026-03-26</td><td>Occlusion-Aware Multimodal Beam Prediction and Pose Estimation for mmWave V2I</td><td>[2603.25799](http://arxiv.org/pdf/2603.25799)</td><td>◆ We propose an occlusion-aware multimodal learning framework that is inspired by simultaneous localization and mapping (SLAM) concepts for trajectory interpretation and pose prediction.
+◆ Targeting mmWave vehicle-to-infrastructure (V2I) beam management under dynamic blockage, our Transformer-based fusion network ingests synchronized RGB images, LiDAR point clouds, radar range-angle maps, GNSS, and short-term mmWave power history.
+◆ It jointly predicts the receive beam index, blockage probability, and 2D position using labels automatically derived from 64-beam sweep power vectors, while an offline LiDAR map enables SLAM-style trajectory visualization.</td></tr>
 <tr><td>2026-03-24</td><td>Digital Twin Enabled Simultaneous Learning and Modeling for UAV-assisted Secure Communications with Eavesdropping Attacks</td><td>[2603.22753](http://arxiv.org/pdf/2603.22753)</td><td>◆ This paper focuses on secure communications in UAV-assisted wireless networks, which comprise multiple legitimate UAVs (LE-UAVs) and an intelligent eavesdropping UAV (EA-UAV).
 ◆ The intelligent EA-UAV can observe the LE-UAVs&#x27;transmission strategies and adaptively adjust its trajectory to maximize information interception.
 ◆ To counter this threat, we propose a mode-switching scheme that enables LE-UAVs to dynamically switch between the data transmission and jamming modes, thereby balancing data collection efficiency and communication security.</td></tr>
@@ -1913,6 +1919,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-27</td><td>Drive-Through 3D Vehicle Exterior Reconstruction via Dynamic-Scene SfM and Distortion-Aware Gaussian Splatting</td><td>[2603.26638](http://arxiv.org/pdf/2603.26638)</td><td>◆ High-fidelity 3D reconstruction of vehicle exteriors improves buyer confidence in online automotive marketplaces, but generating these models in cluttered dealership drive-throughs presents severe technical challenges.
+◆ Unlike static-scene photogrammetry, this setting features a dynamic vehicle moving against heavily cluttered, static backgrounds.
+◆ This problem is further compounded by wide-angle lens distortion, specular automotive paint, and non-rigid wheel rotations that violate classical epipolar constraints.</td></tr>
 <tr><td>2026-03-26</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
 ◆ In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos.
 ◆ To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians&#x27; internal depth priors.</td></tr>
@@ -3041,6 +3050,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-27</td><td>Beyond MACs: Hardware Efficient Architecture Design for Vision Backbones</td><td>[2603.26551](http://arxiv.org/pdf/2603.26551)</td><td>◆ Vision backbone networks play a central role in modern computer vision.
+◆ Enhancing their efficiency directly benefits a wide range of downstream applications.
+◆ To measure efficiency, many publications rely on MACs (Multiply Accumulate operations) as a predictor of execution time.</td></tr>
+<tr><td>2026-03-27</td><td>HINT: Composed Image Retrieval with Dual-path Compositional Contextualized Network</td><td>[2603.26341](http://arxiv.org/pdf/2603.26341)</td><td>◆ Composed Image Retrieval (CIR) is a challenging image retrieval paradigm.
+◆ It aims to retrieve target images from large-scale image databases that are consistent with the modification semantics, based on a multimodal query composed of a reference image and modification text.
+◆ Although existing methods have made significant progress in cross-modal alignment and feature fusion, a key flaw remains: the neglect of contextual information in discriminating matching samples.</td></tr>
+<tr><td>2026-03-27</td><td>4DRaL: Bridging 4D Radar with LiDAR for Place Recognition using Knowledge Distillation</td><td>[2603.26206](http://arxiv.org/pdf/2603.26206)</td><td>◆ Place recognition is crucial for loop closure detection and global localization in robotics.
+◆ Although mainstream algorithms typically rely on cameras and LiDAR, these sensors are susceptible to adverse weather conditions.
+◆ Fortunately, the recently developed 4D millimeter-wave radar (4D radar) offers a promising solution for all-weather place recognition.</td></tr>
+<tr><td>2026-03-26</td><td>Few Shots Text to Image Retrieval: New Benchmarking Dataset and Optimization Methods</td><td>[2603.25891](http://arxiv.org/pdf/2603.25891)</td><td>◆ Pre-trained vision-language models (VLMs) excel in multimodal tasks, commonly encoding images as embedding vectors for storage in databases and retrieval via approximate nearest neighbor search (ANNS).
+◆ However, these models struggle with compositional queries and out-of-distribution (OOD) image-text pairs.
+◆ Inspired by human cognition&#x27;s ability to learn from minimal examples, we address this performance gap through few-shot learning approaches specifically designed for image retrieval.</td></tr>
 <tr><td>2026-03-26</td><td>Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming</td><td>[2603.25686](http://arxiv.org/pdf/2603.25686)</td><td>◆ Cross-view geo-localization (CVGL) estimates a camera&#x27;s location by matching a street-view image to geo-referenced overhead imagery, enabling GPS-denied localization and navigation.
 ◆ Existing methods almost universally formulate CVGL as an image-retrieval problem in a contrastively trained embedding space.
 ◆ This ties performance to large batches and hard negative mining, and it ignores both the geometric structure of maps and the coverage mismatch between street-view and overhead imagery.</td></tr>
@@ -6449,7 +6470,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-26</td><td>Few TensoRF: Enhance the Few-shot on Tensorial Radiance Fields</td><td>[2603.25008](http://arxiv.org/pdf/2603.25008)</td><td>◆ This paper presents Few TensoRF, a 3D reconstruction framework that combines TensorRF&#x27;s efficient tensor based representation with FreeNeRF&#x27;s frequency driven few shot regularization.
+<tr><td>2026-03-27</td><td>Few TensoRF: Enhance the Few-shot on Tensorial Radiance Fields</td><td>[2603.25008](http://arxiv.org/pdf/2603.25008)</td><td>◆ This paper presents Few TensoRF, a 3D reconstruction framework that combines TensorRF&#x27;s efficient tensor based representation with FreeNeRF&#x27;s frequency driven few shot regularization.
 ◆ Using TensorRF to significantly accelerate rendering speed and introducing frequency and occlusion masks, the method improves stability and reconstruction quality under sparse input views.
 ◆ Experiments on the Synthesis NeRF benchmark show that Few TensoRF method improves the average PSNR from 21.45 dB (TensorRF) to 23.70 dB, with the fine tuned version reaching 24.52 dB, while maintaining TensorRF&#x27;s fast \(\approx10-15\) minute training time.</td></tr>
 <tr><td>2026-03-24</td><td>UniQueR: Unified Query-based Feedforward 3D Reconstruction</td><td>[2603.22851](http://arxiv.org/pdf/2603.22851)</td><td>◆ We present UniQueR, a unified query-based feedforward framework for efficient and accurate 3D reconstruction from unposed images.
@@ -7603,4 +7624,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.29
+> 更新于: 2026.03.30
