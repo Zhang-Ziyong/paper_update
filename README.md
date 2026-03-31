@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.30)
+# 计算机视觉领域最新论文 (2026.03.31)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-30</td><td>Ghost-FWL: A Large-Scale Full-Waveform LiDAR Dataset for Ghost Detection and Removal</td><td>[2603.28224](http://arxiv.org/pdf/2603.28224)</td><td>◆ LiDAR has become an essential sensing modality in autonomous driving, robotics, and smart-city applications.
+◆ However, ghost points (or ghosts), which are false reflections caused by multi-path laser returns from glass and reflective surfaces, severely degrade 3D mapping and localization accuracy.
+◆ Prior ghost removal relies on geometric consistency in dense point clouds, failing on mobile LiDAR&#x27;s sparse, dynamic data.</td></tr>
+<tr><td>2026-03-30</td><td>On the Role of Encoder Depth: Pruning Whisper and LoRA Fine-Tuning in SLAM-ASR</td><td>[2603.27981](http://arxiv.org/pdf/2603.27981)</td><td>◆ Automatic speech recognition (ASR) has advanced rapidly in recent years, driven by large-scale pretrained models and end-to-end architectures such as SLAM-ASR.
+◆ A key component of SLAM-ASR systems is the Whisper speech encoder, which provides robust acoustic representations.
+◆ While model pruning has been explored for the full Whisper encoder-decoder architecture, its impact within the SLAM-ASR setting remains under-investigated.</td></tr>
+<tr><td>2026-03-29</td><td>GS3LAM: Gaussian Semantic Splatting SLAM</td><td>[2603.27781](http://arxiv.org/pdf/2603.27781)</td><td>◆ Recently, the multi-modal fusion of RGB, depth, and semantics has shown great potential in dense Simultaneous Localization and Mapping (SLAM).
+◆ However, a prerequisite for generating consistent semantic maps is the availability of dense, efficient, and scalable scene representations.
+◆ Existing semantic SLAM systems based on explicit representations are often limited by resolution and an inability to predict unknown areas.</td></tr>
+<tr><td>2026-03-26</td><td>Unblur-SLAM: Dense Neural SLAM for Blurry Inputs</td><td>[2603.26810](http://arxiv.org/pdf/2603.26810)</td><td>◆ We propose Unblur-SLAM, a novel RGB SLAM pipeline for sharp 3D reconstruction from blurred image inputs.
+◆ In contrast to previous work, our approach is able to handle different types of blur and demonstrates state-of-the-art performance in the presence of both motion blur and defocus blur.
+◆ Moreover, we adjust the computation effort with the amount of blur in the input image.</td></tr>
 <tr><td>2026-03-26</td><td>Massive Parallel Deep Reinforcement Learning for Active SLAM</td><td>[2603.25834](http://arxiv.org/pdf/2603.25834)</td><td>◆ Recent advances in parallel computing and GPU acceleration have created new opportunities for computation-intensive learning problems such as Active SLAM -- where actions are selected to reduce uncertainty and improve joint mapping and localization.
 ◆ However, existing DRL-based approaches remain constrained by the lack of scalable parallel training.
 ◆ In this work, we address this challenge by proposing a scalable end-to-end DRL framework for Active SLAM that enables massively parallel training.</td></tr>
@@ -1921,6 +1933,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-29</td><td>MV-RoMa: From Pairwise Matching into Multi-View Track Reconstruction</td><td>[2603.27542](http://arxiv.org/pdf/2603.27542)</td><td>◆ Establishing consistent correspondences across images is essential for 3D vision tasks such as structure-from-motion (SfM), yet most existing matchers operate in a pairwise manner, often producing fragmented and geometrically inconsistent tracks when their predictions are chained across views.
+◆ We propose MV-RoMa, a multi-view dense matching model that jointly estimates dense correspondences from a source image to multiple co-visible targets.
+◆ Specifically, we design an efficient model architecture which avoids high computational cost of full cross-attention for multi-view feature interaction: (i) multi-view encoder that leverages pair-wise matching results as a geometric prior, and (ii) multi-view matching refiner that refines correspondences using pixel-wise attention.</td></tr>
 <tr><td>2026-03-27</td><td>Drive-Through 3D Vehicle Exterior Reconstruction via Dynamic-Scene SfM and Distortion-Aware Gaussian Splatting</td><td>[2603.26638](http://arxiv.org/pdf/2603.26638)</td><td>◆ High-fidelity 3D reconstruction of vehicle exteriors improves buyer confidence in online automotive marketplaces, but generating these models in cluttered dealership drive-throughs presents severe technical challenges.
 ◆ Unlike static-scene photogrammetry, this setting features a dynamic vehicle moving against heavily cluttered, static backgrounds.
 ◆ This problem is further compounded by wide-angle lens distortion, specular automotive paint, and non-rigid wheel rotations that violate classical epipolar constraints.</td></tr>
@@ -3054,6 +3069,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-29</td><td>RHO: Robust Holistic OSM-Based Metric Cross-View Geo-Localization</td><td>[2603.27758](http://arxiv.org/pdf/2603.27758)</td><td>◆ Metric Cross-View Geo-Localization (MCVGL) aims to estimate the 3-DoF camera pose (position and heading) by matching ground and satellite images.
+◆ In this work, instead of pinhole and satellite images, we study robust MCVGL using holistic panoramas and OpenStreetMap (OSM).
+◆ To this end, we establish a large-scale MCVGL benchmark dataset, CV-RHO, with over 2.7M images under different weather and lighting conditions, as well as sensor noise.</td></tr>
+<tr><td>2026-03-29</td><td>NeedleDB: A Generative-AI Based System for Accurate and Efficient Image Retrieval using Complex Natural Language Queries</td><td>[2603.27464](http://arxiv.org/pdf/2603.27464)</td><td>◆ We demonstrate NeedleDB, an open-source, deployment-ready database system for answering complex natural language queries over image data.
+◆ Unlike existing approaches that rely on contrastive-learning embeddings (e.g., CLIP), which degrade on compositional or nuanced queries, NeedleDB leverages generative AI to synthesize guide images that represent the query in the visual domain, transforming the text-to-image retrieval problem into a more tractable image-to-image search.
+◆ The system aggregates nearest-neighbor results across multiple vision embedders using a weighted rank-fusion strategy grounded in a Monte Carlo estimator with provable error bounds.</td></tr>
 <tr><td>2026-03-27</td><td>Beyond MACs: Hardware Efficient Architecture Design for Vision Backbones</td><td>[2603.26551](http://arxiv.org/pdf/2603.26551)</td><td>◆ Vision backbone networks play a central role in modern computer vision.
 ◆ Enhancing their efficiency directly benefits a wide range of downstream applications.
 ◆ To measure efficiency, many publications rely on MACs (Multiply Accumulate operations) as a predictor of execution time.</td></tr>
@@ -3072,7 +3093,7 @@
 <tr><td>2026-03-26</td><td>On-Demand Instructional Material Providing Agent Based on MLLM for Tutoring Support</td><td>[2603.25195](http://arxiv.org/pdf/2603.25195)</td><td>◆ Effective instruction in tutoring requires promptly providing instructional materials that match the needs of each student (e.g., in response to questions).
 ◆ In this study, we introduce an agent that automatically delivers supplementary materials on demand during one-on-one tutoring sessions.
 ◆ Our agent uses a multimodal large language model to analyze spoken dialogue between the instructor and the student, automatically generate search queries, and retrieve relevant Web images.</td></tr>
-<tr><td>2026-03-25</td><td>TIGeR: A Unified Framework for Time, Images and Geo-location Retrieval</td><td>[2603.24749](http://arxiv.org/pdf/2603.24749)</td><td>◆ Many real-world applications in digital forensics, urban monitoring, and environmental analysis require jointly reasoning about visual appearance, geolocation, and time.
+<tr><td>2026-03-28</td><td>TIGeR: A Unified Framework for Time, Images and Geo-location Retrieval</td><td>[2603.24749](http://arxiv.org/pdf/2603.24749)</td><td>◆ Many real-world applications in digital forensics, urban monitoring, and environmental analysis require jointly reasoning about visual appearance, geolocation, and time.
 ◆ Beyond standard geo-localization and time-of-capture prediction, these applications increasingly demand more complex capabilities, such as retrieving an image captured at the same location as a query image but at a specified target time.
 ◆ We formalize this problem as Geo-Time Aware Image Retrieval and curate a diverse benchmark of 4.5M paired image-location-time triplets for training and 86k high-quality triplets for evaluation.</td></tr>
 <tr><td>2026-03-24</td><td>Sparse Autoencoders for Interpretable Medical Image Representation Learning</td><td>[2603.23794](http://arxiv.org/pdf/2603.23794)</td><td>◆ Vision foundation models (FMs) achieve state-of-the-art performance in medical imaging.
@@ -5632,6 +5653,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-30</td><td>AffordMatcher: Affordance Learning in 3D Scenes from Visual Signifiers</td><td>[2603.27970](http://arxiv.org/pdf/2603.27970)</td><td>◆ Affordance learning is a complex challenge in many applications, where existing approaches primarily focus on the geometric structures, visual knowledge, and affordance labels of objects to determine interactable regions.
+◆ However, extending this learning capability to a scene is significantly more complicated, as incorporating object- and scene-level semantics is not straightforward.
+◆ In this work, we introduce AffordBridge, a large-scale dataset with 291,637 functional interaction annotations across 685 high-resolution indoor scenes in the form of point clouds.</td></tr>
 <tr><td>2026-03-23</td><td>EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching</td><td>[2603.21463](http://arxiv.org/pdf/2603.21463)</td><td>◆ The deep-learning based image matching networks can now handle significantly larger variations in viewpoints and illuminations while providing matched pairs of pixels with sub-pixel precision.
 ◆ These networks have been trained with ground-based image datasets and, implicitly, their performance is optimized for the pinhole camera geometry.
 ◆ Consequently, you get suboptimal performance when such networks are used to match satellite images since those images are synthesized as a moving satellite camera records one line at a time of the points on the ground.</td></tr>
@@ -6480,7 +6504,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-27</td><td>Few TensoRF: Enhance the Few-shot on Tensorial Radiance Fields</td><td>[2603.25008](http://arxiv.org/pdf/2603.25008)</td><td>◆ This paper presents Few TensoRF, a 3D reconstruction framework that combines TensorRF&#x27;s efficient tensor based representation with FreeNeRF&#x27;s frequency driven few shot regularization.
+<tr><td>2026-03-30</td><td>SVGS: Single-View to 3D Object Editing via Gaussian Splatting</td><td>[2603.28126](http://arxiv.org/pdf/2603.28126)</td><td>◆ Text-driven 3D scene editing has attracted considerable interest due to its convenience and user-friendliness.
+◆ However, methods that rely on implicit 3D representations, such as Neural Radiance Fields (NeRF), while effective in rendering complex scenes, are hindered by slow processing speeds and limited control over specific regions of the scene.
+◆ Moreover, existing approaches, including Instruct-NeRF2NeRF and GaussianEditor, which utilize multi-view editing strategies, frequently produce inconsistent results across different views when executing text instructions.</td></tr>
+<tr><td>2026-03-30</td><td>To View Transform or Not to View Transform: NeRF-based Pre-training Perspective</td><td>[2603.28090](http://arxiv.org/pdf/2603.28090)</td><td>◆ Neural radiance fields (NeRFs) have emerged as a prominent pre-training paradigm for vision-centric autonomous driving, which enhances 3D geometry and appearance understanding in a fully self-supervised manner.
+◆ To apply NeRF-based pretraining to 3D perception models, recent approaches have simply applied NeRFs to volumetric features obtained from view transformation.
+◆ However, coupling NeRFs with view transformation inherits conflicting priors; view transformation imposes discrete and rigid representations, whereas radiance fields assume continuous and adaptive functions.</td></tr>
+<tr><td>2026-03-30</td><td>Few TensoRF: Enhance the Few-shot on Tensorial Radiance Fields</td><td>[2603.25008](http://arxiv.org/pdf/2603.25008)</td><td>◆ This paper presents Few TensoRF, a 3D reconstruction framework that combines TensorRF&#x27;s efficient tensor based representation with FreeNeRF&#x27;s frequency driven few shot regularization.
 ◆ Using TensorRF to significantly accelerate rendering speed and introducing frequency and occlusion masks, the method improves stability and reconstruction quality under sparse input views.
 ◆ Experiments on the Synthesis NeRF benchmark show that Few TensoRF method improves the average PSNR from 21.45 dB (TensorRF) to 23.70 dB, with the fine tuned version reaching 24.52 dB, while maintaining TensorRF&#x27;s fast \(\approx10-15\) minute training time.</td></tr>
 <tr><td>2026-03-24</td><td>UniQueR: Unified Query-based Feedforward 3D Reconstruction</td><td>[2603.22851](http://arxiv.org/pdf/2603.22851)</td><td>◆ We present UniQueR, a unified query-based feedforward framework for efficient and accurate 3D reconstruction from unposed images.
@@ -6492,10 +6522,10 @@
 <tr><td>2026-03-23</td><td>RefracGS: Novel View Synthesis Through Refractive Water Surfaces with 3D Gaussian Ray Tracing</td><td>[2603.21695](http://arxiv.org/pdf/2603.21695)</td><td>◆ Novel view synthesis (NVS) through non-planar refractive surfaces presents fundamental challenges due to severe, spatially varying optical distortions.
 ◆ While recent representations like NeRF and 3D Gaussian Splatting (3DGS) excel at NVS, their assumption of straight-line ray propagation fails under these conditions, leading to significant artifacts.
 ◆ To overcome this limitation, we introduce RefracGS, a framework that jointly reconstructs the refractive water surface and the scene beneath the interface.</td></tr>
-<tr><td>2026-03-22</td><td>FluidGaussian: Propagating Simulation-Based Uncertainty Toward Functionally-Intelligent 3D Reconstruction</td><td>[2603.21356](http://arxiv.org/pdf/2603.21356)</td><td>◆ Real objects that inhabit the physical world follow physical laws and thus behave plausibly during interaction with other physical objects.
+<tr><td>2026-03-27</td><td>FluidGaussian: Propagating Simulation-Based Uncertainty Toward Functionally-Intelligent 3D Reconstruction</td><td>[2603.21356](http://arxiv.org/pdf/2603.21356)</td><td>◆ Real objects that inhabit the physical world follow physical laws and thus behave plausibly during interaction with other physical objects.
 ◆ However, current methods that perform 3D reconstructions of real-world scenes from multi-view 2D images optimize primarily for visual fidelity, i.e., they train with photometric losses and reason about uncertainty in the image or representation space.
 ◆ This appearance-centric view overlooks body contacts and couplings, conflates function-critical regions (e.g., aerodynamic or hydrodynamic surfaces) with ornamentation, and reconstructs structures suboptimally, even when physical regularizers are added.</td></tr>
-<tr><td>2026-03-22</td><td>EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization</td><td>[2603.21332](http://arxiv.org/pdf/2603.21332)</td><td>◆ Audio-driven 3D talking head synthesis has advanced rapidly with Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
+<tr><td>2026-03-28</td><td>EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization</td><td>[2603.21332](http://arxiv.org/pdf/2603.21332)</td><td>◆ Audio-driven 3D talking head synthesis has advanced rapidly with Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
 ◆ By leveraging rich pre-trained priors, few-shot methods enable instant personalization from just a few seconds of video.
 ◆ However, under expressive facial motion, existing few-shot approaches often suffer from geometric instability and audio-emotion mismatch, highlighting the need for more effective emotion-aware motion modeling.</td></tr>
 <tr><td>2026-03-21</td><td>GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction</td><td>[2603.20611](http://arxiv.org/pdf/2603.20611)</td><td>◆ Slice-based volumetric imaging is widely applied and it demands representations that compress aggressively while preserving internal structure for analysis.
@@ -7636,4 +7666,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.30
+> 更新于: 2026.03.31
