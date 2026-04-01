@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.03.31)
+# 计算机视觉领域最新论文 (2026.04.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-31</td><td>Semantic Zone-Based Map Management for Stable AI-Integrated Mobile Robots</td><td>[2603.29627](http://arxiv.org/pdf/2603.29627)</td><td>◆ Recent advances in large AI models (VLMs and LLMs) and joint use of the 3D dense maps, enable mobile robots to provide more powerful and interactive services grounded in rich spatial context.
+◆ However, deploying both heavy AI models and dense maps on edge robots is challenging under strict memory budgets.
+◆ When the memory budget is exceeded, required keyframes may not be loaded in time, which can degrade the stability of position estimation and interfering model performance.</td></tr>
+<tr><td>2026-03-31</td><td>M2H-MX: Multi-Task Dense Visual Perception for Real-Time Monocular Spatial Understanding</td><td>[2603.29236](http://arxiv.org/pdf/2603.29236)</td><td>◆ Monocular cameras are attractive for robotic perception due to their low cost and ease of deployment, yet achieving reliable real-time spatial understanding from a single image stream remains challenging.
+◆ While recent multi-task dense prediction models have improved per-pixel depth and semantic estimation, translating these advances into stable monocular mapping systems is still non-trivial.
+◆ This paper presents M2H-MX, a real-time multi-task perception model for monocular spatial understanding.</td></tr>
+<tr><td>2026-03-30</td><td>A Classification of Heterogeneity in Uncrewed Vehicle Swarms and the Effects of Its Inclusion on Overall Swarm Resilience</td><td>[2603.28831](http://arxiv.org/pdf/2603.28831)</td><td>◆ Combining different types of agents in uncrewed vehicle (UV) swarms has emerged as an approach to enhance mission resilience and operational capabilities across a wide range of applications.
+◆ This study offers a systematic framework for grouping different types of swarms based on three main factors: agent nature (behavior and function), hardware structure (physical configuration and sensing capabilities), and operational space (domain of operation).
+◆ A literature review indicates that strategic heterogeneity significantly improves swarm performance.</td></tr>
 <tr><td>2026-03-30</td><td>Ghost-FWL: A Large-Scale Full-Waveform LiDAR Dataset for Ghost Detection and Removal</td><td>[2603.28224](http://arxiv.org/pdf/2603.28224)</td><td>◆ LiDAR has become an essential sensing modality in autonomous driving, robotics, and smart-city applications.
 ◆ However, ghost points (or ghosts), which are false reflections caused by multi-path laser returns from glass and reflective surfaces, severely degrade 3D mapping and localization accuracy.
 ◆ Prior ghost removal relies on geometric consistency in dense point clouds, failing on mobile LiDAR&#x27;s sparse, dynamic data.</td></tr>
@@ -3065,6 +3074,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-31</td><td>MELT: Improve Composed Image Retrieval via the Modification Frequentation-Rarity Balance Network</td><td>[2603.29291](http://arxiv.org/pdf/2603.29291)</td><td>◆ Composed Image Retrieval (CIR) uses a reference image and a modification text as a query to retrieve a target image satisfying the requirement of ``modifying the reference image according to the text instructions&#x27;&#x27;.
+◆ However, existing CIR methods face two limitations: (1) frequency bias leading to ``Rare Sample Neglect&#x27;&#x27;, and (2) susceptibility of similarity scores to interference from hard negative samples and noise.
+◆ To address these limitations, we confront two key challenges: asymmetric rare semantic localization and robust similarity estimation under hard negative samples.</td></tr>
 <tr><td>2026-03-29</td><td>RHO: Robust Holistic OSM-Based Metric Cross-View Geo-Localization</td><td>[2603.27758](http://arxiv.org/pdf/2603.27758)</td><td>◆ Metric Cross-View Geo-Localization (MCVGL) aims to estimate the 3-DoF camera pose (position and heading) by matching ground and satellite images.
 ◆ In this work, instead of pinhole and satellite images, we study robust MCVGL using holistic panoramas and OpenStreetMap (OSM).
 ◆ To this end, we establish a large-scale MCVGL benchmark dataset, CV-RHO, with over 2.7M images under different weather and lighting conditions, as well as sensor noise.</td></tr>
@@ -7654,4 +7666,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.31
+> 更新于: 2026.04.01
