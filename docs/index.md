@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.02)
+# 计算机视觉领域最新论文 (2026.04.03)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
+◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
+◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
 <tr><td>2026-04-01</td><td>PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset</td><td>[2604.00852](http://arxiv.org/pdf/2604.00852)</td><td>◆ Accurate pose estimation is fundamental for unmanned aerial vehicle (UAV) applications, where Visual-Inertial SLAM (VI-SLAM) provides a cost-effective solution for localization and mapping.
 ◆ However, existing VI-SLAM methods mainly rely on sensors with limited fields of view (FoV), which can lead to drift and even failure in complex UAV scenarios.
 ◆ Although panoramic cameras provide omnidirectional perception to improve robustness, panoramic VI-SLAM and corresponding real-world datasets for UAVs remain underexplored.</td></tr>
@@ -1949,6 +1952,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>Enhanced Polarization Locking in VCSELs</td><td>[2604.01857](http://arxiv.org/pdf/2604.01857)</td><td>◆ While optical injection locking (OIL) of vertical-cavity surface-emitting lasers (VCSELs) has been widely studied in the past, the polarization dynamics of OIL have received far less attention.
+◆ Recent studies suggest that polarization locking via OIL could enable novel computational applications such as polarization-encoded Ising computers.
+◆ However, the inherent polarization preference and limited polarization switchability of VCSELs hinder their use for such purposes.</td></tr>
 <tr><td>2026-04-01</td><td>Reliev3R: Relieving Feed-forward Reconstruction from Multi-View Geometric Annotations</td><td>[2604.00548](http://arxiv.org/pdf/2604.00548)</td><td>◆ With recent advances, Feed-forward Reconstruction Models (FFRMs) have demonstrated great potential in reconstruction quality and adaptiveness to multiple downstream tasks.
 ◆ However, the excessive reliance on multi-view geometric annotations, e.g.
 ◆ 3D point maps and camera poses, makes the fully-supervised training scheme of FFRMs difficult to scale up.</td></tr>
@@ -6518,6 +6524,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
+◆ 3D Gaussian Splatting (3DGS) improves on NeRF with explicit scene representation and an optimized pipeline yet still fails to meet practical real-time demands.
+◆ Existing acceleration works overlook the evolving Tensor Cores of modern GPUs because 3DGS pipeline lacks General Matrix Multiplication (GEMM) operations.</td></tr>
 <tr><td>2026-03-30</td><td>SVGS: Single-View to 3D Object Editing via Gaussian Splatting</td><td>[2603.28126](http://arxiv.org/pdf/2603.28126)</td><td>◆ Text-driven 3D scene editing has attracted considerable interest due to its convenience and user-friendliness.
 ◆ However, methods that rely on implicit 3D representations, such as Neural Radiance Fields (NeRF), while effective in rendering complex scenes, are hindered by slow processing speeds and limited control over specific regions of the scene.
 ◆ Moreover, existing approaches, including Instruct-NeRF2NeRF and GaussianEditor, which utilize multi-view editing strategies, frequently produce inconsistent results across different views when executing text instructions.</td></tr>
@@ -7678,4 +7687,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.02
+> 更新于: 2026.04.03
