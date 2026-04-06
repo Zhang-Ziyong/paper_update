@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.05)
+# 计算机视觉领域最新论文 (2026.04.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
+◆ While LiDAR is accurate, it is costly and power-intensive.
+◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
+<tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
+◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
+◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
+<tr><td>2026-04-03</td><td>VBGS-SLAM: Variational Bayesian Gaussian Splatting Simultaneous Localization and Mapping</td><td>[2604.02696](http://arxiv.org/pdf/2604.02696)</td><td>◆ 3D Gaussian Splatting (3DGS) has shown promising results for 3D scene modeling using mixtures of Gaussians, yet its existing simultaneous localization and mapping (SLAM) variants typically rely on direct, deterministic pose optimization against the splat map, making them sensitive to initialization and susceptible to catastrophic forgetting as map evolves.
+◆ We propose Variational Bayesian Gaussian Splatting SLAM (VBGS-SLAM), a novel framework that couples the splat map refinement and camera pose tracking in a generative probabilistic form.
+◆ By leveraging conjugate properties of multivariate Gaussians and variational inference, our method admits efficient closed-form updates and explicitly maintains posterior uncertainty over both poses and scene parameters.</td></tr>
 <tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
 ◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
 ◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
@@ -1954,6 +1963,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>Dynamic Risk Generation for Autonomous Driving: Naturalistic Reconstruction of Vehicle-E-Scooter Interactions</td><td>[2604.02573](http://arxiv.org/pdf/2604.02573)</td><td>◆ The increasing, high-risk interactions between vehicles and vulnerable micromobility users, such as e-scooter riders, challenge vehicular safety functions and Automated Driving (AD) techniques, often resulting in severe consequences due to the dynamic uncertainty of e-scooter motion.
+◆ Despite advances in data-driven AD methods, traffic data addressing the e-scooter interaction problem, particularly for safety-critical moments, remains underdeveloped.
+◆ This paper proposes a pipeline that utilizes collected on-road traffic data and creates configurable synthetic interactions for validating vehicle motion planning algorithms.</td></tr>
 <tr><td>2026-04-02</td><td>Enhanced Polarization Locking in VCSELs</td><td>[2604.01857](http://arxiv.org/pdf/2604.01857)</td><td>◆ While optical injection locking (OIL) of vertical-cavity surface-emitting lasers (VCSELs) has been widely studied in the past, the polarization dynamics of OIL have received far less attention.
 ◆ Recent studies suggest that polarization locking via OIL could enable novel computational applications such as polarization-encoded Ising computers.
 ◆ However, the inherent polarization preference and limited polarization switchability of VCSELs hinder their use for such purposes.</td></tr>
@@ -6534,6 +6546,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices</td><td>[2604.02836](http://arxiv.org/pdf/2604.02836)</td><td>◆ We introduce Fact-Hash, a novel parameter-encoding method for training on-device neural radiance fields.
+◆ Neural Radiance Fields (NeRF) have proven pivotal in 3D representations, but their applications are limited due to large computational resources.
+◆ On-device training can open large application fields, providing strength in communication limitations, privacy concerns, and fast adaptation to a frequently changing scene.</td></tr>
 <tr><td>2026-04-02</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
 ◆ 3D Gaussian Splatting (3DGS) improves on NeRF with explicit scene representation and an optimized pipeline yet still fails to meet practical real-time demands.
 ◆ Existing acceleration works overlook the evolving Tensor Cores of modern GPUs because 3DGS pipeline lacks General Matrix Multiplication (GEMM) operations.</td></tr>
@@ -7699,4 +7714,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.05
+> 更新于: 2026.04.06
