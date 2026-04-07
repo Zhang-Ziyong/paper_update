@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.06)
+# 计算机视觉领域最新论文 (2026.04.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -5695,6 +5695,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
+◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
+◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
 <tr><td>2026-03-30</td><td>AffordMatcher: Affordance Learning in 3D Scenes from Visual Signifiers</td><td>[2603.27970](http://arxiv.org/pdf/2603.27970)</td><td>◆ Affordance learning is a complex challenge in many applications, where existing approaches primarily focus on the geometric structures, visual knowledge, and affordance labels of objects to determine interactable regions.
 ◆ However, extending this learning capability to a scene is significantly more complicated, as incorporating object- and scene-level semantics is not straightforward.
 ◆ In this work, we introduce AffordBridge, a large-scale dataset with 291,637 functional interaction annotations across 685 high-resolution indoor scenes in the form of point clouds.</td></tr>
@@ -6549,7 +6552,7 @@
 <tr><td>2026-04-03</td><td>Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices</td><td>[2604.02836](http://arxiv.org/pdf/2604.02836)</td><td>◆ We introduce Fact-Hash, a novel parameter-encoding method for training on-device neural radiance fields.
 ◆ Neural Radiance Fields (NeRF) have proven pivotal in 3D representations, but their applications are limited due to large computational resources.
 ◆ On-device training can open large application fields, providing strength in communication limitations, privacy concerns, and fast adaptation to a frequently changing scene.</td></tr>
-<tr><td>2026-04-02</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
+<tr><td>2026-04-06</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
 ◆ 3D Gaussian Splatting (3DGS) improves on NeRF with explicit scene representation and an optimized pipeline yet still fails to meet practical real-time demands.
 ◆ Existing acceleration works overlook the evolving Tensor Cores of modern GPUs because 3DGS pipeline lacks General Matrix Multiplication (GEMM) operations.</td></tr>
 <tr><td>2026-03-30</td><td>SVGS: Single-View to 3D Object Editing via Gaussian Splatting</td><td>[2603.28126](http://arxiv.org/pdf/2603.28126)</td><td>◆ Text-driven 3D scene editing has attracted considerable interest due to its convenience and user-friendliness.
@@ -7714,4 +7717,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.06
+> 更新于: 2026.04.07
