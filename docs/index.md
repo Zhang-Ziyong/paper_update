@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.07)
+# 计算机视觉领域最新论文 (2026.04.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Magnetometer and Intermittent GNSS Measurements</td><td>[2604.05156](http://arxiv.org/pdf/2604.05156)</td><td>◆ In Landmark-Inertial Simultaneous Localisation and Mapping (LI-SLAM), the positions of landmarks in the environment and the robot&#x27;s pose relative to these landmarks are estimated using landmark position measurements, and measurements from the Inertial Measurement Unit (IMU).
+◆ However, the robot and landmark positions in the inertial frame, and the yaw of the robot, are not observable in LI-SLAM.
+◆ This paper proposes a nonlinear observer for LI-SLAM that overcomes the observability constraints with the addition of intermittent GNSS position and magnetometer measurements.</td></tr>
+<tr><td>2026-04-06</td><td>ZeD-MAP: Bundle Adjustment Guided Zero-Shot Depth Maps for Real-Time Aerial Imaging</td><td>[2604.04667](http://arxiv.org/pdf/2604.04667)</td><td>◆ Real-time depth reconstruction from ultra-high-resolution UAV imagery is essential for time-critical geospatial tasks such as disaster response, yet remains challenging due to wide-baseline parallax, large image sizes, low-texture or specular surfaces, occlusions, and strict computational constraints.
+◆ Recent zero-shot diffusion models offer fast per-image dense predictions without task-specific retraining, and require fewer labelled datasets than transformer-based predictors while avoiding the rigid capture geometry requirement of classical multi-view stereo.
+◆ However, their probabilistic inference prevents reliable metric accuracy and temporal consistency across sequential frames and overlapping tiles.</td></tr>
+<tr><td>2026-04-06</td><td>WaterSplat-SLAM: Photorealistic Monocular SLAM in Underwater Environment</td><td>[2604.04642](http://arxiv.org/pdf/2604.04642)</td><td>◆ Underwater monocular SLAM is a challenging problem with applications from autonomous underwater vehicles to marine archaeology.
+◆ However, existing underwater SLAM methods struggle to produce maps with high-fidelity rendering.
+◆ In this paper, we propose WaterSplat-SLAM, a novel monocular underwater SLAM system that achieves robust pose estimation and photorealistic dense mapping.</td></tr>
+<tr><td>2026-04-06</td><td>MPTF-Net: Multi-view Pyramid Transformer Fusion Network for LiDAR-based Place Recognition</td><td>[2604.04513](http://arxiv.org/pdf/2604.04513)</td><td>◆ LiDAR-based place recognition (LPR) is essential for global localization and loop-closure detection in large-scale SLAM systems.
+◆ Existing methods typically construct global descriptors from Range Images or BEV representations for matching.
+◆ BEV is widely adopted due to its explicit 2D spatial layout encoding and efficient retrieval.</td></tr>
+<tr><td>2026-04-05</td><td>DINO-VO: Learning Where to Focus for Enhanced State Estimation</td><td>[2604.04055](http://arxiv.org/pdf/2604.04055)</td><td>◆ We present DINO Patch Visual Odometry (DINO-VO), an end-to-end monocular visual odometry system with strong scene generalization.
+◆ Current Visual Odometry (VO) systems often rely on heuristic feature extraction strategies, which can degrade accuracy and robustness, particularly in large-scale outdoor environments.
+◆ DINO-VO addresses these limitations by incorporating a differentiable adaptive patch selector into the end-to-end pipeline, improving the quality of extracted patches and enhancing generalization across diverse datasets.</td></tr>
+<tr><td>2026-04-03</td><td>ViBA: Implicit Bundle Adjustment with Geometric and Temporal Consistency for Robust Visual Matching</td><td>[2604.03377](http://arxiv.org/pdf/2604.03377)</td><td>◆ Most existing image keypoint detection and description methods rely on datasets with accurate pose and depth annotations, limiting scalability and generalization, and often degrading navigation and localization performance.
+◆ We propose ViBA, a sustainable learning framework that integrates geometric optimization with feature learning for continuous online training on unconstrained video streams.
+◆ Embedded in a standard visual odometry pipeline, it consists of an implicitly differentiable geometric residual framework: (i) an initial tracking network for inter-frame correspondences, (ii) depth-based outlier filtering, and (iii) differentiable global bundle adjustment that jointly refines camera poses and feature positions by minimizing reprojection errors.</td></tr>
 <tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
 ◆ While LiDAR is accurate, it is costly and power-intensive.
 ◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
@@ -1961,6 +1979,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
+◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
+◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
 <tr><td>2026-04-02</td><td>Dynamic Risk Generation for Autonomous Driving: Naturalistic Reconstruction of Vehicle-E-Scooter Interactions</td><td>[2604.02573](http://arxiv.org/pdf/2604.02573)</td><td>◆ The increasing, high-risk interactions between vehicles and vulnerable micromobility users, such as e-scooter riders, challenge vehicular safety functions and Automated Driving (AD) techniques, often resulting in severe consequences due to the dynamic uncertainty of e-scooter motion.
 ◆ Despite advances in data-driven AD methods, traffic data addressing the e-scooter interaction problem, particularly for safety-critical moments, remains underdeveloped.
 ◆ This paper proposes a pipeline that utilizes collected on-road traffic data and creates configurable synthetic interactions for validating vehicle motion planning algorithms.</td></tr>
@@ -1982,7 +2003,7 @@
 <tr><td>2026-03-24</td><td>GTLR-GS: Geometry-Texture Aware LiDAR-Regularized 3D Gaussian Splatting for Realistic Scene Reconstruction</td><td>[2603.23192](http://arxiv.org/pdf/2603.23192)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled real-time, photorealistic scene reconstruction.
 ◆ However, conventional 3DGS frameworks typically rely on sparse point clouds derived from Structure-from-Motion (SfM), which inherently suffer from scale ambiguity, limited geometric consistency, and strong view dependency due to the lack of geometric priors.
 ◆ In this work, a LiDAR-centric 3D Gaussian Splatting framework is proposed that explicitly incorporates metric geometric priors into the entire Gaussian optimization process.</td></tr>
-<tr><td>2026-03-24</td><td>Uncertainty Quantification for Distribution-to-Distribution Flow Matching in Scientific Imaging</td><td>[2603.21717](http://arxiv.org/pdf/2603.21717)</td><td>◆ Distribution-to-distribution generative models support scientific imaging tasks ranging from modeling cellular perturbation responses to translating medical images across conditions.
+<tr><td>2026-04-05</td><td>Uncertainty Quantification for Distribution-to-Distribution Flow Matching in Scientific Imaging</td><td>[2603.21717](http://arxiv.org/pdf/2603.21717)</td><td>◆ Distribution-to-distribution generative models support scientific imaging tasks ranging from modeling cellular perturbation responses to translating medical images across conditions.
 ◆ Trustworthy generation requires both reliability (generalization across labs, devices, and experimental conditions) and accountability (detecting out-of-distribution cases where predictions may be unreliable).
 ◆ Uncertainty quantification (UQ) based approaches serve as promising candidates for these tasks, yet UQ for distribution-to-distribution generative models remains underexplored.</td></tr>
 <tr><td>2026-03-21</td><td>The Role and Relationship of Initialization and Densification in 3D Gaussian Splatting</td><td>[2603.20714](http://arxiv.org/pdf/2603.20714)</td><td>◆ 3D Gaussian Splatting (3DGS) has become the method of choice for photo-realistic 3D reconstruction of scenes, due to being able to efficiently and accurately recover the scene appearance and geometry from images.
@@ -3104,6 +3125,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-07</td><td>Stealthy and Adjustable Text-Guided Backdoor Attacks on Multimodal Pretrained Models</td><td>[2604.05809](http://arxiv.org/pdf/2604.05809)</td><td>◆ Multimodal pretrained models are vulnerable to backdoor attacks, yet most existing methods rely on visual or multimodal triggers, which are impractical since visually embedded triggers rarely occur in real-world data.
+◆ To overcome this limitation, we propose a novel Text-Guided Backdoor (TGB) attack on multimodal pretrained models, where commonly occurring words in textual descriptions serve as backdoor triggers, significantly improving stealthiness and practicality.
+◆ Furthermore, we introduce visual adversarial perturbations on poisoned samples to modulate the model&#x27;s learning of textual triggers, enabling a controllable and adjustable TGB attack.</td></tr>
+<tr><td>2026-04-07</td><td>WRF4CIR: Weight-Regularized Fine-Tuning Network for Composed Image Retrieval</td><td>[2604.05583](http://arxiv.org/pdf/2604.05583)</td><td>◆ Composed Image Retrieval (CIR) task aims to retrieve target images based on reference images and modification texts.
+◆ Current CIR methods primarily rely on fine-tuning vision-language pre-trained models.
+◆ However, we find that these approaches commonly suffer from severe overfitting, posing challenges for CIR with limited triplet data.</td></tr>
+<tr><td>2026-04-07</td><td>LSGS-Loc: Towards Robust 3DGS-Based Visual Localization for Large-Scale UAV Scenarios</td><td>[2604.05402](http://arxiv.org/pdf/2604.05402)</td><td>◆ Visual localization in large-scale UAV scenarios is a critical capability for autonomous systems, yet it remains challenging due to geometric complexity and environmental variations.
+◆ While 3D Gaussian Splatting (3DGS) has emerged as a promising scene representation, existing 3DGS-based visual localization methods struggle with robust pose initialization and sensitivity to rendering artifacts in large-scale settings.
+◆ To address these limitations, we propose LSGS-Loc, a novel visual localization pipeline tailored for large-scale 3DGS scenes.</td></tr>
+<tr><td>2026-04-07</td><td>Beyond Semantic Search: Towards Referential Anchoring in Composed Image Retrieval</td><td>[2604.05393](http://arxiv.org/pdf/2604.05393)</td><td>◆ Composed Image Retrieval (CIR) has demonstrated significant potential by enabling flexible multimodal queries that combine a reference image and modification text.
+◆ However, CIR inherently prioritizes semantic matching, struggling to reliably retrieve a user-specified instance across contexts.
+◆ In practice, emphasizing concrete instance fidelity over broad semantics is often more consequential.</td></tr>
+<tr><td>2026-04-06</td><td>MPTF-Net: Multi-view Pyramid Transformer Fusion Network for LiDAR-based Place Recognition</td><td>[2604.04513](http://arxiv.org/pdf/2604.04513)</td><td>◆ LiDAR-based place recognition (LPR) is essential for global localization and loop-closure detection in large-scale SLAM systems.
+◆ Existing methods typically construct global descriptors from Range Images or BEV representations for matching.
+◆ BEV is widely adopted due to its explicit 2D spatial layout encoding and efficient retrieval.</td></tr>
 <tr><td>2026-03-31</td><td>MELT: Improve Composed Image Retrieval via the Modification Frequentation-Rarity Balance Network</td><td>[2603.29291](http://arxiv.org/pdf/2603.29291)</td><td>◆ Composed Image Retrieval (CIR) uses a reference image and a modification text as a query to retrieve a target image satisfying the requirement of ``modifying the reference image according to the text instructions&#x27;&#x27;.
 ◆ However, existing CIR methods face two limitations: (1) frequency bias leading to ``Rare Sample Neglect&#x27;&#x27;, and (2) susceptibility of similarity scores to interference from hard negative samples and noise.
 ◆ To address these limitations, we confront two key challenges: asymmetric rare semantic localization and robust similarity estimation under hard negative samples.</td></tr>
@@ -5221,6 +5257,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>ViBA: Implicit Bundle Adjustment with Geometric and Temporal Consistency for Robust Visual Matching</td><td>[2604.03377](http://arxiv.org/pdf/2604.03377)</td><td>◆ Most existing image keypoint detection and description methods rely on datasets with accurate pose and depth annotations, limiting scalability and generalization, and often degrading navigation and localization performance.
+◆ We propose ViBA, a sustainable learning framework that integrates geometric optimization with feature learning for continuous online training on unconstrained video streams.
+◆ Embedded in a standard visual odometry pipeline, it consists of an implicitly differentiable geometric residual framework: (i) an initial tracking network for inter-frame correspondences, (ii) depth-based outlier filtering, and (iii) differentiable global bundle adjustment that jointly refines camera poses and feature positions by minimizing reprojection errors.</td></tr>
 <tr><td>2026-03-26</td><td>Towards Comprehensive Real-Time Scene Understanding in Ophthalmic Surgery through Multimodal Image Fusion</td><td>[2603.25555](http://arxiv.org/pdf/2603.25555)</td><td>◆ Purpose: The integration of multimodal imaging into operating rooms paves the way for comprehensive surgical scene understanding.
 ◆ In ophthalmic surgery, by now, two complementary imaging modalities are available: operating microscope (OPMI) imaging and real-time intraoperative optical coherence tomography (iOCT).
 ◆ This first work toward temporal OPMI and iOCT feature fusion demonstrates the potential of multimodal image processing for multi-head prediction through the example of precise instrument tracking in vitreoretinal surgery.</td></tr>
@@ -6539,6 +6578,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-07</td><td>3DTurboQuant: Training-Free Near-Optimal Quantization for 3D Reconstruction Models</td><td>[2604.05366](http://arxiv.org/pdf/2604.05366)</td><td>◆ Every existing method for compressing 3D Gaussian Splatting, NeRF, or transformer-based 3D reconstructors requires learning a data-dependent codebook through per-scene fine-tuning.
+◆ We show this is unnecessary.
+◆ The parameter vectors that dominate storage in these models, 45-dimensional spherical harmonics in 3DGS and 1024-dimensional key-value vectors in DUSt3R, fall in a dimension range where a single random rotation transforms any input into coordinates with a known Beta distribution.</td></tr>
 <tr><td>2026-04-03</td><td>Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices</td><td>[2604.02836](http://arxiv.org/pdf/2604.02836)</td><td>◆ We introduce Fact-Hash, a novel parameter-encoding method for training on-device neural radiance fields.
 ◆ Neural Radiance Fields (NeRF) have proven pivotal in 3D representations, but their applications are limited due to large computational resources.
 ◆ On-device training can open large application fields, providing strength in communication limitations, privacy concerns, and fast adaptation to a frequently changing scene.</td></tr>
@@ -7705,4 +7747,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.07
+> 更新于: 2026.04.08
