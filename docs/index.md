@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.08)
+# 计算机视觉领域最新论文 (2026.04.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild</td><td>[2604.07331](http://arxiv.org/pdf/2604.07331)</td><td>◆ Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild.
+◆ Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency.
+◆ We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception.</td></tr>
+<tr><td>2026-04-08</td><td>An RTK-SLAM Dataset for Absolute Accuracy Evaluation in GNSS-Degraded Environments</td><td>[2604.07151](http://arxiv.org/pdf/2604.07151)</td><td>◆ RTK-SLAM systems integrate simultaneous localization and mapping (SLAM) with real-time kinematic (RTK) GNSS positioning, promising both relative consistency and globally referenced coordinates for efficient georeferenced surveying.
+◆ A critical and underappreciated issue is that the standard evaluation metric, Absolute Trajectory Error (ATE), first fits an optimal rigid-body transformation between the estimated trajectory and reference before computing errors.
+◆ This so-called SE(3) alignment absorbs global drift and systematic errors, making trajectories appear more accurate than they are in practice, and is unsuitable for evaluating the global accuracy of RTK-SLAM.</td></tr>
+<tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
+◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
+◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
+<tr><td>2026-04-08</td><td>Exploring 6D Object Pose Estimation with Deformation</td><td>[2604.06720](http://arxiv.org/pdf/2604.06720)</td><td>◆ We present DeSOPE, a large-scale dataset for 6DoF deformed objects.
+◆ Most 6D object pose methods assume rigid or articulated objects, an assumption that fails in practice as objects deviate from their canonical shapes due to wear, impact, or deformation.
+◆ To model this, we introduce the DeSOPE dataset, which features high-fidelity 3D scans of 26 common object categories, each captured in one canonical state and three deformed configurations, with accurate 3D registration to the canonical mesh.</td></tr>
+<tr><td>2026-04-08</td><td>The Theorems of Dr. David Blackwell and Their Contributions to Artificial Intelligence</td><td>[2604.06621](http://arxiv.org/pdf/2604.06621)</td><td>◆ Dr.
+◆ David Blackwell was a mathematician and statistician of the first rank, whose contributions to statistical theory, game theory, and decision theory predated many of the algorithmic breakthroughs that define modern artificial intelligence.
+◆ This survey examines three of his most consequential theoretical results the Rao Blackwell theorem, the Blackwell Approachability theorem, and the Blackwell Informativeness theorem (comparison of experiments) and traces their direct influence on contemporary AI and machine learning.</td></tr>
 <tr><td>2026-04-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Magnetometer and Intermittent GNSS Measurements</td><td>[2604.05156](http://arxiv.org/pdf/2604.05156)</td><td>◆ In Landmark-Inertial Simultaneous Localisation and Mapping (LI-SLAM), the positions of landmarks in the environment and the robot&#x27;s pose relative to these landmarks are estimated using landmark position measurements, and measurements from the Inertial Measurement Unit (IMU).
 ◆ However, the robot and landmark positions in the inertial frame, and the yaw of the robot, are not observable in LI-SLAM.
 ◆ This paper proposes a nonlinear observer for LI-SLAM that overcomes the observability constraints with the addition of intermittent GNSS position and magnetometer measurements.</td></tr>
@@ -3125,6 +3140,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering</td><td>[2604.07146](http://arxiv.org/pdf/2604.07146)</td><td>◆ Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts.
+◆ Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer.
+◆ Such a design makes it difficult to adapt to diverse question types.</td></tr>
+<tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
+◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
+◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
+<tr><td>2026-04-06</td><td>CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale</td><td>[2604.06245](http://arxiv.org/pdf/2604.06245)</td><td>◆ Impact craters are a cornerstone of planetary surface analysis.
+◆ However, while most deep learning pipelines treat craters solely as a detection problem, critical scientific workflows such as catalog deduplication, cross-observation matching, and morphological analog discovery are inherently retrieval tasks.
+◆ To address this, we formulate crater analysis as an instance-level image retrieval problem and introduce CraterBench-R, a curated benchmark featuring about 25,000 crater identities with multi-scale gallery views and manually verified queries spanning diverse scales and contexts.</td></tr>
 <tr><td>2026-04-07</td><td>Stealthy and Adjustable Text-Guided Backdoor Attacks on Multimodal Pretrained Models</td><td>[2604.05809](http://arxiv.org/pdf/2604.05809)</td><td>◆ Multimodal pretrained models are vulnerable to backdoor attacks, yet most existing methods rely on visual or multimodal triggers, which are impractical since visually embedded triggers rarely occur in real-world data.
 ◆ To overcome this limitation, we propose a novel Text-Guided Backdoor (TGB) attack on multimodal pretrained models, where commonly occurring words in textual descriptions serve as backdoor triggers, significantly improving stealthiness and practicality.
 ◆ Furthermore, we introduce visual adversarial perturbations on poisoned samples to modulate the model&#x27;s learning of textual triggers, enabling a controllable and adjustable TGB attack.</td></tr>
@@ -5726,6 +5750,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Improving Local Feature Matching by Entropy-inspired Scale Adaptability and Flow-endowed Local Consistency</td><td>[2604.06713](http://arxiv.org/pdf/2604.06713)</td><td>◆ Recent semi-dense image matching methods have achieved remarkable success, but two long-standing issues still impair their performance.
+◆ At the coarse stage, the over-exclusion issue of their mutual nearest neighbor (MNN) matching layer makes them struggle to handle cases with scale difference between images.
+◆ To this end, we comprehensively revisit the matching mechanism and make a key observation that the hint concealed in the score matrix can be exploited to indicate the scale ratio.</td></tr>
 <tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
 ◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
 ◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
@@ -7747,4 +7774,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.08
+> 更新于: 2026.04.09
