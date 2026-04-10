@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.09)
+# 计算机视觉领域最新论文 (2026.04.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>TinyDEVO: Deep Event-based Visual Odometry on Ultra-low-power Multi-core Microcontrollers</td><td>[2604.08060](http://arxiv.org/pdf/2604.08060)</td><td>◆ A key task in embedded vision is visual odometry (VO), which estimates camera motion from visual sensors, and it is a core component in many embedded power-constrained systems, from autonomous robots to augmented and virtual reality wearable devices.
+◆ The newest class of VO systems combines deep learning models with bio-inspired event-based cameras, which are robust to motion blur and lighting conditions.
+◆ However, state-of-the-art (SoA) event-based VO algorithms require significant memory and computation.</td></tr>
+<tr><td>2026-04-09</td><td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models</td><td>[2604.07991](http://arxiv.org/pdf/2604.07991)</td><td>◆ Recent advances in world models have demonstrated strong capabilities in simulating physical reality, making them an increasingly important foundation for embodied intelligence.
+◆ For UAV agents in particular, accurate prediction of complex 3D dynamics is essential for autonomous navigation and robust decision-making in unconstrained environments.
+◆ However, under the highly dynamic camera trajectories typical of UAV views, existing world models often struggle to maintain spatiotemporal physical consistency.</td></tr>
 <tr><td>2026-04-08</td><td>RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild</td><td>[2604.07331](http://arxiv.org/pdf/2604.07331)</td><td>◆ Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild.
 ◆ Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency.
 ◆ We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception.</td></tr>
@@ -1994,6 +2000,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>Neutral Hydrogen in the Shapley Supercluster Core I: Environmental Effects on Gas Content and Galaxy Evolution</td><td>[2604.08402](http://arxiv.org/pdf/2604.08402)</td><td>◆ We study the atomic Hydrogen (HI) content of galaxies in the core of the Shapley Supercluster (SSC) at &lt;z&gt; ~ 0.048, using observations from the MeerKAT Galaxy Cluster Legacy Survey and optical data from the Shapley Supercluster Survey (ShaSS) project.
+◆ Our sample comprises 169 galaxies with HI detections in the dynamically active region of Abell 3558 and SC1329-313.
+◆ Following the literature, we classify galaxies into star-forming main sequence (SFMS), transition (TZ), and red sequence (RS) populations, and examine how the HI content varies across these populations.</td></tr>
 <tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
 ◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
 ◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
@@ -3140,7 +3149,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-08</td><td>Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering</td><td>[2604.07146](http://arxiv.org/pdf/2604.07146)</td><td>◆ Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts.
+<tr><td>2026-04-09</td><td>Bag of Bags: Adaptive Visual Vocabularies for Genizah Join Image Retrieval</td><td>[2604.08138](http://arxiv.org/pdf/2604.08138)</td><td>◆ A join is a set of manuscript fragments identified as originally emanating from the same manuscript.
+◆ We study manuscript join retrieval: Given a query image of a fragment, retrieve other fragments originating from the same physical manuscript.
+◆ We propose Bag of Bags (BoB), an image-level representation that replaces the global-level visual codebook of classical Bag of Words (BoW) with a fragment-specific vocabulary of local visual words.</td></tr>
+<tr><td>2026-04-09</td><td>SearchAD: Large-Scale Rare Image Retrieval Dataset for Autonomous Driving</td><td>[2604.08008](http://arxiv.org/pdf/2604.08008)</td><td>◆ Retrieving rare and safety-critical driving scenarios from large-scale datasets is essential for building robust autonomous driving (AD) systems.
+◆ As dataset sizes continue to grow, the key challenge shifts from collecting more data to efficiently identifying the most relevant samples.
+◆ We introduce SearchAD, a large-scale rare image retrieval dataset for AD containing over 423k frames drawn from 11 established datasets.</td></tr>
+<tr><td>2026-04-09</td><td>Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering</td><td>[2604.07146](http://arxiv.org/pdf/2604.07146)</td><td>◆ Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts.
 ◆ Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer.
 ◆ Such a design makes it difficult to adapt to diverse question types.</td></tr>
 <tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
@@ -5281,6 +5296,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
+◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
+◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
 <tr><td>2026-04-03</td><td>ViBA: Implicit Bundle Adjustment with Geometric and Temporal Consistency for Robust Visual Matching</td><td>[2604.03377](http://arxiv.org/pdf/2604.03377)</td><td>◆ Most existing image keypoint detection and description methods rely on datasets with accurate pose and depth annotations, limiting scalability and generalization, and often degrading navigation and localization performance.
 ◆ We propose ViBA, a sustainable learning framework that integrates geometric optimization with feature learning for continuous online training on unconstrained video streams.
 ◆ Embedded in a standard visual odometry pipeline, it consists of an implicitly differentiable geometric residual framework: (i) an initial tracking network for inter-frame correspondences, (ii) depth-based outlier filtering, and (iii) differentiable global bundle adjustment that jointly refines camera poses and feature positions by minimizing reprojection errors.</td></tr>
@@ -5750,6 +5768,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
+◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
+◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
 <tr><td>2026-04-08</td><td>Improving Local Feature Matching by Entropy-inspired Scale Adaptability and Flow-endowed Local Consistency</td><td>[2604.06713](http://arxiv.org/pdf/2604.06713)</td><td>◆ Recent semi-dense image matching methods have achieved remarkable success, but two long-standing issues still impair their performance.
 ◆ At the coarse stage, the over-exclusion issue of their mutual nearest neighbor (MNN) matching layer makes them struggle to handle cases with scale difference between images.
 ◆ To this end, we comprehensively revisit the matching mechanism and make a key observation that the hint concealed in the score matrix can be exploited to indicate the scale ratio.</td></tr>
@@ -7774,4 +7795,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.09
+> 更新于: 2026.04.10
