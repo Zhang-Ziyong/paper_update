@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.12)
+# 计算机视觉领域最新论文 (2026.04.13)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
+◆ However, deploying these models on dense video streams introduces significant computational redundancy.
+◆ Current GFM-based SLAM systems typically rely on post hoc keyframe selection.</td></tr>
 <tr><td>2026-04-09</td><td>TinyDEVO: Deep Event-based Visual Odometry on Ultra-low-power Multi-core Microcontrollers</td><td>[2604.08060](http://arxiv.org/pdf/2604.08060)</td><td>◆ A key task in embedded vision is visual odometry (VO), which estimates camera motion from visual sensors, and it is a core component in many embedded power-constrained systems, from autonomous robots to augmented and virtual reality wearable devices.
 ◆ The newest class of VO systems combines deep learning models with bio-inspired event-based cameras, which are robust to motion blur and lighting conditions.
 ◆ However, state-of-the-art (SoA) event-based VO algorithms require significant memory and computation.</td></tr>
@@ -3153,6 +3156,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>AsymLoc: Towards Asymmetric Feature Matching for Efficient Visual Localization</td><td>[2604.09445](http://arxiv.org/pdf/2604.09445)</td><td>◆ Precise and real-time visual localization is critical for applications like AR/VR and robotics, especially on resource-constrained edge devices such as smart glasses, where battery life and heat dissipation can be a primary concerns.
+◆ While many efficient models exist, further reducing compute without sacrificing accuracy is essential for practical deployment.
+◆ To address this, we propose asymmetric visual localization: a large Teacher model processes pre-mapped database images offline, while a lightweight Student model processes the query image online.</td></tr>
+<tr><td>2026-04-10</td><td>FIRE-CIR: Fine-grained Reasoning for Composed Fashion Image Retrieval</td><td>[2604.09114](http://arxiv.org/pdf/2604.09114)</td><td>◆ Composed image retrieval (CIR) aims to retrieve a target image that depicts a reference image modified by a textual description.
+◆ While recent vision-language models (VLMs) achieve promising CIR performance by embedding images and text into a shared space for retrieval, they often fail to reason about what to preserve and what to change.
+◆ This limitation hinders interpretability and yields suboptimal results, particularly in fine-grained domains like fashion.</td></tr>
+<tr><td>2026-04-10</td><td>Towards Lifelong Aerial Autonomy: Geometric Memory Management for Continual Visual Place Recognition in Dynamic Environments</td><td>[2604.09038](http://arxiv.org/pdf/2604.09038)</td><td>◆ Robust geo-localization in changing environmental conditions is critical for long-term aerial autonomy.
+◆ While visual place recognition (VPR) models perform well when airborne views match the training domain, adapting them to shifting distributions during sequential missions triggers catastrophic forgetting.
+◆ Existing continual learning (CL) methods often fail here because geographic features exhibit severe intra-class variations.</td></tr>
+<tr><td>2026-04-07</td><td>Pretrain-then-Adapt: Uncertainty-Aware Test-Time Adaptation for Text-based Person Search</td><td>[2604.08598](http://arxiv.org/pdf/2604.08598)</td><td>◆ Text-based person search faces inherent limitations due to data scarcity, driven by stringent privacy constraints and the high cost of manual annotation.
+◆ To mitigate this, existing methods usually rely on a Pretrain-then-Finetune paradigm, where models are first pretrained on synthetic person-caption data to establish cross-modal alignment, followed by fine-tuning on labeled real-world datasets.
+◆ However, this paradigm lacks practicality in real-world deployment scenarios, where large-scale annotated target-domain data is typically inaccessible.</td></tr>
 <tr><td>2026-04-09</td><td>Bag of Bags: Adaptive Visual Vocabularies for Genizah Join Image Retrieval</td><td>[2604.08138](http://arxiv.org/pdf/2604.08138)</td><td>◆ A join is a set of manuscript fragments identified as originally emanating from the same manuscript.
 ◆ We study manuscript join retrieval: Given a query image of a fragment, retrieve other fragments originating from the same physical manuscript.
 ◆ We propose Bag of Bags (BoB), an image-level representation that replaces the global-level visual codebook of classical Bag of Words (BoW) with a fragment-specific vocabulary of local visual words.</td></tr>
@@ -5302,6 +5317,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>Multi-task Just Recognizable Difference for Video Coding for Machines: Database, Model, and Coding Application</td><td>[2604.09421](http://arxiv.org/pdf/2604.09421)</td><td>◆ Just Recognizable Difference (JRD) boosts coding efficiency for machine vision through visibility threshold modeling, but is currently limited to a single-task scenario.
+◆ To address this issue, we propose a Multi-Task JRD (MT-JRD) dataset and an Attribute-assisted MT-JRD (AMT-JRD) model for Video Coding for Machines (VCM), enhancing both prediction accuracy and coding efficiency.
+◆ First, we construct a dataset comprising 27,264 JRD annotations from machines, supporting three representative tasks including object detection, instance segmentation, and keypoint detection.</td></tr>
 <tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
 ◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
 ◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
@@ -7807,4 +7825,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.12
+> 更新于: 2026.04.13
