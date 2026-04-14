@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.13)
+# 计算机视觉领域最新论文 (2026.04.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-09</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
+<tr><td>2026-04-13</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
+◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
+<tr><td>2026-04-12</td><td>MonoEM-GS: Monocular Expectation-Maximization Gaussian Splatting SLAM</td><td>[2604.10593](http://arxiv.org/pdf/2604.10593)</td><td>◆ Feed-forward geometric foundation models can infer dense point clouds and camera motion directly from RGB streams, providing priors for monocular SLAM.
+◆ However, their predictions are often view-dependent and noisy: geometry can vary across viewpoints and under image transformations, and local metric properties may drift between frames.
+◆ We present MonoEM-GS, a monocular mapping pipeline that integrates such geometric predictions into a global Gaussian Splatting representation while explicitly addressing these inconsistencies.</td></tr>
+<tr><td>2026-04-13</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
 ◆ However, deploying these models on dense video streams introduces significant computational redundancy.
 ◆ Current GFM-based SLAM systems typically rely on post hoc keyframe selection.</td></tr>
 <tr><td>2026-04-09</td><td>TinyDEVO: Deep Event-based Visual Odometry on Ultra-low-power Multi-core Microcontrollers</td><td>[2604.08060](http://arxiv.org/pdf/2604.08060)</td><td>◆ A key task in embedded vision is visual odometry (VO), which estimates camera motion from visual sensors, and it is a core component in many embedded power-constrained systems, from autonomous robots to augmented and virtual reality wearable devices.
@@ -3156,6 +3162,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Seeing Through Touch: Tactile-Driven Visual Localization of Material Regions</td><td>[2604.11579](http://arxiv.org/pdf/2604.11579)</td><td>◆ We address the problem of tactile localization, where the goal is to identify image regions that share the same material properties as a tactile input.
+◆ Existing visuo-tactile methods rely on global alignment and thus fail to capture the fine-grained local correspondences required for this task.
+◆ The challenge is amplified by existing datasets, which predominantly contain close-up, low-diversity images.</td></tr>
+<tr><td>2026-04-13</td><td>CLAY: Conditional Visual Similarity Modulation in Vision-Language Embedding Space</td><td>[2604.11539](http://arxiv.org/pdf/2604.11539)</td><td>◆ Human perception of visual similarity is inherently adaptive and subjective, depending on the users&#x27; interests and focus.
+◆ However, most image retrieval systems fail to reflect this flexibility, relying on a fixed, monolithic metric that cannot incorporate multiple conditions simultaneously.
+◆ To address this, we propose CLAY, an adaptive similarity computation method that reframes the embedding space of pretrained Vision-Language Models (VLMs) as a text-conditional similarity space without additional training.</td></tr>
+<tr><td>2026-04-11</td><td>FashionMV: Product-Level Composed Image Retrieval with Multi-View Fashion Data</td><td>[2604.10297](http://arxiv.org/pdf/2604.10297)</td><td>◆ Composed Image Retrieval (CIR) retrieves target images using a reference image paired with modification text.
+◆ Despite rapid advances, all existing methods and datasets operate at the image level -- a single reference image plus modification text in, a single target image out -- while real e-commerce users reason about products shown from multiple viewpoints.
+◆ We term this mismatch View Incompleteness and formally define a new Multi-View CIR task that generalizes standard CIR from image-level to product-level retrieval.</td></tr>
 <tr><td>2026-04-10</td><td>AsymLoc: Towards Asymmetric Feature Matching for Efficient Visual Localization</td><td>[2604.09445](http://arxiv.org/pdf/2604.09445)</td><td>◆ Precise and real-time visual localization is critical for applications like AR/VR and robotics, especially on resource-constrained edge devices such as smart glasses, where battery life and heat dissipation can be a primary concerns.
 ◆ While many efficient models exist, further reducing compute without sacrificing accuracy is essential for practical deployment.
 ◆ To address this, we propose asymmetric visual localization: a large Teacher model processes pre-mapped database images offline, while a lightweight Student model processes the query image online.</td></tr>
@@ -3168,7 +3183,7 @@
 <tr><td>2026-04-07</td><td>Pretrain-then-Adapt: Uncertainty-Aware Test-Time Adaptation for Text-based Person Search</td><td>[2604.08598](http://arxiv.org/pdf/2604.08598)</td><td>◆ Text-based person search faces inherent limitations due to data scarcity, driven by stringent privacy constraints and the high cost of manual annotation.
 ◆ To mitigate this, existing methods usually rely on a Pretrain-then-Finetune paradigm, where models are first pretrained on synthetic person-caption data to establish cross-modal alignment, followed by fine-tuning on labeled real-world datasets.
 ◆ However, this paradigm lacks practicality in real-world deployment scenarios, where large-scale annotated target-domain data is typically inaccessible.</td></tr>
-<tr><td>2026-04-09</td><td>Bag of Bags: Adaptive Visual Vocabularies for Genizah Join Image Retrieval</td><td>[2604.08138](http://arxiv.org/pdf/2604.08138)</td><td>◆ A join is a set of manuscript fragments identified as originally emanating from the same manuscript.
+<tr><td>2026-04-10</td><td>Bag of Bags: Adaptive Visual Vocabularies for Genizah Join Image Retrieval</td><td>[2604.08138](http://arxiv.org/pdf/2604.08138)</td><td>◆ A join is a set of manuscript fragments identified as originally emanating from the same manuscript.
 ◆ We study manuscript join retrieval: Given a query image of a fragment, retrieve other fragments originating from the same physical manuscript.
 ◆ We propose Bag of Bags (BoB), an image-level representation that replaces the global-level visual codebook of classical Bag of Words (BoW) with a fragment-specific vocabulary of local visual words.</td></tr>
 <tr><td>2026-04-09</td><td>SearchAD: Large-Scale Rare Image Retrieval Dataset for Autonomous Driving</td><td>[2604.08008](http://arxiv.org/pdf/2604.08008)</td><td>◆ Retrieving rare and safety-critical driving scenarios from large-scale datasets is essential for building robust autonomous driving (AD) systems.
@@ -5794,6 +5809,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Who Handles Orientation? Investigating Invariance in Feature Matching</td><td>[2604.11809](http://arxiv.org/pdf/2604.11809)</td><td>◆ Finding matching keypoints between images is a core problem in 3D computer vision.
+◆ However, modern matchers struggle with large in-plane rotations.
+◆ A straightforward mitigation is to learn rotation invariance via data augmentation.</td></tr>
+<tr><td>2026-04-11</td><td>DeepShapeMatchingKit: Accelerated Functional Map Solver and Shape Matching Pipelines Revisited</td><td>[2604.10377](http://arxiv.org/pdf/2604.10377)</td><td>◆ Deep functional maps, leveraging learned feature extractors and spectral correspondence solvers, are fundamental to non-rigid 3D shape matching.
+◆ Based on an analysis of open-source implementations, we find that standard functional map implementations solve k independent linear systems serially, which is a computational bottleneck at higher spectral resolution.
+◆ We thus propose a vectorized reformulation that solves all systems in a single kernel call, achieving up to a 33x speedup while preserving the exact solution.</td></tr>
+<tr><td>2026-04-11</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
+◆ We evaluate twenty-four pretrained matcher families--in a zero-shot setting with no fine-tuning or domain adaptation on satellite or SAR data--on SpaceNet9 and two additional cross-modal benchmarks under a deterministic protocol with tiled large-image inference, robust geometric filtering, and tie-point-grounded metrics.
+◆ Our results reveal asymmetric transfer--matchers with explicit cross-modal training do not uniformly outperform those without it.</td></tr>
 <tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
 ◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
 ◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
@@ -6654,6 +6678,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Fast-SegSim: Real-Time Open-Vocabulary Segmentation for Robotics in Simulation</td><td>[2604.10951](http://arxiv.org/pdf/2604.10951)</td><td>◆ Open-vocabulary panoptic reconstruction is crucial for advanced robotics and simulation.
+◆ However, existing 3D reconstruction methods, such as NeRF or Gaussian Splatting variants, often struggle to achieve the real-time inference frequency required by robotic control loops.
+◆ Existing methods incur prohibitive latency when processing the high-dimensional features required for robust open-vocabulary segmentation.</td></tr>
 <tr><td>2026-04-07</td><td>3DTurboQuant: Training-Free Near-Optimal Quantization for 3D Reconstruction Models</td><td>[2604.05366](http://arxiv.org/pdf/2604.05366)</td><td>◆ Every existing method for compressing 3D Gaussian Splatting, NeRF, or transformer-based 3D reconstructors requires learning a data-dependent codebook through per-scene fine-tuning.
 ◆ We show this is unnecessary.
 ◆ The parameter vectors that dominate storage in these models, 45-dimensional spherical harmonics in 3DGS and 1024-dimensional key-value vectors in DUSt3R, fall in a dimension range where a single random rotation transforms any input into coordinates with a known Beta distribution.</td></tr>
@@ -7825,4 +7852,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.13
+> 更新于: 2026.04.14
