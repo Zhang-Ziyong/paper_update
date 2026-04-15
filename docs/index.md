@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.14)
+# 计算机视觉领域最新论文 (2026.04.15)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-13</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+<tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
+◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
+◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
+<tr><td>2026-04-14</td><td>GGD-SLAM: Monocular 3DGS SLAM Powered by Generalizable Motion Model for Dynamic Environments</td><td>[2604.12837](http://arxiv.org/pdf/2604.12837)</td><td>◆ Visual SLAM algorithms achieve significant improvements through the exploration of 3D Gaussian Splatting (3DGS) representations, particularly in generating high-fidelity dense maps.
+◆ However, they depend on a static environment assumption and experience significant performance degradation in dynamic environments.
+◆ This paper presents GGD-SLAM, a framework that employs a generalizable motion model to address the challenges of localization and dense mapping in dynamic environments - without predefined semantic annotations or depth input.</td></tr>
+<tr><td>2026-04-13</td><td>ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</td><td>[2604.11992](http://arxiv.org/pdf/2604.11992)</td><td>◆ 3D Gaussian Splatting is a powerful visual representation, providing high-quality and efficient 3D scene reconstruction, but it is crucially dependent on accurate camera poses typically obtained from computationally intensive processes like structure-from-motion that are unsuitable for field robot applications.
+◆ However, in these domains, multimodal sensor data from acoustic, inertial, pressure, and visual sensors are available and suitable for pose-graph optimization-based SLAM methods that can estimate the vehicle&#x27;s trajectory and thus our needed camera poses while providing uncertainty.
+◆ We propose a 3DGS-based incremental reconstruction framework, ReefMapGS, that builds an initial model from a high certainty region and progressively expands to incorporate the whole scene.</td></tr>
+<tr><td>2026-04-14</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
 ◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
 ◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
 <tr><td>2026-04-12</td><td>MonoEM-GS: Monocular Expectation-Maximization Gaussian Splatting SLAM</td><td>[2604.10593](http://arxiv.org/pdf/2604.10593)</td><td>◆ Feed-forward geometric foundation models can infer dense point clouds and camera motion directly from RGB streams, providing priors for monocular SLAM.
@@ -2009,6 +2018,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</td><td>[2604.11992](http://arxiv.org/pdf/2604.11992)</td><td>◆ 3D Gaussian Splatting is a powerful visual representation, providing high-quality and efficient 3D scene reconstruction, but it is crucially dependent on accurate camera poses typically obtained from computationally intensive processes like structure-from-motion that are unsuitable for field robot applications.
+◆ However, in these domains, multimodal sensor data from acoustic, inertial, pressure, and visual sensors are available and suitable for pose-graph optimization-based SLAM methods that can estimate the vehicle&#x27;s trajectory and thus our needed camera poses while providing uncertainty.
+◆ We propose a 3DGS-based incremental reconstruction framework, ReefMapGS, that builds an initial model from a high certainty region and progressively expands to incorporate the whole scene.</td></tr>
+<tr><td>2026-04-11</td><td>A Comparison of Multi-View Stereo Methods for Photogrammetric 3D Reconstruction: From Traditional to Learning-Based Approaches</td><td>[2604.10246](http://arxiv.org/pdf/2604.10246)</td><td>◆ Photogrammetric 3D reconstruction has long relied on traditional Structure-from-Motion (SfM) and Multi-View Stereo (MVS) methods, which provide high accuracy but face challenges in speed and scalability.
+◆ Recently, learning-based MVS methods have emerged, aiming for faster and more efficient reconstruction.
+◆ This work presents a comparative evaluation between a representative traditional MVS pipeline (COLMAP) and state-of-the-art learning-based approaches, including geometry-guided methods (MVSNet, PatchmatchNet, MVSAnywhere, MVSFormer++) and end-to-end frameworks (Stereo4D, FoundationStereo, DUSt3R, MASt3R, Fast3R, VGGT).</td></tr>
 <tr><td>2026-04-09</td><td>Neutral Hydrogen in the Shapley Supercluster Core I: Environmental Effects on Gas Content and Galaxy Evolution</td><td>[2604.08402](http://arxiv.org/pdf/2604.08402)</td><td>◆ We study the atomic Hydrogen (HI) content of galaxies in the core of the Shapley Supercluster (SSC) at &lt;z&gt; ~ 0.048, using observations from the MeerKAT Galaxy Cluster Legacy Survey and optical data from the Shapley Supercluster Survey (ShaSS) project.
 ◆ Our sample comprises 169 galaxies with HI detections in the dynamically active region of Abell 3558 and SC1329-313.
 ◆ Following the literature, we classify galaxies into star-forming main sequence (SFMS), transition (TZ), and red sequence (RS) populations, and examine how the HI content varies across these populations.</td></tr>
@@ -3158,6 +3173,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-14</td><td>A Sanity Check on Composed Image Retrieval</td><td>[2604.12904](http://arxiv.org/pdf/2604.12904)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve a target image based on a query composed of a reference image, and a relative caption that specifies the desired modification.
+◆ Despite the rapid development of CIR models, their performance is not well characterized by existing benchmarks, which inherently contain indeterminate queries degrading the evaluation (i.e., multiple candidate images, rather than solely the target image, meet the query criteria), and have not considered their effectiveness in the context of the multi-round system.
+◆ Motivated by this, we consider improving the evaluation procedure from two aspects: 1) we introduce FISD, a Fully-Informed Semantically-Diverse benchmark, which employs generative models to precisely control the variables of reference-target image pairs, enabling a more accurate evaluation of CIR methods across six dimensions, without query ambiguity; 2) we propose an automatic multi-round agentic evaluation framework to probe the potential of the existing models in the interactive scenarios.</td></tr>
+<tr><td>2026-04-14</td><td>VidTAG: Temporally Aligned Video to GPS Geolocalization with Denoising Sequence Prediction at a Global Scale</td><td>[2604.12159](http://arxiv.org/pdf/2604.12159)</td><td>◆ The task of video geolocalization aims to determine the precise GPS coordinates of a video&#x27;s origin and map its trajectory; with applications in forensics, social media, and exploration.
+◆ Existing classification-based approaches operate at a coarse city-level granularity and fail to capture fine-grained details, while image retrieval methods are impractical on a global scale due to the need for extensive image galleries which are infeasible to compile.
+◆ Comparatively, constructing a gallery of GPS coordinates is straightforward and inexpensive.</td></tr>
+<tr><td>2026-04-13</td><td>Human-Inspired Context-Selective Multimodal Memory for Social Robots</td><td>[2604.12081](http://arxiv.org/pdf/2604.12081)</td><td>◆ Memory is fundamental to social interaction, enabling humans to recall meaningful past experiences and adapt their behavior accordingly based on the context.
+◆ However, most current social robots and embodied agents rely on non-selective, text-based memory, limiting their ability to support personalized, context-aware interactions.
+◆ Drawing inspiration from cognitive neuroscience, we propose a context-selective, multimodal memory architecture for social robots that captures and retrieves both textual and visual episodic traces, prioritizing moments characterized by high emotional salience or scene novelty.</td></tr>
+<tr><td>2026-04-13</td><td>Privacy-Preserving Structureless Visual Localization via Image Obfuscation</td><td>[2604.12068](http://arxiv.org/pdf/2604.12068)</td><td>◆ Visual localization is the task of estimating the camera pose of an image relative to a scene representation.
+◆ In practice, visual localization systems are often cloud-based.
+◆ Naturally, this raises privacy concerns in terms of revealing private details through the images sent to the server or through the representations stored on the server.</td></tr>
 <tr><td>2026-04-13</td><td>Seeing Through Touch: Tactile-Driven Visual Localization of Material Regions</td><td>[2604.11579](http://arxiv.org/pdf/2604.11579)</td><td>◆ We address the problem of tactile localization, where the goal is to identify image regions that share the same material properties as a tactile input.
 ◆ Existing visuo-tactile methods rely on global alignment and thus fail to capture the fine-grained local correspondences required for this task.
 ◆ The challenge is amplified by existing datasets, which predominantly contain close-up, low-diversity images.</td></tr>
@@ -5807,7 +5834,7 @@
 <tr><td>2026-04-11</td><td>DeepShapeMatchingKit: Accelerated Functional Map Solver and Shape Matching Pipelines Revisited</td><td>[2604.10377](http://arxiv.org/pdf/2604.10377)</td><td>◆ Deep functional maps, leveraging learned feature extractors and spectral correspondence solvers, are fundamental to non-rigid 3D shape matching.
 ◆ Based on an analysis of open-source implementations, we find that standard functional map implementations solve k independent linear systems serially, which is a computational bottleneck at higher spectral resolution.
 ◆ We thus propose a vectorized reformulation that solves all systems in a single kernel call, achieving up to a 33x speedup while preserving the exact solution.</td></tr>
-<tr><td>2026-04-11</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
+<tr><td>2026-04-14</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
 ◆ We evaluate twenty-four pretrained matcher families--in a zero-shot setting with no fine-tuning or domain adaptation on satellite or SAR data--on SpaceNet9 and two additional cross-modal benchmarks under a deterministic protocol with tiled large-image inference, robust geometric filtering, and tie-point-grounded metrics.
 ◆ Our results reveal asymmetric transfer--matchers with explicit cross-modal training do not uniformly outperform those without it.</td></tr>
 <tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
@@ -6668,6 +6695,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>A Geometric Algebra-informed NeRF Framework for Generalizable Wireless Channel Prediction</td><td>[2604.11983](http://arxiv.org/pdf/2604.11983)</td><td>◆ In this paper, we propose the geometric algebra-informed neural radiance fields (GAI-NeRF), a novel framework for wireless channel prediction that leverages geometric algebra attention mechanisms to capture ray-object interactions in complex propagation environments.
+◆ Our approach incorporates global token representations, drawing inspiration from transformer architectures in language and vision domains, to aggregate learned spatial-electromagnetic features and enhance scene understanding.
+◆ We identify limitations in conventional static ray tracing modules that hinder model generalization and address this challenge through a new ray tracing architecture.</td></tr>
 <tr><td>2026-04-13</td><td>Fast-SegSim: Real-Time Open-Vocabulary Segmentation for Robotics in Simulation</td><td>[2604.10951](http://arxiv.org/pdf/2604.10951)</td><td>◆ Open-vocabulary panoptic reconstruction is crucial for advanced robotics and simulation.
 ◆ However, existing 3D reconstruction methods, such as NeRF or Gaussian Splatting variants, often struggle to achieve the real-time inference frequency required by robotic control loops.
 ◆ Existing methods incur prohibitive latency when processing the high-dimensional features required for robust open-vocabulary segmentation.</td></tr>
@@ -7840,4 +7870,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.14
+> 更新于: 2026.04.15
