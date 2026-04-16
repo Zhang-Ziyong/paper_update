@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.15)
+# 计算机视觉领域最新论文 (2026.04.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -3173,6 +3173,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
+◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
+◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
+<tr><td>2026-04-14</td><td>Indexing Multimodal Language Models for Large-scale Image Retrieval</td><td>[2604.13268](http://arxiv.org/pdf/2604.13268)</td><td>◆ Multimodal Large Language Models (MLLMs) have demonstrated strong cross-modal reasoning capabilities, yet their potential for vision-only tasks remains underexplored.
+◆ We investigate MLLMs as training-free similarity estimators for instance-level image-to-image retrieval.
+◆ Our approach prompts the model with paired images and converts next-token probabilities into similarity scores, enabling zero-shot re-ranking within large-scale retrieval pipelines.</td></tr>
 <tr><td>2026-04-14</td><td>A Sanity Check on Composed Image Retrieval</td><td>[2604.12904](http://arxiv.org/pdf/2604.12904)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve a target image based on a query composed of a reference image, and a relative caption that specifies the desired modification.
 ◆ Despite the rapid development of CIR models, their performance is not well characterized by existing benchmarks, which inherently contain indeterminate queries degrading the evaluation (i.e., multiple candidate images, rather than solely the target image, meet the query criteria), and have not considered their effectiveness in the context of the multi-round system.
 ◆ Motivated by this, we consider improving the evaluation procedure from two aspects: 1) we introduce FISD, a Fully-Informed Semantically-Diverse benchmark, which employs generative models to precisely control the variables of reference-target image pairs, enabling a more accurate evaluation of CIR methods across six dimensions, without query ambiguity; 2) we propose an automatic multi-round agentic evaluation framework to probe the potential of the existing models in the interactive scenarios.</td></tr>
@@ -5353,6 +5359,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
+◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
+◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
+<tr><td>2026-04-14</td><td>Utilizing Inpainting for Keypoint Detection for Vision-Based Control of Robotic Manipulators</td><td>[2604.13309](http://arxiv.org/pdf/2604.13309)</td><td>◆ In this paper we present a novel visual servoing framework to control a robotic manipulator in the configuration space by using purely natural visual features.
+◆ Our goal is to develop methods that can robustly detect and track natural features or keypoints on robotic manipulators that would be used for vision-based control, especially for scenarios where placing external markers on the robot is not feasible or preferred at runtime.
+◆ For the model training process of our data driven approach, we create a data collection pipeline where we attach ArUco markers along the robot&#x27;s body, label their centers as keypoints, and then utilize an inpainting method to remove the markers and reconstruct the occluded regions.</td></tr>
 <tr><td>2026-04-10</td><td>Multi-task Just Recognizable Difference for Video Coding for Machines: Database, Model, and Coding Application</td><td>[2604.09421](http://arxiv.org/pdf/2604.09421)</td><td>◆ Just Recognizable Difference (JRD) boosts coding efficiency for machine vision through visibility threshold modeling, but is currently limited to a single-task scenario.
 ◆ To address this issue, we propose a Multi-Task JRD (MT-JRD) dataset and an Attribute-assisted MT-JRD (AMT-JRD) model for Video Coding for Machines (VCM), enhancing both prediction accuracy and coding efficiency.
 ◆ First, we construct a dataset comprising 27,264 JRD annotations from machines, supporting three representative tasks including object detection, instance segmentation, and keypoint detection.</td></tr>
@@ -5828,6 +5840,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
+◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
+◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
 <tr><td>2026-04-13</td><td>Who Handles Orientation? Investigating Invariance in Feature Matching</td><td>[2604.11809](http://arxiv.org/pdf/2604.11809)</td><td>◆ Finding matching keypoints between images is a core problem in 3D computer vision.
 ◆ However, modern matchers struggle with large in-plane rotations.
 ◆ A straightforward mitigation is to learn rotation invariance via data augmentation.</td></tr>
@@ -6695,6 +6710,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-14</td><td>PatchPoison: Poisoning Multi-View Datasets to Degrade 3D Reconstruction</td><td>[2604.13153](http://arxiv.org/pdf/2604.13153)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently enabled highly photorealistic 3D reconstruction from casually captured multi-view images.
+◆ However, this accessibility raises a privacy concern: publicly available images or videos can be exploited to reconstruct detailed 3D models of scenes or objects without the owner&#x27;s consent.
+◆ We present PatchPoison, a lightweight dataset-poisoning method that prevents unauthorized 3D reconstruction.</td></tr>
 <tr><td>2026-04-13</td><td>A Geometric Algebra-informed NeRF Framework for Generalizable Wireless Channel Prediction</td><td>[2604.11983](http://arxiv.org/pdf/2604.11983)</td><td>◆ In this paper, we propose the geometric algebra-informed neural radiance fields (GAI-NeRF), a novel framework for wireless channel prediction that leverages geometric algebra attention mechanisms to capture ray-object interactions in complex propagation environments.
 ◆ Our approach incorporates global token representations, drawing inspiration from transformer architectures in language and vision domains, to aggregate learned spatial-electromagnetic features and enhance scene understanding.
 ◆ We identify limitations in conventional static ray tracing modules that hinder model generalization and address this challenge through a new ray tracing architecture.</td></tr>
@@ -7870,4 +7888,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.15
+> 更新于: 2026.04.16
