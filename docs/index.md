@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.16)
+# 计算机视觉领域最新论文 (2026.04.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
+◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
+◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
+<tr><td>2026-04-16</td><td>CAVERS: Multimodal SLAM Data from a Natural Karstic Cave with Ground Truth Motion Capture</td><td>[2604.15052](http://arxiv.org/pdf/2604.15052)</td><td>◆ Autonomous robots operating in natural karstic caves face perception and navigation challenges that are qualitatively distinct from those encountered in mines or tunnels: irregular geometry, reflective wet surfaces, near-zero ambient light, and complex branching passages.
+◆ Yet publicly available datasets targeting this environment remain scarce and offer limited sensing modalities and environmental diversity.
+◆ We present CAVERS, a multimodal dataset acquired in two structurally distinct rooms of Cueva de la Victoria, Málaga, Spain, comprising 24 sequences totaling approximately 335 GB of recorded data.</td></tr>
+<tr><td>2026-04-16</td><td>Keep It CALM: Toward Calibration-Free Kilometer-Level SLAM with Visual Geometry Foundation Models via an Assistant Eye</td><td>[2604.14795](http://arxiv.org/pdf/2604.14795)</td><td>◆ Visual Geometry Foundation Models (VGFMs) demonstrate remarkable zero-shot capabilities in local reconstruction.
+◆ However, deploying them for kilometer-level Simultaneous Localization and Mapping (SLAM) remains challenging.
+◆ In such scenarios, current approaches mainly rely on linear transforms (e.g., Sim3 and SL4) for sub-map alignment, while we argue that a single linear transform is fundamentally insufficient to model the complex, non-linear geometric distortions inherent in VGFM outputs.</td></tr>
+<tr><td>2026-04-16</td><td>A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites</td><td>[2604.14635](http://arxiv.org/pdf/2604.14635)</td><td>◆ We present a curated multi-platform LiDAR reference dataset from an instrumented ICOS forest plot, explicitly designed to support calibration, benchmarking, and integration of 3D structural data with ecological observations and standard allometric models.
+◆ The dataset integrates UAV-borne laser scanning (ULS) to measure canopy coverage, terrestrial laser scanning (TLS) for detailed stem mapping, and backpack mobile laser scanning (MLS) with real-time SLAM for efficient sub-canopy acquisition.
+◆ We focus on the control plot with the most complete and internally consistent registration, where TLS point clouds (~333 million points) are complemented by ULS and MLS data capturing canopy and understory strata.</td></tr>
+<tr><td>2026-04-16</td><td>Geometric Context Transformer for Streaming 3D Reconstruction</td><td>[2604.14141](http://arxiv.org/pdf/2604.14141)</td><td>◆ Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal consistency, and computational efficiency.
+◆ Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introduce LingBot-Map, a feed-forward 3D foundation model for reconstructing scenes from streaming data, built upon a geometric context transformer (GCT) architecture.
+◆ A defining aspect of LingBot-Map lies in its carefully designed attention mechanism, which integrates an anchor context, a pose-reference window, and a trajectory memory to address coordinate grounding, dense geometric cues, and long-range drift correction, respectively.</td></tr>
+<tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
+◆ While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments.
+◆ UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions.</td></tr>
+<tr><td>2026-04-15</td><td>Uplink Single-Snapshot Frugal SLAM in Phase-Coherent Distributed MIMO Systems</td><td>[2604.13807](http://arxiv.org/pdf/2604.13807)</td><td>◆ We consider uplink frugal simultaneous localization and mapping (SLAM) in phase-coherent distributed MIMO (D-MIMO) systems, where a network of spatially separated single-antenna access points (APs) coherently receives narrowband, single-snapshot pilot signals from a single-antenna user equipment (UE).
+◆ In contrast to existing phase-coherent localization and SLAM methods that rely on wideband measurements and/or multi-antenna APs, the proposed frugal setting operates with the minimum possible localization resources: a single subcarrier and a single snapshot at each single-antenna AP.
+◆ In this paper, we formulate phase-coherent frugal SLAM as a coherent imaging problem, constructing a spatial image over a region of interest by treating the distributed AP observations as coming from a large synthetic aperture.</td></tr>
+<tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
+◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
+◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
 <tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
 ◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
 ◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
@@ -2018,6 +2042,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>Geometrically Consistent Multi-View Scene Generation from Freehand Sketches</td><td>[2604.14302](http://arxiv.org/pdf/2604.14302)</td><td>◆ We tackle a new problem: generating geometrically consistent multi-view scenes from a single freehand sketch.
+◆ Freehand sketches are the most geometrically impoverished input one could offer a multi-view generator.
+◆ They convey scene intent through abstract strokes while introducing spatial distortions that actively conflict with any consistent 3D interpretation.</td></tr>
+<tr><td>2026-04-14</td><td>PatchPoison: Poisoning Multi-View Datasets to Degrade 3D Reconstruction</td><td>[2604.13153](http://arxiv.org/pdf/2604.13153)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently enabled highly photorealistic 3D reconstruction from casually captured multi-view images.
+◆ However, this accessibility raises a privacy concern: publicly available images or videos can be exploited to reconstruct detailed 3D models of scenes or objects without the owner&#x27;s consent.
+◆ We present PatchPoison, a lightweight dataset-poisoning method that prevents unauthorized 3D reconstruction.</td></tr>
 <tr><td>2026-04-13</td><td>ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</td><td>[2604.11992](http://arxiv.org/pdf/2604.11992)</td><td>◆ 3D Gaussian Splatting is a powerful visual representation, providing high-quality and efficient 3D scene reconstruction, but it is crucially dependent on accurate camera poses typically obtained from computationally intensive processes like structure-from-motion that are unsuitable for field robot applications.
 ◆ However, in these domains, multimodal sensor data from acoustic, inertial, pressure, and visual sensors are available and suitable for pose-graph optimization-based SLAM methods that can estimate the vehicle&#x27;s trajectory and thus our needed camera poses while providing uncertainty.
 ◆ We propose a 3DGS-based incremental reconstruction framework, ReefMapGS, that builds an initial model from a high certainty region and progressively expands to incorporate the whole scene.</td></tr>
@@ -3173,6 +3203,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>G-MIXER: Geodesic Mixup-based Implicit Semantic Expansion and Explicit Semantic Re-ranking for Zero-Shot Composed Image Retrieval</td><td>[2604.14710](http://arxiv.org/pdf/2604.14710)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images by integrating a reference image with a corresponding modification text.
+◆ CIR requires jointly considering the explicit semantics specified in the query and the implicit semantics embedded within its bi-modal composition.
+◆ Recent training-free Zero-Shot CIR (ZS-CIR) methods leverage Multimodal Large Language Models (MLLMs) to generate detailed target descriptions, converting the implicit information into explicit textual expressions.</td></tr>
 <tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
 ◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
 ◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
@@ -6710,6 +6743,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>Hybrid Latents -- Geometry-Appearance-Aware Surfel Splatting</td><td>[2604.14928](http://arxiv.org/pdf/2604.14928)</td><td>◆ We introduce a hybrid Gaussian-hash-grid radiance representation for reconstructing 2D Gaussian scene models from multi-view images.
+◆ Similar to NeST splatting, our approach reduces the entanglement between geometry and appearance common in NeRF-based models, but adds per-Gaussian latent features alongside hash-grid features to bias the optimizer toward a separation of low- and high-frequency scene components.
+◆ This explicit frequency-based decomposition reduces the tendency of high-frequency texture to compensate for geometric errors.</td></tr>
+<tr><td>2026-04-16</td><td>NG-GS: NeRF-Guided 3D Gaussian Splatting Segmentation</td><td>[2604.14706](http://arxiv.org/pdf/2604.14706)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled highly efficient and photorealistic novel view synthesis.
+◆ However, segmenting objects accurately in 3DGS remains challenging due to the discrete nature of Gaussian representations, which often leads to aliasing and artifacts at object boundaries.
+◆ In this paper, we introduce NG-GS, a novel framework for high-quality object segmentation in 3DGS that explicitly addresses boundary discretization.</td></tr>
 <tr><td>2026-04-14</td><td>PatchPoison: Poisoning Multi-View Datasets to Degrade 3D Reconstruction</td><td>[2604.13153](http://arxiv.org/pdf/2604.13153)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently enabled highly photorealistic 3D reconstruction from casually captured multi-view images.
 ◆ However, this accessibility raises a privacy concern: publicly available images or videos can be exploited to reconstruct detailed 3D models of scenes or objects without the owner&#x27;s consent.
 ◆ We present PatchPoison, a lightweight dataset-poisoning method that prevents unauthorized 3D reconstruction.</td></tr>
@@ -7888,4 +7927,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.16
+> 更新于: 2026.04.17
