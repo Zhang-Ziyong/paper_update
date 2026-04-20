@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.19)
+# 计算机视觉领域最新论文 (2026.04.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Environment-Adaptive Solid-State LiDAR-Inertial Odometry</td><td>[2604.15864](http://arxiv.org/pdf/2604.15864)</td><td>◆ Solid-state LiDAR-inertial SLAM has attracted significant attention due to its advantages in speed and robustness.
+◆ However, achieving accurate mapping in extreme environments remains challenging due to severe geometric degeneracy and unreliable observations, which often lead to ill-conditioned optimization and map inconsistencies.
+◆ To address these challenges, we propose an environment-adaptive solid-state LiDAR-inertial odometry that integrates local normal-vector constraints with degeneracy-aware map maintenance to enhance localization accuracy.</td></tr>
+<tr><td>2026-04-17</td><td>GaussianFlow SLAM: Monocular Gaussian Splatting SLAM Guided by GaussianFlow</td><td>[2604.15612](http://arxiv.org/pdf/2604.15612)</td><td>◆ Gaussian splatting has recently gained traction as a compelling map representation for SLAM systems, enabling dense and photo-realistic scene modeling.
+◆ However, its application to monocular SLAM remains challenging due to the lack of reliable geometric cues from monocular input.
+◆ Without geometric supervision, mapping or tracking could fall in local-minima, resulting in structural degeneracies and inaccuracies.</td></tr>
 <tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
 ◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
 ◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
@@ -3207,6 +3213,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
+◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
+◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
+<tr><td>2026-04-17</td><td>Continual Hand-Eye Calibration for Open-world Robotic Manipulation</td><td>[2604.15814](http://arxiv.org/pdf/2604.15814)</td><td>◆ Hand-eye calibration through visual localization is a critical capability for robotic manipulation in open-world environments.
+◆ However, most deep learning-based calibration models suffer from catastrophic forgetting when adapting into unseen data amongst open-world scene changes, while simple rehearsal-based continual learning strategy cannot well mitigate this issue.
+◆ To overcome this challenge, we propose a continual hand-eye calibration framework, enabling robots to adapt to sequentially encountered open-world manipulation scenes through spatially replay strategy and structure-preserving distillation.</td></tr>
+<tr><td>2026-04-17</td><td>Sketch and Text Synergy: Fusing Structural Contours and Descriptive Attributes for Fine-Grained Image Retrieval</td><td>[2604.15735](http://arxiv.org/pdf/2604.15735)</td><td>◆ Fine-grained image retrieval via hand-drawn sketches or textual descriptions remains a critical challenge due to inherent modality gaps.
+◆ While hand-drawn sketches capture complex structural contours, they lack color and texture, which text effectively provides despite omitting spatial contours.
+◆ Motivated by the complementary nature of these modalities, we propose the Sketch and Text Based Image Retrieval (STBIR) framework.</td></tr>
 <tr><td>2026-04-16</td><td>G-MIXER: Geodesic Mixup-based Implicit Semantic Expansion and Explicit Semantic Re-ranking for Zero-Shot Composed Image Retrieval</td><td>[2604.14710](http://arxiv.org/pdf/2604.14710)</td><td>◆ Composed Image Retrieval (CIR) aims to retrieve target images by integrating a reference image with a corresponding modification text.
 ◆ CIR requires jointly considering the explicit semantics specified in the query and the implicit semantics embedded within its bi-modal composition.
 ◆ Recent training-free Zero-Shot CIR (ZS-CIR) methods leverage Multimodal Large Language Models (MLLMs) to generate detailed target descriptions, converting the implicit information into explicit textual expressions.</td></tr>
@@ -5881,6 +5896,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
+◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
+◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
 <tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
 ◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
 ◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
@@ -6753,7 +6771,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-16</td><td>Hybrid Latents -- Geometry-Appearance-Aware Surfel Splatting</td><td>[2604.14928](http://arxiv.org/pdf/2604.14928)</td><td>◆ We introduce a hybrid Gaussian-hash-grid radiance representation for reconstructing 2D Gaussian scene models from multi-view images.
+<tr><td>2026-04-17</td><td>Hybrid Latents: Geometry-Appearance-Aware Surfel Splatting</td><td>[2604.14928](http://arxiv.org/pdf/2604.14928)</td><td>◆ We introduce a hybrid Gaussian-hash-grid radiance representation for reconstructing 2D Gaussian scene models from multi-view images.
 ◆ Similar to NeST splatting, our approach reduces the entanglement between geometry and appearance common in NeRF-based models, but adds per-Gaussian latent features alongside hash-grid features to bias the optimizer toward a separation of low- and high-frequency scene components.
 ◆ This explicit frequency-based decomposition reduces the tendency of high-frequency texture to compensate for geometric errors.</td></tr>
 <tr><td>2026-04-16</td><td>NG-GS: NeRF-Guided 3D Gaussian Splatting Segmentation</td><td>[2604.14706](http://arxiv.org/pdf/2604.14706)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled highly efficient and photorealistic novel view synthesis.
@@ -7939,4 +7957,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.19
+> 更新于: 2026.04.20
