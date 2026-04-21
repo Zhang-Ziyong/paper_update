@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.20)
+# 计算机视觉领域最新论文 (2026.04.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-19</td><td>CAR-EnKF: A Covariance-Adaptive and Recalibrated Ensemble Kalman Filter Framework</td><td>[2604.17343](http://arxiv.org/pdf/2604.17343)</td><td>◆ The ensemble Kalman filter (EnKF) is widely used for nonlinear and high-dimensional state estimation because it replaces complex covariance propagation with simple ensemble statistics.
+◆ However, conventional EnKF implementations can become overconfident in the presence of measurement nonlinearity.
+◆ The commonly used covariance inflation technique only partially alleviates this issue.</td></tr>
 <tr><td>2026-04-17</td><td>Environment-Adaptive Solid-State LiDAR-Inertial Odometry</td><td>[2604.15864](http://arxiv.org/pdf/2604.15864)</td><td>◆ Solid-state LiDAR-inertial SLAM has attracted significant attention due to its advantages in speed and robustness.
 ◆ However, achieving accurate mapping in extreme environments remains challenging due to severe geometric degeneracy and unreliable observations, which often lead to ill-conditioned optimization and map inconsistencies.
 ◆ To address these challenges, we propose an environment-adaptive solid-state LiDAR-inertial odometry that integrates local normal-vector constraints with degeneracy-aware map maintenance to enhance localization accuracy.</td></tr>
@@ -46,7 +49,7 @@
 <tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
 ◆ While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments.
 ◆ UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions.</td></tr>
-<tr><td>2026-04-15</td><td>Uplink Single-Snapshot Frugal SLAM in Phase-Coherent Distributed MIMO Systems</td><td>[2604.13807](http://arxiv.org/pdf/2604.13807)</td><td>◆ We consider uplink frugal simultaneous localization and mapping (SLAM) in phase-coherent distributed MIMO (D-MIMO) systems, where a network of spatially separated single-antenna access points (APs) coherently receives narrowband, single-snapshot pilot signals from a single-antenna user equipment (UE).
+<tr><td>2026-04-20</td><td>Uplink Single-Snapshot Frugal SLAM in Phase-Coherent Distributed MIMO Systems</td><td>[2604.13807](http://arxiv.org/pdf/2604.13807)</td><td>◆ We consider uplink frugal simultaneous localization and mapping (SLAM) in phase-coherent distributed MIMO (D-MIMO) systems, where a network of spatially separated single-antenna access points (APs) coherently receives narrowband, single-snapshot pilot signals from a single-antenna user equipment (UE).
 ◆ In contrast to existing phase-coherent localization and SLAM methods that rely on wideband measurements and/or multi-antenna APs, the proposed frugal setting operates with the minimum possible localization resources: a single subcarrier and a single snapshot at each single-antenna AP.
 ◆ In this paper, we formulate phase-coherent frugal SLAM as a coherent imaging problem, constructing a spatial image over a region of interest by treating the distributed AP observations as coming from a large synthetic aperture.</td></tr>
 <tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
@@ -2048,6 +2051,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-20</td><td>PCM-NeRF: Probabilistic Camera Modeling for Neural Radiance Fields under Pose Uncertainty</td><td>[2604.17831](http://arxiv.org/pdf/2604.17831)</td><td>◆ Neural surface reconstruction methods typically treat camera poses as fixed values, assuming perfect accuracy from Structure-from-Motion (SfM) systems.
+◆ This assumption breaks down with imperfect pose estimates, leading to distorted or incomplete reconstructions.
+◆ We present PCM-NeRF, a probabilistic framework that augments neural surface reconstruction with per-camera learnable uncertainty, built on top of SG-NeRF.</td></tr>
+<tr><td>2026-04-17</td><td>PoInit-of-View: Poisoning Initialization of Views Transfers Across Multiple 3D Reconstruction Systems</td><td>[2604.16540](http://arxiv.org/pdf/2604.16540)</td><td>◆ Poisoning input views of 3D reconstruction systems has been recently studied.
+◆ However, we identify that existing studies simply backpropagate adversarial gradients through the 3D reconstruction pipeline as a whole, without uncovering the new vulnerability rooted in specific modules of the 3D reconstruction pipeline.
+◆ In this paper, we argue that the structure-from-motion (SfM) initialization, as the geometric core of many widely used reconstruction systems, can be targeted to achieve transferable poisoning effects across diverse 3D reconstruction systems.</td></tr>
 <tr><td>2026-04-15</td><td>Geometrically Consistent Multi-View Scene Generation from Freehand Sketches</td><td>[2604.14302](http://arxiv.org/pdf/2604.14302)</td><td>◆ We tackle a new problem: generating geometrically consistent multi-view scenes from a single freehand sketch.
 ◆ Freehand sketches are the most geometrically impoverished input one could offer a multi-view generator.
 ◆ They convey scene intent through abstract strokes while introducing spatial distortions that actively conflict with any consistent 3D interpretation.</td></tr>
@@ -3209,6 +3218,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-20</td><td>T-REN: Learning Text-Aligned Region Tokens Improves Dense Vision-Language Alignment and Scalability</td><td>[2604.18573](http://arxiv.org/pdf/2604.18573)</td><td>◆ Despite recent progress, vision-language encoders struggle with two core limitations: (1) weak alignment between language and dense vision features, which hurts tasks like open-vocabulary semantic segmentation; and (2) high token counts for fine-grained visual representations, which limits scalability to long videos.
+◆ This work addresses both limitations.
+◆ We propose T-REN (Text-aligned Region Encoder Network), an efficient encoder that maps visual data to a compact set of text-aligned region-level representations (or region tokens).</td></tr>
+<tr><td>2026-04-20</td><td>INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval</td><td>[2604.18051](http://arxiv.org/pdf/2604.18051)</td><td>◆ Composed Image Retrieval (CIR) is a challenging image retrieval paradigm that enables to retrieve target images based on multimodal queries consisting of reference images and modification texts.
+◆ Although substantial progress has been made in recent years, existing methods assume that all samples are correctly matched.
+◆ However, in real-world scenarios, due to high triplet annotation costs, CIR datasets inevitably contain annotation errors, resulting in incorrectly matched triplets.</td></tr>
+<tr><td>2026-04-20</td><td>HABIT: Chrono-Synergia Robust Progressive Learning Framework for Composed Image Retrieval</td><td>[2604.18037](http://arxiv.org/pdf/2604.18037)</td><td>◆ Composed Image Retrieval (CIR) is a flexible image retrieval paradigm that enables users to accurately locate the target image through a multimodal query composed of a reference image and modification text.
+◆ Although this task has demonstrated promising applications in personalized search and recommendation systems, it encounters a severe challenge in practical scenarios known as the Noise Triplet Correspondence (NTC) problem.
+◆ This issue primarily arises from the high cost and subjectivity involved in annotating triplet data.</td></tr>
+<tr><td>2026-04-20</td><td>Brain-Inspired Capture: Evidence-Driven Neuromimetic Perceptual Simulation for Visual Decoding</td><td>[2604.17927](http://arxiv.org/pdf/2604.17927)</td><td>◆ Visual decoding of neurophysiological signals is a critical challenge for brain-computer interfaces (BCIs) and computational neuroscience.
+◆ However, current approaches are often constrained by the systematic and stochastic gaps between neural and visual modalities, largely neglecting the intrinsic computational mechanisms of the Human Visual System (HVS).
+◆ To address this, we propose Brain-Inspired Capture (BI-Cap), a neuromimetic perceptual simulation paradigm that aligns these modalities by emulating HVS processing.</td></tr>
+<tr><td>2026-04-20</td><td>ReTrack: Evidence-Driven Dual-Stream Directional Anchor Calibration Network for Composed Video Retrieval</td><td>[2604.17898](http://arxiv.org/pdf/2604.17898)</td><td>◆ With the rapid growth of video data, Composed Video Retrieval (CVR) has emerged as a novel paradigm in video retrieval and is receiving increasing attention from researchers.
+◆ Unlike unimodal video retrieval methods, the CVR task takes a multi-modal query consisting of a reference video and a piece of modification text as input.
+◆ The modification text conveys the user&#x27;s intended alterations to the reference video.</td></tr>
+<tr><td>2026-04-20</td><td>Subject-Aware Multi-Granularity Alignment for Zero-Shot EEG-to-Image Retrieval</td><td>[2604.17782](http://arxiv.org/pdf/2604.17782)</td><td>◆ Zero-shot EEG-to-image retrieval aims to decode perceived visual content from electroencephalography (EEG) by aligning neural responses with pretrained visual representations, providing a promising route toward scalable visual neural decoding and practical brain-computer interfaces.
+◆ However, robust EEG-to-image retrieval remains challenging, because prior methods usually rely on either a single fixed visual target or a subject-invariant target construction scheme.
+◆ Such designs overlook two important properties of visually evoked EEG signals: they preserve information across multiple representational scales, and the visual granularity best matched to EEG may vary across subjects.</td></tr>
+<tr><td>2026-04-18</td><td>mEOL: Training-Free Instruction-Guided Multimodal Embedder for Vector Graphics and Image Retrieval</td><td>[2604.17054](http://arxiv.org/pdf/2604.17054)</td><td>◆ Scalable Vector Graphics (SVGs) function both as visual images and as structured code that encode rich geometric and layout information, yet most methods rasterize them and discard this symbolic organization.
+◆ At the same time, recent sentence embedding methods produce strong text representations but do not naturally extend to visual or structured modalities.
+◆ We propose a training-free, instruction-guided multimodal embedding framework that uses a Multimodal Large Language Model (MLLM) to map text, raster images, and SVG code into an aligned embedding space.</td></tr>
+<tr><td>2026-04-18</td><td>KIRA: Knowledge-Intensive Image Retrieval and Reasoning Architecture for Specialized Visual Domains</td><td>[2604.16915](http://arxiv.org/pdf/2604.16915)</td><td>◆ Retrieval augmented generation (RAG) has transformed text based question answering, yet its extension to visual domains remains hindered by fundamental challenges: bridging the modality gap between image queries and text heavy knowledge bases, constructing semantically meaningful visual knowledge bases, performing multihop reasoning over retrieved images, and verifying that generated answers are faithfully grounded in visual evidence.
+◆ We present KIRA (Knowledge Intensive Image Retrieval and Reasoning Architecture), a unified five stage framework that addresses ten core problems in visual RAG for specialized domains.
+◆ KIRA introduces: (1) hierarchical semantic chunking with DINO based region detection for multi granularity knowledge base construction, (2) domain adaptive contrastive encoders with fewshot adaptation for rare visual concepts, (3) dualpath crossmodal retrieval with chainOfThought query expansion, (4) chainOfRetrieval for multihop visual reasoning with temporal and multiview support, and (5) evidence conditioned grounded generation with posthoc hallucination verification.</td></tr>
 <tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
 ◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
 ◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
@@ -5407,6 +5440,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-19</td><td>HyKey: Hyperspectral Keypoint Detection and Matching in Minimally Invasive Surgery</td><td>[2604.17446](http://arxiv.org/pdf/2604.17446)</td><td>◆ Purpose: 3D reconstruction in minimally invasive surgery (MIS) enables enhanced surgical guidance through improved visualisation, tool tracking, and augmented reality.
+◆ However, traditional RGB-based keypoint detection and matching pipelines struggle with surgical challenges, such as poor texture and complex illumination.
+◆ We investigate whether using snapshot hyperspectral imaging (HSI) can provide improved results on keypoint detection and matching surgical scenes.</td></tr>
+<tr><td>2026-04-18</td><td>Adaptive receptive field-based spatial-frequency feature reconstruction network for few-shot fine-grained image classification</td><td>[2604.16936](http://arxiv.org/pdf/2604.16936)</td><td>◆ Feature reconstruction techniques are widely applied for few-shot fine-grained image classification (FSFGIC).
+◆ Our research indicates that one of the main challenges facing existing feature-based FSFGIC methods is how to choose the size of the receptive field to extract feature descriptors (including spatial and frequency feature descriptors) from different category input images, thereby better performing the FSFGIC tasks.
+◆ To address this, an adaptive receptive field-based spatial-frequency feature reconstruction network (ARF-SFR-Net) is proposed.</td></tr>
+<tr><td>2026-04-17</td><td>PoInit-of-View: Poisoning Initialization of Views Transfers Across Multiple 3D Reconstruction Systems</td><td>[2604.16540](http://arxiv.org/pdf/2604.16540)</td><td>◆ Poisoning input views of 3D reconstruction systems has been recently studied.
+◆ However, we identify that existing studies simply backpropagate adversarial gradients through the 3D reconstruction pipeline as a whole, without uncovering the new vulnerability rooted in specific modules of the 3D reconstruction pipeline.
+◆ In this paper, we argue that the structure-from-motion (SfM) initialization, as the geometric core of many widely used reconstruction systems, can be targeted to achieve transferable poisoning effects across diverse 3D reconstruction systems.</td></tr>
 <tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
 ◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
 ◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
@@ -6761,6 +6803,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-20</td><td>A Comparative Evaluation of Geometric Accuracy in NeRF and Gaussian Splatting</td><td>[2604.18205](http://arxiv.org/pdf/2604.18205)</td><td>◆ Recent advances in neural rendering have introduced numerous 3D scene representations.
+◆ Although standard computer vision metrics evaluate the visual quality of generated images, they often overlook the fidelity of surface geometry.
+◆ This limitation is particularly critical in robotics, where accurate geometry is essential for tasks such as grasping and object manipulation.</td></tr>
+<tr><td>2026-04-20</td><td>MU-GeNeRF: Multi-view Uncertainty-guided Generalizable Neural Radiance Fields for Distractor-aware Scene</td><td>[2604.17965](http://arxiv.org/pdf/2604.17965)</td><td>◆ Generalizable Neural Radiance Fields (GeNeRFs) enable high-quality scene reconstruction from sparse views and can generalize to unseen scenes.
+◆ However, in real-world settings, transient distractors break cross-view structural consistency, corrupting supervision and degrading reconstruction quality.
+◆ Existing distractor-free NeRF methods rely on per-scene optimization and estimate uncertainty from per-view reconstruction errors, which are not reliable for GeNeRFs and often misjudge inconsistent static structures as distractors.</td></tr>
+<tr><td>2026-04-20</td><td>PCM-NeRF: Probabilistic Camera Modeling for Neural Radiance Fields under Pose Uncertainty</td><td>[2604.17831](http://arxiv.org/pdf/2604.17831)</td><td>◆ Neural surface reconstruction methods typically treat camera poses as fixed values, assuming perfect accuracy from Structure-from-Motion (SfM) systems.
+◆ This assumption breaks down with imperfect pose estimates, leading to distorted or incomplete reconstructions.
+◆ We present PCM-NeRF, a probabilistic framework that augments neural surface reconstruction with per-camera learnable uncertainty, built on top of SG-NeRF.</td></tr>
+<tr><td>2026-04-17</td><td>Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting</td><td>[2604.16747](http://arxiv.org/pdf/2604.16747)</td><td>◆ Dynamic 3D Gaussian Splatting methods achieve strong training-view PSNR on monocular video but generalize poorly: on the D-NeRF benchmark we measure an average train-test PSNR gap of 6.18 dB, rising to 11 dB on individual scenes.
+◆ We report two findings that together account for most of that gap.
+◆ Finding 1 (the role of splitting).</td></tr>
+<tr><td>2026-04-17</td><td>PoInit-of-View: Poisoning Initialization of Views Transfers Across Multiple 3D Reconstruction Systems</td><td>[2604.16540](http://arxiv.org/pdf/2604.16540)</td><td>◆ Poisoning input views of 3D reconstruction systems has been recently studied.
+◆ However, we identify that existing studies simply backpropagate adversarial gradients through the 3D reconstruction pipeline as a whole, without uncovering the new vulnerability rooted in specific modules of the 3D reconstruction pipeline.
+◆ In this paper, we argue that the structure-from-motion (SfM) initialization, as the geometric core of many widely used reconstruction systems, can be targeted to achieve transferable poisoning effects across diverse 3D reconstruction systems.</td></tr>
 <tr><td>2026-04-17</td><td>Hybrid Latents: Geometry-Appearance-Aware Surfel Splatting</td><td>[2604.14928](http://arxiv.org/pdf/2604.14928)</td><td>◆ We introduce a hybrid Gaussian-hash-grid radiance representation for reconstructing 2D Gaussian scene models from multi-view images.
 ◆ Similar to NeST splatting, our approach reduces the entanglement between geometry and appearance common in NeRF-based models, but adds per-Gaussian latent features alongside hash-grid features to bias the optimizer toward a separation of low- and high-frequency scene components.
 ◆ This explicit frequency-based decomposition reduces the tendency of high-frequency texture to compensate for geometric errors.</td></tr>
@@ -7945,4 +8002,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.20
+> 更新于: 2026.04.21
