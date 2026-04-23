@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.22)
+# 计算机视觉领域最新论文 (2026.04.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
+◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
+◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
+<tr><td>2026-04-21</td><td>Super Apriel: One Checkpoint, Many Speeds</td><td>[2604.19877](http://arxiv.org/pdf/2604.19877)</td><td>◆ We release Super Apriel, a 15B-parameter supernet in which every decoder layer provides four trained mixer choices -- Full Attention (FA), Sliding Window Attention (SWA), Kimi Delta Attention (KDA), and Gated DeltaNet (GDN).
+◆ A placement selects one mixer per layer; placements can be switched between requests at serving time without reloading weights, enabling multiple speed presets from a single checkpoint.
+◆ The shared checkpoint also enables speculative decoding without a separate draft model.</td></tr>
+<tr><td>2026-04-21</td><td>Coherent Direct Multipath SLAM</td><td>[2604.19723](http://arxiv.org/pdf/2604.19723)</td><td>◆ Challenging indoor and urban environments with severe multipath propagation and obstructed LoS (OLoS) degrade classical radio frequency (RF) positioning.
+◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising remedy, building and exploiting a map of the propagation environment to enhance the robustness.
+◆ Emerging distributed multiple-input multiple-output (D-MIMO)/extremely large-scale MIMO (XL-MIMO) infrastructures, with single XL antenna arrays or distributed subarrays, offer large spatial apertures and enable high-resolution sensing, in particular when phase coherence is maintained across base stations (BSs), subarrays, or distributed arrays.</td></tr>
+<tr><td>2026-04-20</td><td>Feasibility of Indoor Frame-Wise Lidar Semantic Segmentation via Distillation from Visual Foundation Model</td><td>[2604.18831](http://arxiv.org/pdf/2604.18831)</td><td>◆ Frame-wise semantic segmentation of indoor lidar scans is a fundamental step toward higher-level 3D scene understanding and mapping applications.
+◆ However, acquiring frame-wise ground truth for training deep learning models is costly and time-consuming.
+◆ This challenge is largely addressed, for imagery, by Visual Foundation Models (VFMs) which segment image frames.</td></tr>
 <tr><td>2026-04-19</td><td>CAR-EnKF: A Covariance-Adaptive and Recalibrated Ensemble Kalman Filter Framework</td><td>[2604.17343](http://arxiv.org/pdf/2604.17343)</td><td>◆ The ensemble Kalman filter (EnKF) is widely used for nonlinear and high-dimensional state estimation because it replaces complex covariance propagation with simple ensemble statistics.
 ◆ However, conventional EnKF implementations can become overconfident in the presence of measurement nonlinearity.
 ◆ The commonly used covariance inflation technique only partially alleviates this issue.</td></tr>
@@ -2053,6 +2065,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>BALTIC: A Benchmark and Cross-Domain Strategy for 3D Reconstruction Across Air and Underwater Domains Under Varying Illumination</td><td>[2604.19133](http://arxiv.org/pdf/2604.19133)</td><td>◆ Robust 3D reconstruction across varying environmental conditions remains a critical challenge for robotic perception, particularly when transitioning between air and water.
+◆ To address this, we introduce BALTIC, a controlled benchmark designed to systematically evaluate modern 3D reconstruction methods under variations in medium and lighting.
+◆ The benchmark comprises 13 datasets spanning two media (air and water) and three lighting conditions (ambient, artificial, and mixed), with additional variations in motion type, scanning pattern, and initialization trajectory, resulting in a diverse set of sequences.</td></tr>
 <tr><td>2026-04-20</td><td>PCM-NeRF: Probabilistic Camera Modeling for Neural Radiance Fields under Pose Uncertainty</td><td>[2604.17831](http://arxiv.org/pdf/2604.17831)</td><td>◆ Neural surface reconstruction methods typically treat camera poses as fixed values, assuming perfect accuracy from Structure-from-Motion (SfM) systems.
 ◆ This assumption breaks down with imperfect pose estimates, leading to distorted or incomplete reconstructions.
 ◆ We present PCM-NeRF, a probabilistic framework that augments neural surface reconstruction with per-camera learnable uncertainty, built on top of SG-NeRF.</td></tr>
@@ -3222,6 +3237,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-22</td><td>ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval</td><td>[2604.20358](http://arxiv.org/pdf/2604.20358)</td><td>◆ The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations.
+◆ This paper systematically investigates the Noisy Triplet Correspondence (NTC) problem introduced by annotations.
+◆ We find that NTC noise, particularly ``hard noise&#x27;&#x27; (i.e., the reference and target images are highly similar but the modification text is incorrect), poses a unique challenge to existing Noise Correspondence Learning (NCL) methods because it breaks the traditional ``small loss hypothesis&#x27;&#x27;.</td></tr>
+<tr><td>2026-04-22</td><td>UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval</td><td>[2604.20318](http://arxiv.org/pdf/2604.20318)</td><td>◆ Composed image retrieval, multi-turn composed image retrieval, and composed video retrieval all share a common paradigm: composing the reference visual with modification text to retrieve the desired target.
+◆ Despite this shared structure, the three tasks have been studied in isolation, with no prior work proposing a unified framework, let alone a zero-shot solution.
+◆ In this paper, we propose UniCVR, the first unified zero-shot composed visual retrieval framework that jointly addresses all three tasks without any task-specific human-annotated data.</td></tr>
+<tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
+◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
+◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
+<tr><td>2026-04-22</td><td>Air-Know: Arbiter-Calibrated Knowledge-Internalizing Robust Network for Composed Image Retrieval</td><td>[2604.19386](http://arxiv.org/pdf/2604.19386)</td><td>◆ Composed Image Retrieval (CIR) has attracted significant attention due to its flexible multimodal query method, yet its development is severely constrained by the Noisy Triplet Correspondence (NTC) problem.
+◆ Most existing robust learning methods rely on the &quot;small loss hypothesis&quot;, but the unique semantic ambiguity in NTC, such as &quot;partial matching&quot;, invalidates this assumption, leading to unreliable noise identification.
+◆ This entraps the model in a self dependent vicious cycle where the learner is intertwined with the arbiter, ultimately causing catastrophic &quot;representation pollution&quot;.</td></tr>
 <tr><td>2026-04-20</td><td>T-REN: Learning Text-Aligned Region Tokens Improves Dense Vision-Language Alignment and Scalability</td><td>[2604.18573](http://arxiv.org/pdf/2604.18573)</td><td>◆ Despite recent progress, vision-language encoders struggle with two core limitations: (1) weak alignment between language and dense vision features, which hurts tasks like open-vocabulary semantic segmentation; and (2) high token counts for fine-grained visual representations, which limits scalability to long videos.
 ◆ This work addresses both limitations.
 ◆ We propose T-REN (Text-aligned Region Encoder Network), an efficient encoder that maps visual data to a compact set of text-aligned region-level representations (or region tokens).</td></tr>
@@ -5938,6 +5965,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-22</td><td>MAPRPose: Mask-Aware Proposal and Amodal Refinement for Multi-Object 6D Pose Estimation</td><td>[2604.20650](http://arxiv.org/pdf/2604.20650)</td><td>◆ 6D object pose estimation in cluttered scenes remains challenging due to severe occlusion and sensor noise.
+◆ We propose MAPRPose, a two-stage framework that leverages mask-aware correspondences for pose proposal and amodal-driven Region-of-Interest (ROI) prediction for robust refinement.
+◆ In the Mask-Aware Pose Proposal (MAPP) stage, we lift 2D correspondences into 3D space to establish reliable keypoint matches and generate geometrically consistent pose hypotheses based on correspondence-level scoring, from which the top-$K$ candidates are selected.</td></tr>
 <tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
 ◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
 ◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
@@ -6813,6 +6843,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>OT-UVGS: Revisiting UV Mapping for Gaussian Splatting as a Capacity Allocation Problem</td><td>[2604.19127](http://arxiv.org/pdf/2604.19127)</td><td>◆ UV-parameterized Gaussian Splatting (UVGS) maps an unstructured set of 3D Gaussians to a regular UV tensor, enabling compact storage and explicit control of representation capacity.
+◆ Existing UVGS, however, uses a deterministic spherical pro- jection to assign Gaussians to UV locations.
+◆ Because this mapping ignores the global Gaussian distribution, it often leaves many UV slots empty while causing frequent collisions in dense regions.</td></tr>
 <tr><td>2026-04-20</td><td>A Comparative Evaluation of Geometric Accuracy in NeRF and Gaussian Splatting</td><td>[2604.18205](http://arxiv.org/pdf/2604.18205)</td><td>◆ Recent advances in neural rendering have introduced numerous 3D scene representations.
 ◆ Although standard computer vision metrics evaluate the visual quality of generated images, they often overlook the fidelity of surface geometry.
 ◆ This limitation is particularly critical in robotics, where accurate geometry is essential for tasks such as grasping and object manipulation.</td></tr>
@@ -8014,4 +8047,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.22
+> 更新于: 2026.04.23
