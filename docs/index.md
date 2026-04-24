@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.23)
+# 计算机视觉领域最新论文 (2026.04.24)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>SLAM as a Stochastic Control Problem with Partial Information: Optimal Solutions and Rigorous Approximations</td><td>[2604.21693](http://arxiv.org/pdf/2604.21693)</td><td>◆ Simultaneous localization and mapping (SLAM) is a foundational state estimation problem in robotics in which a robot accurately constructs a map of its environment while also localizing itself within this construction.
+◆ We study the active SLAM problem through the lens of optimal stochastic control, thereby recasting it as a decision-making problem under partial information.
+◆ After reviewing several commonly studied models, we present a general stochastic control formulation of active SLAM together with a rigorous treatment of motion, sensing, and map representation.</td></tr>
 <tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
 ◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
 ◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
@@ -3233,6 +3236,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>TEMA: Anchor the Image, Follow the Text for Multi-Modification Composed Image Retrieval</td><td>[2604.21806](http://arxiv.org/pdf/2604.21806)</td><td>◆ Composed Image Retrieval (CIR) is an important image retrieval paradigm that enables users to retrieve a target image using a multimodal query that consists of a reference image and modification text.
+◆ Although research on CIR has made significant progress, prevailing setups still rely simple modification texts that typically cover only a limited range of salient changes, which induces two limitations highly relevant to practical applications, namely Insufficient Entity Coverage and Clause-Entity Misalignment.
+◆ In order to address these issues and bring CIR closer to real-world use, we construct two instruction-rich multi-modification datasets, M-FashionIQ and M-CIRR.</td></tr>
 <tr><td>2026-04-22</td><td>ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval</td><td>[2604.20358](http://arxiv.org/pdf/2604.20358)</td><td>◆ The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations.
 ◆ This paper systematically investigates the Noisy Triplet Correspondence (NTC) problem introduced by annotations.
 ◆ We find that NTC noise, particularly ``hard noise&#x27;&#x27; (i.e., the reference and target images are highly similar but the modification text is incorrect), poses a unique challenge to existing Noise Correspondence Learning (NCL) methods because it breaks the traditional ``small loss hypothesis&#x27;&#x27;.</td></tr>
@@ -5467,6 +5473,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>EdgeFormer: local patch-based edge detection transformer on point clouds</td><td>[2604.21387](http://arxiv.org/pdf/2604.21387)</td><td>◆ Edge points on 3D point clouds can clearly convey 3D geometry and surface characteristics, therefore, edge detection is widely used in many vision applications with high industrial and commercial demands.
+◆ However, the fine-grained edge features are difficult to detect effectively as they are generally densely distributed or exhibit small-scale surface gradients.
+◆ To address this issue, we present a learning-based edge detection network, named EdgeFormer, which mainly consists of two stages.</td></tr>
 <tr><td>2026-04-19</td><td>HyKey: Hyperspectral Keypoint Detection and Matching in Minimally Invasive Surgery</td><td>[2604.17446](http://arxiv.org/pdf/2604.17446)</td><td>◆ Purpose: 3D reconstruction in minimally invasive surgery (MIS) enables enhanced surgical guidance through improved visualisation, tool tracking, and augmented reality.
 ◆ However, traditional RGB-based keypoint detection and matching pipelines struggle with surgical challenges, such as poor texture and complex illumination.
 ◆ We investigate whether using snapshot hyperspectral imaging (HSI) can provide improved results on keypoint detection and matching surgical scenes.</td></tr>
@@ -6833,6 +6842,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>DualSplat: Robust 3D Gaussian Splatting via Pseudo-Mask Bootstrapping from Reconstruction Failures</td><td>[2604.21631](http://arxiv.org/pdf/2604.21631)</td><td>◆ While 3D Gaussian Splatting (3DGS) achieves real-time photorealistic rendering, its performance degrades significantly when training images contain transient objects that violate multi-view consistency.
+◆ Existing methods face a circular dependency: accurate transient detection requires a well-reconstructed static scene, while clean reconstruction itself depends on reliable transient masks.
+◆ We address this challenge with DualSplat, a Failure-to-Prior framework that converts first-pass reconstruction failures into explicit priors for a second reconstruction stage.</td></tr>
 <tr><td>2026-04-21</td><td>OT-UVGS: Revisiting UV Mapping for Gaussian Splatting as a Capacity Allocation Problem</td><td>[2604.19127](http://arxiv.org/pdf/2604.19127)</td><td>◆ UV-parameterized Gaussian Splatting (UVGS) maps an unstructured set of 3D Gaussians to a regular UV tensor, enabling compact storage and explicit control of representation capacity.
 ◆ Existing UVGS, however, uses a deterministic spherical pro- jection to assign Gaussians to UV locations.
 ◆ Because this mapping ignores the global Gaussian distribution, it often leaves many UV slots empty while causing frequent collisions in dense regions.</td></tr>
@@ -8035,4 +8047,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.23
+> 更新于: 2026.04.24
