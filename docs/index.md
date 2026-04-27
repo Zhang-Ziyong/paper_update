@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.26)
+# 计算机视觉领域最新论文 (2026.04.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>Railway Artificial Intelligence Learning Benchmark (RAIL-BENCH): A Benchmark Suite for Perception in the Railway Domain</td><td>[2604.22507](http://arxiv.org/pdf/2604.22507)</td><td>◆ Automated train operation on existing railway infrastructure requires robust camera-based perception, yet the railway domain lacks public benchmark suites with standardized evaluation protocols that would enable reproducible comparison of approaches.
+◆ We present RAIL-BENCH, the first perception benchmark suite for the railway domain.
+◆ It comprises five challenges - rail track detection, object detection, vegetation segmentation, multi-object tracking, and monocular visual odometry - each tailored to the specific characteristics of railway environments.</td></tr>
+<tr><td>2026-04-24</td><td>Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond</td><td>[2604.22482](http://arxiv.org/pdf/2604.22482)</td><td>◆ While feed-forward 3D reconstruction models have advanced rapidly, they still exhibit degraded performance on panoramas due to spherical distortions.
+◆ Moreover, existing panoramic 3D datasets are predominantly collected with 360 cameras fixed at discrete locations, resulting in discontinuous trajectories.
+◆ These limitations critically hinder the development of panoramic feed-forward 3D reconstruction, especially for the multi-view setting.</td></tr>
+<tr><td>2026-04-24</td><td>PoseFM: Relative Camera Pose Estimation Through Flow Matching</td><td>[2604.22350](http://arxiv.org/pdf/2604.22350)</td><td>◆ Monocular visual odometry (VO) is a fundamental computer vision problem with applications in autonomous navigation, augmented reality and more.
+◆ While deep learning-based methods have recently shown superior accuracy compared to traditional geometric pipelines, particularly in environments where handcrafted features struggle due to poor structure or lighting conditions, most rely on deterministic regression, which lacks the uncertainty awareness required for robust applications.
+◆ We propose PoseFM, the first framework to reformulate monocular frame-to-frame VO as a generative task using Flow Matching (FM).</td></tr>
+<tr><td>2026-04-24</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
+◆ Recent research combines 3D Gaussian Splatting (3DGS) with SLAM to achieve both robust camera pose estimation and photorealistic renderings.
+◆ However, using SLAM to efficiently reconstruct both static and dynamic regions remains challenging.</td></tr>
+<tr><td>2026-04-23</td><td>Robust Camera-to-Mocap Calibration and Verification for Large-Scale Multi-Camera Data Capture</td><td>[2604.22118](http://arxiv.org/pdf/2604.22118)</td><td>◆ Optical motion capture (mocap) systems are widely used for ground-truth capture in AR/VR, SLAM and robotics datasets.
+◆ These datasets require extrinsic calibration to align mocap coordinates to external camera frames -- a step that is subject to multiple sources of error in practice, and failures often go undetected until they corrupt downstream data.
+◆ These issues are compounded for fisheye cameras, where spatially non-uniform distortion makes both calibration and verification more challenging.</td></tr>
+<tr><td>2026-04-23</td><td>SNGR: Selective Non-Gaussian Refinement for Ambiguous SLAM Factor Graphs</td><td>[2604.22065](http://arxiv.org/pdf/2604.22065)</td><td>◆ We present Selective Non-Gaussian Refinement (SNGR), a SLAM framework that augments iSAM2 with targeted nested sampling on windows where Gaussian approximations are likely to fail.
+◆ We detect such regions using the condition number of joint marginal covariances and selectively refine them using the full nonlinear factor graph likelihood, with a gating mechanism to avoid degradation in multimodal cases.
+◆ Experiments on range-only SLAM with wrong data association show that SNGR achieves high-precision failure detection and consistent local likelihood improvements while reducing computational cost relative to exhaustive non-Gaussian inference.</td></tr>
 <tr><td>2026-04-23</td><td>SLAM as a Stochastic Control Problem with Partial Information: Optimal Solutions and Rigorous Approximations</td><td>[2604.21693](http://arxiv.org/pdf/2604.21693)</td><td>◆ Simultaneous localization and mapping (SLAM) is a foundational state estimation problem in robotics in which a robot accurately constructs a map of its environment while also localizing itself within this construction.
 ◆ We study the active SLAM problem through the lens of optimal stochastic control, thereby recasting it as a decision-making problem under partial information.
 ◆ After reviewing several commonly studied models, we present a general stochastic control formulation of active SLAM together with a rigorous treatment of motion, sensing, and map representation.</td></tr>
@@ -2066,6 +2084,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>SS3D: End2End Self-Supervised 3D from Web Videos</td><td>[2604.22686](http://arxiv.org/pdf/2604.22686)</td><td>◆ We present SS3D, a web-scale SfM-based self-supervision pretraining pipeline for feed-forward 3D estimation from monocular video.
+◆ Our model jointly predicts depth, ego-motion, and intrinsics in a single forward pass and is trained/evaluated as a coherent end-to-end 3D estimator.
+◆ To stabilize joint learning, we use an intrinsics-first two-stage schedule and a unified single-checkpoint evaluation protocol.</td></tr>
+<tr><td>2026-04-24</td><td>ArchSym: Detecting 3D-Grounded Architectural Symmetries in the Wild</td><td>[2604.22202](http://arxiv.org/pdf/2604.22202)</td><td>◆ Symmetry detection is a fundamental problem in computer vision, and symmetries serve as powerful priors for downstream tasks.
+◆ However, existing learning-based methods for detecting 3D symmetries from single images have been almost exclusively trained and evaluated on object-centric or synthetic datasets, and thus fail to generalize to real-world scenes.
+◆ Furthermore, due to the inherent scale ambiguity of monocular inputs, which makes localizing the 3D plane an ill-posed problem, many existing works only predict the plane&#x27;s orientation.</td></tr>
+<tr><td>2026-04-24</td><td>GenMatter: Perceiving Physical Objects with Generative Matter Models</td><td>[2604.22160](http://arxiv.org/pdf/2604.22160)</td><td>◆ Human visual perception offers valuable insights for understanding computational principles of motion-based scene interpretation.
+◆ Humans robustly detect and segment moving entities that constitute independently moveable chunks of matter, whether observing sparse moving dots, textured surfaces, or naturalistic scenes.
+◆ In contrast, existing computer vision systems lack a unified approach that works across these diverse settings.</td></tr>
 <tr><td>2026-04-21</td><td>BALTIC: A Benchmark and Cross-Domain Strategy for 3D Reconstruction Across Air and Underwater Domains Under Varying Illumination</td><td>[2604.19133](http://arxiv.org/pdf/2604.19133)</td><td>◆ Robust 3D reconstruction across varying environmental conditions remains a critical challenge for robotic perception, particularly when transitioning between air and water.
 ◆ To address this, we introduce BALTIC, a controlled benchmark designed to systematically evaluate modern 3D reconstruction methods under variations in medium and lighting.
 ◆ The benchmark comprises 13 datasets spanning two media (air and water) and three lighting conditions (ambient, artificial, and mixed), with additional variations in motion type, scanning pattern, and initialization trajectory, resulting in a diverse set of sequences.</td></tr>
@@ -3236,7 +3263,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-23</td><td>TEMA: Anchor the Image, Follow the Text for Multi-Modification Composed Image Retrieval</td><td>[2604.21806](http://arxiv.org/pdf/2604.21806)</td><td>◆ Composed Image Retrieval (CIR) is an important image retrieval paradigm that enables users to retrieve a target image using a multimodal query that consists of a reference image and modification text.
+<tr><td>2026-04-24</td><td>Region Matters: Efficient and Reliable Region-Aware Visual Place Recognition</td><td>[2604.22390](http://arxiv.org/pdf/2604.22390)</td><td>◆ Visual Place Recognition (VPR) determines a query image&#x27;s geographic location by matching it against geotagged databases.
+◆ However, existing methods struggle with perceptual aliasing caused by irrelevant regions and inefficient re-ranking due to rigid candidate scheduling.
+◆ To address these issues, we introduce FoL++, a method combining robust discriminative region modeling with adaptive re-ranking.</td></tr>
+<tr><td>2026-04-24</td><td>Revisiting Geometric Obfuscation with Dual Convergent Lines for Privacy-Preserving Image Queries in Visual Localization</td><td>[2604.22310](http://arxiv.org/pdf/2604.22310)</td><td>◆ Privacy-Preserving Image Queries (PPIQ) are an emerging mechanism for cloud-based visual localization, enabling pose estimation from obfuscated features instead of private images or raw keypoints.
+◆ However, the main approaches for PPIQ, primarily geometry-based and segmentation-based obfuscation, both suffer from vulnerabilities to recent privacy attacks.
+◆ In particular, a fundamental limitation of geometry-based obfuscation is that the spatial distribution of obfuscated neighboring lines still effectively surrounds the original keypoint location, providing exploitable cues for recovering the original points.</td></tr>
+<tr><td>2026-04-24</td><td>TEMA: Anchor the Image, Follow the Text for Multi-Modification Composed Image Retrieval</td><td>[2604.21806](http://arxiv.org/pdf/2604.21806)</td><td>◆ Composed Image Retrieval (CIR) is an important image retrieval paradigm that enables users to retrieve a target image using a multimodal query that consists of a reference image and modification text.
 ◆ Although research on CIR has made significant progress, prevailing setups still rely simple modification texts that typically cover only a limited range of salient changes, which induces two limitations highly relevant to practical applications, namely Insufficient Entity Coverage and Clause-Entity Misalignment.
 ◆ In order to address these issues and bring CIR closer to real-world use, we construct two instruction-rich multi-modification datasets, M-FashionIQ and M-CIRR.</td></tr>
 <tr><td>2026-04-22</td><td>ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval</td><td>[2604.20358](http://arxiv.org/pdf/2604.20358)</td><td>◆ The Composed Image Retrieval (CIR) task provides a flexible retrieval paradigm via a reference image and modification text, but it heavily relies on expensive and error-prone triplet annotations.
@@ -5966,6 +5999,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>ArchSym: Detecting 3D-Grounded Architectural Symmetries in the Wild</td><td>[2604.22202](http://arxiv.org/pdf/2604.22202)</td><td>◆ Symmetry detection is a fundamental problem in computer vision, and symmetries serve as powerful priors for downstream tasks.
+◆ However, existing learning-based methods for detecting 3D symmetries from single images have been almost exclusively trained and evaluated on object-centric or synthetic datasets, and thus fail to generalize to real-world scenes.
+◆ Furthermore, due to the inherent scale ambiguity of monocular inputs, which makes localizing the 3D plane an ill-posed problem, many existing works only predict the plane&#x27;s orientation.</td></tr>
 <tr><td>2026-04-22</td><td>MAPRPose: Mask-Aware Proposal and Amodal Refinement for Multi-Object 6D Pose Estimation</td><td>[2604.20650](http://arxiv.org/pdf/2604.20650)</td><td>◆ 6D object pose estimation in cluttered scenes remains challenging due to severe occlusion and sensor noise.
 ◆ We propose MAPRPose, a two-stage framework that leverages mask-aware correspondences for pose proposal and amodal-driven Region-of-Interest (ROI) prediction for robust refinement.
 ◆ In the Mask-Aware Pose Proposal (MAPP) stage, we lift 2D correspondences into 3D space to establish reliable keypoint matches and generate geometrically consistent pose hypotheses based on correspondence-level scoring, from which the top-$K$ candidates are selected.</td></tr>
@@ -8047,4 +8083,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.26
+> 更新于: 2026.04.27
