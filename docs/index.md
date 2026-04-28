@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.27)
+# 计算机视觉领域最新论文 (2026.04.28)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
+◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
+◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
+<tr><td>2026-04-27</td><td>OpenPodcar2: a robust, ROS2 vehicle for self-driving research</td><td>[2604.24242](http://arxiv.org/pdf/2604.24242)</td><td>◆ OpenPodcar2 is a robust, ROS2-interfaced, low-cost, open source hardware and software, autonomous vehicle platform based on an off-the-shelf, hard-canopy, mobility scooter donor vehicle.
+◆ It is a modification of the previous OpenPodcar design, which extends it with robust electronics and ROS2 interfacing, to enable both research and also potential deployment use cases.
+◆ The platform consists of (a) hardware components: documented as a bill of materials and build instructions; (b) integration to the general purpose OSH R4 mechatronics board and a Gazebo simulation of the vehicle, both presenting a common ROS2 interface (c) higher-level ROS2 software implementations and configurations of standard robot autonomous planning and control, including the nav2 stack which performs SLAM and enacts commands to drive the vehicle from a current to a desired pose around obstacles.</td></tr>
+<tr><td>2026-04-27</td><td>Event-based SLAM Benchmark for High-Speed Maneuvers</td><td>[2604.24033](http://arxiv.org/pdf/2604.24033)</td><td>◆ Event-based cameras are bio-inspired sensors with pixels that independently and asynchronously respond to brightness changes at microsecond resolution, offering the potential to handle visual tasks in high-speed maneuvering scenarios.
+◆ Existing event-based approaches, although successful in mitigating motion blur caused by high-speed maneuvers, suffer from many limitations.
+◆ Some of them highlight a success of pose tracking for a fronto-parallel fast shaking camera closed to the structure, while others assume pure (optionally aggressive) three-degree-of-freedom rotations.</td></tr>
 <tr><td>2026-04-24</td><td>Railway Artificial Intelligence Learning Benchmark (RAIL-BENCH): A Benchmark Suite for Perception in the Railway Domain</td><td>[2604.22507](http://arxiv.org/pdf/2604.22507)</td><td>◆ Automated train operation on existing railway infrastructure requires robust camera-based perception, yet the railway domain lacks public benchmark suites with standardized evaluation protocols that would enable reproducible comparison of approaches.
 ◆ We present RAIL-BENCH, the first perception benchmark suite for the railway domain.
 ◆ It comprises five challenges - rail track detection, object detection, vegetation segmentation, multi-object tracking, and monocular visual odometry - each tailored to the specific characteristics of railway environments.</td></tr>
@@ -3263,6 +3272,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Geometric Analysis of Self-Supervised Vision Representations for Semantic Image Retrieval</td><td>[2604.24469](http://arxiv.org/pdf/2604.24469)</td><td>◆ Content-based image retrieval (CBIR) systems enable users to search images based on visual content instead of relying on metadata.
+◆ The text domain has benefited from vector search of representations created with unsupervised methods such as BERT.
+◆ However, modern self-supervised learning methods for vision are mostly not reported in CBIR-related literature, instead relying on supervised models or multi-modal methods that align text and vision.</td></tr>
 <tr><td>2026-04-24</td><td>Region Matters: Efficient and Reliable Region-Aware Visual Place Recognition</td><td>[2604.22390](http://arxiv.org/pdf/2604.22390)</td><td>◆ Visual Place Recognition (VPR) determines a query image&#x27;s geographic location by matching it against geotagged databases.
 ◆ However, existing methods struggle with perceptual aliasing caused by irrelevant regions and inefficient re-ranking due to rigid candidate scheduling.
 ◆ To address these issues, we introduce FoL++, a method combining robust discriminative region modeling with adaptive re-ranking.</td></tr>
@@ -5506,6 +5518,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-25</td><td>Keypoint-based Dynamic Object 6-DoF Pose Tracking via Event Camera</td><td>[2604.23387](http://arxiv.org/pdf/2604.23387)</td><td>◆ Accurate 6-DoF pose estimation of objects is critical for robots to perform precise manipulation tasks.
+◆ However, for dynamic object pose estimation, conventional camera-based approaches face several major challenges, such as motion blur, sensor noise, and low-light limitation.
+◆ To address these issues, we employ event cameras, whose high dynamic range and low latency offer a promising solution.</td></tr>
 <tr><td>2026-04-23</td><td>EdgeFormer: local patch-based edge detection transformer on point clouds</td><td>[2604.21387](http://arxiv.org/pdf/2604.21387)</td><td>◆ Edge points on 3D point clouds can clearly convey 3D geometry and surface characteristics, therefore, edge detection is widely used in many vision applications with high industrial and commercial demands.
 ◆ However, the fine-grained edge features are difficult to detect effectively as they are generally densely distributed or exhibit small-scale surface gradients.
 ◆ To address this issue, we present a learning-based edge detection network, named EdgeFormer, which mainly consists of two stages.</td></tr>
@@ -5999,6 +6014,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-26</td><td>Deploy DINO with Many-to-Many Association</td><td>[2604.23670](http://arxiv.org/pdf/2604.23670)</td><td>◆ Motivated by the limited generalization of supervised image matching models to unseen image domains, we explore the zero-shot deployment of DINO features for this task.
+◆ The generalist visual representation extracted from DINO has inherent ambiguity when used to match feature points among semantically similar instances, prompting us to adopt a many-to-many (m-to-m) matching paradigm.
+◆ However, the existing robust mechanism under m-to-m data association is computationally heavy, which requires finding a maximum-cardinality matching in the inlier association graph for each parameter evaluation.</td></tr>
 <tr><td>2026-04-24</td><td>ArchSym: Detecting 3D-Grounded Architectural Symmetries in the Wild</td><td>[2604.22202](http://arxiv.org/pdf/2604.22202)</td><td>◆ Symmetry detection is a fundamental problem in computer vision, and symmetries serve as powerful priors for downstream tasks.
 ◆ However, existing learning-based methods for detecting 3D symmetries from single images have been almost exclusively trained and evaluated on object-centric or synthetic datasets, and thus fail to generalize to real-world scenes.
 ◆ Furthermore, due to the inherent scale ambiguity of monocular inputs, which makes localizing the 3D plane an ill-posed problem, many existing works only predict the plane&#x27;s orientation.</td></tr>
@@ -6878,6 +6896,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Multivariate Gaussian NeRF for Wide Field-of-View Ultrasound Reconstruction</td><td>[2604.24187](http://arxiv.org/pdf/2604.24187)</td><td>◆ Wide Field-of-View (WFoV) reconstruction enhances 3D ultrasound imaging by providing valuable anatomical context for segmentation models and visualization.
+◆ Clinical ultrasound volumes are predominantly acquired using convex probes, which generate expanding, diverging acoustic beams to maximize anatomical coverage.
+◆ Stitching these sweeps together traditionally introduces significant compounding artifacts and aliasing due to depth-dependent resolution changes.</td></tr>
 <tr><td>2026-04-23</td><td>DualSplat: Robust 3D Gaussian Splatting via Pseudo-Mask Bootstrapping from Reconstruction Failures</td><td>[2604.21631](http://arxiv.org/pdf/2604.21631)</td><td>◆ While 3D Gaussian Splatting (3DGS) achieves real-time photorealistic rendering, its performance degrades significantly when training images contain transient objects that violate multi-view consistency.
 ◆ Existing methods face a circular dependency: accurate transient detection requires a well-reconstructed static scene, while clean reconstruction itself depends on reliable transient masks.
 ◆ We address this challenge with DualSplat, a Failure-to-Prior framework that converts first-pass reconstruction failures into explicit priors for a second reconstruction stage.</td></tr>
@@ -8083,4 +8104,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.27
+> 更新于: 2026.04.28
