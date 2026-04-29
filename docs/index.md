@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.28)
+# 计算机视觉领域最新论文 (2026.04.29)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>Robust Graph Matching through Semantic Relationship Generation for SLAM</td><td>[2604.25404](http://arxiv.org/pdf/2604.25404)</td><td>◆ Graph-based representations such as Scene Graphs enable localization in structured indoor environments by matching a locally observed graph, constructed from sensor data, to a prior map.
+◆ This process is particularly challenging in environments with repetitive or symmetric layouts, where structural cues alone are often insufficient to resolve ambiguities.
+◆ We propose a semantic-enhanced graph matching approach that explicitly models relations between detected objects and structural elements, such as rooms and wall planes.</td></tr>
+<tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
+◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
+◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
 <tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
 ◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
 ◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
@@ -40,7 +46,7 @@
 <tr><td>2026-04-24</td><td>PoseFM: Relative Camera Pose Estimation Through Flow Matching</td><td>[2604.22350](http://arxiv.org/pdf/2604.22350)</td><td>◆ Monocular visual odometry (VO) is a fundamental computer vision problem with applications in autonomous navigation, augmented reality and more.
 ◆ While deep learning-based methods have recently shown superior accuracy compared to traditional geometric pipelines, particularly in environments where handcrafted features struggle due to poor structure or lighting conditions, most rely on deterministic regression, which lacks the uncertainty awareness required for robust applications.
 ◆ We propose PoseFM, the first framework to reformulate monocular frame-to-frame VO as a generative task using Flow Matching (FM).</td></tr>
-<tr><td>2026-04-24</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
+<tr><td>2026-04-28</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
 ◆ Recent research combines 3D Gaussian Splatting (3DGS) with SLAM to achieve both robust camera pose estimation and photorealistic renderings.
 ◆ However, using SLAM to efficiently reconstruct both static and dynamic regions remains challenging.</td></tr>
 <tr><td>2026-04-23</td><td>Robust Camera-to-Mocap Calibration and Verification for Large-Scale Multi-Camera Data Capture</td><td>[2604.22118](http://arxiv.org/pdf/2604.22118)</td><td>◆ Optical motion capture (mocap) systems are widely used for ground-truth capture in AR/VR, SLAM and robotics datasets.
@@ -2102,7 +2108,7 @@
 <tr><td>2026-04-24</td><td>GenMatter: Perceiving Physical Objects with Generative Matter Models</td><td>[2604.22160](http://arxiv.org/pdf/2604.22160)</td><td>◆ Human visual perception offers valuable insights for understanding computational principles of motion-based scene interpretation.
 ◆ Humans robustly detect and segment moving entities that constitute independently moveable chunks of matter, whether observing sparse moving dots, textured surfaces, or naturalistic scenes.
 ◆ In contrast, existing computer vision systems lack a unified approach that works across these diverse settings.</td></tr>
-<tr><td>2026-04-21</td><td>BALTIC: A Benchmark and Cross-Domain Strategy for 3D Reconstruction Across Air and Underwater Domains Under Varying Illumination</td><td>[2604.19133](http://arxiv.org/pdf/2604.19133)</td><td>◆ Robust 3D reconstruction across varying environmental conditions remains a critical challenge for robotic perception, particularly when transitioning between air and water.
+<tr><td>2026-04-28</td><td>BALTIC: A Benchmark and Cross-Domain Strategy for 3D Reconstruction Across Air and Underwater Domains Under Varying Illumination</td><td>[2604.19133](http://arxiv.org/pdf/2604.19133)</td><td>◆ Robust 3D reconstruction across varying environmental conditions remains a critical challenge for robotic perception, particularly when transitioning between air and water.
 ◆ To address this, we introduce BALTIC, a controlled benchmark designed to systematically evaluate modern 3D reconstruction methods under variations in medium and lighting.
 ◆ The benchmark comprises 13 datasets spanning two media (air and water) and three lighting conditions (ambient, artificial, and mixed), with additional variations in motion type, scanning pattern, and initialization trajectory, resulting in a diverse set of sequences.</td></tr>
 <tr><td>2026-04-20</td><td>PCM-NeRF: Probabilistic Camera Modeling for Neural Radiance Fields under Pose Uncertainty</td><td>[2604.17831](http://arxiv.org/pdf/2604.17831)</td><td>◆ Neural surface reconstruction methods typically treat camera poses as fixed values, assuming perfect accuracy from Structure-from-Motion (SfM) systems.
@@ -3272,6 +3278,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
+◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
+◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
 <tr><td>2026-04-27</td><td>Geometric Analysis of Self-Supervised Vision Representations for Semantic Image Retrieval</td><td>[2604.24469](http://arxiv.org/pdf/2604.24469)</td><td>◆ Content-based image retrieval (CBIR) systems enable users to search images based on visual content instead of relying on metadata.
 ◆ The text domain has benefited from vector search of representations created with unsupervised methods such as BERT.
 ◆ However, modern self-supervised learning methods for vision are mostly not reported in CBIR-related literature, instead relying on supervised models or multi-modal methods that align text and vision.</td></tr>
@@ -6014,6 +6023,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching</td><td>[2604.25390](http://arxiv.org/pdf/2604.25390)</td><td>◆ Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity.
+◆ Recent generative approaches based on Retrieval-Augmented Generation (RAG) and Large Multimodal Models (LMMs) leverage candidates retrieved from fixed databases for reasoning, but often struggle with scenes that are absent from the reference set.
+◆ In this work, we propose GeoSearch, an open-world geolocation framework that integrates web-scale reverse image search into the RAG pipeline.</td></tr>
 <tr><td>2026-04-26</td><td>Deploy DINO with Many-to-Many Association</td><td>[2604.23670](http://arxiv.org/pdf/2604.23670)</td><td>◆ Motivated by the limited generalization of supervised image matching models to unseen image domains, we explore the zero-shot deployment of DINO features for this task.
 ◆ The generalist visual representation extracted from DINO has inherent ambiguity when used to match feature points among semantically similar instances, prompting us to adopt a many-to-many (m-to-m) matching paradigm.
 ◆ However, the existing robust mechanism under m-to-m data association is computationally heavy, which requires finding a maximum-cardinality matching in the inlier association graph for each parameter evaluation.</td></tr>
@@ -8104,4 +8116,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.28
+> 更新于: 2026.04.29
