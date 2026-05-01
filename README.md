@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.04.30)
+# 计算机视觉领域最新论文 (2026.05.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction</td><td>[2604.28115](http://arxiv.org/pdf/2604.28115)</td><td>◆ Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments.
+◆ We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences.
+◆ Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage.</td></tr>
+<tr><td>2026-04-30</td><td>Learning-Based Hierarchical Scene Graph Matching for Robot Localization Leveraging Prior Maps</td><td>[2604.27821](http://arxiv.org/pdf/2604.27821)</td><td>◆ Accurate localization is a fundamental requirement for autonomous robots operating in indoor environments.
+◆ Scene graphs encode the spatial structure of an environment as a hierarchy of semantic entities and their relationships, and can be constructed both online from robot sensor data and offline from architectural priors such as Building Information Models (BIM).
+◆ Matching these two complementary representations enables drift correction in SLAM by grounding robot observations against a known structural prior.</td></tr>
+<tr><td>2026-04-28</td><td>RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments</td><td>[2604.26067](http://arxiv.org/pdf/2604.26067)</td><td>◆ We present RADIO-ViPE (Reduce All Domains Into One -- Video Pose Engine), an online semantic SLAM system that enables geometry-aware open-vocabulary grounding, associating arbitrary natural language queries with localized 3D regions and objects in dynamic environments.
+◆ Unlike existing approaches that require calibrated, posed RGB-D input, RADIO-ViPE operates directly on raw monocular RGB video streams, requiring no prior camera intrinsics, depth sensors, or pose initialization.
+◆ The system tightly couples multi-modal embeddings -- spanning vision and language -- derived from agglomerative foundation models (e.g., RADIO) with geometric scene information.</td></tr>
 <tr><td>2026-04-28</td><td>Robust Graph Matching through Semantic Relationship Generation for SLAM</td><td>[2604.25404](http://arxiv.org/pdf/2604.25404)</td><td>◆ Graph-based representations such as Scene Graphs enable localization in structured indoor environments by matching a locally observed graph, constructed from sensor data, to a prior map.
 ◆ This process is particularly challenging in environments with repetitive or symmetric layouts, where structural cues alone are often insufficient to resolve ambiguities.
 ◆ We propose a semantic-enhanced graph matching approach that explicitly models relations between detected objects and structural elements, such as rooms and wall planes.</td></tr>
@@ -3282,6 +3291,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-29</td><td>AirZoo: A Unified Large-Scale Dataset for Grounding Aerial Geometric 3D Vision</td><td>[2604.26567](http://arxiv.org/pdf/2604.26567)</td><td>◆ Despite the rapid progress in data-driven 3D vision, aerial geometric 3D vision remains a formidable challenge due to the severe scarcity of large-scale, high-fidelity training data.
+◆ Existing benchmarks, predominantly biased toward ground-level or object-centric views, do not account for complex viewpoint transformations and diverse environmental conditions in UAV-based sensing.
+◆ To bridge this critical gap, we propose AirZoo, a unified large-scale dataset and benchmark for grounding aerial geometric 3D vision.</td></tr>
+<tr><td>2026-04-29</td><td>3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification</td><td>[2604.26520](http://arxiv.org/pdf/2604.26520)</td><td>◆ Aerial-Ground Re-Identification (AG-ReID) is constrained by the viewpoint-domain gap, as drastic viewpoint disparities occlude or distort discriminative features, making cross-viewpoint image retrieval challenging.
+◆ While existing methods rely on paired cross-view annotations, real-world deployments, such as wilderness search-and-rescue (SAR), often lack target-domain data, requiring retrieval from ground-level references alone.
+◆ To our knowledge, we are the first to address this challenge by formalizing the Single-View AG-ReID (SV AG-ReID) setting, where models trained on a single real viewpoint must generalize to an unseen viewpoint.</td></tr>
 <tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
 ◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
 ◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
@@ -5533,6 +5548,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-29</td><td>Featurising Pixels from Dynamic 3D Scenes with Linear In-Context Learners</td><td>[2604.26488](http://arxiv.org/pdf/2604.26488)</td><td>◆ One of the most exciting applications of vision models involve pixel-level reasoning.
+◆ Despite the abundance of vision foundation models, we still lack representations that effectively embed spatio-temporal properties of visual scenes at the pixel level.
+◆ Existing frameworks either train on image-based pretext tasks, which do not account for dynamic elements, or on video sequences for action-level reasoning, which does not scale to dense pixel-level prediction.</td></tr>
 <tr><td>2026-04-25</td><td>Keypoint-based Dynamic Object 6-DoF Pose Tracking via Event Camera</td><td>[2604.23387](http://arxiv.org/pdf/2604.23387)</td><td>◆ Accurate 6-DoF pose estimation of objects is critical for robots to perform precise manipulation tasks.
 ◆ However, for dynamic object pose estimation, conventional camera-based approaches face several major challenges, such as motion blur, sensor noise, and low-light limitation.
 ◆ To address these issues, we employ event cameras, whose high dynamic range and low latency offer a promising solution.</td></tr>
@@ -6918,6 +6936,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>RayFormer: Modeling Inter- and Intra-Ray Similarity for NeRF-Based Video Snapshot Compressive Imaging</td><td>[2604.27702](http://arxiv.org/pdf/2604.27702)</td><td>◆ Video snapshot compressive imaging (SCI) enables the reconstruction of dynamic scenes from a single snapshot measurement.
+◆ Recently, NeRF-based methods have shown promising reconstruction performance.
+◆ However, such methods typically adopt random ray sampling strategies and fail to capture content structural similarities, resulting in limited reconstruction quality.</td></tr>
+<tr><td>2026-04-29</td><td>Safe Navigation using Neural Radiance Fields via Reachable Sets</td><td>[2604.26899](http://arxiv.org/pdf/2604.26899)</td><td>◆ Safe navigation in cluttered environments is an important challenge for autonomous systems.
+◆ Robots navigating through obstacle ridden scenarios need to be able to navigate safely in the presence of obstacles, goals, and ego objects of varying geometries.
+◆ In this work, reachable set representations of the robot&#x27;s real-time capabilities in the state space can be utilized to capture safe navigation requirements.</td></tr>
+<tr><td>2026-04-17</td><td>Planar Gaussian Splatting with Bilinear Spatial Transformer for Wireless Radiance Field Reconstruction</td><td>[2604.25945](http://arxiv.org/pdf/2604.25945)</td><td>◆ Wireless radiance field (WRF) reconstruction aims to learn a continuous, queryable representation of radio frequency characteristics over 3D space and direction, from which specific quantities, such as the spatial power spectrum (SPS) at a receiver given a transmitter position, can be predicted.
+◆ While Gaussian splatting (GS)-based method has surpassed Neural Radiance Fields (NeRF)-based method for this task, existing adaptations largely transplant vision pipelines, limiting physical interpretability and accuracy.
+◆ We introduce BiSplat-WRF, a planar GS framework that retains the expressiveness of 3D GS while removing unnecessary projections and incorporating global EM coupling and mutual scattering among primitives.</td></tr>
 <tr><td>2026-04-27</td><td>Multivariate Gaussian NeRF for Wide Field-of-View Ultrasound Reconstruction</td><td>[2604.24187](http://arxiv.org/pdf/2604.24187)</td><td>◆ Wide Field-of-View (WFoV) reconstruction enhances 3D ultrasound imaging by providing valuable anatomical context for segmentation models and visualization.
 ◆ Clinical ultrasound volumes are predominantly acquired using convex probes, which generate expanding, diverging acoustic beams to maximize anatomical coverage.
 ◆ Stitching these sweeps together traditionally introduces significant compounding artifacts and aliasing due to depth-dependent resolution changes.</td></tr>
@@ -6936,7 +6963,7 @@
 <tr><td>2026-04-20</td><td>PCM-NeRF: Probabilistic Camera Modeling for Neural Radiance Fields under Pose Uncertainty</td><td>[2604.17831](http://arxiv.org/pdf/2604.17831)</td><td>◆ Neural surface reconstruction methods typically treat camera poses as fixed values, assuming perfect accuracy from Structure-from-Motion (SfM) systems.
 ◆ This assumption breaks down with imperfect pose estimates, leading to distorted or incomplete reconstructions.
 ◆ We present PCM-NeRF, a probabilistic framework that augments neural surface reconstruction with per-camera learnable uncertainty, built on top of SG-NeRF.</td></tr>
-<tr><td>2026-04-17</td><td>Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting</td><td>[2604.16747](http://arxiv.org/pdf/2604.16747)</td><td>◆ Dynamic 3D Gaussian Splatting methods achieve strong training-view PSNR on monocular video but generalize poorly: on the D-NeRF benchmark we measure an average train-test PSNR gap of 6.18 dB, rising to 11 dB on individual scenes.
+<tr><td>2026-04-29</td><td>Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting</td><td>[2604.16747](http://arxiv.org/pdf/2604.16747)</td><td>◆ Dynamic 3D Gaussian Splatting methods achieve strong training-view PSNR on monocular video but generalize poorly: on the D-NeRF benchmark we measure an average train-test PSNR gap of 6.18 dB, rising to 11 dB on individual scenes.
 ◆ We report two findings that together account for most of that gap.
 ◆ Finding 1 (the role of splitting).</td></tr>
 <tr><td>2026-04-17</td><td>PoInit-of-View: Poisoning Initialization of Views Transfers Across Multiple 3D Reconstruction Systems</td><td>[2604.16540](http://arxiv.org/pdf/2604.16540)</td><td>◆ Poisoning input views of 3D reconstruction systems has been recently studied.
@@ -8128,4 +8155,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.30
+> 更新于: 2026.05.01
