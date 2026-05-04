@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.03)
+# 计算机视觉领域最新论文 (2026.05.04)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2110,6 +2110,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>PEARLS: Two Distinct Populations of AGN Hosts Moving Between Star Formation and Quiescence</td><td>[2605.00822](http://arxiv.org/pdf/2605.00822)</td><td>◆ We present the results of AGN--host-galaxy decomposition using JWST/NIRCam, HST/ACS, and HST/WFC3 imaging of the North Ecliptic Pole Time Domain Field (NEP-TDF).
+◆ The light-profiles of 36 NIRCam-selected AGN candidates are modeled for measurement of their point sources, and point source-subtracted host-galaxy emission is used in SED modeling for star formation rate (SFR) estimation.
+◆ Offsets from the canonical star-forming main sequence (SFMS) show that the host galaxies form two distinct groups distinguished by their star formation: a ``bridge&#x27;&#x27; between the moderate SFRs of radio sources and low SFRs of X-ray sources, and a cleanly-separated ``branch&#x27;&#x27; above $Δ\rm SFMS = -1$ whose SFR trends positively with AGN fraction.</td></tr>
+<tr><td>2026-05-01</td><td>2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction</td><td>[2605.00569](http://arxiv.org/pdf/2605.00569)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for generating photorealistic renderings of a scene in real-time.
+◆ However, the volumetric nature of 3DGS limits its ability to accurately capture surface geometry.
+◆ To address this, 2D Gaussian Splatting (2DGS) was proposed to enable view-consistent and geometrically accurate surface reconstruction from multi-view images.</td></tr>
+<tr><td>2026-04-30</td><td>Alethia: A Foundational Encoder for Voice Deepfakes</td><td>[2605.00251](http://arxiv.org/pdf/2605.00251)</td><td>◆ Existing voice deepfake detection and localization models rely heavily on representations extracted from speech foundation models (SFMs).
+◆ However, downstream finetuning has now reached a state of diminishing returns.
+◆ In this paper, we shift the focus to pretraining and propose a novel recipe that combines bottleneck masked embedding prediction with flow-matching based spectrogram reconstruction.</td></tr>
 <tr><td>2026-04-24</td><td>SS3D: End2End Self-Supervised 3D from Web Videos</td><td>[2604.22686](http://arxiv.org/pdf/2604.22686)</td><td>◆ We present SS3D, a web-scale SfM-based self-supervision pretraining pipeline for feed-forward 3D estimation from monocular video.
 ◆ Our model jointly predicts depth, ego-motion, and intrinsics in a single forward pass and is trained/evaluated as a coherent end-to-end 3D estimator.
 ◆ To stabilize joint learning, we use an intrinsics-first two-stage schedule and a unified single-checkpoint evaluation protocol.</td></tr>
@@ -3291,6 +3300,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>Depth-Guided Privacy-Preserving Visual Localization Using 3D Sphere Clouds</td><td>[2605.00562](http://arxiv.org/pdf/2605.00562)</td><td>◆ The emergence of deep neural networks capable of revealing high-fidelity scene details from sparse 3D point clouds has raised significant privacy concerns in visual localization involving private maps.
+◆ Lifting map points to randomly oriented 3D lines is a well-known approach for obstructing undesired recovery of the scene images, but these lines are vulnerable to a density-based attack that can recover the point cloud geometry by observing the neighborhood statistics of lines.
+◆ With the aim of nullifying this attack, we present a new privacy-preserving scene representation called \emph{sphere cloud}, which is constructed by lifting all points to 3D lines crossing the centroid of the map, resembling points on the unit sphere.</td></tr>
+<tr><td>2026-05-01</td><td>MSACT: Multistage Spatial Alignment for Stable Low-Latency Fine Manipulation</td><td>[2605.00475](http://arxiv.org/pdf/2605.00475)</td><td>◆ Real-world fine manipulation, particularly in bimanual manipulation, typically requires low-latency control and stable visual localization, while collecting large-scale data is costly and limited demonstrations may lead to localization drift.
+◆ Existing approaches make different trade-offs: action-chunking policies such as ACT enable low-latency execution and data efficiency but rely on dense visual features without explicit spatial consistency, generative methods such as Diffusion Policy improve expressiveness but can incur iterative sampling latency, vision-language-action and voxel-based methods enhance generalization and geometric grounding but require higher computational cost and system complexity.
+◆ We introduce a multistage spatial attention module that extracts stable 2D attention points and jointly predicts future attention sequences with a temporal alignment loss.</td></tr>
+<tr><td>2026-05-01</td><td>SIMON: Saliency-aware Integrative Multi-view Object-centric Neural Decoding</td><td>[2605.00401](http://arxiv.org/pdf/2605.00401)</td><td>◆ Recent EEG-to-image retrieval methods leverage pretrained vision encoders and foveation-inspired priors, but typically assume a fixed, center-focused view.
+◆ This center bias conflicts with content-driven human attention, creating a geometric-semantic dissociation between visual features and EEG responses.
+◆ We propose SIMON, a saliency-aware multi-view framework for zero-shot EEG-to-image retrieval.</td></tr>
 <tr><td>2026-04-29</td><td>AirZoo: A Unified Large-Scale Dataset for Grounding Aerial Geometric 3D Vision</td><td>[2604.26567](http://arxiv.org/pdf/2604.26567)</td><td>◆ Despite the rapid progress in data-driven 3D vision, aerial geometric 3D vision remains a formidable challenge due to the severe scarcity of large-scale, high-fidelity training data.
 ◆ Existing benchmarks, predominantly biased toward ground-level or object-centric views, do not account for complex viewpoint transformations and diverse environmental conditions in UAV-based sensing.
 ◆ To bridge this critical gap, we propose AirZoo, a unified large-scale dataset and benchmark for grounding aerial geometric 3D vision.</td></tr>
@@ -6049,6 +6067,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>TrueEBSD in MTEX: automatic image matching for correlative microscopy applications</td><td>[2605.00703](http://arxiv.org/pdf/2605.00703)</td><td>◆ TrueEBSD is an open-source MATLAB program for image alignment and spatial distortion correction of images and electron backscatter diffraction (EBSD) maps.
+◆ We have re-implemented TrueEBSD as an add-on to MTEX, an established toolbox for EBSD data analysis.
+◆ Spatial alignment enables correlative analysis methods, such as augmenting EBSD orientation maps with data from other imaging modes.</td></tr>
 <tr><td>2026-04-28</td><td>GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching</td><td>[2604.25390](http://arxiv.org/pdf/2604.25390)</td><td>◆ Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity.
 ◆ Recent generative approaches based on Retrieval-Augmented Generation (RAG) and Large Multimodal Models (LMMs) leverage candidates retrieved from fixed databases for reasoning, but often struggle with scenes that are absent from the reference set.
 ◆ In this work, we propose GeoSearch, an open-world geolocation framework that integrates web-scale reverse image search into the RAG pipeline.</td></tr>
@@ -6073,7 +6094,7 @@
 <tr><td>2026-04-11</td><td>DeepShapeMatchingKit: Accelerated Functional Map Solver and Shape Matching Pipelines Revisited</td><td>[2604.10377](http://arxiv.org/pdf/2604.10377)</td><td>◆ Deep functional maps, leveraging learned feature extractors and spectral correspondence solvers, are fundamental to non-rigid 3D shape matching.
 ◆ Based on an analysis of open-source implementations, we find that standard functional map implementations solve k independent linear systems serially, which is a computational bottleneck at higher spectral resolution.
 ◆ We thus propose a vectorized reformulation that solves all systems in a single kernel call, achieving up to a 33x speedup while preserving the exact solution.</td></tr>
-<tr><td>2026-04-14</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
+<tr><td>2026-05-01</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
 ◆ We evaluate twenty-four pretrained matcher families--in a zero-shot setting with no fine-tuning or domain adaptation on satellite or SAR data--on SpaceNet9 and two additional cross-modal benchmarks under a deterministic protocol with tiled large-image inference, robust geometric filtering, and tie-point-grounded metrics.
 ◆ Our results reveal asymmetric transfer--matchers with explicit cross-modal training do not uniformly outperform those without it.</td></tr>
 <tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
@@ -6936,6 +6957,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td>[2605.00498](http://arxiv.org/pdf/2605.00498)</td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
+◆ Removing objects from such 3D representations is a fundamental editing task that requires complete and seamless inpainting of occluded regions, ensuring consistency in geometry and appearance.
+◆ Although existing methods have made notable progress in improving inpainting consistency, they often neglect global lighting effects, leading to physically implausible results.</td></tr>
+<tr><td>2026-05-01</td><td>Beyond Heuristics: Learnable Density Control for 3D Gaussian Splatting</td><td>[2605.00408](http://arxiv.org/pdf/2605.00408)</td><td>◆ While 3D Gaussian Splatting (3DGS) has demonstrated impressive real-time rendering performance, its efficacy remains constrained by a reliance on heuristic density control.
+◆ Despite numerous refinements to these handcrafted rules, such methods inherently lack the flexibility to adapt to diverse scenes with complex geometries.
+◆ In this paper, we propose a paradigm shift for density control from rigid heuristics to fully learnable policies.</td></tr>
 <tr><td>2026-04-30</td><td>RayFormer: Modeling Inter- and Intra-Ray Similarity for NeRF-Based Video Snapshot Compressive Imaging</td><td>[2604.27702](http://arxiv.org/pdf/2604.27702)</td><td>◆ Video snapshot compressive imaging (SCI) enables the reconstruction of dynamic scenes from a single snapshot measurement.
 ◆ Recently, NeRF-based methods have shown promising reconstruction performance.
 ◆ However, such methods typically adopt random ray sampling strategies and fail to capture content structural similarities, resulting in limited reconstruction quality.</td></tr>
@@ -8155,4 +8182,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.03
+> 更新于: 2026.05.04
