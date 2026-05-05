@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.04)
+# 计算机视觉领域最新论文 (2026.05.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -6947,6 +6947,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar</td><td>[2605.02784](http://arxiv.org/pdf/2605.02784)</td><td>◆ Accurately recovering human pose and appearance from video is an essential component of scene reconstruction, with applications to motion capture, motion prediction, virtual reality, and digital twinning.
+◆ Despite significant interest in building realistic human avatars from video, this paper demonstrates that existing methods do not accurately recover the 3D geometry of humans.
+◆ ViT-based approaches are not consistently reliable and can overfit to 2D views, while NeRF- and Gaussian Splatting-based avatars treat pose and appearance separately, limiting rendering generalization to new poses.</td></tr>
+<tr><td>2026-05-03</td><td>GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting</td><td>[2605.02086](http://arxiv.org/pdf/2605.02086)</td><td>◆ 3D Gaussian splatting (3DGS) is a state-of-the-art representation for real-time photorealistic novel-view synthesis, yet a single high-fidelity scene typically occupies hundreds of megabytes to several gigabytes, exceeding the budgets of mobile, immersive, and volumetric video platforms.
+◆ Existing 3DGS compression methods (e.g., HAC++, FlexGaussian, LP-3DGS) treat pruning, quantization, and entropy coding as separate stages and rely on hand-tuned heuristics (opacity thresholds, fixed bit-widths, SH truncation), limiting cross-scene generalization and preventing users from specifying a target rate or quality budget.
+◆ We propose GETA-3DGS, to our knowledge the first end-to-end automatic joint structured pruning and quantization framework for 3DGS.</td></tr>
 <tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td>[2605.00498](http://arxiv.org/pdf/2605.00498)</td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
 ◆ Removing objects from such 3D representations is a fundamental editing task that requires complete and seamless inpainting of occluded regions, ensuring consistency in geometry and appearance.
 ◆ Although existing methods have made notable progress in improving inpainting consistency, they often neglect global lighting effects, leading to physically implausible results.</td></tr>
@@ -6956,7 +6962,7 @@
 <tr><td>2026-04-30</td><td>RayFormer: Modeling Inter- and Intra-Ray Similarity for NeRF-Based Video Snapshot Compressive Imaging</td><td>[2604.27702](http://arxiv.org/pdf/2604.27702)</td><td>◆ Video snapshot compressive imaging (SCI) enables the reconstruction of dynamic scenes from a single snapshot measurement.
 ◆ Recently, NeRF-based methods have shown promising reconstruction performance.
 ◆ However, such methods typically adopt random ray sampling strategies and fail to capture content structural similarities, resulting in limited reconstruction quality.</td></tr>
-<tr><td>2026-04-29</td><td>Safe Navigation using Neural Radiance Fields via Reachable Sets</td><td>[2604.26899](http://arxiv.org/pdf/2604.26899)</td><td>◆ Safe navigation in cluttered environments is an important challenge for autonomous systems.
+<tr><td>2026-05-04</td><td>Safe Navigation using Neural Radiance Fields via Reachable Sets</td><td>[2604.26899](http://arxiv.org/pdf/2604.26899)</td><td>◆ Safe navigation in cluttered environments is an important challenge for autonomous systems.
 ◆ Robots navigating through obstacle ridden scenarios need to be able to navigate safely in the presence of obstacles, goals, and ego objects of varying geometries.
 ◆ In this work, reachable set representations of the robot&#x27;s real-time capabilities in the state space can be utilized to capture safe navigation requirements.</td></tr>
 <tr><td>2026-04-17</td><td>Planar Gaussian Splatting with Bilinear Spatial Transformer for Wireless Radiance Field Reconstruction</td><td>[2604.25945](http://arxiv.org/pdf/2604.25945)</td><td>◆ Wireless radiance field (WRF) reconstruction aims to learn a continuous, queryable representation of radio frequency characteristics over 3D space and direction, from which specific quantities, such as the spatial power spectrum (SPS) at a receiver given a transmitter position, can be predicted.
@@ -8170,4 +8176,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.04
+> 更新于: 2026.05.05
