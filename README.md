@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.05)
+# 计算机视觉领域最新论文 (2026.05.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
+◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
+◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
+<tr><td>2026-05-04</td><td>DynoSLAM: Dynamic SLAM with Generative Graph Neural Networks for Real-World Social Navigation</td><td>[2605.02759](http://arxiv.org/pdf/2605.02759)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) algorithms rely heavily on the static environment assumption, which severely limits their applicability in real-world spaces populated by moving entities, such as pedestrians.
+◆ In this work, we propose DynoSLAM, a tightly-coupled Dynamic GraphSLAM architecture that integrates socially-aware Graph Neural Networks (GNNs) directly into the factor graph optimization.
+◆ Unlike conventional approaches that use rigid constant-velocity heuristics or deterministic single-agent neural priors, our framework formulates pedestrian motion forecasting as a stochastic World Model.</td></tr>
+<tr><td>2026-05-04</td><td>Multi-User XR Offloading via Massive MIMO: A System-Level Analysis using a Real-Life Dataset</td><td>[2605.02631](http://arxiv.org/pdf/2605.02631)</td><td>◆ SLAM is one of the biggest bottlenecks of XR devices, which have strict requirements for latency, power consumption, and user satisfaction.
+◆ A solution that has been proposed and studied to meet the requirements is to offload SLAM to a remote server, which leverages computational hardware but may suffer due to incurred delays and transmission power.
+◆ In this work, we propose offloading SLAM using Massive MIMO, which is attractive due to lower latencies, transmission power, and a more reliable link for multiple users.</td></tr>
+<tr><td>2026-05-04</td><td>Change-Robust Online Spatial-Semantic Topological Mapping</td><td>[2605.02227](http://arxiv.org/pdf/2605.02227)</td><td>◆ Autonomous robots require change-robust spatial-semantic reasoning: using spatial and semantic knowledge to decide where to go, how to get there, and where the robot is despite environmental change.
+◆ Existing approaches typically attach semantics to SLAM-built metric maps, but these pipelines are brittle under appearance shifts and scene dynamics, where data association and relocalization degrade.
+◆ We propose a Change-Robust Online Spatial-Semantic (CROSS) representation that replaces a globally consistent metric substrate with an online, pose-aware topological graph of RGB-D keyframes.</td></tr>
 <tr><td>2026-04-30</td><td>FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction</td><td>[2604.28115](http://arxiv.org/pdf/2604.28115)</td><td>◆ Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments.
 ◆ We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences.
 ◆ Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage.</td></tr>
@@ -2110,6 +2122,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>Permutation Routing on Ramanujan Hypergraphs with Applications to Neutral Atom Quantum Architectures</td><td>[2605.02498](http://arxiv.org/pdf/2605.02498)</td><td>◆ We consider the routing of neutral atoms on a reconfigurable lattice in terms of hypergraph transformations.
+◆ We prove the routing number of a Ramanujan $(d,r)$-regular hypergraph on $N$ vertices satisfies $\mathrm{rt}(H) = Θ(\log N)$, where routing is via matchings in the clique expansion graph $G_{\mathrm{cl}}(H)$.
+◆ Hypergraphs reframe the qubit routing problem by replacing Nenadov&#x27;s two-sided spectral gap hypothesis with a one-sided condition based on eigenvalue centering.</td></tr>
+<tr><td>2026-05-03</td><td>DP-SfM: Dual-Pixel Structure-from-Motion without Scale Ambiguity</td><td>[2605.01852](http://arxiv.org/pdf/2605.01852)</td><td>◆ Multi-view 3D reconstruction, namely, structure-from-motion followed by multi-view stereo, is a fundamental component of 3D computer vision.
+◆ In general, multi-view 3D reconstruction suffers from an unknown scale ambiguity unless a reference object of known size is present in the scene.
+◆ In this article, we show that multi-view images captured using a dual-pixel (DP) sensor can automatically resolve the scale ambiguity, without requiring a reference object or prior calibration.</td></tr>
 <tr><td>2026-05-01</td><td>PEARLS: Two Distinct Populations of AGN Hosts Moving Between Star Formation and Quiescence</td><td>[2605.00822](http://arxiv.org/pdf/2605.00822)</td><td>◆ We present the results of AGN--host-galaxy decomposition using JWST/NIRCam, HST/ACS, and HST/WFC3 imaging of the North Ecliptic Pole Time Domain Field (NEP-TDF).
 ◆ The light-profiles of 36 NIRCam-selected AGN candidates are modeled for measurement of their point sources, and point source-subtracted host-galaxy emission is used in SED modeling for star formation rate (SFR) estimation.
 ◆ Offsets from the canonical star-forming main sequence (SFMS) show that the host galaxies form two distinct groups distinguished by their star formation: a ``bridge&#x27;&#x27; between the moderate SFRs of radio sources and low SFRs of X-ray sources, and a cleanly-separated ``branch&#x27;&#x27; above $Δ\rm SFMS = -1$ whose SFR trends positively with AGN fraction.</td></tr>
@@ -3300,6 +3318,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>AlbumFill: Album-Guided Reasoning and Retrieval for Personalized Image Completion</td><td>[2605.02892](http://arxiv.org/pdf/2605.02892)</td><td>◆ Personalized image completion aims to restore occluded regions in personal photos while preserving identity and appearance.
+◆ Existing methods either rely on generic inpainting models that often fail to maintain identity consistency, or assume that suitable reference images are explicitly provided.
+◆ In practice, suitable references are often not explicitly provided, requiring the system to search for identity-consistent images within personal photo collections.</td></tr>
+<tr><td>2026-05-04</td><td>StableMind: Source-Free Cross-Subject fMRI Decoding with Regularized Adaptation</td><td>[2605.02586](http://arxiv.org/pdf/2605.02586)</td><td>◆ Existing cross-subject fMRI decoding methods typically train a model on multiple scanned subjects and then adapt it to a new subject using substantial paired fMRI-image data.
+◆ However, in realistic scenarios, new-subject fMRI data are often limited due to costly data acquisition, and raw data from previous subjects may be inaccessible, leading existing methods to suffer performance degradation during new-subject adaptation.
+◆ In this paper, we identify that this degradation stems from two key issues: brain-side instability caused by large subject differences in fMRI responses, and image-side supervision unreliability caused by fine-grained visual details that are not reliably supported by limited fMRI signals.</td></tr>
+<tr><td>2026-05-04</td><td>Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM</td><td>[2605.02283](http://arxiv.org/pdf/2605.02283)</td><td>◆ Vision foundation models have attracted significant attention for their ability to leverage large-scale unlabeled visual data.
+◆ This advantage is particularly important in remote sensing, where data acquisition is costly and annotation often requires expert knowledge.
+◆ Recent electro-optical vision foundation models aim to learn domain-specific representations from remote sensing imagery, but it remains unclear whether they are more effective than strong generalist vision foundation models under retrieval-based evaluation.</td></tr>
+<tr><td>2026-05-02</td><td>X-ray dark-field imaging from intensity flow: A Fokker-Planck approach to grating interferometry</td><td>[2605.01265](http://arxiv.org/pdf/2605.01265)</td><td>◆ Grating interferometry is a promising diagnostic technique that enables simultaneous acquisition of three complementary, synergistic X-ray images: transmission, differential phase, and dark-field.
+◆ Its key advantage over other setups is its ability to use large pixels and, hence, large-area detectors, as well as its compatibility with low-coherence, compact X-ray sources, both of which are key factors for human-scale imaging.
+◆ It has already demonstrated strong potential for chest imaging applications, including the diagnosis of pulmonary emphysema, fibrosis, and cancer.</td></tr>
+<tr><td>2026-04-28</td><td>Validation of Whole-Slide Foundation Models for Image Retrieval in TCGA Data</td><td>[2605.00902](http://arxiv.org/pdf/2605.00902)</td><td>◆ Foundation models are reshaping computational histopathology, yet their value for whole-slide image retrieval relative to strong patch-based and supervised aggregation baselines remains unclear.
+◆ We benchmarked ten pipelines on 9,387 diagnostic slides spanning 17 organs and 60 diagnoses from The Cancer Genome Atlas (TCGA) using patient-level leave-one-patient-out evaluation.
+◆ Methods included four pre-trained slide foundation models, a supervised attention-based multiple instance learning (ABMIL) aggregator on patch embeddings, and patch-level retrieval across five sampling densities.</td></tr>
 <tr><td>2026-05-01</td><td>Depth-Guided Privacy-Preserving Visual Localization Using 3D Sphere Clouds</td><td>[2605.00562](http://arxiv.org/pdf/2605.00562)</td><td>◆ The emergence of deep neural networks capable of revealing high-fidelity scene details from sparse 3D point clouds has raised significant privacy concerns in visual localization involving private maps.
 ◆ Lifting map points to randomly oriented 3D lines is a well-known approach for obstructing undesired recovery of the scene images, but these lines are vulnerable to a density-based attack that can recover the point cloud geometry by observing the neighborhood statistics of lines.
 ◆ With the aim of nullifying this attack, we present a new privacy-preserving scene representation called \emph{sphere cloud}, which is constructed by lifting all points to 3D lines crossing the centroid of the map, resembling points on the unit sphere.</td></tr>
@@ -6067,6 +6100,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td>[2605.01296](http://arxiv.org/pdf/2605.01296)</td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
+◆ However, these approaches rely on implicit learning of spatial correspondences, struggling to preserve fine details such as text and illustrations.
+◆ We propose a novel approach, which we call SIFT-VTON, that utilizes SIFT keypoint matching to provide explicit geometric guidance for diffusion-based virtual try-on.</td></tr>
 <tr><td>2026-05-01</td><td>TrueEBSD in MTEX: automatic image matching for correlative microscopy applications</td><td>[2605.00703](http://arxiv.org/pdf/2605.00703)</td><td>◆ TrueEBSD is an open-source MATLAB program for image alignment and spatial distortion correction of images and electron backscatter diffraction (EBSD) maps.
 ◆ We have re-implemented TrueEBSD as an add-on to MTEX, an established toolbox for EBSD data analysis.
 ◆ Spatial alignment enables correlative analysis methods, such as augmenting EBSD orientation maps with data from other imaging modes.</td></tr>
@@ -8188,4 +8224,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.05
+> 更新于: 2026.05.06
