@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.06)
+# 计算机视觉领域最新论文 (2026.05.07)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -3314,6 +3314,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>MIRAGE: Retrieval and Generation of Multimodal Images and Texts for Medical Education</td><td>[2605.04772](http://arxiv.org/pdf/2605.04772)</td><td>◆ Access to diverse, well-annotated medical images with interactive learning tools is fundamental for training practitioners in medicine and related fields to improve their diagnostic skills and understanding of anatomical structures.
+◆ While medical atlases are valuable, they are often impractical due to their size and lack of interactivity, whereas online image search may provide mislabeled or incomplete material.
+◆ To address this, we propose MIRAGE, a multimodal medical text and image retrieval and generation system that allows users to find and generate clinically relevant images from trustworthy sources by mapping both text and images to a shared latent space, enabling semantically meaningful queries.</td></tr>
+<tr><td>2026-05-06</td><td>ULF-Loc: Unbiased Landmark Feature for Robust Visual Localization with 3D Gaussian Splatting</td><td>[2605.04730](http://arxiv.org/pdf/2605.04730)</td><td>◆ Visual localization is a core technology for augmented reality and autonomous navigation.
+◆ Recent methods combine the efficient rendering of 3D Gaussian Splatting (3DGS) with feature-based localization.
+◆ These methods rely on direct matching between 2D query features and the 3D Gaussian feature field, but this often results in mismatches due to an inherent bias in the learned Gaussian feature.</td></tr>
+<tr><td>2026-05-06</td><td>Multi-Level Bidirectional Biomimetic Learning for EEG-Based Visual Decoding</td><td>[2605.04680](http://arxiv.org/pdf/2605.04680)</td><td>◆ EEG-based visual neural decoding aims to align neural responses with visual stimuli for tasks such as image retrieval.
+◆ However, limited paired data and a fundamental mismatch between high-fidelity digital images and biological visual perception - distorted by retinotopic mapping and subject-specific neuroanatomy - severely impede cross-modal alignment.
+◆ To address this, we propose MB2L, a Multi-Level Bidirectional Biomimetic Learning framework that incorporates structured physiological inductive biases into representation learning.</td></tr>
 <tr><td>2026-05-04</td><td>AlbumFill: Album-Guided Reasoning and Retrieval for Personalized Image Completion</td><td>[2605.02892](http://arxiv.org/pdf/2605.02892)</td><td>◆ Personalized image completion aims to restore occluded regions in personal photos while preserving identity and appearance.
 ◆ Existing methods either rely on generic inpainting models that often fail to maintain identity consistency, or assume that suitable reference images are explicitly provided.
 ◆ In practice, suitable references are often not explicitly provided, requiring the system to search for identity-consistent images within personal photo collections.</td></tr>
@@ -8212,4 +8221,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.06
+> 更新于: 2026.05.07
