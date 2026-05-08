@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.07)
+# 计算机视觉领域最新论文 (2026.05.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-07</td><td>GA3T: A Ground-Aerial Terrain Traversability Dataset for Heterogeneous Robot Teams in Unstructured Environments</td><td>[2605.06478](http://arxiv.org/pdf/2605.06478)</td><td>◆ Heterogeneous air-ground robot teams combine complementary sensing modalities, mobility characteristics, and spatial viewpoints that can significantly enhance perception in complex outdoor environments.
+◆ However, progress in multi-robot collaborative perception has been constrained by the lack of real-world datasets featuring overlapping multi-modal observations from platforms operating in unstructured terrain.
+◆ We present GA3T (Ground-Aerial Team for Terrain Traversal), a real-world multi-robot collaborative perception dataset collected using a Clearpath Husky UGV and an Autel EVO~II UAV across diverse unstructured environments, including forest trails, rocky paths, muddy terrain, snow piles, and grass-covered fields.</td></tr>
+<tr><td>2026-05-07</td><td>Indoor 60 GHz Radio Channel Dataset Enabling Digital Twin Construction</td><td>[2605.05824](http://arxiv.org/pdf/2605.05824)</td><td>◆ The ambitious performance targets of modern wireless networks, including 6G and Industrial IoT (IIoT) systems, necessitate advanced hardware platforms utilizing millimeter-wave (mmWave) technology.
+◆ High-frequency signals provide the bandwidth and low latency required for these systems, but rely on beamforming to overcome path loss and exploit channel sparsity.
+◆ This kind of architecture provides all the specifications needed to build a SLAM (Simultaneous Localization and Mapping) system.</td></tr>
+<tr><td>2026-05-06</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td>[2605.05443](http://arxiv.org/pdf/2605.05443)</td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
+◆ We present SLAM (Structural Linguistic Activation Marking), a novel white-box watermarking scheme that sidesteps this cost by writing the mark into structural geometry rather than token frequencies: sparse autoencoders identify residual-stream directions encoding linguistic structure (e.g., voice, tense, clause order), and we causally steer those directions at generation time, leaving lexical sampling and semantics unconstrained.
+◆ On Gemma-2 2B and 9B, SLAM achieves 100% detection accuracy with a quality cost of only 1-2 reward points - compared to 7.5-11.5 for KGW, EWD, and Unigram - with naturalness and diversity preserved at near-unwatermarked levels across both models.</td></tr>
+<tr><td>2026-05-06</td><td>A Closed-Form Dual-Barrier CBF Safety Filter for Holonomic Robots on Incrementally Built Occupancy Grid Maps</td><td>[2605.05182](http://arxiv.org/pdf/2605.05182)</td><td>◆ We present a dual-barrier control barrier function (CBF) safety filter for real-time, safety-critical velocity control of holonomic robots operating in incrementally built occupancy grid maps.
+◆ As a robot explores an unknown environment, unmapped regions introduce irreducible uncertainty, since obstacle geometry beyond the explored frontier is unknown, making entry into such regions a source of collision risk, especially with front-facing sensors.
+◆ To address this, we enforce two constraints: avoidance of mapped obstacles and restriction from unexplored regions.</td></tr>
+<tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td>[2605.04806](http://arxiv.org/pdf/2605.04806)</td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
+◆ Unlike cameras or lidars that require line-of-sight, millimetre-wave radars can `see&#x27; through dust, falling snow, rain, etc.
+◆ Accordingly, it is a great modality for robust perception regardless of the weather conditions.</td></tr>
+<tr><td>2026-05-07</td><td>Hardware-Aware Neural Feature Extraction for Resource-Constrained Devices</td><td>[2605.04282](http://arxiv.org/pdf/2605.04282)</td><td>◆ Visual SLAM is a core component of spatial computing systems, yet deploying learned local feature extractors on microcontroller-class hardware remains challenging due to memory, bandwidth, and quantization constraints.
+◆ While modern neural descriptors provide strong robustness, their practical adoption is often hindered by system-level bottlenecks that are not captured by FLOP-based efficiency metrics.
+◆ In this work, we introduce Gideon, a hardware-aware neural feature extractor explicitly designed for resource-constrained devices.</td></tr>
 <tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
 ◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
 ◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
@@ -2122,6 +2140,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>egenioussBench: A New Dataset for Geospatial Visual Localisation</td><td>[2605.05351](http://arxiv.org/pdf/2605.05351)</td><td>◆ We present egenioussBench, a visual localisation benchmark built on geospatial reference data: a city-scale airborne 3D mesh and a CityGML LoD2 model.
+◆ This pairing reflects deployable mapping assets and supports true scalability beyond traditional SfM-based approaches.
+◆ The query data comprise smartphone images with centimetre-accurate, map-independent ground truth obtained via PPK and GCP/CP-aided adjustment.</td></tr>
 <tr><td>2026-05-05</td><td>Permutation Routing on Ramanujan Hypergraphs with Applications to Neutral Atom Quantum Architectures</td><td>[2605.02498](http://arxiv.org/pdf/2605.02498)</td><td>◆ We consider the routing of neutral atoms on a reconfigurable lattice in terms of hypergraph transformations.
 ◆ We prove the routing number of a Ramanujan $(d,r)$-regular hypergraph on $N$ vertices satisfies $\mathrm{rt}(H) = Θ(\log N)$, where routing is via matchings in the clique expansion graph $G_{\mathrm{cl}}(H)$.
 ◆ Hypergraphs reframe the qubit routing problem by replacing Nenadov&#x27;s two-sided spectral gap hypothesis with a one-sided condition based on eigenvalue centering.</td></tr>
@@ -3318,6 +3339,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</td><td>[2605.05405](http://arxiv.org/pdf/2605.05405)</td><td>◆ Semantic search of Earth observation archives remains challenging.
+◆ Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale.
+◆ We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies.</td></tr>
+<tr><td>2026-05-06</td><td>Open-SAT: LLM-Guided Query Embedding Refinement for Open-Vocabulary Object Retrieval in Satellite Imagery</td><td>[2605.05344](http://arxiv.org/pdf/2605.05344)</td><td>◆ In satellite applications, user queries often take the form of open-ended natural language, extending beyond a fixed set of predefined categories.
+◆ This open-vocabulary nature poses significant challenges for retrieving relevant image tiles, as the retrieval system must generalize to a wide range of unseen objects and concepts.
+◆ While vision-language models (VLMs) such as CLIP are widely used for text-image retrieval, even fine-tuned variants often struggle to accurately align such queries with satellite imagery.</td></tr>
 <tr><td>2026-05-06</td><td>MIRAGE: Retrieval and Generation of Multimodal Images and Texts for Medical Education</td><td>[2605.04772](http://arxiv.org/pdf/2605.04772)</td><td>◆ Access to diverse, well-annotated medical images with interactive learning tools is fundamental for training practitioners in medicine and related fields to improve their diagnostic skills and understanding of anatomical structures.
 ◆ While medical atlases are valuable, they are often impractical due to their size and lack of interactivity, whereas online image search may provide mislabeled or incomplete material.
 ◆ To address this, we propose MIRAGE, a multimodal medical text and image retrieval and generation system that allows users to find and generate clinically relevant images from trustworthy sources by mapping both text and images to a shared latent space, enabling semantically meaningful queries.</td></tr>
@@ -6109,6 +6136,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Creative Robot Tool Use by Counterfactual Reasoning</td><td>[2605.05411](http://arxiv.org/pdf/2605.05411)</td><td>◆ We propose a causal reasoning framework for creative robot tool use where a suitable tool for a task is correctly identified for use beyond its primary objectives.
+◆ The proposed framework first discovers the causal relationships between the tool and the task by conducting simulated experiments in a dynamics model.
+◆ We decouple the causal discovery problem into two complementary components: VLM-based feature suggestion and counterfactual tool generation via targeted geometric and physical feature perturbations.</td></tr>
 <tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td>[2605.01296](http://arxiv.org/pdf/2605.01296)</td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
 ◆ However, these approaches rely on implicit learning of spatial correspondences, struggling to preserve fine details such as text and illustrations.
 ◆ We propose a novel approach, which we call SIFT-VTON, that utilizes SIFT keypoint matching to provide explicit geometric guidance for diffusion-based virtual try-on.</td></tr>
@@ -8233,4 +8263,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.07
+> 更新于: 2026.05.08
