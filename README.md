@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.10)
+# 计算机视觉领域最新论文 (2026.05.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td>[2605.07885](http://arxiv.org/pdf/2605.07885)</td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
+◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
+◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
 <tr><td>2026-05-07</td><td>GA3T: A Ground-Aerial Terrain Traversability Dataset for Heterogeneous Robot Teams in Unstructured Environments</td><td>[2605.06478](http://arxiv.org/pdf/2605.06478)</td><td>◆ Heterogeneous air-ground robot teams combine complementary sensing modalities, mobility characteristics, and spatial viewpoints that can significantly enhance perception in complex outdoor environments.
 ◆ However, progress in multi-robot collaborative perception has been constrained by the lack of real-world datasets featuring overlapping multi-modal observations from platforms operating in unstructured terrain.
 ◆ We present GA3T (Ground-Aerial Team for Terrain Traversal), a real-world multi-robot collaborative perception dataset collected using a Clearpath Husky UGV and an Autel EVO~II UAV across diverse unstructured environments, including forest trails, rocky paths, muddy terrain, snow piles, and grass-covered fields.</td></tr>
@@ -2140,6 +2143,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>TriP: A Triangle Puzzle Approach to Robust Translation Averaging</td><td>[2605.07143](http://arxiv.org/pdf/2605.07143)</td><td>◆ Translation averaging aims to recover camera locations from pairwise relative translation directions and is a fundamental component of global Structure-from-Motion pipelines.
+◆ The problem is challenging because direction measurements contain no distance information, making the estimation problem highly ill-conditioned and highly sensitive to corrupted observations.
+◆ In this paper, we propose TriP, a triangle-based framework for robust translation averaging.</td></tr>
+<tr><td>2026-05-07</td><td>TriDE: Triangle-Consistent Translation Directions for Global Camera Pose Estimation</td><td>[2605.06889](http://arxiv.org/pdf/2605.06889)</td><td>◆ Pairwise translation directions are a key input to camera location estimation in global structure-from-motion.
+◆ Existing estimators usually process each image pair independently, producing directions that may be locally plausible but inconsistent with the other relative directions in the viewing graph.
+◆ To jointly estimate the direction, we propose TriDE, which exploits camera-triangle consistency as an efficient higher-order verification signal.</td></tr>
 <tr><td>2026-05-06</td><td>egenioussBench: A New Dataset for Geospatial Visual Localisation</td><td>[2605.05351](http://arxiv.org/pdf/2605.05351)</td><td>◆ We present egenioussBench, a visual localisation benchmark built on geospatial reference data: a city-scale airborne 3D mesh and a CityGML LoD2 model.
 ◆ This pairing reflects deployable mapping assets and supports true scalability beyond traditional SfM-based approaches.
 ◆ The query data comprise smartphone images with centimetre-accurate, map-independent ground truth obtained via PPK and GCP/CP-aided adjustment.</td></tr>
@@ -3339,7 +3348,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-06</td><td>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</td><td>[2605.05405](http://arxiv.org/pdf/2605.05405)</td><td>◆ Semantic search of Earth observation archives remains challenging.
+<tr><td>2026-05-08</td><td>Disambiguating 2D-3D Correspondences in Gaussian Splatting-based Feature Fields for Visual Localization</td><td>[2605.07351](http://arxiv.org/pdf/2605.07351)</td><td>◆ While Gaussian Splatting-based Feature Fields (GSFFs) have shown promise for visual localization, this paper highlights that photometrically optimized GSFFs are inherently ill-suited for 2D-3D matching.
+◆ The volumetric extent of each Gaussian induces many-to-one pixel-to-point mappings that destabilize PnP-based pose estimation, while photometric optimization gives rise to superfluous Gaussians devoid of multi-view consistency.
+◆ To address these issues, we propose SplitGS-Loc, a localization-specialized GSFFs construction framework that disambiguates 2D-3D correspondences by exploiting Gaussian attributes.</td></tr>
+<tr><td>2026-05-08</td><td>Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response</td><td>[2605.05405](http://arxiv.org/pdf/2605.05405)</td><td>◆ Semantic search of Earth observation archives remains challenging.
 ◆ Visual foundation models such as CLAY produce rich embeddings of satellite imagery but lack the natural-language grounding needed for intuitive query, and full contrastive training of a remote-sensing CLIP-style model requires paired data and compute that are unavailable at global scale.
 ◆ We present GeoQuery, a zero-shot retrieval system that sidesteps this constraint through prompt-aligned text proxies.</td></tr>
 <tr><td>2026-05-06</td><td>Open-SAT: LLM-Guided Query Embedding Refinement for Open-Vocabulary Object Retrieval in Satellite Imagery</td><td>[2605.05344](http://arxiv.org/pdf/2605.05344)</td><td>◆ In satellite applications, user queries often take the form of open-ended natural language, extending beyond a fixed set of predefined categories.
@@ -7032,6 +7044,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>PropSplat: Map-Free RF Field Reconstruction via 3D Gaussian Propagation Splatting</td><td>[2605.08035](http://arxiv.org/pdf/2605.08035)</td><td>◆ Building a site-specific propagation model typically requires either ray-tracing over detailed 3D maps or dense measurement campaigns.
+◆ Both approaches are expensive and often infeasible for rapid deployments where geographic data is unavailable or outdated.
+◆ We present PropSplat, a map-free propagation modeling method that reconstructs radio frequency (RF) fields using 3D anisotropic Gaussian primitives.</td></tr>
+<tr><td>2026-05-08</td><td>High-Fidelity Surface Splatting-Based 3D Reconstruction from Multi-View Images</td><td>[2605.07254](http://arxiv.org/pdf/2605.07254)</td><td>◆ Multi-view mesh reconstruction remains a core challenge in computer graphics and vision, especially for recovering high-frequency geometry from sparse observations.
+◆ Recent methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) rely on post-processing for mesh extraction, thereby limiting joint optimization of geometry and appearance.
+◆ Implicit Moving Least Squares (IMLS) instead enables direct conversion of point clouds into signed distance and texture fields, supporting end-to-end reconstruction and rendering.</td></tr>
+<tr><td>2026-05-08</td><td>AsyncEvGS: Asynchronous Event-Assisted Gaussian Splatting for Handheld Motion-Blurred Scenes</td><td>[2605.07192](http://arxiv.org/pdf/2605.07192)</td><td>◆ 3D reconstruction methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) achieve impressive photorealism but fail when input images suffer from severe motion blur.
+◆ While event cameras provide high-temporal-resolution motion cues, existing event-assisted approaches rely on low-resolution sensors and strict synchronization, limiting their practicality for handheld 3D capture on common devices, such as smartphones.
+◆ We introduce a flexible, high-resolution asynchronous RGB-Event dual-camera system and a corresponding reconstruction framework.</td></tr>
 <tr><td>2026-05-04</td><td>HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar</td><td>[2605.02784](http://arxiv.org/pdf/2605.02784)</td><td>◆ Accurately recovering human pose and appearance from video is an essential component of scene reconstruction, with applications to motion capture, motion prediction, virtual reality, and digital twinning.
 ◆ Despite significant interest in building realistic human avatars from video, this paper demonstrates that existing methods do not accurately recover the 3D geometry of humans.
 ◆ ViT-based approaches are not consistently reliable and can overfit to 2D views, while NeRF- and Gaussian Splatting-based avatars treat pose and appearance separately, limiting rendering generalization to new poses.</td></tr>
@@ -8263,4 +8284,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.10
+> 更新于: 2026.05.11
