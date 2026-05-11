@@ -20,9 +20,10 @@ base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
 github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
 
-# DeepSeek API配置
-DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
-DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+# Anthropic Claude API配置
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_AUTH_TOKEN", "")
+ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com")
+ANTHROPIC_API_URL = f"{ANTHROPIC_BASE_URL}/v1/messages"
 
 # 全局过滤日期 - 修改这里调整过滤条件
 MIN_DATE = datetime.date(2025, 5, 1)
@@ -142,13 +143,13 @@ def get_paper_summary(title: str, abstract: str) -> str:
     """确保摘要永不空白的生成函数"""
     MAX_RETRIES = 3
     WAIT_TIMES = [1, 2, 3]  # 重试等待时间
-    
+
     # 1. 检查API密钥是否有效
-    if not DEEPSEEK_API_KEY or DEEPSEEK_API_KEY == "your_api_key_here":
-        logging.warning("DeepSeek API密钥未配置")
+    if not ANTHROPIC_API_KEY:
+        logging.warning("Anthropic API密钥未配置")
         return generate_fallback_summary(title, abstract)
-    
-    # 2. 构建更有效的提示词
+
+    # 2. 构建提示词
     prompt = (
         "用5-6句话总结以下论文的核心贡献和创新点:\n"
         f"标题: {title}\n"
@@ -157,54 +158,52 @@ def get_paper_summary(title: str, abstract: str) -> str:
         "- 用中文回复\n"
         "- 不使用Markdown格式\n"
         "- 不超过400字\n"
-        "- 创新点用'◆'符号开头\n" 
+        "- 创新点用'◆'符号开头\n"
         "- 每个创新点单开一行\n"
     )
-    
+
     # 3. 带重试机制的API请求
     for attempt in range(MAX_RETRIES):
         try:
             response = requests.post(
-                DEEPSEEK_API_URL,
+                ANTHROPIC_API_URL,
                 headers={
-                    "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+                    "x-api-key": ANTHROPIC_API_KEY,
+                    "anthropic-version": "2023-06-01",
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "deepseek-chat",
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.3,
+                    "model": "claude-haiku-4-5-20251001",
                     "max_tokens": 500,
-                    "stream": False
+                    "messages": [{"role": "user", "content": prompt}]
                 },
                 timeout=30
             )
-            
+
             # 4. 检查响应状态
             if response.status_code != 200:
-                logging.warning(f"DeepSeek API响应错误: {response.status_code}")
+                logging.warning(f"Anthropic API响应错误: {response.status_code} {response.text}")
                 continue
-                
+
             # 5. 解析API响应
             data = response.json()
-            choices = data.get("choices", [])
-            if not choices:
-                logging.warning("DeepSeek API返回空内容")
+            content = data.get("content", [])
+            if not content:
+                logging.warning("Anthropic API返回空内容")
                 continue
-                
-            content = choices[0].get("message", {}).get("content", "").strip()
-            if content:
-                # 6. 清理响应内容
-                content = re.sub(r"\*\*|\#\#\#|\`", "", content)
-                return content
-                
+
+            text = content[0].get("text", "").strip()
+            if text:
+                text = re.sub(r"\*\*|\#\#\#|\`", "", text)
+                return text
+
         except requests.Timeout:
-            logging.warning(f"DeepSeek API超时 (尝试 {attempt+1}/{MAX_RETRIES})")
+            logging.warning(f"Anthropic API超时 (尝试 {attempt+1}/{MAX_RETRIES})")
             time.sleep(WAIT_TIMES[attempt])
         except Exception as e:
-            logging.error(f"DeepSeek API错误: {type(e).__name__}: {str(e)}")
-    
-    # 7. 所有重试失败后生成备用摘要
+            logging.error(f"Anthropic API错误: {type(e).__name__}: {str(e)}")
+
+    # 6. 所有重试失败后生成备用摘要
     return generate_fallback_summary(title, abstract)
 
 def generate_fallback_summary(title: str, abstract: str) -> str:

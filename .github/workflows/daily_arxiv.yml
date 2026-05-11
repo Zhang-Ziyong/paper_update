@@ -20,9 +20,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install arxiv PyYAML requests
-          
+          pip install arxiv PyYAML requests feedparser
+
       - name: Run daily_arxiv.py
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
         run: python daily_arxiv.py
         
       - name: Commit changes
