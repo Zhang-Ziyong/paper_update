@@ -531,7 +531,7 @@ def json_to_md(filename, md_filename,
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
             sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
@@ -552,24 +552,28 @@ def json_to_md(filename, md_filename,
                     if not summary or summary in ["无", "null"]:
                         summary = "摘要生成中..."
                     
-                    # 合并论文链接和代码链接
+                    # 构建标题+链接单元格
                     paper_url_match = re.search(r'\((https?://[^)]+)\)', paper_link)
                     if paper_url_match:
                         paper_url = paper_url_match.group(1)
-                        paper_display = f"<a href='{paper_url}'>论文</a>"
+                        title_display = f"{html.escape(title)}<br><a href='{paper_url}'>论文</a>"
                     else:
-                        paper_display = paper_link
+                        title_display = html.escape(title)
 
                     if code_link not in ["无", "null", ""]:
                         code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
-                        if code_url_match:
+                        if not code_url_match:
+                            # code_link 是裸 URL
+                            code_url_match2 = re.match(r'https?://', code_link)
+                            if code_url_match2:
+                                title_display += f" | <a href='{code_link}'>代码</a>"
+                        else:
                             code_url = code_url_match.group(1)
-                            paper_display += f" | <a href='{code_url}'>代码</a>"
-                    
+                            title_display += f" | <a href='{code_url}'>代码</a>"
+
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date_str)}</td>")
-                    f.write(f"<td>{html.escape(title)}</td>")
-                    f.write(f"<td>{paper_display}</td>")
+                    f.write(f"<td>{title_display}</td>")
                     f.write(f"<td>{html.escape(summary)}</td>")
                     f.write("</tr>\n")
             
