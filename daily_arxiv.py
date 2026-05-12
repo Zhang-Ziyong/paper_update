@@ -170,25 +170,8 @@ def get_paper_summary(title: str, abstract: str) -> str:
     return generate_fallback_summary(title, abstract)
 
 def generate_fallback_summary(title: str, abstract: str) -> str:
-    """智能生成备用摘要"""
-    # 1. 尝试从摘要中提取前3句
-    sentences = re.split(r'(?<=[.!?])\s+', abstract)
-    if len(sentences) >= 3:
-        return "◆ " + "\n◆ ".join(sentences[:3])
-    elif sentences:
-        return "◆ " + sentences[0]
-    
-    # 2. 如果摘要为空，根据标题生成示例摘要
-    topics = ["视觉定位", "三维重建", "特征匹配", "场景理解", "神经网络"]
-    techniques = ["深度学习", "卷积神经网络", "自监督学习", "特征金字塔"]
-    contributions = ["提高准确率", "降低计算成本", "增强鲁棒性", "解决领域难题"]
-    
-    return (
-        f"◆ 提出了一种新的{random.choice(topics)}方法\n"
-        f"◆ 通过{random.choice(techniques)}技术创新\n"
-        f"◆ 实现{random.choice(contributions)}\n"
-        f"◆ 在多个数据集上验证了有效性"
-    )
+    """API调用失败时的备用摘要"""
+    return "◆ 中文摘要生成失败，请检查 API 配置后重新运行"
 
 def fetch_arxiv_results(query, max_results=10):
     """修复参数错误并增强网络稳定性"""
@@ -575,7 +558,7 @@ def json_to_md(filename, md_filename,
                         code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
-                            paper_display += f"<br><a href='{code_url}'>代码</a>"
+                            paper_display += f" | <a href='{code_url}'>代码</a>"
                     
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date_str)}</td>")
