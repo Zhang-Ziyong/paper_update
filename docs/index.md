@@ -19,12 +19,12 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>
 <tbody>
 <tr><td>2026-05-10</td><td>Above and Below: Heterogeneous Multi-robot SLAM Across Surface and Underwater Domains</td><td><a href='http://arxiv.org/pdf/2605.09811'>论文</a></td><td>◆ Multi-robot simultaneous localization and mapping (SLAM) is a fundamental task in multi-robot operations.
 ◆ Robots must have a common understanding of their location and that of their team members to complete coordinated actions.
 ◆ However, multi-robot SLAM between Uncrewed Surface Vessels (USVs) and Autonomous Underwater Vehicles (AUVs) has primarily been achieved through acoustic pinging between robots to retrieve range measurements; a measurement technique requires that robots to be in similar locations simultaneously, have an uninterrupted path for signal propagation, and may necessitate synchronized clocks.</td></tr>
-<tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td><a href='http://arxiv.org/pdf/2605.07885'>论文</a></td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
+<tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td><a href='http://arxiv.org/pdf/2605.07885'>论文</a><br><a href='https://ethz-mrl.github.io/AERO-VIS'>代码</a></td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
 ◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
 ◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
 <tr><td>2026-05-07</td><td>GA3T: A Ground-Aerial Terrain Traversability Dataset for Heterogeneous Robot Teams in Unstructured Environments</td><td><a href='http://arxiv.org/pdf/2605.06478'>论文</a></td><td>◆ Heterogeneous air-ground robot teams combine complementary sensing modalities, mobility characteristics, and spatial viewpoints that can significantly enhance perception in complex outdoor environments.
@@ -65,7 +65,7 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>
 <tbody>
 <tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
 ◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
@@ -102,7 +102,7 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>
 <tbody>
 <tr><td>2026-05-11</td><td>Hystar: Hypernetwork-driven Style-adaptive Retrieval via Dynamic SVD Modulation</td><td><a href='http://arxiv.org/pdf/2605.10009'>论文</a></td><td>◆ Query-based image retrieval (QBIR) requires retrieving relevant images given diverse and often stylistically heterogeneous queries, such as sketches, artworks, or low-resolution previews.
 ◆ While large-scale vision--language representation models (VLRMs) like CLIP offer strong zero-shot retrieval performance, they struggle with distribution shifts caused by unseen query styles.
@@ -163,7 +163,7 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>
 <tbody>
 <tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
 ◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
@@ -188,7 +188,7 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>
 <tbody>
 <tr><td>2026-05-06</td><td>Low-Cost Stereo Vision for Robust 3D Positioning of Thin Radiata Pine Branches in Autonomous Drone Pruning</td><td><a href='http://arxiv.org/pdf/2605.08213'>论文</a></td><td>◆ Manual pruning of radiata pine, a species of major economic importance to New Zealand forestry, is hazardous, labour-intensive, and increasingly constrained by workforce shortages.
 ◆ Existing autonomous pruning platforms typically rely on expensive sensors such as LiDAR and are limited to thick branches, which restricts their wider adoption.
@@ -199,7 +199,7 @@
 <tr><td>2026-05-08</td><td>High-Fidelity Surface Splatting-Based 3D Reconstruction from Multi-View Images</td><td><a href='http://arxiv.org/pdf/2605.07254'>论文</a></td><td>◆ Multi-view mesh reconstruction remains a core challenge in computer graphics and vision, especially for recovering high-frequency geometry from sparse observations.
 ◆ Recent methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) rely on post-processing for mesh extraction, thereby limiting joint optimization of geometry and appearance.
 ◆ Implicit Moving Least Squares (IMLS) instead enables direct conversion of point clouds into signed distance and texture fields, supporting end-to-end reconstruction and rendering.</td></tr>
-<tr><td>2026-05-08</td><td>AsyncEvGS: Asynchronous Event-Assisted Gaussian Splatting for Handheld Motion-Blurred Scenes</td><td><a href='http://arxiv.org/pdf/2605.07192'>论文</a></td><td>◆ 3D reconstruction methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) achieve impressive photorealism but fail when input images suffer from severe motion blur.
+<tr><td>2026-05-08</td><td>AsyncEvGS: Asynchronous Event-Assisted Gaussian Splatting for Handheld Motion-Blurred Scenes</td><td><a href='http://arxiv.org/pdf/2605.07192'>论文</a><br><a href='https://openimaginglab.github.io/AsyncEvGS/'>代码</a></td><td>◆ 3D reconstruction methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) achieve impressive photorealism but fail when input images suffer from severe motion blur.
 ◆ While event cameras provide high-temporal-resolution motion cues, existing event-assisted approaches rely on low-resolution sensors and strict synchronization, limiting their practicality for handheld 3D capture on common devices, such as smartphones.
 ◆ We introduce a flexible, high-resolution asynchronous RGB-Event dual-camera system and a corresponding reconstruction framework.</td></tr>
 <tr><td>2026-05-04</td><td>HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar</td><td><a href='http://arxiv.org/pdf/2605.02784'>论文</a></td><td>◆ Accurately recovering human pose and appearance from video is an essential component of scene reconstruction, with applications to motion capture, motion prediction, virtual reality, and digital twinning.
@@ -208,7 +208,7 @@
 <tr><td>2026-05-03</td><td>GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting</td><td><a href='http://arxiv.org/pdf/2605.02086'>论文</a></td><td>◆ 3D Gaussian splatting (3DGS) is a state-of-the-art representation for real-time photorealistic novel-view synthesis, yet a single high-fidelity scene typically occupies hundreds of megabytes to several gigabytes, exceeding the budgets of mobile, immersive, and volumetric video platforms.
 ◆ Existing 3DGS compression methods (e.g., HAC++, FlexGaussian, LP-3DGS) treat pruning, quantization, and entropy coding as separate stages and rely on hand-tuned heuristics (opacity thresholds, fixed bit-widths, SH truncation), limiting cross-scene generalization and preventing users from specifying a target rate or quality budget.
 ◆ We propose GETA-3DGS, to our knowledge the first end-to-end automatic joint structured pruning and quantization framework for 3DGS.</td></tr>
-<tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td><a href='http://arxiv.org/pdf/2605.00498'>论文</a></td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
+<tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td><a href='http://arxiv.org/pdf/2605.00498'>论文</a><br><a href='https://applezyh.github.io/GOR-IS-project-page/'>代码</a></td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
 ◆ Removing objects from such 3D representations is a fundamental editing task that requires complete and seamless inpainting of occluded regions, ensuring consistency in geometry and appearance.
 ◆ Although existing methods have made notable progress in improving inpainting consistency, they often neglect global lighting effects, leading to physically implausible results.</td></tr>
 <tr><td>2026-05-01</td><td>Beyond Heuristics: Learnable Density Control for 3D Gaussian Splatting</td><td><a href='http://arxiv.org/pdf/2605.00408'>论文</a><br><a href='https://github.com/AaronNZH/LeGS'>代码</a></td><td>◆ While 3D Gaussian Splatting (3DGS) has demonstrated impressive real-time rendering performance, its efficacy remains constrained by a reliance on heuristic density control.
