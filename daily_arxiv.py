@@ -126,8 +126,10 @@ def get_paper_summary(title: str, abstract: str) -> str:
     )
 
     # 3. 带重试机制的API请求
+    logging.info(f"调用 Claude API: {ANTHROPIC_API_URL}, key前缀: {ANTHROPIC_API_KEY[:8]}...")
     for attempt in range(MAX_RETRIES):
         try:
+            logging.info(f"Claude API 请求中 (尝试 {attempt+1}/{MAX_RETRIES})")
             response = requests.post(
                 ANTHROPIC_API_URL,
                 headers={
@@ -167,6 +169,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
             logging.error(f"Anthropic API错误: {type(e).__name__}: {str(e)}")
 
     # 6. 所有重试失败后生成备用摘要
+    logging.error(f"Claude API 所有重试均失败，使用备用摘要: {title}")
     return generate_fallback_summary(title, abstract)
 
 def generate_fallback_summary(title: str, abstract: str) -> str:
