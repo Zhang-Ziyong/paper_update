@@ -19,8 +19,11 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-10</td><td>Above and Below: Heterogeneous Multi-robot SLAM Across Surface and Underwater Domains</td><td><a href='http://arxiv.org/pdf/2605.09811'>论文</a></td><td>◆ Multi-robot simultaneous localization and mapping (SLAM) is a fundamental task in multi-robot operations.
+◆ Robots must have a common understanding of their location and that of their team members to complete coordinated actions.
+◆ However, multi-robot SLAM between Uncrewed Surface Vessels (USVs) and Autonomous Underwater Vehicles (AUVs) has primarily been achieved through acoustic pinging between robots to retrieve range measurements; a measurement technique requires that robots to be in similar locations simultaneously, have an uninterrupted path for signal propagation, and may necessitate synchronized clocks.</td></tr>
 <tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td><a href='http://arxiv.org/pdf/2605.07885'>论文</a></td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
 ◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
 ◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
@@ -30,13 +33,13 @@
 <tr><td>2026-05-07</td><td>Indoor 60 GHz Radio Channel Dataset Enabling Digital Twin Construction</td><td><a href='http://arxiv.org/pdf/2605.05824'>论文</a></td><td>◆ The ambitious performance targets of modern wireless networks, including 6G and Industrial IoT (IIoT) systems, necessitate advanced hardware platforms utilizing millimeter-wave (mmWave) technology.
 ◆ High-frequency signals provide the bandwidth and low latency required for these systems, but rely on beamforming to overcome path loss and exploit channel sparsity.
 ◆ This kind of architecture provides all the specifications needed to build a SLAM (Simultaneous Localization and Mapping) system.</td></tr>
-<tr><td>2026-05-06</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td><a href='http://arxiv.org/pdf/2605.05443'>论文</a></td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
+<tr><td>2026-05-08</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td><a href='http://arxiv.org/pdf/2605.05443'>论文</a></td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
 ◆ We present SLAM (Structural Linguistic Activation Marking), a novel white-box watermarking scheme that sidesteps this cost by writing the mark into structural geometry rather than token frequencies: sparse autoencoders identify residual-stream directions encoding linguistic structure (e.g., voice, tense, clause order), and we causally steer those directions at generation time, leaving lexical sampling and semantics unconstrained.
 ◆ On Gemma-2 2B and 9B, SLAM achieves 100% detection accuracy with a quality cost of only 1-2 reward points - compared to 7.5-11.5 for KGW, EWD, and Unigram - with naturalness and diversity preserved at near-unwatermarked levels across both models.</td></tr>
 <tr><td>2026-05-06</td><td>A Closed-Form Dual-Barrier CBF Safety Filter for Holonomic Robots on Incrementally Built Occupancy Grid Maps</td><td><a href='http://arxiv.org/pdf/2605.05182'>论文</a></td><td>◆ We present a dual-barrier control barrier function (CBF) safety filter for real-time, safety-critical velocity control of holonomic robots operating in incrementally built occupancy grid maps.
 ◆ As a robot explores an unknown environment, unmapped regions introduce irreducible uncertainty, since obstacle geometry beyond the explored frontier is unknown, making entry into such regions a source of collision risk, especially with front-facing sensors.
 ◆ To address this, we enforce two constraints: avoidance of mapped obstacles and restriction from unexplored regions.</td></tr>
-<tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td><a href='http://arxiv.org/pdf/2605.04806'>论文</a></td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
+<tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td><a href='http://arxiv.org/pdf/2605.04806'>论文</a><br><a href='https://github.com/utiasASRL/dr_pogo'>代码</a></td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
 ◆ Unlike cameras or lidars that require line-of-sight, millimetre-wave radars can `see&#x27; through dust, falling snow, rain, etc.
 ◆ Accordingly, it is a great modality for robust perception regardless of the weather conditions.</td></tr>
 <tr><td>2026-05-07</td><td>Hardware-Aware Neural Feature Extraction for Resource-Constrained Devices</td><td><a href='http://arxiv.org/pdf/2605.04282'>论文</a></td><td>◆ Visual SLAM is a core component of spatial computing systems, yet deploying learned local feature extractors on microcontroller-class hardware remains challenging due to memory, bandwidth, and quantization constraints.
@@ -64,21 +67,27 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
+◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
+◆ Existing datasets primarily focus on diffuse, textured objects, and therefore provide limited insight into performance under real-world material complexities.</td></tr>
+<tr><td>2026-05-11</td><td>BathyFacto: Refraction-Aware Two-Media Neural Radiance Fields for Bathymetry</td><td><a href='http://arxiv.org/pdf/2605.10174'>论文</a></td><td>◆ Through-water photogrammetry based on UAV imagery enables shallow-water bathymetry, but refraction at the air-water interface violates the straight-ray assumption of Structure-from-Motion and causes systematic depth bias.
+◆ We present BathyFacto, a refraction-aware two-media extension of Nerfacto integrated into Nerfstudio that targets metrically precise underwater point clouds.
+◆ BathyFacto uses a shared hash-grid-based density field with a medium-conditioned color head that receives a one-bit medium flag (air or water) and traces each camera ray as two segments: a straight segment in air up to a planar water surface and a refracted segment in water computed via Snell&#x27;s law with known refractive indices.</td></tr>
 <tr><td>2026-05-08</td><td>TriP: A Triangle Puzzle Approach to Robust Translation Averaging</td><td><a href='http://arxiv.org/pdf/2605.07143'>论文</a></td><td>◆ Translation averaging aims to recover camera locations from pairwise relative translation directions and is a fundamental component of global Structure-from-Motion pipelines.
 ◆ The problem is challenging because direction measurements contain no distance information, making the estimation problem highly ill-conditioned and highly sensitive to corrupted observations.
 ◆ In this paper, we propose TriP, a triangle-based framework for robust translation averaging.</td></tr>
 <tr><td>2026-05-07</td><td>TriDE: Triangle-Consistent Translation Directions for Global Camera Pose Estimation</td><td><a href='http://arxiv.org/pdf/2605.06889'>论文</a></td><td>◆ Pairwise translation directions are a key input to camera location estimation in global structure-from-motion.
 ◆ Existing estimators usually process each image pair independently, producing directions that may be locally plausible but inconsistent with the other relative directions in the viewing graph.
 ◆ To jointly estimate the direction, we propose TriDE, which exploits camera-triangle consistency as an efficient higher-order verification signal.</td></tr>
-<tr><td>2026-05-06</td><td>egenioussBench: A New Dataset for Geospatial Visual Localisation</td><td><a href='http://arxiv.org/pdf/2605.05351'>论文</a></td><td>◆ We present egenioussBench, a visual localisation benchmark built on geospatial reference data: a city-scale airborne 3D mesh and a CityGML LoD2 model.
+<tr><td>2026-05-06</td><td>egenioussBench: A New Dataset for Geospatial Visual Localisation</td><td><a href='http://arxiv.org/pdf/2605.05351'>论文</a><br><a href='https://github.com/fratopa/egenioussBench'>代码</a></td><td>◆ We present egenioussBench, a visual localisation benchmark built on geospatial reference data: a city-scale airborne 3D mesh and a CityGML LoD2 model.
 ◆ This pairing reflects deployable mapping assets and supports true scalability beyond traditional SfM-based approaches.
 ◆ The query data comprise smartphone images with centimetre-accurate, map-independent ground truth obtained via PPK and GCP/CP-aided adjustment.</td></tr>
 <tr><td>2026-05-05</td><td>Permutation Routing on Ramanujan Hypergraphs with Applications to Neutral Atom Quantum Architectures</td><td><a href='http://arxiv.org/pdf/2605.02498'>论文</a></td><td>◆ We consider the routing of neutral atoms on a reconfigurable lattice in terms of hypergraph transformations.
 ◆ We prove the routing number of a Ramanujan $(d,r)$-regular hypergraph on $N$ vertices satisfies $\mathrm{rt}(H) = Θ(\log N)$, where routing is via matchings in the clique expansion graph $G_{\mathrm{cl}}(H)$.
 ◆ Hypergraphs reframe the qubit routing problem by replacing Nenadov&#x27;s two-sided spectral gap hypothesis with a one-sided condition based on eigenvalue centering.</td></tr>
-<tr><td>2026-05-03</td><td>DP-SfM: Dual-Pixel Structure-from-Motion without Scale Ambiguity</td><td><a href='http://arxiv.org/pdf/2605.01852'>论文</a></td><td>◆ Multi-view 3D reconstruction, namely, structure-from-motion followed by multi-view stereo, is a fundamental component of 3D computer vision.
+<tr><td>2026-05-03</td><td>DP-SfM: Dual-Pixel Structure-from-Motion without Scale Ambiguity</td><td><a href='http://arxiv.org/pdf/2605.01852'>论文</a><br><a href='https://github.com/lilika-makabe/dp-sfm-tpami.git'>代码</a></td><td>◆ Multi-view 3D reconstruction, namely, structure-from-motion followed by multi-view stereo, is a fundamental component of 3D computer vision.
 ◆ In general, multi-view 3D reconstruction suffers from an unknown scale ambiguity unless a reference object of known size is present in the scene.
 ◆ In this article, we show that multi-view images captured using a dual-pixel (DP) sensor can automatically resolve the scale ambiguity, without requiring a reference object or prior calibration.</td></tr>
 <tr><td>2026-05-01</td><td>PEARLS: Two Distinct Populations of AGN Hosts Moving Between Star Formation and Quiescence</td><td><a href='http://arxiv.org/pdf/2605.00822'>论文</a></td><td>◆ We present the results of AGN--host-galaxy decomposition using JWST/NIRCam, HST/ACS, and HST/WFC3 imaging of the North Ecliptic Pole Time Domain Field (NEP-TDF).
@@ -97,8 +106,14 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>Hystar: Hypernetwork-driven Style-adaptive Retrieval via Dynamic SVD Modulation</td><td><a href='http://arxiv.org/pdf/2605.10009'>论文</a></td><td>◆ Query-based image retrieval (QBIR) requires retrieving relevant images given diverse and often stylistically heterogeneous queries, such as sketches, artworks, or low-resolution previews.
+◆ While large-scale vision--language representation models (VLRMs) like CLIP offer strong zero-shot retrieval performance, they struggle with distribution shifts caused by unseen query styles.
+◆ In this paper, we propose the Hypernetwork-driven Style-adaptive Retrieval (Hystar), a lightweight framework that dynamically adapts model weights to each query&#x27;s style.</td></tr>
+<tr><td>2026-05-11</td><td>Learning to Align Generative Appearance Priors for Fine-grained Image Retrieval</td><td><a href='http://arxiv.org/pdf/2605.09859'>论文</a></td><td>◆ Fine-grained image retrieval (FGIR) typically relies on supervision from seen categories to learn discriminative embeddings for retrieving unseen categories.
+◆ However, such supervision often biases retrieval models toward the semantics of seen categories rather than the underlying appearance characteristics that generalize across categories, thereby limiting retrieval performance on unseen categories.
+◆ To tackle this, we propose GAPan, a Generative Appearance Prior alignment network that reformulates the learning objective from category prediction toward appearance modeling.</td></tr>
 <tr><td>2026-05-08</td><td>CapCLIP: A Vision-Language Representation Alignment Approach for Wireless Capsule Endoscopy Analysis</td><td><a href='http://arxiv.org/pdf/2605.08493'>论文</a></td><td>◆ Wireless capsule endoscopy (WCE) enables non-invasive visual assessment of the small bowel, but its clinical utility is constrained by the large volume of frames generated per examination and the difficulty of recognising subtle abnormalities under highly variable imaging conditions.
 ◆ Existing learning-based approaches for WCE are predominantly vision-only, often confined to narrow pathology sets, and show limited transfer across datasets and centres.
 ◆ To address these limitations, this study introduces CapCLIP, a domain-specific vision-language representation learning framework for WCE.</td></tr>
@@ -154,12 +169,15 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
+◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
+◆ Existing datasets primarily focus on diffuse, textured objects, and therefore provide limited insight into performance under real-world material complexities.</td></tr>
 <tr><td>2026-05-06</td><td>Creative Robot Tool Use by Counterfactual Reasoning</td><td><a href='http://arxiv.org/pdf/2605.05411'>论文</a></td><td>◆ We propose a causal reasoning framework for creative robot tool use where a suitable tool for a task is correctly identified for use beyond its primary objectives.
 ◆ The proposed framework first discovers the causal relationships between the tool and the task by conducting simulated experiments in a dynamics model.
 ◆ We decouple the causal discovery problem into two complementary components: VLM-based feature suggestion and counterfactual tool generation via targeted geometric and physical feature perturbations.</td></tr>
-<tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td><a href='http://arxiv.org/pdf/2605.01296'>论文</a></td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
+<tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td><a href='http://arxiv.org/pdf/2605.01296'>论文</a><br><a href='https://github.com/takesukeDS/SIFT-VTON'>代码</a></td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
 ◆ However, these approaches rely on implicit learning of spatial correspondences, struggling to preserve fine details such as text and illustrations.
 ◆ We propose a novel approach, which we call SIFT-VTON, that utilizes SIFT keypoint matching to provide explicit geometric guidance for diffusion-based virtual try-on.</td></tr>
 <tr><td>2026-05-01</td><td>TrueEBSD in MTEX: automatic image matching for correlative microscopy applications</td><td><a href='http://arxiv.org/pdf/2605.00703'>论文</a></td><td>◆ TrueEBSD is an open-source MATLAB program for image alignment and spatial distortion correction of images and electron backscatter diffraction (EBSD) maps.
@@ -178,8 +196,11 @@
 
 <div class="table-container">
 <table>
-<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
+<thead><tr><th>日期</th><th>标题</th><th style="white-space:nowrap;min-width:80px">论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Low-Cost Stereo Vision for Robust 3D Positioning of Thin Radiata Pine Branches in Autonomous Drone Pruning</td><td><a href='http://arxiv.org/pdf/2605.08213'>论文</a></td><td>◆ Manual pruning of radiata pine, a species of major economic importance to New Zealand forestry, is hazardous, labour-intensive, and increasingly constrained by workforce shortages.
+◆ Existing autonomous pruning platforms typically rely on expensive sensors such as LiDAR and are limited to thick branches, which restricts their wider adoption.
+◆ This paper investigates whether a single low-cost stereo camera mounted on a drone can provide sufficiently accurate branch detection and three-dimensional positioning to support autonomous pruning of branches as thin as 10 mm, thereby removing the need for auxiliary depth sensors.</td></tr>
 <tr><td>2026-05-08</td><td>PropSplat: Map-Free RF Field Reconstruction via 3D Gaussian Propagation Splatting</td><td><a href='http://arxiv.org/pdf/2605.08035'>论文</a></td><td>◆ Building a site-specific propagation model typically requires either ray-tracing over detailed 3D maps or dense measurement campaigns.
 ◆ Both approaches are expensive and often infeasible for rapid deployments where geographic data is unavailable or outdated.
 ◆ We present PropSplat, a map-free propagation modeling method that reconstructs radio frequency (RF) fields using 3D anisotropic Gaussian primitives.</td></tr>
@@ -198,7 +219,7 @@
 <tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td><a href='http://arxiv.org/pdf/2605.00498'>论文</a></td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
 ◆ Removing objects from such 3D representations is a fundamental editing task that requires complete and seamless inpainting of occluded regions, ensuring consistency in geometry and appearance.
 ◆ Although existing methods have made notable progress in improving inpainting consistency, they often neglect global lighting effects, leading to physically implausible results.</td></tr>
-<tr><td>2026-05-01</td><td>Beyond Heuristics: Learnable Density Control for 3D Gaussian Splatting</td><td><a href='http://arxiv.org/pdf/2605.00408'>论文</a></td><td>◆ While 3D Gaussian Splatting (3DGS) has demonstrated impressive real-time rendering performance, its efficacy remains constrained by a reliance on heuristic density control.
+<tr><td>2026-05-01</td><td>Beyond Heuristics: Learnable Density Control for 3D Gaussian Splatting</td><td><a href='http://arxiv.org/pdf/2605.00408'>论文</a><br><a href='https://github.com/AaronNZH/LeGS'>代码</a></td><td>◆ While 3D Gaussian Splatting (3DGS) has demonstrated impressive real-time rendering performance, its efficacy remains constrained by a reliance on heuristic density control.
 ◆ Despite numerous refinements to these handcrafted rules, such methods inherently lack the flexibility to adapt to diverse scenes with complex geometries.
 ◆ In this paper, we propose a paradigm shift for density control from rigid heuristics to fully learnable policies.</td></tr>
 <tr><td>2026-05-04</td><td>Safe Navigation using Neural Radiance Fields via Reachable Sets</td><td><a href='http://arxiv.org/pdf/2604.26899'>论文</a></td><td>◆ Safe navigation in cluttered environments is an important challenge for autonomous systems.
