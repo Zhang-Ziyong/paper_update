@@ -139,10 +139,10 @@ def get_paper_summary(title: str, abstract: str) -> str:
                 },
                 json={
                     "model": "claude-haiku-4-5-20251001",
-                    "max_tokens": 500,
+                    "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}]
                 },
-                timeout=30
+                timeout=60
             )
 
             # 4. 检查响应状态
@@ -158,7 +158,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
                 logging.warning(f"Anthropic API返回空内容, 完整响应: {data}")
                 continue
 
-            text = content[0].get("text", "").strip()
+            text = next((c.get("text", "") for c in content if c.get("type") == "text"), "").strip()
             if not text:
                 logging.warning(f"Anthropic API text字段为空, content: {content}")
                 continue
