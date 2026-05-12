@@ -26,8 +26,8 @@ ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic
 ANTHROPIC_API_URL = f"{ANTHROPIC_BASE_URL}/v1/messages"
 
 # 全局过滤日期 - 修改这里调整过滤条件
-MIN_DATE = datetime.date(2025, 5, 1)
-MIN_YEAR = 2025
+MIN_DATE = datetime.date(2026, 5, 1)
+MIN_YEAR = 2026
 MIN_MONTH = 5
 MIN_DAY = 1
 
@@ -338,6 +338,13 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
             
             # 获取官方代码链接
             code_link = get_official_code_link(paper_id, title, result.authors)
+
+            # 若无官方链接，尝试从摘要中提取 GitHub 链接
+            if not code_link:
+                github_match = re.search(r'https?://github\.com/[^\s\)\]]+', abstract)
+                if github_match:
+                    code_link = github_match.group(0).rstrip('.,;')
+                    logging.info(f"从摘要中提取 GitHub 链接: {code_link}")
                 
             # 构建表格行
             code_display = "无"
@@ -587,13 +594,18 @@ def json_to_md(filename, md_filename,
                         summary = "摘要生成中..."
                     
                     # 合并论文链接和代码链接
-                    paper_display = paper_link
+                    paper_url_match = re.search(r'\((https?://[^)]+)\)', paper_link)
+                    if paper_url_match:
+                        paper_url = paper_url_match.group(1)
+                        paper_display = f"<a href='{paper_url}'>论文</a>"
+                    else:
+                        paper_display = paper_link
+
                     if code_link not in ["无", "null", ""]:
-                        # 修正正则表达式提取URL
-                        code_url_match = re.search(r'$(.*?)$', code_link)
+                        code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
-                            paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
+                            paper_display += f"<br><a href='{code_url}'>代码</a>"
                     
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date_str)}</td>")
