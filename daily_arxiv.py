@@ -542,7 +542,7 @@ def json_to_md(filename, md_filename,
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            f.write("<thead><tr><th>日期</th><th>标题</th><th style=\"white-space:nowrap;min-width:80px\">论文与代码</th><th>摘要</th></tr></thead>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>链接</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
             sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
