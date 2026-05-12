@@ -304,9 +304,16 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
 
             # 若无官方链接，尝试从摘要中提取 GitHub 链接
             if not code_link:
-                github_match = re.search(r'https?://github\.com/[^\s\)\]]+', abstract)
+                github_match = re.search(
+                    r'https?://(?:github\.com|[a-zA-Z0-9\-]+\.github\.io)/[^\s\)\]]*'
+                    r'|(?<![.\w])(?:[a-zA-Z0-9\-]+\.github\.io/[^\s\)\],\.]+)',
+                    abstract
+                )
                 if github_match:
-                    code_link = github_match.group(0).rstrip('.,;')
+                    url = github_match.group(0).rstrip('.,;')
+                    if not url.startswith('http'):
+                        url = 'https://' + url
+                    code_link = url
                     logging.info(f"从摘要中提取 GitHub 链接: {code_link}")
                 
             # 构建表格行
