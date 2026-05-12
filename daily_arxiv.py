@@ -250,7 +250,7 @@ def fetch_arxiv_results(query, max_results=10):
     # 如果所有重试都失败，尝试直接API调用
     logging.warning("arxiv.py库请求失败，尝试直接调用arXiv API")
     try:
-        url = "https://arxiv.org.cn/api/query"  # 国内镜像站点
+        url = "https://export.arxiv.org/api/query"  # 官方备用入口
         params = {
             "search_query": query,
             "start": 0,
