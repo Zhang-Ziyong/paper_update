@@ -17,7 +17,6 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     level=logging.INFO)
 
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
-github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
 
 # Anthropic Claude API配置
@@ -91,52 +90,16 @@ def sort_papers(papers):
     """按日期排序论文"""
     return dict(sorted(papers.items(), key=lambda x: x[0], reverse=True))
 
-def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
-    """获取论文官方开源代码链接（带多重验证）"""
-    # 1. 优先使用paperswithcode API获取官方链接
+def get_official_code_link(paper_id: str) -> str:
+    """通过 paperswithcode API 获取论文官方代码链接"""
     try:
-        code_response = requests.get(base_url + paper_id, timeout=10)
-        if code_response.status_code == 200:
-            data = code_response.json()
+        response = requests.get(base_url + paper_id, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
             if data.get("official") and data["official"].get("url"):
                 return data["official"]["url"]
     except Exception:
         pass
-    
-    # 2. 从作者名构建查询（修复last属性不存在的问题）
-    author_query = ""
-    if authors:
-        try:
-            # 尝试从全名提取姓氏（西方姓名规范）
-            full_name = str(authors[0])
-            if full_name:
-                # 分割全名并取最后一部分作为姓氏
-                author_query = full_name.split()[-1]
-        except Exception as e:
-            logging.warning(f"作者名解析失败: {str(e)}")
-    
-    # 3. 构建GitHub搜索查询
-    query = f"{title} {author_query} arxiv in:name,description"
-    params = {"q": query, "sort": "stars", "order": "desc"}
-    
-    try:
-        response = requests.get(github_url, params=params, timeout=15)
-        if response.status_code == 200:
-            repos = response.json().get('items', [])
-            
-            # 验证仓库是否确实包含论文相关代码
-            for repo in repos:
-                repo_description = (repo.get('description') or '').lower()
-                repo_name = (repo.get('name') or '').lower()
-                
-                # 验证关键词匹配
-                if ('arxiv' in repo_description or 
-                    paper_id.split('v')[0] in repo_description or
-                    any(keyword in repo_description for keyword in ['paper', 'implementation'])):
-                    return repo['html_url']
-    except Exception:
-        pass
-    
     return None
 
 def get_paper_summary(title: str, abstract: str) -> str:
@@ -337,7 +300,7 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
                 logging.info(f"生成新摘要: {paper_key}")
             
             # 获取官方代码链接
-            code_link = get_official_code_link(paper_id, title, result.authors)
+            code_link = get_official_code_link(paper_id)
 
             # 若无官方链接，尝试从摘要中提取 GitHub 链接
             if not code_link:
@@ -422,13 +385,13 @@ def update_paper_links(filename):
                                 logging.info(f'为 {arxiv_id} 更新代码链接')
                                 continue
                         
-                        # 尝试GitHub搜索
-                        gh_link = get_official_code_link(arxiv_id, title, [])
+                        # 尝试 paperswithcode 补充搜索
+                        gh_link = get_official_code_link(arxiv_id)
                         if gh_link:
-                            new_code = f"[极代码]({gh_link})"
+                            new_code = f"[代码]({gh_link})"
                             new_content = f"|{date}|{title}|{author}|[{arxiv_id}](http://arxiv.org/pdf/{arxiv_id})|{new_code}|{summary}|\n"
                             updated_data[keyword][paper_id] = new_content
-                            logging.info(f'为 {arxiv_id} 添加GitHub代码链接')
+                            logging.info(f'为 {arxiv_id} 补充代码链接')
                     except Exception as e:
                         logging.error(f"更新代码链接时出错: {str(e)}")
             except Exception as e:
@@ -572,7 +535,7 @@ def json_to_md(filename, md_filename,
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th style=\"white-space:nowrap;min-width:80px\">论文与代码</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
             sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
