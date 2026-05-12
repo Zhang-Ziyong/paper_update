@@ -152,15 +152,18 @@ def get_paper_summary(title: str, abstract: str) -> str:
 
             # 5. 解析API响应
             data = response.json()
+            logging.info(f"Claude API 响应: {str(data)[:500]}")
             content = data.get("content", [])
             if not content:
-                logging.warning("Anthropic API返回空内容")
+                logging.warning(f"Anthropic API返回空内容, 完整响应: {data}")
                 continue
 
             text = content[0].get("text", "").strip()
-            if text:
-                text = re.sub(r"\*\*|\#\#\#|\`", "", text)
-                return text
+            if not text:
+                logging.warning(f"Anthropic API text字段为空, content: {content}")
+                continue
+            text = re.sub(r"\*\*|\#\#\#|\`", "", text)
+            return text
 
         except requests.Timeout:
             logging.warning(f"Anthropic API超时 (尝试 {attempt+1}/{MAX_RETRIES})")
