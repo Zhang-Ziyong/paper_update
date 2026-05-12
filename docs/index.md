@@ -21,6 +21,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction<br><a href='http://arxiv.org/pdf/2605.10760'>论文</a></td><td>MAGS‑SLAM是首个仅使用RGB图像实现多智能体协同3DGS SLAM的框架，可在无深度传感器的情况下完成高精度几何与外观重建。  
+◆ 采用轻量级子地图压缩通信，仅传输子地图摘要，显著降低带宽需求。  
+◆ 引入几何‑外观感知的闭环验证机制，提升多智能体间的尺度与位姿对齐鲁棒性。  
+◆ 设计占用感知的Gaussian融合策略，实现全局一致的稠密重建而不依赖深度测量。  
+◆ 提出ReplicaMultiagent Plus基准，支持对协同Gaussian SLAM的跟踪精度与渲染质量进行系统评估。</td></tr>
 <tr><td>2026-05-10</td><td>Above and Below: Heterogeneous Multi-robot SLAM Across Surface and Underwater Domains<br><a href='http://arxiv.org/pdf/2605.09811'>论文</a></td><td>◆ Multi-robot simultaneous localization and mapping (SLAM) is a fundamental task in multi-robot operations.
 ◆ Robots must have a common understanding of their location and that of their team members to complete coordinated actions.
 ◆ However, multi-robot SLAM between Uncrewed Surface Vessels (USVs) and Autonomous Underwater Vehicles (AUVs) has primarily been achieved through acoustic pinging between robots to retrieve range measurements; a measurement technique requires that robots to be in similar locations simultaneously, have an uninterrupted path for signal propagation, and may necessitate synchronized clocks.</td></tr>
@@ -104,6 +109,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>BGG: Bridging the Geometric Gap between Cross-View images by Vision Foundation Model Adaptation for Geo-Localization<br><a href='http://arxiv.org/pdf/2605.10345'>论文</a></td><td>本文针对跨视角图像（如无人机和卫星视图）之间的几何差异导致跨视角地理定位（CVGL）困难的问题，提出一种基于视觉基础模型（VFM）的参数高效适配框架 BGG。  
+BGG 在保持 VFM 通用视觉表征的同时，通过多粒度特征增强适配器（MFEA）和频域感知结构聚合（FASA）模块实现跨视角几何间隙的有效桥接，并显著降低训练成本。  
+◆ MFEA 采用多层次空洞卷积提升特征的尺度适应性和视角鲁棒性，以小规模参数实现跨视角几何差异的对齐。  
+◆ FASA 通过在频域调制 patch token 并进行自适应聚合，增强局部结构特征，弥补 [CLS] token 缺乏空间细节的不足。  
+◆ BGG 将增强的局部特征与 [CLS] token 融合，实现更精准的跨视角检索与定位，并在 University‑1652 和 SUES‑200 数据集上取得了最优性能。  
+实验结果表明，BGG 在定位精度上领先于现有方法，且仅需极低的训练成本。</td></tr>
 <tr><td>2026-05-11</td><td>Hystar: Hypernetwork-driven Style-adaptive Retrieval via Dynamic SVD Modulation<br><a href='http://arxiv.org/pdf/2605.10009'>论文</a></td><td>◆ Query-based image retrieval (QBIR) requires retrieving relevant images given diverse and often stylistically heterogeneous queries, such as sketches, artworks, or low-resolution previews.
 ◆ While large-scale vision--language representation models (VLRMs) like CLIP offer strong zero-shot retrieval performance, they struggle with distribution shifts caused by unseen query styles.
 ◆ In this paper, we propose the Hypernetwork-driven Style-adaptive Retrieval (Hystar), a lightweight framework that dynamically adapts model weights to each query&#x27;s style.</td></tr>
@@ -190,7 +201,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-10</td><td>Low-Cost Neural Radiance Fields<br><a href='http://arxiv.org/pdf/2605.09312'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行</td></tr>
+<tr><td>2026-05-11</td><td>Predicting 3D structure by latent posterior sampling<br><a href='http://arxiv.org/pdf/2605.10830'>论文</a></td><td>本文提出将NeRF的体素渲染与扩散模型的概率后验采样相结合，以实现三维结构的感知推理。将三维场景建模为可学习的随机潜在变量，学习潜在</td></tr>
+<tr><td>2026-05-11</td><td>DySurface: Consistent 4D Surface Reconstruction via Bridging Explicit Gaussians and Implicit Functions<br><a href='http://arxiv.org/pdf/2605.10360'>论文</a></td><td>◆ 提出 DySurface 框架，通过将显式 3D Gaussian 与隐式 SDF 结合，实现动态场景的 4D 表面一致重建。  
+◆ 针对 3DGS 前向形变（canonical→dynamic）与体渲染 SDF 反向形变（dynamic→canonical）之间的结构不匹配，设计了统一的双向形变映射机制。  
+◆ 引入 VoxGS‑DSDF 分支，利用变形的高斯构建动态稀疏体素网格，为隐式 SDF 提供显式几何约束。  
+◆ 显式的体素‑高斯锚定有效正则化体渲染过程，显著提升表面完整性，实现水密边界和细节保持。  
+◆ 实验表明，DySurface 在几何精度指标上超越现有最优方法，同时保持竞争力的渲染性能。  
+◆ 该工作为时序一致的动态几何重建提供新思路，展示了显‑隐融合在 4D 场景中的潜力。</td></tr>
+<tr><td>2026-05-10</td><td>Low-Cost Neural Radiance Fields<br><a href='http://arxiv.org/pdf/2605.09312'>论文</a></td><td>本文对三种加速NeRF变体DS‑NeRF、TensoRF和HashNeRF进行系统性比较，探索低计算、低数据条件下的改进方案。  
+◆为TensoRF引入基于COLMAP关键点的深度监督损失（TensoRF‑DS），在视角稀疏时显著提升PSNR。  
+◆对TensoRF的特征解码MLP进行消融实验，发现输入降采样可在保持PSNR的同时缩短训练时间。  
+◆提出HashNeRF的四 种结构变体，包括残差和卷积设计，在相同迭代预算下实现PSNR与训练时间的权衡。  
+实验表明，等时评估下这些扩展未显著超越原始基线，但系统化了在不同受限环境下的适用性，为后续模型设计提供参考。</td></tr>
 <tr><td>2026-05-06</td><td>Low-Cost Stereo Vision for Robust 3D Positioning of Thin Radiata Pine Branches in Autonomous Drone Pruning<br><a href='http://arxiv.org/pdf/2605.08213'>论文</a></td><td>◆ Manual pruning of radiata pine, a species of major economic importance to New Zealand forestry, is hazardous, labour-intensive, and increasingly constrained by workforce shortages.
 ◆ Existing autonomous pruning platforms typically rely on expensive sensors such as LiDAR and are limited to thick branches, which restricts their wider adoption.
 ◆ This paper investigates whether a single low-cost stereo camera mounted on a drone can provide sufficiently accurate branch detection and three-dimensional positioning to support autonomous pruning of branches as thin as 10 mm, thereby removing the need for auxiliary depth sensors.</td></tr>
