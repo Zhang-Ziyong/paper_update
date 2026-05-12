@@ -279,7 +279,8 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
                 parts = existing_entry.split('|')
                 if len(parts) >= 7:
                     existing_summary = parts[6].strip()
-                    if existing_summary and existing_summary not in ["无", "null", ""]:
+                    INVALID_SUMMARIES = ["无", "null", "", "◆ 中文摘要生成失败，请检查 API 配置后重新运行"]
+                    if existing_summary and existing_summary not in INVALID_SUMMARIES:
                         summary = existing_summary
                         logging.info(f"使用现有摘要: {paper_key}")
             
