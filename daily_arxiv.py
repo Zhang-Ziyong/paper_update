@@ -636,6 +636,177 @@ def json_to_md(filename, md_filename,
     
     logging.info(f"{task} 已完成，保存到 {md_filename}")
 
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+def fetch_github_repos(org: str) -> list:
+    """获取 GitHub 组织近十年的非 fork 仓库"""
+    repos = []
+    page = 1
+    cutoff = datetime.date.today().year - 10
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"token {GITHUB_TOKEN}"
+
+    while True:
+        url = f"https://api.github.com/orgs/{org}/repos"
+        params = {"per_page": 100, "page": page, "type": "public"}
+        try:
+            resp = requests.get(url, headers=headers, params=params, timeout=30)
+            if resp.status_code != 200:
+                logging.error(f"GitHub API 错误 ({org}): {resp.status_code} {resp.text[:200]}")
+                break
+            data = resp.json()
+            if not data:
+                break
+            for r in data:
+                if r.get("fork"):
+                    continue
+                created_year = int(r["created_at"][:4])
+                if created_year < cutoff:
+                    continue
+                repos.append({
+                    "name": r["name"],
+                    "url": r["html_url"],
+                    "stars": r["stargazers_count"],
+                    "description": r.get("description") or "",
+                    "created_at": r["created_at"][:10],
+                })
+            page += 1
+        except Exception as e:
+            logging.error(f"获取 {org} 仓库失败: {e}")
+            break
+
+    repos.sort(key=lambda x: x["stars"], reverse=True)
+    logging.info(f"获取 {org} 仓库 {len(repos)} 个")
+    return repos
+
+
+def get_repo_chinese_desc(name: str, desc: str) -> str:
+    """用 Claude 生成50字中文功能介绍"""
+    if not ANTHROPIC_API_KEY or not desc:
+        return desc[:50] if desc else name
+
+    prompt = (
+        f"用中文一句话介绍以下 GitHub 项目的功能，不超过50字，不要使用 Markdown 格式：\n"
+        f"项目名: {name}\n"
+        f"英文描述: {desc}\n"
+    )
+    try:
+        resp = requests.post(
+            ANTHROPIC_API_URL,
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 200,
+                "messages": [{"role": "user", "content": prompt}]
+            },
+            timeout=30
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            text = next((c.get("text", "") for c in data.get("content", []) if c.get("type") == "text"), "").strip()
+            if text:
+                return text[:80]
+    except Exception as e:
+        logging.warning(f"生成仓库描述失败 ({name}): {e}")
+
+    return desc[:50] if desc else name
+
+
+def update_github_repos(orgs: list, json_path: str):
+    """增量更新 GitHub 仓库数据库，仅对新仓库生成中文描述"""
+    # 加载现有数据
+    existing = {}
+    try:
+        with open(json_path, "r") as f:
+            existing = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    updated = False
+    for org in orgs:
+        repos = fetch_github_repos(org)
+        if not repos:
+            continue
+
+        org_data = existing.get(org, {})
+        for repo in repos:
+            name = repo["name"]
+            if name in org_data:
+                # 更新 star 数
+                if org_data[name].get("stars") != repo["stars"]:
+                    org_data[name]["stars"] = repo["stars"]
+                    updated = True
+            else:
+                # 新仓库：生成中文描述
+                logging.info(f"新仓库: {org}/{name}")
+                repo["chinese_desc"] = get_repo_chinese_desc(name, repo["description"])
+                org_data[name] = repo
+                updated = True
+
+        existing[org] = org_data
+
+    if updated:
+        with open(json_path, "w") as f:
+            json.dump(existing, f, indent=2, ensure_ascii=False)
+        logging.info(f"GitHub 仓库数据已更新: {json_path}")
+    else:
+        logging.info("GitHub 仓库数据无变化")
+
+    return updated
+
+
+def append_github_repos_to_md(md_path: str, json_path: str):
+    """将 GitHub 仓库表格追加到 README.md 页脚之前"""
+    try:
+        with open(json_path, "r") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return
+
+    if not data:
+        return
+
+    # 读取现有 README
+    with open(md_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # 生成仓库表格 HTML
+    org_names = {"hku-mars": "HKU-MARS (港大火星实验室)", "ethz-asl": "ETH-ASL (苏黎世自主系统实验室)"}
+    repos_md = "\n<h2>GitHub 实验室仓库监控</h2>\n\n"
+
+    for org, repos in data.items():
+        display_name = org_names.get(org, org)
+        repos_md += f"<h3>{display_name}</h3>\n\n"
+        repos_md += '<div class="table-container">\n<table>\n'
+        repos_md += "<thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>\n<tbody>\n"
+
+        sorted_repos = sorted(repos.values(), key=lambda x: x.get("stars", 0), reverse=True)
+        for r in sorted_repos:
+            name = html.escape(r["name"])
+            url = r["url"]
+            stars = r.get("stars", 0)
+            desc = html.escape(r.get("chinese_desc", r.get("description", ""))[:80])
+            repos_md += f"<tr><td><a href='{url}'>{name}</a></td><td>{stars}</td><td>{desc}</td></tr>\n"
+
+        repos_md += "</tbody>\n</table>\n</div>\n\n"
+
+    # 插入到页脚 --- 之前
+    if "---\n> 本列表自动生成" in content:
+        content = content.replace("---\n> 本列表自动生成", repos_md + "---\n> 本列表自动生成")
+    else:
+        content += repos_md
+
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    logging.info(f"GitHub 仓库表格已追加到 {md_path}")
+
+
 def demo(**config):
     data_collector = []
     data_collector_web = []
@@ -706,8 +877,19 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector_web)
-        json_to_md(json_file, md_file, task='更新微信', to_web=False, 
+        json_to_md(json_file, md_file, task='更新微信', to_web=False,
                    use_title=False)
+
+    # 更新 GitHub 实验室仓库
+    github_orgs = config.get('github_orgs', [])
+    github_json = config.get('github_repos_json_path', './docs/github-repos.json')
+    if github_orgs:
+        logging.info("开始更新 GitHub 实验室仓库")
+        update_github_repos(github_orgs, github_json)
+        if publish_readme:
+            append_github_repos_to_md(config['md_readme_path'], github_json)
+        if publish_gitpage:
+            append_github_repos_to_md(config['md_gitpage_path'], github_json)
 
 def is_date_above_min(date_str: str) -> bool:
     date_str = date_str.replace('**', '')

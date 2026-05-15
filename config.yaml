@@ -35,3 +35,10 @@ keywords:
         filters: ["Motion Planning", "Path Planning", "Trajectory Planning"]
     "Navigation":
         filters: ["Robot Navigation", "Autonomous Navigation", "Visual Navigation"]
+
+# GitHub organizations to monitor
+github_orgs:
+    - "hku-mars"
+    - "ethz-asl"
+
+github_repos_json_path: './docs/github-repos.json'
