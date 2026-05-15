@@ -664,6 +664,8 @@ def fetch_github_repos(org: str) -> list:
                 created_year = int(r["created_at"][:4])
                 if created_year < cutoff:
                     continue
+                if r["stargazers_count"] < 100:
+                    continue
                 repos.append({
                     "name": r["name"],
                     "url": r["html_url"],
