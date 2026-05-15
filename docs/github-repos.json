@@ -1,0 +1,750 @@
+{
+  "hku-mars": {
+    "FAST_LIO": {
+      "name": "FAST_LIO",
+      "url": "https://github.com/hku-mars/FAST_LIO",
+      "stars": 4659,
+      "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
+      "created_at": "2020-10-12",
+      "chinese_desc": "A computationally efficient and robust LiDAR-inert"
+    },
+    "FAST-LIVO2": {
+      "name": "FAST-LIVO2",
+      "url": "https://github.com/hku-mars/FAST-LIVO2",
+      "stars": 4043,
+      "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+      "created_at": "2024-04-22",
+      "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
+    },
+    "r3live": {
+      "name": "r3live",
+      "url": "https://github.com/hku-mars/r3live",
+      "stars": 2400,
+      "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
+      "created_at": "2021-09-09",
+      "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
+    },
+    "loam_livox": {
+      "name": "loam_livox",
+      "url": "https://github.com/hku-mars/loam_livox",
+      "stars": 1603,
+      "description": "A robust LiDAR Odometry and Mapping (LOAM) package for Livox-LiDAR",
+      "created_at": "2019-06-07",
+      "chinese_desc": "A robust LiDAR Odometry and Mapping (LOAM) package"
+    },
+    "FAST-LIVO": {
+      "name": "FAST-LIVO",
+      "url": "https://github.com/hku-mars/FAST-LIVO",
+      "stars": 1588,
+      "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
+      "created_at": "2022-03-03",
+      "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
+    },
+    "LiDAR_IMU_Init": {
+      "name": "LiDAR_IMU_Init",
+      "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
+      "stars": 1378,
+      "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
+      "created_at": "2022-02-23",
+      "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
+    },
+    "livox_camera_calib": {
+      "name": "livox_camera_calib",
+      "url": "https://github.com/hku-mars/livox_camera_calib",
+      "stars": 1244,
+      "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
+      "created_at": "2021-02-27",
+      "chinese_desc": "This repository is used for automatic calibration "
+    },
+    "Point-LIO": {
+      "name": "Point-LIO",
+      "url": "https://github.com/hku-mars/Point-LIO",
+      "stars": 1194,
+      "description": "",
+      "created_at": "2022-12-08",
+      "chinese_desc": "Point-LIO"
+    },
+    "BALM": {
+      "name": "BALM",
+      "url": "https://github.com/hku-mars/BALM",
+      "stars": 911,
+      "description": "An efficient and consistent bundle adjustment for lidar mapping",
+      "created_at": "2020-10-15",
+      "chinese_desc": "An efficient and consistent bundle adjustment for "
+    },
+    "SUPER": {
+      "name": "SUPER",
+      "url": "https://github.com/hku-mars/SUPER",
+      "stars": 909,
+      "description": "",
+      "created_at": "2024-12-19",
+      "chinese_desc": "SUPER"
+    },
+    "FAST-Calib": {
+      "name": "FAST-Calib",
+      "url": "https://github.com/hku-mars/FAST-Calib",
+      "stars": 879,
+      "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
+      "created_at": "2025-04-19",
+      "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
+    },
+    "ikd-Tree": {
+      "name": "ikd-Tree",
+      "url": "https://github.com/hku-mars/ikd-Tree",
+      "stars": 789,
+      "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
+      "created_at": "2021-02-22",
+      "chinese_desc": "This repository provides implementation of an incr"
+    },
+    "r2live": {
+      "name": "r2live",
+      "url": "https://github.com/hku-mars/r2live",
+      "stars": 781,
+      "description": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping package",
+      "created_at": "2021-02-24",
+      "chinese_desc": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual"
+    },
+    "ImMesh": {
+      "name": "ImMesh",
+      "url": "https://github.com/hku-mars/ImMesh",
+      "stars": 737,
+      "description": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
+      "created_at": "2023-01-10",
+      "chinese_desc": "ImMesh: An Immediate LiDAR Localization and Meshin"
+    },
+    "STD": {
+      "name": "STD",
+      "url": "https://github.com/hku-mars/STD",
+      "stars": 717,
+      "description": "A 3D point cloud descriptor for place recognition",
+      "created_at": "2022-09-14",
+      "chinese_desc": "A 3D point cloud descriptor for place recognition"
+    },
+    "VoxelMap": {
+      "name": "VoxelMap",
+      "url": "https://github.com/hku-mars/VoxelMap",
+      "stars": 696,
+      "description": "[RA-L 2022] An efficient and probabilistic adaptive voxel mapping method for LiDAR odometry",
+      "created_at": "2022-02-24",
+      "chinese_desc": "一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。"
+    },
+    "M-detector": {
+      "name": "M-detector",
+      "url": "https://github.com/hku-mars/M-detector",
+      "stars": 627,
+      "description": "",
+      "created_at": "2023-10-05",
+      "chinese_desc": "M-detector"
+    },
+    "Voxel-SLAM": {
+      "name": "Voxel-SLAM",
+      "url": "https://github.com/hku-mars/Voxel-SLAM",
+      "stars": 618,
+      "description": "",
+      "created_at": "2024-06-03",
+      "chinese_desc": "Voxel-SLAM"
+    },
+    "mlcc": {
+      "name": "mlcc",
+      "url": "https://github.com/hku-mars/mlcc",
+      "stars": 613,
+      "description": "Fast and Accurate Extrinsic Calibration for Multiple LiDARs and Cameras",
+      "created_at": "2021-09-14",
+      "chinese_desc": "Fast and Accurate Extrinsic Calibration for Multip"
+    },
+    "HBA": {
+      "name": "HBA",
+      "url": "https://github.com/hku-mars/HBA",
+      "stars": 583,
+      "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
+      "created_at": "2023-05-01",
+      "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
+    },
+    "ROG-Map": {
+      "name": "ROG-Map",
+      "url": "https://github.com/hku-mars/ROG-Map",
+      "stars": 556,
+      "description": "",
+      "created_at": "2023-02-24",
+      "chinese_desc": "ROG-Map"
+    },
+    "IKFoM": {
+      "name": "IKFoM",
+      "url": "https://github.com/hku-mars/IKFoM",
+      "stars": 548,
+      "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
+      "created_at": "2021-01-29",
+      "chinese_desc": "A computationally efficient and convenient toolkit"
+    },
+    "MARSIM": {
+      "name": "MARSIM",
+      "url": "https://github.com/hku-mars/MARSIM",
+      "stars": 526,
+      "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
+      "created_at": "2022-11-16",
+      "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
+    },
+    "LTAOM": {
+      "name": "LTAOM",
+      "url": "https://github.com/hku-mars/LTAOM",
+      "stars": 499,
+      "description": "",
+      "created_at": "2024-03-27",
+      "chinese_desc": "LTAOM"
+    },
+    "GS-SDF": {
+      "name": "GS-SDF",
+      "url": "https://github.com/hku-mars/GS-SDF",
+      "stars": 457,
+      "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
+      "created_at": "2025-03-02",
+      "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
+    },
+    "Swarm-LIO2": {
+      "name": "Swarm-LIO2",
+      "url": "https://github.com/hku-mars/Swarm-LIO2",
+      "stars": 431,
+      "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
+      "created_at": "2024-03-25",
+      "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
+    },
+    "LIV_handhold_2": {
+      "name": "LIV_handhold_2",
+      "url": "https://github.com/hku-mars/LIV_handhold_2",
+      "stars": 378,
+      "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
+      "created_at": "2025-08-21",
+      "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
+    },
+    "D-Map": {
+      "name": "D-Map",
+      "url": "https://github.com/hku-mars/D-Map",
+      "stars": 341,
+      "description": "D-Map provides an efficient occupancy mapping approach for high-resolution LiDAR sensors.",
+      "created_at": "2023-03-10",
+      "chinese_desc": "D-Map provides an efficient occupancy mapping appr"
+    },
+    "btc_descriptor": {
+      "name": "btc_descriptor",
+      "url": "https://github.com/hku-mars/btc_descriptor",
+      "stars": 331,
+      "description": "",
+      "created_at": "2023-06-08",
+      "chinese_desc": "btc_descriptor"
+    },
+    "M2Mapping": {
+      "name": "M2Mapping",
+      "url": "https://github.com/hku-mars/M2Mapping",
+      "stars": 260,
+      "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
+      "created_at": "2024-09-09",
+      "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
+    },
+    "IPC": {
+      "name": "IPC",
+      "url": "https://github.com/hku-mars/IPC",
+      "stars": 250,
+      "description": "Integrated Planning and Control for Quadrotor Navigation in Presence of Sudden Crossing Objects and Disturbances",
+      "created_at": "2023-04-06",
+      "chinese_desc": "Integrated Planning and Control for Quadrotor Navi"
+    },
+    "SLAM-HKU-MaRS-LAB": {
+      "name": "SLAM-HKU-MaRS-LAB",
+      "url": "https://github.com/hku-mars/SLAM-HKU-MaRS-LAB",
+      "stars": 233,
+      "description": "In this repository, we present our research works of HKU-MaRS lab that related to SLAM",
+      "created_at": "2023-04-03",
+      "chinese_desc": "In this repository, we present our research works "
+    },
+    "decentralized_loam": {
+      "name": "decentralized_loam",
+      "url": "https://github.com/hku-mars/decentralized_loam",
+      "stars": 222,
+      "description": "",
+      "created_at": "2020-03-09",
+      "chinese_desc": "decentralized_loam"
+    },
+    "dyn_small_obs_avoidance": {
+      "name": "dyn_small_obs_avoidance",
+      "url": "https://github.com/hku-mars/dyn_small_obs_avoidance",
+      "stars": 218,
+      "description": "",
+      "created_at": "2021-02-24",
+      "chinese_desc": "dyn_small_obs_avoidance"
+    },
+    "UMI-3D": {
+      "name": "UMI-3D",
+      "url": "https://github.com/hku-mars/UMI-3D",
+      "stars": 200,
+      "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
+      "created_at": "2026-04-16",
+      "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
+    },
+    "LAMM": {
+      "name": "LAMM",
+      "url": "https://github.com/hku-mars/LAMM",
+      "stars": 197,
+      "description": "",
+      "created_at": "2024-08-24",
+      "chinese_desc": "LAMM"
+    },
+    "SUPER-Hardware": {
+      "name": "SUPER-Hardware",
+      "url": "https://github.com/hku-mars/SUPER-Hardware",
+      "stars": 192,
+      "description": "",
+      "created_at": "2025-03-09",
+      "chinese_desc": "SUPER-Hardware"
+    },
+    "PULSAR": {
+      "name": "PULSAR",
+      "url": "https://github.com/hku-mars/PULSAR",
+      "stars": 146,
+      "description": "",
+      "created_at": "2023-02-17",
+      "chinese_desc": "PULSAR"
+    },
+    "BDM": {
+      "name": "BDM",
+      "url": "https://github.com/hku-mars/BDM",
+      "stars": 143,
+      "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
+      "created_at": "2025-10-29",
+      "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
+    },
+    "iBTC": {
+      "name": "iBTC",
+      "url": "https://github.com/hku-mars/iBTC",
+      "stars": 140,
+      "description": "",
+      "created_at": "2024-05-26",
+      "chinese_desc": "iBTC"
+    },
+    "LiDAR-UAV-Autonomy": {
+      "name": "LiDAR-UAV-Autonomy",
+      "url": "https://github.com/hku-mars/LiDAR-UAV-Autonomy",
+      "stars": 115,
+      "description": "",
+      "created_at": "2025-04-02",
+      "chinese_desc": "LiDAR-UAV-Autonomy"
+    }
+  },
+  "ethz-asl": {
+    "maplab": {
+      "name": "maplab",
+      "url": "https://github.com/ethz-asl/maplab",
+      "stars": 2837,
+      "description": "A Modular and Multi-Modal Mapping Framework",
+      "created_at": "2017-11-27",
+      "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
+    },
+    "voxblox": {
+      "name": "voxblox",
+      "url": "https://github.com/ethz-asl/voxblox",
+      "stars": 1623,
+      "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
+      "created_at": "2016-04-13",
+      "chinese_desc": "A library for flexible voxel-based mapping, mainly"
+    },
+    "okvis": {
+      "name": "okvis",
+      "url": "https://github.com/ethz-asl/okvis",
+      "stars": 1351,
+      "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM.",
+      "created_at": "2016-02-04",
+      "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM."
+    },
+    "segmap": {
+      "name": "segmap",
+      "url": "https://github.com/ethz-asl/segmap",
+      "stars": 1097,
+      "description": "A map representation based on 3D segments ",
+      "created_at": "2016-09-20",
+      "chinese_desc": "A map representation based on 3D segments "
+    },
+    "lidar_align": {
+      "name": "lidar_align",
+      "url": "https://github.com/ethz-asl/lidar_align",
+      "stars": 1031,
+      "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
+      "created_at": "2016-10-24",
+      "chinese_desc": "A simple method for finding the extrinsic calibrat"
+    },
+    "hfnet": {
+      "name": "hfnet",
+      "url": "https://github.com/ethz-asl/hfnet",
+      "stars": 866,
+      "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
+      "created_at": "2019-02-15",
+      "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
+    },
+    "mav_active_3d_planning": {
+      "name": "mav_active_3d_planning",
+      "url": "https://github.com/ethz-asl/mav_active_3d_planning",
+      "stars": 696,
+      "description": "Modular framework for online informative path planning.",
+      "created_at": "2018-10-25",
+      "chinese_desc": "Modular framework for online informative path plan"
+    },
+    "mav_trajectory_generation": {
+      "name": "mav_trajectory_generation",
+      "url": "https://github.com/ethz-asl/mav_trajectory_generation",
+      "stars": 655,
+      "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
+      "created_at": "2016-12-09",
+      "chinese_desc": "Polynomial trajectory generation and optimization,"
+    },
+    "polygon_coverage_planning": {
+      "name": "polygon_coverage_planning",
+      "url": "https://github.com/ethz-asl/polygon_coverage_planning",
+      "stars": 651,
+      "description": "Coverage planning in general polygons with holes.",
+      "created_at": "2019-04-10",
+      "chinese_desc": "Coverage planning in general polygons with holes."
+    },
+    "aerial_mapper": {
+      "name": "aerial_mapper",
+      "url": "https://github.com/ethz-asl/aerial_mapper",
+      "stars": 616,
+      "description": "Real-time Dense Point Cloud, Digital Surface Map (DSM) and (Ortho-)Mosaic Generation for UAVs",
+      "created_at": "2017-06-19",
+      "chinese_desc": "Real-time Dense Point Cloud, Digital Surface Map ("
+    },
+    "dynablox": {
+      "name": "dynablox",
+      "url": "https://github.com/ethz-asl/dynablox",
+      "stars": 577,
+      "description": "Real-time detection of diverse dynamic objects in complex environments.",
+      "created_at": "2022-12-14",
+      "chinese_desc": "Real-time detection of diverse dynamic objects in "
+    },
+    "robust_point_cloud_registration": {
+      "name": "robust_point_cloud_registration",
+      "url": "https://github.com/ethz-asl/robust_point_cloud_registration",
+      "stars": 572,
+      "description": "Robust Point Cloud Registration Using Iterative Probabilistic Data Associations (\"Robust ICP\")",
+      "created_at": "2016-11-14",
+      "chinese_desc": "Robust Point Cloud Registration Using Iterative Pr"
+    },
+    "mav_voxblox_planning": {
+      "name": "mav_voxblox_planning",
+      "url": "https://github.com/ethz-asl/mav_voxblox_planning",
+      "stars": 561,
+      "description": "MAV planning tools using voxblox as the map representation.",
+      "created_at": "2018-07-26",
+      "chinese_desc": "MAV planning tools using voxblox as the map repres"
+    },
+    "wavemap": {
+      "name": "wavemap",
+      "url": "https://github.com/ethz-asl/wavemap",
+      "stars": 557,
+      "description": "Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping",
+      "created_at": "2021-10-27",
+      "chinese_desc": "Fast, efficient and accurate multi-resolution, mul"
+    },
+    "voxgraph": {
+      "name": "voxgraph",
+      "url": "https://github.com/ethz-asl/voxgraph",
+      "stars": 549,
+      "description": "Voxblox-based Pose graph optimization",
+      "created_at": "2019-05-23",
+      "chinese_desc": "Voxblox-based Pose graph optimization"
+    },
+    "hand_eye_calibration": {
+      "name": "hand_eye_calibration",
+      "url": "https://github.com/ethz-asl/hand_eye_calibration",
+      "stars": 511,
+      "description": "Python tools to perform time-synchronization and hand-eye calibration.",
+      "created_at": "2017-03-24",
+      "chinese_desc": "Python tools to perform time-synchronization and h"
+    },
+    "COIN-LIO": {
+      "name": "COIN-LIO",
+      "url": "https://github.com/ethz-asl/COIN-LIO",
+      "stars": 477,
+      "description": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDAR Inertial Odometry (ICRA 2024)",
+      "created_at": "2024-04-25",
+      "chinese_desc": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDA"
+    },
+    "voxblox-plusplus": {
+      "name": "voxblox-plusplus",
+      "url": "https://github.com/ethz-asl/voxblox-plusplus",
+      "stars": 462,
+      "description": "A volumetric object-level semantic mapping framework.",
+      "created_at": "2017-02-08",
+      "chinese_desc": "A volumetric object-level semantic mapping framewo"
+    },
+    "nbvplanner": {
+      "name": "nbvplanner",
+      "url": "https://github.com/ethz-asl/nbvplanner",
+      "stars": 437,
+      "description": "A real-time capable exploration and inspection path planner (next best view planning)",
+      "created_at": "2016-01-19",
+      "chinese_desc": "A real-time capable exploration and inspection pat"
+    },
+    "mav_control_rw": {
+      "name": "mav_control_rw",
+      "url": "https://github.com/ethz-asl/mav_control_rw",
+      "stars": 437,
+      "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
+      "created_at": "2016-09-30",
+      "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
+    },
+    "panoptic_mapping": {
+      "name": "panoptic_mapping",
+      "url": "https://github.com/ethz-asl/panoptic_mapping",
+      "stars": 334,
+      "description": "A flexible submap-based framework towards spatio-temporally consistent volumetric mapping and scene understanding.",
+      "created_at": "2020-05-19",
+      "chinese_desc": "A flexible submap-based framework towards spatio-t"
+    },
+    "vgn": {
+      "name": "vgn",
+      "url": "https://github.com/ethz-asl/vgn",
+      "stars": 310,
+      "description": "Real-time 6 DOF grasp detection in clutter.",
+      "created_at": "2019-06-19",
+      "chinese_desc": "Real-time 6 DOF grasp detection in clutter."
+    },
+    "okvis_ros": {
+      "name": "okvis_ros",
+      "url": "https://github.com/ethz-asl/okvis_ros",
+      "stars": 299,
+      "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM (ROS Version)",
+      "created_at": "2016-02-04",
+      "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM (R"
+    },
+    "versavis": {
+      "name": "versavis",
+      "url": "https://github.com/ethz-asl/versavis",
+      "stars": 280,
+      "description": "An Open Versatile Multi-Camera Visual-Inertial Sensor Suite",
+      "created_at": "2019-12-08",
+      "chinese_desc": "An Open Versatile Multi-Camera Visual-Inertial Sen"
+    },
+    "image_undistort": {
+      "name": "image_undistort",
+      "url": "https://github.com/ethz-asl/image_undistort",
+      "stars": 274,
+      "description": "A compact package for undistorting images directly from kalibr calibration files. Can also perform dense stereo estimation",
+      "created_at": "2016-06-13",
+      "chinese_desc": "A compact package for undistorting images directly"
+    },
+    "kitti_to_rosbag": {
+      "name": "kitti_to_rosbag",
+      "url": "https://github.com/ethz-asl/kitti_to_rosbag",
+      "stars": 258,
+      "description": "Dataset tools for working with the KITTI dataset raw data ( http://www.cvlibs.net/datasets/kitti/raw_data.php ) and converting it to a ROS bag. Also allows a library for direct access to poses, velodyne scans, and images. ",
+      "created_at": "2016-07-13",
+      "chinese_desc": "Dataset tools for working with the KITTI dataset r"
+    },
+    "laser_slam": {
+      "name": "laser_slam",
+      "url": "https://github.com/ethz-asl/laser_slam",
+      "stars": 247,
+      "description": "This package provides an end-to-end system to laser-based graph SLAM using laser point clouds.",
+      "created_at": "2016-10-24",
+      "chinese_desc": "This package provides an end-to-end system to lase"
+    },
+    "glocal_exploration": {
+      "name": "glocal_exploration",
+      "url": "https://github.com/ethz-asl/glocal_exploration",
+      "stars": 220,
+      "description": "Efficient local and global exploration on submap collections with changing past pose estimates.",
+      "created_at": "2020-06-05",
+      "chinese_desc": "Efficient local and global exploration on submap c"
+    },
+    "cblox": {
+      "name": "cblox",
+      "url": "https://github.com/ethz-asl/cblox",
+      "stars": 209,
+      "description": "Voxblox-based submapping",
+      "created_at": "2018-07-26",
+      "chinese_desc": "Voxblox-based submapping"
+    },
+    "tsdf-plusplus": {
+      "name": "tsdf-plusplus",
+      "url": "https://github.com/ethz-asl/tsdf-plusplus",
+      "stars": 205,
+      "description": "TSDF++: A Multi-Object Formulation for Dynamic Object Tracking and Reconstruction",
+      "created_at": "2021-03-17",
+      "chinese_desc": "TSDF++: A Multi-Object Formulation for Dynamic Obj"
+    },
+    "aslam_cv2": {
+      "name": "aslam_cv2",
+      "url": "https://github.com/ethz-asl/aslam_cv2",
+      "stars": 201,
+      "description": "",
+      "created_at": "2017-09-18",
+      "chinese_desc": "aslam_cv2"
+    },
+    "hierarchical_loc": {
+      "name": "hierarchical_loc",
+      "url": "https://github.com/ethz-asl/hierarchical_loc",
+      "stars": 185,
+      "description": "Deep image retrieval for efficient 6-DoF localization",
+      "created_at": "2018-08-16",
+      "chinese_desc": "Deep image retrieval for efficient 6-DoF localizat"
+    },
+    "terrain-navigation": {
+      "name": "terrain-navigation",
+      "url": "https://github.com/ethz-asl/terrain-navigation",
+      "stars": 185,
+      "description": "Implementation for safe low altitude navigation in steep terrain for fixed-wing Aerial Vehicles",
+      "created_at": "2023-08-11",
+      "chinese_desc": "Implementation for safe low altitude navigation in"
+    },
+    "odom_predictor": {
+      "name": "odom_predictor",
+      "url": "https://github.com/ethz-asl/odom_predictor",
+      "stars": 176,
+      "description": "Integrates an IMU to predict future odometry readings",
+      "created_at": "2018-09-21",
+      "chinese_desc": "Integrates an IMU to predict future odometry readi"
+    },
+    "orb_slam_2_ros": {
+      "name": "orb_slam_2_ros",
+      "url": "https://github.com/ethz-asl/orb_slam_2_ros",
+      "stars": 175,
+      "description": "ROS interface for ORBSLAM2!!",
+      "created_at": "2016-12-16",
+      "chinese_desc": "ROS interface for ORBSLAM2!!"
+    },
+    "mav_dji_ros_interface": {
+      "name": "mav_dji_ros_interface",
+      "url": "https://github.com/ethz-asl/mav_dji_ros_interface",
+      "stars": 168,
+      "description": "Interface of DJI autopilot based on its OSDK (3.2)",
+      "created_at": "2017-03-24",
+      "chinese_desc": "Interface of DJI autopilot based on its OSDK (3.2)"
+    },
+    "grid_map_geo": {
+      "name": "grid_map_geo",
+      "url": "https://github.com/ethz-asl/grid_map_geo",
+      "stars": 166,
+      "description": "Geolocalization for grid map using GDAL. ",
+      "created_at": "2022-07-06",
+      "chinese_desc": "Geolocalization for grid map using GDAL. "
+    },
+    "lidar_undistortion": {
+      "name": "lidar_undistortion",
+      "url": "https://github.com/ethz-asl/lidar_undistortion",
+      "stars": 159,
+      "description": "Catkin package that provides lidar motion undistortion based on an external 6DoF pose estimation input.",
+      "created_at": "2019-08-10",
+      "chinese_desc": "Catkin package that provides lidar motion undistor"
+    },
+    "rio": {
+      "name": "rio",
+      "url": "https://github.com/ethz-asl/rio",
+      "stars": 150,
+      "description": "Graph-based, sparse radar-inertial odometry estimation",
+      "created_at": "2024-04-02",
+      "chinese_desc": "Graph-based, sparse radar-inertial odometry estima"
+    },
+    "depth_segmentation": {
+      "name": "depth_segmentation",
+      "url": "https://github.com/ethz-asl/depth_segmentation",
+      "stars": 137,
+      "description": "A collection of segmentation methods working on depth images",
+      "created_at": "2016-10-31",
+      "chinese_desc": "A collection of segmentation methods working on de"
+    },
+    "sl_sensor": {
+      "name": "sl_sensor",
+      "url": "https://github.com/ethz-asl/sl_sensor",
+      "stars": 133,
+      "description": "SL Sensor: An open-source, real-time and ROS-based structured light sensor for high accuracy construction robotic applications",
+      "created_at": "2021-04-22",
+      "chinese_desc": "基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。"
+    },
+    "neuralblox": {
+      "name": "neuralblox",
+      "url": "https://github.com/ethz-asl/neuralblox",
+      "stars": 131,
+      "description": "Real-time Neural Representation Fusion for Robust Volumetric Mapping",
+      "created_at": "2021-10-08",
+      "chinese_desc": "Real-time Neural Representation Fusion for Robust "
+    },
+    "phaser": {
+      "name": "phaser",
+      "url": "https://github.com/ethz-asl/phaser",
+      "stars": 130,
+      "description": "A robust pointcloud registration pipeline based on correlation. ",
+      "created_at": "2019-04-18",
+      "chinese_desc": "A robust pointcloud registration pipeline based on"
+    },
+    "data-driven-dynamics": {
+      "name": "data-driven-dynamics",
+      "url": "https://github.com/ethz-asl/data-driven-dynamics",
+      "stars": 130,
+      "description": "Data Driven Dynamics Modeling for Aerial Vehicles",
+      "created_at": "2021-02-25",
+      "chinese_desc": "Data Driven Dynamics Modeling for Aerial Vehicles"
+    },
+    "ssc_exploration": {
+      "name": "ssc_exploration",
+      "url": "https://github.com/ethz-asl/ssc_exploration",
+      "stars": 111,
+      "description": "Incremental 3D Scene Completion for Safe and Efficient Exploration Mapping and Planning",
+      "created_at": "2022-08-17",
+      "chinese_desc": "Incremental 3D Scene Completion for Safe and Effic"
+    },
+    "waypoint_navigator": {
+      "name": "waypoint_navigator",
+      "url": "https://github.com/ethz-asl/waypoint_navigator",
+      "stars": 107,
+      "description": "Stand-alone waypoint navigator",
+      "created_at": "2017-06-08",
+      "chinese_desc": "Stand-alone waypoint navigator"
+    },
+    "reinmav-gym": {
+      "name": "reinmav-gym",
+      "url": "https://github.com/ethz-asl/reinmav-gym",
+      "stars": 106,
+      "description": "Reinforcement Learning framework for MAVs using the OpenAI Gym environment",
+      "created_at": "2019-02-04",
+      "chinese_desc": "Reinforcement Learning framework for MAVs using th"
+    },
+    "active_grasp": {
+      "name": "active_grasp",
+      "url": "https://github.com/ethz-asl/active_grasp",
+      "stars": 106,
+      "description": "Closed-loop next-best view planning for grasp detection in clutter.",
+      "created_at": "2022-01-06",
+      "chinese_desc": "Closed-loop next-best view planning for grasp dete"
+    },
+    "waverider": {
+      "name": "waverider",
+      "url": "https://github.com/ethz-asl/waverider",
+      "stars": 106,
+      "description": "RMPs on multi-resolution occupancy maps for efficient reactive collision avoidance",
+      "created_at": "2023-06-28",
+      "chinese_desc": "RMPs on multi-resolution occupancy maps for effici"
+    },
+    "navrep": {
+      "name": "navrep",
+      "url": "https://github.com/ethz-asl/navrep",
+      "stars": 104,
+      "description": "",
+      "created_at": "2020-11-05",
+      "chinese_desc": "navrep"
+    },
+    "eth_supermegabot": {
+      "name": "eth_supermegabot",
+      "url": "https://github.com/ethz-asl/eth_supermegabot",
+      "stars": 102,
+      "description": "Instructions for ETH center for robotics summer school 2019.",
+      "created_at": "2019-06-21",
+      "chinese_desc": "Instructions for ETH center for robotics summer sc"
+    },
+    "unreal_airsim": {
+      "name": "unreal_airsim",
+      "url": "https://github.com/ethz-asl/unreal_airsim",
+      "stars": 101,
+      "description": "Simulation interface to Unreal Engine 4 based on the AirSim plugin.",
+      "created_at": "2020-03-10",
+      "chinese_desc": "Simulation interface to Unreal Engine 4 based on t"
+    }
+  }
+}
