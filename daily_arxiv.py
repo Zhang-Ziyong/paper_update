@@ -398,6 +398,46 @@ def update_paper_links(filename):
     with open(filename, "w") as f:
         json.dump(updated_data, f, indent=2)
 
+def trim_papers(papers: dict, max_count: int = 10) -> dict:
+    """保留最多max_count篇论文，超出时优先剔除无代码论文，都有代码则剔除最旧的"""
+    if len(papers) <= max_count:
+        return papers
+
+    def has_code(entry: str) -> bool:
+        parts = entry.split('|')
+        if len(parts) >= 6:
+            code = parts[5].strip()
+            return code not in ["无", "null", ""]
+        return False
+
+    def get_date(entry: str) -> str:
+        parts = entry.split('|')
+        return parts[1].strip() if len(parts) > 1 else ""
+
+    # 分为有代码和无代码两组
+    with_code = {k: v for k, v in papers.items() if has_code(v)}
+    without_code = {k: v for k, v in papers.items() if not has_code(v)}
+
+    # 各组按日期降序排列（最新在前）
+    with_code = dict(sorted(with_code.items(), key=lambda x: get_date(x[1]), reverse=True))
+    without_code = dict(sorted(without_code.items(), key=lambda x: get_date(x[1]), reverse=True))
+
+    # 优先保留有代码的，再补充无代码的，截取前max_count篇
+    result = {}
+    for k, v in with_code.items():
+        if len(result) >= max_count:
+            break
+        result[k] = v
+    for k, v in without_code.items():
+        if len(result) >= max_count:
+            break
+        result[k] = v
+
+    removed = len(papers) - len(result)
+    if removed > 0:
+        logging.info(f"裁剪 {removed} 篇论文，保留 {len(result)} 篇")
+    return result
+
 def update_json_file(filename, data_dict):
     """更新JSON文件并应用过滤"""
     try:
@@ -431,6 +471,10 @@ def update_json_file(filename, data_dict):
             else:
                 existing_data[topic] = filtered_papers
     
+    # 每个词条最多保留10篇
+    for topic in existing_data:
+        existing_data[topic] = trim_papers(existing_data[topic], max_count=10)
+
     # 保存更新
     with open(filename, "w") as f:
         json.dump(existing_data, f, indent=2)
