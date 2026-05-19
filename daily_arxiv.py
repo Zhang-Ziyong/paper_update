@@ -22,6 +22,7 @@ arxiv_url = "http://arxiv.org/"
 # Anthropic Claude API配置
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_AUTH_TOKEN", "")
 ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 ANTHROPIC_API_URL = f"{ANTHROPIC_BASE_URL}/v1/messages"
 
 # 全局过滤日期 - 修改这里调整过滤条件
@@ -138,7 +139,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "claude-haiku-4-5-20251001",
+                    "model": ANTHROPIC_MODEL,
                     "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}]
                 },
@@ -702,7 +703,7 @@ def get_repo_chinese_desc(name: str, desc: str) -> str:
                 "Content-Type": "application/json"
             },
             json={
-                "model": "claude-haiku-4-5-20251001",
+                "model": ANTHROPIC_MODEL,
                 "max_tokens": 200,
                 "messages": [{"role": "user", "content": prompt}]
             },
