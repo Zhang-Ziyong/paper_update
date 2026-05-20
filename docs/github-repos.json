@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4689,
+      "stars": 4688,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -147,7 +147,7 @@
     "mlcc": {
       "name": "mlcc",
       "url": "https://github.com/hku-mars/mlcc",
-      "stars": 615,
+      "stars": 616,
       "description": "Fast and Accurate Extrinsic Calibration for Multiple LiDARs and Cameras",
       "created_at": "2021-09-14",
       "chinese_desc": "Fast and Accurate Extrinsic Calibration for Multip"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 332,
+      "stars": 333,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -243,7 +243,7 @@
     "IPC": {
       "name": "IPC",
       "url": "https://github.com/hku-mars/IPC",
-      "stars": 250,
+      "stars": 251,
       "description": "Integrated Planning and Control for Quadrotor Navigation in Presence of Sudden Crossing Objects and Disturbances",
       "created_at": "2023-04-06",
       "chinese_desc": "Integrated Planning and Control for Quadrotor Navi"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 202,
+      "stars": 203,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1032,
+      "stars": 1033,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
