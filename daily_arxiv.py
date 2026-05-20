@@ -143,7 +143,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
                     "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}]
                 },
-                timeout=60
+                timeout=120
             )
 
             # 4. 检查响应状态
