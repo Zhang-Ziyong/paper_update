@@ -186,7 +186,7 @@ def fetch_arxiv_results(query, max_results=10):
     for attempt in range(max_retries):
         try:
             # 修正参数名：使用正确的num_retries
-            client = arxiv.Client(num_retries=3)
+            client = arxiv.Client(num_retries=3, page_size=20, delay_seconds=5)
             search = arxiv.Search(
                 query=query,
                 max_results=max_results,
@@ -196,7 +196,7 @@ def fetch_arxiv_results(query, max_results=10):
         except Exception as e:
             logging.warning(f"arXiv API请求失败 (尝试 {attempt+1}/{max_retries}): {e}")
             if attempt < max_retries - 1:
-                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                wait_time = (3 ** attempt) + random.uniform(1, 3)
                 logging.info(f"等待 {wait_time:.1f} 秒后重试...")
                 time.sleep(wait_time)
     
@@ -207,7 +207,7 @@ def fetch_arxiv_results(query, max_results=10):
         params = {
             "search_query": query,
             "start": 0,
-            "max_results": max_results,
+            "max_results": min(max_results, 20),
             "sortBy": "submittedDate",
             "sortOrder": "descending"
         }
