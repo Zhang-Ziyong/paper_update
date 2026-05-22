@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.21)
+# 计算机视觉领域最新论文 (2026.05.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -156,21 +156,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-21</td><td>Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning<br><a href='http://arxiv.org/pdf/2605.22748'>论文</a></td><td>本文提出利用多智能体强化学习为真实世界动态交互提供安全保障，打破了传统单智能体范式忽视其他参与者的局限。
+◆提出基于联赛的自博弈训练方法，使智能体在高速四旋翼竞速中进化出主动避撞、超车与处理气动下洗等复杂</td></tr>
+<tr><td>2026-05-21</td><td>N3P: Accelerated Automated Parking via a Learning-Based Naturalistic Three-Stage Scheme<br><a href='http://arxiv.org/pdf/2605.22722'>论文</a></td><td>本文提出了一种基于学习的自然主义三阶段自动泊车框架N3P，旨在解决传统Hybrid A*算法计算昂贵和强化学习方法可靠性差且难以处理长视距约束的问题。
+◆创新性地引入中间准备姿态，将复杂的泊车操作分解为更简单的子问题，有效降低了计算复杂度。
+◆利用学习模块预测该中间准备姿态，实现了路径生成的大幅加速。
+该框架与Hybrid A*算法结合进行了验证，实验表明N3P增强的Hybrid A*在垂直和平行泊车场景中规划速度提升超过80%。
+此外，该方法在成功率和轨迹质量上优于强化学习基线，能生成更短且换挡次数更少的轨迹，同时保持相近或更低的规划时间</td></tr>
+<tr><td>2026-05-21</td><td>Perceived Safety of Workers in Encounters with Large Industrial AGVs<br><a href='http://arxiv.org/pdf/2605.22461'>论文</a></td><td>本文研究了工业工人与大型自动导引车在共享空间互动时的感知安全问题，填补了现有研究对大型AGV及真实职业工人关注不足的空白。
+◆首次聚焦大型AGV与真实职业工人的近距离互动，克服了以往研究多基于小型AGV和学生群体的局限性。
+◆通过对比真实世界与虚拟现实环境下的实验，探讨了VR安全性感知结果向真实场景转移的有效性。
+◆采用手持压力敏感触发接口结合问卷评估威胁，并创新性地让工人根据经验自定义避碰参数。
+研究发现VR中的威胁感知略高于真实环境，且无论在预设还是自定义轨迹中，1.5至2米的通过距离最受工人偏好。</td></tr>
 <tr><td>2026-05-20</td><td>Design for Manufacturing: A Manufacturability Knowledge-Integrated Reinforcement Learning Framework for Free-Form Pipe Routing in Aeroengines<br><a href='http://arxiv.org/pdf/2605.20644'>论文</a></td><td>本文提出了FPRO框架，解决了航空发动机管路布线与下游制造脱节的问题，实现了设计与制造的一体化。
 ◆在Frenet坐标系下将管路布线问题转化为边值问题，利用曲率和挠率剖面结合三次Hermite插值表示管路路径。
 ◆将领域特定的制造知识作为曲率和挠率容许范围的约束嵌入强化学习，确保生成的路径直接满足可制造性要求。
 ◆采用结合随机探索与阶段引导奖励机制的近端策略优化算法进行路径寻优，显著提升了收敛速度和综合性能。
 ◆提出统一映射公式，将优化路径直接转换为弯模运动轨迹，实现六轴自由弯管机的直接加工制造。
 实验表明该框架能稳定生成无碰撞且平滑的可制造路径，实际制造验证了数字设计与实体管路的高度一致性及其实用可行性。</td></tr>
-<tr><td>2026-05-20</td><td>Time-To-Reach Separation and Safety Filtering for Safe, Fair, and Efficient Multi-Agent Coordination<br><a href='http://arxiv.org/pdf/2605.20625'>论文</a></td><td>针对城市空中交通拥挤环境下多飞行器汇入空中走廊的防撞协同问题，本文提出了一种多智能体协调框架。该框架的核心贡献是将最小到达时间作为统一度量，贯穿优先级分配、时间分离和安全过滤全过程。
-◆基于到达时间分配一致的优先级，并利用目标到达时间值强制执行时间间距，从而有效诱导实现空间分离。
-◆构建了基于哈密顿-雅可比可达性值函数的优先级一致性安全过滤层，在确保碰撞避免的同时最小化对参考引导的修改。
-仿真结果表明，与时间最优引导和忽略优先级的安全过滤相比，该方法在高度拥挤场景下显著提升了系统的安全性、公平性与效率。</td></tr>
-<tr><td>2026-05-20</td><td>Intent-First Aerial V2V for Tactical Coordination and Separation: Protocol and Performance Under Density and Disturbance<br><a href='http://arxiv.org/pdf/2605.20595'>论文</a></td><td>本文针对密集低空运行中预飞协调过慢和紧急避撞过晚的问题，首次提出了一个面向无人机交通</td></tr>
-<tr><td>2026-05-19</td><td>Hamilton--Jacobi Reachability for Spacecraft Collision Avoidance<br><a href='http://arxiv.org/pdf/2605.20138'>论文</a></td><td>本文提出了一种基于哈密顿-雅可比可达性的框架，用于解决同一圆轨道上的双星碰撞回避问题。该框架在径向-切向-法向坐标系中采用平面HCW动力学对相对运动进行建模，并结合联邦通信委员会标准定义了不安全的相对构型。
-◆将航天器交互建模为零和微分博弈，把目标卫星视为具有未知意图的有界对抗性干扰，以应对最坏情况。
-◆计算后向可达集来表征相对状态，提供严格的数学保证，即集合内部状态在最大干扰下无法避免碰撞，而外部状态则存在无碰撞轨迹。
-◆将后向可达集与监督混合控制逻辑相集成，精确确定何时必须启动规避机动，从而为系统的可扩展性提供了数学基础的安全保证。</td></tr>
 <tr><td>2026-05-19</td><td>D-CLING: Prior-Preserving Depth-Conditioned Fine-Tuning for Navigation Foundation Models<br><a href='http://arxiv.org/pdf/2605.19690'>论文</a> | <a href='https://toyotafrc.github.io/DCLING-Proj/'>代码</a></td><td>本文提出了D-CLING微调方法，旨在解决导航基础模型微调时预训练先验被侵蚀及避障失效的问题。该方法让模型在新场景中高效学习的同时，保持预训练的泛化能力以实现鲁棒的长期导航。
 ◆受ControlNet启发，附加预训练骨干的可训练副本并采用零初始化残差路径连接，使模型高效学习域内几何线索。
 ◆在获取新环境几何信息的同时，有效保留模型原有的各种预训练行为知识，防止微调破坏先验。
@@ -268,6 +271,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-21</td><td>N3P: Accelerated Automated Parking via a Learning-Based Naturalistic Three-Stage Scheme<br><a href='http://arxiv.org/pdf/2605.22722'>论文</a></td><td>本文提出了N3P，一种基于学习的快速三阶段自动停车框架，解决了传统Hybrid A*计算昂贵与强化学习可靠性差的问题。
+◆引入中间预备位姿并通过学习模块预测，将复杂停车机动分解为更简单的子问题。
+◆利用该分解策略有效降低计算复杂度，从而大幅加速路径生成过程。
+◆将学习模块与Hybrid A*算法结合，在垂直和平行停车场景中实现了超过80%的规划加速。
+◆相比强化学习方法，该框架具有更高的成功率，且生成的轨迹更短、换挡次数更少，轨迹质量显著提升。</td></tr>
+<tr><td>2026-05-21</td><td>Branch-Stochastic Model Predictive Control for Motion Planning under Multi-Modal Uncertainty with Scenario Clustering<br><a href='http://arxiv.org/pdf/2605.22600'>论文</a></td><td>该论文针对自动驾驶运动规划中多模态不确定性问题，指出传统随机模型预测控制虽能降低轨迹层面的保守性，但在意图不确定性上仍显保守。为此，论文核心贡献是提出结合随机模型预测控制与分支结构的新方法，使规划器能为不同意图生成独立轨迹并保证轨迹不确定性下的安全性。
+◆提出基于高层决策相似性的场景聚类方法，通过合并预测场景确保算法的实时可解性。
+◆设计自适应分支时间计算机制，推迟到意图不确定性充分降低时才决定执行分离规划以避免过早承诺。
+仿真结果表明，该方法有效提升了安全性，显著降低了保守性，并实现了实时计算性能。</td></tr>
 <tr><td>2026-05-20</td><td>MC-Risk: Multi-Component Risk Fields for Risk Identification and Motion Planning<br><a href='http://arxiv.org/pdf/2605.21406'>论文</a></td><td>本文提出了MC-Risk，一种与规划器对齐的鸟瞰图多组件风险场，可实现早期、校准且类别感知的风险定位。
 ◆针对机动车代理，融合黑盒多模态轨迹预测与解析式高斯环面结构，横向宽度随速度和曲率增加，高度随前视距离衰减。
 ◆针对弱势道路使用者，用与朝向和速度对齐的前向偏置各向异性核替换传统的各向同性行人斑块。
@@ -293,16 +305,6 @@
 ◆引入在线时间最优速度重规划机制，通过补偿执行误差有效缩短圈速，使车辆能安全达到更高的速度和加速度。
 研究通过谨慎与激进赛车线的消融实验，深入分析了各独立模块及其组合的性能表现。
 为支持未来研究，作者公开了代码与数据集等资源，为该领域建立了一个开放的实验基准。</td></tr>
-<tr><td>2026-05-19</td><td>KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation<br><a href='http://arxiv.org/pdf/2605.19703'>论文</a></td><td>针对无人机在密集障碍物环境中面临的建图延迟、局部极小值及端到端方法缺乏安全约束等问题，本文提出了KIO-planner注意力引导单阶段轨迹规划框架。
-◆在感知主干网络中集成卷积块注意力模块，使模型能够自适应地聚焦于关键结构边缘与可通行空间，提升几何特征提取能力。
-◆引入全新的双映射机制，包含物理边界激活和深度像素空间的确定性几何安全护盾，无需全局地图融合即可严格保证运动动力学可行性与无碰撞飞行。
-实验表明该框架支持高达3.0米每秒的敏捷导航，且推理延迟仅约24毫秒。
-与传统最优基线相比，其生成轨迹更平滑，控制成本降低28.4%，最坏情况下的安全距离从0.48米大幅提升至0.76米，实现了快速平稳且更安全的飞行。</td></tr>
-<tr><td>2026-05-19</td><td>Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions<br><a href='http://arxiv.org/pdf/2605.19562'>论文</a></td><td>本文针对无人机与无人车协同交接任务，提出了一种学习加速的轨迹规划框架，解决了集中式优化计算成本高且难以实时应用的问题。
-◆提出了一种基于解耦编码器-解码器LSTM网络的神经代理规划器，能够根据任务规范生成协调的交接轨迹预测。
-◆将上述预测结果作为下游集中式优化器的热启动初始解，显著加速了动态可行解的收敛过程。
-基准测试表明，该框架相比冷启动优化实现了三倍以上的计算加速，且优化成功率达到百分之百。
-研究证明，结合数据驱动推理与基于模型的优化精炼，能为异构多机器人系统提供快速且可靠的轨迹生成方案。</td></tr>
 <tr><td>2026-05-18</td><td>REACT: Environment-Adaptive Architecture for Continuous Formation Navigation of Wheeled Mobile Robots<br><a href='http://arxiv.org/pdf/2605.18441'>论文</a> | <a href='https://dongjh20.github.io/REACT-website'>代码</a></td><td>针对轮式移动机器人现有编队控制难以适应复杂环境的问题，本文提出了REACT分层架构，集成了集中式编队生成与分布式编队维持。
 ◆在上层，该架构按需生成环境自适应新编队，并提出TCF-R2T算法在多项式时间内计算无轨迹冲突的机器人目标分配，实现无冲突的及时编队转换。
 ◆在下层，各机器人执行提出的JSTP方法，通过同时优化空间位置与时间持续时间来维持编队，显著增强了多机器人间的协调性。
@@ -326,22 +328,22 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4696</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4077</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4701</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4080</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2403</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1603</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
+<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1604</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1591</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1401</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1245</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1207</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1403</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1246</td><td>This repository is used for automatic calibration </td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1209</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>914</td><td>An efficient and consistent bundle adjustment for </td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>913</td><td>SUPER</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>888</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>914</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>890</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>789</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>781</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>737</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
-<tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>720</td><td>A 3D point cloud descriptor for place recognition</td></tr>
-<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>697</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>721</td><td>A 3D point cloud descriptor for place recognition</td></tr>
+<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>699</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>629</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>620</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>617</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
@@ -354,18 +356,18 @@
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>431</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>384</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>342</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
-<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>334</td><td>btc_descriptor</td></tr>
+<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>335</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>260</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>251</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>233</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>222</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>218</td><td>dyn_small_obs_avoidance</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>203</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>204</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>197</td><td>LAMM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>194</td><td>SUPER-Hardware</td></tr>
+<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>147</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>146</td><td>PULSAR</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>146</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
-<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>140</td><td>iBTC</td></tr>
+<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>141</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>116</td><td>LiDAR-UAV-Autonomy</td></tr>
 </tbody>
 </table>
@@ -377,12 +379,12 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2838</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1626</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2839</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1627</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1351</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1097</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1034</td><td>A simple method for finding the extrinsic calibrat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>866</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>867</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>695</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>654</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>653</td><td>Coverage planning in general polygons with holes.</td></tr>
@@ -392,10 +394,10 @@
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>562</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>559</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>549</td><td>Voxblox-based Pose graph optimization</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>511</td><td>Python tools to perform time-synchronization and h</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>512</td><td>Python tools to perform time-synchronization and h</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>479</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>462</td><td>A volumetric object-level semantic mapping framewo</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>439</td><td>A real-time capable exploration and inspection pat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>440</td><td>A real-time capable exploration and inspection pat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>438</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>335</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>311</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
@@ -435,4 +437,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.21
+> 更新于: 2026.05.22
