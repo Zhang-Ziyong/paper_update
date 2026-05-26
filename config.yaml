@@ -35,6 +35,8 @@ keywords:
         filters: ["Motion Planning", "Path Planning", "Trajectory Planning"]
     "Navigation":
         filters: ["Robot Navigation", "Autonomous Navigation", "Visual Navigation"]
+    "Sensor Calibration":
+        filters: ["Sensor Calibration", "Camera Calibration", "IMU Calibration", "LiDAR Calibration", "Extrinsic Calibration", "Hand-Eye Calibration", "Intrinsic Calibration"]
 
 # GitHub organizations to monitor
 github_orgs:

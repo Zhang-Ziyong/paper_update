@@ -399,7 +399,7 @@ def update_paper_links(filename):
     with open(filename, "w") as f:
         json.dump(updated_data, f, indent=2)
 
-def trim_papers(papers: dict, max_count: int = 10) -> dict:
+def trim_papers(papers: dict, max_count: int = 20) -> dict:
     """保留最多max_count篇论文，超出时优先剔除无代码论文，都有代码则剔除最旧的"""
     if len(papers) <= max_count:
         return papers
@@ -471,10 +471,25 @@ def update_json_file(filename, data_dict):
                 existing_data[topic].update(filtered_papers)
             else:
                 existing_data[topic] = filtered_papers
-    
-    # 每个词条最多保留10篇
+
+    # 归档完整数据到 archive.json
+    archive_path = os.path.join(os.path.dirname(filename), 'archive.json')
+    try:
+        with open(archive_path, "r") as f:
+            archive_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        archive_data = {}
+    for topic, papers in existing_data.items():
+        if topic in archive_data:
+            archive_data[topic].update(papers)
+        else:
+            archive_data[topic] = dict(papers)
+    with open(archive_path, "w") as f:
+        json.dump(archive_data, f, indent=2, ensure_ascii=False)
+
+    # 每个词条最多保留20篇
     for topic in existing_data:
-        existing_data[topic] = trim_papers(existing_data[topic], max_count=10)
+        existing_data[topic] = trim_papers(existing_data[topic], max_count=20)
 
     # 保存更新
     with open(filename, "w") as f:
