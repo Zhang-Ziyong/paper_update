@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4707,
+      "stars": 4708,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4094,
+      "stars": 4098,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2404,
+      "stars": 2405,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -27,7 +27,7 @@
     "loam_livox": {
       "name": "loam_livox",
       "url": "https://github.com/hku-mars/loam_livox",
-      "stars": 1604,
+      "stars": 1605,
       "description": "A robust LiDAR Odometry and Mapping (LOAM) package for Livox-LiDAR",
       "created_at": "2019-06-07",
       "chinese_desc": "A robust LiDAR Odometry and Mapping (LOAM) package"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1592,
+      "stars": 1594,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1221,
+      "stars": 1223,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 891,
+      "stars": 893,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 560,
+      "stars": 561,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 462,
+      "stars": 463,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 387,
+      "stars": 388,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -235,7 +235,7 @@
     "M2Mapping": {
       "name": "M2Mapping",
       "url": "https://github.com/hku-mars/M2Mapping",
-      "stars": 260,
+      "stars": 261,
       "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
       "created_at": "2024-09-09",
       "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2840,
+      "stars": 2841,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -381,7 +381,7 @@
     "mav_active_3d_planning": {
       "name": "mav_active_3d_planning",
       "url": "https://github.com/ethz-asl/mav_active_3d_planning",
-      "stars": 695,
+      "stars": 696,
       "description": "Modular framework for online informative path planning.",
       "created_at": "2018-10-25",
       "chinese_desc": "Modular framework for online informative path plan"
@@ -429,7 +429,7 @@
     "mav_voxblox_planning": {
       "name": "mav_voxblox_planning",
       "url": "https://github.com/ethz-asl/mav_voxblox_planning",
-      "stars": 562,
+      "stars": 563,
       "description": "MAV planning tools using voxblox as the map representation.",
       "created_at": "2018-07-26",
       "chinese_desc": "MAV planning tools using voxblox as the map repres"
@@ -517,7 +517,7 @@
     "versavis": {
       "name": "versavis",
       "url": "https://github.com/ethz-asl/versavis",
-      "stars": 280,
+      "stars": 281,
       "description": "An Open Versatile Multi-Camera Visual-Inertial Sensor Suite",
       "created_at": "2019-12-08",
       "chinese_desc": "An Open Versatile Multi-Camera Visual-Inertial Sen"
