@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4098,
+      "stars": 4100,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1594,
+      "stars": 1595,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 893,
+      "stars": 894,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -91,7 +91,7 @@
     "ikd-Tree": {
       "name": "ikd-Tree",
       "url": "https://github.com/hku-mars/ikd-Tree",
-      "stars": 790,
+      "stars": 791,
       "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
       "created_at": "2021-02-22",
       "chinese_desc": "This repository provides implementation of an incr"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 388,
+      "stars": 389,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -741,7 +741,7 @@
     "unreal_airsim": {
       "name": "unreal_airsim",
       "url": "https://github.com/ethz-asl/unreal_airsim",
-      "stars": 101,
+      "stars": 102,
       "description": "Simulation interface to Unreal Engine 4 based on the AirSim plugin.",
       "created_at": "2020-03-10",
       "chinese_desc": "Simulation interface to Unreal Engine 4 based on t"
