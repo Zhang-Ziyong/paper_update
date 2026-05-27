@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4708,
+      "stars": 4709,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4100,
+      "stars": 4101,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1405,
+      "stars": 1404,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -99,7 +99,7 @@
     "r2live": {
       "name": "r2live",
       "url": "https://github.com/hku-mars/r2live",
-      "stars": 781,
+      "stars": 780,
       "description": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping package",
       "created_at": "2021-02-24",
       "chinese_desc": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual"
@@ -107,7 +107,7 @@
     "ImMesh": {
       "name": "ImMesh",
       "url": "https://github.com/hku-mars/ImMesh",
-      "stars": 737,
+      "stars": 736,
       "description": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
       "created_at": "2023-01-10",
       "chinese_desc": "ImMesh: An Immediate LiDAR Localization and Meshin"
@@ -115,7 +115,7 @@
     "STD": {
       "name": "STD",
       "url": "https://github.com/hku-mars/STD",
-      "stars": 722,
+      "stars": 721,
       "description": "A 3D point cloud descriptor for place recognition",
       "created_at": "2022-09-14",
       "chinese_desc": "A 3D point cloud descriptor for place recognition"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 629,
+      "stars": 628,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -155,7 +155,7 @@
     "HBA": {
       "name": "HBA",
       "url": "https://github.com/hku-mars/HBA",
-      "stars": 583,
+      "stars": 582,
       "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
       "created_at": "2023-05-01",
       "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 561,
+      "stars": 560,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 530,
+      "stars": 529,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 463,
+      "stars": 464,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 431,
+      "stars": 432,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -219,7 +219,7 @@
     "D-Map": {
       "name": "D-Map",
       "url": "https://github.com/hku-mars/D-Map",
-      "stars": 342,
+      "stars": 341,
       "description": "D-Map provides an efficient occupancy mapping approach for high-resolution LiDAR sensors.",
       "created_at": "2023-03-10",
       "chinese_desc": "D-Map provides an efficient occupancy mapping appr"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1628,
+      "stars": 1629,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
@@ -349,7 +349,7 @@
     "okvis": {
       "name": "okvis",
       "url": "https://github.com/ethz-asl/okvis",
-      "stars": 1352,
+      "stars": 1351,
       "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM.",
       "created_at": "2016-02-04",
       "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM."
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 653,
+      "stars": 652,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -421,7 +421,7 @@
     "robust_point_cloud_registration": {
       "name": "robust_point_cloud_registration",
       "url": "https://github.com/ethz-asl/robust_point_cloud_registration",
-      "stars": 572,
+      "stars": 571,
       "description": "Robust Point Cloud Registration Using Iterative Probabilistic Data Associations (\"Robust ICP\")",
       "created_at": "2016-11-14",
       "chinese_desc": "Robust Point Cloud Registration Using Iterative Pr"
@@ -509,7 +509,7 @@
     "okvis_ros": {
       "name": "okvis_ros",
       "url": "https://github.com/ethz-asl/okvis_ros",
-      "stars": 299,
+      "stars": 298,
       "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM (ROS Version)",
       "created_at": "2016-02-04",
       "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM (R"
@@ -653,7 +653,7 @@
     "sl_sensor": {
       "name": "sl_sensor",
       "url": "https://github.com/ethz-asl/sl_sensor",
-      "stars": 133,
+      "stars": 134,
       "description": "SL Sensor: An open-source, real-time and ROS-based structured light sensor for high accuracy construction robotic applications",
       "created_at": "2021-04-22",
       "chinese_desc": "基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。"
