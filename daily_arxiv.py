@@ -400,39 +400,17 @@ def update_paper_links(filename):
         json.dump(updated_data, f, indent=2)
 
 def trim_papers(papers: dict, max_count: int = 20) -> dict:
-    """保留最多max_count篇论文，超出时优先剔除无代码论文，都有代码则剔除最旧的"""
+    """保留最多max_count篇论文，按时间排序只保留最新的"""
     if len(papers) <= max_count:
         return papers
-
-    def has_code(entry: str) -> bool:
-        parts = entry.split('|')
-        if len(parts) >= 6:
-            code = parts[5].strip()
-            return code not in ["无", "null", ""]
-        return False
 
     def get_date(entry: str) -> str:
         parts = entry.split('|')
         return parts[1].strip() if len(parts) > 1 else ""
 
-    # 分为有代码和无代码两组
-    with_code = {k: v for k, v in papers.items() if has_code(v)}
-    without_code = {k: v for k, v in papers.items() if not has_code(v)}
-
-    # 各组按日期降序排列（最新在前）
-    with_code = dict(sorted(with_code.items(), key=lambda x: get_date(x[1]), reverse=True))
-    without_code = dict(sorted(without_code.items(), key=lambda x: get_date(x[1]), reverse=True))
-
-    # 优先保留有代码的，再补充无代码的，截取前max_count篇
-    result = {}
-    for k, v in with_code.items():
-        if len(result) >= max_count:
-            break
-        result[k] = v
-    for k, v in without_code.items():
-        if len(result) >= max_count:
-            break
-        result[k] = v
+    # 按日期降序排列，保留最新的max_count篇
+    sorted_papers = sorted(papers.items(), key=lambda x: get_date(x[1]), reverse=True)
+    result = dict(sorted_papers[:max_count])
 
     removed = len(papers) - len(result)
     if removed > 0:
@@ -580,6 +558,7 @@ def json_to_md(filename, md_filename,
                 if data[keyword]:
                     kw_slug = re.sub(r'\W+', '-', keyword.lower())
                     f.write(f"<li><a href='#{kw_slug}'>{keyword}</a></li>\n")
+            f.write("<li><a href='#archive'>归档</a></li>\n")
             f.write("</ol>\n</details>\n\n")
         
         # 5. 添加各个主题部分
@@ -645,11 +624,77 @@ def json_to_md(filename, md_filename,
             if use_b2t:
                 f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
         
-        # 7. 添加页脚
+        # 7. 添加归档目录（所有论文）
+        archive_path = os.path.join(os.path.dirname(filename), 'archive.json')
+        try:
+            with open(archive_path, "r") as af:
+                archive_data = json.load(af)
+        except (FileNotFoundError, json.JSONDecodeError):
+            archive_data = {}
+
+        if archive_data:
+            f.write("<h2 id='archive'>归档</h2>\n\n")
+            f.write("> 所有历史论文归档\n\n")
+
+            for keyword, papers in archive_data.items():
+                if not papers:
+                    continue
+
+                kw_slug = re.sub(r'\W+', '-', keyword.lower())
+                f.write(f"<h3 id='archive-{kw_slug}'>{keyword}</h3>\n\n")
+                f.write('<div class="table-container">\n')
+                f.write("<table>\n")
+                f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
+                f.write("<tbody>\n")
+
+                sorted_papers = sorted(papers.items(),
+                                       key=lambda x: x[1].split('|')[1].strip() if len(x[1].split('|')) > 1 else "",
+                                       reverse=True)
+
+                for paper_id, paper_entry in sorted_papers:
+                    entry_parts = paper_entry.strip().split('|')
+                    if len(entry_parts) >= 7:
+                        date_str = entry_parts[1].strip()
+                        title = entry_parts[2].strip()
+                        paper_link = entry_parts[4].strip()
+                        code_link = entry_parts[5].strip()
+                        summary = entry_parts[6].strip()
+
+                        if not summary or summary in ["无", "null"]:
+                            summary = "摘要生成中..."
+
+                        paper_url_match = re.search(r'\((https?://[^)]+)\)', paper_link)
+                        if paper_url_match:
+                            paper_url = paper_url_match.group(1)
+                            title_display = f"{html.escape(title)}<br><a href='{paper_url}'>论文</a>"
+                        else:
+                            title_display = html.escape(title)
+
+                        if code_link not in ["无", "null", ""]:
+                            code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
+                            if not code_url_match:
+                                code_url_match2 = re.match(r'https?://', code_link)
+                                if code_url_match2:
+                                    title_display += f" | <a href='{code_link}'>代码</a>"
+                            else:
+                                code_url = code_url_match.group(1)
+                                title_display += f" | <a href='{code_url}'>代码</a>"
+
+                        f.write("<tr>")
+                        f.write(f"<td>{html.escape(date_str)}</td>")
+                        f.write(f"<td>{title_display}</td>")
+                        f.write(f"<td>{html.escape(summary)}</td>")
+                        f.write("</tr>\n")
+
+                f.write("</tbody>\n")
+                f.write("</table>\n")
+                f.write("</div>\n\n")
+
+        # 8. 添加页脚
         f.write("---\n")
         f.write("> 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)\n")
         f.write(f"> 更新于: {today}\n")
-    
+
     logging.info(f"{task} 已完成，保存到 {md_filename}")
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
