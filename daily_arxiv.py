@@ -647,71 +647,9 @@ def json_to_md(filename, md_filename,
             if use_b2t:
                 f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
         
-        # 7. 添加归档目录（所有论文）
-        archive_path = os.path.join(os.path.dirname(filename), 'archive.json')
-        try:
-            with open(archive_path, "r") as af:
-                archive_data = json.load(af)
-        except (FileNotFoundError, json.JSONDecodeError):
-            archive_data = {}
-
-        if archive_data:
-            f.write("<h2 id='archive'>归档</h2>\n\n")
-            f.write("> 所有历史论文归档\n\n")
-
-            for keyword, papers in archive_data.items():
-                if not papers:
-                    continue
-
-                kw_slug = re.sub(r'\W+', '-', keyword.lower())
-                f.write(f"<h3 id='archive-{kw_slug}'>{keyword}</h3>\n\n")
-                f.write('<div class="table-container">\n')
-                f.write("<table>\n")
-                f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
-                f.write("<tbody>\n")
-
-                sorted_papers = sorted(papers.items(),
-                                       key=lambda x: x[1].split('|')[1].strip() if len(x[1].split('|')) > 1 else "",
-                                       reverse=True)
-
-                for paper_id, paper_entry in sorted_papers:
-                    entry_parts = paper_entry.strip().split('|')
-                    if len(entry_parts) >= 7:
-                        date_str = entry_parts[1].strip()
-                        title = entry_parts[2].strip()
-                        paper_link = entry_parts[4].strip()
-                        code_link = entry_parts[5].strip()
-                        summary = entry_parts[6].strip()
-
-                        if not summary or summary in ["无", "null"]:
-                            summary = "摘要生成中..."
-
-                        paper_url_match = re.search(r'\((https?://[^)]+)\)', paper_link)
-                        if paper_url_match:
-                            paper_url = paper_url_match.group(1)
-                            title_display = f"{html.escape(title)}<br><a href='{paper_url}'>论文</a>"
-                        else:
-                            title_display = html.escape(title)
-
-                        if code_link not in ["无", "null", ""]:
-                            code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
-                            if not code_url_match:
-                                code_url_match2 = re.match(r'https?://', code_link)
-                                if code_url_match2:
-                                    title_display += f" | <a href='{code_link}'>代码</a>"
-                            else:
-                                code_url = code_url_match.group(1)
-                                title_display += f" | <a href='{code_url}'>代码</a>"
-
-                        f.write("<tr>")
-                        f.write(f"<td>{html.escape(date_str)}</td>")
-                        f.write(f"<td>{title_display}</td>")
-                        f.write(f"<td>{html.escape(summary)}</td>")
-                        f.write("</tr>\n")
-
-                f.write("</tbody>\n")
-                f.write("</table>\n")
-                f.write("</div>\n\n")
+        # 7. 添加归档链接（归档内容在独立页面）
+        f.write("<h2 id='archive'>归档</h2>\n\n")
+        f.write("> [点击查看所有历史论文归档](./docs/archive.md)\n\n")
 
         # 8. 添加页脚
         f.write("---\n")
@@ -719,6 +657,93 @@ def json_to_md(filename, md_filename,
         f.write(f"> 更新于: {today}\n")
 
     logging.info(f"{task} 已完成，保存到 {md_filename}")
+
+def archive_to_md(archive_json_path, archive_md_path):
+    """将归档数据生成独立的 Markdown 页面"""
+    today = datetime.date.today().strftime('%Y.%m.%d')
+
+    try:
+        with open(archive_json_path, "r") as f:
+            archive_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        archive_data = {}
+
+    if not archive_data:
+        logging.info("归档数据为空，跳过生成")
+        return
+
+    with open(archive_md_path, "w", encoding="utf-8") as f:
+        f.write(f"# 历史论文归档 ({today})\n\n")
+        f.write("> 所有历史论文完整归档，按分类展示\n\n")
+
+        # 目录
+        f.write("<details>\n<summary>分类目录</summary>\n<ol>\n")
+        for keyword in archive_data.keys():
+            if archive_data[keyword]:
+                kw_slug = re.sub(r'\W+', '-', keyword.lower())
+                f.write(f"<li><a href='#{kw_slug}'>{keyword} ({len(archive_data[keyword])}篇)</a></li>\n")
+        f.write("</ol>\n</details>\n\n")
+
+        # 各分类表格
+        for keyword, papers in archive_data.items():
+            if not papers:
+                continue
+
+            kw_slug = re.sub(r'\W+', '-', keyword.lower())
+            f.write(f"<h2 id='{kw_slug}'>{keyword} ({len(papers)}篇)</h2>\n\n")
+            f.write('<div class="table-container">\n')
+            f.write("<table>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
+            f.write("<tbody>\n")
+
+            sorted_papers = sorted(papers.items(),
+                                   key=lambda x: x[1].split('|')[1].strip() if len(x[1].split('|')) > 1 else "",
+                                   reverse=True)
+
+            for paper_id, paper_entry in sorted_papers:
+                entry_parts = paper_entry.strip().split('|')
+                if len(entry_parts) >= 7:
+                    date_str = entry_parts[1].strip()
+                    title = entry_parts[2].strip()
+                    paper_link = entry_parts[4].strip()
+                    code_link = entry_parts[5].strip()
+                    summary = entry_parts[6].strip()
+
+                    if not summary or summary in ["无", "null"]:
+                        summary = "摘要生成中..."
+
+                    paper_url_match = re.search(r'\((https?://[^)]+)\)', paper_link)
+                    if paper_url_match:
+                        paper_url = paper_url_match.group(1)
+                        title_display = f"{html.escape(title)}<br><a href='{paper_url}'>论文</a>"
+                    else:
+                        title_display = html.escape(title)
+
+                    if code_link not in ["无", "null", ""]:
+                        code_url_match = re.search(r'\((https?://[^)]+)\)', code_link)
+                        if not code_url_match:
+                            code_url_match2 = re.match(r'https?://', code_link)
+                            if code_url_match2:
+                                title_display += f" | <a href='{code_link}'>代码</a>"
+                        else:
+                            code_url = code_url_match.group(1)
+                            title_display += f" | <a href='{code_url}'>代码</a>"
+
+                    f.write("<tr>")
+                    f.write(f"<td>{html.escape(date_str)}</td>")
+                    f.write(f"<td>{title_display}</td>")
+                    f.write(f"<td>{html.escape(summary)}</td>")
+                    f.write("</tr>\n")
+
+            f.write("</tbody>\n")
+            f.write("</table>\n")
+            f.write("</div>\n\n")
+            f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
+
+        f.write("---\n")
+        f.write(f"> 更新于: {today}\n")
+
+    logging.info(f"归档页面已生成: {archive_md_path}")
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
@@ -969,6 +994,12 @@ def demo(**config):
     # 更新 GitHub 实验室仓库
     github_orgs = config.get('github_orgs', [])
     github_json = config.get('github_repos_json_path', './docs/github-repos.json')
+
+    # 生成归档独立页面
+    archive_json = os.path.join('docs', 'archive.json')
+    archive_md = os.path.join('docs', 'archive.md')
+    archive_to_md(archive_json, archive_md)
+
     if github_orgs:
         logging.info("开始更新 GitHub 实验室仓库")
         update_github_repos(github_orgs, github_json)
