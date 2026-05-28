@@ -37,6 +37,8 @@ keywords:
         filters: ["Robot Navigation", "Autonomous Navigation", "Visual Navigation"]
     "Sensor Calibration":
         filters: ["Sensor Calibration", "Camera Calibration", "IMU Calibration", "LiDAR Calibration", "Extrinsic Calibration", "Hand-Eye Calibration", "Intrinsic Calibration"]
+    "Sensor Undistortion":
+        filters: ["Motion Distortion", "Motion Blur", "Undistortion", "Distortion Correction"]
 
 # GitHub organizations to monitor
 github_orgs:
