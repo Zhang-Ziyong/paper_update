@@ -180,6 +180,23 @@ def generate_fallback_summary(title: str, abstract: str) -> str:
     """API调用失败时的备用摘要"""
     return "◆ 中文摘要生成失败，请检查 API 配置后重新运行"
 
+def is_summary_complete(summary: str) -> bool:
+    """检测摘要是否完整生成（未被截断）"""
+    if not summary:
+        return False
+    summary = summary.strip()
+    # 包含不完整标记
+    if "[摘要不完整，待更新]" in summary:
+        return False
+    # 过短的摘要视为不完整
+    if len(summary) < 30:
+        return False
+    # 正常摘要应以标点结尾
+    valid_endings = ('。', '！', '？', '.', '!', '?', '）', ')', '"', '"')
+    if not summary.endswith(valid_endings):
+        return False
+    return True
+
 def fetch_arxiv_results(query, max_results=10):
     """修复参数错误并增强网络稳定性"""
     max_retries = 5
@@ -281,14 +298,20 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
                 if len(parts) >= 7:
                     existing_summary = parts[6].strip()
                     INVALID_SUMMARIES = ["无", "null", "", "◆ 中文摘要生成失败，请检查 API 配置后重新运行"]
-                    if existing_summary and existing_summary not in INVALID_SUMMARIES:
+                    if existing_summary and existing_summary not in INVALID_SUMMARIES and is_summary_complete(existing_summary):
                         summary = existing_summary
                         logging.info(f"使用现有摘要: {paper_key}")
+                    else:
+                        logging.info(f"现有摘要不完整，将重新生成: {paper_key}")
             
             # 如果没有现有摘要或无效，生成新摘要
             if not summary:
                 summary = get_paper_summary(title, abstract)
                 logging.info(f"生成新摘要: {paper_key}")
+                # 检测生成的摘要是否完整
+                if not is_summary_complete(summary):
+                    logging.warning(f"生成的摘要不完整，标记为待更新: {paper_key}")
+                    summary = summary + "...[摘要不完整，待更新]"
             
             # 获取官方代码链接
             code_link = get_official_code_link(paper_id)
