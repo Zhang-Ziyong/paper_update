@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.05.28)
+# 历史论文归档 (2026.05.29)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -6,13 +6,13 @@
 <summary>分类目录</summary>
 <ol>
 <li><a href='#slam'>SLAM (27篇)</a></li>
-<li><a href='#sfm'>SFM (23篇)</a></li>
+<li><a href='#sfm'>SFM (24篇)</a></li>
 <li><a href='#image-matching'>Image Matching (6篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (24篇)</a></li>
-<li><a href='#navigation'>Navigation (24篇)</a></li>
+<li><a href='#navigation'>Navigation (28篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (30篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (10篇)</a></li>
-<li><a href='#sensor-undistortion'>Sensor Undistortion (20篇)</a></li>
+<li><a href='#sensor-undistortion'>Sensor Undistortion (21篇)</a></li>
 </ol>
 </details>
 
@@ -149,12 +149,17 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (23篇)</h2>
+<h2 id='sfm'>SFM (24篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-28</td><td>City-Mesh3R: Simulation-Ready City-Scale 3D Mesh Reconstruction from Multi-View Images<br><a href='http://arxiv.org/pdf/2605.30310'>论文</a></td><td>本文提出City-Mesh3R框架，实现从大规模无序图像直接重建适用于仿真的城市级高保真水密三维网格，克服了现有方法几何缺失和表面噪声的问题。
+◆采用基于分治策略的端到端图像到网格重建流程，取代传统的全局稀疏SfM初始化与分布式稠密重建，使模型可扩展至任意大规模场景。
+◆利用拓扑图像聚类进行聚类独立稀疏SfM与地图合并，无需穷举图像特征匹配即可构建稀疏城市地图。
+◆结合几何感知相机选择与曲率感知自适应顶点密度重网格化技术进行表面细化，有效保障网格几何规则且细节精细。
+◆通过空间分区与网格缝合技术无缝拼接局部网格，生成全局水密城市网格，验证了分布式端到端处理的卓越扩展性与重建保真度。</td></tr>
 <tr><td>2026-05-27</td><td>CLEAR-NeRF: Collinearity and Local-region Enhanced Accurate 3D Reconstruction in Unbounded Scenes<br><a href='http://arxiv.org/pdf/2605.28125'>论文</a></td><td>本研究提出CLEAR-NeRF方法，将基于NeRF的三维重建应用于多关注区域的无界场景，提升了应对光照和位姿变化的鲁棒性，并确保了适用于数字孪生的度量精度。
 ◆自动局部区域定位检测与重建，无需增加子模块即可无缝优先处理关注区域。
 ◆共线性强制的射线采样，以学习平滑的平面和曲面。
@@ -429,13 +434,42 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='navigation'>Navigation (24篇)</h2>
+<h2 id='navigation'>Navigation (28篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-27</td><td>Chance-Constrained MPPI under State and Dynamic Object Prediction Uncertainty and the Evaluation of Collision Risk Calibration<br><a href='http://arxiv.org/pdf/2605.28330'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-28</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文针对无人水面艇在感知不确定性下安全且符合COLREGs规则的导航难题，提出了一种融合感知可信学习、几何安全屏蔽与连续规则感知嵌入的强化学习框架。
+◆可信度加权价值学习通过滤波协方差与经验误差的差异推导动态信任因子，调节评论家异方差损失，防止策略对噪声过拟合。
+◆协方差膨胀速度障碍将位置估计不确定性映射为角度裕度，构建保守的几何屏蔽以覆盖危险探索动作。
+◆风险感知的COLREGs责任嵌入将二元相遇责任松弛为连续规则信号，提供平滑扇区转换信息并抑制稀疏奖励引起的振荡。
+仿真实验表明，该框架能有效提升应对感知不一致的训练鲁棒性，并在避碰与规则合规性上显著优于基线方法。</td></tr>
+<tr><td>2026-05-28</td><td>Replicable Simulation-Based Robot Validation through Provenance<br><a href='http://arxiv.org/pdf/2605.29973'>论文</a></td><td>该论文针对基于仿真的机器人测试可复现性不足的问题，提出将数据溯源与FAIR原则相结合以提升测试文档的透明度。
+◆提出将数据溯源与FAIR原则深度融合，通过追踪产物关联和添加关于文件来源与设计决策的机器可读元数据来保障验证的可复现性。
+◆强调溯源与元数据不应作为最终数据集的事后补充，而必须内嵌于生成数据集的测试流程中，从而实现测试证据的端到端重建。
+论文通过扩展现有仿真测试框架引入溯源跟踪与元数据收集机制，成功对移动机器人导航数据集进行了结构化溯源与FAIR元数据的丰富。
+最后，论文总结了集成过程中遇到的词汇对齐、属性选择与领域标准采用等障碍，并为在机器人验证工作流中实施以溯源为中心的FAIR元数据提供了可操作建议。</td></tr>
+<tr><td>2026-05-28</td><td>Fisher-Preserving Guidance: Training-Free Manifold Constraints for Safe Diffusion Control<br><a href='http://arxiv.org/pdf/2605.29937'>论文</a></td><td>本文针对扩散模型在视觉导航中因更新偏离训练流形而导致轨迹不可靠的问题，提出了一种无需训练的推理方法。
+◆提出基于外积跨度投影的费雪保持引导机制，在优化任务目标的同时避免离分布动作引起的费雪漂移，确保更新不偏离流形。
+◆利用低秩雅可比分解计算费雪保持更新，每步仅需单次反向传播，满足实时应用要求。
+◆引入截断费雪去噪敏感度作为不确定性信号，以此实现鲁棒的多样本动作混合策略。
+实验表明，该方法在多种仿真和真实机器人导航任务中，无需额外训练即可显著优于强扩散策略基线。</td></tr>
+<tr><td>2026-05-28</td><td>How to Relieve Distribution Shifts in Semantic Segmentation for Off-Road Environments<br><a href='http://arxiv.org/pdf/2605.29599'>论文</a></td><td>本文针对越野环境语义分割中由域差异和传感器损坏引起的分布偏移问题，提出了ST-Seg框架。该框架通过显式扩展源分布来提升分割的鲁棒性和越野导航的安全性。
+◆提出风格扩展方法，通过生成多样化的逼真风格拓宽域覆盖范围，有效增强源域有限的风格信息。
+◆引入纹理正则化技术，利用深度纹理流形稳定受风格增强学习影响的局部纹理表示。
+◆打破以往在固定源分布内隐式泛化的局限，提供了一种直观且显式扩展源分布以应对分布偏移的新思路。
+实验证明该框架在多种分布偏移的目标域上均显著优于现有方法。</td></tr>
+<tr><td>2026-05-28</td><td>GUITestScape: Towards Open-set Evaluation on Exploratory GUI Testing<br><a href='http://arxiv.org/pdf/2605.29532'>论文</a></td><td>当前探索性GUI测试评估存在两大不足，即仅关注交互缺陷而忽视显示缺陷，且评估受限于预定义标注而无法区分不同的失效模式。
+◆提出交互式基准GUITestScape，涵盖61个真实安卓应用及508个交互与显示类型的预设缺陷，弥补了现有基准的缺陷类型局限。
+◆引入开放集评估器GUIJudge，将智能体的测试轨迹分解为独立可诊断的能力，实现了超越预定义标注的过程感知评估。
+实验表明，GUIJudge大幅优于所有基线，提供了可靠的评估结果。
+此外，基准测试揭示了现有模型在两类缺陷上的检测瓶颈，且将GUIJudge的验证器集成至现有智能体中无需重训即可显著提升其检测性能。</td></tr>
+<tr><td>2026-05-27</td><td>Chance-Constrained MPPI under State and Dynamic Object Prediction Uncertainty and the Evaluation of Collision Risk Calibration<br><a href='http://arxiv.org/pdf/2605.28330'>论文</a></td><td>现有机会约束MPPI控制隐式假设上游定位与感知不确定性已良好标定，但实际估计器常标定不当，导致过度自信引发安全违规或缺乏自信引发保守冻结。
+◆提出一种严谨的评估方法，应用严格评分规则来评估闭环执行期间预测碰撞风险的统计有效性。
+◆提出双不确定性机会约束管MPPI实时风险感知规划架构，通过单管无迹变换近似联合整合定位不确定性，并利用蒙特卡洛聚合整合动态障碍物预测不确定性。
+在高度杂乱环境中，该框架实现了稳健的失效缓解，能安全过渡至保守机动而不陷入死锁。
+其导航成功率较基线提升近28%，且旅行时间最短、社会作用力最小，证明可靠的概率安全性需要整个技术栈具备统计有效的不确定性估计。</td></tr>
 <tr><td>2026-05-27</td><td>STR Robot: Design of an Autonomous Mobile Robot from Simulation to Reality<br><a href='http://arxiv.org/pdf/2605.28110'>论文</a> | <a href='https://ntdathp.github.io/outdoor-robot-web'>代码</a></td><td>本文核心贡献是实现了基于现有机械平台的自主移动机器人从仿真到现实的完整部署。研究未聚焦机械设计，而是重点开发了机载控制、自定位与自主导航系统。
 ◆创新性地将机载感知与计算相结合，实现了无需外部辅助的机器人位姿估计与自主导航。
 ◆验证了一套仿真优先的开发框架，即先在仿真中构建与测试整体系统，再成功部署至真实机器人，证明了仿真是开发可靠系统的有效基础。
@@ -445,11 +479,6 @@
 ◆设计动作通道，在学生实际访问的状态上提供密集的局部目标，稳定策略的利用。
 ◆将双通道巧妙耦合，使奖励蒸馏能够泛化超越逐点演示，同时动作蒸馏将探索锚定在类专家行为附近。
 实验表明，在六个机器人导航、操作和运动基准测试中，FA-OPD超越了强基线，并在噪声或有限演示条件下展现出显著增强的鲁棒性。</td></tr>
-<tr><td>2026-05-26</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文针对无人水面艇在感知不确定性下安全且符合COLREGs规则的导航难题，提出了一种融合感知可信学习、几何安全屏蔽与连续规则感知嵌入的强化学习框架。
-◆可信度加权价值学习通过滤波协方差与经验误差的差异推导动态信任因子，调节评论家异方差损失，防止策略对噪声过拟合。
-◆协方差膨胀速度障碍将位置估计不确定性映射为角度裕度，构建保守的几何屏蔽以覆盖危险探索动作。
-◆风险感知的COLREGs责任嵌入将二元相遇责任松弛为连续规则信号，提供平滑扇区转换信息并抑制稀疏奖励引起的振荡。
-仿真实验表明，该框架能有效提升应对感知不一致的训练鲁棒性，并在避碰与规则合规性上显著优于基线方法。</td></tr>
 <tr><td>2026-05-26</td><td>Orion: Enabling Self-adaptive Memory Management for On-device Online Continual Learning<br><a href='http://arxiv.org/pdf/2605.26473'>论文</a></td><td>本文提出了Orion框架，旨在严格内存约束下协同优化在线持续学习的训练延迟、可塑性与稳定性，实现可行的设备端部署。
 ◆提出基于木桶效应的统一运行时指标URGE，动态地为在线持续学习各组件重新分配内存。
 ◆在操作系统和应用层面联合协调批处理、回放缓冲区和优化策略，以自适应应对动态内存压力与工作负载变化。
@@ -772,16 +801,21 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-undistortion'>Sensor Undistortion (20篇)</h2>
+<h2 id='sensor-undistortion'>Sensor Undistortion (21篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-27</td><td>Resolution-free neural surrogates for geometric parameterization and mapping with spatially varying fields<br><a href='http://arxiv.org/pdf/2605.28551'>论文</a></td><td>针对空间变化场引起的几何映射问题，传统变分模型在处理高分辨率且参数场变化的实例时计算成本极高。本文提出一种分辨率无关的神经代理模型，可在任意结构化或非结构化点集上直接预测映射位置。
+<tr><td>2026-05-28</td><td>Resolution-free neural surrogates for geometric parameterization and mapping with spatially varying fields<br><a href='http://arxiv.org/pdf/2605.28551'>论文</a></td><td>针对空间变化场引起的几何映射问题，传统变分模型在处理高分辨率且参数场变化的实例时计算成本极高。本文提出一种分辨率无关的神经代理模型，可在任意结构化或非结构化点集上直接预测映射位置。
 ◆采用多分辨率几何编码策略，以坐标增强的参数场样本为网络条件，摆脱了对固定网格的依赖。
 ◆无需带标签的解数据进行训练，而是通过强制执行源自变分能量、扩散密度均衡和拟共形理论的几何感知约束来优化模型。
 实验表明该方法在拟共形映射和密度均衡映射问题上具有显著有效性。</td></tr>
+<tr><td>2026-05-28</td><td>Turbulence-Robust Dynamic Object Segmentation with Multi-Signal Priors and SAM2 Refinement<br><a href='http://arxiv.org/pdf/2605.29292'>论文</a></td><td>本文提出了针对湍流环境下动态目标分割的免训练多信号分割流水线。
+◆融合多信号先验，结合RAFT的密集运动响应、DINOv2的语义目标先验与ViBe的免训练背景建模，解决了单一运动线索在强湍流下不可靠的问题。
+◆采用纯推理模式设计，完全无需端到端网络优化或针对特定任务的模型训练与微调，适应了湍流导致的伪运动、模糊和目标间歇可见等复杂情况。
+◆引入人工校准的候选融合策略，并结合预训练的SAM2模型通过框提示进行掩膜精修，有效提升了分割边界的准确性。
+该方法在CVPR 2026挑战赛中取得了0.425的mIoU和0.457的mDice。</td></tr>
 <tr><td>2026-05-26</td><td>Can We Hear from Events? Generating Speech from Event Camera<br><a href='http://arxiv.org/pdf/2605.26672'>论文</a> | <a href='https://xrfang-0102.github.io/EventSpeechWeb/'>代码</a></td><td>本文提出EventSpeech框架，首次利用微秒精度的神经形态事件相机进行文本条件驱动的情感语音生成，解决传统RGB相机因固定曝光导致的高频发音瞬态模糊问题。
 ◆提出基于事件相机的语音生成新范式，利用微秒级事件与声学波形动态自然对齐的特性，打破了传统视觉语音生成的时间粒度限制。
 ◆设计了包含专用事件编码器和多尺度音频编码器的架构，引入分层小波上下文化器与双向对齐机制，实现语言内容、视觉动态与声学特征的精准同步。
@@ -885,4 +919,4 @@
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.05.28
+> 更新于: 2026.05.29
