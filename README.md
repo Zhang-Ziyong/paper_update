@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.05.29)
+# 计算机视觉领域最新论文 (2026.05.30)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -274,11 +274,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-28</td><td>Hybrid Digital and Analog Airy Beamforming for Near-Field Multi-User Communications<br><a href='http://arxiv.org/pdf/2605.29481'>论文</a></td><td>本文针对6G近场多用户通信中,高频聚焦波束因直线传播易受障碍物遮挡、导致频谱效率下降的问题,提出了一种基于Airy波束的混合数模波束赋形方案。该方案利用Airy波前的弯曲传播特性,使波束能够绕过障碍物并在用户处实现能量聚焦,同时通过分层波束训练和数模混合架构实现低复杂度的多用户接入与干扰抑制。仿真表明,在毫米波至太赫兹频段下,所提方案在波束方向图和频谱效率方面均优于传统聚焦波束赋形。
+
+◆ 首次将Airy波束引入近场多用户通信,构建了兼具绕障传播与能量聚焦双重能力的近场Airy波前模型。
+◆ 设计了分层Airy波束训练方法,可快速搜索能够绕过障碍物并与用户对齐的最优波束,无需获取完整信道状态信息。
+◆ 提出了基于选定Airy波束配置模拟波束赋形器、再利用数字波束赋形器抑制用户间干扰的低复杂度混合架构。
+◆ 解决了传统聚焦波束在多用户链路存在遮挡时频谱效率严重退化的瓶颈问题。
+◆ 验证了该方案在毫米波至太赫兹宽频段下相较传统聚焦波束赋形的性能优势,拓展了近场通信的应用场景。</td></tr>
 <tr><td>2026-05-27</td><td>EventShiftFlow: Towards Hardware-efficient FPGA-based Flow Estimation<br><a href='http://arxiv.org/pdf/2605.28312'>论文</a></td><td>本文提出了一种面向FPGA的流式速度估计器EventShiftFlow，旨在解决现有事件相机运动估计算法计算量大且难以硬件映射的问题。该方法将异步事件离散化为固定时长的时间窗并构建1位空间占用网格，通过并行评估多个速度假设来输出稀疏量化的速度估计。
 ◆提出纯整数逻辑的数据通路设计，仅使用移位寄存器、计数器、比较器和LUT映射的小型乘法器，无需浮点运算、除法器、DSP模块、帧重建和迭代优化。
 ◆在算法与硬件间进行针对性权衡，放弃稠密亚像素光流，换取每个活跃像素的稀疏量化速度估计，满足低延迟和资源受限平台的实时避障需求。
 ◆实现极低硬件开销的FPGA部署，数据通路存储需求小于2kB，并在低成本FPGA上完成原型验证，同时在真实数据集中达到了99.5%的方向准确率。</td></tr>
-<tr><td>2026-05-26</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文提出了一种融合可信度感知学习、几何安全屏蔽与连续规则嵌入的强化学习框架，解决了无人艇在感知不确定性下的安全合规导航难题。
+<tr><td>2026-05-28</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文提出了一种融合可信度感知学习、几何安全屏蔽与连续规则嵌入的强化学习框架，解决了无人艇在感知不确定性下的安全合规导航难题。
 ◆提出可信度加权价值学习，利用滤波协方差与经验误差的差异推导动态信任因子，调节评论家损失以防止策略对噪声样本过拟合。
 ◆提出协方差膨胀速度障碍方法，将位置估计不确定性映射为角度边界，构建保守的几何屏蔽以覆盖危险的探索动作。
 ◆提出风险感知的避碰规则职责嵌入，将二元相遇职责松弛为连续的规则感知信号，提供平滑扇区转换并抑制稀疏奖励引起的振荡。
@@ -365,11 +372,6 @@
 ◆采用分层方法大规模生成高质量轨迹，即高级规划器分解任务为路径点，低级强化学习策略生成力矩命令进行追踪。
 基准测试表明现有模型在随机化下性能显著下降，主要归因于视觉本体感知估计不准及未充分利用软体可变形性避障。
 该基准为弥合刚性臂与软体臂在视觉语言操作领域的鸿沟提供了宝贵测试平台。</td></tr>
-<tr><td>2026-05-18</td><td>The distance-based formation controller design for multi-agent systems in port-Hamiltonian form<br><a href='http://arxiv.org/pdf/2605.18502'>论文</a></td><td>本文针对端口哈密顿多智能体系统，研究了基于距离的编队控制与防碰撞集成问题，提出了一种统一控制器同时实现速度跟踪、目标编队获取及智能体间安全。
-◆构造了具有满列秩性质的符号关联矩阵，其对应有向无环图，为控制器设计奠定基础。
-◆引入仅吸引势场设计，有效克服了传统人工势场中普遍存在的局部极小值问题。
-◆结合安全屏障机制，在无排斥势场的情况下严格保障了防碰撞约束。
-闭环系统稳定性由LaSalle不变集原理保证，数值仿真验证了该策略的有效性。</td></tr>
 </tbody>
 </table>
 </div>
@@ -494,6 +496,49 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-28</td><td>Mean-Field Diffuser: Scaling Offline MARL to Thousands of Agents<br><a href='http://arxiv.org/pdf/2605.30190'>论文</a></td><td>这篇论文针对扩散式规划在多智能体离线强化学习中因联合轨迹空间维度爆炸而难以扩展的问题,提出了MF-Diffuser框架,将轨迹规划提升至轨迹分布的Wasserstein空间,利用混沌传播性质,仅用少量代表性智能体即可刻画整个种群的动态,从而支撑千级以上规模的离线多智能体强化学习。论文同时建立了端到端的次优性理论界,并通过三个均值场基准实验验证了方法在大规模和次优数据场景下的显著优势。
+
+核心贡献和创新点如下:
+
+◆ 首次将扩散规划提升至轨迹分布的Wasserstein空间,借助混沌传播性质用小规模代表性智能体子集刻画全种群动态,突破联合空间维度灾难,使离线MARL可扩展至上千智能体。
+
+◆ 提出价值加权的混沌熵目标函数,在保证生成保真度的同时实现回报最大化,协调了扩散模型的生成质量与策略优化目标。
+
+◆ 设计了分层的由粗到细策略,在去噪过程中渐进式扩展智能体种群规模,提升大规模场景下的生成效率与稳定性。
+
+◆ 给出包含四个可解释项的端到端次优性理论界,证明均值场近似误差以O(H²/√N)规模下降,且离线分布偏移不随种群规模N增长,理论上保证生成策略为近似均值场纳什均衡并给出显式收敛保证。
+
+◆ 在涵盖阶段博弈、序列动态与对抗团队竞争的三类均值场基准上取得多数最优表现,在次优离线数据和N≥10³的极端规模下增益最为显著。</td></tr>
+<tr><td>2026-05-28</td><td>A Radius-Sensitive Approximation Algorithm for Connected Submodular Maximization<br><a href='http://arxiv.org/pdf/2605.30053'>论文</a></td><td>本文研究连通子模最大化问题(CSM)及其有向版本(DCSM)和有向有根版本(DRCSM)。该问题在无线网络部署、路径规划、疫情传播和癌症基因组研究等领域具有重要应用。论文针对以最优解半径r为参数的近似比进行了显著改进,突破了此前最优的Ω(1/r)和Ω(1/√k)近似界。作者提出了一个多项式时间框架,对于(有向)CSM达到Ω(ε³/r^ε)的近似比,对于DRCSM达到Ω(δε³/r^ε)的双准则近似,其中规模约束最多被违反1+δ倍。
+
+◆ 首次将CSM的近似比从Ω(1/r)改进到Ω(ε³/r^ε),由于r≤k,该结果同时优于以k为参数的现有最优界Ω(1/√k)。
+
+◆ 提出核心算法GreedyRadius,可将任意以k为参数的双准则近似算法转化为以r为参数的同等近似比算法(至多相差常数因子),具有良好的通用性和可扩展性。
+
+◆ 为DRCSM设计了灵活的双准则近似框架,允许在近似比与规模约束违反程度之间进行可调节的权衡(δ可在[1/k,1]之间取值)。
+
+◆ 将算法框架统一推广到无向、有向以及有向有根三种CSM变体,扩展了问题的适用范围。
+
+◆ 引入参数ε实现近似比的精细调控,为不同应用场景下的算法性能优化提供了理论基础。</td></tr>
+<tr><td>2026-05-28</td><td>FLIP: Real-Time and Resilient Formation Planning for Large-Scale DIstributed Swarms via Point Cloud Registration<br><a href='http://arxiv.org/pdf/2605.29704'>论文</a></td><td>该论文提出了FLIP,一种面向大规模分布式无人机集群的实时、弹性编队规划方法,通过将编队位置分配问题转化为时空点云配准问题,实现了高性能且大规模的协同轨迹规划。核心思路是让每个智能体分布式地计算自身当前位置与所有其他智能体期望编队位置之间的匹配结果,从而获得最优编队位置序列(OFPS),并基于此优化协同编队轨迹。论文采用带有外点剔除机制的点云配准方法,有效阻止次优轨迹和失效智能体在协同网络中的传播扩散。最终通过120架无人机的大规模仿真验证了方法的有效性,并与SOTA方法进行了严格对比基准测试,展示了其优越性。
+
+◆ 首次将最优编队位置序列(OFPS)计算问题创新性地转化为时空点云配准(PCR)问题,为大规模编队分配提供了全新求解范式。
+
+◆ 提出基于带外点剔除的点云配准方法,可快速完成大规模编队位置匹配,显著降低计算复杂度。
+
+◆ 设计了具有弹性的分布式协同机制,通过外点剔除阻断次优轨迹和失败智能体在协作网络中的扩散影响,提升集群鲁棒性。
+
+◆ 实现了弹性、高效与分布式三者统一的轨迹规划框架,突破了传统方法在表示简化与全协作计算负担之间的权衡难题。
+
+◆ 在120架无人机规模的仿真场景中验证了方法的可扩展性,并通过严格基准测试证明其相较于SOTA方法的显著优势。</td></tr>
+<tr><td>2026-05-28</td><td>The Open Motion Planning Library 2.0<br><a href='http://arxiv.org/pdf/2605.29301'>论文</a></td><td>本文介绍了开放运动规划库(OMPL)的重大演进版本OMPL 2.0。OMPL自2008年发布以来,已成为运动规划领域的基石,提供了多种最先进的基于采样的算法实现。经过近二十年的持续开发,该库不断扩展,涵盖了从渐近最优规划器、惰性规划器到约束运动规划和时序逻辑目标规划等多种功能。OMPL 2.0在此基础上实现了重大跨越,重点面向实时运动规划和现代人工智能研究工作流的无缝集成。论文同时回顾了OMPL与运动规划领域共同成长的历程,并讨论了该库对研究社区的广泛影响。
+
+◆ 推出OMPL 2.0全新版本,通过硬件加速实现实时运动规划能力
+◆ 与现代AI研究工作流深度集成,适应机器学习时代的研究需求
+◆ 整合了从渐近最优规划器到惰性规划器的多种先进采样算法
+◆ 支持约束运动规划和基于时序逻辑目标的规划等高级问题形式
+◆ 提供丰富的状态空间和问题形式化方法,形成完整的运动规划生态系统
+◆ 通过近二十年的持续演进,建立了运动规划领域的开源基础设施标杆...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-05-27</td><td>Integrated Exploration-Aware UAV Route Optimization and Path Planning<br><a href='http://arxiv.org/pdf/2605.28654'>论文</a></td><td>本文提出了一个集成探索感知的无人机路线优化与路径规划框架，用于解决先验信息不确定且动态变化下的危险环境监测问题。核心贡献在于将有限的飞行续航合理分配于检查已知危险区域和探索未知信息区域之间。
 ◆将报告的危险源建模为不确定的感兴趣区域而非确认目标，要求无人机在检查报告区域的同时探索信息量大的区域。
 ◆通过在路线中增加辅助伪节点来提升空间覆盖率，并优化动态可行的B样条轨迹以进行局部探索。
@@ -533,7 +578,19 @@
 ◆融合基于规则的控制与比例速度控制，机器人仅需观测自身与箱子的位置及朝向即可执行动作。
 ◆方法在多变的地形摩擦、倾斜度及箱子质量场景中展现强泛化能力，成功率优于传统虚拟领导者跟随者方法。
 ◆通过六台机器人的仿真测试与四台Turtlebot的实物实验，充分验证了该策略的有效性与实用性。</td></tr>
-<tr><td>2026-05-25</td><td>Totoro$^+$: An Adaptive and Scalable Edge Federated Learning System<br><a href='http://arxiv.org/pdf/2605.26323'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-25</td><td>Totoro$^+$: An Adaptive and Scalable Edge Federated Learning System<br><a href='http://arxiv.org/pdf/2605.26323'>论文</a></td><td>Totoro+ 是一个新型可扩展的边缘联邦学习系统,旨在支持大规模联邦学习应用在边缘网络上同时运行。其核心思路是利用基于分布式哈希表(DHT)的点对点(P2P)模型,将传统集中式联邦学习架构重构为完全去中心化的架构,为每个应用分配专属参数服务器,任何边缘节点都可担任协调者、聚合者、客户端选择器或工作节点等任意角色,从而显著提升系统的可扩展性与适应性。在500台Amazon EC2服务器上的真实实验表明,该系统能够随应用数量优雅扩展,将训练总时间加速1.2至14倍,在百万节点规模下实现O(log N)跳的模型分发与梯度聚合,并能高效适应实际边缘网络与节点动态变化。
+
+核心创新点如下:
+
+◆ 提出基于DHT的P2P去中心化架构,摒弃传统单一集中式参数服务器,为每个联邦学习应用配置独立参数服务器,从根本上突破了可扩展性瓶颈。
+
+◆ 设计了具备位置感知能力的P2P多环结构,使节点组织能够感知网络拓扑,有效降低跨区域通信开销。
+
+◆ 提出基于发布/订阅机制的森林抽象模型,用于高效支持模型分发与梯度聚合,实现对数级通信复杂度。
+
+◆ 引入基于博弈论的路径规划模型,并理论上证明可达到ε近似纳什均衡,实现节点间通信路径的优化决策。
+
+◆ 实现任意边缘节点可灵活承担多种角色的统一调度机制,使系统能够动态适应实际边缘网络环境与节点频繁加入退出的churn现象。</td></tr>
 <tr><td>2026-05-25</td><td>Collaborative Threat-Aware Autonomy (CTAA)<br><a href='http://arxiv.org/pdf/2605.25741'>论文</a></td><td>本文提出协作威胁感知自主框架，解决无人机群在动态对抗武器交战区中单机易失效的根本挑战。
 ◆提出角色分化的多智能体协同轨迹规划框架，为机群分配主拦截、护航和诱饵三种角色，以提高团队任务成功率并管理个体威胁暴露。
 ◆基于碰撞球边界逃避零集推导出反应式引导律，该引导律考虑了最小转弯半径带来的机动性约束，引导车辆驶向兼顾安全与目标推进的最优航向。
@@ -557,30 +614,11 @@
 ◆训练了多模态神经网络，能够从运动轨迹数据和CAD模型几何形状中联合推断出运动规则的参数。
 ◆通过解耦规划与执行并引入几何感知的规则推断机制，打破了传统模仿学习对特定训练几何形状的依赖。
 在L形和窗形物体上的仿真实验表明，该模型能成功跨越不同拓扑结构提取速度和姿态规则，实现了运动技能的有效迁移。</td></tr>
-<tr><td>2026-05-23</td><td>Sum of Costs Diffusion with Dynamic Guidance for Motion Planning<br><a href='http://arxiv.org/pdf/2605.24690'>论文</a></td><td>针对机器人运动规划中现有方法泛化能力不足的问题，本文提出了一种基于扩散模型的高泛化轨迹生成方法。
-◆提出利用总碰撞代价的梯度来引导扩散模型的去噪过程，以生成无碰撞轨迹。
-◆提出一种动态选择梯度引导起始步的方法，优化了引导介入的时机。
-实验表明，这种基于碰撞代价总和的动态引导克服了现有方法的泛化难题，提升了鲁棒性。
-该模型在Mπnets数据集的多样化测试场景中取得了对比方法中的最高性能，验证了其有效性。</td></tr>
 <tr><td>2026-05-23</td><td>SparseWorld: Enhancing End-to-End Autonomous Driving via World Models with Sparse Scene Representation<br><a href='http://arxiv.org/pdf/2605.24354'>论文</a> | <a href='https://wryzju.github.io/SparseWorld/'>代码</a></td><td>本文提出了SparseWorld，一个轻量级的自动驾驶世界模型，通过稀疏场景表示仅预测关键场景布局，解决了现有稠密表示计算成本高和信息冗余的问题。
 ◆提出Sparse Dreamer模块，通过联合时间与空间注意力机制在潜空间中预测未来实例。
 ◆采用自回归展开方式预测未来地图元素和周围智能体，使模型学习驾驶场景的时间演变规律。
 ◆使运动规划器与预测的未来实例进行交互，从而捕捉更准确的运动模式并生成更具安全意识的轨迹。
 实验表明，该方法大幅降低了碰撞风险，在nuScenes开环规划中达到0.05%碰撞率的领先水平，并在Bench2Drive闭环基准上显著超越基线方法。</td></tr>
-<tr><td>2026-05-22</td><td>MASt3R-Nav: WayPixel Navigation in Relative 3D Maps<br><a href='http://arxiv.org/pdf/2605.24111'>论文</a></td><td>本文提出了一种新型导航系统MASt3R-Nav，旨在解决传统3D地图依赖全局一致性而拓扑图缺乏几何理解导致导航能力受限的问题。
-◆提出像素相对连通性的新型地图表示方法，在保证几何精度的同时免去了对全局几何一致性的需求。
-◆通过图像对相对3D坐标系中的像素对应关系构建图像间连通性，并稀疏化图像内连通性进行全局路径规划，推导出WayPixel Costmap。
-◆基于该密集像素级代价图训练条件控制器以预测轨迹，证明了相对几何的像素级条件变量比图像或对象级更准确。
-该系统在四种仿真导航任务及真实世界演示中得到验证，展现了卓越的导航能力。</td></tr>
-<tr><td>2026-05-22</td><td>How Many Training Samples Are Needed for the Inverse Kinematics Solutions by Artificial Neural Networks<br><a href='http://arxiv.org/pdf/2605.23583'>论文</a></td><td>本文研究了人工神经网络求解逆运动学问题时训练样本数量与预测精度之间的关系。研究通过关节型机械臂生成不同数量的关节位置数据对来训练前馈神经网络，并评估了其精度、收敛性与泛化能力。
-◆建立了关联训练数据集大小与神经网络逆运动学求解器精度的数学框架。
-◆揭示了数据效率的临界点，发现当训练样本超过125个时，继续增加数据量不再提升模型的近似精度与整体效率。
-该研究为优化神经网络求解逆运动学的数据规模提供了实用指导，有效平衡了实际机器人应用中的计算成本与模型精度。</td></tr>
-<tr><td>2026-05-22</td><td>Signal Temporal Logic Motion Planning via Graphs of Convex Sets<br><a href='http://arxiv.org/pdf/2605.23240'>论文</a></td><td>本文提出了一种结合定时自动机推理与凸集图的高效框架，用于解决信号时序逻辑规范下的连续时间运动规划问题。
-◆将STL运动规划问题转化为凸集图上的最短路径问题，通过联合定时自动机与构型空间凸分解构建转移系统，从而生成满足逻辑时序规范、平滑性及速度约束的贝塞尔样条轨迹。
-◆证明了该方法的可靠性并分析了计算复杂度，表明在自动机和凸分解固定时，其凸松弛随构型空间维度和贝塞尔度数呈多项式级扩展。
-◆针对富有表现力的STL片段，利用专用模板和布尔组合开发了一种紧凑的定时自动机构造方法。
-多场景数值实验与硬件测试验证了该方法能高效解决复杂STL运动规划问题并生成平滑可执行轨迹。</td></tr>
 <tr><td>2026-05-25</td><td>Fast-dDrive: Efficient Block-Diffusion VLM for Autonomous Driving<br><a href='http://arxiv.org/pdf/2605.23163'>论文</a></td><td>本文提出Fast-dDrive，一种用于自动驾驶的块扩散视觉语言动作模型，解决了自回归模型内存受限和全序列扩散模型逻辑泄漏的问题，实现了轨迹规划与高效推理的平衡。
 ◆提出块扩散机制，在语义单元内进行双向细化，同时跨单元保持严格的因果顺序。
 ◆针对结构化输出冻结结构标记为段落支架，并采用优先安全关键规划的段落感知训练策略。
@@ -781,44 +819,44 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4717</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4112</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4724</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4116</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2406</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1605</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1596</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1408</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1598</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1409</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1249</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1224</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>917</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>915</td><td>An efficient and consistent bundle adjustment for </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>901</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>902</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>791</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>780</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>736</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>721</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>700</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>629</td><td>M-detector</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>621</td><td>Voxel-SLAM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>622</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>619</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>582</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>561</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>550</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>530</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>498</td><td>LTAOM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>465</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
+<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>466</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>433</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>393</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>341</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>336</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>261</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>252</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>233</td><td>In this repository, we present our research works </td></tr>
+<tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>234</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>222</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>221</td><td>dyn_small_obs_avoidance</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>215</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>216</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>197</td><td>LAMM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>195</td><td>SUPER-Hardware</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>152</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
+<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>153</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>146</td><td>PULSAR</td></tr>
 <tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>142</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>116</td><td>LiDAR-UAV-Autonomy</td></tr>
@@ -832,7 +870,7 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2842</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2843</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1631</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1351</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1096</td><td>A map representation based on 3D segments </td></tr>
@@ -890,4 +928,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.29
+> 更新于: 2026.05.30
