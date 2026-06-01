@@ -1,27 +1,39 @@
-# 历史论文归档 (2026.05.31)
+# 历史论文归档 (2026.06.01)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (27篇)</a></li>
+<li><a href='#slam'>SLAM (30篇)</a></li>
 <li><a href='#sfm'>SFM (24篇)</a></li>
 <li><a href='#image-matching'>Image Matching (6篇)</a></li>
-<li><a href='#obstacle-avoidance'>Obstacle Avoidance (25篇)</a></li>
-<li><a href='#navigation'>Navigation (28篇)</a></li>
-<li><a href='#motion-planning'>Motion Planning (34篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (10篇)</a></li>
-<li><a href='#sensor-undistortion'>Sensor Undistortion (21篇)</a></li>
+<li><a href='#obstacle-avoidance'>Obstacle Avoidance (31篇)</a></li>
+<li><a href='#navigation'>Navigation (31篇)</a></li>
+<li><a href='#motion-planning'>Motion Planning (39篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (11篇)</a></li>
+<li><a href='#sensor-undistortion'>Sensor Undistortion (23篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (27篇)</h2>
+<h2 id='slam'>SLAM (30篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>Triangle Splatting SLAM<br><a href='http://arxiv.org/pdf/2605.31419'>论文</a></td><td>本文提出了一种使用可微三角形作为三维地图表示的稠密RGB-D SLAM系统。与3D高斯溅射不同，三角形天然兼容传统渲染硬件及需要显式几何的下游任务。
+◆首次提出基于三角形溅射的稠密SLAM系统，通过对无结构三角形汤进行在线可微渲染来联合执行追踪与建图。
+◆利用受限德劳内三角剖分将地图在线转换为连通网格，赋予了系统在线网格变形和碰撞检查的新能力。
+在Replica和TUM-RGBD数据集上，该系统在三维几何重建上优于基线，追踪精度与之持平，并实现了在线场景编辑。</td></tr>
+<tr><td>2026-05-28</td><td>Exploiting Chordal Sparsity for Globally Optimal Estimation with Factor Graphs<br><a href='http://arxiv.org/pdf/2605.30617'>论文</a> | <a href='https://github.com/borglab/gtsam'>代码</a></td><td>该论文针对机器人状态估计中因子图局部求解器易陷入局部最优，而现有凸松弛技术构建复杂且计算成本高的问题提出了新方法。
+◆在GTSAM框架内创建了一种新流程，能够针对包含常见因子和变量类型的任意因子图，自动构建凸半定规划松弛问题。
+◆利用GTSAM原生的贝叶斯树构造来分解半定规划问题，通过挖掘弦稀疏性显著提升了求解器的计算速度。
+论文通过三维位姿图SLAM和二维定位两个案例研究，验证了该全局估计器相较于标准局部求解器在扩展性上的优势。
+相关软件框架已在GitHub开源。</td></tr>
+<tr><td>2026-05-28</td><td>CoMo3R-SLAM: Collaborative Monocular Dense SLAM with Learned 3D Reconstruction Priors for Outdoor Multi-Agent Systems<br><a href='http://arxiv.org/pdf/2605.30488'>论文</a></td><td>本文提出了CoMo3R-SLAM，这是首个专为户外多智能体系统设计的协作单目稠密RGB SLAM系统。该系统仅利用单目RGB输入即可生成全局一致的度量地图，摆脱了对深度传感器和参数化内参的依赖。
+◆引入基于学习的3D重建先验，在智能体端运行先验引导前端以实现实时追踪与局部稠密融合，有效解决单目尺度歧义问题。
+◆设计协调器执行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-05-27</td><td>PRISM-SLAM: Probabilistic Ray-Grounded Inference for Scale-aware Metric SLAM<br><a href='http://arxiv.org/pdf/2605.19257'>论文</a> | <a href='https://prismslam-cmd.github.io/prismslam_pr/'>代码</a></td><td>针对单目SLAM的尺度模糊与动态环境跟踪失败问题，本文提出PRISM-SLAM框架，通过将视觉基础模型先验严谨集成到贝叶斯因子图中，实现了尺度感知且度量一致的实时定位与建图。
 ◆引入普吕克光线距离因子，在全局度量坐标系中锚定单目观测，使度量尺度具备Fisher可辨识性，从数学上根本解决了尺度漂移问题。
 ◆提出动态场景不确定性门控机制，利用时间深度一致性推导认知不确定性代理，通过概率软门控降低动态干扰物权重，避免了传统语义分割的高昂计算开销。
@@ -306,12 +318,38 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='obstacle-avoidance'>Obstacle Avoidance (25篇)</h2>
+<h2 id='obstacle-avoidance'>Obstacle Avoidance (31篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>BERS: Locally Optimal Continuous Algorithm for Maritime Weather Routing with Just-in-Time Arrival<br><a href='http://arxiv.org/pdf/2605.31533'>论文</a></td><td>该论文提出了一种名为BERS的气象航线优化框架，旨在解决动态风浪和障碍物约束下的准时到达航线规划问题。
+◆提出了结合CMA-ES全局进化搜索与FMS局部变分细化的两阶段优化框架。
+◆采用贝塞尔曲线参数化航线并进行密集路径采样，确保轨迹平滑且兼顾中段效应与可行性约束。
+该方法在七项操作标准的基准测试中均匹配或超越已有基线，在复杂流场下保持鲁棒收敛。
+真实海洋数据验证表明，仅航线优化即可降低23%至59%的推进能耗。
+结合风辅助推进后总节能高达75%，证明了该框架在海事脱碳节能规划中的实用性与可扩展性。</td></tr>
+<tr><td>2026-05-29</td><td>LiftNav: Path Planning via Semantic Lifting in TSDF-Guided Gaussian Splatting<br><a href='http://arxiv.org/pdf/2605.31376'>论文</a></td><td>本文提出LiftNav混合导航框架，...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-29</td><td>Simulation of collision avoidance behavior in crowd movement by data-driven approach<br><a href='http://arxiv.org/pdf/2605.31210'>论文</a></td><td>针对现有数据驱动人群模拟模型在双向和多向流中碰撞率过高的问题，本文提出了一种融合行人碰撞机制的新型数据驱动人群模拟模型CPGAN。
+◆提出基于横向加速度的碰撞损失函数，将其融入生成对抗网络架构，显著降低了逆向行人碰撞率至与对照实验相当的水平。
+◆提出基于Voronoi的运动特征提取方法，提升了模型对行人运动特征的捕捉能力。
+实验表明，CPGAN在双向流场景中有效模拟了人群运动，成功重现了车道形成现象和N-t曲线。
+本研究为将行人动力学机制整合到数据驱动人群模拟的损失函数中提供了重要启示。</td></tr>
+<tr><td>2026-05-29</td><td>Trajectory Planning for Non-Communicating Mobile Robots using Inverse Optimal Control<br><a href='http://arxiv.org/pdf/2605.30906'>论文</a></td><td>本文核心贡献是提出了一种针对无通信移动机器人避碰场景的轨迹规划与预测结合算法。
+◆基于逆最优控制，通过观察历史轨迹来估计所有机器人的未知目标状态。
+◆每个机器人从他人视角出发，结合自我预测与估计的目标状态来求解联合预测问题。
+◆将联合预测结果纳入自身的轨迹规划中进行考量，实现高效交互。
+◆相比传统恒加速度估计方法，该方法使到达目标的时间中位数缩短9.8%，且求解器从未出现无法求解的情况，鲁棒性极高。</td></tr>
+<tr><td>2026-05-29</td><td>GSAM: A Generalizable and Safe Robotic Framework for Articulated Object Manipulation<br><a href='http://arxiv.org/pdf/2605.30740'>论文</a></td><td>本文提出GSAM框架，旨在解决关节类物体操作中泛化能力有限和易发生破坏性碰撞的问题。
+◆提出基于微调视觉语言模型的优化器，利用思维链常识推理修正视觉感知器的原始运动学参数估计。
+◆设计交互约束函数生成器，结合物体与避障知识生成提示，由大语言模型将其函数化并应用于轨迹与姿态规划以防碰撞。
+◆开发运动学感知操作规划器，以验证规划轨迹和姿态的可达性。
+实验表明该框架将标准差降低了3.1%，操作成功率提升了36.0%，显著增强了实际场景中的物体泛化性与交互安全性。</td></tr>
+<tr><td>2026-05-29</td><td>Geometry-Aware Control Barrier Functions for Collision Avoidance via Bernstein Polynomial Approximations<br><a href='http://arxiv.org/pdf/2605.30696'>论文</a></td><td>针对不规则几何形状机器人和障碍物的安全导航问题，传统控制障碍函数的形状代理往往过于保守或约束数量过多，影响实时性能。本文提出了一种基于伯恩斯坦多项式符号距离场的新型几何感知控制障碍函数。该研究的核心创新点如下：
+◆提出统一表示方法，利用BP-SDFs统一表示障碍物和机器人，从而以统一的最小距离构建障碍函数，避免了多局部基元导致的约束膨胀。
+◆实现闭环控制约束，利用伯恩斯坦多项式的可微特性，能够轻松地在闭环系统中强制执行控制约束，提升了算法实用性。
+仿真实验在单机器人导航和异构多机器人避碰场景中验证了该方法的高效性与安全保障能力。</td></tr>
 <tr><td>2026-05-28</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文提出了一种融合可信度感知学习、几何安全屏蔽与连续规则嵌入的强化学习框架，解决了无人艇在感知不确定性下的安全合规导航难题。
 ◆提出可信度加权价值学习，利用滤波协方差与经验误差的差异推导动态信任因子，调节评论家损失以防止策略对噪声样本过拟合。
 ◆提出协方差膨胀速度障碍方法，将位置估计不确定性映射为角度边界，构建保守的几何屏蔽以覆盖危险的探索动作。
@@ -441,12 +479,25 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='navigation'>Navigation (28篇)</h2>
+<h2 id='navigation'>Navigation (31篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>Collaborative Navigation and Exploration with $β$-Sparse Gaussian Processes<br><a href='http://arxiv.org/pdf/2605.26304'>论文</a></td><td>针对未知环境下异构机器人协同导航面临传感、通信和计算限制的问题，本文提出了一种领航机器人与移动传感器机器人的协同导航框架。该框架使传感器能在带宽受限的情况下，在线联合选择传输的地图点与导航动作，并预测未探索区域。
+◆提出β-稀疏高斯过程模型，这是一种用于任务感知诱导点选择的新颖且鲁棒的变分稀疏高斯过程模型。
+◆开发了一种动作选择策略，有效平衡了任务相关性与环境探索。
+仿真实验表明，该框架相比无通信场景可减少18%的路径成本，相比原始数据传输基线可减少76%的信息传输量。</td></tr>
+<tr><td>2026-05-29</td><td>AR Forcing: Towards Long-Horizon Robot Navigation World Model<br><a href='http://arxiv.org/pdf/2605.31314'>论文</a></td><td>本文针对基于扩散的机器人导航世界模型中训练与推理存在的分布偏移导致长程预测不稳定的问题，提出了AR Forcing自回归训练策略。
+◆将标准扩散损失整合到自回归训练循环中，消除了并行监督与自回归推理之间的不一致。
+◆模型每一步利用自身预测更新上下文并优化单步噪声预测目标，使训练显式暴露于推理状态分布。
+◆无需引入额外判别器或分布匹配损失，保留了原始扩散框架与采样器，易于集成。
+实验表明，该方法在多域导航数据集上显著提升了长程导航的图像生成一致性与轨迹预测精度，增强了模型在复杂环境下的鲁棒性。</td></tr>
+<tr><td>2026-05-29</td><td>Geometry-Aware Control Barrier Functions for Collision Avoidance via Bernstein Polynomial Approximations<br><a href='http://arxiv.org/pdf/2605.30696'>论文</a></td><td>针对具有不规则几何形状机器人和障碍物的安全导航问题，传统控制障碍函数的形状代理往往过于保守或导致约束数激增。本文提出了一种基于伯恩斯坦多项式符号距离场的几何感知控制障碍函数。
+◆提出基于BP-SDF的统一表示方法，将障碍物与机器人统一建模，并以统一的最小距离来表示障碍函数。
+◆利用伯恩斯坦多项式的可微性，可以轻松地以闭环方式强制执行控制约束。
+仿真结果表明，该方法在单机器人导航和异构多机器人避碰场景中均能高效保障安全。</td></tr>
 <tr><td>2026-05-28</td><td>Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty<br><a href='http://arxiv.org/pdf/2605.26974'>论文</a></td><td>本文针对无人水面艇在感知不确定性下安全且符合COLREGs规则的导航难题，提出了一种融合感知可信学习、几何安全屏蔽与连续规则感知嵌入的强化学习框架。
 ◆可信度加权价值学习通过滤波协方差与经验误差的差异推导动态信任因子，调节评论家异方差损失，防止策略对噪声过拟合。
 ◆协方差膨胀速度障碍将位置估计不确定性映射为角度裕度，构建保守的几何屏蔽以覆盖危险探索动作。
@@ -472,6 +523,11 @@
 ◆引入开放集评估器GUIJudge，将智能体的测试轨迹分解为独立可诊断的能力，实现了超越预定义标注的过程感知评估。
 实验表明，GUIJudge大幅优于所有基线，提供了可靠的评估结果。
 此外，基准测试揭示了现有模型在两类缺陷上的检测瓶颈，且将GUIJudge的验证器集成至现有智能体中无需重训即可显著提升其检测性能。</td></tr>
+<tr><td>2026-05-28</td><td>Learning-Based Navigation for Indoor Mobile Robots<br><a href='http://arxiv.org/pdf/2605.30468'>论文</a> | <a href='https://ntdathp.github.io/rl_robot_web/'>代码</a></td><td>本文提出了一种用于室内移动机器人的基于学习的导航框架，结合了监督神经全局规划器与强化学习优化的局部规划器，并在仿真和真实环境中验证了其安全避障导航的有效性。
+◆提出基于代价感知A星专家轨迹训练的监督神经全局规划器，以生成可行的全局路线。
+◆提出基于学习的DWA局部规划器，将其表述为动态窗口法动作格上的离散候选选择问题。
+◆在局部策略训练中，先利用行为克隆初始化，再结合可行性感知掩码通过近端策略优化算法进行精炼。
+◆有效整合了基于学习的全局规划与强化学习优化的局部控制，实现了室内环境下的安全目标导向导航。</td></tr>
 <tr><td>2026-05-27</td><td>Chance-Constrained MPPI under State and Dynamic Object Prediction Uncertainty and the Evaluation of Collision Risk Calibration<br><a href='http://arxiv.org/pdf/2605.28330'>论文</a></td><td>现有机会约束MPPI控制隐式假设上游定位与感知不确定性已良好标定，但实际估计器常标定不当，导致过度自信引发安全违规或缺乏自信引发保守冻结。
 ◆提出一种严谨的评估方法，应用严格评分规则来评估闭环执行期间预测碰撞风险的统计有效性。
 ◆提出双不确定性机会约束管MPPI实时风险感知规划架构，通过单管无迹变换近似联合整合定位不确定性，并利用蒙特卡洛聚合整合动态障碍物预测不确定性。
@@ -507,10 +563,6 @@
 ◆设计了极简的训练范式，仅用平面墙生成的合成数据训练卷积神经网络解码稠密深度图，即可实现对复杂真实场景的零样本泛化。
 ◆构建了适用于资源受限平台的高效实时系统，在边缘计算设备上以20赫兹运行，2.5米内深度估计绝对误差仅7.0厘米。
 该研究还深入分析了不同编码孔径设计对深度估计性能的影响，展示了结构照明、编码光学与事件感知结合在暗光导航中的巨大潜力。</td></tr>
-<tr><td>2026-05-25</td><td>Collaborative Navigation and Exploration with $β$-Sparse Gaussian Processes<br><a href='http://arxiv.org/pdf/2605.26304'>论文</a></td><td>针对未知环境下异构机器人协同导航面临传感、通信和计算限制的问题，本文提出了一种领航机器人与移动传感器机器人的协同导航框架。该框架使传感器能在带宽受限的情况下，在线联合选择传输的地图点与导航动作，并预测未探索区域。
-◆提出β-稀疏高斯过程模型，这是一种用于任务感知诱导点选择的新颖且鲁棒的变分稀疏高斯过程模型。
-◆开发了一种动作选择策略，有效平衡了任务相关性与环境探索。
-仿真实验表明，该框架相比无通信场景可减少18%的路径成本，相比原始数据传输基线可减少76%的信息传输量。</td></tr>
 <tr><td>2026-05-24</td><td>GreenSeg: Ground Segmentation Algorithm for Agricultural Robots in Mediterranean Greenhouses using RGB-D Point Clouds<br><a href='http://arxiv.org/pdf/2605.25279'>论文</a></td><td>本文针对地中海温室环境通道狭窄、地形异构且塑料覆膜导致深度传感器产生严重光学干扰的问题，提出了基于RGB-D点云的GreenSeg地面分割算法，替代了昂贵的3D激光雷达方案。
 ◆提出结合鲁棒全局平面拟合与表面曲率滤波的双层验证策略，以适应从混凝土到耕地等复杂的异构地形。
 ◆引入基于种子点的区域生长约束，确保可行驶平面的空间连续性。
@@ -594,12 +646,42 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='motion-planning'>Motion Planning (34篇)</h2>
+<h2 id='motion-planning'>Motion Planning (39篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>LiftNav: Path Planning via Semantic Lifting in TSDF-Guided Gaussian Splatting<br><a href='http://arxiv.org/pdf/2605.31376'>论文</a></td><td>本文提出了LiftNav混合导航框架，解决了传统TSDF缺乏语义和高斯溅射几何软导致避障不精确的问题。该框架基于TSDF与高斯溅射双地图构建，实现了可靠的碰撞避障与物体级理解。
+◆设计了基于YOLO检测与TSDF三维提升的实时管线，无需密集三维嵌入即可实现灵活的语义导航。
+◆引入了基于铰链损失的碰撞惩罚机制，有效提升了轨迹的平滑度与安全性。
+◆结合B样条轨迹优化，在仿真实验中相比现有基线实现了百分之百的轨迹可行率和更短的路径。</td></tr>
+<tr><td>2026-05-29</td><td>Haptic Sorter: A Unified Planning Framework for Online Shape Estimation and Real-Time Pose Inference<br><a href='http://arxiv.org/pdf/2605.31352'>论文</a></td><td>本文针对机器人操作中物体形状与姿态先验未知及传感器遮挡问题，提出了一个融合触觉感知、建模与操作规划的统一几何框架。
+◆引入贝叶斯优化指导触觉探索以推断物体形状，并利用超椭圆近似几何边界。
+◆自适应地构建编码物体几何的操作势函数，用于准静态机器人与物体交互。
+◆提出基于模型预测和触觉反馈的在线常微分方程，实现物体实时姿态推断。
+该框架在二维机器人分拣任务的仿真与真实多臂平台上进行了验证，证明了其在不同几何形状下的鲁棒性与泛化能力。</td></tr>
+<tr><td>2026-05-29</td><td>AR Forcing: Towards Long-Horizon Robot Navigation World Model<br><a href='http://arxiv.org/pdf/2605.31314'>论文</a></td><td>该论文指出了基于扩散的机器人导航世界模型中，并行监督训练与自回归推理间的分布偏移导致长程预测不稳定的问题。为此，论文提出了AR Forcing自回归训练策略来消除这一偏差。
+◆将标准扩散损失整合进自回归训练循环，模型每步利用自身预测更新上下文并优化单步噪声预测，使其在训练时显式暴露于推理状态分布。
+◆无需引入额外判别器或分布匹配损失，完全保留原始扩散框架与采样器，方法简单且极易集成。
+◆在多个导航数据集上的实验表明，该方法显著提升了长程导航中图像生成的一致性与轨迹预测精度，增强了模型在复杂及未知环境下的鲁棒性。</td></tr>
+<tr><td>2026-05-29</td><td>DriveMA: Driving Vision-Language-Action Models with verifiable Meta-Actions<br><a href='http://arxiv.org/pdf/2605.31271'>论文</a></td><td>本文提出DriveMA框架，旨在解决驾驶视觉语言动作模型中语言与动作间的鸿沟问题，并在Waymo等数据集上取得了最先进的端到端规划性能。
+◆提出可验证的元动作，将未来自车运动转化为紧凑的语言域意图，并可通过轨迹标注管线构建以及基于规则的投影进行验证。
+◆引入动作中心的监督训练，有效利用元动作的可验证性来指导模型学习。
+◆设计数据高效的回合级信用分配强化学习框架，通过密集奖励与精确信用分配，显式对齐高级决策与低级轨迹规划。
+实验结果表明，即使是简单的元动作接口，只要具备可验证性并针对语言动作对齐进行优化，即可实现卓越的自动驾驶规划效果。</td></tr>
+<tr><td>2026-05-29</td><td>Trajectory Planning for Non-Communicating Mobile Robots using Inverse Optimal Control<br><a href='http://arxiv.org/pdf/2605.30906'>论文</a></td><td>该论文提出了一种新颖的轨迹规划与预测组合算法，以解决非通信移动机器人避障场景下的高效交互问题。
+◆利用逆最优控制方法，基于观测到的历史轨迹来估计所有机器人的未知目标状态。
+◆引入视角转换机制，每个机器人从其他机器人视角出发进行自我预测，并结合估计目标状态求解联合预测问题。
+◆将联合预测结果直接融入自身的轨迹规划中，实现预测与规划的深度耦合。
+仿真实验表明，在2至8个机器人的场景下，该方法使所有机器人到达目标的中位耗时缩短了9.8%。
+同时，该算法确保求解器始终能成功找到规划或预测问题的解，彻底避免了无解情况的发生。</td></tr>
+<tr><td>2026-05-28</td><td>Multi-Robot Box Transport over Different Surfaces with Decentralized Role-based Proportional Control<br><a href='http://arxiv.org/pdf/2605.26430'>论文</a></td><td>该论文提出了一种名为R2P2的异步分散式任务与运动规划方法，解决多机器人在不同倾斜度与摩擦力表面上协同运输箱子的挑战。
+◆提出去中心化架构，免除机器人间的通信同步与共识需求，有效规避单点故障。
+◆设计基于操作模式动态分配角色的机制，根据旋转或平移需求赋予机器人推、支撑或阻止等角色。
+◆融合基于规则的控制与比例速度控制，机器人仅需观测自身与箱子的位置及朝向即可执行动作。
+◆方法在多变的地形摩擦、倾斜度及箱子质量场景中展现强泛化能力，成功率优于传统虚拟领导者跟随者方法。
+◆通过六台机器人的仿真测试与四台Turtlebot的实物实验，充分验证了该策略的有效性与实用性。</td></tr>
 <tr><td>2026-05-28</td><td>Mean-Field Diffuser: Scaling Offline MARL to Thousands of Agents<br><a href='http://arxiv.org/pdf/2605.30190'>论文</a></td><td>这篇论文针对扩散式规划在多智能体离线强化学习中因联合轨迹空间维度爆炸而难以扩展的问题,提出了MF-Diffuser框架,将轨迹规划提升至轨迹分布的Wasserstein空间,利用混沌传播性质,仅用少量代表性智能体即可刻画整个种群的动态,从而支撑千级以上规模的离线多智能体强化学习。论文同时建立了端到端的次优性理论界,并通过三个均值场基准实验验证了方法在大规模和次优数据场景下的显著优势。
 
 核心贡献和创新点如下:
@@ -672,12 +754,6 @@
 ◆通过学习多个低维模糊管代替单一高维模糊管，有效降低了规划保守性并提升了算法可扩展性。
 ◆设计了高效的基于强盗的有效性检查器，在不牺牲概率完备性的前提下显著提升了经验性能。
 实验表明该算法能在严格安全阈值与杂乱环境中规划出有效路径，性能优于现有方法。</td></tr>
-<tr><td>2026-05-26</td><td>Multi-Robot Box Transport over Different Surfaces with Decentralized Role-based Proportional Control<br><a href='http://arxiv.org/pdf/2605.26430'>论文</a></td><td>该论文提出了一种名为R2P2的异步分散式任务与运动规划方法，解决多机器人在不同倾斜度与摩擦力表面上协同运输箱子的挑战。
-◆提出去中心化架构，免除机器人间的通信同步与共识需求，有效规避单点故障。
-◆设计基于操作模式动态分配角色的机制，根据旋转或平移需求赋予机器人推、支撑或阻止等角色。
-◆融合基于规则的控制与比例速度控制，机器人仅需观测自身与箱子的位置及朝向即可执行动作。
-◆方法在多变的地形摩擦、倾斜度及箱子质量场景中展现强泛化能力，成功率优于传统虚拟领导者跟随者方法。
-◆通过六台机器人的仿真测试与四台Turtlebot的实物实验，充分验证了该策略的有效性与实用性。</td></tr>
 <tr><td>2026-05-26</td><td>AURA: Asymptotically Optimal Uncertainty-Robust Replanning Algorithm for Kinodynamic Systems<br><a href='http://arxiv.org/pdf/2605.27699'>论文</a></td><td>本文提出了AURA框架，这是一个针对运动学动态系统的渐近最优元规划器，解决了传统离线规划无法即时执行以及运动不确定性导致跟踪偏差的两大局限。
 ◆提出一种重规划方法，在执行过程中持续探索状态空间并优化轨迹，实现了渐近最优的在线规划。
 ◆引入优化过程，通过细化未来控制输入来减少跟踪误差，有效提升了运动不确定性下的执行精度。
@@ -811,12 +887,18 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (10篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (11篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>Joint Multi-Camera LiDAR Extrinsic Calibration via Learned Pairwise Initialization and Geometric Refinement<br><a href='http://arxiv.org/pdf/2605.31576'>论文</a></td><td>现有基于学习的相机与激光雷达标定方法通常独立处理各对数据，忽视了多相机平台的刚体几何耦合，导致系统层面不一致。
+◆提出了一种联合多相机激光雷达外参标定的两阶段框架，克服了独立估计导致的系统性不一致问题。
+◆结合深度学习匹配与几何优化，先利用CMRNext独立生成各相机的初始外参及密集2D-3D对应关系，再通过多帧光束法平差进行联合优化。
+◆在优化阶段引入重投影、单相机先验及相对位姿先验约束，成功将局部成对预测转化为全局一致的标定结果。
+实验表明该方法提升了单相机精度和相机间一致性，在KITTI数据集上实现了0.89厘米的平移误差。
+在域外Walkley数据集上，该方法将平移误差从108.6厘米大幅降至3.1厘米，验证了显式多相机耦合在单相机预测不可靠时的巨大优势。</td></tr>
 <tr><td>2026-05-27</td><td>Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation<br><a href='http://arxiv.org/pdf/2605.28812'>论文</a></td><td>该论文针对接触密集型操作中触觉信号因仿真到现实差距难以有效迁移的问题，提出了一种基于物理原理的触觉表示方法。
 ◆提出基于物理原理的压力中心触觉表示法，既保留了密集的接触信息，又对仿真到现实迁移保持鲁棒性。
 ◆提出基于可微动力学的传感器校准方案，无需真实力测量即可估计触觉单元朝向以支持该表示。
@@ -874,12 +956,23 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-undistortion'>Sensor Undistortion (21篇)</h2>
+<h2 id='sensor-undistortion'>Sensor Undistortion (23篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-29</td><td>Towards Neuromorphic Event-Based Sensing for High-Speed Multi-Spectral Classification and Tracking of Microparticles<br><a href='http://arxiv.org/pdf/2605.31038'>论文</a></td><td>本文针对传统微流控成像系统在速度与带宽间的权衡，以及现有事件相机仅能追踪单一球形粒子的局限，提出了一种新型神经形态微流控传感平台。
+◆创新性地集成空间复用RGB滤光片与异步事件传感器，在传感阶段直接编码多分散微粒的光谱特征与运动，免除了图像重建或学习推理的需求。
+◆实现了亚毫秒级时间分辨率，在广泛尺寸与流速（含非层流）下保持鲁棒，对0.08至0.18毫米彩色粒子的分类准确率达82%。
+◆事件驱动架构将数据带宽降低超240倍，同时维持460平方毫米每秒的面积吞吐量。
+该框架为临床诊断与环境监测中的高速无标记异构分析物筛选提供了高效低延迟的可扩展方案。</td></tr>
+<tr><td>2026-05-29</td><td>Omni-Supervised Motion Editing: Balancing Change and Invariance through Positive-Negative Learning<br><a href='http://arxiv.org/pdf/2605.30969'>论文</a> | <a href='https://github.com/rocket-ycyer/OmniME.git'>代码</a></td><td>本文针对文本驱动的人体运动编辑中难以平衡改变与不变性的核心挑战，提出了全监督正负学习框架OmniME。
+◆提出回溯特征监督，在Transformer层间强制执行从粗到细的特征一致性。
+◆设计运动保留机制，根据源与目标的相似度关注细微变化以保留未编辑部分。
+◆引入基于三元组的语义对齐，增强文本与运动之间的语义对应关系。
+这三个互补组件共同构成了统一监督范式，有效平衡了目标区域的精准编辑与未编辑部分的完整保留。
+在多个数据集上的广泛实验证明，OmniME实现了最先进的编辑对齐性能。</td></tr>
 <tr><td>2026-05-28</td><td>Resolution-free neural surrogates for geometric parameterization and mapping with spatially varying fields<br><a href='http://arxiv.org/pdf/2605.28551'>论文</a></td><td>针对空间变化场引起的几何映射问题，传统变分模型在处理高分辨率且参数场变化的实例时计算成本极高。本文提出一种分辨率无关的神经代理模型，可在任意结构化或非结构化点集上直接预测映射位置。
 ◆采用多分辨率几何编码策略，以坐标增强的参数场样本为网络条件，摆脱了对固定网格的依赖。
 ◆无需带标签的解数据进行训练，而是通过强制执行源自变分能量、扩散密度均衡和拟共形理论的几何感知约束来优化模型。
@@ -992,4 +1085,4 @@
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.05.31
+> 更新于: 2026.06.01
