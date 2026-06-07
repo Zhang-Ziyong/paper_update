@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4757,
+      "stars": 4759,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4157,
+      "stars": 4159,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2406,
+      "stars": 2407,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 924,
+      "stars": 925,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 629,
+      "stars": 630,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 629,
+      "stars": 630,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1634,
+      "stars": 1635,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
