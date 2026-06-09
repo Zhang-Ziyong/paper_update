@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4762,
+      "stars": 4770,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4161,
+      "stars": 4166,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1415,
+      "stars": 1416,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1231,
+      "stars": 1233,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 926,
+      "stars": 927,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 917,
+      "stars": 919,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -123,7 +123,7 @@
     "VoxelMap": {
       "name": "VoxelMap",
       "url": "https://github.com/hku-mars/VoxelMap",
-      "stars": 701,
+      "stars": 702,
       "description": "[RA-L 2022] An efficient and probabilistic adaptive voxel mapping method for LiDAR odometry",
       "created_at": "2022-02-24",
       "chinese_desc": "一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 473,
+      "stars": 475,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -283,7 +283,7 @@
     "LAMM": {
       "name": "LAMM",
       "url": "https://github.com/hku-mars/LAMM",
-      "stars": 197,
+      "stars": 198,
       "description": "",
       "created_at": "2024-08-24",
       "chinese_desc": "LAMM"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1639,
+      "stars": 1640,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
@@ -373,7 +373,7 @@
     "hfnet": {
       "name": "hfnet",
       "url": "https://github.com/ethz-asl/hfnet",
-      "stars": 869,
+      "stars": 870,
       "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
       "created_at": "2019-02-15",
       "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
@@ -421,7 +421,7 @@
     "robust_point_cloud_registration": {
       "name": "robust_point_cloud_registration",
       "url": "https://github.com/ethz-asl/robust_point_cloud_registration",
-      "stars": 571,
+      "stars": 572,
       "description": "Robust Point Cloud Registration Using Iterative Probabilistic Data Associations (\"Robust ICP\")",
       "created_at": "2016-11-14",
       "chinese_desc": "Robust Point Cloud Registration Using Iterative Pr"
@@ -429,7 +429,7 @@
     "mav_voxblox_planning": {
       "name": "mav_voxblox_planning",
       "url": "https://github.com/ethz-asl/mav_voxblox_planning",
-      "stars": 566,
+      "stars": 567,
       "description": "MAV planning tools using voxblox as the map representation.",
       "created_at": "2018-07-26",
       "chinese_desc": "MAV planning tools using voxblox as the map repres"
@@ -469,7 +469,7 @@
     "voxblox-plusplus": {
       "name": "voxblox-plusplus",
       "url": "https://github.com/ethz-asl/voxblox-plusplus",
-      "stars": 461,
+      "stars": 462,
       "description": "A volumetric object-level semantic mapping framework.",
       "created_at": "2017-02-08",
       "chinese_desc": "A volumetric object-level semantic mapping framewo"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 442,
+      "stars": 443,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
@@ -525,7 +525,7 @@
     "image_undistort": {
       "name": "image_undistort",
       "url": "https://github.com/ethz-asl/image_undistort",
-      "stars": 276,
+      "stars": 277,
       "description": "A compact package for undistorting images directly from kalibr calibration files. Can also perform dense stereo estimation",
       "created_at": "2016-06-13",
       "chinese_desc": "A compact package for undistorting images directly"
