@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4772,
+      "stars": 4777,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4173,
+      "stars": 4179,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2408,
+      "stars": 2409,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1601,
+      "stars": 1602,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1417,
+      "stars": 1418,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1255,
+      "stars": 1257,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1233,
+      "stars": 1234,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 930,
+      "stars": 931,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 923,
+      "stars": 925,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -107,7 +107,7 @@
     "ImMesh": {
       "name": "ImMesh",
       "url": "https://github.com/hku-mars/ImMesh",
-      "stars": 739,
+      "stars": 740,
       "description": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
       "created_at": "2023-01-10",
       "chinese_desc": "ImMesh: An Immediate LiDAR Localization and Meshin"
@@ -123,7 +123,7 @@
     "VoxelMap": {
       "name": "VoxelMap",
       "url": "https://github.com/hku-mars/VoxelMap",
-      "stars": 702,
+      "stars": 704,
       "description": "[RA-L 2022] An efficient and probabilistic adaptive voxel mapping method for LiDAR odometry",
       "created_at": "2022-02-24",
       "chinese_desc": "一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。"
@@ -171,7 +171,7 @@
     "IKFoM": {
       "name": "IKFoM",
       "url": "https://github.com/hku-mars/IKFoM",
-      "stars": 551,
+      "stars": 552,
       "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
       "created_at": "2021-01-29",
       "chinese_desc": "A computationally efficient and convenient toolkit"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 475,
+      "stars": 477,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 337,
+      "stars": 338,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -235,7 +235,7 @@
     "M2Mapping": {
       "name": "M2Mapping",
       "url": "https://github.com/hku-mars/M2Mapping",
-      "stars": 262,
+      "stars": 263,
       "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
       "created_at": "2024-09-09",
       "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2844,
+      "stars": 2845,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 649,
+      "stars": 650,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -477,7 +477,7 @@
     "nbvplanner": {
       "name": "nbvplanner",
       "url": "https://github.com/ethz-asl/nbvplanner",
-      "stars": 440,
+      "stars": 441,
       "description": "A real-time capable exploration and inspection path planner (next best view planning)",
       "created_at": "2016-01-19",
       "chinese_desc": "A real-time capable exploration and inspection pat"
@@ -573,7 +573,7 @@
     "aslam_cv2": {
       "name": "aslam_cv2",
       "url": "https://github.com/ethz-asl/aslam_cv2",
-      "stars": 201,
+      "stars": 202,
       "description": "",
       "created_at": "2017-09-18",
       "chinese_desc": "aslam_cv2"
