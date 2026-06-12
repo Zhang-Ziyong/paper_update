@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4777,
+      "stars": 4779,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4179,
+      "stars": 4183,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1418,
+      "stars": 1421,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1257,
+      "stars": 1258,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1234,
+      "stars": 1240,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 931,
+      "stars": 934,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 925,
+      "stars": 928,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -91,7 +91,7 @@
     "ikd-Tree": {
       "name": "ikd-Tree",
       "url": "https://github.com/hku-mars/ikd-Tree",
-      "stars": 793,
+      "stars": 794,
       "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
       "created_at": "2021-02-22",
       "chinese_desc": "This repository provides implementation of an incr"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 632,
+      "stars": 634,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 629,
+      "stars": 632,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -155,7 +155,7 @@
     "HBA": {
       "name": "HBA",
       "url": "https://github.com/hku-mars/HBA",
-      "stars": 587,
+      "stars": 589,
       "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
       "created_at": "2023-05-01",
       "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 236,
+      "stars": 237,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -323,7 +323,7 @@
     "LiDAR-UAV-Autonomy": {
       "name": "LiDAR-UAV-Autonomy",
       "url": "https://github.com/hku-mars/LiDAR-UAV-Autonomy",
-      "stars": 116,
+      "stars": 117,
       "description": "",
       "created_at": "2025-04-02",
       "chinese_desc": "LiDAR-UAV-Autonomy"
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 650,
+      "stars": 649,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -445,7 +445,7 @@
     "voxgraph": {
       "name": "voxgraph",
       "url": "https://github.com/ethz-asl/voxgraph",
-      "stars": 550,
+      "stars": 551,
       "description": "Voxblox-based Pose graph optimization",
       "created_at": "2019-05-23",
       "chinese_desc": "Voxblox-based Pose graph optimization"
@@ -461,7 +461,7 @@
     "COIN-LIO": {
       "name": "COIN-LIO",
       "url": "https://github.com/ethz-asl/COIN-LIO",
-      "stars": 481,
+      "stars": 482,
       "description": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDAR Inertial Odometry (ICRA 2024)",
       "created_at": "2024-04-25",
       "chinese_desc": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDA"
