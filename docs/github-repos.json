@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4779,
+      "stars": 4782,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4183,
+      "stars": 4186,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1240,
+      "stars": 1241,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 934,
+      "stars": 935,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -91,7 +91,7 @@
     "ikd-Tree": {
       "name": "ikd-Tree",
       "url": "https://github.com/hku-mars/ikd-Tree",
-      "stars": 794,
+      "stars": 795,
       "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
       "created_at": "2021-02-22",
       "chinese_desc": "This repository provides implementation of an incr"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 634,
+      "stars": 635,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -171,7 +171,7 @@
     "IKFoM": {
       "name": "IKFoM",
       "url": "https://github.com/hku-mars/IKFoM",
-      "stars": 552,
+      "stars": 553,
       "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
       "created_at": "2021-01-29",
       "chinese_desc": "A computationally efficient and convenient toolkit"
@@ -323,7 +323,7 @@
     "LiDAR-UAV-Autonomy": {
       "name": "LiDAR-UAV-Autonomy",
       "url": "https://github.com/hku-mars/LiDAR-UAV-Autonomy",
-      "stars": 117,
+      "stars": 118,
       "description": "",
       "created_at": "2025-04-02",
       "chinese_desc": "LiDAR-UAV-Autonomy"
@@ -357,7 +357,7 @@
     "segmap": {
       "name": "segmap",
       "url": "https://github.com/ethz-asl/segmap",
-      "stars": 1096,
+      "stars": 1095,
       "description": "A map representation based on 3D segments ",
       "created_at": "2016-09-20",
       "chinese_desc": "A map representation based on 3D segments "
@@ -469,7 +469,7 @@
     "voxblox-plusplus": {
       "name": "voxblox-plusplus",
       "url": "https://github.com/ethz-asl/voxblox-plusplus",
-      "stars": 462,
+      "stars": 461,
       "description": "A volumetric object-level semantic mapping framework.",
       "created_at": "2017-02-08",
       "chinese_desc": "A volumetric object-level semantic mapping framewo"
@@ -477,7 +477,7 @@
     "nbvplanner": {
       "name": "nbvplanner",
       "url": "https://github.com/ethz-asl/nbvplanner",
-      "stars": 441,
+      "stars": 442,
       "description": "A real-time capable exploration and inspection path planner (next best view planning)",
       "created_at": "2016-01-19",
       "chinese_desc": "A real-time capable exploration and inspection pat"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 443,
+      "stars": 444,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
@@ -745,6 +745,14 @@
       "description": "Simulation interface to Unreal Engine 4 based on the AirSim plugin.",
       "created_at": "2020-03-10",
       "chinese_desc": "Simulation interface to Unreal Engine 4 based on t"
+    },
+    "3d_vsg": {
+      "name": "3d_vsg",
+      "url": "https://github.com/ethz-asl/3d_vsg",
+      "stars": 100,
+      "description": "3D Variable Scene Graphs for long-term semantic scene change prediction.",
+      "created_at": "2022-09-15",
+      "chinese_desc": "3D可变场景图，用于长期语义场景变化预测。"
     }
   }
 }
