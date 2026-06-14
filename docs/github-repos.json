@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4782,
+      "stars": 4786,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4186,
+      "stars": 4191,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 935,
+      "stars": 936,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 928,
+      "stars": 930,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 632,
+      "stars": 633,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -147,7 +147,7 @@
     "mlcc": {
       "name": "mlcc",
       "url": "https://github.com/hku-mars/mlcc",
-      "stars": 621,
+      "stars": 622,
       "description": "Fast and Accurate Extrinsic Calibration for Multiple LiDARs and Cameras",
       "created_at": "2021-09-14",
       "chinese_desc": "Fast and Accurate Extrinsic Calibration for Multip"
@@ -155,7 +155,7 @@
     "HBA": {
       "name": "HBA",
       "url": "https://github.com/hku-mars/HBA",
-      "stars": 589,
+      "stars": 590,
       "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
       "created_at": "2023-05-01",
       "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 338,
+      "stars": 339,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -283,7 +283,7 @@
     "LAMM": {
       "name": "LAMM",
       "url": "https://github.com/hku-mars/LAMM",
-      "stars": 198,
+      "stars": 199,
       "description": "",
       "created_at": "2024-08-24",
       "chinese_desc": "LAMM"
@@ -291,7 +291,7 @@
     "SUPER-Hardware": {
       "name": "SUPER-Hardware",
       "url": "https://github.com/hku-mars/SUPER-Hardware",
-      "stars": 196,
+      "stars": 198,
       "description": "",
       "created_at": "2025-03-09",
       "chinese_desc": "SUPER-Hardware"
@@ -323,7 +323,7 @@
     "LiDAR-UAV-Autonomy": {
       "name": "LiDAR-UAV-Autonomy",
       "url": "https://github.com/hku-mars/LiDAR-UAV-Autonomy",
-      "stars": 118,
+      "stars": 119,
       "description": "",
       "created_at": "2025-04-02",
       "chinese_desc": "LiDAR-UAV-Autonomy"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 444,
+      "stars": 445,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
