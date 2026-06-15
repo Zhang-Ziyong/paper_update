@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4786,
+      "stars": 4793,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4191,
+      "stars": 4200,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1421,
+      "stars": 1423,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1241,
+      "stars": 1243,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 936,
+      "stars": 938,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 930,
+      "stars": 931,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -107,7 +107,7 @@
     "ImMesh": {
       "name": "ImMesh",
       "url": "https://github.com/hku-mars/ImMesh",
-      "stars": 740,
+      "stars": 741,
       "description": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
       "created_at": "2023-01-10",
       "chinese_desc": "ImMesh: An Immediate LiDAR Localization and Meshin"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 635,
+      "stars": 636,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 400,
+      "stars": 402,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 237,
+      "stars": 239,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 157,
+      "stars": 159,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1640,
+      "stars": 1641,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
@@ -349,7 +349,7 @@
     "okvis": {
       "name": "okvis",
       "url": "https://github.com/ethz-asl/okvis",
-      "stars": 1352,
+      "stars": 1351,
       "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM.",
       "created_at": "2016-02-04",
       "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM."
@@ -389,7 +389,7 @@
     "mav_trajectory_generation": {
       "name": "mav_trajectory_generation",
       "url": "https://github.com/ethz-asl/mav_trajectory_generation",
-      "stars": 655,
+      "stars": 657,
       "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
       "created_at": "2016-12-09",
       "chinese_desc": "Polynomial trajectory generation and optimization,"
@@ -413,7 +413,7 @@
     "dynablox": {
       "name": "dynablox",
       "url": "https://github.com/ethz-asl/dynablox",
-      "stars": 582,
+      "stars": 583,
       "description": "Real-time detection of diverse dynamic objects in complex environments.",
       "created_at": "2022-12-14",
       "chinese_desc": "Real-time detection of diverse dynamic objects in "
@@ -637,7 +637,7 @@
     "rio": {
       "name": "rio",
       "url": "https://github.com/ethz-asl/rio",
-      "stars": 151,
+      "stars": 152,
       "description": "Graph-based, sparse radar-inertial odometry estimation",
       "created_at": "2024-04-02",
       "chinese_desc": "Graph-based, sparse radar-inertial odometry estima"
@@ -709,7 +709,7 @@
     "active_grasp": {
       "name": "active_grasp",
       "url": "https://github.com/ethz-asl/active_grasp",
-      "stars": 107,
+      "stars": 108,
       "description": "Closed-loop next-best view planning for grasp detection in clutter.",
       "created_at": "2022-01-06",
       "chinese_desc": "Closed-loop next-best view planning for grasp dete"
