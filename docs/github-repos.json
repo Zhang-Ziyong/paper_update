@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4804,
+      "stars": 4810,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4211,
+      "stars": 4217,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1423,
+      "stars": 1425,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1245,
+      "stars": 1246,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 940,
+      "stars": 942,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 934,
+      "stars": 939,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 633,
+      "stars": 635,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 562,
+      "stars": 564,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -187,7 +187,7 @@
     "LTAOM": {
       "name": "LTAOM",
       "url": "https://github.com/hku-mars/LTAOM",
-      "stars": 499,
+      "stars": 500,
       "description": "",
       "created_at": "2024-03-27",
       "chinese_desc": "LTAOM"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 480,
+      "stars": 484,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 435,
+      "stars": 437,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 407,
+      "stars": 409,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 240,
+      "stars": 241,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 159,
+      "stars": 161,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -389,7 +389,7 @@
     "mav_trajectory_generation": {
       "name": "mav_trajectory_generation",
       "url": "https://github.com/ethz-asl/mav_trajectory_generation",
-      "stars": 655,
+      "stars": 656,
       "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
       "created_at": "2016-12-09",
       "chinese_desc": "Polynomial trajectory generation and optimization,"
