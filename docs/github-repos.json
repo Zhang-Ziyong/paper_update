@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4810,
+      "stars": 4812,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4217,
+      "stars": 4218,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1246,
+      "stars": 1248,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 161,
+      "stars": 162,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1037,
+      "stars": 1036,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
@@ -533,7 +533,7 @@
     "kitti_to_rosbag": {
       "name": "kitti_to_rosbag",
       "url": "https://github.com/ethz-asl/kitti_to_rosbag",
-      "stars": 258,
+      "stars": 257,
       "description": "Dataset tools for working with the KITTI dataset raw data ( http://www.cvlibs.net/datasets/kitti/raw_data.php ) and converting it to a ROS bag. Also allows a library for direct access to poses, velodyne scans, and images. ",
       "created_at": "2016-07-13",
       "chinese_desc": "Dataset tools for working with the KITTI dataset r"
@@ -637,7 +637,7 @@
     "rio": {
       "name": "rio",
       "url": "https://github.com/ethz-asl/rio",
-      "stars": 152,
+      "stars": 153,
       "description": "Graph-based, sparse radar-inertial odometry estimation",
       "created_at": "2024-04-02",
       "chinese_desc": "Graph-based, sparse radar-inertial odometry estima"
