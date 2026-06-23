@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4825,
+      "stars": 4829,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4223,
+      "stars": 4231,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1262,
+      "stars": 1263,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1247,
+      "stars": 1249,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 941,
+      "stars": 944,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -123,7 +123,7 @@
     "VoxelMap": {
       "name": "VoxelMap",
       "url": "https://github.com/hku-mars/VoxelMap",
-      "stars": 707,
+      "stars": 708,
       "description": "[RA-L 2022] An efficient and probabilistic adaptive voxel mapping method for LiDAR odometry",
       "created_at": "2022-02-24",
       "chinese_desc": "一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 635,
+      "stars": 636,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 564,
+      "stars": 565,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 536,
+      "stars": 537,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -235,7 +235,7 @@
     "M2Mapping": {
       "name": "M2Mapping",
       "url": "https://github.com/hku-mars/M2Mapping",
-      "stars": 263,
+      "stars": 264,
       "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
       "created_at": "2024-09-09",
       "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 165,
+      "stars": 167,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
