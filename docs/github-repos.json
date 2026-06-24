@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4829,
+      "stars": 4835,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4231,
+      "stars": 4235,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2411,
+      "stars": 2412,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1606,
+      "stars": 1607,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1427,
+      "stars": 1429,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1249,
+      "stars": 1251,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 944,
+      "stars": 947,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 636,
+      "stars": 637,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 486,
+      "stars": 487,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 410,
+      "stars": 411,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -219,7 +219,7 @@
     "D-Map": {
       "name": "D-Map",
       "url": "https://github.com/hku-mars/D-Map",
-      "stars": 342,
+      "stars": 343,
       "description": "D-Map provides an efficient occupancy mapping approach for high-resolution LiDAR sensors.",
       "created_at": "2023-03-10",
       "chinese_desc": "D-Map provides an efficient occupancy mapping appr"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 243,
+      "stars": 244,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2844,
+      "stars": 2845,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -349,7 +349,7 @@
     "okvis": {
       "name": "okvis",
       "url": "https://github.com/ethz-asl/okvis",
-      "stars": 1351,
+      "stars": 1352,
       "description": "OKVIS: Open Keyframe-based Visual-Inertial SLAM.",
       "created_at": "2016-02-04",
       "chinese_desc": "OKVIS: Open Keyframe-based Visual-Inertial SLAM."
@@ -389,7 +389,7 @@
     "mav_trajectory_generation": {
       "name": "mav_trajectory_generation",
       "url": "https://github.com/ethz-asl/mav_trajectory_generation",
-      "stars": 656,
+      "stars": 657,
       "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
       "created_at": "2016-12-09",
       "chinese_desc": "Polynomial trajectory generation and optimization,"
@@ -413,7 +413,7 @@
     "dynablox": {
       "name": "dynablox",
       "url": "https://github.com/ethz-asl/dynablox",
-      "stars": 583,
+      "stars": 585,
       "description": "Real-time detection of diverse dynamic objects in complex environments.",
       "created_at": "2022-12-14",
       "chinese_desc": "Real-time detection of diverse dynamic objects in "
@@ -549,7 +549,7 @@
     "glocal_exploration": {
       "name": "glocal_exploration",
       "url": "https://github.com/ethz-asl/glocal_exploration",
-      "stars": 221,
+      "stars": 222,
       "description": "Efficient local and global exploration on submap collections with changing past pose estimates.",
       "created_at": "2020-06-05",
       "chinese_desc": "Efficient local and global exploration on submap c"
