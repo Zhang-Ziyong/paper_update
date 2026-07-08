@@ -19,10 +19,14 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
 arxiv_url = "http://arxiv.org/"
 
-# Anthropic Claude API配置
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_AUTH_TOKEN", "")
-ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com")
-ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
+def get_env(name: str, default: str = "") -> str:
+    value = os.environ.get(name, "").strip()
+    return value or default
+
+# Anthropic Messages 兼容 API 配置
+ANTHROPIC_API_KEY = get_env("ANTHROPIC_AUTH_TOKEN")
+ANTHROPIC_BASE_URL = get_env("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/")
+ANTHROPIC_MODEL = get_env("ANTHROPIC_MODEL", "minimax-m3")
 ANTHROPIC_API_URL = f"{ANTHROPIC_BASE_URL}/v1/messages"
 
 # 全局过滤日期 - 修改这里调整过滤条件
@@ -127,10 +131,10 @@ def get_paper_summary(title: str, abstract: str) -> str:
     )
 
     # 3. 带重试机制的API请求
-    logging.info(f"调用 Claude API: {ANTHROPIC_API_URL}, key前缀: {ANTHROPIC_API_KEY[:8]}...")
+    logging.info(f"调用 Messages API: {ANTHROPIC_API_URL}, model: {ANTHROPIC_MODEL}, key前缀: {ANTHROPIC_API_KEY[:8]}...")
     for attempt in range(MAX_RETRIES):
         try:
-            logging.info(f"Claude API 请求中 (尝试 {attempt+1}/{MAX_RETRIES})")
+            logging.info(f"Messages API 请求中 (尝试 {attempt+1}/{MAX_RETRIES})")
             response = requests.post(
                 ANTHROPIC_API_URL,
                 headers={
@@ -153,7 +157,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
 
             # 5. 解析API响应
             data = response.json()
-            logging.info(f"Claude API 响应: {str(data)[:500]}")
+            logging.info(f"Messages API 响应: {str(data)[:500]}")
             content = data.get("content", [])
             if not content:
                 logging.warning(f"Anthropic API返回空内容, 完整响应: {data}")
@@ -173,7 +177,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
             logging.error(f"Anthropic API错误: {type(e).__name__}: {str(e)}")
 
     # 6. 所有重试失败后生成备用摘要
-    logging.error(f"Claude API 所有重试均失败，使用备用摘要: {title}")
+    logging.error(f"Messages API 所有重试均失败，使用备用摘要: {title}")
     return generate_fallback_summary(title, abstract)
 
 def generate_fallback_summary(title: str, abstract: str) -> str:
