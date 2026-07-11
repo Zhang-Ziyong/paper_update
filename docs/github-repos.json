@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4914,
+      "stars": 4919,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2426,
+      "stars": 2427,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1269,
+      "stars": 1270,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1276,
+      "stars": 1278,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -67,7 +67,7 @@
     "BALM": {
       "name": "BALM",
       "url": "https://github.com/hku-mars/BALM",
-      "stars": 922,
+      "stars": 923,
       "description": "An efficient and consistent bundle adjustment for lidar mapping",
       "created_at": "2020-10-15",
       "chinese_desc": "An efficient and consistent bundle adjustment for "
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 958,
+      "stars": 959,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 981,
+      "stars": 982,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -115,7 +115,7 @@
     "STD": {
       "name": "STD",
       "url": "https://github.com/hku-mars/STD",
-      "stars": 725,
+      "stars": 726,
       "description": "A 3D point cloud descriptor for place recognition",
       "created_at": "2022-09-14",
       "chinese_desc": "A 3D point cloud descriptor for place recognition"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 508,
+      "stars": 509,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 423,
+      "stars": 425,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 171,
+      "stars": 172,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -373,7 +373,7 @@
     "hfnet": {
       "name": "hfnet",
       "url": "https://github.com/ethz-asl/hfnet",
-      "stars": 869,
+      "stars": 870,
       "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
       "created_at": "2019-02-15",
       "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
@@ -389,7 +389,7 @@
     "mav_trajectory_generation": {
       "name": "mav_trajectory_generation",
       "url": "https://github.com/ethz-asl/mav_trajectory_generation",
-      "stars": 658,
+      "stars": 659,
       "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
       "created_at": "2016-12-09",
       "chinese_desc": "Polynomial trajectory generation and optimization,"
@@ -461,7 +461,7 @@
     "COIN-LIO": {
       "name": "COIN-LIO",
       "url": "https://github.com/ethz-asl/COIN-LIO",
-      "stars": 490,
+      "stars": 491,
       "description": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDAR Inertial Odometry (ICRA 2024)",
       "created_at": "2024-04-25",
       "chinese_desc": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDA"
@@ -501,7 +501,7 @@
     "vgn": {
       "name": "vgn",
       "url": "https://github.com/ethz-asl/vgn",
-      "stars": 313,
+      "stars": 314,
       "description": "Real-time 6 DOF grasp detection in clutter.",
       "created_at": "2019-06-19",
       "chinese_desc": "Real-time 6 DOF grasp detection in clutter."
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 101,
+      "stars": 104,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
