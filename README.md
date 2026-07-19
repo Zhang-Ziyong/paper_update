@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.07.18)
+# 计算机视觉领域最新论文 (2026.07.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -34,13 +34,15 @@
 ◆ 基于共视性图提出新颖的聚类(cluster-based)回环闭合方法,无需依赖顺序输入即可高效处理大范围场景中的回环问题,确保全局一致性。
 
 ◆ 引入渐进式层级结构(progressive hierarchy),使方法能够高效扩展到包含数千张图像的大规模环境,同时不牺牲计算效率。该方法在多个数据集上验证了其在无序输入下实现高质量即时3DGS重建的可行性。</td></tr>
-<tr><td>2026-07-15</td><td>SeeSE3: Emergence of 3D Space in Vision Features<br><a href='http://arxiv.org/pdf/2607.14228'>论文</a></td><td>该论文研究视觉基础模型的特征表示是否蕴含三维欧几里得空间的内在结构。研究者跳出以往通过回归深度或法向量等图像中心量来探测3D感知的范式,转而探究视觉特征空间结构与欧几里得变换群SE(3)之间的关系。通过拓扑与几何两个视角设计探测工具,发现自监督视觉模型在静态场景中潜藏着与三维欧几里得空间高度对齐的子空间。基于这一洞察,作者提出在潜空间直接进行视觉里程计与定位的新方法,无需显式三维重建。
+<tr><td>2026-07-15</td><td>SeeSE3: Emergence of 3D Space in Vision Features<br><a href='http://arxiv.org/pdf/2607.14228'>论文</a></td><td>本文研究视觉基础模型的特征空间是否内在反映三维欧几里得空间的性质。作者以SE(3)变换群为分析框架，从拓扑与几何双重视角探测特征空间结构，区别于以往回归深度或法向量等图像级量的传统方式。
 
-◆ 提出基于SE(3)变换群结构的新型探测框架,取代传统的图像中心量回归方法
-◆ 设计互邻域度量指标,从拓扑角度衡量特征邻域与空间拓扑的对齐程度
-◆ 提出Poincaré Adapter,测试相机运动几何在潜空间位移中的线性可达性
-◆ 发现自监督视觉模型无需3D监督或主动代理即可涌现出强3D感知的潜空间子结构
-◆ 开创&quot;潜空间导航&quot;技术,在特征空间中直接完成视觉里程计与定位任务,绕过显式三维重建...[摘要不完整，待更新]</td></tr>
+◆ 提出互近邻度量，从拓扑角度衡量特征邻域与空间结构的对齐程度。
+
+◆ 设计Poincaré Adapter，测试相机运动几何在潜位移中的线性可及性。
+
+◆ 发现自监督视觉模型的潜空间子结构与三维空间存在高度相关性，即使训练中未使用显式3D监督。
+
+◆ 基于此提出&quot;潜空间导航&quot;方法，无需显式三维重建即可在潜空间中完成视觉里程计与定位。</td></tr>
 <tr><td>2026-07-15</td><td>Improving Map Consistency in Graph-Based LiDAR SLAM Through Information-Aware Odometry and Retroactive Loop Closure<br><a href='http://arxiv.org/pdf/2607.13516'>论文</a></td><td>该论文针对图优化LiDAR SLAM中轨迹精度高但地图几何一致性差的痛点，提出了一套系统性的改进方案。
 
 ◆ 提出基于几何依赖的信息矩阵估计框架，为ICP里程计约束提供原理化的权重分配，从而提升位姿图优化的可靠性。
@@ -809,12 +811,13 @@
 ◆在五种仓库布局、三种负载、每种条件下25个随机种子的全面实验中，在全部15种地图-负载组合上均优于重构的多对多分配基线，配对吞吐量提升达20.5%至36.7%。
 
 该工作表明近期执行记忆可通过塑形哪些可行目标进入规划器来提升吞吐，而不仅限于优化既定目标间的行进方式。</td></tr>
-<tr><td>2026-07-16</td><td>Catch, Throw, Repeat: Planning for Human-Robot Partner Juggling<br><a href='http://arxiv.org/pdf/2607.15129'>论文</a></td><td>本文针对人机动态物体交换这一难题，提出了一种面向人机协作杂耍的实时规划与控制架构，使机器人能可靠地与人类伙伴完成多球同步抛接。该系统集成了预测性球体追踪、基于多重打靶法的自适应在线轨迹优化，以及基于状态机的协调逻辑，在不确定性环境下实现了精确的实时协同与反馈控制。在8名不同技能水平参与者（从初学者到专家）的用户研究中，该系统成功实现了人与机器人共享的三球瀑布式杂耍。实验结果表明，所有受试者在10分钟测试中均超越了此前报告的最佳成绩，其中一人将共享三球瀑布式杂耍的连续机器人接球纪录提升至20次（原纪录的5倍），另一人在单球接返场景中实现了40次连续接球的100%成功率。
+<tr><td>2026-07-16</td><td>Catch, Throw, Repeat: Planning for Human-Robot Partner Juggling<br><a href='http://arxiv.org/pdf/2607.15129'>论文</a></td><td>本文针对人机之间动态物体交换这一挑战性问题，提出了一种面向人机合作抛接球的实时规划与控制架构。该系统集成了预测性球追踪、基于多重打靶法（multiple-shooting）的自适应在线轨迹优化以及状态机协调逻辑，能够在多球模式下与人类伙伴实现同步接抛。论文首次实现了人与机器人共享的三球级联（cascade）模式下的协调抛接，突破了以往仅能完成简单物体交换的限制。在8名不同技能水平用户参与的实验中，所有参与者在10分钟测试内均超过此前人机抛接球的最佳成绩。实验中，一名参与者将人机共享三球级联的连续接球记录从4次提升五倍至连续20次，另一名参与者在单球接抛场景下实现了连续40次100%成功率的优异表现。
 
-◆ 提出了首个面向人机协作杂耍的实时规划与控制架构，实现了多球同步抛接中的鲁棒协调
-◆ 将预测性球体追踪与基于多重打靶法的在线自适应轨迹优化相结合，应对感知与时序不确定性
-◆ 设计了基于状态机的协调逻辑，支持多球模式下的同步切换与稳定节拍控制
-◆ 通过系统的用户研究验证了方法在不同技能水平人类伙伴间的泛化能力，并刷新了多项共享杂耍纪录...[摘要不完整，待更新]</td></tr>
+◆ 提出了集成预测性球追踪、基于多重打靶法的自适应在线轨迹优化和状态机协调逻辑的实时规划与控制架构
+◆ 首次实现人机共享的三球级联（cascade）同步抛接，验证了多球复杂模式下的协调能力
+◆ 通过8名不同技能水平用户参与的实验验证系统有效性，所有参与者在10分钟内均超过此前最佳记录
+◆ 创下人机共享三球级联连续接球20次的新记录，并将此前最佳成绩提升五倍
+◆ 在单球接抛场景下实现连续40次100%成功率的稳定表现...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-16</td><td>BridgeFlow: Fast and Robust SE(2)-Equivariant Motion Planning with Flow Matching<br><a href='http://arxiv.org/pdf/2607.14725'>论文</a></td><td>BridgeFlow提出了一种快速且严格SE(2)等变的生成式运动规划框架,旨在解决现有学习型规划器在等变性与推理速度之间的两难困境。该方法通过轻量级的任务中心化规范化模块实现精确的空间等变性,无需依赖计算昂贵的专用等变网络,即可使用标准架构完成泛化。
 
 ◆ 设计了任务中心化规范化模块(task-centric canonicalization),以轻量化方式实现严格SE(2)等变性,使标准网络架构即可获得空间泛化能力。
@@ -848,11 +851,12 @@
 ◆ 双流规划适配器利用级联注意力机制融合高层语义意图与精确空间约束，实现连续轨迹的精准输出
 
 在NAVSIM闭环基准测试中，该方法在纯监督微调设置下取得87.1的PDMS分数和98.4的最高无碰撞率，刷新了VLA模型在该任务上的SOTA。</td></tr>
-<tr><td>2026-07-15</td><td>Merging Reaction to Cognition: A Hybrid Cognitive Strategy for Odour Source Localisation in Natural Environments<br><a href='http://arxiv.org/pdf/2607.13853'>论文</a></td><td>这篇论文针对湍流羽流间歇性结构导致气味源定位困难的问题，提出了一种融合反应式行为与认知概率规划的混合定位策略。现有两类方法各有局限：生物启发式反应策略效率高但依赖场景调参，认知概率策略鲁棒但探索过度且对信念精度敏感。基于马尔可夫链分析发现检测后源指向运动频率约为非检测时的两倍，本文据此将反应行为显式嵌入信念驱动的运动规划中。
+<tr><td>2026-07-15</td><td>Merging Reaction to Cognition: A Hybrid Cognitive Strategy for Odour Source Localisation in Natural Environments<br><a href='http://arxiv.org/pdf/2607.13853'>论文</a></td><td>本文针对湍流环境下气味源定位难题，提出了一种融合反应式行为与认知规划的新型混合策略。传统生物启发方法依赖检测触发的瞬时反应，需场景特定调参；而认知方法虽鲁棒但探索过多、依赖信念精度。该工作基于先前马尔可夫链分析发现——气味检测后源定向运动概率约为其他情况的两倍——将反应性显式嵌入信念依赖的运动规划中，并设计了检测触发的切换机制以权衡横向探索与源定向运动，同时使行为参数由信念指标直接推导，实现了无需人工调参的自适应反应性。
 
-◆提出检测触发的切换机制，形式化横流探索与源指向运动之间的过渡，使决策优先源接近而非信息获取
-◆行为参数直接由信念度量推导，无需人工调参即可实现自适应反应行为
-◆在三种湍流仿真和葡萄牙蒙德戈河自主水面船实地实验中验证，行程距离降低50%，成功率86%，平均定位误差3.2米...[摘要不完整，待更新]</td></tr>
+◆ 提出混合认知策略，将生物启发的反应性显式整合到基于信念的运动规划框架中
+◆ 设计检测触发的切换机制，形式化横风探索与源定向运动之间的过渡，优先考虑源接近而非信息增益
+◆ 行为参数直接由信念指标推导，实现无需人工调参的自适应反应性
+◆ 在三种湍流条件下仿真验证，并在葡萄牙蒙得戈河自主水面艇现场实验中取得最高50%路径缩短、86%成功率与3.2米平均定位误差的优异性能...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-15</td><td>Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles<br><a href='http://arxiv.org/pdf/2607.13789'>论文</a></td><td>本文针对多旋翼无人机的飞行规划问题，提出了动力学车辆定向问题（DVOP），将经典定向问题（OP）推广到同时考虑外部力与车辆主动力的三维点质量模型（PMM）场景，约束包括最大速度、最大加速度及重力加速度，并以最大飞行时间作为旅行预算。核心贡献在于将奖励最大化与时间最优轨迹规划耦合求解，避免了传统图问题简化带来的建模失真。
 
 ◆ 提出了一种新的问题建模DVOP，将车辆动力学（速度、加速度、重力约束）显式纳入定向问题。
@@ -903,13 +907,13 @@
 ◆ 将交互参考路径作为动态代价偏置嵌入采样规划器，使车辆能够在不求解完整博弈的前提下展现阻挡等防御性策略行为。
 
 ◆ 在Yas Marina赛道的高保真仿真中验证了该方法，结果表明其能有效激发博弈驱动的战略性行为，同时满足高频实时规划的计算需求。</td></tr>
-<tr><td>2026-07-14</td><td>Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation<br><a href='http://arxiv.org/pdf/2607.13154'>论文</a></td><td>本文针对开放世界移动操作策略学习面临的数据规模瓶颈问题，提出WANDA框架，通过单一人类演示即可生成大规模多样化合成数据。该方法从源RGBD观测中重建高斯溅射背景和机器人-物体交互轨迹作为世界基底，再利用全身运动规划将接触丰富的交互片段重组到广泛的空间配置中。实验证明，基于WANDA训练的策略在长时程鲁棒性、空间泛化和跨环境泛化方面均表现优异，并支持跨形态机器人的零样本部署。
+<tr><td>2026-07-14</td><td>Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation<br><a href='http://arxiv.org/pdf/2607.13154'>论文</a></td><td>本文针对开放世界移动操作任务对大规模数据的需求，提出了WANDA系统，仅需一条人类示教即可通过合成数据引擎生成海量多样化训练数据。系统首先从源RGBD观测中重建背景高斯泼溅和机器人-物体交互轨迹作为世界基底，随后将接触丰富的交互片段重组到广阔的空间构型中，并利用全身运动规划将其串联成新轨迹。为提升长时序鲁棒性，系统应用了校正状态扩展策略以增加不同阶段机器人与物体状态的多样性；为实现跨环境泛化，在由日常照片生成的多种3D世界中进行轨迹合成，并通过将渲染的机器人与物体网格与高斯泼溅背景合成来生成照片级真实观测。
 
-◆ 基于单一演示重建高斯溅射世界基底，最大化每条演示的数据价值
-◆ 全身运动规划重组接触丰富片段，实现空间配置多样化扩展
-◆ 校正状态扩展机制增加机器人物体状态多样性，增强长时程鲁棒性
-◆ 利用日常照片生成多样化3D场景，支撑跨环境泛化
-◆ 网格与高斯背景合成实现照片级真实观测，支持跨形态零样本部署...[摘要不完整，待更新]</td></tr>
+◆提出从单条示教出发，通过高斯泼溅重建与轨迹片段重组生成大规模多样化训练数据的合成数据引擎WANDA
+◆引入全身运动规划将接触丰富的交互片段链接为新轨迹，实现空间构型的可扩展生成
+◆设计校正状态扩展机制，在移动操作各阶段增加机器人与物体状态多样性以增强长时序鲁棒性
+◆利用日常照片生成多样化3D世界，在其中合成轨迹以实现跨环境泛化
+◆将渲染网格与高斯泼溅背景合成生成照片级真实观测，并天然支持跨形态机器人的零样本部署...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-14</td><td>Globalized Constrained Stein Variational Inference for Diverse Feasible Robot Motion Planning<br><a href='http://arxiv.org/pdf/2607.12732'>论文</a></td><td>本文针对机器人运动规划中多模态采样的难题,提出了一种约束型Stein变分推理方法SteinSQP,能够在严格满足碰撞避免、关节限制、接触条件和动力学一致性等硬约束的同时,生成多样化且低成本的运动轨迹集合。传统的概率规划方法难以同时兼顾多样性和可行性,而SteinSQP通过将约束直接嵌入到核空间中的序列二次规划(SQP)子问题,使粒子群在演化过程中始终保持可行。
 
 ◆ 将约束条件嵌入到Stein变分推理的核空间SQP子问题中,提出Stein-Newton子问题的约束变分推断框架,确保采样过程中每个粒子都满足硬约束。
@@ -1289,8 +1293,8 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4960</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4378</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>4962</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4380</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2429</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1617</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1615</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
@@ -1298,7 +1302,7 @@
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1284</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1274</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>988</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>967</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>968</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>924</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>798</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>782</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
@@ -1310,12 +1314,12 @@
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>624</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>596</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>584</td><td>ROG-Map</td></tr>
-<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>559</td><td>A computationally efficient and convenient toolkit</td></tr>
+<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>560</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>551</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>516</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>501</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>446</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>427</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>428</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>349</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>343</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>265</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
@@ -1326,7 +1330,7 @@
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>222</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>205</td><td>SUPER-Hardware</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>203</td><td>LAMM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>175</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
+<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>176</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>147</td><td>PULSAR</td></tr>
 <tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>142</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>120</td><td>LiDAR-UAV-Autonomy</td></tr>
@@ -1347,18 +1351,18 @@
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1041</td><td>A simple method for finding the extrinsic calibrat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>870</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>701</td><td>Modular framework for online informative path plan</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>661</td><td>Polynomial trajectory generation and optimization,</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>651</td><td>Coverage planning in general polygons with holes.</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>662</td><td>Polynomial trajectory generation and optimization,</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>652</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>593</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>575</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>569</td><td>MAV planning tools using voxblox as the map repres</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>565</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>566</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>553</td><td>Voxblox-based Pose graph optimization</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>517</td><td>Python tools to perform time-synchronization and h</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>518</td><td>Python tools to perform time-synchronization and h</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>498</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>449</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>450</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>448</td><td>A real-time capable exploration and inspection pat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>335</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>314</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
@@ -1373,7 +1377,7 @@
 <tr><td><a href='https://github.com/ethz-asl/aslam_cv2'>aslam_cv2</a></td><td>202</td><td>aslam_cv2</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/terrain-navigation'>terrain-navigation</a></td><td>186</td><td>Implementation for safe low altitude navigation in</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hierarchical_loc'>hierarchical_loc</a></td><td>185</td><td>Deep image retrieval for efficient 6-DoF localizat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>180</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>183</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/odom_predictor'>odom_predictor</a></td><td>177</td><td>Integrates an IMU to predict future odometry readi</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/orb_slam_2_ros'>orb_slam_2_ros</a></td><td>175</td><td>ROS interface for ORBSLAM2!!</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_dji_ros_interface'>mav_dji_ros_interface</a></td><td>169</td><td>Interface of DJI autopilot based on its OSDK (3.2)</td></tr>
@@ -1400,4 +1404,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.07.18
+> 更新于: 2026.07.19

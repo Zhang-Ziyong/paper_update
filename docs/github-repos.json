@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4960,
+      "stars": 4962,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4378,
+      "stars": 4380,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 967,
+      "stars": 968,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -171,7 +171,7 @@
     "IKFoM": {
       "name": "IKFoM",
       "url": "https://github.com/hku-mars/IKFoM",
-      "stars": 559,
+      "stars": 560,
       "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
       "created_at": "2021-01-29",
       "chinese_desc": "A computationally efficient and convenient toolkit"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 427,
+      "stars": 428,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 175,
+      "stars": 176,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -389,7 +389,7 @@
     "mav_trajectory_generation": {
       "name": "mav_trajectory_generation",
       "url": "https://github.com/ethz-asl/mav_trajectory_generation",
-      "stars": 661,
+      "stars": 662,
       "description": "Polynomial trajectory generation and optimization, especially for rotary-wing MAVs.",
       "created_at": "2016-12-09",
       "chinese_desc": "Polynomial trajectory generation and optimization,"
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 651,
+      "stars": 652,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -437,7 +437,7 @@
     "wavemap": {
       "name": "wavemap",
       "url": "https://github.com/ethz-asl/wavemap",
-      "stars": 565,
+      "stars": 566,
       "description": "Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping",
       "created_at": "2021-10-27",
       "chinese_desc": "Fast, efficient and accurate multi-resolution, mul"
@@ -453,7 +453,7 @@
     "hand_eye_calibration": {
       "name": "hand_eye_calibration",
       "url": "https://github.com/ethz-asl/hand_eye_calibration",
-      "stars": 517,
+      "stars": 518,
       "description": "Python tools to perform time-synchronization and hand-eye calibration.",
       "created_at": "2017-03-24",
       "chinese_desc": "Python tools to perform time-synchronization and h"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 449,
+      "stars": 450,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 180,
+      "stars": 183,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
