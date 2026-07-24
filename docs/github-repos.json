@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 4990,
+      "stars": 4994,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4404,
+      "stars": 4411,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1456,
+      "stars": 1458,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1287,
+      "stars": 1289,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 978,
+      "stars": 979,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 996,
+      "stars": 1002,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -91,7 +91,7 @@
     "ikd-Tree": {
       "name": "ikd-Tree",
       "url": "https://github.com/hku-mars/ikd-Tree",
-      "stars": 800,
+      "stars": 799,
       "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
       "created_at": "2021-02-22",
       "chinese_desc": "This repository provides implementation of an incr"
@@ -123,7 +123,7 @@
     "VoxelMap": {
       "name": "VoxelMap",
       "url": "https://github.com/hku-mars/VoxelMap",
-      "stars": 714,
+      "stars": 716,
       "description": "[RA-L 2022] An efficient and probabilistic adaptive voxel mapping method for LiDAR odometry",
       "created_at": "2022-02-24",
       "chinese_desc": "一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 648,
+      "stars": 649,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 588,
+      "stars": 590,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -171,7 +171,7 @@
     "IKFoM": {
       "name": "IKFoM",
       "url": "https://github.com/hku-mars/IKFoM",
-      "stars": 562,
+      "stars": 563,
       "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
       "created_at": "2021-01-29",
       "chinese_desc": "A computationally efficient and convenient toolkit"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 551,
+      "stars": 552,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 519,
+      "stars": 520,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -219,7 +219,7 @@
     "D-Map": {
       "name": "D-Map",
       "url": "https://github.com/hku-mars/D-Map",
-      "stars": 343,
+      "stars": 344,
       "description": "D-Map provides an efficient occupancy mapping approach for high-resolution LiDAR sensors.",
       "created_at": "2023-03-10",
       "chinese_desc": "D-Map provides an efficient occupancy mapping appr"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 350,
+      "stars": 351,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -315,7 +315,7 @@
     "iBTC": {
       "name": "iBTC",
       "url": "https://github.com/hku-mars/iBTC",
-      "stars": 142,
+      "stars": 144,
       "description": "",
       "created_at": "2024-05-26",
       "chinese_desc": "iBTC"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2856,
+      "stars": 2857,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1041,
+      "stars": 1042,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
@@ -461,7 +461,7 @@
     "COIN-LIO": {
       "name": "COIN-LIO",
       "url": "https://github.com/ethz-asl/COIN-LIO",
-      "stars": 500,
+      "stars": 501,
       "description": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDAR Inertial Odometry (ICRA 2024)",
       "created_at": "2024-04-25",
       "chinese_desc": "🪙 COIN-LIO: Complementary Intensity-Augmented LiDA"
@@ -709,7 +709,7 @@
     "active_grasp": {
       "name": "active_grasp",
       "url": "https://github.com/ethz-asl/active_grasp",
-      "stars": 109,
+      "stars": 108,
       "description": "Closed-loop next-best view planning for grasp detection in clutter.",
       "created_at": "2022-01-06",
       "chinese_desc": "Closed-loop next-best view planning for grasp dete"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 200,
+      "stars": 204,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
