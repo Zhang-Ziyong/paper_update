@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5017,
+      "stars": 5019,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4449,
+      "stars": 4452,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -67,7 +67,7 @@
     "BALM": {
       "name": "BALM",
       "url": "https://github.com/hku-mars/BALM",
-      "stars": 927,
+      "stars": 928,
       "description": "An efficient and consistent bundle adjustment for lidar mapping",
       "created_at": "2020-10-15",
       "chinese_desc": "An efficient and consistent bundle adjustment for "
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 992,
+      "stars": 993,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 643,
+      "stars": 644,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 596,
+      "stars": 599,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 448,
+      "stars": 449,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -219,7 +219,7 @@
     "D-Map": {
       "name": "D-Map",
       "url": "https://github.com/hku-mars/D-Map",
-      "stars": 344,
+      "stars": 345,
       "description": "D-Map provides an efficient occupancy mapping approach for high-resolution LiDAR sensors.",
       "created_at": "2023-03-10",
       "chinese_desc": "D-Map provides an efficient occupancy mapping appr"
@@ -243,7 +243,7 @@
     "IPC": {
       "name": "IPC",
       "url": "https://github.com/hku-mars/IPC",
-      "stars": 254,
+      "stars": 255,
       "description": "Integrated Planning and Control for Quadrotor Navigation in Presence of Sudden Crossing Objects and Disturbances",
       "created_at": "2023-04-06",
       "chinese_desc": "Integrated Planning and Control for Quadrotor Navi"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2859,
+      "stars": 2860,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -381,7 +381,7 @@
     "mav_active_3d_planning": {
       "name": "mav_active_3d_planning",
       "url": "https://github.com/ethz-asl/mav_active_3d_planning",
-      "stars": 702,
+      "stars": 701,
       "description": "Modular framework for online informative path planning.",
       "created_at": "2018-10-25",
       "chinese_desc": "Modular framework for online informative path plan"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 451,
+      "stars": 452,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 220,
+      "stars": 222,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"

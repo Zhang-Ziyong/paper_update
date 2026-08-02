@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.08.01)
+# 历史论文归档 (2026.08.02)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -175,14 +175,23 @@
 ◆ 建立专门评估重访位置地图一致性的评测协议，弥补现有方法在局部几何质量评价方面的不足。
 
 实验在多个公开数据集上的结果表明，该方法在保持全局轨迹精度与现有先进方法相当甚至更优的同时，显著提升了重访区域的局部地图几何一致性，验证了不确定性感知里程计与几何引导回环精化耦合的有效性。</td></tr>
-<tr><td>2026-07-15</td><td>SeeSE3: Emergence of 3D Space in Vision Features<br><a href='http://arxiv.org/pdf/2607.14228'>论文</a></td><td>这篇论文研究了视觉基础模型是否内在地构建了反映三维欧几里得空间性质的特征表示。区别于以往通过回归深度或法向量等图像中心量来探测3D感知的方法，作者从拓扑和几何双重视角提出探测方案：互邻域指标衡量特征邻域与空间拓扑的对齐程度，而庞加莱适配器测试静态场景中相机运动几何在潜在位移上的线性可达性。实验表明，即使没有直接的3D监督或主动代理训练，自监督视觉模型在恰当探测下也拥有与三维欧几里得空间高度相关的潜在子空间。基于这一发现，作者进一步提出了&quot;潜在空间导航&quot;方法，可绕过显式三维重建直接在潜在空间中完成视觉里程计和定位任务。
+<tr><td>2026-07-15</td><td>SeeSE3: Emergence of 3D Space in Vision Features<br><a href='http://arxiv.org/pdf/2607.14228'>论文</a></td><td>这篇论文探讨视觉基础模型的特征空间是否自然编码了三维欧几里得空间的内在结构。区别于以往通过回归深度或法线等图像级量来探测3D感知的工作，作者从拓扑与几何双重视角分析视觉特征空间与SE(3)变换群的关系，并得出若干重要发现。
 
-本文的核心创新点如下：
-◆ 提出基于SE(3)变换群的探测框架，从拓扑与几何双重视角评估视觉特征与三维欧几里得空间的对应关系，突破图像中心量的局限。
-◆ 设计互邻域指标与庞加莱适配器两类新探测工具，分别量化特征邻域与空间拓扑的对齐以及相机运动几何在潜在空间的线性可达性。
-◆ 首次系统揭示自监督视觉模型中潜藏着与三维欧几里得空间强相关的子结构，证明3D空间感知可从无3D监督的训练中自发涌现。
-◆ 提出潜在空间导航技术，在潜在空间中直接实现视觉里程计与定位，无需显式三维重建，开辟了视觉定位的新范式。</td></tr>
-<tr><td>2026-07-15</td><td>Depth-Regularized JEPA World Models Learn More Transferable Representations from Real Outdoor Robot Data<br><a href='http://arxiv.org/pdf/2607.16314'>论文</a></td><td>本文针对复杂户外机器人视频的视觉挑战,提出一种深度正则化的JEPA世界模型,通过引入深度几何先验与SIGReg潜空间正则化器,显著提升了模型在真实场景中的表征迁移能力,且不增加推理开销。◆创新一:首次将深度监督融入JEPA训练,作为几何先验使模型直接从机器人视频中学习更鲁棒的潜动力学,有效应对户外环境的视觉复杂度。◆创新二:将深度监督与各向同性诱导正则化器SIGReg协同优化,目标是获取与场景几何一致的最高熵表征,兼顾潜空间多样性与结构化组织。◆创新三:采用仅在训练阶段生效的过参数化策略,以更高模型容量应对任务复杂度,同时保持推理时的高效性。◆实验在18M参数的农业机器人视频上训练,相比基线LeWM将视觉里程计探针误差降低33%,在域内外惊喜分离度与多步推演保真度上均显著提升,且增益随推演步长增大而扩大。◆值得注意的是,模型对光照、阴影等非纯几何物理现象的理解也得到增强,表明几何先验可有效促进世界模型的跨任务泛化与表征迁移。</td></tr>
+◆提出互邻域度量指标，量化特征邻域结构与空间拓扑的对齐程度
+◆设计Poincaré Adapter探针，检验静态场景中相机运动几何在潜在位移上的线性可及性
+◆证明自监督视觉模型在潜空间中蕴含与三维欧几里得空间高度相关的子结构
+◆提出&quot;潜空间导航&quot;新范式，无需显式三维重建即可在潜空间完成视觉里程计与定位
+
+该研究表明，三维几何感知并非必须依赖显式3D监督或主动交互即可在表征中涌现，这一发现为纯潜空间的视觉定位与导航研究提供了新方向。</td></tr>
+<tr><td>2026-07-15</td><td>Depth-Regularized JEPA World Models Learn More Transferable Representations from Real Outdoor Robot Data<br><a href='http://arxiv.org/pdf/2607.16314'>论文</a></td><td>本文针对真实户外机器人视频视觉复杂度高、JEPA世界模型难以学习鲁棒动态的挑战，提出将深度作为几何先验融入训练过程。通过在训练阶段引入深度监督与各向同性诱导正则化器SIGReg，最大化潜在表示的任务无关多样性，同时约束其组织方式，使表示保持与场景几何一致的最高熵形式。
+
+◆在仅训练阶段加入过参数化策略，以承担更高复杂度而不增加推理开销。
+
+◆该方法在18M参数的紧凑模型上训练后，相比基线LeWM，视觉里程计探针误差降低33%。
+
+◆在域内和域外TartanGround基准上显著提升惊喜分数分离度，多步潜在推演保真度在域偏移下亦明显改善，且增益随推演时长增加而扩大。
+
+◆在光照、阴影等非直接关联3D几何的物理理解任务上也观察到可迁移性提升，证明深度作为物理基础先验能以轻量级方式增强紧凑JEPA世界模型的泛化能力，且无需额外推理开销。</td></tr>
 <tr><td>2026-07-14</td><td>PixelLoop: Shortcut Topological Navigation with Pixel-Level Loops<br><a href='http://arxiv.org/pdf/2607.12811'>论文</a> | <a href='https://pixelloop-nav.github.io/'>代码</a></td><td>本文研究拓扑地图中的回环检测问题,聚焦于在纯拓扑表示中回环对导航的具体作用与下游影响。区别于传统基于全局位姿的SLAM回环,作者认为拓扑地图中的回环是连接不同路径的捷径,而非仅用于坐标对齐。
 
 ◆ 在像素空间直接引入回环闭合,提出PixelLoop方法,利用基于像素级相对3D几何的稠密拓扑表示,使回环作为稠密的拓扑捷径改变规划连通性和代价传播。
@@ -1093,13 +1102,12 @@
 ◆消光偏差的大小强烈依赖于星系在主序上的位置：低于主序的星系偏差最大（ΔA_V约0.40 mag），主序上星系约0.28 mag，高于主序的星系仅约0.07 mag，呈现明显的渐进趋势。
 
 ◆该结果揭示了kpc尺度上的消光不仅受局部恒星形成活动调控，还受宿主星系整体演化状态的影响，提示本地校准的消光关系不能简单外推至更高红移的星系研究。</td></tr>
-<tr><td>2026-07-06</td><td>Reference-Induced Consensus for Selective Posed-Reference Visual Localization<br><a href='http://arxiv.org/pdf/2607.04722'>论文</a> | <a href='https://github.com/SNU-DLLAB/ric_loc'>代码</a></td><td>本文提出RIC-Loc，一种无需场景训练和SfM三维点云地图的位姿参考视觉定位方法。该方法利用冻结的VGGT网络同时预测查询图像的相机位姿、深度及查询与参考图像之间的对应轨迹，每个参考图像通过相对位姿变换生成一个SE(3)位姿假设，再通过鲁棒共识机制融合得到最终位姿估计。
+<tr><td>2026-07-06</td><td>Reference-Induced Consensus for Selective Posed-Reference Visual Localization<br><a href='http://arxiv.org/pdf/2607.04722'>论文</a> | <a href='https://github.com/SNU-DLLAB/ric_loc'>代码</a></td><td>本文提出RIC-Loc，一种无需场景训练、且主估计器不依赖SfM三维点图的位姿参考视觉定位方法。方法利用冻结的VGGT模型预测查询图像与选定参考图像的相机位姿、深度及跨图像轨迹特征，每个参考图像独立诱导一个SE(3)位姿假设，再通过鲁棒共识机制估计最终位姿。该设计的关键创新在于保留了假设结构，从而衍生出两个互补的可靠性评分：空间分散度与轨迹条件协方差分数，二者协同实现了无需真值的失效检测。
 
-◆ 无需预建SfM三维点云、2D-3D匹配或PnP求解，直接从参考位姿和VGGT特征出发完成定位，摆脱对场景训练的依赖。
-
-◆ 基于假设结构提出两种可靠性评分——空间离散度评分和轨迹条件协方差评分，二者在失败检测上互补，分别适用于纹理丰富和低纹理场景。
-
-◆ 在多个室内、室外及大规模低纹理基准上，无需逐场景训练即达到与基于结构方法相当的精度，并优于同类的前馈基线方法，验证了选择性位姿参考定位范式的有效性。</td></tr>
+◆提出不依赖SfM三维点图和PnP的位姿参考定位框架，仅通过VGGT与参考位姿即可完成定位
+◆利用多参考诱导的假设集合结构，提取空间分散度与轨迹协方差两种互补的可靠性评分
+◆两种评分在不同场景下呈现互补优势：纹理场景联合策略最强，低纹理场景协方差分数更优
+◆在多种室内、室外及大规模低纹理基准上，无需真值标签即可实现稳定的选择性定位运行模式...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-04</td><td>PRISM3D: Probabilistic Refinement and Robust Initialization for Physically Consistent Scene Modeling under Extreme Motion Blur<br><a href='http://arxiv.org/pdf/2607.03855'>论文</a></td><td>本文针对极端运动模糊图像下的盲三维场景重建难题,提出统一框架PRISM3D,突破了传统SfM在严重退化输入下失效的瓶颈。其核心创新与贡献如下:
 
 ◆ 提出基于VGGSfM密集跟踪的鲁棒初始化策略,在特征匹配失败的极端模糊条件下恢复全局拓扑,是首个有效利用该范式从极端运动模糊引导3D高斯泼溅自举的工作。
@@ -1405,11 +1413,7 @@
 ◆将时间顺序信息作为一等公民用于可靠回环检测。
 ◆在全局优化中融合单目度量深度先验，提高重建精度。
 ◆在极端运动与视觉对称等挑战性场景下，显著优于现有SLAM和SfM方法。</td></tr>
-<tr><td>2026-07-29</td><td>Robust RPC Bundle Adjustment for Multi-Date Satellite Imagery with Season-Invariant Correspondences<br><a href='http://arxiv.org/pdf/2607.26973'>论文</a></td><td>本文针对多时相卫星影像中传统手工特征匹配因季节、光照和地表覆盖变化而失效的问题，提出了一种面向RPC模型精化的外观感知处理流程。该方法将学习型局部特征匹配与全局图像描述子相结合，前者用于提取跨季节不变的特征对应，后者用于筛选视觉兼容的影像对以构建稳健的匹配图。实验在WorldView-3多季节数据集上验证，该流程在无控制点的相对RPC精化任务中，几何一致性误差显著低于开源基线方法，同时将匹配耗时大幅压缩。在包含39至42视图的影像集上，方法有效减少了冗余和易错的匹配，同时保持了匹配图的连通性，从而推动了多时相卫星影像的高精度几何处理应用。
-
-◆ 融合学习型局部特征匹配与全局图像描述子，构建外观感知的RPC精化流程
-◆ 利用全局描述子预先筛选视觉兼容影像对，降低冗余匹配并保持图连通性
-◆ 在WorldView-3多季节数据上实现更低几何误差并显著缩短匹配时间...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-29</td><td>Robust RPC Bundle Adjustment for Multi-Date Satellite Imagery with Season-Invariant Correspondences<br><a href='http://arxiv.org/pdf/2607.26973'>论文</a></td><td>针对多日期卫星影像中季节、照度等地表变化导致的跨时相匹配难题，传统基于手工特征的RPC光束法平差方法难以获得稳健的同名点。本文提出一种感知外观的RPC精修流水线，将学习驱动的局部特征匹配与全局图像描述子筛选相结合，以提升无GCP条件下多视图相对RPC精修的精度与效率。该流水线在匹配前对图像对进行兼容性筛选，再以学习特征完成对应构建，从而在异时相集合上兼顾了连接的完整性与匹配的可靠性。◆ 采用学习型局部特征匹配获取对季节变化稳健的同名点对应，解决异时相图像间传统手工特征匹配易失效的问题。◆ 引入全局图像描述子选择视觉兼容的图像对，剔除冗余和易错匹配，同时保持匹配图的整体连通性。◆ 在39至42视图的季节多样WorldView-3影像集上验证，方法在几何一致性误差和匹配耗时两方面均优于现有开源基线，使多日期卫星影像的RPC精修更加鲁棒高效。</td></tr>
 <tr><td>2026-07-26</td><td>Robust 6-DoF Object Pose Tracking with Built-In Recovery under Occlusions and Rapid Object Motions<br><a href='http://arxiv.org/pdf/2607.23468'>论文</a></td><td>本文针对RGB-D数据下6-DoF物体位姿跟踪中面临的全遮挡和快速运动导致跟踪失败的难题，提出了一种融合学习关键点匹配与优化对齐的鲁棒跟踪方法。该方法在易跟踪场景下达到当前最优精度，同时保持57.6 FPS的实时性能，并在遮挡和快速运动等挑战性条件下表现出最强的鲁棒性。
 
 ◆ 提出一种结合学习式关键点匹配与优化式对齐的高效跟踪框架，实现对未见物体的6-DoF位姿估计。
@@ -1517,15 +1521,15 @@
 ◆通过对图像内像素连通性进行近似和稀疏化，实现了基于像素级图的全局路径规划。
 ◆推导出路点像素代价图表示，并训练以此为条件的控制器来预测轨迹。
 实验证明，基于相对几何的密集像素级代价图比图像或对象级条件变量更准确，在多种任务中显著提升了导航能力。</td></tr>
-<tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects<br><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>3DReflecNet针对反射、透明和弱纹理物体三维重建难题,构建了规模超过22TB的大规模混合数据集,填补了现有数据集多以漫反射纹理物体为主的空白。该数据集结合了基于物理渲染的12,000余个形状生成的超过12万个合成实例,以及消费级设备采集的1,000余个真实物体,共涵盖超过700万帧多视角图像。其核心贡献与创新点如下:
+<tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects<br><a href='http://arxiv.org/pdf/2605.10204'>论文</a></td><td>3DReflecNet是一个针对反射、透明和低纹理物体三维重建的大规模混合数据集，总数据量超过22 TB，旨在解决现有数据集主要关注漫反射物体而无法评估真实复杂材质性能的局限。该数据集包含超过12万条基于物理渲染生成的合成实例（涵盖12,000多个形状）以及超过1,000个使用消费级设备采集的真实物体，合计超过700万帧多视角图像，涵盖多样材质、复杂光照和丰富几何形态。
 
-◆ 提出首个面向反射、透明和弱纹理材料的大规模3D重建基准数据集,数据规模与场景多样性显著超越现有数据集。
+◆ 提出首个大规模面向反射、透明和低纹理物体的3D重建数据集，系统弥补了现有基准在非漫反射材质评估上的空白。
 
-◆ 构建合成与真实数据融合的混合架构,集成PBR渲染、扩散模型与LLM生成的2D图像形状,覆盖丰富材质、复杂光照与几何形态。
+◆ 形状来源兼具真实物体与基于扩散模型从LLM合成2D图像生成的虚拟物体，显著扩展了几何多样性。
 
-◆ 设计五项核心任务基准,涵盖图像匹配、Structure-from-Motion、新视角合成、反射去除与重光照,支持多维度全面评估。
+◆ 设计了涵盖图像匹配、运动恢复结构、新视角合成、反射去除和重光照五大核心任务的统一评测基准。
 
-◆ 通过大量实验揭示当前最先进方法在此类材料上精度显著下降,明确指出现有3D视觉模型在真实复杂材料场景下的鲁棒性不足。</td></tr>
+◆ 通过大量实验证明当前最先进方法在上述任务中精度显著下降，揭示了3D视觉模型在复杂材质下的鲁棒性不足。</td></tr>
 <tr><td>2026-05-06</td><td>Creative Robot Tool Use by Counterfactual Reasoning<br><a href='http://arxiv.org/pdf/2605.05411'>论文</a></td><td>◆ We propose a causal reasoning framework for creative robot tool use where a suitable tool for a task is correctly identified for use beyond its primary objectives.
 ◆ The proposed framework first discovers the causal relationships between the tool and the task by conducting simulated experiments in a dynamics model.
 ◆ We decouple the causal discovery problem into two complementary components: VLM-based feature suggestion and counterfactual tool generation via targeted geometric and physical feature perturbations.</td></tr>
@@ -3864,12 +3868,11 @@ MineXplore填补了开源生态系统的空白，为极端地下环境下的自�
 ◆创新点四:同步生成与相机运动对齐的语音旁白和字幕,产出带解说的完整电影化视频。
 
 在ScanNet++真实环境上的实验表明,该方法在提示对齐、轨迹质量与安全性指标上均优于现有方法。</td></tr>
-<tr><td>2026-07-29</td><td>Risk-Aware Motion Planning with Learned Trajectory Primitives and Probabilistic Safety Assessment<br><a href='http://arxiv.org/pdf/2607.26802'>论文</a></td><td>本论文提出了一种基于径向基函数网络(RBFN)的风险感知运动规划框架,用于城市自动驾驶中的安全高效决策。该方法利用RBFN学习jerk最小化的轨迹基元,为模型预测控制(MPC)提供紧凑且动态一致的搜索空间。候选基元通过基于解析模型的碰撞概率进行风险筛选,再经由优化算法完成轨迹精细化。实验在多种城市驾驶场景中验证了所提方法,结果表明其相比基准方法具有更强的风险感知能力,且车辆约束违反次数更少。该框架有效融合了学习式轨迹生成与基于优化的运动规划,兼顾了安全性、可解释性与计算效率。
+<tr><td>2026-07-29</td><td>Risk-Aware Motion Planning with Learned Trajectory Primitives and Probabilistic Safety Assessment<br><a href='http://arxiv.org/pdf/2607.26802'>论文</a></td><td>本文提出了一种基于径向基函数网络（RBFN）的城市自动驾驶风险感知运动规划框架，将学习型轨迹生成与基于优化的运动规划有机结合。该方法利用RBFN学习jerk-minimal候选轨迹，将模型预测控制的搜索空间压缩至动态一致的子集内，并结合解析碰撞概率评估筛选低风险运动基元，最后通过优化完成轨迹精调。多种城市驾驶场景的实验结果验证了所提框架在提升风险感知能力、减少车辆动力学限值违反方面的优越性，同时降低了求解复杂度。
 
-主要创新点:
-◆ 采用RBFN学习jerk最小轨迹基元,显著缩小MPC搜索空间并保证动态一致性
-◆ 引入解析碰撞概率评估,实现候选运动基元的概率化风险筛选
-◆ 融合学习基元与优化细化,兼顾规划安全性、可解释性与求解效率...[摘要不完整，待更新]</td></tr>
+◆ 采用RBFN学习jerk-minimal轨迹，将数据驱动方法与优化规划相结合
+◆ 引入解析碰撞概率作为风险度量，实现运动基元的风险感知选择
+◆ 将搜索空间压缩至动态一致子集，降低求解复杂度的同时保持安全性与可解释性...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-29</td><td>RLMM-Flow: A Flow-based Mobile Manipulation Framework with Latent-Space Reinforcement Learning<br><a href='http://arxiv.org/pdf/2607.26460'>论文</a></td><td>本文提出RLMM-Flow框架,将基于流的专家策略预训练与潜空间强化学习后训练相结合,用于移动操作中满足多约束的全身动作生成。该方法先从专家示教中学习一个捕捉多模态运动先验的流策略,再冻结该策略,改用潜空间转向网络调整其初始噪声以生成更高价值的动作片段。
 
 ◆ 提出流策略冻结+潜空间转向的训练范式,既保留示教的多模态时序一致性,又通过强化学习突破示教分布的性能上限
@@ -4003,7 +4006,13 @@ MineXplore填补了开源生态系统的空白，为极端地下环境下的自�
 ◆ 提出免训练的安全-社会能量引导机制，融合碰撞、运动学、任务进度与角色条件社会合规等可微分约束。
 
 ◆ 引导机制支持显式调控安全-精度-任务权衡且无需重训，可扩展至最多20台机器人的团队规模。</td></tr>
-<tr><td>2026-07-23</td><td>Grasp, Handover, Rotate: Bimanual Object Reorientation via Compositional Diffusion and Energy-Based Optimization<br><a href='http://arxiv.org/pdf/2607.21341'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-23</td><td>Grasp, Handover, Rotate: Bimanual Object Reorientation via Compositional Diffusion and Energy-Based Optimization<br><a href='http://arxiv.org/pdf/2607.21341'>论文</a></td><td>本文针对双臂物体重定向任务中直接放置受限时难以兼顾多目标优化的难题，提出了BiCompoDiff框架，将抓取选择、交接、重抓取与运动规划在统一框架下联合求解。该方法结合预训练抓取扩散模型与基于能量的双臂规划模型，在反向扩散过程中通过梯度引导注入碰撞避免、轨迹平滑、可微分逆运动学、交接可行性与重抓取安全等多重约束，并利用退火MCMC采样在复合能量景观上精修抓取姿态。实验表明，该方法在多种仿真家庭场景中比基于采样的强基线方法成功率提升超过20%，轨迹平滑度提升最高达37%，且通过真实环境验证了良好的仿真到现实迁移能力。
+
+◆ 提出BiCompoDiff组合式扩散与能量优化框架，首次将抓取选择、交接、重抓取与运动规划进行端到端联合优化。
+◆ 设计基于能量的梯度引导机制，在反向扩散过程中融合碰撞、平滑性、交接可行性与重抓取安全性等多重约束。
+◆ 引入退火MCMC采样在复合能量景观上对抓取姿态进行后验精修，提升解的可行性与多样性。
+◆ 通过可微分逆运动学显式优化关节位移，实现显著的轨迹平滑性提升。
+◆ 框架具备良好的仿真到现实迁移能力，在真实场景中验证了鲁棒性。</td></tr>
 <tr><td>2026-07-23</td><td>HGeo-TopoMap: Boosting Topological Mapping with Hierarchical Geometric Priors<br><a href='http://arxiv.org/pdf/2607.21281'>论文</a> | <a href='https://github.com/lynn-yu/HGeo-TopoMap'>代码</a></td><td>本文针对自动驾驶拓扑建图中车道中心线因缺乏显式标识而难以检测的问题，提出了HGeo-TopoMap方法，通过显式先验地图与隐式空间关系分层提升拓扑建图性能。
 
 ◆设计了几何自适应学习模块，对逆透视变换获得的道路结构地图进行离散化语义与空间特征编码，并结合先验掩码注意力机制选择性地聚焦于信息丰富的区域。
@@ -5703,15 +5712,17 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆打破了传统方法仅局限于单目内参或外参估计的不足，实现了双目内外参的联合估计。
 ◆扩展了GeoCalib算法，将深度神经网络特征提取与可微优化器进行有效整合。
 实验证明该方法在内参标定上极具竞争力，在外参估计上更超越了现有限于单目的方法。</td></tr>
-<tr><td>2026-06-12</td><td>LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling<br><a href='http://arxiv.org/pdf/2606.15010'>论文</a></td><td>LV-Calib提出了一种基于可打印平面标定板的LiDAR-相机外参标定与LiDAR边界响应联合标定框架。该标定板同时作为视觉与LiDAR的共享观测载体:视觉基准提供索引化图像测量,圆形反射率边界则提供LiDAR可观测的结构特征点。
+<tr><td>2026-06-12</td><td>LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling<br><a href='http://arxiv.org/pdf/2606.15010'>论文</a></td><td>LV-Calib提出了一种基于可打印平面标定板的LiDAR-相机外参标定框架，通过圆形反射率边界与视觉标记提供共享观测载体，实现了传感器间的精确联合标定。
 
-◆ 提出针对LiDAR过渡带的精细化特征提取方法,显式建模因有限光束足迹和黑白反射率不连续处混合强度回波导致的展宽与失真过渡带,通过强度与几何约束迭代优化获得高精度三维特征点。
+◆提出可打印平面标定板作为共享观测载体，利用视觉标记提供图像索引测量、圆形反射率边界提供LiDAR可观测结构特征点。
 
-◆ 构建加权重投影一致的外参优化模型,将图像观测保留在重投影域,LiDAR特征残差按精化置信度加权,有效融合两类传感器的测量。
+◆针对有限光束足迹和黑白反射率不连续导致的过渡带展宽与畸变问题，提出从强度和几何约束迭代精化LiDAR侧3D特征点的方法。
 
-◆ 首次利用过渡带样本对LiDAR的俯仰-偏航-距离残差统计进行标定,实现LiDAR边界响应的系统性校准。
+◆构建加权重投影一致性的外参优化，将图像观测保留在重投影域，LiDAR特征残差按精化置信度加权融合。
 
-实验在印制板数据上验证了亚像素重投影精度、毫米级LiDAR特征一致性,并在里程计任务中带来性能提升。代码与数据将开源以支持复现。</td></tr>
+◆利用外参估计结果与过渡带提取，对LiDAR边界响应进行俯仰-偏航-距离残差统计标定。
+
+实验表明该方法在打印板数据上达到亚像素重投影精度与毫米级LiDAR特征一致性，并显著提升里程计性能。</td></tr>
 <tr><td>2026-06-11</td><td>RGB-S: Image-Aligned Tactile Saliency for Robust Dexterous Manipulation<br><a href='http://arxiv.org/pdf/2606.08765'>论文</a></td><td>本文提出RGB-S框架，旨在解决机器人灵巧操作中视觉遮挡下稀疏触觉与密集视觉难以对齐的问题。与隐式学习跨模态对应的方法不同，该框架通过将物理接触显式锚定在图像域中来提升空间推理能力。
 ◆利用机器人正运动学与相机校准，将触觉传感器位置直接投影到RGB图像平面，实现跨模态空间对齐。
 ◆渲染受力调制的高斯显著图，有效建模由运动学与校准误差带来的空间不确定性。
@@ -5859,15 +5870,15 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 核心创新三:推理阶段提出时序感知分布对齐(TADA),无需更新模型参数,在线融合近期帧特征估计与训练时统计量,缓解视频特定的测试时域偏移。
 
 该方法在UAV-Anti-UAV基准上达到最优性能,同时在反无人机和无人机目标跟踪任务上也具有竞争力,验证了语义与时序自适应协同设计的有效性。</td></tr>
-<tr><td>2026-07-28</td><td>Eddeep: a deep-learning framework for fast eddy-current distortion correction in diffusion MRI<br><a href='http://arxiv.org/pdf/2607.26292'>论文</a> | <a href='https://github.com/CIG-UCL/eddeep'>代码</a></td><td>Eddeep是一种用于扩散磁共振成像(dMRI)涡流畸变校正的深度学习框架，旨在解决传统方法(如FSL Eddy)计算成本高的问题。该方法将校正任务分解为两个阶段：首先通过监督式图像翻译网络标准化扩散加权图像与b=0图像的外观，消除对比度差异以提升配准可靠性；其次通过无监督配准网络在物理约束的二次畸变模型下，一次性前向推理同时估计涡流畸变与体积间头动参数。
+<tr><td>2026-07-28</td><td>Eddeep: a deep-learning framework for fast eddy-current distortion correction in diffusion MRI<br><a href='http://arxiv.org/pdf/2607.26292'>论文</a> | <a href='https://github.com/CIG-UCL/eddeep'>代码</a></td><td>本文提出Eddeep深度学习框架，将扩散MRI中涡电流畸变校正问题分解为图像外观标准化与无监督配准两个阶段，采用物理约束的二次畸变模型实现单次前向推理。该方法在UK Biobank数据上训练，在跨域Memodyn数据集上也表现良好，在抖动、扩散峰度残差、信号不规则性和互信息等多项指标上达到与FSL Eddy相当的校正质量，同时大幅缩短推理时间，可支持大规模研究和临床部署。
 
-◆ 提出两阶段深度学习框架，将图像外观标准化与配准解耦，分别用监督式翻译网络和无监督配准网络处理
+◆ 两阶段分解策略：监督式图像翻译网络统一扩散加权与b=0图像外观，消除对比度差异对配准的干扰
 
-◆ 引入物理约束的二次畸变模型，在单次前向传播中同时估计涡流畸变和头动参数，避免迭代优化
+◆ 物理约束的无监督配准网络：基于二次畸变模型，单次前向估计涡电流畸变与体积间头部运动，无需迭代优化
 
-◆ 在UK Biobank数据上训练，并在域内(UK Biobank)和域外(Memodyn)数据集上验证，在抖动、扩散峰度残差、信号不规则性和互信息等多项指标上达到与FSL Eddy相当的校正质量
+◆ 跨数据集泛化能力强：在UK Biobank训练后可迁移到Memodyn等跨域数据上保持性能
 
-◆ 显著降低推理时间，支持大规模研究和临床应用中的快速dMRI处理流水线部署...[摘要不完整，待更新]</td></tr>
+◆ 计算效率显著提升：相比FSL Eddy等迭代方法，推理速度大幅加快，适合大规模研究和临床部署...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-26</td><td>Neuromorphic Object Detection: An In-Depth Study and Future Directions<br><a href='http://arxiv.org/pdf/2607.23576'>论文</a></td><td>本文针对传统帧相机在高速运动模糊和低光环境下目标检测能力不足的问题,系统综述了基于神经形态相机的事件驱动目标检测方法。文章首先对问题进行形式化描述,梳理了可用数据集和评估指标,然后从事件表示、时间建模、多模态融合、异步处理、低延迟处理和能效计算六个维度深入分析了现有方法,并对代表性模型进行了广泛基准测试和对比分析,最后指出了该领域尚未解决的关键问题与未来研究方向。该工作填补了神经形态目标检测领域缺乏统一基准和深度理解的空白,为后续研究提供了重要参考。
 
 ◆ 提出首个针对神经形态目标检测的全面综述与统一基准框架,系统整合了事件表示、时间建模、多模态融合、异步与低延迟处理以及能效计算等多个关键技术维度。
@@ -5986,15 +5997,13 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 构建大规模可见光-事件多模态异常检测基准数据集TJUTCM-Pha，涵盖6.3亿事件与37万余帧视频，填补该领域真实可扩展数据集的空白。
 ◆ 提出对比式多模态预训练框架，跨模态对齐事件流、视频与文本语义，习得判别性强的事件表示。
 ◆ 设计自适应融合模块，动态整合事件时序运动线索与视频空间语义特征，显著提升对光照变化等环境干扰的鲁棒性。</td></tr>
-<tr><td>2026-07-10</td><td>A Numerically-Robust ROS 2 Port of iG-LIO: Diagnosing and Fixing Toolchain-Induced Failures in Incremental GICP LiDAR-Inertial Odometry<br><a href='http://arxiv.org/pdf/2607.09947'>论文</a> | <a href='https://github.com/Forestry-Robotics-UC/ig_lio/tree/ros2-jazzy'>代码</a></td><td>本论文报告了iG-LIO（一种融合广义ICP与点-面约束的紧耦合LiDAR-惯性里程计）从ROS 1到ROS 2 Jazzy的开源移植工作，核心贡献聚焦于诊断并修复移植过程中由现代工具链引发的数值故障，而非算法层面的改动。
+<tr><td>2026-07-10</td><td>A Numerically-Robust ROS 2 Port of iG-LIO: Diagnosing and Fixing Toolchain-Induced Failures in Incremental GICP LiDAR-Inertial Odometry<br><a href='http://arxiv.org/pdf/2607.09947'>论文</a> | <a href='https://github.com/Forestry-Robotics-UC/ig_lio/tree/ros2-jazzy'>代码</a></td><td>本文将原始ROS 1版本的iG-LIO（基于迭代误差状态卡尔曼滤波、融合广义ICP与点面约束的紧耦合LiDAR-惯性里程计）移植到ROS 2 Jazzy平台，并在机械忠实迁移后发现算法虽未改动却出现NaN发散问题。作者深入诊断并定位了两个由现代ROS 2工具链而非算法本身引起的环境相关数值故障根源，并据此完成了从估计算法到新平台环境的完整修复与增强。最终系统在多款主流LiDAR传感器上完成实测验证，为后续研究提供了一个可引用的ROS 2迁移参考。
 
-◆ 发现并解决了两个由ROS 2工具链而非算法本身导致的隐蔽问题：一是QoS不匹配静默丢弃与重排IMU数据，二是oneTBB与Eigen组合中并行归约累加器未初始化引发NaN发散。
-
-◆ 修正了新版Ouster点云字段解析，确保点云运动畸变校正正确，并新增对Velodyne Velarray M1600的支持。
-
-◆ 提供Livox CustomMsg编译门控路径与免驱动的标准PointCloud2路径（如Mid-360），并通过YAML文件暴露运行时配置。
-
-◆ 在Ouster OS0 Rev7、Ouster OS1 Rev7和Livox MID-360上完成实测验证，为同类算法的ROS 2工程化移植提供了可引用的参考。</td></tr>
+核心创新点如下：
+◆ 揭示ROS 2工具链中QoS策略不匹配导致IMU采样静默丢失与乱序的隐蔽故障，并提出针对性修复方案。
+◆ 发现oneTBB与Eigen组合下并行归约累加器未初始化的数值陷阱，解决了高并发计算中的发散问题。
+◆ 修正新版Ouster点云字段解析逻辑，确保点云去畸变正确性，并新增Velodyne Velarray M1600传感器支持。
+◆ 同时提供Livox CustomMsg编译门控路径与无需驱动的标准PointCloud2路径（如Mid-360），通过YAML暴露运行时配置。</td></tr>
 <tr><td>2026-07-09</td><td>EVIS: A Physics-Grounded Event Camera Plugin for NVIDIA Isaac Sim<br><a href='http://arxiv.org/pdf/2607.08098'>论文</a> | <a href='https://github.com/spikelab-jhu/isaac-sim-event-camera-plugin'>代码</a></td><td>该论文提出EVIS，一个基于物理的Isaac Sim事件相机插件，可在物理仿真环境中生成高速、完全标注的事件流，以缓解事件相机标注数据稀缺的问题。插件以极小改动从普通RGB相机迁移而来，继承Isaac Sim的物理引擎与帧级真值，输出可直接用于预训练事件网络的下游任务。
 
 ◆实现了基于对数强度对比度的事件生成模型，并采用逐像素异步参考更新策略以更贴近真实事件相机行为。
@@ -6420,4 +6429,4 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.01
+> 更新于: 2026.08.02
