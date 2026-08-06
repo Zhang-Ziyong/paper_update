@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5030,
+      "stars": 5033,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4468,
+      "stars": 4470,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1296,
+      "stars": 1297,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1023,
+      "stars": 1024,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 561,
+      "stars": 562,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 353,
+      "stars": 354,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -235,7 +235,7 @@
     "M2Mapping": {
       "name": "M2Mapping",
       "url": "https://github.com/hku-mars/M2Mapping",
-      "stars": 265,
+      "stars": 266,
       "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
       "created_at": "2024-09-09",
       "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
@@ -283,7 +283,7 @@
     "LAMM": {
       "name": "LAMM",
       "url": "https://github.com/hku-mars/LAMM",
-      "stars": 205,
+      "stars": 207,
       "description": "",
       "created_at": "2024-08-24",
       "chinese_desc": "LAMM"
@@ -291,7 +291,7 @@
     "SUPER-Hardware": {
       "name": "SUPER-Hardware",
       "url": "https://github.com/hku-mars/SUPER-Hardware",
-      "stars": 210,
+      "stars": 212,
       "description": "",
       "created_at": "2025-03-09",
       "chinese_desc": "SUPER-Hardware"
@@ -373,7 +373,7 @@
     "hfnet": {
       "name": "hfnet",
       "url": "https://github.com/ethz-asl/hfnet",
-      "stars": 876,
+      "stars": 877,
       "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
       "created_at": "2019-02-15",
       "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
@@ -549,7 +549,7 @@
     "glocal_exploration": {
       "name": "glocal_exploration",
       "url": "https://github.com/ethz-asl/glocal_exploration",
-      "stars": 222,
+      "stars": 223,
       "description": "Efficient local and global exploration on submap collections with changing past pose estimates.",
       "created_at": "2020-06-05",
       "chinese_desc": "Efficient local and global exploration on submap c"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 228,
+      "stars": 232,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
