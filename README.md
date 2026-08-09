@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.08.08)
+# 计算机视觉领域最新论文 (2026.08.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -25,15 +25,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots<br><a href='http://arxiv.org/pdf/2608.05647'>论文</a></td><td>KILVO是面向人形机器人的多模态里程计系统,在异步-顺序混合误差状态迭代卡尔曼滤波(ESIKF)框架下,充分利用关节编码器、IMU、LiDAR和相机四种传感器信息,实现了高精度、高效率和高输出率的位姿估计。其核心架构是惯性数据用于预测,腿部运动学以高频异步方式提供本体感知约束,LiDAR几何配准和视觉光度误差则按顺序对外感知进行更新。
+<tr><td>2026-08-06</td><td>KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots<br><a href='http://arxiv.org/pdf/2608.05647'>论文</a></td><td>本文针对人形机器人提出了一种名为KILVO的运动学-惯性-激光-视觉里程计系统，核心是将关节编码器、IMU、激光雷达和相机四类传感器在异步-顺序混合误差状态迭代卡尔曼滤波框架下进行紧耦合融合。该方法在预测阶段使用惯性数据，异步处理腿部运动学信息以提供本体感觉约束，并依次利用激光点云几何配准和视觉光度误差进行外感知更新，从而实现高精度状态估计。
 
-◆ 提出异步-顺序混合ESIKF框架,创新性地将IMU预测、高频腿部运动学约束、LiDAR几何先验和视觉光度误差有机融合,充分发挥各传感器互补优势
-
-◆ 设计了多模态自适应机制,能够在单一或多传感器退化与失效时保持鲁棒运行,显著优于现有融合方法
-
-◆ 集成紧凑型接触估计模块,无需额外传感器即可与状态估计共享信息,提升腿足状态感知能力
-
-◆ 针对人形机器人平台特性进行了深度定制,在公开数据集和多种机器人、步态及真实场景下验证了优越的精度、效率和鲁棒性...[摘要不完整，待更新]</td></tr>
+◆提出异步-顺序混合ESIKF框架，将关节编码器、IMU、LiDAR和相机四源信息高效融合
+◆设计多模态自适应机制，使系统在传感器退化或失效时仍具备强鲁棒性
+◆集成紧凑的接触估计模块，无需额外传感器即可与状态估计共享信息
+◆在多种人形机器人、步态及真实场景下验证，在精度、效率和输出频率上均优于现有融合方法...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>SLAMFormer-$\infty$: Infinite SLAM Transformer for Unbounded Frontend and Backend Processing<br><a href='http://arxiv.org/pdf/2608.03429'>论文</a></td><td>SLAMFormer-∞是首个支持无显式距离限制的前端与后端统一处理的几何Transformer，它突破了传统SLAM系统对范围扩展性的瓶颈。论文提出用记忆条件来定义输入帧的灵活坐标系和尺度，取代了以第一帧为锚点的传统建模范式，使结构条件表达更加丰富灵活。
 
 ◆ 创新点一：提出基于记忆条件的灵活坐标系与尺度定义，摆脱对首帧锚点的依赖，实现无界长程处理能力。
@@ -170,12 +167,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Confidence matters: Leveraging Multi-view Geometric Priors for GS-based Reconstruction<br><a href='http://arxiv.org/pdf/2608.06117'>论文</a></td><td>本文针对3D高斯泼溅(3DGS)方法在几何重建质量上的不足,特别是对高光物体表现较差的问题,提出将几何先验信息集成到3DGS框架中。研究发现,利用视觉几何基础变换器(VGGT)等多视图模型预测的法向量和深度图作为先验,能够显著提升重建质量。
+<tr><td>2026-08-06</td><td>Confidence matters: Leveraging Multi-view Geometric Priors for GS-based Reconstruction<br><a href='http://arxiv.org/pdf/2608.06117'>论文</a></td><td>本文针对3D高斯溅射(3DGS)在高光等复杂场景下几何重建质量不佳的问题,提出将法线和深度等几何先验融入3DGS框架。研究发现,使用VGGT等多视图模型预测的几何先验显著优于单视图替代方案,核心原因在于多视图模型附带输出的置信度图能够对每个预测进行自适应加权,从而大幅提升先验的有效性。实验在标准基准上验证了该方法在重建质量上的一致性提升,尤其在高光物体和复杂场景中增益显著。
 
-◆ 提出将多视图几何先验(法向量和深度)集成到3DGS框架中,改善几何重建效果
-◆ 证明多视图预测先验优于单视图替代方案,得益于多视图模型可同时输出置信度图
-◆ 利用置信度图对预测进行加权,有效提升先验信息的利用效率和重建精度
-◆ 在标准基准测试中实现一致的重建质量提升,并在高光物体等复杂场景中取得显著增益...[摘要不完整，待更新]</td></tr>
+◆ 将法线和深度几何先验集成到3DGS框架,改善高光等困难场景下的几何重建质量
+◆ 揭示多视图预测(VGGT)优于单视图预测,关键在于多视图模型自带置信度图
+◆ 提出利用置信度图对几何先验进行自适应加权,提升先验在不确定区域的鲁棒性
+◆ 在标准基准上取得一致性能提升,在含高光物体的复杂场景中表现尤为突出...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-05</td><td>VLAff: Vision-Language-Affordance Model for Unified Actionable Affordances<br><a href='http://arxiv.org/pdf/2608.05215'>论文</a></td><td>本文针对从人类视频学习机器人操作技能中存在的身体差异问题，提出了一套基于自我中心视频的可操作可供性学习框架。研究者利用三维结构恢复和手部网格重建技术，从人类视频中提取出视觉可供性、抓取可供性和轨迹可供性三种与身体无关的交互表征。
 
 ◆提出统一的可供性提取框架，将人类视频转化为包含交互位置、抓取方式和运动路径的完整可供性表示。
@@ -472,12 +469,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators<br><a href='http://arxiv.org/pdf/2608.06219'>论文</a></td><td>该研究针对核工业表面接触任务中传统操纵杆难以满足精确路径跟踪和力控需求的痛点，设计并评估了一种新型触摸屏遥操作界面，将连续手指运动直接映射为机械臂动作，实现控制与可视化的一体化集成。通过20名参与者的对比用户实验，触摸屏界面相比传统操纵杆将任务完成时间缩短了53.5%（中位数2.50分钟对比5.38分钟），正弦路径覆盖率达90.7%（对比84.1%），且在两种路径几何上均表现出更低的超调量。认知负荷方面，NASA-TLX评分从操纵杆的52分降至触摸屏的43分（降低17.3%），而一键自主模式进一步降至31分（较操纵杆降低40.4%）。研究还综合采集了运动学、生理和行为数据，从任务表现、认知负荷和操作员信任度三个维度全面评估了不同控制方式，并使用Franka Emika Panda机械臂实现了跨国远程操控验证。
+<tr><td>2026-08-06</td><td>Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators<br><a href='http://arxiv.org/pdf/2608.06219'>论文</a></td><td>本文针对核工业表面接触任务（如拭子采样）对高精度遥操作的需求，设计了将连续手指运动直接映射为机械臂运动、并集成控制与可视化功能的新型触摸屏遥操作界面。基于Franka Emika Panda机械臂的跨国远程控制，20名参与者的对比实验结果显示，触摸屏组任务完成时间较手柄组缩短53.5%（中位数2.50分钟对比5.38分钟），正弦路径覆盖率从84.1%提升至90.7%，且超调量显著降低。NASA-TLX认知负荷评分从手柄组的52分降至触摸屏组的43分（-17.3%），一键自主模式进一步降至31分。研究还通过运动学、生理与行为多维数据，系统评估了任务表现、认知负荷与操作员信任度，验证了触摸屏界面在效率、精度和可用性方面的综合优势。
 
-◆ 提出一种将连续手指运动直接映射为机械臂运动的触摸屏遥操作新范式，实现更精细的速度控制与控制-可视化一体化
-◆ 构建多模态遥操作评估框架，同步采集运动学、生理与行为数据，综合量化任务表现、认知负荷与操作员信任度
-◆ 通过20人跨国用户实验，定量验证触摸屏界面对表面接触类遥操作任务在效率、精度和认知负荷上的显著优势
-◆ 揭示一键自主模式在显著降低认知负荷方面的潜力，为自主性与人工遥操作的协同设计提供依据...[摘要不完整，待更新]</td></tr>
+创新点：
+◆ 提出连续手指运动到机械臂运动的直接映射控制方式，突破传统手柄的离散输入限制
+◆ 在单一界面集成控制与实时可视化功能，提升操作的直观性与自然性
+◆ 构建融合运动学与生理行为数据的多维度评估方法
+◆ 面向核工业高精度面接触任务场景，验证触摸屏遥操作在效率、精度和认知负荷方面的综合优势...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-05</td><td>From Transparent Labware Segmentation to Collision Avoidance: A Real-Time Edge-Aware Perception Pipeline<br><a href='http://arxiv.org/pdf/2608.04769'>论文</a> | <a href='https://github.com/havishamy/TransYOLO_3D'>代码</a></td><td>本文针对透明实验室玻璃器皿因折射、镜面反射和缺乏稳定内部纹理而难以被传统分割方法准确识别的问题，提出了一种面向实时机器人碰撞规避的边缘感知实例分割与三维感知流水线。
 
 ◆ 提出了一种将轻量级边缘检测分支与一阶段实时实例分割主干相结合的框架，通过边缘引导注意力融合和无参数SimAM模块增强网络对透明物体边界轮廓的感知能力。
@@ -487,11 +485,12 @@
 ◆ 实现了Boundary F-score达到97.80的领先精度，超越FastSAM框架18.93个BF点，同时保持7.1ms的推理速度，参数量仅为最接近竞品的2.85%。
 
 ◆ 通过掩码质心的多视图三角化获取三维位置信息，构建保守的包围体碰撞约束，在真实机器人实验中实现93.3%的碰撞规避成功率。</td></tr>
-<tr><td>2026-08-05</td><td>OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing<br><a href='http://arxiv.org/pdf/2608.04434'>论文</a></td><td>本文针对电子设计自动化(EDA)中PCB布线这一关键但未被充分探索的难题,提出了首个大规模工业级基准OmniRouting,填补了LLM在严格几何、拓扑和电气约束下进行复杂布线推理能力评估的研究空白。该基准包含1681个工业级原理图耦合的PCB设计,涵盖板几何信息、人工可布线元件布局、封装、焊盘位置、网络表、叠层结构和布线约束等丰富数据,并设计了四项任务:几何布线推理、设计规则感知布线推理、电气功能推理以及工具增强的智能体布线。实验结果揭示了当前LMM在PCB布线方面存在路径规划能力弱、设计规则约束遵循差以及电气功能保持不一致等显著缺陷。该工作将开源所有基准数据、评估代码和工具接口,为未来研究提供重要基础。
+<tr><td>2026-08-05</td><td>OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing<br><a href='http://arxiv.org/pdf/2608.04434'>论文</a></td><td>OmniRouting是首个面向PCB布线推理的大规模基准，填补了LLM在电子设计自动化复杂约束布线任务上的评估空白。该基准包含1681个工业级原理图耦合PCB设计，涵盖板几何、组件布局、焊盘位置、网络表与叠层信息等真实工程数据。研究提出四项评估任务：几何布线推理、设计规则感知布线推理、电气功能推理及工具增强智能体布线，全面考察模型在路径规划、规则遵守和电气连接保持方面的能力。实验系统揭示了当前大型多模态模型在PCB布线中的显著缺陷，包括弱路径规划能力、差设计规则遵循和不一致的电气功能保持。作者承诺开源全部基准数据、评估代码和工具接口以促进后续研究。
 
-◆ 构建首个面向PCB布线的大规模工业级LLM评测基准,填补了EDA领域空白
-◆ 提出包含几何、规则、电气和工具增强四层次的综合任务体系
-◆ 提供1681个原理图耦合的真实工业级PCB设计,数据资源全面开源...[摘要不完整，待更新]</td></tr>
+◆ 首创工业级原理图耦合的PCB布线推理基准，弥补EDA领域LLM评估空白
+◆ 构建几何、设计规则、电气功能与工具增强的四维任务评估体系
+◆ 实证揭示LMM在路径规划、规则遵守、电气一致性方面的关键能力局限
+◆ 承诺完全开源基准数据、评估代码与工具接口推动社区研究...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>Intrinsic Stochastic Successive Convexification on SE(3) for Chance Constrained 6-DOF Rendezvous<br><a href='http://arxiv.org/pdf/2608.04114'>论文</a></td><td>本文针对六自由度航天器交会轨迹优化问题，提出了一种在特殊欧氏群SE(3)上构建的内蕴随机逐次凸化方法。
 
 ◆ 将原本定义于欧氏空间的随机逐次凸化框架拓展至SE(3)非线性流形，实现位姿轨迹的协方差操纵与机会约束优化的一致求解。
@@ -648,11 +647,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Acoustic-driven millimetric helical robot: ultrasonic synergistic manipulation in confined fluidic environment<br><a href='http://arxiv.org/pdf/2608.05746'>论文</a></td><td>本文针对声场操控难以驱动毫米尺度机器人在受限生物环境中运动这一难题，提出了一种协同多声场操控方法，通过声辐射力与声流的协同作用实现毫米级螺旋机器人的可控运动与推进增强。研究者采用多物理场仿真揭示了组合声场下机器人的动力学行为，并实验验证了平面导航、斜面爬升和垂直运动等多种运动模式。半自主导航实验进一步表明超声协同显著提升了机器人的机动性能，而猪静脉血管内的体外测试证实了协同声场在生物相关受限环境中支持单向与往复运动的可行性。该工作为声学微操控向毫米尺度的拓展提供了机理认识，并为需要灵活可控运动的生物医学应用奠定了基础。
+<tr><td>2026-08-06</td><td>Acoustic-driven millimetric helical robot: ultrasonic synergistic manipulation in confined fluidic environment<br><a href='http://arxiv.org/pdf/2608.05746'>论文</a></td><td>本文提出了一种协同多声场驱动策略,通过将声辐射力与声流效应相结合,实现了毫米级螺旋机器人在受限生物流体环境中的可控推进,有效解决了传统声学操控在毫米尺度推进效率不足的问题。研究团队借助多物理场仿真揭示了组合声场下螺旋机器人的动力学机制,并通过实验验证了其平面导航、斜面爬升和垂直运动等多模态运动能力,以及半自主导航下的机动性显著提升。进一步的体外猪静脉血管实验证明,协同声场能够支持单向与往复运动,展现了在生物医学受限环境中的适用性。
 
-◆ 提出协同多声场操控策略，融合声辐射力与声流作用以驱动毫米级螺旋机器人
-◆ 通过多物理场仿真与平面、斜面、垂直等多种运动模式的实验验证，揭示超声协同提升机动性的机理
-◆ 在猪静脉血管等生物受限环境中实现单向与往复运动，拓展了毫米级声操控的生物医学应用前景...[摘要不完整，待更新]</td></tr>
+◆提出声辐射力与声流协同的多声场驱动新策略,突破毫米级声学推进效率瓶颈
+◆建立多物理场仿真模型,系统阐明组合声场下毫米螺旋机器人的运动动力学机制
+◆实现平面、斜面与垂直多模态运动及半自主导航,显著提升机动性能
+◆在猪静脉血管体外模型中验证受限生物环境下的可控运动,为体内介入应用奠定基础...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-06</td><td>PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds<br><a href='http://arxiv.org/pdf/2608.05586'>论文</a></td><td>针对自主机器人导航中实时走廊生成的计算瓶颈,本文提出PathCover框架及其核心算法RISP,直接从原始点云数据构建凸多面体走廊。
 
 ◆ 提出RISP随机化迭代空间划分算法,在温和概率消除条件下实现期望线性时间复杂度,比现有走廊生成方法快一个数量级,同时保持相当的走廊体积。
@@ -1300,12 +1300,12 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5038</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4476</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5039</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4478</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2438</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1621</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1622</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1617</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1470</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1471</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1297</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1280</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1030</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
@@ -1316,24 +1316,24 @@
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>745</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>731</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>718</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>657</td><td>Voxel-SLAM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>658</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>647</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>626</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>605</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>601</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>565</td><td>A computationally efficient and convenient toolkit</td></tr>
-<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>563</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>521</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
+<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>564</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>522</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>502</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>449</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>439</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>354</td><td>btc_descriptor</td></tr>
+<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>355</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>345</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>266</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>263</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>255</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>239</td><td>In this repository, we present our research works </td></tr>
-<tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>225</td><td>dyn_small_obs_avoidance</td></tr>
+<tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>226</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>223</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>212</td><td>SUPER-Hardware</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>207</td><td>LAMM</td></tr>
@@ -1363,7 +1363,7 @@
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>594</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>575</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>572</td><td>MAV planning tools using voxblox as the map repres</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>573</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>567</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>553</td><td>Voxblox-based Pose graph optimization</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>518</td><td>Python tools to perform time-synchronization and h</td></tr>
@@ -1411,4 +1411,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.08.08
+> 更新于: 2026.08.09
