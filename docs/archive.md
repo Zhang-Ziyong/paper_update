@@ -1,33 +1,41 @@
-# 历史论文归档 (2026.08.09)
+# 历史论文归档 (2026.08.10)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (153篇)</a></li>
+<li><a href='#slam'>SLAM (154篇)</a></li>
 <li><a href='#sfm'>SFM (76篇)</a></li>
-<li><a href='#image-matching'>Image Matching (29篇)</a></li>
-<li><a href='#obstacle-avoidance'>Obstacle Avoidance (175篇)</a></li>
-<li><a href='#navigation'>Navigation (192篇)</a></li>
-<li><a href='#motion-planning'>Motion Planning (281篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (46篇)</a></li>
+<li><a href='#image-matching'>Image Matching (30篇)</a></li>
+<li><a href='#obstacle-avoidance'>Obstacle Avoidance (176篇)</a></li>
+<li><a href='#navigation'>Navigation (195篇)</a></li>
+<li><a href='#motion-planning'>Motion Planning (288篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (47篇)</a></li>
 <li><a href='#sensor-undistortion'>Sensor Undistortion (96篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (153篇)</h2>
+<h2 id='slam'>SLAM (154篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots<br><a href='http://arxiv.org/pdf/2608.05647'>论文</a></td><td>本文针对人形机器人提出了一种名为KILVO的运动学-惯性-激光-视觉里程计系统，核心是将关节编码器、IMU、激光雷达和相机四类传感器在异步-顺序混合误差状态迭代卡尔曼滤波框架下进行紧耦合融合。该方法在预测阶段使用惯性数据，异步处理腿部运动学信息以提供本体感觉约束，并依次利用激光点云几何配准和视觉光度误差进行外感知更新，从而实现高精度状态估计。
+<tr><td>2026-08-06</td><td>KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots<br><a href='http://arxiv.org/pdf/2608.05647'>论文</a></td><td>本文提出KILVO，一种面向人形机器人的运动学-惯性-激光-视觉里程计系统。该方法将关节编码器、IMU、LiDAR和相机在异步-顺序混合误差状态迭代卡尔曼滤波(ESIKF)框架下进行紧耦合融合，其中惯性数据用于预测，腿部运动学信息以高频率异步处理以提供本体感受约束，而LiDAR和视觉则按顺序进行外感受更新。
 
-◆提出异步-顺序混合ESIKF框架，将关节编码器、IMU、LiDAR和相机四源信息高效融合
-◆设计多模态自适应机制，使系统在传感器退化或失效时仍具备强鲁棒性
-◆集成紧凑的接触估计模块，无需额外传感器即可与状态估计共享信息
-◆在多种人形机器人、步态及真实场景下验证，在精度、效率和输出频率上均优于现有融合方法...[摘要不完整，待更新]</td></tr>
+◆提出首个面向人形机器人的四模态紧耦合里程计算法，统一融合关节编码器、IMU、LiDAR与相机，适配平台特性。
+◆设计异步-顺序混合ESIKF架构，惯性高频预测、腿部运动学异步处理、LiDAR与视觉顺序外感受更新，兼顾效率与精度。
+◆具备多模态自适应能力，可针对单一或多传感器退化与失效进行鲁棒切换，无需额外硬件。
+◆开发紧凑的接触估计模块，与状态估计共享信息，无需额外传感器即可辅助里程计精度提升。
+在公开数据集与多平台、多步态的真实场景实验中，KILVO在精度、效率和输出频率方面均优于现有融合方法。</td></tr>
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文针对嵌入式视觉中的实时线段检测任务，提出了一种基于步长算法的低延迟ASIC架构。传统深度学习精度高但资源消耗大，经典算法延迟不固定且与内容相关，难以满足资源受限平台的需求。该架构完全流水线化，每个时钟周期处理一个像素，延迟完全确定，在45nm CMOS工艺下综合实现面积为0.412 mm²、VGA分辨率下可达325帧/秒、Full HD下48帧/秒的吞吐量，功耗仅25.54 mW，125 MHz时性能进一步提升至406 FPS。相比基于线段霍夫变换的90nm ASIC实现，功耗降低49%，帧率提升超过1.6倍。
+
+◆ 基于寄存器的行缓冲与数据复用机制，减少片外存储访问
+◆ 采用无乘法器的MCM（多常量乘法）实现滤波，降低硬件复杂度与功耗
+◆ 8类角度量化策略，简化角度分类与匹配逻辑
+◆ 类CAM的关联存储结构实现单周期匹配，提升关键路径效率
+◆ 优化的重复线段去除机制，避免冗余输出带来的额外开销...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>SLAMFormer-$\infty$: Infinite SLAM Transformer for Unbounded Frontend and Backend Processing<br><a href='http://arxiv.org/pdf/2608.03429'>论文</a></td><td>SLAMFormer-∞是首个支持无显式距离限制的前端与后端统一处理的几何Transformer，它突破了传统SLAM系统对范围扩展性的瓶颈。论文提出用记忆条件来定义输入帧的灵活坐标系和尺度，取代了以第一帧为锚点的传统建模范式，使结构条件表达更加丰富灵活。
 
 ◆ 创新点一：提出基于记忆条件的灵活坐标系与尺度定义，摆脱对首帧锚点的依赖，实现无界长程处理能力。
@@ -997,12 +1005,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Confidence matters: Leveraging Multi-view Geometric Priors for GS-based Reconstruction<br><a href='http://arxiv.org/pdf/2608.06117'>论文</a></td><td>本文针对3D高斯溅射(3DGS)在高光等复杂场景下几何重建质量不佳的问题,提出将法线和深度等几何先验融入3DGS框架。研究发现,使用VGGT等多视图模型预测的几何先验显著优于单视图替代方案,核心原因在于多视图模型附带输出的置信度图能够对每个预测进行自适应加权,从而大幅提升先验的有效性。实验在标准基准上验证了该方法在重建质量上的一致性提升,尤其在高光物体和复杂场景中增益显著。
+<tr><td>2026-08-06</td><td>Confidence matters: Leveraging Multi-view Geometric Priors for GS-based Reconstruction<br><a href='http://arxiv.org/pdf/2608.06117'>论文</a></td><td>本文针对3D高斯溅射(3DGS)在几何重建尤其是高镜面物体上表现欠佳的问题，系统研究将预测的法线和深度图等几何先验融入3DGS框架的方案。
 
-◆ 将法线和深度几何先验集成到3DGS框架,改善高光等困难场景下的几何重建质量
-◆ 揭示多视图预测(VGGT)优于单视图预测,关键在于多视图模型自带置信度图
-◆ 提出利用置信度图对几何先验进行自适应加权,提升先验在不确定区域的鲁棒性
-◆ 在标准基准上取得一致性能提升,在含高光物体的复杂场景中表现尤为突出...[摘要不完整，待更新]</td></tr>
+◆研究发现多视图几何预测器（如视觉几何接地Transformer VGGT）显著优于单视图方案，关键在于多视图模型天然附带置信度图，可对每像素预测进行自适应加权。
+
+◆提出基于置信度的先验融合策略，将VGGT输出的法线、深度及其置信度作为软约束嵌入3DGS优化过程，使模型在高不确定性区域保持鲁棒。
+
+◆在标准基准上的大量实验表明，该方法在重建质量上获得一致提升，并对含镜面物体的复杂场景带来尤为显著的增益。
+
+该工作揭示了多视图几何先验及置信度机制是突破3DGS几何重建瓶颈的关键路径。</td></tr>
 <tr><td>2026-08-05</td><td>VLAff: Vision-Language-Affordance Model for Unified Actionable Affordances<br><a href='http://arxiv.org/pdf/2608.05215'>论文</a></td><td>本文针对从人类视频学习机器人操作技能中存在的身体差异问题，提出了一套基于自我中心视频的可操作可供性学习框架。研究者利用三维结构恢复和手部网格重建技术，从人类视频中提取出视觉可供性、抓取可供性和轨迹可供性三种与身体无关的交互表征。
 
 ◆提出统一的可供性提取框架，将人类视频转化为包含交互位置、抓取方式和运动路径的完整可供性表示。
@@ -1142,27 +1153,22 @@
 ◆ 通过全局运动平均和光束法平差精修相机位姿、消除尺度不一致，并恢复稠密场景几何。
 
 在室内、室外、大规模驾驶和无序SfM等多类基准上，Glob3R显著优于前馈基础模型基线和现有可扩展重建方法，且比经典SfM更具鲁棒性；精修后的位姿还显著提升了神经渲染质量，验证了基础模型先验与全局几何优化结合的有效性。</td></tr>
-<tr><td>2026-07-10</td><td>Empirical Pedestrian Safety Assessment in a Mobile Robot Using a Predictive Social Force Model<br><a href='http://arxiv.org/pdf/2607.09192'>论文</a></td><td>本文针对移动机器人在人行道与行人共享环境中的安全问题,提出将预测社会力向量在有限时间范围内进行积分的新方法。研究者构建了四种社会力模型变体(传统SFM、TSFM、PSFM、PTSFM)并在非完整约束移动机器人上实现,开展了志愿者面对面交互的实车实验。
-
-◆ 提出预测型社会力模型PSFM和PTSFM,通过在有限时间窗口内积分预测的社会力向量来提升导航的前瞻性。
-
-◆ 设计了系统化的客观与主观安全综合评估框架,融合最小PTTC、平均速度、最小距离、横向距离和最大轨迹曲率等多维度客观指标,辅以Likert量表主观舒适度调查。
-
-◆ 通过四模型对比实验证明,PTTC机制的引入能显著提升安全指标,而预测机制在单人场景下带来的额外收益有限,部分参与者虽感知到更平滑的运动和更合适的速度,但Mann-Whitney检验显示主观评分无统计学显著差异。</td></tr>
+<tr><td>2026-07-10</td><td>Empirical Pedestrian Safety Assessment in a Mobile Robot Using a Predictive Social Force Model<br><a href='http://arxiv.org/pdf/2607.09192'>论文</a></td><td>本文针对移动机器人在人行道与行人共享场景中的安全问题，提出基于预测社会力模型（PSFM）和预测PTTC-社会力模型（PTSFM）的行人安全评估方法。
+◆ 在传统社会力模型（SFM）中引入有限时间范围内的预测社会力向量，增强模型的前瞻性与动态适应性。
+◆ 在非完整约束移动机器人上系统实现并对比SFM、TSFM、PSFM和PTSFM四种变体。
+◆ 设计志愿者面对面实验场景，从客观指标（最小PTTC、平均速度、最小距离、横向距离、最大轨迹曲率）与主观李克特问卷（舒适性、流畅性、距离与速度适宜性）双维度综合评估安全性。
+研究发现PTTC集成显著改善安全指标，而预测机制在单行人场景下贡献有限且未带来显著主观差异。</td></tr>
 <tr><td>2026-07-09</td><td>PanoImager: Geometry-Guided Novel View Synthesis and Reconstruction from Sparse Panoramic Views<br><a href='http://arxiv.org/pdf/2606.27071'>论文</a></td><td>◆ PanoImager针对稀疏全景图在旋转主导、弱视差场景下SfM/SLAM初始化不稳定的问题，提出了一个无需SfM的三维重建框架。
 ◆ 方法将全景图分解为局部透视视图，并利用前馈式位姿与深度先验提供初始几何约束。
 ◆ 通过几何条件扩散模型合成辅助新视角，补充稀疏输入中缺失的观测信息。
 ◆ 结合深度引导的3D Gaussian Splatting优化，提升跨视角一致性并稳定重建过程。
 ◆ 实验表明，该方法在极端稀疏全景输入下具有更好的鲁棒性，可作为SfM/SLAM失败时的离线地图细化组件。</td></tr>
-<tr><td>2026-07-09</td><td>Deep Spectroscopic Follow-Up of Maisie&#x27;s Galaxy -- A Typical Galaxy in the Early Universe<br><a href='http://arxiv.org/pdf/2607.08749'>论文</a></td><td>本文利用JWST两个Cycle 3 NIRSpec G395M深场项目（累计超过19小时曝光）结合MIRI/LRS观测，对高红移星系Maisie&#x27;s Galaxy进行了深度光谱后续研究，将红移精确更新为z=11.408±0.005。通过测量[OII]双线获得电子密度和恒星形成率，发现该星系位于恒星形成主序上，表明它只是早期宇宙中一个典型而非极端的天体。
+<tr><td>2026-07-09</td><td>Deep Spectroscopic Follow-Up of Maisie&#x27;s Galaxy -- A Typical Galaxy in the Early Universe<br><a href='http://arxiv.org/pdf/2607.08749'>论文</a></td><td>本文对高红移星系 Maisie&#x27;s Galaxy (z=11.408) 进行了深度光谱观测研究,利用 JWST 周期三的两项 NIRSpec G395M 计划共超过 19 小时的曝光时间,结合 MIRI/LRS 观测,获得了迄今最精确的红移测量 z=11.408±0.005。研究团队首次在该星系中探测到 [OII] 双线发射,据此推导出电子密度 n_e≈108.56 cm⁻³ 和恒星形成率 SFR_[OII]=1.3 M☉/yr,发现该星系实际上位于恒星形成主序上,属于早期宇宙中较为典型而非极端的天体。通过 [OIII] 和 [NeIII] 发射线测量得到了 Ne3O2 和 O32 诊断比,估算出金属丰度 Z/Z☉≈0.17 和电离参数 log(U)≈-2.26。
 
-◆创新点一：实施了目前对z&gt;10星系最深入的近红外光谱观测，结合MIRI中红外数据，首次获得了全面的多波段发射线诊断。
-
-◆创新点二：通过[OIII]和[NeIII]发射线比值推导出金属丰度(Z/Z☉=0.17±0.05)和电离参数，为早期宇宙典型星系的物理条件提供了直接测量。
-
-◆创新点三：将光谱测量结果与SED拟合结果进行系统对比，揭示了不同方法在推导星系性质时的一致性与差异。
-
-◆创新点四：挑战了此前对z&gt;10亮源必然为极端天体的认知，提出该星系代表早期宇宙的&quot;平均&quot;星族，呼吁未来开展更深度的观测以理解这些遥远星系的真实性质。</td></tr>
+◆ 利用 19 小时以上的深度 NIRSpec 积分首次在 z&gt;10 星系中清晰分辨 [OII] 双线结构
+◆ 通过发射线诊断揭示该亮源实为典型主序星系,挑战了此前认为高红移亮源必然极端的假设
+◆ 建立了适用于 z&gt;10 星系的金属丰度和电离参数测量方法,为早期宇宙星系性质研究提供新基准
+◆ 明确指出需要更深的观测才能全面理解早期宇宙的平均星系群体...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-08</td><td>The MAGPI Survey: Evidence for Non-Universal Resolved Dust Attenuation Relations Beyond the Local Universe<br><a href='http://arxiv.org/pdf/2607.07122'>论文</a></td><td>本文基于MAGPI巡天(z=0.25-0.42)中178个星系的巴耳末减幅图,系统研究了中等红移下尘埃消光A_V与恒星形成率面密度Σ_SFR之间的空间分辨关系,并与本地MaNGA样本对比。研究发现两者均存在A_V-Σ_SFR正相关,但MAGPI星系在固定Σ_SFR下消光系统性偏高...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-06</td><td>Reference-Induced Consensus for Selective Posed-Reference Visual Localization<br><a href='http://arxiv.org/pdf/2607.04722'>论文</a> | <a href='https://github.com/SNU-DLLAB/ric_loc'>代码</a></td><td>本文提出RIC-Loc,一种无需场景训练和无SfM点云地图的姿态参考视觉定位方法,利用冻结的VGGT网络对查询图像和选定参考图像预测相机位姿、深度及跨图像轨迹特征。
 
@@ -1460,12 +1466,20 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (29篇)</h2>
+<h2 id='image-matching'>Image Matching (30篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>该论文针对嵌入式视觉应用中的线段检测任务，提出了一种低延迟ASIC架构，旨在解决深度学习方法资源消耗大、经典算法延迟不确定的问题。设计基于步长算法并采用全流水线结构，实现每时钟周期处理一个像素，具有确定性延迟特性。在45nm CMOS工艺下，VGA分辨率可达325 FPS，全高清可达48 FPS，功耗仅25.54 mW，面积0.412 mm²；125 MHz下VGA吞吐提升至406 FPS，相比90nm Hough变换ASIC功耗降低49%、帧率提升1.6倍以上。
+
+◆ 基于步长算法设计全流水线ASIC架构,每周期处理一像素,实现确定性低延迟
+◆ 寄存器化行缓冲与数据复用机制,减少片外存储访问
+◆ 乘法器无关的MCM(多常数乘法)滤波单元,降低硬件复杂度与功耗
+◆ 8类角度量化策略,大幅简化梯度方向分类
+◆ 类CAM的关联存储结构,支持单周期线段匹配
+◆ 优化的重复线段去除机制,提升输出质量与处理效率...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>SGFormer: Structure-Guided Transformer for Robust Local Feature Matching<br><a href='http://arxiv.org/pdf/2608.03423'>论文</a></td><td>该论文针对局部特征匹配中现有无检测器方法(如LoFTR)在大幅视角变化场景下出现的注意力发散问题,提出了一种新颖的结构引导Transformer网络SGFormer。研究发现,标准Transformer的无约束全局注意力机制会使部分高置信度匹配落在重叠区域之外,降低匹配可靠性。
 
 ◆提出Triple-Structure-Attention(TSA)模块,利用网络浅层局部特征强化显著结构区域的特征表达,引导后续Transformer阶段将注意力聚焦于具有显著结构的重叠区域。
@@ -1653,19 +1667,23 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='obstacle-avoidance'>Obstacle Avoidance (175篇)</h2>
+<h2 id='obstacle-avoidance'>Obstacle Avoidance (176篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators<br><a href='http://arxiv.org/pdf/2608.06219'>论文</a></td><td>本文针对核工业表面接触任务（如拭子采样）对高精度遥操作的需求，设计了将连续手指运动直接映射为机械臂运动、并集成控制与可视化功能的新型触摸屏遥操作界面。基于Franka Emika Panda机械臂的跨国远程控制，20名参与者的对比实验结果显示，触摸屏组任务完成时间较手柄组缩短53.5%（中位数2.50分钟对比5.38分钟），正弦路径覆盖率从84.1%提升至90.7%，且超调量显著降低。NASA-TLX认知负荷评分从手柄组的52分降至触摸屏组的43分（-17.3%），一键自主模式进一步降至31分。研究还通过运动学、生理与行为多维数据，系统评估了任务表现、认知负荷与操作员信任度，验证了触摸屏界面在效率、精度和可用性方面的综合优势。
+<tr><td>2026-08-07</td><td>Real-time Whole-Body Motion Planning for Mobile Manipulators Carrying Arbitrarily Shaped Payloads via Kinematically-Coupled SVSDF<br><a href='http://arxiv.org/pdf/2608.07005'>论文</a></td><td>本文针对移动机械臂在复杂环境中运输大尺寸、非凸形状负载的实时全身运动规划问题，提出了一种三段式规划框架。前端采用链式分解的核函数碰撞检测方法，能够真实保留机器人和负载的几何形状，并通过紧凑存储和快速位级查询实现高效检查。中端预处理阶段将前端路径转换为连续平滑轨迹，若无碰撞则直接执行以绕开高成本的后端优化。后端在需要优化时，基于运动学耦合的平滑变分有符号距离场(KC-SVSDF)进行轨迹优化，沿运动学链传播避障梯度，生成协调一致的全身避让方向。消融实验、对比基准测试以及差速驱动移动机械臂的实物实验均验证了该方法能够可靠地通过狭窄通道和杂乱环境运输大型非凸负载。
 
-创新点：
-◆ 提出连续手指运动到机械臂运动的直接映射控制方式，突破传统手柄的离散输入限制
-◆ 在单一界面集成控制与实时可视化功能，提升操作的直观性与自然性
-◆ 构建融合运动学与生理行为数据的多维度评估方法
-◆ 面向核工业高精度面接触任务场景，验证触摸屏遥操作在效率、精度和认知负荷方面的综合优势...[摘要不完整，待更新]</td></tr>
+◆ 提出链式分解的核函数碰撞检测前端，真实保留任意形状负载与机械臂几何，兼顾紧凑存储与位级快速查询
+◆ 引入运动学耦合的平滑变分有符号距离场KC-SVSDF，沿运动链传播避障梯度，生成连贯的全身逃逸方向
+◆ 设计前端-中端-后端协同的三段式框架，中端预处理可在无碰撞时直接执行轨迹以绕过昂贵后端优化，显著提升实时性...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-06</td><td>Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators<br><a href='http://arxiv.org/pdf/2608.06219'>论文</a></td><td>该论文针对核工业等领域中表面接触任务对精确路径与力跟踪的需求，设计并评估了一种基于触摸屏的新型遥操作界面，将连续手指运动直接映射为机械臂运动，集成控制与可视化功能。研究团队使用Franka Emika Panda机械臂开展跨国远程控制实验，通过20名参与者的对比用户研究，综合采集运动学、生理与行为数据，系统比较了触摸屏、传统摇杆和单击自主模式三种条件下的任务表现、认知负荷与操作员信任度。实验结果表明，触摸屏界面在效率与精度上均显著优于摇杆，完成时间中位数由5.38分钟降至2.50分钟（减少53.5%），正弦路径覆盖率从84.1%提升至90.7%，且过冲量更低。认知负荷方面，NASA-TLX评分从摇杆的52分降至触摸屏的43分（-17.3%），自主模式最低为31分。该研究提供了一种易实现、可显著提升遥操作表面任务表现并降低认知负荷的人机交互方案。
+
+◆ 提出基于触摸屏的遥操作新范式，将连续手指运动直接映射为机械臂运动，实现更精细的速度控制
+◆ 将控制指令与场景可视化集成于同一触屏界面，提升操作的直观性与自然性
+◆ 通过多模态数据（运动学、生理、行为）综合评估任务表现、认知负荷与操作员信任度
+◆ 在效率、精度与认知负荷之间验证了触摸屏相比传统摇杆的显著优势...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-05</td><td>From Transparent Labware Segmentation to Collision Avoidance: A Real-Time Edge-Aware Perception Pipeline<br><a href='http://arxiv.org/pdf/2608.04769'>论文</a> | <a href='https://github.com/havishamy/TransYOLO_3D'>代码</a></td><td>本文针对透明实验室玻璃器皿因折射、镜面反射和缺乏稳定内部纹理而难以被传统分割方法准确识别的问题，提出了一种面向实时机器人碰撞规避的边缘感知实例分割与三维感知流水线。
 
 ◆ 提出了一种将轻量级边缘检测分支与一阶段实时实例分割主干相结合的框架，通过边缘引导注意力融合和无参数SimAM模块增强网络对透明物体边界轮廓的感知能力。
@@ -1675,12 +1693,13 @@
 ◆ 实现了Boundary F-score达到97.80的领先精度，超越FastSAM框架18.93个BF点，同时保持7.1ms的推理速度，参数量仅为最接近竞品的2.85%。
 
 ◆ 通过掩码质心的多视图三角化获取三维位置信息，构建保守的包围体碰撞约束，在真实机器人实验中实现93.3%的碰撞规避成功率。</td></tr>
-<tr><td>2026-08-05</td><td>OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing<br><a href='http://arxiv.org/pdf/2608.04434'>论文</a></td><td>OmniRouting是首个面向PCB布线推理的大规模基准，填补了LLM在电子设计自动化复杂约束布线任务上的评估空白。该基准包含1681个工业级原理图耦合PCB设计，涵盖板几何、组件布局、焊盘位置、网络表与叠层信息等真实工程数据。研究提出四项评估任务：几何布线推理、设计规则感知布线推理、电气功能推理及工具增强智能体布线，全面考察模型在路径规划、规则遵守和电气连接保持方面的能力。实验系统揭示了当前大型多模态模型在PCB布线中的显著缺陷，包括弱路径规划能力、差设计规则遵循和不一致的电气功能保持。作者承诺开源全部基准数据、评估代码和工具接口以促进后续研究。
+<tr><td>2026-08-05</td><td>OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing<br><a href='http://arxiv.org/pdf/2608.04434'>论文</a></td><td>本文针对电子设计自动化(EDA)中PCB布线这一关键但未被充分探索的难题,首次系统评估了大语言模型在严格几何、拓扑和电气约束下的路由推理能力。作者提出了OmniRouting基准,这是首个面向PCB布线推理的大规模评测基准,包含1681个工业级原理图耦合的PCB设计,涵盖板几何、人工程师布放、焊盘位置、网络表、叠层信息及布线约束等真实工业数据。该基准定义了四项递进式任务:几何布线推理、设计规则感知布线推理、电气功能推理,以及融合外部工具的智能体式布线。实验结果揭示了当前多模态大模型在路径规划、设计规则遵守和电气功能保持方面存在的显著缺陷。
 
-◆ 首创工业级原理图耦合的PCB布线推理基准，弥补EDA领域LLM评估空白
-◆ 构建几何、设计规则、电气功能与工具增强的四维任务评估体系
-◆ 实证揭示LMM在路径规划、规则遵守、电气一致性方面的关键能力局限
-◆ 承诺完全开源基准数据、评估代码与工具接口推动社区研究...[摘要不完整，待更新]</td></tr>
+◆ 首创大规模语义耦合多模态PCB布线基准,填补LLM在EDA约束推理领域评估的空白
+◆ 整合1681个工业级真实设计,涵盖板几何、网络表、叠层等多维信息
+◆ 设计四项层次化任务,覆盖几何、物理规则、电气功能及工具增强智能体路由
+◆ 系统揭示现有大模型在路径规划、规则遵循和电气一致性方面的核心短板
+◆ 承诺开源全部基准数据、评估代码与工具接口以推动后续研究...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>Grasp Execution Without a Planner: Configuration-Space Grasp Distance Fields with Certified Safety &amp; Guaranteed Quality<br><a href='http://arxiv.org/pdf/2608.00600'>论文</a></td><td>本文针对多指抓取执行中规划轨迹易受扰动失效、需频繁重规划的问题，提出无需规划器的抓取距离场（GDF）方法。核心思想是在机械臂-手的构型空间上构建抓取候选构型的平滑softmin距离场，控制器直接沿负梯度方向以静止反馈律驱动抓取执行，从而完全消除了轨迹规划、存储与抓取选择环节。
 
 ◆ 提出构型空间抓取距离场（GDF），通过softmin聚合N个抓取候选构型，并证明其与真实集合距离的偏差上界为log N/ρ。
@@ -1834,15 +1853,12 @@
 ◆ 完全基于非线性闭环动力学分析队列稳定性，避免了线性化或频域方法的局限性。
 
 ◆ 推导出针对领航车外部输入、扰动及初始条件偏差的 Lp 串稳定性（1≤p≤∞）充分条件，扩展了非线性串稳定性分析框架。</td></tr>
-<tr><td>2026-07-27</td><td>Hybrid Artificial Potential Fields and Spatio-Temporal Transformers for Real-Time AUV Path Planning<br><a href='http://arxiv.org/pdf/2607.25056'>论文</a></td><td>本文针对自主水下航行器(AUV)在复杂非结构化环境中的路径规划问题，对13种经典与学习类算法进行了系统性对比评估。所有算法在五种水下地形场景中均实现了100%任务完成率，但在路径最优性、避障性能与计算负载方面存在显著权衡。
+<tr><td>2026-07-27</td><td>Hybrid Artificial Potential Fields and Spatio-Temporal Transformers for Real-Time AUV Path Planning<br><a href='http://arxiv.org/pdf/2607.25056'>论文</a></td><td>本文对十三种自主水下航行器(AUV)路径规划算法进行了系统性比较评估,涵盖经典图搜索方法(A*、Dijkstra)、采样方法(RRT*)、元启发式算法(PSO、GA、ACO、BCO)以及学习方法,并在五种高分辨率水下地形导航场景中进行了测试。研究发现所有算法均能100%完成任务,但在路径最优性、避障性能与计算开销之间存在显著权衡差异,其中经典方法延迟较高,元启发式方法轨迹复杂,纯学习模型仍需回退机制保障安全。本文的核心创新在于提出了一种将人工势场法(APF)与时空Transformer网络相融合的混合架构,充分利用APF的实时反应式避障能力与Transformer对时空序列的全局建模优势,从而兼顾局部安全与全局最优。
 
-◆ 提出一种融合人工势场法(APF)与时空Transformer的混合架构，将APF的实时反应式避障能力与Transformer的全局时空序列建模优势相结合。
-
-◆ 在高分辨率水下地形图上通过五类典型导航场景进行系统验证，混合方法在路径长度(943.15单位)、碰撞率(0.031)与计算时间(0.96秒)三项指标上均取得最优平衡。
-
-研究表明，经典图搜索与采样方法虽保证无碰撞但延迟过高，纯粹的学习模型依赖回退机制，元启发式方法生成的轨迹能耗不友好。
-
-◆ 揭示了混合框架在资源受限的水下系统中兼顾反应式避障与全局最优性的工程价值，为实时AUV导航提供了兼顾安全性与能效的可行方案。</td></tr>
+◆ 提出APF与时空Transformer的混合框架,融合反应式避障与全局序列建模能力,实现端到端实时路径规划。
+◆ 在五种高分辨率水下场景中对十三种算法进行统一基准对比,系统量化了路径长度、碰撞率与计算时间的多维权衡。
+◆ 实验证明该混合方法在平均路径长度(943.15单位)、碰撞率(0.031)和计算时间(0.96秒)上同时达到最优,显著优于独立学习方法与经典方法。
+◆ 验证了该框架作为资源受限水下系统中主导航方案的可行性与优越性。</td></tr>
 <tr><td>2026-07-24</td><td>Towards Capability-Aware Traversability Navigation for Unstructured Environments<br><a href='http://arxiv.org/pdf/2607.20679'>论文</a></td><td>这篇论文针对非结构化环境中可通行性评估高度依赖机器人本体的问题，提出了能力感知可通行性（CAT）框架，将物理能力约束直接编码进空间特征表示，而非仅依赖后置轨迹过滤实现跨形态迁移。
 
 ◆ 设计了基于真实物理轨迹的交互式标注流程，生成密集监督掩码，使训练数据本身具备本体感知特性。
@@ -2813,18 +2829,37 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='navigation'>Navigation (192篇)</h2>
+<h2 id='navigation'>Navigation (195篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-06</td><td>Acoustic-driven millimetric helical robot: ultrasonic synergistic manipulation in confined fluidic environment<br><a href='http://arxiv.org/pdf/2608.05746'>论文</a></td><td>本文提出了一种协同多声场驱动策略,通过将声辐射力与声流效应相结合,实现了毫米级螺旋机器人在受限生物流体环境中的可控推进,有效解决了传统声学操控在毫米尺度推进效率不足的问题。研究团队借助多物理场仿真揭示了组合声场下螺旋机器人的动力学机制,并通过实验验证了其平面导航、斜面爬升和垂直运动等多模态运动能力,以及半自主导航下的机动性显著提升。进一步的体外猪静脉血管实验证明,协同声场能够支持单向与往复运动,展现了在生物医学受限环境中的适用性。
+<tr><td>2026-08-07</td><td>Unordered Landmark Visual Navigation<br><a href='http://arxiv.org/pdf/2608.06833'>论文</a></td><td>本文针对图像目标导航依赖时序视频流或深度传感器等强先验的问题，提出无序地标视觉导航（ULVN）框架，仅依靠RGB图像即可在无时间顺序和里程计信息的条件下完成导航任务。该方法将建图、定位与规划统一整合，系统性地缓解了感知混淆、错误关联和建图失败等问题。
 
-◆提出声辐射力与声流协同的多声场驱动新策略,突破毫米级声学推进效率瓶颈
-◆建立多物理场仿真模型,系统阐明组合声场下毫米螺旋机器人的运动动力学机制
-◆实现平面、斜面与垂直多模态运动及半自主导航,显著提升机动性能
-◆在猪静脉血管体外模型中验证受限生物环境下的可控运动,为体内介入应用奠定基础...[摘要不完整，待更新]</td></tr>
+◆ 基于几何校验与最大生成森林精炼的二维拓扑地图构建方法，直接从无序图像集合中生成鲁棒拓扑结构
+◆ 图信念传播滤波器结合熵自适应融合的全局定位机制，摆脱对序列启发式的依赖
+◆ 动态子目标规划策略，实现闭环导航中的稳定执行
+
+在仿真和真实场景中的大量实验表明，ULVN显著优于当前最优方法。</td></tr>
+<tr><td>2026-08-07</td><td>CrossTracer: Cross-Embodiment Navigation via VLA Model Reasoning and Trace Residuals Adapting<br><a href='http://arxiv.org/pdf/2608.06688'>论文</a></td><td>CrossTracer针对跨形态机器人导航中VLA模型忽略机器人本体运动约束的痛点,提出了一种基于自适应轨迹残差的两层框架,实现了语义推理与物理可行性之间的统一。框架将导航计划表示为归一化的图像平面航点,作为跨形态泛化的统一接口。
+
+◆ 提出VL-Tracer模块,基于预训练VLA模型根据自我中心观测和灵活的目标描述预测初始导航轨迹
+
+◆ 提出CE-Adapter细化模块,通过视觉可通行性线索、机器人本体身份和初始轨迹预测本体条件化的残差修正
+
+◆ 提出CE-RRT*算法,将全景分割转换为机器人条件化的可通行性代价图,自动生成成本最小化的像素空间轨迹,避免昂贵的人工标注
+
+◆ 构建NaviTrace基准,全面测试从观测、语言指令和机器人类型生成本体一致导航轨迹的能力,总分45.68超越Gemini-2.5-Pro达10.01分,提升28.1%
+
+◆ 在轮式和腿足机器人上完成真实部署,验证了导航成功率和执行效率的提升,体现了方法的实用价值。</td></tr>
+<tr><td>2026-08-06</td><td>Acoustic-driven millimetric helical robot: ultrasonic synergistic manipulation in confined fluidic environment<br><a href='http://arxiv.org/pdf/2608.05746'>论文</a></td><td>本文针对毫米级机器人在受限生物环境中声学推进效率不足的问题，提出了一种协同多声场操控策略，通过声辐射力与声流效应的协同作用实现可控运动。多物理场仿真揭示了组合声场下螺旋机器人的动力学机制，实验验证了平面导航、倾斜爬行和垂直运动等多种运动能力。半自主导航实验表明超声协同显著提升了机动性能。猪静脉血管离体测试进一步证实了协同声场支持单向与往复运动的可行性。该研究为声学微操控向毫米尺度拓展提供了机理基础，推动了生物医学应用中机器人灵活可控运动的发展。
+
+◆提出声辐射力与声流协同的多声场驱动方法，解决毫米级机器人在受限环境中推进效率低的难题
+
+◆建立多物理场耦合仿真模型，揭示组合声场下毫米级螺旋机器人的动力学机制
+
+◆在猪静脉血管等生物受限环境中验证了多种运动模式的可行性，拓展了声学操控的生物医学应用场景...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-06</td><td>PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds<br><a href='http://arxiv.org/pdf/2608.05586'>论文</a></td><td>针对自主机器人导航中实时走廊生成的计算瓶颈,本文提出PathCover框架及其核心算法RISP,直接从原始点云数据构建凸多面体走廊。
 
 ◆ 提出RISP随机化迭代空间划分算法,在温和概率消除条件下实现期望线性时间复杂度,比现有走廊生成方法快一个数量级,同时保持相当的走廊体积。
@@ -2834,6 +2869,15 @@
 ◆ 数学上严格证明算法有限步终止,并保证沿参考路径的连续推进。
 
 ◆ 在合成与真实LiDAR数据集上完成基准测试,并通过四旋翼高保真仿真与搭载实时LiDAR的四足机器人实物部署完成端到端验证,证实了算法的实时性与实用性。</td></tr>
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出了一种面向实时线段检测的低延迟ASIC架构，基于步长算法并针对硬件实现进行了深度优化，旨在解决传统深度学习方法资源消耗大、经典算法延迟不稳定的难题。该架构采用全流水线设计，每个时钟周期处理一个像素，具有确定性延迟特性，在45nm CMOS工艺下实现VGA分辨率325 FPS、全高清48 FPS的吞吐量，功耗仅25.54 mW，面积为0.412 mm²。
+
+◆ 基于步长算法的硬件定制化设计，将五种ASIC优化技术融合：寄存器式行缓冲与数据复用、无乘法器MCM滤波、8类角度量化、类CAM的关联存储单周期匹配，以及优化的重复线段去除机制。
+
+◆ 全流水线单像素/周期处理架构，实现确定性低延迟，适合实时嵌入式视觉系统。
+
+◆ 在45nm工艺下相比90nm Line Hough变换ASIC，功耗降低49%，帧率提升超过1.6倍，125 MHz时VGA分辨率可达406 FPS，性能优势显著。
+
+◆ 以极小的芯片面积（0.412 mm²）和低功耗（25.54 mW）满足边缘计算场景对实时性、低功耗与小型化的综合需求。</td></tr>
 <tr><td>2026-08-05</td><td>Toward Integrating Adaptive Experience Replay and Online Uncertainty Estimation in Safe Actor-Critic Optimal Control<br><a href='http://arxiv.org/pdf/2608.04732'>论文</a></td><td>本文针对安全强化学习中障碍物过滤、不确定性估计与经验回放通常被分开处理的问题，提出了一种集成式安全Actor-Critic最优控制架构。在该架构中，不确定性估计在线更新控制屏障函数所用的障碍几何形状，滤波干预与估计残差共同决定回放优先级，并且评论家从实际执行的动作而非标称动作中学习。作者在二维机器人导航任务中，对六种组件匹配的配置在相同训练预算、随机种子和扰动下进行了系统比较，包括中等后训练测试、十一级感知噪声扫描以及乘数为6.0的极端压力测试，在极端测试中集成配置在五个种子中均无接触并到达目标点。
 
 ◆ 提出将不确定性估计、安全滤波与自适应经验回放耦合的集成安全Actor-Critic架构。
@@ -4114,12 +4158,28 @@ MineXplore填补了开源生态系统的空白，为极端地下环境下的自�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='motion-planning'>Motion Planning (281篇)</h2>
+<h2 id='motion-planning'>Motion Planning (288篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-07</td><td>Detection and Ranging of Transient Extrinsic Contacts Based on 6D Dynamic Tactile Sensing<br><a href='http://arxiv.org/pdf/2608.07075'>论文</a> | <a href='https://humitlab.github.io/TECDAR/'>代码</a></td><td>本文针对机器人在精细操作中难以感知抓取物体与环境之间瞬时微小碰撞的问题，提出了TECDAR（瞬态外部接触检测与测距）方法。
+
+◆ 创新地采用尺寸仅2.5×3 mm的6D IMU作为动态触觉传感器核心，以7 kHz采样率捕获亚毫秒级指尖形变，数据流仅84 KB/s，兼顾高带宽与紧凑数据量。
+
+◆ 提出了融合触觉数据与机器人位姿的扩展卡尔曼滤波（EKF）算法，可在180 ms内达到毫米级的外部接触定位精度。
+
+◆ 实验结果表明，在线接触和点接触任务中平均定位精度约7 mm，并支持毫秒级轨迹修正以及纯触觉环境探索与建图。
+
+该方法有望在精密装配、手术辅助以及触觉主导的自主探索等场景中发挥重要作用。</td></tr>
+<tr><td>2026-08-07</td><td>Real-time Whole-Body Motion Planning for Mobile Manipulators Carrying Arbitrarily Shaped Payloads via Kinematically-Coupled SVSDF<br><a href='http://arxiv.org/pdf/2608.07005'>论文</a></td><td>这篇论文提出了一种面向携带任意形状负载的移动机械臂的实时全身运动规划框架，采用前端、中端、后端三段式架构。前端通过链式分解的核函数碰撞检测保留机器人和负载的真实几何形状；中端预处理将路径转换为平滑可行的连续轨迹，无碰撞时直接执行以避免后端的高开销；后端在需要优化时基于运动学耦合SVSDF进行轨迹优化，沿运动链传播避障梯度以产生一致的全身避让方向。消融实验、与现有方法的对比基准以及差速驱动移动机械臂上的真实场景测试均验证了该框架在狭窄通道和杂乱环境中运输大型非凸负载的可靠性与实时性。
+
+◆ 提出链式分解的核函数碰撞检测方法，保留真实几何形状并支持紧凑存储与快速位级查询
+◆ 设计中端预处理阶段，将前端路径转为平滑可行轨迹，碰撞自由时直接执行以提升效率
+◆ 提出运动学耦合SVSDF（KC-SVSDF），沿运动学链传播避障梯度，实现一致的全身避让
+◆ 在真实移动机械臂平台上验证了框架在杂乱环境中运输大型非凸负载的可行性与实时性...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-07</td><td>Decoupling Intention from Trajectory: A Representational Deduction Framework for World Action Models<br><a href='http://arxiv.org/pdf/2608.06994'>论文</a></td><td>本文针对世界动作模型(WAMs)中高层物理状态演变与底层动作轨迹生成之间的表征纠缠问题，提出PILOT框架及其核心的表征演绎(Representational Deduction, RD)机制。现有视觉分支仅预测静态观测而忽略状态过渡信息，RD通过让动作分支显式建模潜在状态过渡token，并以思维链(CoT)形式保留于推理空间，从而引导细粒度...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-06</td><td>TRACE: Ergodic Trajectory Optimization for Active Scene Reconstruction<br><a href='http://arxiv.org/pdf/2608.02304'>论文</a> | <a href='https://github.com/spikelab-jhu/trace-active-reconstruction'>代码</a></td><td>本文针对主动场景重建中贪心下一最佳视角方法因短视规划导致效率低下的问题,提出基于遍历性覆盖的全局轨迹优化框架TRACE。
 
 ◆ 将主动重建重新建模为遍历性覆盖问题,使传感器轨迹的时间平均空间统计量匹配由地图导出的目标信息分布,实现全局结构感知的路径规划。
@@ -4163,6 +4223,33 @@ MineXplore填补了开源生态系统的空白，为极端地下环境下的自�
 ◆ 在合成和真实LiDAR数据集上的基准测试显示,相比现有最先进方法实现了一个数量级的速度提升,同时保持相当的走廊体积。
 
 ◆ 通过高保真四旋翼仿真和在四足机器人上的物理部署验证了完整流水线,使用实时LiDAR感知在受限环境中导航,证明方法的实用性和实时性。</td></tr>
+<tr><td>2026-08-06</td><td>Plan-and-Avoid: Real-Time Aircraft Trajectory Coordination in a Multi-Agent Environment<br><a href='http://arxiv.org/pdf/2608.06648'>论文</a></td><td>本文提出了一种实时计划与规避（PAA）框架，用于在多智能体空域环境中围绕已声明的优先航迹进行协同协调。框架首先预测与周围航空器之间不确定性感知的间隔冲突，当优先航迹无法独自维持安全间隔时，生成受飞行器性能约束的单向避让建议，以修改邻近航空器航迹从而保持所有航空器的良好间隔。该方法以应急着陆规划器为应用案例，使用华盛顿特区空域超过900个强制着陆场景、140小时模拟飞行的真实ADS-B数据进行验证。
+
+◆ 提出统一的计划与规避双层协同框架，将优先航迹生成与多机避让建议统一在同一实时系统中处理
+
+◆ 引入不确定性感知的间隔冲突预测机制，在动态空域中更可靠地识别潜在威胁
+
+◆ 设计受飞行器机动能力约束的单向避让建议生成方法，确保建议的可执行性
+
+◆ 端到端响应时间仅5.7秒，93.5%的建议满足RTCA DO-365的35秒时间阈值
+
+◆ 框架具有通用性，可适用于任何类型的优先航迹声明场景...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-06</td><td>A Precise Treatment of Soft Quotient Topology and Soft Covering Maps<br><a href='http://arxiv.org/pdf/2608.06525'>论文</a></td><td>本文系统建立了软商拓扑的基础理论框架,给出了软商拓扑的普适性质,并深入探讨了全局软拓扑与其参数切片之间的关系,指出仅依靠切片层次的商性质不足以刻画软商结构。研究还构建了相应的软商空间,并对软群作用及其轨道空间进行了细致分析。
+
+◆ 提出了一套系统化的软商拓扑构造理论,并证明其满足普适性质,填补了该领域基础理论的空白。
+
+◆ 揭示了参数切片商行为与全局软商之间的本质差异,明确指出切片层次的商性质不能充分表征软商结构。
+
+◆ 针对现有文献中软覆盖映射定义不一致的问题,给出了精确且自洽的严格定义。
+
+◆ 将理论框架应用于多智能体运动规划,有效降低了参数不确定性下的组合复杂度,展现了广泛的实际应用价值。</td></tr>
+<tr><td>2026-08-06</td><td>Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection<br><a href='http://arxiv.org/pdf/2608.06434'>论文</a></td><td>针对现有双系统VLA架构中快慢模块紧耦合、难以灵活切换的问题，本文提出环境感知模型选择框架EMS，通过强化学习策略动态选择调用轻量级反应式系统或大规模推理系统，在保持任务成功率的同时显著提升推理效率。
+
+◆ 完全解耦的模块化双系统架构，支持即插即用的模型替换，无需端到端联合训练
+◆ 基于强化学习的环境感知自适应切换策略，根据实时反馈稀疏调用慢系统
+◆ 高频闭环控制能力，在LIBERO基准上达到93.4 Hz的有效动作频率
+◆ 大规模系统提供全局一致的轨迹规划以保障任务成功，轻量系统实现高频响应控制
+◆ 在仿真和真实双臂操作任务中均取得与大规模基线相当的性能，并展现良好的可扩展性...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-05</td><td>OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing<br><a href='http://arxiv.org/pdf/2608.04434'>论文</a></td><td>OmniRouting是首个面向PCB布线推理的大规模基准测试,旨在评估大语言模型在严格几何、拓扑和电气约束下处理复杂布线问题的能力。该基准包含1681个工业级原理图耦合PCB设计,涵盖板几何、组件布局、焊盘位置、网络表、叠层信息及布线约束等真实工业数据。
 
 ◆首创了面向EDA领域的语义耦合多模态基准,首次将PCB布线作为约束感知空间推理任务进行系统评估。
@@ -4190,6 +4277,17 @@ MineXplore填补了开源生态系统的空白，为极端地下环境下的自�
 ◆ 开发了FailBench仿真基准，基于MuJoCo构建，可系统模拟感知异常、执行器故障等多种故障模式下的机器人与环境交互，为安全规划算法与学习策略的评估提供统一平台。
 
 总体而言，本文将故障应对从&quot;事后处理&quot;前移至&quot;事前规划&quot;，为家庭服务机器人在不可避免故障下的安全可靠部署提供了理论基础与实验工具。</td></tr>
+<tr><td>2026-08-05</td><td>The Reeb Structure of Bend Distance in Grid Domains: Cycle Bounds with Holes, Exact Sector Geometry on Disks, and the Two-Port Constant $c_2^\square=3$<br><a href='http://arxiv.org/pdf/2608.06421'>论文</a></td><td>本文针对ICALP 2026协同运动规划算法中基于单端口扇形分解的弯曲距离，研究其在带洞网格域上的结构理论。核心结论是：在带h个洞的纯平面立方域上，扇形图圈秩被洞数控制为β_1(Γ_p) ≤ β_1(R_{f_p}) ≤ h，且可在线性时间内找到至多h个顶点的反馈集；然而在无洞立方圆盘上，两端口公共细化的树宽恰好为常数值c_2^□=3。值得注意的是，作者通过对端点约定的精确化，发现原定义在单元方形上产生C_3反例，从而否证了源文献的单端口树引理。本文未获得f(k,h)n^O(1)算法，但提供了结构性的第一步以及对该研究纲领的证伪工具。
+
+◆ 建立了弯曲距离在带洞网格域上的Reeb结构理论，扇形图是Reeb多边图的平行边投影
+
+◆ 证明带h个洞域的圈秩上界β_1 ≤ h，并给出线性时间可计算的反馈集
+
+◆ 在无洞立方圆盘上证明扇形几何的精确性：每扇形对应唯一父接口的单边拉伸
+
+◆ 确定两端口公共细化的树宽常数为c_2^□=3
+
+◆ 通过端点约定修正发现单元方形C_3反例，揭示源文献单端口树引理错误...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>Flying over The Uncertain Nature (FORTUNE): Intelligent and Humanistic 3D Path Planning for Low-Altitude Collaboration<br><a href='http://arxiv.org/pdf/2608.03408'>论文</a></td><td>FORTUNE提出了一种面向低空协同感知的3D多无人机路径规划与任务分配框架，旨在解决城市动态环境下异构时空需求、环境不确定性和以人为本的操作约束等关键挑战。该工作将地面兴趣点(PoI)需求统一建模为持续型、可预测型和突发型三类，并引入高度相关的社会与环境成本(如噪声暴露和公共安全风险),以平衡感知性能与社会合规性。
 
 ◆ 构建统一的时空需求建模框架,首次将持续性、可预测和突发三类PoI需求纳入同一优化问题,并叠加高度相关的社会与环境代价。
@@ -6053,12 +6151,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (46篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (47篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-06</td><td>Toward surface-based registration of a virtual preoperative cutting guide onto the mandible for reconstruction surgery<br><a href='http://arxiv.org/pdf/2608.06599'>论文</a></td><td>本文研究了一种基于表面配准的无标记增强现实(AR)方法,用于将虚拟术前切割导板注册到下颌骨上,以替代传统3D打印的个性化切割导板,避免打印成本、制造周期及术中污染等问题。系统通过HoloLens 2的飞行时间相机采集术中部分点云,结合粗略的头部对齐裁剪感兴趣区域,然后利用牙齿加权全局配准和非对称点对面ICP精配准,将完整CT下颌骨模型对齐到术中深度云,最终将导板变换至HoloLens世界坐标系并随目标运动实时更新。作者设计了包含30个靶点配准误差点的盲法幻体实验,在完全暴露、中等暴露和仅牙齿暴露条件下分别评估,同时测量了运动到显示的延迟,获得中位TRE 4.05/6.10/7.10 mm和延迟0.805 s的结果,验证了AR替代物理打印导板的可行性。
+
+◆ 提出了面向经口入路下颌骨重建的牙齿加权表面配准方法,利用牙齿作为最显著可见特征完成全局对齐
+◆ 构建了无需安装基准标记和手动选点的完整AR工作流,涵盖粗对齐、区域裁剪、全局配准与ICP精配准
+◆ 提出了导板到下颌骨的变换映射与基于目标运动的位姿插值更新机制,实现动态术中引导
+◆ 建立了标准化的盲法幻体验证协议,在三种暴露条件下量化靶点配准误差和系统延迟,为AR切割引导的临床转化提供了可测试路径...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-05</td><td>Beyond Reprojection Error: Camera Calibration with 3D Targets<br><a href='http://arxiv.org/pdf/2608.05066'>论文</a></td><td>本文提出了一种基于场景光线预测的相机标定框架,突破了传统二维平面标定的局限,适用于三维重建任务。作者推导了重建误差和交点误差两种基于光线的新型度量,结合自助法统计评估不同标定对象和标定流程,用于内外参标定。
 
 主要创新点如下:
@@ -6528,15 +6632,14 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 提出JEAT联合事件-RGB自适应跟踪框架，统一异步融合与数据关联，避免硬编码优先级。
 ◆ 设计基于NIS统计的自适应扩展卡尔曼滤波，动态估计噪声并自适应加权多模态测量。
 ◆ 发布大规模合成数据集SEHN，覆盖多样化光照与交通条件，弥补事件式高速公路数据集的空白。</td></tr>
-<tr><td>2026-07-13</td><td>Diffusion MRI preprocessing affects ADC estimation and automatic PI-RADS v2.1 classification in bi-parametric prostate MRI<br><a href='http://arxiv.org/pdf/2607.11385'>论文</a></td><td>该研究系统评估了扩散加权成像(DWI)预处理策略对前列腺MRI中表观扩散系数(ADC)估计和自动PI-RADS v2.1分类性能的影响,基于fastMRI前列腺队列的268例数据,依次应用去噪、吉布斯环状伪影校正和微分同胚配准进行磁敏感畸变校正。
+<tr><td>2026-07-13</td><td>Diffusion MRI preprocessing affects ADC estimation and automatic PI-RADS v2.1 classification in bi-parametric prostate MRI<br><a href='http://arxiv.org/pdf/2607.11385'>论文</a></td><td>本研究针对前列腺双参数MRI中扩散加权成像(DWI)缺乏标准化预处理流程的问题,系统评估了去噪、吉布斯振铃校正与磁敏感畸变校正等组合策略对表观扩散系数(ADC)估计及PI-RADS自动分类的影响,基于fastMRI前列腺队列的268例数据展开分析,并采用3分类DenseNet模型预测PI-RADS评分。
 
-◆ 创新性地将脑成像中成熟的DWI预处理流程(去噪、吉布斯校正、畸变校正)系统性引入前列腺MRI分析,揭示了畸变校正是改变ADC值和提升分类性能的关键步骤。
+◆ 首次系统量化多种DWI预处理组合对ADC定量与深度学习分类的双重影响
+◆ 证实线性最小二乘与迭代加权最小二乘两种ADC拟合方法在数值上等效
+◆ 揭示磁敏感畸变校正是改变ADC值(相关系数约0.90)并提升分类性能的关键
+◆ 表明完整预处理流水线在高风险类别上误判过度自信最少,有利于临床分诊
 
-◆ 比较了线性最小二乘(LLS)和迭代加权LLS(IWLLS)两种ADC估计方法,发现二者产生数值等效的图谱(PCC约0.99),但畸变校正后与T2w解剖对齐使ADC值发生显著改变(PCC约0.90)。
-
-◆ 基于3类别DenseNet分类器的实验表明,完整预处理数据集在高风险PI-RADS类别中获得了最佳AUROC和灵敏度,且过度自信的错误预测最少,有利于临床分诊。
-
-◆ 通过对假阴性案例的分析,证明了优化预处理流程能提升深度学习模型的可靠性,为前列腺MRI标准化预处理管线的建立提供了重要依据。</td></tr>
+结果表明,完整的DWI预处理(尤其畸变校正)能同时提升ADC图质量与PI-RADS深度学习分类可靠性,支持建立标准化的前列腺DWI预处理流程。</td></tr>
 <tr><td>2026-07-13</td><td>HandFlow: Fully Generative 4D Hand Recovery with Flow Matching<br><a href='http://arxiv.org/pdf/2607.11221'>论文</a></td><td>该论文提出HandFlow，一个基于流匹配的全生成式框架，用于从单目视频中恢复时序一致的3D手部姿态与形状。现有判别式方法缺乏时序上下文且预测易抖动，时间模型虽能提升一致性但作为确定性回归器在遮挡和运动模糊下表现脆弱，因此作者采用生成式建模范式学习合理手部运动先验。HandFlow通过单次ODE积分对整个时间窗口的MANO参数进行去噪，无需自回归解码，核心采用Flux风格双流Transformer捕获长程依赖，并引入置信度感知的连续掩码机制融合可学习掩码标记以处理噪声或缺失观测。实验表明该方法在DexYCB和HOT3D上达到最先进性能，世界空间姿态误差降低超30%，加速度误差最低，且在单GPU上以47fps重建150帧序列，速度约为此前最快视频方法的12倍。
 
 ◆ 提出基于流匹配的全生成式4D手部恢复框架，通过单次ODE积分对整段时序MANO参数去噪。
@@ -6995,4 +7098,4 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.09
+> 更新于: 2026.08.10
