@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.08.16)
+# 计算机视觉领域最新论文 (2026.08.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -25,6 +25,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-14</td><td>E-S2Feat:Semantic-Guided Spiking Local Feature Detection and Description for Event Cameras<br><a href='http://arxiv.org/pdf/2608.14027'>论文</a></td><td>本文针对事件相机局部特征提取中存在的稀疏性、噪声和有限纹理等问题，提出了一种基于脉冲神经网络的框架E-S2Feat，用于在资源受限平台上实现高精度且高能效的局部特征检测与描述。该方法从特征表示和特征选择两个角度联合优化局部特征学习。
+
+◆ 模块特定的脉冲激活机制：在低比特能效推理下保留细粒度结构线索和判别性信息，提升特征表示的保真度。
+
+◆ 语义引导的特征调制机制：利用语义先验优化关键点响应分布，增强描述符的判别能力，引导模型提取几何稳定性更强、判别性更高的局部特征。
+
+实验表明，该方法在ECD和EDS数据集上的位姿估计精度显著优于SuperEvent等基线方法，理论计算能效相比其人工神经网络对应版本提升约4.8倍，并在TUM-VIE数据集的视觉惯性里程计实验中验证了在完整SLAM系统中的实用价值。</td></tr>
 <tr><td>2026-08-10</td><td>A Semantic Communication Approach to Fiducial Marker Processing in 5G-Enabled Edge SLAM<br><a href='http://arxiv.org/pdf/2608.09620'>论文</a></td><td>本文针对5G边缘SLAM中信标标记处理的实时性与计算负载矛盾，提出了一种基于语义分割推理的协作框架。该方法将DeepTag风格的卷积神经网络在机器人端与边缘服务器之间进行切分，利用中间特征图作为面向任务的语义信息在无线链路上传输，避免了传统信标检测流程难以有效划分任务的局限。论文将所提框架集成到ROS2机器人架构中，并在真实5G测试平台上进行了端到端实验验证。
 
 ◆ 提出面向5G边缘SLAM的信标标记语义分割推理框架，将检测任务在机器人与边缘服务器间灵活切分。
@@ -158,13 +165,6 @@
 ◆ 引入昼夜配对、正反向重复采集的实验协议,使地磁信号的时间稳定性与方向不变性可被定量评估。
 ◆ 通过重复遍历实验验证地磁场的跨会话可重复性、无漂移全局航向估计及位置判别性磁签名三大特性。
 ◆ 公开数据集以推动偏航漂移抑制、磁回环检测及GN拒止下长期定位等开放问题研究。</td></tr>
-<tr><td>2026-07-23</td><td>GLAM-SLAM: Real-time Gaussian Large-scale Mapping via Flow Densification and Spatial Decomposition<br><a href='http://arxiv.org/pdf/2607.21416'>论文</a></td><td>GLAM-SLAM是一个面向大尺度室外场景的实时单目SLAM系统，针对现有基于3D高斯泼溅的SLAM方法在长序列下内存爆炸、无法实时或重建质量差的问题，提出了一套完整的解耦式解决方案。系统前端采用基于特征的传统SLAM实现轻量跟踪，后端则引入结构化稀疏锚点网格来管理高斯表示，从而保证长程场景的连贯性与可扩展性。
-
-◆针对3DGS需要稠密初始化的难题，提出基于极线约束的流式稠密锚定策略，通过几何约束为跟踪到的稀疏特征生成可靠的初始点云，无需依赖深度传感器即可满足高斯泼溅的初始化需求。
-
-◆将建图问题建模为多场景问题，提出场景分区策略，在每个子场景内利用MLP初始化生成局部化高斯表示，引入强空间归纳偏置，显著提升重建的几何一致性与细节质量。
-
-在KITTI Odometry、Oxford RobotCar和M&#x27;alaga等多个长序列室外数据集上的实验表明，该方法在保持实时性能的前提下，重建质量较次优方法提升约15%，并能有效扩展到更长序列。代码已开源，具有重要的社区价值。</td></tr>
 </tbody>
 </table>
 </div>
@@ -350,14 +350,19 @@
 ◆在下游任务复现中，单应性估计结果与原文高度一致，但Aachen视觉定位即使使用官方权重也低于论文报告，提示评估流程对未明确说明的细节较为敏感。
 
 ◆首次将XFeat拓展至零样本跨域和跨模态匹配场景，涵盖视网膜成像、热红外-可见光以及多模态遥感影像，发现其在一般跨域条件下仍具一定有效性，但在严重模态差异下性能急剧退化。</td></tr>
-<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出了一种面向实时线段检测的低延迟ASIC架构,解决了嵌入式视觉应用中深度学习方法资源消耗大、经典算法延迟不确定的问题。该设计基于步长(step-length)算法,采用全流水线结构,每时钟周期处理一个像素,具有确定性延迟,在45nm CMOS工艺下实现VGA分辨率325 FPS、Full HD分辨率48 FPS的吞吐率,功耗仅25.54 mW,面积0.412 mm²。与基于Line Hough Transform的90nm ASIC实现相比,功耗降低49%,帧率提升超过1.6倍,适用于边缘计算场景。
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文针对嵌入式视觉中线段检测任务,提出了一种基于步长算法的低延迟ASIC架构,解决了深度学习方法资源开销大、传统经典算法延迟不确定的问题。该设计采用全流水线结构,实现每时钟周期处理一个像素的确定性延迟,在45nm CMOS工艺下VGA分辨率达325 FPS,Full HD达48 FPS,功耗仅25.54mW,面积0.412mm²,相比90nm Line Hough Transform实现功耗降低49%,帧率提升1.6倍以上。
 
-◆ 基于步长算法的全流水线架构,实现每周期一像素的确定性低延迟处理
-◆ 寄存器式行缓冲结合数据复用机制,减少片外存储访问
-◆ 无乘法器MCM(多常数乘法)滤波,降低硬件复杂度与功耗
-◆ 8类角度量化策略,简化角度分类与方向估计
-◆ 类CAM关联存储实现单周期匹配,加速线段检索
-◆ 优化的去重机制,有效消除冗余线段结果...[摘要不完整，待更新]</td></tr>
+主要创新点如下:
+
+◆ 基于寄存器的行缓冲与数据复用机制,有效降低片外存储访问开销
+
+◆ 无乘法器的MCM滤波结构,显著减少硬件乘法器资源消耗
+
+◆ 8类角度量化策略,在保证精度的同时简化后续匹配计算
+
+◆ 类CAM的关联存储器设计,实现单周期角度匹配
+
+◆ 优化的重复线段去除机制,降低后处理复杂度...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>该论文针对全球尺度遥感影像密集匹配中存在的几何偏移大、重叠区域不完整等难题,将密集匹配重新建模为&quot;定位-配准&quot;两阶段任务,先定位可匹配区域与仿射几何,再在对齐框架内精化密集残差。
 
 ◆ 提出任务范式创新:将密集匹配重构为&quot;定位-配准&quot;流程,通过可匹配性感知仿射定位与引导式密集配准的耦合,有效解决大几何偏移与不可匹配区域导致的预测不可靠问题。
@@ -482,6 +487,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-14</td><td>A Temporal Barrier Framework for Collision Avoidance in Multi-Agent Autonomous Aerial Vehicles<br><a href='http://arxiv.org/pdf/2608.14239'>论文</a></td><td>本文针对动态、不确定且可能存在对抗性的多智能体空中飞行器协同场景,提出了一种基于时间维度的碰撞规避新框架。核心思想是将安全约束从传统的距离或速度空间转移到时间空间,使控制器具有前瞻性的风险感知能力。在三维独立追踪和编队飞行长时域仿真中,该方法相比高阶距离型CBF基线,在碰撞率减半的同时将航点推进量提升至两倍,验证了时间屏障在安全与效率权衡上的显著优势。
+
+◆ 提出对抗性碰撞时间(aTTC)风险度量:在假设周围智能体具有对抗意图的前提下,量化其最快到达本体的剩余时间,直接刻画最坏情况下的碰撞紧迫性。
+
+◆ 将aTTC嵌入控制屏障函数框架,定义时间型障碍函数aTTC-CBF,取代传统距离/速度型CBF,实现本质上的&quot;前瞻式&quot;安全约束。
+
+◆ 设计可微神经网络代理模型,使aTTC在标准CBF二次规划中可实时计算,兼顾理论严格性与工程可部署性。</td></tr>
+<tr><td>2026-08-13</td><td>Control Barrier--Value Functions under Partial Observability: Safety Guarantees via Conformal Prediction<br><a href='http://arxiv.org/pdf/2608.13819'>论文</a></td><td>本文针对部分可观测的非线性控制系统，将控制屏障-值函数(CBVF)框架从全状态可观测推广到基于状态估计的控制场景。核心思路是利用共形预测为估计误差提供用户指定错盖概率下的概率边界，并将该边界纳入估计空间的安全分析，从而在真实系统状态上获得有限时域的随机安全保障。针对控制与扰动仿射的系统，作者进一步设计了一种基于二次规划的在线安全滤波器，实时求解以强制满足CBVF安全条件。文章还通过部分可观测避障仿真验证了所提框架的可行性。
+
+◆ 将CBVF框架从完全可观测系统扩展到部分可观测系统，结合估计器实现安全控制综合。
+◆ 引入共形预测方法，为状态估计误差提供具有概率保证的分布无关边界。
+◆ 在估计空间中建立CBVF安全证书，并推导真实系统状态下的有限时域概率安全保证。
+◆ 针对仿射系统提出QP在线安全滤波器，可实时强制执行CBVF安全条件。</td></tr>
 <tr><td>2026-08-13</td><td>Safety-Critical Control for Quadrotor UAVs via Decentralized Navigation Functions<br><a href='http://arxiv.org/pdf/2608.13507'>论文</a></td><td>本文针对四旋翼无人机集群在学习模型不确定性下的安全关键控制问题展开研究。由于导航函数产生的参考力是全驱动的,而四旋翼只能沿机体竖直轴产生推力,作者设计了推力-姿态实现方案,将参考力转化为可行的控制输入,并量化了实现误差。
 
 ◆ 提出了分散式导航函数与四旋翼欠驱动特性之间的推力-姿态桥接方法,有效解决了全驱动参考力到实际控制输入的转换问题。
@@ -598,15 +616,6 @@
 ◆ 通过局部原子标志同步协议仅在相邻视野块之间进行通信,显著降低核函数调度开销。
 
 实验结果表明,CUDA MPC能在0.1秒采样周期内完成100秒前瞻的避障停车优化问题,并在10智能体集中式协同任务中成为唯一兼顾实时性与无碰撞约束的求解器;相比基于张量框架的同一ADMM分裂实现,融合内核最高可获得965倍加速。</td></tr>
-<tr><td>2026-08-03</td><td>Control Barrier Functions via Minkowski Operations for Safe Navigation among Polytopes<br><a href='http://arxiv.org/pdf/2608.02886'>论文</a></td><td>本文针对多面体环境中安全导航问题，提出了一种基于闵可夫斯基运算的控制屏障函数方法，核心贡献在于避免了对多面体的保守近似。采用保守形状（如球体或椭球体）近似多面体会限制机器人的可行运动空间，本文通过闵可夫斯基运算构建伴随凸优化问题，实现了对多面体机器人与多面体障碍物之间精确符号距离函数（SDF）的求解，并将其与非光滑控制屏障函数相结合，在碰撞和无碰撞两种情形下均能保证安全性。论文的关键创新点包括以下几个方面。
-
-◆ 提出基于闵可夫斯基运算的精确SDF公式化方法，通过两个伴随凸优化问题同时处理碰撞与无碰撞两种情形，避免了传统保守近似带来的可行域损失。
-
-◆ 利用二维闵可夫斯基运算的几何性质和伴随凸规划的KKT条件，通过灵敏度分析推导出精确SDF梯度的统一解析表达式。
-
-◆ 揭示了精确旋转梯度中一类由几何耦合与非完整运动学共同诱导的局部极小值现象，这一现象在以往保守近似方法中被掩盖。
-
-◆ 在纯平移和三类非完整（独轮车）模型仿真中验证了框架的有效性，包括从不安全初始位姿的恢复以及单/多障碍物避障，并表明该方法能实现非保守的机动行为与安全性恢复。</td></tr>
 <tr><td>2026-08-03</td><td>Safe and robust tube-based path-following for robot navigation<br><a href='http://arxiv.org/pdf/2608.02530'>论文</a></td><td>本文针对未知杂乱环境下的机器人路径跟随任务，提出了一种基于Tube模型预测控制的安全鲁棒导航框架。该框架通过整合人工矢量场制导与反步法控制实现名义制导与控制一体化设计，并利用基于障碍函数的安全性约束保证反应式避障。方法的核心特色在于将光滑距离函数、统一控制目标以及自适应扰动补偿机制有机结合，从而在保证路径收敛性的同时实现对未知有界扰动的鲁棒抑制。
 
 ◆ 提出基于Tube的鲁棒导航框架，将人工矢量场制导与反步法控制统一于IGC架构中，实现路径跟随的平稳收敛。
@@ -616,17 +625,6 @@
 ◆ 设计统一控制目标函数，融合避障与路径跟随任务，平衡两者的优先级以避免冲突。
 
 ◆ 加入自适应控制分量在线估计扰动上界，与Tube控制策略协同实现对未知有界扰动的鲁棒补偿。</td></tr>
-<tr><td>2026-08-03</td><td>RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs<br><a href='http://arxiv.org/pdf/2608.01855'>论文</a></td><td>本文针对小型四旋翼无人机的快速动态避障问题，提出了首个基于毫米波雷达的机载感知与控制系统。论文推导并分析了感知范围、相对速度与控制延迟之间的时延和空间边界条件，为成功避障提供了充分条件。系统采用基于交互多模型(IMM)的轻量级跟踪器与基于控制屏障函数(CBF)的控制器，直接输出规避加速度指令。在300次不同物体尺寸和明暗条件下的实验以及90次烟雾环境实验中，系统在x、y、z方向的位置误差分别小于0.15米、0.93米和0.87米。基于Raspberry Pi 4B的机载实现验证了端到端感知到指令延迟约14毫秒的实时可行性。
-
-◆ 首次将毫米波雷达感知与避障控制集成到小型四旋翼无人机上，实现全流程机载运行。
-
-◆ 建立了感知范围、相对速度与控制延迟之间的时延-空间边界理论，得出避障成功的充分条件。
-
-◆ 设计了轻量级IMM跟踪器与CBF控制器组合，直接输出规避加速度，保证实时性。
-
-◆ 毫米波雷达具备穿透烟雾能力，使系统在烟雾等低能见度环境下仍能可靠工作。
-
-◆ 完整开源了390次投掷实验数据集和代码，为后续研究提供基准。</td></tr>
 <tr><td>2026-08-04</td><td>Grasp Execution Without a Planner: Configuration-Space Grasp Distance Fields with Certified Safety &amp; Guaranteed Quality<br><a href='http://arxiv.org/pdf/2608.00600'>论文</a></td><td>本文针对多指抓取执行中规划轨迹易受扰动失效、需频繁重规划的问题，提出无需规划器的抓取距离场（GDF）方法。核心思想是在机械臂-手的构型空间上构建抓取候选构型的平滑softmin距离场，控制器直接沿负梯度方向以静止反馈律驱动抓取执行，从而完全消除了轨迹规划、存储与抓取选择环节。
 
 ◆ 提出构型空间抓取距离场（GDF），通过softmin聚合N个抓取候选构型，并证明其与真实集合距离的偏差上界为log N/ρ。
@@ -648,6 +646,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-14</td><td>Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles<br><a href='http://arxiv.org/pdf/2608.14531'>论文</a></td><td>本文针对铰接车辆（牵引半挂车、卡车拖车、AGV和公路列车）在狭窄路线上自主导航的难题，提出了一种基于时空管的安全证书规划方法。该方法通过分析连挂单元的运动学特性并结合摆动约束，为主动牵引车规划出经过认证的安全路径，确保被牵引的拖车始终位于道路通道范围内。作者进一步引入&quot;允许修正量&quot;对时空管进行修正，从而为车辆在给定路线上提供完整的安全证书。该方法将管规划从单体车辆推广到多体铰接系统，并在复杂卡车-拖车仿真场景中得到了验证。
+
+创新点：
+◆ 提出基于时空管的铰接车辆安全证书规划框架
+◆ 将连挂体运动学与摆动约束显式纳入路径规划
+◆ 引入允许修正量修正时空管以提供完整安全保证
+◆ 将安全约束从牵引车扩展到整列拖车，确保拖车始终位于通道内...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-14</td><td>PILOT: Privileged Imitation Learning for End-to-End Motion Planning of Autonomous UAVs under Partial Observability<br><a href='http://arxiv.org/pdf/2608.14082'>论文</a></td><td>本文提出PILOT框架,一种面向部分可观测条件下视觉端到端无人机运动规划的特权模仿学习方法,通过双目标损失函数将计算密集的最优控制专家策略蒸馏到轻量级学生策略中,并在仿真实验中实现超过80%的计算开销降低,性能接近特权专家。
+
+◆ 提出约束感知的特权模仿学习框架,通过双目标损失函数将最优控制专家的安全性与动力学约束知识蒸馏至学生策略,使神经网络在无形式保证的情况下仍倾向于满足约束。
+
+◆ 设计基于时序卷积网络(TCN)的时空感知融合模块,融合历史深度图像与里程计信息推断任务相关的潜在上下文,以无持久地图记忆的方式增强空间感知能力。
+
+◆ 构建轨迹参数化层将网络输出映射为结构化轨迹,在训练阶段显式施加连续性、动力学一致性及障碍物软惩罚,鼓励对未见观测的约束满足。
+
+◆ 在四旋翼与固定翼飞机上的仿真以及室内外零样本实飞部署,验证了方法的跨平台泛化能力与工程实用性。</td></tr>
 <tr><td>2026-08-13</td><td>Towards Socially Compliant Navigation in Deep Reinforcement Learning via Proxemics-Based Reward Modeling<br><a href='http://arxiv.org/pdf/2608.12917'>论文</a></td><td>本文针对拥挤环境中机器人导航的社会合规性问题,指出现有深度强化学习方法多侧重任务目标而忽视社交规范。为此,论文提出一种基于空间关系学的奖励函数设计,通过将霍尔个人空间理论建模为径向高斯混合场,并在机器人视野内计算局部社会代价。
 
 ◆ 提出基于霍尔空间关系学的径向高斯混合场模型,将行人个人空间编码为连续可微的代价场,提升社会信号的可解释性。
@@ -718,12 +732,6 @@
 ◆ 设计&quot;先松弛后验证&quot;规划机制，通过软约束MPC生成名义轨迹以保证求解器可行性，再将名义轨迹与应急机动一起基于已校准边界进行运行前安全认证。
 
 仿真和四足机器人实验表明，CoCoNav在避碰安全、任务成功率和导航效率之间取得了优于对比基线的良好平衡。</td></tr>
-<tr><td>2026-08-03</td><td>The Field Knows: Cross-Dimensional Geometry from Navigation to Black Holes<br><a href='http://arxiv.org/pdf/2608.07566'>论文</a></td><td>本文提出了一种统一的连续度量场框架，仅通过单一的因果对比损失进行训练，即可跨维度学习几何结构。该框架将场景编码为固定对称矩阵基的系数，组装为李代数元素后指数化，得到黎曼或洛伦兹度量场，从而在同一架构中实现从机器人避障路径规划到黑洞事件视界等多样化几何现象的涌现。
-
-◆ 创新点一：提出统一的连续度量场框架，用单一因果对比损失和同一架构跨维度学习几何结构，无需针对不同任务设计专用模型。
-◆ 创新点二：通过将对称矩阵基系数映射到李代数并指数化的方法，可灵活生成黎曼或洛伦兹度量，覆盖正定与不定签名几何。
-◆ 创新点三：框架展现出显著的零样本泛化能力，能够捕捉可迁移的几何本质而非记忆特定配置。
-◆ 创新点四：在黑洞场景中，因果损失自发演化出具有正确洛伦兹签名的类黑洞结构，表明几何与物理可由统一的学习过程涌现。</td></tr>
 <tr><td>2026-08-10</td><td>Unordered Landmark Visual Navigation<br><a href='http://arxiv.org/pdf/2608.06833'>论文</a></td><td>本文针对图像目标导航依赖时序视频流或深度传感器等强先验的问题，提出无序地标视觉导航（ULVN）框架，仅依靠RGB图像即可在无时间顺序和里程计信息的条件下完成导航任务。该方法将建图、定位与规划统一整合，系统性地缓解了感知混淆、错误关联和建图失败等问题。
 
 ◆ 基于几何校验与最大生成森林精炼的二维拓扑地图构建方法，直接从无序图像集合中生成鲁棒拓扑结构
@@ -817,15 +825,6 @@
 ◆ 设计平滑距离函数，实现连续控制律下的无缝避障，避免传统方法中控制不连续的问题。
 ◆ 构建统一控制目标，在碰撞规避与路径跟随之间实现动态平衡。
 ◆ 引入自适应控制分量，进一步增强对外部扰动的鲁棒性。</td></tr>
-<tr><td>2026-08-03</td><td>DF$^3$: World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation<br><a href='http://arxiv.org/pdf/2608.02428'>论文</a></td><td>该论文针对自动驾驶场景中的世界建模与未来状态预测任务,指出传统像素级生成方法计算开销大,基于特征的方法仍依赖重型解码器,存在效率瓶颈。为此,作者提出Decoder-Free Feature Forecasting(DF³)框架,完全在潜在空间中建模世界演化并直接推导任务输出,无需任何解码器,实现了高效的感知与控制一体化。
-
-◆核心创新一是&quot;解码器自由&quot;设计:将可学习的空间查询注入冻结视觉基础模型的末端块,直接提取未来状态表征,从根本上消除了传统解码器带来的计算负担。
-
-◆核心创新二是运动感知的上下文融合机制(MACF):通过粗光流warp与细粒度潜在交叉相关性的统一结合,使查询与历史token表征显式对齐,从而精确预测下一帧特征。
-
-◆核心创新三是任务查询解耦策略:训练一组专用任务查询对预测特征进行探测,使感知预测与下游决策输出在统一框架内高效衔接,具备良好的灵活性。
-
-在公开基准和机器人仿真器的零样本部署实验中,DF³在性能与SOTA方法相当的同时,显著提升了推理效率,展现出在端到端自主导航中的实用价值。</td></tr>
 </tbody>
 </table>
 </div>
@@ -838,6 +837,38 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-14</td><td>Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles<br><a href='http://arxiv.org/pdf/2608.14531'>论文</a></td><td>本文针对铰接式车辆（如牵引半挂车、卡车拖车、自动导引车及公路列车等）在狭窄路径下自主导航的难题，提出了一种基于时空管的安全证书规划方法。该方法通过利用铰接链节间的运动学特性与摆动约束，为牵引车规划出一条经过认证的路径，确保被牵引的挂车系列始终保持在道路走廊范围内。核心思想是结合可允许的修正量对时空管进行修正，从而为整车在给定路线上提供路线安全证书。该规划方法在复杂路径下的卡车-拖车导航仿真中得到了验证。
+
+◆ 提出时空管（spatiotemporal tube）规划框架，将铰接车辆的链节运动学与摆动约束统一纳入路径安全约束中。
+
+◆ 通过可允许修正量对时空管进行修正，使得仅需规划牵引车的轨迹即可保证整个挂车链节位于安全走廊内。
+
+◆ 为铰接式车辆自主导航提供了一种可认证的安全证书方法，能够在复杂狭窄路径下保证规划路径的安全性。</td></tr>
+<tr><td>2026-08-14</td><td>Expected Free Energy-based Informative Path Planning for Robotic Mars Exploration<br><a href='http://arxiv.org/pdf/2608.14466'>论文</a></td><td>本文针对火星探索等未知环境下机器人自主探测任务,提出基于期望自由能(Expected Free Energy, EFE)的统一信息路径规划方法。该方法将主动推断中的EFE作为动作选择准则,首次将信息获取与目标搜寻两类目标融合于同一优化框架中,弥补了传统信息论方法仅优化单一目标的不足。机器人通过高斯过程建立对信息场的信念,并在严格路径长度预算约束下规划连续轨迹,通过最小化期望自由能实现高效探测。
+
+◆ 提出以期望自由能为统一目标的信息路径规划准则,首次将信息建图精度与高价值区域定位融合为单一优化目标,克服了传统方法只能兼顾单一目标的局限。
+
+◆ 构建基于高斯过程的信息场信念表示,并在硬性路径长度约束下进行连续轨迹规划,显式建模并平衡测量代价与行进代价。
+
+◆ 在多组仿真实验中验证,该方法在相同预算设置下同时获得更准确的后验信息地图和更高的高价值区域定位准确率,优于多种信息论基线方法。
+
+◆ 该统一且易调参的原则性策略降低了实际部署时的参数整定难度,有利于资源受限环境下自主机器人的工程化应用。</td></tr>
+<tr><td>2026-08-14</td><td>Control-Informed Constraint Adaptation in Minimum-Time Trajectory Planning for Autonomous Racing<br><a href='http://arxiv.org/pdf/2608.14448'>论文</a></td><td>这篇论文针对自动驾驶赛车在极限动态下轨迹规划保守、控制误差被忽视导致性能损失的问题，提出了一种控制信息驱动的在线轨迹规划框架，通过运行时测量系统性的跟踪偏差，动态调整空间赛道约束并迭代扩展自由空间规划区域，使规划器在保持时间最优的同时补偿累积执行误差。
+
+◆ 控制误差反馈机制：将控制层产生的系统性跟踪偏差实时反馈至规划层，打破传统模块化架构中规划与控制之间的信息壁垒。
+
+◆ 约束动态自适应：根据实测跟踪误差动态调整空间赛道约束，迭代扩大可用规划区域，让规划器主动&quot;学习&quot;自身执行偏差。
+
+◆ 时间最优保持：在补偿误差的同时维持时间最优性，既保证安全性又挖掘极限性能。
+
+该方法在高保真闭环仿真中得到验证，在不增加计算负担（中位运行时间25毫秒）的前提下，单圈时间减少1.8秒，证明了该方法能系统性地释放模块化架构此前无法触及的性能。</td></tr>
+<tr><td>2026-08-14</td><td>PILOT: Privileged Imitation Learning for End-to-End Motion Planning of Autonomous UAVs under Partial Observability<br><a href='http://arxiv.org/pdf/2608.14082'>论文</a></td><td>PILOT提出了一种面向部分可观测环境下基于视觉的无人机端到端运动规划框架，通过特权模仿学习将计算密集的最优控制专家策略蒸馏到学生策略中。该方法在仿真中对四旋翼和固定翼飞机均实现了与特权专家相当的性能，并减少了超过80%的计算开销，同时在室内外实现了零样本部署，验证了跨域泛化能力。
+
+◆ 提出特权模仿学习框架，通过双目标损失函数将最优控制专家策略蒸馏为学生策略，兼顾规划性能与安全动态约束正则化。
+
+◆ 设计基于时序卷积网络(TCN)的时空感知融合模块，从历史深度图像和里程计中推理任务相关隐式上下文，无需维护持久地图即可缓解部分可观测性问题。
+
+◆ 引入轨迹参数化层，将网络输出映射为结构化轨迹，训练中显式施加连续性、动态一致性及障碍软惩罚，鼓励对未见观测的约束满足。</td></tr>
 <tr><td>2026-08-13</td><td>ReflectFact: Self-Reflective Agents for Improving Comprehension and Reasoning in Multi-Hop Fact Verification<br><a href='http://arxiv.org/pdf/2608.12877'>论文</a></td><td>该论文针对多跳事实验证中多智能体方法的两大缺陷——智能体缺乏全局目标感知导致推理偏离,以及参数化知识与外部证据冲突影响判断,提出了名为ReflectFact的自反思智能体框架。
 
 ◆ 显式推理路径规划:通过解析隐含实体、将声明拆解为子问题并整合已验证事实,构建基于证据的推理路径,避免推理方向偏离。
@@ -847,11 +878,12 @@
 ◆ 推理反思验证:从全局任务视角对每一步推理进行复审,发现不一致时重新生成步骤,以纠正位置偏差和替换偏差等推理缺陷。
 
 最终聚合经校验的推理链得出可靠结论,在HOVER和EX-FEVER数据集上分别超越最强基线3.32%和2.78%,达到当前最优性能,有效弥补了现有方法在理解与推理上的不足。</td></tr>
-<tr><td>2026-08-12</td><td>Learning-Based Behavior Planning for Automated Driving: Real-World Integration and Deployment<br><a href='http://arxiv.org/pdf/2608.12198'>论文</a></td><td>本文针对自动驾驶中学习类运动规划方法可解释性差、安全保证困难的问题,提出了一种结合机器学习与经典方法优势的混合规划架构。该架构采用深度神经网络对复杂交通场景进行解读并提出驾驶行为建议,同时通过基于优化的监督层对建议进行验证,显式地施加可行驶性和安全约束。作者在真实城市数据上对学习规划器进行了开环行为评估,讨论了实现稳定闭环运行的系统集成问题,并报告了在其研究车辆karl上的实车部署结果。
+<tr><td>2026-08-12</td><td>Learning-Based Behavior Planning for Automated Driving: Real-World Integration and Deployment<br><a href='http://arxiv.org/pdf/2608.12198'>论文</a></td><td>本文针对自动驾驶中基于学习的行为规划方法存在的可解释性差、难以安全验证的问题，提出了一种混合规划架构。该架构利用深度神经网络解读复杂交通场景并提出驾驶行为建议，同时通过基于优化的监督层验证建议并强制执行可行驶性与安全约束，从而结合了机器学习的表达能力和经典方法的可验证性。研究团队在真实城市数据上进行了开环评估，讨论了系统集成以实现稳定闭环运行的关键问题，并在其研究车辆karl上完成了实际部署。
 
-◆ 提出融合机器学习与经典方法优势的混合规划架构,兼顾学习能力与可验证性、确定性
-◆ 设计深度神经网络用于复杂交通场景解读和驾驶行为建议,以及基于优化的监督层来强制执行可行驶性和安全约束
-◆ 在真实城市数据上进行开环行为评估,并实现实车闭环部署验证,展示了从算法到落地的完整系统集成方案...[摘要不完整，待更新]</td></tr>
+◆ 提出混合规划架构，将深度学习的场景理解能力与基于优化的经典规划的可验证性和确定性相结合
+◆ 设计基于优化的监督层对神经网络行为建议进行验证，强制施加显式可行驶性与安全约束
+◆ 在真实城市数据上开展开环驾驶行为评估，并系统讨论闭环稳定运行的集成方案
+◆ 在研究车辆karl上完成实车部署，验证了所提方法从算法到真实道路的可行性...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-11</td><td>Risk-Aware Kinodynamic Motion Planning Under Uncertainty For Safe Navigation on Planetary Environments<br><a href='http://arxiv.org/pdf/2608.11175'>论文</a></td><td>本文针对行星环境中自主机器人在未知地形力学和感知不确定性下的安全运动规划问题，提出了一种风险感知的运动学动力学运动规划方法。该方法分两步进行：首先采用基于采样的AO-RRT规划器生成动力学可行且风险感知的渐进最优轨迹，然后以此为初解，通过序列凸规划（SCP）将其进一步优化为非线性优化问题。
 
 ◆ 采用条件风险价值（CVaR）作为风险量化指标，使规划器能够显式地考虑最坏情况下的尾部风险，而不仅依赖期望代价。
@@ -908,11 +940,12 @@
 
 仿真结果表明，该方法能够有效避免缠绕约束的违反，生成更安全可靠的运动轨迹。</td></tr>
 <tr><td>2026-08-10</td><td>FactorDrive: Adaptive Multi-Step Reasoning Driven by Planning-Critical Factors for End-to-End Autonomous Driving<br><a href='http://arxiv.org/pdf/2608.09591'>论文</a></td><td>该论文针对端到端自动驾驶中视觉语言模型空间物理证据融合不足、推理适应性粗糙以及推理路径优化未充分探索等问题，提出FactorDrive框架，以规划关键因子(PCFs)驱动自适应多步推理。◆构建PCF-CoT思维链数据集，将规划推理锚定于轨迹相关的空间物理证据，并围绕场景特定PCFs组织推理过程，使推理路径的组成与深度能够适配不同规划需求。◆设计质量搜索引导的分组相对策略优化方法(QS-GRPO)，将蒙特卡洛树搜索与轨迹级规划奖励结合，自动发现并优化具有更高规划质量的推理路径。◆在nuScenes开放环和NAVSIM闭环导向基准上均取得最先进的规划性能。</td></tr>
-<tr><td>2026-08-09</td><td>360CityArena: A Realistic Virtual Urban Navigation Benchmark for Embodied Agents<br><a href='http://arxiv.org/pdf/2608.08814'>论文</a></td><td>360CityArena是一个面向具身智能体城市导航的基准测试，基于日本东京秋叶原街区602段360度全景视频构建，涵盖85条真实街道。该基准包含175个人工精心设计的任务，分为环境理解、路径推理和空间推理三大类，全面评估城市探索所需的核心能力，如定位、地标搜索、路径规划与关系推理。与现有户外基准相比，360CityArena在视觉真实感和场景复杂度上具有显著优势。实验表明当前最先进的LMM智能体（如Gemini 2.5 Flash）准确率仅为17.1%，远低于人类77.3%的水平，揭示了城市级具身导航和空间推理仍存在重大挑战。
+<tr><td>2026-08-09</td><td>360CityArena: A Realistic Virtual Urban Navigation Benchmark for Embodied Agents<br><a href='http://arxiv.org/pdf/2608.08814'>论文</a></td><td>360CityArena是一个用于评估具身智能体在真实感城市环境中导航能力的新基准。它基于日本东京秋叶原街区的360度视频重建，涵盖602个视频片段和85条街道，旨在弥补现有户外基准在真实感和复杂度上的不足。该基准设计了175个人工精心标注的任务，划分为环境理解、路径推理和空间推理三大类，全面考察定位、地标搜索、路径规划和关系空间推理等城市探索所需的核心能力。实验结果显示，即便是当前最强的Gemini 2.5 Flash模型，其表现也远低于人类水平（17.1%对比77.3%），揭示了城市规模具身导航与推理任务仍存在巨大挑战。
 
-◆ 利用360度全景视频构建高保真城市场景，弥补现有户外基准在真实性和复杂性方面的不足
-◆ 设计了涵盖定位、地标搜索、路径规划与空间关系推理的175个多样化任务
-◆ 系统性揭示了LMM智能体与人类在城市级导航任务上存在的巨大性能差距...[摘要不完整，待更新]</td></tr>
+◆ 基于360度视频构建的高真实感城市导航基准，弥合了仿真与真实环境的差距
+◆ 采用秋叶原真实街景重建，提供602段视频覆盖85条街道的多样化场景
+◆ 包含175个人工精心设计的任务，涵盖环境理解、路径推理和空间推理三类能力
+◆ 揭示了当前最先进LMM智能体在城市级具身任务中与人类水平的显著差距...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-09</td><td>PEEL: Parallel Extraction for Long-Horizon Disassembly Planning via Scale-Invariant Sampling<br><a href='http://arxiv.org/pdf/2608.08773'>论文</a></td><td>PEEL提出了一种用于长视野多部件物体拆卸的并行规划算法，旨在解决狭窄通道下无碰撞拆卸序列的计算难题。算法采用尺度不变采样方案，通过burn-in阶段估计物体尺度，并利用方向采样器高效完成单物体运动规划。◆创新点一：尺度不变采样机制，结合burn-in阶段尺度估计与方向采样器，显著提升狭窄通道下的规划效率。◆创新点二：多臂赌博机RRT（MAB-RRT）规划器，根据奖励信号自适应切换不同采样器，增强了算法的鲁棒性。◆创新点三：并行运行批量规划器以构建有序拆卸图，明确部件移除顺序，支持长视野拆卸任务。实验表明，MAB-RRT在76个装配体上实现100%单部件拆卸成功率，并在Fetch机械臂上成功解决4个包含10至17个部件的复杂长视野拆卸问题。</td></tr>
 <tr><td>2026-08-08</td><td>AOC-CBS: Anytime-Optimal Continuous-time Conflict-Based Search for Generalised Multi-Agent Path Finding<br><a href='http://arxiv.org/pdf/2608.08175'>论文</a></td><td>本文针对多智能体路径规划（MAPF）传统假设的局限，提出了一种广义MAPF问题表述，取消了离散时间、同质智能体、单一目标以及到达目标后必须停留等限制，能够处理异构车队、非几何冲突、任务序列及完成后继续移动等复杂情形。
 
@@ -932,24 +965,6 @@
 ◆ 引入稳定性评估维度，测试模型在持续展开和输入扰动下的鲁棒性，提升下游规划任务的实用性。
 
 该工作为手术世界模型从视觉生成向可行动规划的发展提供了关键评测基础设施。</td></tr>
-<tr><td>2026-08-07</td><td>Drone-Assisted UAV-UGV Collaboration for Autonomous Navigation in Snow-Covered Terrain<br><a href='http://arxiv.org/pdf/2608.07797'>论文</a></td><td>本文提出了一种面向高海拔积雪地形的无人机-无人车协同导航框架,针对传统方法因能见度低和地面不稳定而失效的问题。系统采用无人机在空中进行道路分割与定位,引导地面无人车安全行驶。
-
-◆ 设计了一种定制化的轻量U-Net网络,在满足实时计算约束的同时,通过新型合成积雪数据增强策略,将道路分割精度提升至96.5%。
-
-◆ 部署扩展卡尔曼滤波器融合机载GPS与IMU数据,将无人机定位最大误差控制在±0.5米以内。
-
-◆ 基于YOLOv5目标检测与无人机RGB-D相机深度数据构建视觉跟踪管道,实现对无人车位置的精准估计。
-
-◆ 提出结合分割结果的动态路径规划算法,可针对积雪漂移实时调整路线,使无人车在能见度受阻的测试环境中以最小偏差完成导航任务,验证了空地协同方案在极端环境下的有效性与鲁棒性。</td></tr>
-<tr><td>2026-08-07</td><td>Hölder Signed Distance: A Differentiable, Signed, Parallelizable Metric for Robotics<br><a href='http://arxiv.org/pdf/2608.07707'>论文</a></td><td>本文针对机器人运动规划与控制中凸多面体间的距离计算问题，提出了一种新型可微符号距离度量Hölder signed distance。现有欧几里得符号距离函数(SDF)并非处处可微，而其他可微替代方案往往牺牲可微性、符号信息或计算效率。该方法的核心思想是首先提出Hölder意义下的可微最小和最大算子，然后用它们替换经典SDF公式中的min-max运算，从而获得全程可微且保持符号信息的距离函数。
-
-◆ 提出Hölder最小算子和Hölder最大算子，作为传统min-max算子的可微替代，使距离计算在所有点处均可微。
-
-◆ 基于上述算子构造凸多面体间的Hölder符号距离，保持符号信息的同时实现全空间可微。
-
-◆ 采用闭式计算而非迭代算法，避免了收敛性问题，并天然适合GPU并行化，大幅提升计算效率。
-
-◆ 通过运行时对比和机械臂控制实验验证了该方法在实时优化中的实用性和优越性能。</td></tr>
 <tr><td>2026-08-07</td><td>Detection and Ranging of Transient Extrinsic Contacts Based on 6D Dynamic Tactile Sensing<br><a href='http://arxiv.org/pdf/2608.07075'>论文</a> | <a href='https://humitlab.github.io/TECDAR/'>代码</a></td><td>本文针对机器人在精细操作中难以感知抓取物体与环境之间瞬时微小碰撞的问题，提出了TECDAR（瞬态外部接触检测与测距）方法。
 
 ◆ 创新地采用尺寸仅2.5×3 mm的6D IMU作为动态触觉传感器核心，以7 kHz采样率捕获亚毫秒级指尖形变，数据流仅84 KB/s，兼顾高带宽与紧凑数据量。
@@ -968,26 +983,6 @@
 ◆ 提出运动学耦合的平滑体积有符号距离场（KC-SVSDF），沿运动学链传播避障梯度，生成协调一致的全身逃逸方向。
 
 通过消融实验、与现有先进基线方法的对比基准以及差速驱动移动操作机器人的真实场景实验，验证了该框架能够可靠地携带大型非凸负载穿越狭窄通道和复杂环境。</td></tr>
-<tr><td>2026-08-07</td><td>Decoupling Intention from Trajectory: A Representational Deduction Framework for World Action Models<br><a href='http://arxiv.org/pdf/2608.06994'>论文</a></td><td>该论文针对世界动作模型(WAMs)中高层物理状态演化与底层动作轨迹生成之间的表征纠缠问题,提出了PILOT框架及其核心的表征演绎(Representational Deduction, RD)机制。RD通过将动作分支显式建模为潜在状态转移token,并以思维链(CoT)形式保留在推理空间中,引导细粒度运动轨迹生成,从而实现了高层运动意图与底层轨迹细节的解耦。
-
-◆ 提出表征演绎框架,通过CoT引导显式解耦高层运动语义与底层轨迹细节,显著增强模型的物理可解释性
-
-◆ 引入丰富的状态转移监督信号,有效缓解动作生成中的稀疏监督难题,可作为高效的小样本真实机器人微调策略
-
-◆ 该方法具备优异的架构兼容性与可扩展性,能够便捷迁移至主流的WAM架构体系
-
-实验结果表明,RD不仅显著提升了复杂机器人操作任务中的成功率和泛化能力,还展现了良好的实用部署潜力。</td></tr>
-<tr><td>2026-08-06</td><td>TRACE: Ergodic Trajectory Optimization for Active Scene Reconstruction<br><a href='http://arxiv.org/pdf/2608.02304'>论文</a> | <a href='https://github.com/spikelab-jhu/trace-active-reconstruction'>代码</a></td><td>本文针对主动场景重建中贪心下一最佳视角方法因短视规划导致效率低下的问题,提出基于遍历性覆盖的全局轨迹优化框架TRACE。
-
-◆ 将主动重建重新建模为遍历性覆盖问题,使传感器轨迹的时间平均空间统计量匹配由地图导出的目标信息分布,实现全局结构感知的路径规划。
-
-◆ 在线从地图的不确定性与可见性中推导目标信息分布,让规划器动态响应建图状态变化。
-
-◆ 提出核遍历性水平规划器,结合梯度流与足迹消减机制,生成长视域且信息高效的轨迹。
-
-◆ 打通建图与轨迹优化的闭环,避免感知资源在视点间转移过程中的浪费。
-
-在Replica数据集上,TRACE相比NBV基线在PSNR上提升1.5 dB,验证了所提方法的有效性。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1166,6 +1161,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-14</td><td>On the Robustness of Temporal Vision-Language Models for Surgical Endoscopy Videos<br><a href='http://arxiv.org/pdf/2608.14262'>论文</a></td><td>本文聚焦于时序视觉-语言模型（TVLMs）在手术内窥镜视频中面对临床真实采集伪影时的鲁棒性问题。研究指出，诸如失焦、烟雾、运动模糊、噪声、烧灼烟雾以及丢包等退化会引入结构化分布漂移，可能损害视频与文本的对齐效果，但现有研究对此缺乏系统评估。
+
+◆ 提出Endo-C6基准：一个包含六种内窥镜真实扰动的高严重度紧凑评测集，并基于公开的胃肠道内窥镜和腹腔镜胆囊切除术视频进行标准化评估。
+
+◆ 全面评测三个最新手术TVLM基线模型，在统一提示协议下完成294次数据集级别的鲁棒性分析，揭示其平均与最差情形下的性能表现。
+
+◆ 提出RobustEndoCLIP：采用VeRA进行少样本参数高效微调，在不改变提示接口的前提下显著提升退化场景下的性能与鲁棒性。
+
+研究发现现成TVLMs在内窥镜特定扰动下会出现严重的最差情形崩溃，而轻量级少样本适配能够有效改善这一问题。Endo-C6有望支持标准化的鲁棒性报告，推动更可靠的临床视觉-语言系统发展。</td></tr>
 <tr><td>2026-08-12</td><td>Strain-coupled one-dimensional turbulence for rapid distortion<br><a href='http://arxiv.org/pdf/2608.12048'>论文</a></td><td>本文针对平均应变作用下湍流的快速畸变过程,提出了一种应变耦合的一维湍流(ODT)模型,旨在以较低计算成本同时捕捉线性快速畸变理论与非线性涡动力学的特征。模型将平均应变生成项作为线速度的连续强迫,引入与均匀快速畸变理论一致的能量守恒重分配算子来表征快速压力-应变效应,并通过ODT计算域的膨胀实现尺度压缩,完整描述了畸变过程中组分放大、压力重分配与谱重标度的耦合机制。
 
 ◆创新点:将平均应变生成项作为线速度的连续强迫引入ODT框架,实现应变与湍流的直接耦合。
@@ -1204,12 +1208,12 @@
 ◆ 构建了一个包含4020张高分辨率图像的多中心宫腔镜手术场景数据集,提供了精细的掩码标注,填补了该领域数据资源的空白。
 
 ◆ 大量实验表明VLM-hyster显著优于当前最先进的AI模型,并经妇科医生评估以及多中心、前瞻性验证,证明了其在真实临床应用中的鲁棒性和泛化能力。</td></tr>
-<tr><td>2026-08-09</td><td>RMR-Net: Degradation-Evidence-Guided Road-Image Restoration for Defect Detection<br><a href='http://arxiv.org/pdf/2608.08957'>论文</a></td><td>本文针对车载道路相机常见的运动模糊、失焦、低光照和噪声等问题，提出任务感知修复网络RMR-Net，作为缺陷检测的前端模块。该网络从图像中估计退化证据并可与已知的退化参数融合，用于条件化轻量修复块，通过有界残差路径恢复路面高频细节。在IVCNZ坑洞数据集与PCM数据集上，使用保存的合成退化参数（非实车遥测）进行控制性实验，并采用冻结YOLO11s检测器统一评估。实验结果表明，在八种留出退化条件中RMR-Net在七种条件下取得最高mAP50，其中IVCNZ运动模糊提升0.140-0.427，PCM失焦提升0.060-0.233。消融实验进一步表明有界细节路径贡献最大，而退化条件与检测器感知稳定项提供互补引导。
+<tr><td>2026-08-09</td><td>RMR-Net: Degradation-Evidence-Guided Road-Image Restoration for Defect Detection<br><a href='http://arxiv.org/pdf/2608.08957'>论文</a></td><td>RMR-Net是一种面向道路缺陷检测的紧凑型任务感知图像修复前端，旨在解决车载摄像头因运动模糊、失焦、低光照和噪声导致的路面细节丢失问题。该方法从图像中估计退化证据，并与已有的合成退化参数融合，作为轻量修复模块的条件输入，同时通过有界残差路径专门恢复高频路面细节。实验在IVCNZ坑洞数据集和PCM道路损坏数据集上进行，使用冻结的YOLO11s检测器统一评估，在八种退化条件中的七种取得最高mAP50，包括IVCNZ运动模糊下0.140至0.427和PCM失焦下0.060至0.233的提升。消融实验表明有界细节路径为最大贡献者，退化条件与检测器感知稳定性项提供互补指导。该方案使用保存的合成生成器参数而非实测车辆遥测数据，控制了实验范围。
 
-◆ 提出基于退化证据估计与已知参数融合的任务感知修复机制
-◆ 设计轻量有界残差路径以保留坑洞与裂缝的高频结构信息
-◆ 引入检测器感知稳定项实现修复与检测的端到端协同优化
-◆ 在多种合成退化条件下系统验证对下游检测器的稳定增益...[摘要不完整，待更新]</td></tr>
+◆ 提出退化证据引导的修复框架，从图像自身估计退化信息，可与外部退化参数灵活融合
+◆ 设计有界残差路径专门恢复高频路面细节，是局部贡献最大的核心组件
+◆ 采用任务感知的前端架构，配合冻结检测器进行训练评估，确保修复直接服务于下游检测任务
+◆ 在多种退化条件下均显著提升检测mAP50，验证了方法的实用性与泛化能力...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-09</td><td>ERF-GS: Reconstructing Fast Motion from Disjoint Event-RGB Viewpoints<br><a href='http://arxiv.org/pdf/2608.08531'>论文</a> | <a href='https://github.com/andrewbxy/ERF-GS'>代码</a></td><td>ERF-GS是一种融合事件相机与RGB相机信息的高斯泼溅框架，旨在解决快速运动场景下的动态三维重建难题。该方法利用事件传感器的高时间分辨率来弥补传统RGB视频在捕捉快速运动时的不足。
 
 ◆ 将事件信息同时集成到高斯泼溅的优化与致密化阶段，充分发挥事件数据在时空细节捕捉上的优势。
@@ -1290,15 +1294,6 @@
 ◆ 该方法在CIFAR10上针对合理强度的运动模糊实现了超过80%的鲁棒准确率,同时保持了与标准模型相当的常规准确率,显著优于对抗训练方法。
 
 ◆ 为关键应用场景中视觉模型的部署提供了可验证的安全保障,有助于识别和缓解潜在的隐藏漏洞。</td></tr>
-<tr><td>2026-07-20</td><td>Benchmarking NACTI Species Recognition in Long-Tailed Regimes<br><a href='http://arxiv.org/pdf/2607.18033'>论文</a> | <a href='https://github.com/ZehuaLiuY/Species-Classification'>代码</a></td><td>本文针对北美相机陷阱图像数据集NACTI中存在的严重长尾类别分布不均问题(最大类占据3.7M图像的50%以上),基于PyTorch Wildlife模型系统评估了长尾识别方法在物种识别任务上的表现。
-
-◆ 提出了一套针对NACTI长尾场景的优化配置,通过专用损失函数与长尾敏感正则化策略,在测试集上达到了99.40%的Top-1准确率,刷新了该基准的最优性能。
-
-◆ 首次将长尾物种识别模型在ENA-Detection、Caltech Camera Traps和Missouri Camera Traps三个独立分布外测试集上进行跨域鲁棒性评估,验证了LTR增强模型相比标准交叉熵方法具有显著更强的泛化能力。
-
-◆ 揭示了当前长尾识别方法的局限性,发现其在严重域偏移下对稀有尾部类别仍存在灾难性预测失败,说明表示瓶颈尚未被完全克服。
-
-◆ 公开了所有数据集划分、关键代码及网络权重,为该领域后续研究提供了高可复现性的实验基础。</td></tr>
 <tr><td>2026-07-31</td><td>JADE-GS: Joint Allocation of Deblurring Evidence for Event-Assisted 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2607.14990'>论文</a></td><td>JADE-GS针对3D高斯泼溅(3DGS)在运动模糊场景下的重建难题,提出了一种融合事件相机信息的联合去模糊框架。论文观察到事件双积分(EDI)的解析反演与基于学习的帧-事件联合复原这两种先验在不同区域具有互补性,各有所长。本文的核心思想是将二者的结合建模为空间证据分配问题,通过轻量级的空间先验路由器在像素级预测融合权重,生成额外的监督目标。
 
 ◆ 提出空间证据分配框架,将EDI解析反演与学习式复原两种互补先验在像素级进行自适应融合
@@ -1335,14 +1330,14 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5062</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4507</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5066</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4511</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2441</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1627</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
-<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1616</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1474</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1628</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1618</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1475</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1304</td><td>Point-LIO</td></tr>
-<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1284</td><td>This repository is used for automatic calibration </td></tr>
+<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1283</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1041</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1004</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>932</td><td>An efficient and consistent bundle adjustment for </td></tr>
@@ -1352,20 +1347,20 @@
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>731</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>721</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>661</td><td>Voxel-SLAM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>650</td><td>M-detector</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>651</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>627</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>606</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>602</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>566</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>565</td><td>A computationally efficient and convenient toolkit</td></tr>
-<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>524</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>504</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>525</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>505</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>450</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>445</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>446</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>356</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>345</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>268</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>259</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>263</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>255</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>239</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>228</td><td>dyn_small_obs_avoidance</td></tr>
@@ -1386,16 +1381,16 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2864</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2865</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1663</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1364</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1096</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1049</td><td>A simple method for finding the extrinsic calibrat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>877</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>701</td><td>Modular framework for online informative path plan</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>702</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>662</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>653</td><td>Coverage planning in general polygons with holes.</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>622</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>595</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>574</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>573</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
@@ -1411,10 +1406,10 @@
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>301</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/versavis'>versavis</a></td><td>285</td><td>An Open Versatile Multi-Camera Visual-Inertial Sen</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/image_undistort'>image_undistort</a></td><td>279</td><td>A compact package for undistorting images directly</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>260</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>261</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/kitti_to_rosbag'>kitti_to_rosbag</a></td><td>258</td><td>Dataset tools for working with the KITTI dataset r</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/laser_slam'>laser_slam</a></td><td>247</td><td>This package provides an end-to-end system to lase</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/glocal_exploration'>glocal_exploration</a></td><td>223</td><td>Efficient local and global exploration on submap c</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/glocal_exploration'>glocal_exploration</a></td><td>224</td><td>Efficient local and global exploration on submap c</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/cblox'>cblox</a></td><td>209</td><td>Voxblox-based submapping</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/tsdf-plusplus'>tsdf-plusplus</a></td><td>207</td><td>TSDF++: A Multi-Object Formulation for Dynamic Obj</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aslam_cv2'>aslam_cv2</a></td><td>202</td><td>aslam_cv2</td></tr>
@@ -1436,7 +1431,7 @@
 <tr><td><a href='https://github.com/ethz-asl/active_grasp'>active_grasp</a></td><td>108</td><td>Closed-loop next-best view planning for grasp dete</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/reinmav-gym'>reinmav-gym</a></td><td>106</td><td>Reinforcement Learning framework for MAVs using th</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/waverider'>waverider</a></td><td>106</td><td>RMPs on multi-resolution occupancy maps for effici</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/navrep'>navrep</a></td><td>104</td><td>navrep</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/navrep'>navrep</a></td><td>105</td><td>navrep</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/eth_supermegabot'>eth_supermegabot</a></td><td>102</td><td>Instructions for ETH center for robotics summer sc</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/unreal_airsim'>unreal_airsim</a></td><td>102</td><td>Simulation interface to Unreal Engine 4 based on t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/3d_vsg'>3d_vsg</a></td><td>101</td><td>3D可变场景图，用于长期语义场景变化预测。</td></tr>
@@ -1446,4 +1441,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.08.16
+> 更新于: 2026.08.17
