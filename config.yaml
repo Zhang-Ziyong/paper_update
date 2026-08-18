@@ -29,8 +29,8 @@ keywords:
     "Image Matching":
         filters: ["Image Matching", "Keypoint Matching",
                   "Line Segment Detection", "Local Feature Matching"]
-    "VLM":
-        filters: ["VLM", "Vision-Language Model", "Vision Language Model"]
+    "Robot VLM":
+        query: '(all:VLM OR all:"Vision-Language Model" OR all:"Vision Language Model") AND (all:robot OR all:robots OR all:robotic OR all:robotics)'
     "Sensor Calibration":
         filters: ["Sensor Calibration", "Camera Calibration", "IMU Calibration", "LiDAR Calibration", "Extrinsic Calibration", "Hand-Eye Calibration", "Intrinsic Calibration"]
     "Sensor Undistortion":

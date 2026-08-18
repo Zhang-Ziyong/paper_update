@@ -43,6 +43,9 @@ def load_config(config_file: str) -> dict:
     def pretty_filters(**config) -> dict:
         keywords = {}
         for k, v in config['keywords'].items():
+            if 'query' in v:
+                keywords[k] = v['query']
+                continue
             filters = v['filters']
             formatted = ' OR '.join(f'"{f}"' if ' ' in f else f for f in filters)
             keywords[k] = formatted
