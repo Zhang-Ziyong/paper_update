@@ -29,12 +29,8 @@ keywords:
     "Image Matching":
         filters: ["Image Matching", "Keypoint Matching",
                   "Line Segment Detection", "Local Feature Matching"]
-    "Obstacle Avoidance":
-        filters: ["Obstacle Avoidance", "Collision Avoidance"]
-    "Motion Planning":
-        filters: ["Motion Planning", "Path Planning", "Trajectory Planning"]
-    "Navigation":
-        filters: ["Robot Navigation", "Autonomous Navigation", "Visual Navigation"]
+    "VLM":
+        filters: ["VLM", "Vision-Language Model", "Vision Language Model"]
     "Sensor Calibration":
         filters: ["Sensor Calibration", "Camera Calibration", "IMU Calibration", "LiDAR Calibration", "Extrinsic Calibration", "Hand-Eye Calibration", "Intrinsic Calibration"]
     "Sensor Undistortion":
