@@ -447,12 +447,19 @@ def trim_papers(papers: dict, max_count: int = 20) -> dict:
         logging.info(f"裁剪 {removed} 篇论文，保留 {len(result)} 篇")
     return result
 
-def update_json_file(filename, data_dict):
+def update_json_file(filename, data_dict, active_topics=None):
     """更新JSON文件并应用过滤"""
     try:
         # 读取现有数据
         with open(filename, "r") as f:
             existing_data = json.load(f)
+
+        if active_topics is not None:
+            active_topics = set(active_topics)
+            for topic in list(existing_data.keys()):
+                if topic not in active_topics:
+                    del existing_data[topic]
+                    logging.info(f"清理已停用主题: {topic}")
         
         # 应用全局过滤
         for topic in list(existing_data.keys()):
@@ -973,7 +980,7 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector)
+            update_json_file(json_file, data_collector, active_topics=keywords)
         json_to_md(json_file, md_file, task='更新README.md')
     
     # 更新GitHub Pages
@@ -983,7 +990,7 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector)
+            update_json_file(json_file, data_collector, active_topics=keywords)
         json_to_md(json_file, md_file, task='更新GitPage', to_web=True, 
                    use_tc=True, use_b2t=False)
     
@@ -994,7 +1001,7 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector_web)
+            update_json_file(json_file, data_collector_web, active_topics=keywords)
         json_to_md(json_file, md_file, task='更新微信', to_web=False,
                    use_title=False)
 
