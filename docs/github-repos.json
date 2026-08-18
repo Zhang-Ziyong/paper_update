@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5070,
+      "stars": 5071,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -413,7 +413,7 @@
     "dynablox": {
       "name": "dynablox",
       "url": "https://github.com/ethz-asl/dynablox",
-      "stars": 595,
+      "stars": 596,
       "description": "Real-time detection of diverse dynamic objects in complex environments.",
       "created_at": "2022-12-14",
       "chinese_desc": "Real-time detection of diverse dynamic objects in "

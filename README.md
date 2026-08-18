@@ -15,6 +15,7 @@
 <li><a href='#motion-planning'>Motion Planning</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration</a></li>
 <li><a href='#sensor-undistortion'>Sensor Undistortion</a></li>
+<li><a href='#vlm'>VLM</a></li>
 <li><a href='#archive'>归档</a></li>
 </ol>
 </details>
@@ -32,11 +33,13 @@
 ◆创新点三：在Isaac Sim中集成基于轻量深度相机的触觉代理，实现从多模态示教采集到视觉-触觉策略训练的完整仿真-现实流程。
 ◆创新点四：九名参与者在六项接触关键任务上的用户研究表明，触觉反馈使所有任务成功率提升2.2至15.6个百分点，并在接触清晰度与抓握信心方面获得显著主观增益。
 ◆创新点五：下游策略训练验证表明，融合触觉信息在插孔等接触关键子任务上较纯视觉策略提升17个百分点。</td></tr>
-<tr><td>2026-08-16</td><td>Target Localization and Self-Calibration in a Multistatic Radar System<br><a href='http://arxiv.org/pdf/2608.15501'>论文</a></td><td>本文研究多基地雷达系统中的目标定位与接收机自标定问题,聚焦于平台移动性导致的接收机位姿不确定性这一关键挑战。作者针对执行双基地距离与方位测量的多基地雷达系统,推导了目标定位与接收机姿态估计的克拉美罗下界(CRLB),为算法性能评估提供了理论基准。在此基础上,提出了一种交替加权最小二乘算法,通过迭代方式联合优化目标位置与接收机位姿参数,实现无需外部标定设备的自标定能力。蒙特卡洛仿真结果表明,所提算法在低至中等噪声水平下能够有效逼近CRLB,验证了方法的理论最优性。该工作对协同SLAM和自主机器人网络等应用具有重要参考价值。
+<tr><td>2026-08-16</td><td>Target Localization and Self-Calibration in a Multistatic Radar System<br><a href='http://arxiv.org/pdf/2608.15501'>论文</a></td><td>本文研究多基地雷达系统中的目标定位与接收机自标定问题,聚焦于平台移动性导致的接收机位姿不确定性这一关键挑战。作者针对执行双基地距离与方位测量的多基地雷达系统,推导了联合目标定位与接收机位姿估计的克拉美罗下界(CRLB),为算法性能提供了理论基准。在此基础上,提出了一种交替加权最小二乘(AWLS)算法,通过迭代优化同时估计目标位置与接收机位姿参数,有效缓解了参数耦合带来的估计偏差。
 
-创新点：
-◆ 推导了双基地距离与方位联合测量下多基地雷达系统的CRLB,涵盖目标定位与接收机位姿估计性能边界
-◆ 提出交替加权最小二乘算法,实现目标参数与接收机位姿的联合优化与自标定,在中等噪声下接近理论最优性能...[摘要不完整，待更新]</td></tr>
+◆ 推导了多基地雷达系统在双基地距离与方位联合测量下的CRLB,同时覆盖目标定位与接收机位姿估计,为性能评估提供统一理论基准。
+
+◆ 提出交替加权最小二乘算法,实现目标参数与接收机位姿参数的联合优化,在低中噪声水平下估计精度接近CRLB。
+
+◆ 通过蒙特卡洛仿真验证了算法在目标定位精度和接收机自标定方面的有效性,展示了其在协同SLAM和自主机器人网络等场景中的应用潜力。</td></tr>
 <tr><td>2026-08-15</td><td>MotionGS-SLAM: Event-Modulated Gaussian Splatting for Motion-Blur Robust SLAM<br><a href='http://arxiv.org/pdf/2608.15024'>论文</a></td><td>MotionGS-SLAM针对运动模糊导致视觉SLAM系统失效的问题，提出了一种全新的解决思路。论文的核心贡献在于将运动模糊去除这一不适定反问题重新建模为适定的前向生成问题，在渲染流程中物理化地建模模糊形成过程。该方法利用事件相机微秒级时间分辨率且不受运动模糊影响的优势，结合3D高斯泼溅技术实现鲁棒的SLAM。
 
 创新点总结如下：
@@ -57,12 +60,11 @@
 ◆ 无需特征工程、学习模块或数据集特定调参,即可在结构化与退化环境中保持稳定的位姿对齐。
 
 ◆ 集成子图管理、回环检测和位姿图优化构成完整SLAM流水线,在公开数据集上一致超越强几何基线,同时在普通硬件上保持实时性能,证明精心设计的几何自适应策略能够兼顾泛化性、简洁性与效率。</td></tr>
-<tr><td>2026-08-14</td><td>Geometry-Aware Online Mapping for 3D Gaussian Splatting SLAM<br><a href='http://arxiv.org/pdf/2608.14902'>论文</a></td><td>本文针对3D高斯泼溅SLAM系统在在线增量建图场景下，沿用离线重建启发式策略所导致的初始化与密度控制脆弱性问题展开研究。该工作将建图过程与跟踪过程解耦，在建图线程中重新审视几何与光学先验的作用，提出三项几何感知的改进方法。实验表明这些方法在几乎不增加计算开销的前提下持续提升渲染质量，并揭示了在线SLAM中光度残差与位姿不确定性之间紧密耦合的特性。作者承诺开源代码以促进社区复现与发展。
+<tr><td>2026-08-14</td><td>Geometry-Aware Online Mapping for 3D Gaussian Splatting SLAM<br><a href='http://arxiv.org/pdf/2608.14902'>论文</a></td><td>本文针对3D高斯溅射（3DGS）SLAM系统在在线建图场景中直接沿用离线重建启发式策略，导致在严格的逐关键帧优化预算下表现脆弱的问题，提出了一套几何感知的在线建图改进方法。核心思路是将初始化与致密化启发式在解耦的3DGS-SLAM框架中重新设计，使有限计算资源更合理地分配到新增高斯原语上。实验表明，该方法在渲染质量上取得稳定提升，且计算开销可忽略不计，揭示了在线SLAM中光度残差与位姿不确定性之间的紧密耦合关系。
 
-创新点如下：
-◆ 提出透射率保持的密度控制方法，使新增高斯原语在数量与位置上符合当前场景的光学传播特性
-◆ 设计基于深度信息与相机内参的相机感知尺度初始化策略，为高斯基元提供几何合理的初始尺度
-◆ 提出误差引导的密度控制机制，将有限的优化预算集中分配到高残差区域，提高在线建图效率...[摘要不完整，待更新]</td></tr>
+◆ 透射率保持的致密化方法（transmittance-preserving densification），避免新增高斯破坏原有渲染一致性
+◆ 基于深度与相机内参的相机感知尺度初始化（camera-aware scale initialization），使新增高斯初始形状与观测几何匹配
+◆ 误差引导的致密化策略（error-guided densification），将新原语集中于高残差区域以提升建图效率...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-14</td><td>E-S2Feat:Semantic-Guided Spiking Local Feature Detection and Description for Event Cameras<br><a href='http://arxiv.org/pdf/2608.14027'>论文</a></td><td>本文针对事件相机局部特征提取中存在的稀疏性、噪声和有限纹理等问题，提出了一种基于脉冲神经网络的框架E-S2Feat，用于在资源受限平台上实现高精度且高能效的局部特征检测与描述。该方法从特征表示和特征选择两个角度联合优化局部特征学习。
 
 ◆ 模块特定的脉冲激活机制：在低比特能效推理下保留细粒度结构线索和判别性信息，提升特征表示的保真度。
@@ -975,13 +977,13 @@
 ◆ 在VS13和BrnoCompSpeed等公开数据集上，扭曲光流方法MAE分别达到15.0%和9.7%，去除外缘异常后降至11.7%和7.6%。
 
 该工作突破了现有视觉测速方法对道路条件和标定的依赖，为行车记录仪和智能手机等便携设备支持的低成本交通执法与公众参与式监督提供了可行方案。</td></tr>
-<tr><td>2026-08-15</td><td>SAGE-OR: Semi-supervised Adaptive Scene Graph Generation for Operating Rooms<br><a href='http://arxiv.org/pdf/2608.15336'>论文</a></td><td>该论文提出SAGE-OR框架，针对手术室场景图生成任务，旨在摆脱传统方法对密集多模态标注和专用硬件的依赖。核心创新在于将&quot;检测-推理&quot;范式解耦为&quot;表征-推理&quot;范式，利用冻结基础模型将定位信息隐式编码于预计算特征中，从而彻底消除定位监督需求。框架结合半监督公式与通用分割提示词实现近完美召回，并通过无监督上下文增强（如手部实体）补充未标注类别。轻量级图变换器负责关系推理，特征提取离线缓存，整体适合边缘硬件部署。在4D-OR基准上达76% F1匹配全监督基线，加入手部增强后提升至86%。
+<tr><td>2026-08-15</td><td>SAGE-OR: Semi-supervised Adaptive Scene Graph Generation for Operating Rooms<br><a href='http://arxiv.org/pdf/2608.15336'>论文</a></td><td>现有手术场景图生成方法依赖密集多模态标注和专用硬件，导致数据成本高昂且现有基准局限于仿真环境。本文提出特征为中心的SAGE-OR框架，在4D-OR基准上以76% F1匹配全监督基线，加入手部增强后提升至86%，与需密集监督的SOTA方法仅差4个百分点。
 
-创新点：
-◆ 提出解耦的表征-推理范式，用冻结基础模型隐式编码定位，彻底取消定位监督
-◆ 半监督框架结合通用提示词诱导高召回，引入无监督上下文增强补充未标注实体
-◆ 15M参数轻量级图变换器，训练1.4小时、单帧推理约1ms、峰值内存低于2GB
-◆ 提示词驱动实现新...[摘要不完整，待更新]</td></tr>
+◆ 将传统&quot;先检测后推理&quot;范式解耦为&quot;表征-推理&quot;范式，利用冻结基础模型将定位信息隐式编码于预计算特征中，完全消除定位监督需求。
+
+◆ 采用基于通用分割提示的半监督策略，通过提示驱动实现无监督上下文增强，可灵活加入手部等未标注实体，仅以提示级修改即可适配新类别。
+
+◆ 部署1500万参数轻量图变换器进行关系推理，训练仅需1.4小时，推理约1ms每帧，峰值内存低于2GB，适合手术室边缘设备运行。</td></tr>
 <tr><td>2026-08-10</td><td>CableDex: Cable Length Estimation on Industrial Reels Using a Handheld Device<br><a href='http://arxiv.org/pdf/2608.09392'>论文</a></td><td>CableDex是一种基于计算机视觉的电缆长度自动测量系统，仅需通过手机拍摄单张照片即可估算工业卷盘上的电缆长度，取代了传统耗时且不准确的手工测量方式。该系统整合了相机标定、实例分割、姿态估计和体积计算四个核心模块，能够适应五种不同卷盘类型和多种电缆规格。团队基于1000张人工标注图像训练了实例分割模型，在测试中达到99.5%的mAP50，且推理时间仅5.66毫秒。在75个卷盘上的工业数据验证后，系统实现了4.90%的平均绝对百分比误差，满足行业通常接受的10%误差容限要求。
 
 ◆提出端到端的移动视觉测量流程，将相机标定、实例分割、姿态估计与体积计算无缝集成，实现从图像采集到长度估算的全自动化处理。
@@ -1165,13 +1167,15 @@
 ◆创新点三：将扩散模型的去模糊能力与运动感知机制深度融合，在恢复质量与计算开销之间实现有效折中。
 
 在真实无人机基准数据集上的大量实验表明，该方法不仅在去模糊性能上优于现有方法，还显著提升了目标检测精度，具有较强的实际部署价值。</td></tr>
-<tr><td>2026-08-15</td><td>MotionGS-SLAM: Event-Modulated Gaussian Splatting for Motion-Blur Robust SLAM<br><a href='http://arxiv.org/pdf/2608.15024'>论文</a></td><td>MotionGS-SLAM针对视觉SLAM在运动模糊下失效的难题，提出范式转换方案：不再将模糊视为待去除的噪声，而是将模糊形成过程建模为渲染管线中的前向生成问题，从根本上规避了不适定反问题的求解。
+<tr><td>2026-08-15</td><td>MotionGS-SLAM: Event-Modulated Gaussian Splatting for Motion-Blur Robust SLAM<br><a href='http://arxiv.org/pdf/2608.15024'>论文</a></td><td>现有视觉SLAM系统在运动模糊导致视觉输入退化时表现崩溃，因为它们试图从降质观测中恢复清晰内容这一不适定逆问题。本文提出MotionGS-SLAM，核心思路是将模糊处理从&quot;去模糊&quot;重构为&quot;前向建模&quot;，在渲染管线中生成式地建模模糊形成过程。
 
-◆ 利用事件相机微秒级时间分辨率与对模糊免疫的特性，为高斯渲染提供精确的运动线索
-◆ 提出事件调制高斯核，根据运动信息动态自适应每个高斯的栅格化方式
-◆ 设计空间与时间双重调制机制：空间调制将2D高斯投影从各向同性点变为沿运动方向对齐的各向异性椭圆笔触，时间调制根据局部速度自适应调整曝光积分的采样密度
-◆ 构建基于物理模型的联合优化框架，通过模糊感知的光度与事件约束同时优化曝光内相机轨迹和三维场景几何
-◆ 在严重高动态模糊场景下，轨迹精度和地图质量均显著超越现有最优方法...[摘要不完整，待更新]</td></tr>
+◆ 创新点：利用事件相机微秒级时间分辨率和抗模糊特性，提出事件调制的高斯核，根据精确运动线索动态调整每个高斯的光栅化方式。
+
+◆ 创新点：设计双重调制机制，空间调制将2D高斯投影从各向同性圆点变为沿运动方向的各向异性椭圆笔触；时序调制基于局部速度自适应调整曝光积分采样密度。
+
+◆ 创新点：基于物理建模方案，通过模糊感知的光度约束和事件约束，联合优化曝光内相机轨迹与三维场景几何。
+
+大量实验表明，在严重高运动条件下，该方法在轨迹精度和地图质量上均显著优于当前最优方法。</td></tr>
 <tr><td>2026-08-14</td><td>On the Robustness of Temporal Vision-Language Models for Surgical Endoscopy Videos<br><a href='http://arxiv.org/pdf/2608.14262'>论文</a></td><td>本文聚焦于时序视觉-语言模型（TVLMs）在手术内窥镜视频中面对临床真实采集伪影时的鲁棒性问题。研究指出，诸如失焦、烟雾、运动模糊、噪声、烧灼烟雾以及丢包等退化会引入结构化分布漂移，可能损害视频与文本的对齐效果，但现有研究对此缺乏系统评估。
 
 ◆ 提出Endo-C6基准：一个包含六种内窥镜真实扰动的高严重度紧凑评测集，并基于公开的胃肠道内窥镜和腹腔镜胆囊切除术视频进行标准化评估。
@@ -1303,6 +1307,183 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
+<h2 id='vlm'>VLM</h2>
+
+<div class="table-container">
+<table>
+<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
+<tbody>
+<tr><td>2026-08-17</td><td>When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents<br><a href='http://arxiv.org/pdf/2608.16806'>论文</a></td><td>这篇论文揭示了LLM驱动的具身智能体所面临的一种新型安全威胁——状态语义注入攻击。区别于以往针对用户输入的提示注入研究，本文发现智能体所依赖的环境状态信息本身也可被武器化，攻击者能够通过篡改场景描述、物体属性或空间关系等内容来操纵智能体的任务规划与行为决策。该攻击利用了具身智能体在任务执行中必须结合状态信息进行任务接地的内在特性，具有较高的隐蔽性与现实危害性。论文系统性地定义了此类攻击的威胁模型，并分析了其对SayCan、Code as Policies、VoxPoser等多种主流具身智能体架构的影响。该研究为具身智能体领域的安全防御机制设计提供了重要的理论基础与实践指引。
+
+◆ 首次提出&quot;状态语义注入&quot;这一新型攻击范式，将智能体安全研究从用户输入层面拓展到环境状态层面
+◆ 系统揭示了状态信息作为攻击面的安全风险，弥补了LLM具身智能体安全研究的空白
+◆ 针对多种主流具身智能体架构开展攻击分析与验证，证实了威胁的广泛适用性...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-17</td><td>Diagnosing Dense Same-Class Attribute Misbinding in Large Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.16805'>论文</a></td><td>本论文针对大视觉语言模型在密集同类物体场景中将属性错误绑定到错误实例这一隐蔽问题,形式化定义了DSCAM(密集同类属性错绑)失败模式,揭示了传统问答准确率和物体幻觉指标都无法捕捉的盲区。
+
+◆ 提出InstaBind-Lite受控基准,包含524张图像、529组同类实体群、1773个标注实例和9580个确定性问题,通过源实例标注将错误区分为无支持生成、识别失败和跨实例属性转移三类。
+
+◆ 设计了绑定特异性指标,可量化属性转移的频率、邻接性、序数距离和干预效果,使原本模糊的错答变成可溯源的失败类别。
+
+◆ 在5个开源和2个商业API模型上评估,开源模型平均错绑率19.84%,API系统为7.55%,且80%以上可识别转移来源于相邻实例。
+
+◆ 实验表明定位优先和实例优先的干预策略仅对部分模型有效,InstaBind-Lite由此开启了&quot;模型是否真正知道每个属性归属于哪个实例&quot;这一传统基准无法测量的可靠性维度。</td></tr>
+<tr><td>2026-08-17</td><td>Neurosymbolic Embodied Agents<br><a href='http://arxiv.org/pdf/2608.16794'>论文</a></td><td>本文针对语言模型生成的具身规划无法保证可执行性的问题，提出了一种神经符号智能体，将长周期家务任务分解为任务导向的视觉探索与受限符号规划两个阶段。第一阶段通过视觉语言模型和探索框架从第一人称观测与交互中获取目标相关谓词和实例绑定，生成符号化初始状态；第二阶段利用PDDL转移模型约束解码，使生成的动作token必须在可应用动作范围内扩展，并结合蒙特卡洛树搜索和域无关启发式评估可执行的后续规划。实验表明，在VirtualHome和ALFWorld上，4B至27B开源模型均能实现超过90%的成功率，且最小模型大幅超越27B直接视觉策略。
+
+◆ 提出&quot;视觉探索+符号规划&quot;两阶段解耦的神经符号具身智能体框架
+◆ 基于PDDL转移模型的约束解码机制，从结构上保证规划结果的环境可执行性
+◆ 揭示约束解码与搜索具有互补性，单独使用均解决不到三分之一任务，组合后超过95%
+◆ 相比扩展思维大幅减少生成token数，相比直接交互大幅减少模型可见图像数
+◆ 残差失败可明确归因于状态获取阶段而非规划生成，无需任何专门训练...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-17</td><td>TransAnyText: Translating Arbitrary Text in E-commerce Images via Structured Visual Generation<br><a href='http://arxiv.org/pdf/2608.16284'>论文</a></td><td>TransAnyText针对跨境电商图像翻译中准确性、视觉保真度和可编辑性难以兼得的难题，提出了一种结构化视觉代码框架。该方法将图像文本翻译重新定义为从源图像和目标语言生成可渲染的HTML补丁，将语义生成与像素渲染解耦：由视觉语言模型负责视觉理解、跨语言翻译和结构化代码生成，扩散模型负责背景修复和像素级精修，最后通过确定性渲染合成最终图像。论文还设计了包含监督微调、特权差距加权自蒸馏和带可验证奖励的强化学习的三阶段后训练框架，并发布了多语言数据集TransAnyDataset和基准TransAnyBench。实验表明该方法在翻译质量、视觉一致性和可编辑性方面优于级联管线、开源端到端模型和闭源图像编辑系统。
+
+◆将图像文本翻译重构为从源图像到可渲染HTML代码的生成任务，实现语义生成与像素渲染的解耦
+
+◆提出三阶段后训练框架，包含SFT建立图像到代码映射、PWSD强化风格与布局令牌学习、RLVR优化任务级性能
+
+◆发布多语言电商图像翻译数据集TransAnyDataset与评测基准TransAnyBench
+
+◆提供兼顾翻译准确性、视觉保真和输出可编辑性的统一解决方案...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-17</td><td>Seeing Before Answering: Training-Free Visual Layer Profiling for Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.16263'>论文</a></td><td>该研究揭示了LLaVA类视觉语言模型默认使用视觉骨干网络倒数第二层的脆弱性：在2个VLM和7个基准的14个模型-任务对中，13个并非最优，最佳层因任务和骨干网络而异。
+
+◆提出将矩阵熵推广为视觉数据集熵VDE，仅用100个无标注样本即可预测各层性能，无需下游推理。
+◆发现投影前VDE能有效追踪逐层准确率，排名最高的层在LLaVA-Video上覆盖了oracle最佳层。
+◆揭示投影器虽重塑视觉几何但未抹除性能相关趋势，投影前VDE比投影后信号更强。
+◆证明Gromov-Wasserstein距离投影后失效，仅可作视觉-语言对齐诊断而非层选择器。</td></tr>
+<tr><td>2026-08-17</td><td>AdaSprite: Resource-efficient Online Co-Adaptation for V2I Systems Under Large-scale Data Drifts<br><a href='http://arxiv.org/pdf/2608.16188'>论文</a></td><td>AdaSprite针对车路协同(V2I)场景中视觉语言模型面临的分钟到小时级大规模数据漂移问题,提出在边缘服务器上协同适配多个视觉混合专家(V-MoE)骨干网络,既避免云端卸载的延迟与隐私风险,又克服设备端方法的精度损失。
+
+◆ 通过协作式弹性扩展结合多级复用机制,优化专家生命周期,有效减少DRAM碎片化与负载不均。
+
+◆ 利用V-MoE可预测的激活模式实现高效内存I/O复用,缓解内存-计算瓶颈。
+
+◆ 引入双缓冲调度策略,充分利用专家稀疏性,降低异步适配带来的任务切换开销。
+
+该系统探索了边缘资源受限下并发任务数目的性能上界,在弱边缘设备上可支持多达17个并发V2I任务(基线仅6个),SLO达成率提升1.6倍,吞吐量提升2.1倍,并支持用户在精度与并发度之间进行秒级权衡。</td></tr>
+<tr><td>2026-08-17</td><td>SafeGesture: Evaluating Fine-Grained Hand Gesture Understanding in Vision-Language Models through Scenario-Conditioned Safety Interpretation<br><a href='http://arxiv.org/pdf/2608.16081'>论文</a></td><td>本文提出了SafeGesture基准，用于评估视觉语言模型在安全关键场景下对细粒度手部手势的理解能力，包含6种HaGRID手势与8种操作场景的4,800个评估样本，并系统测试了五种代表性VLM。
+
+◆ 提出了SafeGesture基准，将手势识别与场景化安全推理结合，填补了VLM在安全关键操作场景中手势理解评估的空白。
+
+研究发现存在显著的感知-推理脱节现象：GPT-4o手势识别准确率高达98.4%，但安全推理准确率仅为53.3%，Qwen2.5-VL同样存在45个百分点的差距。
+
+◆ 揭示了&quot;感知-推理脱节&quot;现象，指出模型能准确识别手势却难以推理出场景适当的安全行动。
+
+实验发现多数模型几乎不使用不确定性标签，且仅靠场景多数类先验（无视觉输入）即可达到58.3%安全准确率，超过多数被测模型，暴露出严重的标签偏置问题。
+
+◆ 发现标签偏置的隐蔽性，证明高准确率可能掩盖模型依赖场景先验而非真正视觉理解的本质。
+
+进一步分析表明，提供真实手势作为文本仅带来0.4至3.2个百分点的提升，所有模型安全准确率均不超过56.2%，说明核心瓶颈在于场景条件下的安全推理能力，而非手势识别本身。
+
+◆ 明确指出瓶颈定位：场景条件安全推理是主要限制因素，而非视觉感知，为未来研究指明方向。</td></tr>
+<tr><td>2026-08-16</td><td>SEER: Long-Context Reasoning via Selective Visual-Text Compression<br><a href='http://arxiv.org/pdf/2608.15962'>论文</a> | <a href='https://github.com/jiaweixu98/SEER'>代码</a></td><td>SEER针对长上下文推理中注意力计算复杂度高的问题，提出一种选择性视觉-文本压缩框架。该方法通过视觉扫描定位查询相关图像，仅在必要时才回溯检索原始文本，从而兼顾视觉压缩的高效与文本推理的精度。
+
+◆ 提出选择性视觉-文本压缩策略，突破现有方法对全部内容统一压缩、牺牲关键信息精度的局限
+◆ 在工具交互轨迹上进行监督微调，使模型自适应学习何时调用选择、何时调用检索工具
+◆ 设计视觉扫描结合按需文本回溯的两阶段机制，融合视觉范式的高效与文本范式的精确
+
+实验表明，SEER在LongBench基准上达到51.11%的平均准确率，较视觉文本基线Glyph-9B提升2.33点、较Qwen3-8B提升3.49点，同时相对全文本基线保留了平均提示词节省量。</td></tr>
+<tr><td>2026-08-16</td><td>Conjunctive Poisoning in AI Supply-Chain Applications<br><a href='http://arxiv.org/pdf/2608.15913'>论文</a> | <a href='https://github.com/N-H-Arif/llm_temp'>代码</a></td><td>这篇论文揭示了AI供应链中一种被忽视的攻击面：提示包装器与配置元数据的联合投毒攻击。研究表明，恶意开发者可将看似无害的包装器与精心构造的元数据配对，在不修改模型权重、训练数据或推理后端的情况下确定性改变模型生成后的行为。
+
+◆ 提出&quot;合取投毒&quot;攻击模型，通过嵌入包装器标记与加密绑定元数据的双重门控机制实现隐蔽激活
+
+◆ 在15个开源与闭源LLM/VLM部署上系统评估该攻击的实际可行性
+
+◆ 证明现有防御措施（包括静态元数据检查、包装器扫描器、PromptShield和SigStore签名）均无法有效应对此类威胁
+
+◆ 设计轻量级中间件防御TIF-BAH，在推理时验证包装器完整性并记录行为证明
+
+研究强调包装器与元数据的交互构成现代AI部署中未受保护的新执行层，暴露出模型权重和提示级防御所无法覆盖的部署时行为风险。</td></tr>
+<tr><td>2026-08-16</td><td>CLARA: Clip-Level Multimodal Alignment with VLM-Derived Rationales for Hateful Video Detection<br><a href='http://arxiv.org/pdf/2608.15905'>论文</a></td><td>该论文聚焦于仇恨视频检测任务,指出仇恨信号通常由语音、音频、视觉等多模态线索的复杂交互产生,且具有短暂、隐式且时序依赖的特点,传统视频级表征难以有效捕捉。针对这一挑战,作者提出了CLARA框架,将视频建模为细粒度片段序列,以更精准地定位时序化的仇恨信号。
+
+◆ 提出基于混合专家的片段编码器,实现多模态线索的自适应对齐,有效融合不同模态信息。
+
+◆ 设计局部-全局片段对比学习目标,联合建模短期线索与长距离时序依赖关系。
+
+◆ 引入由视觉语言模型生成的推理依据,并通过门控Transformer融入高层语义指导,增强模型对隐式仇恨含义的理解。
+
+在三个仇恨视频数据集上的大量实验表明,CLARA consistently超越现有最优方法,消融实验与参数分析进一步验证了各组件的有效性。</td></tr>
+<tr><td>2026-08-16</td><td>Beyond Single Object: Learning 3D Relations with Large Language Models<br><a href='http://arxiv.org/pdf/2608.15710'>论文</a></td><td>该论文针对3D大语言模型（3D-LLMs）目前只能处理单物体或场景描述、难以进行多物体间细粒度比较的核心缺陷，提出了一套完整的解决方案。作者通过构建专门的多物体指令数据集和轻量级交互模型，使3D-LLM具备了几何推理和物体间关系理解能力，并在新设计的应用基准上显著超越现有3D和2D视觉语言模型。
+
+◆ 提出MO3D多物体3D指令数据集，专门要求细粒度的跨物体比较推理，弥补了现有3D-LLM数据在多物体关系建模上的空白。
+
+◆ 设计Multi-3DLLM模型，采用极简的Patch-Interaction Transformer（PIT），能够在保留局部几何细节的同时，显式建模物体间与物体内的交互关系。
+
+◆ 构建Mini-apps应用驱动基准（Shape Mating和Change Captioning），首次从几何理解与实际应用角度评测3D-LLM的多物体推理能力。
+
+◆ 实验证明现有3D-LLM和2D-VLM在多物体比较任务上均表现不佳，缺乏以比较为中心的设计和几何感知能力，而Multi-3DLLM在所有基线上取得领先，并展现出向单物体分类任务的正向迁移能力。</td></tr>
+<tr><td>2026-08-16</td><td>ConceptFormer: Learning Adaptive Latent Concepts for Query-Document Alignment in Visual Document Retrieval<br><a href='http://arxiv.org/pdf/2608.15698'>论文</a> | <a href='https://github.com/Neuir/ConceptFormer'>代码</a></td><td>视觉文档检索旨在从包含文本、布局、图表等丰富证据的文档集合中定位查询相关页面，现有方法依赖文本描述或局部视觉区域作为监督信号，难以充分捕捉复杂视觉结构。ConceptFormer提出了一种潜在概念表示学习框架，通过查询条件化的连续潜在概念桥接局部视觉证据与高层语义相关性，无需文本中间表示或原始视觉标注。
+
+◆ 提出基于查询条件化潜在概念的中间表示方法，动态建模查询与文档间的语义对齐，摆脱对文本代理或固定视觉区域的依赖
+◆ 训练阶段借助强视觉语言模型自适应确定潜在概念token数量，实现细粒度证据的灵活捕获
+◆ 在多个视觉文档检索基准上取得显著提升，平均NDCG@10相对最强视觉检索基线和最强OCR文本检索基线分别提升16.7%和22.1%
+◆ 分析表明潜在概念能有效连接局部视觉证据与高层语义，兼顾细粒度文本线索和复杂文档级视觉结构...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-16</td><td>AlloEgo-VLM: Disambiguating Allocentric and Egocentric Reference Frames in Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.15605'>论文</a></td><td>本论文针对视觉语言模型在空间语义理解中面临的环境参照框架与自我参照框架歧义问题展开研究，揭示了现有VLM因训练数据不足而对隐含空间方向产生不一致响应的局限性。
+
+◆ 构建了名为AlloEgo-View的新数据集，采用结构化空间表示方法，包含图像、查询与视角特定答案的三元组，并详细标注参考对象、目标对象、方向、参照框架及视角类型。
+
+◆ 提出了AlloEgo-VLM消歧框架，可在查询模糊的情况下有效区分两种参照框架，并通过监督微调便捷集成到现有VLM中。
+
+◆ 将框架部署到基于NVIDIA Isaac Sim的机器人平台，在开放式物体搜索任务中验证了其真实场景下的可行性与实用价值。
+
+实验结果表明当前VLM在处理视角特定查询时存在明显不足，而AlloEgo-VLM展现了强大的参照框架消歧能力，为具身智能中的空间理解提供了新的解决思路。</td></tr>
+<tr><td>2026-08-16</td><td>From Generalist to Specialist: A Context-Fusion Framework for Endoscopic Polyp Reporting with a Frozen VLM<br><a href='http://arxiv.org/pdf/2608.15580'>论文</a></td><td>本文提出了一种上下文融合框架,用于在冻结通用视觉语言模型的前提下实现内镜息肉报告的专科化,无需修改预训练权重即可引入可靠的专家知识。该框架融合两类上下文:由自监督息肉编码器检索的相关图像-报告对作为显式转导上下文,以及可学习的连续专家标记作为跨病例共享的隐式指令上下文。在2056张专家标注的公开内镜图像上的实验表明,该框架在数值、分类和报告生成指标上均显著优于直接冻结推理,在与通用VLM、任务专用预测器及权重适配方法的对比中取得了最强综合表现。该方法仅引入相当于冻结VLM参数量的0.006%的可训练参数,实现了极轻量级的专科适配。此外,当检索到的最相似案例包含正确目标类别时,框架可修正权重适配基线70.5%的错误,验证了显式证据对专科化的关键作用。
+
+◆ 提出上下文融合范式,通过隐式指令上下文与显式转导上下文的协同,在冻结VLM上实现专科化,避免权重修改导致的预训练能力损失
+◆ 设计自监督息肉编码器进行图像-报告对检索,提供查询特定的显式证据,实现零权重更新的知识注入
+◆ 引入可学习连续专家标记作为跨病例共享的隐式指令,大幅压缩可训练参数量至0.006%
+◆ 在统一接口下同时支持定量测量、Paris分类和形态学报告生成,验证了上下文融合作为通用VLM专科化策略的有效性...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-16</td><td>Catching Hallucinated Citations in Video-LLM Question Answering: A Self-Verification Pipeline and Verifier Ablation Study<br><a href='http://arxiv.org/pdf/2608.15574'>论文</a> | <a href='https://github.com/yogesh-iitj/grounded-video-qa'>代码</a></td><td>本文针对视频问答系统中视觉语言模型常以高置信度生成带时间戳引用却未真正得到帧画面支持的问题，提出了一种检索增强生成加事后逐帧自验证的闭环流程。每个创新点如下：
+
+◆ 揭示了&quot;时间戳幻觉&quot;这一新型欺骗性错误：时间戳让用户感觉引用有依据，但实际上并未校验所述内容是否真实来自所引用帧。
+
+◆ 设计了完整自验证管线：检索增强语言模型先生成带时间戳引用答案，再对每条引用帧独立复核后才呈现给用户。
+
+◆ 通过三项验证设计的消融实验得出关键结论：直接询问视觉模型因迎合性完全失效（0%），盲目重新描述加通用大模型判断不稳定（0%–100%），改用小型自然语言推理模型则稳定捕获79%的伪造引用。
+
+◆ 在Apple Silicon的MLX与Google Colab的CUDA双平台上实现并开源了完整管线与评测工具，兼顾本地与云端部署。</td></tr>
+<tr><td>2026-08-16</td><td>CrossView: Can Vision-Language Models Reason Across Cameras?<br><a href='http://arxiv.org/pdf/2608.15539'>论文</a> | <a href='https://utaustin-swarmlab.github.io/CrossView'>代码</a></td><td>这篇论文针对当前视频理解基准测试局限于单摄像头场景的问题，提出了多摄像头视频理解这一全新研究方向。论文指出多摄像头推理并非单摄像头问题的简单扩展，而是面临上下文随视角数量扩展、遮挡处理、视角重要性判断以及跨视角证据融合等根本性挑战。为此，作者构建了CrossView基准，涵盖自动驾驶、安防监控、自我/外部视角视频和机器人四大领域，对多种模型进行了系统评估。实验结果显示，无论专有模型如GPT-5.2还是开源模型如Qwen3-VL，准确率均显著偏低，且开源模型差距明显。论文的核心创新点如下：
+
+◆首次将多摄像头视频推理明确定义为区别于传统单摄像头理解的独立问题，揭示其在上下文管理、遮挡推断和证据融合等方面的根本性差异
+
+◆构建了覆盖自动驾驶、安防监控、自我/外部视角和机器人四大真实场景的多摄像头视频问答基准数据集CrossView
+
+◆通过大规模实验系统揭示了现有视觉语言模型在多摄像头联合推理任务上的严重性能不足
+
+◆证实模型性能与其联合处理多视角信息的能力高度相关，为后续模型设计提供了明确方向
+
+◆开源了完整的代码与数据集，推动多摄像头视频理解领域的进一步研究...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-16</td><td>UniFed-VLM: Federated Instruction Tuning for Vision-Language Models with Multiple Heterogeneity<br><a href='http://arxiv.org/pdf/2608.15516'>论文</a> | <a href='https://github.com/wangpengyu2004/UniFed-VLM'>代码</a></td><td>本文研究视觉语言模型(VLM)在联邦学习场景下进行指令微调所面临的多维异构性挑战,涵盖任务、模态和模型架构三个层面的异构。现有方法多基于简化假设,难以应对真实场景中复杂的联合异构问题。为此,作者提出了UniFed-VLM统一联邦指令微调框架,该框架包含联邦补偿子空间聚合(FedCSA)和两阶段协作蒸馏(TCoD)两个关键组件。FedCSA通过子空间对齐的参数高效适配器聚合机制,结合动态加权与补偿策略缓解异构性引起的参数冲突;TCoD则借助互蒸馏适配器(MDA)与基于专家混合的蒸馏策略,在异构模型间实现有效知识迁移。在多个基准数据集上的实验表明,该方法在多样化任务中取得了优于现有联邦学习方法的平均性能。
+
+◆ 首次系统研究任务、模态和模型架构联合异构下的VLM联邦指令微调问题
+◆ 提出FedCSA方法,通过子空间对齐的动态加权与补偿聚合缓解异构冲突
+◆ 设计TCoD两阶段协作蒸馏机制,结合MDA和MoE蒸馏策略实现跨异构模型知识迁移...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-15</td><td>NumerosityVLM: A Cognitively Inspired Benchmark for Interpreting Numerosity Representations in Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.15425'>论文</a> | <a href='https://github.com/fuy3/NumerosityVLM-Benchmark'>代码</a></td><td>核心贡献：本文针对视觉语言模型(VLMs)在数量感知能力上的不足，提出了认知启发的诊断基准NumerosityVLM，包含10800张合成图像，在六个受控条件下正交操控物体大小、空间排列和数量，并逐步剔除纹理、形状和颜色等因素。
+
+◆创新点一：将数量与相关视觉因素解耦，通过正交实验设计避免传统计数基准中数量与大小、密度等视觉线索的混淆，从而能够精准诊断模型的纯数量感知能力。
+
+◆创新点二：基于认知科学中人类婴儿前语言阶段即具备数量感知这一发现，构建了类人认知启发的评估范式，揭示当前VLMs在类人基础认知能力上的欠缺。
+
+◆创新点三：多因素分析发现模型架构是性能方差的最大解释因素(partial ω²=0.325)，远超视觉条件的影响。
+
+◆创新点四：通过层级探针分析发现，视觉编码器的早期阶段即出现线性可分的数量信号，且模型间性能差异主要源于语言模型组件，为架构改进提供了明确方向。</td></tr>
+<tr><td>2026-08-15</td><td>FloodReasonBench: Benchmarking VLM Reasoning Segmentation for Embodied Flood Response at the Edge<br><a href='http://arxiv.org/pdf/2608.15410'>论文</a></td><td>本文提出FloodReasonBench,首个面向边缘端具身洪水响应的视觉语言模型推理分割基准。研究构建了源于真实场景的洪水专用推理分割数据集FloodResponseSeg,并在轻量视觉编码、分层分割推理与压缩中间表示等条件下对推理分割流水线进行系统刻画。实验基于NVIDIA Jetson AGX Xavier平台,揭示了推理精度、时延、能耗与通信开销之间的权衡关系。关键发现表明,通用预适应设置下精度随分区大幅波动,而洪水适配后跨分区精度范围显著收紧。
+
+◆ 提出FloodReasonBench基准,专门评估VLM推理分割在边缘具身洪水响应中的表现
+◆ 构建FloodResponseSeg数据集,源自真实洪水场景,涵盖响应相关标注目标
+◆ 首次在轻量视觉编码、分层分割推理、压缩中间表示下系统刻画推理分割流水线
+◆ 基于Jetson AGX Xavier实测,提供精度—时延—能耗—通信的端到端权衡分析
+◆ 发现洪水适配设计空间比通用预适应具有更紧凑的跨分区精度分布...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-15</td><td>Remember Smarter: Visual History Compressor and Hyperbolic Experience Space for Robotic Memory<br><a href='http://arxiv.org/pdf/2608.15269'>论文</a></td><td>针对长时序机器人策略需紧凑访问历史观测与可复用经验、且不扩张VLA上下文的挑战，本文提出即插即用模块Remember Smarter (RS)，包含视觉历史压缩与双曲经验记忆两条互补分支。
+
+◆ 视觉分支利用双向空间Mamba和因果时序Mamba对多视角patch历史进行压缩，并通过残差交叉注意力将压缩记忆暴露给面向动作的隐状态，同时保持VLM视觉token流不变。
+
+◆ 经验分支将成功的最终层VLM状态存储于Poincaré VAE空间进行层次化组织，并以异步方式将检索到的经验转化为测地线提示token，避免阻塞动作推理过程。
+
+该设计有效缓解了长时序任务中的上下文膨胀问题。当RS适配pi0时，在LIBERO-Plus上将总体成功率从53.6%提升至70.6%，并在真实机器人实验中显著增强了记忆保持与经验利用能力。</td></tr>
+</tbody>
+</table>
+</div>
+
+<div align='right'><a href='#top'>↑ 返回顶部</a></div>
+
 <h2 id='archive'>归档</h2>
 
 > [点击查看所有历史论文归档](./docs/archive.md)
@@ -1316,7 +1497,7 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5070</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5071</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4519</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2441</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1629</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
@@ -1377,7 +1558,7 @@
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>663</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>654</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>595</td><td>Real-time detection of diverse dynamic objects in </td></tr>
+<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>596</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>574</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>573</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>568</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
