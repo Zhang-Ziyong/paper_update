@@ -1,29 +1,52 @@
-# 历史论文归档 (2026.08.18)
+# 历史论文归档 (2026.08.19)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (165篇)</a></li>
-<li><a href='#sfm'>SFM (78篇)</a></li>
+<li><a href='#slam'>SLAM (168篇)</a></li>
+<li><a href='#sfm'>SFM (80篇)</a></li>
 <li><a href='#image-matching'>Image Matching (32篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (51篇)</a></li>
-<li><a href='#sensor-undistortion'>Sensor Undistortion (108篇)</a></li>
+<li><a href='#sensor-undistortion'>Sensor Undistortion (111篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (20篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (28篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (165篇)</h2>
+<h2 id='slam'>SLAM (168篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-18</td><td>Jetson-ORB-SLAM3: Accuracy-Preserving GPU Implementation for Edge Computing Devices<br><a href='http://arxiv.org/pdf/2608.17874'>论文</a></td><td>本文针对边缘设备上视觉惯性SLAM系统因稠密特征提取与回环检测导致的高计算成本问题,提出了Jetson-ORB-SLAM3,采用前端GPU、后端CPU的异构架构,在NVIDIA Jetson Orin Nano上实现精度保持的实时加速。
+
+◆ GPU前端算法级完整复现CPU参考ORB检测器,关键点一致率达94.7%,描述子比特一致率达99.9%,真正实现精度保持而非近似加速。
+
+◆ 通过原生libnvinfer FP16 TensorRT引擎将CosPlace ResNet-50回环检测推理降至2.2ms每查询,较通用ONNX Runtime提升180倍,使学习式地点识别可在7W低功耗设备上与跟踪并发运行。
+
+◆ 在EuRoC、TUM-VI、KITTI三个数据集上验证GPU与CPU实现、嵌入式与桌面平台四种配置轨迹误差一致小于0.10cm,单目惯性模式平均达32FPS,精度与原始ORB-SLAM3相当。</td></tr>
+<tr><td>2026-08-18</td><td>Scalix: Uncertainty-Aware Scale-Consistent Monocular SLAM<br><a href='http://arxiv.org/pdf/2608.17553'>论文</a></td><td>Scalix是一种面向移动机器人的实时单目SLAM框架,旨在解决单目视觉固有的尺度模糊问题。该方法将深度学习几何基础模型的预测结果集成到概率因子图优化中,无需依赖惯性测量单元即可实现度量尺度的状态估计。
+
+◆同时为深度模型引入逐像素深度不确定性与逐帧尺度不确定性,有效抑制噪声预测对优化的干扰
+◆将尺度预测视为独立测量值纳入因子图,通过多视图数据关联提升跨帧尺度一致性
+◆在恒速运动等视觉惯性系统失效的场景下仍能保持鲁棒的尺度估计
+
+在大规模室内外环境的实验中,Scalix在度量尺度和上至尺度基准测试上均达到当前最优性能,同时具备实时运行能力与良好的泛化性。</td></tr>
+<tr><td>2026-08-18</td><td>Embodied-Navigator: Point, Think, Memorize, and Align for Efficient Navigation<br><a href='http://arxiv.org/pdf/2608.17512'>论文</a></td><td>该论文针对大视觉语言模型在具身导航中存在的动作空间不自然、推理僵化、记忆低效等问题，提出了TAMP-Nav统一框架。论文的核心创新体现在以下三个方面。
+
+◆ 点（Point）：提出像素到三维的动作范式，将导航重新建模为二维视觉提示任务，让VLM直接在二维像素上选点，再投影到三维坐标交由SLAM控制器执行，从而与VLM的二维预训练先验自然对齐。
+
+◆ 想与记（Think and Memorize）：设计选择性推理与锚点轨迹记忆机制，动态触发链式思维推理，仅在关键节点保留高保真记忆，将冗余轨迹压缩为轻量化的时空指示器，有效保留关键历史信息并增强时空感知。
+
+◆ 对齐（Align）：构建基于群体相对策略优化的两级对齐范式，将全局结果奖励与细粒度过程奖励叠加，对智能体进行密集监督，使其认知规划与物理环境反馈紧密对齐。
+
+实验表明TAMP-Nav在R2R-CE上达到66.2%的成功率，仅需9万条训练轨迹即实现了最先进的性能、运行时效率与样本效率的平衡。</td></tr>
 <tr><td>2026-08-17</td><td>ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning<br><a href='http://arxiv.org/pdf/2608.16572'>论文</a></td><td>该论文针对低成本遥操作硬件难以采集接触关键演示数据的问题，提出了ViHaTeleop系统，核心目标是让低成本示教学习在灵巧操作任务中实用化。系统整体仅0.7公斤、成本约550美元，集成了基于SLAM的腕部追踪、相机手部追踪和通过线性谐振致动器（LRA）实现的逐指振动触觉反馈。
 
 ◆创新点一：低成本轻量化视觉-触觉遥操作硬件方案，将SLAM腕部追踪、相机手部追踪与LRA逐指触觉反馈统一于一套0.7kg、550美元的设备中。
@@ -1092,12 +1115,27 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (78篇)</h2>
+<h2 id='sfm'>SFM (80篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>本文构建了基于密度泛函理论的温密核物质状态方程,通过Maxwell构造在恒定熵每重子条件下将核物质(DD2模型)与夸克物质(禁闭密度泛函)相耦合,适用于超新星爆发、中子星合并及Q球宇宙学演化等场景。
+
+◆ 提出DDf-SFM与DD2-χCDF两套混合状态方程模型,系统研究含与不含色超导情形下的等熵混合星
+
+◆ 发现有限温度下当熵每重子超过临界值时,DDf-SFM模型出现&quot;热孪生星&quot;第三族分支解,而色超导模型及零温情形则不存在
+
+◆ 揭示热孪生星对应的临界熵与Seidov引力不稳定性判据密切相关,并将其作为大质量蓝超巨星超新星可爆性的新判据
+
+◆ 据此排除强色超导模型,同时探讨解禁闭起始密度对色超导的敏感性,并与Danielewicz核物质流约束进行了对比验证...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-18</td><td>Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study<br><a href='http://arxiv.org/pdf/2608.18028'>论文</a> | <a href='https://github.com/simonwebertum/InitFreeBA.git'>代码</a></td><td>本文重新审视了无需初始化的光束法平差(InitFree BA),指出当前研究仅关注优化成功率而忽略了低OSE目标函数值能否产生有效的度量三维重建。作者构建了统一评估框架,集成C++实现的OSE算法与Blender合成数据生成器,提供精确真值与可控的相机配置及观测密度。实验揭示了被忽视的&quot;优化-重建差距&quot;现象:具有相似OSE值的射影解在度量升级后可能产生显著不同的欧式重建。研究进一步识别出初始化先验、路标点观测密度与度量升级稳定性是影响重建成功的关键因素,表明InitFree BA的核心挑战不仅是优化目标函数,更在于获得可稳定升级的射影重建。
+
+◆ 提出统一的InitFree BA评估框架,包含C++实现与Blender数据生成器
+◆ 首次系统揭示&quot;优化-重建差距&quot;现象,证明低OSE值不等于有效度量重建
+◆ 识别出三个关键因素:初始化先验、观测密度、度量升级稳定性
+◆ 提供开源基准与代码,推动该方向未来研究...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-15</td><td>Robust structure from motion for aerial-ground images via detector-free feature matching and multi-view track refinement<br><a href='http://arxiv.org/pdf/2608.15251'>论文</a></td><td>本文针对空地图像集成三维重建中因视点、尺度和旋转剧烈变化导致的特征匹配难题,提出了一种结合旋转鲁棒无检测器匹配网络与多视图轨迹优化的增量式SfM框架。核心创新包括:◆ 旋转感知特征提取模块,采用全向状态空间块(OSS Block)沿八个对称方向选择性扫描,建模长程空间依赖并合成旋转不变特征图。◆ 多尺度注意力变换,利用四叉树注意力构建层次化token金字塔,以线性复杂度隔离高关联区域并过滤无关区域。◆ 双向特征匹配,设计对称由粗到精的对齐策略,通过互最近邻约束计算双向Softmax置信度矩阵,并用MLP回归亚像素级坐标偏移。◆ 多视图轨迹优化,采用集成索引结构评估局部空间邻近性,将离散的子轨迹链接到最高置信度锚点,确保ISfM流程中特征的稳定可重复性。在真实空地数据集上的实验表明,该方法在5°位姿误差AUC指标上较LoFTR提升93.9%,在ISfM重建精度上提升27.6%至32.7%,为空地图像高精度集成三维重建提供了可靠方案。</td></tr>
 <tr><td>2026-08-12</td><td>MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis<br><a href='http://arxiv.org/pdf/2608.12442'>论文</a> | <a href='https://mv2-dataset.github.io/'>代码</a></td><td>本文针对真实驾驶场景中可微渲染与新视角合成（NVS）面临的稀疏视角、动态物体和单一轨迹等难题，提出了多视角多车辆（MV2）数据集与基准测试。
 
@@ -1723,13 +1761,13 @@
 ◆ 论文设计了解耦策略，将音频驱动的唇部运动与关键点驱动的上半脸动态分离，提升唇同步与表情控制精度。
 ◆ 通过全局风格上下文保持机制，模型能在细粒度控制下维持完整面部表现的一致性和连贯性。
 ◆ 实验表明，KM-Speaker在数据受限场景下仍优于现有方法，尤其在唇同步、风格遵循和对话本地化的时序表情匹配方面表现突出。</td></tr>
-<tr><td>2026-06-22</td><td>G-MASt3R-SfM: Graph-based View Pruning and Multi-stage Optimization for Robust SfM<br><a href='http://arxiv.org/pdf/2606.22856'>论文</a></td><td>本文针对现有MASt3R-SfM方法因引入非重叠图像对的错误匹配而导致位姿估计精度显著下降的问题，提出了G-MASt3R-SfM新方法。该方法在MASt3R匹配结果的基础上，通过两个创新模块提升SfM流程的鲁棒性。
+<tr><td>2026-06-22</td><td>G-MASt3R-SfM: Graph-based View Pruning and Multi-stage Optimization for Robust SfM<br><a href='http://arxiv.org/pdf/2606.22856'>论文</a></td><td>G-MASt3R-SfM是针对多视图三维重建中运动恢复结构（SfM）任务提出的新型鲁棒性增强方法。该工作指出了现有MASt3R-SfM的关键缺陷：MASt3R匹配在非重叠图像对之间容易产生错误对应关系，直接用于优化会显著降低位姿估计精度。为此，论文提出了两个核心创新模块。
 
-◆ 图结构视图剪枝模块（GVP）：利用匹配置信度构建场景图，并通过几何约束剔除异常视图，从源头过滤不可靠的图像对匹配。
+◆ 图视角剪枝（GVP）模块：基于匹配置信度构建场景图，通过几何一致性对外视（outlier view）进行剪枝，有效过滤不可靠的图像对。
 
-◆ 多阶段优化模块（MSO）：采用由局部一致性到全局一致性的渐进式策略精化相机参数，有效避免异常匹配对全局优化的干扰。
+◆ 多阶段优化（MSO）模块：采用由局部一致性逐步扩展到全局一致性的渐进式策略，对相机参数进行分层细化优化。
 
-在ETH3D数据集上的实验表明，该方法在相机位姿估计和三维重建精度上均达到了当前最优水平，能够有效抑制外点引起的噪声。</td></tr>
+在ETH3D数据集上的实验表明，该方法在相机位姿估计和三维重建两项任务上均达到了当前最优精度，能够有效抑制异常匹配带来的噪声干扰。整体而言，该工作通过图结构剪枝与多阶段优化的结合，显著提升了基于深度匹配的SfM管线在复杂场景下的鲁棒性。</td></tr>
 <tr><td>2026-06-18</td><td>Evaluation of Image Matching for Art Skills Assessment<br><a href='http://arxiv.org/pdf/2606.20199'>论文</a></td><td>◆本文提出一种基于图像匹配的绘画技能评估方法，通过比较手绘作品与原始模板的相似度来量化绘画水平。
 
 ◆研究将计算机视觉用于替代传统人工评估，降低了评估过程的复杂性和主观性。
@@ -7059,12 +7097,27 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-undistortion'>Sensor Undistortion (108篇)</h2>
+<h2 id='sensor-undistortion'>Sensor Undistortion (111篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-18</td><td>Differentiable Voronoi Ray Tracing Beyond Rasterization Speeds<br><a href='http://arxiv.org/pdf/2608.17682'>论文</a></td><td>该论文提出了VoroTracing，一种基于可微分Voronoi光线追踪的实时新视角合成方法，打破了射线渲染无法达到实时速度的传统假设。作者系统分析了影响光线追踪吞吐量的三个关键因素：遍历长度、单元内计算量和内存局部性，并据此对场景表示、优化策略和GPU执行进行了协同设计。
+
+◆ 使用紧凑八面体外观纹理显著降低内存访问开销
+◆ 将不透明度集中于表面以促进光线提前终止
+◆ 采用固定预算表示，无需剪枝或致密化即可优化
+◆ 通过面向一致性遍历的GPU实现提升执行效率
+
+在Mip-NeRF 360数据集上，VoroTracing在RTX 5090上达到623 FPS，吞吐量是此前最快射线方法的3.2倍、3D高斯泼溅的2.8倍，同时保持了具有竞争力的重建质量。更为重要的是，其渲染器仅通过光线生成与采样即可自然支持鱼眼、卷帘快门、运动模糊和景深等复杂相机效应，无需为栅格化管线编写专用扩展，展现了射线渲染在灵活性和速度上的双重潜力。</td></tr>
+<tr><td>2026-08-18</td><td>Scanline-Aware Animatable Gaussian Avatars from Rolling-Shutter Videos<br><a href='http://arxiv.org/pdf/2608.17314'>论文</a></td><td>该论文针对滚动快门(RS)视频重建可动画人体化身的问题展开研究。传统方法假设视频帧为全局快门，但RS传感器逐行曝光,导致同一帧内人体不同部位对应不同姿态,将此类视频输入现有方法会引入剪切和抖动伪影,并破坏多视角一致性。
+
+论文提出RS-Avatar方法,核心思想是利用可动画化身本身已具备的子帧渲染能力,将逐行曝光建模为按扫描线合成子帧图像,仅需将原本的模糊平均算子替换为滚动快门合成算子即可。
+
+◆ 创新一:首次将滚动快门物理过程显式建模进3D高斯化身重建,通过扫描线级子帧合成消除RS畸变。
+◆ 创新二:构建RS-ZJU基准数据集,基于ZJU-MoCap生成带RS效应的真实感视频用于评测。
+◆ 创新三:揭示关键发现,即运动模糊模型虽复用相同子帧机制却无法迁移,甚至低于无视快门的基线,证明算子本身而非子帧机制才是关键贡献。</td></tr>
 <tr><td>2026-08-17</td><td>Spatial Temporal Synergy: Balancing Change and Invariance in Text Driven 3D Human Motion Editing<br><a href='http://arxiv.org/pdf/2608.16008'>论文</a></td><td>该论文针对文本驱动的3D人体运动编辑任务,指出现有扩散方法难以平衡文本响应的&quot;变化&quot;与惯性&quot;不变性&quot;,且依赖粗粒度空间约束和刚性均匀时间假设,易导致空间运动失真和物理节奏破坏。为此,论文提出CIME统一框架,将变化与不变性解耦到空间姿态和时间节奏两个维度进行协同建模,在编辑对齐与结构保真度上达到最优性能。
 
 ◆ 提出空间-时间解耦的CIME统一框架,将编辑目标分解为空间姿态变化与时间节奏不变性两个互补维度,实现更精细的协同控制。
@@ -7074,6 +7127,13 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 引入黎曼非均匀积分流形映射(RNIMM)模块,通过运动学感知的非均匀时间戳,实现编辑序列中高保真的物理节奏复现。
 
 ◆ 在MotionFix和STANCE Adjustment数据集上取得编辑对齐和结构保真度的最优性能,验证了所提架构的有效性。</td></tr>
+<tr><td>2026-08-17</td><td>Every copy of Thompson&#x27;s group $F$ in $F$ is undistorted<br><a href='http://arxiv.org/pdf/2608.17193'>论文</a></td><td>这篇论文研究了汤普森群F的子群扭曲问题,该群由单位区间上所有断点为二进有理数、斜率为2的整数次幂的分段线性同胚组成。扭曲度衡量子群的内在字度量与由母群诱导的度量之间的差异,无扭曲意味着这两种度量互相等价。
+
+◆ 证明了F中任何与F同构的子群在F中都是无扭曲的,从而否定了F包含扭曲同构子群的可能性
+◆ 解决了由Guba-Sapir和Brin独立提出的关于汤普森群扭曲性的长期未决问题
+◆ 发展了处理具有复杂子群结构的群中度量问题的新方法,具有独立的方法论价值
+
+该结果揭示了汤普森群F在子群嵌入方面具有刚性特征,对几何群论中扭曲性的研究具有重要意义。</td></tr>
 <tr><td>2026-08-16</td><td>Behavioral Participating Insurance: Optimal Investment under Probability Distortion and Aspiration Constraints<br><a href='http://arxiv.org/pdf/2608.15743'>论文</a></td><td>本文研究保险公司在概率扭曲与抱负型偿付能力约束下管理参与型利润分享合同的最优投资问题,整合了非凹有效效用、概率加权和概率基准约束三重理论复杂性。
 
 ◆ 运用分位数公式化与凹化技术,在完全和不完全Black-Scholes市场下均给出最优终端财富与交易策略的显式闭式解,且效用类可容纳PHARA族并统一涵盖保险场景中的非凹性。
@@ -7949,23 +8009,89 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (20篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (28篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-17</td><td>When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents<br><a href='http://arxiv.org/pdf/2608.16806'>论文</a></td><td>这篇论文聚焦于大语言模型驱动的具身智能体面临的新型安全威胁，即&quot;状态语义注入&quot;攻击。随着LLM从文本生成模型演变为能够感知环境、规划任务和执行动作的智能体核心，环境状态信息本身已转化为一个全新的攻击面。攻击者可通过操纵智能体感知到的场景状态、物体属性和空间关系，劫持其高层任务规划与行为决策链路，从而引发错误的执行结果。该研究揭示了LLM具身智能体在状态理解与动作生成耦合过程中区别于传统LLM智能体的独特安全挑战。
+<tr><td>2026-08-18</td><td>OVIP-SG: Open-Vocabulary Instance-Preserving Scene Graphs for Mapping and Retrieval of Small, Fine-Grained Objects<br><a href='http://arxiv.org/pdf/2608.17633'>论文</a></td><td>OVIP-SG是一个面向开放词汇场景的实例保持型3D场景图框架，专注于解决小目标和细粒度物体在检测中容易被合并或忽略的难题。
 
-◆ 首次提出&quot;状态语义注入&quot;攻击范式，揭示环境状态信息作为具身智能体新型攻击面的安全风险
-◆ 系统分析LLM驱动具身智能体在状态感知与动作规划耦合环节中的漏洞形成机制
-◆ 针对SayCan、Code as Policies、PaLM-E、RT-2等主流具身智能体框架，验证状态注入攻击的可行性与实际危害性...[摘要不完整，待更新]</td></tr>
+◆ 利用VLM枚举场景特定类别，实现稳健的开放世界物体检测
+◆ 采用对称3D IoU关联与面积加权特征融合，有效保留小型独立实例，避免小物体被相邻大物体吞并
+◆ 借助VLM推断物体功能，将...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-18</td><td>HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction<br><a href='http://arxiv.org/pdf/2608.17584'>论文</a></td><td>本文提出HODAgent，一种面向服务场景人形机器人的System-2具身智能体，重点解决情境意图理解、响应式执行、任务修订和结果验证等核心问题。该系统采用半双工架构，整合环境交互器、规划器、执行器和分层记忆模块，能够在服务过程中保持交互、规划和任务状态的一致性，从而支持运动中接收新请求、保留任务进度、动态修订动作，并基于执行结果进行任务收尾判定。
+
+◆ 设计了半双工System-2架构，通过Env-Interactor、Planner、Executor和分层Memory的协同，实现在执行过程中持续响应新请求、保留与修订任务状态，并依据执行结果进行任务闭合判定。
+
+◆ 提出统一的仿真-真机共享接口，将平台底层控制细节隔离，使同一套策略可在Unitree G1等真实人形机器人上直接迁移部署。
+
+◆ 在164个交互式仿真案例上取得84.8%和91.5%的联合成功率，较基线分别提升9.8和18.9个点，并在多个具身基准测试中提升0.7至9.0个点，真机实验在原子、组合和完整任务上分别达到92%、72%和63.3%的通过率。</td></tr>
+<tr><td>2026-08-18</td><td>Embodied-Navigator: Point, Think, Memorize, and Align for Efficient Navigation<br><a href='http://arxiv.org/pdf/2608.17512'>论文</a></td><td>TAMP-Nav是一个面向高效具身导航的统一框架，针对现有VLM导航方法中动作空间与二维预训练先验不匹配、推理调度僵化、记忆管理低效等问题提出了系统性解决方案。论文在R2R-CE数据集上取得了66.2%的成功率，达到了当前最优水平，且仅需9万条训练轨迹即可实现高效学习，展现出优秀的运行效率和样本效率。
+
+◆ 提出像素到三维的动作表征(Point)，将导航任务重新建模为二维视觉提示，VLM只需选择二维像素点，再投影到三维坐标交由底层SLAM控制器执行，使具身执行与VLM固有的二维视觉能力自然对齐。
+
+◆ 设计选择性推理与锚点轨迹记忆机制(Think and Memorize)，动态触发思维链推理，仅在关键节点保留高保真记忆，将冗余轨迹压缩为轻量的时空指示符，在保留关键历史信息的同时增强时空感知。
+
+◆ 构建两级对齐范式(Align)，通过群体相对策略优化将全局结果奖励与细粒度过程奖励叠加，实现密集监督，使智能体的认知规划与物理环境反馈紧密耦合，赋予模型自适应推理能力。</td></tr>
+<tr><td>2026-08-18</td><td>EATR-Stereo: Embodiment-Aware Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control<br><a href='http://arxiv.org/pdf/2608.17453'>论文</a></td><td>该论文针对人形机器人长时序视觉-语言-动作控制任务,提出EATR-Stereo框架,旨在解决头戴式立体相机中辅助视图信息利用不充分、与本体感知脱节的问题。系统保留主视图原生token通路,通过对同步辅助视图token序列进行查询,构建与主视图对齐的跨视图辅助token(CVATs),避免破坏预训练VLA的视觉表征。
+
+◆ 创新点1:提出主视图对齐的跨视图辅助token机制(CVATs),通过查询辅助视图序列生成与主视图对齐的辅助token,在保留预训练主视觉通路的同时引入立体互补信息。
+
+◆ 创新点2:设计本体感知分段编码器,将机器人构型历史按身体部位分段编码,并以token级别条件化辅助信息的使用,实现对辅助特征的动态选择性路由。
+
+◆ 创新点3:冻结预训练视觉-语言模型,仅通过路由的辅助流增强语言与主视觉上下文,保证与既有VLA表征的兼容性。
+
+在33自由度物理人形机器人、37维本体状态、9组配置的搜索-接近-抓取-放置-返回任务中,完整任务成功率60.0%、抓取100.0%、阶段80.0%;严重单侧遮挡下恢复率达80%,显著优于无本体路由的CVAT基线30%,验证了选择性立体证据路由对空间定位与长时序可靠控制的有效性。</td></tr>
+<tr><td>2026-08-18</td><td>Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups<br><a href='http://arxiv.org/pdf/2608.17423'>论文</a></td><td>论文指出GRPO用于视觉-语言-动作策略强化学习时，二元成功奖励会使大量同结果组优势为零而被丢弃，从而浪费昂贵的机器人采样预算。为此提出Prism-GRPO方法，在二元结果奖励基础上引入加权轨迹级执行质量分数，将同结果组拆分为质量谱系以恢复训练信号，同时确保所有成功仍严格优于所有失败。
+
+◆提出通用轨迹级执行质量评分机制，信号可来自仿真接触、执行动作或视觉观察，无需任务特定的过程奖励
+◆理论上证明该方法不会增加采样组因零优势被丢弃的概率，并推导出保持任务成功局部上升方向的梯度对齐条件
+◆在四个RoboTwin任务中以最多减少56%采样达到目标成功率，同时抑制奖励作弊捷径，干净行为可直接零样本迁移至真实机器人...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-17</td><td>When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents<br><a href='http://arxiv.org/pdf/2608.16806'>论文</a></td><td>本文针对基于大语言模型的具身智能体，提出了一种名为&quot;状态语义注入&quot;(State-Semantic Injection)的新型攻击范式。研究指出，具身智能体在任务规划中严重依赖从环境感知中提取的内部状态信息，这些信息构成了一个被长期忽视的攻击面，攻击者可借此劫持智能体的决策过程。
+
+◆核心创新在于将攻击视角从传统的用户提示转移到智能体的环境状态语义，首次将&quot;状态&quot;明确定义为LLM具身智能体的攻击面，突破了已有研究以用户输入为主的安全假设。
+
+◆提出了系统化的状态语义注入攻击框架，通过篡改场景描述、物体属性和空间关系等状态信息，污染智能体对环境的内部表征，进而劫持其任务推理与行为决策链路。
+
+◆在多种LLM驱动的具身智能体基准上进行了实验验证，证明了该攻击在任务劫持、行为误导等方面的有效性与广泛适用性。
+
+◆该工作揭示了从纯文本生成到物理执行链路过渡中的新型安全风险，为具身智能安全研究开辟了重要方向。</td></tr>
 <tr><td>2026-08-17</td><td>Neurosymbolic Embodied Agents<br><a href='http://arxiv.org/pdf/2608.16794'>论文</a></td><td>本文提出一种神经符号具身智能体，将长视野家务任务分解为任务导向的视觉探索和受限符号规划两个阶段。视觉语言模型通过探索从自我中心观察中获取符号化的目标相关谓词与实例绑定，PDDL转移模型约束解码使动作在环境动力学下可执行，再以蒙特卡洛树搜索结合领域无关启发式评估可执行延续。在VirtualHome和ALFWorld上，4B至27B开源模型均超过90%成功率，且失败可自动归因于状态获取阶段。
 
 ◆将感知与规划解耦为两阶段，无需专门训练即可定位失败于状态获取而非计划生成。
 ◆通过PDDL转移模型约束解码，从结构上保证计划的可执行性，解决语言模型输出违反环境动力学的问题。
 ◆揭示约束解码与树搜索的互补性：单独使用解决率不足三分之一，组合则超过95%，证明二者不可互换。
 ◆以小模型显著超越27B直接视觉策略，且生成token和所需图像数远少于扩展思考或直接交互方法。</td></tr>
+<tr><td>2026-08-17</td><td>PDDL-ART: Autonomous Symbolic Abstraction From Demonstration For Long-Horizon Robotic Manipulation Using Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.17146'>论文</a></td><td>PDDL-ART提出了一种基于视觉语言模型(VLM)的框架，仅需单个专家演示、自然语言任务描述和高层动作库，即可自主生成任务特定的PDDL域与问题描述，无需领域模板、动作签名或微调。系统通过多阶段纠错流水线(涵盖语法、语义和执行三个层面)确保生成描述既语法正确又语义对齐。核心创新在于符号谓词落地机制，利用VLM的工具调用能力引入几何与时间推理，使模型能够评估从图像中无法直接判断的关系谓词，并由模型自主决定何时调用工具及如何解读结果。
+
+◆提出无需领域知识或微调的VLM驱动的PDDL自动生成框架，仅从单一专家演示即可构建长时域任务规划。
+
+◆设计语法-语义-执行三级纠错流水线,确保生成描述在多层面与演示任务保持一致。
+
+◆创新性地将VLM工具调用与符号谓词落地结合,引入几何和时间推理处理视觉无法直接判别的关系谓词。
+
+◆VLM自主决定工具调用时机与结果解读,实现真正自适应的规划抽象。
+
+在引擎维护和家庭场景的复杂长时域任务中,PDDL-ART平均成功率达93.3%,显著优于78.3%的基线VLM规划器。</td></tr>
+<tr><td>2026-08-17</td><td>PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents<br><a href='http://arxiv.org/pdf/2608.17129'>论文</a></td><td>本文针对家庭机器人在杂乱环境中回答关于被遮挡物体的问题,提出了&quot;操作基础视觉问答&quot;(MG-VQA)这一新任务范式,要求模型通过主动操作物体来揭示被遮挡目标并作答。作者构建了包含三个核心组件的PROBE框架,系统性地解决了该任务的基准测试、训练与部署问题。在PROBE-Bench上的实验显示,具备工具调用能力的智能体方法在所有任务类型上一致优于仅依赖感知的基线方法,平均提升8.0%。
+
+本文的核心创新点如下:
+
+◆ 首次形式化定义MG-VQA任务,聚焦于动态场景中&quot;操作-推理&quot;的闭环问题,弥补了现有VQA研究在主动操作方面的空白。
+
+◆ 提出高保真桌面模拟器PROBE-Sim,支持抓取与推动等机器人操作工具,并基于此构建包含150个任务、6类问题的评估基准PROBE-Bench。
+
+◆ 设计PROBE-Agent微调方法,采用混合数据策略从强大的教师模型蒸馏成功轨迹,使开源小模型平均提升11.5%,并具备对未见物体和新任务的正向迁移能力。
+
+◆ 通过真实桌面环境的部署实验,验证了所提方法的sim-to-real迁移有效性。</td></tr>
+<tr><td>2026-08-17</td><td>VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation<br><a href='http://arxiv.org/pdf/2608.16978'>论文</a></td><td>该论文提出VLCP方法，让冻结的视觉语言模型直接编写Python控制函数作为机器人操控策略，无需任何微调或演示数据。区别于现有方法在固定策略或子任务层面反应，作者选择在控制代码层面实现闭环重规划。每K步VLM基于多视角RGB、关节状态和状态增量重新观察场景并改写控制函数，使失败在单回合内被捕捉并修正。在57项MuJoCo/RoboVerse任务上，VLCP以零训练方式达到35.1%总体成功率，相比单次查询提升十倍，27.3%的回合内恢复率有效弥补抓取失败。系统通过84%缓存命中率和每回合仅约10次紧凑查询保持低成本，并将控制模块累积为跨回合可复用的技能库。
+
+◆ 冻结VLM直接生成Python控制函数策略，零微调零演示
+◆ 控制代码层面闭环重规划，每K步改写策略修正失败
+◆ 回合内失败恢复机制，27.3%恢复率显著优于开环方法
+◆ 高效推理设计，84%缓存命中+仅约10次查询/回合
+◆ 跨回合技能库持久化，供后续回合提示调用...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-16</td><td>AlloEgo-VLM: Disambiguating Allocentric and Egocentric Reference Frames in Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.15605'>论文</a></td><td>本文针对视觉语言模型在空间语义理解中面临的参考框架歧义问题展开研究，指出自然语言描述空间关系时常常省略显式的参考框架（自我中心或他人中心），导致现有VLM产生不一致甚至错误的响应。作者构建了一个名为AlloEgo-View的新数据集，包含图像、查询和视角特定答案的三元组，采用结构化空间表示方法，标注了场景描述、参考对象与目标对象、它们的朝向、参考框架及视角类型。基于该数据集，作者提出了AlloEgo-VLM框架，通过监督微调可轻松集成到现有VLM中，实现对参考框架的消歧。最后在NVIDIA Isaac Sim仿真机器人平台上验证了其在开放性物体搜索任务中的实际可行性，实验表明当前VLM在处理视角特定查询时存在明显局限，而AlloEgo-VLM展现出强大的消歧能力。
 
 本文的核心创新点如下：
@@ -7995,11 +8121,15 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆发现通用预适应设置下精度呈现显著的分区依赖性波动，而洪水自适应目标负载设计空间则表现出更紧凑且稳定的精度范围。
 
 ◆在NVIDIA Jetson AGX Xavier边缘平台上实测了推理分割精度、延迟、能耗与通信开销之间的多维权衡，为质量约束下的边缘运行点选择提供了实证依据。</td></tr>
-<tr><td>2026-08-15</td><td>Remember Smarter: Visual History Compressor and Hyperbolic Experience Space for Robotic Memory<br><a href='http://arxiv.org/pdf/2608.15269'>论文</a></td><td>Remember Smarter (RS) 是一个面向长时序机器人策略设计的即插即用记忆模块，旨在解决视觉-语言-动作（VLA）模型无法有效扩展上下文的问题。该模块包含视觉历史压缩与双曲经验记忆两个互补分支。视觉分支利用双向空间Mamba和因果时间Mamba压缩多视角patch历史，并通过残差交叉注意力将记忆注入动作相关隐藏状态，同时保持VLM原始视觉token流不变。经验分支将成功的VLM终层状态存入Poincare VAE空间进行层次化组织，再以异步方式将检索到的经验转换为测地线prompt token，不阻塞动作推理。将RS适配到pi0后，LIBERO-Plus总成功率从53.6%提升至70.6%，真实机器人实验也验证了其在记忆保留和经验利用方面的显著增益。
+<tr><td>2026-08-15</td><td>Remember Smarter: Visual History Compressor and Hyperbolic Experience Space for Robotic Memory<br><a href='http://arxiv.org/pdf/2608.15269'>论文</a></td><td>Remember Smarter（RS）是一种面向长时程机器人策略的即插即用记忆模块，通过视觉历史压缩与双曲经验记忆两条互补分支，实现紧凑的历史观测访问与可复用经验管理。
 
-◆ 即插即用的双分支记忆架构，将视觉历史压缩与经验复用解耦，无需修改原VLM视觉token流
-◆ 基于双向空间Mamba与因果时间Mamba的多视角patch历史压缩机制，通过残差交叉注意力选择性注入动作隐藏状态
-◆ 基于Poincare VAE的双曲空间层次化经验存储与异步测地线prompt检索，避免阻塞在线动作推理...[摘要不完整，待更新]</td></tr>
+◆视觉分支采用双向空间Mamba与因果时序Mamba对多视角patch历史进行压缩，并通过残差交叉注意力将记忆暴露给面向动作的隐状态，同时保持VLM视觉token流不变。
+
+◆经验分支将成功的最终层VLM状态存入Poincare VAE空间进行层次化组织，并以异步方式将检索到的经验转换为测地线提示token，不阻塞动作推理过程。
+
+◆整体模块具有即插即用特性，无需修改原有VLA架构的核心结构，便于集成到现有系统中。
+
+将RS适配到pi0后，在LIBERO-Plus基准上的总成功率从53.6%大幅提升至70.6%，并在真实机器人实验中验证了其在记忆保留与经验利用方面的显著性能提升。</td></tr>
 <tr><td>2026-08-13</td><td>MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification<br><a href='http://arxiv.org/pdf/2608.13463'>论文</a></td><td>该论文针对图像分类模型在跨域、跨难度任务中泛化能力不足的问题，提出了ARMDIL框架——一个基于多模态大语言模型（MLLM）的自适应路由异构集成系统。该方法利用MLLM智能体动态分析每张图像的特征，并将其路由到最合适的视觉骨干网络。集成成员涵盖了卷积神经网络（ResNet）、自监督表征学习器（SSL）以及视觉-语言模型（VLM）等多种架构，并在统一标签空间下联合训练。
 
 创新点如下：
@@ -8015,17 +8145,17 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 利用MLLM的自然语言推理痕迹增强决策可解释性，便于分析路由依据与模型行为
 
 总体而言，ARMDIL在跨数据集图像分类任务中表现优于单一专用模型，性能与经过专门训练的路由系统相当，同时具备更高的灵活性和透明度，为通用视觉系统的发展提供了新思路。</td></tr>
-<tr><td>2026-08-13</td><td>BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving<br><a href='http://arxiv.org/pdf/2608.12854'>论文</a></td><td>这篇论文针对自动驾驶端到端规划中语义推理与预测动力学难以有效融合的难题展开研究。作者通过分析发现,基于token级联合注意力的简单组合会导致注意力分配失配,即语义捷径主导共享注意力空间,抑制预测动力学。受神经科学中功能特化系统协同产生复杂行为的启发,提出了BrainWAM框架,创新性地将语义推理与预测世界建模转化为两条专门化的动作导向路径,并在紧凑动作表征层面实现协调对齐。同时引入异步整流流推理策略,通过解耦视频与动作去噪过程缩短推理延迟。在NAVSIM v1(89.5 PDMS)和v2(89.6 EPDMS)上均取得最优性能,验证了协同语义先验与预测动力学的有效性。
+<tr><td>2026-08-13</td><td>BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving<br><a href='http://arxiv.org/pdf/2608.12854'>论文</a></td><td>这篇论文提出了BrainWAM框架，旨在解决自动驾驶中语义先验与预测动力学难以统一融合的问题。作者指出现有端到端方法要么偏重VLA的语义推理，要么偏重WAM的预测式世界建模，而简单的token级联合注意力会因注意力分配失衡导致语义捷径压制预测信号。受神经科学中功能特化系统协调的启发，BrainWAM将两类能力解耦为两条专门化的动作导向通路，并在紧凑动作表征层进行对齐融合，同时设计了异步整流流推理以解耦视频与动作的去噪过程。实验表明，BrainWAM在NAVSIM v1和v2基准上均达到最优性能，验证了该统一规划思路的实用价值。
 
-◆ 揭示VLA与WAM在token级融合时存在的注意力分配失配问题,即语义捷径会压制预测动力学表达
-◆ 提出受神经科学启发的BrainWAM动作空间协调框架,通过两条专门化动作路径在动作表征层面实现融合对齐
-◆ 设计异步整流流推理策略,解耦视频与动作去噪过程,在缩短推理延迟的同时保留规划相关的预测上下文...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-13</td><td>Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence<br><a href='http://arxiv.org/pdf/2608.12743'>论文</a></td><td>本文提出空间记忆智能体SMA，探索冻结VLM在推理时不依赖外部空间工具、通过参数无更新实现空间推理自我进化的新路径。SMA将可验证的空间经验转化为可迁移的经验教训，通过验证器引导的反思机制提炼紧凑可复用的知识。框架为每条经验教训分配迁移可靠性分数TRS，并依据后续检索结果进行动态校准。部署阶段以只读方式运行，采用语义过滤与相似度-TRS联合排序检索相关经验以辅助推理。在五个空间基准与四个基础VLM共20次评估中，SMA在所有基础模型块均取得最高宏平均，并在多数评估中达到最佳准确率。
+◆ 将语义推理与预测世界建模解耦为两条专门化的动作导向通路，在动作表征层而非token层实现协调融合，避免注意力分配失衡问题。
+◆ 引入异步整流流推理策略，将视频去噪与动作去噪并行解耦，在保留预测上下文的同时显著缩短推理延迟。
+◆ 借鉴神经科学中大脑功能特化系统协同工作的机理，为多模块自动驾驶规划器提供生物启发的结构化设计范式。</td></tr>
+<tr><td>2026-08-13</td><td>Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence<br><a href='http://arxiv.org/pdf/2608.12743'>论文</a></td><td>针对冻结VLM智能体在空间推理上的自进化难题,该论文提出空间记忆智能体(SMA),这是一种基于经验的可重用程序记忆框架,通过验证器引导的反思将成功经验提炼为可迁移教训,并在只读部署阶段结合语义过滤与可靠性分数检索记忆来辅助冻结模型推理。该方法不依赖外部空间工具或参数更新,在五个空间基准与四种基础VLM的二十次评估中均取得最高宏观平均,验证了冻结模型空间自进化的可行性与通用性。
 
-◆ 提出参数无更新的冻结VLM空间自我进化新范式，推理时不依赖外部专家空间工具
-◆ 设计经验驱动的SMA运行时框架，通过验证器引导反思将空间经验提炼为可迁移经验教训
-◆ 引入迁移可靠性分数TRS，基于检索反馈动态校准以评估经验教训的迁移可靠性
-◆ 部署阶段采用语义过滤...[摘要不完整，待更新]</td></tr>
+◆ 提出验证器引导的反思机制,自动从可验证空间经验中蒸馏出紧凑且可复用的经验教训
+◆ 引入迁移可靠性分数(TRS),依据后续检索的访问证据对每条教训的迁移可信度进行持续校准
+◆ 设计语义过滤与相似度-TRS联合排序的记忆检索机制,无需外部专家工具即可引导冻结模型推理
+◆ 在五个代表性空间推理基准和四种不同规模基础VLM上实现参数更新无关的自进化路径,并在多数评估中取得最佳准确率...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-12</td><td>Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?<br><a href='http://arxiv.org/pdf/2608.12515'>论文</a></td><td>本文系统评估了三种开源视觉语言模型（InternVL、Qwen-VL、SmolVLM）在机器人第一人称视角下对接近风险进行分类的能力，将图像划分为四个危险等级。实验对比了三种提示策略和两轮QLoRA微调的效果，结果表明未微调时模型表现仅接近基线水平，微调带来的整体提升有限，但Qwen-VL配合高级提示在识别高危场景时召回率显著优于其他模型。◆本文首次针对机器人自我中心视角的接近风险评估任务，对多种开源VLM进行系统性基准评测。◆提出并比较了不同提示策略与QLoRA微调在细粒度危险分类中的组合效果。◆创新性地通过人物定位分析揭示了正确分类与空间定位能力之间存在解耦现象，模型即使不关注相关区域也能给出有效标签。◆研究发现针对性提示与微调可显著提升特定模型对高危场景的检测能力，为安全导航应用提供了实用启示。</td></tr>
 <tr><td>2026-08-12</td><td>HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing<br><a href='http://arxiv.org/pdf/2608.12122'>论文</a></td><td>HandEdit针对具身AI中灵巧手操作数据稀缺这一核心难题，提出将丰富的第一人称人类手部视频转化为机器人灵巧手图像，从而实现从人类数据到机器人数据的大规模迁移。论文的核心思路是构建一个统一的、以具身为条件的图像编辑数据集和基准，弥补人类与机器人数据在外观、关节结构和视角上的巨大差异。
 
@@ -8099,4 +8229,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.18
+> 更新于: 2026.08.19
