@@ -447,7 +447,7 @@ def trim_papers(papers: dict, max_count: int = 20) -> dict:
         logging.info(f"裁剪 {removed} 篇论文，保留 {len(result)} 篇")
     return result
 
-def update_json_file(filename, data_dict, active_topics=None):
+def update_json_file(filename, data_dict, active_topics=None, max_count=20):
     """更新JSON文件并应用过滤"""
     try:
         # 读取现有数据
@@ -471,7 +471,7 @@ def update_json_file(filename, data_dict, active_topics=None):
                 
     except (FileNotFoundError, json.JSONDecodeError):
         existing_data = {}
-    
+
     # 更新数据并再次过滤
     for data in data_dict:
         for topic, papers in data.items():
@@ -494,6 +494,7 @@ def update_json_file(filename, data_dict, active_topics=None):
             archive_data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         archive_data = {}
+
     for topic, papers in existing_data.items():
         if topic in archive_data:
             archive_data[topic].update(papers)
@@ -502,9 +503,9 @@ def update_json_file(filename, data_dict, active_topics=None):
     with open(archive_path, "w") as f:
         json.dump(archive_data, f, indent=2, ensure_ascii=False)
 
-    # 每个词条最多保留20篇
+    # 每个词条最多保留配置指定的篇数
     for topic in existing_data:
-        existing_data[topic] = trim_papers(existing_data[topic], max_count=20)
+        existing_data[topic] = trim_papers(existing_data[topic], max_count=max_count)
 
     # 保存更新
     with open(filename, "w") as f:
@@ -980,7 +981,8 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector, active_topics=keywords)
+            update_json_file(json_file, data_collector, active_topics=keywords,
+                             max_count=max_results)
         json_to_md(json_file, md_file, task='更新README.md')
     
     # 更新GitHub Pages
@@ -990,7 +992,8 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector, active_topics=keywords)
+            update_json_file(json_file, data_collector, active_topics=keywords,
+                             max_count=max_results)
         json_to_md(json_file, md_file, task='更新GitPage', to_web=True, 
                    use_tc=True, use_b2t=False)
     
@@ -1001,7 +1004,8 @@ def demo(**config):
         if update_links:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file, data_collector_web, active_topics=keywords)
+            update_json_file(json_file, data_collector_web, active_topics=keywords,
+                             max_count=max_results)
         json_to_md(json_file, md_file, task='更新微信', to_web=False,
                    use_title=False)
 

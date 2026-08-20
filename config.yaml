@@ -5,7 +5,7 @@ repo_name: "paper_update"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 20
+max_results: 15
 
 publish_readme: True
 publish_gitpage: True
@@ -31,10 +31,12 @@ keywords:
                   "Line Segment Detection", "Local Feature Matching"]
     "Robot VLM":
         query: '(all:VLM OR all:"Vision-Language Model" OR all:"Vision Language Model") AND (all:robot OR all:robots OR all:robotic OR all:robotics)'
+    "Robot Visual Semantic Recognition":
+        query: '(all:"Visual Semantic Recognition" OR all:"Semantic Perception" OR all:"Semantic Segmentation" OR all:"Semantic Scene Understanding") AND (all:robot OR all:robots OR all:robotic OR all:robotics)'
+    "Robot VPR":
+        query: '(all:VPR OR all:"Visual Place Recognition" OR all:"Visual Place Retrieval") AND (all:robot OR all:robots OR all:robotic OR all:robotics)'
     "Sensor Calibration":
         filters: ["Sensor Calibration", "Camera Calibration", "IMU Calibration", "LiDAR Calibration", "Extrinsic Calibration", "Hand-Eye Calibration", "Intrinsic Calibration"]
-    "Sensor Undistortion":
-        filters: ["Motion Distortion", "Motion Blur", "Undistortion", "Distortion Correction"]
 
 # GitHub organizations to monitor
 github_orgs:

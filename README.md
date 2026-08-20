@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.08.19)
+# 计算机视觉领域最新论文 (2026.08.20)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -11,8 +11,9 @@
 <li><a href='#sfm'>SFM</a></li>
 <li><a href='#image-matching'>Image Matching</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration</a></li>
-<li><a href='#sensor-undistortion'>Sensor Undistortion</a></li>
 <li><a href='#robot-vlm'>Robot VLM</a></li>
+<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition</a></li>
+<li><a href='#robot-vpr'>Robot VPR</a></li>
 <li><a href='#archive'>归档</a></li>
 </ol>
 </details>
@@ -135,15 +136,6 @@
 ◆引入损失重加权的事件采样策略,自适应强调时间维度上重建不足的区间。
 
 大量合成与真实数据集实验表明,EvTrajGS在几何重建质量与位姿估计精度上均超越现有最优方法,PSNR提升3.8 dB,SSIM提高0.1,ATE RMSE降低超过40%,同时保持了较高的计算效率。</td></tr>
-<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出了一种面向实时线段检测的低延迟ASIC架构,基于步进长度算法并结合五项硬件专用优化技术,解决了深度学习方法资源消耗大、经典算法延迟受图像内容影响的问题。该架构采用全流水线设计,每时钟周期处理一个像素,具备确定性低延迟特性。
-
-◆ 基于寄存器的行缓冲与数据复用机制,降低存储访问开销
-◆ 无乘法器的MCM(多常数乘法)滤波结构,减少硬件资源
-◆ 8类角度量化,简化角度比较逻辑
-◆ 类CAM关联存储,实现单周期匹配
-◆ 优化的重复线段去除机制,提升输出质量
-
-在45nm CMOS工艺下,该设计在VGA分辨率下达到325 FPS(125 MHz时406 FPS),全高清下48 FPS,功耗仅25.54 mW,面积0.412 mm²。相比基于Line Hough Transform的90nm ASIC实现,功耗降低49%,帧率提升超过1.6倍,非常适合边缘计算等对实时性、低功耗与小面积有严格要求的应用场景。</td></tr>
 <tr><td>2026-08-06</td><td>KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots<br><a href='http://arxiv.org/pdf/2608.05647'>论文</a></td><td>本文提出KILVO，一种面向人形机器人的运动学-惯性-激光-视觉里程计系统。该方法将关节编码器、IMU、LiDAR和相机在异步-顺序混合误差状态迭代卡尔曼滤波(ESIKF)框架下进行紧耦合融合，其中惯性数据用于预测，腿部运动学信息以高频率异步处理以提供本体感受约束，而LiDAR和视觉则按顺序进行外感受更新。
 
 ◆提出首个面向人形机器人的四模态紧耦合里程计算法，统一融合关节编码器、IMU、LiDAR与相机，适配平台特性。
@@ -151,36 +143,6 @@
 ◆具备多模态自适应能力，可针对单一或多传感器退化与失效进行鲁棒切换，无需额外硬件。
 ◆开发紧凑的接触估计模块，与状态估计共享信息，无需额外传感器即可辅助里程计精度提升。
 在公开数据集与多平台、多步态的真实场景实验中，KILVO在精度、效率和输出频率方面均优于现有融合方法。</td></tr>
-<tr><td>2026-08-04</td><td>SLAMFormer-$\infty$: Infinite SLAM Transformer for Unbounded Frontend and Backend Processing<br><a href='http://arxiv.org/pdf/2608.03429'>论文</a></td><td>SLAMFormer-∞是首个支持无显式距离限制的前端与后端统一处理的几何Transformer，它突破了传统SLAM系统对范围扩展性的瓶颈。论文提出用记忆条件来定义输入帧的灵活坐标系和尺度，取代了以第一帧为锚点的传统建模范式，使结构条件表达更加丰富灵活。
-
-◆ 创新点一：提出基于记忆条件的灵活坐标系与尺度定义，摆脱对首帧锚点的依赖，实现无界长程处理能力。
-
-◆ 创新点二：前端在保持局部高效计算的同时，后端能够联合优化长程轨迹与场景几何，实现全局一致性。
-
-◆ 创新点三：在超过17公里的超长轨迹上成功运行，并在大规模数据集的轨迹估计与场景重建任务中取得领先或极具竞争力的性能，展现了出色的泛化能力。</td></tr>
-<tr><td>2026-08-03</td><td>CHOW-SLAM: Compact Hybrid Representation with Complementary Overlap Window Optimization for RGB-D SLAM<br><a href='http://arxiv.org/pdf/2608.01914'>论文</a> | <a href='https://github.com/jinjidexiaohuoban/CHOW-SLAM'>代码</a></td><td>CHOW-SLAM提出了一种面向RGB-D SLAM的紧凑混合表示与互补重叠窗口优化框架,旨在解决现有NeRF-based SLAM系统在有限在线资源下难以同时构建空间与时间两类约束的问题。空间层面,该方法将参数化分支与哈希分支按平面与网格进行多尺度组织,并通过统一多输出解码器对齐TSDF与密度诱导的光线终止分布,从而在紧凑参数预算下保持几何与外观的判别性。时间层面,设计互补重叠窗口策略,在固定预算内保留近期帧、选取高重叠局部帧并引入时序分散的历史关键帧,结合损失感知的关键帧插入与BA调度,使优化免受短时重叠或弱关联历史观测的支配。整体流程采用ORB前端进行位姿初始化与跟踪,再以神经渲染优化提升跟踪稳定性。
-
-◆ 提出参数化-哈希(P-H)混合紧凑表示,按平面与网格跨尺度组织,并通过统一多输出解码器对齐TSDF与密度的光线终止分布,在紧凑参数预算下保持几何与外观判别性。
-◆ 设计互补重叠窗口优化策略,结合近期帧、高重叠局部帧与时序分散的历史关键帧,并以损失感知的关键帧插入与BA调度自适应调整优化强度。
-◆ 集成ORB前端跟踪与神经渲染优化,先进行几何位姿初始化,再通过渲染损失细化位姿,从而提升跟踪稳定性与精度。</td></tr>
-<tr><td>2026-08-03</td><td>UniSim-SLAM: Feed-Forward SLAM with Unified Sim(3) Optimization<br><a href='http://arxiv.org/pdf/2608.01706'>论文</a> | <a href='https://vision3d-lab.github.io/unisim-slam/'>代码</a></td><td>UniSim-SLAM 是一套面向几何基础模型的前馈式 SLAM 系统，旨在解决现有方法在长序列下因输入视图差异导致的轨迹漂移和几何不一致问题。系统采用前后端协同架构，前端运行轻量级的两视图关键帧跟踪以保证低延迟，后端则周期性触发多视图子图细化以提供更强的几何约束。
-
-◆ 提出统一多层级 Sim(3) 因子图，联合优化全局关键帧位姿与子图位姿，融合时序两视图里程计边、视图到子图的桥接边以及子图间的连接与尺度约束，使异构局部坐标和尺度下产生的预测能在统一的相似变换空间内保持一致。
-
-◆ 引入基于深度统计量的尺度锚定机制，将多视图子图预测中的尺度信息可靠地传递到全局因子图中，从而在无需标定的情况下获得尺度一致的轨迹。
-
-◆ 在 TUM RGB-D 和 7-Scenes 无标定场景下达到当时最优精度，轨迹误差分别降低 38.5% 和 45.9%，验证了方法的有效性。</td></tr>
-<tr><td>2026-08-02</td><td>Stipple: Real-Time Incremental Gaussian Splatting with Visual-Inertial Tracking<br><a href='http://arxiv.org/pdf/2608.00931'>论文</a></td><td>本文提出Stipple方法,将视觉惯性跟踪系统与3D高斯泼溅技术结合,实现了实时增量式的三维场景重建。针对3DGS预处理和训练步骤繁重、难以满足机器人和XR应用实时性需求的问题,作者通过利用Basalt视觉惯性里程计提供的高质量位姿和深度信息,设计了一种新的增量训练策略,避免了大量离线预处理。系统在跟踪线程并行运行重建流程,GPU渲染与跟踪解耦,显著提升了效率。该方法展示了SLAM与3DGS的互补价值,为实时三维重建提供了一条有前景的技术路线。
-
-核心创新点:
-
-◆ 基于Basalt视觉惯性跟踪系统与Brush(GPU无关的Rust实现)构建紧耦合的实时框架,直接复用跟踪线程生成的位姿与深度信息,大幅减少3DGS传统预处理开销。
-
-◆ 提出增量式训练策略,替代3DGS中耗时的全局优化步骤,使得高斯参数可随新数据持续更新,适合在线重建场景。
-
-◆ 将跟踪与重建并行化,设计高效的流水线使训练在跟踪线程运行的同时同步进行,实现真正的实时三维重建。
-
-◆ 引入多种实际工程优化,包括跨平台GPU抽象和内存管理改进,使整个管道能够在资源受限的机器人或XR设备上实时运行。</td></tr>
 </tbody>
 </table>
 </div>
@@ -291,32 +253,6 @@
 ◆创新点二:首次形式化NMR与行人及障碍物的交互过程,并在有界非被动行人假设下严格证明了系统的稳定性,填补了非完整约束机器人社会导航的理论空白。
 
 ◆创新点三:构建兼顾舒适度与速度的混合代价函数进行模型标定,并通过问卷统计分析与遥控基线对比,验证了所提算法在改善行人舒适度方面相对于已有方法的显著优势。</td></tr>
-<tr><td>2026-07-17</td><td>HETA++: Global Structure-from-Motion with Hybrid Explicit Translation Averaging<br><a href='http://arxiv.org/pdf/2607.15912'>论文</a></td><td>本文提出了一种新的混合显式平移平均框架HETA++,用于全局式SfM,旨在同时利用相对平移和特征轨迹,克服现有方法在共线相机运动下的退化问题以及对异常值的敏感性。
-
-◆首先利用全局相机旋转精化相对平移并剔除全局不一致的相对平移,提升输入数据的可靠性。
-
-◆接着采用基于凸距离的目标函数估计初始相机位置和三维点,再以非双线性角度目标函数进行精化,兼顾了收敛稳定性和几何一致性。
-
-◆针对平移平均阶段相机旋转固定导致精度受限的问题,提出通过有界角度精化和基于重投影的束调整,联合稳健地优化相机旋转与位置。
-
-◆在优化过程中筛选空间分布均衡的特征轨迹,既提升了效率也增强了鲁棒性,最终通过完整束调整获得高精度结果。
-
-大量实验表明,该方法在顺序和无序真实数据集上均优于当前最先进方法,在精度和计算效率方面均表现突出。</td></tr>
-<tr><td>2026-07-16</td><td>Immediate 3D Gaussian Splat Reconstruction of Unordered Input with Global Consistency<br><a href='http://arxiv.org/pdf/2607.14481'>论文</a></td><td>本文针对3D高斯溅射(3DGS)重建中乱序输入与即时反馈难以兼顾的问题，提出首个支持乱序图像输入并保持全局一致性的即时重建框架。该方法通过复用视觉位置识别模型与构建共视性图，实现乱序序列的快速匹配与高连通关键帧筛选，并结合GPU优化和精心设计的高斯基元放置策略，保证局部重建的效率与质量。
-
-◆ 提出基于视觉位置识别与共视性图的乱序图像快速匹配方法，并发现高连通关键帧的选择还能进一步提升有序序列的重建质量。
-
-◆ 提出基于共视性图的聚类式回环闭合策略，无需依赖顺序输入即可实现高效的全局一致性优化。
-
-◆ 引入渐进式层次结构，使方法能够扩展到包含数千张图像的大规模场景，同时兼顾效率与视觉质量。</td></tr>
-<tr><td>2026-07-15</td><td>SalientGS: Unified SfM-to-3DGS with Importance-Guided MCMC Gaussian Allocation<br><a href='http://arxiv.org/pdf/2607.11285'>论文</a> | <a href='https://github.com/Six-Bit-TX/SalientGS'>代码</a></td><td>SalientGS提出了一种统一的SfM到3D高斯溅射（3DGS）的端到端重建流水线，旨在消除传统3D场景重建中昂贵的SfM预处理和冻结位姿接口的瓶颈。其核心创新在于引入了重要性引导的MCMC高斯分配策略，通过聚合多视图残差来计算每个高斯点的欠拟合度和冗余度信号。系统利用这些信号构建平滑的重要性加权采样分布，使得高斯点的生成和重定位偏向欠拟合区域，从而在不改基础随机梯度朗之万动力学的前提下，将渲染能力从已拟合良好的区域重新分配到欠拟合区域。SalientGS能够在15分钟内完成端到端重建，并在感知质量上达到最先进水平。◆统一了SfM与3DGS流水线，实现了无需外部预处理的高效端到端三维重建。◆通过多视图残差聚合定义高斯点的重要性信号（欠拟合度与冗余度），实现细粒度的容量分配。◆在保留SGLD框架的基础上，以重要性加权采样分布引导MCMC的生灭与重定位过程，避免了底层动力学修改。</td></tr>
-<tr><td>2026-07-12</td><td>Mapping Pamir: Multi-Session Visual-Inertial SLAM and 3D Reconstruction of an Underwater Shipwreck<br><a href='http://arxiv.org/pdf/2607.10925'>论文</a></td><td>本文针对水下船骸等复杂环境的多会话三维重建难题，提出了一套基于低成本运动相机的多会话水下建图框架。该框架将SVIn2视觉惯性SLAM与COLMAP SfM相结合，利用SVIn2生成每段会话的相机轨迹与稀疏重建，再通过COLMAP进行全局优化并生成稠密三维模型。
-
-◆ 创新性地融合了潜水电脑的水深数据与视觉惯性信息，增强了水下场景的尺度估计与几何约束。
-
-◆ 提出利用固定位置的标定靶估计不同会话间的坐标变换矩阵，实现了多会话数据的统一配准。
-
-◆ 首次对巴巴多斯近海Pamir沉船的外部与可进入内部进行完整多会话建图，其中第三会话采用双相机不同视场配置以兼顾全局覆盖与细节捕获。</td></tr>
 <tr><td>2026-07-17</td><td>NoDrift3R: Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction<br><a href='http://arxiv.org/pdf/2607.07168'>论文</a> | <a href='https://xiangyu1sun.github.io/NoDrift3R-project-page/'>代码</a></td><td>该论文针对无位姿前馈三维高斯溅射在长序列中因位姿漂移导致重建质量退化的问题，提出了一种几何与外观显式协同的新框架。作者识别出位姿累积漂移是制约性能的主要瓶颈，并指出SfM伪真值引入传感器噪声、纯渲染监督易陷入局部最优等矛盾。
 
 ◆ 提出Raymap-Guided Coupling Module（RGC）模块，将高斯中心锚定到光线图诱导的几何上，在统一目标下联合优化RGB重建、光线图一致性与相机正则化，形成几何与外观之间的双向反馈循环。
@@ -324,13 +260,6 @@
 ◆ 设计Dual-Frequency Viewpoint Scheduling策略，结合由易到难的间隔扩展与短间隔对回放，稳定长时序学习过程。
 
 在域内和跨域数据集上的大量实验表明，该方法在渲染质量与位姿估计上均取得一致提升，长序列鲁棒性显著增强，验证了几何-外观显式协同是实现可扩展、无漂移无位姿前馈三维重建的关键。</td></tr>
-<tr><td>2026-07-12</td><td>Deep far-UV observations of the ELAIS N1 field using AstroSat: Source catalogue, spectral energy distribution modelling and star formation<br><a href='http://arxiv.org/pdf/2607.06143'>论文</a></td><td>本文利用AstroSat卫星上的紫外成像望远镜(UVIT)对ELAIS N1深场进行了F154W波段(far-UV)的深度观测,总曝光时间达30千秒,通过CCDLAB v3.0进行数据处理,获得了1637个3σ和458个5σ的FUV源目录,极限星等分别为25.69和25.13 mag(AB),为该天区提供了目前最深的FUV测光数据。
-
-◆ 基于多波段交叉匹配,结合光学和红外数据以及光谱/测光红移,采用多波段判据剔除活动星系核(AGN),构建了清洁的恒星形成星系样本。
-
-◆ 使用CIGALE进行SED建模,采用延迟型恒星形成历史(可叠加晚期暴发)、Bruzual &amp; Charlot恒星 population合成、Calzetti消光和SKIRTOR AGN模块,系统地推导了样本的恒星形成率(SFR)、总恒星质量和年轻恒星质量随红移的演化。
-
-研究发现SFR随红移单调上升,符合恒星形成主序(SFMS)的演化趋势,同时年轻质量与总质量比值在0&lt;z≲0.76范围内近似为常数,表明样本中的星系主要以自调节的稳态恒星形成为主,而非星暴主导的演化模式。</td></tr>
 </tbody>
 </table>
 </div>
@@ -451,34 +380,6 @@
 ◆ 利用XFeat与LightGlue组合实现工业级实例重识别
 ◆ 设计双骨干特征共享与融合机制以提升分类精度
 ◆ 构建首个板岩瓦片工业数据集(2610张图像,6个产地)</td></tr>
-<tr><td>2026-07-03</td><td>A Vision Based System for Guided and Collaborative Reconstruction of Fragmented Documents<br><a href='http://arxiv.org/pdf/2607.03621'>论文</a></td><td>本论文提出了一种基于视觉的协作式碎片文档实时重建系统,用于文化遗产保护中的破损纸质文档复原。系统采用协作机器人配合专门设计的真空吸附装置,能够轻柔精准地定位纸片,对8平方厘米的碎片实现0.57毫米的定位重复精度,有效避免对脆弱文物的损伤。该系统支持两种工作模式:人工操作结合视觉引导,以及机器人全自动定位,为使用者提供灵活的交互选择。研究者系统评估了多种局部特征匹配方法在不同文档类型、旋转缩放及破损程度下的表现,发现无检测器的SE2-LoFTR方法在受损及光学变异的档案材料上表现出最强的鲁棒性。论文的主要创新点可概括如下:
-
-◆ 设计了专用真空吸附末端执行器,使协作机器人能够安全处理易碎的纸质文物碎片,实现毫米级精确定位。
-
-◆ 构建了人机协作的双模式重建框架,支持视觉辅助手动操作与全自动重建灵活切换。
-
-◆ 系统比较了多种特征匹配算法在碎片拼接任务中的性能,验证了SE2-LoFTR对受损和光学退化文档的优越鲁棒性,为实际应用提供了方法选择依据。</td></tr>
-<tr><td>2026-07-01</td><td>AnyMatch: Supercharging Universal Multi-Modal Image Matching with Large-Scale Single-View Images<br><a href='http://arxiv.org/pdf/2606.31077'>论文</a></td><td>◆论文提出AnyMatch框架，用低成本、易获取的单视图图像生成多视角、多模态图像匹配训练数据，缓解真实大规模标注数据稀缺问题。
-◆方法结合单目深度估计、显式3D重投影、扩散式修复和跨模态图像翻译，同时保证外观多样性与几何一致性。
-◆其标注由3D重投影直接产生，避免了传统SfM-MVS流程中的误差累积，更适合训练精确匹配模型。
-◆AnyMatch具备强可扩展性，可通过输入图像、相机参数和视角设置控制场景多样性与匹配难度。
-◆基于该框架构建的Any-syn数据集显著提升LoFTR、EDM、RoMa等模型在多模态匹配基准上的泛化性和鲁棒性。</td></tr>
-<tr><td>2026-06-29</td><td>MF-UAVPose6D: A Model-Free Monocular 6-DoF Pose Estimation Framework for Fixed-Wing UAVs<br><a href='http://arxiv.org/pdf/2606.29697'>论文</a></td><td>◆ 提出MF-UAVPose6D，一个面向固定翼无人机的无模型单目6-DoF位姿估计框架，推理时仅需RGB图像和相机内参，无需CAD模型或关键点先验。
-◆ 通过热图引导的中心定位获得稳定目标锚点，提升非合作目标在复杂视角和远距离条件下的检测与定位可靠性。
-◆ 设计Perspective-Aware Module建模观测射线先验，使网络更好理解单目成像中的透视几何关系。
-◆ 引入Dynamic Topological Sampling，补充机翼、机身、尾翼等弱结构线索，增强对固定翼外形拓扑的利用。
-◆ 采用平移与旋转解耦的位姿解码机制，并构建FW-UAV6DPose合成数据集；实验表明该方法在旋转估计、深度恢复和整体位姿评估上兼具精度、效率与鲁棒性。</td></tr>
-<tr><td>2026-06-26</td><td>KM-Speaker: Keypoint-Based Style Control for High-Quality Speech-Driven 3D Facial Animation and Dialogue Localization<br><a href='http://arxiv.org/pdf/2606.28568'>论文</a></td><td>◆ KM-Speaker提出一种基于关键点条件的流式生成框架，用参考表演同时实现全局风格引导和逐帧级表情控制。
-◆ 该方法面向高质量语音驱动3D面部动画，解决现有可控模型依赖低质量野外数据而损害真实感的问题。
-◆ 论文设计了解耦策略，将音频驱动的唇部运动与关键点驱动的上半脸动态分离，提升唇同步与表情控制精度。
-◆ 通过全局风格上下文保持机制，模型能在细粒度控制下维持完整面部表现的一致性和连贯性。
-◆ 实验表明，KM-Speaker在数据受限场景下仍优于现有方法，尤其在唇同步、风格遵循和对话本地化的时序表情匹配方面表现突出。</td></tr>
-<tr><td>2026-07-01</td><td>SOCO: Benchmarking Semantic Object Correspondence in Vision Foundation Models<br><a href='http://arxiv.org/pdf/2605.31597'>论文</a></td><td>本文提出SOCO基准，旨在解决视觉基础模型中结构化对象理解评估协议不一致和部件级监督有限的问题。
-◆构建了包含对应类型分类法的语义对象对应基准，在100个类别和超百万对应对上提供一致且具功能意义的关键点标注。
-◆引入关键点语言描述，支持对大型视觉语言模型细粒度部件级理解能力的系统评估。
-◆揭示视觉骨干网络虽编码强语义结构，但跨类别迁移对应能力差且仅部分捕获部件位置。
-◆发现大视觉语言模型擅长文本提示定位但视觉参考跨图匹配较弱，暴露语言接地与视觉对应间的鸿沟。
-◆证明对应性能比ImageNet分类性能更能强有力地预测分割、跟踪及3D检测等密集下游任务的表现。</td></tr>
 </tbody>
 </table>
 </div>
@@ -622,211 +523,6 @@
 ◆ 提出两阶段(静态与动态)外部标定框架，自动估计旋转平台轴线在激光雷达坐标系下的变换关系，无需人工精确测量初始位姿。
 ◆ 在真实FMCW激光雷达与自制旋转平台上进行实验验证，系统评估了算法在不同初始条件下的收敛性与鲁棒性。
 ◆ 解决了线扫描激光雷达仅能在固定平面内获取距离与方位信息、必须依赖相对运动实现三维感知时的轴线精确标定难题。</td></tr>
-<tr><td>2026-07-13</td><td>Why Low-Light Cameras Go Color Blind: Removing Color Bias in Raw Denoising<br><a href='http://arxiv.org/pdf/2607.11090'>论文</a></td><td>本文针对低光条件下的原始图像去噪任务,提出了一种无需相机校准的通用去噪框架。研究发现黑电平误差引起的颜色偏差是导致去噪性能下降和严重色偏的主要原因,这一发现为盲去噪问题提供了新的视角。◆ 提出了一个偏置估计网络,将黑电平误差作为全局特征从噪声输入中预测出来,从而实现相机无关、无需校准的低光原始图像去噪。◆ 在ELD、SID和LRID等多个数据集上取得优于现有盲去噪方法的性能,尤其在颜色校正方面表现突出,在某些情况下甚至可与需要更强监督的方法相媲美。◆ 揭示了广泛使用的SIDD数据集的ground-truth存在显著颜色偏差,会导致训练模型产生不真实的颜色还原。◆ 提出了一种新的ground-truth提取框架,以解决SIDD数据集中的颜色偏差问题,并在修正后的数据集上对现有方法提供了新的基准评测。</td></tr>
-<tr><td>2026-07-15</td><td>Unsupervised Detection of Entry and Exit Regions from Vehicle Trajectories for Camera-Agnostic Turning Movement Counts<br><a href='http://arxiv.org/pdf/2607.10949'>论文</a></td><td>本文针对交叉口转向流量计数中人工标注成本高的问题，提出了一种基于车辆轨迹的无监督出入口区域检测流水线。该方法通过聚类轨迹的起点和终点位置，生成持久的空间区域多边形，未来轨迹可通过点-多边形包含关系以线性复杂度进行分类，避免了传统轨迹聚类方法每次重新执行的问题。
-
-◆提出无需人工标注、相机标定或先验几何知识的无监督流水线，仅利用目标检测与多目标跟踪得到的原始轨迹即可识别出入口区域。
-◆将区域识别转化为对轨迹起终点的位置聚类，生成持久的区域多边形，显著降低分类计算成本并提升跨视角稳定性。
-◆设计包含六个可配置步骤的完整流水线框架，并通过对19152次执行的系统统计分析，识别出三个始终显著的关键参数，给出经验性推荐配置。
-◆在印度班加罗尔25个相机（含16个未见过的位置）和UA-DETRAC数据集上实现约3%的中位分类误差，GEH指标符合工程标准。
-◆验证了至少60分钟的校准片段结合高峰时段交通选取可进一步提升区域估计质量，证实了方法的实用性。</td></tr>
-<tr><td>2026-07-12</td><td>Projection-Domain Sensitivity Analysis of Vertebral DRRs Under Intrinsic Calibration Perturbation<br><a href='http://arxiv.org/pdf/2607.10551'>论文</a></td><td>本文针对椎体透视成像中的几何标定问题,系统评估了内参标定扰动对投影域一致性的影响。研究采用基于CT的椎体模型与受控锥束成像几何,生成真实与扰动标定下的DRR对,通过解剖标志位移、轮廓距离、剪影重叠、图像相似度及2D-3D配准精度等多维指标,定量分析AP与LAT视图下的投影变化。
-
-◆ 提出基于合成框架的投影域标定敏感性分析方法,弥补传统重建域重投影误差指标的不足,为标定鲁棒性评估提供新视角。
-
-◆ 揭示了标定敏感性的强视角依赖性,发现LAT投影在形变与解剖位移上比AP投影更为显著,明确了脊柱成像中多视角标定的差异化要求。
-
-◆ 证实微小内参扰动即可显著降低下游2D-3D配准的旋转对齐精度,建立了标定质量与配准性能之间的直接定量关联,有助于提升图像引导脊柱手术的可靠性。</td></tr>
-<tr><td>2026-07-06</td><td>From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model<br><a href='http://arxiv.org/pdf/2607.05396'>论文</a> | <a href='https://alibaba-damo-academy.github.io/CamVLA/'>代码</a></td><td>该论文针对真实机器人部署中相机位置经常变化的问题,指出现有VLA策略依赖显式相机外参,导致在视角变化时脆弱难用,提出策略应自主推断相机位姿而非被告知。针对这一痛点,论文提出CamVLA模型,其核心思想是将操控控制与相机几何解耦。模型同时预测相机坐标系下的末端执行器动作以及6自由度手眼矩阵,通过确定性几何变换将两者合成为机器人基坐标系下的动作。该方法实现了免标定、免深度、单视角,部署时仅需单张单目RGB图像和任务指令。仿真与真实机器人实验均表明,CamVLA在多种未见视角下均能稳定提升任务成功率。
-
-◆ 创新点一:提出相机中心化的动作表征方式,直接在相机局部坐标系下预测末端执行器动作,实现与相机几何的解耦。
-
-◆ 创新点二:联合预测6自由度手眼矩阵,使策略能够自主推断相机相对机器人基座的位姿,无需外部标定。
-
-◆ 创新点三:通过确定性几何变换将姿态无关的动作与相机位姿估计组合,实现真正免标定、免深度、单视角的部署范式。</td></tr>
-<tr><td>2026-07-02</td><td>Bridging 3D Gaussians and Semantic Occupancy for Comprehensive Open-Vocabulary Scene Understanding from Unposed Images<br><a href='http://arxiv.org/pdf/2607.01633'>论文</a></td><td>该论文提出COVScene框架，旨在从无位姿的稀疏图像中实现全面的3D场景理解，涵盖可渲染几何、开放词汇语义及自由/占用空间预测。核心思想是将可渲染的高斯原语与密集语义占据场通过可微分体素化在训练计算图中进行耦合，使体素正则化能够反向传播梯度到高斯的不透明度、几何和语义特征。
-
-◆ 提出可微体素化提升机制，将语义高斯在训练图内提升为体素，无需外部相机标定即可实现无位姿重建与体素级正则化协同优化。
-
-◆ 设计语义感知的几何Transformer与多任务高斯解码器，联合预测几何与多任务特征。
-
-◆ 引入几何基础模型蒸馏和占据熵正则化，在没有直接体素监督的情况下提升语义占据预测能力。
-
-◆ 在单一表示中同时支持新视角合成、开放词汇语义查询和语义占据预测三项任务，并在ScanNet和ScanNet++上取得竞争性渲染质量、更好的开放词汇分割与更强的语义占据预测效果。</td></tr>
-</tbody>
-</table>
-</div>
-
-<div align='right'><a href='#top'>↑ 返回顶部</a></div>
-
-<h2 id='sensor-undistortion'>Sensor Undistortion</h2>
-
-<div class="table-container">
-<table>
-<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
-<tbody>
-<tr><td>2026-08-18</td><td>Differentiable Voronoi Ray Tracing Beyond Rasterization Speeds<br><a href='http://arxiv.org/pdf/2608.17682'>论文</a></td><td>该论文提出了VoroTracing，一种基于可微分Voronoi光线追踪的实时新视角合成方法，打破了射线渲染无法达到实时速度的传统假设。作者系统分析了影响光线追踪吞吐量的三个关键因素：遍历长度、单元内计算量和内存局部性，并据此对场景表示、优化策略和GPU执行进行了协同设计。
-
-◆ 使用紧凑八面体外观纹理显著降低内存访问开销
-◆ 将不透明度集中于表面以促进光线提前终止
-◆ 采用固定预算表示，无需剪枝或致密化即可优化
-◆ 通过面向一致性遍历的GPU实现提升执行效率
-
-在Mip-NeRF 360数据集上，VoroTracing在RTX 5090上达到623 FPS，吞吐量是此前最快射线方法的3.2倍、3D高斯泼溅的2.8倍，同时保持了具有竞争力的重建质量。更为重要的是，其渲染器仅通过光线生成与采样即可自然支持鱼眼、卷帘快门、运动模糊和景深等复杂相机效应，无需为栅格化管线编写专用扩展，展现了射线渲染在灵活性和速度上的双重潜力。</td></tr>
-<tr><td>2026-08-18</td><td>Scanline-Aware Animatable Gaussian Avatars from Rolling-Shutter Videos<br><a href='http://arxiv.org/pdf/2608.17314'>论文</a></td><td>该论文针对滚动快门(RS)视频重建可动画人体化身的问题展开研究。传统方法假设视频帧为全局快门，但RS传感器逐行曝光,导致同一帧内人体不同部位对应不同姿态,将此类视频输入现有方法会引入剪切和抖动伪影,并破坏多视角一致性。
-
-论文提出RS-Avatar方法,核心思想是利用可动画化身本身已具备的子帧渲染能力,将逐行曝光建模为按扫描线合成子帧图像,仅需将原本的模糊平均算子替换为滚动快门合成算子即可。
-
-◆ 创新一:首次将滚动快门物理过程显式建模进3D高斯化身重建,通过扫描线级子帧合成消除RS畸变。
-◆ 创新二:构建RS-ZJU基准数据集,基于ZJU-MoCap生成带RS效应的真实感视频用于评测。
-◆ 创新三:揭示关键发现,即运动模糊模型虽复用相同子帧机制却无法迁移,甚至低于无视快门的基线,证明算子本身而非子帧机制才是关键贡献。</td></tr>
-<tr><td>2026-08-17</td><td>Every copy of Thompson&#x27;s group $F$ in $F$ is undistorted<br><a href='http://arxiv.org/pdf/2608.17193'>论文</a></td><td>这篇论文研究了汤普森群F的子群扭曲问题,该群由单位区间上所有断点为二进有理数、斜率为2的整数次幂的分段线性同胚组成。扭曲度衡量子群的内在字度量与由母群诱导的度量之间的差异,无扭曲意味着这两种度量互相等价。
-
-◆ 证明了F中任何与F同构的子群在F中都是无扭曲的,从而否定了F包含扭曲同构子群的可能性
-◆ 解决了由Guba-Sapir和Brin独立提出的关于汤普森群扭曲性的长期未决问题
-◆ 发展了处理具有复杂子群结构的群中度量问题的新方法,具有独立的方法论价值
-
-该结果揭示了汤普森群F在子群嵌入方面具有刚性特征,对几何群论中扭曲性的研究具有重要意义。</td></tr>
-<tr><td>2026-08-17</td><td>Spatial Temporal Synergy: Balancing Change and Invariance in Text Driven 3D Human Motion Editing<br><a href='http://arxiv.org/pdf/2608.16008'>论文</a></td><td>该论文针对文本驱动的3D人体运动编辑任务,指出现有扩散方法难以平衡文本响应的&quot;变化&quot;与惯性&quot;不变性&quot;,且依赖粗粒度空间约束和刚性均匀时间假设,易导致空间运动失真和物理节奏破坏。为此,论文提出CIME统一框架,将变化与不变性解耦到空间姿态和时间节奏两个维度进行协同建模,在编辑对齐与结构保真度上达到最优性能。
-
-◆ 提出空间-时间解耦的CIME统一框架,将编辑目标分解为空间姿态变化与时间节奏不变性两个互补维度,实现更精细的协同控制。
-
-◆ 设计全监督正负学习机制,融合分层回溯特征监督、细微运动保留和三元组语义对齐,增强空间姿态的文本响应与原始结构一致性。
-
-◆ 引入黎曼非均匀积分流形映射(RNIMM)模块,通过运动学感知的非均匀时间戳,实现编辑序列中高保真的物理节奏复现。
-
-◆ 在MotionFix和STANCE Adjustment数据集上取得编辑对齐和结构保真度的最优性能,验证了所提架构的有效性。</td></tr>
-<tr><td>2026-08-16</td><td>Behavioral Participating Insurance: Optimal Investment under Probability Distortion and Aspiration Constraints<br><a href='http://arxiv.org/pdf/2608.15743'>论文</a></td><td>本文研究保险公司在概率扭曲与抱负型偿付能力约束下管理参与型利润分享合同的最优投资问题,整合了非凹有效效用、概率加权和概率基准约束三重理论复杂性。
-
-◆ 运用分位数公式化与凹化技术,在完全和不完全Black-Scholes市场下均给出最优终端财富与交易策略的显式闭式解,且效用类可容纳PHARA族并统一涵盖保险场景中的非凹性。
-
-◆ 揭示概率扭曲弱化锁定行为并引致时间不一致:在反S型扭曲下,保险公司高估上行概率,从而相较无扭曲基准显著提高风险资产配置。
-
-◆ 通过渐近分析与数值算例,刻画由监管阈值和资本约束触发的最优策略制度转换现象。
-
-◆ 将He和Zhou(2016)的&quot;希望-恐惧-抱负&quot;框架推广至概率扭曲与参与型合同并存的保险投资问题,为行为偏好与偿付能力约束下的资产负债管理提供新洞见。</td></tr>
-<tr><td>2026-08-15</td><td>UAV Video Deblurring via Motion-Aware Diffusion: A Path to Robust Target Detection<br><a href='http://arxiv.org/pdf/2608.15259'>论文</a></td><td>这篇论文针对无人机视频因快速飞行、振动和相机旋转导致的运动模糊问题，提出了一种基于运动感知扩散模型的视频去模糊方法，旨在提升下游目标检测任务的鲁棒性。
-
-◆创新点一：设计自适应潜在尺度选择器(Adaptive Latent Scale Selector)，根据无人机运动强度动态调整潜在空间分辨率，在细节保留与推理效率之间取得良好平衡。
-
-◆创新点二：提出多帧对齐与可学习门控模块(Multi-Frame Alignment and Learnable Gating)，对前序帧进行 warp 对齐与门控融合，仅保留时序相关信息并抑制错位或无效特征，从而显著提升时间一致性。
-
-◆创新点三：将扩散模型的去模糊能力与运动感知机制深度融合，在恢复质量与计算开销之间实现有效折中。
-
-在真实无人机基准数据集上的大量实验表明，该方法不仅在去模糊性能上优于现有方法，还显著提升了目标检测精度，具有较强的实际部署价值。</td></tr>
-<tr><td>2026-08-15</td><td>MotionGS-SLAM: Event-Modulated Gaussian Splatting for Motion-Blur Robust SLAM<br><a href='http://arxiv.org/pdf/2608.15024'>论文</a></td><td>现有视觉SLAM系统在运动模糊导致视觉输入退化时表现崩溃，因为它们试图从降质观测中恢复清晰内容这一不适定逆问题。本文提出MotionGS-SLAM，核心思路是将模糊处理从&quot;去模糊&quot;重构为&quot;前向建模&quot;，在渲染管线中生成式地建模模糊形成过程。
-
-◆ 创新点：利用事件相机微秒级时间分辨率和抗模糊特性，提出事件调制的高斯核，根据精确运动线索动态调整每个高斯的光栅化方式。
-
-◆ 创新点：设计双重调制机制，空间调制将2D高斯投影从各向同性圆点变为沿运动方向的各向异性椭圆笔触；时序调制基于局部速度自适应调整曝光积分采样密度。
-
-◆ 创新点：基于物理建模方案，通过模糊感知的光度约束和事件约束，联合优化曝光内相机轨迹与三维场景几何。
-
-大量实验表明，在严重高运动条件下，该方法在轨迹精度和地图质量上均显著优于当前最优方法。</td></tr>
-<tr><td>2026-08-14</td><td>On the Robustness of Temporal Vision-Language Models for Surgical Endoscopy Videos<br><a href='http://arxiv.org/pdf/2608.14262'>论文</a></td><td>本文聚焦于时序视觉-语言模型（TVLMs）在手术内窥镜视频中面对临床真实采集伪影时的鲁棒性问题。研究指出，诸如失焦、烟雾、运动模糊、噪声、烧灼烟雾以及丢包等退化会引入结构化分布漂移，可能损害视频与文本的对齐效果，但现有研究对此缺乏系统评估。
-
-◆ 提出Endo-C6基准：一个包含六种内窥镜真实扰动的高严重度紧凑评测集，并基于公开的胃肠道内窥镜和腹腔镜胆囊切除术视频进行标准化评估。
-
-◆ 全面评测三个最新手术TVLM基线模型，在统一提示协议下完成294次数据集级别的鲁棒性分析，揭示其平均与最差情形下的性能表现。
-
-◆ 提出RobustEndoCLIP：采用VeRA进行少样本参数高效微调，在不改变提示接口的前提下显著提升退化场景下的性能与鲁棒性。
-
-研究发现现成TVLMs在内窥镜特定扰动下会出现严重的最差情形崩溃，而轻量级少样本适配能够有效改善这一问题。Endo-C6有望支持标准化的鲁棒性报告，推动更可靠的临床视觉-语言系统发展。</td></tr>
-<tr><td>2026-08-12</td><td>Strain-coupled one-dimensional turbulence for rapid distortion<br><a href='http://arxiv.org/pdf/2608.12048'>论文</a></td><td>本文针对平均应变作用下湍流的快速畸变过程,提出了一种应变耦合的一维湍流(ODT)模型,旨在以较低计算成本同时捕捉线性快速畸变理论与非线性涡动力学的特征。模型将平均应变生成项作为线速度的连续强迫,引入与均匀快速畸变理论一致的能量守恒重分配算子来表征快速压力-应变效应,并通过ODT计算域的膨胀实现尺度压缩,完整描述了畸变过程中组分放大、压力重分配与谱重标度的耦合机制。
-
-◆创新点:将平均应变生成项作为线速度的连续强迫引入ODT框架,实现应变与湍流的直接耦合。
-◆创新点:构建能量守恒的快速压力-应变重分配算子,使其与均匀快速畸变理论在原理上一致。
-◆创新点:通过ODT计算域的膨胀变换表征尺度压缩效应,从而同时刻画组分放大与谱重标度。
-◆创新点:在未畸变湍流关于ODT线呈轴对称条件下,将非局部三维快速压力-应变积分简化为闭合的单线函数。
-◆创新点:模型在畸变起始阶段复现快速畸变理论结果,并定量再现Lee和Reynolds(1985)的雷诺应力各向异性趋势,在应变-湍流比约0.8处捕捉到线性谱平移向非线性涡动力学过渡的宽带畸变谱特征。</td></tr>
-<tr><td>2026-08-12</td><td>Bridging Event Streams and DiT: Event-Guided Video Frame Interpolation<br><a href='http://arxiv.org/pdf/2608.10479'>论文</a> | <a href='https://joseph-lin-tech.github.io/BridgeEventDiT-VFI/'>代码</a></td><td>本文提出了一种基于适配器的事件引导视频帧插值框架，旨在解决大时间间隔和复杂运动场景下现有扩散模型产生的运动模糊、结构失真和时间不一致问题。核心思路是将事件相机的高时间分辨率运动信息融入预训练图像到视频扩散模型，避免从头训练事件辅助模型的高成本。
-
-◆设计适配器架构，将事件线索以最小改动注入预训练DiT模型，复用已有生成能力同时降低训练成本。
-
-◆利用Image Warped Events（IWE）提供空间对齐的结构引导，并结合双向稀疏光流提供时间对齐的运动引导，二者协同增强扩散过程的生成质量。
-
-◆实验表明该方法在真实和合成基准上均优于现有最优方法，在重建保真度和时间一致性方面均取得提升。</td></tr>
-<tr><td>2026-08-11</td><td>CasDeblurGS: Cascaded 2D-to-3D Multi-View Consistency for 3D Gaussian Splatting from Two Blurry Images<br><a href='http://arxiv.org/pdf/2608.10345'>论文</a></td><td>本文针对实际应用中常见的两张运动模糊图像、无输入视角位姿且无需逐场景测试时优化的严苛条件,提出CasDeblurGS级联式3D场景重建框架,突破了现有去模糊方法对多视角冗余与精确位姿的依赖。整体流程将2D局部对应与3D全局引导相结合,先通过遮挡感知的对应点过滤构建局部可靠的光度与几何线索,再在粗略位姿下聚合为无位姿约束的3D高斯表示,并以输入视角的重渲染结果作为密集全局监督,实现去模糊与跨视角一致性的协同优化。
-
-◆ 提出级联式2D到3D框架CasDeblurGS,在仅两张模糊图像且无输入位姿的设定下完成3D高斯重建与去模糊,无需逐场景优化或辅助清晰图像。
-◆ 设计遮挡感知的跨视角对应过滤机制,有效剔除因运动模糊与遮挡产生的不可靠匹配,提升局部引导的鲁棒性。
-◆ 引入无位姿的中间3D高斯表征与重渲染全局监督,先粗后精地为最终去模糊提供密集、一致的多视角引导。
-◆ 在真实与合成Deblur-NeRF场景上PSNR分别提升1.19 dB与2.11 dB,显著改善渲染质量与多视角几何一致性。</td></tr>
-<tr><td>2026-08-10</td><td>Motion Artifact-Aware Self-Supervised Representation Learning for 3D Brain MRI Motion Artifact Reduction<br><a href='http://arxiv.org/pdf/2608.10170'>论文</a></td><td>SSRL-MAR是一种面向3D脑MRI运动伪影去除的自监督表征学习框架,旨在解决临床中难以获取配对干净-损坏数据的难题。该方法采用三阶段训练策略:首先通过对比学习在3D patch上提取运动相关表征,再训练运动伪影合成网络模拟真实伪影,最后利用学到的退化模型对干净图像进行自监督监督以完成重建。
-
-◆ 提出无需配对数据或显式运动标签的非配对表征学习框架,直接从图像域实现3D脑MRI运动伪影去除,摆脱对k空间数据或真实配对样本的依赖。
-
-◆ 设计三阶段训练流程,融合对比学习、运动伪影合成与伪影感知生成器,通过自监督闭环实现从合成伪影到干净体素的有效映射。
-
-◆ 在MR-ART真实数据集上经无监督域适应后,PSNR较仅源域监督模型最高提升2.0 dB,且性能逼近需要真实配对数据的oracle监督模型。
-
-◆ 在轻度运动条件下,胼胝体与脑室等结构的体素误差降低超过50%,显著改善神经解剖一致性,可支持大规模神经影像研究中的结构量化分析。</td></tr>
-<tr><td>2026-08-11</td><td>Bootstrapping Vision-Language Model for Hysteroscopic Surgical Scene Segmentation<br><a href='http://arxiv.org/pdf/2608.09302'>论文</a> | <a href='https://github.com/viscom-tongji/VLM-hyster'>代码</a></td><td>该论文针对宫腔镜手术场景分割中病灶形态高度相似以及镜面反射、运动模糊、液体遮挡等伪影干扰的难题,提出了首个基于视觉-语言模型(VLM)的宫腔镜手术场景分割方法VLM-hyster,实现了对15类典型结构的像素级定位。
-
-◆ 首次将视觉-语言模型引入宫腔镜手术场景分割任务,利用预训练图像编码器结合Transformer解码器完成密集预测,提升了复杂场景下的视觉特征表征能力。
-
-◆ 设计了类别特定的文本提示,并引入掩码蒸馏分支以过滤与文本相关性低的视觉特征,使模型更聚焦于类别相关区域,有效缓解了病灶间高相似性带来的判别困难。
-
-◆ 构建了一个包含4020张高分辨率图像的多中心宫腔镜手术场景数据集,提供了精细的掩码标注,填补了该领域数据资源的空白。
-
-◆ 大量实验表明VLM-hyster显著优于当前最先进的AI模型,并经妇科医生评估以及多中心、前瞻性验证,证明了其在真实临床应用中的鲁棒性和泛化能力。</td></tr>
-<tr><td>2026-08-15</td><td>RMR-P: Road Metadata-Aware Restoration for Pavement Inspection<br><a href='http://arxiv.org/pdf/2608.08957'>论文</a></td><td>RMR-P是一种面向道路病害检测的图像修复网络，旨在从运动模糊、失焦、低光照和噪声退化的路面图像中恢复与病害相关的关键信息。该网络可自动估计图像退化特征，并可选择性地融合外部退化参数作为修复引导条件。研究采用未经任何微调的预训练YOLO11s检测器对修复后的图像直接进行病害检测，在IVCNZ和PCM数据集的8种未见退化条件下，有7种取得了最高的mAP50，例如在IVCNZ运动模糊条件下将mAP50从0.140提升至0.427，PCM失焦条件下从0.060提升至0.233。消融实验表明，各模块对检测性能均有贡献，呈现出互补的增益效果。
-
-◆ 创新点一：提出退化感知修复机制，自动估计输入图像的退化特征，并可灵活融合外部已知退化参数以增强修复效果。
-
-◆ 创新点二：设计细节保持通路，在图像修复过程中优先保留细小裂缝和坑洞边界等病害关键结构信息。
-
-◆ 创新点三：引入任务引导训练策略，使修复网络的优化目标直接对齐下游病害检测任务。
-
-◆ 创新点四：提出&quot;修复即增强&quot;的轻量化检测框架，无需对检测器进行微调或重训练即可提升退化图像上的病害检测性能。</td></tr>
-<tr><td>2026-08-09</td><td>ERF-GS: Reconstructing Fast Motion from Disjoint Event-RGB Viewpoints<br><a href='http://arxiv.org/pdf/2608.08531'>论文</a> | <a href='https://github.com/andrewbxy/ERF-GS'>代码</a></td><td>ERF-GS是一种融合事件相机与RGB相机信息的高斯泼溅框架，旨在解决快速运动场景下的动态三维重建难题。该方法利用事件传感器的高时间分辨率来弥补传统RGB视频在捕捉快速运动时的不足。
-
-◆ 将事件信息同时集成到高斯泼溅的优化与致密化阶段，充分发挥事件数据在时空细节捕捉上的优势。
-◆ 采用真实仿真训练策略并实现事件学习与RGB输入的解耦，使其能应用于复杂布局、低帧率、严重运动模糊的自然视频。
-◆ 支持RGB与事件相机视角分离设置，突破了传统方法要求两相机共置的局限。
-◆ 在Neu3D和Nvidia数据集的模糊帧变体上，性能优于4DGS基线和同期工作E-D3DGS。</td></tr>
-<tr><td>2026-08-06</td><td>ASTRA: Asynchronous Spatio-Temporal Reconstruction via Trajectory Alignment<br><a href='http://arxiv.org/pdf/2608.02006'>论文</a></td><td>该论文针对动态三维场景重建中多相机时间异步问题展开研究,指出传统基于光度监督的同步方法因纹理缺失和形变耦合两大瓶颈而失效。
-
-为此,作者提出ASTRA框架,核心思想是利用二维运动轨迹作为显式、纹理无关的监督信号来估计时间偏移。
-
-◆ 创新点一:首次引入2D运动轨迹作为纹理无关的显式时间监督,从根本上解决低纹理区域对齐信号消失的问题。
-
-◆ 创新点二:通过将重建3D点的投影运动与观测2D轨迹对齐,实现时间偏移与动态3D表示的联合优化,显式解耦时间误差与几何形变。
-
-◆ 创新点三:设计动态掩码与确信度掩码机制,有效抑制运动模糊区域和不可靠轨迹的负面影响。
-
-◆ 创新点四:在多种动态高斯溅射基模型上验证,在最高25帧的严重偏移下仍保持鲁棒,PSNR提升约1.4dB,时间偏移MAE降低54.0%,同步成功率提升近4倍。</td></tr>
-<tr><td>2026-08-03</td><td>When Extreme Darkness Meets Motion Blur: MeanFlow for Unified RAW Restoration<br><a href='http://arxiv.org/pdf/2608.01720'>论文</a></td><td>针对极低光照RAW图像增强中运动模糊与噪声耦合退化的难题，本文提出了一个统一的RAW恢复框架。◆ 构建了首个面向极低光照的SIDED数据集，对原始传感器RAW数据施加可控的运动退化，同时保留真实噪声特性。◆ 设计了统一RAW tokenizer，通过显式的域条件表征校准来对齐极低光照与正常曝光RAW域。◆ 首次将MeanFlow引入极低光照RAW增强任务，仅需单次函数评估即可完成图像恢复。◆ 提出物理引导的精细化模型，在不增加推理开销的前提下强化光照-反射一致性、像素保真度与色彩保持。大量实验表明，该方法在极低光照RAW增强上达到最先进水平，并能鲁棒地处理运动与噪声耦合退化。</td></tr>
-<tr><td>2026-08-01</td><td>E2Pano: Learning Event-to-Panorama Image Reconstruction<br><a href='http://arxiv.org/pdf/2608.00694'>论文</a></td><td>E2Pano提出了一种基于几何引导的端到端事件相机到全景图像重建框架,旨在解决现有优化方法计算开销大、传统学习方法缺乏全景几何感知的问题。整体而言,论文通过在管线的几何映射环节保留真实球面坐标,并设计轻量级增强模块与球面Transformer来实现从事件流到高质量全景图像的高效重建,训练完全基于合成数据,但在真实采集数据上展现出良好的迁移能力。
-
-核心创新点如下:
-
-◆ 提出几何引导的事件到全景重建管线,贯穿整个流程保持真实的球面坐标,避免透视投影假设对全景几何的破坏。
-
-◆ 设计轻量级增强模块结合频域监督,有效弥合事件与图像之间的领域差异,提升重建细节质量。
-
-◆ 提出带3D位置嵌入的球面Transformer,实现面向全景结构的光度重建,降低了相对优化方法的计算成本。
-
-◆ 构建PanoScan数据集,包含4370个合成全景场景与30个真实旋转扫描场景,并配套事件流数据,填补了该方向的数据空白。</td></tr>
-<tr><td>2026-08-01</td><td>Optical Flow from Photons<br><a href='http://arxiv.org/pdf/2608.00499'>论文</a></td><td>本文针对高速低光场景下传统相机易产生运动模糊和欠曝光的问题，提出首个直接从单光子雪崩二极管(SPAD)光子流估计密集光流的方法QuantaFlow。核心思想是将SPAD表示构建嵌入到迭代光流精化过程中，突破传统固定输入表示的局限，在每次迭代中利用当前光流对源和目标子流内的切片进行粗对齐，再通过光子通量变换构建包含强度与结构线索的多尺度表示，并由自适应多尺度融合在每个像素上平衡光子噪声与残余运动模糊，最终驱动特征扭曲的光流更新。实验表明该方法在合成数据集和真实SPAD数据上均有效且具备良好泛化能力。
-
-创新点如下：
-
-◆ 首个直接从SPAD二值光子流估计密集光流的方法，规避了传统相机在高速低光场景下的运动模糊与欠曝光问题。
-
-◆ 提出将SPAD表示构建嵌入到迭代光流精化框架中，使表示构造与流估计相互引导，缓解了运动感知聚合对预知光流的依赖。
-
-◆ 设计光子通量变换与自适应多尺度融合机制，在像素级平衡光子噪声与残余运动模糊，提升表示质量。
-
-◆ 构建了首个用于SPAD光流训练与评估的合成数据集，填补了该领域数据空白。</td></tr>
-<tr><td>2026-07-31</td><td>JADE-GS: Joint Allocation of Deblurring Evidence for Event-Assisted 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2607.14990'>论文</a></td><td>JADE-GS针对3D高斯泼溅(3DGS)在运动模糊场景下的重建难题,提出了一种融合事件相机信息的联合去模糊框架。论文观察到事件双积分(EDI)的解析反演与基于学习的帧-事件联合复原这两种先验在不同区域具有互补性,各有所长。本文的核心思想是将二者的结合建模为空间证据分配问题,通过轻量级的空间先验路由器在像素级预测融合权重,生成额外的监督目标。
-
-◆ 提出空间证据分配框架,将EDI解析反演与学习式复原两种互补先验在像素级进行自适应融合
-◆ 设计轻量级空间先验路由器,仅利用模糊帧和事件流即可预测逐像素分配权重
-◆ 路由器无需清晰参考图像训练,通过场景一致性与曝光测量作为自监督信号
-◆ 优化完成后移除路由器,推理阶段保持原生3DGS渲染,无需生成式解码
-
-实验表明,JADE-GS在基准上取得了领先的感知质量,在真实数据集上保真度最优,且训练开销远低于基于扩散的替代方案。</td></tr>
 </tbody>
 </table>
 </div>
@@ -969,38 +665,60 @@
 ◆ 利用MLLM的自然语言推理痕迹增强决策可解释性，便于分析路由依据与模型行为
 
 总体而言，ARMDIL在跨数据集图像分类任务中表现优于单一专用模型，性能与经过专门训练的路由系统相当，同时具备更高的灵活性和透明度，为通用视觉系统的发展提供了新思路。</td></tr>
-<tr><td>2026-08-13</td><td>BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving<br><a href='http://arxiv.org/pdf/2608.12854'>论文</a></td><td>这篇论文提出了BrainWAM框架，旨在解决自动驾驶中语义先验与预测动力学难以统一融合的问题。作者指出现有端到端方法要么偏重VLA的语义推理，要么偏重WAM的预测式世界建模，而简单的token级联合注意力会因注意力分配失衡导致语义捷径压制预测信号。受神经科学中功能特化系统协调的启发，BrainWAM将两类能力解耦为两条专门化的动作导向通路，并在紧凑动作表征层进行对齐融合，同时设计了异步整流流推理以解耦视频与动作的去噪过程。实验表明，BrainWAM在NAVSIM v1和v2基准上均达到最优性能，验证了该统一规划思路的实用价值。
+</tbody>
+</table>
+</div>
 
-◆ 将语义推理与预测世界建模解耦为两条专门化的动作导向通路，在动作表征层而非token层实现协调融合，避免注意力分配失衡问题。
-◆ 引入异步整流流推理策略，将视频去噪与动作去噪并行解耦，在保留预测上下文的同时显著缩短推理延迟。
-◆ 借鉴神经科学中大脑功能特化系统协同工作的机理，为多模块自动驾驶规划器提供生物启发的结构化设计范式。</td></tr>
-<tr><td>2026-08-13</td><td>Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence<br><a href='http://arxiv.org/pdf/2608.12743'>论文</a></td><td>针对冻结VLM智能体在空间推理上的自进化难题,该论文提出空间记忆智能体(SMA),这是一种基于经验的可重用程序记忆框架,通过验证器引导的反思将成功经验提炼为可迁移教训,并在只读部署阶段结合语义过滤与可靠性分数检索记忆来辅助冻结模型推理。该方法不依赖外部空间工具或参数更新,在五个空间基准与四种基础VLM的二十次评估中均取得最高宏观平均,验证了冻结模型空间自进化的可行性与通用性。
+<div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-◆ 提出验证器引导的反思机制,自动从可验证空间经验中蒸馏出紧凑且可复用的经验教训
-◆ 引入迁移可靠性分数(TRS),依据后续检索的访问证据对每条教训的迁移可信度进行持续校准
-◆ 设计语义过滤与相似度-TRS联合排序的记忆检索机制,无需外部专家工具即可引导冻结模型推理
-◆ 在五个代表性空间推理基准和四种不同规模基础VLM上实现参数更新无关的自进化路径,并在多数评估中取得最佳准确率...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-12</td><td>Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?<br><a href='http://arxiv.org/pdf/2608.12515'>论文</a></td><td>本文系统评估了三种开源视觉语言模型（InternVL、Qwen-VL、SmolVLM）在机器人第一人称视角下对接近风险进行分类的能力，将图像划分为四个危险等级。实验对比了三种提示策略和两轮QLoRA微调的效果，结果表明未微调时模型表现仅接近基线水平，微调带来的整体提升有限，但Qwen-VL配合高级提示在识别高危场景时召回率显著优于其他模型。◆本文首次针对机器人自我中心视角的接近风险评估任务，对多种开源VLM进行系统性基准评测。◆提出并比较了不同提示策略与QLoRA微调在细粒度危险分类中的组合效果。◆创新性地通过人物定位分析揭示了正确分类与空间定位能力之间存在解耦现象，模型即使不关注相关区域也能给出有效标签。◆研究发现针对性提示与微调可显著提升特定模型对高危场景的检测能力，为安全导航应用提供了实用启示。</td></tr>
-<tr><td>2026-08-12</td><td>HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing<br><a href='http://arxiv.org/pdf/2608.12122'>论文</a></td><td>HandEdit针对具身AI中灵巧手操作数据稀缺这一核心难题，提出将丰富的第一人称人类手部视频转化为机器人灵巧手图像，从而实现从人类数据到机器人数据的大规模迁移。论文的核心思路是构建一个统一的、以具身为条件的图像编辑数据集和基准，弥补人类与机器人数据在外观、关节结构和视角上的巨大差异。
+<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition</h2>
 
-◆ 构建了大规模具身感知图像编辑数据集HandEdit，包含超过2亿编辑实例，源自5个多样化源数据集，覆盖26种URDF配置（13种手部、13种手-臂组合）。
+<div class="table-container">
+<table>
+<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
+<tbody>
+<tr><td>2026-08-17</td><td>Cyclops: LiDAR as a Camera That Dreams in Color<br><a href='http://arxiv.org/pdf/2608.16264'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-13</td><td>Semantic Radiance Fields as Simulators for Spatial Reasoning in Real-World Scenes<br><a href='http://arxiv.org/pdf/2608.13095'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-07</td><td>LifelongCrossNav: Persistent 3D Semantic Memory for Cross-Floor Multi-Object Navigation<br><a href='http://arxiv.org/pdf/2608.07079'>论文</a> | <a href='https://flageval-baai.github.io/LifelongCrossNavPage'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-05</td><td>SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling<br><a href='http://arxiv.org/pdf/2608.04425'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-31</td><td>Hybrid Attention Estimation Pipeline for Adaptive HRI Using an Expressive Robotic Head<br><a href='http://arxiv.org/pdf/2608.00284'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-30</td><td>PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball<br><a href='http://arxiv.org/pdf/2607.28623'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-28</td><td>DVPSFormer: Efficient Online Depth-aware Video Panoptic Segmentation for Autonomous Driving<br><a href='http://arxiv.org/pdf/2607.26165'>论文</a> | <a href='https://royyang0714.github.io/DVPSFormer'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-17</td><td>DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction<br><a href='http://arxiv.org/pdf/2607.16012'>论文</a> | <a href='https://github.com/kangjehun/DPNeXt'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-23</td><td>An Intelligent-Cloud Edge Multimodal Interaction System for Robots<br><a href='http://arxiv.org/pdf/2607.14675'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-15</td><td>From Language to Navigation Goals: A Vision-Language Approach for Semantic Navigation of Mobile Robots Using RGB-D Perception<br><a href='http://arxiv.org/pdf/2607.13624'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-13</td><td>Enabling 24-hour Agricultural Robotics: Unsupervised Day-to-Night Cross-Modal Image Translation for Nighttime Visual Navigation<br><a href='http://arxiv.org/pdf/2607.12065'>论文</a> | <a href='https://github.com/mamorobel/AgriNight'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-06</td><td>Green for Go, Red for No: Visual Grounding via Semantic Segmentation for VLA Navigation Policies<br><a href='http://arxiv.org/pdf/2607.05122'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-03</td><td>iVISION-2DCD: A Long-Term Change Detection Dataset for Large-Scale Outdoor Construction Monitoring<br><a href='http://arxiv.org/pdf/2607.03553'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-01</td><td>Privacy-Preserving Depth-Only Open-Vocabulary 3D Semantic Segmentation Via Uncertainty-Guided Test-Time Optimization<br><a href='http://arxiv.org/pdf/2607.00978'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-06-25</td><td>OctoSense: Self-Supervised Learning for Multimodal Robot Perception<br><a href='http://arxiv.org/pdf/2606.27317'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+</tbody>
+</table>
+</div>
 
-◆ 建立了统一基准协议，设有Hand-only和Hand-Arm两条评估轨道，支持URDF条件下的标准化评测。
+<div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-◆ 设计了多维度评估指标体系，融合通用相似度指标、VLM判别指标以及具身感知指标，对11个代表性图像编辑基线模型进行了全面评估。
+<h2 id='robot-vpr'>Robot VPR</h2>
 
-◆ 为图像编辑与机器人学交叉研究提供了关键资源，既推动了具身感知编辑模型发展，又使从人类视频中进行可扩展的灵巧机器人学习成为可能。</td></tr>
-<tr><td>2026-08-12</td><td>G0.5: One Autoregressive Stream for Robot Reasoning and Action<br><a href='http://arxiv.org/pdf/2608.11739'>论文</a></td><td>该论文提出了G0.5模型,挑战了当前视觉-语言-动作(VLA)模型将预训练VLM与独立训练的流匹配动作专家耦合的主流范式,认为这种方式使VLM仅充当上下文编码器而非决策者。
-
-◆一个统一的自回归Transformer解码器在单一目标下同时输出推理token和动作token,使预训练VLM的能力直接迁移到物理行为控制中。
-
-◆可学习的跨具身动作分词器将异构机器人动作映射到共享词汇表,实现了多种机器人平台的统一表征。
-
-◆原生思维链流将任务分解、物体定位和动作提示与动作token交错输出,支持通过提示直接调节动作粒度、任务时长和分布外场景处理。
-
-◆视觉记忆模块通过视觉编码器注入多秒级历史信息,增强了对长时序任务的感知能力。
-
-G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% vs π_0.5的53.3%)、2025 BEHAVIOR挑战赛长时序家务任务(31.4%)以及DROID零样本迁移(82.5%)等,显著优于现有方法。</td></tr>
+<div class="table-container">
+<table>
+<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
+<tbody>
+<tr><td>2026-08-07</td><td>Are Visual Place Recognition Models Recognizing Places or Conditions? Distractor-Augmented Evaluation and Condition Suppression<br><a href='http://arxiv.org/pdf/2608.06847'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-06</td><td>Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models<br><a href='http://arxiv.org/pdf/2608.06021'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-06</td><td>Trajectory-Anchor Optimization for Overconfident Thermal Visual Place Recognition: Zero-Leakage OOD Auditing and Kidnapped-Robot Recovery<br><a href='http://arxiv.org/pdf/2607.04745'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-06-01</td><td>FlatVPR: Plug-and-play Geo-linear Residual Adapter for Geometric Rectification of Foundation Model Feature Manifolds<br><a href='http://arxiv.org/pdf/2606.01734'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-29</td><td>DisPlace: Discriminative Place Projections for Multi-Reference Visual Place Recognition<br><a href='http://arxiv.org/pdf/2605.30769'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-27</td><td>SAFEVPR: Patch-Based Conformal Verification for Safe Cross-Condition Sequence Visual Place Recognition<br><a href='http://arxiv.org/pdf/2605.28048'>论文</a> | <a href='https://github.com/Hasar12139/SafeVPR'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-19</td><td>Faster or Stronger: Towards Flexible Visual Place Recognition via Weighted Aggregation and Token Pruning<br><a href='http://arxiv.org/pdf/2605.20551'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-05-19</td><td>KappaPlace: Learning Hyperspherical Uncertainty for Visual Place Recognition via Prototype-Anchored Supervision<br><a href='http://arxiv.org/pdf/2605.19435'>论文</a> | <a href='https://github.com/mayayank95/UncertaintyAwareVPR'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 </tbody>
 </table>
 </div>
@@ -1131,4 +849,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.08.19
+> 更新于: 2026.08.20
