@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.08.21)
+# 计算机视觉领域最新论文 (2026.08.22)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,11 +24,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>稀疏关键点提取与匹配是几何计算机视觉的核心任务,广泛应用于SfM、视觉SLAM和医学图像配准等领域。本文提出RIPE++方法,针对现有强化学习方法RIPE依赖粗粒度二元奖励和负样本对、训练稳定性差的局限,从单一正样本对同时推导奖励与惩罚,无需构造负样本即可学习判别性的检测器与描述符。该方法还将同一强化学习目标扩展到匹配阶段,适配LightGlue后将MegaDepth1500上的AUC@5从56.58提升到59.65,实现了从部分重叠图像对进行全流水线弱监督训练。实验结果表明,该方法仅用正样本对即可取得与全监督方法相当的性能。该方法还能在缺乏相机位姿的低纹理医学视频上有效工作,突破了标准SfM方法的局限。
+<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>本文针对稀疏关键点检测与匹配任务中传统监督信号难获取的问题，对RIPE强化学习方法进行改进，提出RIPE++。其核心思想是重新设计奖励机制，仅利用正样本图像对的几何一致性信号，同时提供奖励与惩罚，避免了对负样本对的依赖。实验表明该方法在MegaDepth1500上将匹配阶段AUC@5从56.58提升至59.65，并能对完整稀疏匹配流水线进行弱监督训练。此外，该方法可应用于相机位姿难以获取的低纹理医学视频序列，突破了标准SfM管线的局限。
 
-◆仅从单一正样本对推导奖励与惩罚,无需负样本对比,提供更丰富的几何一致性监督信号
-◆将强化学习目标扩展到匹配阶段,适配LightGlue,实现检测与匹配的端到端弱监督联合训练
-◆摆脱对相机位姿和深度标注的依赖,可应用于纹理匮乏的医学视频等传统SfM失败场景...[摘要不完整，待更新]</td></tr>
+◆ 提出基于正样本对几何一致性的新型奖励函数，无需负样本对比即可学习判别性特征
+◆ 将同一强化学习目标扩展到匹配阶段，通过改进LightGlue实现端到端的弱监督稀疏匹配
+◆ 摆脱对相机位姿和深度监督的依赖，可应用于正负样本构造困难或监督信号缺失的低纹理医学影像场景...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-19</td><td>LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding<br><a href='http://arxiv.org/pdf/2608.19059'>论文</a></td><td>本文针对机器人在长期动态环境中的场景理解问题，指出当前系统存在&quot;时间健忘症&quot;缺陷，即无法跨会话维持物体级一致身份，导致难以回答&quot;绿色椅子在所有会话中出现过哪里&quot;之类的查询。为此提出LT-Mem框架，通过多会话SLAM骨干网络提供空间对齐的逐物体观测，并结合基于波动性策略的推理层，实现确定性身份保持与动态记忆演化的统一。
 
 ◆ 提出LT-Mem框架，将空间对齐的实例级3D感知与波动性条件化的时序推理相统一，核心是确定性证据评分与波动性感知策略（覆盖/保持/多假设三选一）的协同设计。
@@ -38,12 +38,11 @@
 ◆ 发布LT-VQA数据集与评测套件，包含多会话录像、持久身份标注及时序问答对，填补该领域基准空白。
 
 实验表明LT-Mem在所有指标上均优于基线方法，token消耗低一个数量级，消融实验证实性能增益来源于结构化记忆架构而非大语言模型容量本身的提升。</td></tr>
-<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>本文针对高海拔垂直俯瞰无人机视频这一视觉SLAM困难场景，系统评估了五种单目SLAM系统的性能表现。研究者使用局部无人机飞行、合成城市级影像和长距离航拍序列三类数据，且完全不提供惯性或GNSS辅助以纯视觉方式隔离评估。在五段DJI飞行数据中MASt3R-SLAM取得了最低的水平平均绝对误差(0.53%参考路径长度)，而DROID-SLAM在所有完整运行中平均误差为2.88%，表现最为均衡稳定。然而在长距离GES和ALTO序列上没有任何系统能稳定保持全局轨迹形状，垂直位置估计仍然较差，大范围轨迹即使借助回环检测也严重失真。
+<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>本文针对高空垂直俯拍无人机视频这一具有弱几何约束和严重感知混叠的困难场景，对五种主流单目SLAM系统进行了系统性基准测试。研究者设计了多层次的评估方案，涵盖本地DJI无人机飞行、合成城市场景以及GES和ALTO长距离航拍序列，并刻意排除惯性测量和GNSS辅助以纯视觉方式隔离各系统的视觉定位能力。实验结果表明，系统性能强烈依赖于环境和轨迹尺度，MASt3R-SLAM在五段DJI短程飞行上取得最低水平均误差（0.53%路径长度），而DROID-SLAM在所有完整运行的序列中综合表现最佳（平均2.88%）。研究发现垂直方向定位精度普遍较差，大范围轨迹即使借助回环检测仍存在显著形变，验证了当前单目SLAM方法单独使用无法胜任纯视觉航空导航任务。
 
-◆ 构建了首个针对高海拔垂直俯瞰航拍场景的多类型单目SLAM基准测试体系
-◆ 在纯视觉无惯导辅助条件下系统揭示了不同算法在尺度、轨迹长度和场景下的性能差异
-◆ 明确指出了当前单目SLAM在垂直位置估计和长程全局一致性方面的固有不足
-◆ 得出结论：现有单目SLAM方法尚不足以独立支撑可靠的纯视觉空中导航任务...[摘要不完整，待更新]</td></tr>
+◆构建了首个面向高空垂直俯拍无人机视频的多尺度单目SLAM基准测试框架
+◆在纯视觉、无惯导与GNSS辅助的严苛条件下系统评估了五种代表性单目SLAM系统
+◆揭示了垂直方向定位精度不足与大范围轨迹全局形变等单目视觉方法的固有局限...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-19</td><td>Evaluation of Image Matching Methods for Visual Odometry on UAVs<br><a href='http://arxiv.org/pdf/2608.18624'>论文</a></td><td>本论文针对无人机在GNSS信号失效情况下的导航难题，系统评估了多种图像匹配方法在视觉里程计(VO)任务中的性能。研究团队构建了基于下视相机的合成数据集，对传统SIFT与多种前沿深度学习匹配器进行了全面的对比实验。
 
 ◆ 首次将包括最新RoMa在内的多种深度学习图像匹配方法系统性地应用于无人机下视视觉里程计任务
@@ -163,22 +162,19 @@
 ◆仅需具有部分视觉重叠的正样本图像对即可完成全流程稀疏匹配管线的弱监督训练，大幅降低对监督信息的依赖。
 
 ◆在标准基准上取得与全监督方法相当的竞争性结果，并成功应用于低纹理医学视频序列，验证了方法在标准SfM失效场景下的实用价值。</td></tr>
-<tr><td>2026-08-19</td><td>CoMVS-GS: Collaborative Multi-View Stereo and 3D Gaussian Splatting for Surface Reconstruction<br><a href='http://arxiv.org/pdf/2608.18413'>论文</a></td><td>CoMVS-GS针对3D高斯泼溅在弱观测和遮挡区域难以准确重建网格的问题，提出了一种融合多视图立体(MVS)与高斯泼溅的通用表面重建框架。该方法利用稠密MVS点云作为高斯基元的初始化基础，并赋予预压平的尺度与法线对齐的方向，从而提供比稀疏SfM初始化更强的几何先验。框架中设计了PatchMatch与高斯泼溅之间的互监督机制，使两者在深度与法线信息上相互促进，有效提升弱约束区域的几何精度。表面提取阶段摒弃了传统的截断符号距离函数体素融合方案，改用Delaunay图割网格化流程，降低了对体素分辨率的敏感性。在DTU、GauU-Scene V2和MatrixCity等数据集上的实验表明，该方法在物体级重建上保持竞争力，同时在室外大场景中显著提升了几何精度与网格紧凑度，且不牺牲渲染质量。
+<tr><td>2026-08-19</td><td>CoMVS-GS: Collaborative Multi-View Stereo and 3D Gaussian Splatting for Surface Reconstruction<br><a href='http://arxiv.org/pdf/2608.18413'>论文</a></td><td>CoMVS-GS提出了一种融合多视图立体视觉与3D高斯泼溅的通用表面重建框架,旨在解决弱观测和遮挡区域中高斯基元几何不一致、网格重建困难的问题。论文通过MVS密集点云初始化并预展平尺度、法线对齐方向,提供比稀疏SfM更强的几何先验,降低优化初期的歧义性。框架引入PatchMatch与3DGS的相互监督机制,使两者在深度和法线信息上相互促进,显著提升弱约束区域的几何精度。在表面提取阶段,采用Delaunay图割网格化替代传统的截断符号距离函数体素融合,降低对体素分辨率的敏感性,同时保持可见性一致的表面证据。实验表明,CoMVS-GS在物体级重建上保持竞争力,在户外大场景中显著提升了几何精度和网格紧凑性,并兼顾了高质量的渲染效果。
 
-◆ 基于稠密MVS点的法线对齐、预压平尺度的高斯基元初始化，提供强几何先验
-◆ PatchMatch-3DGS互监督机制：渲染深度法线引导PatchMatch精化，PatchMatch深度反向监督高斯优化
-◆ 引入Delaunay图割网格化替代TSDF体素融合，降低对体素分辨率的敏感度...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>本文构建了一个用于描述温热致密核物质的混合状态方程,核子物质采用DD2类的相对论密度泛函模型,夸克物质部分则使用新近发展的禁闭密度泛函方法,通过在恒定重子熵条件下进行Maxwell构造实现相变。该模型可在统一框架下应用于超新星爆炸、中子星并合以及Q球宇宙学演化等多种天体物理场景。
+◆ 基于MVS密集点云预展平尺度与法线对齐的高斯基元初始化策略,提供强几何先验以减少早期优化的歧义性。
 
-研究发现,在等熵混合星的TOV方程求解中,当熵超过某一临界值时,DDf-SFM模型会出现不连续的第三族分支,即&quot;热孪生星&quot;解,而在包含色超导的模型和零温情况下则不出现这一现象。热孪生星的存在可作为核塌缩超新星爆炸性的判据,据此作者提出强色超导模型应被排除,仅中等强度的diquark配对可能满足热孪生星约束。
+◆ PatchMatch-3DGS相互监督机制,通过高斯渲染的深度法线初始化PatchMatch精修,再用精修结果反向监督高斯优化。
 
-◆ 基于禁闭密度泛函构建了首个可在宽温度范围内同时描述核物质与解禁闭夸克物质的混合状态方程
+◆ 采用Delaunay图割网格化替代TSDF体素融合,降低对体素分辨率敏感性,同时保留可见性一致的表面证据。</td></tr>
+<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>本文构建了一个适用于温密核物质的混合状态方程（EOS），将DD2类相对论密度泛函核物质与新型禁闭密度泛函夸克物质相结合，并在恒定熵每重子条件下通过Maxwell构造实现相变，可应用于超新星爆发、中子星并合及Q球演化等天体物理场景。研究通过求解等熵混合星的TOV方程发现，在熵每重子超过某一临界值时会出现不连接的第三族分支，即&quot;热双子星&quot;现象，而在零温和强色超导模型中则不存在。
 
-◆ 首次在有限熵条件下发现热孪生星第三族解,并将其与Seidov引力失稳判据建立联系
-
-◆ 提出热孪生星可作为超新星爆发可靠性的新判据,由此排除强色超导模型
-
-◆ 揭示解禁闭起始密度对色超导是否存在的敏感性,并与Danielewicz等人的流约束进行了系统比对...[摘要不完整，待更新]</td></tr>
+◆ 提出了将禁闭密度泛函夸克物质与DD2核物质模型相结合的混合EOS框架
+◆ 发现在有限温度下存在热双子星现象，并将其与Seidov引力不稳定性判据建立联系
+◆ 创新性地提出热双子星可作为大质量蓝超巨星核坍缩超新星可爆性的指示器
+◆ 系统分析了色超导效应对退禁闭起始密度及双子星出现条件的影响，并据此排除强色超导模型...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-18</td><td>Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study<br><a href='http://arxiv.org/pdf/2608.18028'>论文</a> | <a href='https://github.com/simonwebertum/InitFreeBA.git'>代码</a></td><td>本文重新审视了无需初始化的光束法平差（InitFree BA）问题，针对当前基于物体空间误差（OSE）与可变投影（VarPro）的方法仅以优化成功度作为评估标准、而忽视低OSE目标值是否对应有效度量重建的局限，提出了系统性的实验分析与统一评估框架。
 
 ◆ 提出结合C++实现与Blender合成数据集生成器的统一可控评估平台，提供精确真值及可调节的相机配置与观测密度
@@ -544,18 +540,24 @@
 ◆提出EAFG框架,将视觉证据获取与可行性门控机制融入VLM与TAMP的结合,解决了部分可观测环境下子目标缺乏观测支持的问题。
 ◆设计VLM生成探索性子目标的方法,利用TAMP执行主动获取视觉证据,使机器人能够在规划前主动发现任务相关对象。
 ◆引入可行性门控机制,使系统能够智能地选择继续规划、继续探索或停止执行,有效避免对缺失对象的重复无效操作。</td></tr>
-<tr><td>2026-08-20</td><td>EXIMO: VLM Guided Exploration of VLA Policies<br><a href='http://arxiv.org/pdf/2608.19891'>论文</a></td><td>EXIMO论文针对机器人VLA策略在线学习新任务的难题，提出了一种高效的三阶段微调算法。该方法通过&quot;探索-模仿-优化&quot;流程，结合VLM的规划能力与VLA的执行能力，有效解决了现有方法样本效率低、收集遥操作数据成本高昂的问题。核心思路是让VLM充当规划器，将长视野复杂任务分解为VLA可处理的短视野子任务，从而指导数据采集过程。
+<tr><td>2026-08-20</td><td>EXIMO: VLM Guided Exploration of VLA Policies<br><a href='http://arxiv.org/pdf/2608.19891'>论文</a></td><td>本文针对VLA策略在新任务上在线微调的难题，提出了一种名为EXIMO的三阶段高效微调算法。该方法将昂贵的远程操作数据收集与样本低效的强化学习相结合，通过探索、模仿和优化三个阶段实现新任务的高效学习。在探索阶段，利用VLM作为规划器将长时序复杂任务分解为子任务，并与VLA协同收集编排数据集；在模仿阶段，使用该数据集对VLA进行监督微调；在优化阶段，通过残差离策略强化学习进一步提升策略性能。实验表明，EXIMO在样本效率和最终性能上均显著优于现有方法，并通过消融实验验证了三个阶段各自的必要性。
 
-◆ 利用VLM作为高层规划器，将长视野任务自动分解为短视野子任务，提升数据采集的针对性和效率
-◆ 提出三阶段微调框架（探索、模仿、优化），将VLM引导的数据收集、模仿学习与残差离策略强化学习有机结合
-◆ 设计&quot;orchestrated dataset&quot;数据收集机制，让VLM与VLA协同生成高质量新任务训练数据
-◆ 采用残差离策略RL对VLA进行最终优化，缓解VLA模型规模大难以直接RL训练的问题
-◆ 在多个任务上的消融实验证明各阶段均不可或缺，且整体方法在样本效率和最终性能上显著优于现有方案...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-20</td><td>SafeBranch: Branch-Pair Safety Alignment for Embodied Agents<br><a href='http://arxiv.org/pdf/2608.19729'>论文</a></td><td>基于视觉语言模型的具身智能体在完成任务时常常违反安全约束，这被定义为交互式安全问题。现有方法存在明显不足：单纯模仿安全轨迹无法解释行为为何安全，而对比任意安全与不安全轨迹则会将安全信号与其他无关差异混合。该论文提出SafeBranch框架，通过环境回滚机制将智能体自身产生的不安全轨迹回退到导致违规的安全关键步骤，然后查询智能体获取安全替代动作，并将原始动作与替代动作配对形成分支对。所构造的分支对仅在安全关键步骤存在差异，从而精准隔离安全信号。在IS-Bench、SafetyALFRED及未见任务和未见物体的分布外测试中，SafeBranch在不影响任务成功率的前提下显著提升安全性，在未见物体变体上的安全成功数约为未训练基线的十倍，且部署时无需critic参与。
+核心创新点如下：
 
-◆ 利用智能体自身的不安全轨迹回滚构造分支对训练样本，避免引入外部无关差异
-◆ 通过环境回滚精准定位安全关键步骤，使两条分支仅在该关键动作上存在差异，从而分离纯安全信号
-◆ 部署阶段无需critic在环，直接通过一次前向推理实现安全行为对齐...[摘要不完整，待更新]</td></tr>
+◆ 提出探索-模仿-优化三阶段框架，将VLM规划、VLA模仿学习和残差强化学习有机结合，避免了纯粹远程操作的高成本和纯强化学习的低样本效率问题。
+
+◆ 利用VLM作为高层规划器，自动将长时序任务分解为短时序子任务，由VLA执行，从而实现&quot;编排式&quot;数据收集。
+
+◆ 引入残差离策略强化学习对微调后的VLA策略进行进一步优化，提升策略在复杂任务上的最终表现。</td></tr>
+<tr><td>2026-08-20</td><td>SafeBranch: Branch-Pair Safety Alignment for Embodied Agents<br><a href='http://arxiv.org/pdf/2608.19729'>论文</a></td><td>SafeBranch针对基于视觉语言模型的具身智能体在执行任务时违反安全约束的问题，提出了一种无需评论家参与的安全对齐方法。该方法的核心洞见在于，模仿安全轨迹无法解释安全原因，而任意对比安全与不安全轨迹会将安全信号与其他差异混杂，因此应让两个分支仅在引发违规的关键步骤上不同。SafeBranch通过环境回滚机制将智能体自身的不安全轨迹回退到安全关键步骤，向智能体查询一个安全替代动作，并将原动作与替代动作配对构造分支对进行训练。
+
+◆基于智能体自身不安全轨迹构建分支对，两个分支仅在引发违规的安全关键步骤上存在差异，确保安全信号的纯净性。
+
+◆利用环境回滚机制精确定位安全关键步骤，避免了对整条轨迹进行标注的低效方式。
+
+◆训练后无需在部署时引入评论家或额外推理开销，智能体即可直接输出安全动作。
+
+◆在IS-Bench、SafetyALFRED及未见任务和物体的分布外场景中均保持可靠性，在未见物体变体上将安全成功率提升约十倍，同时不牺牲任务完成率。</td></tr>
 <tr><td>2026-08-20</td><td>World-Model-Grounded LLM Planning for AUV and ASV Navigation Near Offshore Wind Farms<br><a href='http://arxiv.org/pdf/2608.19661'>论文</a></td><td>本文针对LLM缺乏物理感知的问题，提出一种基于神经世界模型增强的LLM规划框架，由语言模型决定任务动作，由世界模型判断执行时长与碰撞风险。
 
 ◆ 提出物理约束的神经世界模型、三阶段梯度轨迹优化器与带信任域保护的MPC闭环重规划器，使规划结果贴合平台动力学。
@@ -565,13 +567,13 @@
 ◆ 经残差微调，世界模型rollout的RMSE分别降低60%(AUV)与69%(ASV)，GazeboSim目标距离误差较无世界模型基线减少70%–93%。
 
 ◆ 为ASV设计VLM辅助的语义建图流水线，从卫星图像、海图与气象API中提取障碍物，可航行精度达96%，可替代人工指定几何。</td></tr>
-<tr><td>2026-08-20</td><td>What Matters for Latent Actions in Robot Learning<br><a href='http://arxiv.org/pdf/2608.19613'>论文</a></td><td>潜在动作模型(LAM)通过紧凑表征使机器人能够利用大规模无标注视频，但该领域研究高度碎片化。本文开展了首个针对机器人操作中潜在动作学习的系统性实证研究，将代表性LAM方法统一在自编码框架下，全面考察了涵盖建模范式、学习目标与正则化、整合策略三个维度的41种设计选择，同时检验了四种代理指标预测下游任务性能的可靠性。研究在三个仿真基准和真实机器人任务上进行验证，发现使用潜在动作对VLM骨干网络微调能为下游策略学习提供更优的初始化。
+<tr><td>2026-08-20</td><td>What Matters for Latent Actions in Robot Learning<br><a href='http://arxiv.org/pdf/2608.19613'>论文</a></td><td>本文针对机器人学习中的潜在动作模型(LAM)研究高度碎片化、难以识别真正决定下游性能关键因素这一问题，进行了首个全面系统的实证研究。作者将代表性LAM方法统一在同一自编码框架下，系统探究了涵盖潜在动作建模范式、学习目标与正则化方法、潜在动作整合策略三个维度的41种设计选择，并考察了4种评估潜在动作质量的代理指标。
 
-◆ 首个针对机器人操作中潜在动作学习的大规模系统性实证研究
-◆ 将不同LAM方法统一于自编码框架下实现公平一致的比较
-◆ 在三个维度上全面考察41种设计选择对下游性能的影响
-◆ 检验四种潜在动作质量评估代理指标的可靠性
-◆ 验证VLM结合潜在动作微调优于传统随机初始化方式...[摘要不完整，待更新]</td></tr>
+◆ 首次在统一自编码框架下对潜在动作学习开展大规模系统实证，涵盖41种设计选择的横向对比分析
+◆ 提出并验证4种潜在动作质量代理指标，系统评估其预测下游机器人操控性能的可靠性
+◆ 揭示关键发现：使用潜在动作对视觉语言模型(VLM)骨干网络进行微调，能为下游策略学习提供更优的初始化
+
+实验在三个广泛使用的基准及真实机器人操控任务上得到充分验证。</td></tr>
 <tr><td>2026-08-20</td><td>OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation<br><a href='http://arxiv.org/pdf/2608.19589'>论文</a></td><td>针对预训练视觉-语言-动作模型在持续学习新技能时面临的灾难性遗忘问题，本文提出OrthoSkillVLA框架。作者深入分析了VLA内部组件的功能异质性，发现VLM维护广泛语义表示而易容量耗尽，ActionHead将语义精炼为局部速度模式而对扰动敏感，最终速度解码器则存在冻结造成表达瓶颈、更新又会覆盖旧速度映射的两难困境。
 
 ◆ 对VLM和ActionHead分别施加由梯度信息引导的子空间约束，既保留可复用语义容量又保护局部化速度模式。
@@ -922,13 +924,13 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5081</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4531</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5082</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4535</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2440</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1629</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1619</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1482</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1311</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1313</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1286</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1044</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1010</td><td>SUPER</td></tr>
@@ -939,12 +941,12 @@
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>732</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>721</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>663</td><td>Voxel-SLAM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>652</td><td>M-detector</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>653</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>628</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>607</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>604</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
+<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>566</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>565</td><td>A computationally efficient and convenient toolkit</td></tr>
-<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>565</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>528</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>506</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>451</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
@@ -952,7 +954,7 @@
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>356</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>346</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>268</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>267</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>268</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>255</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>239</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>228</td><td>dyn_small_obs_avoidance</td></tr>
@@ -981,7 +983,7 @@
 <tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>878</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>702</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>663</td><td>Polynomial trajectory generation and optimization,</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>653</td><td>Coverage planning in general polygons with holes.</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>654</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>597</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>574</td><td>MAV planning tools using voxblox as the map repres</td></tr>
@@ -989,16 +991,16 @@
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>568</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>552</td><td>Voxblox-based Pose graph optimization</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>518</td><td>Python tools to perform time-synchronization and h</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>502</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>503</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>453</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>449</td><td>A real-time capable exploration and inspection pat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>450</td><td>A real-time capable exploration and inspection pat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>313</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>301</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/versavis'>versavis</a></td><td>285</td><td>An Open Versatile Multi-Camera Visual-Inertial Sen</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/image_undistort'>image_undistort</a></td><td>279</td><td>A compact package for undistorting images directly</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>269</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>271</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/kitti_to_rosbag'>kitti_to_rosbag</a></td><td>258</td><td>Dataset tools for working with the KITTI dataset r</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/laser_slam'>laser_slam</a></td><td>247</td><td>This package provides an end-to-end system to lase</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/glocal_exploration'>glocal_exploration</a></td><td>224</td><td>Efficient local and global exploration on submap c</td></tr>
@@ -1033,4 +1035,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.08.21
+> 更新于: 2026.08.22
