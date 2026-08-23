@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.08.22)
+# 历史论文归档 (2026.08.23)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -25,11 +25,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>本文针对稀疏关键点检测与匹配任务中传统监督信号难获取的问题，对RIPE强化学习方法进行改进，提出RIPE++。其核心思想是重新设计奖励机制，仅利用正样本图像对的几何一致性信号，同时提供奖励与惩罚，避免了对负样本对的依赖。实验表明该方法在MegaDepth1500上将匹配阶段AUC@5从56.58提升至59.65，并能对完整稀疏匹配流水线进行弱监督训练。此外，该方法可应用于相机位姿难以获取的低纹理医学视频序列，突破了标准SfM管线的局限。
-
-◆ 提出基于正样本对几何一致性的新型奖励函数，无需负样本对比即可学习判别性特征
-◆ 将同一强化学习目标扩展到匹配阶段，通过改进LightGlue实现端到端的弱监督稀疏匹配
-◆ 摆脱对相机位姿和深度监督的依赖，可应用于正负样本构造困难或监督信号缺失的低纹理医学影像场景...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-19</td><td>LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding<br><a href='http://arxiv.org/pdf/2608.19059'>论文</a></td><td>本文针对机器人在长期动态环境中的场景理解问题，指出当前系统存在&quot;时间健忘症&quot;缺陷，即无法跨会话维持物体级一致身份，导致难以回答&quot;绿色椅子在所有会话中出现过哪里&quot;之类的查询。为此提出LT-Mem框架，通过多会话SLAM骨干网络提供空间对齐的逐物体观测，并结合基于波动性策略的推理层，实现确定性身份保持与动态记忆演化的统一。
 
 ◆ 提出LT-Mem框架，将空间对齐的实例级3D感知与波动性条件化的时序推理相统一，核心是确定性证据评分与波动性感知策略（覆盖/保持/多假设三选一）的协同设计。
@@ -39,11 +35,7 @@
 ◆ 发布LT-VQA数据集与评测套件，包含多会话录像、持久身份标注及时序问答对，填补该领域基准空白。
 
 实验表明LT-Mem在所有指标上均优于基线方法，token消耗低一个数量级，消融实验证实性能增益来源于结构化记忆架构而非大语言模型容量本身的提升。</td></tr>
-<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>本文针对高空垂直俯拍无人机视频这一具有弱几何约束和严重感知混叠的困难场景，对五种主流单目SLAM系统进行了系统性基准测试。研究者设计了多层次的评估方案，涵盖本地DJI无人机飞行、合成城市场景以及GES和ALTO长距离航拍序列，并刻意排除惯性测量和GNSS辅助以纯视觉方式隔离各系统的视觉定位能力。实验结果表明，系统性能强烈依赖于环境和轨迹尺度，MASt3R-SLAM在五段DJI短程飞行上取得最低水平均误差（0.53%路径长度），而DROID-SLAM在所有完整运行的序列中综合表现最佳（平均2.88%）。研究发现垂直方向定位精度普遍较差，大范围轨迹即使借助回环检测仍存在显著形变，验证了当前单目SLAM方法单独使用无法胜任纯视觉航空导航任务。
-
-◆构建了首个面向高空垂直俯拍无人机视频的多尺度单目SLAM基准测试框架
-◆在纯视觉、无惯导与GNSS辅助的严苛条件下系统评估了五种代表性单目SLAM系统
-◆揭示了垂直方向定位精度不足与大范围轨迹全局形变等单目视觉方法的固有局限...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-19</td><td>Evaluation of Image Matching Methods for Visual Odometry on UAVs<br><a href='http://arxiv.org/pdf/2608.18624'>论文</a></td><td>本论文针对无人机在GNSS信号失效情况下的导航难题，系统评估了多种图像匹配方法在视觉里程计(VO)任务中的性能。研究团队构建了基于下视相机的合成数据集，对传统SIFT与多种前沿深度学习匹配器进行了全面的对比实验。
 
 ◆ 首次将包括最新RoMa在内的多种深度学习图像匹配方法系统性地应用于无人机下视视觉里程计任务
@@ -1164,12 +1156,7 @@
 ◆ PatchMatch-3DGS相互监督机制,通过高斯渲染的深度法线初始化PatchMatch精修,再用精修结果反向监督高斯优化。
 
 ◆ 采用Delaunay图割网格化替代TSDF体素融合,降低对体素分辨率敏感性,同时保留可见性一致的表面证据。</td></tr>
-<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>本文构建了一个适用于温密核物质的混合状态方程（EOS），将DD2类相对论密度泛函核物质与新型禁闭密度泛函夸克物质相结合，并在恒定熵每重子条件下通过Maxwell构造实现相变，可应用于超新星爆发、中子星并合及Q球演化等天体物理场景。研究通过求解等熵混合星的TOV方程发现，在熵每重子超过某一临界值时会出现不连接的第三族分支，即&quot;热双子星&quot;现象，而在零温和强色超导模型中则不存在。
-
-◆ 提出了将禁闭密度泛函夸克物质与DD2核物质模型相结合的混合EOS框架
-◆ 发现在有限温度下存在热双子星现象，并将其与Seidov引力不稳定性判据建立联系
-◆ 创新性地提出热双子星可作为大质量蓝超巨星核坍缩超新星可爆性的指示器
-◆ 系统分析了色超导效应对退禁闭起始密度及双子星出现条件的影响，并据此排除强色超导模型...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-18</td><td>Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study<br><a href='http://arxiv.org/pdf/2608.18028'>论文</a> | <a href='https://github.com/simonwebertum/InitFreeBA.git'>代码</a></td><td>本文重新审视了无需初始化的光束法平差（InitFree BA）问题，针对当前基于物体空间误差（OSE）与可变投影（VarPro）的方法仅以优化成功度作为评估标准、而忽视低OSE目标值是否对应有效度量重建的局限，提出了系统性的实验分析与统一评估框架。
 
 ◆ 提出结合C++实现与Blender合成数据集生成器的统一可控评估平台，提供精确真值及可调节的相机配置与观测密度
@@ -7448,23 +7435,8 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆VLM自主决定工具调用时机与结果解读,实现真正自适应的规划抽象。
 
 在引擎维护和家庭场景的复杂长时域任务中,PDDL-ART平均成功率达93.3%,显著优于78.3%的基线VLM规划器。</td></tr>
-<tr><td>2026-08-17</td><td>PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents<br><a href='http://arxiv.org/pdf/2608.17129'>论文</a></td><td>本文针对VLM在杂乱环境中需通过物理操作才能回答视觉问题的挑战,提出操作基础视觉问答(MG-VQA)新任务并构建了PROBE框架。
-◆ 形式化定义需主动操作揭示遮挡物体的动态场景推理任务,弥补现有VQA仅依赖静态感知的不足
-◆ 开发PROBE-Sim高保真桌面模拟器及PROBE-Bench基准,涵盖150个任务和6种问题类型
-◆ 发现基于智能体工具调用的方法较纯感知基线平均提升8.0%
-◆ 设计PROBE-Agent微调方法,通过混合数据将教师模型轨迹蒸馏到开源小模型,平均提升11.5%
-◆ 在真实桌面机器人环境中验证了仿真到现实的策略迁移能力...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-17</td><td>VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation<br><a href='http://arxiv.org/pdf/2608.16978'>论文</a></td><td>本文提出VLCP方法，让冻结的视觉语言模型直接编写Python控制函数作为机器人策略，无需任何微调和演示数据。系统每K步重新观察多视角RGB、本体感知状态和状态增量，并据此重写控制代码，实现真正的闭环重规划。
-
-◆保持VLM完全冻结，直接让模型输出控制代码，保留预训练中的推理能力，避免微调造成的能力损失。
-
-◆闭环作用于控制代码层面而非子任务或固定策略重试，可在单回合内捕获并修复失败。
-
-◆结合多视角RGB、本体感知状态与状态增量提供丰富的失败诊断信息。
-
-◆构建跨回合技能库，重规划中编写的控制块可持久化复用于后续提示。
-
-在57个MuJoCo/RoboVerse任务上达到35.1%成功率，相较单次查询的3.5%提升十倍，27.3%的失败抓取在回合内被恢复，同时保持84%的缓存命中率和仅约10次的紧凑查询开销。</td></tr>
+<tr><td>2026-08-17</td><td>PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents<br><a href='http://arxiv.org/pdf/2608.17129'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-17</td><td>VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation<br><a href='http://arxiv.org/pdf/2608.16978'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-16</td><td>AlloEgo-VLM: Disambiguating Allocentric and Egocentric Reference Frames in Vision-Language Models<br><a href='http://arxiv.org/pdf/2608.15605'>论文</a></td><td>本文针对视觉语言模型在空间语义理解中面临的参考框架歧义问题展开研究，指出自然语言描述空间关系时常常省略显式的参考框架（自我中心或他人中心），导致现有VLM产生不一致甚至错误的响应。作者构建了一个名为AlloEgo-View的新数据集，包含图像、查询和视角特定答案的三元组，采用结构化空间表示方法，标注了场景描述、参考对象与目标对象、它们的朝向、参考框架及视角类型。基于该数据集，作者提出了AlloEgo-VLM框架，通过监督微调可轻松集成到现有VLM中，实现对参考框架的消歧。最后在NVIDIA Isaac Sim仿真机器人平台上验证了其在开放性物体搜索任务中的实际可行性，实验表明当前VLM在处理视角特定查询时存在明显局限，而AlloEgo-VLM展现出强大的消歧能力。
 
 本文的核心创新点如下：
@@ -7846,4 +7818,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.22
+> 更新于: 2026.08.23
