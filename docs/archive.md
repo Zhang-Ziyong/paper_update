@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.08.23)
+# 历史论文归档 (2026.08.24)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -13,8 +13,8 @@
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (51篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (35篇)</a></li>
-<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (15篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (39篇)</a></li>
+<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (16篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (15篇)</a></li>
 </ol>
 </details>
@@ -25,7 +25,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-20</td><td>RIPE++: Reinforced Keypoint Learning from Positive Pairs Only<br><a href='http://arxiv.org/pdf/2608.19693'>论文</a> | <a href='https://github.com/fraunhoferhhi/RIPEpp'>代码</a></td><td>本文针对稀疏关键点提取与匹配任务，提出了一种仅依赖正样本对的强化学习新方法RIPE++。现有RL方法依赖粗粒度二值奖励和负样本构造，限制训练稳定性和描述符区分能力。
+
+◆ 提出基于几何一致性的精细奖励机制，从单一正样本对同时推导奖励与惩罚，无需负样本对比即可获得足够监督信号，从而学习判别性强的检测器和描述符。
+
+◆ 将相同的RL目标扩展到匹配阶段，适配LightGlue框架，将MegaDepth1500的AUC@5从56.58提升至59.65。
+
+◆ 实现了从仅有部分视觉重叠的图像对出发的弱监督全流程稀疏匹配训练，在标准基准上达到与全监督方法相当的性能。
+
+◆ 在低纹理医学视频序列上验证了方法的有效性，此类场景通常缺少相机位姿且传统SfM易失败。</td></tr>
 <tr><td>2026-08-19</td><td>LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding<br><a href='http://arxiv.org/pdf/2608.19059'>论文</a></td><td>本文针对机器人在长期动态环境中的场景理解问题，指出当前系统存在&quot;时间健忘症&quot;缺陷，即无法跨会话维持物体级一致身份，导致难以回答&quot;绿色椅子在所有会话中出现过哪里&quot;之类的查询。为此提出LT-Mem框架，通过多会话SLAM骨干网络提供空间对齐的逐物体观测，并结合基于波动性策略的推理层，实现确定性身份保持与动态记忆演化的统一。
 
 ◆ 提出LT-Mem框架，将空间对齐的实例级3D感知与波动性条件化的时序推理相统一，核心是确定性证据评分与波动性感知策略（覆盖/保持/多假设三选一）的协同设计。
@@ -35,7 +43,11 @@
 ◆ 发布LT-VQA数据集与评测套件，包含多会话录像、持久身份标注及时序问答对，填补该领域基准空白。
 
 实验表明LT-Mem在所有指标上均优于基线方法，token消耗低一个数量级，消融实验证实性能增益来源于结构化记忆架构而非大语言模型容量本身的提升。</td></tr>
-<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-19</td><td>Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage<br><a href='http://arxiv.org/pdf/2608.18632'>论文</a></td><td>本文针对高空垂直摄影无人机视频中几何约束弱、感知混淆严重的问题，系统评估了五种主流单目SLAM系统的性能。实验在本地无人机飞行、合成城市场景以及长距离航拍序列上展开，并刻意不提供惯性或GNSS辅助，以纯视觉条件测试各系统鲁棒性。研究发现不同系统在环境与轨迹尺度差异下表现分化明显：MASt3R-SLAM在五段DJI局部飞行上取得最低水平误差，均值仅0.53%，而整体完成度上DROID-SLAM平均误差为2.88%表现最佳。论文指出所有系统在长距离GES和ALTO序列上均无法稳定保持全局轨迹形状，垂直位置估计仍然较差，即便具备回环能力大范围轨迹仍严重形变。
+
+◆ 首次针对高空垂直视角无人机视频对五种单目SLAM系统进行系统性基准评测，覆盖局部、合成与长距离多类数据。
+◆ 严格剥离惯性与GNSS辅助，纯粹评估单目视觉SLAM在受限条件下的真实性能上限。
+◆ 揭示了当前单目SLAM在长航程、大范围轨迹上全局一致性的固有不足，明确指出仅靠纯视觉方法尚不足以支撑可靠的航空自主导航。</td></tr>
 <tr><td>2026-08-19</td><td>Evaluation of Image Matching Methods for Visual Odometry on UAVs<br><a href='http://arxiv.org/pdf/2608.18624'>论文</a></td><td>本论文针对无人机在GNSS信号失效情况下的导航难题，系统评估了多种图像匹配方法在视觉里程计(VO)任务中的性能。研究团队构建了基于下视相机的合成数据集，对传统SIFT与多种前沿深度学习匹配器进行了全面的对比实验。
 
 ◆ 首次将包括最新RoMa在内的多种深度学习图像匹配方法系统性地应用于无人机下视视觉里程计任务
@@ -1156,7 +1168,17 @@
 ◆ PatchMatch-3DGS相互监督机制,通过高斯渲染的深度法线初始化PatchMatch精修,再用精修结果反向监督高斯优化。
 
 ◆ 采用Delaunay图割网格化替代TSDF体素融合,降低对体素分辨率敏感性,同时保留可见性一致的表面证据。</td></tr>
-<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-18</td><td>Confining density functional approach to the QCD phase diagram at low temperatures and thermal twin stars<br><a href='http://arxiv.org/pdf/2608.18038'>论文</a></td><td>本文构建了一个基于密度泛函理论的温密核物质状态方程,并通过Maxwell构造在固定熵每重子条件下实现了到退禁闭夸克物质的相变,适用于超新星爆发、中子星并合以及Q球的宇宙学演化等场景。研究中采用了新近发展的禁闭密度泛函描述夸克物质,核物质部分则使用DD2类相对论密度泛函模型。
+
+◆ 首次提出并系统分析了有限温度下&quot;热双星&quot;现象,即在临界熵每重子值以上,TOV方程解序列出现不连通的第三族分支,这一现象在零温及强色超导模型中均不存在。
+
+◆ 将热双星的出现与Seidov引力不稳定性判据联系起来,发现后者可作为寻找临界熵的有效指南。
+
+◆ 创新性地提出热双星可作为大质量蓝超巨星核坍缩超新星可爆性的判据,认为该特征是混合状态方程模型可靠性的新约束条件。
+
+◆ 据此论证强色超导模型应被排除,而中等强度的双夸克配对模型仍需进一步检验其是否满足热双星约束。
+
+此外,文章还通过将对称核物质情形下的混合状态方程与Danielewicz等人的流约束对比,揭示了退禁闭起始密度对色超导存在与否的敏感性。</td></tr>
 <tr><td>2026-08-18</td><td>Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study<br><a href='http://arxiv.org/pdf/2608.18028'>论文</a> | <a href='https://github.com/simonwebertum/InitFreeBA.git'>代码</a></td><td>本文重新审视了无需初始化的光束法平差（InitFree BA）问题，针对当前基于物体空间误差（OSE）与可变投影（VarPro）的方法仅以优化成功度作为评估标准、而忽视低OSE目标值是否对应有效度量重建的局限，提出了系统性的实验分析与统一评估框架。
 
 ◆ 提出结合C++实现与Blender合成数据集生成器的统一可控评估平台，提供精确真值及可调节的相机配置与观测密度
@@ -7310,13 +7332,13 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (35篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (39篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-20</td><td>OVIP-SG: Open-Vocabulary Instance-Preserving Scene Graphs for Mapping and Retrieval of Small, Fine-Grained Objects<br><a href='http://arxiv.org/pdf/2608.17633'>论文</a> | <a href='https://github.com/Agibot-Spatial-AI/OVIP-SG'>代码</a></td><td>OVIP-SG是一个面向开放词汇场景理解的统一框架,重点解决现有方法在3D场景图中对小型细粒度物体的合并与碎片化问题,以及无法判断目标是否存在的难题。
+<tr><td>2026-08-21</td><td>OVIP-SG: Open-Vocabulary Instance-Preserving Scene Graphs for Mapping and Retrieval of Small, Fine-Grained Objects<br><a href='http://arxiv.org/pdf/2608.17633'>论文</a> | <a href='https://github.com/Agibot-Spatial-Intelligence/OVIP-SG'>代码</a></td><td>OVIP-SG是一个面向开放词汇场景理解的统一框架,重点解决现有方法在3D场景图中对小型细粒度物体的合并与碎片化问题,以及无法判断目标是否存在的难题。
 
 ◆利用VLM枚举场景特定类别,实现鲁棒的开放世界检测。
 ◆采用对称3D IoU关联和面积加权特征融合策略,保持小型独立实例的完整性。
@@ -7324,6 +7346,36 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆设计四阶段级联检索管线,通过体素投票和探索覆盖率判断目标是否存在。
 
 在Replica数据集统一评测协议下,OVIP-SG较ConceptGraphs在mAcc上提升6.31点、F-mIoU提升5.15点,类无关原生实例PQ达0.398,搜索区域仅占室内面积的21.8%,物体存在分类平衡准确率0.773,真实机器人实验亦验证了其实用性。</td></tr>
+<tr><td>2026-08-21</td><td>ViTacPhys: Physical Property-Aware Grasping from Human Visual-Tactile Demonstrations<br><a href='http://arxiv.org/pdf/2608.21355'>论文</a></td><td>本文提出ViTacPhys框架，从人类视觉-触觉演示中估计物体的质量、摩擦系数和连续刚度等物理属性，用于条件化自适应抓取策略。该框架结合时序视觉-触觉建模、跨注意力多模态融合以及视觉语言模型的语义先验。在60种刚体和可形变物体数据上训练，模型在已知物体上达到97.2%的质量分类准确率、98.8%的摩擦分类准确率和5.51%的刚度误差。在未见类别物体上仍保持87.5%的质量分类准确率和9.08%的刚度误差，展现良好泛化能力。通过有限遥操作数据、视频增强和动作匹配的人类演示，实现了从人类到机器人领域的高效迁移。部署为在线模块后，在分布内外物体上分别取得95.0...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-21</td><td>Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2608.21247'>论文</a></td><td>本文针对视觉-语言-动作模型中token压缩问题,指出传统基于冗余度、注意力分数等间接线索的压缩方法未能直接衡量压缩对下游动作预测的容忍度。作者将经典的&quot;刚可察觉差异&quot;(JND)概念从人类视觉系统延伸到机器响应,进一步推广到具身感知领域,提出了Action-JND,通过视觉-语言-动作策略在闭环控制中由语言条件化的动作响应来定义可察觉性,只有当token变化引起的动作偏差在容忍范围内时,该压缩才被允许。
+
+◆ 提出Action-JND概念,将JND建模从人类视觉和机器响应拓展到具身感知中,直接以闭环动作偏差作为可压缩性度量,克服了传统间接线索与动作安全之间的语义鸿沟。
+
+◆ 设计了一个轻量级的逐token深度视觉特征空间JND估计器,可预测保持策略响应不变的最大可容忍扰动,生成即插即用的action-tolerance分数。
+
+◆ 将Action-JND应用于VLA的两种典型压缩范式,包括陈旧KV缓存复用和token剪枝,优先压缩动作容忍度高的token。
+
+◆ 在LIBERO基准上基于OpenVLA和OpenVLA-OFT的实验表明,Action-JND在激进压缩比下显著提升了压缩的可靠性,验证了动作感知准则的有效性。</td></tr>
+<tr><td>2026-08-21</td><td>Roadside-Cooperative Autonomous Driving: From Data Platform to Vision-Language End-to-End Reasoning<br><a href='http://arxiv.org/pdf/2608.21032'>论文</a></td><td>本文针对车路协同自动驾驶中V2X基准缺乏闭环评估和语言监督的问题，提出了完整的技术框架。核心贡献包括构建了V2XBench仿真平台，支持车端-路端同步感知与闭环评估，并发布了Chat-V2XBench渐进式VQA数据集，为视觉语言模型提供协同推理监督。
+
+◆ 提出V2XBench仿真平台与Chat-V2XBench数据集，填补了V2X领域在闭环评估和语言监督方面的空白，为VLM驱动的协同驾驶研究提供基础设施。
+
+◆ 提出AURORA端到端协同驾驶框架，采用双视角感知架构，通过跨视角查询对齐与融合(CQAF)模块缓解车端与路端的空间和语义差异，实现统一表征。
+
+◆ 将LoRA适配的视觉语言模型与生成式轨迹规划相结合，桥接语义推理与运动规划，在V2XBench上取得路线完成率98.21%、驾驶评分76.02的领先性能。
+
+◆ 整体工作开创了V2X与VLM融合的可扩展范式，在重遮挡场景下展现优势且仅需低通信带宽，为下一代协同自动驾驶奠定基础。</td></tr>
+<tr><td>2026-08-21</td><td>ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation<br><a href='http://arxiv.org/pdf/2608.20735'>论文</a></td><td>该论文针对传送带上运动物体操作难题，提出ForeTime-VLA方法，从冻结的世界动作模型（WAM）中蒸馏未来感知表征，使策略在推理时仍保持因果性，无需部署昂贵的视频级教师模型。
+
+◆提出因果未来token蒸馏框架，将当前与未来视频潜变量压缩为64维白化目标，由八帧历史编码器在线预测，避免部署时显式想象未来帧。
+
+◆设计四类未来token加一个相位token的条件注入机制，分别调节VLM前缀和动作专家，使模型同时获得未来轨迹与操作相位/过渡时间信息。
+
+◆融合余弦相似度、关系几何、相位、过渡时间及动作等价性等多目标训练，强化未来表征与动作决策的对齐。
+
+◆在去重传送带数据集上，测试MAE与L2误差分别降低2.63%和3.02%，延迟仅增加约2.5%。
+
+◆真实机器人实验中，静止与慢速抓取成功率分别达81.1%和58.9%，较最优基线提升12.2与22.2个百分点，三种带速下总体完成44/90次抓取，验证了因果未来token蒸馏对动态操作的有效性。</td></tr>
 <tr><td>2026-08-20</td><td>HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction<br><a href='http://arxiv.org/pdf/2608.17584'>论文</a></td><td>本文提出HODAgent，一种面向服务场景人形机器人的System-2具身智能体，重点解决情境意图理解、响应式执行、任务修订和结果验证等核心问题。该系统采用半双工架构，整合环境交互器、规划器、执行器和分层记忆模块，能够在服务过程中保持交互、规划和任务状态的一致性，从而支持运动中接收新请求、保留任务进度、动态修订动作，并基于执行结果进行任务收尾判定。
 
 ◆ 设计了半双工System-2架构，通过Env-Interactor、Planner、Executor和分层Memory的协同，实现在执行过程中持续响应新请求、保留与修订任务状态，并依据执行结果进行任务闭合判定。
@@ -7566,12 +7618,21 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (15篇)</h2>
+<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (16篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-21</td><td>The Coastline as a Structural Constraint: Harnessing Scene Geometry for Autonomous Surface Vessel Localization<br><a href='http://arxiv.org/pdf/2608.21276'>论文</a></td><td>本文针对GPS拒止环境下水面无人艇的定位难题，提出利用海岸线几何结构提供全局参考信息的核心思路。作者设计了两套互补的定位框架：基于LiDAR的方案通过观测水面估计纵摇、横摇和升沉运动，并直接将岸线观测与卫星海岸线地图进行配准以恢复全局位姿和航向；基于单目相机的方案则依赖语义分割检测岸线与地平线，从单目图像中反推岸线距离，并将短时累积的岸线观测构建为局部子图，在分层因子图中与卫星海岸线地图融合。论文在三个真实海岸数据集上的实验表明，LiDAR流程稳定优于传统基线，单目架构可有效抑制长期漂移。
+
+◆ 提出两套互补的岸线几何定位框架，分别基于LiDAR水面观测和纯被动单目图像，均以卫星海岸线地图作为全局参考
+
+◆ 利用LiDAR水面观测同时解算船舶姿态（横摇、纵摇、升沉）并实现岸线与卫星地图的直接配准
+
+◆ 设计基于语义分割的单目岸线距离反推方法，并构建分层因子图融合局部子图与全局海岸线约束
+
+◆ 验证了零样本基础模型能够在多样化海岸环境中可靠地提取岸线观测，拓宽了方法的适用性...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-17</td><td>Cyclops: LiDAR as a Camera That Dreams in Color<br><a href='http://arxiv.org/pdf/2608.16264'>论文</a></td><td>论文提出Cyclops框架,通过将稀疏非重复扫描LiDAR强度数据转化为RGB视频,实现无需相机的全天候感知任务,有效弥合了LiDAR数据与RGB视觉模型之间的模态鸿沟,在低光和高动态范围场景中显著优于传统相机方案。
 
 ◆利用冻结的预训练稠化模块,将稀疏LiDAR强度投影转化为密集表示,作为几何信息丰富的源条件输入。
@@ -7818,4 +7879,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.23
+> 更新于: 2026.08.24
