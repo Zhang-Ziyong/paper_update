@@ -94,9 +94,26 @@ def get_authors(authors, first_author=False):
         return f"{str(authors[0])}等"
     return str(authors[0])
 
+def get_paper_date(paper_entry: str) -> datetime.date:
+    """从存储的论文条目中读取日期，无法解析时排到最后。"""
+    parts = paper_entry.split('|')
+    if len(parts) <= 1:
+        return datetime.date.min
+
+    date_str = parts[1].strip().replace('**', '')
+    try:
+        return datetime.date.fromisoformat(date_str)
+    except ValueError:
+        return datetime.date.min
+
+
 def sort_papers(papers):
-    """按日期排序论文"""
-    return dict(sorted(papers.items(), key=lambda x: x[0], reverse=True))
+    """按论文日期降序排列，同日按 arXiv ID 降序稳定排列。"""
+    return dict(sorted(
+        papers.items(),
+        key=lambda item: (get_paper_date(item[1]), item[0]),
+        reverse=True,
+    ))
 
 def get_official_code_link(paper_id: str) -> str:
     """通过 paperswithcode API 获取论文官方代码链接"""
@@ -425,24 +442,21 @@ def update_paper_links(filename):
             except Exception as e:
                 logging.error(f"解析论文条目时出错: {str(e)}")
     
-    # 保存更新后的数据
+    # 保存更新后的数据，并保持每个分类按日期排列。
+    updated_data = {
+        topic: sort_papers(papers)
+        for topic, papers in updated_data.items()
+    }
     with open(filename, "w") as f:
         json.dump(updated_data, f, indent=2)
 
 def trim_papers(papers: dict, max_count: int = 20) -> dict:
     """保留最多max_count篇论文，按时间排序只保留最新的"""
-    if len(papers) <= max_count:
-        return papers
+    # 无论是否需要裁剪，都返回按日期排列的字典，保证下游消费者顺序一致。
+    sorted_papers = sort_papers(papers)
+    result = dict(list(sorted_papers.items())[:max_count])
 
-    def get_date(entry: str) -> str:
-        parts = entry.split('|')
-        return parts[1].strip() if len(parts) > 1 else ""
-
-    # 按日期降序排列，保留最新的max_count篇
-    sorted_papers = sorted(papers.items(), key=lambda x: get_date(x[1]), reverse=True)
-    result = dict(sorted_papers[:max_count])
-
-    removed = len(papers) - len(result)
+    removed = len(sorted_papers) - len(result)
     if removed > 0:
         logging.info(f"裁剪 {removed} 篇论文，保留 {len(result)} 篇")
     return result
@@ -500,6 +514,11 @@ def update_json_file(filename, data_dict, active_topics=None, max_count=20):
             archive_data[topic].update(papers)
         else:
             archive_data[topic] = dict(papers)
+    # 归档也保持日期顺序，便于非 Markdown 消费者直接使用 JSON。
+    archive_data = {
+        topic: sort_papers(papers)
+        for topic, papers in archive_data.items()
+    }
     with open(archive_path, "w") as f:
         json.dump(archive_data, f, indent=2, ensure_ascii=False)
 
@@ -508,6 +527,10 @@ def update_json_file(filename, data_dict, active_topics=None, max_count=20):
         existing_data[topic] = trim_papers(existing_data[topic], max_count=max_count)
 
     # 保存更新
+    existing_data = {
+        topic: sort_papers(papers)
+        for topic, papers in existing_data.items()
+    }
     with open(filename, "w") as f:
         json.dump(existing_data, f, indent=2)
 
@@ -612,7 +635,7 @@ def json_to_md(filename, md_filename,
             f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
-            sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
+            sorted_papers = sort_papers(papers).items()
             
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')
@@ -711,9 +734,7 @@ def archive_to_md(archive_json_path, archive_md_path):
             f.write("<thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
 
-            sorted_papers = sorted(papers.items(),
-                                   key=lambda x: x[1].split('|')[1].strip() if len(x[1].split('|')) > 1 else "",
-                                   reverse=True)
+            sorted_papers = sort_papers(papers).items()
 
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')
