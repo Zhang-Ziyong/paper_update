@@ -1,30 +1,61 @@
-# 历史论文归档 (2026.08.27)
+# 历史论文归档 (2026.08.28)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (180篇)</a></li>
+<li><a href='#slam'>SLAM (183篇)</a></li>
 <li><a href='#sfm'>SFM (90篇)</a></li>
-<li><a href='#image-matching'>Image Matching (35篇)</a></li>
+<li><a href='#image-matching'>Image Matching (36篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (55篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (57篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (57篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (61篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (19篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (15篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (180篇)</h2>
+<h2 id='slam'>SLAM (183篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-27</td><td>How exceptional was the Big Three era? Extremes and persistence in men&#x27;s professional tennis<br><a href='http://arxiv.org/pdf/2608.27362'>论文</a></td><td>这篇论文系统评估了&quot;三巨头&quot;时代在男子网球历史上的独特地位。作者基于1968至2025年间约19.8万场比赛数据，采用贝叶斯动态Bradley-Terry状态空间模型估计球员实力，通过跨越不同代际对手的间接比较来衡量统治力，并以是否突破高阈值来刻画&quot;领先&quot;程度。
+
+研究发现，仅德约科维奇在巅峰实力上明显超越同时代所有对手，而费德勒和纳达尔与博格、麦肯罗、伦德尔的水平在统计上无法区分。
+
+◆创新点之一：提出&quot;窗口均值&quot;而非&quot;连续在位&quot;来衡量持久性，避免了依赖参数估计的脆弱的连胜统计，使跨年代比较更为稳健。
+
+◆创新点之二：引入&quot;高阈值超越度&quot;概念，将统治力细分为峰值高度、领先人数和持续时间三个维度。
+
+◆创新点之三：真正区分当代与历史的特征不是顶级球员的实力高度，而是三位顶尖选手长期同时占据前三位置的协同持久性。
+
+◆创新点之四：揭示了1990年前后十二年间世界网坛上层并非&quot;无人问津&quot;而是&quot;被压缩&quot;，为理解三巨头现象提供了结构性背景。</td></tr>
+<tr><td>2026-08-27</td><td>Contact-Aided Factor-Graph Localization for Underwater Sampling<br><a href='http://arxiv.org/pdf/2608.26932'>论文</a></td><td>针对自主水下航行器近海底采样时因低空视觉退化导致的尺度模糊、横向退化与漂移难题，本文提出了一种接触辅助因子图定位框架，将吸盘式机械臂的物理接触事件建模为因子图中的高置信度几何约束，从而在感知退化的水下环境中实现高精度状态估计。
+
+◆ 核心创新在于将接触事件作为隐式回环闭合机制，无需依赖外观式地点识别即可有效校正由惯性-DVL融合累积的结构性漂移。
+
+◆ 对视觉里程计相对位姿因子和地标方位-距离因子进行基于内点统计的不确定性自适应缩放，避免弱视觉帧破坏估计器稳定性。
+
+◆ 系统支持运动过程中完全在线自主初始化，并与惯导DVL、自适应视觉里程计及学习目标检测实现紧耦合。
+
+水池、港口和仿真环境的实验结果表明，该方法在轨迹漂移抑制和目标重访精度上显著优于滤波式导航与无接触图优化方法，凸显了具身物理交互作为水下定位原语的重要价值。</td></tr>
+<tr><td>2026-08-27</td><td>CGS-SLAM: Collaborative Gaussian Splatting based SLAM for Multi-Agent Reconstruction<br><a href='http://arxiv.org/pdf/2608.26868'>论文</a></td><td>这篇论文提出了CGS-SLAM，一种基于3D高斯泼溅的多智能体协同SLAM系统，仅使用RGB图像和惯性数据即可实现高质量的场景重建与新视角合成，摆脱了对RGB-D传感器的依赖。其核心创新点如下：
+
+◆ 提出混合去中心化与中心化的协同架构，使多个智能体能够联合进行3D高斯泼溅建图，适用于消费级智能设备。
+
+◆ 在前端跟踪中利用惯性数据作为运动先验，并结合Depth Pro单目深度估计器恢复具有真实度量的局部地图。
+
+◆ 设计基于空间重叠的动态关键帧共享机制，通过关键帧编码的智能交互增强子地图之间的对齐精度。
+
+◆ 在中心服务器引入VGGT作为视图对齐模型完成子地图融合，利用双向通信策略在GNSS拒止环境下显著降低带宽开销。
+
+实验在多个公开数据集上的结果表明，CGS-SLAM在跟踪精度、渲染质量以及子地图对齐准确性方面均优于当前最先进的方法。</td></tr>
 <tr><td>2026-08-26</td><td>Praxist: From Experimental Artifacts to Solution Lineages<br><a href='http://arxiv.org/pdf/2608.25955'>论文</a></td><td>本文提出Praxist系统，针对自主研发智能体在长周期任务中难以追溯改进原因、且成本高昂的结构性局限，设计了一种以&quot;解决方案谱系&quot;为核心的新架构。系统将可复现产物与评估结果转化为类型化的证据图，包含发现、车道式前沿与议程三类节点，使后续迭代能继承已验证机制、未解决主张与有效约束。核心创新是将局部产物构建与群体层面的证据合成解耦，从根本上避免长程任务反复重学相同经验。
 
 ◆ 提出谱系中心（lineage-centered）的代际演化框架，将产物、评估与发现统一建模为可追溯的类型化证据图，突破传统系统将每次尝试视为独立事件的局限。
@@ -34,13 +65,12 @@
 ◆ 在MLE-bench 75项任务上以约十二分之一的成本（3054美元对38370美元）取得60枚奖牌（含49金），显著优于Claude Code基线的55枚（含34金）。
 
 ◆ 在量化交易、激光惯视SLAM、托卡马克磁控、火箭着陆四个开放工程任务中均超越任务原生基线，且完整保留可审计的发现路径。</td></tr>
-<tr><td>2026-08-26</td><td>AGRO-Nav: Autonomous Graph-based Orchard Navigation<br><a href='http://arxiv.org/pdf/2608.25799'>论文</a></td><td>AGRO-Nav是面向果园环境的自主导航框架,利用SLAM点云自动构建树行拓扑图进行全局规划,有效解决传统栅格规划器偏离行中心、易碰撞树干的问题。
+<tr><td>2026-08-26</td><td>AGRO-Nav: Autonomous Graph-based Orchard Navigation<br><a href='http://arxiv.org/pdf/2608.25799'>论文</a></td><td>本文提出AGRO-Nav框架，针对果园半结构化、行列狭窄的环境，解决传统几何无关栅格规划器易偏离行中心、易碰树干的问题。系统从SLAM点云中拟合树行线，自动构建稀疏拓扑图描述行内与行间连通性，无需人工路标点，再以Dijkstra搜索全局路径并用任意角Theta*连接起终点，最后用三次B样条平滑。真实果园实验中，行中心跟踪均方误差约0.08米，显著优于A*的0.31米和Theta*的0.43米，且规划速度快约四到五倍；Isaac Sim仿真显示在树木密度降至70%时仍保持稳定，优于RANSAC中线基线。生成的轨迹由行内直线段与受控转弯组成，兼容差速驱动和四轮转向平台。
 
-◆ 无需人工路点,直接从树干聚类拟合树行线并构建行内与行间连通拓扑
-◆ 融合Dijkstra图搜索、任意角Theta*连接与三次B样条平滑的混合规划策略
-◆ 真实果园行中心跟踪误差仅约0.08米,显著优于A*的0.31米和Theta*的0.43米
-◆ 规划速度较传统方法提升约4至5倍
-◆ 树木密度降至70%时仍保持稳定,优于RANSAC中线基线方法,适用于差速驱动与四轮转向平台...[摘要不完整，待更新]</td></tr>
+◆从树干聚类自动拟合行线并构建稀疏拓扑图，全程无需人工路标点
+◆融合Dijkstra拓扑搜索与任意角Theta*再以三次B样条平滑，兼顾结构性与几何可达性
+◆在低至70%树木密度下仍保持低行中心误差，优于RANSAC等几何基线
+◆兼顾差速驱动与四轮转向平台，输出直行加受控转弯的可执行轨迹...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-24</td><td>Spotter: Efficient Urban Visual Localization via Geo-Referenced Facade Landmarks in GPS-Degraded Environments<br><a href='http://arxiv.org/pdf/2608.23290'>论文</a></td><td>本文提出Spotter框架,旨在解决城市峡谷等GPS信号退化环境下的精确视觉定位难题。现有方法依赖GPS但易受多径效应影响,视觉里程计存在累积漂移,而基于地图匹配的方法计算开销过大,难以在边缘设备实时运行。Spotter的核心思路是利用建筑物立面作为可靠的全局地理参考,同时保留融合GPS信号的能力。
 
 ◆创新点:利用建筑物立面作为全局地理参考,缓解GPS退化环境下的定位漂移问题
@@ -1797,12 +1827,21 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (35篇)</h2>
+<h2 id='image-matching'>Image Matching (36篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-27</td><td>SSMB: Self-Supervised Local Feature Detection under Motion Blur<br><a href='http://arxiv.org/pdf/2608.27181'>论文</a></td><td>SSMB提出了一种面向运动模糊图像的免去模糊化、自监督的关键点检测方法,无需传统手工检测器或外部伪标签,直接在模糊图像上完成关键点定位。两阶段训练框架首先在合成几何形状上进行几何预训练以获得空间判别能力,随后在真实清晰-模糊图像对上学习模糊不变性。
+
+◆ 提出Local Discriminability Enhancement(LDE)模块,在全局特征混合后恢复细粒度局部判别性,使关键点定位更精准且可重复
+
+◆ 设计两阶段训练策略:几何预训练仅从渲染几何形状自举空间判别能力,无需任何外部检测器;模糊感知训练通过多组件自监督目标在真实图像对上端到端优化
+
+◆ 提出多组件自监督损失函数,综合强制跨域一致性、几何对齐和空间覆盖,避免了对模糊图像去模糊预处理及其引入的伪影问题
+
+◆ 在关键点检测、图像匹配、相对位姿估计和视觉定位等多个任务上均达到稀疏关键点检测器的最先进水平,显著优于有监督和自监督基线方法...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>本文提出Misanthrope，一种面向图像匹配任务的隐私保护关键点检测器。针对分布式计算场景下本地图像特征易遭受反演攻击、泄露人像隐私的问题，Misanthrope通过自蒸馏训练策略，从源头避免在人体上检测关键点，而非依赖事后模糊处理。
 
 ◆ 创新点一：提出从源头规避隐私风险的检测思路，使反演攻击无法重建人物内容
@@ -6940,19 +6979,40 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (55篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (57篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-26</td><td>PIVOT: A Multi-Trajectory Dataset and Testbed for Pose, Intrinsics, and Novel Viewpoint Evaluation in Real-World 3D Reconstruction<br><a href='http://arxiv.org/pdf/2608.25401'>论文</a></td><td>PIVOT针对神经辐射场和3D高斯溅射等新视角合成方法现有评测过于&quot;干净&quot;、脱离机器人与自主系统真实部署条件的问题，提出了一个多轨迹数据集、处理流程和独立评估框架。该数据集对每个场景采用多样化相机轨迹采集，同时保留传感器实测位姿与COLMAP优化位姿，以及标定与优化两类相机内参，从而能够将轨迹、位姿和内参三类因素解耦研究。
+<tr><td>2026-08-27</td><td>GeoMAD: Geometry-Aware Multi-View Anomaly Detection via Deformable Fusion and Distributional Alignment<br><a href='http://arxiv.org/pdf/2608.26724'>论文</a></td><td>GeoMAD针对多视角异常检测中的几何对应与分布一致性问题，提出了一个统一的多视角多类别框架，在2D特征空间内实现了兼具几何感知与分布一致性的高效融合。
 
-◆ 多轨迹采集设计：PIVOT v1包含五个由DJI Mini 4 Pro采集的真实场景，覆盖不同相机运动路径，可用于评估模型在训练未见轨迹上的泛化能力
-◆ 三类独立评测基准：已见与未见轨迹的新视角泛化、实测与优化位姿敏感性、标定与优化内参敏感性
-◆ 有向位姿空间Chamfer距离：定量度量训练位姿对评估轨迹的覆盖程度
-◆ 提供基于Nerfstudio的开源处理与评估工具链
-◆ 关键发现：已见轨迹的留出视图与未见轨迹之间存在稳定的质量差距，模型性能对位姿来源和相机内参均表现出显著敏感性...[摘要不完整，待更新]</td></tr>
+现有方法要么依赖体素融合带来高计算成本和类别特定假设，要么采用轻量级patch融合但缺乏连续的跨视角对应。GeoMAD通过两个核心模块解决了这一矛盾。
+
+◆ 提出跨视角可变形融合模块(CDFM)，直接在2D特征图上学习内容自适应、视角对特定的采样偏移，并结合多尺度窗口金字塔与图像全局参考采样，实现无需相机标定、体素构建或3D监督的层次化跨视角几何对应。
+
+◆ 引入分布视角对齐损失(DVA)，通过自监督方式将每个视角的瓶颈分布对齐至逐实例的视角中心目标，在无需像素级对应的情况下强制全局一致性。
+
+◆ 将局部几何对应与全局分布一致性结合，在保持2D特征学习效率的同时，桥接了两类极端方法的优缺点。
+
+在Real-IAD和MANTA-Tiny上的实验表明，GeoMAD在统一多视角异常检测中取得了优异的检测与定位性能。</td></tr>
+<tr><td>2026-08-27</td><td>Camera Calibration Using Inaccurate and Asynchronous Discrete GPS Trajectory from Drones<br><a href='http://arxiv.org/pdf/2608.26548'>论文</a></td><td>本文针对利用无人机GPS轨迹对静止相机进行外参标定的问题，重点解决了三项核心挑战：GPS高度存在未知偏差、GPS与相机时间未同步、轨迹离散且需插值估计速度。作者将该问题建模为参数估计问题，统一求解相机偏航、俯仰、横滚角偏差以及GPS高度偏差和时间偏移量，并提出基于迭代最小二乘的极大似然估计器，能够在时间不同步的离散GPS轨迹条件下实现高精度标定。
+
+◆ 提出统一的参数估计框架，将GPS高度偏差、时间偏移与相机姿态偏差联合求解，避免分步标定的误差累积。
+◆ 设计基于迭代最小二乘的极大似然算法，可在时间异步条件下直接从离散GPS轨迹恢复连续运动信息。
+◆ 推荐一种优化的无人机飞行轨迹，使残余标定误差仅为测量标准差的14%，满足高精度应用需求。
+◆ 通过仿真验证估计结果达到克拉美罗下界，归一化估计误差平方统计可接受，证明算法具有理论最优性。</td></tr>
+<tr><td>2026-08-26</td><td>PIVOT: A Multi-Trajectory Dataset and Testbed for Pose, Intrinsics, and Novel Viewpoint Evaluation in Real-World 3D Reconstruction<br><a href='http://arxiv.org/pdf/2608.25401'>论文</a></td><td>针对NeRF和3D高斯溅射等新视角合成方法在真实机器人、无人机和自动驾驶场景中评估不足的问题，本文提出了PIVOT数据集、配套处理流程与评估框架。
+
+◆ 提出多轨迹采集范式：对每个真实场景采用多样化的相机轨迹拍摄，同时保留传感器测量位姿与COLMAP优化位姿，以及标定与优化的相机内参。
+
+◆ 设计三大基准测试系列：已见与未见轨迹的新视角泛化能力、测量位姿与优化位姿的敏感性、标定内参与优化内参的敏感性。
+
+◆ 引入有向位姿空间倒角距离（directed pose-space Chamfer distance），用于量化训练位姿对评估轨迹的覆盖程度。
+
+◆ 发布PIVOT v1数据集，包含5个使用DJI Mini 4 Pro采集的真实场景，并提供基于Nerfstudio的开源处理与评估工具链。
+
+实验结果表明，已见轨迹上的保留视图与未见轨迹之间存在持续的质量差距，且重建质量对位姿来源和相机内参的选择表现出显著敏感性。</td></tr>
 <tr><td>2026-08-25</td><td>Extending Ground-Constraint LiDAR-IMU Calibration to Tilted Surfaces in a Continuous-Time Framework<br><a href='http://arxiv.org/pdf/2608.25135'>论文</a> | <a href='https://github.com/vkorotkine/licalib_tilted_ground'>代码</a></td><td>本文针对地面车辆LiDAR-IMU标定中存在的退化运动问题，提出了一种可在倾斜地面上工作的无目标标定方法。传统方法假设重力向量与地面法向量共线，仅适用于平坦环境，限制了其在坡地等非平面场景中的应用。作者在连续时间框架下设计了新的地面平面残差项，不再依赖该共线性假设，使得车辆在倾斜路面上做平面运动时仍能获得充分激励并完成可靠标定。论文在Husky地面车辆数据集、M2DGR数据集以及越野车辆数据集上进行了系统验证，结果表明该方法在平坦和倾斜场景下均能改善标定重复性，在倾斜场景中提升尤为显著。
 
 ◆ 突破传统平面假设，将LiDAR-IMU无目标标定方法从平坦地面扩展到任意倾斜坡面，显著拓宽了适用场景。
@@ -7511,12 +7571,42 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (57篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (61篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-27</td><td>FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference<br><a href='http://arxiv.org/pdf/2608.27384'>论文</a></td><td>FlashVLA针对视觉-语言-动作模型在机器人操控中推理延迟高、异步执行不稳定的问题,提出了一个统一的流式动作解码框架。该方法通过维护一个包含多个不同噪声水平动作块的流式缓冲区,并采用分块因果注意力机制进行解码,实现了每步推理即可输出一个可执行动作块的效果。其分块自回归的设计隐式地保证了动作的时序连续性,从而支持流畅的异步执行而无需额外的未来状态条件。在大量仿真和真实世界实验中,FlashVLA在单块GPU上即可达到30Hz以上的控制频率,显著提升了推理速度并保持了优异的任务性能。
+
+◆ 提出了流式动作解码框架FlashVLA,在一个统一公式中同时解决低延迟推理和时序一致的异步执行问题
+◆ 设计了流式动作缓冲区,维护多个处于不同噪声水平的动作块,支持分块因果注意力解码
+◆ 实现每步推理输出一个完整可执行动作块,显著提升控制频率
+◆ 通过分块自回归结构隐式保持动作连续性,无需额外未来状态条件即可实现流畅异步执行
+◆ 在单块GPU上实现≥30Hz控制频率,大幅提升推理速度的同时保持任务性能...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-27</td><td>Embodied Scene Rearrangement Planning<br><a href='http://arxiv.org/pdf/2608.27371'>论文</a></td><td>本文提出具身场景重排规划任务ESRP，要求智能体仅依靠自我中心观测和俯视目标布局，在3D场景中重排家具以匹配目标配置。该任务区别于以往工作，禁止全局状态访问并引入物体间相互遮挡，更贴近真实机器人部署的实际约束。
+
+◆提出了全新的具身场景重排规划任务ESRP，限定智能体只能使用部分自我中心观测与全局目标布局对齐，模拟真实场景中的遮挡与感知限制。
+
+◆构建了大规模基准ESRP-Bench，基于OmniGibson包含超过5400个场景对和8200个物体，定义了三个多层级评估指标。
+
+◆提供了四种基线方法，包括分层任务与运动规划、视觉语言模型方法以及基于模仿学习和强化学习的方法。
+
+◆实验表明现有方法难以高效完成任务，揭示了在长视域规划与场景理解方面仍存在重大挑战，为未来具身智能研究指明了方向。</td></tr>
+<tr><td>2026-08-27</td><td>4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation<br><a href='http://arxiv.org/pdf/2608.26947'>论文</a></td><td>4DSynth是一个可控的程序化4D世界合成系统，能够将自然语言描述、蓝图掩码或单张照片转换为可编辑的4D环境，并集成显式几何、动画角色、无碰撞轨迹和物理就绪的仿真状态。系统通过统一的几何锚定表示，使动画、相机规划、渲染和任务生成共享同一管线，显著降低了动态具身仿真场景的构建成本。基于该管线构建的4DSynth-Nav导航基准显示，两个主流视觉语言模型在三个难度级别上均未能完成多数任务。
+
+◆提出基于几何锚定的统一表示，支持从文本、蓝图或单图到可编辑4D场景的端到端生成
+◆多场景路径共享同一几何基础，同一管线一体化处理动画、相机规划与任务生成
+◆构建全程序化生成的4DSynth-Nav导航基准，难度维度独立可调且失败完全可复现...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-27</td><td>Decoupling Planning and Control for Instructable Agents<br><a href='http://arxiv.org/pdf/2608.26788'>论文</a></td><td>本文针对预训练视觉语言模型（VLM）擅长高层规划但难以实现低延迟动作、而世界模型控制器擅长快速控制但缺乏任务引导的问题，提出了Instruct-to-Act系统，将规划与控制解耦。
+
+◆ 核心创新在于将VLM规划器与世界模型控制器相结合，VLM以低频生成稀疏高层文本指令，世界模型控制器以高频自主执行动作。
+
+◆ 训练方法上，通过对控制器策略回放片段重标注合成指令，并联合优化行为克隆、奖励最大化与世界建模目标，使控制器具备语言可指令性。
+
+◆ 支持多智能体场景，VLM规划器通过语言协调，控制器作为执行器。
+
+实验在七个具身环境中验证，该解耦方法在匹配观测与动作空间下稳定优于纯控制器和直接VLM动作生成方案，保留快速控制能力，并允许无需微调地替换不同VLM规划器，在六个任务上与视觉-语言-动作及多智能体强化学习基线相当。</td></tr>
 <tr><td>2026-08-26</td><td>VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning<br><a href='http://arxiv.org/pdf/2608.26105'>论文</a></td><td>本文提出了VBVR-Pro，一个面向&quot;原生视觉推理&quot;的闭环测试平台，旨在将视觉生成本身作为推理媒介而非单纯的输入或输出。该工作的核心目标是解决当前视觉推理领域缺乏可扩展训练任务、可靠反馈机制以及跨生成模态受控比较的瓶颈。
 
 ◆ 提出任务扩展机制：构建了300个程序化生成的可控视觉推理任务，模型在此训练后能有效迁移至RISE-Video、MME-CoF-Pro、BabyVision等七个外部基准。
@@ -7533,12 +7623,13 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 将语言推理定位为测试时计算机制(test-time compute),使模型能在推理阶段动态分配更多算力以引导底层策略。
 
 实验在Language Table和双臂杂货装箱两个仿真基准上验证,R³在未见任务上的探索和泛化能力均显著优于仅依赖指令的模仿学习基线,证明自由形式语言推理可有效作为长时序操作的策略引导信号。</td></tr>
-<tr><td>2026-08-26</td><td>Leveraging Inter-object Affordances for Efficient Planning in Contact-rich Tasks<br><a href='http://arxiv.org/pdf/2608.25641'>论文</a></td><td>本文针对传统任务与运动规划（TAMP）因简化物体模型和低效子符号推理而难以应用于接触丰富任务的问题，提出了一种融合视觉语言模型（VLM）的统一规划框架U-TAMP。该方法定义了以物体为中心的执行约束抽象，并利用VLM自动生成物体间可供性（如抓取约束和支持约束），以刻画接触丰富任务中的物理交互关系。这些可供性被用于丰富TAMP规划域，使系统能够处理形状、尺寸和材质各异的异构物体。在仿真厨房桌面整理场景的实验中，该方法的规划成功率显著高于原始U-TAMP及基于常识可供性的VLM规划器，且规划时间缩短了一到两个数量级。
+<tr><td>2026-08-26</td><td>Leveraging Inter-object Affordances for Efficient Planning in Contact-rich Tasks<br><a href='http://arxiv.org/pdf/2608.25641'>论文</a></td><td>本文提出了一种面向接触丰富任务的高效任务与运动规划方法,核心针对传统TAMP方法依赖简化物体模型、忽视物理属性,以及运动规划中次符号推理耗时严重、成功率低的问题。
 
-创新点：
-◆ 提出以物体为中心的执行约束抽象机制，统一表达任务与运动规划中的物理交互约束
-◆ 利用VLM自动生成物体间可供性，刻画抓取、支持等接触约束，避免繁琐的手工建模
-◆ 将可供性约束融入TAMP规划域，增强对异构物体和接触丰富任务的规划能力与效率...[摘要不完整，待更新]</td></tr>
+◆ 提出U-TAMP框架,定义以物体为中心的执行约束抽象,使机器人能够处理具有异构形状、尺寸和材质的物体间接触丰富交互。
+
+◆ 利用视觉语言模型自动生成物体间可供性抽象,刻画抓取、支撑等物理交互约束,丰富规划域以应对可变物理属性。
+
+◆ 在仿真厨房桌面整理场景中验证,相比原始U-TAMP和基于VLM常识的先进规划器,规划成功率显著提升,规划时间缩短一到两个数量级。</td></tr>
 <tr><td>2026-08-26</td><td>Beyond Pairwise Feedback: Listwise Vision-Language Supervision for Preference-Based Reward Learning<br><a href='http://arxiv.org/pdf/2608.25350'>论文</a></td><td>本文提出了一种基于视觉语言模型(VLM)的列表式偏好奖励学习框架,首次将Plackett-Luce(PL)模型与VLM生成的偏好反馈相结合,突破了传统Bradley-Terry(BT)模型仅能进行两两比较的限制。核心创新在于利用VLM能够对多个候选结果进行排序的能力,通过列表式排名(K=3,4,5)而非单一的两两对比来训练奖励模型,从而更充分地发挥VLM的语义监督优势。实验在Meta-World机器人操控任务上进行验证,结果表明PL奖励模型能够与BT、K-wise BT以及RL-VLM-F等基线方法达到相当甚至更优的性能,其中最佳配置实现了86%的平均最终成功率,并在Drawer Open任务上匹配Oracle基线。该方法具有很强的灵活性,可以根据环境和反馈需求调整排名大小K,无需像两两方法那样受限于固定格式。整体而言,本文证明了列表式VLM偏好监督是强化学习奖励学习中一种具有竞争力且适应性强的方案。</td></tr>
 <tr><td>2026-08-26</td><td>V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2608.25308'>论文</a></td><td>本文针对视觉-语言-动作(VLA)模型中动作专家难以有效利用VLM特征中的3D几何与2D语义信息这一关键缺陷展开研究。作者通过深入分析发现,从视觉-语言特征向动作特征传递的过程中,大量关键视觉表征发生丢失,导致动作生成的感知基础不足,限制了细粒度机器人操作性能。为此,本文提出V-Link框架,显式地在VLM中学习互补的Spatial Query和Semantic Query表示,并通过非对称路径将其注入Action DiT,有效恢复动作生成所需的视觉表征。
 
@@ -8217,4 +8308,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.27
+> 更新于: 2026.08.28
