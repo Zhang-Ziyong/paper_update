@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.08.29)
+# 历史论文归档 (2026.08.30)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -1947,17 +1947,9 @@
 ◆ 设计全局重检测与位姿估计步骤，对恢复候选进行严格验证后再恢复跟踪，实现自动重初始化。
 
 ◆ 发布了一个包含遮挡和快速运动场景的新数据集，用于评估该类挑战性条件下的跟踪性能。</td></tr>
-<tr><td>2026-07-21</td><td>NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion<br><a href='http://arxiv.org/pdf/2607.18936'>论文</a> | <a href='https://github.com/snktshrma/ngps_flight'>代码</a></td><td>NGPS是一个针对高空无人机的GPS拒止环境下的视觉地理定位框架，通过将下视图像与地理参考卫星影像进行深度特征匹配来提供绝对定位。该系统在五个飞行序列（60-150米高度）上达到了2.94米的位置RMSE，相比单目VIO实现了3.5倍的性能提升，并在NVIDIA Jetson Orin NX上实现了实时运行。
+<tr><td>2026-07-21</td><td>NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion<br><a href='http://arxiv.org/pdf/2607.18936'>论文</a> | <a href='https://github.com/snktshrma/ngps_flight'>代码</a></td><td>NGPS是面向高空无人机的无GPS视觉定位框架，通过深度特征匹配下视图像与卫星影像实现绝对定位。系统采用置信度加权UKF融合，协方差由RANSAC内点率、重投影误差和匹配置信度自适应调制。借助VIO速度预测卫星搜索区域，显著提升匹配效率。异步多速率优先级队列按时间顺序融合1-2Hz绝对定位、10-20Hz VIO和100-200Hz IMU数据。60-150米高度的五次飞行测试达到2.94米位置RMSE，最差6.04米，较单目VIO提升3.5倍。系统实时运行于Jetson Orin NX，并支持2.5D地理参考正射影像重建。
 
-核心创新点如下：
-
-◆ 提出自适应置信度加权无迹卡尔曼滤波（UKF）融合机制，将NGPS协方差通过RANSAC内点比率、重投影误差和匹配置信度进行联合调制，提升了多传感器融合的鲁棒性。
-
-◆ 设计了速度预测的卫星影像核提取方法，利用VIO速度预测下一时刻的卫星搜索区域，显著提高了匹配效率和准确性。
-
-◆ 构建了异步多速率时间优先级队列，按时间顺序交错融合绝对位置（1-2 Hz）、VIO（10-20 Hz）和IMU（100-200 Hz）三类不同频率的传感器数据。
-
-◆ 基于VINS位姿图优化并以NGPS校正为锚点，实现了实时2.5D地理参考正射影像重建，拓展了系统的应用场景。</td></tr>
+◆ 基于RANSAC内点率、重投影误差和匹配置信度自适应...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>该论文针对视觉位置识别(VPR)中阈值固定、依赖标注数据、难以应对环境变化的核心痛点，提出了视觉位置识别审计(VPR Auditing)这一新任务范式，将VPR的可靠性验证从模型内部置信度转向外部独立推理，从而避免错误闭环污染SLAM轨迹与地图。
 
 ◆ 提出基于视觉语言模型(VLM)的检索后独立审计框架，对查询图像与候选图像进行联合推理验证，实现实例级判断，无需依赖特定架构的置信度、部署环境的先验知识或数据集相关的阈值。
@@ -8314,4 +8306,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.29
+> 更新于: 2026.08.30
