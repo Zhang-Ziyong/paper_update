@@ -1,30 +1,47 @@
-# 历史论文归档 (2026.08.30)
+# 历史论文归档 (2026.08.31)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (183篇)</a></li>
+<li><a href='#slam'>SLAM (185篇)</a></li>
 <li><a href='#sfm'>SFM (90篇)</a></li>
 <li><a href='#image-matching'>Image Matching (36篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (57篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (58篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (61篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (66篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (19篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (15篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (183篇)</h2>
+<h2 id='slam'>SLAM (185篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-28</td><td>GeoFF3D: Coordinate-Anchored Feed-Forward Reconstruction for Large-Scale UAV Mapping<br><a href='http://arxiv.org/pdf/2608.28288'>论文</a> | <a href='https://github.com/yanxian-ll/GeoFF3D'>代码</a></td><td>GeoFF3D针对大范围无人机航测场景，提出一种结合坐标锚定前馈模型与空间大尺度重建框架(SLRF)的方法，直接在重力对齐的Z-up度量坐标系下预测相机位姿与稠密点图，避免了近共线轨迹下Sim(3)对齐的不稳定性问题。SLRF将图像划分为空间重叠的块，通过共享视图先验传播与分层聚合实现可扩展的多块重建，并可适配不同的有界视图模型。
+
+◆采用地理参考的相机平移量作为锚点，将位姿和点云预测统一到Z-up度量坐标系中，省去了局部归一化变换。
+◆设计空间大尺度重建框架SLRF，通过分块划分、共享视图先验传播和层次聚合支持大规模增量重建。
+◆回避了传统Sim(3)全局对齐在近共线无人机轨迹上易失败的问题。
+◆在9个航测区块上将F@5指标从0.829提升至0.877，在长序列UAVScenes上达到0.848，显著优于SLAM/流式基线的0.451，并能在大约5分钟内重建2000张图像，兼具精度与效率。</td></tr>
+<tr><td>2026-08-27</td><td>One year in a forest: Analyzing the challenges of autonomous navigation in subarctic environments<br><a href='http://arxiv.org/pdf/2608.27628'>论文</a></td><td>该论文报道了一项为期一年的亚寒带针叶林机器人实地部署研究，系统评估了自主导航在季节性变化环境中的性能与挑战。研究团队收集了64公里的数据，使用九种里程计、定位与建图方法，揭示了当前最先进算法在自相似场景和高雪堤等亚寒带条件下表现脆弱的规律。研究发现，复杂的SLAM算法相对纯本体感知基线仅带来有限的精度提升，却显著增加了系统不稳定性，且视觉SLAM受季节变化影响最为严重。
+
+◆ 首次开展长达一年的亚寒带森林机器人实地部署，系统性评估多种定位建图方法在季节性变化下的鲁棒性。
+
+◆ 揭示复杂SLAM相对本体感知基线精度增益有限但脆弱性显著增加的重要结论。
+
+◆ 通过分析位置漂移与特征及置信度权重的相关性，阐明视觉方法对季节变化尤为敏感。
+
+◆ 验证了跨季节定位中激光雷达方法鲁棒、视觉与雷达方法易失败的鲜明对比。
+
+◆ 提出基于雷达与激光雷达的多季节Teach and Repeat教学-复现方案，为长期野外自主导航提供实践参考。</td></tr>
 <tr><td>2026-08-27</td><td>How exceptional was the Big Three era? Extremes and persistence in men&#x27;s professional tennis<br><a href='http://arxiv.org/pdf/2608.27362'>论文</a></td><td>这篇论文系统评估了&quot;三巨头&quot;时代在男子网球历史上的独特地位。作者基于1968至2025年间约19.8万场比赛数据，采用贝叶斯动态Bradley-Terry状态空间模型估计球员实力，通过跨越不同代际对手的间接比较来衡量统治力，并以是否突破高阈值来刻画&quot;领先&quot;程度。
 
 研究发现，仅德约科维奇在巅峰实力上明显超越同时代所有对手，而费德勒和纳达尔与博格、麦肯罗、伦德尔的水平在统计上无法区分。
@@ -1947,9 +1964,17 @@
 ◆ 设计全局重检测与位姿估计步骤，对恢复候选进行严格验证后再恢复跟踪，实现自动重初始化。
 
 ◆ 发布了一个包含遮挡和快速运动场景的新数据集，用于评估该类挑战性条件下的跟踪性能。</td></tr>
-<tr><td>2026-07-21</td><td>NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion<br><a href='http://arxiv.org/pdf/2607.18936'>论文</a> | <a href='https://github.com/snktshrma/ngps_flight'>代码</a></td><td>NGPS是面向高空无人机的无GPS视觉定位框架，通过深度特征匹配下视图像与卫星影像实现绝对定位。系统采用置信度加权UKF融合，协方差由RANSAC内点率、重投影误差和匹配置信度自适应调制。借助VIO速度预测卫星搜索区域，显著提升匹配效率。异步多速率优先级队列按时间顺序融合1-2Hz绝对定位、10-20Hz VIO和100-200Hz IMU数据。60-150米高度的五次飞行测试达到2.94米位置RMSE，最差6.04米，较单目VIO提升3.5倍。系统实时运行于Jetson Orin NX，并支持2.5D地理参考正射影像重建。
+<tr><td>2026-07-21</td><td>NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion<br><a href='http://arxiv.org/pdf/2607.18936'>论文</a> | <a href='https://github.com/snktshrma/ngps_flight'>代码</a></td><td>NGPS是一种面向高空无人机的视觉地理定位框架,无需GPS即可通过将下视图像与地理参考卫星影像进行深度特征匹配,实现绝对定位,并支持实时2.5D地理参考正射影像重建。系统在五个60至150米高度的飞行序列上达到2.94米的定位均方根误差,最差情况绝对轨迹误差为6.04米,相比单目视觉惯性里程计提升了3.5倍,且可在NVIDIA Jetson Orin NX上实时运行。
 
-◆ 基于RANSAC内点率、重投影误差和匹配置信度自适应...[摘要不完整，待更新]</td></tr>
+主要创新点如下:
+
+◆ 提出自适应置信度加权无迹卡尔曼滤波融合机制,以RANSAC内点比率、重投影误差和匹配置信度共同调制NGPS协方差,实现可靠的传感器融合。
+
+◆ 设计基于VIO速度的预测性核提取方法,利用视觉惯性里程计速度预测卫星影像搜索区域,显著提升匹配效率与精度。
+
+◆ 构建异步多速率时间优先级队列,按时间顺序交织融合绝对位置(1-2 Hz)、VIO(10-20 Hz)和IMU(100-200 Hz)三种更新,实现高频稳定的位姿估计。
+
+◆ 结合VINS位姿图全局优化,以NGPS绝对校正作为锚点,进一步生成2.5D地理参考正射影像,拓展了系统的应用价值。</td></tr>
 <tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>该论文针对视觉位置识别(VPR)中阈值固定、依赖标注数据、难以应对环境变化的核心痛点，提出了视觉位置识别审计(VPR Auditing)这一新任务范式，将VPR的可靠性验证从模型内部置信度转向外部独立推理，从而避免错误闭环污染SLAM轨迹与地图。
 
 ◆ 提出基于视觉语言模型(VLM)的检索后独立审计框架，对查询图像与候选图像进行联合推理验证，实现实例级判断，无需依赖特定架构的置信度、部署环境的先验知识或数据集相关的阈值。
@@ -6973,12 +6998,19 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (57篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (58篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-28</td><td>From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation<br><a href='http://arxiv.org/pdf/2608.27860'>论文</a> | <a href='https://github.com/Suchisrit/DEX'>代码</a></td><td>这篇论文针对视觉基础模型在鱼眼广角图像上因径向畸变导致输出错误的问题，提出了一种通用推广方法。作者设计了可学习参数DEX，通过自监督对齐损失将鱼眼图像的潜在嵌入转换为逼近透视图像的分布，从而恢复高保真估计。该方法架构和任务无关，在单目深度估计和开放词汇分割任务上对卷积和Transformer架构均有显著提升。DEX的激活值还可解码为畸变系数，附带支持相机标定的能力。实验在多个室内外鱼眼数据集上验证了方法相对于基线的一致改进。
+
+创新点：
+◆ 提出Distortion Extenders (DEX)，联合建模畸变系数与潜在空间分布偏移，桥接鱼眼与透视图像
+◆ 采用自监督对齐损失，无需鱼眼标注数据即可适配视觉基础模型
+◆ 方法架构和任务无关，覆盖深度估计与开放词汇分割两大任务
+◆ DEX激活可解码为畸变系数，附带相机标定的额外功能...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-27</td><td>GeoMAD: Geometry-Aware Multi-View Anomaly Detection via Deformable Fusion and Distributional Alignment<br><a href='http://arxiv.org/pdf/2608.26724'>论文</a></td><td>GeoMAD针对多视角异常检测中的几何对应与分布一致性问题，提出了一个统一的多视角多类别框架，在2D特征空间内实现了兼具几何感知与分布一致性的高效融合。
 
 现有方法要么依赖体素融合带来高计算成本和类别特定假设，要么采用轻量级patch融合但缺乏连续的跨视角对应。GeoMAD通过两个核心模块解决了这一矛盾。
@@ -7565,12 +7597,46 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (61篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (66篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-28</td><td>STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation<br><a href='http://arxiv.org/pdf/2608.28279'>论文</a></td><td>STEGNav针对多模态终身物体导航任务,提出了一种无需训练的时空事件图推理框架,解决了现有基于状态中心语义场景图方法在区分相似实例、统一表示语义目标与探索前沿、以及有效利用导航记忆方面的不足。
+
+◆ 空间轴:执行查询条件下的实例定位,并联合表示语义目标与考虑可达性、路径成本和探索效用的占据感知探索前沿。
+
+◆ 时间轴:采用轨迹感知双窗口记忆,保留近期决策-轨迹事件以及跨子任务验证的导航结果,实现导航经验的有效复用。
+
+◆ 基于VLM的导航代理对构建的时空事件图进行推理,选择实例目标或探索前沿作为下一导航目标。
+
+实验方面,该方法在GOAT-Bench上达到66.3% SR和39.7 SPL,在HM3Dv1和HM3Dv2上分别取得64.0%和69.4% SR,消融实验验证了双轴的互补性,表明事件驱动的时空表示显著提升了导航可靠性与跨子任务经验复用能力。</td></tr>
+<tr><td>2026-08-28</td><td>Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring<br><a href='http://arxiv.org/pdf/2608.28246'>论文</a></td><td>本文针对可回收垃圾分拣中变形无菌饮料盒的机器人抓取难题，提出了一种无需训练的吸盘抓取检测系统。该系统将目标识别与抓取点选择解耦，采用开放词汇视觉语言模型根据文本提示检测纸盒，再利用SAM2将检测结果精细化为实例分割掩码。在此基础上，通过融合表面平整度与法向量对齐度的几何评分方法选取最佳吸盘吸附点，并对比了k近邻PCA、Sobel叉积和RANSAC平面拟合三种几何估计方法。在真实机器人上的35个杂乱场景实验中，单物体抓取成功率达88.2%，端到端抓取成功率为72.6%。
+
+◆ 提出完全无需训练的吸盘抓取框架，规避了变形物体数据稀缺与标注成本高的问题
+◆ 将目标检测与抓取点选择解耦的模块化设计，提升了系统灵活性与可扩展性
+◆ 融合表面平整度与法向量对齐的几何评分机制，可有效适配变形物体的不规则表面
+◆ 系统性对比三种几何平面估计方法，为不同场景下的方法选择提供了实验依据...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-28</td><td>Plan Along the Way: Event-Triggered Foundation-Model Planning for TAMP Execution in Partially Observable Manipulation<br><a href='http://arxiv.org/pdf/2608.28075'>论文</a></td><td>本文提出ROBUST TAMP框架,将基础模型规划与反应式任务运动规划相结合,以应对部分可观测环境下的操作难题。该框架将规划器约束于当前可见场景,任务级动作经严格接口验证后由场景特定执行适配器...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-28</td><td>CAVE-NAV: VLM-Based Autonomous 3D Navigation in Underwater Cave Environments<br><a href='http://arxiv.org/pdf/2608.27793'>论文</a></td><td>针对水下洞穴环境中视觉退化导致特征定位失效、声呐建图过于保守、通信受限难以远程引导等难题，本文提出了CAVE-NAV自主导航框架。该框架将视觉语言模型与思维链推理相结合，从RGB图像、深度图与声呐垂向净空等多模态输入中，依据光强梯度、通道形态和几何复杂度等环境线索推断可通行方向，实现受限空间内的三维安全导航。
+
+◆ 提出首个面向水下洞穴的VLM+CoT自主导航框架，绕过传统稠密特征定位与建图范式，直接由环境语义驱动导航决策。
+
+◆ 设计融合RGB、深度与声呐垂向净空的多模态感知模块，为VLM提供互补的环境信息表征。
+
+◆ 引入基于光强梯度、通道形态与几何复杂度的环境线索推理机制，赋予系统在视觉退化条件下稳健推断可行方向的能力。
+
+◆ 在多种洞穴拓扑的高保真仿真中完成全部端到端穿越，全程无碰撞并保持安全净空距离。</td></tr>
+<tr><td>2026-08-27</td><td>Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2608.27550'>论文</a></td><td>本文针对机器人数据难以大规模采集的核心瓶颈,提出VLA模型的发展应从&quot;数据规模化&quot;转向&quot;表征质量&quot;优化,即在固定数据预算下通过持续预训练将有限轨迹转化为可迁移的视觉-动作知识。作者设计了一种面向VLA的VLM骨干网络VLAct,在任务微调前先用大规模异构多具身机器人数据进行持续预训练,并在微调阶段允许使用任务专属的动作头。
+
+◆ 提出VLM先验保持机制,有效防止持续预训练过程中视觉语言模型的通用先验被破坏,保留跨具身共享的语义基础。
+
+◆ 设计多头连续动作协同监督策略,鼓励不同具身间的动作语义对齐,实现知识的跨形态迁移。
+
+◆ 采用部分统一的多具身动作布局方案,在保持具身特异性的同时实现表征空间的共享。
+
+在LIBERO-Plus、RoboTwin 2.0、RoboDojo等多个基准上,VLAct均超越工业级VLA系统;在未见具身RoboCasa-GR1上,仅用20%下游数据即超越使用全量数据的GR00T-N1.6,且仅需16块GPU即可完成训练,证明表征中心的持续预训练是与数据扩展互补的重要独立方向。</td></tr>
 <tr><td>2026-08-27</td><td>FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference<br><a href='http://arxiv.org/pdf/2608.27384'>论文</a></td><td>论文针对视觉-语言-动作模型部署时推理延迟高、异步执行不稳定的问题，提出了FlashVLA流式动作解码框架。该框架通过维护包含多个不同噪声水平动作块的流式缓冲区，并结合块级因果注意力机制，实现了每个推理步骤即可输出一个可执行动作块的流式解码过程。
 
 ◆创新一：构建流式动作缓冲区并设计块级因果注意力机制，将传统多步迭代去噪重构为单步可执行的解码流程，显著降低了推理延迟。
@@ -8306,4 +8372,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.08.30
+> 更新于: 2026.08.31
