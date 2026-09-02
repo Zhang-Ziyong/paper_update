@@ -1,43 +1,59 @@
-# 历史论文归档 (2026.09.01)
+# 历史论文归档 (2026.09.02)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (189篇)</a></li>
+<li><a href='#slam'>SLAM (191篇)</a></li>
 <li><a href='#sfm'>SFM (92篇)</a></li>
 <li><a href='#image-matching'>Image Matching (37篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (59篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (60篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (73篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (74篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (22篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (15篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (189篇)</h2>
+<h2 id='slam'>SLAM (191篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-31</td><td>Failure or Drift? Evaluating Monocular SLAM under Synthetic and Real-World Corruptions<br><a href='http://arxiv.org/pdf/2608.30690'>论文</a> | <a href='https://github.com/abhaythomas/master_thesis_vslamlab_robustness'>代码</a></td><td>本文针对单目视觉SLAM在恶劣条件下的鲁棒性问题,系统评估了一个经典特征法系统与两个学习型跟踪器在图像空间、几何感知及组合扰动下的表现,并与4Seasons真实数据集进行对照分析。区别于以单一轨迹误差衡量鲁棒性的传统做法,该研究将&quot;显式跟踪失败&quot;与&quot;持续运行中的累积漂移&quot;作为两个独立维度分别考察,揭示了学习型跟踪器虽鲜...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-01</td><td>Monocular Depth Estimation from a Single Image: Progress and Opportunities<br><a href='http://arxiv.org/pdf/2609.01172'>论文</a></td><td>这篇综述系统梳理了单目深度估计从早期学习方法到基础模型时代的演进脉络,涵盖问题定义、数据集、算法范式与实际应用等多个维度。论文区分了相对深度与度量深度估计的本质差异,并归纳了室内、室外与合成三大类常用基准数据集。在方法层面,文章将基础模型驱动的近期方法归纳为判别式与生成式两大范式,深入分析大规模自监督预训练(如DINOv3)和合成数据对性能提升的关键贡献。通过定量指标与定性可视化对比了代表性模型的优劣,并将研究范围从单图像自然延伸至视频深度估计。最后,文章展示了深度估计在视觉SLAM、机器人感知和内容生成等领域的实际落地,并展望了基础模型时代下该方向的核心挑战与未来机遇。
+
+◆ 首次将基础模型时代的单目深度估计方法系统划分为判别式与生成式两大范式
+◆ 强调大规模自监督预训练(如DINOv3)与合成数据对性能突破的核心推动作用
+◆ 提供从算法原理到下游应用(视觉SLAM、机器人感知、内容生成)的端到端整合视角
+◆ 将单图像深度估计自然拓展至视频深度估计,构建更为完整的研究框架...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-01</td><td>VOIM: Training-Free Open-Vocabulary 3D Instance Mapping for RGB-D and Monocular SLAM<br><a href='http://arxiv.org/pdf/2609.00775'>论文</a></td><td>本文提出VOIM,一种无需训练、基于体素的开放词汇三维实例建图方法,首次将单目RGB纳入无需训练系统的支持范围,统一处理RGB-D与单目输入。该系统推迟标签与实例判定,直到每个体素在多视角下累积足够的软证据再作决定,从根本上改变了在线系统在首次检测时证据最弱即承诺的做法。VOIM在ScanNet++类比协议下达到44.07 mIoU,显著优于强基线OVO-SLAM的32.37,并在十组场景和两种聚合方式上全部胜出。
+
+◆ 延迟决策机制：基于体素跨视角累积的软证据进行标签与实例分配,显著提升建图质量
+◆ 首个支持单目RGB的无训练开放词汇三维实例建图系统,在Replica上匹配基线性能
+◆ 证明建图阶段而非感知模型是性能差异的关键,地图可导出占据栅格并支持自由形式查询...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-31</td><td>Failure or Drift? Evaluating Monocular SLAM under Synthetic and Real-World Corruptions<br><a href='http://arxiv.org/pdf/2608.30690'>论文</a> | <a href='https://github.com/abhaythomas/master_thesis_vslamlab_robustness'>代码</a></td><td>本文针对单目SLAM在恶劣条件下的鲁棒性评估问题,系统比较了经典特征法系统与两种学习跟踪器在图像空间、几何感知及复合扰动下的表现,并与4Seasons真实恶劣场景结果进行对比。研究提出将评估指标从单一轨迹误差分离为显式跟踪失败与持续漂移两类,更准确刻画系统失效模式。
+
+核心贡献与创新点如下:
+
+◆ 提出跟踪失败与漂移分离评估框架,取代传统单一轨迹误差度量,能够区分系统是否彻底失效还是仅产生累积误差。
+
+◆ 揭示学习跟踪器将灾难性失败转化为持续甚至严重漂移的现象,改变了对学习SLAM鲁棒性的传统认知。
+
+◆ 发现合成扰动的物理保真度决定其预测真实场景能力:结构化雨雾代理可保持真实世界排序,而简单光照代理则会误导评估结论。
+
+◆ 为SLAM鲁棒性基准测试的扰动设计提供了实证依据,强调需谨慎选择合成代理以确保工程结论可靠性。</td></tr>
 <tr><td>2026-08-31</td><td>GeoFF3D: Coordinate-Anchored Feed-Forward Reconstruction for Large-Scale UAV Mapping<br><a href='http://arxiv.org/pdf/2608.28288'>论文</a> | <a href='https://github.com/yanxian-ll/GeoFF3D'>代码</a></td><td>GeoFF3D针对大范围无人机航测场景，提出一种结合坐标锚定前馈模型与空间大尺度重建框架(SLRF)的方法，直接在重力对齐的Z-up度量坐标系下预测相机位姿与稠密点图，避免了近共线轨迹下Sim(3)对齐的不稳定性问题。SLRF将图像划分为空间重叠的块，通过共享视图先验传播与分层聚合实现可扩展的多块重建，并可适配不同的有界视图模型。
 
 ◆采用地理参考的相机平移量作为锚点，将位姿和点云预测统一到Z-up度量坐标系中，省去了局部归一化变换。
 ◆设计空间大尺度重建框架SLRF，通过分块划分、共享视图先验传播和层次聚合支持大规模增量重建。
 ◆回避了传统Sim(3)全局对齐在近共线无人机轨迹上易失败的问题。
 ◆在9个航测区块上将F@5指标从0.829提升至0.877，在长序列UAVScenes上达到0.848，显著优于SLAM/流式基线的0.451，并能在大约5分钟内重建2000张图像，兼具精度与效率。</td></tr>
-<tr><td>2026-08-30</td><td>Everybody Tracking Every Body<br><a href='http://arxiv.org/pdf/2608.29927'>论文</a></td><td>本文研究多人第一人称视角下的集中式3D人体姿态估计问题。每个个体佩戴相机和IMU，通过VIO SLAM跟踪相机空间位置，同时一个人的第一人称视角可为他人提供第三人称观察，但这些观察稀疏、间歇且可靠性不稳定。为此作者提出基于扩散模型的融合方法，将头部运动衍生的姿态估计与跨人视觉观察相结合，并以观察内容和可靠性作为条件。模型在单人动捕数据与多人视频的混合数据上训练，同时学习丰富的运动轨迹先验和观察可靠性先验。实验证明该方法在绝对与相对姿态精度上均优于纯运动和纯视觉基线。
-
-◆ 提出基于扩散模型的多源信息融合框架，将头部运动估计与跨人视觉观察统一整合
-◆ 创新性地将观察可靠性作为扩散过程的条件输入，自适应处理稀疏异质的观察信号
-◆ 采用动捕数据与多人视频混合训练策略，联合学习运动先验和可靠性先验
-◆ 在集中式协调下实现多人相互交互场景下的精确3D姿态重建...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-30</td><td>Everybody Tracking Every Body<br><a href='http://arxiv.org/pdf/2608.29927'>论文</a></td><td>本文研究多人交互场景下基于多视角第一人称视频的3D人体姿态估计问题，通过集中式协调融合各佩戴者相机和IMU数据实现精准追踪。系统利用VIO SLAM技术获得高质量的自运动跟踪，并将第一人称视角对他人的观察视为稀疏、不连续且可靠性变化的外视角姿态线索。◆ 创新点一：提出基于扩散模型的方法，将头部运动估计与外视角姿态观测在内容与可靠性双重条件下进行融合，有效整合异质信息源。◆ 创新点二：采用单人动作捕捉数据与多人视频混合训练策略，使模型同时学习丰富的身体运动先验和视频观测可靠性先验。◆ 创新点三：在集中式架构下统一同步来自多个佩戴者的数据流，将传统单人自我中心感知拓展为协同式群体感知框架。在多人交互数据集上的实验表明，该融合方法在绝对与相对姿态精度上均优于纯运动基线和纯视觉基线。</td></tr>
 <tr><td>2026-08-29</td><td>RoSe-SLAM: Robust Semantic-Aware Gaussian Splatting SLAM from Dynamic Monocular Videos<br><a href='http://arxiv.org/pdf/2608.29003'>论文</a></td><td>RoSe-SLAM提出了一种面向动态非结构化环境的鲁棒语义感知高斯泼溅SLAM系统，通过整合2D基础模型的语义特征与几何运动线索，实现了对单目视频输入的准确相机跟踪与高质量静态场景重建。该方法突破了传统SLAM静态假设的局限，能够有效识别并解耦动态干扰物与静态背景。
 
 核心创新点如下：
@@ -51,12 +67,15 @@
 ◆ 引入多视图语义一致性模块，结合几何运动线索与语义先验动态过滤不可靠观测，重建精确的静态场景几何结构。
 
 该方法在TUM、Bonn和Wild-Mocap等动态基准数据集上的广泛实验表明，其在轨迹估计和静态场景建图方面均优于现有动态RGB SLAM基线方法。</td></tr>
-<tr><td>2026-08-28</td><td>Generation of High-Level Concepts in 3D Scene Graphs via Autoregressive Diffusion<br><a href='http://arxiv.org/pdf/2608.28733'>论文</a></td><td>本文针对室内三维场景图（3DSG）中高层概念的生成问题，提出了一种基于自回归扩散的统一图生成模型。该方法能够从观测到的垂直平面自底向上构建任意层级深度的完整3DSG，联合学习图结构与节点特征，避免了传统方法依赖手工规则和现有学习方法需要为结构与特征分别建模的局限。实验表明，该方法在合成场景、真实建筑平面图和机器人传感器数据等多种数据集上均优于所有学习式和随机基线，并在最大层级和真实单层数据上超越具有目标图规模先验的one-shot模型。此外，作者还提出了一种基于Fused Gromov-Wasserstein距离的图级评估方法，用于对生成的3DSG与真值进行原则化比较。
+<tr><td>2026-08-28</td><td>Generation of High-Level Concepts in 3D Scene Graphs via Autoregressive Diffusion<br><a href='http://arxiv.org/pdf/2608.28733'>论文</a></td><td>本文针对室内三维场景图(3DSG)中高层概念生成问题,提出了一种基于自回归扩散的统一图生成模型,能够从观测到的竖直平面自底向上构建任意层级深度的完整场景图。
 
-◆ 提出统一的自回归扩散图生成模型，联合学习3DSG的结构与空间节点特征
-◆ 支持从垂直平面观测自底向上构建任意层级深度的完整场景图，无需为新概念类别设计专门模型
-◆ 提出基于Fused Gromov-Wasserstein距离的图级评估方法，为3DSG生成质量提供原则化度量
-◆ 在多种数据集和层级复杂度上系统超越现有基线，展现出良好的泛化能力与可扩展性...[摘要不完整，待更新]</td></tr>
+◆创新点一:将图结构生成与节点空间特征学习统一到单一自回归扩散模型中,克服了现有方法需要分别为结构和特征训练单独模型的局限,显著提升了对新类别与复杂层级的可扩展性。
+
+◆创新点二:实现了自底向上、跨任意层级深度的完整3DSG生成,仅以观测到的竖直平面为输入,即可联合推断出房间、楼层、建筑等高层度量-语义概念。
+
+◆创新点三:提出基于Fused Gromov-Wasserstein距离的图级评估方法,为生成3DSG与真值之间的比较提供了原则性的度量框架,弥补了传统节点级指标的不足。
+
+实验在涵盖合成场景、真实建筑平面图和机器人传感器数据的多种数据集上验证,所提方法一致超越所有学习方法和随机基线,并在最大层级和真实单层数据上击败了具有目标图大小先验的一次性生成模型。</td></tr>
 <tr><td>2026-08-27</td><td>One year in a forest: Analyzing the challenges of autonomous navigation in subarctic environments<br><a href='http://arxiv.org/pdf/2608.27628'>论文</a></td><td>该论文报道了一项为期一年的亚寒带针叶林机器人实地部署研究，系统评估了自主导航在季节性变化环境中的性能与挑战。研究团队收集了64公里的数据，使用九种里程计、定位与建图方法，揭示了当前最先进算法在自相似场景和高雪堤等亚寒带条件下表现脆弱的规律。研究发现，复杂的SLAM算法相对纯本体感知基线仅带来有限的精度提升，却显著增加了系统不稳定性，且视觉SLAM受季节变化影响最为严重。
 
 ◆ 首次开展长达一年的亚寒带森林机器人实地部署，系统性评估多种定位建图方法在季节性变化下的鲁棒性。
@@ -1289,12 +1308,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-08-30</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>视觉混叠(doppelganger)问题是SfM中影响重建质量的关键挑战,表现为视觉相似但物理不同的表面产生错误匹配。现有方法在基础模型上叠加重型transformer分类器,导致大规模消歧计算成本高昂。本文提出XDG高效视觉消歧模型,其核心观察是3D基础模型已具备跨视图几何推理能力,因此分类任务应直接适应骨干表示,无需在独立解码器中重新学习配对推理。XDG通过轻量级LoRA适配器微调Depth Anything 3,并创新性地将相机令牌复用为紧凑的配对级分类令牌,由紧凑MLP头预测图像对是否观测同一三维表面。实验表明XDG在配对和重建基准上与当前最优方法保持竞争力,同时实现3倍以上推理加速,在包含数千张图像的LaMAR场景中节省超过10小时处理时间。
+<tr><td>2026-08-30</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>这篇论文针对三维重建中视觉混淆（doppelganger问题）导致误匹配的挑战，提出了高效的视觉消歧模型XDG。作者指出，已有方法在基础模型顶部叠加沉重的Transformer分类器代价高昂，而3D基础模型本身已具备跨视角几何推理能力，因此应直接利用骨干网络表征。
 
-◆ 利用3D基础模型已具备的跨视图几何推理能力,避免在重型解码器中重复学习配对推理
-◆ 通过轻量级LoRA适配器微调Depth Anything 3,以极低参数开销实现高效适配
-◆ 将相机令牌复用为配对级分类令牌,显著降低计算与显存开销
-◆ 实现3倍以上推理加速,在大型场景中节省超10小时处理时间,具备优秀的精度-效率权衡...[摘要不完整，待更新]</td></tr>
+◆ 创新点1：基于Depth Anything 3这一3D基础模型进行微调，而非在其上重新学习成对推理逻辑，从而避免使用重型解码器。
+
+◆ 创新点2：采用轻量级LoRA适配器对基础模型进行参数高效微调，显著降低计算开销。
+
+◆ 创新点3：创新性地将基础模型中的相机令牌重新用作紧凑的成对分类令牌，配合小型MLP头即可预测图像对是否观测同一三维表面。
+
+实验结果表明，XDG在成对消歧和重建基准上与当前最优方法性能相当，同时推理速度提升超过3倍，在包含数千张图像的LaMAR场景中可节省超过10小时的消歧处理时间，展现了出色的精度-效率权衡，具备大规模SfM应用潜力。</td></tr>
 <tr><td>2026-08-29</td><td>Ground-to-Satellite Localization in Unconstrained Image Collections for 3D Scene Reconstruction<br><a href='http://arxiv.org/pdf/2608.29211'>论文</a></td><td>该论文针对无约束图像集合中实现度量精确、地理定位的3D场景重建难题，提出了一种基于跨视角（地面到卫星）定位的鲁棒层次化框架。
 
 ◆ 提出层次化跨视角定位框架，通过粗到精的位姿假设生成策略，实现地面图像到卫星图像的可靠定位，突破了对全景图像和已知初始位置等严格条件的限制。
@@ -2003,15 +2025,17 @@
 ◆在全局优化中融合单目度量深度先验，提高重建精度。
 ◆在极端运动与视觉对称等挑战性场景下，显著优于现有SLAM和SfM方法。</td></tr>
 <tr><td>2026-07-29</td><td>Robust RPC Bundle Adjustment for Multi-Date Satellite Imagery with Season-Invariant Correspondences<br><a href='http://arxiv.org/pdf/2607.26973'>论文</a></td><td>针对多日期卫星影像中季节、照度等地表变化导致的跨时相匹配难题，传统基于手工特征的RPC光束法平差方法难以获得稳健的同名点。本文提出一种感知外观的RPC精修流水线，将学习驱动的局部特征匹配与全局图像描述子筛选相结合，以提升无GCP条件下多视图相对RPC精修的精度与效率。该流水线在匹配前对图像对进行兼容性筛选，再以学习特征完成对应构建，从而在异时相集合上兼顾了连接的完整性与匹配的可靠性。◆ 采用学习型局部特征匹配获取对季节变化稳健的同名点对应，解决异时相图像间传统手工特征匹配易失效的问题。◆ 引入全局图像描述子选择视觉兼容的图像对，剔除冗余和易错匹配，同时保持匹配图的整体连通性。◆ 在39至42视图的季节多样WorldView-3影像集上验证，方法在几何一致性误差和匹配耗时两方面均优于现有开源基线，使多日期卫星影像的RPC精修更加鲁棒高效。</td></tr>
-<tr><td>2026-07-26</td><td>Robust 6-DoF Object Pose Tracking with Built-In Recovery under Occlusions and Rapid Object Motions<br><a href='http://arxiv.org/pdf/2607.23468'>论文</a></td><td>本文针对RGB-D数据下6-DoF物体位姿跟踪中面临的全遮挡和快速运动导致跟踪失败的难题，提出了一种融合学习关键点匹配与优化对齐的鲁棒跟踪方法。该方法在易跟踪场景下达到当前最优精度，同时保持57.6 FPS的实时性能，并在遮挡和快速运动等挑战性条件下表现出最强的鲁棒性。
+<tr><td>2026-07-26</td><td>Robust 6-DoF Object Pose Tracking with Built-In Recovery under Occlusions and Rapid Object Motions<br><a href='http://arxiv.org/pdf/2607.23468'>论文</a></td><td>本文针对RGB-D数据下6自由度物体位姿跟踪在遮挡和快速运动场景中易失败的问题，提出了一种具有内置恢复机制的鲁棒跟踪方法。
 
-◆ 提出一种结合学习式关键点匹配与优化式对齐的高效跟踪框架，实现对未见物体的6-DoF位姿估计。
+◆融合了基于学习的关键点匹配与基于优化的对齐策略，实现高效准确的位姿估计。
 
-◆ 引入新颖的失败检测与恢复模块，实时监测位姿可靠性，识别跟踪发散或遮挡状态。
+◆设计了新颖的失败检测与恢复模块，可实时监控位姿可靠性，自动识别跟踪发散或遮挡状态。
 
-◆ 设计全局重检测与位姿估计步骤，对恢复候选进行严格验证后再恢复跟踪，实现自动重初始化。
+◆跟踪失败时执行全局重检测与位姿估计，并通过严格的候选验证机制确保恢复的可靠性。
 
-◆ 发布了一个包含遮挡和快速运动场景的新数据集，用于评估该类挑战性条件下的跟踪性能。</td></tr>
+◆还构建了一个包含遮挡与快速运动场景的新数据集用于评估。
+
+实验结果表明，该方法在常规序列上达到state-of-the-art精度，运行时速达57.6 FPS，并在挑战性条件下展现出最鲁棒的跟踪性能。</td></tr>
 <tr><td>2026-07-21</td><td>NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion<br><a href='http://arxiv.org/pdf/2607.18936'>论文</a> | <a href='https://github.com/snktshrma/ngps_flight'>代码</a></td><td>NGPS是一种面向高空无人机的视觉地理定位框架,无需GPS即可通过将下视图像与地理参考卫星影像进行深度特征匹配,实现绝对定位,并支持实时2.5D地理参考正射影像重建。系统在五个60至150米高度的飞行序列上达到2.94米的定位均方根误差,最差情况绝对轨迹误差为6.04米,相比单目视觉惯性里程计提升了3.5倍,且可在NVIDIA Jetson Orin NX上实时运行。
 
 主要创新点如下:
@@ -7046,12 +7070,21 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (59篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (60篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-01</td><td>Feed-Forward Multi-view Multi-person Reconstruction with Contrastive Human-Aware 3D Representation<br><a href='http://arxiv.org/pdf/2609.00745'>论文</a></td><td>本文针对非受限环境下多视图多人体重建的难题,提出了一种基于对比学习的自顶向下新范式,实现了鲁棒且高效的人体重建。
+
+◆ 提出统一的实例中心化人体感知三维空间,将多视图观测提升并融合到该共享空间中,通过跨模态对比学习同时完成相机标定、跨视图关联与人体重建,避免了传统自底向上方法对精确标定和显式匹配的依赖。
+
+◆ 设计空间对比学习策略,在三维空间中实现跨视图、跨模态的实例级特征对齐与分离,使对应关系推理、语义聚合和实例判别均可原生在三维空间内完成,显著提升了严重遮挡下的跨视图一致性与鲁棒性。
+
+◆ 以前馈方式从实例级三维人体token中回归SMPL参数,实现结构化人体模型的快速恢复,无需复杂的后处理优化流程。
+
+大量实验表明,该方法在具有挑战性的真实场景中能够实现准确、鲁棒且高效的多视图多人体重建。</td></tr>
 <tr><td>2026-08-28</td><td>Adversarial Calibration Attack on Autonomous Vehicles<br><a href='http://arxiv.org/pdf/2608.28778'>论文</a></td><td>本文针对自动驾驶车辆相机-激光雷达在线标定过程，提出了一种新型物理攻击方法——对抗标定攻击（ACA）。传统AV攻击多假设标定准确，而本文创新性地揭示了在线标定模块作为新攻击面的安全风险，指出被污染的标定更新会在后续融合操作中持续传播，影响感知到规划控制的整个系统。
 
 ◆首次将在线传感器标定识别为自动驾驶的关键攻击面，揭示被篡改的标定结果可在融合模块中长期持续造成系统性错误。
@@ -7061,13 +7094,11 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆设计统一的联合优化框架，同时优化海报的几何形状与纹理，以满足欺骗检测器和误导估计器双重目标。
 
 ◆在KITTI、nuScenes数据集上实现最高33.9度的旋转标定误差，CARLA仿真中导致车辆碰撞，并在真实Husky机器人上通过物理实验验证了攻击的有效性，充分证明在线标定是实际可利用且危及安全的关键攻击面。</td></tr>
-<tr><td>2026-08-28</td><td>From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation<br><a href='http://arxiv.org/pdf/2608.27860'>论文</a> | <a href='https://github.com/Suchisrit/DEX'>代码</a></td><td>本文针对视觉基础模型在鱼眼图像上泛化能力差的问题,提出了一种轻量级、无需标注的域适应方法。该方法通过在特征空间中对齐鱼眼与透视图像的潜在分布,恢复模型在深度估计和开放词汇分割任务上的高精度输出。
+<tr><td>2026-08-28</td><td>From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation<br><a href='http://arxiv.org/pdf/2608.27860'>论文</a> | <a href='https://github.com/Suchisrit/DEX'>代码</a></td><td>本文针对视觉基础模型从透视图像迁移到鱼眼相机时因径向畸变导致性能显著下降的问题展开研究。作者提出了名为Distortion Extenders (DEX)的方法，通过一组可学习参数建模鱼眼畸变系数及潜在空间中的分布差异。
 
-◆ 提出Distortion Extenders (DEX):一组可学习参数,联合建模鱼眼畸变系数与潜在空间中的分布偏移
-◆ 设计自监督对齐损失:无需任何鱼眼标注数据,通过最小化特征分布差异即可适配现成基础模型
-◆ 架构与任务无关:同时适用于CNN和Transformer架构,在单目深度估计与开放词汇分割任务上均显著优于基线
-◆ 副产品支持相机标定:DEX的激活值可直接解码为畸变系数,无需额外标定流程
-◆ 在多个室内外鱼眼数据集上进行验证,展现出良好的鲁棒性和跨场景泛化能力...[摘要不完整，待更新]</td></tr>
+◆ 提出DEX模块，利用自监督对齐损失将鱼眼图像的潜在嵌入转换为接近透视图像的嵌入，从而无需在鱼眼数据上重新训练即可恢复高保真深度估计与分割结果
+◆ DEX具有架构无关和任务无关的特性，可同时适用于CNN和Transformer模型，应用于单目深度估计和开放词汇分割等多种任务
+◆ DEX的激活值还可被解码为畸变系数，额外支持相机标定功能，在室内外多个鱼眼数据集上均一致优于现有基线方法...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-27</td><td>GeoMAD: Geometry-Aware Multi-View Anomaly Detection via Deformable Fusion and Distributional Alignment<br><a href='http://arxiv.org/pdf/2608.26724'>论文</a></td><td>GeoMAD针对多视角异常检测中的几何对应与分布一致性问题，提出了一个统一的多视角多类别框架，在2D特征空间内实现了兼具几何感知与分布一致性的高效融合。
 
 现有方法要么依赖体素融合带来高计算成本和类别特定假设，要么采用轻量级patch融合但缺乏连续的跨视角对应。GeoMAD通过两个核心模块解决了这一矛盾。
@@ -7654,12 +7685,21 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (73篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (74篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-08-31</td><td>CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction<br><a href='http://arxiv.org/pdf/2609.00242'>论文</a> | <a href='https://github.com/tangzhengxu/CoLT-Drive'>代码</a></td><td>这篇论文指出长尾自动驾驶故障不应仅被归类为罕见物体识别错误，而应从决策层面重新审视，即模型是否理解罕见物体对自车可行高层动作的影响。作者将这一任务形式化为驾驶可供性预测（driving affordance prediction），即根据前视图像、自车运动历史和导航指令输出结构化的纵向-横向元动作对。
+
+◆构建了CoLT-Drive基准，包含3,536个反事实长尾样本，通过将罕见物体插入固定驾驶场景来评估模型在决策层面的预测能力。
+
+◆提出KPA知识保持自适应框架，包含三个组件：结构化的感知到决策提示、基于SLERP的专家合并、以及面向决策状态的RegMoE（基于LoRA的混合专家模块）。
+
+◆RegMoE能够根据不同驾驶决策状态分配轻量化的自适应容量，同时保留预训练模型的开世界知识。
+
+在域内驾驶数据划分和CoLT-Drive上的实验表明，KPA在CoLT-Drive上达到60.8%的动作对准确率，显著优于Qwen3-VL-2B基线（50.3%）和LoRA SFT（32.4%），同时保持有竞争力的域内准确率。</td></tr>
 <tr><td>2026-08-31</td><td>LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation<br><a href='http://arxiv.org/pdf/2608.30935'>论文</a></td><td>LightNav-0是一个面向通用具身导航的紧凑型模型，旨在直接激发预训练视觉语言模型（VLM）的空间智能，实现跨任务、环境和机器人形态的统一导航。其核心创新点如下：
 
 ◆ 提出统一token接口：双通道指向（dual-channel pointing）表达与场景和形态无关的空间意图，残差向量量化动作tokenizer将其映射为形态特定的精确轨迹，无需任务专用预测头。
@@ -7735,17 +7775,25 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 基于VLM的导航代理对构建的时空事件图进行推理,选择实例目标或探索前沿作为下一导航目标。
 
 实验方面,该方法在GOAT-Bench上达到66.3% SR和39.7 SPL,在HM3Dv1和HM3Dv2上分别取得64.0%和69.4% SR,消融实验验证了双轴的互补性,表明事件驱动的时空表示显著提升了导航可靠性与跨子任务经验复用能力。</td></tr>
-<tr><td>2026-08-28</td><td>Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring<br><a href='http://arxiv.org/pdf/2608.28246'>论文</a></td><td>该论文针对变形无菌饮料盒的分拣难题，提出了一种无需训练的吸盘抓取系统，将目标识别与抓取点选择解耦处理。系统首先利用开放词汇视觉语言模型根据文本提示检测纸盒，再借助SAM2将检测结果细化为实例掩膜，最后通过融合表面平整度与法向量对齐度的几何评分方法选取吸盘接触点。
+<tr><td>2026-08-28</td><td>Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring<br><a href='http://arxiv.org/pdf/2608.28246'>论文</a></td><td>该论文提出了一种无需训练的吸盘抓取检测系统，专门用于分拣变形的一次性饮料纸盒（利乐包），将目标识别与抓取点选择解耦，实现了对几何形态不规则物体的鲁棒抓取。系统首先利用开放词汇视觉语言模型根据文本提示检测纸盒，再用SAM2将检测结果细化为实例分割掩膜，最后通过几何评分方法结合表面平整度与法向量对齐度来选取最优吸盘接触点。
 
-◆ 提出完全无需训练的吸盘抓取框架，规避了变形物体标注数据稀缺的问题
-◆ 将目标识别与抓取点选择解耦，分别借助视觉语言模型和几何评分完成
-◆ 系统比较了K近邻PCA、Sobel叉积和RANSAC平面拟合三种几何评分方法
-◆ 在真实机器人上的35个杂乱场景和三种变形程度下，单物体抓取成功率达88.2%，端到端分拣成功率为72.6%...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-08-28</td><td>Plan Along the Way: Event-Triggered Foundation-Model Planning for TAMP Execution in Partially Observable Manipulation<br><a href='http://arxiv.org/pdf/2608.28075'>论文</a></td><td>本文针对部分可观测环境下的操控任务,提出ROBUST TAMP框架,核心思想是在执行过程中根据事件触发进行反应式规划,而不是依赖完整场景状态或失败后再重规划。系统将基础模型规划器限制在当前可见的关系场景状态内,生成的任务级动作需通过严格的可执行接口验证,然后路由到场景特定的执行适配器。对象发现被视为独立的重规划事件,系统在稳定执行一段时间后会重建可见场景状态,并结合已完成动作历史与结构化事件上下文进行重规划。论文在六个RLBench/CoppeliaSim厨房和烧烤场景变体上进行了评估,涵盖隐藏对象、非目标对象发现、关节容器交互以及时序操作流程。实验比较了不同规模的纯文本LLM与VLM规划器在任务成功率、部分目标完成、发现与失败触发的重规划行为、隐式非目标对象处理以及推理成本方面的表现。
+◆ 无需训练的开集检测框架，融合视觉语言模型与SAM2实现零样本目标识别与实例分割
+◆ 将目标识别与吸盘抓取点选择解耦为两个独立模块，提升系统灵活性与可扩展性
+◆ 提出融合表面平整度与法向量对齐度的几何评分策略，专门针对变形物体的吸盘吸附需求
+◆ 系统比较了K近邻PCA、Sobel叉积和RANSAC平面拟合三种几何方法在曲面评估中的性能表现
 
-◆ 提出ROBUST TAMP框架,将基础模型规划限制在当前可见场景状态,通过可执行接口验证实现反应式任务与运动规划
-◆ 将对象发现建模为独立的重规划事件,基于稳定执行后重建场景并结合动作历史与事件上下文进行重规划
-◆ 在含隐藏对象、非目标对象、关节容器和时序操作的六个仿真场景上系统评估了LLM与VLM规划器的性能与推理成本...[摘要不完整，待更新]</td></tr>
+在真实机器人平台上对三种变形程度、35个杂乱场景的实验表明，单物体抓取成功率达88.2%，杂乱环境下的端到端回收成功率为72.6%，验证了该方案在可回收垃圾分拣任务中的有效性。</td></tr>
+<tr><td>2026-08-28</td><td>Plan Along the Way: Event-Triggered Foundation-Model Planning for TAMP Execution in Partially Observable Manipulation<br><a href='http://arxiv.org/pdf/2608.28075'>论文</a></td><td>本文针对部分可观测环境下的机器人操作任务，提出了一种名为ROBUST TAMP的模块化LLM/VLM引导的反应式任务与运动规划框架。其核心思路是将基础模型规划器严格限制在当前可见的关系化场景状态范围内，并通过对可执行接口的严格校验来确保生成的任务级动作可落地执行。
+
+◆ 将基础模型规划器约束在当前可见的场景状态上，强制遵循&quot;所见即所规划&quot;原则，避免对未观测信息的幻觉式推理。
+
+◆ 引入严格的可执行接口验证机制，仅接受符合规范的底层动作，拒绝不合规的高层指令，从而保证规划的可执行性。
+
+◆ 将目标对象发现事件与执行失败事件统一建模为结构化的重规划触发事件，并结合已完成动作历史进行上下文感知的再规划。
+
+◆ 在稳定执行窗口后重建可见场景状态，实现&quot;沿路规划&quot;的事件驱动反应式闭环，而非依赖预先完整的世界模型。
+
+在六类RLBench/CoppeliaSim厨房与烧烤场景中，系统对隐藏对象、非目标物体干扰、铰接容器和时序操作均表现出鲁棒性，并系统比较了不同规模文本LLM与VLM规划器在成功率、部分目标完成、推理代价等方面的差异。</td></tr>
 <tr><td>2026-08-28</td><td>CAVE-NAV: VLM-Based Autonomous 3D Navigation in Underwater Cave Environments<br><a href='http://arxiv.org/pdf/2608.27793'>论文</a></td><td>针对水下洞穴环境中视觉退化导致特征定位失效、声呐建图过于保守、通信受限难以远程引导等难题，本文提出了CAVE-NAV自主导航框架。该框架将视觉语言模型与思维链推理相结合，从RGB图像、深度图与声呐垂向净空等多模态输入中，依据光强梯度、通道形态和几何复杂度等环境线索推断可通行方向，实现受限空间内的三维安全导航。
 
 ◆ 提出首个面向水下洞穴的VLM+CoT自主导航框架，绕过传统稠密特征定位与建图范式，直接由环境语义驱动导航决策。
@@ -8330,15 +8378,15 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆ 提出YOLO-DC手势检测器，在颈部网络引入卷积块注意力模块(CBAM)以增强特征判别能力，同时将边界框回归损失替换为DIoU损失，提升了对小目标或部分遮挡手势的定位精度。
 ◆ 构建云-边端协同的多模态交互架构，将LLM与VLM智能体进行功能分工与协调，实现了手势检测、场景理解与任务规划的高效融合，有效缓解了机器人机载算力受限的问题。
 ◆ 设计面向真实机器人平台的端到端交互流程，并通过单动作、复合动作及视觉依赖任务的分层评估，系统性地验证了框架在不同复杂度任务下的鲁棒性与实用性。</td></tr>
-<tr><td>2026-07-17</td><td>DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction<br><a href='http://arxiv.org/pdf/2607.16012'>论文</a> | <a href='https://github.com/kangjehun/DPNeXt'>代码</a></td><td>DPNeXt提出了一种用于多任务密集预测的轻量级多尺度特征融合框架,旨在解决机器人感知系统中视觉基础模型解码策略效率低下的问题。在Cityscapes和NYUv2数据集上的实验表明,DPNeXt-S和DPNeXt-B均达到了当前最优性能,同时参数量大幅减少(相比标准DPT减少78.6%),在资源受限的笔记本硬件上推理速度最快。
+<tr><td>2026-07-17</td><td>DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction<br><a href='http://arxiv.org/pdf/2607.16012'>论文</a> | <a href='https://github.com/kangjehun/DPNeXt'>代码</a></td><td>本文针对机器人感知系统中多任务密集预测(语义分割与深度估计)的解码瓶颈,提出轻量化框架DPNeXt,在多个基准上取得领先性能并显著降低参数量。
 
-核心创新点如下:
+◆ 提出DPNeXt解码器,采用双路深度可分离倒置瓶颈结构,实现以融合为中心的解码与独立任务模块化,高效利用冻结的视觉基础模型特征。
 
-◆ 提出DPNeXt解码器,采用双深度可分离倒置瓶颈结构,通过融合为中心的解码方式和独立任务模块化设计,高效利用冻结的视觉基础模型特征,替代传统的DPT解码器。
+◆ 设计多任务边界引导(MTBG)策略,通过对称的边界聚焦监督缓解任务间负迁移,无需额外标注或推理开销即可增强几何一致性。
 
-◆ 设计多任务边界引导(MTBG)策略,通过对称的边界聚焦监督促进任务间的几何一致性,缓解多任务学习中的负向归纳迁移,且无需额外标注或推理开销。
+实验表明,DPNeXt-S在Cityscapes上超越此前最优多任务模型,DPNeXt-B在NYUv2上同时取得最佳分割与深度估计结果。
 
-◆ 在保持最优性能的同时显著降低计算开销,为资源受限场景下的多任务密集预测提供了高效实用的解决方案。</td></tr>
+相比标准DPT,DPNeXt-S可训练参数量减少78.6%,并在资源受限的笔记本硬件上实现最快的推理速度。</td></tr>
 <tr><td>2026-07-15</td><td>From Language to Navigation Goals: A Vision-Language Approach for Semantic Navigation of Mobile Robots Using RGB-D Perception<br><a href='http://arxiv.org/pdf/2607.13624'>论文</a></td><td>本文提出了一种基于自然语言驱动的移动机器人语义导航框架，核心目标是将用户的口头指令转化为可执行的目标位置并自主导航至目标处。系统采用模块化的ROS 2架构，将语言理解、RGB-D视觉感知和Nav2导航栈有机结合，通过配置话题和服务即可跨平台部署。给定如&quot;去邮箱&quot;这类自然语言指令后，框架首先识别所引用的目标物体，再利用深度相机估计其空间位置，最终生成导航目标并执行。◆创新点在于将大语言模型语义解析与实时RGB-D视觉定位深度融合，实现了从自由文本到物理空间动作的端到端映射。◆第二个创新点体现在框架的高度模块化与可移植性，仅需话题配置即可适配TurtleBot3 Waffle和Unitree Go2等异构平台。◆第三个创新点是系统不仅支持直接命令，还能理解上下文请求并生成自然语言反馈，为非专家用户提供了直观的人机交互范式。实验在仿真和真实环境中均验证了系统的可行性与鲁棒性。</td></tr>
 <tr><td>2026-07-13</td><td>Enabling 24-hour Agricultural Robotics: Unsupervised Day-to-Night Cross-Modal Image Translation for Nighttime Visual Navigation<br><a href='http://arxiv.org/pdf/2607.12065'>论文</a> | <a href='https://github.com/mamorobel/AgriNight'>代码</a></td><td>本论文针对农业机器人夜间视觉导航中标注数据稀缺的问题，提出了一套完整的解决方案。研究的核心是无监督的昼夜跨模态图像翻译框架，能够将白天的RGB植物行图像转换为近红外夜间图像，从而复用白天标注训练夜间感知模型。该方法通过集成预训练的CLIP模型来保持翻译过程中的语义一致性，并引入可见性掩码以适应近红外照明在夜间的有限有效范围。
 
@@ -8526,4 +8574,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.01
+> 更新于: 2026.09.02
