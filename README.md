@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.09.04)
+# 计算机视觉领域最新论文 (2026.09.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -46,12 +46,12 @@
 ◆ 定量揭示了从最先进LiDAR SLAM平台到无地图视觉里程计各平台间精度与可标定性的显著差异，静态精度中位数从8.2毫米到63.5毫米不等，跨轨误差从6.9毫米到112.1毫米。
 
 ◆ 关键结论是所有平台单独均无法满足0.2至1.0毫米的航空航天NDE公差，研究将结果转化为所需补充传感规模的量化设计输入（最优平台约一个数量级，最差近两个数量级），为平台选型提供了可复现的决策依据而非简单的可行性判断。</td></tr>
-<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>本文提出了RoughSense，一种面向自主导航的轻量化地形振动预测方法，融合LiDAR点云与IMU反馈实现实时振动感知可穿越性建图。系统首先利用SLAM生成的局部点云块，通过RANSAC拟合从地形几何中估算出初始振动代理指标，同时IMU在巡视过程中提供实际振动观测。核心创新在于采用递归最小二乘（RLS）算法对几何预测结果进行在线修正，使振动估计能够自适应地匹配真实车体响应。该方法计算开销低，适用于通信、算力和电力受限的星表及地下环境。实验在月球模拟场、室外场地和地下矿井三种典型场景中得到验证，证明了方法在不同地形条件下的有效性与鲁棒性。
+<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>RoughSense提出了一种轻量级方法，用于在计算与功耗受限的环境（如地下或月面场景）中实时预测地形引起的漫游车振动。该方法首先从SLAM生成的局部点云小块中利用RANSAC拟合地形几何，估计出初始振动代理值；随后引入IMU在漫游车实际行驶过程中提供的真实振动观测，并通过递推最小二乘（RLS）在线校正几何预测结果，使系统能够自适应漫游车的实际响应。该方法无需复杂模型或大规模训练，计算开销低，适合资源受限的自主导航系统。论文在月球模拟环境、室外场地以及地下矿井三种典型场景下进行了验证，展示了其跨场景的泛化能力。
 
-◆ 提出基于SLAM点云局部块与RANSAC拟合的地形几何振动代理估计方法，实现无需重计算的轻量级初始预测
-◆ 融合IMU实时振动观测与递归最小二乘在线校正机制，使几何预测随车体真实响应动态自适应
-◆ 设计面向资源受限场景的低开销振动感知可穿越性框架，兼顾实时性与部署可行性
-◆ 在月球模拟场、室外场地及地下矿井三类异构环境中完成系统性验证...[摘要不完整，待更新]</td></tr>
+核心创新点：
+◆ 基于RANSAC的局部点云几何拟合实现轻量级初始振动估计
+◆ 将IMU实测振动与几何预测融合，通过递推最小二乘实现在线自适应校正
+◆ 面向通信、算力与功耗受限场景的实时振动感知可穿越性建图框架...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-02</td><td>AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels<br><a href='http://arxiv.org/pdf/2609.02798'>论文</a></td><td>AutoCompass提出了一种基于弱标签训练神经地图匹配器的新监督方法,旨在解决传统方法依赖高精度绝对位姿标签的局限性。该方法在自动驾驶和第一人称视角基准测试中均显著优于依赖精确绝对位姿标签训练的模型。
 
 ◆ 证明了航向标签并非必要,模型仅从原始GPS标签即可自动学习预测准确的航向信息,降低了标注成本。
@@ -172,20 +172,25 @@
 ◆ 融合相对位姿作为更可靠的监督信号:当数据中存在通过SLAM或SfM获得的图像间相对位姿时,将其纳入训练,可提供比绝对位姿更精确的学习监督。
 
 ◆ 整体框架降低了对高质量标注数据的依赖,使得在噪声较大或标注不精确的大规模地理参考图像数据集上训练高性能地图匹配模型成为可能。</td></tr>
-<tr><td>2026-09-02</td><td>MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception<br><a href='http://arxiv.org/pdf/2609.02717'>论文</a></td><td>该论文提出了MV-dVRK，这是首个结合多曝光同步立体相机、精确表面几何与相机位姿的体外手术多视角基准数据集。其静态子集提供基于SfM的密集参考几何，并通过工业级3D扫描仪完成验证，配套真值相机位姿与稀疏视角测试集。论文系统比较了单目、立体、多立体及多视角3D重建方法在零样本条件下的性能，发现使用两个内窥镜时多立体重建覆盖度最高，引入第三视角后基于优化的多视角方法在1毫米容差下覆盖67%的真实表面点，远超前馈基础模型的43%。此外，MV-dVRK还包含十个涵盖多种外科任务的动态序列，可支持未来多视角手术感知研究。
+<tr><td>2026-09-02</td><td>MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception<br><a href='http://arxiv.org/pdf/2609.02717'>论文</a></td><td>本文针对手术场景中多视角三维重建缺乏基准数据集的问题，提出了MV-dVRK数据集和系统性评估方法。
 
-◆ 首个结合多曝光同步立体相机、精确表面几何与真值位姿的体外手术多视角基准
-◆ 基于工业3D扫描仪验证的SfM参考几何，提供高精度真值数据
-◆ 系统对比多种零样本3D重建方法在手术场景中的表现
-◆ 涵盖静态与动态两类场景，动态序列任务复杂度递增
-◆ 揭示了基于优化的方法在精度上显著优于前馈基础模型这一关键发现...[摘要不完整，待更新]</td></tr>
+核心贡献包括以下几个方面。
+
+◆ 首次构建了包含多台曝光同步立体内窥镜视角、精确表面几何与相机位姿的体外手术多视角基准数据集，填补了真实内窥镜图像多视角重建评估的空白。
+
+◆ 提供经过工业级3D扫描仪验证的稠密SfM参考几何与真值相机位姿，包含静态和动态两大子集，覆盖多种手术任务与组织形变场景。
+
+◆ 系统比较了单目、双目、多目立体及多视角重建方法随视角数量增加的零样本性能，揭示了多目立体在两台内窥镜下覆盖度最高、而加入第三视角后优化式多视角方法在1毫米容差下覆盖率达67%，显著优于前馈式基础模型的43%。
+
+◆ 发布了配套项目网站，为未来手术多视角感知研究提供了开放资源。</td></tr>
 <tr><td>2026-09-02</td><td>Inside-out growth and the kiloparsec-scale star formation main sequence for low-surface-brightness disk galaxies in MaNGA<br><a href='http://arxiv.org/pdf/2609.02378'>论文</a></td><td>本文利用MaNGA巡天数据,选取38个低表面亮度星系(LSBGs)和216个高表面亮度星系(HSBGs),系统研究了两类星系在千秒差距尺度上的恒星形成主序关系及径向结构特征。◆研究发现LSBGs的恒星形成率密度(Σ_SFR)径向梯度极平(斜率约-0.1至-0.2),表明恒星形成在整个盘上均匀分布,而其比恒星形成率密度(Σ_sSFR)呈正梯度,首次清晰地揭示了LSBGs存在明显的&quot;由内向外&quot;生长模式。◆LSBGs和HSBGs遵循相同的全局和分辨恒星形成主序,中心表面亮度μ₀对主序关系无显著影响,说明表面亮度不是决定星系恒星形成活动的本质因素。◆全局主序与分辨主序的斜率一致,表明恒星形成主序在千秒差距尺度上依然成立,恒星形成活动受局部物理过程调控。◆在方法论上,论文指出仅使用恒星形成区域测量主序斜率更为合理,不同电离源的选取会显著影响结果。该工作为理解LSBG的形成与演化提供了重要的观测约束。</td></tr>
-<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>论文提出TAPVid-MV，是首个面向多相机运动场景的长期3D点跟踪基准数据集。它包含284个序列、1142个标定相机流和109769条点轨迹，覆盖机器人、驾驶、室内外等7个领域。轨迹真值通过深度传感器、LiDAR、SLAM、网格等多种辅助模态生成，并经过人工核验。在30余种基线方法评测中，暂无方法能有效解决该任务，且多视角跟踪器并未稳定优于单目跟踪器。研究还通过联合分析3D几何重建与点跟踪性能，揭示几何恢复是当前3D点跟踪的主要瓶颈。
+<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>TAPVid-MV是首个针对多视角动态相机场景下长期3D点跟踪的基准数据集,填补了现有基准仅关注单视频或静态多相机配置的空白。该数据集包含284个序列、1142个校准相机流和10万余条点轨迹,覆盖机器人、人类活动、自动驾驶及合成场景等室内外多个领域。
 
-◆ 首创支持相机运动的多视角长期3D点跟踪评测基准
-◆ 综合利用深度、LiDAR、SLAM等多模态获取跨视角真值轨迹
-◆ 通过大规模基线测试发现几何恢复是性能关键瓶颈
-◆ 数据标注可同时支撑单目2D/3D跟踪、轨迹预测和4D重建任务...[摘要不完整，待更新]</td></tr>
+◆ 创新点一:数据通过深度传感器、LiDAR、SLAM/SfM、人体与物体网格及仿真等多种辅助模态获取轨迹,并经人工严格核验,有效保证标注质量。
+
+◆ 创新点二:在30余个基线方法上的系统评测表明,目前没有任何方法能较好解决该任务,且多视角跟踪器并未稳定优于单目方法,明确揭示几何恢复是制约3D点跟踪准确性的关键瓶颈。
+
+◆ 创新点三:通过在同一数据上联合评估重建与点跟踪,可有效区分几何恢复误差和点对应误差,为未来研究提供清晰的诊断工具;此外数据集还可支持单目2D/3D点跟踪、轨迹预测及4D重建等多种下游任务...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-01</td><td>Linking neutral gas inflows and outflows to offsets in the star-forming main sequence and mass-metallicity relation<br><a href='http://arxiv.org/pdf/2609.01707'>论文</a></td><td>本文利用DESI DR2中约6000个具有Na I D吸收的恒星形成星系，首次在大样本上建立了观测到的中性气体流入流出与恒星形成主序(SFMS)及质量–金属丰度关系(MZR)偏离之间的统计联系。
 
 ◆将样本按气体流速分为缓慢流入、快速流入和流出三类宿主星系，并与恒星质量和红移匹配的对照样本进行比较，发现不同流动类型在SFMS和MZR上呈现系统而不同的偏离模式。
@@ -704,12 +709,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>本文针对大型工件机器人后处理中焊缝识别效率低的问题，提出了一种基于视觉的焊缝近似定位与三维重建流程。该方法通过多视角图像采集，利用语义分割从二维图像中提取焊缝区域，再借助摄影测量技术重建工件三维模型，最后将识别出的焊缝投影到三维模型中。其核心目的是在高精度测量前进行粗定位，从而减少整体扫描工作量并提升数据采集效率。
+<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>本文针对大型工件焊缝识别中传统高精度激光扫描效率低、数据冗余的问题，提出了一种基于视觉的焊缝粗定位流水线，作为高精度测量前的预处理阶段。该方法通过多视角图像采集、语义分割识别焊缝区域、光学摄影测量重建三维模型，并将识别出的焊缝投影到重建模型中，实现焊缝几何的近似定位与三维映射。
 
-◆ 提出语义分割与摄影测量相结合的两阶段流程，先粗定位后精测量，显著降低扫描时间与冗余数据
-◆ 采用多视角图像采集策略，仅用普通相机即可实现焊缝的近似定位，无需依赖昂贵的激光或结构光扫描设备
-◆ 将二维语义分割结果精确投影到三维重建模型上，实现焊缝几何信息从像素空间到三维空间的映射
-◆ 为大型工件机器人磨抛、检测等后处理任务提供了一种高效、低成本的视觉预处理方案...[摘要不完整，待更新]</td></tr>
+主要创新点如下：
+
+◆ 提出两阶段混合测量策略，先用视觉方法粗定位焊缝以缩小高精扫描范围，再进行精细测量，有效降低数据采集量与时间成本
+
+◆ 将深度学习语义分割与摄影测量三维重建相结合，在稀疏图像重建的工件模型上实现焊缝区域的精准投影映射
+
+◆ 采用多视角图像替代高成本结构光/激光扫描设备，为大型工件的机器人后处理（打磨、抛光、检测）提供了一套低成本、易部署的视觉解决方案...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-02</td><td>Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework<br><a href='http://arxiv.org/pdf/2609.02861'>论文</a></td><td>该论文针对深度学习驱动的自主机器人面临的可审计性挑战，提出了TRACE（透明推理可信执行架构）决策框架，旨在确保每一个自主行为都能通过文档化的因果链条回溯到传感器证据。框架将决策过程组织为四个可审计层级：语义感知、信念推理、动作合成与执行验证，形成端到端可追溯链路。
 
 ◆ 提出四层可审计决策架构TRACE，将感知、推理、规划与执行各环节均纳入因果链记录，实现从传感器输入到动作输出的全程证据贯通。
@@ -964,16 +972,16 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5139</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4592</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5145</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4594</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2445</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1633</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1634</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1619</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1495</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1325</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1496</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1326</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1294</td><td>This repository is used for automatic calibration </td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1047</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1025</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1026</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>938</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>809</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>782</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
@@ -981,7 +989,7 @@
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>735</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>724</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>668</td><td>Voxel-SLAM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>658</td><td>M-detector</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>660</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>628</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>612</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>605</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
@@ -991,7 +999,7 @@
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>508</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>458</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>451</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
-<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>357</td><td>btc_descriptor</td></tr>
+<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>358</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>348</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>272</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>269</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
@@ -1000,7 +1008,7 @@
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>228</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>223</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>215</td><td>SUPER-Hardware</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>209</td><td>LAMM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>210</td><td>LAMM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>188</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>147</td><td>PULSAR</td></tr>
 <tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>145</td><td>iBTC</td></tr>
@@ -1033,8 +1041,8 @@
 <tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>518</td><td>Python tools to perform time-synchronization and h</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>503</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>453</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>450</td><td>A real-time capable exploration and inspection pat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>454</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>451</td><td>A real-time capable exploration and inspection pat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>313</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>301</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
@@ -1075,4 +1083,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.09.04
+> 更新于: 2026.09.05

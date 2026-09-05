@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5139,
+      "stars": 5145,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4592,
+      "stars": 4594,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1633,
+      "stars": 1634,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1495,
+      "stars": 1496,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1325,
+      "stars": 1326,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1025,
+      "stars": 1026,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 658,
+      "stars": 660,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 357,
+      "stars": 358,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -283,7 +283,7 @@
     "LAMM": {
       "name": "LAMM",
       "url": "https://github.com/hku-mars/LAMM",
-      "stars": 209,
+      "stars": 210,
       "description": "",
       "created_at": "2024-08-24",
       "chinese_desc": "LAMM"
@@ -477,7 +477,7 @@
     "nbvplanner": {
       "name": "nbvplanner",
       "url": "https://github.com/ethz-asl/nbvplanner",
-      "stars": 450,
+      "stars": 451,
       "description": "A real-time capable exploration and inspection path planner (next best view planning)",
       "created_at": "2016-01-19",
       "chinese_desc": "A real-time capable exploration and inspection pat"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 453,
+      "stars": 454,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
