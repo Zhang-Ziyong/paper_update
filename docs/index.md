@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.09.05)
+# 计算机视觉领域最新论文 (2026.09.06)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -46,12 +46,7 @@
 ◆ 定量揭示了从最先进LiDAR SLAM平台到无地图视觉里程计各平台间精度与可标定性的显著差异，静态精度中位数从8.2毫米到63.5毫米不等，跨轨误差从6.9毫米到112.1毫米。
 
 ◆ 关键结论是所有平台单独均无法满足0.2至1.0毫米的航空航天NDE公差，研究将结果转化为所需补充传感规模的量化设计输入（最优平台约一个数量级，最差近两个数量级），为平台选型提供了可复现的决策依据而非简单的可行性判断。</td></tr>
-<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>RoughSense提出了一种轻量级方法，用于在计算与功耗受限的环境（如地下或月面场景）中实时预测地形引起的漫游车振动。该方法首先从SLAM生成的局部点云小块中利用RANSAC拟合地形几何，估计出初始振动代理值；随后引入IMU在漫游车实际行驶过程中提供的真实振动观测，并通过递推最小二乘（RLS）在线校正几何预测结果，使系统能够自适应漫游车的实际响应。该方法无需复杂模型或大规模训练，计算开销低，适合资源受限的自主导航系统。论文在月球模拟环境、室外场地以及地下矿井三种典型场景下进行了验证，展示了其跨场景的泛化能力。
-
-核心创新点：
-◆ 基于RANSAC的局部点云几何拟合实现轻量级初始振动估计
-◆ 将IMU实测振动与几何预测融合，通过递推最小二乘实现在线自适应校正
-◆ 面向通信、算力与功耗受限场景的实时振动感知可穿越性建图框架...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-02</td><td>AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels<br><a href='http://arxiv.org/pdf/2609.02798'>论文</a></td><td>AutoCompass提出了一种基于弱标签训练神经地图匹配器的新监督方法,旨在解决传统方法依赖高精度绝对位姿标签的局限性。该方法在自动驾驶和第一人称视角基准测试中均显著优于依赖精确绝对位姿标签训练的模型。
 
 ◆ 证明了航向标签并非必要,模型仅从原始GPS标签即可自动学习预测准确的航向信息,降低了标注成本。
@@ -182,13 +177,7 @@
 
 ◆ 发布了配套项目网站，为未来手术多视角感知研究提供了开放资源。</td></tr>
 <tr><td>2026-09-02</td><td>Inside-out growth and the kiloparsec-scale star formation main sequence for low-surface-brightness disk galaxies in MaNGA<br><a href='http://arxiv.org/pdf/2609.02378'>论文</a></td><td>本文利用MaNGA巡天数据,选取38个低表面亮度星系(LSBGs)和216个高表面亮度星系(HSBGs),系统研究了两类星系在千秒差距尺度上的恒星形成主序关系及径向结构特征。◆研究发现LSBGs的恒星形成率密度(Σ_SFR)径向梯度极平(斜率约-0.1至-0.2),表明恒星形成在整个盘上均匀分布,而其比恒星形成率密度(Σ_sSFR)呈正梯度,首次清晰地揭示了LSBGs存在明显的&quot;由内向外&quot;生长模式。◆LSBGs和HSBGs遵循相同的全局和分辨恒星形成主序,中心表面亮度μ₀对主序关系无显著影响,说明表面亮度不是决定星系恒星形成活动的本质因素。◆全局主序与分辨主序的斜率一致,表明恒星形成主序在千秒差距尺度上依然成立,恒星形成活动受局部物理过程调控。◆在方法论上,论文指出仅使用恒星形成区域测量主序斜率更为合理,不同电离源的选取会显著影响结果。该工作为理解LSBG的形成与演化提供了重要的观测约束。</td></tr>
-<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>TAPVid-MV是首个针对多视角动态相机场景下长期3D点跟踪的基准数据集,填补了现有基准仅关注单视频或静态多相机配置的空白。该数据集包含284个序列、1142个校准相机流和10万余条点轨迹,覆盖机器人、人类活动、自动驾驶及合成场景等室内外多个领域。
-
-◆ 创新点一:数据通过深度传感器、LiDAR、SLAM/SfM、人体与物体网格及仿真等多种辅助模态获取轨迹,并经人工严格核验,有效保证标注质量。
-
-◆ 创新点二:在30余个基线方法上的系统评测表明,目前没有任何方法能较好解决该任务,且多视角跟踪器并未稳定优于单目方法,明确揭示几何恢复是制约3D点跟踪准确性的关键瓶颈。
-
-◆ 创新点三:通过在同一数据上联合评估重建与点跟踪,可有效区分几何恢复误差和点对应误差,为未来研究提供清晰的诊断工具;此外数据集还可支持单目2D/3D点跟踪、轨迹预测及4D重建等多种下游任务...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-01</td><td>Linking neutral gas inflows and outflows to offsets in the star-forming main sequence and mass-metallicity relation<br><a href='http://arxiv.org/pdf/2609.01707'>论文</a></td><td>本文利用DESI DR2中约6000个具有Na I D吸收的恒星形成星系，首次在大样本上建立了观测到的中性气体流入流出与恒星形成主序(SFMS)及质量–金属丰度关系(MZR)偏离之间的统计联系。
 
 ◆将样本按气体流速分为缓慢流入、快速流入和流出三类宿主星系，并与恒星质量和红移匹配的对照样本进行比较，发现不同流动类型在SFMS和MZR上呈现系统而不同的偏离模式。
@@ -699,15 +688,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>本文针对大型工件焊缝识别中传统高精度激光扫描效率低、数据冗余的问题，提出了一种基于视觉的焊缝粗定位流水线，作为高精度测量前的预处理阶段。该方法通过多视角图像采集、语义分割识别焊缝区域、光学摄影测量重建三维模型，并将识别出的焊缝投影到重建模型中，实现焊缝几何的近似定位与三维映射。
-
-主要创新点如下：
-
-◆ 提出两阶段混合测量策略，先用视觉方法粗定位焊缝以缩小高精扫描范围，再进行精细测量，有效降低数据采集量与时间成本
-
-◆ 将深度学习语义分割与摄影测量三维重建相结合，在稀疏图像重建的工件模型上实现焊缝区域的精准投影映射
-
-◆ 采用多视角图像替代高成本结构光/激光扫描设备，为大型工件的机器人后处理（打磨、抛光、检测）提供了一套低成本、易部署的视觉解决方案...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-02</td><td>Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework<br><a href='http://arxiv.org/pdf/2609.02861'>论文</a></td><td>该论文针对深度学习驱动的自主机器人面临的可审计性挑战，提出了TRACE（透明推理可信执行架构）决策框架，旨在确保每一个自主行为都能通过文档化的因果链条回溯到传感器证据。框架将决策过程组织为四个可审计层级：语义感知、信念推理、动作合成与执行验证，形成端到端可追溯链路。
 
 ◆ 提出四层可审计决策架构TRACE，将感知、推理、规划与执行各环节均纳入因果链记录，实现从传感器输入到动作输出的全程证据贯通。
@@ -958,19 +939,19 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5145</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4594</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5146</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4596</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2445</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1634</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1619</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1496</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1326</td><td>Point-LIO</td></tr>
-<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1294</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1047</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1327</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1295</td><td>This repository is used for automatic calibration </td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1051</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1026</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>938</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>809</td><td>This repository provides implementation of an incr</td></tr>
-<tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>782</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
+<tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>783</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>747</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>735</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>724</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
@@ -1019,7 +1000,7 @@
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>663</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>656</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>601</td><td>Real-time detection of diverse dynamic objects in </td></tr>
+<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>602</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>576</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>572</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>570</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
@@ -1054,7 +1035,7 @@
 <tr><td><a href='https://github.com/ethz-asl/neuralblox'>neuralblox</a></td><td>132</td><td>Real-time Neural Representation Fusion for Robust </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/phaser'>phaser</a></td><td>132</td><td>A robust pointcloud registration pipeline based on</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/data-driven-dynamics'>data-driven-dynamics</a></td><td>130</td><td>Data Driven Dynamics Modeling for Aerial Vehicles</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/ssc_exploration'>ssc_exploration</a></td><td>111</td><td>Incremental 3D Scene Completion for Safe and Effic</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/ssc_exploration'>ssc_exploration</a></td><td>112</td><td>Incremental 3D Scene Completion for Safe and Effic</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/active_grasp'>active_grasp</a></td><td>109</td><td>Closed-loop next-best view planning for grasp dete</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/waypoint_navigator'>waypoint_navigator</a></td><td>108</td><td>Stand-alone waypoint navigator</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/reinmav-gym'>reinmav-gym</a></td><td>107</td><td>Reinforcement Learning framework for MAVs using th</td></tr>
@@ -1069,4 +1050,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.09.05
+> 更新于: 2026.09.06
