@@ -1,30 +1,33 @@
-# 历史论文归档 (2026.09.06)
+# 历史论文归档 (2026.09.07)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (196篇)</a></li>
-<li><a href='#sfm'>SFM (97篇)</a></li>
-<li><a href='#image-matching'>Image Matching (39篇)</a></li>
+<li><a href='#slam'>SLAM (199篇)</a></li>
+<li><a href='#sfm'>SFM (99篇)</a></li>
+<li><a href='#image-matching'>Image Matching (40篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (62篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (63篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (79篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (81篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (25篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (16篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (196篇)</h2>
+<h2 id='slam'>SLAM (199篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-04</td><td>FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement<br><a href='http://arxiv.org/pdf/2609.05325'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents<br><a href='http://arxiv.org/pdf/2609.04802'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-03</td><td>A hybrid pipeline for dynamic ontology-based semantic mapping<br><a href='http://arxiv.org/pdf/2609.03891'>论文</a></td><td>本文提出了一种用于机器人语义建图的混合流水线系统，旨在提升机器人在复杂环境中的交互、物体操作和导航能力。该系统融合了基于单应性投影的几何建图与定位、目标检测、持续目标跟踪以及本体驱动的语义更新，构建出动态语义世界模型。
 
 系统的创新点主要体现在以下几个方面：
@@ -1342,12 +1345,23 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (97篇)</h2>
+<h2 id='sfm'>SFM (99篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>HiSfM: Disambiguating Structure-from-Motion via Scaffold-Anchored Hierarchical Reconstruction<br><a href='http://arxiv.org/pdf/2609.04718'>论文</a> | <a href='https://github.com/3dv-casia/HiSfM'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>这篇论文针对三维重建中视觉混淆（doppelganger问题）导致误匹配的挑战，提出了高效的视觉消歧模型XDG。作者指出，已有方法在基础模型顶部叠加沉重的Transformer分类器代价高昂，而3D基础模型本身已具备跨视角几何推理能力，因此应直接利用骨干网络表征。
+
+◆ 创新点1：基于Depth Anything 3这一3D基础模型进行微调，而非在其上重新学习成对推理逻辑，从而避免使用重型解码器。
+
+◆ 创新点2：采用轻量级LoRA适配器对基础模型进行参数高效微调，显著降低计算开销。
+
+◆ 创新点3：创新性地将基础模型中的相机令牌重新用作紧凑的成对分类令牌，配合小型MLP头即可预测图像对是否观测同一三维表面。
+
+实验结果表明，XDG在成对消歧和重建基准上与当前最优方法性能相当，同时推理速度提升超过3倍，在包含数千张图像的LaMAR场景中可节省超过10小时的消歧处理时间，展现了出色的精度-效率权衡，具备大规模SfM应用潜力。</td></tr>
 <tr><td>2026-09-02</td><td>AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels<br><a href='http://arxiv.org/pdf/2609.02798'>论文</a></td><td>AutoCompass提出了一种针对神经地图匹配器的新型监督训练方法,旨在解决训练数据中绝对位姿标签存在的噪声问题。该方法在多个驾驶和第一人称视角基准测试中均显著优于依赖高精度绝对位姿标签的传统训练方案。
 
 ◆ 不需要显式的朝向标签:仅使用原始GPS位置标签进行训练,模型便能自动学习预测准确的朝向,证明了朝向监督的冗余性。
@@ -1379,15 +1393,6 @@
 ◆结合D_n4000的微小系统性偏移，结果表明缓慢流入支撑了增强的恒星形成而未稀释中心金属丰度，说明流入气体可能已预富集或在延长时间尺度上完成混合；而流出则位于SFMS上端1σ包络附近，符合反馈调节后续增长的图景。
 
 ◆整体上，这些观测支持了中性气体流作为重子循环不同阶段的示踪器，并对SFMS和MZR的散射贡献了系统性偏离，从而为重子循环&quot;调节器&quot;模型提供了直接的群体层面观测证据。</td></tr>
-<tr><td>2026-08-30</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>这篇论文针对三维重建中视觉混淆（doppelganger问题）导致误匹配的挑战，提出了高效的视觉消歧模型XDG。作者指出，已有方法在基础模型顶部叠加沉重的Transformer分类器代价高昂，而3D基础模型本身已具备跨视角几何推理能力，因此应直接利用骨干网络表征。
-
-◆ 创新点1：基于Depth Anything 3这一3D基础模型进行微调，而非在其上重新学习成对推理逻辑，从而避免使用重型解码器。
-
-◆ 创新点2：采用轻量级LoRA适配器对基础模型进行参数高效微调，显著降低计算开销。
-
-◆ 创新点3：创新性地将基础模型中的相机令牌重新用作紧凑的成对分类令牌，配合小型MLP头即可预测图像对是否观测同一三维表面。
-
-实验结果表明，XDG在成对消歧和重建基准上与当前最优方法性能相当，同时推理速度提升超过3倍，在包含数千张图像的LaMAR场景中可节省超过10小时的消歧处理时间，展现了出色的精度-效率权衡，具备大规模SfM应用潜力。</td></tr>
 <tr><td>2026-08-29</td><td>Ground-to-Satellite Localization in Unconstrained Image Collections for 3D Scene Reconstruction<br><a href='http://arxiv.org/pdf/2608.29211'>论文</a></td><td>该论文针对无约束图像集合中实现度量精确、地理定位的3D场景重建难题，提出了一种基于跨视角（地面到卫星）定位的鲁棒层次化框架。
 
 ◆ 提出层次化跨视角定位框架，通过粗到精的位姿假设生成策略，实现地面图像到卫星图像的可靠定位，突破了对全景图像和已知初始位置等严格条件的限制。
@@ -1978,12 +1983,20 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (39篇)</h2>
+<h2 id='image-matching'>Image Matching (40篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-04</td><td>ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization<br><a href='http://arxiv.org/pdf/2609.04965'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>该论文针对三维重建中视觉混淆（doppelganger问题）导致错误匹配的难题，提出了一种高效的可扩展视觉消歧模型XDG。其核心洞察是3D基础模型已具备跨视角几何推理能力，因此消歧任务应直接适配骨干网络的表征，而非额外训练庞大的解码器重新学习配对关系。
+
+◆ 创新点一：XDG采用轻量化的LoRA适配器对Depth Anything 3进行微调，避免了传统方法在骨干网络之上叠加重型Transformer分类器带来的巨大计算开销。
+
+◆ 创新点二：创造性地将Depth Anything 3中的相机令牌重新用作紧凑的配对级分类令牌，再通过小型MLP头预测候选图像对是否观测到同一三维表面。
+
+实验结果表明，XDG在保持与当前最优消歧方法相当精度的同时，实现了超过3倍的推理加速，在包含数千张图像的LaMAR场景中可节省十余小时处理时间，展现了出色的精度-效率权衡。</td></tr>
 <tr><td>2026-09-02</td><td>Scalable Bayesian Optimization of Composite Functions for Image-Based Inverse Problems in Materials Characterization<br><a href='http://arxiv.org/pdf/2609.02126'>论文</a></td><td>本文针对材料表征中从科学图像反演物理参数的难题,提出了一种可扩展的复合函数贝叶斯优化方法SBOCF,用于电子显微学中样品厚度和晶体倾转角等关键参数的估计。该方法通过利用图像匹配目标的已知复合结构以及模拟图像中的中间信息,将原本需要建模的输出维度从24,649个像素大幅压缩至11个,显著提升了计算效率。
 
 ◆ 提出SBOCF方法,利用块级图像摘要加两项修正项,在保持原始像素级目标的同时将建模输出从24,649降至11,大幅降低计算开销。
@@ -1998,13 +2011,6 @@
 ◆ 提出了GLAM全局到局部非对称匹配框架,结合检索锚定的全局描述子与局部非对称通路,将参考图像编码为压缩的区域token集合,通过可学习的软晚期交互与单查询探针进行匹配。
 
 ◆ 推理阶段复用同一组token实现轻量的互最近邻重排序,在Recall@1/5/10和mAP上超越强基线,同时重排序特征量减少约5倍、每对匹配成本降低约两个数量级。</td></tr>
-<tr><td>2026-08-30</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>该论文针对三维重建中视觉混淆（doppelganger问题）导致错误匹配的难题，提出了一种高效的可扩展视觉消歧模型XDG。其核心洞察是3D基础模型已具备跨视角几何推理能力，因此消歧任务应直接适配骨干网络的表征，而非额外训练庞大的解码器重新学习配对关系。
-
-◆ 创新点一：XDG采用轻量化的LoRA适配器对Depth Anything 3进行微调，避免了传统方法在骨干网络之上叠加重型Transformer分类器带来的巨大计算开销。
-
-◆ 创新点二：创造性地将Depth Anything 3中的相机令牌重新用作紧凑的配对级分类令牌，再通过小型MLP头预测候选图像对是否观测到同一三维表面。
-
-实验结果表明，XDG在保持与当前最优消歧方法相当精度的同时，实现了超过3倍的推理加速，在包含数千张图像的LaMAR场景中可节省十余小时处理时间，展现了出色的精度-效率权衡。</td></tr>
 <tr><td>2026-08-30</td><td>SGFormer: Structure-Guided Transformer for Robust Local Feature Matching<br><a href='http://arxiv.org/pdf/2608.03423'>论文</a></td><td>该论文针对局部特征匹配中现有无检测器方法(如LoFTR)在大幅视角变化场景下出现的注意力发散问题,提出了一种新颖的结构引导Transformer网络SGFormer。研究发现,标准Transformer的无约束全局注意力机制会使部分高置信度匹配落在重叠区域之外,降低匹配可靠性。
 
 ◆提出Triple-Structure-Attention(TSA)模块,利用网络浅层局部特征强化显著结构区域的特征表达,引导后续Transformer阶段将注意力聚焦于具有显著结构的重叠区域。
@@ -7149,12 +7155,13 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (62篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (63篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-03</td><td>Object Concepts Emerge from Motion<br><a href='http://arxiv.org/pdf/2609.04348'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-09-03</td><td>Principia: Relational Physics Tests for Video Models<br><a href='http://arxiv.org/pdf/2609.04200'>论文</a></td><td>本文针对视频模型物理推理评估的难题,提出了一种基于相对关系而非绝对运动的新评估范式。核心思想是同一场景中两个遵循相同物理定律的物体,其运动关系应当具有可预测的标定无关性。
 
 ◆ 创新点一:提出Principia基准,涵盖重力、弹性恢复、摩擦、转动惯量、抛体运动、动量、摆动和弹簧振子等八种牛顿物理现象,跨越平移、旋转、碰撞和振荡四类动力学,采用受控协议录制的真实场景。
@@ -7783,12 +7790,22 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (79篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (81篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-04</td><td>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models<br><a href='http://arxiv.org/pdf/2609.05401'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study<br><a href='http://arxiv.org/pdf/2609.04607'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird&#x27;s-Eye Maps<br><a href='http://arxiv.org/pdf/2609.03483'>论文</a> | <a href='https://github.com/ZSN2024/AGC-VLN'>代码</a></td><td>本文针对空地协同视觉语言导航(AGC-VLN)这一尚未充分探索的任务,提出了首个无需训练的基线方法AGC-VLN。研究观察到现有单智能体训练方法缺乏协作机制,而CARLA-Air评测显示五个先进VLA模型均未表现出稳定的协作行为,甚至朴素的语义通信或双向耦合反而会降低性能。其核心思路是:利用训练免费方法将导航分解为VLM语义推理与确定性几何执行,从而暴露出一个协作接口——由UAV在鸟瞰视角下渲染UGV位姿与目标位置,生成带有距离标注的CAR/GOAL标记共享鸟瞰图。
+
+◆ 首个空地协同VLN训练免费基线AGC-VLN,建立了统一的协作框架
+◆ 提出以共享鸟瞰图作为协作接口,通过CAR/GOAL标记与距离标签将UGV的位姿和VLM锚定目标可视化
+◆ 设计了3D-SPF算法,在UAV下视视角中对目标进行空间搜索与定位
+◆ 充分利用UAV全局视野与UGV道路跟随执行能力的互补性,实现闭环控制下的协同导航
+
+在CARLA-Air的Town10HD场景100个闭环回合中,AGC-VLN达到77.0%的联合成功率,较最弱单体(UAV)提升27.0%,并超越最强单智能体基线Travel UAV达24.0个百分点。</td></tr>
 <tr><td>2026-09-03</td><td>Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving<br><a href='http://arxiv.org/pdf/2609.04070'>论文</a></td><td>本文提出LaPla，一种面向端到端自动驾驶的视觉-语言-动作统一框架，旨在弥合视觉语言模型的离散推理与连续物理动作之间的模态鸿沟。方法核心是通过残差VQ-VAE构建动作分词器，将车辆运动学特征编码为结构化潜空间表示，并基于此实现隐空间对齐的规划。
 
 ◆ 将离散码本表示重新用作物理先验，有效桥接高层语义与原始动作空间之间的模态差异
@@ -7809,14 +7826,6 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 创新点四:指出模型存在系统性偏向预测成功的偏差,且该偏差在增加推理努力后仍持续存在,揭示了当前VLM的固有局限。
 
 ◆ 创新点五:提出无需训练的输入级干预方法,通过空间定位和裁剪结果相关区域,使最优检测器性能提升2.4个百分点。</td></tr>
-<tr><td>2026-09-03</td><td>Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird&#x27;s-Eye Maps<br><a href='http://arxiv.org/pdf/2609.03483'>论文</a> | <a href='https://github.com/ZSN2024/AGC-VLN'>代码</a></td><td>本文针对空地协同视觉语言导航(AGC-VLN)这一尚未充分探索的任务,提出了首个无需训练的基线方法AGC-VLN。研究观察到现有单智能体训练方法缺乏协作机制,而CARLA-Air评测显示五个先进VLA模型均未表现出稳定的协作行为,甚至朴素的语义通信或双向耦合反而会降低性能。其核心思路是:利用训练免费方法将导航分解为VLM语义推理与确定性几何执行,从而暴露出一个协作接口——由UAV在鸟瞰视角下渲染UGV位姿与目标位置,生成带有距离标注的CAR/GOAL标记共享鸟瞰图。
-
-◆ 首个空地协同VLN训练免费基线AGC-VLN,建立了统一的协作框架
-◆ 提出以共享鸟瞰图作为协作接口,通过CAR/GOAL标记与距离标签将UGV的位姿和VLM锚定目标可视化
-◆ 设计了3D-SPF算法,在UAV下视视角中对目标进行空间搜索与定位
-◆ 充分利用UAV全局视野与UGV道路跟随执行能力的互补性,实现闭环控制下的协同导航
-
-在CARLA-Air的Town10HD场景100个闭环回合中,AGC-VLN达到77.0%的联合成功率,较最弱单体(UAV)提升27.0%,并超越最强单智能体基线Travel UAV达24.0个百分点。</td></tr>
 <tr><td>2026-09-03</td><td>R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models<br><a href='http://arxiv.org/pdf/2609.03276'>论文</a></td><td>针对现有机器人策略评估依赖人工、效率低且仅关注二元成功率的不足，本文提出R2S-Eval框架，将真实到仿真标定与视觉语言模型偏好评估相结合。
 
 ◆通过真实到仿真标定技术高效生成与真实环境对齐的仿真回放视频，显著减少重复硬件试验需求，降低人工成本。
@@ -8746,4 +8755,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.06
+> 更新于: 2026.09.07
