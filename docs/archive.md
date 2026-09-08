@@ -25,9 +25,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-04</td><td>FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement<br><a href='http://arxiv.org/pdf/2609.05325'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-09-04</td><td>Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents<br><a href='http://arxiv.org/pdf/2609.04802'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement<br><a href='http://arxiv.org/pdf/2609.05325'>论文</a></td><td>FIRE-LIVWO提出了一种基于迭代误差状态卡尔曼滤波的紧耦合多模态里程计框架，用于解决煤矿井下大尺度复杂环境中视觉信息缺失、激光点云特征退化以及长直自相似巷道导致的几何退化问题。该框架将4D毫米波雷达、激光雷达和视觉特征统一到VoxelMap中，并联合构建雷达-激光点面残差与稀疏视觉光度残差。在烟尘环境下，利用雷达强穿透性并引入逐点多普勒速度约束来保持状态可观测性；在几何退化巷道中，通过非完整约束和在线杆臂补偿紧耦合轮式里程计以减少漂移。◆设计基于几何与视觉可观测性分析的退化检测与自适应融合模型切换策略，能够在线量化可观测性并动态调整各模态权重。◆在真实煤矿实验中准确识别失效边界，实现极端条件下的可靠模态切换，平均定位误差达5.677米，优于现有基线。</td></tr>
+<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>该论文提出一种正则化的束调整框架，其核心贡献在于将快速多视角匹配器与单目先验相结合，用于初始化与正则化，从而在统一框架内同时支持在线VSLAM和离线无序图像集重建，并共享所有任务的超参数。实验表明，该方法在性能和速度权衡上优于传统、前馈及混合基线，尤其其无标定VSLAM方法超越了所有先前的有标定方法。
+
+◆ 提出快速多视角匹配器，显著降低视图间稠密对应估计的计算成本，提升可扩展性。  
+◆ 引入单目先验作为初始化和正则化约束，增强鲁棒性与精度，缓解纯几何匹配的不适定性。  
+◆ 统一优化框架无缝覆盖在线VSLAM与离线重建场景，无需任务专属调参，简化系统设计。  
+◆ 在无标定配置下即可超越此前所有需要标定的VSLAM方法，突破了对精确相机内参的依赖。</td></tr>
+<tr><td>2026-09-04</td><td>Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents<br><a href='http://arxiv.org/pdf/2609.04802'>论文</a></td><td>该论文提出语言轨迹编码（LTE）和空间记忆基准（SMB），解决具身智能体在长时间跨度中动态对象状态变化难以用自然语言查询的问题。核心贡献是让每个对象的运动历史具备可语言查询的轨迹表示，并配套构建了基于EgoLife多日数据的评测基准。现有方法要么丢失细粒度运动细节，要么仅存坐标，或围绕即时任务组织，均缺乏可查询的逐对象时间线。LTE通过压缩动态对象运动历史，在长时程视频中实现高效的空间记忆。
+
+◆ 创新性地提出混合表示：将自然语言描述、稀疏空间锚点和视觉锚点结合，使对象的运动历史和状态转移可直接用语言查询。
+
+◆ 根据运动复杂度自适应压缩：对缺少可靠观测的时间段锚定到最近位置，同时用几何路点和语言描述保留运动精度，兼顾存储效率与准确性。
+
+◆ 构建了新的空间记忆基准SMB：基于EgoLife多日记录，专门评测语义轨迹检索和长时程对象检索，补充了现有基准缺少的能力测试。
+
+在SMB上，LTE语义轨迹检索成功率45.3%，长时程对象检索48.7%，远超基线。轨迹压缩达8.7至26.1倍，24小时视频查询延迟低于1秒，在Ego4D自然语言查询上也显著优于EgoVLPv2。</td></tr>
 <tr><td>2026-09-03</td><td>A hybrid pipeline for dynamic ontology-based semantic mapping<br><a href='http://arxiv.org/pdf/2609.03891'>论文</a></td><td>本文提出了一种用于机器人语义建图的混合流水线系统，旨在提升机器人在复杂环境中的交互、物体操作和导航能力。该系统融合了基于单应性投影的几何建图与定位、目标检测、持续目标跟踪以及本体驱动的语义更新，构建出动态语义世界模型。
 
 系统的创新点主要体现在以下几个方面：
@@ -50,7 +63,10 @@
 ◆ 定量揭示了从最先进LiDAR SLAM平台到无地图视觉里程计各平台间精度与可标定性的显著差异，静态精度中位数从8.2毫米到63.5毫米不等，跨轨误差从6.9毫米到112.1毫米。
 
 ◆ 关键结论是所有平台单独均无法满足0.2至1.0毫米的航空航天NDE公差，研究将结果转化为所需补充传感规模的量化设计输入（最优平台约一个数量级，最差近两个数量级），为平台选型提供了可复现的决策依据而非简单的可行性判断。</td></tr>
-<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-03</td><td>RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback<br><a href='http://arxiv.org/pdf/2609.03720'>论文</a></td><td>该论文提出一种名为RoughSense的轻量级振动感知地形可通行性建图方法，面向地下等资源受限的太空环境，仅利用LiDAR点云与IMU数据即可实现实时振动预测。其核心贡献在于设计了一种结合几何估计与实测反馈的自适应校正机制，在SLAM生成的局部点云块上通过RANSAC估算初始振动代理，同时用IMU记录真实振动响应，并利用递推最小二乘在线修正几何与实测之间的偏差，使系统能随环境变化持续调整。整个方法无需高算力或额外传感器，适合星载低功耗平台。实验在月球模拟场地、户外场地和地下矿井中验证了其泛化性与实用性。  
+◆ 创新点一：将RANSAC应用于局部点云块，直接从地形几何中提取轻量振动先验，避免复杂建模。  
+◆ 创新点二：利用IMU反馈作为实时标签，通过递推最小二乘在线修正几何预测，实现感知与实测的自适应融合。  
+◆ 创新点三：仅依赖LiDAR和IMU两种常见传感器，计算开销低，适用于通信受限的自主导航场景。</td></tr>
 <tr><td>2026-09-02</td><td>AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels<br><a href='http://arxiv.org/pdf/2609.02798'>论文</a></td><td>AutoCompass提出了一种基于弱标签训练神经地图匹配器的新监督方法,旨在解决传统方法依赖高精度绝对位姿标签的局限性。该方法在自动驾驶和第一人称视角基准测试中均显著优于依赖精确绝对位姿标签训练的模型。
 
 ◆ 证明了航向标签并非必要,模型仅从原始GPS标签即可自动学习预测准确的航向信息,降低了标注成本。
@@ -1351,8 +1367,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-09-04</td><td>HiSfM: Disambiguating Structure-from-Motion via Scaffold-Anchored Hierarchical Reconstruction<br><a href='http://arxiv.org/pdf/2609.04718'>论文</a> | <a href='https://github.com/3dv-casia/HiSfM'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>该论文提出BLASt3R，一种正则化束调整框架，统一处理在线VSLAM与离线无序图像集重建，无需切换系统或调整超参数。核心在于利用快速多视图匹配器获取跨视图对应关系，并结合单目深度先验进行初始化和约束优化。  
+◆提出统一的正则化BA框架，将传统几何优化与学习式先验结合，同时支持标定和未标定场景。  
+◆设计快速的多视图匹配策略，显著降低稠密对应估计的计算成本，满足在线实时性要求。  
+◆利用单目先验作为正则化项，提高初始化鲁棒性并约束无纹理或弱几何区域的漂移。  
+◆实验显示本方法在VSLAM中无需内参标定即可超越此前所有需标定的方法，在精度与速度上取得更优折中。</td></tr>
+<tr><td>2026-09-04</td><td>HiSfM: Disambiguating Structure-from-Motion via Scaffold-Anchored Hierarchical Reconstruction<br><a href='http://arxiv.org/pdf/2609.04718'>论文</a> | <a href='https://github.com/3dv-casia/HiSfM'>代码</a></td><td>HiSfM提出了一种面向视觉模糊场景的分层粗到细SfM框架，通过构建稳定的脚手架锚点，在显著提升鲁棒性的同时大幅降低计算开销。  
+◆ 利用几何启发式规则生成强局部社区，有效聚合冗余图像并减少无效约束。  
+◆ 使用边不相交生成树（EDST）连接社区，形成紧凑且强壮的骨架，并通过双视图消歧器验证骨架边，以排除歧义匹配。  
+◆ 在验证后的骨架上重建稳定脚手架作为场景锚点，再高效注册剩余图像并完成三角化，兼顾全局一致性与细粒度补全。  
+实验表明，该方法在歧义聚焦基准和通用数据集上能避免歧义引发的重建失败，相比已有方法显著缩短运行时间，同时比激进稀疏化方法获得更高的重建完整性。</td></tr>
 <tr><td>2026-09-04</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>这篇论文针对三维重建中视觉混淆（doppelganger问题）导致误匹配的挑战，提出了高效的视觉消歧模型XDG。作者指出，已有方法在基础模型顶部叠加沉重的Transformer分类器代价高昂，而3D基础模型本身已具备跨视角几何推理能力，因此应直接利用骨干网络表征。
 
 ◆ 创新点1：基于Depth Anything 3这一3D基础模型进行微调，而非在其上重新学习成对推理逻辑，从而避免使用重型解码器。
@@ -1383,7 +1407,7 @@
 
 ◆ 发布了配套项目网站，为未来手术多视角感知研究提供了开放资源。</td></tr>
 <tr><td>2026-09-02</td><td>Inside-out growth and the kiloparsec-scale star formation main sequence for low-surface-brightness disk galaxies in MaNGA<br><a href='http://arxiv.org/pdf/2609.02378'>论文</a></td><td>本文利用MaNGA巡天数据,选取38个低表面亮度星系(LSBGs)和216个高表面亮度星系(HSBGs),系统研究了两类星系在千秒差距尺度上的恒星形成主序关系及径向结构特征。◆研究发现LSBGs的恒星形成率密度(Σ_SFR)径向梯度极平(斜率约-0.1至-0.2),表明恒星形成在整个盘上均匀分布,而其比恒星形成率密度(Σ_sSFR)呈正梯度,首次清晰地揭示了LSBGs存在明显的&quot;由内向外&quot;生长模式。◆LSBGs和HSBGs遵循相同的全局和分辨恒星形成主序,中心表面亮度μ₀对主序关系无显著影响,说明表面亮度不是决定星系恒星形成活动的本质因素。◆全局主序与分辨主序的斜率一致,表明恒星形成主序在千秒差距尺度上依然成立,恒星形成活动受局部物理过程调控。◆在方法论上,论文指出仅使用恒星形成区域测量主序斜率更为合理,不同电离源的选取会显著影响结果。该工作为理解LSBG的形成与演化提供了重要的观测约束。</td></tr>
-<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>本文提出了TAPVid-MV，这是首个针对多视角同步视频中长期3D点跟踪任务的基准，填补了现有基准仅支持单视频或静态多相机系统的空白。该基准包含284个序列、1142路校准相机流以及109769条点轨迹，覆盖室内外、机器人、驾驶、人体动作和合成场景等七个子集。数据构建利用各数据集特有的辅助模态生成轨迹，并通过人工逐条视觉验证，保证了标注质量。实验显示超过30种基线方法均无法接近解决该任务，且现有多视角点跟踪器并未稳定优于单目跟踪器，揭示了领域挑战的难度。通过在同一数据集上联合评估重建与点跟踪，该基准能够区分几何恢复误差与点对应误差，并识别出几何恢复是准确3D点跟踪的主要瓶颈。◆首个支持相机运动下多视角长期3D点跟踪的基准。◆联合分析重建与跟踪以定位误差来源。◆释放的标注可复用于2D/3D跟踪、未来预测和4D重建任务。</td></tr>
 <tr><td>2026-09-01</td><td>Linking neutral gas inflows and outflows to offsets in the star-forming main sequence and mass-metallicity relation<br><a href='http://arxiv.org/pdf/2609.01707'>论文</a></td><td>本文利用DESI DR2中约6000个具有Na I D吸收的恒星形成星系，首次在大样本上建立了观测到的中性气体流入流出与恒星形成主序(SFMS)及质量–金属丰度关系(MZR)偏离之间的统计联系。
 
 ◆将样本按气体流速分为缓慢流入、快速流入和流出三类宿主星系，并与恒星质量和红移匹配的对照样本进行比较，发现不同流动类型在SFMS和MZR上呈现系统而不同的偏离模式。
@@ -1989,7 +2013,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-04</td><td>ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization<br><a href='http://arxiv.org/pdf/2609.04965'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization<br><a href='http://arxiv.org/pdf/2609.04965'>论文</a></td><td>ARC-Loc提出一种全新的跨视角定位范式，无需BEV变换或外部深度模型，即可直接匹配地面图像与卫星图像。其核心思想借鉴人类“后方交会”定位技巧，将地面关键点转为卫星地图上的方位射线，并通过射线汇聚于用户位置这一几何约束完成定位。该方法设计了最小方位射线汇聚求解器确定交点，同时引入ARC损失来优化匹配网络，实现了显式的线到点对应。◆ 创新性地将地面到卫星匹配简化为二维方位射线求交，绕开病态的2D到3D提升过程，避免几何畸变与计算开销。◆ 提出轻量级ARC求解器和配套ARC损失，使网络训练可直接优化定位目标，且无需外部深度先验。◆ 在保持竞争精度的前提下，推理更快、内存更省，并能轻松嵌入现有跨视角定位框架，工程实用性突出。</td></tr>
 <tr><td>2026-09-04</td><td>XDG: Accelerated Visual Disambiguation<br><a href='http://arxiv.org/pdf/2608.29733'>论文</a> | <a href='https://github.com/xtcpete/xdg'>代码</a></td><td>该论文针对三维重建中视觉混淆（doppelganger问题）导致错误匹配的难题，提出了一种高效的可扩展视觉消歧模型XDG。其核心洞察是3D基础模型已具备跨视角几何推理能力，因此消歧任务应直接适配骨干网络的表征，而非额外训练庞大的解码器重新学习配对关系。
 
 ◆ 创新点一：XDG采用轻量化的LoRA适配器对Depth Anything 3进行微调，避免了传统方法在骨干网络之上叠加重型Transformer分类器带来的巨大计算开销。
@@ -2101,7 +2125,15 @@
 ◆ 创新点二：引入线性HDR表示方法，在相同域鸿沟下比8位表示获得更大的检测性能提升，揭示了位深对域迁移增益的关键影响。
 
 ◆ 创新点三：证明优化后的HDR合成数据仅需配合少量真实图像即可匹配或超越全真实数据基线的空间泛化效果，并在极低样本量下对豆荚检测收益最大。</td></tr>
-<tr><td>2026-07-30</td><td>CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography<br><a href='http://arxiv.org/pdf/2607.27779'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-07-30</td><td>CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography<br><a href='http://arxiv.org/pdf/2607.27779'>论文</a></td><td>该论文针对胸部X光影像检索中现有模型仅匹配影像与报告、难以满足短临床查询中复合逻辑约束的问题，提出结构化基准和方法。核心贡献是构建了CXR-Retrieve基准，包含5159张MIMIC-CXR-JPG测试图像和145条涵盖单一/复合发现及正负表述的文本查询，并以是否满足所有病理约束作为相关性标准。同时提出标签感知的对比微调目标，提升检索精度。
+
+◆ 提出CXR-Retrieve基准，专门评测组合式胸部X光文本到图像检索，覆盖并列、否定等复杂临床查询。
+
+◆ 重新定义相关性标注，依据图像是否满足全部断言病理约束，而非是否匹配原始报告，解决目标错配。
+
+◆ 设计标签感知对比学习目标，将具有兼容病理断言（包括共同确认的阴性）的图像与文本拉近，并明确推开矛盾组合。
+
+◆ 基于CXR-CLIP微调后，在两项病理并列查询上Precision@5提升8.5个百分点，在否定查询上提升22.0个百分点，证明建模临床断言方式的重要性。</td></tr>
 <tr><td>2026-07-29</td><td>VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion<br><a href='http://arxiv.org/pdf/2607.27194'>论文</a> | <a href='https://github.com/cvg/vidmap'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-29</td><td>Robust RPC Bundle Adjustment for Multi-Date Satellite Imagery with Season-Invariant Correspondences<br><a href='http://arxiv.org/pdf/2607.26973'>论文</a></td><td>针对多日期卫星影像中季节、照度等地表变化导致的跨时相匹配难题，传统基于手工特征的RPC光束法平差方法难以获得稳健的同名点。本文提出一种感知外观的RPC精修流水线，将学习驱动的局部特征匹配与全局图像描述子筛选相结合，以提升无GCP条件下多视图相对RPC精修的精度与效率。该流水线在匹配前对图像对进行兼容性筛选，再以学习特征完成对应构建，从而在异时相集合上兼顾了连接的完整性与匹配的可靠性。◆ 采用学习型局部特征匹配获取对季节变化稳健的同名点对应，解决异时相图像间传统手工特征匹配易失效的问题。◆ 引入全局图像描述子选择视觉兼容的图像对，剔除冗余和易错匹配，同时保持匹配图的整体连通性。◆ 在39至42视图的季节多样WorldView-3影像集上验证，方法在几何一致性误差和匹配耗时两方面均优于现有开源基线，使多日期卫星影像的RPC精修更加鲁棒高效。</td></tr>
 <tr><td>2026-07-26</td><td>Robust 6-DoF Object Pose Tracking with Built-In Recovery under Occlusions and Rapid Object Motions<br><a href='http://arxiv.org/pdf/2607.23468'>论文</a></td><td>本文针对RGB-D数据下6自由度物体位姿跟踪在遮挡和快速运动场景中易失败的问题，提出了一种具有内置恢复机制的鲁棒跟踪方法。
@@ -7155,7 +7187,10 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-03</td><td>Object Concepts Emerge from Motion<br><a href='http://arxiv.org/pdf/2609.04348'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-03</td><td>Object Concepts Emerge from Motion<br><a href='http://arxiv.org/pdf/2609.04348'>论文</a></td><td>该论文提出一种受生物启发的自监督框架，从原始视频中的运动信息学习单张图像的物体中心表征，无需人工标注或相机标定。核心思路是用光流与聚类生成伪实例掩码，并通过像素级成对度量学习训练单图编码器，使静态图像也能保留实例身份与一致性。作者构建了七千多小时视频产生的四点二一亿帧带伪标签数据，并提出运动验证自训练方法，结合模型提议与运动证据扩展监督规模。最终将学习到的表征蒸馏至多种Swin骨干网络，在深度估计、三维检测、占用预测及规划任务上取得优于或媲美强基线的结果。  
+◆ 首次利用运动边界作为物体级分组信号，将视频中的光流转化为监督静态图像编码器的伪实例掩码。  
+◆ 提出运动验证自训练，融合模型输出与运动线索生成更可靠的大规模伪标签，覆盖四亿余帧。  
+◆ 无需语义标注与相机参数，仅靠运动即可学习几何与实例敏感表征，开辟了视觉预训练的互补新路线。</td></tr>
 <tr><td>2026-09-03</td><td>Principia: Relational Physics Tests for Video Models<br><a href='http://arxiv.org/pdf/2609.04200'>论文</a></td><td>本文针对视频模型物理推理评估的难题,提出了一种基于相对关系而非绝对运动的新评估范式。核心思想是同一场景中两个遵循相同物理定律的物体,其运动关系应当具有可预测的标定无关性。
 
 ◆ 创新点一:提出Principia基准,涵盖重力、弹性恢复、摩擦、转动惯量、抛体运动、动量、摆动和弹簧振子等八种牛顿物理现象,跨越平移、旋转、碰撞和振荡四类动力学,采用受控协议录制的真实场景。
@@ -7790,8 +7825,12 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-04</td><td>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models<br><a href='http://arxiv.org/pdf/2609.05401'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
-<tr><td>2026-09-04</td><td>Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study<br><a href='http://arxiv.org/pdf/2609.04607'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-04</td><td>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models<br><a href='http://arxiv.org/pdf/2609.05401'>论文</a></td><td>本文揭示了视觉语言模型作为机器人奖励函数时缺乏释义不变性，同一轨迹在语义等价但措辞不同的指令下会得到矛盾的评价，甚至从成功翻转为失败。为此构建了ROBORMBENCH基准，包含2390条真实机器人轨迹、真实进度标签和21673个经人工验证的释义，覆盖词汇、句法和动作目标改写。实验表明多种开源与闭源VLM存在广泛且严重的释义敏感性，改写差异越大稳定性越差，且扩大模型规模或引入显式推理无法可靠缓解。相比之下，经过轨迹监督训练的专业奖励模型显著更稳定，说明释义鲁棒性是可靠VLM奖励建模的核心要求。◆首次系统定义并量化VLM奖励模型中的释义脆弱性问题。◆构建了大规模真实机器人轨迹与验证释义的专用基准ROBORMBENCH。◆揭示缩放与推理能力不能自动带来释义鲁棒性这一反直觉发现。◆证明轨迹监督训练能有效提升奖励模型的释义稳定性。</td></tr>
+<tr><td>2026-09-04</td><td>Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study<br><a href='http://arxiv.org/pdf/2609.04607'>论文</a></td><td>这篇论文通过五个户外数据集实地测试，系统分析了开放集三维场景图（3DSG）在复杂环境中的性能与挑战。  
+◆创新点一：首次提出用于评估语义和结构一致性的新指标，可检测同一环境重复遍历时图谱的稳定性。  
+◆创新点二：揭示了VLM点嵌入普遍存在离群点与多模式问题，在约30%点中离群比例超过0.1。  
+◆创新点三：量化了户外3DSG在导航目标检索中的可行性，成功率达约70%，同时指出路径效率和可穿越性缺陷。  
+◆创新点四：发现区域级理解在自然环境中F1仅约0.359，并验证了多公里轨迹下地图可保持小于600MB的紧凑规模。</td></tr>
 <tr><td>2026-09-04</td><td>Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird&#x27;s-Eye Maps<br><a href='http://arxiv.org/pdf/2609.03483'>论文</a> | <a href='https://github.com/ZSN2024/AGC-VLN'>代码</a></td><td>本文针对空地协同视觉语言导航(AGC-VLN)这一尚未充分探索的任务,提出了首个无需训练的基线方法AGC-VLN。研究观察到现有单智能体训练方法缺乏协作机制,而CARLA-Air评测显示五个先进VLA模型均未表现出稳定的协作行为,甚至朴素的语义通信或双向耦合反而会降低性能。其核心思路是:利用训练免费方法将导航分解为VLM语义推理与确定性几何执行,从而暴露出一个协作接口——由UAV在鸟瞰视角下渲染UGV位姿与目标位置,生成带有距离标注的CAR/GOAL标记共享鸟瞰图。
 
 ◆ 首个空地协同VLN训练免费基线AGC-VLN,建立了统一的协作框架
@@ -7913,7 +7952,7 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆创新点三：引入层次化的Average Full Score综合得分和任务对齐的RoboPhyscore紧凑得分，其中RoboPhyscore与人类评价高度一致（Pearson r=0.9761，Spearman ρ=0.8962），验证了其有效性。
 
 实验发现Cosmos 3表现最佳（RoboPhyscore 0.6330），但状态和执行层面的指标揭示了感知和VLM评判无法捕捉的深层失败，证明三维落地、执行感知的评估对EWM能力衡量至关重要。</td></tr>
-<tr><td>2026-08-28</td><td>STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation<br><a href='http://arxiv.org/pdf/2608.28279'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-08-28</td><td>STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation<br><a href='http://arxiv.org/pdf/2608.28279'>论文</a></td><td>本文提出STEGNav，一种无需训练的导航框架，将传统场景图扩展为时空事件图，以解决多模态终身导航中相似实例区分难、语义目标与探索前沿表示割裂、记忆利用不足的问题。其核心贡献在于沿空间和时间两个互补轴组织导航经验：空间轴通过查询条件实例接地精准定位目标，并统一表达带可达性与探索代价的前沿；时间轴利用轨迹感知双窗口记忆，保留近期决策事件与跨子任务验证结果。◆空间轴上构建查询条件实例接地机制，能区分相似语义实例并联合建模目标与探索候选点。◆时间轴上引入双窗口记忆，分别存储即时决策轨迹和已验证的跨任务导航经验，提升经验复用。◆基于视觉语言模型对事件图进行推理，无需训练即可在候选目标与探索前沿间动态决策。◆事件驱动的时空表示有效提升了导航可靠性与跨子任务迁移能力，在GOAT-Bench及HM3D数据集上取得领先结果。</td></tr>
 <tr><td>2026-08-28</td><td>Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring<br><a href='http://arxiv.org/pdf/2608.28246'>论文</a></td><td>该论文提出了一种无需训练的吸盘抓取检测系统，专门用于分拣变形的一次性饮料纸盒（利乐包），将目标识别与抓取点选择解耦，实现了对几何形态不规则物体的鲁棒抓取。系统首先利用开放词汇视觉语言模型根据文本提示检测纸盒，再用SAM2将检测结果细化为实例分割掩膜，最后通过几何评分方法结合表面平整度与法向量对齐度来选取最优吸盘接触点。
 
 ◆ 无需训练的开集检测框架，融合视觉语言模型与SAM2实现零样本目标识别与实例分割
@@ -8412,7 +8451,7 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>该论文提出一种面向机器人后处理作业的焊缝自动识别与三维映射视觉流程，核心贡献在于将语义分割与摄影测量技术结合，实现大型工件焊缝的近似定位，为后续高精度测量提供高效预处理阶段。其方法通过多视角图像采集、像素级焊缝分割、摄影测量三维重建以及焊缝标签向模型投影，完成从二维图像到三维空间的焊缝映射。◆提出将低成本的摄影测量作为高成本激光扫描的前置环节，显著减少扫描数据量与整体采集时间。◆采用语义分割网络直接从二维图像提取焊缝区域，避免了对完整三维点云做无关处理。◆实现了焊缝识别结果与三维重建模型的自动对齐，无需额外配准步骤。◆该流程针对大型工件设计，有效解决全表面高精度扫描效率低、数据冗余大的工程难题。</td></tr>
 <tr><td>2026-09-02</td><td>Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework<br><a href='http://arxiv.org/pdf/2609.02861'>论文</a></td><td>该论文针对深度学习驱动的自主机器人面临的可审计性挑战，提出了TRACE（透明推理可信执行架构）决策框架，旨在确保每一个自主行为都能通过文档化的因果链条回溯到传感器证据。框架将决策过程组织为四个可审计层级：语义感知、信念推理、动作合成与执行验证，形成端到端可追溯链路。
 
 ◆ 提出四层可审计决策架构TRACE，将感知、推理、规划与执行各环节均纳入因果链记录，实现从传感器输入到动作输出的全程证据贯通。
