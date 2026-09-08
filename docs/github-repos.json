@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5155,
+      "stars": 5156,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -653,7 +653,7 @@
     "sl_sensor": {
       "name": "sl_sensor",
       "url": "https://github.com/ethz-asl/sl_sensor",
-      "stars": 140,
+      "stars": 141,
       "description": "SL Sensor: An open-source, real-time and ROS-based structured light sensor for high accuracy construction robotic applications",
       "created_at": "2021-04-22",
       "chinese_desc": "基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。"

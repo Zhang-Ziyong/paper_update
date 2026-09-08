@@ -898,7 +898,7 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5155</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5156</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4608</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2448</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1636</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
@@ -989,7 +989,7 @@
 <tr><td><a href='https://github.com/ethz-asl/grid_map_geo'>grid_map_geo</a></td><td>169</td><td>Geolocalization for grid map using GDAL. </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_undistortion'>lidar_undistortion</a></td><td>160</td><td>Catkin package that provides lidar motion undistor</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/rio'>rio</a></td><td>156</td><td>Graph-based, sparse radar-inertial odometry estima</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/sl_sensor'>sl_sensor</a></td><td>140</td><td>基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/sl_sensor'>sl_sensor</a></td><td>141</td><td>基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/depth_segmentation'>depth_segmentation</a></td><td>139</td><td>A collection of segmentation methods working on de</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/neuralblox'>neuralblox</a></td><td>132</td><td>Real-time Neural Representation Fusion for Robust </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/phaser'>phaser</a></td><td>132</td><td>A robust pointcloud registration pipeline based on</td></tr>

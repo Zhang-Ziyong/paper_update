@@ -2125,15 +2125,7 @@
 ◆ 创新点二：引入线性HDR表示方法，在相同域鸿沟下比8位表示获得更大的检测性能提升，揭示了位深对域迁移增益的关键影响。
 
 ◆ 创新点三：证明优化后的HDR合成数据仅需配合少量真实图像即可匹配或超越全真实数据基线的空间泛化效果，并在极低样本量下对豆荚检测收益最大。</td></tr>
-<tr><td>2026-07-30</td><td>CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography<br><a href='http://arxiv.org/pdf/2607.27779'>论文</a></td><td>该论文针对胸部X光影像检索中现有模型仅匹配影像与报告、难以满足短临床查询中复合逻辑约束的问题，提出结构化基准和方法。核心贡献是构建了CXR-Retrieve基准，包含5159张MIMIC-CXR-JPG测试图像和145条涵盖单一/复合发现及正负表述的文本查询，并以是否满足所有病理约束作为相关性标准。同时提出标签感知的对比微调目标，提升检索精度。
-
-◆ 提出CXR-Retrieve基准，专门评测组合式胸部X光文本到图像检索，覆盖并列、否定等复杂临床查询。
-
-◆ 重新定义相关性标注，依据图像是否满足全部断言病理约束，而非是否匹配原始报告，解决目标错配。
-
-◆ 设计标签感知对比学习目标，将具有兼容病理断言（包括共同确认的阴性）的图像与文本拉近，并明确推开矛盾组合。
-
-◆ 基于CXR-CLIP微调后，在两项病理并列查询上Precision@5提升8.5个百分点，在否定查询上提升22.0个百分点，证明建模临床断言方式的重要性。</td></tr>
+<tr><td>2026-07-30</td><td>CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography<br><a href='http://arxiv.org/pdf/2607.27779'>论文</a></td><td>本文针对胸部X光影像检索中短文本查询与现有模型目标不匹配的问题，提出CXR-Retrieve结构化基准，包含MIMIC-CXR-JPG官方测试集的5159张图像和145条文本查询，覆盖单一及联合发现、阳性与阴性表述，并以是否满足全部病理约束作为相关性标准。◆创新性地定义了组合式临床检索任务，强调查询中的连词和否定语义必须被完整满足，而非简单匹配报告措辞。◆揭示了现有视觉语言模型存在客观偏差，即只关联词面却无法处理“有肺不张且无肺炎”这类复合约束。◆提出了标签感知对比微调目标，通过吸引具有一致病理断言（含共同确认的阴性）的图像文本对，并显式排斥矛盾对，来建模临床断言方式。◆在CXR-CLIP基础上，该方法将双病理联合查询的Precision@5提升8.5个百分点，否定查询提升22.0个百分点，证明检索训练必须区分发现是否被临床断言。</td></tr>
 <tr><td>2026-07-29</td><td>VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion<br><a href='http://arxiv.org/pdf/2607.27194'>论文</a> | <a href='https://github.com/cvg/vidmap'>代码</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-07-29</td><td>Robust RPC Bundle Adjustment for Multi-Date Satellite Imagery with Season-Invariant Correspondences<br><a href='http://arxiv.org/pdf/2607.26973'>论文</a></td><td>针对多日期卫星影像中季节、照度等地表变化导致的跨时相匹配难题，传统基于手工特征的RPC光束法平差方法难以获得稳健的同名点。本文提出一种感知外观的RPC精修流水线，将学习驱动的局部特征匹配与全局图像描述子筛选相结合，以提升无GCP条件下多视图相对RPC精修的精度与效率。该流水线在匹配前对图像对进行兼容性筛选，再以学习特征完成对应构建，从而在异时相集合上兼顾了连接的完整性与匹配的可靠性。◆ 采用学习型局部特征匹配获取对季节变化稳健的同名点对应，解决异时相图像间传统手工特征匹配易失效的问题。◆ 引入全局图像描述子选择视觉兼容的图像对，剔除冗余和易错匹配，同时保持匹配图的整体连通性。◆ 在39至42视图的季节多样WorldView-3影像集上验证，方法在几何一致性误差和匹配耗时两方面均优于现有开源基线，使多日期卫星影像的RPC精修更加鲁棒高效。</td></tr>
 <tr><td>2026-07-26</td><td>Robust 6-DoF Object Pose Tracking with Built-In Recovery under Occlusions and Rapid Object Motions<br><a href='http://arxiv.org/pdf/2607.23468'>论文</a></td><td>本文针对RGB-D数据下6自由度物体位姿跟踪在遮挡和快速运动场景中易失败的问题，提出了一种具有内置恢复机制的鲁棒跟踪方法。
@@ -7952,7 +7944,7 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆创新点三：引入层次化的Average Full Score综合得分和任务对齐的RoboPhyscore紧凑得分，其中RoboPhyscore与人类评价高度一致（Pearson r=0.9761，Spearman ρ=0.8962），验证了其有效性。
 
 实验发现Cosmos 3表现最佳（RoboPhyscore 0.6330），但状态和执行层面的指标揭示了感知和VLM评判无法捕捉的深层失败，证明三维落地、执行感知的评估对EWM能力衡量至关重要。</td></tr>
-<tr><td>2026-08-28</td><td>STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation<br><a href='http://arxiv.org/pdf/2608.28279'>论文</a></td><td>本文提出STEGNav，一种无需训练的导航框架，将传统场景图扩展为时空事件图，以解决多模态终身导航中相似实例区分难、语义目标与探索前沿表示割裂、记忆利用不足的问题。其核心贡献在于沿空间和时间两个互补轴组织导航经验：空间轴通过查询条件实例接地精准定位目标，并统一表达带可达性与探索代价的前沿；时间轴利用轨迹感知双窗口记忆，保留近期决策事件与跨子任务验证结果。◆空间轴上构建查询条件实例接地机制，能区分相似语义实例并联合建模目标与探索候选点。◆时间轴上引入双窗口记忆，分别存储即时决策轨迹和已验证的跨任务导航经验，提升经验复用。◆基于视觉语言模型对事件图进行推理，无需训练即可在候选目标与探索前沿间动态决策。◆事件驱动的时空表示有效提升了导航可靠性与跨子任务迁移能力，在GOAT-Bench及HM3D数据集上取得领先结果。</td></tr>
+<tr><td>2026-08-28</td><td>STEGNav: Spatio-Temporal Event Graph Reasoning for Multimodal Lifelong Object Navigation<br><a href='http://arxiv.org/pdf/2608.28279'>论文</a></td><td>本文提出STEGNav，一种无需训练的多模态终身导航框架，其核心贡献是将传统场景图扩展为时空事件图，以解决区分相似实例、联合表示目标与探索前沿以及复用导航经验的问题。◆空间轴执行查询条件下的实例锚定，同时表示语义目标与具备可达性、路径代价和探索效用的占据感知前沿。◆时间轴通过轨迹感知双窗口记忆，保留近期决策轨迹事件和已验证的跨子任务结果，实现经验复用。◆基于视觉语言模型的导航代理对时空事件图进行推理，并选择目标实例或探索前沿作为下一步目标。在GOAT-Bench、HM3Dv1和HM3Dv2上，STEGNav分别取得66.3%成功率与39.7 SPL，以及64.0%和69.4%的成功率。消融和误差分析验证了两条轴的互补作用，表明事件驱动的时空表征能显著提升导航可靠性和跨子任务经验利用效率。</td></tr>
 <tr><td>2026-08-28</td><td>Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring<br><a href='http://arxiv.org/pdf/2608.28246'>论文</a></td><td>该论文提出了一种无需训练的吸盘抓取检测系统，专门用于分拣变形的一次性饮料纸盒（利乐包），将目标识别与抓取点选择解耦，实现了对几何形态不规则物体的鲁棒抓取。系统首先利用开放词汇视觉语言模型根据文本提示检测纸盒，再用SAM2将检测结果细化为实例分割掩膜，最后通过几何评分方法结合表面平整度与法向量对齐度来选取最优吸盘接触点。
 
 ◆ 无需训练的开集检测框架，融合视觉语言模型与SAM2实现零样本目标识别与实例分割
