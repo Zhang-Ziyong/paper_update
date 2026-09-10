@@ -1,30 +1,42 @@
-# 历史论文归档 (2026.09.09)
+# 历史论文归档 (2026.09.10)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (205篇)</a></li>
-<li><a href='#sfm'>SFM (99篇)</a></li>
-<li><a href='#image-matching'>Image Matching (42篇)</a></li>
+<li><a href='#slam'>SLAM (207篇)</a></li>
+<li><a href='#sfm'>SFM (100篇)</a></li>
+<li><a href='#image-matching'>Image Matching (43篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (65篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (66篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (96篇)</a></li>
-<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (26篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (98篇)</a></li>
+<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (27篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (16篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (205篇)</h2>
+<h2 id='slam'>SLAM (207篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>Odometer-Agnostic Drift Correction Using OpenStreetMap Lane Geometry<br><a href='http://arxiv.org/pdf/2609.10336'>论文</a></td><td>本文提出一种轻量、开源且与里程计无关的漂移校正方法，通过将短轨迹段直接对齐到OpenStreetMap车道中心线来抑制长期漂移。
+◆ 里程计无关：不绑定LiDAR或视觉等特定后端，可适配多种里程计。
+◆ 稀疏地图先验：仅依赖OSM车道几何，无需稠密地图或昂贵预处理。
+◆ 直接对齐建模：将漂移校正转化为近期里程计与车道中心线的直接对齐，而非复杂匹配管线。
+◆ 在线高效运行：支持在线校正，适合大规模或无回环环境。
+在LiDAR和视觉里程计实验中，该方法均稳定提升精度，且在严重漂移下增益尤其显著。</td></tr>
+<tr><td>2026-09-08</td><td>Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration<br><a href='http://arxiv.org/pdf/2609.09418'>论文</a></td><td>Valerant的核心贡献是提出一种无需训练的框架，将预训练动作条件世界模型转化为可通过探索构建3D游戏地图的WAM。
+◆ 无需训练，直接把预训练动作条件世界模型改造成用于3D游戏地图探索与构建的WAM。
+◆ 将预测性视觉推演与SLAM空间重建耦合，从动作条件视频中恢复持久3D几何与可导航空间。
+◆ 引入探索驱动动作选择，使智能体自主探索并逐步扩展游戏地图。
+◆ 实现从单张图像渐进生成持久、可移动和交互的3D游戏地图。
+◆ 把WAM交互从2D视觉模拟扩展到显式3D空间实例化，并为降低3D游戏地图人工制作成本提供新途径。</td></tr>
 <tr><td>2026-09-08</td><td>MFVINS: Multiple Fisheye Camera-Based Visual Inertial System<br><a href='http://arxiv.org/pdf/2609.08626'>论文</a></td><td>本文提出MFVINS，一种多鱼眼相机与IMU融合的视觉惯性系统，旨在解决单目视觉在遮挡、光照变化和无纹理环境下误差累积的问题。  
 ◆提出IMU辅助的FAST特征跟踪器，实现多相机间高效提取与鲁棒匹配局部特征。  
 ◆在归一化图像平面上利用物理几何约束滤除鱼眼畸变导致的外点，提升位姿估计稳定性。  
@@ -1383,12 +1395,18 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (99篇)</h2>
+<h2 id='sfm'>SFM (100篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-08</td><td>Learning Global Camera Poses from Noisy View-Graphs for Structure from Motion<br><a href='http://arxiv.org/pdf/2609.09491'>论文</a></td><td>本文提出一种基于可学习视图图聚合的深度全局SfM框架，用于从含噪视图图中估计全局一致相机位姿。
+◆ 采用置换等变、边条件图神经网络，以噪声相对位姿为输入直接输出全局相机外参。
+◆ 训练无需真值监督，仅依赖相对位姿一致性目标，降低对标注数据的依赖。
+◆ 网络输出后接三维点三角化和鲁棒光束法平差，形成完整全局SfM流程。
+◆ 方法高效、可扩展至千张以上图像，并对视图图密度具有鲁棒性。
+在MegaDepth、1DSfM、Strecha和BlendedMVS上，其旋转和平移精度优于以轨迹为中心的深度方法，能配准更多图像，并与先进经典流程竞争且速度更快。</td></tr>
 <tr><td>2026-09-04</td><td>BLASt3R: Bundle Adjustment of Any Image Set with Multi-View Matching and Monocular Priors<br><a href='http://arxiv.org/pdf/2609.05210'>论文</a></td><td>该论文提出BLASt3R，一种正则化束调整框架，统一处理在线VSLAM与离线无序图像集重建，无需切换系统或调整超参数。核心在于利用快速多视图匹配器获取跨视图对应关系，并结合单目深度先验进行初始化和约束优化。  
 ◆提出统一的正则化BA框架，将传统几何优化与学习式先验结合，同时支持标定和未标定场景。  
 ◆设计快速的多视图匹配策略，显著降低稠密对应估计的计算成本，满足在线实时性要求。  
@@ -2029,12 +2047,17 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (42篇)</h2>
+<h2 id='image-matching'>Image Matching (43篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-08</td><td>RoMa-$Ω$: What Feed-Forward 3D Models Know About Image Matching<br><a href='http://arxiv.org/pdf/2609.09507'>论文</a></td><td>本文探究前馈3D重建模型对图像匹配的知识，并分析零样本patch特征匹配、3D点预测直接匹配和基于学习表示训练完整匹配器三种场景。
+◆系统评估VGGT等前馈3D模型在图像匹配中的零样本、线性探测和端到端训练表现。
+◆发现其零样本匹配较弱且深层更差，但学习表示对线性探测和完整匹配流程具有强迁移价值。
+◆证明无需训练，其原始3D点预测在中等视角变化和模态差异下也能取得有竞争力的匹配结果。
+◆提出RoMa-Ω，用VGGT-Ω替换RoMa v2的DINO骨干，在多个基准上超越现有匹配器，WxBS较RoMa v2提升8.1 mAA。</td></tr>
 <tr><td>2026-09-06</td><td>Back to the Feature: Zero-Shot 6DoF Pose Estimation via Dense Local Features<br><a href='http://arxiv.org/pdf/2609.06726'>论文</a></td><td>B2TFPose是一种无需训练的零样本6DoF位姿估计方法，仅利用单个冻结的DINOv3视觉Transformer提取密集局部特征，即可跨越合成到真实的领域差异，无需任何任务微调。该方法重新审视经典局部特征匹配范式，并借助大规模自监督基础模型实现对新物体的位姿估计。在BOP基准的七个核心数据集上，B2TFPose无需精修即达到40.7平均AR，加入精修后达到56.4，超越现有无训练方法，并优于部分有监督方法，且推理速度具有竞争力。其核心贡献包含以下三点：
 ◆ 提出测地线非极大值抑制策略，用于选取视角多样化的模板集，支撑由粗到精的对应匹配。
 ◆ 提出渲染引导的重新对应机制，在估计位姿处合成物体特定视图并重建密集2D-3D对应，无需额外参数即可锐化初始位姿。
@@ -7200,12 +7223,17 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (65篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (66篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>Automatic Reproducible Camera Intrinsic Calibration<br><a href='http://arxiv.org/pdf/2609.10082'>论文</a></td><td>本文提出全自动相机内参标定流程，可从采集数据中自动决定高质量图像与径向畸变阶数。核心贡献是无需人工筛选图像或指定畸变阶数，并通过迭代剔除与留出验证提升标定可靠性。
+◆ 采用迭代剔除机制，在当前候选图像集估计参数，并移除平均残差超过中位数若干倍的视图，且在每个候选畸变阶数下独立运行，使保留图像集与该阶数残差尺度一致。
+◆ 通过留出图像选择畸变阶数，固定内参与畸变、仅重估标定板位姿，确保新增畸变系数得到独立观测支持。
+◆ 集成上述步骤为交互式标定工具，支持全流程数据检查和参数估计。
+实验在自有相机数据与五个公开真实数据集上表明，图像筛选使留出重投影误差降低25%，阶数选择再降低5%，在四种配置中取得最低留出均值，且无需人工选图，并计划公开代码和数据。</td></tr>
 <tr><td>2026-09-07</td><td>P$^2$Calib: Utilizing Pattern Priors for LiDAR-Camera Extrinsic Calibration<br><a href='http://arxiv.org/pdf/2609.07516'>论文</a> | <a href='https://github.com/JokerJohn/P2Calib.git'>代码</a></td><td>本文提出P2Calib，一种利用标定板CAD模型提供的模式先验来提升激光雷达与相机外参标定精度的方法。针对传统四孔标定流程中激光雷达侧孔中心提取受稀疏角覆盖与混合像素影响的问题，该方法将已知孔半径作为拟合约束，有效防止中心估计在数据稀疏时发生退化。进一步地，P2Calib将四个孔的刚性矩形布局作为全局一致性约束，用于修正各孔之间的残余误差。上述两种先验被集成到一个包含完整标定流程的交互式工具中。在模拟与真实数据集上的实验表明，相比基线，联合配准残差分别降低90%和82%，留出重投影误差分别降低96%和77%。代码与数据已公开。
 ◆创新点一：将已知孔半径作为拟合约束，缓解稀疏角覆盖导致的孔中心估计退化。
 ◆创新点二：利用四孔刚性矩形布局作为全局一致约束，消除跨孔残余误差，提升整体标定精度。</td></tr>
@@ -7845,12 +7873,22 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (96篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (98篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>Show-Harness: Just a VLM Agent Can Play Robots<br><a href='http://arxiv.org/pdf/2609.10522'>论文</a></td><td>Show-Harness提出一种Embodied Harness，通过紧凑语义接口连接VLM意图与机器人动作，让VLM能“玩”机器人。其核心是让VLM在离散语义动作单元上推理，再由具身解释器确定性映射为本地动作，使VLM直接负责细粒度物理决策。
+◆ 统一语义动作接口，可直接解锁闭源前沿VLM做零样本机器人控制，也能用少量GPU小时微调小型开源VLM实现低成本部署。
+◆ 提出GUMI，将同一语义动作空间扩展到GUI演示收集，让人和智能体无需专用遥操作硬件即可跨具身“玩”机器人。
+◆ 大量实验表明，配备Show-Harness的VLM智能体在任务、具身和环境上泛化更稳，优于代表性agentic与VLA范式，说明无需额外模型容量或昂贵具身预训练即可释放基础VLM的具身能力。</td></tr>
+<tr><td>2026-09-09</td><td>GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes<br><a href='http://arxiv.org/pdf/2609.09808'>论文</a> | <a href='https://gta2-project.github.io/'>代码</a></td><td>GTA-2提出模块化多VLM框架，用可复用物体中心任务轴组件构建可执行、任务定制的机器人操作技能。
+◆ 它不端到端预测动作或组合固定任务级原语，而把技能表示为含任务相关关键点与轴、控制器组合和场景依赖参数的语义子任务。
+◆ 四个专用VLM代理分别完成任务分解、抽象任务轴技能构建、控制器参数分配和RGB-D视觉特征落地，形成抽象到落地的因子化流程。
+◆ 该因子化使系统无需任务特定演示、策略训练或微调即可零样本生成技能。
+◆ 中间决策显式保留，允许人类针对错误阶段做局部反馈修正，同时不破坏正确组件。
+在14个真实机器人操作任务中，GTA-2平均零样本成功率达73.9%，比最强基线高31.4个百分点，定向修正后升至90.7%。</td></tr>
 <tr><td>2026-09-08</td><td>CASD: Chunk-Aligned Semantic Distillation for Multi-StageRobot Manipulation<br><a href='http://arxiv.org/pdf/2609.08638'>论文</a></td><td>该论文提出CASD，解决多阶段机器人操作中动作块跨越多个阶段而标签仅描述当前阶段的问题。核心贡献是为整个动作块生成语义训练目标，而非仅依赖第一步标签。方法利用离线视觉语言模型将演示分割为带描述的阶段，并根据阶段在动作块内的占比加权生成语义目标，同时涵盖阶段转换信息。CASD生成器仅基于当前观测、机器人状态和任务指令预测该语义目标，推理时无需在线调用视觉语言模型或解码推理链。冻结生成器后训练条件策略，语义分支每次策略查询仅运行一次，显著降低计算开销。实验显示该方法在LIBERO、RoboTwin 2.0和MolmoSpaces等多个基准上超越已有参照，但性能因骨干集成方式而异。  
 ◆ 提出动作块与语义目标对齐的蒸馏框架，将阶段占比转化为连续监督信号。  
 ◆ 语义目标显式建模跨阶段转换，使策略感知块内任务进度。  
@@ -8534,12 +8572,18 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (26篇)</h2>
+<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (27篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>CLFTv2: Efficient Camera-LiDAR Fusion for Semantic Segmentation via Hierarchical Feature Pyramids<br><a href='http://arxiv.org/pdf/2609.09881'>论文</a></td><td>CLFTv2提出一种面向自动驾驶语义分割的高效相机-LiDAR分层融合框架，旨在提升弱势道路使用者召回并缓解类别不平衡。
+◆ 以Swin多尺度编码器替代全局ViT注意力，利用移位窗口注意力在多尺度上提取几何线索。
+◆ 采用轻量FPN式残差解码器，在2D透视域进行逐尺度残差融合，避免查询匹配解码器的高计算开销。
+◆ 通过模态隔离研究指出，ViT全局感受野仅在LiDAR返回密集时带来更强融合增益。
+在ZOD、Waymo等三个驾驶数据集上，CLFTv2-Large于ZOD达53.5% mIoU，行人IoU由35.5%升至44.9%，Waymo达61.7% mIoU；相比基于Swin的Mask2Former适配，所需GFLOPs约少29%，吞吐量高2.2倍且总体精度相当。
+这些结果表明，分层局部注意力融合是实时车载感知中替代全局注意力和查询式解码器的可扩展高效方案，代码已公开。</td></tr>
 <tr><td>2026-09-03</td><td>Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.03970'>论文</a></td><td>该论文提出一种面向机器人后处理作业的焊缝自动识别与三维映射视觉流程，核心贡献在于将语义分割与摄影测量技术结合，实现大型工件焊缝的近似定位，为后续高精度测量提供高效预处理阶段。其方法通过多视角图像采集、像素级焊缝分割、摄影测量三维重建以及焊缝标签向模型投影，完成从二维图像到三维空间的焊缝映射。◆提出将低成本的摄影测量作为高成本激光扫描的前置环节，显著减少扫描数据量与整体采集时间。◆采用语义分割网络直接从二维图像提取焊缝区域，避免了对完整三维点云做无关处理。◆实现了焊缝识别结果与三维重建模型的自动对齐，无需额外配准步骤。◆该流程针对大型工件设计，有效解决全表面高精度扫描效率低、数据冗余大的工程难题。</td></tr>
 <tr><td>2026-09-02</td><td>Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework<br><a href='http://arxiv.org/pdf/2609.02861'>论文</a></td><td>该论文针对深度学习驱动的自主机器人面临的可审计性挑战，提出了TRACE（透明推理可信执行架构）决策框架，旨在确保每一个自主行为都能通过文档化的因果链条回溯到传感器证据。框架将决策过程组织为四个可审计层级：语义感知、信念推理、动作合成与执行验证，形成端到端可追溯链路。
 
@@ -8874,4 +8918,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.09
+> 更新于: 2026.09.10
