@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.09.10)
+# 计算机视觉领域最新论文 (2026.09.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,6 +24,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-10</td><td>Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting<br><a href='http://arxiv.org/pdf/2609.11766'>论文</a></td><td>本文提出面向温室番茄机器人采收的低成本单目Visual-SLAM系统，将GLOMAP与Hierarchical Localization集成，实现隐藏番茄检测与三维作物建图，并在Agroconnect真实温室验证了几何精度。
+◆ 用单目相机替代LiDAR或立体相机，显著降低温室作物监测与建图的硬件成本。
+◆ 集成基于Structure-From-Motion的GLOMAP与Hierarchical Localization，生成番茄作物三维地图。
+◆ 采用粗到精分层定位：先全局检索生成位置假设，再在候选区域组合局部特征。
+◆ 能正确识别番茄簇，并重建被遮挡、传统视觉技术难以获取的番茄。
+◆ 通过人工真值测量果实尺寸、质心位置和朝向，验证低成本单目管线的几何精度。</td></tr>
 <tr><td>2026-09-09</td><td>Odometer-Agnostic Drift Correction Using OpenStreetMap Lane Geometry<br><a href='http://arxiv.org/pdf/2609.10336'>论文</a></td><td>本文提出一种轻量、开源且与里程计无关的漂移校正方法，通过将短轨迹段直接对齐到OpenStreetMap车道中心线来抑制长期漂移。
 ◆ 里程计无关：不绑定LiDAR或视觉等特定后端，可适配多种里程计。
 ◆ 稀疏地图先验：仅依赖OSM车道几何，无需稠密地图或昂贵预处理。
@@ -100,15 +106,6 @@
 ◆ 创新点一：将RANSAC应用于局部点云块，直接从地形几何中提取轻量振动先验，避免复杂建模。  
 ◆ 创新点二：利用IMU反馈作为实时标签，通过递推最小二乘在线修正几何预测，实现感知与实测的自适应融合。  
 ◆ 创新点三：仅依赖LiDAR和IMU两种常见传感器，计算开销低，适用于通信受限的自主导航场景。</td></tr>
-<tr><td>2026-09-02</td><td>AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels<br><a href='http://arxiv.org/pdf/2609.02798'>论文</a></td><td>AutoCompass提出了一种基于弱标签训练神经地图匹配器的新监督方法,旨在解决传统方法依赖高精度绝对位姿标签的局限性。该方法在自动驾驶和第一人称视角基准测试中均显著优于依赖精确绝对位姿标签训练的模型。
-
-◆ 证明了航向标签并非必要,模型仅从原始GPS标签即可自动学习预测准确的航向信息,降低了标注成本。
-
-◆ 通过在原始GPS位置周围定义容忍区域,有效提升了定位的位置精度,使模型能够适应标签中的噪声。
-
-◆ 利用SLAM或SfM获得的训练图像间相对位姿作为更准确的监督信号,显著改善了模型的训练质量。
-
-◆ 提出了一种统一的弱监督训练范式,减少了对昂贵精确标注数据的依赖,同时在多个基准上取得更优性能。</td></tr>
 </tbody>
 </table>
 </div>
@@ -121,6 +118,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-10</td><td>Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting<br><a href='http://arxiv.org/pdf/2609.11766'>论文</a></td><td>本文提出一种用于温室番茄机器人采摘的低成本单目Visual-SLAM系统，并在Agroconnect实验温室真实番茄串上验证。  
+◆ 用单目相机替代LiDAR和立体相机，显著降低温室作物监测与建图成本。  
+◆ 将Hierarchical Localization与基于Structure-From-Motion的GLOMAP结合，实现从图像采集到三维作物地图的完整流程。  
+◆ 采用粗到精的层次定位策略，先全局检索生成位置假设，再在候选区域融合局部特征。  
+◆ 能正确识别被遮挡、经典视觉难以触及的番茄簇，并重建其三维模型。  
+重建结果通过人工真值测量果实尺寸、质心位置和朝向，确认了几何精度，为后续生长分析与农业管理优化奠定基础。</td></tr>
 <tr><td>2026-09-08</td><td>Learning Global Camera Poses from Noisy View-Graphs for Structure from Motion<br><a href='http://arxiv.org/pdf/2609.09491'>论文</a></td><td>本文提出一种基于可学习视图图聚合的深度全局SfM框架，用于从含噪视图图中估计全局一致相机位姿。
 ◆ 采用置换等变、边条件图神经网络，以噪声相对位姿为输入直接输出全局相机外参。
 ◆ 训练无需真值监督，仅依赖相对位姿一致性目标，降低对标注数据的依赖。
@@ -214,17 +217,6 @@
 ◆ 证明传统特征检测管道的反演图像可用于场景中人物的检测与再识别,验证了隐私威胁的真实性。
 
 ◆ 在保持图像匹配性能与当前最优方法相当的同时,在人物作为干扰物的复杂场景(如摄影旅游和野外里程计)中表现更优,在Image Matching Challenge 2021摄影旅游测试集的9个场景中7个取得稀疏特征提取的领先成绩。</td></tr>
-<tr><td>2026-08-22</td><td>Robust Global Structure-from-Motion via View Graph Pruning<br><a href='http://arxiv.org/pdf/2608.22054'>论文</a></td><td>本文针对全局SfM对视觉模糊匹配产生的错误边敏感、易导致相机位姿估计失败和重建伪影的问题，提出了一种基于子图引导的视图图剪枝框架。
-
-其核心思路是利用可靠子图的内部一致性来识别并剔除不可靠的连接，从而提升全局SfM的鲁棒性。
-
-◆ 提出将视图图划分为局部一致的子图，并在各子图内独立执行全局SfM以获得可靠的相机位姿估计，作为后续剪枝的可靠参考。
-
-◆ 设计基于RANSAC的跨子图边剪枝策略，利用子图间位姿一致性度量移除不一致的边连接，有效去除错误匹配。
-
-◆ 构建由粗到精的两阶段全局SfM流程：先子图内估计，再在精化后的视图图上执行最终全局重建。
-
-◆ 在模糊、序列化及无序图像数据集上的大量实验表明，该方法显著提升了全局SfM在挑战性场景下的鲁棒性；结合神经渲染的评估进一步证明，改进的相机估计能带来更高质量的新视角合成结果。</td></tr>
 </tbody>
 </table>
 </div>
@@ -466,6 +458,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>Evaluation of Vision-Language Models Across Diverse Coastal Environments<br><a href='http://arxiv.org/pdf/2609.10855'>论文</a></td><td>本文针对视觉语言模型在海岸环境感知中缺乏系统评估的问题，构建了夏威夷欧胡岛三个区域、七次任务采集的密集标注海岸数据集，含1000余张图像、18个语义类别和7400余个实例。
+◆ 提出面向多样海岸环境的密集标注数据集，覆盖多区域多任务且具有细粒度语义标注。
+◆ 设计文本到掩码、掩码到掩码、掩码到文本三类互补实验，系统评测七个现代视觉语言模型。
+◆ 发现景观大类识别优于传统物体和海岸类别，海岸概念最具挑战，但环境背景并非共享类别性能差异的决定因素。
+◆ 揭示替代文本标签能显著改善部分海岸概念识别，表明性能瓶颈受分割与语言表征影响。
+研究进一步通过海岸与陆地数据集对比及掩码匹配实验，指出海岸类别低性能主要源于分割和语言表示，而非单纯环境上下文。</td></tr>
 <tr><td>2026-09-09</td><td>Show-Harness: Just a VLM Agent Can Play Robots<br><a href='http://arxiv.org/pdf/2609.10522'>论文</a></td><td>Show-Harness提出一种Embodied Harness，通过紧凑语义接口连接VLM意图与机器人动作，让VLM能“玩”机器人。其核心是让VLM在离散语义动作单元上推理，再由具身解释器确定性映射为本地动作，使VLM直接负责细粒度物理决策。
 ◆ 统一语义动作接口，可直接解锁闭源前沿VLM做零样本机器人控制，也能用少量GPU小时微调小型开源VLM实现低成本部署。
 ◆ 提出GUMI，将同一语义动作空间扩展到GUI演示收集，让人和智能体无需专用遥操作硬件即可跨具身“玩”机器人。
@@ -525,10 +523,6 @@
 ◆ 将任务分解为视觉可验证的连续阶段，使失败轨迹中可复用的抓取、提起或转移等操作能被明确识别和利用。  
 ◆ 仅改变奖励表示而保持底层视觉输入一致即能提升性能，说明反馈形式本身对稀疏奖励学习具有关键作用。  
 ◆ 在真实硬件上验证了同一记录可用于自主取块与滑落恢复，展示了该反馈对实际操作中瞬时错误的可扩展处理能力。</td></tr>
-<tr><td>2026-09-07</td><td>Contextual Observer Grounding: Evaluating Situated Spatial Reasoning in Vision-Language Models<br><a href='http://arxiv.org/pdf/2609.06880'>论文</a> | <a href='https://mimo-owl.github.io/POVBench/'>代码</a></td><td>本文提出情境观察者锚定这一新能力，用于评估视觉语言模型在具身任务中能否从语境线索推断说话者视角并理解该视角下的空间关系。为支撑该研究，作者构建了POVBench数据集，其中包含3D场景和自然语言查询，并系统区分了推测、明示和给定三种观察者锚定形式。实验发现，现有视觉语言模型在基于方向语言定位未明确目标时表现不佳，即使观察者锚定已明确给出；而显式分解观察者相对空间推理可显著提升定位性能。  
-◆提出“情境观察者锚定”概念，将视角推断与空间定位能力进行联合评估。  
-◆构建POVBench基准，通过多视角观测和三类锚定条件解耦空间推理难点。  
-◆揭示现有VLM的局限性，并证明显式分解空间推理能有效改善目标定位。</td></tr>
 </tbody>
 </table>
 </div>
@@ -795,16 +789,16 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5167</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4619</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5169</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4625</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2447</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1637</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1621</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1499</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1330</td><td>Point-LIO</td></tr>
-<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1295</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1056</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1031</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1294</td><td>This repository is used for automatic calibration </td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1059</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1033</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>938</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>809</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>783</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
@@ -812,8 +806,8 @@
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>738</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>728</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>674</td><td>Voxel-SLAM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>661</td><td>M-detector</td></tr>
-<tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>628</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>663</td><td>M-detector</td></tr>
+<tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>629</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>614</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>607</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>574</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
@@ -825,12 +819,12 @@
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>360</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>348</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>270</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>267</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>270</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>256</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>241</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>228</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>223</td><td>decentralized_loam</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>217</td><td>SUPER-Hardware</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>218</td><td>SUPER-Hardware</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>211</td><td>LAMM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>188</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>146</td><td>PULSAR</td></tr>
@@ -847,7 +841,7 @@
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
 <tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2871</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1668</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1669</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1367</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1096</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1057</td><td>A simple method for finding the extrinsic calibrat</td></tr>
@@ -856,7 +850,7 @@
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>665</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>657</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>603</td><td>Real-time detection of diverse dynamic objects in </td></tr>
+<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>604</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>576</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>572</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>570</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
@@ -906,4 +900,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.09.10
+> 更新于: 2026.09.11

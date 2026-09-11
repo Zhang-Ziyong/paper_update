@@ -1,30 +1,36 @@
-# 历史论文归档 (2026.09.10)
+# 历史论文归档 (2026.09.11)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (207篇)</a></li>
-<li><a href='#sfm'>SFM (100篇)</a></li>
+<li><a href='#slam'>SLAM (208篇)</a></li>
+<li><a href='#sfm'>SFM (101篇)</a></li>
 <li><a href='#image-matching'>Image Matching (43篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (66篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (98篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (99篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (27篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (16篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (207篇)</h2>
+<h2 id='slam'>SLAM (208篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-10</td><td>Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting<br><a href='http://arxiv.org/pdf/2609.11766'>论文</a></td><td>本文提出面向温室番茄机器人采收的低成本单目Visual-SLAM系统，将GLOMAP与Hierarchical Localization集成，实现隐藏番茄检测与三维作物建图，并在Agroconnect真实温室验证了几何精度。
+◆ 用单目相机替代LiDAR或立体相机，显著降低温室作物监测与建图的硬件成本。
+◆ 集成基于Structure-From-Motion的GLOMAP与Hierarchical Localization，生成番茄作物三维地图。
+◆ 采用粗到精分层定位：先全局检索生成位置假设，再在候选区域组合局部特征。
+◆ 能正确识别番茄簇，并重建被遮挡、传统视觉技术难以获取的番茄。
+◆ 通过人工真值测量果实尺寸、质心位置和朝向，验证低成本单目管线的几何精度。</td></tr>
 <tr><td>2026-09-09</td><td>Odometer-Agnostic Drift Correction Using OpenStreetMap Lane Geometry<br><a href='http://arxiv.org/pdf/2609.10336'>论文</a></td><td>本文提出一种轻量、开源且与里程计无关的漂移校正方法，通过将短轨迹段直接对齐到OpenStreetMap车道中心线来抑制长期漂移。
 ◆ 里程计无关：不绑定LiDAR或视觉等特定后端，可适配多种里程计。
 ◆ 稀疏地图先验：仅依赖OSM车道几何，无需稠密地图或昂贵预处理。
@@ -1395,12 +1401,18 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (100篇)</h2>
+<h2 id='sfm'>SFM (101篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-10</td><td>Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting<br><a href='http://arxiv.org/pdf/2609.11766'>论文</a></td><td>本文提出一种用于温室番茄机器人采摘的低成本单目Visual-SLAM系统，并在Agroconnect实验温室真实番茄串上验证。  
+◆ 用单目相机替代LiDAR和立体相机，显著降低温室作物监测与建图成本。  
+◆ 将Hierarchical Localization与基于Structure-From-Motion的GLOMAP结合，实现从图像采集到三维作物地图的完整流程。  
+◆ 采用粗到精的层次定位策略，先全局检索生成位置假设，再在候选区域融合局部特征。  
+◆ 能正确识别被遮挡、经典视觉难以触及的番茄簇，并重建其三维模型。  
+重建结果通过人工真值测量果实尺寸、质心位置和朝向，确认了几何精度，为后续生长分析与农业管理优化奠定基础。</td></tr>
 <tr><td>2026-09-08</td><td>Learning Global Camera Poses from Noisy View-Graphs for Structure from Motion<br><a href='http://arxiv.org/pdf/2609.09491'>论文</a></td><td>本文提出一种基于可学习视图图聚合的深度全局SfM框架，用于从含噪视图图中估计全局一致相机位姿。
 ◆ 采用置换等变、边条件图神经网络，以噪声相对位姿为输入直接输出全局相机外参。
 ◆ 训练无需真值监督，仅依赖相对位姿一致性目标，降低对标注数据的依赖。
@@ -2150,15 +2162,12 @@
 ◆ 优化的重复线段去除机制，提升输出结果质量
 
 相比基于Line Hough变换的90nm ASIC方案，本设计功耗降低49%，帧率提升超过1.6倍，非常适合自动驾驶、视觉SLAM等边缘计算应用。</td></tr>
-<tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>该论文针对全球尺度遥感影像密集匹配中存在的几何偏移大、重叠区域不完整等难题,将密集匹配重新建模为&quot;定位-配准&quot;两阶段任务,先定位可匹配区域与仿射几何,再在对齐框架内精化密集残差。
-
-◆ 提出任务范式创新:将密集匹配重构为&quot;定位-配准&quot;流程,通过可匹配性感知仿射定位与引导式密集配准的耦合,有效解决大几何偏移与不可匹配区域导致的预测不可靠问题。
-
-◆ 构建基础模型 LoRetta,融合可匹配性感知仿射定位与引导式密集配准,在 LEVIR-GM 基准上以 83.3% AUC 超越最强基线 RoMa v2 1.6 个百分点,1 像素与 2 像素 PCK 分别提升 6.5 与 8.2 点,同时推理延迟降低 47.8%。
-
-◆ 发布 LEVIR-GM 全球基准,涵盖六大洲、五年时序、0.5-1024 米分辨率的 103K 对齐与 827K 增强光学影像对,并首次提供数据集原生可匹配性标注。
-
-◆ 建立稀疏、半密集与密集匹配器的统一评估协议,并通过航天员-卫星、无人机-卫星地理定位实验验证 LoRetta 作为可复用几何对齐器的跨域迁移能力。</td></tr>
+<tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>论文针对全球尺度遥感稠密匹配中时相、视角、分辨率与地物变化导致的大几何偏移、部分重叠和不可匹配区域，将任务重新定义为“先定位可匹配重叠与仿射几何，再在对齐框架内细化稠密残差”的定位—配准范式。
+◆ 提出LoRetta基础模型，将可匹配性感知的仿射定位与引导式稠密配准耦合，提升大偏移和部分重叠场景下的可靠性与效率。
+◆ 构建LEVIR-GM全球尺度多时相光学匹配基准，含数据集原生可匹配性标签，覆盖六大洲五年、0.5至1024米分辨率，含10.3万对齐和82.7万增强图像对。
+◆ 建立统一评估协议，同时支持稀疏、半稠密和稠密匹配器的公平比较。
+◆ 在LEVIR-GM上取得83.3% AUC，较最强基线RoMa v2提升1.6点，1和2像素PCK分别提升6.5和8.2点，推理延迟降低47.8%。
+◆ 通过宇航员到卫星、无人机到卫星的地理定位实验，证明其可作为可复用的几何对齐器迁移应用。</td></tr>
 <tr><td>2026-08-04</td><td>Double Down on Defense: Strengthening Deep Perceptual Hashes against Evasion Attacks without Retraining<br><a href='http://arxiv.org/pdf/2608.03101'>论文</a></td><td>本文针对深度感知哈希在对抗扰动下易被规避匹配的问题，提出了DualShield防御框架。核心思路是在不重训练、不修改原有模型的前提下，通过匹配流程和参考图预处理两个环节增强鲁棒性。
 
 ◆ 匹配时引入随机平滑机制，对扰动后的参考-查询图像对聚合决策，理论上可获得约0.3的ℓ2认证鲁棒半径，保证该范围内的查询扰动无法规避匹配。
@@ -7873,12 +7882,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (98篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (99篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-09</td><td>Evaluation of Vision-Language Models Across Diverse Coastal Environments<br><a href='http://arxiv.org/pdf/2609.10855'>论文</a></td><td>本文针对视觉语言模型在海岸环境感知中缺乏系统评估的问题，构建了夏威夷欧胡岛三个区域、七次任务采集的密集标注海岸数据集，含1000余张图像、18个语义类别和7400余个实例。
+◆ 提出面向多样海岸环境的密集标注数据集，覆盖多区域多任务且具有细粒度语义标注。
+◆ 设计文本到掩码、掩码到掩码、掩码到文本三类互补实验，系统评测七个现代视觉语言模型。
+◆ 发现景观大类识别优于传统物体和海岸类别，海岸概念最具挑战，但环境背景并非共享类别性能差异的决定因素。
+◆ 揭示替代文本标签能显著改善部分海岸概念识别，表明性能瓶颈受分割与语言表征影响。
+研究进一步通过海岸与陆地数据集对比及掩码匹配实验，指出海岸类别低性能主要源于分割和语言表示，而非单纯环境上下文。</td></tr>
 <tr><td>2026-09-09</td><td>Show-Harness: Just a VLM Agent Can Play Robots<br><a href='http://arxiv.org/pdf/2609.10522'>论文</a></td><td>Show-Harness提出一种Embodied Harness，通过紧凑语义接口连接VLM意图与机器人动作，让VLM能“玩”机器人。其核心是让VLM在离散语义动作单元上推理，再由具身解释器确定性映射为本地动作，使VLM直接负责细粒度物理决策。
 ◆ 统一语义动作接口，可直接解锁闭源前沿VLM做零样本机器人控制，也能用少量GPU小时微调小型开源VLM实现低成本部署。
 ◆ 提出GUMI，将同一语义动作空间扩展到GUI演示收集，让人和智能体无需专用遥操作硬件即可跨具身“玩”机器人。
@@ -8918,4 +8933,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.10
+> 更新于: 2026.09.11
