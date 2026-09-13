@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4625,
+      "stars": 4627,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1295,
+      "stars": 1296,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1061,
+      "stars": 1063,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -107,7 +107,7 @@
     "ImMesh": {
       "name": "ImMesh",
       "url": "https://github.com/hku-mars/ImMesh",
-      "stars": 747,
+      "stars": 746,
       "description": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
       "created_at": "2023-01-10",
       "chinese_desc": "ImMesh: An Immediate LiDAR Localization and Meshin"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 452,
+      "stars": 453,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 271,
+      "stars": 273,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 454,
+      "stars": 455,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
