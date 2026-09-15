@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.09.14)
+# 历史论文归档 (2026.09.15)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -13,7 +13,7 @@
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (66篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (99篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (111篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (27篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (16篇)</a></li>
 </ol>
@@ -7882,12 +7882,80 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (99篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (111篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-14</td><td>MessyMem: Learning-from-Doing Memory for Mobile Manipulation<br><a href='http://arxiv.org/pdf/2609.15976'>论文</a></td><td>论文提出MessyMem，一个面向移动机械臂的持久记忆系统，使机器人能从交互经验中学习并跨未来任务重用知识。  
+◆维护空间接地的3D场景图，持续记录物体与位置信息。  
+◆将交互中学到的物体属性和操作结果增强到场景图中。  
+◆链接视觉观察，支持从历史关键帧中进行细粒度回忆与证据检索。  
+在仿真和真实移动机械臂上评估，连续25任务、超3小时的模拟中达到80.0%任务进度。  
+它比最强消融高14.8个百分点、比最强外部基线高28.9个百分点，并能从数千关键帧及一小时以上历史中检索任务相关证据。</td></tr>
+<tr><td>2026-09-14</td><td>WLA$^3$: World Latent Action Modeling for Semantics, Dynamics, and Kinematics<br><a href='http://arxiv.org/pdf/2609.15870'>论文</a> | <a href='https://wla-3.github.io/'>代码</a></td><td>论文提出WLA^3框架，以世界状态转移中的潜在动作作为跨异构数据的统一低噪监督，缓解通用策略模型动作标签稀缺且不统一的问题。WLAM从局部多模态世界状态变化中学习紧凑潜在动作和转移特征，并用部分模态重建与重叠窗口一致性增强鲁棒性。
+◆ 统一世界潜在动作表示：把同步相机视角与可用具身状态变化编码为紧凑局部潜在动作及更丰富转移特征。
+◆ 跨语义、动态和运动学复用：局部潜在动作支持物理动态建模，段级特征经SLA监督VLM，动作专家联合预测潜在动作与机器人控制。
+◆ 人类视频与机器人轨迹协同：人类视频提供可扩展转移监督，机器人轨迹把共享表示落地为可执行原生控制并支持人到机器人迁移。
+实验显示，LARYBench上32维潜在动作平均分类准确率达67.89%；六项真实机器人任务平均成功率81.9%，优于π0.5的66.2%，且随中期数据规模提升而改善。</td></tr>
+<tr><td>2026-09-14</td><td>Planning in the Backbone: DiffAdapterVLA for Native Continuous Trajectory Generation with Driving VLMs<br><a href='http://arxiv.org/pdf/2609.15322'>论文</a></td><td>本文提出DiffAdapterVLA，将驾驶规划直接嵌入VLM骨干，实现Planning in the Backbone。  
+◆将显式轨迹token注入VLM后层，使轨迹状态在骨干前向计算中与不同深度驾驶条件共同演化。  
+◆用轻量逐层DiffAdapter把该计算组织为递归轨迹精炼，实现连续轨迹生成。  
+◆设计非对称联合注意力，保持条件流对轨迹规划的有向指导。  
+◆仅适配轻量轨迹模块，无需独立规划器，把已有驾驶先验转成高效连续规划能力。  
+NAVSIM实验表明，该方法以少量可训练参数实现高质量闭环规划和低端到端延迟，验证了后层联合演化的有效性。</td></tr>
+<tr><td>2026-09-14</td><td>GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving<br><a href='http://arxiv.org/pdf/2609.15169'>论文</a></td><td>本文提出GRAVA，围绕Grounded Reasoning-to-Action，将grounding、reasoning与动作生成统一在单一自回归流中。
+◆ 将动作相关语言指代链接到2D视觉区域和自车物理状态，并以轨迹锚定类型图组织对象交互与决策，再序列化为grounded reasoning。
+◆ 让单一VLM先输出grounded reasoning，再生成紧凑Executable Planner动作，并确定性解码为连续轨迹，紧密连接推理与可执行行为。
+◆ 提出agentic GRA数据构建流程，融合前向场景grounding与后向轨迹anchoring，构建含220万grounded QA和7万GRA推理轨迹的GR-NavSim。
+◆ 设计渐进训练策略，先预训练建立grounded cognition，再通过模仿建立推理到动作接口，最后用强化学习与探索提升驾驶行为。
+GRAVA-8B仅用约60%人类驾驶示范做动作监督，就在NAVSIM纯自回归驾驶模型中达SOTA，并在内部长尾上使关键物体合规率和闭环驾驶分数较仅动作预测分别提升19.3%和20.5%，表明保留动作相关物理证据贯穿grounded reasoning到可执行动作具有显著收益。</td></tr>
+<tr><td>2026-09-14</td><td>C$^2$Nav: Compare Before You Commit for Zero-Shot Vision-and-Language Navigation<br><a href='http://arxiv.org/pdf/2609.15142'>论文</a></td><td>C2Nav提出一种让VLM只比较控制器构造备选、而把几何量、阈值、动作幅度与执行留给物理侧的互补型模型-机器人接口，并实现为免训练框架。
+◆ 看：对经过物理校验的候选视角做序数Gaze Election，把选择转化为相对比较而非直接输出路点或朝向。
+◆ 记：维护紧凑路线草图，并比较相邻指令段假设，以支持长程导航中的指令分解与状态追踪。
+◆ 到：结合犹豫阶梯、回看比较和可撤销回退，将停止判断变为可复核、可撤回的决策。
+在OpenNav R2R-CE 100上，C2Nav搭配Qwen3-VL-8B-Instruct达到41.0% OSR、31.0% SR、16.7% SPL，搭配GPT-5.5达到54.0% OSR、44.0% SR、29.0% SPL。
+消融和角色反转显示，去掉三大模块或把比较式回答换成基数/绝对式回答都会显著降低SR，说明受约束决策接口与更强VLM推理互补而非可互换。</td></tr>
+<tr><td>2026-09-14</td><td>PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models<br><a href='http://arxiv.org/pdf/2609.14973'>论文</a></td><td>PhysBrain 1.5提出统一物理基础模型，将物理环境理解、动作生成与未来状态预测整合进同一学习框架，并围绕观察、交互、环境变化的物理闭环建模。
+◆ 以通用视觉语言模型为起点，把语言响应、末端运动与密集视觉目标编码成离散序列，通过自回归下一token预测联合优化。
+◆ 预训练仅用人类交互视频提供具身监督，以任务为中心的情节关联语义空间上下文、恢复运动和后续观察。
+◆ 通过混合人类演示、机器人轨迹和模拟经验的监督微调，模型获得跨源适应能力。
+在28个具身理解基准上，8B模型均分72.5，创开源新SOTA，与GPT-6-Astra、Gemini 3.6 Flash等领先闭源模型相当，并在14项基准上取得开源最佳，同时保留通用多模态能力。
+定性结果表明，它能生成末端执行器轨迹，并通过空间对齐的RGB、深度和机器人掩码输出预测未来场景。</td></tr>
+<tr><td>2026-09-13</td><td>NavPatch: Evidence-Guided Object-Level Costmap Correction with Vision-Language Models<br><a href='http://arxiv.org/pdf/2609.14543'>论文</a></td><td>本文提出NavPatch，一种面向移动机器人代价地图的对象级修正层，用于弥合几何障碍表示与导航语义需求之间的差距。
+它利用视觉语言模型进行周期场景理解，对导航相关物体赋予ADD、REMOVE或EXTEND修正，并用开放词汇定位、LiDAR/RGB-D三维支撑和跨帧维护保证证据可靠。
+◆ 将代价地图修正从像素/几何层面提升到对象语义层面，显式处理低矮电缆漏检、柔性窗帘误阻塞和交通锥需扩展禁行区等问题。
+◆ 融合开放词汇grounding与多模态三维观测，并设计观测质量过滤和跨帧提交、替换、撤销机制，降低瞬时误判。
+◆ 在50次真实机器人试验中取得86.0%总成功率；200次消融显示成功率由70.0%升至86.0%，误提交率由68.4%降至40.7%。
+上述结果验证了证据引导的对象级修正能提升导航鲁棒性，并优于仅依赖当前观测的更新策略。</td></tr>
+<tr><td>2026-09-12</td><td>GeomVLA: Unifying Scene, Motion, and Action in 3D<br><a href='http://arxiv.org/pdf/2609.13812'>论文</a></td><td>GeomVLA提出一个在机器人中心3D坐标系内统一感知、潜在场景运动预测与动作生成的VLA模型。  
+◆ 用深度和相机标定将预训练VLM特征提升为空间落地的3D场景token，同时保留VLM语义。  
+◆ 引入任务条件化的3D Scene Trajectory Denoiser，学习场景点在3D中预期运动的潜在表示。  
+◆ 不将预测轨迹作为开环计划执行，而是抽取中间运动token，经几何感知注意力条件化3D流动作去噪器。  
+◆ 在CALVIN达SOTA，LIBERO和RoboTwin2.0有竞争力，真实操作中无需机器人动作预训练也优于强基线。  
+消融表明仅未来运动推理不足，主要增益来自场景表示、运动预测与动作在感知到动作全流程中的几何一致性。</td></tr>
+<tr><td>2026-09-11</td><td>From Vision to Harvest: Benchmarking Vision-Language Models for Multi-Arm Robotic Fruit Harvesting<br><a href='http://arxiv.org/pdf/2609.13606'>论文</a></td><td>本文提出首个评估预训练视觉语言模型零样本多臂水果采摘规划的综合基准，采用真实苹果和柑橘园图像，并与传统感知加规划流程对比。
+◆ 首次构建面向多臂水果采摘的VLM零样本规划基准，填补系统评测空白。
+◆ 设计VLM直接生成采摘序列和各机械臂路径点、轻量轨迹验证器检查碰撞的规划流程。
+◆ 使用真实苹果与柑橘园图像，覆盖多样环境并增强基准现实性。
+◆ 系统比较VLM流程与传统感知加规划流程，揭示前沿VLM的零样本规划能力。
+◆ 实验表明前沿VLM可生成有效多臂计划，但三维路径点精度与碰撞感知协调仍是实际部署瓶颈。</td></tr>
+<tr><td>2026-09-10</td><td>GroundBench: A Factorized, Counterfactual Benchmark for Locating VLM Affordance Failures<br><a href='http://arxiv.org/pdf/2609.13308'>论文</a></td><td>论文提出 GroundBench，用于诊断视觉语言模型操作可供性失败，核心是把“命名目标部件”带来的增益分解为视觉定位、机械推理与类别到动作关联。
+◆ 构建六分支合并条件，逐步加入受控信息包，系统隔离不同信息源对动作预测的影响。
+◆ 设计反事实重问，要求模型针对同一图像中可见的另一真实部件作答，以检测文本捷径。
+◆ 在1068条预测中发现：只给区域不给身份时准确率不超0.53多数基线，只给身份不给位置则提升至0.74、0.68、0.68，且增益多由部件类别直接决定动作，表明类别到动作关联主导。
+◆ 无视觉控制下GPT-5分数不变或提升，但GPT-4o mini下降，且关节类型与运动轴信息无增益，揭示该解释并非普遍。
+◆ 在32个物体的74对反事实样本上，GPT-5达到0.86成对合规、0.07捷径率，但推转抬升垂直案例全失败，证明基准能定位真实可供性失败。</td></tr>
+<tr><td>2026-09-10</td><td>AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation<br><a href='http://arxiv.org/pdf/2609.12285'>论文</a></td><td>AnchorVLN面向无地图、开放词汇的未见室内视觉语言导航，要求智能体遵循自然语言、定位物体并回答空间问题。现有多模态VLM虽具开放词汇接地与零样本推理，却难以直接从图像稳定输出距离、方位和比较关系等度量量。该工作提出AnchorVLN，核心规则是VLM提出语义、几何决定度量。
+◆ 以EMBODIED-NAV-MCP形式实现，作为由VLM智能体通过紧凑可调用工具驱动的MCP服务器。
+◆ 工具模式不接受米制距离或弧度方位，从而在不修改下游自主栈的前提下强制语义-几何边界。
+◆ 在CMU VLN Challenge 2026上验证：完整系统指令跟随达64.4%，缺控制器建模降13.3个百分点；物体指代中几何锚定使10/45题超过重叠阈值，直接坐标估计为0/45，中位中心误差从3.37米降至2.48米。</td></tr>
+<tr><td>2026-09-10</td><td>Efficient Vision-Language-Action Management and Serving for Robot Factories<br><a href='http://arxiv.org/pdf/2609.12075'>论文</a></td><td>针对机器人工厂VLA推理延迟敏感、需边缘多GPU服务器满足SLO，而现有系统难以支持多机器人多模型请求及毫秒级多阶段服务的问题，本文提出Robion，这是首个面向多机器人、多模型、多GPU边缘服务器的VLA服务与管理系统。
+◆ 服务引擎在单GPU内用两条流解耦VLM与ADiT阶段，动态限制VLM流SM数量，确保ADiT总能并行获得计算资源。
+◆ 通过跨模型共享流实现多模型共置，并按剩余SLO时间最少优先调度请求，降低逾期风险。
+◆ 管理引擎支持灵活模型放置，并集成智能流量控制器，在给定放置下最大化每模型批处理，同时约束各GPU负载以达成SLO。
+实验显示，Robion单模型服务在98% SLO达成下，平均机器人负载较vLLM-Omni和Monolithic分别提升6.7倍和1.5倍；在4-GPU服务器上服务8个模型时最多支持64个机器人。</td></tr>
 <tr><td>2026-09-09</td><td>Evaluation of Vision-Language Models Across Diverse Coastal Environments<br><a href='http://arxiv.org/pdf/2609.10855'>论文</a></td><td>本文针对视觉语言模型在海岸环境感知中缺乏系统评估的问题，构建了夏威夷欧胡岛三个区域、七次任务采集的密集标注海岸数据集，含1000余张图像、18个语义类别和7400余个实例。
 ◆ 提出面向多样海岸环境的密集标注数据集，覆盖多区域多任务且具有细粒度语义标注。
 ◆ 设计文本到掩码、掩码到掩码、掩码到文本三类互补实验，系统评测七个现代视觉语言模型。
@@ -8933,4 +9001,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.14
+> 更新于: 2026.09.15
