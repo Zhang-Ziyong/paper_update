@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5174,
+      "stars": 5181,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4635,
+      "stars": 4638,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2449,
+      "stars": 2450,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1637,
+      "stars": 1638,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1501,
+      "stars": 1503,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1331,
+      "stars": 1333,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1034,
+      "stars": 1036,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1066,
+      "stars": 1068,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 663,
+      "stars": 665,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 675,
+      "stars": 676,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -147,7 +147,7 @@
     "mlcc": {
       "name": "mlcc",
       "url": "https://github.com/hku-mars/mlcc",
-      "stars": 629,
+      "stars": 630,
       "description": "Fast and Accurate Extrinsic Calibration for Multiple LiDARs and Cameras",
       "created_at": "2021-09-14",
       "chinese_desc": "Fast and Accurate Extrinsic Calibration for Multip"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 615,
+      "stars": 616,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 576,
+      "stars": 578,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 531,
+      "stars": 532,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -235,7 +235,7 @@
     "M2Mapping": {
       "name": "M2Mapping",
       "url": "https://github.com/hku-mars/M2Mapping",
-      "stars": 270,
+      "stars": 271,
       "description": "[ICRA 2025] Neural Surface Reconstruction and Rendering for LiDAR-Visual Systems",
       "created_at": "2024-09-09",
       "chinese_desc": "[ICRA 2025] Neural Surface Reconstruction and Rend"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 274,
+      "stars": 276,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -291,7 +291,7 @@
     "SUPER-Hardware": {
       "name": "SUPER-Hardware",
       "url": "https://github.com/hku-mars/SUPER-Hardware",
-      "stars": 219,
+      "stars": 221,
       "description": "",
       "created_at": "2025-03-09",
       "chinese_desc": "SUPER-Hardware"
@@ -373,7 +373,7 @@
     "hfnet": {
       "name": "hfnet",
       "url": "https://github.com/ethz-asl/hfnet",
-      "stars": 880,
+      "stars": 881,
       "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
       "created_at": "2019-02-15",
       "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
@@ -381,7 +381,7 @@
     "mav_active_3d_planning": {
       "name": "mav_active_3d_planning",
       "url": "https://github.com/ethz-asl/mav_active_3d_planning",
-      "stars": 706,
+      "stars": 708,
       "description": "Modular framework for online informative path planning.",
       "created_at": "2018-10-25",
       "chinese_desc": "Modular framework for online informative path plan"
