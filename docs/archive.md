@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.09.18)
+# 历史论文归档 (2026.09.19)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -46,7 +46,12 @@
 ◆ 提出子图可微捆绑调整，联合精化相机位姿、三维高斯地图以及共享内参与径向切向畸变。
 ◆ 设计Gaussian-native alignment，实现序列子图间相机锚定尺度细化并验证回环候选以增强全局一致性。
 在标准室内基准上，未标定设置下定位精度和渲染质量均获一致提升，形成有力基线。</td></tr>
-<tr><td>2026-09-17</td><td>OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots<br><a href='http://arxiv.org/pdf/2609.19582'>论文</a></td><td>◆ 中文摘要生成失败，请检查 API 配置后重新运行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-17</td><td>OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots<br><a href='http://arxiv.org/pdf/2609.19582'>论文</a></td><td>OmniCalib提出一种无标定物、任务结构化的人形机器人自校准流程，仅用机器人自身运动和板载传感，统一校准上肢14个臂关节零点及腕部、胸部相机外参，并扩展至下肢与多相机头部。
+◆ 任务结构化建模：每个模块把机器人原生任务匹配到参数块，检查可观测性，并只将受支持的校正写回CAD模型。
+◆ 无靶深度ICP：无需任何标定靶即可恢复14个臂关节零点和全部RGB-D外参，点面残差2.09 mm，左/右腕与胸相机外参修正约6.33–10.56 mm、0.929–1.74度。
+◆ 下肢零位恢复：四个静态双支撑姿态恢复12个下肢关节零位，注入偏移RMS误差0.063度。
+◆ 头部多相机标定：融合多相机视觉里程计、腿式里程计和动态补偿，仅平面行走取得平均SO(3)误差1.061度，最佳0.775度，接近iKalibr的0.902度。
+◆ 可验证性：相同注入偏移下ICP与ArUco均以优于0.1度编码器分辨率恢复14个关节零点，注入恢复和留出测试验证各可观测块。</td></tr>
 <tr><td>2026-09-17</td><td>SLAMSqueezeBench: Comparing SLAM Systems under Resource Constraints<br><a href='http://arxiv.org/pdf/2609.19533'>论文</a></td><td>本文提出SLAMSqueezeBench，一个在边缘硬件上测试SLAM系统现实资源约束的框架。现有SLAM系统多在孤立环境下构建和测试，现有基准也缺乏统一机制来比较资源受限下的SLAM性能。
 ◆ 它能在执行期间对SLAM系统施加计算和内存资源限制，模拟真实边缘部署条件。
 ◆ 它通过有限缓冲区满时丢帧来模拟真实相机帧采集过程。
@@ -1608,15 +1613,11 @@
 ◆ 发布了配套项目网站，为未来手术多视角感知研究提供了开放资源。</td></tr>
 <tr><td>2026-09-02</td><td>Inside-out growth and the kiloparsec-scale star formation main sequence for low-surface-brightness disk galaxies in MaNGA<br><a href='http://arxiv.org/pdf/2609.02378'>论文</a></td><td>本文利用MaNGA巡天数据,选取38个低表面亮度星系(LSBGs)和216个高表面亮度星系(HSBGs),系统研究了两类星系在千秒差距尺度上的恒星形成主序关系及径向结构特征。◆研究发现LSBGs的恒星形成率密度(Σ_SFR)径向梯度极平(斜率约-0.1至-0.2),表明恒星形成在整个盘上均匀分布,而其比恒星形成率密度(Σ_sSFR)呈正梯度,首次清晰地揭示了LSBGs存在明显的&quot;由内向外&quot;生长模式。◆LSBGs和HSBGs遵循相同的全局和分辨恒星形成主序,中心表面亮度μ₀对主序关系无显著影响,说明表面亮度不是决定星系恒星形成活动的本质因素。◆全局主序与分辨主序的斜率一致,表明恒星形成主序在千秒差距尺度上依然成立,恒星形成活动受局部物理过程调控。◆在方法论上,论文指出仅使用恒星形成区域测量主序斜率更为合理,不同电离源的选取会显著影响结果。该工作为理解LSBG的形成与演化提供了重要的观测约束。</td></tr>
 <tr><td>2026-09-01</td><td>TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views<br><a href='http://arxiv.org/pdf/2609.01899'>论文</a></td><td>本文提出了TAPVid-MV，这是首个针对多视角同步视频中长期3D点跟踪任务的基准，填补了现有基准仅支持单视频或静态多相机系统的空白。该基准包含284个序列、1142路校准相机流以及109769条点轨迹，覆盖室内外、机器人、驾驶、人体动作和合成场景等七个子集。数据构建利用各数据集特有的辅助模态生成轨迹，并通过人工逐条视觉验证，保证了标注质量。实验显示超过30种基线方法均无法接近解决该任务，且现有多视角点跟踪器并未稳定优于单目跟踪器，揭示了领域挑战的难度。通过在同一数据集上联合评估重建与点跟踪，该基准能够区分几何恢复误差与点对应误差，并识别出几何恢复是准确3D点跟踪的主要瓶颈。◆首个支持相机运动下多视角长期3D点跟踪的基准。◆联合分析重建与跟踪以定位误差来源。◆释放的标注可复用于2D/3D跟踪、未来预测和4D重建任务。</td></tr>
-<tr><td>2026-09-01</td><td>Linking neutral gas inflows and outflows to offsets in the star-forming main sequence and mass-metallicity relation<br><a href='http://arxiv.org/pdf/2609.01707'>论文</a></td><td>本文利用DESI DR2中约6000个具有Na I D吸收的恒星形成星系，首次在大样本上建立了观测到的中性气体流入流出与恒星形成主序(SFMS)及质量–金属丰度关系(MZR)偏离之间的统计联系。
-
-◆将样本按气体流速分为缓慢流入、快速流入和流出三类宿主星系，并与恒星质量和红移匹配的对照样本进行比较，发现不同流动类型在SFMS和MZR上呈现系统而不同的偏离模式。
-
-◆流出宿主(≤-50 km/s)使sSFR升高0.25–0.40 dex，并在低红移样本中金属丰度升高0.04–0.06 dex；缓慢流入宿主(0–100 km/s)同样使sSFR升高0.20–0.30 dex，但金属丰度无显著偏离；快速流入宿主(≥100 km/s)恒星形成增强较弱且金属丰度略低。
-
-◆结合D_n4000的微小系统性偏移，结果表明缓慢流入支撑了增强的恒星形成而未稀释中心金属丰度，说明流入气体可能已预富集或在延长时间尺度上完成混合；而流出则位于SFMS上端1σ包络附近，符合反馈调节后续增长的图景。
-
-◆整体上，这些观测支持了中性气体流作为重子循环不同阶段的示踪器，并对SFMS和MZR的散射贡献了系统性偏离，从而为重子循环&quot;调节器&quot;模型提供了直接的群体层面观测证据。</td></tr>
+<tr><td>2026-09-01</td><td>Linking neutral gas inflows and outflows to offsets in the star-forming main sequence and mass-metallicity relation<br><a href='http://arxiv.org/pdf/2609.01707'>论文</a></td><td>本文用DESI DR2约6000个星形成星系的下视Na I D吸收，比较有中性气体流入或流出的星系与质量、红移匹配对照在SFMS和MZR上的位置。结果表明流出宿主sSFR增强0.25-0.40 dex且中心金属丰度略高，慢流入宿主sSFR增强0.20-0.30 dex但金属丰度无明显偏移，快流入宿主SFR增强较弱且金属丰度略低。
+◆ 首次在大样本中直接关联可测中性气体流与SFMS、MZR的群体级偏移。
+◆ 揭示不同流速流入对应重子循环不同阶段，慢流入维持增强恒星形成而少稀释金属。
+◆ 支持流出反馈使星系位于SFMS上包络并调节后续增长。
+◆ 用匹配对照和Dn4000系统偏移表明气体流贡献标度关系散布。</td></tr>
 <tr><td>2026-08-29</td><td>Ground-to-Satellite Localization in Unconstrained Image Collections for 3D Scene Reconstruction<br><a href='http://arxiv.org/pdf/2608.29211'>论文</a></td><td>该论文针对无约束图像集合中实现度量精确、地理定位的3D场景重建难题，提出了一种基于跨视角（地面到卫星）定位的鲁棒层次化框架。
 
 ◆ 提出层次化跨视角定位框架，通过粗到精的位姿假设生成策略，实现地面图像到卫星图像的可靠定位，突破了对全景图像和已知初始位置等严格条件的限制。
@@ -2305,19 +2306,18 @@
 ◆在下游任务复现中，单应性估计结果与原文高度一致，但Aachen视觉定位即使使用官方权重也低于论文报告，提示评估流程对未明确说明的细节较为敏感。
 
 ◆首次将XFeat拓展至零样本跨域和跨模态匹配场景，涵盖视网膜成像、热红外-可见光以及多模态遥感影像，发现其在一般跨域条件下仍具一定有效性，但在严重模态差异下性能急剧退化。</td></tr>
-<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出一种基于步长算法的低延迟ASIC架构，采用全流水线设计，每个时钟周期处理一个像素且延迟确定，适合实时线段检测与边缘计算。
-◆ 采用基于寄存器的行缓存与数据复用，降低访存开销。
-◆ 采用无乘法器的MCM滤波，减少计算资源。
-◆ 引入8类角度量化，简化角度表示与匹配。
-◆ 设计类CAM的关联存储器，实现单周期匹配。
-◆ 优化重复线段删除机制，提升输出质量与效率。
-该设计在45nm CMOS下实现VGA 325 FPS、Full HD 48 FPS、25.54 mW功耗和0.412 mm²面积，相比90nm Line Hough Transform ASIC功耗降低49%、帧率提升1.6倍以上。</td></tr>
-<tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>论文针对全球尺度遥感稠密匹配因时相、季节、视角、分辨率和地物变化导致的大几何偏移、部分重叠与不可匹配区域问题，将任务重构为“定位—配准”两阶段范式。
-◆ 提出先定位可匹配重叠与仿射几何、再在已对齐框架内细化稠密残差的LoRetta基础模型，耦合匹配性感知定位与引导配准。
-◆ 构建LEVIR-GM全球多时相光学匹配基准，包含数据集原生可匹配标签、103K对齐与827K增强像对，覆盖六大洲五年和0.5至1024米分辨率。
-◆ 建立面向稀疏、半稠密和稠密匹配器的统一评测协议。
-在LEVIR-GM上，LoRetta取得83.3% AUC，较最强基线RoMa v2提升1.6个百分点，1/2像素PCK提升6.5和8.2，推理延迟降低47.8%。
-宇航员到卫星及UAV到卫星地理定位实验进一步证明其可作为可复用几何对齐器跨场景迁移。</td></tr>
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出一种基于步长算法的低延迟ASIC架构，用于资源受限平台上的实时线段检测，并采用全流水线实现每时钟一像素和确定性延迟，在45nm CMOS下VGA达325 FPS、Full HD达48 FPS，功耗25.54 mW、面积0.412 mm²，相比90nm Line Hough Transform ASIC功耗降低49%、帧率提高逾1.6倍。
+◆ 采用基于寄存器的行缓冲与数据复用，降低存储访问开销。
+◆ 采用无乘法器的MCM滤波，减少乘法器资源和能耗。
+◆ 采用8类角度量化，简化角度计算并提升硬件效率。
+◆ 设计类CAM关联存储器，实现单周期匹配。
+◆ 优化重复线段去除机制，在低延迟下保证检测质量。</td></tr>
+<tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>论文将全球尺度遥感密集匹配重构为“定位-配准”问题，即先定位可匹配重叠区与仿射几何，再在配准框架内细化密集残差。  
+◆ 提出LoRetta基础模型，将可匹配性感知的仿射定位与引导式密集配准耦合，以应对大几何偏移、部分重叠和不可匹配区域。  
+◆ 发布LEVIR-GM全球尺度多时相光学匹配基准，含10.3万对齐对、82.7万增强对，覆盖六大洲五年、0.5至1024米分辨率，并提供原生可匹配性标签。  
+◆ 建立兼容稀疏、半密集和密集匹配器的统一评估协议，支持公平比较不同范式。  
+◆ 通过宇航员到卫星、无人机到卫星实验，验证其可作为可复用几何对齐器迁移应用。  
+在LEVIR-GM上，LoRetta取得83.3% AUC，比最强基线RoMa v2高1.6点，1和2像素PCK分别提升6.5和8.2点，推理延迟降低47.8%。</td></tr>
 <tr><td>2026-08-04</td><td>Double Down on Defense: Strengthening Deep Perceptual Hashes against Evasion Attacks without Retraining<br><a href='http://arxiv.org/pdf/2608.03101'>论文</a></td><td>本文针对深度感知哈希在对抗扰动下易被规避匹配的问题，提出了DualShield防御框架。核心思路是在不重训练、不修改原有模型的前提下，通过匹配流程和参考图预处理两个环节增强鲁棒性。
 
 ◆ 匹配时引入随机平滑机制，对扰动后的参考-查询图像对聚合决策，理论上可获得约0.3的ℓ2认证鲁棒半径，保证该范围内的查询扰动无法规避匹配。
@@ -9368,4 +9368,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.18
+> 更新于: 2026.09.19
