@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5196,
+      "stars": 5201,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4659,
+      "stars": 4662,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1640,
+      "stars": 1643,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1508,
+      "stars": 1510,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1334,
+      "stars": 1335,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -67,7 +67,7 @@
     "BALM": {
       "name": "BALM",
       "url": "https://github.com/hku-mars/BALM",
-      "stars": 942,
+      "stars": 943,
       "description": "An efficient and consistent bundle adjustment for lidar mapping",
       "created_at": "2020-10-15",
       "chinese_desc": "An efficient and consistent bundle adjustment for "
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1041,
+      "stars": 1042,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1082,
+      "stars": 1083,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 665,
+      "stars": 666,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -147,7 +147,7 @@
     "mlcc": {
       "name": "mlcc",
       "url": "https://github.com/hku-mars/mlcc",
-      "stars": 630,
+      "stars": 632,
       "description": "Fast and Accurate Extrinsic Calibration for Multiple LiDARs and Cameras",
       "created_at": "2021-09-14",
       "chinese_desc": "Fast and Accurate Extrinsic Calibration for Multip"
@@ -155,7 +155,7 @@
     "HBA": {
       "name": "HBA",
       "url": "https://github.com/hku-mars/HBA",
-      "stars": 607,
+      "stars": 609,
       "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
       "created_at": "2023-05-01",
       "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
@@ -163,7 +163,7 @@
     "ROG-Map": {
       "name": "ROG-Map",
       "url": "https://github.com/hku-mars/ROG-Map",
-      "stars": 618,
+      "stars": 619,
       "description": "",
       "created_at": "2023-02-24",
       "chinese_desc": "ROG-Map"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 579,
+      "stars": 580,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -243,7 +243,7 @@
     "IPC": {
       "name": "IPC",
       "url": "https://github.com/hku-mars/IPC",
-      "stars": 257,
+      "stars": 258,
       "description": "Integrated Planning and Control for Quadrotor Navigation in Presence of Sudden Crossing Objects and Disturbances",
       "created_at": "2023-04-06",
       "chinese_desc": "Integrated Planning and Control for Quadrotor Navi"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 189,
+      "stars": 191,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1059,
+      "stars": 1060,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
@@ -373,7 +373,7 @@
     "hfnet": {
       "name": "hfnet",
       "url": "https://github.com/ethz-asl/hfnet",
-      "stars": 881,
+      "stars": 882,
       "description": "From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)",
       "created_at": "2019-02-15",
       "chinese_desc": "From Coarse to Fine: Robust Hierarchical Localizat"
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 663,
+      "stars": 664,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -405,7 +405,7 @@
     "aerial_mapper": {
       "name": "aerial_mapper",
       "url": "https://github.com/ethz-asl/aerial_mapper",
-      "stars": 623,
+      "stars": 624,
       "description": "Real-time Dense Point Cloud, Digital Surface Map (DSM) and (Ortho-)Mosaic Generation for UAVs",
       "created_at": "2017-06-19",
       "chinese_desc": "Real-time Dense Point Cloud, Digital Surface Map ("
@@ -677,7 +677,7 @@
     "data-driven-dynamics": {
       "name": "data-driven-dynamics",
       "url": "https://github.com/ethz-asl/data-driven-dynamics",
-      "stars": 132,
+      "stars": 134,
       "description": "Data Driven Dynamics Modeling for Aerial Vehicles",
       "created_at": "2021-02-25",
       "chinese_desc": "Data Driven Dynamics Modeling for Aerial Vehicles"
