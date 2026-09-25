@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5213,
+      "stars": 5216,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4682,
+      "stars": 4683,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2457,
+      "stars": 2458,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1337,
+      "stars": 1338,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 684,
+      "stars": 686,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 582,
+      "stars": 584,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 277,
+      "stars": 278,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -315,7 +315,7 @@
     "iBTC": {
       "name": "iBTC",
       "url": "https://github.com/hku-mars/iBTC",
-      "stars": 148,
+      "stars": 149,
       "description": "",
       "created_at": "2024-05-26",
       "chinese_desc": "iBTC"
@@ -445,7 +445,7 @@
     "voxgraph": {
       "name": "voxgraph",
       "url": "https://github.com/ethz-asl/voxgraph",
-      "stars": 554,
+      "stars": 555,
       "description": "Voxblox-based Pose graph optimization",
       "created_at": "2019-05-23",
       "chinese_desc": "Voxblox-based Pose graph optimization"
@@ -493,7 +493,7 @@
     "panoptic_mapping": {
       "name": "panoptic_mapping",
       "url": "https://github.com/ethz-asl/panoptic_mapping",
-      "stars": 334,
+      "stars": 335,
       "description": "A flexible submap-based framework towards spatio-temporally consistent volumetric mapping and scene understanding.",
       "created_at": "2020-05-19",
       "chinese_desc": "A flexible submap-based framework towards spatio-t"
@@ -517,7 +517,7 @@
     "versavis": {
       "name": "versavis",
       "url": "https://github.com/ethz-asl/versavis",
-      "stars": 285,
+      "stars": 286,
       "description": "An Open Versatile Multi-Camera Visual-Inertial Sensor Suite",
       "created_at": "2019-12-08",
       "chinese_desc": "An Open Versatile Multi-Camera Visual-Inertial Sen"
@@ -589,7 +589,7 @@
     "terrain-navigation": {
       "name": "terrain-navigation",
       "url": "https://github.com/ethz-asl/terrain-navigation",
-      "stars": 185,
+      "stars": 186,
       "description": "Implementation for safe low altitude navigation in steep terrain for fixed-wing Aerial Vehicles",
       "created_at": "2023-08-11",
       "chinese_desc": "Implementation for safe low altitude navigation in"
