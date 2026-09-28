@@ -1,36 +1,53 @@
-# 历史论文归档 (2026.09.27)
+# 历史论文归档 (2026.09.28)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (249篇)</a></li>
-<li><a href='#sfm'>SFM (110篇)</a></li>
+<li><a href='#slam'>SLAM (253篇)</a></li>
+<li><a href='#sfm'>SFM (111篇)</a></li>
 <li><a href='#image-matching'>Image Matching (46篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (76篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (186篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (197篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (38篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (20篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (249篇)</h2>
+<h2 id='slam'>SLAM (253篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-09-24</td><td>FMCW-LIO: A Doppler LiDAR-Inertial Odometry<br><a href='http://arxiv.org/pdf/2609.29374'>论文</a></td><td>传统LIO/SLAM主要依赖几何特征，而FMCW Doppler LiDAR能同时提供高分辨率点距离和瞬时点多普勒速度，为利用运动测量提供了新契机。  
+<tr><td>2026-09-25</td><td>CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation<br><a href='http://arxiv.org/pdf/2609.31418'>论文</a></td><td>CognitiveReality将机器人RGB-D流构建为实时、开放词汇语义索引的高斯-TSDF地图，并让VR遥操作员与工具调用型LLM代理共享同一场景表示。
+◆ 提出机器人无关映射框架，同一mapper二进制仅靠配置即可接入机器人SLAM、关节运动学、动捕或内联视觉追踪等位姿源。
+◆ 用影子追踪器和关键帧锚定PnP桥接定位中断，并以2Hz维护开放词汇实例身份及逐物体观测质量。
+◆ 将语音和控制器射线通过经验证的类型化工具与操作员确认动作，接地到持久场景对象上。
+◆ 在受控代理评测中，本地Qwen3-VL-8B路由器达到81.24%工具精确匹配，合并感知回放正确重定向101个被吸收对象ID。
+◆ 在机器人数据上超过高斯与SDF基线2至8dB，5至40秒SLAM中断内姿态误差保持1至8cm；两只四足机器人实机完成26/30导航和20/20重观测请求，物体质量提升2至5dB。</td></tr>
+<tr><td>2026-09-25</td><td>Augmented Reality Interfaces for Human-Robot Collaboration: Development of a ROS 2-Based Sensor Streaming Framework and Validation via SLAM Algorithms<br><a href='http://arxiv.org/pdf/2609.31396'>论文</a></td><td>本文面向工业4.0下HRC对双向、直观、高效通信的需求，开发并验证了连接Magic Leap 2 AR头显与ROS 2生态的传感器流传输框架，核心贡献是打通AR设备与机器人系统的实时数据通道。
+◆ 构建Magic Leap 2与ROS 2之间的实时传感器流传输架构，实现AR头显多源数据向机器人生态的接入。
+◆ 基于Unity和ROSTCP-Connector开发头显端应用，将姿态跟踪、相机和环境传感器数据发布到ROS 2专用话题。
+◆ 采用SLAM算法对生成数据流的精度、延迟和鲁棒性进行验证，证明该框架具备稳定传输能力。
+◆ 为HRC中的安全实时交互、共享空间感知以及复杂场景下机器人控制与监督提供新基础与视角。</td></tr>
+<tr><td>2026-09-25</td><td>DAPEVO: Deep Adaptive Patch Frame-Event Visual Odometry<br><a href='http://arxiv.org/pdf/2609.30947'>论文</a></td><td>DAPEVO 提出一种深度自适应 patch 的帧-事件视觉里程计，在共享 patch 位置分别估计图像...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-09-25</td><td>FMCW-LIO: A Doppler LiDAR-Inertial Odometry<br><a href='http://arxiv.org/pdf/2609.29374'>论文</a></td><td>传统LIO/SLAM主要依赖几何特征，而FMCW Doppler LiDAR能同时提供高分辨率点距离和瞬时点多普勒速度，为利用运动测量提供了新契机。  
 本文提出FMCW-LIO，一种利用FMCW Doppler LiDAR内禀多普勒测量的鲁棒LIO。  
 ◆ 设计运动补偿方法，以正确利用多普勒速度并避免运动影响。  
 ◆ 引入多普勒辅助观测模型，在流形上进行状态估计。  
 ◆ 利用多普勒准则有效剔除动态点，从而获得更一致的几何观测。  
 在结构退化等多样场景中实现准确状态估计与静态建图，实验表明其精度和鲁棒性优于其他算法。</td></tr>
+<tr><td>2026-09-24</td><td>VkVIO: Cross-platform GPU Acceleration for Visual-Inertial Odometry with Vulkan<br><a href='http://arxiv.org/pdf/2609.30459'>论文</a></td><td>VkVIO 提出了首个基于 Vulkan 的跨平台 GPU 加速视觉惯性里程计系统，面向机器人、XR 等资源受限平台降低延迟与功耗。  
+◆ 采用厂商无关的 Vulkan API 替代 CUDA，使 GPU 加速 VIO 可部署在嵌入式、移动端、XR 头显等多类硬件，而不再绑定单一 GPU 厂商。  
+◆ 在保持实时所需的因果估计前提下实现 state-of-the-art 精度，兼顾实时性与准确性。  
+◆ 在工作站、笔记本和极低成本单板机等多样设备上部署，并在相同硬件上优于基于 CUDA 的系统。  
+该系统证明跨平台 GPU 加速可在低成本、低功耗设备上实现低延迟 VIO，为机器人和 XR 感知提供更广泛部署可能。</td></tr>
 <tr><td>2026-09-23</td><td>PTC-Bias: Phoneme-Level Temporal Competition for Bias Retrieval and Post-Decoding Correction in Speech LLMs<br><a href='http://arxiv.org/pdf/2609.28727'>论文</a></td><td>本文提出PTC-Bias，一个基于音素级时间竞争的两阶段SpeechLLM上下文偏置框架，用于高效利用大偏置词表并提升罕见词识别。
 ◆ 预填充阶段执行帧同步音素解码，并让候选发音进行时间竞争，生成紧凑偏置词短名单和对应语音区间。
 ◆ 解码后仅在检索区间内，对候选与不匹配转写片段做局部二次竞争，选择性校正同音近音和分词错误，同时保留正确转写。
@@ -1627,12 +1644,18 @@
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (110篇)</h2>
+<h2 id='sfm'>SFM (111篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-25</td><td>Reliability-Regulated Trajectory Optimization for Progressive COLMAP-Free 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2609.30865'>论文</a> | <a href='https://github.com/Zijian1026/RRTO-CF3DGS'>代码</a></td><td>本文针对无COLMAP渐进式3DGS中相机位姿跟踪易误差累积、早期偏差会污染后续初始化并永久固化的问题，提出可靠性调节的轨迹优化框架。
+◆ 构建自监督双向循环一致性机制，统一调节渐进相机轨迹估计，无需外部神经先验或离线预处理。
+◆ 在前向运动传播中，利用在线可靠性信号自适应门控刚性运动一阶运动学热启动，为后续成对配准提供方向先验并拦截不可信转换。
+◆ 在回溯轨迹校正中，用同一可靠性信号动态加权滑动窗口内相邻位姿的相对一致性约束，回溯整合并抑制渐进漂移。
+该框架通过统一可靠性调节器同时管理前瞻初始化和回溯校正，实现自包含的鲁棒轨迹优化。
+在Tanks and Temples和CO3D-V2上，方法显著提升相机轨迹精度与新视图渲染质量，优于现有无位姿基线。</td></tr>
 <tr><td>2026-09-23</td><td>AstraLOD3: Zero-shot multimodal agentic reconstruction of LOD3 building models<br><a href='http://arxiv.org/pdf/2609.28061'>论文</a></td><td>本文提出AstraLOD3，探索通用多模态基础模型Astra在有限自主智能体框架下零样本重建LOD3建筑模型。
 ◆ 将LOD3重建从固定专用流程重构为受约束的智能体过程，由Astra动态选择并执行Python与Blender程序。
 ◆ 融合多视图图像、标定相机、过滤稀疏SfM点云和自然语言重建规范，实现多模态证据驱动的零样本重建。
@@ -2425,24 +2448,22 @@
 ◆ 结果表明学习到的视觉表征不是该任务瓶颈，给定检索图像后形状适配的经典相似度已足够。
 ◆ 发现抽象落地能力在VLM间差异大，从15%到39%，说明弱点模型特定而非对比预训练固有，并在KiloGram上对CLIP泛化且逐形状难度与人类可命名性相关。
 最后提出以显式可检查的听者侧约定状态表示，将方法拓展至交互式多轮指称，作为未来工作。</td></tr>
-<tr><td>2026-08-11</td><td>Multi-Level Evidence Aggregation for Robust Facial Phenotype Retrieval in Rare Genetic Disorder Prioritization<br><a href='http://arxiv.org/pdf/2608.11037'>论文</a></td><td>本文提出一种推理时多级证据聚合框架，用于提升罕见遗传病优先排序中的面部表型检索，且无需修改或重训练GestaltMatcher-Arc编码器。
-◆ 在嵌入层对同一患者的多张图像进行患者级聚合，充分利用个体多图证据。
-◆ 构建患者加权的疾病质心，将多个确诊画廊患者整合为疾病级证据。
-◆ 采用混合个体-质心评分，同时融合测试患者观察、疾病级画廊证据与局部最近邻证据。
-在GMDB v1.1.4统一画廊上，该方法在已见疾病、罕见未见疾病及多图患者子集中均提升平均每疾病top-N检索准确率，top-1在GMDB-Freq从38.52%升至48.82%，GMDB-Rare从19.38%升至23.79%，多图子集提升更明显。
-这些结果表明，无需重训练编码器的推理时聚合能有效改善面部表型检索，推动从孤立单图匹配转向多级患者与疾病证据聚合。</td></tr>
-<tr><td>2026-08-10</td><td>XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher<br><a href='http://arxiv.org/pdf/2608.09519'>论文</a></td><td>◆ 本文对轻量图像匹配器XFeat开展可复现性研究，重新实现其架构并重评估作者发布的检查点与自身复现版本。
-◆ 研究指出论文、补充材料和公开代码在骨干布局、融合模块与训练损失等实现细节上存在差异，因此区分重评估与复现十分必要。
-◆ 在MegaDepth-1500和ScanNet-1500上，复现模型与原始检查点性能接近，部分场景更优，支持XFeat具有强精度效率权衡的主要结论。
-◆ 架构消融显示，并行关键点分支对半稠密匹配确有价值，但其收益弱于原论文宣称；单跳跃连接具体位置的必要性仍证据不足。
-◆ 下游实验中，单应性估计与原结果接近，但Aachen视觉定位即使使用原检查点也低于报告值，说明结果对未充分说明的评估细节敏感。
-◆ 进一步扩展到视网膜、热可见光和多模态遥感等零样本分布外与跨模态匹配，发现XFeat在部分场景有效，但在严重模态偏移下性能急剧下降。</td></tr>
-<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出一种基于步长算法的低延迟ASIC架构，采用全流水线设计，每周期处理一个像素并具有确定性延迟，在45nm工艺下实现VGA 325 FPS、全高清48 FPS，功耗25.54 mW，面积0.412 mm²，相比90nm线霍夫变换方案功耗降低49%、帧率提升1.6倍以上。
-◆ 采用寄存器式行缓冲与数据复用，降低片上存储访问开销。
-◆ 采用基于MCM的无乘法器滤波结构，减少乘法资源与功耗。
-◆ 引入8类角度量化，降低角度表示与匹配复杂度。
-◆ 设计类CAM关联存储器，实现单周期线段匹配。
-◆ 优化重复线段去除机制，提高输出结果质量与硬件效率。</td></tr>
+<tr><td>2026-08-11</td><td>Multi-Level Evidence Aggregation for Robust Facial Phenotype Retrieval in Rare Genetic Disorder Prioritization<br><a href='http://arxiv.org/pdf/2608.11037'>论文</a></td><td>现有面部表型检索多将测试图与库中个体逐点比较，未充分利用患者多图和疾病多患者证据。我们提出推理时多级证据聚合框架，不修改底层 GestaltMatcher-Arc 编码器即可提升检索。
+◆ 将同一患者多张图像的嵌入进行患者级聚合，降低单图噪声影响。
+◆ 构建患者加权疾病质心，并采用个体-质心混合评分，融合疾病级与局部最近邻证据。
+在 GMDB v1.1.4 的 GMDB-Freq、GMDB-Rare 及多图子集上，Top-1 分别从38.52%升至48.82%、19.38%升至23.79%、46.12%升至60.94%、18.54%升至26.71%。
+结果表明，推理时聚合无需重训练编码器即可提升罕见病优先排序，推动从孤立单图匹配转向多级患者与疾病证据聚合。</td></tr>
+<tr><td>2026-08-10</td><td>XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher<br><a href='http://arxiv.org/pdf/2608.09519'>论文</a></td><td>本文对轻量级图像匹配器XFeat进行复现与再评估，依据论文、补充材料和公开代码重新实现架构，并比较原检查点。复现模型在MegaDepth-1500和ScanNet-1500上与原检查点接近甚至更优，支持其精度效率优势。  
+◆ 区分“再评估”与“复现”，揭示论文、补充和代码在主干、融合块和训练损失等实现细节上的差异。  
+◆ 通过架构消融重新检验原设计：并行关键点分支对半稠密匹配重要，但增益弱于原声称，单跳连接位置证据不充分。  
+◆ 复现下游任务发现单应估计结果接近，但Aachen视觉定位低于报告值，提示评估细节未充分规定导致敏感性。  
+◆ 将分析扩展到零样本OOD与跨模态匹配，发现XFeat在视网膜、热可见和遥感多模态中部分有效，但严重模态偏移下性能骤降。</td></tr>
+<tr><td>2026-08-06</td><td>A Low-Latency ASIC Architecture for Real-Time Line Segment Detection<br><a href='http://arxiv.org/pdf/2608.06439'>论文</a></td><td>本文提出一种基于步长算法的低延迟ASIC架构，用于嵌入式视觉中的实时线段检测，实现全流水线、每周期处理一像素且延迟确定。
+◆ 采用寄存器行缓存与数据复用，降低访存开销和功耗。
+◆ 采用无乘法器MCM滤波，减少乘法资源与硬件成本。
+◆ 采用8类角度量化并结合类CAM关联存储器，实现单周期匹配。
+◆ 优化重复线段去除机制，提升检测输出质量。
+45nm CMOS下VGA达325 FPS、Full HD达48 FPS，功耗25.54 mW、面积0.412 mm²，125MHz时VGA达406...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-08-04</td><td>LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching<br><a href='http://arxiv.org/pdf/2608.04106'>论文</a></td><td>◆ 将全球尺度遥感密集匹配重构为“定位-配准”：先定位可匹配重叠与仿射几何，再在对齐框架内细化密集残差。
 ◆ 提出LoRetta基础模型，耦合可匹配性感知的仿射定位与引导式密集配准。
 ◆ 构建LEVIR-GM全球多时相光学匹配基准，含103K对齐和827K增强图像对，覆盖六大洲、五年、0.5至1024米分辨率，并提供原生可匹配性标签。
@@ -8216,12 +8237,65 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (186篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (197篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-09-25</td><td>SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery<br><a href='http://arxiv.org/pdf/2609.31507'>论文</a> | <a href='https://eku127.github.io/SatNav/'>代码</a></td><td>论文提出 SatNav，一个基于高分辨率卫星影像构建的可扩展城市级无人机视觉语言导航长时程基准。
+◆ 利用卫星裁剪近似无人机下视观测，并通过自动化线索到回合流水线生成 118K 回合、59 场景、18 城市、平均轨迹 379 米的数据。
+◆ 设计 Boundary、Landmark、Route 三类任务，分别考察循环进度跟踪、地标空间定位与带计数线索的路线跟随，压力测试长时记忆与地理空间推理。
+◆ 提出模块化框架 SwiftVLN，支持可切换记忆组件，并系统开展记忆设计消融。
+◆ 通过卫星到无人机迁移实验，证明卫星训练模型可运行于真实飞行无人机观测，展示实用相关性。
+对经典 VLN 智能体和基于 LVLM 的最新智能体的评测表明，城市尺度导航仍具挑战，而 SatNav 为可扩展长时程 UAV VLN 研究提供了新平台。</td></tr>
+<tr><td>2026-09-25</td><td>Sorry Robot, Happy Human: Vision-Language Models Read Only One of Two Legible Typographic Layers<br><a href='http://arxiv.org/pdf/2609.31403'>论文</a></td><td>本文提出 DecoyBench 数据集，采用 Decoy Font 方法生成 300 张由锐利轮廓文本叠加柔和阴影文本构成的图像，并据此评估 VLM 对多层文字图像的识别能力。
+◆ 构建了专门考察多排版层、多空间频率文本阅读的 DecoyBench 数据集与评估范式。
+◆ 系统比较三个模型家族、六个近期闭源模型在两种提示条件和两种分辨率下的表现，并引入人类验证作为对照。
+◆ 发现高分辨率下模型能近人类水平读取轮廓文本，却几乎完全无法提取阴影文本。
+◆ 揭示低分辨率下出现反转：人类和模型均读不出轮廓文本，但模型能高准确提取阴影文本。
+研究表明，当前 VLM 在处理含多个空间频率层的排版结构时存在一致且结构性的行为限制。</td></tr>
+<tr><td>2026-09-25</td><td>InternW0-$Δ$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data<br><a href='http://arxiv.org/pdf/2609.31394'>论文</a> | <a href='https://internrobotics.github.io/InternW0-Delta/'>代码</a></td><td>InternW0-Δ是一个统一的世界动作模型，联合建模视觉动态与机器人动作生成。它将预训练视觉动态、场景语义、4D几何与运动先验整合进Mixture-of-Transformers框架。
+◆ 采用视频专家与动作专家在冻结VLM语义引导下交互的MoT架构，并通过训练期蒸馏注入4D基础模型的几何与运动先验。
+◆ 提出Causal Imprint，从训练期未来监督中学习未来相关场景变化，推理时无需未来视频推演即可向动作专家提供预测表示。
+◆ 构建超2万小时异构开放语料，涵盖机器人演示、UMI、自我中心人类演示和Ego2Robot，并统一为共同状态-动作表示。
+◆ 在大规模语料上预训练后，在仿真基准和真机平台均优于先前方法，并承诺开源代码、权重、基础设施、数据处理管线及许可允许的数据。</td></tr>
+<tr><td>2026-09-25</td><td>OpenVAM: Open-World Visual Attention Modeling with VLMs<br><a href='http://arxiv.org/pdf/2609.31364'>论文</a></td><td>OpenVAM针对开放式视觉注意力建模，提出统一框架，跨自然图像、商业内容和UI/web布局等异构域，兼顾通用性与可解释性。它不再只输出密集显著图，而是同时定位注意力峰值并生成“看什么、为何看”的图像接地解释。  
+◆ 采用解耦但对齐的设计，将密集视觉定位通路与指令跟随的VLM语义头结合，共享图像与数据类型提示。  
+◆ 提出三阶段训练策略，在保持强定位先验的同时逐步引入语言接地，并通过参数高效适配提升解释对齐而不扰动显著性分支。  
+◆ 构建可扩展的多域显著性与原因标注生成流程，用于训练和系统评估。  
+实验表明，OpenVAM在域偏移下更稳健，并能给出图像接地的解释，使显著预测更可解释且更面向行动。</td></tr>
+<tr><td>2026-09-25</td><td>Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation<br><a href='http://arxiv.org/pdf/2609.31337'>论文</a></td><td>论文提出RIVET框架，用共享的对象中心表示来生成并集成VLM编写的机器人操作程序。该表示结合每个物体的6D位姿和关系图，为动作落地提供度量信息，并为规划暴露任务级结构。
+◆ 以统一对象中心表示引导VLM生成感知、渲染、关系推断和规划等可执行程序，并让它们协同工作。
+◆ 程序一次生成后可在同一操作域内复用，无需针对新的初始与目标配置重新生成代码。
+◆ 在仿真和真实机器人上验证立方体堆叠、七巧板重排和三维装配，真实世界复用离线程序达到83%成功率。</td></tr>
+<tr><td>2026-09-25</td><td>Enabling a Unified Cross-Domain Representation for Two-Finger Gripper Manipulation via Interaction-Centric Modeling<br><a href='http://arxiv.org/pdf/2609.31207'>论文</a></td><td>针对模仿学习中跨本体泛化受任务语义与硬件视觉几何纠缠的问题，本文提出以交互为中心的框架，通过参数化通用两指夹爪抽象构建规范夹爪帧表示。
+◆ 用参数化通用夹爪抽象统一不同两指夹爪，构建规范夹爪帧表示，解耦任务语义与硬件几何。
+◆ 基于语言和RGB-D，用VLM推断子任务并定位夹爪、被持物、目标三类交互要素，并用SAM 2.1跟踪掩码以减少VLM查询。
+◆ 设计混合特征，结合目标与碰撞人工势场提供全局引导，结合分割的夹爪帧点云提供局部几何，并用流匹配Transformer预测平滑7-DoF动作块。
+实验表明，该方法是首个在仿真与真实任务中同时取得有竞争力基准分数，并实现跨本体、跨视角零样本sim-to-real迁移到完全不同异构机器人平台的模仿学习方法。</td></tr>
+<tr><td>2026-09-25</td><td>DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation<br><a href='http://arxiv.org/pdf/2609.31112'>论文</a> | <a href='https://lichengxi1.github.io/Dualmanip'>代码</a></td><td>DualManip针对VLM推理延迟高和动态场景变化，提出解耦低频语义推理与高频几何适配的双路径框架。其语义路径分解任务并接地交互，再用约束求解优化位姿；几何路径用形状自适应网络从实时RGB-D更新模板到观测对应，迁移抓取接触以支持运动和非刚性变形下的在线抓取重建。
+◆ 双路径解耦语义推理与几何适配，几何变化时无需频繁调用VLM。
+◆ 信息交互模块桥接两路径，用语义接地初始化抓取、验证几何更新并在失败时触发重规划。
+◆ 形状自适应对应迁移实现动态环境中的在线抓取重建，覆盖非刚体、关节和刚体变化。
+◆ 真实实验涵盖六类任务和静态、单次变化、连续动态三设置，连续变化下更鲁棒，几何适配比智能体验证与语义重规划快约46倍。</td></tr>
+<tr><td>2026-09-25</td><td>Fast Plans, Faithful Actions: Closing the Planning-Execution Gap in Hierarchical Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2609.30833'>论文</a></td><td>本文指出现有分层VLA规划器与执行器存在错位：Token-AR生成waypoint需57次昂贵VLM前向，且擦除waypoint端点几乎不影响成功，说明规划过细且执行器未充分利用计划。
+◆ 提出waypoint对齐的块自回归解码Block-AR，将LIBERO上最大VLM前向从57降至8（含一次前缀预填充），并在Rokae双臂机器人上实现8.7倍规划延迟降低。
+◆ 提出归一化目标调制NGM，构建逐层目标路径，并用相位门控和反捷径训练约束，使waypoint真正影响动作生成而不破坏其他控制信号。
+结合Block-AR与NGM及反捷径训练，LIBERO-Long成功率从91.0%升至96.2%，四套件平均从95.85%升至98.45%。
+在Rokae双臂机器人的三个双臂任务上，各方法成功率保持可比。</td></tr>
+<tr><td>2026-09-25</td><td>Evaluation Is All You Need for Multi-Modal Autonomous Driving<br><a href='http://arxiv.org/pdf/2609.30818'>论文</a></td><td>论文识别多模态自动驾驶规划中的生成-评估不对称：候选轨迹的oracle性能虽强，但现有规划器常无法可靠选出最佳候选，导致大量规划潜力未被释放。
+◆ 提出iDriveVLA多模态规划框架，在改进候选轨迹空间的同时，实现更可靠、上下文感知的轨迹评估。
+◆ 引入统一轨迹评估器，包含安全感知评分器进行质量与风险评估，以及VLM引导调制器进行场景自适应准则加权。
+◆ 开发oracle对齐的渐进训练策略，依次包含候选模仿预训练、候选空间细化和语义排序对齐。
+在NAVSIM v1公开榜单上，iDriveVLA达到94.95 PDMS的新SOTA，并超过人类专家参考。</td></tr>
+<tr><td>2026-09-24</td><td>FRESHLATENT: Channel-Aware Latent Adaptation for Resource-Constrained Embodied VLM Perception<br><a href='http://arxiv.org/pdf/2609.30629'>论文</a></td><td>FreshLatent面向资源受限无人机分体式VLM感知，解决无线传输中间特征损坏导致干净训练接口失配、而强信道编码器板载开销大的矛盾。
+◆ 提出轻量级信道感知潜在适配器，冻结周边VLM，仅训练功率归一化编码器-解码器以适配无线损伤。
+◆ 将部署形式化为任务条件感知需求与嵌入式接口成本，把信道质量和通信预算关联到感知可用工作条件。
+◆ 在0 dB且通信预算最紧时，gIoU和cIoU比干净分体压缩分别提升20.79和20.87点；在最差0 dB及三种预算下，恢复重型范围训练特征JSCC编解码器63.5-69.1%的gIoU提升。
+◆ 在Jetson AGX Xavier 10W模式下，编码器参数少37-40倍，边缘接口延迟低7.7-9.9倍，能耗低8.8-10.0倍。
+结果表明，轻量信道感知适配能以极低板载成本恢复大部分鲁棒性，并拓宽受限无线条件下质量有效的运行范围。</td></tr>
+<tr><td>2026-09-24</td><td>Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language<br><a href='http://arxiv.org/pdf/2609.30428'>论文</a> | <a href='https://zacravichandran.github.io/CLUE'>代码</a></td><td>本文提出CLUE框架，让机器人在陌生环境中面对自然语言未充分指定的任务时主动解决上下文不确定性。◆将任务成功标准、相关信息及其是否存在建模为需联合推断的闭环问题，而非依赖预先地图和明确目标。◆用大语言模型策略生成任务相关概念与候选计划，并借助在线构建的语言嵌入地图将其落地为具体动作。◆通过闭环环境交互顺序评估假设并持续修正计划，使机器人能在执行中获取新信息并调整行为。◆在Boston Dynamics Spot的室内外真实环境中验证，覆盖物体消歧、功能推断和遮挡推理等15项任务。CLUE成功率距oracle策略仅差7个百分点，比无闭环反馈的LLM规划器高4倍，并显著优于仅构建再查询语言地图的方案，后者成功率约为三分之一且VLM token开销超10倍。</td></tr>
 <tr><td>2026-09-24</td><td>World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal<br><a href='http://arxiv.org/pdf/2609.29964'>论文</a></td><td>World Action Agent提出一种多智能体框架，让VLM借助基础工具直接驾驶机器人，并始终在具备接触视图、动作预演和观察内纠错三属性的视觉动作工作区内决策。
 ◆ 接触视图根据场景几何自动选择，呈现当前交互周围的场景，使VLM在相关局部视图中行动。
 ◆ 动作预演把每个动作变成可编辑提案，使智能体可独自或经想象智能体根据规划反馈预览和修正。
@@ -9788,12 +9862,17 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆ 创新性地在DINOv2描述符空间中执行蒸馏操作，既引入深度线索又避免破坏原有预训练特征的泛化能力。
 ◆ 验证了深度模态作为外观信息互补手段在自然场景位置识别中的关键作用。
 ◆ 在WildCross基准上证明了所提方法在跨次遍历场景下具有更优的鲁棒性与识别精度。</td></tr>
-<tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>本文挑战VPR普遍依赖RGB的假设，系统考察颜色在不同训练方式、模型架构和外观变化基准中的作用。
-◆ 发现灰度输入通常匹配RGB性能，并在严重外观变化下优于RGB，而颜色只在存在持久且具判别力的色度线索时带来增益。
-◆ 证明全灰度训练的MixVPR平均Recall@1达82.4%，高于RGB版本的81.2%。
-◆ 展示参数少60%的轻量灰度模型有时能超过更重的RGB模型，并减少存储与带宽需求。
-◆ 指出灰度更契合资源受限系统，为全局VPR提供更实用的输入选择。
-◆ 结论是，在光照、天气、季节和场景变化下，全局VPR中颜色贡献有限，灰度已足以可靠地点识别。</td></tr>
+<tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>论文挑战了视觉位置识别中颜色输入必要的默认假设，系统研究色度信息在多种训练方式、架构和基准中的作用。
+
+◆ 首次跨训练范式、模型架构和标准基准系统评估色度信息对全局VPR的影响。
+
+◆ 发现灰度通常匹配RGB，并在严重外观变化下优于RGB，颜色仅在持续且具判别性的色度线索存在时有明显增益。
+
+◆ 全灰度MixVPR在所选基准平均Recall@1达82.4%，超过RGB的81.2%。
+
+◆ 轻量灰度变体可减少约60%参数并超越更重RGB模型，还降低存储和带宽需求。
+
+结论是全局VPR场景受光照、天气、季节和地点变化影响，颜色贡献有限，灰度单通道足以可靠识别地点。</td></tr>
 <tr><td>2026-05-29</td><td>DisPlace: Discriminative Place Projections for Multi-Reference Visual Place Recognition<br><a href='http://arxiv.org/pdf/2605.30769'>论文</a></td><td>本文针对视觉位置识别(VPR)中多参考图像融合的难题,提出了一种名为DisPlace的新框架。核心思想是将多参考描述子的融合建模为广义特征值问题,旨在最大化不同地点之间的可分离性,同时抑制同一地点在不同参考遍历中由于光照、视角变化引起的描述子差异。与现有方法不同,DisPlace不再保留描述子整体方差,而是区分哪些维度组合保留了稳定的位置身份,哪些维度仅反映条件或视角的特定变化。
 
 ◆提出将多参考描述子融合形式化为广义特征值问题,直接优化类间可分性与类内一致性,而非传统的方差保留策略。
@@ -9837,4 +9916,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.09.27
+> 更新于: 2026.09.28
