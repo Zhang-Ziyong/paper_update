@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.10.02)
+# 历史论文归档 (2026.10.03)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -2583,17 +2583,17 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 引入匹配预算对照组与按臂锚定的双重差分监督，确保预算开销相同情况下，仅真正的选择性恢复才获得增益。
 
 ◆ 构建预算感知选择器，在摘要事件中自动挑选最值得恢复为高保真的目标，提升决策可解释性与效率。</td></tr>
-<tr><td>2026-08-19</td><td>Evaluation of Image Matching Methods for Visual Odometry on UAVs<br><a href='http://arxiv.org/pdf/2608.18624'>论文</a></td><td>本文针对无人机依赖GNSS导航、在信号缺失或受扰时易失效的问题，探索视觉里程计作为关键导航组件。作者在自建合成数据集上，以向下相机配置，对近年最新图像匹配方法进行无人机位置跟踪的视觉里程计评估。
-◆ 首次将多种最新图像匹配方法置于完整视觉里程计流程中，面向无人机位置跟踪开展系统评测。
-◆ 采用合成数据集与向下相机设定，为GNSS拒止下的无人机视觉导航提供可重复的测试基准。
-◆ 对比深度学习匹配器与传统SIFT，发现RoMa总体最佳，但SIFT仍能超过部分最新方法。
-结果揭示了不同图像匹配方法在无人机视觉里程计中的性能边界，为方法选型提供依据，并表明传统特征仍具竞争力。</td></tr>
-<tr><td>2026-08-12</td><td>NPLSD: Accelerating Line-Segment Detection on NPU Microcontrollers<br><a href='http://arxiv.org/pdf/2609.25022'>论文</a></td><td>针对STM32N6的Neural-ART NPU仅支持卷积，难以部署依赖注意力、网格采样和归一化的transformer线段检测器，论文提出NPU兼容的NPLSD方案。
-◆ 逐算子分析现有检测器与NPU的架构错配，指出自注意力会生成39MB评分张量并超出片上内存。
-◆ 提出统一设计方法，NPLSD-H用HGNetv2卷积骨干、全卷积特征金字塔和F-Clip密集头替代transformer头。
-◆ 提出NPLSD-M，将M-LSD-tiny骨干适配到NPU支持的算子集，降低资源需求。
-◆ 经ImageNet热启动和ShanghaiTech Wireframe训练，NPLSD-H以2.63M参数达sAP10 37.9，int8为35.9；NPLSD-M以0.62M参数达41.9，int8为41.1。
-◆ 控制消融实验隔离骨干变量，并证明初始化策略单独贡献4.6点提升。</td></tr>
+<tr><td>2026-08-19</td><td>Evaluation of Image Matching Methods for Visual Odometry on UAVs<br><a href='http://arxiv.org/pdf/2608.18624'>论文</a></td><td>本文针对GNSS不可用或受扰时无人机导航易失效的问题，将视觉里程计作为关键导航组件，评估图像匹配方法对UAV位置跟踪的影响。作者在下视相机和自建合成数据集上，对近期最先进的图像匹配方法进行了面向完整VO系统的实证比较。
+◆ 首次在下视UAV视觉里程计任务中系统评估近期图像匹配方法，而不仅是孤立的匹配精度基准。
+◆ 使用合成数据集构建可重复的GNSS拒止场景实验，比较深度学习匹配器与传统特征方法在位置跟踪中的表现。
+◆ 发现RoMa匹配器整体效果最佳，同时SIFT可超过部分近期最先进方法，说明传统特征在UAV VO中仍具竞争力。
+结果表明，图像匹配方法的选择会显著影响UAV VO性能，深度学习方法并非必然优于经典方法。</td></tr>
+<tr><td>2026-08-12</td><td>NPLSD: Accelerating Line-Segment Detection on NPU Microcontrollers<br><a href='http://arxiv.org/pdf/2609.25022'>论文</a></td><td>现有基于 transformer 的线检测器精度高，但其 attention、grid-sampling 和 normalization 等算子不被面向卷积的 STM32N6 Neural-ART NPU 支持，且解码器自注意力会产生 39 MB 分数张量，超出片上内存。
+◆ 论文逐算子剖析了这一 NPU 架构不匹配问题，明确了算子和内存瓶颈。
+◆ 提出统一设计方法，构建一对 NPU 兼容线检测器 NPLSD-H 与 NPLSD-M。
+◆ NPLSD-H 保留 LINEA 的 HGNetv2 卷积主干，用全卷积特征金字塔和 F-Clip 稠密头替换 transformer 头；NPLSD-M 则将 M-LSD-tiny 主干适配到 NPU 支持算子集。
+在 ImageNet 热启动并基于 ShanghaiTech Wireframe 训练后，2.63M 参数的 NPLSD-H 达 sAP^10=37.9（int8 35.9），0.62M 参数的 NPLSD-M 达 41.9（int8 41.1）。
+控制消融显示主干是唯一变量，仅初始化即可带来 4.6 分提升。</td></tr>
 <tr><td>2026-08-11</td><td>TRACE: Transparent Retrieval for Abstract Concept Evaluation<br><a href='http://arxiv.org/pdf/2609.26168'>论文</a></td><td>论文在十二个七巧板剪影的单轮指称任务上，比较六个现成视觉语言模型与一个不使用学习视觉表征的透明基线，追问该任务是否真需大型预训练VLM。
 ◆ 提出透明检索基线：仅用经典SIFT关键点匹配与检索图像信号质量指数，无需学习视觉表示且可检查。
 ◆ 在相同试次上，该基线匹配最强VLM SigLIP-large并显著优于其余五个CLIP/OpenCLIP变体，即便它额外检索了外部图像。
@@ -7767,12 +7767,12 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 该分类表明相同观察暴露可能对应根本不同的修复判决，从而改变安全干预选择。
 ◆ 框架可扩展到锥值安全头，并用非绑定换序恒等式诊断线性控制接口，其校准残差可预测未见状态与目标上的三控制组合误差。
 ◆ 实验上该残差的中位Spearman相关达0.964，显著优于静态交叉Gram基线的0.269，验证其诊断与预测价值。</td></tr>
-<tr><td>2026-09-12</td><td>Measurement-Error-Aware Causal Distributed-Lag Quantile Modeling of Indoor Air Pollution and Short-Term Lung-Function Deterioration<br><a href='http://arxiv.org/pdf/2609.31646'>论文</a></td><td>本文提出 CAUSALQUANT-ASTHMA，面向室内空气污染与短期肺功能下降，构建测量误差感知的因果分位数分布滞后分析框架。
-◆ 利用稀疏参考测量训练非线性校准模型，以校正低成本传感器的非线性测量误差。
-◆ 采用稳定序列广义倾向权重处理时变混杂，并用易感性调节、平滑且非交叉的分位数模型估计滞后与持续暴露对比。
-因缺乏同时具备密集室内传感、参考共置和结局纵向数据的授权队列，研究用五个半合成面板、每实现150名患者和12600患者日，并以已知反事实真值评估。
-结果显示剂量反应IAE为0.304±0.094，较最强测量误差与倾向加权基线改善24.2%，pinball损失最低1.065，零分位交叉，80%区间覆盖78.1%，传感器校准使暴露RMSE降低33.7%。
-这些发现证明方法可行与可复现，而非临床有效性，部署前仍需经治理批准的前瞻性外部验证。</td></tr>
+<tr><td>2026-09-12</td><td>Measurement-Error-Aware Causal Distributed-Lag Quantile Modeling of Indoor Air Pollution and Short-Term Lung-Function Deterioration<br><a href='http://arxiv.org/pdf/2609.31646'>论文</a></td><td>本文提出CAUSALQUANT-ASTHMA，一个面向室内空气污染与短期肺功能下降的测量误差感知因果分位数分布滞后建模框架。
+◆ 用稀疏参考测量训练非线性校准模型，使低成本传感器暴露RMSE降低33.7%。
+◆ 用稳定序列广义倾向权重校正时变混杂和暴露分配，提升因果对比可信度。
+◆ 采用易感性调制、平滑且非交叉的分位数分布滞后模型，估计滞后及持续暴露的低尾异质响应。
+◆ 在五个半合成面板中，剂量反应积分绝对误差0.304±0.094，较最强基线改善24.2%，pinball损失最低1.065，零分位交叉，80%区间覆盖78.1%。
+◆ 压力测试量化传感器噪声、个人测量缺失和隐藏混杂影响，证明方法可行性和可重复性，但非临床有效性，需外部验证。</td></tr>
 <tr><td>2026-09-11</td><td>DRS-VPT: Directly Relocalizing in a Scan with Vision Point Transformers<br><a href='http://arxiv.org/pdf/2609.12557'>论文</a></td><td>DRS-VPT是一种面向基础图像到扫描配准的前馈Transformer架构。
 ◆ 它统一预测扫描位姿、扫描点图及每台相机位姿和点图，并将它们统一表示在第一相机坐标系中。
 ◆ 它引入粗到细的逐点与逐像素特征金字塔，实现扫描到首张图像的直接重投影对齐。
@@ -8515,12 +8515,12 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 跨回合利用物理反馈修正历史知识、更新适用性并组织可复用条目，使物理经验沉淀为后续可检索知识。
 ◆ 在RMBench上，该方法使不同智能体模型平均成功率最高提升24.2个百分点，GPT-5.5从48.3%升至75.0%，GPT-6从70.0%升至88.3%。
 ◆ 它能修正超83%历史知识错误、保留95.8%有效知识，并零样本迁移到RoboDojo，分别提升35.0和25.0个百分点。</td></tr>
-<tr><td>2026-09-29</td><td>MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation<br><a href='http://arxiv.org/pdf/2609.38078'>论文</a></td><td>本文提出 MotorMind，让通用视觉语言模型无需专门训练即可零样本操控机器人。
-◆ 将 VLM 提出的中层动作直接连接到确定性机器人控制与反馈，形成可执行的感知-动作闭环。
-◆ 引入异步监控与后台记忆更新，使 VLM 能在执行中持续适应并利用历史经验。
-◆ 不依赖任务专用策略训练、编码智能体或 SAM3 等额外接地工具，降低系统复杂度和成本。
-◆ 在 LIBERO-PRO 零样本基准和扰动设置下分别达 66.7% 与 53.8%，远超先前方法，真实 xArm6 平均成功率达 95%。
-这些结果表明，配上合适中层动作表示和执行外壳的通用 VLM 本身就能有效完成零样本机器人操作，且性能随 VLM 能力增强而提升。</td></tr>
+<tr><td>2026-09-29</td><td>MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation<br><a href='http://arxiv.org/pdf/2609.38078'>论文</a></td><td>本文提出MotorMind，让通用视觉语言模型像人类遥操作员一样直接观察、决策、输出动作并持续适应执行反馈。
+◆ 将VLM提出的中层动作连接到确定性机器人控制与反馈，无需学习型动作专家、编码智能体或SAM3等外部工具。
+◆ 引入异步监控与背景记忆更新，支持执行中的持续适应，且不需要任务特定策略训练。
+◆ 在LIBERO-PRO零样本基准取得66.7%基础成功率和53.8%扰动成功率，显著优于此前零样本方法。
+◆ 在真实xArm6机器人上，直接操作与人类扰动设置下达到95%平均成功率，换用更强VLM还能继续提升。
+这些结果表明，通用VLM配合合适的中层动作表示和异步执行框架，即可实现有效的零样本机器人操作。</td></tr>
 <tr><td>2026-09-29</td><td>EVO-WAM: Evolving World Action Models through Video-Action Verification<br><a href='http://arxiv.org/pdf/2609.38057'>论文</a> | <a href='https://evo-wam.github.io/'>代码</a></td><td>EVO-WAM 提出一种无需额外专家演示、也无需在环境中执行候选动作，就能让世界动作模型适应新任务的自我进化框架。
 ◆ 通过引入状态预测与锚定多帧上下文，增强 WAM 训练，使其能完成自回归展开并摆脱对外部执行反馈的依赖。
 ◆ 利用视觉语言模型筛选能完成任务的轨迹前缀，并用逆动力学模型验证视频与动作一致性，从而挑出可靠训练经验。
@@ -9985,12 +9985,12 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆在Forest和UAVScenes上，持久3D记忆相较逐帧预测显著提升语义正确性与时序稳定性。
 ◆作为强持久记忆基线，PerSeM在全部五个UAVScenes序列上仍取得一致额外提升，且无需重训练或额外神经网络推理。
 ◆独立区域分析显示，增益集中于语义困难且时序不稳定区域，说明保守精炼对不确定记忆尤其有效。</td></tr>
-<tr><td>2026-09-17</td><td>PAANI : On Device Visual Evidence Fusion and Explainable Guidance for River Robot Simulation<br><a href='http://arxiv.org/pdf/2609.22353'>论文</a></td><td>PAANI提出一种在资源受限Arduino UNO Q上运行的端侧感知到制导架构，用于河流机器人模拟中融合视觉证据并生成可解释引导。
-◆将项目训练的YOLO11n检测器与定制MobileNetV3 Small语义分割器按时间戳对齐融合，并用有界跟踪维持目标连续性。
-◆设计显式走廊策略，综合水面标签、接受检测、紧迫度与掩码不确定性，且每条最终建议都公开其证据和政策理由。
-◆通过ROS 2把本地AI管线接入独立Gazebo船体、定位与控制测试台，形成可复用边缘机器人基础。
-训练与评估使用WaterScenes 10000张四类检测和MaSTr1325 1127张分割图像，ONNX模型共14.817 MB，检测mAP@0.5为0.7388/0.7367，分割mIoU为0.9750。
-五分钟UNO Q录制在0.5 Hz下中位和95分位延迟为467.8 ms与580.3 ms，同时发现黑输入误分类和采样率不匹配问题；结果区分了模型精度、板载执行与已验证的水上避碰。</td></tr>
+<tr><td>2026-09-17</td><td>PAANI : On Device Visual Evidence Fusion and Explainable Guidance for River Robot Simulation<br><a href='http://arxiv.org/pdf/2609.22353'>论文</a></td><td>本文提出PAANI，一种在Arduino UNO Q上运行、从感知到引导的设备端架构，将YOLO11n检测与定制MobileNetV3 Small分割按时间戳对齐融合，并向Gazebo控制测试台输出可检查建议。
+◆采用检测与分割的证据融合，并用有界跟踪维持目标连续性，弥补单一标签或转向命令无法说明依据的问题。
+◆设计显式走廊策略，综合水面标签、接受检测、紧急度和掩码不确定性，每条最终建议都暴露其贡献证据与策略理由。
+◆通过ROS 2连接本地AI流水线与独立Gazebo船只、定位和控制测试台，形成可复用的边缘机器人基础。
+◆在10000张WaterScenes和1127张MaSTr1325上训练，FP32 ONNX模型仅14.817 MB，检测mAP@0.5约0.74，分割mIoU 0.975，UNO Q五分钟测试中位/95分位延迟为467.8/580.3 ms。
+◆评估还发现黑输入误分类和采样率不匹配，并明确区分模型精度、板载执行与已验证水上避碰。</td></tr>
 <tr><td>2026-09-16</td><td>4D Radar Perception Algorithms for Autonomous Driving: A Review<br><a href='http://arxiv.org/pdf/2609.19216'>论文</a></td><td>本文系统综述面向自动驾驶的4D毫米波雷达感知算法，按感知任务与算法演进梳理领域发展。
 ◆ 提出以任务演进为主线，从信号处理、目标检测延伸到语义分割、运动估计、占据预测和动态场景重建。
 ◆ 系统比较仅雷达学习、多模态融合、跨模态监督与知识蒸馏三类范式。
@@ -10320,12 +10320,12 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆脉冲原型引导的语言（SPL）蒸馏：将Spikformer的类别原型与logits与VLM的可提示文本嵌入对齐，实现跨模态语义知识的有效迁移。
 
 实验结果表明，VL2Spike在三个静态数据集上取得6.81%的性能提升，能耗仅为原来的15.7%，并在机器人视觉位置识别任务中实现6.63%的增益，展现出优异的泛化能力与应用潜力。</td></tr>
-<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>本文针对自然森林中视觉位置识别受重复植被、弱结构线索和跨穿越外观变化影响的问题，提出一种轻量级深度感知蒸馏框架，将几何线索注入基于 DINOv2 的位置识别模型并保持其预训练描述子空间。
-◆ 提出面向森林环境的深度感知蒸馏方法，以轻量方式融合深度几何信息与视觉外观特征。
-◆ 在不破坏 DINOv2 预训练描述子空间的前提下，将深度线索注入位置识别模型，增强特征几何感知能力。
-◆ 在 WildCross 基准上优于仅外观方法，对外观变化表现出更强鲁棒性。
-◆ 验证深度是自然环境中位置识别的强互补模态，并指明深度感知蒸馏是提升森林感知鲁棒性的有前景方向。
-这些结果说明该方法能有效提升森林视觉位置识别性能，并凸显深度信息在复杂自然场景中的关键价值。</td></tr>
+<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>森林视觉位置识别因重复植被、弱结构线索和跨行程外观变化而困难，本文提出轻量级深度感知蒸馏框架，将几何线索注入基于DINOv2的位置识别模型。
+◆ 以深度作为互补模态，把几何线索蒸馏进DINOv2位置识别模型。
+◆ 在注入深度信息的同时保持模型预训练描述子空间不变。
+◆ 面向自然森林环境，提升对重复植被、弱结构线索和外观变化的鲁棒性。
+◆ 在WildCross基准上验证，相较仅外观方法获得性能增益。
+结果表明深度是自然环境位置识别的强互补模态，深度感知蒸馏是更鲁棒森林感知的有希望方向。</td></tr>
 <tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>论文挑战了视觉位置识别中颜色输入必要的默认假设，系统研究色度信息在多种训练方式、架构和基准中的作用。
 
 ◆ 首次跨训练范式、模型架构和标准基准系统评估色度信息对全局VPR的影响。
@@ -10380,4 +10380,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.02
+> 更新于: 2026.10.03
