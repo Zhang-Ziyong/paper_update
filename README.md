@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.10.04)
+# 计算机视觉领域最新论文 (2026.10.05)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,6 +24,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-01</td><td>Real-time Event-camera Stereo Visual Odometry via Keytime Gaussian Process Regression<br><a href='http://arxiv.org/pdf/2610.02601'>论文</a></td><td>本文提出一种面向事件相机的实时连续时间双目视觉里程计管线，能在保留异步事件原始时间戳的同时实现实时运行。
+◆ 采用关键时间高斯过程回归，将估计状态约简到关键时间，而非随密集测量增长。
+◆ 利用物理基础的白噪声-on-加速度先验，将测量插值到其精确时间戳，从而在降低状态规模时保持全时间分辨率。
+◆ 该设计将状态规模与密集异步测量数量解耦，又不丢弃事件的异步特性。
+在MVSEC和DSEC数据集上，该管线实时运行，MVSEC达22 Hz、DSEC达6 Hz，并在几乎所有测试序列中精度超过ES-PTAM。
+其全体有效序列RMS相对误差为0.46 cm和0.038度，分别比ES-PTAM提升11倍和15倍。</td></tr>
 <tr><td>2026-10-01</td><td>GlassGuard: Verified Glass Plane Mapping for Robot Navigation<br><a href='http://arxiv.org/pdf/2610.02110'>论文</a> | <a href='https://glassguardproject.github.io/'>代码</a></td><td>GlassGuard针对LiDAR导航中透明镜面表面导致碰撞边界缺失，以及玻璃重建可能污染自由空间的双重问题，提出面向导航的玻璃平面重建框架。
 ◆ 将玻璃覆盖率与自由空间污染并重作为成功准则，并贯穿候选平面验证和全局地图构建。
 ◆ 利用基础视觉模型生成玻璃实例掩码，结合结构3D线索生成度量平面假设，再用无深度2D投影几何校验方向后融合为全局地图。
@@ -100,12 +106,6 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 实验证明可超出连续锚点可见范围进行度量跟踪、重连受支持地图组件并恢复部分缺失相机位姿，同时通过与多传感器参考和静态星座测试比较刻画精度与残余不确定性。
 这些表明被动固定装置和离线重建能降低采集端硬件与同步要求，但动态精度、实际部署及下游策略收益仍需进一步研究。</td></tr>
 <tr><td>2026-09-28</td><td>NavHarness: Towards Lifelong Embodied Navigation<br><a href='http://arxiv.org/pdf/2609.34276'>论文</a></td><td>NavHarness提出一种免训练具身导航框架，将记忆处理作为导航循环的一部分，面向终身导航。◆把地图、任务记录和房屋知识引入多轮智能体会话，并与新观测交叉核验，记录修正以指导行动。◆跨新对话保留导航经验，通过结果验证和运行结束摘要支持新任务与失败恢复中的经验复用。◆在GOAT-Bench上较仅上下文独立会话分别提升s-SR 18.6和22.6个百分点，并用SLAM位姿在GOAT-Bench达到83.7 s-SR、36.9 e-SR，在IR2R-CE达到85.9 s-SR。◆发现结构化恢复交接优于等长摘要，长期部署中的经验整合也能超越仅保留地图与任务记录。这些结果表明，终身导航的关键在于连续推理会话如何基于先前经验，而非仅提升单任务能力。</td></tr>
-<tr><td>2026-09-26</td><td>World SLAM Model: Joint World Modeling for SLAM and Navigation<br><a href='http://arxiv.org/pdf/2609.32626'>论文</a></td><td>本文提出World SLAM Model（WSM），一个将SLAM范式直接融入下游导航的统一框架，而非仅把SLAM当作提供位姿、地图或token的上游模块。
-◆ 将SLAM的增量状态更新、持久记忆与后端误差细化机制引入导航，使智能体在交互中维持一致的世界状态。
-◆ 给定当前观测和导航目标，联合预测未来视觉状态并估计相机运动与密集几何，把视觉预测锚定在不断演化的空间世界状态上。
-◆ 该空间状态随新观测持续更新，并直接支撑动作生成与闭环导航。
-◆ 采用端到端联合导航-SLAM目标训练，让导航直接受益于SLAM式状态维护和细化，同时保持准确几何估计。
-实验表明该方法在提升导航性能的同时保持较强SLAM精度，显示SLAM可作为长时程世界建模与具身交互的内在机制。</td></tr>
 </tbody>
 </table>
 </div>
@@ -212,6 +212,10 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-02</td><td>Geometry-Aligned Semantic Matching for Cross-Modal Planar Image Registration<br><a href='http://arxiv.org/pdf/2610.03167'>论文</a> | <a href='https://warren-wzw.github.io/CDPM/'>代码</a></td><td>本文提出CDPM，用于跨模态平面图像配准，解决语义相似未必几何对应、CNN细节缺乏全局跨模态语义引导的问题。该方法先建立几何一致的语义表示，并在细粒度定位中保持其在对应估计中的主导作用。
+◆ 采用几何一致的跨模态图像块对渐进适配DINOv3，使语义特征相似度更真实反映跨模态空间对应关系。
+◆ 构建DINO为中心的跨模态特征金字塔，用多尺度DINO表示维持稳定跨模态对应，并用轻量CNN分支补充结构细节以精化局部定位。
+在三个跨模态数据集上，CDPM均取得更优性能。在VIS-IR上，相比RoMa，其AUC@3/5/10/20分别提升7.36、13.40、13.75和10.42个百分点，mACE从5.83像素降至2.78像素。它还在所有指标上超过RoMa v2，并减少45.6%的FLOPs。</td></tr>
 <tr><td>2026-09-30</td><td>EPIC: Epipolar-Consistent 360° Immersive Stereo Video Generation<br><a href='http://arxiv.org/pdf/2609.38689'>论文</a></td><td>论文针对现有视频扩散模型只面向传统显示、无法生成高分辨率立体360°内容，且时间与立体不一致在沉浸式头显中更突兀的问题，提出EPIC零样本生成管线。
 其核心贡献是把现有视频扩散模型扩展为4K立体360°视频生成，用于按需沉浸式内容。
 ◆ 提出受双目视觉与深度感知启发的极线感知360°图像匹配度量，可捕捉跨视图的时序与立体几何不一致。
@@ -286,14 +290,6 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 设计多组件自监督损失函数,联合约束跨域一致性、几何对齐与空间覆盖
 
 在关键点检测、图像匹配、相对位姿估计和视觉定位等任务上,SSMB均刷新了稀疏关键点检测器的最优性能,一致超越现有监督与自监督基线方法。</td></tr>
-<tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>本文提出Misanthrope，一种面向图像匹配任务的隐私保护关键点检测器。针对分布式计算场景下本地图像特征易遭受反演攻击、泄露人像隐私的问题，Misanthrope通过自蒸馏训练策略，从源头避免在人体上检测关键点，而非依赖事后模糊处理。
-
-◆ 创新点一：提出从源头规避隐私风险的检测思路，使反演攻击无法重建人物内容
-◆ 创新点二：采用自蒸馏训练框架实现&quot;避人&quot;关键点检测，无需人工标注隐私敏感区域
-◆ 创新点三：证明传统特征管道的反演图像可用于检测和重识别场景中的人物
-◆ 创新点四：在人物作为干扰物的困难场景下，匹配性能超越现有最优方法
-
-在Image Matching Challenge 2021 Phototourism测试集9个场景中，Misanthrope在7个场景上取得稀疏特征提取器最优表现，同时有效缓解了隐私反演攻击风险。</td></tr>
 </tbody>
 </table>
 </div>
@@ -306,6 +302,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-01</td><td>Physical AI Smart Spaces: A Large-Scale Benchmark for Multi-Camera 3D Perception in Smart Spaces<br><a href='http://arxiv.org/pdf/2610.02580'>论文</a></td><td>本文提出Physical AI Smart Spaces，一个面向室内智能空间的大规模多类别多摄像头3D感知基准，包含超过280小时同步1080p视频、近1800个摄像头，覆盖仓库、医院、零售等场景。
+它提供多摄像头身份、2D/3D边界框、相机标定及可用深度等自动标注，并覆盖Isaac Sim合成、Cosmos Transfer外观增强、真实Sim2Real评估以及两个仓库部署中的时间同步、VGGT自动标定和跨摄像头3D框验证。
+◆ 首个同时提供大规模、多类别、多摄像头室内智能空间3D感知数据的基准。
+◆ 建立从合成生成、外观增强到真实部署、标准化提交与排行榜的完整评测流程。
+◆ 提出HOTA的3D实例化，将2D框跟踪评估扩展到3D位置和3D框。
+◆ 通过AI City Challenge基线展示从仅行人3D位置跟踪到多类别3D框跟踪的演进。</td></tr>
 <tr><td>2026-10-01</td><td>The Impact of Processing Parameters on High-Accuracy Measurements in UAV Photogrammetry<br><a href='http://arxiv.org/pdf/2610.01438'>论文</a></td><td>本文针对无人机摄影测量中处理流程，尤其是光束法平差参数设置对高精度测量影响研究不足的问题，开展系统性全因子实验。研究基于1.5年、220公顷区域内10个无人机数据集，评估768种处理变体和8个关键参数。结果显示最终三维精度差异巨大，最佳RMSE为16毫米，最差达303毫米，最关键因素为地面控制点数量、额外相机检校校正及PPK GNSS确定相机投影中心坐标。研究还评估工作流优化对位移、倾斜变化和水平应变确定的影响，随机位移误差稳定在约6-7毫米，系统误差在各轴降低超过一半，垂直中位绝对误差由14毫米降至7毫米。
 ◆ 首次开展大规模、面向实践的处理参数选择评估，揭示其对摄影测量产品和变形指标确定精度的深层影响。
 ◆ 提出可操作的优化建议，支撑更稳健、可重复的高精度无人机摄影测量监测工作流。</td></tr>
@@ -373,12 +375,6 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 提出按行驶距离归一化的漂移误差度量，提升不同长度轨迹间的可比性。  
 ◆ 显式处理时间同步、采样对齐与外参标定，并通过敏感性分析量化其影响。  
 该协议提升了状态估计、定位与SLAM中轨迹评估的严谨性、可复现性和标准化程度。</td></tr>
-<tr><td>2026-09-14</td><td>Semantic Fibers and Cross-Gram Interference: A Calculus of Safety Drift in Overcomplete Representations<br><a href='http://arxiv.org/pdf/2609.14861'>论文</a></td><td>论文针对模型英文拒绝但忠实翻译下遵从的跨语言安全失败，提出用审计等价关系而非仅输出行为来刻画安全漂移。
-◆ 在给定商、表示、度量、特征字典、评分头、阈值和对比模型下，将安全漂移精确刻画为纤维内对比的交叉Gram泛函，其最坏值为支撑函数，间隔不变性由零化子条件给出。
-◆ 引入受杠杆对偶χ²=1/ℓ-1支配的内在校准暴露度量，把观察漂移分成可重校准的读取器故障、病态不可靠的精确校正和读取器无法消除的表示层碰撞三类。
-◆ 该分类表明相同观察暴露可能对应根本不同的修复判决，从而改变安全干预选择。
-◆ 框架可扩展到锥值安全头，并用非绑定换序恒等式诊断线性控制接口，其校准残差可预测未见状态与目标上的三控制组合误差。
-◆ 实验上该残差的中位Spearman相关达0.964，显著优于静态交叉Gram基线的0.269，验证其诊断与预测价值。</td></tr>
 </tbody>
 </table>
 </div>
@@ -391,6 +387,14 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-02</td><td>MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation<br><a href='http://arxiv.org/pdf/2610.03476'>论文</a></td><td>长时程移动操作面临执行误差累积以及移动与机械臂控制容量干扰，现有VLA和分层智能体又受限于短时程、刚性映射、重规划不灵活和缺乏持续学习。
+◆ 提出MobiAgent双循环智能体框架，连接稳健部署执行...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-10-02</td><td>Localized Conformal Safety Monitoring with Vision-Language Models for Autonomous Driving<br><a href='http://arxiv.org/pdf/2610.02765'>论文</a></td><td>论文提出SLLCP，一种对冻结VLM进行事后校准的保形预测层，用于自动驾驶轨迹安全监测，将不可靠预测转化为概率校准的安全预测集。
+◆ 设计标签局部化保形预测，按标签条件校准并依据观测驾驶场景调整不确定性阈值。
+◆ 引入局部化加权程序，在计算阈值时对相关历史经验加权，以提升不同场景下的安全估计适应性。
+◆ 在可交换性下提供标签条件、有限样本且分布无关的覆盖率保证，增强安全集合的统计可靠性。
+在15k条未见CARLA场景轨迹上，SLLCP用Qwen和Cosmos分别正确标记89.6%和88.4%的致碰撞轨迹，基础VLM仅4.6%和39.1%。
+结果表明，局部、标签条件的校准可显著减少漏报不安全轨迹，适合补充VLM用于自动驾驶安全监测。</td></tr>
 <tr><td>2026-10-01</td><td>DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication<br><a href='http://arxiv.org/pdf/2610.02161'>论文</a></td><td>本文提出DuoMind，一个基于语义通信的分布式分层多机器人协作框架，旨在将单机器人VLM/VLA能力扩展到多机器人长程协调场景。
 ◆ 采用VLM编排器与VLA动作模型的分层架构，每个机器人高层推理并生成底层动作指令。
 ◆ 引入语义消息通信，使各机器人能在每一步规划中结合任务指令、局部观测和同伴消息进行协调。
@@ -425,6 +429,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 建立统一评估框架，覆盖空间、时空和社会推理，并对齐人类与规则基线。
 ◆ 系统评测揭示当前VLM在社会场景理解上存在关键缺口，表现不及规则和人类共识。
 ◆ 开源代码数据，为面向社会机器人导航的基础模型研究与VLM定制提供平台。</td></tr>
+<tr><td>2026-09-30</td><td>Toward Controlling Biology with Language:Offline Learning of Prompt-Conditioned Interventions for Cells, Organoids, and Biobots<br><a href='http://arxiv.org/pdf/2610.02247'>论文</a></td><td>论文提出用自然语言作为活体系统的控制接口，把已有干预与观测结果当作固定离线数据集，避免新湿实验。
+◆首次证明无需新实验和人工验证，仅用视觉语言模型对存档结果与语言描述匹配的自我判断作为唯一训练奖励，即可学习语言到干预的映射。
+◆该方法在无神经系统的合成多细胞生物xenobot上实现了自然语言接口，将指令映射到档案中已产生所述行为的干预。
+◆该映射能泛化到全新指令，在训练未见过的档案数据上达到80.0%留出准确率，显著高于66.7%随机基线。
+◆其性能与直接用真实标签训练的网络相当，说明视觉语言模型的离线判断可替代部分昂贵标注。
+◆这为细胞、类器官和生物机器人等活体系统的语言控制提供了可扩展、低实验成本的离线学习范式。</td></tr>
 <tr><td>2026-09-30</td><td>Spatial Strategies, Not Actions: Vector-Quantized Geodesics as Tools for LLM-Driven Agents<br><a href='http://arxiv.org/pdf/2610.00613'>论文</a></td><td>本文核心贡献是提出一种将几何工具与LLM高层编排结合的智能体架构，以检验LLM在网格世界中的空间理解。
 ◆ 将智能体收集的测地线轨迹进行向量量化，提取代表性轨迹子集，从而以无监督方式发现可复用的空间策略工具。
 ◆ 离线用LLM为每条入选轨迹生成自然语言行为模式描述，使其成为可被在线调用的工具。
@@ -462,24 +472,6 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 通过定性对比，作者发现绕过差异取决于危险在指令与环境中的显眼程度，说明易感性是任务属性而非单纯对抗物体。
 ◆ 可塑性可在查询目标模型前预测，小型开源VLM读出的复合信号识别可塑任务达随机2.4倍。
 ◆ 因此日常物体或普通重排足以推翻拒绝，建议部署前逐任务评估可塑性。</td></tr>
-<tr><td>2026-09-30</td><td>Video2SwimFish: An Automated Pipeline for Reconstructing Controllable Fish Models and Biological Locomotion from Real Fish Videos<br><a href='http://arxiv.org/pdf/2609.38966'>论文</a> | <a href='https://hangongchen.github.io/video2swimfish-web/'>代码</a></td><td>Video2SwimFish提出一个从真实鱼视频自动重建可控鱼模型并学习个体游泳策略的流程与基准，面向水下具身智能。
-◆ 它用VLM选择规范帧重建带真实尺度的可变形网格，并通过VLM actor-critic环生成适配个体形态的内部关节。
-◆ 它从观测中线曲率提取生物运动流形BLM，构建受真实鱼运动约束的低维动作空间，并为每条鱼学习个体游泳策略。
-◆ 它发布6物种120条鱼的同步俯视与前视视频，以及配套可控资产和个体游泳策略数据集。
-◆ 它建立评估任务成功与个体运动保真度的基准，覆盖轨迹跟随、视频无奖励行为迁移和BlueROV捕捉案例，保真度含轨迹形状、身体曲率与尾拍频率。
-实验发现任务成功与运动保真度未必同向提升，最高完成率方法并非最高保真度方法，忠实复现个体运动仍是开放挑战。</td></tr>
-<tr><td>2026-09-30</td><td>DrivingBench: Can Vision-Language Models Drive a Toyota Corolla?<br><a href='http://arxiv.org/pdf/2609.38948'>论文</a></td><td>本文提出 DrivingBench，据称首个要求通用视觉语言模型驾驶真车的基准，让模型通过摄像头帧控制丰田卡罗拉的转向和速度，在停车场锥桶路线低速行驶。
-◆ 首个面向真实车辆通用视觉语言模型驾驶能力的基准。
-◆ 用三工具接口让模型从相机帧直接生成转向与速度命令，形成感知到控制的闭环。
-◆ 把推理延迟纳入任务：车辆可在模型思考时继续移动，新命令覆盖旧命令，考验实时观察、行动、监控与恢复。
-◆ 在 Codex、Claude Code、Cursor 等原生环境中评测 GPT-6 Astra、Claude Fable 5.1、GPT-5.6 Sol、Grok 4.6，最多三次尝试，Astra 唯一完成且第二次成功。
-◆ 分析动作接口、工具输出格式和任务表述对模型是否愿意驾驶及拒绝行为的影响，并开源 harness、提示、地图与带视频遥测的轨迹。</td></tr>
-<tr><td>2026-09-30</td><td>RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation<br><a href='http://arxiv.org/pdf/2609.37583'>论文</a></td><td>RoboHarn-Evo提出一种不更新基座模型、通过物理交互持续自改进机器人操作的双层闭环框架，并从经验中演化分层物理知识HPK。
-◆ HPK将可复用知识分为任务知识和动作知识，前者判断该执行哪个子任务及何时完成，后者描述物体相对几何策略及其物理效果。
-◆ 执行时智能体按决策层级检索知识，并结合当前场景和任务目标进行落地，实现知识驱动的长程操作。
-◆ 跨回合利用物理反馈修正历史知识、更新适用性并组织可复用条目，使物理经验沉淀为后续可检索知识。
-◆ 在RMBench上，该方法使不同智能体模型平均成功率最高提升24.2个百分点，GPT-5.5从48.3%升至75.0%，GPT-6从70.0%升至88.3%。
-◆ 它能修正超83%历史知识错误、保留95.8%有效知识，并零样本迁移到RoboDojo，分别提升35.0和25.0个百分点。</td></tr>
 </tbody>
 </table>
 </div>
@@ -492,6 +484,17 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-02</td><td>CORNAV: Construction-Aware Reasoning for Robot Navigation on Active Worksites<br><a href='http://arxiv.org/pdf/2610.03622'>论文</a></td><td>施工行业长期面临劳动力短缺、低生产率和事故率高等问题，但现有语言导航只依赖语义场景理解，缺少建筑图纸、进度和安全约束等施工上下文，难以在活跃工地安全导航。为此，论文提出 CORNAV，一种仅用二维 CAD 图纸和项目进度、无需 BIM 的蓝图接地且日程感知导航框架。
+◆ 将建筑蓝图与层级开放词汇三维场景图对齐，用对象查询接地提升永久建筑特征的定位与任务成功率。
+◆ 把项目进度转化为随时间变化的导航约束，使机器人能响应动态施工状态。
+◆ 融合 LLM 安全验证与 A* 规划，规划前拒绝危险请求，并强制排除区、优先避开高风险区。
+在室内办公室和真实工地实验中，蓝图接地将任务成功率从 13.0% 提升至 72.2%，日程感知消除所有硬区违规，安全模块能正确拒绝因进度误标产生的危险请求。</td></tr>
+<tr><td>2026-10-02</td><td>EmbPASS: Towards Cross-Embodiment Open Panoramic Segmentation<br><a href='http://arxiv.org/pdf/2610.03248'>论文</a> | <a href='https://github.com/guopj1/EmbPASS'>代码</a></td><td>论文针对异质具身平台在观察视点与空间布局上的差异所导致的跨具身观察偏移，提出跨具身开放全景分割这一新任务，以推动一致可靠的全景感知研究。
+◆ 提出跨具身开放全景分割任务，系统定义并研究异质具身观测下的全景语义分割问题。
+◆ 构建 EmbPASS 多平台全景语义分割基准，覆盖车辆、无人机、可穿戴设备与四足平台，并采用统一语义分类体系。
+◆ 提出 EPONet 开放词汇全景语义分割网络，融合关系感知度量适配器 RAMA 与内容自适应语义迁移 CAST，增强异质观测下的空间建模和语义迁移。
+实验表明 EPONet 在 EmbPASS 上取得 35.82% mIoU 的最佳平台均衡性能，超过最强基线 1.10%，并在现有全景分割基准上保持竞争力。
+源码与 EmbPASS 基准将公开。</td></tr>
 <tr><td>2026-10-01</td><td>Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers<br><a href='http://arxiv.org/pdf/2610.00855'>论文</a></td><td>Lang3DSeg 提出一种无需人工标注的开放词汇室外3D LiDAR语义分割框架，首次以点Transformer为主干并完全从头训练。
 ◆ 首次把点Transformer用于室外稀疏、无界的LiDAR开放词汇分割，突破体素稀疏卷积和室内点Transformer的局限。
 ◆ 针对2D到3D标签投影的深度歧义，使用显式类别优先规则合成掩码，避免物体后方点被误赋标签。
@@ -563,18 +566,6 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 以读出器为教师，把稀疏比较生成密集偏好伪标签，并蒸馏到RGB学生，同时学习非地面掩码排除障碍和背景。
 在五个未见域上，TravPro平均成对准确率达0.915，最强基线为0.783，能产生对表面条件敏感而按类赋值无法表达的排序。
 同一VLM和同一监督若仅用提示或当作密集目标并不能得到该排序，关键在如何使用。</td></tr>
-<tr><td>2026-09-18</td><td>AgenticSwarm: Semantic Perception and Adaptive Task Allocation for Heterogeneous Multi-UAV Missions<br><a href='http://arxiv.org/pdf/2609.21716'>论文</a></td><td>AgenticSwarm提出面向异构多无人机任务的智能体框架，将语义感知、约束任务分配与自适应执行统一起来。
-◆它用智能体解析航拍图像和自然语言指令，构建连接感知对象、区域、任务需求、能力约束与任务依赖的落地任务表示。
-◆它在分配前纳入障碍感知路径可行性、能耗和保护返航要求，实现受约束的可行任务分配。
-◆它在无人机故障、电池退化或任务变更时，从当前系统状态重建剩余任务，同时保留已完成工作和侦察进度。
-◆它采用SAM3感知管线，相比Grounding DINO+SAM2.1，类感知召回提高25.2个百分点，语义标签准确率提高29.5个百分点，并在五个Gazebo环境和室内真实环境验证。
-消融显示，残差任务重规划使平均重复工作从0%升至61.7%，事件后恢复时间增加58.6%。</td></tr>
-<tr><td>2026-09-18</td><td>PerSeM: Persistent Semantic Memory for Long-Horizon Open-Vocabulary UAV Mapping<br><a href='http://arxiv.org/pdf/2609.19542'>论文</a></td><td>PerSeM是一种免训练的持久语义记忆框架，面向长时程开放词汇无人机建图，旨在解决逐帧语义预测在重复观测和视角变化下的时序不一致问题。
-◆将逐帧开放词汇语义观测关联到持久世界空间体素，并通过多数投票构建世界一致的语义记忆。
-◆提出历史保留空间细化、信任感知回放与上下文引导验证，对不确定记忆进行保守精炼，避免错误固化。
-◆在Forest和UAVScenes上，持久3D记忆相较逐帧预测显著提升语义正确性与时序稳定性。
-◆作为强持久记忆基线，PerSeM在全部五个UAVScenes序列上仍取得一致额外提升，且无需重训练或额外神经网络推理。
-◆独立区域分析显示，增益集中于语义困难且时序不稳定区域，说明保守精炼对不确定记忆尤其有效。</td></tr>
 </tbody>
 </table>
 </div>
@@ -721,36 +712,36 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
 <tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5239</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4709</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4707</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2463</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1648</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1649</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1623</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1520</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1344</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1304</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1090</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1051</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1089</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1052</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>945</td><td>An efficient and consistent bundle adjustment for </td></tr>
-<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>811</td><td>This repository provides implementation of an incr</td></tr>
+<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>812</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>784</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>747</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>743</td><td>A 3D point cloud descriptor for place recognition</td></tr>
-<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>727</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>728</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>688</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>668</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>634</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>622</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>612</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>584</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>571</td><td>A computationally efficient and convenient toolkit</td></tr>
+<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>570</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>535</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>510</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>509</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>465</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>459</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>460</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>365</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>349</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>279</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>272</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>273</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>258</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>243</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>229</td><td>dyn_small_obs_avoidance</td></tr>
@@ -831,4 +822,4 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.04
+> 更新于: 2026.10.05
