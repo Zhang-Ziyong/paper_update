@@ -1,30 +1,52 @@
-# 历史论文归档 (2026.10.06)
+# 历史论文归档 (2026.10.07)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (272篇)</a></li>
-<li><a href='#sfm'>SFM (121篇)</a></li>
-<li><a href='#image-matching'>Image Matching (51篇)</a></li>
+<li><a href='#slam'>SLAM (276篇)</a></li>
+<li><a href='#sfm'>SFM (122篇)</a></li>
+<li><a href='#image-matching'>Image Matching (52篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (86篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (88篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (253篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (262篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (49篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (21篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (272篇)</h2>
+<h2 id='slam'>SLAM (276篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-06</td><td>InterCorrect: Intersection-Aware Correction of Demographic Model Merging for Fair ASR<br><a href='http://arxiv.org/pdf/2610.08604'>论文</a></td><td>本文研究面向公平 Speech-LLM ASR 的人口属性感知模型合并，从 SLAM-ASR 出发仅微调 connector，并将人口子集适配的连接器合并为全局模型。
+◆ 提出仅微调并合并连接器的人口属性感知模型合并框架，以较低代价提升公平 ASR 的整体与子群表现。
+◆ 引入交叉人口属性视角，利用子群 WER 与任务向量冲突识别关键交叉人口对。
+◆ 设计交叉特定校正向量，对全局合并模型进行交叉群体校正，缓解多属性交叉下的性能不均。
+◆ 在 Fair-Speech 上验证，基于 WER 校正的 TIES 将总体 WER 从 7.38% 降至 5.13%，并在多种合并策略上带来额外增益。
+实验还表明，更低平均 WER 并不总意味着更小子群差异，为公平 ASR 评估提供警示。</td></tr>
+<tr><td>2026-10-06</td><td>VOMMI: Collecting and Leveraging Portable Demonstrations for Mobile Manipulation<br><a href='http://arxiv.org/pdf/2610.08220'>论文</a></td><td>VOMMI提出一种仅依赖便携RGB演示的移动操作数据收集与学习框架，通过离线轨迹重建和在线视觉-运动条件连接便携演示与VLA后训练。
+◆同步身体与手部视角，无需人机运动学校准即可同时捕捉导航上下文和局部物体交互。
+◆R2-VO利用稀疏几何锚点精化离线演示轨迹，并生成多预测视野下的因果局部运动token用于在线策略条件。
+◆动作组残差适配器仅将这些token注入基础分支，在保持原有能力的同时引入便携运动监督。
+实验使用每任务500条便携轨迹、75条用于RGB-VO评估及200条机器人演示参考，仅用便携演示后训练的策略比机器人演示策略底盘速度误差低18.2%，末端平移精度相当。
+离线重建使身体和手部流绝对轨迹误差平均降低24.6%，并在三个真实机器人任务上比OpenPI 0.5平均成功率提高8.3个百分点。</td></tr>
+<tr><td>2026-10-06</td><td>Image-Space Refraction Correction for Underwater 3D Reconstruction: Warping Flat-Port Views into Pinhole Perspective<br><a href='http://arxiv.org/pdf/2610.07788'>论文</a></td><td>针对平口防水壳消费级相机水下重建中折射引起的碗状变形和度量精度下降问题，本文提出一种图像空间物理折射校正方法。该方法把平口折射视图经光线追踪模型映射为等效针孔透视图像，并与下游算法解耦。  
+◆ 在图像空间直接校正主折射畸变，校正结果可直接输入现有SfM、重建与VSLAM流程。  
+◆ 基于光线追踪仿真刻画折射畸变，并在两种不同结构真实水下数据集上验证有效性。  
+◆ 与常规及折射SfM相比，能消除重建变形、注册更多帧、保持低重投影误差，并泛化到多种重建和VSLAM后端。  
+整体上，该工作以即插即用方式提升水下三维重建与导航的度量精度和适用性。</td></tr>
+<tr><td>2026-10-05</td><td>RoboCap: A New Platform for Egocentric Robot Learning<br><a href='http://arxiv.org/pdf/2610.07217'>论文</a></td><td>RoboCap面向第一人称操作数据稀缺问题，提出软硬件与3D算法垂直整合的采集平台。硬件为250克六摄像头双IMU帽子，可在野外采集第一人称数据；算法为Grounded API，是设备无关且为RoboCap调优的3D算法套件。
+◆ 轻量可穿戴六摄像头双IMU设计，支持自然场景第一人称操作数据采集。
+◆ Grounded API实现设备无关的3D算法套件，便于跨设备迁移。
+◆ 硬件、标定与3D算法协同优化，在多样场景与设备的SLAM基准上达领先。
+◆ 在第一人称深度估计及适配第三方设备的手部跟踪上取得先进表现，并验证厘米级精度与SOTA性能。</td></tr>
 <tr><td>2026-10-05</td><td>Stellarators Linking Axisymmetric Mirrors Part 1: Coil Design, MHD Equilibrium, and Physics Metrics<br><a href='http://arxiv.org/pdf/2610.06085'>论文</a></td><td>本文提出SLAM星器-磁镜混合概念，用优化的准等距（QI/OP）星器作为旋转变换源，连接长轴对称圆截面磁镜。
 ◆ 从DESC omnigenity数据库的OP前体出发，将OP模块线圈沿中平面分开并插入轴对称平面镜线圈，构建nFP=2混合线圈组。
 ◆ 场线追踪表明，真空嵌套磁面在镜段挤出后仍能存活，且插入处截面形状定性保持。
@@ -1754,12 +1776,18 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (121篇)</h2>
+<h2 id='sfm'>SFM (122篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-06</td><td>Image-Space Refraction Correction for Underwater 3D Reconstruction: Warping Flat-Port Views into Pinhole Perspective<br><a href='http://arxiv.org/pdf/2610.07788'>论文</a></td><td>本文面向平口防水壳消费级相机在水下三维重建中因界面折射产生碗状变形、破坏度量精度的问题，提出图像空间物理折射校正。该方法在重建前将平口视角图像校正为针孔透视，属于下游无关的预处理，可直接接入现有重建与SLAM算法。
+
+◆ 创新性地将折射畸变通过光线追踪仿真建模，并在图像空间进行物理校正，而非依赖特定后端。
+◆ 把平口防水壳视图映射为理想针孔透视，从而在重建前消除主导折射畸变和碗状变形。
+◆ 在两组真实水下数据上验证，相比传统和折射SfM能去除变形、配准更多帧并保持低重投影误差。
+◆ 校正可泛化到多种三维重建和VSLAM后端，展示了对下游视觉管线的广泛适用性。</td></tr>
 <tr><td>2026-10-05</td><td>Structural Foundations of Nonlinear Systems with Unknown Inputs: The UID-Induced Normal Form and Minimal-Sensing Structure-from-Motion<br><a href='http://arxiv.org/pdf/2610.05939'>论文</a></td><td>本文首次为未知输入驱动的非线性系统状态估计给出了通用结构解，并提出UID诱导规范形。  
 ◆ 证明任意此类系统都可等价表示为UID诱导规范形，从而统一刻画未知输入对可观测动态的影响。  
 ◆ 将未知输入信息分解为与可观测动态结构解耦的方向，以及完全表征其可观测影响的分量。  
@@ -1845,11 +1873,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 构建覆盖三个数据集、零样本与k-shot设置的跨语言多类评估框架，并揭示性能对数据集属性、预处理和适应策略高度敏感。
 ◆ 发现预训练语音嵌入可实现有意义的跨语言迁移，同时将误分类归因于说话人差异和非典型语音模式，强调更鲁棒的特征建模与可解释性对临床可靠洞见的重要性。
 总体而言，该研究证明跨语言PD严重程度评估具有可行性，但稳健临床应用仍需进一步改进特征提取、模型适应与可解释方法。</td></tr>
-<tr><td>2026-09-16</td><td>RAUL: Reference-Assisted Ureteroscopy Localization for Skill Assessment<br><a href='http://arxiv.org/pdf/2609.19236'>论文</a></td><td>本文提出RAUL参考辅助输尿管镜定位框架，仅用内窥镜视频在体模中重建输尿管镜轨迹，并据此评估导航技能。  
-◆ 利用慢速高质量参考探索视频生成参考重建，再将后续探索视频定位到参考，实现无需外部跟踪的轨迹恢复。  
-◆ 在9个体模上取得平均平移RMSE 0.5±0.1 mm，帧级定位覆盖率从标准SfM的50.5±14.9%提升至86.1±7.2%。  
-◆ 从重建轨迹计算导航指标，可显著区分高经验与低经验住院医师的输尿管镜导航表现。  
-◆ 首次实现仅用视频、无需外部跟踪传感器的输尿管镜轨迹恢复与技能评估，支持可扩展的自动化评估。</td></tr>
+<tr><td>2026-09-16</td><td>RAUL: Reference-Assisted Ureteroscopy Localization for Skill Assessment<br><a href='http://arxiv.org/pdf/2609.19236'>论文</a></td><td>本文提出 RAUL，一种参考辅助的输尿管镜定位与轨迹重建框架，仅利用体模中的内窥镜视频即可恢复镜体轨迹并推导导航技能指标。
+◆ 首次实现无外部追踪传感器的纯视频输尿管镜轨迹恢复，用于输尿管镜导航技能评估。
+◆ 采用慢速高质量参考视频构建参考重建，再将后续探索视频定位到该参考中，提高轨迹恢复完整性。
+◆ 相比标准 SfM，将逐帧定位覆盖率从 50.5±14.9% 提升至 86.1±7.2%，平均平移 RMSE 为 0.5±0.1 mm。
+基于重建轨迹计算的导航指标能显著区分高经验与低经验住院医师，验证了其技能评估价值。
+该方法为可扩展、自动化的输尿管镜导航技能评估提供了无需额外追踪设备的解决方案。</td></tr>
 <tr><td>2026-09-14</td><td>CAL-MOS: Bridging Layers with Adapters for Robust MOS Prediction Across Speech Foundation Models<br><a href='http://arxiv.org/pdf/2609.14956'>论文</a></td><td>本文系统评测十种语音基础模型在四个MOS数据集上的层深选择与多层融合问题，覆盖全量微调、冻结编码器最后一层探测和朴素跨层加权聚合三种策略。实验发现最佳层强依赖骨干与数据集，朴素加权融合跨设置不稳定。为此作者提出CAL-MOS，在池化前用逐层适配器校准各层表征，以增强多层融合鲁棒性。
 ◆ 首次跨十种SFM与四个MOS数据集系统揭示MOS预测最佳层的不确定性及朴素融合的不稳定性。
 ◆ 提出逐层适配器校准聚合，将层间信息先校准再池化，提升跨骨干和跨数据集的融合可靠性。
@@ -2519,12 +2548,18 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (51篇)</h2>
+<h2 id='image-matching'>Image Matching (52篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-05</td><td>WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification<br><a href='http://arxiv.org/pdf/2610.07384'>论文</a></td><td>WildMatch研究仅用身份标签对预训练关键点匹配器进行弱监督适配，以提升野生动物个体重识别。
+现有方法要么依赖大量标注学习全局嵌入且忽略局部证据，要么直接使用领域无关的现成匹配器。
+该方法利用预训练匹配器挖掘信息图像对，从身份一致性生成弱正负监督，并对比微调匹配网络，强化同身份对应、抑制异身份对应。
+◆ 首次提出匹配器层面的身份监督适配框架，用于动物重识别。
+◆ 无需关键点级或几何对应标注，仅凭监测数据中已有的身份标签实现数据高效领域特化。
+◆ 在多个开源数据集上超越现成匹配器和先进局部-全局融合方法，并在开放世界协议下展现对未见个体的可迁移对应先验。</td></tr>
 <tr><td>2026-10-02</td><td>Geometry-Aligned Semantic Matching for Cross-Modal Planar Image Registration<br><a href='http://arxiv.org/pdf/2610.03167'>论文</a> | <a href='https://warren-wzw.github.io/CDPM/'>代码</a></td><td>本文提出CDPM，用于跨模态平面图像配准，解决语义相似未必几何对应、CNN细节缺乏全局跨模态语义引导的问题。该方法先建立几何一致的语义表示，并在细粒度定位中保持其在对应估计中的主导作用。
 ◆ 采用几何一致的跨模态图像块对渐进适配DINOv3，使语义特征相似度更真实反映跨模态空间对应关系。
 ◆ 构建DINO为中心的跨模态特征金字塔，用多尺度DINO表示维持稳定跨模态对应，并用轻量CNN分支补充结构细节以精化局部定位。
@@ -2603,11 +2638,11 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 设计多组件自监督损失函数,联合约束跨域一致性、几何对齐与空间覆盖
 
 在关键点检测、图像匹配、相对位姿估计和视觉定位等任务上,SSMB均刷新了稀疏关键点检测器的最优性能,一致超越现有监督与自监督基线方法。</td></tr>
-<tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>本文针对图像匹配中局部特征易受反转攻击、可能被用于重建隐私敏感场景的问题，尤其在边缘设备特征需交由远程服务器处理的分布式场景。作者提出Misanthrope，一种通过自蒸馏训练的隐私保护关键点检测器，其核心是在源头避免检测人身上的关键点，而非事后混淆特征。
-◆ 首次将隐私保护关键点检测建模为避开人物的自蒸馏学习问题，从源头削弱基于局部特征的反转攻击。
-◆ 利用传统特征检测管线反转出的图像检测和重识别人物，证明隐私风险真实存在，并展示Misanthrope能有效缓解。
-◆ 在保持图像匹配性能与当前最优相当的同时，在人物作为干扰物的phototourism和野外里程计等挑战场景中甚至超越SOTA。
-在Image Matching Challenge 2021 Phototourism测试集上，Misanthrope在9个场景中的7个成为最佳稀疏特征提取器，且模型和评估脚本已开源。</td></tr>
+<tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>Misanthrope是一种面向图像匹配的隐私保护关键点检测器，旨在从源头缓解局部特征反转攻击导致的隐私泄露。
+◆ 它揭示传统特征检测流程的重建图像可用于检测并重识别人物，而Misanthrope能有效缓解此类攻击。
+◆ 它通过自蒸馏训练检测器主动避免在人物上提取关键点，从源头减少隐私敏感内容进入特征，而非依赖事后混淆。
+◆ 它在保持图像匹配性能与先进方法相当的同时，在人物充当干扰项的摄影旅游和野外里程计等挑战场景中甚至更优。
+◆ 在Image Matching Challenge 2021摄影旅游测试集上，它是9个场景中7个场景表现最佳的稀疏特征提取器，并公开模型与评估脚本。</td></tr>
 <tr><td>2026-08-23</td><td>CausalCache: Conditional High-Fidelity Restoration for Long-Horizon GUI Agents<br><a href='http://arxiv.org/pdf/2608.22577'>论文</a></td><td>CausalCache 针对长程 GUI 智能体在视觉上下文预算受限时难以兼顾历史保真度的问题，提出了条件保真度恢复框架：每个事件以摘要形式存储并链接归档截图，预算 B 决定哪些事件被提升为&quot;摘要+图像&quot;形式。与 Recent-B 将所有槽位分配给最近事件不同，CausalCache 跨完整轨迹重新分配预算，仅当远距事件的条件边际效用更高时才替换近期图像。方法在 OSWorld-Verified 上比纯摘要记忆提升约 13 个成功率点；在跨应用移动基准上整体提升 3.7 分，记忆关键子集提升 8.6 分，匹配对照组无显著差异。
 
 核心创新点：
@@ -7718,12 +7753,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (86篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (88篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-06</td><td>MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback<br><a href='http://arxiv.org/pdf/2610.08425'>论文</a></td><td>MIM-VLA提出一种基于夹爪电机反馈的VLA架构，将近期电流、位置、速度和信号有效性编码为128维交互token，以显式表征接触后的物理响应。
+◆ 仅用电机信号预训练MIM，并借助人工审核的接触与交互阶段标签学习物理交互表示。
+◆ 该交互token只条件化SmolVLA的夹爪动作通路，保持机械臂动作和位置控制接口不变。
+◆ 同一token驱动MEM选择器VLM，对候选交互进行比较，生成基于证据的选择与解释。
+◆ 在真实实验中，它支持阻力比较、主动探测区分视觉相似的真品与复制品，以及轻柔抓取易碎物体并泛化到留出实例。
+在13对物体测试中，MIM-VLA以75.0%选择更高阻力物体，优于SmolVLA的48.8%，且无需额外触觉阵列、力扭矩传感器、校准力估计或直接电流控制。</td></tr>
 <tr><td>2026-10-05</td><td>Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models<br><a href='http://arxiv.org/pdf/2610.06813'>论文</a></td><td>本文针对3D基础模型中全连接全局注意力的二次复杂度和跨视角噪声传播问题，提出掩码几何编码器MGE。它在训练时策略性丢弃帧token，并从预训练全上下文教师模型蒸馏，使模型在不完整跨视角上下文中学习更丰富、鲁棒的单帧几何表示。
 ◆ 提出MGE，通过掩码全局注意力与教师蒸馏，增强遮挡和假相似视图下的鲁棒几何表示。
 ◆ 引入中间监督机制，避免因上下文缺失导致性能下降，同时保持标准基准上的高性能。
@@ -7737,6 +7778,12 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 提出三传感器联合优化框架，避免分步成对标定带来的不一致性。  
 ◆ 设计自适应雷达噪声滤波器，利用距离相关余量剔除虚假雷达回波。  
 ◆ 提出对应累积策略，跨帧聚合稀疏雷达对应，并在自建城市数据集上验证，较先进相机-激光雷达基线降低所有传感器对外参误差。</td></tr>
+<tr><td>2026-10-02</td><td>An Assessment of the Triangulation Capabilities of a Multi-Site All-Sky Infrared Camera Array<br><a href='http://arxiv.org/pdf/2610.06922'>论文</a></td><td>本文报告Galileo Project在拉斯维加斯附近部署三套全天空长波红外相机阵列，并建立多站三角测量管线以刻画天空目标。
+◆ 构建三站点、每站八台LWIR相机的IR-Dalek阵列，实现360度方位覆盖和公里级基线联合观测。
+◆ 提出逐时刻瞬时三维位置估计，以加权平方距离最小化融合同时视线，权重计入相机指向误差与目标距离。
+◆ 在LWIR缺乏恒星和固定地标的条件下，利用ADS-B飞机作为参考源完成内外参标定。
+◆ 设计多传感器轨迹关联方案，判定不同相机检测是否属于同一目标。
+◆ 用一周1650相机小时、2.1亿检测和530万轨迹验证，与ADS-B对比，三站解99%距离误差在5%内，单站对83%，并给出识别完整度随表观尺寸变化，50%阈值对应1.8像素翼展。</td></tr>
 <tr><td>2026-10-01</td><td>Physical AI Smart Spaces: A Large-Scale Benchmark for Multi-Camera 3D Perception in Smart Spaces<br><a href='http://arxiv.org/pdf/2610.02580'>论文</a></td><td>本文提出Physical AI Smart Spaces，一个面向室内智能空间的大规模多类别多摄像头3D感知基准，包含超过280小时同步1080p视频、近1800个摄像头，覆盖仓库、医院、零售等场景。
 它提供多摄像头身份、2D/3D边界框、相机标定及可用深度等自动标注，并覆盖Isaac Sim合成、Cosmos Transfer外观增强、真实Sim2Real评估以及两个仓库部署中的时间同步、VGGT自动标定和跨摄像头3D框验证。
 ◆ 首个同时提供大规模、多类别、多摄像头室内智能空间3D感知数据的基准。
@@ -8469,12 +8516,63 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (253篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (262篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-06</td><td>PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation<br><a href='http://arxiv.org/pdf/2610.08784'>论文</a> | <a href='https://song-kun.github.io/pears'>代码</a></td><td>本文提出PEARS，一个物理先验引导的混合强化学习框架，用于带触觉反馈的预训练策略样本高效在线适应。
+◆ 设计物理引导力推理模块，利用视觉语言模型中的物理先验，从视觉结果与触觉交互历史诊断失败并更新任务合适的接触力边界。
+◆ 引入高频混合力位控制器，在接触过程中执行这些力边界，将高层物理推理转化为底层力控约束。
+◆ 提出触觉条件扩散引导强化学习，通过调整冻结流匹配策略的潜在噪声来纠正自由空间运动与接触时机，无需更新基础模型。
+仿真中PEARS较最强单任务基线提升成功率12.4至37.4个百分点，并最多减少53.2%达到成功率阈值所需交互回合。
+真实实验中白板擦除成功率达95%，移液管吸液达90%，表明物理推理与策略引导结合可加速适应并降低昂贵交互。</td></tr>
+<tr><td>2026-10-06</td><td>MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback<br><a href='http://arxiv.org/pdf/2610.08425'>论文</a></td><td>MIM-VLA提出基于夹爪电机反馈的VLA架构，将近期电流、位置、速度与信号有效性编码为128维交互token。  
+◆用仅电机的MIM模块以人工审核的接触和交互阶段标签预训练，并只调节SmolVLA的夹爪动作通路，保持手臂动作与位置控制接口不变。  
+◆同一交互token支持MEM选择器VLM比较候选交互，产生证据条件的选择和解释。  
+◆方法无需额外触觉阵列、力扭矩传感器、校准力估计或直接电流控制，直接利用夹爪已有电机反馈。  
+◆在真实场景中验证阻力比较、真假相似物体主动探测和脆弱物体轻柔抓取，并覆盖未见过实例。  
+在13对物体中，MIM-VLA以75.0%选择更高阻力物体，显著高于SmolVLA的48.8%。</td></tr>
+<tr><td>2026-10-06</td><td>Event-Driven Proactive Robot Assistance through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2610.08344'>论文</a></td><td>本文提出事件驱动的主动机器人协助框架，由人-物交互结果而非用户指令触发高层推理。  
+◆ 将主动协助建模为事件驱动问题，利用交互结果启动协助推理，无需推理时任务说明。  
+◆ 设计事件监视器，在事件完成后提取稳定的前后快照，刻画状态转移。  
+◆ 使用冻结预训练VLM根据快照语义先验推断任务上下文，并判断是否需要协助。  
+◆ 限定动作原语和整数ID对象引用，使VLM生成的动作序列可执行且可验证。  
+◆ 在三个真实桌面协作任务上验证，无需任务特定训练或微调，性能可与用户指令变体相当。</td></tr>
+<tr><td>2026-10-06</td><td>Compact Robot Policies Need Fine-Grained Visual Representations<br><a href='http://arxiv.org/pdf/2610.08183'>论文</a> | <a href='https://corp-policy.github.io/'>代码</a></td><td>论文核心主张是多任务操作策略的性能差异主要来自视觉表示，而非参数量或生成式先验，并据此提出48.9M参数、无VLM和视频生成先验的CoRP，由表示提取器和流匹配动作生成器组成，在LIBERO达97.0%、RoboTwin 2.0达75.78%/73.36%，匹配大40.9-163.6倍系统。
+◆ 构建极紧凑策略，证明无需大模型与生成式先验也能实现强多任务操作。
+◆ 固定动作生成器消融视觉提取器，发现预训练初始化决定性，冻结编码器损失19.8分，随机ViT与ImageNet ResNet显著下降。
+◆ 表示压缩关键，每视图48 token优于全patch token，硬token预算优于变分信息瓶颈，后者会抑制指令相关token选择。
+◆ 语言条件仅在观察无法消除目标歧义时关键，LIBERO-Goal从9.2%升至95.8%，无歧义时移除略好。
+结论是紧凑策略需具备预训练、任务适配且压缩的视觉表示。</td></tr>
+<tr><td>2026-10-06</td><td>The Failure Is in the Readout: Fine-Grained Emotion Recognition Benchmarks Measure Elicitation, Not Perception<br><a href='http://arxiv.org/pdf/2610.08162'>论文</a></td><td>论文核心结论是细粒度情绪识别基准的失败在读出环节，即它测量的更像情绪诱发/答案生成，而非模型感知。  
+◆揭示EmoNet-Face-HQ原协议用生成式答案评估VLM，会低估模型并错误得出必须依赖专用微调模型EIF的结论。  
+◆提出保留原图像、分类体系和专家评级，仅把每个情绪类别改为独立二分类查询并直接读取logits概率。  
+◆在11个开放权重VLM上，验证式读出全部显著超过专家锚点κw=0.468，达κw=0.507-0.586，其中三个还显著超过EIF。  
+◆控制实验证明增益来自分级概率而非yes/no提问，阈值化损失142%平均增益并降至κw=0.254-0.423。  
+◆真实照片FACES复现较弱且混合，10个通过有效门控的模型中6个增益、3个中性到正、1个负，说明效应不限于合成数据。</td></tr>
+<tr><td>2026-10-06</td><td>Reactive Task-Oriented Robot-Human Handovers via Generative Hypothesis Selection<br><a href='http://arxiv.org/pdf/2610.08003'>论文</a></td><td>本文针对任务导向机器人-人类交接中人类任务特定手部姿态预测不足的问题，提出 GENESIS-Handover 方法。该方法将交接视为生成假设与实时观测人手的匹配选择，从而推断最合适的交接配置。
+◆ 利用 VLM 图像生成产生多种任务特定的手-物交互假设，显式建模物体的多交互模态。
+◆ 将生成假设与实时观测到的人手姿态匹配，实现反应式、任务条件下的交接决策。
+◆ 以 VLM 作为合理手-物交互先验，可泛化到未见过的物体-任务对。
+作者先在独立交互提议模块上评估，再部署于移动操作机器人；在12名参与者和五组任务-物体对的用户研究中，83.3%参与者认为其任务理解优于先前最先进方法。</td></tr>
+<tr><td>2026-10-06</td><td>TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback<br><a href='http://arxiv.org/pdf/2610.07621'>论文</a></td><td>TacZero提出一种无需额外训练、无需任务特定规则的接触丰富操作框架，直接利用预训练通用视觉语言模型完成机器人插孔任务。
+◆ 首次将通用VLM用于从视觉、机器人状态和触觉历史中推断接触并选择动作，避免触觉或操作专项训练。
+◆ 将三轴触觉响应表示为数值或叠加在图像上的向量，使VLM能以通用输入方式理解接触信息。
+◆ 由VLM生成目标末端位置和夹爪开合命令，再由低层控制器执行，省去手工控制律或学习动作选择模型。
+◆ 真实圆柱插孔实验中，数值触觉输入使20次成功15次，优于无触觉输入的10次，验证触觉反馈有效。
+该工作为通用VLM进行接触丰富操作提供了具体起点，并指出了该方向的后续挑战。</td></tr>
+<tr><td>2026-10-05</td><td>Sim-to-Real Transfer of Vision-Language Navigation in Continuous Environments Using an Ackermann-Steered Mobile Robot<br><a href='http://arxiv.org/pdf/2610.07192'>论文</a></td><td>本文提出一种面向连续环境的视觉语言导航系统，并在自建阿克曼转向移动机器人上实现仿真到现实的迁移，摆脱传统方法对导航图、360度视图和完美定位的依赖。系统将视觉输入与自然语言指令映射到共享嵌入空间，采用跨模态注意力架构在仿真数据上训练，再用真实机器人采集的相机与LiDAR数据轻量微调，结合线性光度调整和少量回合完成域适应。
+◆ 在连续环境中不依赖导航图、360度视图和完美定位，完成视觉语言导航的仿真到现实迁移。
+◆ 提出基于跨模态注意力的视觉语言对齐架构，并用自建阿克曼转向机器人采集真实数据微调，结合线性光度调整与少量回合适应。
+◆ 实现离线专用硬件部署，并通过SPL和nDTW验证真实环境导航的鲁棒性与适应性。</td></tr>
+<tr><td>2026-10-05</td><td>Demo: Vision-Language Model-Guided Online Calibration of an Electromagnetic Digital Twin<br><a href='http://arxiv.org/pdf/2610.07081'>论文</a></td><td>本文提出并演示一种视觉语言模型引导的电磁数字孪生在线校准框架，面向移动机器人的无线态势感知。
+◆ 用VLM进行材料分类，将可见材料经ITU-R P.2040映射为电导率先验，缓解在线校准的初始化敏感问题。
+◆ 将VLM先验接入NVIDIA Sionna，对累积RSS测量执行梯度下降，实现在线电导率校准。
+◆ 设计基于残余RSS校准误差和图像覆盖的在线路点规划，用于选择下一测量位置并降低测量行程成本。
+在Unitree G1与NVIDIA Sionna的真实室内场景中，该方法20米行程内达到1.74×10^-4的归一化平均绝对电导率误差。
+对比显示随机初始化不收敛，随机路点需两倍以上行程，验证了该框架的有效性与效率。</td></tr>
 <tr><td>2026-10-05</td><td>MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation<br><a href='http://arxiv.org/pdf/2610.06510'>论文</a> | <a href='https://wangjincheng1998.github.io/MarvisNav/}'>代码</a></td><td>现有ZSON中VLM从第一视角推断搜索区域，而探索历史常以文本或地图单独表示，导致记忆与路线选择对应隐式或需后融合。MarvisNav提出把探索记忆直接显式呈现在第一视角的视觉路线选择上，无需额外后处理。
 ◆构建并维护拓扑图，将候选节点及其探索状态投影到第一视角视图，形成带记忆的视觉候选。
 ◆探索状态不只表示是否访问，还编码局部探索进度，使VLM能同时评估目标相关性与探索状态。
@@ -10473,11 +10571,11 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆脉冲原型引导的语言（SPL）蒸馏：将Spikformer的类别原型与logits与VLM的可提示文本嵌入对齐，实现跨模态语义知识的有效迁移。
 
 实验结果表明，VL2Spike在三个静态数据集上取得6.81%的性能提升，能耗仅为原来的15.7%，并在机器人视觉位置识别任务中实现6.63%的增益，展现出优异的泛化能力与应用潜力。</td></tr>
-<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>本文针对自然森林视觉地点识别中重复植被、弱结构线索和跨次遍历外观变化大的问题，提出轻量级深度感知蒸馏框架。该框架将几何线索注入基于DINOv2的地点识别模型，同时保持其预训练描述子空间不变。在WildCross基准上，该方法相较仅用外观的模型取得提升，并增强对外观变化的鲁棒性。实验表明深度是自然环境下地点识别的强互补模态，深度感知蒸馏是提升森林感知鲁棒性的有前景方向。主要创新点如下：
-◆ 提出轻量级深度感知蒸馏框架，将深度几何线索融入DINOv2地点识别模型
-◆ 在蒸馏中保持DINOv2预训练描述子空间，避免破坏原有表征能力
-◆ 在WildCross上验证性能优于仅外观方法，并提升跨遍历外观变化鲁棒性
-◆ 明确深度作为森林地点识别强互补模态的价值，指出鲁棒森林感知新方向...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>论文针对自然森林环境中视觉位置识别受重复植被、弱结构线索和显著外观变化影响的问题，提出轻量级深度感知蒸馏框架，将几何线索注入基于DINOv2的位置识别模型。该方法在保持DINOv2预训练描述子空间的同时增强几何感知，并在WildCross基准上相较仅外观版本取得提升，对外观变化更鲁棒。
+◆ 提出轻量级深度感知蒸馏框架，把深度几何信息引入DINOv2位置识别模型。
+◆ 在注入几何线索时保持预训练描述子空间不变，避免破坏原有表征能力。
+◆ 在WildCross基准上验证深度是自然森林位置识别的强互补模态。
+这些结果证明深度感知蒸馏是提升森林感知鲁棒性的有前景方向。</td></tr>
 <tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>论文挑战了视觉位置识别中颜色输入必要的默认假设，系统研究色度信息在多种训练方式、架构和基准中的作用。
 
 ◆ 首次跨训练范式、模型架构和标准基准系统评估色度信息对全局VPR的影响。
@@ -10532,4 +10630,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.06
+> 更新于: 2026.10.07
