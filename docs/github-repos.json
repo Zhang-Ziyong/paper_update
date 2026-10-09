@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5245,
+      "stars": 5253,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4715,
+      "stars": 4724,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1522,
+      "stars": 1523,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1306,
+      "stars": 1307,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1351,
+      "stars": 1352,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1057,
+      "stars": 1061,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1092,
+      "stars": 1093,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -99,7 +99,7 @@
     "r2live": {
       "name": "r2live",
       "url": "https://github.com/hku-mars/r2live",
-      "stars": 784,
+      "stars": 783,
       "description": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping package",
       "created_at": "2021-02-24",
       "chinese_desc": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 689,
+      "stars": 691,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 584,
+      "stars": 585,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -227,7 +227,7 @@
     "btc_descriptor": {
       "name": "btc_descriptor",
       "url": "https://github.com/hku-mars/btc_descriptor",
-      "stars": 366,
+      "stars": 367,
       "description": "",
       "created_at": "2023-06-08",
       "chinese_desc": "btc_descriptor"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 209,
+      "stars": 210,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -315,7 +315,7 @@
     "iBTC": {
       "name": "iBTC",
       "url": "https://github.com/hku-mars/iBTC",
-      "stars": 150,
+      "stars": 151,
       "description": "",
       "created_at": "2024-05-26",
       "chinese_desc": "iBTC"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1060,
+      "stars": 1059,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
@@ -397,7 +397,7 @@
     "polygon_coverage_planning": {
       "name": "polygon_coverage_planning",
       "url": "https://github.com/ethz-asl/polygon_coverage_planning",
-      "stars": 666,
+      "stars": 667,
       "description": "Coverage planning in general polygons with holes.",
       "created_at": "2019-04-10",
       "chinese_desc": "Coverage planning in general polygons with holes."
@@ -485,7 +485,7 @@
     "mav_control_rw": {
       "name": "mav_control_rw",
       "url": "https://github.com/ethz-asl/mav_control_rw",
-      "stars": 456,
+      "stars": 457,
       "description": "Control strategies for rotary wing Micro Aerial Vehicles using ROS",
       "created_at": "2016-09-30",
       "chinese_desc": "Control strategies for rotary wing Micro Aerial Ve"
@@ -709,7 +709,7 @@
     "active_grasp": {
       "name": "active_grasp",
       "url": "https://github.com/ethz-asl/active_grasp",
-      "stars": 108,
+      "stars": 110,
       "description": "Closed-loop next-best view planning for grasp detection in clutter.",
       "created_at": "2022-01-06",
       "chinese_desc": "Closed-loop next-best view planning for grasp dete"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 317,
+      "stars": 319,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
