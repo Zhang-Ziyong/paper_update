@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.10.09)
+# 历史论文归档 (2026.10.10)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -108,12 +108,11 @@
 ◆ 引入序列验证器，持续跟踪并验证回环候选，降低误闭环风险。
 ◆ 在高性能因子图框架上实现位姿图，提升全局优化与建图鲁棒性。
 系统在仿真和真实录音中均得到验证，结果表明它能稳健创建拓扑地图、抵抗地图崩溃，并在地图规模扩大时保持鲁棒。</td></tr>
-<tr><td>2026-09-30</td><td>MVP-SLAM: Multi-Camera Visual-Inertial Floorplan-Prior SLAM<br><a href='http://arxiv.org/pdf/2609.39596'>论文</a></td><td>论文提出MVP-SLAM，一种面向室内建筑工地的在线视觉惯性SLAM系统，利用设计阶段平面图作为度量先验来抑制长轨迹漂移。
-◆ 仅用两个相对朝向的鱼眼相机，不依赖深度传感器，通过检测地图中的墙体并与平面图匹配来在线校正漂移。
-◆ 引入漂移感知策略，根据系统漂移状态选择墙体与平面图的匹配，提高校正的可靠性。
-◆ 设计多阶段集成机制，将每次匹配增量转化为持久校正，使轨迹在建图过程中持续保持校正并定位在平面图内。
-在Hilti-Trimble SLAM Challenge 2026多层工地验证，定位任务22队第2（0.29米均值RMSE），SLAM任务62队第5（0.24米）。
-它是在线、集成平面图并定位类方法中两项任务排名第一，证明平面图先验可在无深度传感器条件下提升建筑工地SLAM鲁棒性。</td></tr>
+<tr><td>2026-09-30</td><td>MVP-SLAM: Multi-Camera Visual-Inertial Floorplan-Prior SLAM<br><a href='http://arxiv.org/pdf/2609.39596'>论文</a></td><td>本文提出MVP-SLAM，一种面向室内建筑工地的在线视觉惯性SLAM系统，利用两枚背对鱼眼相机，不依赖深度传感器，借助设计平面图先验校正长期漂移并实现楼内定位。
+◆ 将地图中检测到的墙体与平面图在线匹配，并用漂移感知策略决定校正时机与方式，缓解重复低纹理和光照变化导致的漂移。
+◆ 设计多阶段集成机制，把每对墙体与平面图匹配增量转化为持久校正，使轨迹在构建过程中始终保持校正与全局定位。
+◆ 仅靠相机和惯性信息实现在线平面图融合与定位，区别于多数离线校正或依赖深度传感器的方案。
+在Hilti-Trimble SLAM Challenge 2026多楼层工地验证中，Localization任务22队第2，平均RMSE 0.29米；SLAM任务62队第5，RMSE 0.24米，并在同时在线、集成平面图并定位的方法中两项均排名第一。</td></tr>
 <tr><td>2026-09-29</td><td>Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs<br><a href='http://arxiv.org/pdf/2609.38106'>论文</a></td><td>本文系统研究音频编码器剪枝对SLAM-ASR不同人口群体的公平性影响，指出现有仅用总体WER选择压缩模型会掩盖群体差异。
 ◆ 首次揭示剪枝并非平等影响所有人口群体，表现最好与最差群体间的WER差距会成倍扩大。
 ◆ 发现这种不公平在三种编码器规模中都存在，但最大模型最初可被总体WER掩盖。
@@ -1889,12 +1888,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 刻画适用问题类别，识别可进一步解析简化的常见情形，并证明IRLS鲁棒代价仍能保留大部分可利用结构。
 ◆ 在SLAM、SNL、SfM合成与真实基准上，CPU和GPU平均提速5至7倍，个别数据集超过40倍；在多机器人SLAM抗离群值场景中，鲁棒变体比先进GNC求解器快2至16倍。
 ◆ 开源C++代码与全部数据集，推动变量投影在机器人感知中的实用化。</td></tr>
-<tr><td>2026-09-17</td><td>RawSLAM: Online HDR Gaussian SLAM from Linear Radiance<br><a href='http://arxiv.org/pdf/2609.20589'>论文</a></td><td>本文提出RawSLAM，首个直接在单曝光16位线性HDR图像上在线跟踪与建图的高斯SLAM框架，无需离线SfM且可应对大帧间运动和极端光照。
-◆ 设计架构无关的HDR高斯泼溅模块，采用无MLP的对数高斯颜色参数化，并原生输出线性场景辐射。
-◆ 提出Reinhard范围压缩光度目标与结构引导空间梯度加权，增强极端光照下的跟踪与建图鲁棒性。
-◆ 该HDR高斯模块可无缝迁移至SplaTAM、Gaussian SLAM和DROID-W，消除它们在挑战光照序列中的跟踪失败。
-方法在轨迹与重建精度上优于直接HDR改装的MonoGS，且同一公式在标准8位输入下将MonoGS基线误差约减半。
-为支撑研究，发布RawSLAM数据集，包含10个真实室内序列的16位RAW图像、对齐深度、IMU测量和OptiTrack外部位姿。</td></tr>
+<tr><td>2026-09-17</td><td>RawSLAM: Online HDR Gaussian SLAM from Linear Radiance<br><a href='http://arxiv.org/pdf/2609.20589'>论文</a></td><td>本文提出RawSLAM，首个在线高斯SLAM框架，可直接在单曝光16位线性HDR图像上跟踪与建图。
+◆ 设计架构无关的HDR高斯泼溅模块，采用无MLP的对数参数化表示高斯颜色特征。
+◆ 引入Reinhard范围压缩光度目标与结构引导空间梯度加权，增强极端光照下的鲁棒性。
+◆ 在轨迹与重建精度上优于直接HDR适配的MonoGS，并可原生渲染线性场景辐射；同一公式用于8位输入时误差约减半。
+◆ HDR高斯模块可无缝迁移至SplaTAM、Gaussian SLAM和DROID-W，消除其在挑战光照序列中的跟踪失败。
+◆ 发布RawSLAM数据集，含10个真实室内序列的16位RAW、对齐深度、IMU和OptiTrack位姿，代码与数据将公开。</td></tr>
 <tr><td>2026-09-16</td><td>Cross-Lingual Parkinson&#x27;s Disease Severity Assessment Using Pre-trained Speech Embeddings: A Multi-Class Evaluation<br><a href='http://arxiv.org/pdf/2609.20875'>论文</a></td><td>本文针对语音基础模型在帕金森病严重程度跨语言多类评估中泛化性不足、标注数据有限且缺乏可解释性的问题，选取四个开源语音基础模型，在三个数据集上开展零样本与k-shot跨语言多类严重程度评估，并分析数据属性、预处理和适应策略的影响。
 ◆ 系统评估四类开源预训练语音嵌入在跨语言帕金森病严重程度多类分类中的迁移能力，填补该场景下多类跨语言评估的空白。
 ◆ 构建覆盖三个数据集、零样本与k-shot设置的跨语言多类评估框架，并揭示性能对数据集属性、预处理和适应策略高度敏感。
@@ -2656,13 +2655,15 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆采用半稠密的由粗到精匹配流水线,自适应地更新显著结构附近的注意力,在提升全局建模能力的同时抑制非重叠区域的干扰。
 
 ◆在多个具有挑战性的摄影测量基准数据集上的实验表明,SGFormer有效缓解了注意力发散现象,显著提升了匹配精度与鲁棒性。</td></tr>
-<tr><td>2026-08-27</td><td>SSMB: Self-Supervised Local Feature Detection under Motion Blur<br><a href='http://arxiv.org/pdf/2608.27181'>论文</a></td><td>针对运动模糊下局部结构失真、关键点定位可重复性下降的问题，现有去模糊再检测流程计算昂贵且易引入伪影，而回归清晰图手工关键点的方法受手工检测器假设限制。本文提出SSMB，一种无需去模糊、无需手工检测器和外部伪标签的自监督运动模糊关键点检测器。◆引入局部判别性增强模块LDE，在全局特征混合后恢复细粒度局部判别能力。◆设计两阶段训练：先基于合成形状进行几何预训练，不依赖外部检测器，从渲染几何自举空间判别关键点。◆再在真实清晰-模糊图像对上进行模糊感知训练，通过跨域一致性、几何对齐和空间覆盖的多组件自监督目标学习模糊不变检测。在关键点检测、图像匹配、相对位姿估计和视觉定位等任务上，SSMB均达到稀疏关键点检测器的新最优，持续超越监督与自监督基线。</td></tr>
-<tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>本文提出隐私保护关键点检测器Misanthrope，用于缓解图像匹配中局部特征反转攻击导致的隐私泄露。
-◆ 通过自蒸馏训练让检测器避免在人物区域提取关键点，从源头而非事后混淆抑制反转攻击。
-◆ 展示传统特征检测反转图像可检测并重识别人物，而Misanthrope能有效缓解这类隐私威胁。
-◆ 在保持与当前最优方法相当匹配精度的同时，在人物作为干扰的摄影旅游和野外里程计等挑战场景中甚至更优。
-◆ 在Image Matching Challenge 2021 Phototourism测试集上，Misanthrope在9个场景中的7个成为最佳稀疏特征提取器。
-论文还开源了模型与评估脚本，便于复现和后续研究。</td></tr>
+<tr><td>2026-08-27</td><td>SSMB: Self-Supervised Local Feature Detection under Motion Blur<br><a href='http://arxiv.org/pdf/2608.27181'>论文</a></td><td>本文提出 SSMB，一种面向运动模糊图像的无去模糊、自监督稀疏关键点检测器，无需手工检测器或外部伪标签，并避免去模糊再检测的计算开销与恢复伪影。
+◆ 提出局部判别性增强 LDE 模块，在全局特征混合后恢复细粒度局部判别能力。
+◆ 设计两阶段训练：先基于合成形状进行几何预训练，仅从渲染几何自举空间判别关键点检测；再在真实清晰-模糊图像对上做模糊感知训练。
+◆ 构建多组件自监督目标，联合跨域一致性、几何对齐和空间覆盖，学习模糊不变的关键点检测。
+◆ 在关键点检测、图像匹配、相对位姿估计和视觉定位等任务上取得稀疏关键点检测器的新 SOTA，全面优于监督与自监督基线。</td></tr>
+<tr><td>2026-08-24</td><td>Misanthrope: A Privacy-Preserving Keypoint Detector<br><a href='http://arxiv.org/pdf/2608.23012'>论文</a> | <a href='https://github.com/fratopa/misanthrope'>代码</a></td><td>论文提出 Misanthrope，一种面向图像匹配的隐私保护关键点检测器，旨在解决局部特征易受反转攻击并泄露敏感场景内容的问题。它通过自蒸馏训练，让检测器主动避免在人物上提取关键点，从而从源头减少隐私敏感信息进入特征，而非依赖事后混淆。  
+◆ 采用自蒸馏训练关键点检测器，学习抑制人物区域的关键点响应。  
+◆ 将隐私保护前置到特征提取阶段，从源头缓解反转攻击而非后处理。  
+实验显示，传统特征检测反转图像可用于检测和重识别人物，而 Misanthrope 能有效缓解这类攻击。同时，其图像匹配性能与当前最优方法相当，在人物作为干扰物的摄影旅游和野外里程计等挑战场景中甚至更优。在 Image Matching Challenge 2021 Phototourism 测试集上，Misanthrope 在 9 个场景中的 7 个成为最佳稀疏特征提取器，并开源了模型与评估脚本。</td></tr>
 <tr><td>2026-08-23</td><td>CausalCache: Conditional High-Fidelity Restoration for Long-Horizon GUI Agents<br><a href='http://arxiv.org/pdf/2608.22577'>论文</a></td><td>CausalCache 针对长程 GUI 智能体在视觉上下文预算受限时难以兼顾历史保真度的问题，提出了条件保真度恢复框架：每个事件以摘要形式存储并链接归档截图，预算 B 决定哪些事件被提升为&quot;摘要+图像&quot;形式。与 Recent-B 将所有槽位分配给最近事件不同，CausalCache 跨完整轨迹重新分配预算，仅当远距事件的条件边际效用更高时才替换近期图像。方法在 OSWorld-Verified 上比纯摘要记忆提升约 13 个成功率点；在跨应用移动基准上整体提升 3.7 分，记忆关键子集提升 8.6 分，匹配对照组无显著差异。
 
 核心创新点：
@@ -10720,15 +10721,16 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆ 设计局部仿射坐标系与相机方位角编码机制，增强跨场景几何一致性表达与定位鲁棒性。
 ◆ 构建XHZ船舶全景数据集（8K图像），涵盖多层舱室结构与甲板过渡区域，并采用严格查询-数据库分离的评估协议。
 ◆ 实验证明该方法在多种VPR骨干网络上将平均定位误差降低超过60%，在跨场景海事环境中表现出有效性与鲁棒性。</td></tr>
-<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>VL2Spike提出一种面向低功耗具身视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。它在保持脉冲神经网络能效优势的同时，提升纯SNN的学习能力，为低功耗机器人感知提供可行路径。  
-◆ 提出时空视觉脉冲蒸馏，通过共享流形对齐VLM图像特征与脉冲token，并利用膜电位和脉冲率实现热启动的时间一致性。  
-◆ 设计脉冲原型引导的语言蒸馏，将Spikformer类别原型和logits与可提示VLM文本嵌入对齐。  
-实验表明，该方法在三个静态数据集上性能提升6.81%，能耗仅为15.7%，并在机器人视觉位置识别上取得6.63%的增益。  
-因此，其核心创新是融合VLM多模态知识到Spikformer的脉冲蒸馏机制，兼顾精度、泛化与低功耗。</td></tr>
-<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>森林视觉地点识别因重复植被、弱结构线索和跨遍历外观变化而面临挑战。本文提出一种轻量级深度感知蒸馏框架，将几何线索注入基于DINOv2的地点识别模型。该方法在注入深度信息的同时保持预训练描述子空间，并在WildCross基准上优于仅外观方法，增强外观变化鲁棒性。
-◆ 提出轻量级深度感知蒸馏框架，把深度几何线索注入DINOv2地点识别模型。
-◆ 在注入深度信息时保持预训练描述子空间，避免破坏原有描述能力。
-◆ 在WildCross上验证深度是强互补模态，并指明深度感知蒸馏可提升森林感知鲁棒性。</td></tr>
+<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>VL2Spike提出一种从视觉语言模型到Spikformer的脉冲驱动知识蒸馏框架，用于具身AI低功耗视觉感知。它把VLM多模态知识迁移到紧凑Spikformer，提升学习能力并保持脉冲能效。  
+◆ 提出空间-时间视觉脉冲蒸馏，实现VLM图像特征与脉冲token的共享流形对齐，并对膜电位和脉冲率做热启动时间一致性约束。  
+◆ 设计脉冲原型引导语言蒸馏，将Spikformer类原型和logits与可提示VLM文本嵌入对齐。  
+实验显示其在三个静态数据集上增益6.81%，仅耗15.7%能量，并在机器人视觉地点识别上增益6.63%。  
+这为资源受限具身AI提供了实用低功耗感知路径。</td></tr>
+<tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>针对森林环境中植被重复、结构线索弱和跨次通行外观变化大的视觉位置识别难题，本文提出一种轻量级深度感知蒸馏框架。该框架向基于DINOv2的位置识别模型注入几何线索，同时保持其预训练描述子空间不变。
+◆ 提出深度感知蒸馏，将深度几何信息作为互补模态融入DINOv2位置识别模型。
+◆ 采用轻量级设计并保持预训练描述子空间，避免破坏原有外观表征能力。
+◆ 在WildCross基准上验证，相较仅外观方法取得性能提升并增强外观变化鲁棒性。
+结果表明深度是自然环境中位置识别的重要互补模态，深度感知蒸馏是提升森林感知鲁棒性的有前景方向。</td></tr>
 <tr><td>2026-05-31</td><td>One Channel to Rule Them All: Rethinking Input Representation for Visual Place Recognition<br><a href='http://arxiv.org/pdf/2606.00936'>论文</a></td><td>论文挑战了视觉位置识别中颜色输入必要的默认假设，系统研究色度信息在多种训练方式、架构和基准中的作用。
 
 ◆ 首次跨训练范式、模型架构和标准基准系统评估色度信息对全局VPR的影响。
@@ -10783,4 +10785,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.09
+> 更新于: 2026.10.10
