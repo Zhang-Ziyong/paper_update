@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.10.11)
+# 计算机视觉领域最新论文 (2026.10.12)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,6 +24,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-08</td><td>MemReg: Streaming Outdoor LiDAR Point Cloud Registration with Hybrid Memory Buffers<br><a href='http://arxiv.org/pdf/2610.12624'>论文</a> | <a href='https://github.com/IRMVLab/MemReg'>代码</a></td><td>MemReg针对室外LiDAR配准中成对输入忽略流式时序相关性的问题，提出一种融合位姿相关记忆缓冲的多帧流式配准网络。其核心观察是长期时序序列能提供全局上下文，以补全稀疏测量、滤除离群点并缓解低重叠。  
+◆设计隐式记忆特征缓冲与显式记忆位姿缓冲，用于存储并动态更新位姿相关时序特征。  
+◆提出动态历史加权模块，自适应融合当前与历史位姿相关特征。  
+◆构建多帧流式配准框架，突破成对输入范式，利用长期时序信息提升配准性能。  
+在KITTI、nuScenes、Apollo-Southbay上达到SOTA并超越成对方法和多帧SLAM系统，且泛化到3DMatch、3DLoMatch、ScanNet等室内多视图场景。</td></tr>
 <tr><td>2026-10-08</td><td>RAGNAROK: Radar-Aided Gravity-Normalized Alignment for Robust Open Keyframe-based Radar-Visual-Kinematic-Inertial SLAM<br><a href='http://arxiv.org/pdf/2610.11531'>论文</a> | <a href='https://github.com/hanjun815/RAGNAROK'>代码</a></td><td>本文针对足式机器人在非结构化环境中状态估计易退化、现有雷达辅助方法偏航可观测性不足且故障感知融合欠缺的问题，提出RAGNAROK。RAGNAROK是首个面向开放关键帧的雷达-视觉-运动学-惯性SLAM系统，旨在挑战环境下实现鲁棒运行。
 ◆ 引入滑移与滚动接触感知的腿部速度估计，提高腿部运动学速度观测可靠性。
 ◆ 设计运动学感知雷达因子与退化感知图像增强，增强雷达和视觉在退化环境中的约束。
@@ -102,11 +107,6 @@
 ◆ 在9个建筑尺度场景、超1小时和2.1公里真实机器人运行中验证，全景版达85%总覆盖，相同针孔输入下达82%，优于基线最高61%，每帧假体素减少5至17倍。
 定性结果显示，重建平面可让导航规划器阻断穿玻璃路径，同时保留可通行路线。
 项目页已公开并可访问。</td></tr>
-<tr><td>2026-09-30</td><td>BatSLAM 2.0: Sequence-Verified Sonar Place Recognition in a Robust Pose Graph<br><a href='http://arxiv.org/pdf/2609.40085'>论文</a></td><td>本文提出BatSLAM 2.0，一种仅依靠仿生双耳声纳的SLAM系统，可在黑暗杂乱环境中构建拓扑地图。其核心贡献是缓解声纳位置识别的固有歧义，避免错误回环导致拓扑地图崩溃。
-◆ 更新声学前端，为声纳位置识别提供更可靠的信号基础。
-◆ 引入序列验证器，持续跟踪并验证回环候选，降低误闭环风险。
-◆ 在高性能因子图框架上实现位姿图，提升全局优化与建图鲁棒性。
-系统在仿真和真实录音中均得到验证，结果表明它能稳健创建拓扑地图、抵抗地图崩溃，并在地图规模扩大时保持鲁棒。</td></tr>
 </tbody>
 </table>
 </div>
@@ -217,6 +217,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-09</td><td>Efficient Confidence-Aware Densification for 3DGS<br><a href='http://arxiv.org/pdf/2610.13541'>论文</a></td><td>本文针对3DGS-MCMC按透明度采样致新图元偏向前景、背景欠重建的问题，提出面向固定预算MCMC的置信度感知误差驱动致密化。它在保持固定预算与渐进增长的前提下，用图像误差而非透明度决定图元放置。
+◆ 以屏幕空间梯度大且学习置信度低的区域作为新图元采样位置，优先重建当前解释较差的区域。
+◆ 将对渲染贡献最小的图元重定位到高误差区域，实现误差驱动而非透明度驱动的密度控制。
+◆ 无需先验或单独初始化，在100k至2M各预算下平均PSNR、SSIM、LPIPS均超3DGS-MCMC；100k恢复ConeGS领先PSNR的0.84dB，500k起PSNR/SSIM在固定预算方法中领先。
+◆ 可兼容先验：从ConeGS或EDGS初始化后，100k匹配ConeGS，500k三项指标最佳。</td></tr>
 <tr><td>2026-10-05</td><td>WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification<br><a href='http://arxiv.org/pdf/2610.07384'>论文</a></td><td>WildMatch研究仅用身份标签对预训练关键点匹配器进行弱监督适配，以提升野生动物个体重识别。
 现有方法要么依赖大量标注学习全局嵌入且忽略局部证据，要么直接使用领域无关的现成匹配器。
 该方法利用预训练匹配器挖掘信息图像对，从身份一致性生成弱正负监督，并对比微调匹配网络，强化同身份对应、抑制异身份对应。
@@ -286,13 +291,6 @@
 ◆ 提出了GLAM全局到局部非对称匹配框架,结合检索锚定的全局描述子与局部非对称通路,将参考图像编码为压缩的区域token集合,通过可学习的软晚期交互与单查询探针进行匹配。
 
 ◆ 推理阶段复用同一组token实现轻量的互最近邻重排序,在Recall@1/5/10和mAP上超越强基线,同时重排序特征量减少约5倍、每对匹配成本降低约两个数量级。</td></tr>
-<tr><td>2026-08-30</td><td>SGFormer: Structure-Guided Transformer for Robust Local Feature Matching<br><a href='http://arxiv.org/pdf/2608.03423'>论文</a></td><td>该论文针对局部特征匹配中现有无检测器方法(如LoFTR)在大幅视角变化场景下出现的注意力发散问题,提出了一种新颖的结构引导Transformer网络SGFormer。研究发现,标准Transformer的无约束全局注意力机制会使部分高置信度匹配落在重叠区域之外,降低匹配可靠性。
-
-◆提出Triple-Structure-Attention(TSA)模块,利用网络浅层局部特征强化显著结构区域的特征表达,引导后续Transformer阶段将注意力聚焦于具有显著结构的重叠区域。
-
-◆采用半稠密的由粗到精匹配流水线,自适应地更新显著结构附近的注意力,在提升全局建模能力的同时抑制非重叠区域的干扰。
-
-◆在多个具有挑战性的摄影测量基准数据集上的实验表明,SGFormer有效缓解了注意力发散现象,显著提升了匹配精度与鲁棒性。</td></tr>
 </tbody>
 </table>
 </div>
@@ -392,6 +390,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-09</td><td>HorizonNav: Geometry-Guided Video Diffusion for Anticipatory 3D Robot Navigation<br><a href='http://arxiv.org/pdf/2610.13849'>论文</a></td><td>HorizonNav 提出一种面向预见性机器人导航的视频扩散框架，可将单张RGB图像和文本提示转化为几何对齐的合理周边3D空间表示。  
+◆ 用视觉语言模型理解场景并生成结构化提示，驱动视频扩散生成未来观测，形成从语言目标到预想环境的闭环。  
+◆ 设计几何引导深度对齐，联合ORB-SLAM3相机位姿与三角化视觉地标约束多视角稠密深度，解决仅靠视频时序一致无法消除的几何不一致。  
+◆ 构建视频生成、单目SLAM、稠密深度和三角化地标融合的完整导航管线，在无激光雷达下仍能获得可规划3D重建。  
+◆ 在19场景中，规划可行场景从P20的13/19提升到P81的15/19，RRT成功从62/90提升到75/90。  
+◆ 走廊研究显示6/25生成相机轨迹违反碰撞约束，RRT在5/6情况下恢复可行方案；15个走廊重建平均误差约0.30米，并主动暴露失败模式。</td></tr>
+<tr><td>2026-10-09</td><td>Forward Dynamics Models<br><a href='http://arxiv.org/pdf/2610.13117'>论文</a></td><td>论文提出 Forward Dynamics Models（FDM），通过 action-to-future 范式将动作预测与未来世界状态预测耦合。  
+◆ 未来预测只以动作特征为条件，而非用预测未来去条件动作，从机制上阻止预测误差传播到策略。  
+◆ 端到端训练让真实未来状态通过动作特征监督策略，同时保持推理时无需生成未来。  
+◆ 推理阶段直接跳过未来生成，避免 WAM 式额外计算成本。  
+◆ 该范式与骨干无关，可用 VLM 和 VGM 两类骨干实例化。  
+实验在仿真和真实机器人上验证有效性，LIBERO 平均成功率达 99.4%，真实任务较 VLA 与 WAM 最高绝对提升 13%。</td></tr>
+<tr><td>2026-10-09</td><td>JoyInside-VLM-Agent: Product-Conditioned Multimodal Policy Learning for Embodied Agents<br><a href='http://arxiv.org/pdf/2610.12957'>论文</a></td><td>论文提出 JoyInside-VLM-Agent，一种面向机器人平台与智能硬件的 ReAct 风格多模态具身智能体，通过产品条件轨迹构建与分阶段策略学习，将多模态观察和用户请求转化为可执行动作，并适应产品约束、目标变化和执行反馈。
+◆ 构建闭环沙箱生成覆盖目标修订与失败恢复的多模态交互轨迹，并用执行结果和语义标准校验。
+◆ 采用监督微调、多教师在线策略蒸馏，再用 DPER 强化学习，在冻结特权教师与共享 rollout 参数的特权学生间做 token 级证据路由。
+◆ DPER 调节奖励派生 token 优势但保留其符号，训练奖励融合生成过程评价、多评委排序和任务队列一致性。
+◆ 在 BFCL v4 上总分 77.44 超评估基线，其他公开基准结果混合；在 JoyInside-Devices 与 JoyInside-Robotics 上所有报告指标领先。
+两个真实四足案例展示视觉接地搜索、执行失败后重规划和显式失败报告。</td></tr>
+<tr><td>2026-10-09</td><td>VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding<br><a href='http://arxiv.org/pdf/2610.12832'>论文</a></td><td>论文提出EASG显式动作空间接地框架，将TCP中心动作坐标系投影到腕部相机观测，并用VLM原生文本生成接口表达连续动作，使连续机器人动作空间的语义直接可被VLM感知。由此，预训练VLM无需机器人动作预训练或额外动作模块即可生成可执行动作，并支持用机器人轨迹在同一连续动作空间微调，实现零样本操作与跨物体位置、类别和机器人本体泛化。
+◆ 显式动作空间接地：把TCP中心动作帧投影到腕部相机，让连续动作语义直接进入VLM感知上下文。
+◆ 原生文本动作接口：用VLM既有文本生成能力表达可执行动作，无需学习动作token、动作头或动作专家。
+◆ 零机器人动作预训练：无需额外动作模块即可释放VLM视觉空间推理，直接用于零样本操作。
+◆ 同空间微调与泛化：同一连续动作接口支持轨迹微调，并提升跨位置、类别和本体的泛化能力。</td></tr>
+<tr><td>2026-10-08</td><td>Gamma: Grounded Multi-Agent Memory with Mechanical Audit for Memory-Intensive Manipulation<br><a href='http://arxiv.org/pdf/2610.12793'>论文</a></td><td>GAMMA针对VLA策略在记忆密集型操作中因训练数据马尔可夫且难以直接把情节记忆映射到动作块而失效的问题，指出真正难点在于把记忆映射为接地的符号子目标。它将该阶段重构为双智能体协作记忆系统：SAM-3负责空间接地，VLM写入者把每个重规划窗口蒸馏成一条接地文本，追加式文本记忆库保存，VLM推理者按oracle节奏读取并输出下一接地子目标。
+◆ 首次以检测器与VLM写入者、推理者分工的多智能体记忆架构，把长时记忆从噪声像素和无界上下文中解耦为结构化接地文本。
+◆ 提出propose-verify机械审核框架，用机械视觉证据对每个智能体主张进行接纳、延迟、纠正或拒绝，并统一用于训练语料构建与部署。
+◆ 在策略保持固定的前提下，于十六项记忆操作任务中恢复大部分oracle上限，部分任务达到上限，并以不变契约迁移到第二个基准。</td></tr>
 <tr><td>2026-10-08</td><td>Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement<br><a href='http://arxiv.org/pdf/2610.12369'>论文</a></td><td>论文提出将具身世界视为具身图灵机，以机器人和环境状态为纸带、策略为规则。据此提出仅代码即策略的COAP，用代码从图像和本体感知中测量并跟踪状态，再据此决策，同一代码跨回合复用，任务共享库，且无需VLM或VLA在环。
 ◆ 显式状态：机器人、环境和任务状态可直接存储在代码中，使决策依据明确、可追踪。
 ◆ 执行优势：代码决策可控，能灵活从失败中恢复，在线运行快速且成本低。
@@ -449,33 +474,6 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 ◆ 构建动作生成模块残差流的激活/归因修补框架，用于定位指令对动作生成的因果作用位点。
 ◆ 发现GR00T N1.7中方向扰动可产生最大因果效应却基本不改变内部表示几何，形成因果与表征解离。
 ◆ 揭示归因修补可靠性因模型而异，GR00T中贴近激活修补，π0.5中明显偏离，说明解释方法需按模型校准。</td></tr>
-<tr><td>2026-10-07</td><td>End-to-End Autonomous Generation of Human Assembly Plans<br><a href='http://arxiv.org/pdf/2610.09781'>论文</a></td><td>本文提出一种仅需网格装配体即可端到端自主生成人类装配计划的自包含方法，无需关节元数据、紧固件标注或额外信息，可输出分步手册或结构化失败报告。
-◆ 将面向装配设计原则编码为物理模拟器中的系统拆卸成本函数，自动确定装配序列与子装配。
-◆ 自主生成装配工具清单、装配手册和改进可装配性的设计反馈，并主要依靠多模态大语言模型完成手册、工具标注与反馈。
-◆ 与总是先移除最外层零件的基线相比，DfA感知序列规划在136个5至30零件装配上降低机器人臂代理模拟装配时间35%。
-◆ 工具选择正确率达88.6%，并用视觉语言模型裁判对比消融版本，识别手册中承载关键信息的页面元素。
-该方法和开源代码可供工程师或AI代理使用，以加速产品制造计划创建。</td></tr>
-<tr><td>2026-10-07</td><td>YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding<br><a href='http://arxiv.org/pdf/2610.09718'>论文</a></td><td>论文针对VLA模型语言指令与物理交互缺乏细粒度对齐的问题，尤其现有机器人演示缺少夹爪、接触对象和抓取移动等执行语义。
-◆ 提出YUBI-STAG自动标注框架，结合接触物体分割与视觉语言模型，为演示生成物体身份属性状态、单双臂动作、协调及空间交互语义。
-◆ 提出YUBI-VLM蒸馏模型，直接从原始未分割视频、仅腕部视角和少量推理调用中恢复动作结构与细粒度标注。
-◆ 构建YUBI-STAG-Bench，覆盖时序、语义与空间接地任务，验证标注精度与泛化能力。
-◆ 证明用这些标注后训练VLA策略，可对齐细粒度语言与接触感知结构，提升双臂操作和指令跟随，包括物体身份、执行夹爪、目标位置与空间关系。
-实验显示YUBI-VLM以更少调用和更短运行时间接近YUBI-STAG精度，并能泛化到未见操作。</td></tr>
-<tr><td>2026-10-07</td><td>System Switch: When Should a Fast Decision Model Stop and Think?<br><a href='http://arxiv.org/pdf/2610.09683'>论文</a></td><td>◆ 提出“系统切换”框架：快速actor每步决策，仅在门控开启时把控制权交给慢速推理视觉语言模型，游戏继续运行；基于闭环Doom与System One模型经llama.cpp评测。
-◆ 在900道留出题发现，0.15B–9B零样本决策模型有收集物品偏差，选项顺序影响准确率，且准确率、校准、置信度敏感性彼此不同，同等准确率模型AUROC差异大。
-◆ 最敏感模型的置信度主要追踪失败情境类型而非具体错误，说明延迟触发应依据情境而非单题对错。
-◆ 离线延迟最不自信30%决策给推理模型，收益与actor AUROC强相关（0.87）；留出游戏中原顺序增益+0.13、打乱+0.08，推理约贡献一半。
-◆ 闭环33局三随机种子无变体到出口；承诺计划能开更多门并让静止actor行动，固定探索规则更易死，门锁知识会使推理器误判普通门，未告知则退回收集；并发布代码、提示、数据与日志。</td></tr>
-<tr><td>2026-10-07</td><td>Adaptive Code Generation for Controlling Robots<br><a href='http://arxiv.org/pdf/2610.09588'>论文</a></td><td>本文针对机器人在未知动态环境中作为复杂自适应系统部署的需求，提出从刚性命令库转向基于意图的自主性，并指出自然语言是表达有限指令集之外复杂目标的关键媒介。核心贡献是构建一个利用生成式AI控制机器人的架构框架，通过LLM与VLM协同的双AI设计连接高层意图与可执行动作。
-◆ 提出双AI架构，由LLM将高层意图翻译为受形式化机器人库和可验证语法约束的程序代码，由VLM通过蒸馏过程提供语义接地。
-◆ 针对形式化鸿沟、分类学鸿沟以及环境不可预测性，以受限生成方式弥合不精确意图与可执行动作之间的差距。
-◆ 引入基于几何和语义阈值的环境驱动重规划触发机制，并配合连续运行时监控和自适应规划闭环，以维持时间状态与进度感知。
-◆ 在多种前沿模型上进行基准测试，证明将生成式AI嵌入反应式受限循环，可在动态未知环境中鲁棒完成复杂意图。</td></tr>
-<tr><td>2026-10-07</td><td>Not All Uncertainty Matters: Simulation-in-the-Loop Fast-Slow Reasoning for Decision-Critical Autonomous Driving System<br><a href='http://arxiv.org/pdf/2610.09520'>论文</a></td><td>论文提出SIGMA，一种面向决策关键自动驾驶的模拟在环快慢协作框架，云端VLM按需提供高层推理，车载模块负责实时感知与控制。核心思想是将规划器纳入不确定性评估，通过语义和几何不确定性下可能场景对可行轨迹与规划成本的影响，判断解决该不确定性是否值得调用云模型。
-◆ 提出模拟在环的任务导向不确定性评估，以规划收益而非感知不确定性作为云推理触发依据。
-◆ 提出期望规划增益EPG，作为决策级指标统一指导云调用、云引导集成与请求优先级，并兼顾截止期和资源约束。
-◆ 在CARLA中验证，在静态和动态障碍场景下减少无效云交互，同时提升规划、效率与导航成功率。
-◆ 相比固定周期协作，云交互减少50%，导航成功率提升6%以上，动态场景完成时间最多降低26.2%。</td></tr>
 </tbody>
 </table>
 </div>
@@ -488,17 +486,17 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-09</td><td>ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies<br><a href='http://arxiv.org/pdf/2610.04607'>论文</a> | <a href='https://github.com/anthonytao80-crypto/ForeAct3D'>代码</a></td><td>ForeAct3D提出一种嵌入VLA策略、由策略动作接地的未来世界建模框架，训练时用未来语义3D预测和物理约束塑造动作生成表征，推理时无需未来预测。
+◆ 用可学习几何查询从策略表征解码当前与未来的深度、语义分割和相机位姿，构建语义3D场景状态。
+◆ 将未来查询条件于策略生成的动作块，使未来预测与实际计划执行的交互直接绑定。
+◆ 引入背景静态性和实例级刚性的物理一致性约束，并把腕部相机位姿锚定到末端执行器运动学。
+训练中这些目标共同塑造动作生成共享表征；无机器人预训练时LIBERO平均成功率98.3%，CALVIN平均任务长度3.73，真实世界成功率从6.7%升至37.8%，消融证明语义3D监督、物理一致性和动作条件均有效。</td></tr>
 <tr><td>2026-10-07</td><td>MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency<br><a href='http://arxiv.org/pdf/2610.10359'>论文</a> | <a href='https://github.com/markus-42/multifly'>代码</a></td><td>本文提出MultiFly，一个面向低空无人机语义感知的真实世界多模态数据集，覆盖RGB、热红外、LiDAR和雷达。
 ◆ 数据集包含四个郊区场景的17,272个同步样本，提供15类逐帧语义标注以及标定和GNSS-RTK/IMU测量。
 ◆ 提出标注高效标签迁移方法，仅用115张人工标注RGB图像，通过共享几何表示将标签传播到全部四种模态。
 ◆ 该方法额外生成17,157张RGB、17,272张热红外、8.4亿LiDAR点和340万雷达点的语义标签，迁移标注平均一致率达89.93%，六种模态对平均语义一致性达90.94%。
 ◆ 建立四种模态的语义分割基准，揭示密集LiDAR与稀疏雷达数据需要不同架构行为。
 综上，MultiFly是首个公开的真实低空航空多模态基准，为可扩展多模态空中感知提供基础。</td></tr>
-<tr><td>2026-10-03</td><td>ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies<br><a href='http://arxiv.org/pdf/2610.04607'>论文</a> | <a href='https://github.com/anthonytao80-crypto/ForeAct3D'>代码</a></td><td>ForeAct3D提出一种嵌入VLA策略、由策略动作接地的未来世界建模框架，训练时用未来语义3D预测和物理约束塑造动作生成表征，推理时无需未来预测。
-◆ 用可学习几何查询从策略表征解码当前与未来的深度、语义分割和相机位姿，构建语义3D场景状态。
-◆ 将未来查询条件于策略生成的动作块，使未来预测与实际计划执行的交互直接绑定。
-◆ 引入背景静态性和实例级刚性的物理一致性约束，并把腕部相机位姿锚定到末端执行器运动学。
-训练中这些目标共同塑造动作生成共享表征；无机器人预训练时LIBERO平均成功率98.3%，CALVIN平均任务长度3.73，真实世界成功率从6.7%升至37.8%，消融证明语义3D监督、物理一致性和动作条件均有效。</td></tr>
 <tr><td>2026-10-02</td><td>CORNAV: Construction-Aware Reasoning for Robot Navigation on Active Worksites<br><a href='http://arxiv.org/pdf/2610.03622'>论文</a></td><td>施工行业长期面临劳动力短缺、低生产率和事故率高等问题，但现有语言导航只依赖语义场景理解，缺少建筑图纸、进度和安全约束等施工上下文，难以在活跃工地安全导航。为此，论文提出 CORNAV，一种仅用二维 CAD 图纸和项目进度、无需 BIM 的蓝图接地且日程感知导航框架。
 ◆ 将建筑蓝图与层级开放词汇三维场景图对齐，用对象查询接地提升永久建筑特征的定位与任务成功率。
 ◆ 把项目进度转化为随时间变化的导航约束，使机器人能响应动态施工状态。
@@ -714,16 +712,16 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5259</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4731</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
-<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2467</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5267</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4738</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2468</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1654</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
-<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1625</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
+<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1624</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1525</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1352</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1355</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1308</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1095</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1065</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1097</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1067</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>950</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>813</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>783</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
@@ -735,12 +733,12 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>634</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>622</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>614</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
-<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>585</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>586</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>570</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>536</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>509</td><td>LTAOM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>467</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>461</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>510</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>468</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>460</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>368</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>350</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>279</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
@@ -750,11 +748,11 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>229</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>224</td><td>SUPER-Hardware</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>222</td><td>decentralized_loam</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>212</td><td>LAMM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>211</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>213</td><td>LAMM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>212</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>151</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>146</td><td>PULSAR</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>121</td><td>LiDAR-UAV-Autonomy</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>122</td><td>LiDAR-UAV-Autonomy</td></tr>
 </tbody>
 </table>
 </div>
@@ -765,34 +763,34 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2879</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2880</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1673</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1368</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1096</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1059</td><td>A simple method for finding the extrinsic calibrat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>882</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>883</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>712</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>669</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>668</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>625</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>605</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>578</td><td>MAV planning tools using voxblox as the map repres</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>573</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>574</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>572</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>555</td><td>Voxblox-based Pose graph optimization</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>554</td><td>Voxblox-based Pose graph optimization</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>519</td><td>Python tools to perform time-synchronization and h</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>512</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>465</td><td>A volumetric object-level semantic mapping framewo</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>457</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>453</td><td>A real-time capable exploration and inspection pat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>335</td><td>A flexible submap-based framework towards spatio-t</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>321</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>312</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>302</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>303</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/versavis'>versavis</a></td><td>288</td><td>An Open Versatile Multi-Camera Visual-Inertial Sen</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/image_undistort'>image_undistort</a></td><td>279</td><td>A compact package for undistorting images directly</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/image_undistort'>image_undistort</a></td><td>278</td><td>A compact package for undistorting images directly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/kitti_to_rosbag'>kitti_to_rosbag</a></td><td>258</td><td>Dataset tools for working with the KITTI dataset r</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/laser_slam'>laser_slam</a></td><td>247</td><td>This package provides an end-to-end system to lase</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/laser_slam'>laser_slam</a></td><td>246</td><td>This package provides an end-to-end system to lase</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/glocal_exploration'>glocal_exploration</a></td><td>224</td><td>Efficient local and global exploration on submap c</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/cblox'>cblox</a></td><td>209</td><td>Voxblox-based submapping</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/tsdf-plusplus'>tsdf-plusplus</a></td><td>208</td><td>TSDF++: A Multi-Object Formulation for Dynamic Obj</td></tr>
@@ -825,4 +823,4 @@ ACT3是一种以动作为中心的三流Transformer，将语义与动力学信�
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.11
+> 更新于: 2026.10.12
