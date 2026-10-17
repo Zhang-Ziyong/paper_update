@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.10.16)
+# 历史论文归档 (2026.10.17)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -1975,11 +1975,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 通用学生模型在分布内单目深度上与教师持平，零样本在7-Scenes和DTU completion上优于COLMAP，但在分布外多视图几何上仍不能替代教师。
 ◆ 领域专用学生仅以0.2%计算量进行专业化，即在7-Scenes上比COLMAP准4倍、吞吐高980倍，并接近教师completion。
 代码已开源，便于复现与后续研究。</td></tr>
-<tr><td>2026-09-28</td><td>Remote Sensing Sparse-View 3D Gaussian Splatting via Depth Image-Based Rendering<br><a href='http://arxiv.org/pdf/2609.35612'>论文</a> | <a href='https://github.com/kanehub/DIBR-GS'>代码</a></td><td>本文针对遥感稀疏视角新视角合成中几何约束不足、跨视角监督有限及深度模糊导致的过拟合问题，提出DIBR-GS框架。核心思想是利用深度图像渲染生成伪视角，为神经高斯泼溅提供跨视角一致性监督。
-◆ 通过对齐单目深度先验与稀疏SfM重建，构建可靠几何初始化，并将跨视角外观先验融入神经高斯表示以增强稀疏观测下的外观建模。
-◆ 设计渐进式DIBR伪视角监督策略，为弱观测区域补充几何与外观约束，促进更完整重建。
-◆ 提出高度约束锚点生长策略，抑制不合理的高斯扩展。
-在仅3个输入视角下，该方法优于现有方法，PSNR提升6.83 dB，SSIM相对提升14%，LPIPS相对提升60%，并保持有竞争力的计算效率。</td></tr>
+<tr><td>2026-09-28</td><td>Remote Sensing Sparse-View 3D Gaussian Splatting via Depth Image-Based Rendering<br><a href='http://arxiv.org/pdf/2609.35612'>论文</a> | <a href='https://github.com/kanehub/DIBR-GS'>代码</a></td><td>本文提出DIBR-GS，利用深度图像渲染生成伪视图，为稀疏遥感新视图合成提供跨视图一致性监督。
+◆ 构建可靠几何初始化，将单目深度先验与稀疏SfM重建对齐，缓解深度歧义与几何约束不足。
+◆ 将跨视图外观先验融入神经高斯表示，增强稀疏观测下的外观建模能力。
+◆ 设计渐进式DIBR伪视图监督策略，为弱观测区域补充几何和外观约束，促进更完整重建。
+◆ 提出高度约束锚点增长策略，抑制不合理的高斯扩展。
+◆ 仅用3个输入视图训练即优于现有方法，PSNR较此前最佳提升6.83 dB，SSIM相对提升14%，LPIPS相对提升60%，并保持有竞争力的计算效率。</td></tr>
 <tr><td>2026-09-26</td><td>QuacamFM: Quaternion-Constrained Flow Matching for Camera Pose Estimation<br><a href='http://arxiv.org/pdf/2609.32455'>论文</a></td><td>论文针对稀疏多视角相机位姿估计中几何约束不足、旋转不确定性难以建模的问题，提出QuacamFM。其核心思想是在生成式相机位姿估计中显式保持单位四元数约束，而不是把旋转当作无约束4D向量处理。
 ◆ 提出四元数约束流匹配框架，使整个生成轨迹始终位于单位四元数流形上。
 ◆ 设计基于球面线性插值的四元数流最优传输，获得更平滑、更优的生成轨迹。
@@ -2764,13 +2765,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 创新点二：创造性地将Depth Anything 3中的相机令牌重新用作紧凑的配对级分类令牌，再通过小型MLP头预测候选图像对是否观测到同一三维表面。
 
 实验结果表明，XDG在保持与当前最优消歧方法相当精度的同时，实现了超过3倍的推理加速，在包含数千张图像的LaMAR场景中可节省十余小时处理时间，展现了出色的精度-效率权衡。</td></tr>
-<tr><td>2026-09-02</td><td>Scalable Bayesian Optimization of Composite Functions for Image-Based Inverse Problems in Materials Characterization<br><a href='http://arxiv.org/pdf/2609.02126'>论文</a></td><td>本文针对材料表征中从科学图像反演物理参数的难题,提出了一种可扩展的复合函数贝叶斯优化方法SBOCF,用于电子显微学中样品厚度和晶体倾转角等关键参数的估计。该方法通过利用图像匹配目标的已知复合结构以及模拟图像中的中间信息,将原本需要建模的输出维度从24,649个像素大幅压缩至11个,显著提升了计算效率。
-
-◆ 提出SBOCF方法,利用块级图像摘要加两项修正项,在保持原始像素级目标的同时将建模输出从24,649降至11,大幅降低计算开销。
-
-◆ 在仅50次模拟器评估的预算下,SBOCF在SrTiO3基准测试中将最终SSE中位数降低最高达290倍,显著优于标准期望改进贝叶斯优化。
-
-◆ 无需针对特定任务的预训练即可在实验数据上获得与文献一致的参数估计,并能直接用于下游叠层成像重建,恢复原本模糊的原子结构。</td></tr>
+<tr><td>2026-09-02</td><td>Scalable Bayesian Optimization of Composite Functions for Image-Based Inverse Problems in Materials Characterization<br><a href='http://arxiv.org/pdf/2609.02126'>论文</a></td><td>本文提出可扩展复合函数贝叶斯优化SBOCF，用于材料表征中基于图像的逆问题，并以PACBED匹配为例从昂贵物理模拟中估计样品厚度和晶体倾角，其核心是利用目标函数的已知复合结构及模拟图像中间信息实现模拟高效优化。
+◆ 将PACBED图像表示为patch级摘要和两个校正项，在保持原始像素级目标的同时把需建模输出从24649个降至11个。
+◆ 在仅50次模拟器评估预算下，SBOCF在厚薄SrTiO3合成基准上优于标准EI贝叶斯优化，厚样品中位最终SSE最多降低290倍。
+◆ 在实验数据上无需任务特定预训练即可获得与既往报道一致的参数估计。
+◆ 将SBOCF估计用于下游ptychographic重建，可恢复原本模糊的清晰原子。
+这些结果表明SBOCF是处理昂贵模拟器和高维结构化输出逆问题的有前景方法。</td></tr>
 <tr><td>2026-09-02</td><td>GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching<br><a href='http://arxiv.org/pdf/2609.02012'>论文</a></td><td>该论文针对POI本地化任务,指出其与视觉位置识别(VPR)的本质差异:查询图像是目标占据画面主体的近景特写,而参考图像是目标仅占小区域且周围有大量视觉相似店铺的远景街景,呈现显著的非对称细粒度匹配特性。现有面向VPR的全局描述子方法因单一向量难以突出小目标而表现受限。
 
 ◆ 提出了首个面向该非对称细粒度开放集设定的基准GeoStore,填补了POI本地化系统化评测的空白。
@@ -10707,12 +10707,17 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆ 基准定义3D目标检测、场景流估计和语义分割三项任务，其中检测与场景流按三个距离区间评估至400米，并提供公开评测服务器。
 ◆ 研究发现逐点径向Doppler速度为长距离感知提供关键运动线索，使远距离车辆和行人检测AP最高提升2倍，低延迟单帧设置下尤为显著。
 ◆ 研究还表明Doppler测量在所有距离区间显著提升场景流精度，并已公开数据集与基准以推动后续研究。</td></tr>
-<tr><td>2026-09-26</td><td>Toward On-Chip Training of Spiking Neural Networks for Dense Event-Based Vision<br><a href='http://arxiv.org/pdf/2609.32405'>论文</a></td><td>论文提出DELL，一种面向密集事件视觉的逐块局部学习方案，用局部稠密监督替代BPTT的全局梯度传播，以降低脉冲神经网络训练内存并适配片上训练。
-◆ 用可学习、空间结构化的局部头对每个块在其合适分辨率进行监督，同时保留块内时序动态。
-◆ 将局部学习从分类扩展到光流回归和语义分割，并采用全脉冲U形架构验证。
-◆ 在DSEC光流上，DELL比端到端BPTT降低39.6%峰值训练内存，并把EPE从1.941 px改善到1.670 px。
-◆ 相比DECOLLE固定随机局部读出，可学习局部头使光流EPE约为其1/3.9，并全面超越端到端训练；分割上恢复大部分差距但仍略低。
-◆ 以2.3M参数、较最强SNN基线少24倍，仍保持竞争性，表明块分离更像正则化而非限制。</td></tr>
+<tr><td>2026-09-26</td><td>Toward On-Chip Training of Spiking Neural Networks for Dense Event-Based Vision<br><a href='http://arxiv.org/pdf/2609.32405'>论文</a></td><td>本文提出DELL（密集事件驱动局部学习），一种面向密集事件视觉的SNN分块训练方案，用局部密集监督取代全局梯度传播，以缓解训练时的内存压力。
+
+◆ 将局部学习从分类拓展到光流回归与语义分割等密集事件预测任务，以块间梯度截断替代BPTT全局反传
+
+◆ 设计可学习、具空间结构的局部预测头，在每个块合适分辨率上施加监督，同时保留块内时序动态
+
+◆ 在完全脉冲的U形网络上验证：相比端到端BPTT峰值训练内存降低39.6%，光流精度反而更优（官方测试1.670 px对1.941 px）
+
+◆ 发现块间梯度截断更像正则化而非约束，可学习局部头弥补了DECOLLE固定随机读出在密集回归上的缺陷（误差低3.9倍）
+
+实验显示DELL在DSEC光流全部指标上超过端到端训练，分割任务追回大部分差距，并以2.3M参数（比最强SNN基线少24倍）保持与SNN最先进水平相当的竞争力。</td></tr>
 <tr><td>2026-09-23</td><td>Privacy-Preserving Semantic Segmentation from High-Resolution Depth and Ultra-Low-Resolution RGB<br><a href='http://arxiv.org/pdf/2609.28360'>论文</a></td><td>本文针对移动机器人摄像头隐私风险，提出高分辨率深度与超低分辨率RGB相结合的非对称隐私保护感知设定，在保留密集几何的同时限制细粒度外观，从源头降低视觉隐私暴露。
 ◆ 提出HR深度与ULR RGB的非对称传感范式，在几何可用性与隐私保护之间取得平衡。
 ◆ 设计HR几何引导的联合2D框架，同时进行语义导向RGB重建和RGB-D分割，缓解模态信息失衡。
@@ -11079,15 +11084,12 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
 <tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对视觉位置识别(VPR)在实际部署中依赖固定图像匹配阈值、难以应对环境变化的问题，提出了视觉位置识别审计(Visual Place Recognition Auditing)框架。该方法利用视觉语言模型(VLM)在检索后对查询图像和候选图像进行联合推理，实现独立于特定架构的实例级验证。核心创新包括：◆ 提出了一种独立于VPR架构的事后审计验证框架，无需数据集相关的阈值或部署环境的先验知识。◆ 利用视觉语言模型对查询与候选图像进行联合推理，实现跨环境的鲁棒验证。◆ 在六个基准数据集和五种先进VPR方法上验证，平均将recall@1提升13.6%，同时将误接受率降至12%，保持精度高于95%、覆盖率高于75%。该工作为安全关键机器人系统中环路闭合检测的可靠性提供了新的解决方案。</td></tr>
-<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>本文针对海事跨场景视觉位置识别中开放甲板与封闭船舱间感知差异大、现有方法泛化差的问题，提出ProteusVPR两阶段检索-精化框架。第一阶段用任意标准VPR模型做初始检索，第二阶段用几何-视觉估计网络融合检索图像与两个前序帧，并引入几何描述子、局部仿射坐标系和相机方位角编码实现精确定位。
-◆ 提出兼容多种VPR骨干的检索-精化框架，显著提升跨场景定位精度与鲁棒性。
-◆ 设计融合时序帧、几何与视觉信息的估计网络，利用局部仿射坐标和相机方位编码应对重复结构与光照变化。
-◆ 构建XHZ船载8K全景数据集，包含多楼层船舱、甲板过渡区和严格查询-数据库分离，支撑严苛评测。
-在XHZ上实验显示，该方法使多个VPR骨干平均定位误差降低超过60%，为海事感知与船舱巡检提供有效方案。</td></tr>
-<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>VL2Spike提出一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移至紧凑Spikformer。它旨在缓解纯SNN受脉冲架构与优化难题限制的性能瓶颈，同时保留事件驱动、稀疏脉冲计算的能效优势。实验表明，该方法在三个静态数据集上以15.7%能耗取得6.81%提升，并在机器人视觉位置识别上获得6.63%泛化增益。
-◆ 提出空间-时间视觉脉冲蒸馏，实现VLM图像特征与脉冲令牌的共享流形对齐，并对膜电位和脉冲率进行预热式时序一致性约束。
-◆ 提出脉冲原型引导的语言蒸馏，将Spikformer类别原型和logits与可提示VLM文本嵌入对齐。
-这些贡献共同提升了Spikformer学习能力，为低功耗机器人感知提供实用路径。</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文针对开放甲板与封闭舱室间跨场景感知差异导致VPR泛化差的问题，提出ProteusVPR。
+◆ 提出两阶段检索-细化框架，首阶段兼容任意标准VPR模型完成初始图像检索。
+◆ 设计几何-视觉估计网络，融合检索图像与两帧时序前帧，并引入几何描述子、局部仿射坐标系和相机方位编码实现精定位。
+◆ 构建XHZ 8K全景船载数据集，覆盖多楼层舱室、甲板过渡区，并严格分离查询库与数据库以支撑严谨评测。
+在XHZ上多VPR骨干实验显示平均定位误差降低60%以上，验证了其在跨场景海事感知与舱室巡检中的有效性和鲁棒性。</td></tr>
+<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>VL2Spike提出一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中，在保持脉冲能效的同时提升其学习能力。◆提出时空视觉脉冲蒸馏SVS，通过VLM图像特征与脉冲token的共享流形对齐，以及对膜电位和脉冲率的热启动时间一致性约束，匹配脉冲动态。◆设计脉冲原型引导语言蒸馏SPL，将Spikformer类别原型和logits与可提示VLM文本嵌入对齐，引入语言语义指导。实验表明其在三个静态数据集上平均提升6.81%，能耗仅为15.7%。在机器人视觉位置识别任务上取得6.63%提升，显示较强泛化能力。该工作为资源受限具身AI提供了一条低功耗感知路径。</td></tr>
 <tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>本文针对森林视觉地点识别中重复植被、弱结构和跨遍历外观变化等挑战，提出一种轻量级深度感知蒸馏框架。
 ◆ 将深度几何线索注入基于DINOv2的地点识别模型，同时保持其预训练描述子空间不变。
 ◆ 采用深度感知蒸馏作为核心机制，使模型在仅外观方法之上获得更强外观变化鲁棒性。
@@ -11147,4 +11149,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.16
+> 更新于: 2026.10.17
