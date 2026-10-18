@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.10.17)
+# 计算机视觉领域最新论文 (2026.10.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -691,8 +691,8 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5284</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4763</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5285</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4769</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2475</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1656</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1624</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
@@ -715,14 +715,14 @@
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>588</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>570</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>538</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>511</td><td>LTAOM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>470</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>462</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>512</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>471</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>464</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>372</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>350</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
-<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>278</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
+<tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>280</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>274</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
-<tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>258</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
+<tr><td><a href='https://github.com/hku-mars/IPC'>IPC</a></td><td>259</td><td>Integrated Planning and Control for Quadrotor Navi</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SLAM-HKU-MaRS-LAB'>SLAM-HKU-MaRS-LAB</a></td><td>243</td><td>In this repository, we present our research works </td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>229</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>225</td><td>SUPER-Hardware</td></tr>
@@ -742,7 +742,7 @@
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2881</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2882</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1675</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1368</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1097</td><td>A map representation based on 3D segments </td></tr>
@@ -802,4 +802,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.17
+> 更新于: 2026.10.18

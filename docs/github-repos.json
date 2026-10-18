@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5284,
+      "stars": 5285,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4763,
+      "stars": 4769,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -187,7 +187,7 @@
     "LTAOM": {
       "name": "LTAOM",
       "url": "https://github.com/hku-mars/LTAOM",
-      "stars": 511,
+      "stars": 512,
       "description": "",
       "created_at": "2024-03-27",
       "chinese_desc": "LTAOM"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 462,
+      "stars": 464,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 470,
+      "stars": 471,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -243,7 +243,7 @@
     "IPC": {
       "name": "IPC",
       "url": "https://github.com/hku-mars/IPC",
-      "stars": 258,
+      "stars": 259,
       "description": "Integrated Planning and Control for Quadrotor Navigation in Presence of Sudden Crossing Objects and Disturbances",
       "created_at": "2023-04-06",
       "chinese_desc": "Integrated Planning and Control for Quadrotor Navi"
@@ -275,7 +275,7 @@
     "UMI-3D": {
       "name": "UMI-3D",
       "url": "https://github.com/hku-mars/UMI-3D",
-      "stars": 278,
+      "stars": 280,
       "description": "UMI-3D SLAM and Data Processing Pipeline: https://umi-3d.github.io/",
       "created_at": "2026-04-16",
       "chinese_desc": "UMI-3D SLAM and Data Processing Pipeline: https://"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2881,
+      "stars": 2882,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
