@@ -1,30 +1,54 @@
-# 历史论文归档 (2026.10.18)
+# 历史论文归档 (2026.10.19)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (297篇)</a></li>
-<li><a href='#sfm'>SFM (128篇)</a></li>
+<li><a href='#slam'>SLAM (301篇)</a></li>
+<li><a href='#sfm'>SFM (129篇)</a></li>
 <li><a href='#image-matching'>Image Matching (55篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (95篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (315篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (321篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (53篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (23篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (297篇)</h2>
+<h2 id='slam'>SLAM (301篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-16</td><td>F-LIVO: A Feature-Level Geometric Measurement Framework for LiDAR-Inertial-Visual Odometry<br><a href='http://arxiv.org/pdf/2610.23595'>论文</a></td><td>本文提出F-LIVO，一种基于滤波的LiDAR-惯性-视觉里程计框架，通过视觉点与LiDAR平面间的特征级点到面约束耦合视觉惯性子系统和激光惯性子系统。
+◆ 采用特征级点到面约束实现跨模态耦合，避免持续附着稠密光度块或外观属性所带来的存储、关联与更新开销。
+◆ 在视觉三角化较弱时，利用局部平面拟合和射线-平面相交从LiDAR地图恢复视觉特征深度，以保持跨模态耦合。
+◆ 在LiDAR更新中依据局部平面可靠性自适应缩放点到面残差协方差，减少病态表面上的过自信更新。
+该方法依赖稀疏几何特征而非持续维护的稠密光度地图属性，从而保持紧凑的地图表示。
+实验表明其在多个公开数据集上具有有竞争力且随序列变化的精度，在退化场景中保持连续估计和较低累计端到端漂移，并在评估资源配置下取得最低平均与峰值CPU占用、最低峰值RSS和最低RSS增长率。</td></tr>
+<tr><td>2026-10-16</td><td>FLoTS-SLAM: Optical Flow-Derived Uncertainty for Monocular Dynamic SLAM with Two-Stage Optimization<br><a href='http://arxiv.org/pdf/2610.23496'>论文</a></td><td>本文提出面向动态场景的单目RGB SLAM系统FLoTS-SLAM，旨在利用光流导出的运动不确定性提升动态环境下的定位与建图鲁棒性。
+◆ 提出由光流与相机运动诱导光流之间的残差估计像素级运动不确定性，直接反映物体运动，并随帧对齐精度变化，从而减少误检并获得更准确的动态区域掩码。
+◆ 设计两阶段优化：先用高置信像素估计相机位姿，再在位姿与深度联合细化中对动态像素重投影，降低动态物体运动对位姿和深度更新的干扰。
+◆ 对动态掩码进行定量评估，并分析掩码对下游动态对象跟踪与重建的影响。
+实验表明该方法在DAVIS上将动态掩码平均IoU相比先进基线提升35%，在Bonn和TUM上分别将平均ATE相对所用SLAM主干降低59%和19%。</td></tr>
+<tr><td>2026-10-15</td><td>RTISSLAM-3D: Full 6-DoF SLAM With an In-Air 3D Imaging Sonar<br><a href='http://arxiv.org/pdf/2610.22552'>论文</a></td><td>RTISSLAM-3D提出了一种面向轮式机器人的全6自由度声纳SLAM系统，突破了现有声纳SLAM仅估计2D轨迹、丢弃仰角信息的平面假设，可在森林地面等崎岖倾斜地形中工作。
+◆ 利用空中3D成像声纳获取整个前半球信息，并结合IMU与轮式编码器实现6自由度定位与建图。
+◆ 在球面上采用CFAR检测将声纳图像稀疏化为3D检测点，为后续声学里程计、地点识别和回环验证提供统一数据基础。
+◆ 提出建模声纳波束形状的3D声学里程计，提升声纳观测下的三维运动估计能力。
+◆ 采用极坐标子图描述子进行地点识别，并通过3D配准验证回环，将声学里程计、回环与姿态因子融合进6自由度位姿图。
+在545米森林行驶实验中，以3D激光雷达SLAM为参考，回环将水平误差从1.74米降至0.28米，高度误差为0.12米，且94.6%的3D声纳地图位于激光雷达地图0.3米范围内。</td></tr>
+<tr><td>2026-10-15</td><td>KFS$^4$LAM: Adaptive KeyFrame Selection with Structure-Aware Mapping for Endoscopic Gaussian Splatting SLAM<br><a href='http://arxiv.org/pdf/2610.22505'>论文</a> | <a href='https://xinweiju.github.io/KFSLAM/'>代码</a></td><td>论文提出KFS⁴LAM，一种面向内窥镜高斯泼溅SLAM的自适应关键帧选择与结构感知建图框架，旨在解决结肠镜中非均匀运动、重复解剖、镜面反射和视觉伪影导致的关键帧选择不可靠问题。
+◆ 提出运动引导的自适应关键帧选择机制，利用累积运动并结合互补线索抑制冗余或不可靠候选视角。
+◆ 设计密度感知建图与解剖轮廓监督，利用结肠褶皱等结构信息强化结构信息丰富区域的建模。
+◆ 引入受限时序变形，在适应局部组织动态的同时避免无约束几何漂移。
+在C3VD和C3VD-v2上，该方法在轨迹、渲染和深度指标上整体优于Gaussian-SLAM基线，且在更困难的C3VD-v2上增益明显。
+与SplaTAM匹配比较时，旋转相对位姿误差降低20.3%，深度RMSE降低38.4%，PSNR提升0.78 dB。
+跨骨干实验表明该框架不依赖单一底层SLAM架构，具有良好的通用性。</td></tr>
 <tr><td>2026-10-15</td><td>AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory<br><a href='http://arxiv.org/pdf/2610.21586'>论文</a></td><td>AVALON面向“人类熟悉、机器人未见”的室内服务场景，提出无需现场遍历或站点训练、仅靠楼层平面图、地点线索和初始拓扑-里程计对齐的零样本拓扑导航框架。
 ◆ 提出人类种子分层空间记忆，用人类先验组织环境，并让视觉深度点目标导航通过已验证节点到达进行平移重锚定，无需机器人构建全局SLAM地图。
 ◆ 提出节点验证的拓扑执行机制，确保机器人在拓扑路线上的到达与执行可信。
@@ -1889,12 +1913,17 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (128篇)</h2>
+<h2 id='sfm'>SFM (129篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-16</td><td>Ionic switching between supermagnetic states<br><a href='http://arxiv.org/pdf/2610.23829'>论文</a></td><td>论文首次展示利用室温锂离子传输，在不重新合成、不持续外部刺激下实现超铁磁态与超自旋玻璃态的可逆磁离子切换并可保持。  
+◆ 提出通过NiO不完全锂化生成纳米Ni和Li2O，实现两种超磁态相互转化的新机制。  
+◆ 揭示锂化形成碎片化纳米Ni网络增强偶极相互作用，稳定超铁磁态并提升室温磁矩与记忆。  
+◆ 发现脱锂部分再生NiO驱动超自旋玻璃态，获得更高低温矫顽力和更尖锐温度选择性记忆，且多轮循环可逆。  
+该工作建立了超磁态可逆切换的通用框架，为磁离子器件设计提供新思路。</td></tr>
 <tr><td>2026-10-15</td><td>RoboCloth: A Large-Scale Real Cloth Material Dataset for Neural Reflectance Reconstruction<br><a href='http://arxiv.org/pdf/2610.21090'>论文</a></td><td>RoboCloth提出了一个大规模真实布料材质数据集，包含500种布料在机器人控制相机与光照下采集的约580张HDR帧，覆盖广视角-光照半球。数据经SfM细化相机位姿并对齐机器人坐标系，提供每材质稀疏几何和结构化逐点反射观测，可直接用于神经材质训练。论文设计两阶段神经重建流程，先训练共享MLP解码器学习布料材质先验，再冻结解码器并为目标材质拟合2048x2048密集潜纹理。在自留出材料和UBO2014基准上，该方法优于现有测量反射数据集训练的解码器及解析PBR拟合，并能迁移到未见采集系统。数据集、标定文件、观测张量和训练测试划分以CC BY 4.0在Hugging Face Hub发布。
 ◆构建了机器人控制采集的大规模真实布料反射数据集，覆盖丰富视角-光照条件并提供标定与结构化观测。
 ◆提出两阶段神经材质重建方法，利用数据先验实现密集潜纹理拟合和跨采集系统迁移。</td></tr>
@@ -2765,10 +2794,11 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 创新点二：创造性地将Depth Anything 3中的相机令牌重新用作紧凑的配对级分类令牌，再通过小型MLP头预测候选图像对是否观测到同一三维表面。
 
 实验结果表明，XDG在保持与当前最优消歧方法相当精度的同时，实现了超过3倍的推理加速，在包含数千张图像的LaMAR场景中可节省十余小时处理时间，展现了出色的精度-效率权衡。</td></tr>
-<tr><td>2026-09-02</td><td>Scalable Bayesian Optimization of Composite Functions for Image-Based Inverse Problems in Materials Characterization<br><a href='http://arxiv.org/pdf/2609.02126'>论文</a></td><td>本文提出可扩展的复合函数贝叶斯优化方法SBOCF，用于材料表征中依赖昂贵物理模拟的基于图像逆问题，并以PACBED匹配为例同时估计样品厚度和晶体倾斜。核心贡献是在仅50次模拟器评估预算下显著提升参数估计效率与精度，并在实验数据上无需任务特定预训练即可获得与文献一致的估计。
-◆ 利用图像匹配目标的已知复合结构及模拟图像中间信息，构造patch级摘要与两个校正项，在保持原始像素级目标的同时将建模输出从24649降至11。
-◆ 将SBOCF与标准期望改进贝叶斯优化对比，在厚/薄SrTiO3合成基准上表现更优，厚样品最终SSE中位数最多降低290倍。
-◆ 验证估计可用于下游ptychographic重建，在倾斜样品中恢复原本模糊的原子，并展示其对昂贵模拟器和高维结构化输出逆问题的可扩展潜力。</td></tr>
+<tr><td>2026-09-02</td><td>Scalable Bayesian Optimization of Composite Functions for Image-Based Inverse Problems in Materials Characterization<br><a href='http://arxiv.org/pdf/2609.02126'>论文</a></td><td>本文针对材料表征中从图像反演物理参数依赖昂贵模拟的问题，提出可扩展的复合函数贝叶斯优化方法SBOCF，用于通过PACBED图像匹配估计样品厚度和晶体倾角。
+◆ 利用图像匹配目标的已知复合结构及模拟图像中的中间信息，将PACBED图像表示为分块级摘要和两个校正项，在保持原始逐像素目标的同时把建模输出从24649降至11。
+◆ 在仅50次模拟器评估预算下，SBOCF在厚、薄样品合成基准上优于标准期望改进贝叶斯优化，厚样品中位最终SSE最多降低290倍。
+◆ 在实验数据上无需任务特定预训练即可获得与已有报道一致的参数估计，并在模拟倾角样品中利用其估计改善下游叠层重建的原子清晰度。
+这些结果表明SBOCF是面向昂贵模拟器和高维结构化输出反问题的一种有前景方法。</td></tr>
 <tr><td>2026-09-02</td><td>GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching<br><a href='http://arxiv.org/pdf/2609.02012'>论文</a></td><td>该论文针对POI本地化任务,指出其与视觉位置识别(VPR)的本质差异:查询图像是目标占据画面主体的近景特写,而参考图像是目标仅占小区域且周围有大量视觉相似店铺的远景街景,呈现显著的非对称细粒度匹配特性。现有面向VPR的全局描述子方法因单一向量难以突出小目标而表现受限。
 
 ◆ 提出了首个面向该非对称细粒度开放集设定的基准GeoStore,填补了POI本地化系统化评测的空白。
@@ -8700,12 +8730,35 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (315篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (321篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-16</td><td>StopWatch: Goal Grounding for Object-goal Navigation<br><a href='http://arxiv.org/pdf/2610.23841'>论文</a></td><td>论文诊断出目标接地是对象目标导航的主要失败来源：现有VLM策略虽能探索，却常忽视目标已在视野中或无法估计距离。◆ 提出显式目标接地，将其作为导航策略的关键补充，显著提升成功率并在三类场景集合的六个基准上达到SOTA。◆ 修正相关基准中的标注缺陷，使后续方法评估更可信。◆ 在干净基准上的分析表明，使用真值接地时策略已接近生成示范的专家，剩余提升空间主要来自感知而非策略学习。该工作指出目标接地是对象目标导航缺失的一环，并给出简单有效的解决方案。</td></tr>
+<tr><td>2026-10-16</td><td>HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents<br><a href='http://arxiv.org/pdf/2610.23479'>论文</a> | <a href='https://github.com/HexaFuture/HexaShell'>代码</a></td><td>HexaShell提出一种极薄机器人编码智能体框架，让VLM编码智能体通过单一命令行直接控制双臂机器人完成操作任务。
+◆将机器人控制抽象为薄壳接口，仅把智能体命令转为运动，减少传统框架对智能体能力的约束。
+◆智能体基于三路标定RGB相机与失败日志自主诊断错误，并编写或修复可复用的小程序工具，把学习经验固化为代码。
+◆工具利用三角测量、已知平面求交和腕部相机第二视角进行物体与夹爪相对定位，仅依赖机器人可观测信息。
+◆采用每任务单种子十布局构建工具后冻结，并在同种子十个新布局测试，系统使用Codex与GPT-6-Astra中等推理。
+在RoboDojo全部42任务上达到39.7%成功率和48.0进度分的新SOTA，并揭示瓶颈在接触而非推理，推挤92.5%、记忆65.0%，紧插入仅8.3%。</td></tr>
+<tr><td>2026-10-16</td><td>LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence<br><a href='http://arxiv.org/pdf/2610.23334'>论文</a></td><td>LAW提出闭环VLM-WAM框架，通过语义子任务进度统一语言推理、动作生成与世界建模，以支撑长时程物理操作。◆用混合专家视觉语言模型规划剩余子任务、估计并融合世界动作模型提出的动作，同时异步评估执行状态以支持持续执行和子任务切换。◆在世界动作模型内采用Mixture-of-Transformer Experts，联合模态特定与共享计算进行视频-动作建模。◆引入双流分层视觉记忆维护时序上下文，并用子任务局部价值学习对齐动作评价与语义目标，同时保留失败轨迹中成功前缀的监督。实验上，LAW在50个RoboTwin任务上平均成功率达94.21%，替换OpenWAM-alpha后升至95.56%，仅2B的VLM也优于Embodied-R1.5和GPT-5.5 High变体。在三个长时程真机任务中，LAW平均成功率为65%，显著高于pi0.5的28.33%和Fast-WAM的25%。</td></tr>
+<tr><td>2026-10-16</td><td>NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.23271'>论文</a> | <a href='https://github.com/WanyuGroup/NeurIPS2026-NestedVLA'>代码</a></td><td>针对异构任务中数据碎片化、联合训练干扰和模型合并参数冲突等问题，论文提出“先独立学习、再事后整合”的技能整合范式，并给出NestedVLA。
+◆以参数生成替代参数聚合，用嵌套超网络根据目标任务合成任务自适应动作专家参数，并与冻结的基础VLA组合。
+◆将任务特定的压缩VLM残差单独保留，避免破坏基础模型并缓解多任务干扰。
+◆该设计支持灵活的任务条件技能复用，在无需架构改动的情况下实现存储高效的技能整合。
+在MetaWorld、ManiSkill、CALVIN上，NestedVLA平均超过最强模型合并基线41个百分点，ManiSkill上距逐任务微调仅1个百分点，并在CALVIN上显著缩小差距。</td></tr>
+<tr><td>2026-10-16</td><td>MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.22951'>论文</a> | <a href='https://github.com/giakhuyendihoc/MambaAct'>代码</a></td><td>针对flow-matching VLA推理成本高、尤其π0.5动作专家在迭代去噪中反复计算的问题，论文提出MambaAct这一高效Mamba动作专家。该方法保留π0.5预训练视觉语言前缀编码器，仅替换动作专家部分，从而在不大改主干的情况下显著降低推理负担。
+◆用紧凑的Mamba动作专家替换Transformer动作专家，使动作专家规模缩小约10倍。
+◆将Mamba作为动作混合器，建模带噪连续动作序列内部的依赖关系。
+◆设计轻量Context Compressor，把VLM前缀token压缩为紧凑条件信号，用于门控和调制每个Mamba动作块，避免重复token级交叉注意力并保留视觉语言条件。
+实验表明，MambaAct将去噪延迟在LIBERO上降低64.8%、真实部署中降低58.8%，并在三个独立微调种子下将LIBERO平均成功率提升1.08个百分点，同时在LIBERO-Plus和真实世界基准上保持增益。</td></tr>
+<tr><td>2026-10-16</td><td>VISTA: A Multimodal Egocentric Benchmark for Goal-Oriented Perception and Assistance to Blind and Low-Vision Users<br><a href='http://arxiv.org/pdf/2610.22822'>论文</a></td><td>本文提出VISTA，一个面向盲人和低视力用户目标导向辅助的多模态自我中心基准，弥补现有基准在多模态输入和日常辅助评估上的不足。
+◆ 构建约1000段Project Aria眼镜自我中心录制，提供同步传感器流，其中六种模态作为模型输入，并包含三类标注和十类任务。
+◆ 覆盖从物体定位到危险检测的十类日常任务，强调目标条件下的辅助指导，而非仅场景理解与问答。
+◆ 对14个代表性视觉语言模型进行零样本评测，并提出整合六种模态的轻量多模态基线。
+实验表明现有模型虽能描述自我中心场景，但生成目标导向辅助指导仍有限，VISTA为评估可提升日常无障碍的多模态模型提供了基准。</td></tr>
 <tr><td>2026-10-15</td><td>Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation<br><a href='http://arxiv.org/pdf/2610.22363'>论文</a></td><td>P3-WAM提出一个面向第一人称灵巧操作统一世界动作模型，通过Perceive、Predict、Plan三种互补模式学习3D感知、动作条件预测与目标导向规划。  
 ◆ 首次将紧凑结构化3D动作表示集成进预训练视频扩散Transformer，采用混合Transformer架构实现共享基础权重、模态特定适配和双向视觉-动作注意力。  
 ◆ 提出随机模态可见机制，使视频与3D动作在不同模式下既可作条件上下文，也可作预测目标。  
@@ -10705,12 +10758,12 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 ◆ 基准定义3D目标检测、场景流估计和语义分割三项任务，其中检测与场景流按三个距离区间评估至400米，并提供公开评测服务器。
 ◆ 研究发现逐点径向Doppler速度为长距离感知提供关键运动线索，使远距离车辆和行人检测AP最高提升2倍，低延迟单帧设置下尤为显著。
 ◆ 研究还表明Doppler测量在所有距离区间显著提升场景流精度，并已公开数据集与基准以推动后续研究。</td></tr>
-<tr><td>2026-09-26</td><td>Toward On-Chip Training of Spiking Neural Networks for Dense Event-Based Vision<br><a href='http://arxiv.org/pdf/2609.32405'>论文</a></td><td>本文提出DELL，一种面向密集事件视觉的块级局部学习方案，用局部密集监督替代全局梯度传播，以降低SNN训练内存并支持片上训练。
-◆ 设计可学习、空间结构化的局部预测头，按各块合适分辨率监督并保留块内时间动态。
-◆ 将局部学习从分类拓展到光流回归和语义分割，并采用全脉冲U型架构验证。
-◆ 在DSEC光流上较端到端BPTT降低39.6%峰值训练内存，同时端点误差从1.941 px降至1.670 px，且块分离表现为正则化。
-实验表明可学习局部头显著优于DECOLLE固定随机读出，在光流全部指标上超过端到端训练；分割仅略低几个mIoU。
-模型仅2.3M参数，较最强SNN基线少24倍，在DSEC上保持竞争力，推动了局部学习在密集事件预测中的应用。</td></tr>
+<tr><td>2026-09-26</td><td>Toward On-Chip Training of Spiking Neural Networks for Dense Event-Based Vision<br><a href='http://arxiv.org/pdf/2609.32405'>论文</a></td><td>本文提出DELL，一种面向密集事件视觉的块级局部学习方案，用局部密集监督替代全局BPTT梯度传播，以降低训练内存并推进片上训练。
+◆ 将局部学习从分类拓展到光流回归和语义分割等密集事件预测任务，并用全脉冲U型架构验证。
+◆ 设计可学习、空间结构化的局部头，在每个块按合适分辨率监督，同时保留块内时间动态。
+◆ 发现块间梯度分离在光流任务中更像正则化而非约束，可同时提升精度并显著降低峰值训练内存。
+在DSEC光流上，DELL较端到端BPTT降低39.6%峰值内存，端点误差由1.941 px降至1.670 px，并全面优于DECOLLE等局部学习基线。
+在语义分割上可恢复大部分性能差距，且仅2.3M参数（比最强SNN基线少24倍）仍具竞争力，证明其将局部学习扩展到密集事件预测的价值。</td></tr>
 <tr><td>2026-09-23</td><td>Privacy-Preserving Semantic Segmentation from High-Resolution Depth and Ultra-Low-Resolution RGB<br><a href='http://arxiv.org/pdf/2609.28360'>论文</a></td><td>本文针对移动机器人摄像头隐私风险，提出高分辨率深度与超低分辨率RGB相结合的非对称隐私保护感知设定，在保留密集几何的同时限制细粒度外观，从源头降低视觉隐私暴露。
 ◆ 提出HR深度与ULR RGB的非对称传感范式，在几何可用性与隐私保护之间取得平衡。
 ◆ 设计HR几何引导的联合2D框架，同时进行语义导向RGB重建和RGB-D分割，缓解模态信息失衡。
@@ -11077,15 +11130,17 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
 <tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对视觉位置识别(VPR)在实际部署中依赖固定图像匹配阈值、难以应对环境变化的问题，提出了视觉位置识别审计(Visual Place Recognition Auditing)框架。该方法利用视觉语言模型(VLM)在检索后对查询图像和候选图像进行联合推理，实现独立于特定架构的实例级验证。核心创新包括：◆ 提出了一种独立于VPR架构的事后审计验证框架，无需数据集相关的阈值或部署环境的先验知识。◆ 利用视觉语言模型对查询与候选图像进行联合推理，实现跨环境的鲁棒验证。◆ 在六个基准数据集和五种先进VPR方法上验证，平均将recall@1提升13.6%，同时将误接受率降至12%，保持精度高于95%、覆盖率高于75%。该工作为安全关键机器人系统中环路闭合检测的可靠性提供了新的解决方案。</td></tr>
-<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文针对海事环境中开放甲板与封闭舱室之间跨场景感知差异导致的视觉位置识别泛化难题，提出两阶段检索—细化框架ProteusVPR。  
-◆ 提出ProteusVPR框架：第一阶段采用标准VPR模型完成初始检索，第二阶段通过几何—视觉估计网络融合检索图像与两个前序帧，实现跨场景精确定位。  
-◆ 设计融合几何描述子、局部仿射坐标系和相机方位编码的细化定位机制，提升稀疏纹理、强光照变化和重复结构场景下的定位鲁棒性。  
-◆ 构建XHZ船载8K全景数据集，包含多层舱室结构、甲板过渡区域及严格的查询—数据库分离，为海事跨场景VPR提供评测基准。  
-实验表明，ProteusVPR在多个VPR主干模型上均稳定提升定位精度，平均定位误差降低超过60%，验证了其在复杂海事跨场景环境中的有效性与鲁棒性。</td></tr>
-<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>本文提出VL2Spike，一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。该框架旨在缓解纯SNN受脉冲架构与优化困难限制的问题，同时保留事件驱动和稀疏脉冲带来的能效优势。
-◆ 提出时空视觉脉冲蒸馏SVS：实现VLM图像特征与脉冲token的共享流形对齐，并对膜电位和脉冲率进行热启动的时序一致性约束，以匹配脉冲动态。
-◆ 设计脉冲原型引导的语言蒸馏SPL：将Spikformer的类原型和logits与可提示VLM文本嵌入对齐，引入语言语义指导。
-实验表明，VL2Spike在三个静态数据集上取得6.81%提升且仅消耗15.7%能量，并在机器人视觉位置识别任务上取得6.63%的泛化提升。这表明其为低功耗具身视觉感知提供了一条实用路径。</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>针对海事环境中开放水域与封闭舱室之间跨场景感知差异导致的视觉位置识别难题，论文提出ProteusVPR框架并构建专用数据集。  
+◆提出两阶段“检索—细化”框架，第一阶段用任意标准VPR模型完成初始检索，第二阶段进行精确局部定位。  
+◆设计几何—视觉估计网络，融合检索图像与两个前序帧，并引入几何描述子、局部仿射坐标系和相机方位编码。  
+◆构建XHZ船载8K全景数据集，涵盖多楼层舱室、甲板过渡区域，并采用严格查询—数据库分离评测。  
+实验表明，ProteusVPR在多种VPR骨干上均稳定提升定位精度，平均定位误差降低60%以上，验证了其在跨场景海事感知与舱室巡检中的有效性和鲁棒性。</td></tr>
+<tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>本文提出VL2Spike，一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。
+◆提出空时视觉脉冲蒸馏，通过共享流形对齐VLM图像特征与脉冲令牌，并在膜电位和脉冲发放率上实现热启动的时间一致性。
+◆设计脉冲原型引导语言蒸馏，将Spikformer类别原型与logits同可提示VLM文本嵌入对齐。
+实验表明该方法在三个静态数据集上平均提升6.81%，仅消耗15.7%能量。
+在机器人视觉位置识别任务上取得6.63%提升，展现强泛化能力。
+整体上，它在保持脉冲网络能效优势的同时增强了学习能力，为低功耗机器人感知提供可行路径。</td></tr>
 <tr><td>2026-06-11</td><td>Visual Place Recognition in Forests with Depth-Aware Distillation<br><a href='http://arxiv.org/pdf/2606.13206'>论文</a></td><td>本文针对森林视觉地点识别中重复植被、弱结构和跨遍历外观变化等挑战，提出一种轻量级深度感知蒸馏框架。
 ◆ 将深度几何线索注入基于DINOv2的地点识别模型，同时保持其预训练描述子空间不变。
 ◆ 采用深度感知蒸馏作为核心机制，使模型在仅外观方法之上获得更强外观变化鲁棒性。
@@ -11145,4 +11200,4 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.18
+> 更新于: 2026.10.19
