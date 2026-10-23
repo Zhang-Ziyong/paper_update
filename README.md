@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.10.22)
+# 计算机视觉领域最新论文 (2026.10.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,6 +24,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-22</td><td>Consistent Distributed Invariant EKF SLAM with Point and Object Features<br><a href='http://arxiv.org/pdf/2610.31221'>论文</a></td><td>本文提出Joint-CI，一种面向点特征、物体特征及混合地图的分布式RI-EKF SLAM统一融合方法，解决邻居地图估计因与自身位姿相关而无法直接使用CI融合的问题。
+◆ 在接收机器人误差坐标下，利用邻居局部后验和机器人间观测构建接收机器人位姿与共同特征的联合估计，从而保留机器人—特征及特征—特征相关性。
+◆ 提出部分状态协方差交集融合框架，将上述联合估计与接收机器人局部后验融合，实现点、物体和混合地图的统一处理。
+◆ 理论证明该统一建模与融合保持全局旋转和平移对应的六个不可观方向，并在局部后验一致时保持一阶协方差一致性。
+◆ 蒙特卡洛仿真和真实数据集实验表明，Joint-CI在保持一致且轻度保守不确定性的同时提升了估计精度。</td></tr>
+<tr><td>2026-10-22</td><td>Evaluation of Front-End Feature Matching for Lunar Visual SLAM<br><a href='http://arxiv.org/pdf/2610.30774'>论文</a></td><td>本文系统评估了月球巡视器低纹理、强光照变化场景下前端特征匹配对视觉SLAM/VO的影响，弥补了真实月球影像参考位姿稀缺时匹配性能比较不足的问题。
+◆ 构建覆盖合成、月球试验台和地球类比场景的九个数据集基准，比较十一种经典与学习型检测器-匹配器组合及一个特征跟踪器。
+◆ 同时以成对位姿精度和VO轨迹误差评分，并区分仅旋转与旋转加平移方向的联合度量，揭示合成数据结论不能直接外推到真实月球影像。
+◆ 发现SuperPoint组合在月球试验台和一个类比站点的仅旋转指标上优于SIFT+FLANN，但在立体VO中并非持续更准，却唯一在全部八个序列上保持跟踪。
+◆ 揭示经典匹配组合受光照影响明显而SuperPoint较稳定，低聚光灯下因对比度和关键点增多反而更准，并给出LightGlue最快（16 ms/帧）及DINOv2检索提议仍需几何验证的结论。</td></tr>
 <tr><td>2026-10-21</td><td>DewHand: Direct Metric World-Space Hand Motion Reconstruction from Egocentric Videos<br><a href='http://arxiv.org/pdf/2610.29936'>论文</a></td><td>DewHand提出统一模型，从第一视角视频直接联合重建世界坐标系中的手部与相机运动，避免多阶段估计的误差累积。  
 ◆ 将手部与相机运动在共享世界坐标系中单阶段联合预测，减少独立估计带来的复合误差。  
 ◆ 融合VGGT-Ω场景级几何特征与度量空间监督以缓解单目尺度歧义，并用手部专用特征保留细粒度关节细节。  
@@ -93,17 +103,6 @@
 ◆ 提出节点验证的拓扑执行机制，确保机器人在拓扑路线上的到达与执行可信。
 ◆ 提出任务触发、证据门控的人机记忆协同更新，融合人类任务约束与离线环境修改，以及机器人主动实地验证的物理状态证据，并分离人类许可与机器人观测可通行性。
 在Unitree Go2实验中，AVALON配合X-NavDP完成12.81米Intersection-to-Dining任务仅46.4秒（5/5），比DimOS-Go2少40.9%机器人时间，而仅策略的X-NavDP五次均超时。</td></tr>
-<tr><td>2026-10-15</td><td>CLAD: Keypoint Matching Using Global Line Correspondences<br><a href='http://arxiv.org/pdf/2610.21409'>论文</a></td><td>论文提出CLAD，一种利用全局线对应几何上下文的关键点匹配方法，旨在解决重复纹理或弱纹理场景中局部描述子不可靠的问题。
-◆ 提出用关键点到匹配直线的邻近关系构成描述子，将全局空间结构引入关键点表示。
-◆ 采用HOME检测清晰与弱线性结构并建立线-关键点关联，为描述子提供充分全局线上下文。
-◆ 在重复场景中利用全局结构区分相似局部块，提升匹配可靠性并产生几何一致匹配。
-◆ 在TUM RGB-D SLAM和户外视频上验证其与传统局部描述子互补，且计算轻量、易于实现。</td></tr>
-<tr><td>2026-10-15</td><td>LIN-SLAM: Lightweight LiDAR--Inertial Neural SLAM for Real-Time Onboard Navigation<br><a href='http://arxiv.org/pdf/2610.21199'>论文</a></td><td>本文提出LIN-SLAM，一种将高频几何LiDAR-惯性估计与神经隐式跟踪、持续建图和全局优化耦合的轻量混合SLAM方法。
-◆ 提出几何LiDAR-惯性前端与神经隐式后端紧耦合的混合架构，在保持高效状态估计的同时获得连续地图表示和全局精化能力。
-◆ 实现轻量化神经隐式跟踪与持续建图后端，显著降低现有神经隐式SLAM的计算开销，支持实时在线运行。
-◆ 在三个数据集、十二个序列、32/64/128线LiDAR配置上取得最低整体ATE，定位精度优于现有几何和神经隐式SOTA方法。
-◆ 在Unitree Go2、Jetson Orin NX和16线LiDAR平台上完成1.47公里室内重复走廊实时定位与神经建图，端点闭合误差仅0.141米。
-◆ 据所知，这是首个在移动机器人平台上实时在线运行并保持SOTA定位精度的神经隐式后端LiDAR-惯性SLAM系统。</td></tr>
 </tbody>
 </table>
 </div>
@@ -116,6 +115,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-22</td><td>MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model<br><a href='http://arxiv.org/pdf/2610.31321'>论文</a></td><td>MVLoMa将局部特征匹配从图像对扩展到由中心图像和多个邻域构成的稀疏星图，用单次前向完成中心图与所有邻居的匹配，避免逐边重复计算并利用多视图互补几何证据。
+◆ 使用冻结的多视图几何基础模型联合描述星图内所有图像，并把跨视图几何上下文注入局部描述子。
+◆ 设计每视图自注意力和双向中心—邻域交叉注意力，在一次前向中联合匹配中心图与所有邻居。
+◆ 仅从深度有效且相互可见的稠密warp生成正对应，并显式惩罚违反对极几何的高置信匹配，同时支持DA3、π^3、VGGT、VGGT-Ω等冻结几何编码器。
+在HyperSim、ScanNet++、Mip-NeRF 360和Tanks and Temples的25视图星图上，该方法在三个阈值下取得最佳宏平均相对位姿AUC（58.65/85.41/90.99），匹配速度比顺序评估24条中心—邻域边快2.20倍。
+受控消融进一步分离了几何感知描述子、可见性过滤、几何负监督和联合多视图推理的贡献。</td></tr>
 <tr><td>2026-10-20</td><td>CrossFit-GS: Out-of-Fold Pose Estimation for COLMAP-Free 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2610.28190'>论文</a></td><td>CrossFit-GS提出一种延迟提交的渐进式无位姿3DGS框架，可在无COLMAP/SfM条件下从无位姿图像序列直接重建场景。
 ◆将输入序列划分为交错子集并维护两个互补子图，使候选位姿在从未用目标帧优化过的冻结对侧子图上交叉细化，从而获得独立几何参考。
 ◆引入棋盘验证和空间覆盖保障机制，拒绝不可靠位姿更新，仅将验证通过的位姿提交到所属子图，以打断畸变地图误差自增强循环。
@@ -188,12 +193,6 @@
 ◆ 每个技术均用Python和NumPy或PyTorch直接实现，并与OpenCV或PyTorch库函数数值核对，强调可验证与可复现。
 ◆ 借助AI辅助从开放课程笔记提炼材料，把大量工作代码压缩为简洁数学阐述，同时保留验证结果。
 本书可作为学生与从业者理解计算机视觉算法及其Python实现的自包含参考。</td></tr>
-<tr><td>2026-09-30</td><td>Geometry beneath the Waves: Dense Priors for Sparse-View Underwater 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2609.18737'>论文</a></td><td>本文面向稀疏视角水下3D重建中散射、吸收和悬浮颗粒造成的特征与几何退化问题，提出利用领域自适应前馈几何先验增强3D高斯泼溅的框架。
-◆ 采用LoRA与教师—学生蒸馏适配VGGT，在合成退化水下图像上训练并保留干净几何监督，从而在不修改预训练预测头的前提下提升对水下外观畸变的鲁棒性。
-◆ 将预测的密集几何初始化中间3DGS表示，生成几何引导伪视角以增加视角重叠并强化特征轨迹，进而服务于后续RUSplatting优化。
-在SeaThru-NeRF上，该方法将RUSplatting的PSNR从24.37提升至27.11 dB，SSIM从0.7611提升至0.8634。
-在Submerged3D上，该方法取得最佳平均PSNR和LPIPS，验证了领域自适应几何先验对稀疏视角水下重建的有效性。
-总体而言，其核心贡献是把前馈几何基础模型的水下适配与密集先验驱动的3DGS流程结合，实现更稳健的稀疏视角水下三维重建与视角合成。</td></tr>
 </tbody>
 </table>
 </div>
@@ -206,6 +205,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-22</td><td>MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model<br><a href='http://arxiv.org/pdf/2610.31321'>论文</a></td><td>本文提出MVLoMa，一种稀疏星图局部特征匹配器，将LoMa从图像对扩展到一中心多邻居的多视图匹配，避免逐边独立匹配的参考侧重复计算并利用多视图几何证据。
+◆ 使用冻结的多视图几何基础模型联合描述星图中的所有图像，并将跨视图几何上下文注入局部描述子。
+◆ 通过每视图自注意力和双向中心—邻居交叉注意力，在单次前向中完成中心图像与全部邻居的匹配。
+◆ 仅从深度有效且相互可见的稠密warp生成正对应，并显式惩罚违反极几何的高置信匹配。
+◆ 同一设计兼容DA3、π^3、VGGT和VGGT-Ω等冻结几何编码器，且DA3-Giant表现最佳。
+在HyperSim、ScanNet++、Mip-NeRF 360和Tanks and Temples的25视图星图上，MVLoMa在三个阈值取得最佳相对位姿AUC（58.65/85.41/90.99），匹配器比顺序评估24条中心—邻居边快2.20倍，消融验证了几何感知描述子、可见性过滤、几何负监督和联合多视图推理的有效性。</td></tr>
+<tr><td>2026-10-22</td><td>HimmBO: High-Dimensional Interactive Model-Merging Bayesian Optimization for Image Generation<br><a href='http://arxiv.org/pdf/2610.30875'>论文</a></td><td>HimmBO提出一种面向图像生成的两阶段高维交互式适配器合并贝叶斯优化方法，将偏好驱动的模型合并扩展到更大适配器集合并显著降低图像生成开销。
+◆筛选阶段利用预生成图像上的水平集估计恢复活跃适配器集合，整个阶段无需生成新图像。
+◆精炼阶段在恢复的低维子空间中优化合并系数，避免直接在高维全集合上搜索。
+◆两阶段均采用风格感知核，使偏好信息能在视觉相似的适配器之间迁移复用。
+实验表明，HimmBO在模拟用户图像匹配中最终相似度优于所有对比方法，达到给定相似度所需图像生成次数不足先前方法的十分之一。
+其性能在适配器集合扩展到1080个时仍保持稳定，而竞争方法明显退化。</td></tr>
+<tr><td>2026-10-22</td><td>WovenAnchor Matcher: Specialized Intra- and Inter-Image Context Modeling for Feature Matching<br><a href='http://arxiv.org/pdf/2610.30799'>论文</a> | <a href='https://github.com/mmaiLab/WovenAnchorMatcher'>代码</a></td><td>本文提出WovenAnchor Matcher（WAM）半稠密匹配框架，核心是按图像内与图像间上下文的不同角色进行专门化聚合。
+◆ 设计角色分工的WAM框架，将图像内空间证据传播与图像间对应区域信息检索解耦。
+◆ 提出WovenMamba，以先水平后垂直的状态空间传播实现图像内聚合，形成结构化二维感受野偏置。
+◆ 提出AnchorCrossAttention，在局部代表锚点上进行跨注意力，从可能对应区域聚集信息并抑制无关噪声。
+在MegaDepth上，WAM取得66.1 pose AUC@5°，较JamMa基线提升2.0个AUC点。
+消融实验表明移除或替换任一专用组件都会降低精度，验证了角色专门化聚合设计的有效性。</td></tr>
 <tr><td>2026-10-18</td><td>LateMatch: Breaking the Interaction Bottleneck via Cacheable Matching for Efficient Visual Localization<br><a href='http://arxiv.org/pdf/2610.25358'>论文</a></td><td>论文针对现有深度特征匹配器在每层紧耦合图像内上下文与跨图匹配、对K张库图需重复执行完整网络且无法缓存的问题，指出严重交互瓶颈。  
 ◆提出可缓存图像匹配新范式，将跨图交互推迟到网络末层，使图像内处理可离线缓存、在线仅执行少量交互计算。  
 ◆提出LateMatch，通过Context Blocks与Interaction Blocks解耦重构现有匹配器，实现通用且高效的视觉定位部署。  
@@ -270,16 +287,6 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆ 创新点二：针对该NP-hard组合优化问题，采用基于模拟分岔的Ising机进行求解，实现快速近似优化。  
 ◆ 创新点三：在HPatches数据集上将匹配精度较传统方法提升约8个百分点，并成功集成到ORB-SLAM3中。  
 在KITTI中多个同形状物体重复排列的困难场景下，该方法使绝对位姿误差改善3.78倍、相对位姿误差改善2.85倍。</td></tr>
-<tr><td>2026-09-08</td><td>RoMa-$Ω$: What Feed-Forward 3D Models Know About Image Matching<br><a href='http://arxiv.org/pdf/2609.09507'>论文</a></td><td>本文探究前馈3D重建模型对图像匹配的知识，并分析零样本patch特征匹配、3D点预测直接匹配和基于学习表示训练完整匹配器三种场景。
-◆系统评估VGGT等前馈3D模型在图像匹配中的零样本、线性探测和端到端训练表现。
-◆发现其零样本匹配较弱且深层更差，但学习表示对线性探测和完整匹配流程具有强迁移价值。
-◆证明无需训练，其原始3D点预测在中等视角变化和模态差异下也能取得有竞争力的匹配结果。
-◆提出RoMa-Ω，用VGGT-Ω替换RoMa v2的DINO骨干，在多个基准上超越现有匹配器，WxBS较RoMa v2提升8.1 mAA。</td></tr>
-<tr><td>2026-09-06</td><td>Back to the Feature: Zero-Shot 6DoF Pose Estimation via Dense Local Features<br><a href='http://arxiv.org/pdf/2609.06726'>论文</a></td><td>B2TFPose是一种无需训练的零样本6DoF位姿估计方法，仅利用单个冻结的DINOv3视觉Transformer提取密集局部特征，即可跨越合成到真实的领域差异，无需任何任务微调。该方法重新审视经典局部特征匹配范式，并借助大规模自监督基础模型实现对新物体的位姿估计。在BOP基准的七个核心数据集上，B2TFPose无需精修即达到40.7平均AR，加入精修后达到56.4，超越现有无训练方法，并优于部分有监督方法，且推理速度具有竞争力。其核心贡献包含以下三点：
-◆ 提出测地线非极大值抑制策略，用于选取视角多样化的模板集，支撑由粗到精的对应匹配。
-◆ 提出渲染引导的重新对应机制，在估计位姿处合成物体特定视图并重建密集2D-3D对应，无需额外参数即可锐化初始位姿。
-◆ 设计多掩膜假设选择策略，联合评分多个分割候选，有效解决分割模糊问题。</td></tr>
-<tr><td>2026-09-06</td><td>Radiation, Rotation and Scale Invariant Feature Descriptor for Multimodal Image Matching<br><a href='http://arxiv.org/pdf/2609.06343'>论文</a> | <a href='https://github.com/yeyuanxin110/RRSI'>代码</a></td><td>本文提出一种面向多模态图像匹配的辐射、旋转与尺度不变特征描述子RRSI，有效应对几何形变和非线性辐射差异的挑战。其核心贡献在于设计了一个端到端的深度学习框架，能够联合编码模态间的几何与辐射关系。◆ 提出双头区域采样模块，同时进行笛卡尔和对数极坐标采样，兼顾空间结构并增强对旋转和尺度的鲁棒性。◆ 在统一深度特征空间中实现模态内、双头采样和模态间区域的联合特征编码、交互与融合，提升匹配精度。◆ 引入双向跨模态生成式重建约束，通过解码隐特征生成对应模态的结构块，锚定模态不变的几何拓扑，且推理时无额外开销。实验表明该方法在光学红外与光学SAR数据集上性能优越，支持0到360度全旋转及最高四倍尺度变化，并在计算机视觉、遥感和医学图像上展现良好泛化性。</td></tr>
 </tbody>
 </table>
 </div>
@@ -292,6 +299,21 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-22</td><td>GelSlim 5.0: Unifying Vision and Touch with a Single Fingertip Camera<br><a href='http://arxiv.org/pdf/2610.31334'>论文</a></td><td>GelSlim 5.0提出一种仅用单个固定相机的指尖传感器，通过切换照明，在同一视点依次获取透过膜的视觉图像与接触敏感触觉图像，从而避免多相机外参标定。
+◆ 用单一相机与连续UV响应接触层统一视觉和触觉观测，实现共享视点下的序列采集。
+◆ 提出VisTacFusion多模态Transformer，为平面物体位姿和接触几何设置独立预测路径。
+◆ 设计非对称瓶颈融合，在引入视觉上下文的同时保留触觉空间特征，以估计深度和表面法线。
+◆ 引入模态丢弃机制，使模型支持成对输入或任一单模态推理。
+在12个已知物体的真实验证中，成对输入相对纯触觉将深度MSE、角度误差和平移L1分别降低61.2%、72.3%、61.3%；相对纯视觉分别降低93.7%、6.1%、8.6%。</td></tr>
+<tr><td>2026-10-22</td><td>WildDepth-v2: A Synchronized RGB--LiDAR--Radar Dataset and Benchmark for Metric Depth, Motion, and Tracking of Wildlife<br><a href='http://arxiv.org/pdf/2610.31123'>论文</a></td><td>本文提出WildDepth-v2，在同步RGB-LiDAR野生动物数据集基础上扩展成像雷达、标准化基准及度量运动与跟踪能力，为动物距离、运动和生态监测提供带度量真值的数据与评测框架。
+◆ 新增37个RGB-LiDAR-4D雷达序列共19716帧，提供逐点多普勒速度和实测误差预算，据称是首个成像雷达野生动物记录。
+◆ 构建冻结且校验的隐藏测试集，分别面向纯RGB距离估计与RGB加稀疏LiDAR深度补全，并在动物像素和背景像素上分开评估。
+◆ 利用LiDAR、雷达或单目深度将2D跟踪提升为度量3D轨迹，形成跨431条轨迹的运动与跟踪基准。
+实验表明，对象级雷达校准可在推理不用LiDAR时优于场景级LiDAR校准（AbsRel 0.120对0.198），动物级LiDAR仍最优（0.052）；每轨雷达缩放将3D位置误差从2.20米降至0.58米，并把检测函数偏差从-13%降至-2%，雷达多普勒迁移到LiDAR还使运动掩码更密、动物累积误差降低37%并估计径向速度（r=0.60，约低估50%）。</td></tr>
+<tr><td>2026-10-22</td><td>SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?<br><a href='http://arxiv.org/pdf/2610.26659'>论文</a> | <a href='https://github.com/JesseZZZZZ/SpatialScout'>代码</a></td><td>本文提出SpatialScout，一个评估VLM智能体主动进行物体级3D建图的基准。该基准包含80个室内场景和3140个目标物体，要求智能体在有限交互预算下控制相机探索并估计共享坐标系中的物体中心。评估采用惩罚漏检的物体尺度重叠分数，同时衡量定位精度与目标覆盖率；实验显示最强模型Claude Opus 5.5平均重叠分数仅41.71%，IoU超0.5和0.9的目标分别占47.23%和3.25%。
+◆ 构建覆盖多场景多目标、带交互预算约束的主动物体级3D建图量化测试平台。
+◆ 设计联合定位精度与目标覆盖率的物体尺度重叠评估，惩罚漏检并区分粗布局与精确度量地图。
+◆ 揭示前沿VLM在视角选择、跨视图关联、几何估计和地图修正上的显著能力缺口。</td></tr>
 <tr><td>2026-10-21</td><td>A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots<br><a href='http://arxiv.org/pdf/2610.29438'>论文</a></td><td>针对腿足机器人全身多IMU标定中运动激励不足及足滑、冲击和振动噪声问题，论文提出运动学驱动的抗噪主动标定框架A2I-Calib++，可在无人工标靶和目标IMU复杂调参下估计时间偏移、外参旋转平移与惯性偏置。
 ◆ 设计受噪声各向同性启发的轨迹，并给出有限时域条件性命题，以生成足量激励并降低噪声敏感性。
 ◆ 提出约束感知对抗运动先验控制器，将抗噪激励与滚动接触奖励结合，实现接触感知执行。
@@ -312,10 +334,6 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆在严格外参约束下生成LiDAR-Camera标定样本，提升外参多样性，使网络不再依赖单一标定配置。
 ◆验证仅用合成数据训练的模型可在多种真实相机-LiDAR配置上零样本迁移，显著提升泛化性与鲁棒性。
 实验表明该数据能增强典型学习式标定网络的泛化与鲁棒性，作者还将公开数据生成代码、预训练模型和在线基准数据集。</td></tr>
-<tr><td>2026-10-20</td><td>SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?<br><a href='http://arxiv.org/pdf/2610.26659'>论文</a> | <a href='https://github.com/JesseZZZZZ/SpatialScout'>代码</a></td><td>本文提出SpatialScout，一个评估VLM智能体主动进行物体级3D建图的基准。该基准包含80个室内场景和3140个目标物体，要求智能体在有限交互预算下控制相机探索并估计共享坐标系中的物体中心。评估采用惩罚漏检的物体尺度重叠分数，同时衡量定位精度与目标覆盖率；实验显示最强模型Claude Opus 5.5平均重叠分数仅41.71%，IoU超0.5和0.9的目标分别占47.23%和3.25%。
-◆ 构建覆盖多场景多目标、带交互预算约束的主动物体级3D建图量化测试平台。
-◆ 设计联合定位精度与目标覆盖率的物体尺度重叠评估，惩罚漏检并区分粗布局与精确度量地图。
-◆ 揭示前沿VLM在视角选择、跨视图关联、几何估计和地图修正上的显著能力缺口。</td></tr>
 <tr><td>2026-10-20</td><td>Visual-Inertial Odometry for Ground Robots with Dynamic Camera-IMU Extrinsic Calibration<br><a href='http://arxiv.org/pdf/2610.25397'>论文</a></td><td>本文针对视觉惯性里程计中传感器刚性安装假设限制适应性、难以应对结构运动的问题，研究时变相机-IMU外参标定，以提升地面机器人在动态结构运动场景下的定位适应性。
 ◆ 提出基于Denavit-Hartenberg约定并融合机器人运动模型的动态相机-IMU外参标定方法，将外参随关节运动变化纳入建模。
 ◆ 设计两步初始化策略高效估计初始关节角，为后续外参优化提供可靠起点，并支持时变相机-IMU外参的在线估计。
@@ -355,17 +373,6 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆ 每个传感单元均能检测法向力和剪切力，平均RMSE为2.133 kPa。
 ◆ 传感器在体模和离体猪组织上验证，可感知牵拉和滑移等触觉事件。
 ◆ 该工作为力敏感机器人微创手术提供了小型化、可集成的霍尔触觉传感方案，有助于恢复手术触觉反馈。</td></tr>
-<tr><td>2026-10-07</td><td>DeltaSplat: Iterative Gaussian Refinement for Pose-Free Feed-Forward 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2610.09853'>论文</a></td><td>DeltaSplat针对无位姿前馈3DGS中相机误差传播导致高斯几何与光度不准的问题，提出轻量迭代细化模块。
-◆ 通过在当前高斯于输入视角渲染，并依据渲染残差迭代预测每个高斯的位置、不透明度和颜色更新，纠正单次预测误差。
-◆ 将每像素Plücker射线与渲染深度作为软几何先验，缓解仅凭2D残差无法确定3D修正的欠定问题。
-◆ 采用双分支卷积混合器融合上述先验与残差，并由按属性分头解码生成高斯更新，仅增加约2.2%参数且推理保持完全前馈。
-在DL3DV无位姿设置下达到26.64 dB PSNR，比最先进骨干提升1.75 dB，并超过有真值相机的基线，在6-24视图和所有相机模式下均有一致增益。</td></tr>
-<tr><td>2026-10-06</td><td>MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback<br><a href='http://arxiv.org/pdf/2610.08425'>论文</a></td><td>MIM-VLA提出一种基于夹爪电机反馈的VLA架构，将近期电流、位置、速度和信号有效性编码为128维交互token，以显式表征接触后的物理响应。
-◆ 仅用电机信号预训练MIM，并借助人工审核的接触与交互阶段标签学习物理交互表示。
-◆ 该交互token只条件化SmolVLA的夹爪动作通路，保持机械臂动作和位置控制接口不变。
-◆ 同一token驱动MEM选择器VLM，对候选交互进行比较，生成基于证据的选择与解释。
-◆ 在真实实验中，它支持阻力比较、主动探测区分视觉相似的真品与复制品，以及轻柔抓取易碎物体并泛化到留出实例。
-在13对物体测试中，MIM-VLA以75.0%选择更高阻力物体，优于SmolVLA的48.8%，且无需额外触觉阵列、力扭矩传感器、校准力估计或直接电流控制。</td></tr>
 </tbody>
 </table>
 </div>
@@ -378,6 +385,41 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-22</td><td>Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success<br><a href='http://arxiv.org/pdf/2610.31670'>论文</a></td><td>论文针对具身模型闭环评测昂贵的问题，提出无需训练、离线计算的传感器运动对齐指标S²，用于衡量模型感官表征与物理运动几何结构的对齐程度。  
+◆将柏拉图表征假说扩展到具身模型，把“感官—运动对齐”从概念假设变为可经验测量的离线指标。  
+◆发现S²与多类具身模型下游机器人任务成功率正相关，可作为闭环评测前的低成本模型筛选代理。  
+◆证明S²能在昂贵微调为VLA之前识别有潜力的VLM骨干。  
+◆利用表征级分析解释VLA与世界动作模型中的现象，揭示模型成功背后的表征原因。  
+总体而言，该工作为具身策略能力提供了低成本代理，并超越单一成功率给出可解释洞察。</td></tr>
+<tr><td>2026-10-22</td><td>Progress Probes $P^2$: Lightweight Runtime Monitoring for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.31613'>论文</a></td><td>论文提出Progress Probes P^2，研究能否仅用VLA自身内部激活实现轻量运行时监控，并利用演示数据在策略激活上训练线性探针估计进度、标记偏离预期进度的执行。在开源VLA π0.5及仿真和真实操作任务中，该方法在失败检测上与传统VLM监控器相当或更优，也优于需失败数据训练的方法，表明简单内部探针可支撑可靠执行监控而无需外部基础模型。
+◆ 验证了利用VLA内部激活进行运行时进度监控的可行性。
+◆ 提出仅用成功演示训练线性探针的轻量监控框架，无需失败数据和外部VLM。
+◆ 在仿真与真实任务中取得与VLM监控器竞争或更优的失败检测效果，降低监控复杂度和计算成本。</td></tr>
+<tr><td>2026-10-22</td><td>AgentVQA: A Unified Benchmark for Agentic Visual Understanding<br><a href='http://arxiv.org/pdf/2610.31494'>论文</a></td><td>本文提出AgentVQA，一个面向智能体视觉理解的统一离线基准，用于低成本、可复现地评估视觉语言模型在真实智能体场景中的表现。它覆盖Web Agents、机器人、第一人称视频、游戏和空间规划五个领域，从23个源数据集中人工精选1000个高难度真实样例并适配离线评测。实验评估22个模型，最佳准确率仅58.5%，且模型排名与对应在线评估趋势一致；跨域分析表明主要错误源于视觉状态定位与动态维护，而非任务误解或下游逻辑推理。
+◆ 构建覆盖五类智能体领域的统一离线VQA基准，缓解现有评测碎片化问题。
+◆ 人工精选1000个真实智能体样例，并验证离线排名与在线评测的一致性。
+◆ 系统评估22个VLM并揭示视觉状态grounding与动态跟踪是核心瓶颈。</td></tr>
+<tr><td>2026-10-22</td><td>TRACE: Traversability-aware Reactive Navigation via VLM-driven Adaptive Constraints Estimation<br><a href='http://arxiv.org/pdf/2610.30994'>论文</a></td><td>本文提出TRACE，一个面向非结构化森林环境地面机器人自主运行的可通行性感知反应式导航框架。  
+◆ 利用正负自然语言提示集生成VLM置信图，并通过证据融合构建稠密可通行性地图，优先识别曾走过路径的地形线索。  
+◆ 从可通行性标注点中采用百分位分箱提取左右边界，并结合样条或正则化多项式拟合获得平滑路径边界。  
+◆ 将左右边界作为NMPC中的软障碍约束，实现安全、自适应的路径跟踪与反应式导航。  
+◆ 在真实森林环境中验证了系统在杂乱、可变形和视觉模糊地形中的平滑导航能力。</td></tr>
+<tr><td>2026-10-22</td><td>SmolVLA-MoE: Sparse Mixture-of-Experts for Efficient Multi-Task Robotic Manipulation<br><a href='http://arxiv.org/pdf/2610.30732'>论文</a> | <a href='https://github.com/dudu435/smolvla-moe'>代码</a></td><td>本文提出SmolVLA-MoE框架，将稀疏混合专家引入VLA动作专家的FFN层，以解决轻量VLA模型因单一密集动作专家导致的多任务能力受限问题。
+◆将动作专家的密集FFN层替换为多个并行专家FFN和token级路由器，使每个token能自适应选择最合适的专家进行动作生成。
+◆引入共享专家及可调权重参数，用于平衡预训练能力继承与任务特定专家的特化。
+◆采用稀疏激活机制，推理时仅激活单个专家FFN，含冻结VLM骨干的总激活参数约500M，总存储参数约800M。
+在LIBERO四个任务套件上，SmolVLA-MoE平均成功率达84.25%，优于SmolVLA的82.75%和OpenVLA-7B的76.5%，同时保持相近推理效率。</td></tr>
+<tr><td>2026-10-21</td><td>Motion Retargeting with Spatiotemporal Preferences for Humanoid Loco-Manipulation<br><a href='http://arxiv.org/pdf/2610.30540'>论文</a></td><td>本文提出面向人形机器人全身控制与移动操作的运动重定向框架，旨在解决统一逐帧迭代预算无法满足物体交互关键阶段局部精度需求的问题。核心贡献是提出时空重定向STR，通过关键帧和关键身体部位按需分配优化资源。
+◆ 使用视觉语言模型选择相关运动信号与身体部位，并依据所选信号变化识别关键帧，对关键帧增加求解迭代、对关键部位提高交互权重。
+◆ 提出力学感知接触锚定MCA，利用近似物体扳手模型细化物体表面接触位置，同时保留所选表面方向以提升接触保真度。
+◆ 构建时空强化学习STRL，结合自适应关键阶段采样以及基于目标接近和物体接触力的接触奖励用于下游控制。
+仿真Unitree G1与真实Unitree R1实验表明，STR以更低计算成本提升几何接触覆盖与连续性，并改善多样物体交互任务的下游完成效果。</td></tr>
+<tr><td>2026-10-21</td><td>Externalise the Memory: A Pre-Registered Study of Where an Embodied Agent&#x27;s Experience Should Live<br><a href='http://arxiv.org/pdf/2610.30478'>论文</a></td><td>论文核心贡献是以预注册协议严格比较具身智能体经验应存入策略权重还是外部检索，并通过匹配蒸馏、冻结检索缓冲重附等对照，把“记忆放在哪里”转化为可检验问题。
+
+◆创新点一：设计记忆增强教师与LoRA学生的匹配评估，并加入将教师冻结检索缓冲重新接到固定学生权重上的关键协议对照。
+◆创新点二：发现将记忆增强行为蒸馏进权重仅比仅动作控制高1个百分点且不显著，注册检验功效不足，因此撤回而非反驳“记忆在权重”主张。
+◆创新点三：附接外部检索缓冲使固定学生权重提升34个百分点并达到教师参考水平，协议对比亦支持外部记忆提供情境特定校正。
+◆创新点四：行为探针表明蒸馏传递边际校正但不传递条件性情境校正，后续控制显示冻结缓冲普遍提升各模型且适配器无可检测增益，第二任务方向一致但受记忆覆盖限制未显著。</td></tr>
 <tr><td>2026-10-21</td><td>GeoMem-VLA: Internalizing 3D Scene Understanding into Temporal Memory for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.29866'>论文</a></td><td>GeoMem-VLA的核心贡献是将显式3D监督内化为可学习的几何token，并作为时间记忆服务于动作生成，而非每步进行完整3D重建，也无需直接对齐VLM原生视觉嵌入与教师特征空间。
 ◆提出GeoPlan token，利用冻结几何基础模型和几何流匹配目标，以当前场景点图及未来末端执行器轨迹进行监督。
 ◆设计观察表示的时间记忆机制，对历史信息进行检索、与当前观察自适应融合，并巩固事件帧以形成持续任务表示。
@@ -404,10 +446,9 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆提出两阶段数据生成流程，先扩展稀疏更新监督，再用任务接地验证的自标注生成更贴近执行状态分布的训练数据，教会模型写什么记忆及何时更新。
 ◆将记忆更新从被动检索转为主动写入未来相关子任务，使高层规划与低层动作解耦，并提升长时程视觉推理与控制效率。
 在RoboMME上取得56.05%成功率，超过最强基线44.51%；真实四类操作任务总体成功率60.83%，优于MemER的45.00%和FrameSamp-Modul的28.33%。</td></tr>
-<tr><td>2026-10-21</td><td>Failure Modes of Vision-Language Models for Human Activity Understanding in Thermal HRI<br><a href='http://arxiv.org/pdf/2610.29244'>论文</a></td><td>本文系统评估7个可本地部署的视觉语言模型（含面向物理AI与机器人模型）在两个以人为中心热成像数据集上的人类活动理解失败模式，填补热成像HRI中相关评估空白。作者设计细粒度动作识别、活动时间线重建和拒绝无依据回答三类诊断任务，并以配对RGB为参照，控制帧采样、热输入呈现和推理设置检验错误能否缓解。结果表明模型能识别宽泛活动类别，却难以区分咳嗽、打喷嚏、打哈欠等细粒度动作，时间线重建不准且会幻觉涉及物体的动作，简单预处理和额外推理增益有限且依赖模型，弃权行为也不稳定。
-◆ 首次系统揭示热成像HRI中VLM的细粒度识别、时间线重建与弃权失败模式
-◆ 构建含配对RGB参照和控制变量的诊断评测，覆盖7个本地可部署VLM并检验缓解手段
-◆ 发现热输入预处理与额外推理收益有限、弃权不可靠，指出实际机器人部署的关键限制...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-10-21</td><td>Failure Modes of Vision-Language Models for Human Activity Understanding in Thermal HRI<br><a href='http://arxiv.org/pdf/2610.29244'>论文</a></td><td>本文填补了视觉语言模型在热成像人机交互中人类活动理解失败模式研究不足的空白。作者系统评估七种可本地部署VLM（含面向物理AI与机器人模型）在两个以人为中心的热成像数据集上的表现，设置细粒度动作识别、活动时间线重建和拒绝无依据回答三类诊断任务，并以配对RGB数据作参照。结果表明模型能识别宽泛活动类别，却难以区分咳嗽、打喷嚏、打哈欠等细粒度动作，且时间线重建不准、易幻觉涉及物体的动作。帧采样、热输入呈现与额外推理等受控变化仅带来有限且依赖模型的改善，显式指令下的拒答行为也因模型而异，限制实际机器人可靠性。
+◆首次聚焦热成像HRI场景，系统揭示VLM在人类活动理解中的细粒度识别、时间线重建与拒答失败模式。
+◆通过配对RGB参照及帧采样、输入呈现和推理控制，诊断错误可缓解性并给出模型相关且有限的改进结论。</td></tr>
 <tr><td>2026-10-20</td><td>UniWALM: Unified World Action Language Model for Embodied Robot Control<br><a href='http://arxiv.org/pdf/2610.28626'>论文</a></td><td>UniWALM提出统一的世界-动作-语言模型，在单一共享表示中联合学习视频、动作和语言，且每个模态既是条件信号也是监督目标。与将推理或视觉语言模型外挂到视频-动作骨干并分阶段运行不同，它用单一Mixture-of-Transformers骨干让各模态扩散头同步协同去噪，在一次生成中解码动作、子任务和文本记忆，无需独立规划阶段。
 ◆ 统一三模态于单一共享表示和单骨干，消除分阶段规划，并让生成语言在下一步回灌，形成语言即记忆闭环。
 ◆ 各模态扩散头同步协同去噪，一次生成动作、子任务和文本记忆，支持记忆依赖行为且无需外部规划器或记忆库。
@@ -419,43 +460,6 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆引入生成式伙伴状态建模目标，从遮挡的自视角预测伙伴运动，以缓解严重部分可观测性。  
 仿真与Unitree G1真机在五类富接触交互上验证，语义接触建模显著提升示范交互保持，生成式建模在四类交互中提升接触召回。  
 真机上REACT仅用机载传感完成全部五类交互。</td></tr>
-<tr><td>2026-10-20</td><td>CLOSER: Evidence-Aware Active Visual Verification for Embodied Object-Goal Navigation<br><a href='http://arxiv.org/pdf/2610.28476'>论文</a></td><td>CLOSER针对ObjectNav中检测器易将相似物体误判为目标、贪心接近导致候选被遮挡或仅部分观测的问题，提出证据感知的主动视觉验证框架，将停止决策建模为闭环证据获取。  
-◆ 微调开源VLM，对跨帧跟踪候选的每个视角判定为目标、非目标或不确定。  
-◆ 用基于嵌入的多样性门选择互补视角，并以轻量网络融合各视角概率。  
-◆ 当融合判断仍不确定时，用扩散策略仅依据跟踪掩码和深度主动接近候选，直至决策明确。  
-该框架可本地运行，并能即插即用于现有ObjectNav系统而无需重新训练。  
-在Gibson和Habitat-Matterport 3D上，平均成功率提升3.6点、SPL提升2.0点，表明先验证证据再提交决策可改善具身导航。</td></tr>
-<tr><td>2026-10-20</td><td>EventSync: Event-Driven Memory Updates for History-Dependent Manipulation<br><a href='http://arxiv.org/pdf/2610.27917'>论文</a></td><td>本文提出EventSync，一种面向历史依赖操作的分层框架，通过事件驱动记忆更新协调高层任务推理与低层动作执行。
-◆ 使用视觉语言模型基于任务计划和交互历史生成子目标，并由视觉语言动作模型执行，形成任务推理与动作执行的闭环。
-◆ 设计轻量Event Monitor，融合视觉观察与末端执行器轨迹判断当前子目标是否完成，仅在获得完成证据后写入已完成子目标历史并触发后续推理，避免过早记录完成而误导推理。
-◆ 在执行器中引入视觉历史，使子目标执行能够利用交互过程信息，提升历史依赖任务中的执行可靠性。
-在RoboMME上取得64.5%总体成功率，较基准最佳基线高20.0个百分点，并在四个具有不同记忆需求的真实机器人任务上验证有效性。</td></tr>
-<tr><td>2026-10-20</td><td>Multi-View Latent Action Pretraining for Cross-Embodiment Robot Learning from Videos<br><a href='http://arxiv.org/pdf/2610.27794'>论文</a> | <a href='https://learnsyslab.github.io/multiview_latent_action_pretraining/'>代码</a></td><td>本文提出面向跨具身机器人学习的多视角潜在动作预训练框架，用无动作视频替代昂贵遥操作数据。
-◆ 设计同步多摄像头输入的潜动作模型，通过交叉注意力解析深度与遮挡，再压缩为潜在动作，缓解单视角对6D动作的歧义。
-◆ 构建冻结VLM骨干上由潜在专家与动作专家经序列流匹配耦合的策略，将多视角潜动作用于下游控制。
-◆ 在严格跨具身设置中验证：双视角预训练使真实6D动作可解码性较单视角提升17%，下游成功率提升13.5%（单视角为6.2%），且单一跨具身即可迁移技能，第二视角优于最多四个额外具身。
-◆ 硬件实验表明人类手部演示可迁移，成功率较仅动作策略提升20%（850次 rollout），并揭示视频与机器人数据互补、视频收益依赖任务。</td></tr>
-<tr><td>2026-10-20</td><td>Give the Model a Finger: Developmentally Aligned Evaluation of Counting in Vision-Language Models<br><a href='http://arxiv.org/pdf/2610.27756'>论文</a></td><td>本文的核心贡献是把VLM计数评估从“干预提升准确率”转向“测量串行视觉推理”：在不训练的情况下，给模型配上无视觉智能的指认与标记工具，使其计数过程在图像上留下可审计痕迹。
-◆提出发展对齐的可解释审计框架：按点级真值将每个标记判为命中、重复、幻影或遗漏，并用标记数核对答案、用相反遍历顺序检验顺序无关性。
-◆设计无训练agent循环与标签扰动探针，把“指哪数哪”的串行程序外显化，从而判断模型是否真的从标记读取答案，而非仅依赖语言routine。
-◆发现精确计数范围是模型特异的连续谱，跨越近两个数量级（R80从3到150个点），且指认精度能预测哪些模型从标记中受益。
-◆证明标记作为干预大多不提升准确率，真正价值是可审计轨迹；密集场景主要因遗漏失败，模型看到自身标记后很少修正。
-◆揭示能力解离：模型能遵循指定遍历顺序却常因反转而改答案，儿童计数中规则优于分散的优势仅在routine下出现并能经受格阵检验。</td></tr>
-<tr><td>2026-10-20</td><td>Evaluating Social Reasoning in Embodied Vision-Language Models<br><a href='http://arxiv.org/pdf/2610.27496'>论文</a></td><td>本文评估具身专用视觉语言模型Gemini Robotics-ER在真实人机社交交互基准SHREC上的社会推理能力，并与通用VLM基线进行比较。
-◆ 将社会判断区分为可直接从可观察交互线索读取的任务与需要推断人物内部状态的任务，揭示具身专用模型可能在这两类任务上表现分化。
-◆ 发现Robotics-ER在错误/胜任力检测上优于GPT-4o-mini，但在细粒度社会属性判断上更差，且加入视觉帧对两项任务一利一害。
-◆ 指出跨模型家族比较的限制，不能把差异单独归因于具身专门化，并强调共享基础模型在多机器人系统中可能放大系统性社会感知错误。
-该工作提供初步评估证据，为后续跨情境和基于视频的社会推理分析奠定基础。</td></tr>
-<tr><td>2026-10-20</td><td>CondenseVLA: Learnable History Condensation for Efficient Multi-Frame VLA<br><a href='http://arxiv.org/pdf/2610.25927'>论文</a> | <a href='https://github.com/FeiyangHong/CondenseVLA'>代码</a></td><td>论文提出CondenseVLA，一种面向多帧视觉语言动作策略的可学习历史压缩框架，旨在以较低成本利用短期视觉线索提升动作解码。  
-◆设计解码器侧历史压缩模块，将VLM主干缓存的逐帧特征通过可学习查询和多头交叉注意力蒸馏为固定数量slot token。  
-◆引入简单辅助正则化，惩罚slot注意力图重叠并去相关slot嵌入，促使各slot互补关注、减少历史冗余。  
-◆采用任务自适应的选择性压缩而非单纯扩大历史窗口，在保持效率的同时保留对短暂接触、遮挡和中间状态有用的近期证据。  
-实验显示，Simpler-WidowX成功率从58.7%升至69.8%，LIBERO达97.2%，真实任务达52.8%，RMBench记忆任务达21.6%。  
-结果支持有界近期视觉证据的选择性压缩用于动作解码，同时困难多观测任务也暴露了有限历史窗口的局限。</td></tr>
-<tr><td>2026-10-19</td><td>What Would Removing This Corruption Change? Failure Attribution for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.27277'>论文</a></td><td>论文将VLA模型中的失败归因定义为failure attribution：不仅判断视觉损坏是否存在，而是估计移除当前episode中某项损坏对失败风险的实际收益。针对直接测量移除收益需要昂贵配对rollout的问题，作者提出因子化风险模型，分离学习场景与损坏表示，并通过潜在干预从当前图像和任务指令估计移除收益，无需配对干净图像或额外反事实rollout。
-◆ 提出failure attribution问题，强调损坏存在不等于有害，需判断其对当前失败风险的贡献及移除收益。
-◆ 设计因子化风险模型与潜在干预机制，在无需配对干净图像和额外rollout条件下估计反事实移除收益。
-◆ 在OpenVLA、π0.5仿真及π0.5-DROID真实Franka上验证，归因误差约为前沿VLM的三分之一，并能适应执行上下文、损坏强度和在线失败监控。</td></tr>
 </tbody>
 </table>
 </div>
@@ -468,7 +472,12 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-10-21</td><td>RangeNav: Task-Aligned LiDAR Range-Image Pretraining for Robot Navigation<br><a href='http://arxiv.org/pdf/2610.29845'>论文</a></td><td>本文提出RangeNav，一个仅183k参数、完全基于合成数据预训练的紧凑型LiDAR距离图像编码器，用于提升机器人在密集人群和杂乱场景中的360度导航感知与策略学习效率。
+<tr><td>2026-10-22</td><td>RaSFNet: Ray-aligned and Scan-aware Fusion Network for LiDAR Semantic Segmentation<br><a href='http://arxiv.org/pdf/2610.31186'>论文</a></td><td>针对投影式LiDAR语义分割中多点聚合遮蔽几何差异、跨扫描区域空间关系建模不足及点-投影特征交互易混淆不同距离信息的问题，论文提出融合点云几何与LiDAR扫描特性的RaSFNet。
+◆ 提出射线对齐几何分布编码RAGDE，在射线对齐坐标系中刻画每个视锥内的点分布，增强几何差异表达。
+◆ 设计扫描拓扑感知Mamba模块STAM，按LiDAR方位角采样模式组织视锥特征并捕获跨扫描区域的长程依赖。
+◆ 提出距离约束的点-视锥融合机制RCPFF，利用共享距离信息引导点特征与视锥特征交换并保持空间对应。
+RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU，表现出有竞争力的分割性能。</td></tr>
+<tr><td>2026-10-22</td><td>RangeNav: Task-Aligned LiDAR Range-Image Pretraining for Robot Navigation<br><a href='http://arxiv.org/pdf/2610.29845'>论文</a> | <a href='https://rangenav.github.io/'>代码</a></td><td>本文提出RangeNav，一个仅183k参数、完全基于合成数据预训练的紧凑型LiDAR距离图像编码器，用于提升机器人在密集人群和杂乱场景中的360度导航感知与策略学习效率。
 ◆ 采用各向异性卷积和循环填充，专门处理距离图像的极端长宽比与方位接缝问题。
 ◆ 设计导航对齐的预训练目标，联合距离重建、语义分割和鸟瞰图预测，再将编码器冻结用于强化学习策略。
 ◆ 以轻量化架构支持大规模并行仿真训练，并具备从仿真到真实机器人部署的零样本迁移能力。
@@ -547,11 +556,6 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆ 设计几何抽象流程，将原始检测转化为可操作检查目标，包括逐视角边界框生成、跨视角框合并、平面拟合与多边形提取。
 ◆ 将地图和场景图传递给Inspector，由其规划近距离检查视点，实现探索与精查的异构协作闭环。
 ◆ 在地下测试设施和活跃菱镁矿完成现场验证，覆盖铁脉与菱镁矿化，并在真实感知退化条件下检验系统鲁棒性。</td></tr>
-<tr><td>2026-09-28</td><td>ExcavaTwin: Training-Free Geometry-Guided Semantic Elevation Mapping for Autonomous Excavation<br><a href='http://arxiv.org/pdf/2609.34719'>论文</a></td><td>ExcavaTwin提出一种纯视觉、无需挖掘专用训练、几何引导的语义高程建图框架。给定多视角RGB图像，它用冻结视觉模型重建几何与语义观测，并推导地形和非地形几何支撑。
-◆ 无需挖掘任务专属训练，直接复用冻结视觉模型完成几何与语义感知。
-◆ 利用地形与非地形几何支撑约束多视角语义融合，抑制不合理预测并补全缺失观测。
-◆ 将融合状态投影为面向任务的语义高程图，联合表达地形几何与任务相关语义。
-在公开数据集和真实挖掘场景中验证了可靠性，真实系统平均更新间隔约1.4秒，动态修改区域平均高程误差12.74厘米，较大误差主要来自地形快速变化和机器运动造成的瞬态视觉干扰。</td></tr>
 </tbody>
 </table>
 </div>
@@ -695,27 +699,27 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5293</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4791</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
-<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2476</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1658</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
-<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1624</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1528</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1361</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5298</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4796</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2477</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1659</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1625</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1530</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1364</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1313</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1110</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1112</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1076</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>952</td><td>An efficient and consistent bundle adjustment for </td></tr>
-<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>814</td><td>This repository provides implementation of an incr</td></tr>
+<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>815</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>784</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>747</td><td>A 3D point cloud descriptor for place recognition</td></tr>
-<tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>745</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
-<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>733</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>746</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
+<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>734</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>695</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>673</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>634</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>625</td><td>ROG-Map</td></tr>
-<tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>617</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
+<tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>618</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>590</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>570</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>541</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
@@ -733,9 +737,9 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>222</td><td>decentralized_loam</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>217</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>213</td><td>LAMM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>152</td><td>iBTC</td></tr>
+<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>151</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>146</td><td>PULSAR</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>123</td><td>LiDAR-UAV-Autonomy</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>124</td><td>LiDAR-UAV-Autonomy</td></tr>
 </tbody>
 </table>
 </div>
@@ -746,7 +750,7 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2883</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2884</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1678</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1368</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1097</td><td>A map representation based on 3D segments </td></tr>
@@ -754,20 +758,20 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>884</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>712</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>670</td><td>Polynomial trajectory generation and optimization,</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>668</td><td>Coverage planning in general polygons with holes.</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>669</td><td>Coverage planning in general polygons with holes.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>607</td><td>Real-time detection of diverse dynamic objects in </td></tr>
+<tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>608</td><td>Real-time detection of diverse dynamic objects in </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>579</td><td>MAV planning tools using voxblox as the map repres</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>576</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>572</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>554</td><td>Voxblox-based Pose graph optimization</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>520</td><td>Python tools to perform time-synchronization and h</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>515</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>521</td><td>Python tools to perform time-synchronization and h</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>518</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>457</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>455</td><td>A real-time capable exploration and inspection pat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>331</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>332</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>311</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>305</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/versavis'>versavis</a></td><td>290</td><td>An Open Versatile Multi-Camera Visual-Inertial Sen</td></tr>
@@ -806,4 +810,4 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.22
+> 更新于: 2026.10.23
