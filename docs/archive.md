@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.10.28)
+# 历史论文归档 (2026.10.29)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -11309,11 +11309,12 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 设计几何抽象流程，将原始检测转化为可操作检查目标，包括逐视角边界框生成、跨视角框合并、平面拟合与多边形提取。
 ◆ 将地图和场景图传递给Inspector，由其规划近距离检查视点，实现探索与精查的异构协作闭环。
 ◆ 在地下测试设施和活跃菱镁矿完成现场验证，覆盖铁脉与菱镁矿化，并在真实感知退化条件下检验系统鲁棒性。</td></tr>
-<tr><td>2026-09-28</td><td>ExcavaTwin: Training-Free Geometry-Guided Semantic Elevation Mapping for Autonomous Excavation<br><a href='http://arxiv.org/pdf/2609.34719'>论文</a></td><td>ExcavaTwin提出一种纯视觉、几何引导且无需挖掘专用训练的语义高程建图框架，统一表达地形几何与任务相关语义。其核心流程利用冻结视觉模型从多视角RGB重建几何和语义观测，并生成面向任务的语义高程图。
-◆ 无需针对挖掘场景训练，直接复用冻结视觉模型完成几何与语义感知，降低数据与部署成本。
-◆ 引入地形与非地形几何支撑，以几何约束进行多视角语义融合，抑制不合理预测并补全缺失观测。
-◆ 将融合状态投影为任务导向语义高程图，实现几何与语义联合的挖掘环境表达。
-实验在公开数据集和真实挖掘场景验证了几何与语义感知可靠性，真实场景平均更新间隔约1.4秒、动态修改区域平均高程误差12.74厘米，主要误差来自快速地形变化和机器运动造成的瞬态视觉扰动。</td></tr>
+<tr><td>2026-09-28</td><td>ExcavaTwin: Training-Free Geometry-Guided Semantic Elevation Mapping for Autonomous Excavation<br><a href='http://arxiv.org/pdf/2609.34719'>论文</a></td><td>ExcavaTwin提出一种无需挖掘专用训练、纯视觉且几何引导的语义高程建图框架，用于自主挖掘中联合表达地形几何与任务相关语义。  
+◆利用冻结视觉模型从多视图RGB图像中重建场景几何并获取语义观测，避免依赖挖掘场景的专门训练。  
+◆从重建结果中推导地形与非地形几何支撑，以几何先验约束非结构化环境中的语义判断。  
+◆设计几何约束的多视图语义融合机制，抑制不合理预测并恢复不完整语义观测。  
+◆将融合后的几何—语义状态投影为任务导向的语义高程图，实现面向挖掘任务的空间表征。  
+在公开数据集和真实挖掘场景中验证了可靠的几何与语义感知，真实系统平均更新间隔约1.4秒，动态修改区域平均高程误差为12.74厘米，较大误差主要出现在快速地形变化和机器运动引起的瞬态视觉扰动中。</td></tr>
 <tr><td>2026-09-27</td><td>TC-ADA: One-Shot Active Domain Adaptation for Semantic Segmentation<br><a href='http://arxiv.org/pdf/2609.33432'>论文</a> | <a href='https://github.com/ywher/TC-ADA'>代码</a></td><td>本文研究语义分割中标签高效的主动域适应，提出实用的单轮图像级设定：一次性选取并密集标注固定目标子集，随后连续适配。为此提出TC-ADA，将整图主动采集与目标校准适配进行联合设计。
 ◆ 采用单轮图像级主动选择，避免传统多轮采集、标注和重训练流程。
 ◆ 第一阶段融合视觉基础模型的视觉表示与固定无监督域适应模型的语义预测，在无目标标注下选择兼具代表性和信息量的目标图像。
@@ -11701,17 +11702,17 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 提出速度补偿的滑动窗口聚合策略，在k=5时即达到R@100P=100.00%，仅引入0.20毫秒额外延迟
 
 不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立于检索器的后检索验证框架，利用视觉语言模型联合推理查询与候选图像以判断匹配真实性，缓解部署中固定阈值在环境变化下不可靠的问题。
-◆ 将VPR匹配验证重构为独立审计环节，不依赖原检索架构的置信度输出，可对现成VPR方法即插即用。
-◆ 采用VLM对查询—候选图像进行实例级联合推理验证，而非仅依赖特征距离或数据集相关阈值。
-◆ 方法无需标注验证数据调参，也无需预设部署环境先验，提升跨环境与安全关键场景下的可靠性。
-◆ 在六个基准、五种先进VPR方法和四种VLM上验证，平均提升Recall@1 13.6%，将误接受率降至12%，同时保持精度高于95%、覆盖率高于75%。
-该工作为VPR提供了一种可独立部署、免阈值且以语义推理增强匹配可靠性的验证新范式。</td></tr>
-<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>针对海事环境下开放甲板与封闭舱室间跨场景感知差异导致现有VPR泛化不足的问题，本文提出ProteusVPR框架。
-◆ 提出两阶段“检索—细化”框架：第一阶段用标准VPR模型完成初检索，第二阶段用几何-视觉估计网络融合检索图像与两帧时序前帧实现精定位。
-◆ 在细化阶段引入几何描述子、局部仿射坐标系和相机方位角编码，增强跨场景视觉歧义下的几何约束与定位鲁棒性。
-◆ 构建XHZ船载8K全景数据集，涵盖多楼层舱室、甲板过渡区域及严格查询-数据库分离，支撑跨场景VPR严格评测。
-实验表明，ProteusVPR可兼容多种VPR骨干，在XHZ上平均定位误差降低60%以上，验证了其有效性与鲁棒性。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立于检索器的后检索验证框架，利用视觉语言模型联合推理查询图像与候选图像，对匹配结果进行实例级复核。
+◆将视觉语言模型引入VPR后检索验证，通过联合视觉语言推理判断匹配真实性，突破仅依赖相似度分数的传统验证思路。
+◆实现无需架构特定置信度、数据集相关阈值和部署环境先验的独立审计，降低跨方法、跨环境部署时的阈值依赖。
+◆在六个基准数据集、五种先进VPR方法和四种视觉语言模型上系统评估，证明该框架可即插即用于不同检索器与模型。
+◆实验表明recall@1平均提升13.6%，误接受率降至12%，同时保持精度95%以上、覆盖率75%以上，降低安全关键场景中的假闭环风险。</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文针对海事感知中开放水域与封闭舱室之间的跨场景感知差异，提出两阶段检索-精化框架ProteusVPR，以提升船载机器人视觉位置识别可靠性。
+◆ 提出检索-精化两阶段框架，第一阶段可兼容任意标准VPR模型完成初始检索，增强方法通用性。
+◆ 设计几何-视觉估计网络，融合检索图像与前两帧时序信息，并引入几何描述子、局部仿射坐标系和相机方位编码实现精确定位。
+◆ 构建XHZ船载8K全景数据集，涵盖多楼层舱室、甲板过渡区及严格查询-数据库分离，支撑跨场景严格评测。
+实验表明，ProteusVPR在多种VPR骨干上均稳定提升定位精度，平均定位误差降低超过60%。
+总体而言，该工作为挑战性跨场景海事环境提供了有效、鲁棒的精确视觉定位方案。</td></tr>
 <tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>论文提出VL2Spike，一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。该框架在保持脉冲神经网络事件驱动与稀疏计算能效优势的同时，缓解纯脉冲架构学习能力受限和优化困难的问题。
 ◆ 提出时空视觉脉冲蒸馏（SVS），通过VLM图像特征与脉冲token的共享流形对齐，以及膜电位和脉冲率的热启动时间一致性，使蒸馏过程匹配脉冲动力学。
 ◆ 设计脉冲原型引导的语言蒸馏（SPL），将Spikformer的类原型和logits与可提示VLM文本嵌入对齐，引入语言语义监督。
@@ -11775,4 +11776,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.28
+> 更新于: 2026.10.29
