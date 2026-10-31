@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.10.30)
+# 历史论文归档 (2026.10.31)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -9049,10 +9049,11 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 提出附着于冻结骨干的轻量几何兼容预测头，读取中间层特征，以任务指令条件化学习查询，并通过视觉token交叉注意力直接回归连续affordance框和轨迹路点。  
 ◆ 在ShareRobot-Bench和AGD20K上验证，2B模型较自回归基线轨迹误差降超60%、affordance mAP升85%，轨迹DFD为0.251，接近RoboBrain的0.191且吞吐高3.8倍。  
 结果表明，无需修改骨干即可实现精度与效率更优的指令条件二维几何预测。</td></tr>
-<tr><td>2026-10-28</td><td>Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation<br><a href='http://arxiv.org/pdf/2610.38993'>论文</a></td><td>本文针对开放世界中机器人难以预测未知物体及其联动关系运动的问题，提出一种元学习图神经网络，利用物体的语义、几何和关系历史，从少量在线观测预测新环境中物体何时开始运动。该方法仅在仿真中训练，却能准确预测训练时未见物体，并无需微调迁移到硬件，在仿真和硬件实验中均优于视觉语言模型和类别频率基线。其准确预测可支持闭环导航实现无碰撞穿越，同时与最快但易碰撞规划器的时间差不超过四秒。
-◆ 提出面向开放世界新物体运动预测的元学习图神经网络
-◆ 融合语义、几何与关系历史，实现少样本在线语义适应
-◆ 仅仿真训练即可零微调迁移硬件，并支撑无碰撞闭环导航且接近快速规划器效率...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-10-28</td><td>Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation<br><a href='http://arxiv.org/pdf/2610.38993'>论文</a></td><td>论文面向机器人导航中的开放世界物体运动预测，提出仅用仿真训练即可在线适应新物体的方法，以判断物体何时开始运动并避免保守或冒险规划。核心方法是元学习图神经网络，融合物体的语义、几何与关系历史，从少量在线观察中推断新环境物体的运动倾向及物体间带动关系。
+◆ 采用元学习实现无需微调的在线语义适应，使模型能预测训练时未见过的物体。
+◆ 构建图神经网络编码语义、几何和关系历史，捕捉如人操作叉车移动托盘等对象间交互。
+◆ 仅用仿真数据训练即可迁移到真实硬件，并在仿真和硬件中优于视觉语言模型和类频率基线。
+实验表明该方法支持闭环导航中的无碰撞通行，性能接近最快但易碰撞规划器，且规划时间差在四秒以内。</td></tr>
 <tr><td>2026-10-28</td><td>SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control<br><a href='http://arxiv.org/pdf/2610.38508'>论文</a></td><td>论文提出SaiVLA-JEPA，将冻结V-JEPA视觉表示、视觉语言模型与扩散Transformer动作专家结合，构建JEPA条件化的VLA流策略。
 ◆ 在闭环控制中系统比较无JEPA特征、当前JEPA条件与额外未来表示监督三种方案。
 ◆ 设计训练时轻量辅助头预测未来潜在表示，推理时移除且不改变动作采样器。
@@ -11372,12 +11373,12 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 提出用于免训练持续测试时适应的多信号域偏移检测框架，将适应触发从逐帧改为按需。
 ◆ 创新性联合视觉变化、适配器不匹配和语义漂移三类互补信号，提升触发判断可靠性。
 ◆ 在室内外基准及真实机器人数据上验证，保持分割精度同时大幅减少适应次数，使长期部署更可行。</td></tr>
-<tr><td>2026-09-29</td><td>Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments<br><a href='http://arxiv.org/pdf/2609.37419'>论文</a></td><td>本文针对废弃地下矿深部矿体自主开采中的异构多机器人协同感知难题，指出单一平台难以同时满足长距离穿行与高载荷传感需求。
-论文提出PERSEPHONE任务中的机载感知流水线，用轻量Explorer与高载荷Inspector两类机器人协同完成矿井探索与矿体精查。
-◆ 引入零样本视觉-语言语义分割，使Explorer能直接依据自然语言提示检测矿藏并生成含检查目标的3D场景图。
-◆ 设计几何抽象流程，将原始检测转化为可操作检查目标，包括逐视角边界框生成、跨视角框合并、平面拟合与多边形提取。
-◆ 将地图和场景图传递给Inspector，由其规划近距离检查视点，实现探索与精查的异构协作闭环。
-◆ 在地下测试设施和活跃菱镁矿完成现场验证，覆盖铁脉与菱镁矿化，并在真实感知退化条件下检验系统鲁棒性。</td></tr>
+<tr><td>2026-09-29</td><td>Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments<br><a href='http://arxiv.org/pdf/2609.37419'>论文</a></td><td>本文提出PERSEPHONE自主采矿任务中连接Explorer与Inspector两类异构机器人的机载感知流水线，以解决单一平台难以兼顾长距离移动与矿体精细感知的问题。
+◆ 设计零样本视觉语言语义分割栈，使Explorer可直接依据自然语言提示检测矿藏并生成未知矿井地图与3D场景图。
+◆ 构建异构机器人间的感知交接机制，将地图和场景图传递给携带高级传感载荷的Inspector，用于规划近距离检查视点。
+◆ 提出从原始检测到可操作检查目标的几何抽象流程，涵盖逐视图边界框生成、跨视图框合并、平面拟合与多边形提取。
+◆ 在地下测试设施和活跃菱镁矿开展现场验证，覆盖铁矿脉与菱镁矿化及感知退化条件，证明流水线实用性。
+这些贡献共同提升了地下矿山异构机器人协作的空间感知与自主检查能力。</td></tr>
 <tr><td>2026-09-28</td><td>ExcavaTwin: Training-Free Geometry-Guided Semantic Elevation Mapping for Autonomous Excavation<br><a href='http://arxiv.org/pdf/2609.34719'>论文</a></td><td>ExcavaTwin提出一种无需挖掘专用训练、纯视觉且几何引导的语义高程建图框架，用于自主挖掘中联合表达地形几何与任务相关语义。  
 ◆利用冻结视觉模型从多视图RGB图像中重建场景几何并获取语义观测，避免依赖挖掘场景的专门训练。  
 ◆从重建结果中推导地形与非地形几何支撑，以几何先验约束非结构化环境中的语义判断。  
@@ -11771,17 +11772,17 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 提出速度补偿的滑动窗口聚合策略，在k=5时即达到R@100P=100.00%，仅引入0.20毫秒额外延迟
 
 不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文针对真实部署中VPR匹配阈值依赖标注验证数据、环境变化下不可靠，且误接受闭环会破坏轨迹与地图的问题，提出独立的检索后验证框架Visual Place Recognition Auditing。
-◆ 将视觉语言模型引入VPR匹配审计，通过联合推理查询图像与候选图像实现实例级真伪验证。
-◆ 该框架无需依赖特定架构的置信度、数据集相关阈值或部署环境先验知识，可作为独立后处理模块使用。
-◆ 在六个基准数据集、五种先进VPR方法和四种视觉语言模型上系统验证了方法的有效性与泛化性。
-实验表明，该方法平均提升Recall@1达13.6%，将误接受率降至12%，同时保持精确率高于95%、覆盖率高于75%。</td></tr>
-<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>针对海事机器人从开阔甲板到封闭舱室的跨场景感知漂移，现有VPR方法难以稳定泛化。
-◆提出ProteusVPR两阶段检索-精化框架，先由标准VPR模型粗检索，再进行几何-视觉精定位。
-◆第二阶段融合检索图像与两个时序前帧，引入几何描述子、局部仿射坐标系和相机方位编码，提升跨域定位精度。
-◆构建XHZ船载8K全景数据集，覆盖多楼层舱室、甲板过渡区并严格分离查询与数据库。
-在XHZ上跨多种VPR骨干实验表明，平均定位误差降低60%以上，验证了方法在海事跨场景环境中的有效性与鲁棒性。
-该工作为开放水域与封闭舱室统一视觉定位提供了新框架和数据支撑。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉地点识别审计（VPR Auditing），一种独立于检索器的检索后验证框架，利用视觉语言模型联合推理查询图像与候选图像，以判断匹配是否真实成立。
+◆将VPR验证重构为实例级视觉语言推理任务，不依赖架构特定置信度或数据集相关阈值。
+◆以独立审计方式在部署阶段过滤误匹配，无需事先掌握部署环境或真值标签。
+◆支持跨VPR方法与跨VLM模型的通用验证，增强安全关键机器人中假闭环拒绝能力。
+◆在六个基准数据集、五种先进VPR方法和四种VLM上系统评估，验证框架有效性与可迁移性。
+实验表明该方法平均提升Recall@1 13.6%，将误接受率降至12%，同时保持精确率高于95%和覆盖率高于75%。</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>针对海事环境中开放甲板与封闭舱室间的跨场景感知漂移，现有VPR方法难以稳定泛化。本文提出两阶段检索—精化框架ProteusVPR，先检索再几何视觉精化。
+◆ 设计几何视觉估计网络，将检索图像与两帧前序图像融合，并引入几何描述子、局部仿射坐标系和相机方位编码以实现精确定位。
+◆ 构建XHZ船载8K全景数据集，涵盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
+◆ 在多个VPR骨干上验证该框架可一致提升定位精度，平均定位误差降低超过60%。
+整体上，ProteusVPR为挑战性跨场景海事视觉定位提供了有效且鲁棒的解决方案。</td></tr>
 <tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>论文提出VL2Spike，一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。该框架在保持脉冲神经网络事件驱动与稀疏计算能效优势的同时，缓解纯脉冲架构学习能力受限和优化困难的问题。
 ◆ 提出时空视觉脉冲蒸馏（SVS），通过VLM图像特征与脉冲token的共享流形对齐，以及膜电位和脉冲率的热启动时间一致性，使蒸馏过程匹配脉冲动力学。
 ◆ 设计脉冲原型引导的语言蒸馏（SPL），将Spikformer的类原型和logits与可提示VLM文本嵌入对齐，引入语言语义监督。
@@ -11845,4 +11846,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.10.30
+> 更新于: 2026.10.31

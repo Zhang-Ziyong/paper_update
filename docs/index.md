@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.10.30)
+# 计算机视觉领域最新论文 (2026.10.31)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -384,10 +384,11 @@ E-SToRE进一步带来10%至14%额外节省且精度几乎不退化。</td></tr>
 ◆ 提出附着于冻结骨干的轻量几何兼容预测头，读取中间层特征，以任务指令条件化学习查询，并通过视觉token交叉注意力直接回归连续affordance框和轨迹路点。  
 ◆ 在ShareRobot-Bench和AGD20K上验证，2B模型较自回归基线轨迹误差降超60%、affordance mAP升85%，轨迹DFD为0.251，接近RoboBrain的0.191且吞吐高3.8倍。  
 结果表明，无需修改骨干即可实现精度与效率更优的指令条件二维几何预测。</td></tr>
-<tr><td>2026-10-28</td><td>Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation<br><a href='http://arxiv.org/pdf/2610.38993'>论文</a></td><td>本文针对开放世界中机器人难以预测未知物体及其联动关系运动的问题，提出一种元学习图神经网络，利用物体的语义、几何和关系历史，从少量在线观测预测新环境中物体何时开始运动。该方法仅在仿真中训练，却能准确预测训练时未见物体，并无需微调迁移到硬件，在仿真和硬件实验中均优于视觉语言模型和类别频率基线。其准确预测可支持闭环导航实现无碰撞穿越，同时与最快但易碰撞规划器的时间差不超过四秒。
-◆ 提出面向开放世界新物体运动预测的元学习图神经网络
-◆ 融合语义、几何与关系历史，实现少样本在线语义适应
-◆ 仅仿真训练即可零微调迁移硬件，并支撑无碰撞闭环导航且接近快速规划器效率...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-10-28</td><td>Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation<br><a href='http://arxiv.org/pdf/2610.38993'>论文</a></td><td>论文面向机器人导航中的开放世界物体运动预测，提出仅用仿真训练即可在线适应新物体的方法，以判断物体何时开始运动并避免保守或冒险规划。核心方法是元学习图神经网络，融合物体的语义、几何与关系历史，从少量在线观察中推断新环境物体的运动倾向及物体间带动关系。
+◆ 采用元学习实现无需微调的在线语义适应，使模型能预测训练时未见过的物体。
+◆ 构建图神经网络编码语义、几何和关系历史，捕捉如人操作叉车移动托盘等对象间交互。
+◆ 仅用仿真数据训练即可迁移到真实硬件，并在仿真和硬件中优于视觉语言模型和类频率基线。
+实验表明该方法支持闭环导航中的无碰撞通行，性能接近最快但易碰撞规划器，且规划时间差在四秒以内。</td></tr>
 <tr><td>2026-10-28</td><td>SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control<br><a href='http://arxiv.org/pdf/2610.38508'>论文</a></td><td>论文提出SaiVLA-JEPA，将冻结V-JEPA视觉表示、视觉语言模型与扩散Transformer动作专家结合，构建JEPA条件化的VLA流策略。
 ◆ 在闭环控制中系统比较无JEPA特征、当前JEPA条件与额外未来表示监督三种方案。
 ◆ 设计训练时轻量辅助头预测未来潜在表示，推理时移除且不改变动作采样器。
@@ -680,29 +681,29 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5321</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4822</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
-<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2483</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1662</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5325</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4824</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2484</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1663</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1627</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1535</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1371</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1372</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1319</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1122</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1093</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1123</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1095</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>953</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>816</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>785</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>748</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>747</td><td>A 3D point cloud descriptor for place recognition</td></tr>
-<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>734</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>697</td><td>Voxel-SLAM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>735</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>698</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>673</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>636</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>627</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>624</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>591</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>571</td><td>A computationally efficient and convenient toolkit</td></tr>
+<tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>572</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>545</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>514</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>479</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
@@ -751,9 +752,9 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>464</td><td>A volumetric object-level semantic mapping framewo</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>457</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>456</td><td>A real-time capable exploration and inspection pat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>340</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>341</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>311</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>310</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>305</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/versavis'>versavis</a></td><td>290</td><td>An Open Versatile Multi-Camera Visual-Inertial Sen</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/image_undistort'>image_undistort</a></td><td>278</td><td>A compact package for undistorting images directly</td></tr>
@@ -791,4 +792,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.30
+> 更新于: 2026.10.31
