@@ -1,30 +1,48 @@
-# 历史论文归档 (2026.11.01)
+# 历史论文归档 (2026.11.02)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (325篇)</a></li>
-<li><a href='#sfm'>SFM (141篇)</a></li>
+<li><a href='#slam'>SLAM (328篇)</a></li>
+<li><a href='#sfm'>SFM (145篇)</a></li>
 <li><a href='#image-matching'>Image Matching (64篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (108篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (382篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (386篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (57篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (24篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (325篇)</h2>
+<h2 id='slam'>SLAM (328篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-30</td><td>Visual-Inertial RGB-D SLAM with Encoders for a Differential Wheeled Robot<br><a href='http://arxiv.org/pdf/2610.41768'>论文</a></td><td>本文针对现有VIO方法开源少且在实际中易因特征点临时缺失和快速运动失败的问题，提出利用轮式编码器增强视觉惯性RGB-D SLAM的鲁棒性。
+◆提出编码器的生成式测量模型，用于克服纯视觉SLAM的临时失效。
+◆推导基于编码器测量的最大后验估计表达式及优化所需的雅可比矩阵。
+◆构建紧耦合的视觉-惯性-编码器RGB-D SLAM系统，实现多传感器融合状态估计。
+在自建数据集上的实验表明，该系统可在实时运行下获得约2-7厘米RMSE的准确且鲁棒的状态估计。
+作者还公开了源代码和包含编码器信息的数据集，便于复现与验证。</td></tr>
+<tr><td>2026-10-30</td><td>DrawSplat: Atlanta World-Guided Implicit Gaussian SLAM for Indoor Reconstruction<br><a href='http://arxiv.org/pdf/2610.41602'>论文</a></td><td>本文提出DrawSplat，一种面向室内重建的Atlanta World引导隐式高斯SLAM框架，以“先勾结构、再填细节”的绘画式流程联合显式点线几何与隐式神经高斯。
+◆ 采用点线联合跟踪统一估计相机位姿、稀疏几何与重力方向，增强弱纹理和大平面场景下的跟踪鲁棒性。
+◆ 利用Atlanta World先验中的共享重力分量从跟踪线推断结构平面，并将其转化为对高斯中心与法向的可微正则项，抑制漂移、厚度伪影和法向噪声。
+◆ 设计锚点式隐式神经高斯表示与自适应结构采样，把高斯容量分配给结构信息丰富区域，提高紧凑性与效率。
+◆ 通过显式点线“草图”与隐式高斯“上色”的协同，兼顾高保真渲染和连续几何细节。
+多数据集实验表明，DrawSplat在Gaussian SLAM中实现鲁棒跟踪、高保真渲染和强几何重建，并在质量、效率与模型大小间取得实用平衡。</td></tr>
+<tr><td>2026-10-29</td><td>Stochastic Linesearch Methods for Stochastic Variational Inequality Problems: Parameter-Free Schemes and Non-Monotone Variants<br><a href='http://arxiv.org/pdf/2610.41065'>论文</a></td><td>论文针对现有随机变分不等式方法依赖Lipschitz常数、步长受限且性能可能较差的问题，提出无需参数知识的随机线搜索框架。  
+◆ 提出周期重启线搜索的随机外梯度法SEG-LS，可求解伪单调和单调随机变分不等式。  
+◆ 新方法产生的步长既不单调，也无需预先知道Lipschitz常数L，实现参数自由。  
+◆ 理论上，SEG-LS在期望残差范数不超过ε时达到迭代复杂度O(ε^-2)、样本复杂度O(ε^-4)，单调情形分别改进为O(ε^-1)和O(ε^-2)。  
+◆ 进一步提出周期重启的有偏随机线搜索法B-SLAM，用于严格余正条件下的非单调随机变分不等式，复杂度为O(ε^-2)和O(ε^-4)。  
+◆ 初步数值实验验证了所提方法的有效性并展示出良好应用潜力。</td></tr>
 <tr><td>2026-10-29</td><td>Smartphone Indoor Localization Enhanced by Hierarchical Multi-Sensor Context Recognition<br><a href='http://arxiv.org/pdf/2610.39691'>论文</a></td><td>本文提出一种由分层多传感器上下文识别增强的智能手机室内定位框架，针对PDR在航向漂移、结构转换和携带模式变化下的误差累积问题，将多传感器信息识别为环境、场景和活动概率，并转换为场景事件段与动作上下文段。其核心贡献在于用分层语义为不同类型定位误差提供定位专用校正线索，而非将所有上下文视为单一事件流或局部修正信号。实验在跨楼层与多动作轨迹上以LiDAR-SLAM为参考，验证该方法优于PDR和代表性学习惯性里程计基线。
 ◆ 构建数据与模型联合驱动的分层上下文识别模型，输出环境、场景和活动概率并形成两类语义段。
 ◆ 提出场景事件段约束的PDR校正机制，融合走廊航向约束、地标吸引、固定滞后回溯和垂直过渡处理。
@@ -2036,12 +2054,37 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (141篇)</h2>
+<h2 id='sfm'>SFM (145篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-30</td><td>MFlowAudio: Efficient Text-to-Audio Synthesis via Mamba-based Stateful Flow Matching<br><a href='http://arxiv.org/pdf/2610.41852'>论文</a></td><td>MFlowAudio提出一种基于Mamba的潜在音频生成框架，将Flow Matching的连续时间建模与定制TCMamba主干结合，以解决Transformer扩散模型自注意力二次复杂度对长音频合成的瓶颈。
+◆设计TCMamba双扫描机制：TimeMamba以线性复杂度捕捉长程因果依赖，ChannelMamba建模谐波结构等跨通道相关性。
+◆提出Stateful Flow Matching范式，天然支持分块训练与流式生成，并保持O(1)缓存复杂度且不引入额外计算开销。
+◆设计新的引导机制，缓解提示词语义在线切换引发的向量场碰撞，实现细粒度可控合成。
+实验表明MFlowAudio生成保真度与先进基线相当，同时生成加速超过14.5%，并支持恒定1.8秒延迟的感知无缝流式合成。</td></tr>
+<tr><td>2026-10-30</td><td>OASIS II: The Ionized Gas Traces Feedback-Driven Declines into the Quiet Side of Bursty Star Formation at z &gt; 4<br><a href='http://arxiv.org/pdf/2610.41490'>论文</a></td><td>本文用54个z&gt;4低质量星系的NIRSpec/PRISM光谱，比较Balmer线SFR与100 Myr恒星连续谱平均SFR，测量静息相进入时标及电离气体响应，发现静息期约100 Myr、恢复更快，且下降快于被动气体耗尽，支持反馈驱动。
+◆联合近期与100 Myr平均SFR识别mini-quenched和lulling星系，测得静息相约100 Myr且恢复快于下降。
+◆发现[OIII]/[OII]随SFMS位置下降，但更紧密追踪SFR10/SFR100，表明电离气体记录近期SFR变化。
+◆发现SFMS下方仍在上升的星系高电离，支持较少且较软电离光子照亮被早期恒星形成耗尽的气体。
+◆证明lulling星系ISM条件独特，并将静息相归因于驱逐或抑制气体的反馈，确立电离气体可示踪爆发周期位置。</td></tr>
+<tr><td>2026-10-30</td><td>OASIS I: Spectroscopy of Mini-Quenched and Lulling Galaxies Constrains the Quiet Side of Bursty Star Formation at z &gt; 4<br><a href='http://arxiv.org/pdf/2610.41489'>论文</a></td><td>论文利用JWST Cycle 3 OASIS项目对z&gt;4星系开展28小时深曝光NIRSpec/PRISM光谱，系统搜寻爆发式恒星形成周期中被抑制的“安静”阶段，而非依赖偶然发现。
+◆系统识别3个mini-quenched星系（低于SFMS 1.2-1.7 dex且无Balmer发射）、5个lulling星系和17个近主序星系，覆盖完整爆发周期。
+◆证明光谱不可替代：10个测光候选中有7个并非抑制星系，测光会高估当前SFR且无法区分lulling与mini-quenched。
+◆发现抑制星系并不罕见，在非按恒星形成状态选择的样本中占z=4-5.5、logM*=8-9.5星系的29%，数密度约1.6×10^-3 Mpc^-3 dex^-1，远高于模拟预期且质量更高。
+◆揭示抑制阶段较持久：越低于SFMS的星系Balmer断裂和恒星年龄越老，lulling约30 Myr、mini-quenched超过100 Myr，且E(B-V)&lt;0.2符合气体库耗竭。
+结论是z&gt;4的抑制阶段既不罕见也不短暂，而是早期星系成长中常见且持续的一部分。</td></tr>
+<tr><td>2026-10-29</td><td>NGDEEP: Anchoring the $0.5 &lt; z &lt; 3.5$ Star-Forming Main Sequence at Low Stellar Masses with Ultradeep JWST/NIRISS WFSS<br><a href='http://arxiv.org/pdf/2610.40796'>论文</a></td><td>本文利用JWST/NIRISS WFSS在NGDEEP场对0.5&lt;z&lt;3.5星系开展超深Hα/Hβ光谱观测，探测到HUDF中暗至m_F150W约28等的星系，使低质量星系（z=0.5时logM*/M⊙≳7，z=3.5时≳8）的恒星形成研究成为可能。
+
+◆ 首次在如此低质量、宽红移范围内用Hα/Hβ锚定短时标（约10 Myr）的恒星形成主序，并对284个&gt;3σ探测星系测量尘埃校正SFR_Hα。
+
+◆ 发现Hα主序本征弥散约0.35–0.5 dex，在z&lt;2.5时比UV基（约100 Myr）主序高约0.2–0.4 dex，表明短时标星暴是弥散增大的重要来源。
+
+◆ 观测到的Hα主序弥散在1.5&lt;z&lt;2.5、logM*/M⊙&lt;9处比FIRE模拟预测高约0.25 dex，提示低质量星系在≲10 Myr尺度上比理论预期更具爆发性。
+
+这些结果为低质量星系短时标恒星形成历史及主序弥散起源提供了关键观测约束。</td></tr>
 <tr><td>2026-10-28</td><td>Environmental Quenching of Satellite Galaxies out to z~0.4 with GAMA and DEVILS<br><a href='http://arxiv.org/pdf/2610.38836'>论文</a></td><td>本文利用GAMA与DEVILS在星系属性和环境度量上的一致处理，将卫星星系环境淬灭研究拓展到z~0.4，并降低跨巡天比较的系统偏差。
 ◆ 实现GAMA与DEVILS之间采用一致样本选择和环境指标的跨红移卫星星系淬灭比较。
 ◆ 以投影相空间作为入群时间代理，定量刻画淬灭比例演化及卫星星系相对恒星形成主序的偏离。
@@ -9027,12 +9070,35 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (382篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (386篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-10-30</td><td>SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion<br><a href='http://arxiv.org/pdf/2610.41844'>论文</a></td><td>论文提出SketchMate，将零样本精密插入转化为可测量的任务草图：由VLM构建少量几何基元和两个配合坐标系，再由VLM智能体在多视角深度中用几何工具测量，最后交给标准规划器和柔顺控制器执行。该方法不要求VLM直接输出亚毫米级位姿，而是把高精度几何推理落到草图与测量上。
+◆用几何基元和配合坐标系构成草图模型，替代VLM过粗的空间输出。
+◆草图与零件摆放解耦，每任务只需构建一次，并存入草图记忆，通过点云配准迁移到新摆放，仅在陌生零件时调用VLM。
+◆抓取后近距离检查两个配合面，并用形状匹配修正草图，以提高装配精度。
+在69个仿真插入任务中，该方法以严格运动学测试实现88%的装配位姿插入，而ReKep和MOKA均无法插入；在八个任务的新摆放中，复用一次存储草图可达到逐回合调用智能体的效果，并将草图生成时间从约90秒降至3.4秒。</td></tr>
+<tr><td>2026-10-30</td><td>MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies<br><a href='http://arxiv.org/pdf/2610.41377'>论文</a> | <a href='https://github.com/allenai/molmospaces'>代码</a></td><td>本文针对现有机器人操作仿真基准场景偏干净、任务结构狭窄、缺乏常识推理评测的问题，提出面向真实杂乱与部分可观测场景的常识推理评测框架。
+◆ 基于发展认知科学构建机器人操作推理分类法，将遮挡、容器关系、支撑关系、语义抓取点、空间可供性和隐藏物体等常识推理系统化。
+◆ 构建新基准 MolmoSpaces-CommonSense，要求策略既识别场景结构又在其中执行正确操作，而非只测低层执行。
+◆ 系统评估多种零样本通才操作策略，揭示随干扰物增加成功率下降超50%、约30%情况下作用于错误物体、可供性抓取仅约50%选中正确部件等一致失败。
+◆ 进一步发现基于VLM的成功估计在这些场景中不可靠，说明挑战贯穿感知-推理-动作全栈。
+结论是现有基准可能显著高估零样本真实世界准备度。</td></tr>
+<tr><td>2026-10-30</td><td>TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents<br><a href='http://arxiv.org/pdf/2610.41216'>论文</a></td><td>TinyAstral提出两阶段框架，将大型教师代理的harness自进化成果迁移到低推理成本的紧凑通用操作代理。
+◆ 第一阶段冻结开放权重教师，由前沿LLM代理读取教师轨迹并提出harness编辑，仅当通过配对统计检验时才接受，实现递归自改进。
+◆ 第二阶段冻结最终harness，收集含推理与失败恢复的教师轨迹，蒸馏小型学生并在同一harness中替代教师。
+◆ 在RoboTwin上，harness进化使教师成功率从33.4%升至63.6%，最终4B学生达62.8%；四个harness版本上学生均接近对应教师且后版本更强。
+◆ harness增益可无需重训迁移到其他冻结规划器；相同episode下4B学生优于开放4B、27B SenseNova-RoboRSI及教师置于三家竞品harness的结果，并在未见基准上接近552B同harness规划器。
+◆ 实测部署中该4B学生仅用约教师五分之一加速器时间。</td></tr>
+<tr><td>2026-10-29</td><td>CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents<br><a href='http://arxiv.org/pdf/2610.40799'>论文</a></td><td>CaPtain提出一个面向代码即策略机器人智能体的开放后训练流水线，将小型开放视觉语言模型训练为可在仿真和真机部署的CaP智能体，测试时无需VLA、闭源前沿模型或特权状态。
+◆构建CaPtain-Harness，统一暴露低层感知、几何与受控运动原语，支撑训练和跨仿真/真机部署。
+◆采用“GPT-6 Astra合成轨迹SFT对齐+多轮强化学习”的两阶段后训练配方，使4B模型从零样本0%提升到LIBERO 73.8%。
+◆提出物理critic，利用策略不可见的特权仿真状态，将回合末单一结果归因到数十次跨轮请求，解决长时程信用分配难题。
+实验显示其在LIBERO-PRO达78.5%并超过多个前沿模型智能体，扰动套件稳定增益17.6至21.2点，SimlerEnv WidowX达83.3%，CaP-Bench超前沿模型，且仅经仿真适配即可上真机。
+作者开源代码、数据和模型权重，推动小型开放VLM作为CaP机器人策略的可复现研究。</td></tr>
 <tr><td>2026-10-29</td><td>Surrogate Uncertainty for Black-box Visual Grounding<br><a href='http://arxiv.org/pdf/2610.39798'>论文</a></td><td>论文针对机器人使用黑盒视觉语言模型进行视觉grounding时的不确定性问题，指出现有方法从VLM自身导出不确定性会继承其参数与结构偏差。◆将VLM预测视为观测，给出形式化贝叶斯定义，并用外部代理贝叶斯模型在留出校准集的局部邻域量化每个查询的不确定性，分解为偶然与认知两部分。◆设计跨输入模态的分层检索，构建紧凑的联合空间邻域，缓解维度灾难。◆将该估计器与共形预测或基于模型的规划结合，支持机器人通过语言或物理动作进行主动视觉grounding。◆在多个基准和先进VLM上持续改善校准与任务性能，并在真实Fetch机器人开放世界指令中实现自信行动与信息收集的原则性权衡，显著提升鲁棒性。</td></tr>
 <tr><td>2026-10-29</td><td>From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2610.39543'>论文</a> | <a href='https://onlyxingxingzyx.github.io/CoRAct/'>代码</a></td><td>论文指出，现有VLA模型虽用ECoT引导动作生成，但动作仅以推理为条件，未显式优化与推理意图及预期后果对齐。为此提出CoRAct，一个在动作噪声空间通过奖励引导优化实现推理与动作显式对齐的后果锚定框架。
 ◆将ECoT中的movement和waypoints分别建模为表示意图运动与预期空间后果的可验证信号。
@@ -11373,11 +11439,11 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 提出用于免训练持续测试时适应的多信号域偏移检测框架，将适应触发从逐帧改为按需。
 ◆ 创新性联合视觉变化、适配器不匹配和语义漂移三类互补信号，提升触发判断可靠性。
 ◆ 在室内外基准及真实机器人数据上验证，保持分割精度同时大幅减少适应次数，使长期部署更可行。</td></tr>
-<tr><td>2026-09-29</td><td>Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments<br><a href='http://arxiv.org/pdf/2609.37419'>论文</a></td><td>本文提出连接轻量Explorer与高载荷Inspector的机载感知管线，以解决废弃地下矿深部矿产自主开采中的多智能体集成难题。Explorer在未知矿山建图并用零样本视觉语言语义分割按自然语言提示检测矿藏、生成3D场景图，随后Inspector利用地图与场景图规划近距离检查视点，并通过逐视图框生成、跨视图合并、平面拟合和多边形提取将原始检测转化为可操作目标，最终在地下测试设施和活跃菱镁矿中验证铁脉与菱镁矿化在感知退化条件下的有效性。
-◆构建Explorer-Inspector异构协作感知管线，贯通建图、语义检测与近距离检查规划。
-◆采用零样本视觉语言语义分割，直接从自然语言提示检测矿藏并生成3D场景图。
-◆提出从原始检测到可操作检查目标的几何抽象，涵盖框生成、跨视图合并、平面拟合与多边形提取。
-◆在真实地下测试设施和活跃矿山完成现场验证，覆盖铁脉与菱镁矿化及感知退化条件。</td></tr>
+<tr><td>2026-09-29</td><td>Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments<br><a href='http://arxiv.org/pdf/2609.37419'>论文</a></td><td>论文针对废弃地下矿山深部矿产自主开采中的多智能体集成难题，提出连接Explorer与Inspector两类异构机器人的机载感知流水线。Explorer在未知矿井中建图并生成检查目标3D场景图，Inspector利用地图与场景图规划近距离检查视点。
+◆提出异构机器人间的感知交接与协作机制，使轻量探索与重载精细检查形成闭环。
+◆采用零样本视觉语言语义分割，依据自然语言提示直接从图像中检测矿床。
+◆设计从原始检测到可操作检查目标的几何抽象链路，包括逐视图边界框生成、跨视图合并、平面拟合与多边形提取。
+◆在地下测试设施和活跃菱镁矿现场验证铁脉与菱镁矿化在真实感知退化条件下的有效性。</td></tr>
 <tr><td>2026-09-28</td><td>ExcavaTwin: Training-Free Geometry-Guided Semantic Elevation Mapping for Autonomous Excavation<br><a href='http://arxiv.org/pdf/2609.34719'>论文</a></td><td>ExcavaTwin提出一种无需挖掘专用训练、纯视觉且几何引导的语义高程建图框架，用于自主挖掘中联合表达地形几何与任务相关语义。  
 ◆利用冻结视觉模型从多视图RGB图像中重建场景几何并获取语义观测，避免依赖挖掘场景的专门训练。  
 ◆从重建结果中推导地形与非地形几何支撑，以几何先验约束非结构化环境中的语义判断。  
@@ -11771,12 +11837,17 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 提出速度补偿的滑动窗口聚合策略，在k=5时即达到R@100P=100.00%，仅引入0.20毫秒额外延迟
 
 不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文提出一种面向视觉位置识别的独立后检索验证框架，在不改动现有VPR流程的情况下提升匹配可靠性。  
-◆ 利用视觉语言模型联合推理查询图像与候选图像，实现实例级匹配验证，无需架构特定置信度、数据集相关阈值或部署环境先验知识。  
-◆ 将传统依赖固定阈值的匹配验证转变为独立审计机制，增强环境变化和缺少真值场景下的安全性。  
-作者在六个基准数据集上使用五种主流VPR方法和四种视觉语言模型进行评估。  
-结果表明，该方法平均提升Recall@1达13.6%，将误接受率降至12%，同时保持精确率高于95%、覆盖率高于75%。</td></tr>
-<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文针对海事环境中开放水域与封闭舱室之间显著的跨场景感知差异，提出面向船舶感知与舱室巡检的视觉位置识别方法ProteusVPR。◆提出两阶段“检索—细化”框架，先利用标准VPR模型完成初步检索，再通过细化阶段提升跨场景定位精度。◆设计几何—视觉估计网络，将检索图像与两个时间前序帧融合，并结合几何描述子、局部仿射坐标系和相机方位编码实现精确定位。◆构建XHZ船载8K全景数据集，涵盖多楼层舱室结构、甲板过渡区域及严格查询—数据库分离，支持严谨评测。实验表明该方法在多个VPR骨干上均稳定提升定位精度，平均定位误差降低超过60%。总体而言，ProteusVPR为挑战性跨场景海事环境提供了有效且鲁棒的精确视觉定位方案。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对VPR部署中固定匹配阈值在环境变化下不可靠、误闭环会破坏轨迹与地图的问题，提出Visual Place Recognition Auditing独立后检索验证框架。
+◆ 将验证从检索器中解耦，作为独立的后检索审计模块对候选匹配进行二次判定。
+◆ 利用视觉语言模型联合推理查询图像与候选图像，实现无需人工阈值的实例级匹配验证。
+◆ 不依赖架构特定置信度、数据集相关阈值或部署环境先验知识，提升跨环境部署适应性。
+◆ 在六个基准数据集、五种先进VPR方法和四种VLM上系统评估，验证框架的通用性与有效性。
+结果显示recall@1平均提升13.6%，误接受率降至12%，同时保持精度高于95%、覆盖率高于75%。</td></tr>
+<tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文针对海事环境中开放甲板与封闭舱室之间跨场景视觉差异大、现有VPR方法泛化不足的问题，提出ProteusVPR两阶段检索-细化框架。该方法第一阶段使用标准VPR模型完成初始检索，第二阶段通过几何-视觉估计网络融合检索图像及前两帧时序信息实现精确定位。
+◆ 提出检索-细化两阶段框架，可兼容多种标准VPR骨干并显著提升跨场景定位精度。
+◆ 设计几何-视觉估计网络，引入几何描述子、局部仿射坐标系和相机方位编码，并融合前两帧增强精定位鲁棒性。
+◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区和严格查询-数据库分离，支撑跨场景VPR严格评测。
+实验表明，ProteusVPR在多个VPR骨干上稳定提升定位精度，平均定位误差降低超过60%，为海事感知与舱室巡检提供了有效方案。</td></tr>
 <tr><td>2026-06-14</td><td>VL2Spike: Spike-driven Distillation from VLMs for Low-Power Visual Perception in Embodied AI<br><a href='http://arxiv.org/pdf/2606.15898'>论文</a></td><td>论文提出VL2Spike，一种面向具身AI低功耗视觉感知的脉冲驱动知识蒸馏框架，将视觉语言模型的多模态知识迁移到紧凑Spikformer中。该框架在保持脉冲神经网络事件驱动与稀疏计算能效优势的同时，缓解纯脉冲架构学习能力受限和优化困难的问题。
 ◆ 提出时空视觉脉冲蒸馏（SVS），通过VLM图像特征与脉冲token的共享流形对齐，以及膜电位和脉冲率的热启动时间一致性，使蒸馏过程匹配脉冲动力学。
 ◆ 设计脉冲原型引导的语言蒸馏（SPL），将Spikformer的类原型和logits与可提示VLM文本嵌入对齐，引入语言语义监督。
@@ -11840,4 +11911,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.01
+> 更新于: 2026.11.02
