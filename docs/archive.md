@@ -1,30 +1,35 @@
-# 历史论文归档 (2026.11.04)
+# 历史论文归档 (2026.11.05)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (337篇)</a></li>
-<li><a href='#sfm'>SFM (151篇)</a></li>
+<li><a href='#slam'>SLAM (338篇)</a></li>
+<li><a href='#sfm'>SFM (152篇)</a></li>
 <li><a href='#image-matching'>Image Matching (68篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (112篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (113篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (405篇)</a></li>
-<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (57篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (408篇)</a></li>
+<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (58篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (25篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (337篇)</h2>
+<h2 id='slam'>SLAM (338篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文针对VGGT类前馈几何基础模型在单目稠密重建中独立子图尺度漂移、跨子图回环测量不一致的问题，扩展VGGT-SLAM 2.0提出固定根尺度锚定与短序列辅助的直接回环连接。
+◆提出基于SALAD选帧和联合VGGT推理的尺度锚定，利用隐式语义几何线索在新子图与初始子图间提供仅尺度约束，同时保留原重叠链。
+◆设计短序列辅助回环：用相邻图像对做一致性检查和平移尺度对齐，使接受候选直接在已有中心帧节点间生成鲁棒Sim(3)因子，无需辅助回环子图。
+◆通过候选审计区分长程尺度锚定、回环连接选择与候选验证的贡献，并揭示短序列检查会额外拒绝视觉重叠对。
+17序列实验将9个TUM序列平均Sim(3) ATE由0.1018降至0.0451米，锚定改善全部7个无回环消融，3个Clio场景固定回环比较中直接连接管线优于辅助子图管线。</td></tr>
 <tr><td>2026-11-03</td><td>Auditing Targetless Camera-LiDAR Extrinsic Correction before Recursive Use<br><a href='http://arxiv.org/pdf/2611.04397'>论文</a></td><td>本文研究无目标相机-LiDAR外参校正能否在递归使用前，分别审计校正质量、置信度排序和递归风险后再被下游接纳。作者提出log-disjoint协议，在Argoverse 2合成外参漂移上评估各阶段，并将跨数据集与里程计实验限定为有界诊断。
 ◆ 核心创新是把校正质量、置信度排序和递归污染风险拆成可独立审计的环节，而非直接放行校正结果。
 ◆ 通过零注入检查、求解器分歧AUROC及最终系统角色实验，给出校正收益与风险不匹配的反例和边界证据。
@@ -2101,12 +2106,17 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (151篇)</h2>
+<h2 id='sfm'>SFM (152篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-04</td><td>METRIC-GS: Selective Metric-Scale Estimation for 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2611.06020'>论文</a></td><td>论文提出METRIC-GS，一种面向真实室内照片的3DGS选择性度量尺度估计器，从重建自身语义内容读取尺度，并在证据不足时显式拒绝。现有分位数启发式与度量深度对齐在真实采集上分别误差约27%和35-71%，难以可靠部署。
+◆ 选择性尺度估计与弃权机制：用inlier-mass检验将薄证据转为弃权，并作为路由到重型度量模型的条件。
+◆ 可见性感知投票与实例尺寸先验：冻结2D教师为高斯标注，融合门、桌、地板到天花板等类别尺寸先验。
+◆ 鲁棒最大似然融合：在实例级先验上稳健估计尺度，提升可作用场景数且不降部署精度。
+在ScanNet++ 47场景上，单估计器把平均误差从21.1%降至16.6%（实际作用28场景为9.3%，约11秒/场景），仅将弃权样本路由到MASt3R即可匹配全量运行且调用少60%；在自有手机和无人机采集上作用场景均提升、无退化，并指出前馈度量模型的公开分数并非部署估计。</td></tr>
 <tr><td>2026-11-03</td><td>Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments<br><a href='http://arxiv.org/pdf/2611.05361'>论文</a></td><td>本文面向植被丰富户外环境中视觉三维重建与深度估计缺乏几何真值、完整扫描成本高的问题，提出一套可复用的LiDAR参考生成流程，用于评估前馈视觉几何模型的零样本性能并与传统SfM方法对比。该流程复用现有多传感器定位数据集的相机图像、LiDAR扫描和参考位姿，生成逐视图深度图与可见参考点云。
 ◆提出LargeDepth-Gap Visibility Score（LDGVS），用于累积LiDAR点云的逐点可见性过滤及Hidden Point Removal的自动尺度选择。
 ◆构建结合HPR与LDGVS的可见参考点云生成方法，在TartanAirV2和TartanGround上相较Poisson表面重建，在相近绝对相对误差下保留约三倍点密度。
@@ -8308,12 +8318,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (112篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (113篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文扩展VGGT-SLAM 2.0，提出固定根尺度锚定与短序列辅助直接回环连接，以缓解子图尺度漂移和跨子图测量不一致。
+◆利用SALAD选择初始子图与合格新子图间的图像对，并通过联合VGGT推理的隐式语义几何线索提供仅尺度锚定，同时保留原重叠链。
+◆采用邻接图像对进行一致性检查与平移尺度对齐，使每个接受候选在已有中心帧节点间贡献一个鲁棒Sim(3)因子，且无需辅助回环子图。
+◆引入短序列检查审计回环候选，可额外拒绝视觉重叠但不一致的图像对，并揭示候选验证的局限。
+◆在17个序列上验证，9个TUM序列平均Sim(3) ATE由0.1018降至0.0451米，且锚定提升全部7个无回环模块消融。
+◆在3个Clio场景的固定回环比较中，直接连接流程优于所测试的辅助子图流程，并区分了长程尺度锚定与回环连接选择的独立收益。</td></tr>
 <tr><td>2026-11-03</td><td>MiCaDe: Online LiDAR-Camera Miscalibration Change Detection for Autonomous Driving<br><a href='http://arxiv.org/pdf/2611.04912'>论文</a> | <a href='https://github.com/CarloSgaravatti/MiCaDe'>代码</a></td><td>本文提出面向自动驾驶的在线LiDAR-相机外参标定漂移检测方法MiCaDe，将标定失效检测建模为序贯变化检测问题，无需标定靶标或修改感知栈。
 ◆ 核心洞察是标定正确时标准目标检测器输出的3D与2D边界框应保持跨模态几何一致性，据此构造对易外参漂移敏感的一致性指标。
 ◆ 通过跨模态检测匹配生成几何一致性度量，并按固定大小批次聚合，与参考分布比较得到似然流，再交由变化点模型CPM在线监控。
@@ -9191,12 +9207,27 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (405篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (408篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-04</td><td>VABAR: A Variational Automation Benchmark for Agentic Robotics<br><a href='http://arxiv.org/pdf/2611.06881'>论文</a></td><td>论文提出“变异性自动化（VA）”概念并发布VABAR，用于系统评估智能体机器人在物体形状与位姿已知变化下持续执行任务的能力。
+◆提出通用基准设计准则，涵盖可访问性、可重复性、多样性、应用相关性、物理可实现性、抗饱和性和计算效率。
+◆构建工具分拣、工具悬挂、齿轮啮合、注射器装填、线缆插入和线缆布线六类跨工业、医疗与基础设施的操作任务。
+◆VABAR完全基于开源工具和Newton物理引擎，提供标准化任务变化、难度分级、成功指标及易复现的仿真评测环境。
+◆提供33个可泛化技能库及人工编写的程序化参考解，支持智能体机器人的可解释编程与开放世界适应能力评测。
+作者使用Graph-as-Policy和Isaac Lab Arena开展初始基线评估，验证了基准的可用性并支持不同智能体操作框架的比较。</td></tr>
+<tr><td>2026-11-04</td><td>$A^3$-VLA: Automatic Perception-Guided Attention Alignment for Robot Manipulation<br><a href='http://arxiv.org/pdf/2611.06447'>论文</a></td><td>论文针对VLA模型动作预测缺乏细粒度任务感知监督、易依赖任务无关视觉捷径并偏离关键交互区域的问题，提出A³-VLA框架。该方法从操作过程本身自动提取任务特定视觉引导：利用交互引起的视觉变化生成目标物体与机器人候选区域，并离线用视觉分割模型细化。  
+◆ 构建自动感知引导机制，从操作交互变化中生成并细化任务关键区域，为VLA提供无需人工标注的细粒度感知监督。  
+◆ 设计注意力分配损失与对比学习损失：前者引导语言或机器人状态查询视觉时充分关注任务关键区域，后者使候选目标区域表示与语言指令对齐并远离无关区域。  
+在仿真和真实机器人操作任务上，A³-VLA可稳定提升多种VLA骨干模型，平均成功率提升6.5%至25.2%，验证了其有效性与泛化能力。</td></tr>
+<tr><td>2026-11-03</td><td>MESA: An Evaluation Framework for Compositional, Semantic, and Spatial Generalization in Robotics<br><a href='http://arxiv.org/pdf/2611.05567'>论文</a> | <a href='https://pairlab.github.io/MESA'>代码</a></td><td>论文提出MESA，一个面向机器人操作基础模型的语言条件策略泛化评估框架，强调精确、可复现地测量策略能力。
+◆构建五个评估套件，分别隔离分布内性能与空间配置、物体实例、物体类别、子任务组合四个泛化轴，从而诊断策略在哪里以及为何失败。
+◆提出MESA-Gen，在改进MimicGen基础上规模化生成任务与演示数据，支撑评估集构建。
+◆发布单臂MESA与首个大规模双臂泛化基准BiMESA，覆盖两个平台并公开。
+实验评估扩散策略、VLM方法和预训练VLA等七类基线，最强模型仅达52%和49%，且MESA排名与RoboArena总体一致，表明其能捕捉方法级差异并留有充足进步空间。</td></tr>
 <tr><td>2026-11-03</td><td>GUILD: Guided Iterative Data Collection for Imitation Learning<br><a href='http://arxiv.org/pdf/2611.05368'>论文</a></td><td>GUILD提出面向机器人模仿学习的引导式数据收集方法，核心是将数据收集从被动采集转为主动闭环优化。◆ 以最大化下游策略性能为目标，主动推理应收集哪些数据，而非仅对已有数据做事后筛选。◆ 构建任务提议与数据评估交替的迭代框架，形成收集、评估、反馈的闭环。◆ 利用视觉语言模型的语义先验识别相关环境、物体配置和目标，提高候选任务相关性。◆ 引入预测数据归因估计轨迹对目标部署性能的影响，并用该信号指导后续数据收集。在仿真和真实机器人中，GUILD较被动收集、多种基线和经验丰富操作者显著提升了样本效率与部署性能。</td></tr>
 <tr><td>2026-11-03</td><td>Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs<br><a href='http://arxiv.org/pdf/2611.05249'>论文</a></td><td>论文系统解耦了VLA训练中“动作专家损失是否回传VLM”与“是否用动作令牌监督VLM”两个因素，重新审视梯度绝缘作为默认训练配方的合理性。  
 ◆创新点一：在自动驾驶与机器人操作任务中独立操纵动作令牌监督和专家到VLM的梯度路由，厘清二者对动作相关表征学习的交互作用。  
@@ -11563,12 +11594,16 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (57篇)</h2>
+<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (58篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-03</td><td>Role-based Effectiveness of an Epistemic Uncertainty Estimate in Training Models for Semantic Segmentation of 3D LiDAR Point Clouds<br><a href='http://arxiv.org/pdf/2611.05569'>论文</a></td><td>本文针对3D LiDAR点云语义分割中认知不确定性估计作用未被充分探索的问题，提出显式建模认知不确定性并让其承担不同角色。作者构建基线ANN及两种不确定性感知变体，分别将不确定性作为额外输入特征和训练损失中的逐样本置信权重。实验在ISPRS Vaihingen、AHN3、Paris-Lille-3D、Toronto-3D四个大规模LiDAR基准上，采用空间不相交划分，并与PointNet++、RandLA-Net及增强版本比较。结果表明不确定性感知建模可提升mIoU、恢复基线完全不预测的少数类，并在半数配置中改善预测误差与估计不确定性的对齐。研究强调不确定性在分割流程中具有多重作用，而非仅用于提升精度。
+◆ 将认知不确定性显式建模为分割流程中的多角色信息，而非单一精度提升工具
+◆ 系统比较不确定性作为输入特征与作为逐样本损失权重两种使用方式
+◆ 在四个空中/移动LiDAR基准和多种网络参考下验证，并发现少数类恢复与不确定性-误差对齐改善...[摘要不完整，待更新]</td></tr>
 <tr><td>2026-10-29</td><td>LiDAR-SHIELD: A Fully Dockerized Adversarial Robustness Assessment Framework for LiDAR-Based 3D Perception Models<br><a href='http://arxiv.org/pdf/2610.39848'>论文</a> | <a href='https://github.com/alexandrosgk/LiDAR-shield'>代码</a></td><td>LiDAR-SHIELD是面向LiDAR 3D感知模型的全Docker化统一对抗鲁棒性评估框架，用于部署前系统压力测试。
 ◆ 它逆转传统流程，不把目标模型装入工具包，而通过/info、/forward、/gradient三个轻量HTTP端点暴露任意模型。
 ◆ 新模型或数据集接入仅需一个加载函数或适配器，显著降低模型特定集成与环境重建成本。
@@ -12049,19 +12084,22 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>该论文针对基于STDP的无监督脉冲神经网络在视觉位置识别中召回率不足的难题，提出了一套基于PyTorch与snnTorch的离散化张量化实现方案，并在100地点的Nordland数据集上以15个独立训练网络进行系统评估。
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量化STDP-SNN视觉位置识别流程，并在100地点Nordland数据集上用15个独立训练网络评估推理阶段关键设计。
+◆ 采用闭式确定性张量流程完成神经元分配，较标准argmax显著提高R@100P，并独立测量其中源于与连续时间模型实现差异的增益。
+◆ 每次查询后执行状态重置可提升R@100P，且该效果不依赖神经元分配方式。
+◆ 对连续k帧进行速度补偿滑动窗口聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+这些结果表明推理阶段设计对STDP-SNN-VPR的召回精度具有重要影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文提出视觉位置识别审计（VPR Auditing），一种独立于检索器的后检索验证框架，用于在环境变化且缺少真值时可靠判断检索匹配是否可信。
 
-其核心创新点如下：
-◆ 采用闭式确定性张量管道替代传统argmax进行神经元分配，显著提升了R@100P指标
-◆ 揭示了查询后状态重置机制可独立改善召回精度，且与神经元分配方式解耦
-◆ 提出速度补偿的滑动窗口聚合策略，在k=5时即达到R@100P=100.00%，仅引入0.20毫秒额外延迟
+◆ 将视觉语言模型引入VPR匹配验证，通过联合推理查询图像与候选图像进行实例级真伪判别。
 
-不过作者也坦承，各机制的独立贡献以及与先前连续时间模型之间的实现差异尚未完全厘清，仍需后续深入探究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文针对真实部署中固定图像匹配阈值在环境变化下不可靠、误接受闭环会破坏轨迹与地图的问题，提出视觉位置识别审计这一独立后检索验证框架。  
-◆ 创新性地将VPR验证从依赖阈值的事前筛选转为独立于检索架构的后检索审计。  
-◆ 利用视觉语言模型联合推理查询图像与候选图像，实现无需架构特定置信度的实例级匹配验证。  
-◆ 方法不依赖数据集相关阈值或部署环境先验知识，可跨场景独立部署。  
-论文在六个基准数据集、五种先进VPR方法和四种VLM上评估，平均提升Recall@1达13.6%，将误接受率降至12%，同时保持精度高于95%、覆盖率高于75%。</td></tr>
+◆ 验证过程不依赖特定架构的置信度、数据集相关阈值或部署环境先验知识，提升跨场景独立审计能力。
+
+◆ 在六个基准、五种先进VPR方法和四种VLM上系统验证，兼顾召回、精度与覆盖率。
+
+实验表明该方法相比先进方法平均提升Recall@1 13.6%，将误接受率降至12%，同时保持精度95%以上和覆盖率75%以上。
+
+整体上，它为安全关键机器人中的VPR部署提供了一种可独立部署、环境适应性强且精度风险可控的匹配审计方案。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12130,4 +12168,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.04
+> 更新于: 2026.11.05

@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5342,
+      "stars": 5347,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4843,
+      "stars": 4844,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1666,
+      "stars": 1665,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1320,
+      "stars": 1321,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1374,
+      "stars": 1375,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1102,
+      "stars": 1103,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1125,
+      "stars": 1126,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 699,
+      "stars": 700,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 545,
+      "stars": 546,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -267,7 +267,7 @@
     "dyn_small_obs_avoidance": {
       "name": "dyn_small_obs_avoidance",
       "url": "https://github.com/hku-mars/dyn_small_obs_avoidance",
-      "stars": 229,
+      "stars": 230,
       "description": "",
       "created_at": "2021-02-24",
       "chinese_desc": "dyn_small_obs_avoidance"
@@ -307,7 +307,7 @@
     "BDM": {
       "name": "BDM",
       "url": "https://github.com/hku-mars/BDM",
-      "stars": 223,
+      "stars": 222,
       "description": "Memory-Efficient Boundary Map for Large-Scale Occupancy Grid Mapping (IJRR 2026)",
       "created_at": "2025-10-29",
       "chinese_desc": "Memory-Efficient Boundary Map for Large-Scale Occu"
@@ -413,7 +413,7 @@
     "dynablox": {
       "name": "dynablox",
       "url": "https://github.com/ethz-asl/dynablox",
-      "stars": 612,
+      "stars": 613,
       "description": "Real-time detection of diverse dynamic objects in complex environments.",
       "created_at": "2022-12-14",
       "chinese_desc": "Real-time detection of diverse dynamic objects in "
@@ -437,7 +437,7 @@
     "wavemap": {
       "name": "wavemap",
       "url": "https://github.com/ethz-asl/wavemap",
-      "stars": 576,
+      "stars": 577,
       "description": "Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping",
       "created_at": "2021-10-27",
       "chinese_desc": "Fast, efficient and accurate multi-resolution, mul"
@@ -501,7 +501,7 @@
     "vgn": {
       "name": "vgn",
       "url": "https://github.com/ethz-asl/vgn",
-      "stars": 311,
+      "stars": 310,
       "description": "Real-time 6 DOF grasp detection in clutter.",
       "created_at": "2019-06-19",
       "chinese_desc": "Real-time 6 DOF grasp detection in clutter."
