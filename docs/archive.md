@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.06)
+# 历史论文归档 (2026.11.07)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -2202,12 +2202,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 提出PanoRecon七场景基准，涵盖重复建筑、大/小回环，并提供参考相机位姿与LiDAR几何用于全局一致性评测。
 该方法在评测中取得最低平均绝对轨迹误差和较高F-1 Score，验证了其长程全景重建的全局一致性。</td></tr>
 <tr><td>2026-10-27</td><td>Metric Scale for Insta360 Structure-from-Motion from the Camera&#x27;s Embedded IMU<br><a href='http://arxiv.org/pdf/2610.35554'>论文</a></td><td>本文评估Insta360 X5/X6内置1 kHz IMU作为自包含度量尺度来源，替代手机ARKit/ARCore位姿，通过线性视觉惯性对齐从SfM位姿恢复尺度。◆提出仅依赖360相机内置IMU的自包含度量尺度恢复方案，摆脱对外部手机位姿的依赖。◆完成IMU噪声、相机-IMU同步、加速度计尺度因子和偏置稳定性表征，并从数据估计相机-IMU旋转与帧时序。◆发现全测量共享重力和加速度计偏置会使尺度平均高估3.4%，提出分段独立估计再平均以消除偏差。◆在LiDAR、基准轨迹和生产测量中系统验证，惯性尺度平均绝对误差0.74%，优于手机尺度的1.94%。◆完成窗口构建消融及与单目度量深度网络比较，并分析生产数据中惯性尺度与手机尺度差异的来源。</td></tr>
-<tr><td>2026-10-26</td><td>Synthetic Deformable Tubular Benchmark: A mechanically annotated dataset for evaluating deformable 3D reconstruction<br><a href='http://arxiv.org/pdf/2610.35621'>论文</a></td><td>本文提出合成可变形管状基准，用开源工具LumenMorph生成、标注并评估管状场景，包含5580张RGB图像，为可变形三维重建提供受控合成参考。
-◆构建跨三种表面运动条件与移动/静止相机的六类场景基线，并提供四类场景的匹配外观变体，系统覆盖相机与表面运动耦合。
-◆公开接口给出相机位姿、几何、深度、变形场、持久材质对应及离散有限元记录，支持跨帧追踪同一表面位置及其三维轨迹。
-◆引入持久三角形身份与材质权重，并设置独立几何和机械一致性检查，便于核验标注与生成模型的一致性。
-◆通过SfM、光流和给定几何位移插值实验，区分配准覆盖与几何精度，揭示相机与表面运动效应，并检验机械先验的收益与失配。
-作者明确数据完整性、固定环境重复性和预测分数回放各有验证范围，且不宣称解剖或临床真实性。</td></tr>
+<tr><td>2026-10-26</td><td>Synthetic Deformable Tubular Benchmark: A mechanically annotated dataset for evaluating deformable 3D reconstruction<br><a href='http://arxiv.org/pdf/2610.35621'>论文</a></td><td>本文提出合成可变形管状基准，以开源工具LumenMorph生成、标注并评估管状场景，为可变形三维重建提供受控合成参考。
+◆ 构建含5580张RGB图像的基准，基线覆盖三种表面运动与动/静相机组合的六类场景，并提供四类场景的匹配外观变体。
+◆ 通过公开接口提供相机位姿、几何、深度、变形场、持久材料对应及有限元记录，支持跨帧追踪同一表面点并查询其三维轨迹。
+◆ 引入持久三角形身份与材料权重，并分别实现几何和机械一致性检查，以验证标注与生成模型的一致性。
+◆ 用SfM、光流和位移插值实验区分配准覆盖与几何精度，揭示相机与表面运动影响，并检验机械先验的收益与失配。
+最后，公开读取器、评估契约和可配置生成器支持复用扩展，且数据完整性、固定环境重复性和预测回放具有不同验证范围，但不声称解剖或临床真实。</td></tr>
 <tr><td>2026-10-26</td><td>Generative Structure from Motion with Native 3D Diffusion<br><a href='http://arxiv.org/pdf/2610.35522'>论文</a> | <a href='https://dotb1ue.github.io/GenSfm/'>代码</a></td><td>GenSfM 将基于图像的3D重建与原生3D扩散模型统一起来，用于从少量未标定视图联合恢复物体3D结构和相机运动，避免重建与生成两阶段拼接导致的误差级联。
 ◆ 提出多模态扩散Transformer，在共享自注意力下联合去噪形状潜变量与每视图位姿潜变量，使生成几何既受输入视图约束，又能借助物体级先验推断未观察区域。
 ◆ 设计紧凑的3D原生UV-volume tokenization，使联合序列在增加视图时仍保持较小规模，提升多视图联合建模效率。
@@ -8424,12 +8424,12 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 提出约束感知对抗运动先验控制器，将抗噪激励与滚动接触奖励结合，实现接触感知执行。
 ◆ 构建接触约束虚拟IMU，融合预标定小腿IMU与关节运动学并基于滚动接触模型生成标定参考。
 仿真与真实四足平台实验表明，该方法显著降低噪声敏感性和标定误差，实现可重复的实机标定并提升腿足机器人本体感知里程计精度。</td></tr>
-<tr><td>2026-10-20</td><td>VeriCalib: Verifiable Target-Based LiDAR-Camera Calibration<br><a href='http://arxiv.org/pdf/2610.28791'>论文</a></td><td>本文提出VeriCalib，将基于靶标的外参标定建模为可验证估计问题，并输出可指导接受、重提取、重采集或补采的标定状态，而非仅依赖同一批观测上的残差RMSE。
-◆ 揭示两级外参补偿机制：残差级由外参补偿观测误差的刚体部分，参数级旋转与平移相互补偿，说明拟合残差无法反映观测与模型不一致及各方向可靠性。
-◆ 构建结构化协方差，联合传播相机与LiDAR靶标特征不确定性及已知几何先验，并从残差估计方差分量尺度。
-◆ 基于该协方差解耦旋转与平移，量化各方向精度并引导数据采集至最弱方向。
-◆ 提出视内与跨视一致性检查，分别检验内部残差和观测间刚性差异，阈值在未知噪声下保持显著性水平。
-◆ 将最小可检测偏差扩展到外参，给出各方向最小可检测故障边界，并据上述准则形成接受或补采的标定状态。</td></tr>
+<tr><td>2026-10-20</td><td>VeriCalib: Verifiable Target-Based LiDAR-Camera Calibration<br><a href='http://arxiv.org/pdf/2610.28791'>论文</a></td><td>本文将目标式LiDAR-相机外参标定重新表述为可验证估计问题，并输出可解释的标定状态而非单一拟合残差。
+◆ 提出两级外参补偿机制，揭示残差级刚性补偿与参数级旋转-平移互补会使拟合残差无法判断模型一致性和各方向可靠性。
+◆ 构建结构化协方差，联合传播相机与LiDAR板特征不确定性并引入已知几何先验，从残差估计方差分量尺度。
+◆ 在协方差上解耦旋转和平移，量化各方向精度并引导数据采集至最弱方向。
+◆ 设计视图内与跨视图一致性检查，分别检验内部残差和观测间刚性差异，阈值在未知噪声下保持显著性水平。
+◆ 将最小可检测偏差扩展到外参，给出各方向最小可检测故障界，并据此形成接受结果或指导补采的标定状态。</td></tr>
 <tr><td>2026-10-20</td><td>Can a Display Be Used for Rapid LiDAR-Camera Extrinsic Calibration?<br><a href='http://arxiv.org/pdf/2610.28571'>论文</a> | <a href='https://github.com/ZuhaoZou2026/ScreenCalib'>代码</a></td><td>ScreenCalib提出用普通可编程显示屏完成LiDAR-相机外参标定，相机观测屏幕显示的AprilTag，LiDAR测量屏幕物理表面与边界，从而减少专用标定板准备并实现间接跨模态关联。针对显示几何关联歧义和室内杂乱干扰，方法采用标签引导的显示屏提取、几何假设生成与优化，并利用周围场景边缘消歧。实验覆盖仿真及三种传感器平台、机械与非重复LiDAR、干净与杂乱环境，平移精度优于竞争标定板方法，联合多姿态优化进一步降低旋转和平移误差并改善渲染地图对齐。创新点：
 ◆以普通显示屏作为可编程标定物，兼顾已知视觉标记与可控几何，减少专用靶标准备。
 ◆通过标签引导提取、几何假设生成优化及场景边缘消歧，稳健解决LiDAR与相机间的间接跨模态关联歧义。
@@ -11756,11 +11756,12 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入特征编码器预测初始分层网格特征，显著减少子图特征从头优化所需时间。
 ◆ 在隐式特征空间内对齐并融合子图，避免解码最终输出，从而加速估计漂移校正。
 ◆ 将几何特征与视觉语言潜特征嵌入地图，支持SDF构建和开放词汇物体定位，提升计算内存效率并保持估计精度。</td></tr>
-<tr><td>2026-09-29</td><td>When to Adapt: Multi-Signal Domain Shift Detection for Efficient Training-Free Adaptation in Open-Vocabulary Segmentation<br><a href='http://arxiv.org/pdf/2609.37602'>论文</a></td><td>论文针对开放词汇语义分割中域偏移导致视觉基础模型性能下降、逐帧自适应又难以部署在资源受限机器人上的问题，提出一种多信号域偏移检测方法，用于无训练持续测试时自适应。其核心是仅在真正需要时触发轻量适配器调整，以降低计算开销并保持长期任务中的分割可靠性。
-◆ 提出融合视觉变化、适配器不匹配和语义漂移的多信号域偏移检测机制，避免逐帧盲目自适应。
-◆ 利用连续帧的时间一致性监测域偏移，使触发决策更稳定、更适用于真实机器人连续感知。
-◆ 将检测与无训练持续测试时自适应结合，在开放词汇分割中实现按需适配。
-实验在室内外基准和真实机器人数据上验证，方法在保持分割精度的同时显著减少自适应次数，提升了资源受限场景下长期部署的可行性。</td></tr>
+<tr><td>2026-09-29</td><td>When to Adapt: Multi-Signal Domain Shift Detection for Efficient Training-Free Adaptation in Open-Vocabulary Segmentation<br><a href='http://arxiv.org/pdf/2609.37602'>论文</a></td><td>本文针对开放词汇分割中视觉基础模型易受域偏移影响、而逐帧无训练适应在资源受限机器人上不实用的问题，提出一种用于无训练持续测试时适应的多信号域偏移检测方法。
+◆ 融合视觉变化、适配器不匹配和语义漂移三类互补信号，综合判断域偏移是否发生。
+◆ 利用连续帧时序一致性监测这些信号，仅在真正需要时触发适应，避免逐帧调整。
+◆ 将按需触发机制用于开放词汇分割的无训练持续测试时适应，兼顾分割精度与计算效率。
+◆ 在室内外基准和真实机器人数据上验证，能在保持分割精度的同时显著减少适应次数。
+该方法使无训练适应更适用于长期、真实世界的机器人部署。</td></tr>
 <tr><td>2026-09-29</td><td>Towards Spatial Perception for Heterogeneous Robot Collaboration in Subterranean Mining Environments<br><a href='http://arxiv.org/pdf/2609.37419'>论文</a></td><td>论文提出PERSEPHONE任务中连接Explorer与Inspector异构机器人的机载感知流水线，解决单一平台难以兼顾长距离移动与高精度传感的问题。
 ◆ 构建Explorer建图并生成3D场景图、Inspector据此规划近距离检查视点的异构协作感知闭环。
 ◆ 采用零样本视觉语言语义分割，直接从自然语言提示检测矿床，降低对目标域标注的依赖。
@@ -12157,15 +12158,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估推理阶段关键设计。
-◆采用闭式确定性张量流水线完成神经元分配，R@100P显著高于标准argmax，并单独度量了部分增益来自与连续时间实现的差异。
-◆消融表明每次查询后执行状态重置可独立提升R@100P，且不依赖神经元分配方式。
-◆提出速度补偿的k帧滑动窗口聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
-研究系统揭示推理阶段设计对STDP-SNN-VPR召回精度的影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步分析。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉地点识别审计框架，作为检索后的独立验证方法，利用视觉语言模型联合推理查询图像与候选匹配，以解决固定匹配阈值在环境变化和无真值场景下不可靠的问题。
-◆ 将视觉语言模型引入VPR匹配的实例级独立审计，不依赖架构特定置信度、数据集相关阈值或部署环境先验知识。
-◆ 通过联合推理查询与候选图像进行匹配验证，可在环境变化且无真值时独立复核检索结果，降低错误闭环风险。
-◆ 在六个基准数据集、五种先进VPR方法和四种VLM上系统验证，平均提升Recall@1 13.6%，误接受率降至12%，精确率保持95%以上、覆盖率75%以上。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>论文提出基于PyTorch与snnTorch的离散、张量原生STDP脉冲神经网络视觉位置识别流程，并在100地点Nordland数据集上用15个独立训练网络评估。
+◆采用闭式确定性张量流水线完成神经元分配，R@100P显著高于标准argmax方法。
+◆每次查询后执行状态重置，可在不同神经元分配方式下独立提升R@100P。
+◆对连续k帧做速度补偿滑动窗口聚合，在k=5、恒速遍历时达到100.00% R@100P，仅增加0.20 ms延迟。
+论文还独立测量了部分增益与先前连续时间模型实现差异的关系，但各机制贡献尚未完全解耦。
+总体表明推理阶段设计对STDP-SNN-VPR的召回率-精度性能具有重要影响，仍需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对视觉位置识别部署中固定匹配阈值在环境变化下不可靠、误接受闭环会破坏轨迹与地图的问题，提出独立的检索后验证框架“视觉位置识别审计”。该方法利用视觉语言模型联合推理查询图像与候选图像，实现实例级匹配验证，不依赖架构特定置信度、数据集相关阈值或部署环境先验。作者在六个基准数据集、五种先进VPR方法和四种VLM上评估，结果显示召回@1平均提升13.6%，误接受率降至12%，同时保持精度95%以上、覆盖率75%以上。
+◆ 提出独立于VPR架构的检索后审计框架，可对既有系统进行即插即用式匹配验证。
+◆ 利用VLM对查询与候选图像进行联合视觉语言推理，实现无需阈值和置信度校准的实例级验证。
+◆ 在多种数据集、VPR方法和VLM上系统验证，显著提升召回并降低误接受，同时维持高精度与覆盖率。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12234,4 +12236,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.06
+> 更新于: 2026.11.07
