@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5355,
+      "stars": 5359,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4851,
+      "stars": 4858,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -19,7 +19,7 @@
     "r3live": {
       "name": "r3live",
       "url": "https://github.com/hku-mars/r3live",
-      "stars": 2488,
+      "stars": 2489,
       "description": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
       "created_at": "2021-09-09",
       "chinese_desc": "A Robust, Real-time, RGB-colored, LiDAR-Inertial-V"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1665,
+      "stars": 1664,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1379,
+      "stars": 1380,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1105,
+      "stars": 1106,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1129,
+      "stars": 1132,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -91,7 +91,7 @@
     "ikd-Tree": {
       "name": "ikd-Tree",
       "url": "https://github.com/hku-mars/ikd-Tree",
-      "stars": 817,
+      "stars": 818,
       "description": "This repository provides implementation of an incremental k-d tree for robotic applications.",
       "created_at": "2021-02-22",
       "chinese_desc": "This repository provides implementation of an incr"
@@ -155,7 +155,7 @@
     "HBA": {
       "name": "HBA",
       "url": "https://github.com/hku-mars/HBA",
-      "stars": 625,
+      "stars": 626,
       "description": "[RAL 2023] A globally consistent LiDAR map optimization module",
       "created_at": "2023-05-01",
       "chinese_desc": "[RAL 2023] A globally consistent LiDAR map optimiz"
@@ -171,7 +171,7 @@
     "IKFoM": {
       "name": "IKFoM",
       "url": "https://github.com/hku-mars/IKFoM",
-      "stars": 572,
+      "stars": 573,
       "description": "A computationally efficient and convenient toolkit of iterated Kalman filter.",
       "created_at": "2021-01-29",
       "chinese_desc": "A computationally efficient and convenient toolkit"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 594,
+      "stars": 595,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -203,7 +203,7 @@
     "Swarm-LIO2": {
       "name": "Swarm-LIO2",
       "url": "https://github.com/hku-mars/Swarm-LIO2",
-      "stars": 468,
+      "stars": 469,
       "description": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiDAR-inertial Odometry for UAV Swarms",
       "created_at": "2024-03-25",
       "chinese_desc": "[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD"
@@ -283,7 +283,7 @@
     "LAMM": {
       "name": "LAMM",
       "url": "https://github.com/hku-mars/LAMM",
-      "stars": 214,
+      "stars": 215,
       "description": "",
       "created_at": "2024-08-24",
       "chinese_desc": "LAMM"
@@ -357,7 +357,7 @@
     "segmap": {
       "name": "segmap",
       "url": "https://github.com/ethz-asl/segmap",
-      "stars": 1098,
+      "stars": 1099,
       "description": "A map representation based on 3D segments ",
       "created_at": "2016-09-20",
       "chinese_desc": "A map representation based on 3D segments "
@@ -469,7 +469,7 @@
     "voxblox-plusplus": {
       "name": "voxblox-plusplus",
       "url": "https://github.com/ethz-asl/voxblox-plusplus",
-      "stars": 465,
+      "stars": 466,
       "description": "A volumetric object-level semantic mapping framework.",
       "created_at": "2017-02-08",
       "chinese_desc": "A volumetric object-level semantic mapping framewo"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 344,
+      "stars": 346,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
