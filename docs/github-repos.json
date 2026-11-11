@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5363,
+      "stars": 5368,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4864,
+      "stars": 4866,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -27,7 +27,7 @@
     "loam_livox": {
       "name": "loam_livox",
       "url": "https://github.com/hku-mars/loam_livox",
-      "stars": 1630,
+      "stars": 1631,
       "description": "A robust LiDAR Odometry and Mapping (LOAM) package for Livox-LiDAR",
       "created_at": "2019-06-07",
       "chinese_desc": "A robust LiDAR Odometry and Mapping (LOAM) package"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1540,
+      "stars": 1541,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -51,7 +51,7 @@
     "livox_camera_calib": {
       "name": "livox_camera_calib",
       "url": "https://github.com/hku-mars/livox_camera_calib",
-      "stars": 1321,
+      "stars": 1320,
       "description": "This repository is used for automatic calibration between high resolution LiDAR and camera in targetless scenes. ",
       "created_at": "2021-02-27",
       "chinese_desc": "This repository is used for automatic calibration "
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1380,
+      "stars": 1385,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -75,7 +75,7 @@
     "SUPER": {
       "name": "SUPER",
       "url": "https://github.com/hku-mars/SUPER",
-      "stars": 1109,
+      "stars": 1112,
       "description": "",
       "created_at": "2024-12-19",
       "chinese_desc": "SUPER"
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1133,
+      "stars": 1134,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -99,7 +99,7 @@
     "r2live": {
       "name": "r2live",
       "url": "https://github.com/hku-mars/r2live",
-      "stars": 785,
+      "stars": 786,
       "description": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping package",
       "created_at": "2021-02-24",
       "chinese_desc": "R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual"
@@ -115,7 +115,7 @@
     "STD": {
       "name": "STD",
       "url": "https://github.com/hku-mars/STD",
-      "stars": 751,
+      "stars": 752,
       "description": "A 3D point cloud descriptor for place recognition",
       "created_at": "2022-09-14",
       "chinese_desc": "A 3D point cloud descriptor for place recognition"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 674,
+      "stars": 676,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 700,
+      "stars": 701,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -179,7 +179,7 @@
     "MARSIM": {
       "name": "MARSIM",
       "url": "https://github.com/hku-mars/MARSIM",
-      "stars": 594,
+      "stars": 595,
       "description": "MARSIM: A light-weight point-realistic simulator for LiDAR-based UAVs",
       "created_at": "2022-11-16",
       "chinese_desc": "MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。"
@@ -195,7 +195,7 @@
     "GS-SDF": {
       "name": "GS-SDF",
       "url": "https://github.com/hku-mars/GS-SDF",
-      "stars": 546,
+      "stars": 547,
       "description": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
       "created_at": "2025-03-02",
       "chinese_desc": "[IROS 2025] LiDAR-Augmented Gaussian Splatting and"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 481,
+      "stars": 482,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -315,7 +315,7 @@
     "iBTC": {
       "name": "iBTC",
       "url": "https://github.com/hku-mars/iBTC",
-      "stars": 152,
+      "stars": 153,
       "description": "",
       "created_at": "2024-05-26",
       "chinese_desc": "iBTC"
@@ -333,7 +333,7 @@
     "maplab": {
       "name": "maplab",
       "url": "https://github.com/ethz-asl/maplab",
-      "stars": 2886,
+      "stars": 2887,
       "description": "A Modular and Multi-Modal Mapping Framework",
       "created_at": "2017-11-27",
       "chinese_desc": "A Modular and Multi-Modal Mapping Framework"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1681,
+      "stars": 1683,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
@@ -365,7 +365,7 @@
     "lidar_align": {
       "name": "lidar_align",
       "url": "https://github.com/ethz-asl/lidar_align",
-      "stars": 1062,
+      "stars": 1063,
       "description": "A simple method for finding the extrinsic calibration between a 3D lidar and a 6-dof pose sensor",
       "created_at": "2016-10-24",
       "chinese_desc": "A simple method for finding the extrinsic calibrat"
@@ -381,7 +381,7 @@
     "mav_active_3d_planning": {
       "name": "mav_active_3d_planning",
       "url": "https://github.com/ethz-asl/mav_active_3d_planning",
-      "stars": 714,
+      "stars": 715,
       "description": "Modular framework for online informative path planning.",
       "created_at": "2018-10-25",
       "chinese_desc": "Modular framework for online informative path plan"
@@ -413,7 +413,7 @@
     "dynablox": {
       "name": "dynablox",
       "url": "https://github.com/ethz-asl/dynablox",
-      "stars": 614,
+      "stars": 616,
       "description": "Real-time detection of diverse dynamic objects in complex environments.",
       "created_at": "2022-12-14",
       "chinese_desc": "Real-time detection of diverse dynamic objects in "
@@ -453,7 +453,7 @@
     "hand_eye_calibration": {
       "name": "hand_eye_calibration",
       "url": "https://github.com/ethz-asl/hand_eye_calibration",
-      "stars": 522,
+      "stars": 523,
       "description": "Python tools to perform time-synchronization and hand-eye calibration.",
       "created_at": "2017-03-24",
       "chinese_desc": "Python tools to perform time-synchronization and h"

@@ -1,30 +1,42 @@
-# 历史论文归档 (2026.11.10)
+# 历史论文归档 (2026.11.11)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (347篇)</a></li>
+<li><a href='#slam'>SLAM (350篇)</a></li>
 <li><a href='#sfm'>SFM (157篇)</a></li>
 <li><a href='#image-matching'>Image Matching (71篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (119篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (120篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (426篇)</a></li>
-<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (59篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (431篇)</a></li>
+<li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (60篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (25篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (347篇)</h2>
+<h2 id='slam'>SLAM (350篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-10</td><td>CFAR Detection on Non-Coherently Integrated Angular Maps for mmWave Radio SLAM<br><a href='http://arxiv.org/pdf/2611.14250'>论文</a></td><td>本文针对毫米波波束扫描双基地ISAC的SLAM多径检测，指出现有CFAR基于I/Q数据立方体，不适用于非相干积分后的角度功率图。
+◆推导了面向非相干积分角度功率图的改进CFAR检测器，修正后积分噪声统计与标准CA-CFAR假设的差异。
+◆提出多单元CUT表述，以更好适配实际检测需求并提升CFAR实用性。
+◆设计十字形训练窗，在考虑旁瓣结构的同时显著降低计算开销。
+基于60 GHz室内实测和snapshot-SLAM评估，所提CFAR较SVD检测器将整体定位RMSE从0.30 m降至0.24-0.26 m，NLOS场景提升最大。
+多单元非相干检测器进一步降低复杂度且不损失定位精度，表明其适合实际多径无线电SLAM。</td></tr>
+<tr><td>2026-11-10</td><td>GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM<br><a href='http://arxiv.org/pdf/2611.13528'>论文</a></td><td>本文提出GEMOR-GS，面向LiDAR-惯性-视觉SLAM构建几何准确、全局精炼且可重入的3D高斯泼溅地图。
+◆ 先利用专用标定段离线估计LiDAR-相机外参，并在后续在线与离线流程中复用，以提升建图几何一致性。
+◆ 在标定几何下，以门控可微渲染和LiDAR投影联合目标交替优化关键帧位姿与高斯参数。
+◆ 最终解除在线约束，从精炼后的关键帧结构重建全局地图，实现全局一致的3DGS表达。
+◆ 跟踪丢失后，通过XFeat旁路地图、RANSAC-PnP粗定位和高斯RGB-D warp精化，实现基于3DGS地图的在线重定位。
+实验表明离线重建较在线地图提升14.3至19.9 dB，PSNR较Gaussian-LIC2约提升9 dB，重定位成功率达86至100%，验证了其几何精度、外观保真和可重入性。</td></tr>
 <tr><td>2026-11-09</td><td>V3DSAM: Semantic-Geometric Loop Verification and Geometry-Anchored Persistent Instance Mapping for Feed-Forward Dense SLAM<br><a href='http://arxiv.org/pdf/2611.12452'>论文</a></td><td>本文提出V3DSAM，一个面向长序列前馈稠密SLAM的开放词表语义稠密SLAM系统，用于解决跨视角关联不可靠问题。系统将VGGT-SLAM 2.0的前馈几何估计与SAM3的开放词表语义观测相结合，在场景和物体两级建立物理对应。
 ◆提出语义—几何双尺度回环验证，利用像素级双向重投影和物体级三维空间对应识别假回环，且无需访问骨干网络内部特征。
 ◆提出几何锚定的持久实例建图，在优化后的全局坐标系中以类别约束的三维连通性定义物理实例，并在不进行帧间身份传播的情况下分配全局ID。
@@ -52,12 +64,22 @@
 ◆在冻结协议下，系统最高采样GPU占用17.14 GB，16场景均获4D重建、15个获非空SLAM地图。
 MHAC在十视频留出集将Average Jaccard较仅位置基线提升0.1394，并在265个RoboTAP视频上取得平均配对增益0.0610。
 结果支持资源受限场景构建和外部跟踪增益，但不确立度量尺度、语义身份或高保真新视角渲染。</td></tr>
+<tr><td>2026-11-09</td><td>An Integrated Open-Source Stack for Vision-Based Autonomous Navigation of Wheeled Rovers<br><a href='http://arxiv.org/pdf/2611.08100'>论文</a></td><td>本文提出一个面向轮式巡视器视觉自主导航的开源ROS 2集成栈，实现箭头跟随、到达终端锥并自主返回的完整任务。该系统贯通YOLOv8n检测与几何方向/距离/方位估计、RGB-D SLAM、轮式惯性状态估计、运动学感知规划、行为树任务管理和STM32执行，并公开软件、配置、标注数据集、训练权重与评估日志。
+◆以标准接口分离可复用自主性与硬件层，并提供支持低速巡视器的比例路径跟随插件。
+◆在478张留出图像上实现mAP@0.5为0.720，优于共享协议下的OpenCV基线，Jetson Orin NX感知延迟25 ms。
+◆通过三次室内外任务验证标记引导导航与无操作员运动指令的自主返回，且未报告碰撞。
+◆记录现场集成失败与修正选择，同时指出物理导航误差和可靠性仍需重复仪器化试验量化。</td></tr>
 <tr><td>2026-11-08</td><td>Map2SLAM: From Streaming Map Prediction to Real-Time SLAM<br><a href='http://arxiv.org/pdf/2611.11169'>论文</a> | <a href='https://robbyant-research.github.io/Map2SLAM/'>代码</a></td><td>Map2SLAM 将冻结的流式3D基础模型作为几何观测源，把其在线预测转化为外部持久SLAM状态的可修正观测，从而解决流式预测发出后无法通过回环纠正漂移的问题。
 ◆ 仅训练轻量检索头并保持LingBot-Map冻结，在模型推理接口上构建SLAM，降低适配成本。
 ◆ 前端用因果流式推理跟踪每帧并筛选关键帧写入持久状态，后端异步选择历史帧重观测并在线校正轨迹。
 ◆ 通过带新上下文的联合重推理生成回环与分段观测，回环在线纠偏、分段观测在序列后细化稠密几何。
 ◆ 所有调用共享每图一次帧编码，缓存特征同时用于回环检索，频繁重调用不增加额外编码开销。
 在KITTI、VBR和Oxford Spires上达到SOTA，平均ATE较最佳未标定基线降低40%以上，并在RTX 5090D上以518×154分辨率保持超过28 FPS实时跟踪。</td></tr>
+<tr><td>2026-11-06</td><td>Maze Runner: Autonomous Maze Navigation with Line-Based Localization and Control Barrier Functions<br><a href='http://arxiv.org/pdf/2611.12949'>论文</a></td><td>Maze Runner是一套面向稀疏重复几何、狭窄走廊及定位/地图误差下安全控制的端到端C++/ROS 2自主导航栈，并在Gazebo仿真ROSbot XL上验证。
+◆ 提出带逐线不确定性的RANSAC与总体最小二乘墙线前端，同时支撑基于线地图的EKF定位和在线建图的EKF SLAM。
+◆ 在膨胀占据栅格上集成A*与视线捷径，并提供仅前向Hybrid A*的在线规划方案。
+◆ 将NMPC跟踪与基于世界坐标系LiDAR点的离散时间CBF结合，保障机器人远离墙壁和未建图障碍物。
+◆ 将算法置于无ROS依赖、单元测试的核心库中，并提供单环境可复现全栈，仿真实现1.0 cm定位RMSE、24 cm SLAM RMSE、6 ms规划与平均11.7 ms的NMPC求解。</td></tr>
 <tr><td>2026-11-06</td><td>DASH-SLAM: Calibration-Free Metric Monocular SLAM via Depth Scale Propagation<br><a href='http://arxiv.org/pdf/2611.10239'>论文</a></td><td>本文提出DASH-SLAM，一种无需任务特定微调、无需标定的单目度量SLAM系统，将预训练Depth Anything 3的度量深度预测集成到共享关键帧位姿图中。
 ◆ 利用共享锚点图像处的深度比值推导尺度校正，并在连续重建间累积，同时用阻尼因子控制其影响。
 ◆ 尺度校正统一重缩放里程计平移、回环约束和地图几何，从而保持跨重建一致的度量尺度。
@@ -69,11 +91,6 @@ MHAC在十视频留出集将Average Jaccard较仅位置基线提升0.1394，并�
 ◆ 证明位置仅对齐忽略朝向，低ATE可能对应更差重投影几何。
 ◆ 提出pose-anchored ATE，用预测朝向拟合对齐旋转，更好反映几何误差且仅增加约0.06毫秒开销。
 ◆ 在新指标上正确排序图像无关参考与模型、跟踪旋转和直线化下的重投影误差，并基本保留模型顺序。</td></tr>
-<tr><td>2026-11-05</td><td>An Integrated Open-Source Stack for Vision-Based Autonomous Navigation of Wheeled Rovers<br><a href='http://arxiv.org/pdf/2611.08100'>论文</a></td><td>本文提出一个面向轮式巡视器视觉自主导航的开源ROS 2集成栈，实现箭头跟随、到达终端锥并自主返回的完整任务。该系统贯通YOLOv8n检测与几何方向/距离/方位估计、RGB-D SLAM、轮式惯性状态估计、运动学感知规划、行为树任务管理和STM32执行，并公开软件、配置、标注数据集、训练权重与评估日志。
-◆以标准接口分离可复用自主性与硬件层，并提供支持低速巡视器的比例路径跟随插件。
-◆在478张留出图像上实现mAP@0.5为0.720，优于共享协议下的OpenCV基线，Jetson Orin NX感知延迟25 ms。
-◆通过三次室内外任务验证标记引导导航与无操作员运动指令的自主返回，且未报告碰撞。
-◆记录现场集成失败与修正选择，同时指出物理导航误差和可靠性仍需重复仪器化试验量化。</td></tr>
 <tr><td>2026-11-05</td><td>FREE-LIVO: Physically Decoupled Yet Tightly Coupled LiDAR-Inertial-Visual Odometry<br><a href='http://arxiv.org/pdf/2611.07463'>论文</a></td><td>FREE-LIVO提出一种面向模块化异构机器人系统的紧耦合LiDAR-惯性-视觉里程计，核心贡献是在不依赖刚性LiDAR-相机外参和LiDAR-相机时间同步的条件下实现鲁棒状态估计。
 ◆无需固定LiDAR-相机相对位姿和精确时间同步，即可联合优化多传感器状态。
 ◆利用生成模型由单次LiDAR扫描生成密集强度图，并用预训练图像特征匹配器建立相机图像与LiDAR强度图的3D点到像素对应。
@@ -8410,12 +8427,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (119篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (120篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-10</td><td>GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM<br><a href='http://arxiv.org/pdf/2611.13528'>论文</a></td><td>GEMOR-GS面向LiDAR-惯性-视觉SLAM，构建几何精确、全局精化且可重入的3D高斯泼溅地图，以提升机器人世界模型的外观与度量一致性。
+◆提出离线直接法LiDAR-相机外参标定，并在后续在线与离线流程中复用，以高质量外参支撑地图精化。
+◆在标定几何下，以门控可微渲染和LiDAR投影联合目标交替优化关键帧位姿与高斯参数。
+◆在解除在线约束后，从精化关键帧模式重建最终全局3DGS地图，提升全局几何与外观保真。
+◆设计基于XFeat旁路地图、RANSAC-PnP粗定位和高斯RGB-D warp精化的跟踪丢失后在线重定位。
+实验在自采集和五个公开序列上验证：离线重建较在线地图在配对关键帧上提升14.3–19.9 dB，PSNR较Gaussian-LIC2约高9 dB，留出重定位成功率达86–100%且与外参质量相关。</td></tr>
 <tr><td>2026-11-09</td><td>Galilean Robots, Aristotelian Sensors: Joint Spatiotemporal Trajectory Estimation and Extrinsic Calibration<br><a href='http://arxiv.org/pdf/2611.12526'>论文</a></td><td>本文针对多传感器时空标定中空间外参与时间偏移分离建模、时间偏移依赖插值或连续时间轨迹的问题，提出联合轨迹估计与时空标定框架。  
 ◆ 采用特殊伽利略群表示机器人轨迹、亚里士多德子群表示传感器外参，通过群结构直接耦合运动与时间偏移，避免单独参数化连续时间轨迹。  
 ◆ 构建twist驱动和IMU驱动的运动先验，使框架适用于不同运动观测条件。  
@@ -9332,12 +9355,33 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (426篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (431篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-10</td><td>Persistent Metric-Semantic Maritime Scene Memory from Open-Vocabulary 3D Scene Graphs<br><a href='http://arxiv.org/pdf/2611.13903'>论文</a></td><td>本文研究室外开放词汇3D场景图向海事环境的迁移，发现零样本方法对多数有几何支持的目标与真值一致，但存在明显物理实体碎片化，且陆地高层假设难以刻画海事空间组织。
+◆提出保留底层建图并后处理累积证据的海事适配流程，先做度量-语义合并，再用几何约束的多视角VLM推理将碎片协调为物理实体，并按观测把实体组织为局部地点。
+◆利用地图先验与船载水面和结构观测构建海事宏观区域，并将其与局部地点关联，形成对象/地点身份与空间抽象。
+◆实验表明该表示比基线和仅几何-语义合并更能降低实体碎片化，支持重复海事航行中固定局部地点的对应，并提升审核查询上的上下文检索。
+这些贡献共同将室外开放词汇地图转化为持久的海事场景记忆。</td></tr>
+<tr><td>2026-11-10</td><td>Ego Guidance: Enhancing Robot Policy Learning with Action-Free Human Egocentric Videos<br><a href='http://arxiv.org/pdf/2611.13685'>论文</a></td><td>本文研究如何用无动作监督的人类第一视角视频提升机器人策略学习，并基于预训练VLM提出SPAR。SPAR是一种MoT架构，让未来视觉状态预测与动作预测共享表征，同时提供独立且互补的学习信号。
+◆ 将无动作人类第一视角视频引入机器人策略学习，并验证其对分布外任务的增益。
+◆ 提出SPAR，通过未来视觉预测与动作预测的共享预测增强表征学习。
+◆ 发现从第一视角视频学到的表征可随视频数据规模扩大而持续受益。
+◆ 分析目标函数选择与数据整理策略，为可扩展利用无动作视频提供洞见。</td></tr>
+<tr><td>2026-11-10</td><td>A computational framework for understanding embodied plans<br><a href='http://arxiv.org/pdf/2611.13669'>论文</a></td><td>GenEA提出一种能推理多步骤、长时程具身计划的新型智能体表示，为理解人类基于行动推断目标与计划提供了计算框架。
+◆ 构建多层状态空间，耦合关节体的粗粒度生物力学与邻近物体交互，并把机器人任务与运动规划框架扩展为仿真驱动的直觉物理。
+◆ 将状态空间嵌入生成模型，形成目标与具身计划的联合概率分布，并通过该分布的简单变换复现人类具身计划推理。
+◆ 在物体操作和导航等差异显著的任务及多项行为指标上，GenEA稳定优于强启发式、标准任务与运动规划和先进视觉语言模型。
+GenEA为人类推理与社会认知架构提供新视角，并主张面向人机顺畅交互的具身AI应采用类似GenEA的生成式行动计划模型。</td></tr>
+<tr><td>2026-11-09</td><td>Robo-MLT: Dual-System Robotic Manipulation for Long-Horizon Medical Laboratory Tasks<br><a href='http://arxiv.org/pdf/2611.13039'>论文</a></td><td>论文提出Robo-MLT双系统框架，将显式工作流监控与学习式动作生成耦合，以提升长时程医疗实验室任务在流程顺序、阶段歧义和人工干预后的可靠性。  
+◆ 创新性地构建流程监控与动作生成双系统架构，由视觉语言规划器根据实验协议和初始场景生成有序原子技能序列。  
+◆ 设计多帧执行监控器，判断当前技能已完成或不可行，并据此推进流程或触发重规划，避免混淆相似阶段和停滞。  
+◆ 采用技能条件视觉—语言—动作策略生成操作轨迹，并通过异步运行时与监控器协调，实现监控和执行的解耦运行。  
+实验在血气分析和血样试管分拣中取得82%和70%成功率，分别比π0.5高30和22个百分点。  
+结果表明，显式工作流监控使长时程实验室操作更可靠，并能在操作员移除当前样本后修订剩余计划、继续处理其他样本。</td></tr>
 <tr><td>2026-11-09</td><td>DeltaForge: A Post-hoc Mixture-of-Experts VLA for Multi-Domain Autonomous Driving<br><a href='http://arxiv.org/pdf/2611.11856'>论文</a></td><td>DeltaForge提出首个面向自动驾驶的事后混合专家VLA框架，仅用各域模型权重和小型代理集即可将N个独立微调的分域模型整合为单一多域模型。
 ◆利用同源基础模型微调更新间的共享结构，联合SVD将各权重更新分解为共享部分与微小域特定部分，使路由器只需处理域特定小分量，从而显著降低路由成本。
 ◆设计分别面向VLM推理专家和流匹配动力学专家的两个协作式clip级盲路由器，并基于代理数据集的软标签进行训练。
@@ -9349,6 +9393,17 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆采用失同步训练，让动作头在训练阶段暴露于部署时遇到的语义陈旧性。
 ◆引入自适应时间聚合器，在可变推理延迟下对齐重叠动作块。
 实验表明，DASH在异步RoboTwin基准中从0.8B到8B骨干均保持20Hz控制率，且成功率更高；真实人形灵巧手抓放任务也明显优于同步流水线。</td></tr>
+<tr><td>2026-11-09</td><td>Seeing What Execution Needs: Benchmarking Task-Conditioned Actionable Spatial Belief for Manipulation<br><a href='http://arxiv.org/pdf/2611.09794'>论文</a></td><td>本文提出Seeing What Matters基准，将操作中的空间推理重新定义为任务条件下的可操作空间信念，即模型能否获取使当前指令可执行的特定证据。
+◆构建覆盖咖啡台、抽屉柜和微波炉三域的860个冻结案例，扩展为逾11.5万评估回合，并设置闭环可操作性与同物体功能OOD泛化两种协议。
+◆每个案例配对候选RGB视图、操作指令、共享脚本技能和隐藏后置条件，直接评估视图选择策略是否取得指令真正需要的观察。
+◆提供诊断参考管线，维护空间功能信念状态并按缺失证据排序视图；消融功能或指令绑定组件后性能近零。
+实验显示参考管线在主要预算下达98.8%闭环和98.9%功能OOD成功，而七个视觉语言模型仅26-43%，且打乱视觉分数使性能骤降至15%/11%。
+这些结果说明操作中的空间信念应按是否获取当前指令所需证据来评估，而非按场景级完整性评估。</td></tr>
+<tr><td>2026-11-08</td><td>PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs<br><a href='http://arxiv.org/pdf/2611.13000'>论文</a></td><td>论文提出PhysMoE，用于具身视觉语言模型中的快速空间定位。针对离散token化破坏空间连续性且解码延迟高、标准点回归难以处理多接触可供性和不规则目标两类瓶颈，作者给出三项创新。  
+◆ 共享低层以获取多模态上下文，并按物理模态将上层路由到空间像素专家和语言文本专家，从而消除梯度干扰。  
+◆ 通过复用视觉编码器学习的位置嵌入，将每个坐标编码为单token，注入2D空间先验并原生对齐坐标与视觉特征。  
+◆ 对指向任务引入可微Signed Distance Field监督，无需昂贵掩码解码器即可适应可供性和不规则几何。  
+相比基模型，PhysMoE在9个坐标定位基准上平均提升15.7%、吞吐加速8.31倍，并在11个文本具身基准上保持多模态理解与推理能力。</td></tr>
 <tr><td>2026-11-08</td><td>HINT-VLM: Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model<br><a href='http://arxiv.org/pdf/2611.11665'>论文</a></td><td>论文面向人形机器人在户外崎岖杂乱地形中的可移动障碍物导航问题，提出HINT-VLM混合规划框架，将视觉语言模型的语义先验与机器人本体交互数据相结合。  
 ◆ 首次将NAMO问题拓展到崎岖地形，要求机器人联合推理地形可通行性与物体可移动性。  
 ◆ 利用高斯过程残差模型校正VLM给出的可移动性先验，形成基于本体的概率化可移动性估计。  
@@ -9373,12 +9428,6 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆在三类VLM和两个跨城基准的六种主表设置中取得最低跨城轨迹误差差距，同时可训练参数减少50-60%、推理延迟降低8.4-10.9 ms。  
 这表明显式定位并结构化修复优于统一MMD适配。</td></tr>
 <tr><td>2026-11-07</td><td>CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments<br><a href='http://arxiv.org/pdf/2611.10366'>论文</a> | <a href='https://github.com/practice-lab-ucla/CPnav'>代码</a></td><td>论文提出CPNav，一种面向未见环境中物体目标搜索的无地图视觉语言导航框架，核心是将碰撞感知规划与统计校准的VLM动作评分相结合。方法从RGB-D输入构建可导航地图、生成无碰撞运动基元，并查询两个VLM分别进行目标检测和动作评分。◆提出碰撞感知规划与校准VLM评分融合的无地图物体目标导航框架。◆利用共形预测对VLM动作分数进行离线校准，且模型无关，可包装任意VLM策略并提供用户指定风险下的有限样本保证。◆设计带回溯的树状探索过程获取oracle动作，并在在线阶段记录备选动作以支持回溯。实验表明，CPNav在Habitat仿真和真实机器人部署中均优于未校准基线，显著提升成功率和SPL。</td></tr>
-<tr><td>2026-11-06</td><td>Seeing What Matters: Benchmarking Task-Conditioned Actionable Spatial Belief for Manipulation<br><a href='http://arxiv.org/pdf/2611.09794'>论文</a></td><td>本文提出Seeing What Matters基准，将操作中的空间推理重新定义为任务条件下的可操作空间信念，即模型能否获取使当前指令可执行的特定证据。
-◆构建覆盖咖啡台、抽屉柜和微波炉三域的860个冻结案例，扩展为逾11.5万评估回合，并设置闭环可操作性与同物体功能OOD泛化两种协议。
-◆每个案例配对候选RGB视图、操作指令、共享脚本技能和隐藏后置条件，直接评估视图选择策略是否取得指令真正需要的观察。
-◆提供诊断参考管线，维护空间功能信念状态并按缺失证据排序视图；消融功能或指令绑定组件后性能近零。
-实验显示参考管线在主要预算下达98.8%闭环和98.9%功能OOD成功，而七个视觉语言模型仅26-43%，且打乱视觉分数使性能骤降至15%/11%。
-这些结果说明操作中的空间信念应按是否获取当前指令所需证据来评估，而非按场景级完整性评估。</td></tr>
 <tr><td>2026-11-06</td><td>PRISM: Primitive Routing via In-context Skill Mixing for Retentive VLA Adaptation<br><a href='http://arxiv.org/pdf/2611.08917'>论文</a></td><td>◆论文发现不同技能的低秩更新占据可区分低维子空间，复合任务LoRA约一半Frobenius能量集中其中，为参数级技能原语提供几何依据。
 ◆提出PRISM将可复用技能存为原语库中的专用低秩动作专家适配器，并加入技能特定低秩残差，推理时由逐chunk的VLM条件路由器混合调用。
 ◆设计路由器读取前缀表示以跟踪任务阶段，并由确定性的任务条件、动作导出oracle生成逐chunk标签监督。
@@ -11808,12 +11857,18 @@ G0.5在7个独立测试场景中均达到SOTA,包括真实机器人微调(76.7% 
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (59篇)</h2>
+<h2 id='robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (60篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-10</td><td>HiPFuse: Real-Time LiDAR Semantic Segmentation for Robotic Perception on Edge Devices<br><a href='http://arxiv.org/pdf/2611.14025'>论文</a> | <a href='https://github.com/haiyang2022/HiPFuse'>代码</a></td><td>本文提出HiPFuse，一种面向边缘设备机器人实时感知的点-BEV融合LiDAR语义分割框架，在单帧扫描中兼顾点级细节与二维空间上下文。
+◆ 设计跨水平尺度的点与高度划分BEV特征交换机制，减少BEV列内不同标签表面混合。
+◆ 采用固定高度分配保留独立垂直聚合组，并用同一3D单元目标对初始BEV特征进行辅助监督。
+◆ 引入双尺度BEV上下文模块，从更粗网格获取更广空间上下文。
+在SemanticKITTI和MCD上分别达到63.7%和62.5% mIoU，Jetson AGX Orin上达14.2和22.4 FPS，超过10 Hz扫描率，并验证室内适用性。
+仅替换固定机器人系统中的基线语义前端，即可使两个室外序列ATE RMSE平均降低10.6%，SemanticKITTI闭环召回提升8.7个百分点，语义地图道路标注更连续。</td></tr>
 <tr><td>2026-11-06</td><td>ATLAS: A Multi-Procedure Benchmark and Context-Aware Model for Surgical Anatomy Segmentation<br><a href='http://arxiv.org/pdf/2611.10182'>论文</a> | <a href='https://github.com/TimJaspers0801/ATLAS'>代码</a></td><td>本文针对微创手术解剖识别受限于小型单术式数据集和自然场景分割方法的问题，提出跨术式数据集与上下文感知视频分割模型。
 ◆ 构建ATLAS-120k数据集：含100段手术视频、121,018帧、14种腹腔镜与机器人辅助术式及41类，标注流程融合人工标注、跟踪传播和外科医生审核。
 ◆ 提出ATLAS模型：基于域内基础模型嵌入，加入术式与手术阶段上下文查询，并用帧间查询传播形成短期记忆。
@@ -12306,12 +12361,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出一种基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流程，并在100地点Nordland数据集上用15个独立训练网络评估其性能。
-◆ 设计闭式、确定性的张量神经元分配流程，较标准argmax显著提升R@100P，并单独测量了其与连续时间模型实现差异带来的增益。
-◆ 证明每次查询后进行状态重置可独立改善R@100P，且不受神经元分配方式影响。
-◆ 采用速度补偿的k帧滑动窗口聚合，在k=5的恒定速度场景下达到100.00% R@100P，仅增加0.20 ms延迟。
-总体表明推理阶段设计决策对STDP-SNN-VPR的召回精度具有重要影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立于检索模型的后检索验证框架，用于提升真实部署中匹配判定的可靠性。◆将视觉语言模型引入VPR后检索验证，通过联合推理查询图像与候选图像进行实例级匹配判断。◆该方法无需架构相关置信度、数据集相关阈值或部署环境先验，可作为独立审计模块使用。◆在六个基准、五种先进VPR方法和四种VLM上系统评估，验证其跨方法、跨模型的有效性。结果显示recall@1平均提升13.6%，误接受率降至12%，同时保持精度95%以上和覆盖率75%以上。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP脉冲神经网络视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估其闭环检测性能。核心工作围绕推理阶段三个设计决策展开，并考察其对R@100P的影响。
+◆ 采用闭式、确定性的张量流水线完成神经元分配，较标准argmax显著提升R@100P，并单独度量了与既往连续时间模型实现差异带来的贡献。
+◆ 证明每次查询后执行状态重置可在不同神经元分配方式下独立改善R@100P。
+◆ 提出速度补偿的滑动窗口聚合，对连续k帧进行融合，在恒定速度遍历下k=5时达到R@100P=100.00%，仅增加0.20毫秒延迟。
+◆ 通过孤立消融揭示STDP-SNN-VPR推理阶段设计决策对召回率-精度性能的显著影响，同时指出各机制贡献与实现差异尚未完全解耦，需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立于检索器的后检索验证框架，利用视觉语言模型联合推理查询与候选图像以判断匹配真伪。该方法在实例层面完成验证，不依赖特定架构的置信度、数据集相关阈值或部署环境先验知识。
+◆提出独立后检索审计范式，将视觉语言模型引入VPR匹配验证，实现检索与验证解耦。
+◆实现无需阈值调优和架构特定置信度的实例级真假匹配判别，提升环境变化下的部署可靠性。
+◆构建跨6个数据集、5种VPR方法和4种VLM的系统评估，验证审计框架的通用性与有效性。
+实验表明，该方法平均提升Recall@1达13.6%，将误接受率降至12%，并在保持精度高于95%、覆盖率高于75%的同时提升召回。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12380,4 +12439,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.10
+> 更新于: 2026.11.11
