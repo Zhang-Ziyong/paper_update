@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.11)
+# 历史论文归档 (2026.11.12)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -106,12 +106,12 @@ MHAC在十视频留出集将Average Jaccard较仅位置基线提升0.1394，并�
 ◆ 核心创新是把校正质量、置信度排序和递归污染风险拆成可独立审计的环节，而非直接放行校正结果。
 ◆ 通过零注入检查、求解器分歧AUROC及最终系统角色实验，给出校正收益与风险不匹配的反例和边界证据。
 实验显示单帧Canny在温和档有害，多帧虽改善严重档旋转2.52度却使平移变差0.177米且联合误差改善为负，风险覆盖操作点未获验证；15日志中保守策略不接纳候选而等同Raw，Always-correct反而增大轨迹误差。因此论文贡献是建立可审计分离的思路并揭示不可直接部署，尚未证明校准门、正里程计或SLAM收益、地图一致性和闭环安全。</td></tr>
-<tr><td>2026-11-03</td><td>EndoS3:Endoscopic Semantic Splatting SLAM<br><a href='http://arxiv.org/pdf/2611.04358'>论文</a></td><td>针对内窥镜语义SLAM需并行完成位姿跟踪、可变形重建和语义建图且评测数据稀缺的问题，论文提出基于高斯泼溅的EndoS3框架，用实例掩码统一指导三项任务。
-◆提出实例级运动分解模块，通过补偿相机运动后的残差流区分静态与动态实例，并考虑流噪声和相邻实例运动比较。
-◆设计实例感知变形建模，相机对静态高斯跟踪，每个动态实例拥有独立控制节点和变形网络。
-◆提出语义节点分配模块，按实例大小和非刚性在实例间重新分配固定节点预算。
-◆构建CRCD++离体胆囊切除数据集，提供RGB-D帧、相机位姿和实例标注，支持完整语义SLAM评测。
-在CRCD++和SemSup上，EndoS3在跟踪、重建和语义建图上均优于现有通用及手术语义SLAM方法，表明语义感知的运动与变形建模对手术语义SLAM至关重要。</td></tr>
+<tr><td>2026-11-03</td><td>EndoS3:Endoscopic Semantic Splatting SLAM<br><a href='http://arxiv.org/pdf/2611.04358'>论文</a></td><td>EndoS3提出一种基于高斯泼溅的语义SLAM框架，用实例掩码统一引导内窥镜场景的相机跟踪、可变形重建与语义建图。
+◆ 设计实例级运动分解模块，在补偿相机运动后依据残差光流并考虑流噪声与邻域实例运动比较，区分静态和动态实例。
+◆ 采用静态高斯进行相机跟踪，并为每个动态实例构建带独立控制节点和变形网络的实例感知warp field。
+◆ 提出语义节点分配模块，按实例尺寸和非刚性程度在固定节点预算下动态重分配建模资源。
+◆ 构建CRCD++离体胆囊切除数据集，提供RGB-D帧、相机位姿和实例标注，支持完整语义SLAM评估。
+实验表明EndoS3在CRCD++和SemSup上的跟踪、重建与语义建图均优于现有通用及手术语义SLAM方法，并验证语义感知运动与变形建模的关键作用。</td></tr>
 <tr><td>2026-11-02</td><td>CoReMatch: Recurrent Continuous Coordinate Refinement for Real-Time Robotic Feature Matching<br><a href='http://arxiv.org/pdf/2611.03932'>论文</a></td><td>论文针对现有半稠密匹配器在固定网格上预测置信度、对应点受限于预定义位置且高分辨率网格成本高的问题，提出CoReMatch实时机器人特征匹配框架。其核心贡献是直接在连续坐标空间中迭代细化对应关系，而非预测离散置信图，从而逐步提升匹配定位精度。
 ◆ 创新性地采用循环连续坐标细化范式，使对应点能够摆脱固定网格限制并在连续空间中优化。
 ◆ 在粗阶段使用深度聚合Transformer捕获全局上下文并迭代更新对应坐标，增强全局匹配能力。
@@ -12361,16 +12361,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP脉冲神经网络视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估其闭环检测性能。核心工作围绕推理阶段三个设计决策展开，并考察其对R@100P的影响。
-◆ 采用闭式、确定性的张量流水线完成神经元分配，较标准argmax显著提升R@100P，并单独度量了与既往连续时间模型实现差异带来的贡献。
-◆ 证明每次查询后执行状态重置可在不同神经元分配方式下独立改善R@100P。
-◆ 提出速度补偿的滑动窗口聚合，对连续k帧进行融合，在恒定速度遍历下k=5时达到R@100P=100.00%，仅增加0.20毫秒延迟。
-◆ 通过孤立消融揭示STDP-SNN-VPR推理阶段设计决策对召回率-精度性能的显著影响，同时指出各机制贡献与实现差异尚未完全解耦，需进一步研究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立于检索器的后检索验证框架，利用视觉语言模型联合推理查询与候选图像以判断匹配真伪。该方法在实例层面完成验证，不依赖特定架构的置信度、数据集相关阈值或部署环境先验知识。
-◆提出独立后检索审计范式，将视觉语言模型引入VPR匹配验证，实现检索与验证解耦。
-◆实现无需阈值调优和架构特定置信度的实例级真假匹配判别，提升环境变化下的部署可靠性。
-◆构建跨6个数据集、5种VPR方法和4种VLM的系统评估，验证审计框架的通用性与有效性。
-实验表明，该方法平均提升Recall@1达13.6%，将误接受率降至12%，并在保持精度高于95%、覆盖率高于75%的同时提升召回。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出一种基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估推理阶段设计决策对R@100P的影响。
+◆ 采用闭式、确定性的张量流程完成神经元分配，较标准argmax显著提高R@100P，并单独衡量了其中来自连续时间模型实现差异的增益。
+◆ 每次查询后进行状态重置可独立改善R@100P，且不依赖于神经元分配方式。
+◆ 对连续k帧采用速度补偿滑动窗口聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+总体而言，论文揭示了STDP-SNN-VPR推理阶段设计对召回率-精度性能的重要作用，但各机制与实现差异的独立贡献仍未完全解耦，需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文提出一种独立的检索后验证框架“视觉位置识别审计”，利用视觉语言模型联合推理查询图像与候选图像，对VPR匹配进行实例级复核。  
+◆无需架构特定置信度、数据集依赖阈值或部署环境先验，即可独立审计检索结果。  
+◆将VLM作为独立审计器嵌入VPR流程，提升环境变化下匹配验证的可靠性并降低假闭环风险。  
+◆在六个基准数据集、五种先进VPR方法和四种VLM上验证，recall@1平均提升13.6%，误接受率降至12%，精度保持95%以上、覆盖率达75%以上。  
+该工作面向安全关键机器人部署，为VPR提供不依赖地面真值的后检索审计手段，增强长期自主导航的鲁棒性。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12439,4 +12439,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.11
+> 更新于: 2026.11.12
