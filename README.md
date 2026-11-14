@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.11.13)
+# 计算机视觉领域最新论文 (2026.11.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -721,8 +721,8 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5370</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4875</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5372</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4876</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2491</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1666</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1630</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
@@ -732,7 +732,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1140</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1114</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>955</td><td>An efficient and consistent bundle adjustment for </td></tr>
-<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>819</td><td>This repository provides implementation of an incr</td></tr>
+<tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>820</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>786</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
 <tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>752</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>748</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
@@ -747,7 +747,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>549</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>515</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>482</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>469</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>470</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>376</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>350</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>282</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
@@ -777,7 +777,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1370</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1099</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1063</td><td>A simple method for finding the extrinsic calibrat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>887</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>888</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>715</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>674</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>671</td><td>Coverage planning in general polygons with holes.</td></tr>
@@ -832,4 +832,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.11.13
+> 更新于: 2026.11.14
