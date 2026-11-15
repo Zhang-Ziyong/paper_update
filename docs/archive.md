@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.14)
+# 历史论文归档 (2026.11.15)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -108,11 +108,12 @@ MHAC在十视频留出集将Average Jaccard较仅位置基线提升0.1394，并�
 ◆由该对应构造跨采集时刻的重投影因子，并与点云配准、视觉特征跟踪及各传感器IMU约束放入同一因子图联合优化。
 在M3DGR六个序列上，无外参时平均ATE RMSE为0.45米，且在最高0.5秒时间同步误差下精度退化很小。
 将LiDAR和相机分别安装在不同机器人上的实验表明，该方法还能联合估计独立运动传感器的轨迹。</td></tr>
-<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文针对VGGT类前馈几何基础模型在单目SLAM中子图独立重建导致尺度漂移与跨子图回环测量不一致的问题，扩展VGGT-SLAM 2.0并提出固定根尺度锚定与短序列辅助的直接回环连接。创新点如下：
-◆ 提出固定根尺度锚定：SALAD在初始子图与每个合格新子图间选图像对，联合VGGT推理利用隐式语义几何线索仅提供尺度锚，同时保留原重叠链。
-◆ 提出短序列辅助的一致性校验与平移尺度对齐，用于回环候选验证，减少视觉重叠但几何不一致的误接受。
-◆ 每个接受候选直接在已有中心帧节点间贡献一个鲁棒Sim(3)因子，无需辅助回环子图，实现直接回环连接。
-实验在17个序列上将9个TUM序列平均Sim(3) ATE从0.1018降至0.0451 m，且锚定在七个无回环模块消融中均带来提升；Clio场景显示直接连接优于辅助子图流程，候选审计进一步揭示短序列校验可拒绝额外误匹配。</td></tr>
+<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文在VGGT-SLAM 2.0上引入固定根尺度锚定与短序列辅助的直接回环连接，以缓解子图尺度漂移和跨子图测量不一致。
+◆提出基于SALAD选帧与联合VGGT隐式语义几何推理的仅尺度锚定，在保留原重叠链的同时固定根尺度。
+◆设计短序列辅助的一致性检查与平移尺度对齐，用于验证并连接回环候选。
+◆将每个接受候选转化为现有中心帧节点间的鲁棒Sim(3)因子，无需辅助回环子图。
+在17个序列上，TUM九序列平均Sim(3) ATE由0.1018降至0.0451米，且尺度锚定改善全部七个无回环消融。
+Clio三场景固定回环比较表明直接连接优于测试的辅助子图流程，候选审计还显示短序列检查能额外拒绝视觉重叠对，从而区分了尺度锚定、回环连接选择与候选验证的贡献和局限。</td></tr>
 <tr><td>2026-11-03</td><td>Auditing Targetless Camera-LiDAR Extrinsic Correction before Recursive Use<br><a href='http://arxiv.org/pdf/2611.04397'>论文</a></td><td>本文研究无目标相机-LiDAR外参校正能否在递归使用前，分别审计校正质量、置信度排序和递归风险后再被下游接纳。作者提出log-disjoint协议，在Argoverse 2合成外参漂移上评估各阶段，并将跨数据集与里程计实验限定为有界诊断。
 ◆ 核心创新是把校正质量、置信度排序和递归污染风险拆成可独立审计的环节，而非直接放行校正结果。
 ◆ 通过零注入检查、求解器分歧AUROC及最终系统角色实验，给出校正收益与风险不匹配的反例和边界证据。
@@ -9471,12 +9472,11 @@ GenEA为人类推理与社会认知架构提供新视角，并主张面向人机
 ◆ 利用高斯过程残差模型校正VLM给出的可移动性先验，形成基于本体的概率化可移动性估计。  
 ◆ 将上述概率估计嵌入层次化不确定性感知规划，使机器人能够预测性规划并安全高效地联合利用移动与操作能力。  
 该方法代表了通过预测性可移动性推理和概率化VLM集成解决崎岖地形NAMO的首次尝试。</td></tr>
-<tr><td>2026-11-08</td><td>MOSU2: Long-range Navigation System with Multi-modal Scene Understanding<br><a href='http://arxiv.org/pdf/2611.11148'>论文</a> | <a href='https://jinggm.github.io/mosu2/'>代码</a></td><td>MOSU2提出一种面向公共室外长距离导航的多模态场景理解系统，核心是以按需检索证据的两阶段轨迹选择替代逐步全量感知。
-◆第一阶段通过上下文推理判断交互是否未解决、何时需要补充证据以及应检索什么。
-◆仅当交互仍不确定时触发第二阶段，检索几何与动态信息并与场景上下文对齐，以支持通行、让行或绕行决策。
-◆系统结合GPS路线规划，并用多模态可通行性分析过滤候选轨迹后再选择轨迹执行。
-◆真实实验覆盖停止手势、施工区、人行横道及人车混行道路，验证了系统有效性。
-◆相较单图像前作，平均导航成功率由61.8%升至94.2%，条件检测准确率由72.2%升至91.4%，平均决策延迟约为2.2倍。</td></tr>
+<tr><td>2026-11-08</td><td>MOSU2: Long-range Navigation System with Multi-modal Scene Understanding<br><a href='http://arxiv.org/pdf/2611.11148'>论文</a> | <a href='https://jinggm.github.io/mosu2/'>代码</a></td><td>MOSU2是面向公共室外长距离导航的多模态场景理解系统，核心是在GPS路线规划基础上通过两阶段轨迹选择提升复杂动态场景中的通行决策能力。
+◆提出按需触发的两阶段轨迹选择机制，第一阶段用上下文推理判断交互是否未解决以及需要补充哪些证据。
+◆仅在交互仍未解决时触发第二阶段，检索几何与动态信息并与场景上下文对齐，从而兼顾实时性与开放性场景理解。
+◆将多模态可通行性分析用于候选轨迹过滤，再选择最终轨迹驱动机器人，延续并扩展MOSU的路线跟随框架。
+◆在真实场景的停止手势、施工区、人行横道及人车混行道路中验证，导航成功率由61.8%升至94.2%，条件检测准确率由72.2%升至91.4%，代价约为2.2倍平均决策延迟。</td></tr>
 <tr><td>2026-11-08</td><td>SoftPAT3D: Physics-Augmented Text-to-3D Scene Generation with Deformables<br><a href='http://arxiv.org/pdf/2611.11087'>论文</a></td><td>SoftPAT3D提出了一个面向文本到3D场景生成的物理增强框架，首次将布料、毛绒玩具和绳索等可变形物体生成为物理有效、可直接仿真的场景实体，并保证其与家具、其他物体及自身无穿插接触。◆针对现有流程仅支持刚体且生成网格几何无效、自交、无静息形状和材料模型的问题，SoftPAT3D从物体制造逻辑构建静息形状，并通过材料库赋予可优化弹性参数。◆它将遮挡支撑区域重建为水密碰撞网格，把物体从支撑部位上方的可优化位置释放，在统一接触模型下驱动整个场景达到静态平衡，并用几何检查和视觉语言模型验证完成度。◆当场景不符合提示时，方法用放置网格搜索纠错，并利用同一接触能量可微仿真的伴随方法实现多物体联合放置及材料参数恢复与优化。◆该框架支持多体场景单次仿真平衡，也可仅由文本提示运行，在全部65个提示上均未产生不良穿插，并直接支持场景编辑和机器人操作。</td></tr>
 <tr><td>2026-11-07</td><td>Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models<br><a href='http://arxiv.org/pdf/2611.10819'>论文</a></td><td>论文针对多智能体交通环境中协同感知资源消耗大、难以规模化的问题，提出一种由视觉语言模型驱动的智能体框架，仅在安全关键场景和关键遮挡对象上选择性执行盲区推理与对话式协同感知。  
 ◆ 设计混合模型架构，融合传统目标检测、视觉语言推理和物理几何模块，以稳定感知、识别关键遮挡并对齐真实可见性约束。  
@@ -12423,16 +12423,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>论文提出基于PyTorch与snnTorch的离散张量原生STDP-SNN视觉位置识别流程，并在Nordland 100-place数据集上用15个独立训练网络评估其推理阶段设计决策。
-◆ 采用闭式确定性张量流程完成神经元分配，相比标准argmax显著提升R@100P，并单独测量了实现差异带来的部分增益。
-◆ 发现每次查询后执行状态重置可稳定改善R@100P，且该收益不依赖神经元分配方式。
-◆ 提出速度补偿滑动窗口聚合，在k=5时对恒定速度遍历达到R@100P=100.00%，仅增加0.20 ms延迟。
-这些结果系统揭示了神经元分配、状态重置与多帧聚合对STDP-SNN-VPR召回精度的重要影响。
-但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对VPR部署中匹配阈值依赖标注数据、环境变化下不可靠且误接受闭环会破坏轨迹与地图的问题，提出独立的事后验证框架Visual Place Recognition Auditing。该框架利用视觉语言模型对查询与候选图像联合推理，在检索后进行实例级匹配验证，且无需架构相关置信度、数据集相关阈值或部署环境先验知识。作者在六个基准数据集、五种先进VPR方法和四种VLM上评估，结果显示recall@1平均提升13.6%，误接受率降至12%，精确率保持95%以上，覆盖率超过75%。
-◆ 提出检索后独立审计的VPR验证范式，将VLM联合视觉语言推理用于匹配核验。
-◆ 实现无需架构置信度、数据集阈值和环境先验的实例级验证，增强跨环境部署可靠性。
-◆ 在多VPR方法与多VLM上验证，显著提升召回并降低误接受，同时保持高精确率与覆盖率。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>论文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN-VPR实现，并在100地点Nordland数据集上用15个独立训练网络评估推理阶段设计决策的影响。
+◆ 提出闭式、确定性的张量流水线完成神经元分配，其R@100P显著高于标准argmax，并独立测量了与既有连续时间模型之间的实现差异。
+◆ 通过隔离消融证明，每次查询后执行状态重置可在不同神经元分配方式下均提升R@100P。
+◆ 采用速度补偿的k帧滑动窗口聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+这些发现表明推理阶段设计对STDP-SNN-VPR召回精度具有重要影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立的检索后验证框架，利用视觉语言模型联合推理查询图像与候选图像，以提升真实部署中的匹配可靠性。
+◆ 无需依赖特定架构置信度、数据集相关阈值或部署环境先验知识，即可实现实例级匹配验证。
+◆ 将视觉语言模型引入检索后审计，通过联合视觉语言推理区分真实回环与误匹配，缓解环境变化下的阈值脆弱性。
+◆ 为安全关键机器人提供独立于VPR模型的验证层，在保持高精度的同时控制误接受率与覆盖范围。
+在六个基准数据集、五种先进VPR方法和四种视觉语言模型上评估，平均提升Recall@1达13.6%，误接受率降至12%，精度保持95%以上、覆盖率保持75%以上。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12501,4 +12501,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.14
+> 更新于: 2026.11.15
