@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.15)
+# 历史论文归档 (2026.11.16)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -6,14 +6,14 @@
 <summary>分类目录</summary>
 <ol>
 <li><a href='#slam'>SLAM (352篇)</a></li>
-<li><a href='#sfm'>SFM (157篇)</a></li>
+<li><a href='#sfm'>SFM (158篇)</a></li>
 <li><a href='#image-matching'>Image Matching (71篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
 <li><a href='#sensor-calibration'>Sensor Calibration (123篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (437篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (442篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (60篇)</a></li>
 <li><a href='#robot-vpr'>Robot VPR (25篇)</a></li>
 </ol>
@@ -108,12 +108,11 @@ MHAC在十视频留出集将Average Jaccard较仅位置基线提升0.1394，并�
 ◆由该对应构造跨采集时刻的重投影因子，并与点云配准、视觉特征跟踪及各传感器IMU约束放入同一因子图联合优化。
 在M3DGR六个序列上，无外参时平均ATE RMSE为0.45米，且在最高0.5秒时间同步误差下精度退化很小。
 将LiDAR和相机分别安装在不同机器人上的实验表明，该方法还能联合估计独立运动传感器的轨迹。</td></tr>
-<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文在VGGT-SLAM 2.0上引入固定根尺度锚定与短序列辅助的直接回环连接，以缓解子图尺度漂移和跨子图测量不一致。
-◆提出基于SALAD选帧与联合VGGT隐式语义几何推理的仅尺度锚定，在保留原重叠链的同时固定根尺度。
-◆设计短序列辅助的一致性检查与平移尺度对齐，用于验证并连接回环候选。
-◆将每个接受候选转化为现有中心帧节点间的鲁棒Sim(3)因子，无需辅助回环子图。
-在17个序列上，TUM九序列平均Sim(3) ATE由0.1018降至0.0451米，且尺度锚定改善全部七个无回环消融。
-Clio三场景固定回环比较表明直接连接优于测试的辅助子图流程，候选审计还显示短序列检查能额外拒绝视觉重叠对，从而区分了尺度锚定、回环连接选择与候选验证的贡献和局限。</td></tr>
+<tr><td>2026-11-04</td><td>Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM<br><a href='http://arxiv.org/pdf/2611.06308'>论文</a></td><td>本文在VGGT-SLAM 2.0基础上提出固定根尺度锚定与短序列辅助的直接回环连接，以缓解独立子图尺度漂移和跨子图测量不一致问题。
+◆ 利用SALAD选取初始子图与每个合格新子图间的图像对，通过联合VGGT推理中的隐语义几何线索提供仅尺度锚定，同时保留原有重叠链。
+◆ 回环阶段用邻近图像对做一致性检查和平移尺度对齐，每个接受候选只在现有中心帧节点间加入一个鲁棒Sim(3)因子，无需辅助回环子图。
+◆ 设计短序列一致性检查以审计回环候选，可额外拒绝视觉重叠但几何不一致的图像对，并区分长程尺度锚定、回环连接选择与候选验证各自的贡献。
+在17个序列上，9个TUM序列平均Sim(3) ATE由0.1018降至0.0451米；全部7个无回环模块消融均因锚定受益，Clio三场景固定回环比较也显示直接连接优于辅助子图流程。</td></tr>
 <tr><td>2026-11-03</td><td>Auditing Targetless Camera-LiDAR Extrinsic Correction before Recursive Use<br><a href='http://arxiv.org/pdf/2611.04397'>论文</a></td><td>本文研究无目标相机-LiDAR外参校正能否在递归使用前，分别审计校正质量、置信度排序和递归风险后再被下游接纳。作者提出log-disjoint协议，在Argoverse 2合成外参漂移上评估各阶段，并将跨数据集与里程计实验限定为有界诊断。
 ◆ 核心创新是把校正质量、置信度排序和递归污染风险拆成可独立审计的环节，而非直接放行校正结果。
 ◆ 通过零注入检查、求解器分歧AUROC及最终系统角色实验，给出校正收益与风险不匹配的反例和边界证据。
@@ -2185,12 +2184,16 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (157篇)</h2>
+<h2 id='sfm'>SFM (158篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-13</td><td>Deep Bundle Adjustment<br><a href='http://arxiv.org/pdf/2611.18256'>论文</a> | <a href='https://cphjsn.github.io/deep-ba/'>代码</a></td><td>DeepBA提出一种图神经网络，将捆绑调整摊销为可学习的图网络，从任意数量视图的2D匹配中恢复相机位姿、内参和场景结构。它不逐场景求解非线性最小二乘，而是基于几何残差迭代精化估计，并能从冷启动收敛。模型采用尺度不变监督（真值旋转、平移方向、内参及重投影自洽），可混合任意度量单位数据集，且与匹配器解耦。
+◆ 将BA摊销为学习式GNN，用几何残差迭代精化位姿、内参和结构，无需逐场景非线性优化与细致初始化。
+◆ 采用尺度不变监督和重投影自洽，支持任意度量单位数据集混合训练，并实现与匹配器解耦。
+◆ 仅2.04M参数即优于已有学习式SfM，在多数位姿指标和重建上领先，中等精度下与经典SfM相当、随视图数增加耗时反超，并接近VGGT等大模型但模块化更强。</td></tr>
 <tr><td>2026-11-09</td><td>Budget-aware Correspondence-driven View Selection for Real-time 3D Perception of Mobile Robots<br><a href='http://arxiv.org/pdf/2611.11809'>论文</a></td><td>本文提出预算感知、对应关系驱动的视图采样算法BCVS，用于移动机器人实时3D感知中的在线图像序列过滤。  
 ◆ 不依赖完整SfM流程或相机位姿估计，仅用纯对应关系评分选择视图，在保持几何稳定性所需重叠的同时优先选择新颖视图。  
 ◆ 根据用户给定预算迭代选取最独特帧并抑制近重复帧，生成紧凑子集以保持连通性并最小化重建损失。  
@@ -9384,12 +9387,35 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (437篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (442篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-13</td><td>Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment<br><a href='http://arxiv.org/pdf/2611.18372'>论文</a></td><td>本文系统综述2022年12月至2026年10月的88项VLA研究，覆盖操作、导航、人形控制、世界动作模型与评测。作者提出贯穿设计、训练、部署的生命周期七轴框架，包括输入与记忆、架构、动作输出、中间预测、预训练数据、后训练和实时执行。基于22个模型的训练数据、参数量、推理速度与硬件分析，文章归纳出数据来源多元化、模型规模两极分化、通用VLA兴起三大趋势。  
+◆提出设计—训练—部署全生命周期七轴统一分析框架，并系统比较22个模型的关键训练与部署指标。  
+◆比较VLA与世界动作模型，揭示部分基准高分模型在物体或相机轻微移动时失效，指出真实鲁棒性缺口。</td></tr>
+<tr><td>2026-11-13</td><td>VLAN: Vision-Language Accessible Navigation<br><a href='http://arxiv.org/pdf/2611.18346'>论文</a> | <a href='https://github.com/InSAI-Lab/VLAN'>代码</a></td><td>VLAN针对现有导航基准以固定有限本体评估可通行性、忽视不同用户与机器人可达性差异的问题，提出面向视觉语言可达性导航的新基准。该基准包含1000个场景、2万条轨迹和16万关键帧，覆盖多样光照、环境、语义与路径几何，并为腿式与轮式智能体（含人形、四足机器人及视障/行动障碍人群）提供本体特定动作与可达性特征。
+◆构建大规模、多场景、多具身用户的可达性导航基准与开放数据。
+◆提供本体特定动作和细粒度可达性特征，并将障碍与可达标签划分为Passable、Bypass、HighRisk和Blocked。
+◆设计目标达成、碰撞感知与可达性对齐指标，同时评估物理安全和用户约束匹配。
+◆基准测试揭示现代视觉语言模型难以跨用户画像一致调整障碍相关性、路径选择和安全标准。</td></tr>
+<tr><td>2026-11-13</td><td>Objectives as Policies: Vision-Language Model Cost Programs for Contact-Rich Manipulation<br><a href='http://arxiv.org/pdf/2611.18298'>论文</a> | <a href='https://zihaolu001.github.io/oap-project/'>代码</a></td><td>本文提出Objectives as Policies（OaP）框架，将预训练视觉语言模型与共享采样型模型预测控制器连接起来。其核心是用可编辑目标程序作为任务表示，把任务分解为多个阶段，并组合成本库中的运行成本、终端成本与阶段完成条件。VLM根据自然语言指令和场景观测，通过real-to-sim数字孪生生成程序，并依据MPC rollout迭代更新后在真实世界部署。
+◆提出可编辑目标程序作为VLM与MPC之间的桥梁，使语义推理能够转化为可执行的物理规划目标。
+◆构建基于real-to-sim数字孪生的VLM-MPC闭环，实现仿真中生成、评估和迭代优化后再迁移真机。
+◆在仿真和真实世界的四个接触丰富桌面操作任务上验证，性能优于强基线。</td></tr>
+<tr><td>2026-11-13</td><td>A Generalizable Approach to Safety-Aware Robotic Behavior Planning with an Explicit Constraint Space<br><a href='http://arxiv.org/pdf/2611.18026'>论文</a></td><td>本文提出一种面向桌面机器人操作的安全感知行为规划框架，核心是以显式约束空间存储可复用的文本安全规则，使安全知识可表示、可选择、可更新。
+◆构建显式约束空间，将任务相关安全规则外化为可复用文本知识，而非仅依赖模型隐式安全能力。
+◆将约束选择从语义相似度检索转化为任务与环境条件化的适用性学习，用轻量查询条件双塔模型为当前场景选取适用约束。
+◆引入多模态安全检查器评估生成的原语计划，重建完整适用约束集并提供纠正性反馈，以处理错误约束选择和未见危险。
+◆利用经校验的检查反馈进行测试时约束适用性适应，并通过LoRA参数高效适应安全检查器，同时将新约束纳入约束空间。
+该框架整合显式安全知识表示、上下文感知约束选择、纠正性安全检查和测试时知识适应，提升了安全行为规划的可泛化性。</td></tr>
+<tr><td>2026-11-12</td><td>Grounding Object-to-Object Hazard Reasoning into 3D Risk Fields for Task-Conditioned Safety<br><a href='http://arxiv.org/pdf/2611.17566'>论文</a></td><td>论文提出基于视觉语言模型的机器人操作安全约束推断框架，将安全从几何约束扩展到任务、环境和物体交互语义。其核心是给VLM一个结构化安全工具，结合RGB-D观测与自然语言指令，先判断任务是否因不可恢复危险而应拒绝，否则识别可预防的物体对危险及需避免的空间关系。
+◆ 提出结构化VLM安全工具，同时支持任务级拒绝判断和物体对危险及空间关系推理。
+◆ 利用开放词汇分割与深度信息将危险物体3D定位，并构建连续3D风险场表示危险区域。
+◆ 将风险场嵌入避障模块，在执行中在线修正标称机器人运动，实现任务条件安全。
+◆ 在仿真和真实世界覆盖可预防危险、应拒绝任务及安全变体进行验证。</td></tr>
 <tr><td>2026-11-12</td><td>From Foundation VLM to Versatile Driving VLM: A Triplet Incremental Training Approach<br><a href='http://arxiv.org/pdf/2611.16727'>论文</a></td><td>论文提出反直觉发现：现成通用VLM已能适应多种驾驶任务，精确度量深度是主要缺失环节，可由车载传感器和深度基础模型补足。为此，作者提出Triplet Incremental Training非侵入式框架，利用自动构建的图像、深度、问答三元组，以统一三流训练将3D几何感知注入通用VLM并保留开放世界能力。
 ◆ 采用不冻结主VLM流、辅助深度流和冻结孪生VLM流的三流协同训练，其中深度流通过显式几何约束让视觉骨干隐式想象3D场景。
 ◆ 使用冻结孪生VLM在logit层进行KL蒸馏，防止驾驶任务适配导致语义漂移，从而保留通用多模态理解能力。
@@ -12423,16 +12449,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
 
 在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>论文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN-VPR实现，并在100地点Nordland数据集上用15个独立训练网络评估推理阶段设计决策的影响。
-◆ 提出闭式、确定性的张量流水线完成神经元分配，其R@100P显著高于标准argmax，并独立测量了与既有连续时间模型之间的实现差异。
-◆ 通过隔离消融证明，每次查询后执行状态重置可在不同神经元分配方式下均提升R@100P。
-◆ 采用速度补偿的k帧滑动窗口聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
-这些发现表明推理阶段设计对STDP-SNN-VPR召回精度具有重要影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
-<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文提出视觉位置识别审计（VPR Auditing），一种独立的检索后验证框架，利用视觉语言模型联合推理查询图像与候选图像，以提升真实部署中的匹配可靠性。
-◆ 无需依赖特定架构置信度、数据集相关阈值或部署环境先验知识，即可实现实例级匹配验证。
-◆ 将视觉语言模型引入检索后审计，通过联合视觉语言推理区分真实回环与误匹配，缓解环境变化下的阈值脆弱性。
-◆ 为安全关键机器人提供独立于VPR模型的验证层，在保持高精度的同时控制误接受率与覆盖范围。
-在六个基准数据集、五种先进VPR方法和四种视觉语言模型上评估，平均提升Recall@1达13.6%，误接受率降至12%，精度保持95%以上、覆盖率保持75%以上。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估，系统考察推理阶段三项设计决策对R@100P的影响。
+◆ 采用闭式确定性张量流水线完成神经元分配，其R@100P显著高于标准argmax，并单独度量了部分增益来自与连续时间模型实现差异的影响。
+◆ 消融表明每次查询后重置神经元状态可独立于神经元分配方式提升R@100P。
+◆ 对连续k帧采用速度补偿滑动窗口聚合，在恒定速度遍历下k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+结果表明推理阶段设计对STDP-SNN-VPR的召回精度具有实质影响，但各机制与实现差异的独立贡献尚未完全解耦，仍需进一步研究。</td></tr>
+<tr><td>2026-07-15</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>论文针对真实部署中VPR匹配阈值依赖标注验证数据、环境变化下不可靠且误闭环会破坏轨迹与地图的问题，提出独立的后检索验证框架Visual Place Recognition Auditing。该框架利用视觉语言模型联合推理查询图像与候选图像，对检索匹配进行实例级审核。
+◆ 以VLM对查询—候选图像进行联合视觉语言推理，实现独立的后检索匹配验证。
+◆ 无需架构特定置信度、数据集相关阈值或部署环境先验知识，即可完成实例级验证。
+◆ 将VPR验证从固定阈值筛选转为可独立部署的语义审核，提升环境变化下的可靠性。
+在六个基准数据集、五种先进VPR方法和四种VLM上评估，平均提升recall@1 13.6%，假接受率降至12%，精度保持95%以上且覆盖率超过75%。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12501,4 +12527,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.15
+> 更新于: 2026.11.16
