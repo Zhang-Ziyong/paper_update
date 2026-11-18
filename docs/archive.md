@@ -1,30 +1,56 @@
-# 历史论文归档 (2026.11.17)
+# 历史论文归档 (2026.11.18)
 
 > 所有历史论文完整归档，按分类展示
 
 <details>
 <summary>分类目录</summary>
 <ol>
-<li><a href='#slam'>SLAM (358篇)</a></li>
-<li><a href='#sfm'>SFM (161篇)</a></li>
-<li><a href='#image-matching'>Image Matching (72篇)</a></li>
+<li><a href='#slam'>SLAM (363篇)</a></li>
+<li><a href='#sfm'>SFM (162篇)</a></li>
+<li><a href='#image-matching'>Image Matching (73篇)</a></li>
 <li><a href='#obstacle-avoidance'>Obstacle Avoidance (192篇)</a></li>
 <li><a href='#navigation'>Navigation (210篇)</a></li>
 <li><a href='#motion-planning'>Motion Planning (313篇)</a></li>
-<li><a href='#sensor-calibration'>Sensor Calibration (125篇)</a></li>
+<li><a href='#sensor-calibration'>Sensor Calibration (126篇)</a></li>
 <li><a href='#vlm'>VLM (20篇)</a></li>
-<li><a href='#robot-vlm'>Robot VLM (449篇)</a></li>
+<li><a href='#robot-vlm'>Robot VLM (453篇)</a></li>
 <li><a href='#robot-visual-semantic-recognition'>Robot Visual Semantic Recognition (60篇)</a></li>
-<li><a href='#robot-vpr'>Robot VPR (25篇)</a></li>
+<li><a href='#robot-vpr'>Robot VPR (26篇)</a></li>
 </ol>
 </details>
 
-<h2 id='slam'>SLAM (358篇)</h2>
+<h2 id='slam'>SLAM (363篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-17</td><td>Pressure Drop: Gravity Vector Estimation from a Distributed Barometric Pressure Sensor Array<br><a href='http://arxiv.org/pdf/2611.23120'>论文</a></td><td>本文提出利用分布式气压高度计阵列直接观测重力向量方向，为移动机器人SLAM中的重力约束提供新思路。  
+◆ 将高度计测量引入重力向量估计，实现对重力方向的直接观测，而非依赖IMU等间接观测。  
+◆ 给出估计噪声的理论分析，并通过大量实验验证，同时评估传感器间距对估计精度的影响。  
+◆ 在准静态场景下实现0.87度中位倾角估计误差，并与基于IMU的先进方法对比，在高动态场景性能相近，在加速度计饱和的特定情况下更优。  
+◆ 将方法集成到ICP算法中，展示其在机器人系统中的潜在应用。  
+实验结果表明该方法可行且具应用潜力。</td></tr>
+<tr><td>2026-11-17</td><td>Technical Report of Mobile Manipulator Robot for Industrial Environments<br><a href='http://arxiv.org/pdf/2611.22852'>论文</a></td><td>本文提出并实现了面向工业环境的@Work移动操作机器人，用于提升重复性或危险作业的效率。
+◆ 采用4轮Mecanum驱动、5自由度机械臂和3D打印夹爪，实现全向移动与物体抓取操作的一体化硬件集成。
+◆ 以ESP32自定义PCB和NVIDIA Jetson Orin NX构建分层电子系统，兼顾实时控制与高层计算处理。
+◆ 融合Hector SLAM、A*路径规划和YOLO实时目标检测，并利用多传感器数据实现鲁棒导航与可靠避障。
+系统在类工业场景中验证了自主导航、物体处理和任务执行能力，体现了有效的软硬件协同集成。</td></tr>
+<tr><td>2026-11-17</td><td>DGV-DLIVO: Degeneracy-Guided Visual Fusion for Direct LiDAR-Inertial-Visual Odometry in Degenerate Tunnel Environments<br><a href='http://arxiv.org/pdf/2611.22385'>论文</a> | <a href='https://github.com/0RayZhang0/DGV-DLIVO'>代码</a></td><td>本文提出DGV-DLIVO，一种面向极端隧道环境的退化引导视觉融合直接LiDAR-惯性-视觉里程计，核心是将LiDAR退化方向作为主动引导信号，而非仅把视觉当作通用互补传感器。
+◆利用LiDAR退化方向主动确定信息量更高的视觉区域，并建立LiDAR锚定的视觉关联。
+◆仅将视觉约束引入缺失的运动子空间，同时自适应抑制同方向不可靠LiDAR信息并保留可靠几何约束。
+◆设计子空间选择性融合机制，实现退化方向引导下的LiDAR、惯性与视觉自适应融合。
+真实水电隧道实验表明，DGV-DLIVO在车载和手持采集下均保持连续、方向一致的隧道轴向运动估计，40m序列进度比达91.4%，显著优于代表性LIO、LIVO和VIO方法并改善纵向恢复与轨迹稳定性。</td></tr>
+<tr><td>2026-11-17</td><td>CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure<br><a href='http://arxiv.org/pdf/2611.22235'>论文</a></td><td>CoSphere-SLAM是首个面向全景相机的多智能体高斯泼溅SLAM框架，面向搜索救援、建筑巡检和仓储自动化中的密集协同建图。它针对全景智能体任意3D朝向下的重叠观测、对称房间中相互一致的假闭环、连续单目尺度漂移及短基线深度噪声等难题。
+◆ 提出球面闭环：在SO(3)上通过快速傅里叶相关对齐球面特征，并以全局Sim(3)一致性拒绝对称假闭环。
+◆ 提出方向性全局优化：求解逐关键帧Sim(3)位姿图并用对数尺度正则，分离光流平移方向与深度幅值以校正尺度漂移。
+◆ 提出全向高斯融合：按关键帧相似度变换高斯，并在最大射线响应处渲染高斯，联合优化位姿与地图。
+室内和跨会话多智能体全景基准实验表明，该方法在单智能体和多智能体方法中取得领先的轨迹精度与渲染质量。</td></tr>
+<tr><td>2026-11-17</td><td>SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping<br><a href='http://arxiv.org/pdf/2611.22047'>论文</a> | <a href='https://github.com/url-kaist/se3-livom-comfort'>代码</a></td><td>SE(3)-LIVOM是IROS 2026 COMFORT挑战赛总冠军方案，面向GrandTour数据集中坍塌建筑、工地和雪地等复杂场景，实现双LiDAR、单相机和IMU的实时里程计与建图。
+◆ 将SE(3)-LIO前端扩展到多LiDAR与相机融合，并引入自适应下采样，使每帧扫描处理时间在场景内外均保持约35 ms。
+◆ 提出在线后端，通过子图上的平面BA和增量位姿图优化来纠正漂移。
+◆ 采用单一配置覆盖全部测试场景，在六个场景上取得平均ATE 1.40 cm，并开源代码。
+整体上，该系统在复杂腿式机器人场景中兼顾了实时性、多传感器鲁棒性和高精度建图。</td></tr>
 <tr><td>2026-11-16</td><td>WinDEX: Metric 3D Hand Motion Reconstruction in the Wild for Dexterous Teleoperation and Policy Learning<br><a href='http://arxiv.org/pdf/2611.21143'>论文</a> | <a href='https://fruitrabbit.github.io/WinDEX/'>代码</a></td><td>WinDEX面向野外低成本、大规模人手操作数据采集与度量三维重建，提出覆盖采集、标注、网络和部署的完整系统。  
 ◆提出几何-时间优化，从野外第一视角双目视频生成度量三维手标注，并结合视觉惯性SLAM实现世界坐标系重建。  
 ◆构建WinDEX-Net端到端鱼眼原生网络，融合标定双目、局部细节和时间上下文，并通过模型辅助标注与重训练形成数据-模型飞轮。  
@@ -2215,12 +2241,17 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sfm'>SFM (161篇)</h2>
+<h2 id='sfm'>SFM (162篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-17</td><td>Refin3R: Geometry-Guided Refinement for Feed-Forward 3D Reconstruction<br><a href='http://arxiv.org/pdf/2611.23051'>论文</a></td><td>Refin3R针对前馈三维重建点图跨视角不一致且精度不足的问题，提出用SfM点精化点图并将SfM几何传播到图像网格。其双分支架构让2D分支借助几何感知骨干特征扩展SfM覆盖，3D分支对所有视图SfM点推理以捕获多视图结构，两分支双向交换信息并联合精化每个视图，输出密集准确点图。
+◆ 以SfM点引导前馈点图精化，并将SfM几何传播到图像网格，而非仅作辅助输入。
+◆ 设计2D-3D双分支架构，分别扩展SfM覆盖范围并推理多视图SfM结构。
+◆ 通过两分支双向信息交换实现逐视图联合精化，生成密集且准确的点图。
+实验表明，Refin3R在ScanNet++、ETH3D、Tanks&amp;Temples及域外人体和手术场景中精度持续领先，且快于最强几何引导基线。</td></tr>
 <tr><td>2026-11-16</td><td>Pointillist Maize: 3D Reconstruction of Field-Grown Maize Using RGB UAV Imagery<br><a href='http://arxiv.org/pdf/2611.20502'>论文</a></td><td>本文评估消费级无人机RGB视频结合SfM与MVS能否重建田间玉米并恢复可识别器官，系统考察飞行轨迹与帧采样对重建质量的影响。
 ◆验证了该流程可恢复叶片、茎、雄穗分枝、果穗、花丝和气生根等田间玉米器官级结构。
 ◆通过等帧对比量化了单轨道与ribbon skirt轨迹在点云集中度、可见空洞和孤立散点之间的取舍。
@@ -3188,12 +3219,19 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='image-matching'>Image Matching (72篇)</h2>
+<h2 id='image-matching'>Image Matching (73篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-17</td><td>Automated open-set multi-view seahorse re-identification from underwater photograph sequences<br><a href='http://arxiv.org/pdf/2610.39857'>论文</a></td><td>论文提出面向水下照片序列的自动化开放集多视角海马重识别方法，并在35914张照片、474只野生海马的数据集上训练与评估。
+◆ 构建大规模野生海马照片序列数据集，并统一处理物种分类、性别判定和开放集重识别任务。
+◆ 将一次观察中的多张照片聚合起来，显著提升物种、性别和重识别性能。
+◆ 物种与性别分类采用DINOv3嵌入的线性探针逐图分类，再对观察内照片的logits取平均。
+◆ 重识别先用微调MiewID描述子检索候选，并用学习到的相关性分数对照片加权，再以ALIKED与LightGlue局部匹配和RANSAC几何校验重排候选。
+◆ 用逻辑模型估计个体是否已在图库，并通过最大后验规则在最佳匹配身份与新个体之间决策。
+观察级物种和性别平衡准确率分别达0.97和0.90；开放集重识别归一化准确率在图库含全部历史观察时为0.90，仅含一次观察时为0.83。</td></tr>
 <tr><td>2026-11-15</td><td>Mock Observations: Morphological Analysis of Galactic Bars in IllustrisTNG Simulations<br><a href='http://arxiv.org/pdf/2611.19884'>论文</a></td><td>论文利用IllustrisTNG的TNG100/TNG50生成匹配SDSS观测条件的合成r波段图像，并以统一的源分割、形态分类和等相椭圆拟合流程比较z~0.1星系棒的统计与性质。结果显示SDSS、TNG100、TNG50全局棒分数约为26.68%、24.96%、13.42%，TNG100在约10^10至10^11.2太阳质量与SDSS较一致但更高质量偏高，TNG50多数质量段偏低。
 ◆构建了从模拟图像、观测条件匹配到统一形态测量的可比框架，系统比较模拟与SDSS的星系棒。
 ◆揭示棒分数差异与核球集中度和盘尺度相关：TNG100高n核球偏少且大质量盘更延展，TNG50高n核球偏多。
@@ -8495,12 +8533,18 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='sensor-calibration'>Sensor Calibration (125篇)</h2>
+<h2 id='sensor-calibration'>Sensor Calibration (126篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-17</td><td>UnrealEvent: Synthetic Dataset Generation and Annotation for Event-Based Vision<br><a href='http://arxiv.org/pdf/2611.23078'>论文</a></td><td>本文提出UnrealEvent，一个基于Unreal Engine 5.5的合成数据集生成与自动标注流水线，用于缓解事件相机目标检测标注数据稀缺问题。
+◆ 将受V2E启发的事件帧生成器与EasySynth语义渲染通道结合，可直接把渲染关卡序列转换为成对事件表示和YOLO格式边界框标注，无需人工标注。
+◆ 基于相邻帧逐像素对数亮度差生成事件，并从正态分布独立采样对比度阈值，以模拟真实传感器制造导致的阈值失配。
+◆ 提供合成数据集，并在eTraM上系统评估YOLOv8在合成训练、零样本真实和真实微调三种设置下的表现。
+实验显示合成域内性能较强，但合成到真实存在明显差距，行人尤为突出。
+小规模真实子集微调可提升真实域性能，剩余差距说明资产多样性和传感器校准的重要性。</td></tr>
 <tr><td>2026-11-16</td><td>SiGMA: Site-Grounded Multi-Modal ISAC Data Generation for Environment-Aware Communications<br><a href='http://arxiv.org/pdf/2611.20665'>论文</a> | <a href='https://github.com/Trans-cending/SiGMA-main'>代码</a></td><td>SiGMA提出面向环境感知通信的站点锚定多模态ISAC数据生成框架，解决新站点数据获取中传感器校准、协同测量和跨模态关联难题。
 ◆融合OpenStreetMap、Overture Maps与程序化3D重建生成地理参考城市场景，并以共享场景几何和时间索引的动作者状态统一多模态数据。
 ◆同步生成RGB图像、LiDAR点云、定位记录、FMCW雷达IQ样本和射线追踪无线信道，实现同一站点与动态场景状态下的跨模态关联。
@@ -8518,11 +8562,11 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 ◆ 训练时随机注入相机几何并逐步移除，使推理阶段无需目标相机标定。
 ◆ 面向互联网视频多样性，融合源视频感知推理、可选演员参考和多镜头适应，识别目标演员并跨镜头跟踪操作过程。
 该系统与模型为跨任务、场景和参与者扩展第一人称操作数据提供了实用基础。</td></tr>
-<tr><td>2026-11-11</td><td>Target-Free Autocalibration of Stereo PIV Camera Systems via Persistent-State Motion Representations<br><a href='http://arxiv.org/pdf/2611.18741'>论文</a></td><td>本文提出一种无靶标立体PIV相机系统自标定方法，可直接从粒子图像序列恢复相机相对位姿，免去插入物理标定靶及设备移动后的重复标定。方法因示踪粒子外观不可区分而匹配运动而非外观，基于CUT3R的循环Transformer以持久状态累积粒子时序运动，并解码各相机光流、回归跨视角双向点对应，再用五点RANSAC求相对位姿；作者构建带真值位姿的合成立体PIV数据集，在标准光流基准和200个真实布局上验证，光流误差低于现有PIV网络，对应优于COTR，位姿精度高于最强检测-匹配流程。
-◆提出无靶标、直接从粒子图像序列完成立体PIV外参自标定的新框架
-◆用持久状态运动表征匹配不可区分粒子，避开外观匹配难题
-◆联合每相机光流解码、跨视角双向对应回归与五点RANSAC位姿求解
-◆建立带真值位姿的合成立体PIV数据集并系统验证合成与真实场景性能...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-11-11</td><td>Target-Free Autocalibration of Stereo PIV Camera Systems via Persistent-State Motion Representations<br><a href='http://arxiv.org/pdf/2611.18741'>论文</a></td><td>本文提出一种无需标定靶标的立体PIV相机系统自标定方法，可直接从粒子图像序列恢复相机相对位姿，免除物理靶标插入流场及设备移动后的重复标定。方法针对示踪粒子外观不可区分的特点，改为匹配运动而非外观：基于CUT3R用循环Transformer的持久状态累积时序运动信息，解码各相机光流，并由跨视角解码器回归双向点对应，最终用五点RANSAC求解相对位姿。
+◆提出持久状态运动表征，将粒子时序运动累积用于无靶标立体PIV外参自标定。
+◆用运动匹配替代外观匹配，解决示踪粒子不可区分条件下的跨视角对应难题。
+◆联合每相机光流解码与跨视角双向点对应回归，并通过五点RANSAC稳健恢复相对位姿。
+◆构建带真值位姿的合成立体PIV数据集，并在标准光流基准和200组真实相机布局上验证，光流、对应和位姿精度优于现有方法。</td></tr>
 <tr><td>2026-11-11</td><td>Embedded Sim-to-Real Visual Servoing: Learned Reaching and Force-Guided Placement<br><a href='http://arxiv.org/pdf/2611.15658'>论文</a></td><td>本文提出面向嵌入式平台的仿真到现实视觉伺服架构，在NVIDIA Jetson AGX Orin上以笛卡尔阻抗控制Franka Research 3，并通过RealSense D435i、YOLO11-seg分割、深度反投影和手眼标定获得机器人坐标系下的度量目标。
 论文比较两类策略：从仿真迁移的紧凑PPO策略用于物体与孔区域到达，以及采用约2 N法向接触和螺旋搜索的力引导笛卡尔放置。
 仿真中两类PPO在1000回合成功率分别为87.2%和83.1%，真实机器人每策略50次试验完成率为70.0%和74.0%，TensorRT感知平均延迟34.55 ms，表明学习自由空间到达结合显式接触校正可行。
@@ -9451,12 +9495,31 @@ CarMaker高保真仿真结果表明,在直道与弯道多种超车场景下,相�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vlm'>Robot VLM (449篇)</h2>
+<h2 id='robot-vlm'>Robot VLM (453篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-17</td><td>Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models<br><a href='http://arxiv.org/pdf/2611.23228'>论文</a></td><td>论文针对混合视觉语言模型在滑动窗口视频推理中，循环层将历史帧压缩为共享状态、过期旧帧通常需重放整个窗口的问题，提出无需训练的Spool框架。其核心是利用循环状态更新对状态仿射且系数依赖输入的性质，把每帧影响表示为可结合组合的状态变换。
+◆缓存逐帧状态变换，并随窗口推进高效组合，从而无需重放骨干网络即可从各循环层状态中移除过期帧。
+◆实现层内精确移除，同时指出类似注意力KV驱逐，过期帧仍可能通过前层缓存输入保留残余影响。
+◆设计专用数据结构和GPU内核，降低变换缓存与组合开销。
+实验在5个开源混合VLM和4个视频推理基准的20项测试中均取得最低p95首token时延，较两个vLLM基线中较快者几何平均降低6.6倍，并平均提升2.3个百分点准确率。</td></tr>
+<tr><td>2026-11-17</td><td>VLM-guided Grounding Expert for Generalised Referring Expression Comprehension<br><a href='http://arxiv.org/pdf/2611.22625'>论文</a></td><td>现有grounding专家对指令变化敏感，生成式VLM难以完整恢复和拒绝缺失目标，两者能力互补。为此提出VGE，将冻结VLM与可训练grounding专家通过层间联合注意力和文本条件实例评分相结合。在三个数据集五个测试划分上平均F1最高，各指令条件差异不超过1.2个百分点；机器人场景下跨变体及无/单/多目标F1最优，且比同VLM基线加速5.3–13.0倍。
+◆通过层间联合注意力和文本条件实例评分，实现冻结VLM与可训练grounding专家的深度耦合。
+◆利用VLM多模态理解指导对象查询细化和候选选择，同时保留grounding专家的直接边界框预测能力。
+◆在机器人场景中显著提升对指令改写、额外上下文及无目标/单目标/多目标的泛化鲁棒性。</td></tr>
+<tr><td>2026-11-17</td><td>CueClash: Frontier Vision-Language Models Judge 3-D Relations Close to the Picture Plane<br><a href='http://arxiv.org/pdf/2611.22180'>论文</a></td><td>论文提出CueClash，用渲染场景将五类3-D关系的图像2-D线索与地面布局分离，并让线索正确与错误各占一半，以检验视觉语言模型是否依赖捷径。
+◆构建可量化“捷径差距”的诊断基准，揭示Claude Opus 5.5、GPT-5.5、Gemini 3.6 Flash在低推理努力下存在+18至+37个百分点的2-D线索偏差。
+◆证明给定地面坐标和关系定义后模型准确率达99%至100%，而像素与相机深度可缩小部分物体差距，定位失败关键在“从图片到布局”的转换。
+◆分析模型俯视地图，发现其多保留深度顺序却压缩深度，且不同模型纠正方式不同，Opus 5.5接近人类观察者的深度校正。
+◆在CV-Bench误导性2-D线索照片上复现准确率下降，并发现开源模型虽将布局信息传入语言模型，但其地图丢失大量信息。</td></tr>
+<tr><td>2026-11-17</td><td>ReLAP: Latent Action Pretraining through Recurrent Video Prediction in JEPA Space<br><a href='http://arxiv.org/pdf/2611.22077'>论文</a></td><td>ReLAP提出一种无动作标注的潜在动作预训练框架，在冻结JEPA表征空间中耦合局部转移学习与循环多步视频预测，以学习紧凑、时间连贯且可迁移的机器人控制表征。
+◆ 用共享逆动力学模型从相邻观测推断连续潜在动作，并让潜世界模型循环预测未来JEPA特征，使后续预测成为下一步上下文，误差经rollout反传以约束早期潜在动作。
+◆ 将所学表征通过冻结逆教师潜在蒸馏和冻结世界模型循环未来特征预测两项互补目标迁移到视觉语言模型，再用动作流匹配适配机器人演示。
+◆ 部署时移除显式潜在动作和世界模型分支，由微调VLM直接预测物理动作，从而降低推理复杂度。
+在仅11M预训练样本和1.06B可训练参数下，ReLAP在LIBERO达97.9%、零样本LIBERO-Plus达70.0%，并在LARY基准的平均回归误差和平均分类准确率上均列第二，验证了循环无动作潜在动作预训练的有效性。</td></tr>
 <tr><td>2026-11-16</td><td>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters<br><a href='http://arxiv.org/pdf/2611.21607'>论文</a></td><td>ScaleVLA将552B参数的DeepSeek-V4.1-Flash前沿VLM与可训练动作DiT连接，并在统一训练设置下系统比较2B至552B的VLM骨干对机器人策略的影响。
 ◆ 构建了前沿规模VLM作为机器人策略表征基础的系统性验证框架，覆盖样本效率、泛化和精细操作三类核心能力。
 ◆ 样本效率上，仅用10条演示达到87.8%成功率，超过2B骨干用50条演示的85.6%。
@@ -9496,11 +9559,12 @@ CARLA实验表明，STA对PPO的碰撞率超过最强基线两倍且攻击尝试
 ◆ 为每个分量学习标量混合系数，以控制保留多少VLA适配信息，并联合优化动作预测与视觉语言能力。
 ◆ 在无需额外训练的前提下合并VLM与VLA参数，使模型同时保持动作预测和视觉语言理解性能。
 实验表明，合并模型在动作预测与视觉语言能力两方面同时表现良好，并持续优于已有参数合并基线。</td></tr>
-<tr><td>2026-11-13</td><td>RescueVLM: Model-Agnostic Vision-Language Framework for Rescue Drone Imagery<br><a href='http://arxiv.org/pdf/2611.18813'>论文</a></td><td>论文针对救援无人机单次任务影像远超指挥员审阅能力、云VLM受GDPR与德国BOS规定限制、专用检测器易老化且重训认证成本高的问题，提出开源、无需训练且模型无关的分诊工具RescueVLM。它基于SketchVLM，将通用开源权重VLM完全本地部署，并可通过下拉菜单切换更新模型，使分诊能力随底层模型升级而提升。其任务知识集中在提示词和输出契约而非训练权重，因此无需微调即可适配。系统支持用一句自然语言查询任务文件夹，返回带逐图理由的排序短名单、可编辑SVG叠加标注和命中GPS地图。在三次真实部署和一次消防演习的德国消防队现场数据定性评估中，单条查询即可把整次调查任务浓缩为少量标注帧供指挥员快速审阅。
-◆ 开源、无需训练、模型无关的本地化VLM分诊框架
-◆ 通过下拉切换底层模型，分诊质量随模型升级而增长
-◆ 任务知识置于提示词与输出契约，避免微调和再认证
-◆ 单查询输出排序短名单、逐图理由、可编辑SVG标注与GPS地图...[摘要不完整，待更新]</td></tr>
+<tr><td>2026-11-13</td><td>RescueVLM: Model-Agnostic Vision-Language Framework for Rescue Drone Imagery<br><a href='http://arxiv.org/pdf/2611.18813'>论文</a></td><td>RescueVLM针对救援无人机单次任务影像过多、人工筛查心理成本高，以及云端VLM受GDPR/BOS限制、专用检测器易老化且重训认证资源不足的问题，提出开源、免训练、模型无关的影像分诊框架。
+◆ 基于SketchVLM与开放权重通用VLM实现全本地部署，并可通过下拉选择切换新模型，使分诊质量随底层模型升级而提升。
+◆ 将任务知识置于提示词和输出契约而非训练权重中，实现免训练、模型无关和快速适配。
+◆ 单条自然语言查询即可返回排序短名单、逐图理由、可编辑SVG覆盖标注及命中GPS地图。
+◆ 在德国消防队三次真实部署和一次实火演习数据上定性验证，可将整次调查任务压缩为少量标注帧供指挥员快速审阅。
+总体而言，该工作为受限网络和资源条件下的救援影像智能分诊提供了可落地、可持续升级的开源方案。</td></tr>
 <tr><td>2026-11-13</td><td>Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment<br><a href='http://arxiv.org/pdf/2611.18372'>论文</a></td><td>本文系统综述2022年12月至2026年10月的88项VLA研究，覆盖操作、导航、人形控制、世界动作模型与评测。作者提出贯穿设计、训练、部署的生命周期七轴框架，包括输入与记忆、架构、动作输出、中间预测、预训练数据、后训练和实时执行。基于22个模型的训练数据、参数量、推理速度与硬件分析，文章归纳出数据来源多元化、模型规模两极分化、通用VLA兴起三大趋势。  
 ◆提出设计—训练—部署全生命周期七轴统一分析框架，并系统比较22个模型的关键训练与部署指标。  
 ◆比较VLA与世界动作模型，揭示部分基准高分模型在物体或相机轻微移动时失效，指出真实鲁棒性缺口。</td></tr>
@@ -12431,12 +12495,17 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
-<h2 id='robot-vpr'>Robot VPR (25篇)</h2>
+<h2 id='robot-vpr'>Robot VPR (26篇)</h2>
 
 <div class="table-container">
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-16</td><td>Beyond Appearance: Where Forest Visual Place Recognition Actually Fails<br><a href='http://arxiv.org/pdf/2611.21996'>论文</a></td><td>本文在WildCross基准上以MegaLoc为外观基线，系统评估时序、语言、结构与几何上下文能否超越纯外观森林视觉位置识别，并分析各表示的失效边界。
+◆ 构建统一评估框架，联合考察score/descriptor序列匹配、视觉语言描述与重排、场景图及LiDAR深度茎干图等多类上下文表示。
+◆ 发现同向重访中score-space序列匹配在高精度区显著优于单帧基线，100%精度下召回率由50.9%升至71.6%，而descriptor-space反而降至36.5%。
+◆ 揭示其余上下文缺乏稳定增益：描述地点判别力有限、重排受初始候选表约束、茎干图即使有LiDAR深度仍较弱。
+结论表明森林VPR的瓶颈不仅在外观相似，更在于上下文表示的判别力与候选覆盖不足。</td></tr>
 <tr><td>2026-11-14</td><td>Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning<br><a href='http://arxiv.org/pdf/2607.12818'>论文</a></td><td>本文针对真实部署中VPR匹配阈值依赖标注验证数据、环境变化下不可靠的问题，提出独立的后检索验证框架Visual Place Recognition Auditing。
 ◆ 将视觉语言模型引入VPR验证，通过联合推理查询图像与候选图像实现实例级匹配审核，而非依赖传统置信度或固定阈值。
 ◆ 该方法无需架构特定置信度、数据集相关阈值或部署环境先验知识，可作为独立模块对现有VPR方法进行事后验证。
@@ -12546,21 +12615,17 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 通过连续序列置信传播缓解了感知混淆导致的严重定位失败问题。
 
 在三个公开基准上的大量实验表明，该方法相比现有外观定位方法取得了显著性能提升。</td></tr>
-<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>这篇论文针对终身视觉位置识别中ACIL方法对非线性域偏移脆弱的问题，提出名为SLAM的控制论框架。其关键洞见在于揭示了递归ACIL更新与扩展卡尔曼滤波协方差传播之间的代数同构，从而将控制论工具引入增量学习领域。
-
-◆ 提出ACIL-D域概念，构建自相关状态锁定的不变特征流形，作为域适应的规范化空间。
-
-◆ 设计解耦域对齐D-DA，将潜在特征分离为ACIL-D内不变语义与变体风格向量。
-
-◆ 集成动态温度缩放GMM定位拓扑非线性，并采用Unscented扰动传播抑制特征波动。
-
-◆ 引入minimax H∞鲁棒准则约束最坏情况噪声累积。
-
-在NCLT非平稳数据集上以完全无遗忘为前提达到27.7%全类准确率，显著超越现有基线。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文针对STDP无监督SNN视觉位置识别中R@100P不足的问题，提出基于PyTorch与snnTorch的离散、张量原生SNN-VPR实现，并在Nordland 100地点数据集上用15个独立训练网络评估。作者系统考察推理阶段三项设计对召回精度的影响，并指出各机制与实现差异的贡献仅部分解耦，仍需进一步研究。
-◆提出闭式、确定性的张量神经元分配流程，较标准argmax显著提升R@100P，并单独衡量其与连续时间模型实现差异带来的增益。
-◆通过隔离消融发现，每次查询后的状态重置不依赖神经元分配方式，均能提升R@100P。
-◆采用速度补偿的k帧滑动窗口聚合，在k=5的匀速遍历下达到R@100P=100.00%，仅增加0.20 ms延迟。</td></tr>
+<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>本文针对长期视觉位置识别中ACIL虽具备O(1)免遗忘能力却易受非线性域偏移影响的问题，提出结构化局部化解析流形自适应框架SLAM。  
+◆提出ACIL-Domain规范不变特征流形，使自相关状态保持锁定，并以解耦域对齐D-DA分离不变语义与变体风格向量进行方向投影。  
+◆揭示递归ACIL更新与扩展卡尔曼滤波协方差传播之间的代数同构，建立控制论视角下的SLAM框架。  
+◆引入动态温度缩放高斯混合模型隔离拓扑非线性，并用Unscented扰动传播抑制特征变化。  
+◆设计minimax H∞鲁棒准则约束最坏情况下的噪声累积。  
+在非平稳NCLT数据集上，完整SLAM取得27.7%全类准确率，U+H变体达29.0%，并保证完全遗忘免疫。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散张量原生STDP-SNN视觉位置识别流水线，在100地点Nordland数据集上用15个独立训练网络评估，旨在提升R@100P。
+◆ 采用闭式确定性张量流水线完成神经元分配，相比标准argmax显著提高R@100P，并单独测量了与连续时间模型实现差异带来的增益。
+◆ 每次查询后执行状态重置，无论神经元分配方式如何，均能独立提升R@100P。
+◆ 对k个连续帧进行速度补偿滑动窗口聚合，在k=5时恒定速度遍历下达到R@100P=100.00%，仅增加0.20毫秒延迟。
+这些发现表明推理阶段设计决策对STDP-SNN-VPR的召回精度有重要影响，但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12629,4 +12694,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.17
+> 更新于: 2026.11.18
