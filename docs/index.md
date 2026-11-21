@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.11.20)
+# 计算机视觉领域最新论文 (2026.11.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -691,32 +691,32 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5393</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4887</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5399</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4895</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2493</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1667</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1664</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1632</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1544</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1390</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1545</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1391</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1323</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1142</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1145</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
 <tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1117</td><td>SUPER</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>956</td><td>An efficient and consistent bundle adjustment for </td></tr>
+<tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>957</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>820</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>786</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
-<tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>754</td><td>A 3D point cloud descriptor for place recognition</td></tr>
+<tr><td><a href='https://github.com/hku-mars/STD'>STD</a></td><td>752</td><td>A 3D point cloud descriptor for place recognition</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ImMesh'>ImMesh</a></td><td>748</td><td>ImMesh: An Immediate LiDAR Localization and Meshin</td></tr>
 <tr><td><a href='https://github.com/hku-mars/VoxelMap'>VoxelMap</a></td><td>736</td><td>一种高效的概率自适应体素映射方法，用于激光雷达里程计，提升定位精度和效率。</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>705</td><td>Voxel-SLAM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>681</td><td>M-detector</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>707</td><td>Voxel-SLAM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>682</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>639</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
 <tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>633</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>626</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>597</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>573</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>550</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>516</td><td>LTAOM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>483</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>517</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>485</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
 <tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>471</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
 <tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>376</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>351</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
@@ -743,26 +743,26 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
 <tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2892</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1686</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1687</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1371</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1099</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1065</td><td>A simple method for finding the extrinsic calibrat</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/hfnet'>hfnet</a></td><td>889</td><td>From Coarse to Fine: Robust Hierarchical Localizat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>715</td><td>Modular framework for online informative path plan</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/mav_active_3d_planning'>mav_active_3d_planning</a></td><td>716</td><td>Modular framework for online informative path plan</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_trajectory_generation'>mav_trajectory_generation</a></td><td>674</td><td>Polynomial trajectory generation and optimization,</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/polygon_coverage_planning'>polygon_coverage_planning</a></td><td>671</td><td>Coverage planning in general polygons with holes.</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>624</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/aerial_mapper'>aerial_mapper</a></td><td>623</td><td>Real-time Dense Point Cloud, Digital Surface Map (</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/dynablox'>dynablox</a></td><td>619</td><td>Real-time detection of diverse dynamic objects in </td></tr>
-<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>580</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/wavemap'>wavemap</a></td><td>581</td><td>Fast, efficient and accurate multi-resolution, mul</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_voxblox_planning'>mav_voxblox_planning</a></td><td>579</td><td>MAV planning tools using voxblox as the map repres</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>572</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>555</td><td>Voxblox-based Pose graph optimization</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/robust_point_cloud_registration'>robust_point_cloud_registration</a></td><td>571</td><td>Robust Point Cloud Registration Using Iterative Pr</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxgraph'>voxgraph</a></td><td>556</td><td>Voxblox-based Pose graph optimization</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/COIN-LIO'>COIN-LIO</a></td><td>525</td><td>🪙 COIN-LIO: Complementary Intensity-Augmented LiDA</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>522</td><td>Python tools to perform time-synchronization and h</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/hand_eye_calibration'>hand_eye_calibration</a></td><td>520</td><td>Python tools to perform time-synchronization and h</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/voxblox-plusplus'>voxblox-plusplus</a></td><td>466</td><td>A volumetric object-level semantic mapping framewo</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/mav_control_rw'>mav_control_rw</a></td><td>458</td><td>Control strategies for rotary wing Micro Aerial Ve</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/nbvplanner'>nbvplanner</a></td><td>455</td><td>A real-time capable exploration and inspection pat</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>353</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/BIEVR-LIO'>BIEVR-LIO</a></td><td>354</td><td>[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/panoptic_mapping'>panoptic_mapping</a></td><td>334</td><td>A flexible submap-based framework towards spatio-t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/vgn'>vgn</a></td><td>310</td><td>Real-time 6 DOF grasp detection in clutter.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis_ros'>okvis_ros</a></td><td>305</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM (R</td></tr>
@@ -782,7 +782,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/ethz-asl/mav_dji_ros_interface'>mav_dji_ros_interface</a></td><td>169</td><td>Interface of DJI autopilot based on its OSDK (3.2)</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_undistortion'>lidar_undistortion</a></td><td>160</td><td>Catkin package that provides lidar motion undistor</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/rio'>rio</a></td><td>157</td><td>Graph-based, sparse radar-inertial odometry estima</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/sl_sensor'>sl_sensor</a></td><td>142</td><td>基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/sl_sensor'>sl_sensor</a></td><td>143</td><td>基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/depth_segmentation'>depth_segmentation</a></td><td>139</td><td>A collection of segmentation methods working on de</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/data-driven-dynamics'>data-driven-dynamics</a></td><td>134</td><td>Data Driven Dynamics Modeling for Aerial Vehicles</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/neuralblox'>neuralblox</a></td><td>132</td><td>Real-time Neural Representation Fusion for Robust </td></tr>
@@ -790,8 +790,8 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/ethz-asl/ssc_exploration'>ssc_exploration</a></td><td>112</td><td>Incremental 3D Scene Completion for Safe and Effic</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/active_grasp'>active_grasp</a></td><td>111</td><td>Closed-loop next-best view planning for grasp dete</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/waypoint_navigator'>waypoint_navigator</a></td><td>108</td><td>Stand-alone waypoint navigator</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/waverider'>waverider</a></td><td>107</td><td>RMPs on multi-resolution occupancy maps for effici</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/reinmav-gym'>reinmav-gym</a></td><td>106</td><td>Reinforcement Learning framework for MAVs using th</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/waverider'>waverider</a></td><td>106</td><td>RMPs on multi-resolution occupancy maps for effici</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/navrep'>navrep</a></td><td>106</td><td>navrep</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/unreal_airsim'>unreal_airsim</a></td><td>105</td><td>Simulation interface to Unreal Engine 4 based on t</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/eth_supermegabot'>eth_supermegabot</a></td><td>102</td><td>Instructions for ETH center for robotics summer sc</td></tr>
@@ -802,4 +802,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.11.20
+> 更新于: 2026.11.21

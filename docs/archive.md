@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.20)
+# 历史论文归档 (2026.11.21)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -3342,12 +3342,12 @@ MarsLab 的核心价值是为火星车自主导航算法提供可复现、可扩
 ◆ 针对抽象概念缺乏唯一参考图，提出受概念语义约束的细粒度视觉语义评估方法，将概念语义分解为可独立验证的视觉语义问题，并经人工评估验证有效性。
 ◆ 系统基准主流T2I模型，揭示其依赖少量原型视觉模式，在表征多样性和概念区分性上仍有明显提升空间。
 ◆ 提供可解释、可复现的抽象概念可视化评测基础，推动T2I从提示跟随走向更深层的概念理解。</td></tr>
-<tr><td>2026-10-22</td><td>MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model<br><a href='http://arxiv.org/pdf/2610.31321'>论文</a></td><td>本文提出MVLoMa，一种稀疏星图局部特征匹配器，将LoMa从图像对扩展到一中心多邻居的多视图匹配，避免逐边独立匹配的参考侧重复计算并利用多视图几何证据。
-◆ 使用冻结的多视图几何基础模型联合描述星图中的所有图像，并将跨视图几何上下文注入局部描述子。
-◆ 通过每视图自注意力和双向中心—邻居交叉注意力，在单次前向中完成中心图像与全部邻居的匹配。
+<tr><td>2026-10-22</td><td>MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model<br><a href='http://arxiv.org/pdf/2610.31321'>论文</a></td><td>本文提出MVLoMa，将局部特征匹配从图像对推广到多视图星图，避免逐边独立匹配的参考侧重复计算，并利用多视图几何证据。
+◆ 采用冻结的多视图几何基础模型联合描述星图内所有图像，并将跨视图几何上下文注入局部描述子。
+◆ 设计单次前向的逐视图自注意力与双向中心-邻域交叉注意力，将中心图与全部邻居联合匹配。
 ◆ 仅从深度有效且相互可见的稠密warp生成正对应，并显式惩罚违反极几何的高置信匹配。
-◆ 同一设计兼容DA3、π^3、VGGT和VGGT-Ω等冻结几何编码器，且DA3-Giant表现最佳。
-在HyperSim、ScanNet++、Mip-NeRF 360和Tanks and Temples的25视图星图上，MVLoMa在三个阈值取得最佳相对位姿AUC（58.65/85.41/90.99），匹配器比顺序评估24条中心—邻居边快2.20倍，消融验证了几何感知描述子、可见性过滤、几何负监督和联合多视图推理的有效性。</td></tr>
+◆ 支持DA3、π³、VGGT、VGGT-Ω等冻结几何编码器，并通过消融验证几何感知描述子、可见性过滤、几何负监督和联合多视图推理的作用。
+实验在四个数据集的25视图星图上取得三阈值最佳macro-average相对位姿AUC（58.65/85.41/90.99），匹配器比顺序评估24条中心-邻域边快2.20倍。</td></tr>
 <tr><td>2026-10-22</td><td>HimmBO: High-Dimensional Interactive Model-Merging Bayesian Optimization for Image Generation<br><a href='http://arxiv.org/pdf/2610.30875'>论文</a></td><td>HimmBO提出一种两阶段高维交互式模型合并贝叶斯优化方法，将偏好驱动的适配器合并从数十个预选适配器扩展到上千个适配器，并显著降低图像生成开销。
 ◆筛选阶段通过预生成图像上的水平集估计恢复活跃适配器集合，无需额外图像生成。
 ◆细化阶段在恢复的低维子空间内优化合并系数，避免直接在高维空间搜索。
@@ -12780,22 +12780,23 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 构建EM框架，将建图过程解耦为连续的M步（流形自适应）与概念性的E步（最优锚点选择准则）。
 
 ◆ 在NCLT数据集的100米超稀疏锚点间隔及极端季节变化场景下均实现显著的定位性能提升。</td></tr>
-<tr><td>2026-08-06</td><td>Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models<br><a href='http://arxiv.org/pdf/2608.06021'>论文</a></td><td>本文提出一种结合视觉嵌入与前馈三维模型的拓扑度量自主车辆定位框架，通过概率式视觉位置识别与FF3D度量位姿估计的迭代融合，实现兼具紧凑性和度量精度的顺序外观定位。
-◆提出自动离线建图工具，学习场景不同区域的拓扑度量位姿—外观交互关系，为在线定位提供先验地图。
-◆设计在线粒子滤波器，利用里程计和地点信念选择FF3D推理，将神经度量估计融入概率外观定位。
-◆保持描述子提取器和FF3D模型可互换的模块化设计，增强框架通用性。
-在三个公开基准上的实验表明，该方法显著优于现有外观定位方法，且顺序信念可缓解感知混叠导致的严重失败。</td></tr>
-<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>本文面向长期自主机器人视觉位置识别，提出一种兼具完全免疫遗忘与域鲁棒性的终身VPR框架。  
-◆ 提出ACIL-Domain概念，构建自相关状态保持锁定的规范不变特征流形，以缓解ACIL在非线性域偏移下的极端脆弱性。  
-◆ 设计解耦域对齐D-DA，将潜特征分解为ACIL-D内的不变语义与用于方向投影的变体风格向量。  
-◆ 揭示递归ACIL更新与EKF协方差传播之间的代数同构，建立控制论框架SLAM。  
-◆ SLAM融合动态温度缩放GMM、Unscented扰动传播和minimax H∞鲁棒准则，分别隔离拓扑非线性、抑制特征变化并约束最坏噪声累积。  
-在非平稳NCLT数据集上，完整SLAM取得27.7%最终全类准确率，U+H变体达29.0%，并保证完全遗忘免疫。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP脉冲神经网络视觉位置识别流水线，并在Nordland 100地点数据集上用15个独立训练网络评估。
-◆设计闭式、确定性的张量神经元分配流程，其R@100P显著优于标准argmax，但部分增益源于与既有连续时间模型的实现差异。
-◆通过隔离消融发现每次查询后重置状态可独立提升R@100P，且不受神经元分配方式影响。
-◆采用速度补偿的滑动窗口对连续k帧聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
-这些结果揭示了推理阶段设计决策对STDP-SNN-VPR召回精度的重要影响，但各机制与实现差异的独立贡献尚未完全解耦，仍需进一步研究。</td></tr>
+<tr><td>2026-08-06</td><td>Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models<br><a href='http://arxiv.org/pdf/2608.06021'>论文</a></td><td>本文提出一种结合视觉嵌入与馈送前向3D几何模型的拓扑度量自动驾驶定位框架，兼顾视觉地点识别的紧凑鲁棒性与神经3D模型的度量精度。
+◆提出自动离线建图工具，用于建模场景不同区域中拓扑位姿与外观之间的交互关系。
+◆设计在线粒子滤波定位方法，利用里程计和地点信念选择受控图像集并调用FF3D模型进行度量位姿推理。
+◆构建迭代结合概率VPR与FF3D度量估计的拓扑度量定位流程，将神经度量估计融入概率外观定位。
+◆在三个已知基准上验证该方法显著优于现有外观定位方法，并证明描述子提取器与FF3D模型可互换。
+◆分析表明序列信念能有效缓解感知混淆导致的严重定位失败。</td></tr>
+<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>论文面向长期自主机器人视觉位置识别，提出融合ACIL与域自适应、具备遗忘免疫和域鲁棒性的终身VPR框架SLAM。
+◆ 提出ACIL-Domain这一自相关状态保持锁定的规范不变特征流形，为无记忆增量学习提供抗域偏移表示基础。
+◆ 设计解耦域对齐D-DA，将潜特征分解为ACIL-D内不变语义与可方向投影的变体风格向量，缓解非线性环境域偏移。
+◆ 揭示递归ACIL更新与EKF协方差传播的代数同构，建立控制论框架SLAM，实现结构化、局部化解析流形自适应。
+◆ 引入动态温度缩放GMM隔离拓扑非线性、Unscented扰动传播抑制特征变化，并用minimax H∞鲁棒准则约束最坏噪声累积。
+在非平稳NCLT数据集上，完整SLAM取得27.7%全类准确率，U+H变体达29.0%，并保证完全遗忘免疫。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>论文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN-VPR实现，并在Nordland 100地点数据集上用15个独立训练网络评估推理阶段设计决策对R@100P的影响。
+◆ 采用闭式、确定性张量流水线完成神经元分配，R@100P显著高于标准argmax，并单独测量了与连续时间模型实现差异相关的增益。
+◆ 每次查询后状态重置可独立提升R@100P，且不受神经元分配方式影响。
+◆ 对k个连续帧进行速度补偿滑动窗口聚合，在匀速场景k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+论文最后指出各机制与实现差异的独立贡献尚未完全解耦，仍需进一步研究。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -12864,4 +12865,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.20
+> 更新于: 2026.11.21

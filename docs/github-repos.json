@@ -3,7 +3,7 @@
     "FAST_LIO": {
       "name": "FAST_LIO",
       "url": "https://github.com/hku-mars/FAST_LIO",
-      "stars": 5393,
+      "stars": 5399,
       "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
       "created_at": "2020-10-12",
       "chinese_desc": "A computationally efficient and robust LiDAR-inert"
@@ -11,7 +11,7 @@
     "FAST-LIVO2": {
       "name": "FAST-LIVO2",
       "url": "https://github.com/hku-mars/FAST-LIVO2",
-      "stars": 4887,
+      "stars": 4895,
       "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
       "created_at": "2024-04-22",
       "chinese_desc": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo"
@@ -35,7 +35,7 @@
     "FAST-LIVO": {
       "name": "FAST-LIVO",
       "url": "https://github.com/hku-mars/FAST-LIVO",
-      "stars": 1667,
+      "stars": 1664,
       "description": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry (LIVO).",
       "created_at": "2022-03-03",
       "chinese_desc": "A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine"
@@ -43,7 +43,7 @@
     "LiDAR_IMU_Init": {
       "name": "LiDAR_IMU_Init",
       "url": "https://github.com/hku-mars/LiDAR_IMU_Init",
-      "stars": 1544,
+      "stars": 1545,
       "description": "[IROS2022] Robust Real-time LiDAR-inertial Initialization Method.",
       "created_at": "2022-02-23",
       "chinese_desc": "[IROS2022] Robust Real-time LiDAR-inertial Initial"
@@ -59,7 +59,7 @@
     "Point-LIO": {
       "name": "Point-LIO",
       "url": "https://github.com/hku-mars/Point-LIO",
-      "stars": 1390,
+      "stars": 1391,
       "description": "",
       "created_at": "2022-12-08",
       "chinese_desc": "Point-LIO"
@@ -67,7 +67,7 @@
     "BALM": {
       "name": "BALM",
       "url": "https://github.com/hku-mars/BALM",
-      "stars": 956,
+      "stars": 957,
       "description": "An efficient and consistent bundle adjustment for lidar mapping",
       "created_at": "2020-10-15",
       "chinese_desc": "An efficient and consistent bundle adjustment for "
@@ -83,7 +83,7 @@
     "FAST-Calib": {
       "name": "FAST-Calib",
       "url": "https://github.com/hku-mars/FAST-Calib",
-      "stars": 1142,
+      "stars": 1145,
       "description": "A Handy Extrinsic Calibration Tool for LiDAR-camera Systems.",
       "created_at": "2025-04-19",
       "chinese_desc": "A Handy Extrinsic Calibration Tool for LiDAR-camer"
@@ -115,7 +115,7 @@
     "STD": {
       "name": "STD",
       "url": "https://github.com/hku-mars/STD",
-      "stars": 754,
+      "stars": 752,
       "description": "A 3D point cloud descriptor for place recognition",
       "created_at": "2022-09-14",
       "chinese_desc": "A 3D point cloud descriptor for place recognition"
@@ -131,7 +131,7 @@
     "M-detector": {
       "name": "M-detector",
       "url": "https://github.com/hku-mars/M-detector",
-      "stars": 681,
+      "stars": 682,
       "description": "",
       "created_at": "2023-10-05",
       "chinese_desc": "M-detector"
@@ -139,7 +139,7 @@
     "Voxel-SLAM": {
       "name": "Voxel-SLAM",
       "url": "https://github.com/hku-mars/Voxel-SLAM",
-      "stars": 705,
+      "stars": 707,
       "description": "",
       "created_at": "2024-06-03",
       "chinese_desc": "Voxel-SLAM"
@@ -187,7 +187,7 @@
     "LTAOM": {
       "name": "LTAOM",
       "url": "https://github.com/hku-mars/LTAOM",
-      "stars": 516,
+      "stars": 517,
       "description": "",
       "created_at": "2024-03-27",
       "chinese_desc": "LTAOM"
@@ -211,7 +211,7 @@
     "LIV_handhold_2": {
       "name": "LIV_handhold_2",
       "url": "https://github.com/hku-mars/LIV_handhold_2",
-      "stars": 483,
+      "stars": 485,
       "description": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3D Sensor for Robotics and Embodied AI.",
       "created_at": "2025-08-21",
       "chinese_desc": "LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3"
@@ -341,7 +341,7 @@
     "voxblox": {
       "name": "voxblox",
       "url": "https://github.com/ethz-asl/voxblox",
-      "stars": 1686,
+      "stars": 1687,
       "description": "A library for flexible voxel-based mapping, mainly focusing on truncated and Euclidean signed distance fields.",
       "created_at": "2016-04-13",
       "chinese_desc": "A library for flexible voxel-based mapping, mainly"
@@ -381,7 +381,7 @@
     "mav_active_3d_planning": {
       "name": "mav_active_3d_planning",
       "url": "https://github.com/ethz-asl/mav_active_3d_planning",
-      "stars": 715,
+      "stars": 716,
       "description": "Modular framework for online informative path planning.",
       "created_at": "2018-10-25",
       "chinese_desc": "Modular framework for online informative path plan"
@@ -405,7 +405,7 @@
     "aerial_mapper": {
       "name": "aerial_mapper",
       "url": "https://github.com/ethz-asl/aerial_mapper",
-      "stars": 624,
+      "stars": 623,
       "description": "Real-time Dense Point Cloud, Digital Surface Map (DSM) and (Ortho-)Mosaic Generation for UAVs",
       "created_at": "2017-06-19",
       "chinese_desc": "Real-time Dense Point Cloud, Digital Surface Map ("
@@ -421,7 +421,7 @@
     "robust_point_cloud_registration": {
       "name": "robust_point_cloud_registration",
       "url": "https://github.com/ethz-asl/robust_point_cloud_registration",
-      "stars": 572,
+      "stars": 571,
       "description": "Robust Point Cloud Registration Using Iterative Probabilistic Data Associations (\"Robust ICP\")",
       "created_at": "2016-11-14",
       "chinese_desc": "Robust Point Cloud Registration Using Iterative Pr"
@@ -437,7 +437,7 @@
     "wavemap": {
       "name": "wavemap",
       "url": "https://github.com/ethz-asl/wavemap",
-      "stars": 580,
+      "stars": 581,
       "description": "Fast, efficient and accurate multi-resolution, multi-sensor 3D occupancy mapping",
       "created_at": "2021-10-27",
       "chinese_desc": "Fast, efficient and accurate multi-resolution, mul"
@@ -445,7 +445,7 @@
     "voxgraph": {
       "name": "voxgraph",
       "url": "https://github.com/ethz-asl/voxgraph",
-      "stars": 555,
+      "stars": 556,
       "description": "Voxblox-based Pose graph optimization",
       "created_at": "2019-05-23",
       "chinese_desc": "Voxblox-based Pose graph optimization"
@@ -453,7 +453,7 @@
     "hand_eye_calibration": {
       "name": "hand_eye_calibration",
       "url": "https://github.com/ethz-asl/hand_eye_calibration",
-      "stars": 522,
+      "stars": 520,
       "description": "Python tools to perform time-synchronization and hand-eye calibration.",
       "created_at": "2017-03-24",
       "chinese_desc": "Python tools to perform time-synchronization and h"
@@ -653,7 +653,7 @@
     "sl_sensor": {
       "name": "sl_sensor",
       "url": "https://github.com/ethz-asl/sl_sensor",
-      "stars": 142,
+      "stars": 143,
       "description": "SL Sensor: An open-source, real-time and ROS-based structured light sensor for high accuracy construction robotic applications",
       "created_at": "2021-04-22",
       "chinese_desc": "基于ROS的开源结构光传感器，实现实时高精度测量，适用于建筑机器人领域。"
@@ -717,7 +717,7 @@
     "waverider": {
       "name": "waverider",
       "url": "https://github.com/ethz-asl/waverider",
-      "stars": 106,
+      "stars": 107,
       "description": "RMPs on multi-resolution occupancy maps for efficient reactive collision avoidance",
       "created_at": "2023-06-28",
       "chinese_desc": "RMPs on multi-resolution occupancy maps for effici"
@@ -757,7 +757,7 @@
     "BIEVR-LIO": {
       "name": "BIEVR-LIO",
       "url": "https://github.com/ethz-asl/BIEVR-LIO",
-      "stars": 353,
+      "stars": 354,
       "description": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
       "created_at": "2026-07-03",
       "chinese_desc": "[RSS 2026] 🦫 BIEVR-LIO: Robust LiDAR-Inertial Odom"
