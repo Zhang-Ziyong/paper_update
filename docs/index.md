@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2026.11.24)
+# 计算机视觉领域最新论文 (2026.11.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -24,6 +24,39 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-24</td><td>SpatialArena: Where Do Geometric Foundation Models Stand?<br><a href='http://arxiv.org/pdf/2611.32816'>论文</a></td><td>该论文指出当前几何基础模型评测因采样、分辨率和测试划分不一致而不可比，且对齐方式脆弱、场景覆盖有限。作者提出SpatialArena，用统一指标和规则、稳健且确定性的对齐来评测几何模型，覆盖从单目深度到SLAM的五类任务、23个公开数据集共418,929张图像，并加入自有精确位姿与深度采集数据。评测52个模型后发现，单图深度在公开基准上接近饱和，但在大规模非受控场景中仍未饱和，进展正转向跨帧与跨视图一致性，前馈3D/4D模型可匹配或超越单目专家并超过视频深度模型。
+◆ 建立统一评测协议与稳健确定性对齐，消除不可比性和对齐敏感偏差。
+◆ 构建覆盖多任务、多场景的大规模基准，并补充自有精确位姿与深度数据。
+◆ 揭示一致性驱动的新趋势，并将公开基准、工具箱和排行榜。</td></tr>
+<tr><td>2026-11-24</td><td>Seeing to Drive on a Single Board: Attention-Free Depth for Onboard Robot Navigation<br><a href='http://arxiv.org/pdf/2611.32718'>论文</a> | <a href='https://github.com/itaim18/DANIEL'>代码</a></td><td>论文提出一套可在Raspberry Pi 5加Hailo-8L单板上运行的实时深度感知与导航方案，核心是以蒸馏替代量化，把Depth Anything V2-Large转成无注意力的ResNet-34 U-Net学生模型。
+◆ 以24.5M参数的无注意力学生网络实现整型推理，在Hailo-8L上达27.1 FPS，int8输出与浮点孪生高度一致（Pearson 0.99993）。
+◆ 定量揭示ViT深度模型量化失效机理：449个token时91%的softmax权重低于一个int8步长，却承载17%至33%的注意力质量。
+◆ 设计仅需相机高度的地面交点障碍测距方法，使建图、混合A*规划与SLAM可在Pi自身CPU上运行。
+◆ 在仿真院落、真实户外驾驶与Gaussian-splat硬件在环中验证：仿真AbsRel 0.269优于0.354至0.530，真实户外与厂商Depth Anything V2-Small无可分辨差异且更快（27.1对21.6 FPS）。
+最终导航栈在真实院落重构中10个场景无接触到目标7.9±1.1个，真实Pi与Hailo-8L闭环为8.2±0.4个，并开源代码、模型与数据。</td></tr>
+<tr><td>2026-11-24</td><td>AirLeg: A Robust and Accurate Self-Supervised Visual-Inertial-Leg SLAM System<br><a href='http://arxiv.org/pdf/2611.32523'>论文</a></td><td>AirLeg提出一种面向腿式机器人的自监督视觉-惯性-腿SLAM系统，使视觉与腿本体感知在训练和部署中相互促进。
+◆ 设计仿真预训练加imperative learning的无真值适配框架，用多传感器光束法平差让腿里程计细化视觉地图，再由地图反向监督腿里程计网络。
+◆ 部署阶段利用融合估计在线自适应腿里程计网络，形成从训练到部署的持续自监督闭环。
+◆ 提出双窗口估计器融合视觉、IMU和腿里程计，并通过变形感知约束把受载足与视觉重建地形关联。
+◆ 采用方差分量估计对多源约束动态加权，以同时提升定位与网络监督质量。
+在GrandTour全部17个序列上取得19种方法中最低平均误差0.19米，并在低成本四足机器人上用0.5小时无标签数据实现0.6%漂移和嵌入式实时运行。</td></tr>
+<tr><td>2026-11-24</td><td>ROVO: Robust Rotation-Only Visual Odometry for UAVs at Low and Moderate Altitudes<br><a href='http://arxiv.org/pdf/2611.32475'>论文</a> | <a href='https://github.com/sssxxxkkkk/ROVO'>代码</a></td><td>本文提出面向低中空无人机单目图像的仅旋转视觉里程计ROVO，旨在抑制图像噪声引起的旋转与平移估计混淆，避免不确定地标深度向后传播。
+◆提出仅估计并保留朝向状态的视觉里程计框架，从轨迹状态中剔除不确定深度，提升旋转估计鲁棒性。
+◆设计基于重叠窗口的成对旋转鲁棒平均与共享帧窗口对齐机制，实现连续窗口间的稳定旋转估计。
+◆利用长距离视觉感知中的角度线索构建旋转约束，在高噪声和窄视场条件下保持较高相对旋转精度。
+仿真中滑动窗口ROVO平均朝向误差仅为传统SLAM基线的10.7%，真实飞行数据上旋转精度与ORB-SLAM3和DPVO相当。
+在窄视场或更高飞行高度下，ROVO相较各对比中次优方法将相对旋转RMSE降低19.7%至69.4%，并开源代码与仿真工具。</td></tr>
+<tr><td>2026-11-24</td><td>GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM<br><a href='http://arxiv.org/pdf/2611.32335'>论文</a></td><td>本文提出GOLD-SLAM，一种融合全景相机与LiDAR深度先验的全向高斯泼溅SLAM系统，在球形域完成跟踪与建图，兼顾高质量渲染和几何重建。
+◆ 在LiDAR覆盖不足区域利用跟踪到的视觉特征辅助位姿估计，缓解全景视场与LiDAR视场不匹配问题。
+◆ 提出深度感知地图扩展与修剪DAEP，抑制新观测表面覆盖不足和增量建图中的漂浮伪影。
+◆ 构建WHOLE无人机数据集，覆盖弱几何、高动态、全向、低光和简单场景，支持更全面评测。
+◆ 在公开基准与WHOLE上取得有竞争力渲染质量，较现有全景基线平均PSNR提升5.56至9.10 dB，平均Depth-L1降低71.9%至83.9%。
+此外，在Jetson Orin NX上验证嵌入配置可在线运行，但重建质量有所折衷。</td></tr>
+<tr><td>2026-11-24</td><td>View Management with Gaussian Placement and Opacity Regularization for Online 3DGS<br><a href='http://arxiv.org/pdf/2611.32025'>论文</a></td><td>论文针对在线3DGS地图参数多、视角稀疏易过拟合且受实时预算约束的问题，从视图管理与模型复杂度控制两方面提出改进。  
+◆提出渐进接纳非关键帧参与建图更新，并按不同帧组提供的监督量分配有限更新，以兼顾地图结构与视图监督。  
+◆提出边缘引导初始化，将新高斯放置在图像细节真正需要的区域，从而控制地图模型复杂度。  
+◆提出自参考不透明度正则化SOR，利用累积渲染证据且不增加额外渲染成本，抑制持续位于地图表面参考前方的高斯不透明度，以补偿前端深度不确定性。  
+这些设计在实时预算内协同提升了在线3DGS地图的外观与几何质量。</td></tr>
 <tr><td>2026-11-23</td><td>OmniSLAM: Evidence-Authorized Revision of Persistent Object Maps<br><a href='http://arxiv.org/pdf/2611.30184'>论文</a></td><td>本文提出OmniSLAM地图修订模块，将历史身份变更与新表面准入分离，以在保留有效身份的同时吸收新表面并纠正旧关联。
 ◆ 采用跨视图共享与分离掩码解释检验候选合并，仅当移除任一观测帧后证据裕度仍为正才允许合并。
 ◆ 通过局部身份竞争为新测点分配身份，并结合掩码见证与种子帧稳定性检查。
@@ -72,37 +105,6 @@
 ◆ 引入上下文关键帧改善深度预测，并将所得子图在因子图中融合以构建在线稠密度量地图。
 在五个公开相机-IMU设置及新Phone-rig/GoPro数据集上，单一映射配置无需逐数据集调参、仅用自身轨迹对齐，即在5cm平均F-score上稳定取得最佳或次佳。
 系统与手机架数据集开源，便于社区研究。</td></tr>
-<tr><td>2026-11-18</td><td>Induction Head Origins of SLAM-ASR Speech Recognition Models<br><a href='http://arxiv.org/pdf/2611.24721'>论文</a></td><td>论文探究SLAM-ASR为何仅靠小型映射与冻结语言模型即可实现有竞争力的语音识别，并揭示其依赖的具体内部结构。  
-◆ 首次表明SLAM-ASR依赖冻结语言模型中的归纳头，即文本中复制重复词序列的注意力头，也负责将语音嵌入映射为转录词元。  
-◆ 发现成对注意力头形成受约束的差分注意力，可抵消注意力噪声并锐化对前一生成词的关注。  
-◆ 展示归纳头可用于改善噪声音频条件下的转录质量。  
-这些发现为SLAM-ASR的工作机制提供了可解释证据，并为噪声鲁棒语音识别提供了利用归纳头的改进思路。</td></tr>
-<tr><td>2026-11-18</td><td>Proprioceptive Simultaneous Base and Terrain Elevation Estimation for Legged Robot Locomotion<br><a href='http://arxiv.org/pdf/2611.24310'>论文</a></td><td>论文针对视觉退化环境下腿部机器人仅靠本体感知时全球位置与偏航不可观、垂直漂移危害大的问题，提出将地形本身视为持续的本体感知地标，用每次足步高度测量锚定垂直轴。作者提出实时开源框架SBEE，将用于浮动基估计的左不变扩展卡尔曼滤波与栅格高程图双向耦合，形成以地形高程替代地标的类SLAM闭环。  
-◆ 把稳定足接触生成的不确定性感知高度样本插入高程图，并将已映射单元反馈为不确定性加权垂直伪测量，类似回环约束。  
-◆ 采用运动学速度测量而非逐腿接触模型增广状态，使LI-EKF状态维数不随腿数增加。  
-◆ 实现浮动基估计与高程图的双向耦合，同时估计基座状态和地形高程。  
-在MuJoCo四足与双足平台及ANYmal-D GrandTour数据集296米行走中验证，绝对轨迹误差较三种先进本体感知估计器中的最优者降低22.1%。</td></tr>
-<tr><td>2026-11-18</td><td>Facet-SLAM: Real-Time Triangle Splatting SLAM<br><a href='http://arxiv.org/pdf/2611.23935'>论文</a> | <a href='https://github.com/edward62740/Facet-SLAM'>代码</a></td><td>Facet-SLAM是首个面向RGB-D相机的实时三角面片splatting SLAM系统，直接构建可三角化为连通网格的表面表示。  
-◆将跟踪与建图角色解耦：跟踪器用融合深度设定三角面片质心，并通过GICP将当前帧配准到这些质心，避免依赖过慢的光度跟踪。  
-◆在建图端通过变量替换限制优化为非平移更新，防止三角面片被优化推离观测表面而成为不可靠的配准目标。  
-◆利用三角面片顶点直接三角化为连通网格，无需额外网格提取或融合阶段，在保持渲染质量的同时提升表面几何精度。  
-系统在桌面GPU上约100 FPS、在Jetson AGX Orin上达到传感器帧率，较光度方法快20倍以上，并将Replica上Delaunay网格倒角距离从1.55降至0.86 cm。</td></tr>
-<tr><td>2026-11-17</td><td>Pressure Drop: Gravity Vector Estimation from a Distributed Barometric Pressure Sensor Array<br><a href='http://arxiv.org/pdf/2611.23120'>论文</a></td><td>本文提出利用分布式气压高度计阵列直接观测重力向量方向，为移动机器人SLAM中的重力约束提供新思路。  
-◆ 将高度计测量引入重力向量估计，实现对重力方向的直接观测，而非依赖IMU等间接观测。  
-◆ 给出估计噪声的理论分析，并通过大量实验验证，同时评估传感器间距对估计精度的影响。  
-◆ 在准静态场景下实现0.87度中位倾角估计误差，并与基于IMU的先进方法对比，在高动态场景性能相近，在加速度计饱和的特定情况下更优。  
-◆ 将方法集成到ICP算法中，展示其在机器人系统中的潜在应用。  
-实验结果表明该方法可行且具应用潜力。</td></tr>
-<tr><td>2026-11-17</td><td>Technical Report of Mobile Manipulator Robot for Industrial Environments<br><a href='http://arxiv.org/pdf/2611.22852'>论文</a></td><td>本文提出并实现了面向工业环境的@Work移动操作机器人，用于提升重复性或危险作业的效率。
-◆ 采用4轮Mecanum驱动、5自由度机械臂和3D打印夹爪，实现全向移动与物体抓取操作的一体化硬件集成。
-◆ 以ESP32自定义PCB和NVIDIA Jetson Orin NX构建分层电子系统，兼顾实时控制与高层计算处理。
-◆ 融合Hector SLAM、A*路径规划和YOLO实时目标检测，并利用多传感器数据实现鲁棒导航与可靠避障。
-系统在类工业场景中验证了自主导航、物体处理和任务执行能力，体现了有效的软硬件协同集成。</td></tr>
-<tr><td>2026-11-17</td><td>DGV-DLIVO: Degeneracy-Guided Visual Fusion for Direct LiDAR-Inertial-Visual Odometry in Degenerate Tunnel Environments<br><a href='http://arxiv.org/pdf/2611.22385'>论文</a> | <a href='https://github.com/0RayZhang0/DGV-DLIVO'>代码</a></td><td>本文提出DGV-DLIVO，一种面向极端隧道环境的退化引导视觉融合直接LiDAR-惯性-视觉里程计，核心是将LiDAR退化方向作为主动引导信号，而非仅把视觉当作通用互补传感器。
-◆利用LiDAR退化方向主动确定信息量更高的视觉区域，并建立LiDAR锚定的视觉关联。
-◆仅将视觉约束引入缺失的运动子空间，同时自适应抑制同方向不可靠LiDAR信息并保留可靠几何约束。
-◆设计子空间选择性融合机制，实现退化方向引导下的LiDAR、惯性与视觉自适应融合。
-真实水电隧道实验表明，DGV-DLIVO在车载和手持采集下均保持连续、方向一致的隧道轴向运动估计，40m序列进度比达91.4%，显著优于代表性LIO、LIVO和VIO方法并改善纵向恢复与轨迹稳定性。</td></tr>
 </tbody>
 </table>
 </div>
@@ -113,6 +115,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-24</td><td>ST-SfM: Spatio-Temporal Structure-from-Motion for Initialising 4D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2611.32231'>论文</a></td><td>本文提出ST-SfM，一种面向同步标定多相机视频的稀疏时空SfM方法，为4D高斯泼溅提供包含运动信息的初始化。
+◆ 将场景分为静态与动态两分支，分别估计静态三维结构和动态四维点。
+◆ 静态分支在每相机时序中值图像上检测结构，经时序稳定性门控后沿极线匹配。
+◆ 动态分支以视频体中的时空兴趣点为候选，用HOG3D描述，并仅在极线与时间均一致的候选间匹配。
+◆ 采用拒绝不一致合并的并查集跟踪，并用RANSAC跨所有视角对三角化，得到静态3D点和含亚帧时间的动态4D点。
+用ST-SfM所得稀疏4D点云初始化4D高斯泼溅。
+在N3DV场景上，相较随机初始化，方法在PSNR、SSIM和LPIPS上均取得提升。</td></tr>
+<tr><td>2026-11-23</td><td>InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion<br><a href='http://arxiv.org/pdf/2611.31516'>论文</a></td><td>本文针对无初始化BA从随机初始化联合恢复位姿与结构时优化目标与重建精度不匹配的问题，指出现有InitFree BA在现代SfM基准上难以获得准确重建，并表明引入学习度量深度可显著提升实用性。
+◆提出完整无初始化SfM流程InitFree-SfM，融合学习对应、度量深度、深度一致轨迹构建与联合度量优化。
+◆提出深度增强OSE目标dOSE，在OSE方向约束之外增加地标沿视线方向的定位约束。
+实验表明该方法大幅优于现有InitFree BA，并在包括低重叠图像集的挑战场景中达到与成熟SfM流程相当的精度。
+分析进一步挑战以往对代理目标的过度强调，揭示几何约束对准确重建起核心作用，OSE优化带来额外提升。</td></tr>
 <tr><td>2026-11-23</td><td>Screening for nonrigidity in structure from motion using projected reprojection residuals<br><a href='http://arxiv.org/pdf/2611.30769'>论文</a></td><td>论文针对稀疏SfM默认静态场景、但变形仍可能产生看似合理重建的问题，指出现有重投影误差汇总忽略了误差在点与视角间的排列信息。
 ◆提出基于投影重投影残差的非刚性筛查诊断，先剔除可由小点/相机调整及随时间变化的简单空间趋势解释的成分，再衡量残差与固定时空模式的对齐。
 ◆该诊断仅使用一次估计的SfM重建，定位为筛查证据而非物理变形估计。
@@ -182,16 +196,6 @@
 ◆ 设计无训练的指数降权贪心分配规则，可直接增强同一先验下的一次性选择器。
 ◆ 在九个1DSfM数据集B=2N上将同先验选择器从0.776提升到0.929，并在标准基准取得无训练选择器最高均值0.875。
 实验表明DEAL在共享后端下接近SfM监督边先验的平均注册图像比例（0.929对0.930），且无需训练。</td></tr>
-<tr><td>2026-11-04</td><td>METRIC-GS: Selective Metric-Scale Estimation for 3D Gaussian Splatting<br><a href='http://arxiv.org/pdf/2611.06020'>论文</a></td><td>论文提出METRIC-GS，一种面向真实室内照片的3DGS选择性度量尺度估计器，从重建自身语义内容读取尺度，并在证据不足时显式拒绝。现有分位数启发式与度量深度对齐在真实采集上分别误差约27%和35-71%，难以可靠部署。
-◆ 选择性尺度估计与弃权机制：用inlier-mass检验将薄证据转为弃权，并作为路由到重型度量模型的条件。
-◆ 可见性感知投票与实例尺寸先验：冻结2D教师为高斯标注，融合门、桌、地板到天花板等类别尺寸先验。
-◆ 鲁棒最大似然融合：在实例级先验上稳健估计尺度，提升可作用场景数且不降部署精度。
-在ScanNet++ 47场景上，单估计器把平均误差从21.1%降至16.6%（实际作用28场景为9.3%，约11秒/场景），仅将弃权样本路由到MASt3R即可匹配全量运行且调用少60%；在自有手机和无人机采集上作用场景均提升、无退化，并指出前馈度量模型的公开分数并非部署估计。</td></tr>
-<tr><td>2026-11-03</td><td>Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments<br><a href='http://arxiv.org/pdf/2611.05361'>论文</a></td><td>本文面向植被丰富户外环境中视觉三维重建与深度估计缺乏几何真值、完整扫描成本高的问题，提出一套可复用的LiDAR参考生成流程，用于评估前馈视觉几何模型的零样本性能并与传统SfM方法对比。该流程复用现有多传感器定位数据集的相机图像、LiDAR扫描和参考位姿，生成逐视图深度图与可见参考点云。
-◆提出LargeDepth-Gap Visibility Score（LDGVS），用于累积LiDAR点云的逐点可见性过滤及Hidden Point Removal的自动尺度选择。
-◆构建结合HPR与LDGVS的可见参考点云生成方法，在TartanAirV2和TartanGround上相较Poisson表面重建，在相近绝对相对误差下保留约三倍点密度。
-◆将流程应用于BotanicGarden并系统比较深度估计与三维重建方法，揭示前馈方法稠密高效但重建可能出现重复结构，SfM几何更一致但稀疏且在植被场景更易失败。
-作者将发布基准工具包与数据集，为植被场景三维重建评测提供可复现参考。</td></tr>
 </tbody>
 </table>
 </div>
@@ -202,6 +206,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-24</td><td>Learning Agent States for Latent Action Modeling<br><a href='http://arxiv.org/pdf/2611.32017'>论文</a> | <a href='https://github.com/Mid-Push/Agent-State-LAM'>代码</a></td><td>论文指出，潜在动作模型若在纠缠智能体物理状态与背景、持续外观等视觉上下文的空间中推断动作和预测转移，潜变量会编码与动作无关的信息。为此提出Agent-State LAM，联合学习紧凑的智能体状态表示和建模其转移的潜在动作。
+◆联合学习紧凑智能体状态与潜在动作，使动作推断和前向预测共享同一紧凑状态空间。
+◆提出空间匹配时间判别SMTD，利用冻结局部视觉特征进行空间灵活匹配，并按最强局部匹配为帧打分以区分源帧与邻近帧。
+◆通过让背景和持续外观在帧间仍可匹配而降低其判别性，促使表示聚焦智能体不断演化的物理状态。
+实验在干扰控制任务和六个真实机器人视频数据集上验证了动作恢复、下游控制与世界模型预测的改进。</td></tr>
 <tr><td>2026-11-22</td><td>Separating Action Allocation from Image Matching in Visual Token Routing<br><a href='http://arxiv.org/pdf/2611.29477'>论文</a></td><td>论文将视觉token路由中的“动作分配”与“图像匹配”两个因素拆开评估，以解释平均分提升究竟来自更优匹配还是更频繁使用高分辨率。  
 ◆ 提出在每类任务内固定动作计数，并将路由分配与同动作、同图像的随机配对比较，从而分离匹配收益与动作频率影响。  
 ◆ 发现在ChartQA和TextVQA等权设置下，Qwen2.5-VL-3B/7B均从匹配中获益，但相对任务表的动作频率带来更大损失，7B上分别为1.71点增益和3.95点损失。  
@@ -278,11 +287,6 @@
 ◆ 构建了覆盖多类传统特征提取器与多种图像变换的大规模统一实证基准。
 ◆ 揭示了检测器、描述子与匹配器组合对效率和鲁棒性的综合影响。
 ◆ 给出了面向不同退化与几何变换场景的特征提取方案选型依据。</td></tr>
-<tr><td>2026-10-28</td><td>Aligning Misaligned Benchmarks for Single-View Novel View Synthesis<br><a href='http://arxiv.org/pdf/2610.38349'>论文</a></td><td>论文针对单视图新视角合成评测中参考系与真值位姿对齐这一关键但未标准化的问题，系统分析了现有测试时位姿优化和依赖全场景重建对齐策略的缺陷。
-◆提出用传统2D-to-2D与2D-to-3D图像匹配技术对齐三维重建，避免病态的测试时位姿优化和不可行的全场景重建。
-◆提出仅在视图间共视区域进行评估，因为只有该区域能够定义正确的真值。
-◆发现正确坐标对齐后，显式3D高斯方法达到当前最优，纠正了其此前被纯图像2D方法超越的结论。
-◆给出直接利用现成视频生成器和前馈几何估计器的简单基线，无需任务特定训练即可与专门方法相当。</td></tr>
 </tbody>
 </table>
 </div>
@@ -293,6 +297,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-24</td><td>Reading Geometric Anchors: Viewpoint Generalization in Imitation Learning for Robotic Manipulation with RGB-Only Deployment<br><a href='http://arxiv.org/pdf/2611.32162'>论文</a></td><td>本文提出ReGeoAnch几何锚定模仿学习框架，旨在仅用RGB部署时提升机器人操作策略的视角泛化能力。
+◆构建机器人基座坐标系下的全局锚与夹爪坐标系下的局部锚，为不同视角提供共享物理参考。
+◆提出解耦外观引导几何读出，通过点到锚聚合在锚周围获得可比且稳定的几何表示，超越逐点对应。
+◆设计锚到策略读出模块，以视角不变的机器人状态查询视角相关外观并选择任务相关锚，仅用几何值形成最终策略读出。
+◆引入跨视角读出一致性，对齐源视图与合成目标视图的策略读出方向。
+在MetaWorld和ManiSkill3的12个操作任务上，该方法相较基线提升了视角泛化性能。</td></tr>
 <tr><td>2026-11-23</td><td>FGSCalib: Targetless Camera-LiDAR Extrinsic Calibration from Foreground Segmentation<br><a href='http://arxiv.org/pdf/2611.30935'>论文</a></td><td>论文提出FGSCalib，一种无需标定靶标的相机-LiDAR外参标定方法，可利用场景中任意运动物体对固定安装的相机-LiDAR对进行周期重标定，避免靶标导致设备停用。
 ◆ 不依赖物体类别，仅通过各传感器分离运动前景与静态背景，并利用正确外参下LiDAR前景点应投影到相机前景的一致性进行标定。
 ◆ 将相机掩膜转化为边界邻近场，采用两阶段模拟退火在选定帧对上搜索外参，无需测量初始外参，随机初始化也能得到相近结果。
@@ -371,11 +381,6 @@
 ◆ 训练时随机注入相机几何并逐步移除，使推理阶段无需目标相机标定。
 ◆ 面向互联网视频多样性，融合源视频感知推理、可选演员参考和多镜头适应，识别目标演员并跨镜头跟踪操作过程。
 该系统与模型为跨任务、场景和参与者扩展第一人称操作数据提供了实用基础。</td></tr>
-<tr><td>2026-11-11</td><td>Target-Free Autocalibration of Stereo PIV Camera Systems via Persistent-State Motion Representations<br><a href='http://arxiv.org/pdf/2611.18741'>论文</a></td><td>本文提出一种无需标定靶标的立体PIV相机系统自标定方法，可直接从粒子图像序列恢复相机相对位姿，免除物理靶标插入流场及设备移动后的重复标定。方法针对示踪粒子外观不可区分的特点，改为匹配运动而非外观：基于CUT3R用循环Transformer的持久状态累积时序运动信息，解码各相机光流，并由跨视角解码器回归双向点对应，最终用五点RANSAC求解相对位姿。
-◆提出持久状态运动表征，将粒子时序运动累积用于无靶标立体PIV外参自标定。
-◆用运动匹配替代外观匹配，解决示踪粒子不可区分条件下的跨视角对应难题。
-◆联合每相机光流解码与跨视角双向点对应回归，并通过五点RANSAC稳健恢复相对位姿。
-◆构建带真值位姿的合成立体PIV数据集，并在标准光流基准和200组真实相机布局上验证，光流、对应和位姿精度优于现有方法。</td></tr>
 </tbody>
 </table>
 </div>
@@ -386,6 +391,59 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-11-24</td><td>ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification<br><a href='http://arxiv.org/pdf/2611.33143'>论文</a></td><td>论文提出ROAM-Bench，在机器人运动与碰撞约束下评估具身主动空间智能。
+◆创新在于用仿真状态与回合记录进行独立检查，将结果正确性与任务要求完成度解耦，并强化几何、覆盖和放置验证。
+◆构建了含250个手工验证任务、11类任务、5组任务和27个室内环境的基准，覆盖物体与房间搜索、计数、几何判断、方向推理和重定位。
+◆通过人类评测达到84%严格任务成功率且所有正确结果均满足检查，验证了评测协议的有效性。
+◆在七个前沿视觉语言模型上揭示两类互补失败模式：结果正确但要求未满足，以及虽通过更强检查却结果错误。
+◆利用oracle输入诊断表明更完整的目标观察与校准反馈能改善最终空间判断。</td></tr>
+<tr><td>2026-11-24</td><td>CAPER: PartGround and PlanRefine for Reliable Manual-Guided Robotic Assembly Planning<br><a href='http://arxiv.org/pdf/2611.32986'>论文</a> | <a href='https://xhzzzz123.github.io/CAPER/'>代码</a></td><td>本文提出CAPER，一个面向手册引导机器人装配规划的VLM框架，用于解决零件身份混淆、无依据Part ID和跨步骤零件不一致等问题。
+◆ PartGround将步骤级手册证据与产品专属库存和零件参考信息对齐，识别精确Part ID与数量，把自由形式硬件预测转化为证据引导分配并写入共享Assembly IR。
+◆ PlanRefine依据有限库存审计PartGround分配，剔除最低置信度分配，并在Assembly IR中标记不确定身份案例供复核。
+◆ CAPER以共享Assembly IR和证据约束实现零件级可追溯规划，提升有限库存条件下的可靠性。
+在IAW数据集上，CAPER达到83.33%有限库存一致性率，未观察到超出库存的Part-ID，并将库存过度使用对9→0、多余单元51→0。
+结果表明PartGround与PlanRefine提升了零件可靠性、有限库存一致性和局部预测准确率。</td></tr>
+<tr><td>2026-11-24</td><td>Atomic Policy: Composing Atomic Manipulation Skills with Agentic Reasoning<br><a href='http://arxiv.org/pdf/2611.32813'>论文</a> | <a href='https://aaronzkd.github.io/atomic-policy/'>代码</a></td><td>Atomic Policy提出一个面向长程操作的分层技能组合框架，将VLM的语义空间推理与视动策略的精细控制相衔接。
+◆用VLM估计符号状态与目标，并由PDDL求解器生成技能计划，从而把任务意图转化为可执行的动作序列。
+◆引入agentic harness，通过语言、视觉指向或二者结合引导每项技能，并验证执行结果以驱动阶段转换和重规划。
+◆设计统一的阶段级接口，兼容专用操作策略与通用动作模型，提升技能组合的扩展性。
+仿真和真机实验表明，该框架能改善任务遵循性，并在复杂长程操作中支持失败恢复与重规划。
+这些设计共同缓解了模糊目标与动作依赖带来的集成难题，实现了学习技能与智能体推理的闭环组合。</td></tr>
+<tr><td>2026-11-24</td><td>CoFiNav: VLM-Guided Coarse-to-Fine Semantic Navigation for Open-Ended Last-Mile UAV Delivery<br><a href='http://arxiv.org/pdf/2611.32493'>论文</a></td><td>论文针对现有无人机末端配送依赖精确坐标、预定义终端规格或任务专用定位流程的问题，提出支持开放语义描述终端的语义导航新范式。作者设计了CoFiNav，一个由视觉语言模型引导的粗到细无人机语义导航框架，通过层级语义搜索和主动三维观察逐步定位由空间关系定义的配送目的地。
+◆ 创新性地利用VLM根据任务描述、OSM粗先验地图和累积观察，自主决定下一步应验证的未解析实体或空间关系。
+◆ 提出几何感知模块，将语义观察请求转化为基于RGB图像和LiDAR的可行视点，并由常规运动规划保障安全执行。
+◆ 构建了面向开放词汇末端导航的粗到细语义搜索机制，降低对精确终端坐标和预定义规格的依赖。
+实验表明，CoFiNav在多个城市环境中相较代表性适配基线具有更高成功率，同时飞行路径更短、所需观察次数更少。</td></tr>
+<tr><td>2026-11-24</td><td>LookAnything: A Foundation Model for Holistic Gaze Following<br><a href='http://arxiv.org/pdf/2611.32351'>论文</a></td><td>LookAnything提出面向整体视线跟随的基础模型，统一多样以视线为中心的任务，突破传统方法依赖头部裁剪或深度图等辅助输入、单域训练和单一热图输出的局限。  
+◆ 设计可学习视线先验查询，促进视线感知表征学习，从模型层面消除外部辅助输入依赖并减少级联误差与推理开销。  
+◆ 构建HoliGaze大规模多任务跨域语料与基准，包含31.1万问答对、5种能力维度和9类任务，支撑统一训练与系统评测。  
+◆ 通过大规模多任务跨域训练，模型可灵活生成点、框、热图和语言等多样输出，覆盖视线定位、描述与推理等广泛场景。  
+实验表明LookAnything在整体视线跟随上持续优于33个领先视觉语言模型，并在5个传统目标检测基准上与专用专家保持竞争力，且在未见数据集和真实机器人部署中展现强跨域泛化与灵活适应。</td></tr>
+<tr><td>2026-11-24</td><td>VLAs Execute, Code Recovers: 3D Skill Envelopes Bridge the Compositional Gap in Agentic Manipulation<br><a href='http://arxiv.org/pdf/2611.32245'>论文</a></td><td>标准重定位或语言前置条件忽略了接缝失败的物理原因：冻结VLA即使重新归位仍会刚性重放习惯轨迹，并碰撞被位移的场景残留。
+◆提出Skill Envelope，即由策略测量、刻画冻结技能成功执行时扫过体积的3D几何前置条件。
+◆利用刚性使冻结技能轨迹可提前预测，将包络暴露为CHECK检测阻挡残留和FREE定位安全放置区，形成VLA执行分布内操作、代码修复分布外状态的分工。
+◆在LIBERO-Goal冻结π0.5上，零失败包络以0.946 AUROC预测碰撞（单RGB-D视图0.944），接缝准备度0.902超过前沿VLM的0.793。
+◆用于技能排序与代码修复后，两步接缝成功率由82.8%升至92.3%，含抽屉的3-4步链由29.7%升至93.8%，匹配特权世界重置。
+结论是可靠VLA组合的关键在于测量策略的物理工作空间，而非用语言猜测前置条件。</td></tr>
+<tr><td>2026-11-24</td><td>Seeing Is Not Reaching: Instruction Shortcuts Override Visual Grounding in Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2611.32206'>论文</a></td><td>论文揭示视觉-语言-动作模型在物体被移动后常仍伸向训练位置，提出“Seeing Is Not Reaching”，说明视觉定位未必转化为正确动作。
+◆识别出场景捷径和指令捷径两类问题：前者使机械臂沿用场景原任务而忽略新指令，后者使指令直接检索物体的训练位置。
+◆通过分别掩蔽图像介导的定位通路和直接指令到动作通路，证明视觉定位已能引导动作，但常被指令捷径经直接通路覆盖。
+◆提出Pathway-Separated Guidance（PSG），无需训练或外部目标位置，即可放大视觉定位并抑制指令捷径。
+◆在LIBERO-PRO Object位置扰动任务上，PSG将目标到达率从22.0%提升至52.6%，任务成功率从16.6%提升至40.8%，并基本保持原任务性能。
+总体而言，论文不仅诊断了VLA中“看见但够不到”的捷径机制，还给出了无需训练的干预方法。</td></tr>
+<tr><td>2026-11-24</td><td>RoboProbe: Benchmarking Physical Plausibility of Robot World Models<br><a href='http://arxiv.org/pdf/2611.32152'>论文</a></td><td>本文面向机器人世界模型生成视频的物理合理性评估，指出现有VLM难以完成证据驱动的时空推理，未检测的物理违例会危害动作可行性与安全性判断。
+◆提出接触保真、物体持久性、固体性、机器人形变和物体形变五项物理规律专用指标，融合分割、跟踪、3D几何或外观比较与定向VLM推理。
+◆构建RoboProbe智能体评估框架，协调各指标执行，并通过受限动作选择性细化评估。
+◆发布RP-Bench基准，包含761个人工标注生成视频，以及来自12个机器人数据集、239项操作任务的130条真实演示。
+实验表明五项指标AUROC均超0.85，优于学习型评判器、已有评估器和仅用帧的Gemini基线。
+将其用于五种视频生成器，揭示不同模型在物理违例类型与频率上的显著差异。</td></tr>
+<tr><td>2026-11-24</td><td>RoboHarness-RL: Agentic Reinforcement Learning for VLM-Based Robot Manipulation<br><a href='http://arxiv.org/pdf/2611.32016'>论文</a> | <a href='https://aim-uofa.github.io/RoboHarness-RL/'>代码</a></td><td>本文提出RoboHarness-RL，一个面向基于VLM的机器人操作的智能体强化学习框架，通过工具调用完成感知、规划与控制。
+◆ 采用“教师示范监督微调+多轮任务结果奖励强化学习”的两阶段训练，使紧凑开源VLM无需VLA或世界动作模型也能提升操作能力。
+◆ 设计LiteHarness，用分层记忆压缩多轮交互上下文，在保持任务性能的同时支持高效多轮训练。
+◆ 在Qwen3.5-9B上，RoboTwin 2.0成功率由31.2%升至44.0%，LIBERO-Pro由57.8%升至73.3%，随机化RoboTwin场景由26.4%升至38.0%。
+◆ 行为分析表明RL将重复调用率最多降低4倍，缩短成功执行时长，并增强从负反馈中恢复的能力。
+核心贡献在于验证了基于工具调用的智能体RL可显著提升紧凑开源VLM的机器人操作表现并具备泛化收益。</td></tr>
+<tr><td>2026-11-24</td><td>VLG-Drive: Unifying Vision-Language and Geometric Priors for Autonomous Driving<br><a href='http://arxiv.org/pdf/2611.31952'>论文</a></td><td>本文提出VLG-Drive，将视觉语言模型的场景语义与几何基础模型的空间结构统一用于自动驾驶规划，并在冻结两个基础模型的前提下仅训练融合接口和规划器。◆设计几何锚定的残差融合接口，在每个相机网格单元将配对的VLM特征与几何特征融合为联合token。◆采用命令条件规划器读取联合token并预测自车轨迹，使轻量规划器能直接利用冻结多模态特征。◆通过点式融合验证联合token优于独立VLM流和几何流，为融合两类基础模型提供了有效接口。在NavHard扰动初始状态下取得31.78 EPDMS，在NavTest仅用摄像头取得88.27 PDMS。在420个HUGSIM闭环场景中优于所有对比规划器，表明融合冻结视觉语言与几何基础模型特征并训练轻量规划器，是替代适配任一模型进行规划的有效方案。</td></tr>
 <tr><td>2026-11-23</td><td>Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action<br><a href='http://arxiv.org/pdf/2611.31240'>论文</a></td><td>论文针对推理型自动驾驶VLA模型的高内存与计算开销，系统研究结构化剪枝，并强调同时保留场景理解与轨迹预测能力。
 ◆通过分析Alpamayo-1.5-10B中的Taylor重要性，揭示推理与轨迹目标对同一VLM结构赋予不同重要性，且动作专家中MLP通道跨去噪步的重要性排序比query头更稳定，少量通道承载大部分重要性。
 ◆提出MoOP方法，融合推理与轨迹两种目标的重要性排名进行VLM剪枝，并聚合逐步重要性以选择固定的专家MLP通道子集。
@@ -415,59 +473,6 @@
 ◆在MMSI-Bench、MV-RoboBench和SPAR-Bench上，使五个VLM平均提升0.7至2.4个百分点。
 在MMSI-Bench上，Qwen3.8-27B从34.4%提升至39.5%，相机相关问题最大提升19.2个百分点。
 结果表明，潜在特征一旦被解析为关系证据，无需训练即可有效增强多视角空间推理。</td></tr>
-<tr><td>2026-11-23</td><td>WorldLeague: Benchmarking Physical Agency<br><a href='http://arxiv.org/pdf/2611.30989'>论文</a> | <a href='https://xyangzhou.github.io/WorldLeague'>代码</a></td><td>WorldLeague提出面向物理智能体自主性的统一基准，用60个模拟机器人任务比较不同AI系统从轨迹中达成的物理目标进展。
-◆ 它将探索取证、物体重排和环境适应分别组织为WorldSeek、WorldShape与WorldShift三类任务，覆盖感知、记忆、规划和行动的复合需求。
-◆ 它让VLM选择目标与运动、让VLA/WAM使用原生控制，在保留异构系统可比性的同时避免单一控制接口的限制。
-◆ 它按六个能力维度同时计算交互分数与物理成功率，形成从部分进展到完全成功的Physical Agency Profile。
-实验评测13个代表性系统，Claude Fable 5.2完成60个目标中的13个，并以28.58/100取得最高平均交互分数，在四个维度领先。
-研究还发现，即使VLM最终答对问题，仍有71.8%的回合交互分数为零，凸显“会答”不等于“会做”的物理能动性差距。</td></tr>
-<tr><td>2026-11-23</td><td>SayDo: Benchmarking the Safety of Frontier Models from Chat to Closed-Loop Robot Control<br><a href='http://arxiv.org/pdf/2611.30957'>论文</a></td><td>论文提出SayDo基准，系统评估前沿视觉语言模型在从聊天问答到模拟机械臂闭环控制等六个具身梯度设置下造成伤害的倾向，覆盖十一项实验室和家庭任务。  
-◆ 构建首个沿具身梯度比较聊天与闭环机器人控制安全性的基准，每项任务包含良性指令与潜在危险配对、安全替代方案及操作员推回变体。  
-◆ 发现同一模型危险动作率从聊天中的14%升至模拟器中的47%，最受影响模型从2%升至80%，且主要由开放权重模型驱动，证明文本安全评估无法预测机器人控制安全。  
-◆ 揭示模型在73%的不安全回合中行动前已标记危险，但在机器人控制中面对推回让步的频率约为聊天的两倍，存在知行分离。  
-◆ 观察到最安全模型在良性控制上出现过度谨慎迹象，提示安全性与可用性需权衡。  
-这些发现强调必须在真实具身交互中评估模型安全，而非仅依赖文本评测。</td></tr>
-<tr><td>2026-11-23</td><td>Body and Soul: Decoupling Robotic Brain and Policy with RoboHarness-Zero<br><a href='http://arxiv.org/pdf/2611.30550'>论文</a></td><td>论文针对VLA能执行单项技能却难以组合完成任务的问题，审计Xiaomi-Robotics-1发现约43%失败源于选错目标或丢失任务进度，提出将冻结VLA与VLM监督解耦的RoboHarness-Zero。
-◆它让VLM零样本负责任务规划与执行监控，冻结VLA专注连续、接触丰富的运动控制，从而无需任务特定准备。
-◆当进度停滞或目标漂移时，VLM先改写指令，必要时才用通用运动原语生成短代码兜底，随后把精细控制交还VLA。
-◆其监督规则跨策略固定，换新策略仅需薄接口适配和自动剖析的技能配置，无需重新设计harness，并尽量保留策略原有独立能力。
-在200个RoboCasa365场景中，冻结Xiaomi-Robotics-1成功率从57.5%升至70.5%，保留90.4%原有成功并救回37/85失败；在50场景子集上对另外四个冻结策略提升8至10个百分点，显示较现有准备式harness更好的迁移性。</td></tr>
-<tr><td>2026-11-23</td><td>CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors<br><a href='http://arxiv.org/pdf/2611.30449'>论文</a></td><td>CHAMP提出统一的人形机器人移动操作框架，将全身运动预训练与自适应特征提取结合，以协调移动与灵巧操作。  
-◆ 它利用约2298小时异构人类与机器人数据预训练视觉语言模型，预测未来身体和手部运动，并通过共享运动表示统一不同具身与标注类型的学习。  
-◆ 为将运动先验用于机器人控制，作者设计面向协调的动作专家CAE，用目标控制器回放数据训练，并通过稀疏路由自适应选择、变换和融合预训练模型多层特征，联合生成身体与手部动作。  
-实验表明CHAMP在七项仿真任务和七项Unitree G1真实任务上分别达到84.8%和91.4%总体成功率，优于评估基线。  
-尤其在长时程爆米花服务任务中达到70.0%，而最佳基线为40.0%，显示其协调全身移动操作和长时程执行能力。</td></tr>
-<tr><td>2026-11-23</td><td>ROSE-Drive: Runtime Orchestration and System Evolution for Autonomous Driving<br><a href='http://arxiv.org/pdf/2611.30438'>论文</a></td><td>ROSE-Drive提出模型无关的运行时编排与系统演化框架，在不改模型权重的前提下联合协调驾驶执行与计算资源，以系统级方式提升复杂交通闭环驾驶可靠性。
-◆ 将冻结的驾驶模型与驾驶技能、感知工具和反馈控制器统一编排，实现模型能力与外部能力的组合调用。
-◆ 利用蒸馏VLM提出驾驶任务与场景关系，并通过共享物理状态和持久任务支持任务连续性、能力组合和自适应调度。
-◆ 编排器跨控制通道融合模型与技能输出，借助交接维持任务责任，并依据执行反馈选择控制器、复用有效运动参考和调度模型推理。
-◆ 通过稳定任务接口用执行记录离线修订技能及其协调关系，使后续系统阶段继承改进而模型、感知和VLM权重保持固定。
-在Bench2Drive v0.0.3/v0.0.4和Fail2Drive上验证了能力积累与迁移，Longest6上AutoMoT的DS从25升至52、SimLingo从22升至47，且超71%控制步跳过新模型推理。</td></tr>
-<tr><td>2026-11-23</td><td>Seeing Together, Acting Apart: Shared Environmental Understanding for Multi-Robot Navigation<br><a href='http://arxiv.org/pdf/2611.30310'>论文</a></td><td>论文提出“共享环境理解”这一与策略无关的表征，将多机器人局部自我中心观测聚合为共享潜在世界模型，使协作从策略空间前移到表征空间。  
-◆ 该工作把多机器人协作重新定义为决策前的环境理解共享，从而支持在共享环境上下文下的去中心化决策。  
-◆ 提出SEER框架，将多机器人观测组织为共享记忆，并通过时空相似性检索相关上下文。  
-◆ SEER利用预测性潜在世界模型编码检索上下文，并将所得表征作为token注入下游导航智能体。  
-实验表明SEER能捕捉与动作相关的环境结构，在专用VLN智能体和通用视觉语言模型智能体上均稳定提升导航性能，同时保持单智能体能力。</td></tr>
-<tr><td>2026-11-23</td><td>ConsisX: Cross-View Consistency Thinking in 3D for Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2611.30308'>论文</a></td><td>现有VLA模型虽利用多视角观测，但依赖2D特征相似度建模跨视角交互，易造成不同实体错误关联和同一实体信息碎片化，导致物理不一致。为此，论文提出ConsisX框架，通过跨视角关联与实体一致性实现面向物理一致操作的三维跨视角一致性思考。
-◆ Cross-View Association Modeling（CAM）在共享3D空间引入跨视角空间邻近约束，减少跨视角错误关联。
-◆ Entity Coherence Organization（ECO）将跨视角局部信息组织为连贯的3D实体证据，缓解同一实体的信息碎片化。
-◆ Consistent Action Conditioning（CAC）以任务相关的3D实体证据条件化动作预测，实现跨视角一致的动作执行。
-在3个真实操作任务和4个仿真基准上的实验表明，ConsisX是有效且有竞争力的机器人操作方法。</td></tr>
-<tr><td>2026-11-23</td><td>Beyond Which: Where, How, and When in Vision-Language-Action Models<br><a href='http://arxiv.org/pdf/2611.30291'>论文</a></td><td>本文提出W³H-VLA，将视觉-语言-动作模型的感知与动作预测从仅关注“哪些实体相关”扩展为同时组织which、where、how、when四类信息。
-◆保留基于VLM的语义实体感知以判断动作相关实体（which），作为语义基础。
-◆新增空间距离感知（where）与几何结构感知（how），补充任务相关实体的空间布局和几何约束信息。
-◆设计自适应空间-几何引导机制（when），动态决定空间与几何信息在动作预测中的贡献时机与权重。
-该模型在真实场景和仿真基准上验证了有效性与更优性能。</td></tr>
-<tr><td>2026-11-23</td><td>RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?<br><a href='http://arxiv.org/pdf/2611.30047'>论文</a></td><td>提出RoboLiveMem，将同一机器人记忆任务分别在“模型思考时世界暂停”和“世界持续运行”两种条件下各跑一遍，直指现有基准因暂停模拟器而高估记忆能力的问题。
-◆构建29个任务家族、三层难度，覆盖16个BEHAVIOR-1K真实家居/工坊/餐厅场景与受控ManiSkill任务，混合真实变化、无害相似物和无变化情形，且多数任务配有变化始终可见的孪生任务，以区分遗忘与行动过晚。
-◆在16个模型、34176个episode上揭示暂停条件掩盖失败：真实场景中记忆对象变化时，8个Claude/GPT模型平均成功率从暂停时97%降至运行时50%，模型排名也改变。
-◆发现速度不是解药：更慢模型不更差，仅给2秒决策仍比暂停成功率低至少36个百分点；模型虽能看见变化，却常依据变化结束前的相机帧行动。
-◆仅靠临行动前再看可弥合大部分真实场景差距，但当相同物体多次交换时，九个被测模型仍因记忆损失得分。</td></tr>
-<tr><td>2026-11-22</td><td>Action Windows Are Inherently Temporal: A Benchmark for Time-Sensitive Robotic Manipulation<br><a href='http://arxiv.org/pdf/2611.29558'>论文</a> | <a href='https://eyja42.github.io/await-site/'>代码</a></td><td>现有VLM智能体在已有机器人操作基准上表现超过学习策略，但在需要及时干预的日常任务中仍显不足，因为演化中的物理过程会形成有限的动作窗口。论文提出AWAIT仿真基准，用于评估智能体能否在动作窗口内完成任务，并同时计入决策耗时与执行耗时。
-◆ 将“动作窗口”作为时间敏感操作任务的核心评测对象，强调窗口开放时机及决策与执行共享时间预算。
-◆ 构建同时考虑决策时间和物理执行时间的仿真基准，评估任务完成是否落在有限动作窗口内。
-◆ 揭示智能体难以识别窗口开启，并证明即使单次决策短于窗口时长，连续决策与移动也可能耗尽窗口。
-该工作把时间敏感性从部分覆盖的辅助因素提升为基准设计的一等约束，为VLM智能体的时序决策与执行协调提供了新评测工具。</td></tr>
 </tbody>
 </table>
 </div>
@@ -687,16 +692,16 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <table>
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
-<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5407</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4905</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST_LIO'>FAST_LIO</a></td><td>5414</td><td>A computationally efficient and robust LiDAR-inert</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-LIVO2'>FAST-LIVO2</a></td><td>4907</td><td>FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odo</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r3live'>r3live</a></td><td>2493</td><td>A Robust, Real-time, RGB-colored, LiDAR-Inertial-V</td></tr>
 <tr><td><a href='https://github.com/hku-mars/FAST-LIVO'>FAST-LIVO</a></td><td>1665</td><td>A Fast and Tightly-coupled Sparse-Direct LiDAR-Ine</td></tr>
 <tr><td><a href='https://github.com/hku-mars/loam_livox'>loam_livox</a></td><td>1632</td><td>A robust LiDAR Odometry and Mapping (LOAM) package</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR_IMU_Init'>LiDAR_IMU_Init</a></td><td>1546</td><td>[IROS2022] Robust Real-time LiDAR-inertial Initial</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1393</td><td>Point-LIO</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Point-LIO'>Point-LIO</a></td><td>1394</td><td>Point-LIO</td></tr>
 <tr><td><a href='https://github.com/hku-mars/livox_camera_calib'>livox_camera_calib</a></td><td>1323</td><td>This repository is used for automatic calibration </td></tr>
-<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1150</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
-<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1120</td><td>SUPER</td></tr>
+<tr><td><a href='https://github.com/hku-mars/FAST-Calib'>FAST-Calib</a></td><td>1151</td><td>A Handy Extrinsic Calibration Tool for LiDAR-camer</td></tr>
+<tr><td><a href='https://github.com/hku-mars/SUPER'>SUPER</a></td><td>1122</td><td>SUPER</td></tr>
 <tr><td><a href='https://github.com/hku-mars/BALM'>BALM</a></td><td>957</td><td>An efficient and consistent bundle adjustment for </td></tr>
 <tr><td><a href='https://github.com/hku-mars/ikd-Tree'>ikd-Tree</a></td><td>820</td><td>This repository provides implementation of an incr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/r2live'>r2live</a></td><td>786</td><td>R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual</td></tr>
@@ -706,15 +711,15 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/hku-mars/Voxel-SLAM'>Voxel-SLAM</a></td><td>709</td><td>Voxel-SLAM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M-detector'>M-detector</a></td><td>682</td><td>M-detector</td></tr>
 <tr><td><a href='https://github.com/hku-mars/mlcc'>mlcc</a></td><td>640</td><td>Fast and Accurate Extrinsic Calibration for Multip</td></tr>
-<tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>634</td><td>ROG-Map</td></tr>
+<tr><td><a href='https://github.com/hku-mars/ROG-Map'>ROG-Map</a></td><td>636</td><td>ROG-Map</td></tr>
 <tr><td><a href='https://github.com/hku-mars/HBA'>HBA</a></td><td>626</td><td>[RAL 2023] A globally consistent LiDAR map optimiz</td></tr>
 <tr><td><a href='https://github.com/hku-mars/MARSIM'>MARSIM</a></td><td>597</td><td>MARSIM是一款轻量级、点云逼真的LiDAR无人机模拟器。</td></tr>
 <tr><td><a href='https://github.com/hku-mars/IKFoM'>IKFoM</a></td><td>573</td><td>A computationally efficient and convenient toolkit</td></tr>
 <tr><td><a href='https://github.com/hku-mars/GS-SDF'>GS-SDF</a></td><td>551</td><td>[IROS 2025] LiDAR-Augmented Gaussian Splatting and</td></tr>
-<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>517</td><td>LTAOM</td></tr>
+<tr><td><a href='https://github.com/hku-mars/LTAOM'>LTAOM</a></td><td>518</td><td>LTAOM</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LIV_handhold_2'>LIV_handhold_2</a></td><td>485</td><td>LIV-Eye: A Low-Cost LiDAR-Inertial-Visual Fusion 3</td></tr>
-<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>471</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
-<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>376</td><td>btc_descriptor</td></tr>
+<tr><td><a href='https://github.com/hku-mars/Swarm-LIO2'>Swarm-LIO2</a></td><td>472</td><td>[T-RO 24] Swarm-LIO2: Decentralized, Efficient LiD</td></tr>
+<tr><td><a href='https://github.com/hku-mars/btc_descriptor'>btc_descriptor</a></td><td>377</td><td>btc_descriptor</td></tr>
 <tr><td><a href='https://github.com/hku-mars/D-Map'>D-Map</a></td><td>351</td><td>D-Map provides an efficient occupancy mapping appr</td></tr>
 <tr><td><a href='https://github.com/hku-mars/UMI-3D'>UMI-3D</a></td><td>282</td><td>UMI-3D SLAM and Data Processing Pipeline: https://</td></tr>
 <tr><td><a href='https://github.com/hku-mars/M2Mapping'>M2Mapping</a></td><td>275</td><td>[ICRA 2025] Neural Surface Reconstruction and Rend</td></tr>
@@ -723,9 +728,9 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/hku-mars/SUPER-Hardware'>SUPER-Hardware</a></td><td>235</td><td>SUPER-Hardware</td></tr>
 <tr><td><a href='https://github.com/hku-mars/dyn_small_obs_avoidance'>dyn_small_obs_avoidance</a></td><td>231</td><td>dyn_small_obs_avoidance</td></tr>
 <tr><td><a href='https://github.com/hku-mars/decentralized_loam'>decentralized_loam</a></td><td>223</td><td>decentralized_loam</td></tr>
-<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>222</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
+<tr><td><a href='https://github.com/hku-mars/BDM'>BDM</a></td><td>223</td><td>Memory-Efficient Boundary Map for Large-Scale Occu</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LAMM'>LAMM</a></td><td>217</td><td>LAMM</td></tr>
-<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>155</td><td>iBTC</td></tr>
+<tr><td><a href='https://github.com/hku-mars/iBTC'>iBTC</a></td><td>156</td><td>iBTC</td></tr>
 <tr><td><a href='https://github.com/hku-mars/PULSAR'>PULSAR</a></td><td>148</td><td>PULSAR</td></tr>
 <tr><td><a href='https://github.com/hku-mars/LiDAR-UAV-Autonomy'>LiDAR-UAV-Autonomy</a></td><td>124</td><td>LiDAR-UAV-Autonomy</td></tr>
 </tbody>
@@ -739,7 +744,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <thead><tr><th>项目</th><th>Stars</th><th>简介</th></tr></thead>
 <tbody>
 <tr><td><a href='https://github.com/ethz-asl/maplab'>maplab</a></td><td>2893</td><td>A Modular and Multi-Modal Mapping Framework</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1688</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/voxblox'>voxblox</a></td><td>1689</td><td>A library for flexible voxel-based mapping, mainly</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/okvis'>okvis</a></td><td>1374</td><td>OKVIS: Open Keyframe-based Visual-Inertial SLAM.</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/segmap'>segmap</a></td><td>1099</td><td>A map representation based on 3D segments </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/lidar_align'>lidar_align</a></td><td>1065</td><td>A simple method for finding the extrinsic calibrat</td></tr>
@@ -784,7 +789,7 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <tr><td><a href='https://github.com/ethz-asl/neuralblox'>neuralblox</a></td><td>132</td><td>Real-time Neural Representation Fusion for Robust </td></tr>
 <tr><td><a href='https://github.com/ethz-asl/phaser'>phaser</a></td><td>132</td><td>A robust pointcloud registration pipeline based on</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/ssc_exploration'>ssc_exploration</a></td><td>112</td><td>Incremental 3D Scene Completion for Safe and Effic</td></tr>
-<tr><td><a href='https://github.com/ethz-asl/active_grasp'>active_grasp</a></td><td>111</td><td>Closed-loop next-best view planning for grasp dete</td></tr>
+<tr><td><a href='https://github.com/ethz-asl/active_grasp'>active_grasp</a></td><td>112</td><td>Closed-loop next-best view planning for grasp dete</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/waypoint_navigator'>waypoint_navigator</a></td><td>108</td><td>Stand-alone waypoint navigator</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/waverider'>waverider</a></td><td>107</td><td>RMPs on multi-resolution occupancy maps for effici</td></tr>
 <tr><td><a href='https://github.com/ethz-asl/reinmav-gym'>reinmav-gym</a></td><td>106</td><td>Reinforcement Learning framework for MAVs using th</td></tr>
@@ -798,4 +803,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.11.24
+> 更新于: 2026.11.25
