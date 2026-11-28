@@ -1,4 +1,4 @@
-# 历史论文归档 (2026.11.27)
+# 历史论文归档 (2026.11.28)
 
 > 所有历史论文完整归档，按分类展示
 
@@ -106,12 +106,11 @@
 ◆ 通过在线校准将每台设备极线误差控制在1像素以下，并用视觉惯性SLAM获得重力对齐的6自由度头部轨迹。  
 ◆ 采用多视角手部跟踪器生成厘米级度量精度手部姿态，并为每个片段提供任务与子任务语言描述。  
 这些设计使数据集同时具备度量3D标签、统一硬件和语言标注，为第一视角机器人学习提供高质量监督。</td></tr>
-<tr><td>2026-11-19</td><td>Stereo Visual Odometry with In-the-Loop Geometric Feed-Forward Models Towards Dense Metric Mapping<br><a href='http://arxiv.org/pdf/2611.25445'>论文</a></td><td>本文提出一种将几何前馈稠密深度模型与因子图视觉里程计耦合的双目视觉里程计框架，同时实现准确定位与稠密度量建图。
-◆ 核心创新是利用双目和时序多视图得到的稀疏可靠度量几何校准稠密深度预测，而不是直接用含噪双目深度条件化模型。
-◆ 在每个局部子图内用优化后的3D路标联合估计所有关键帧的尺度-平移变换，使稠密深度具备度量一致性。
-◆ 设计分层因子图：局部滑窗优化高频位姿与多视图精化路标，仅对关键帧预测稠密深度并用SE(3) GICP配准到子图。
-◆ 利用共享几何对连续子图做Sim(3)对齐以校正残余尺度偏差，并将子图内、子图间约束纳入全局因子图。
-实验表明该方法在公开和自采数据集上里程计精度可媲美几何与学习基线，且稠密度量重建准确、对学习深度失败更鲁棒。</td></tr>
+<tr><td>2026-11-19</td><td>Stereo Visual Odometry with In-the-Loop Geometric Feed-Forward Models Towards Dense Metric Mapping<br><a href='http://arxiv.org/pdf/2611.25445'>论文</a></td><td>本文提出一种将几何前馈模型稠密深度预测与因子图视觉里程计紧耦合的双目视觉里程计框架，实现准确定位与稠密度量建图。
+◆ 利用双目与时序多视图估计的稀疏但可靠度量几何，在局部子图内对所有关键帧联合估计尺度-平移变换，以校准稠密预测，而非直接依赖可能含噪的双目深度。
+◆ 设计分层因子图架构，局部滑动窗口优化高频相机位姿和多视图精化三维路标，仅对关键帧生成稠密预测并用SE(3)广义ICP配准到子图。
+◆ 通过共享几何在Sim(3)下对齐相邻子图并校正残余尺度不一致，将子图内与子图间约束融入全局因子图，得到一致轨迹和稠密度量重建。
+◆ 实验表明该方法在公开和自采数据集上定位精度与几何及学习基线有竞争力，同时提供准确稠密度量重建，并提升对学习深度预测失败的鲁棒性。</td></tr>
 <tr><td>2026-11-18</td><td>Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU<br><a href='http://arxiv.org/pdf/2611.25279'>论文</a></td><td>Accord提出一种仅依赖任意单相机与IMU的在线稠密度量建图系统，解决VIO度量位姿但几何稀疏、前馈深度稠密却缺乏度量尺度的问题。
 ◆ 以VIO滤波器输出的度量位姿为条件，用深度基础模型对短关键帧窗口预测深度，并通过因子图融合子图。
 ◆ 提出多视图一致性机制：将每个关键帧窗口锚定到由滤波器位姿三角化的度量3D点，并利用共视图像间双向稠密深度一致性估计与校正逐图像尺度误差，同时保持锚点建立的度量尺度。
@@ -13201,22 +13200,23 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 ◆ 构建EM框架，将建图过程解耦为连续的M步（流形自适应）与概念性的E步（最优锚点选择准则）。
 
 ◆ 在NCLT数据集的100米超稀疏锚点间隔及极端季节变化场景下均实现显著的定位性能提升。</td></tr>
-<tr><td>2026-08-06</td><td>Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models<br><a href='http://arxiv.org/pdf/2608.06021'>论文</a></td><td>本文提出一种拓扑度量自主车辆定位框架，将概率视觉地点识别与前馈神经三维几何模型的度量位姿估计在序列外观定位中迭代结合。该框架在保持地图紧凑性和外观鲁棒性的同时提升度量精度，并在三个公开基准上显著优于现有基于外观的定位方法。
-◆ 设计自动离线建图工具，学习并建模场景不同区域中拓扑位姿与外观之间的交互关系。
-◆ 构建在线粒子滤波，将里程计、地点信念与FF3D推理耦合，把神经度量估计融入概率外观定位。
-◆ 保持描述子提取器与FF3D模型可互换的模块化设计，提升框架通用性与可扩展性。
-◆ 利用序列信念抑制感知别名导致的严重定位失败，增强复杂场景下的鲁棒性。</td></tr>
-<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>本文针对终身视觉位置识别中ACIL虽具O(1)记忆和完全抗遗忘能力、却易受非线性域偏移影响的问题，提出ACIL-Domain这一自相关状态锁定的规范不变特征流形，并通过解耦域对齐分离不变语义与可变风格向量以增强域鲁棒性。
-◆ 提出ACIL-Domain及解耦域对齐D-DA，将隐特征分解为ACIL-D内的不变语义和用于方向投影的风格向量，缓解环境变化导致的域脆弱性。
-◆ 揭示递归ACIL更新与扩展卡尔曼滤波协方差传播之间的代数同构，建立SLAM控制论框架，为终身VPR提供结构化、局部化的解析流形自适应。
-◆ SLAM融合动态温度缩放高斯混合模型隔离拓扑非线性、Unscented扰动传播抑制特征变化、minimax H∞鲁棒准则约束最坏噪声累积。
-在非平稳NCLT数据集上，完整SLAM最终全类准确率达27.7%，U+H变体达29.0%，并保证完全遗忘免疫。</td></tr>
-<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流水线，并在100地点Nordland数据集上用15个独立训练网络评估推理阶段设计对R@100P的影响。
-◆ 采用闭式、确定性的张量流水线完成神经元分配，较标准argmax显著提高R@100P，且部分增益源于与既有连续时间模型的实现差异。
-◆ 通过独立消融表明，每次查询后重置状态可在不同神经元分配方式下稳定提升R@100P。
-◆ 提出速度补偿的滑动窗口聚合，在连续k帧上融合，恒定速度遍历下k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
-总体而言，论文揭示了STDP-SNN-VPR推理阶段设计对召回-精度平衡的关键作用。
-但各机制贡献与实现差异尚未完全解耦，仍需进一步研究。</td></tr>
+<tr><td>2026-08-06</td><td>Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models<br><a href='http://arxiv.org/pdf/2608.06021'>论文</a></td><td>本文提出一种拓扑度量自主车辆定位框架，将概率视觉地点识别（VPR）与前馈神经三维几何（FF3D）模型的度量位姿估计在序列图像中迭代融合，以兼顾地图紧凑性、外观鲁棒性和度量精度。
+◆ 设计自动离线建图工具，学习并建模场景不同区域的拓扑度量位姿—外观交互关系，为在线定位提供先验地图。
+◆ 构建在线粒子滤波定位方法，依据里程计和地点信念选择FF3D推理的图像集，从而把神经度量估计融入概率外观定位。
+◆ 框架保持模块化，描述子提取器与FF3D模型可互换，便于适配不同模型。
+◆ 利用序列地点信念抑制感知混叠导致的严重定位失败。
+在三个公开基准上实验表明，该方法显著优于现有基于外观的定位方法。</td></tr>
+<tr><td>2026-07-27</td><td>SLAM: Structured and Localized Analytic Manifold Adaptation for Forgetting-Immune and Domain-Robust Lifelong VPR<br><a href='http://arxiv.org/pdf/2607.04764'>论文</a></td><td>本文面向长期视觉位置识别，将无遗忘的解析类增量学习扩展到非平稳环境，在保持O(1)记忆与完全遗忘免疫的同时解决域偏移脆弱性。
+◆ 提出ACIL-Domain规范不变特征流形，通过锁定自相关状态为域适应提供稳定基准。
+◆ 设计解耦域对齐D-DA，将隐特征分离为流形内不变语义与可变风格向量并进行方向投影。
+◆ 揭示递归ACIL更新与EKF协方差传播的代数同构，建立控制论式SLAM框架。
+◆ 融合动态温度缩放GMM、Unscented扰动传播和minimax H∞鲁棒准则，分别隔离拓扑非线性、抑制特征变化并约束最坏噪声累积。
+在非平稳NCLT上，完整SLAM取得27.7%全类准确率，U+H变体达29.0%，并保证完全遗忘免疫。</td></tr>
+<tr><td>2026-07-15</td><td>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning<br><a href='http://arxiv.org/pdf/2607.13584'>论文</a></td><td>本文提出并评估一种基于PyTorch与snnTorch的离散、张量原生STDP-SNN视觉位置识别流程，在Nordland 100地点数据集上用15个独立训练网络检验推理阶段设计决策。
+◆ 采用闭式、确定性的张量流水线完成神经元分配，较标准argmax显著提升R@100P，并单独测量其中与先前连续时间模型实现差异相关的增益。
+◆ 每次查询后执行状态重置可在不同神经元分配方式下稳定提升R@100P。
+◆ 对k帧连续帧做速度补偿滑窗聚合，在恒速遍历且k=5时达到R@100P=100.00%，仅增加0.20 ms延迟。
+这些结果说明推理阶段设计对STDP-SNN-VPR的召回精度至关重要，但各机制与实现差异的独立贡献尚未完全解耦，仍需进一步研究。</td></tr>
 <tr><td>2026-07-07</td><td>From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection<br><a href='http://arxiv.org/pdf/2606.24234'>论文</a></td><td>论文聚焦海事感知与舱室巡检中开放甲板到封闭舱室的跨场景视觉位置识别难题，提出ProteusVPR。
 ◆ 构建XHZ船载8K全景数据集，覆盖多层舱室、甲板过渡区，并严格分离查询与数据库以支持严谨评测。
 ◆ 提出两阶段检索-精化框架，第一阶段用标准VPR模型初始检索，第二阶段进行几何-视觉联合精化。
@@ -13285,4 +13285,4 @@ RaSFNet在SemanticKITTI和nuScenes验证集上分别取得70.2%和77.7%的mIoU�
 <div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 ---
-> 更新于: 2026.11.27
+> 更新于: 2026.11.28
